@@ -1,5 +1,5 @@
 // ========== CONFIG ==========
-const WA_NUMBER = '905326513951';
+const WA_NUMBER = '905325201700';
 const BRAND_NAME = 'Bosphorus Night';
 
 // ========== LANGUAGE ==========
