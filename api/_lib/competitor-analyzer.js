@@ -16,9 +16,12 @@ export async function scanAllCompetitors() {
 
   const results = [];
 
-  for (const comp of competitors) {
+  for (let i = 0; i < competitors.length; i++) {
+    const comp = competitors[i];
+    // Rate limit: 5 saniye bekle (ilk hariç)
+    if (i > 0) await new Promise(r => setTimeout(r, 5000));
     try {
-      console.log(`Scanning ${comp.name}...`);
+      console.log(`Scanning ${comp.name}... (${i + 1}/${competitors.length})`);
       const scanData = await scanCompetitorSite(comp.url, comp.name);
 
       // Tarama sonucunu kaydet
