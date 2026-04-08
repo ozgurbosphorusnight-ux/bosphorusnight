@@ -139,8 +139,8 @@ US (Bosphorus Night):
 
 Competitors: ${JSON.stringify(compactResults)}
 
-Return ONLY this JSON (no extra text):
-{"summary":"2 sentences","recommendations":[{"action":"what","reason":"why","priority":"high/medium/low"}],"competitor_rankings":[{"name":"name","price_range":"€X-€Y","strengths":["s"],"weaknesses":["w"],"threat_level":"high/medium/low"}],"chatbot_tips":"tip","ad_tips":"tip"}`;
+IMPORTANT: Write ALL text content in TURKISH. Return ONLY this JSON (no extra text):
+{"summary":"2 cümle türkçe özet","recommendations":[{"action":"ne yapılmalı (türkçe)","reason":"neden (türkçe)","priority":"high/medium/low"}],"competitor_rankings":[{"name":"rakip adı","price_range":"€X-€Y","strengths":["güçlü yön türkçe"],"weaknesses":["zayıf yön türkçe"],"threat_level":"high/medium/low"}],"chatbot_tips":"türkçe ipucu","ad_tips":"türkçe ipucu"}`;
 
   try {
     const response = await claude.messages.create({
