@@ -52,7 +52,7 @@ async function callGoogleAds(query) {
   const accessToken = await getAccessToken();
 
   const res = await fetch(
-    `https://googleads.googleapis.com/v18/customers/${CUSTOMER_ID}/googleAds:searchStream`,
+    `https://googleads.googleapis.com/v23/customers/${CUSTOMER_ID}/googleAds:searchStream`,
     {
       method: 'POST',
       headers: {
