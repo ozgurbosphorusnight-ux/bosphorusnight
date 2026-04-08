@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import { runFullAnalysis } from '../lib/competitor-analyzer.js';
+import { runFullAnalysis } from '../_lib/competitor-analyzer.js';
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
 

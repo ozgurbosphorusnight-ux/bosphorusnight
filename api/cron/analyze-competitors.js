@@ -1,4 +1,4 @@
-import { runFullAnalysis } from '../lib/competitor-analyzer.js';
+import { runFullAnalysis } from '../_lib/competitor-analyzer.js';
 
 // Vercel Cron Job — günlük rakip analizi
 // vercel.json'da schedule tanımlanacak

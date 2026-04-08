@@ -1,5 +1,5 @@
-import { sendWhatsAppMessage } from './lib/whatsapp.js';
-import { generateReply } from './lib/chatbot.js';
+import { sendWhatsAppMessage } from './_lib/whatsapp.js';
+import { generateReply } from './_lib/chatbot.js';
 
 // Meta webhook verification + incoming message handler
 export default async function handler(req, res) {
