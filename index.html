@@ -11,16 +11,25 @@
     gtag('config', 'AW-18073952031');
 
     // WhatsApp tıklama dönüşüm takibi
-    function trackWhatsAppConversion() {
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') { window.location = url; }
+      };
       gtag('event', 'conversion', {
         'send_to': 'AW-18073952031/nyO1CLmfrZgcEJ--qqpD',
         'value': 1.0,
         'currency': 'TRY',
+        'transaction_id': '',
+        'event_callback': callback
       });
+      return false;
     }
     document.addEventListener('click', function(e) {
       var link = e.target.closest('a[href*="wa.me"]');
-      if (link) trackWhatsAppConversion();
+      if (link) {
+        gtag_report_conversion(link.href);
+        e.preventDefault();
+      }
     });
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
