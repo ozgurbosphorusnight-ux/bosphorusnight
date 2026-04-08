@@ -1,9 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
+import { upsertCustomer, saveMessage, getMessageHistory } from './database.js';
 
 const client = new Anthropic({ apiKey: process.env.CLAUDE_API_KEY });
-
-// Müşteri bilgisi — basit in-memory (ileride veritabanına taşınabilir)
-const conversations = new Map();
 
 const SYSTEM_PROMPT = `You are the booking assistant for Bosphorus Night, a premium dinner cruise company in Istanbul.
 
@@ -66,35 +64,27 @@ RULES:
 - NEVER share made-up booking IDs or confirmation numbers`;
 
 export async function generateReply(customerMessage, phoneNumber) {
-  // Konuşma geçmişini al veya yeni başlat
-  if (!conversations.has(phoneNumber)) {
-    conversations.set(phoneNumber, []);
-  }
-  const history = conversations.get(phoneNumber);
+  // Müşteriyi kaydet/güncelle
+  await upsertCustomer(phoneNumber);
 
-  // Müşteri mesajını ekle
-  history.push({ role: 'user', content: customerMessage });
+  // Mesajı veritabanına kaydet
+  await saveMessage(phoneNumber, 'user', customerMessage);
 
-  // Son 20 mesajı tut (token limiti için)
-  const recentHistory = history.slice(-20);
+  // Geçmişi veritabanından al
+  const history = await getMessageHistory(phoneNumber, 20);
 
   try {
     const response = await client.messages.create({
       model: 'claude-sonnet-4-6-20250514',
       max_tokens: 500,
       system: SYSTEM_PROMPT,
-      messages: recentHistory,
+      messages: history,
     });
 
     const reply = response.content[0].text;
 
-    // AI cevabını geçmişe ekle
-    history.push({ role: 'assistant', content: reply });
-
-    // Geçmiş çok uzarsa kırp
-    if (history.length > 40) {
-      conversations.set(phoneNumber, history.slice(-20));
-    }
+    // AI cevabını veritabanına kaydet
+    await saveMessage(phoneNumber, 'assistant', reply);
 
     return reply;
   } catch (error) {
