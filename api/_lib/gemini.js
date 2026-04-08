@@ -2,7 +2,7 @@
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent';
 
-export async function askGemini(prompt) {
+export async function askGemini(prompt, retries = 2) {
   const response = await fetch(`${GEMINI_URL}?key=${GEMINI_API_KEY}`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -14,6 +14,12 @@ export async function askGemini(prompt) {
       },
     }),
   });
+
+  if (response.status === 429 && retries > 0) {
+    console.log(`Gemini rate limited, waiting 30s... (${retries} retries left)`);
+    await new Promise(r => setTimeout(r, 30000));
+    return askGemini(prompt, retries - 1);
+  }
 
   if (!response.ok) {
     const error = await response.text();
