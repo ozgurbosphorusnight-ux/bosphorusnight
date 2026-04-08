@@ -75,7 +75,7 @@ export async function generateReply(customerMessage, phoneNumber) {
 
   try {
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-6-20250514',
+      model: 'claude-sonnet-4-5-20241022',
       max_tokens: 500,
       system: SYSTEM_PROMPT,
       messages: history,

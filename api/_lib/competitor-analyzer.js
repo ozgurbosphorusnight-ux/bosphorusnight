@@ -164,7 +164,7 @@ Be specific, actionable, and data-driven. Return ONLY valid JSON.`;
 
   try {
     const response = await claude.messages.create({
-      model: 'claude-sonnet-4-6-20250514',
+      model: 'claude-sonnet-4-5-20241022',
       max_tokens: 3000,
       messages: [{ role: 'user', content: prompt }],
     });
