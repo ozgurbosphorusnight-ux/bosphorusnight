@@ -113,54 +113,25 @@ export async function generateReport(scanResults) {
     .select('*, competitors(name)')
     .gte('detected_at', weekAgo);
 
-  const prompt = `You are a competitive strategy analyst for Bosphorus Night, a dinner cruise company in Istanbul.
+  // Sadece başarılı taramaları ve özet bilgileri gönder
+  const compactResults = scanResults
+    .filter(r => r.status === 'ok' && r.data)
+    .map(r => ({
+      name: r.competitor,
+      min: r.data.price_min,
+      max: r.data.price_max,
+      currency: r.data.currency,
+      whatsapp: r.data.has_whatsapp,
+      transfer: r.data.has_transfer,
+      weaknesses: r.data.weaknesses,
+    }));
 
-OUR PACKAGES:
-- Standard: €35 (buffet dinner, live music, 3-hour cruise)
-- Premium: €50 (better seating, welcome drink, richer menu)
-- VIP: €80 (private table, unlimited drinks, hotel transfer)
+  const prompt = `Competitive analysis for Bosphorus Night (Istanbul dinner cruise). Our prices: Standard €35, Premium €50, VIP €80.
 
-COMPETITOR SCAN RESULTS:
-${JSON.stringify(scanResults, null, 2)}
+Competitors: ${JSON.stringify(compactResults)}
 
-RECENT PRICE CHANGES:
-${JSON.stringify(priceChanges || [], null, 2)}
-
-Write a competitive analysis report in the following JSON format:
-
-{
-  "summary": "2-3 sentence executive summary",
-  "market_position": "Where we stand vs competitors (cheapest, mid-range, premium)",
-  "price_comparison": {
-    "our_min": 35,
-    "market_avg_min": number,
-    "cheapest_competitor": "name",
-    "cheapest_price": number
-  },
-  "threats": ["list of competitive threats"],
-  "opportunities": ["list of opportunities we can exploit"],
-  "recommendations": [
-    {
-      "action": "what to do",
-      "reason": "why",
-      "priority": "high/medium/low",
-      "affects": "pricing/marketing/service/chatbot"
-    }
-  ],
-  "competitor_rankings": [
-    {
-      "name": "competitor name",
-      "price_range": "€X - €Y",
-      "strengths": ["list"],
-      "weaknesses": ["list"],
-      "threat_level": "high/medium/low"
-    }
-  ],
-  "chatbot_tips": "What our WhatsApp chatbot should emphasize based on competitive landscape",
-  "ad_tips": "Suggestions for Google Ads keywords or messaging based on competitor analysis"
-}
-
-Be specific, actionable, and data-driven. Return ONLY valid JSON.`;
+Return ONLY this JSON (no extra text):
+{"summary":"2 sentences","recommendations":[{"action":"what","reason":"why","priority":"high/medium/low"}],"competitor_rankings":[{"name":"name","price_range":"€X-€Y","strengths":["s"],"weaknesses":["w"],"threat_level":"high/medium/low"}],"chatbot_tips":"tip","ad_tips":"tip"}`;
 
   try {
     const response = await claude.messages.create({
