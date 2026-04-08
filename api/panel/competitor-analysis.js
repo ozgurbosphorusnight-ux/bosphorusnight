@@ -1,5 +1,5 @@
 import { createClient } from '@supabase/supabase-js';
-import { scanCompetitorSite } from '../_lib/gemini.js';
+import { scanCompetitorSite, analyzeTrends } from '../_lib/gemini.js';
 import { generateReport } from '../_lib/competitor-analyzer.js';
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
@@ -73,6 +73,16 @@ export default async function handler(req, res) {
         .order('created_at', { ascending: false })
         .limit(20);
       return res.status(200).json(data || []);
+    }
+
+    // Trend analizi
+    if (action === 'trends') {
+      try {
+        const trends = await analyzeTrends();
+        return res.status(200).json(trends);
+      } catch (error) {
+        return res.status(500).json({ error: error.message });
+      }
     }
 
     return res.status(400).json({ error: 'action parametresi gerekli' });

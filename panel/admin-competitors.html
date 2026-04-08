@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rakip Analiz — Admin</title>
+  <title>Araştırma — Admin</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,7 +22,7 @@
       <h1 class="text-gold font-bold text-lg">ADMIN</h1>
       <nav class="flex gap-1">
         <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
-        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">Rakip Analiz</a>
+        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">Araştırma</a>
       </nav>
     </div>
     <div class="flex items-center gap-3">
@@ -31,47 +31,72 @@
     </div>
   </header>
 
-  <div class="p-4 max-w-5xl mx-auto">
+  <div class="p-4 max-w-6xl mx-auto">
 
-    <!-- Başlık + Buton -->
+    <!-- Başlık + Butonlar -->
     <div class="flex items-center justify-between mb-6">
       <div>
-        <h2 class="text-gold font-bold text-xl">Rakip Analiz</h2>
+        <h2 class="text-gold font-bold text-xl">Araştırma</h2>
         <p class="text-white/40 text-xs mt-1" id="lastScanDate">Son tarama: —</p>
       </div>
-      <button onclick="runAnalysis()" id="analyzeBtn" class="bg-gold text-navy-dark font-semibold px-5 py-2.5 rounded-lg text-sm">Analiz Çalıştır</button>
+      <div class="flex gap-2">
+        <button onclick="loadTrends()" id="trendsBtn" class="bg-navy-light border border-gold/30 text-gold font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gold/10">Trendler</button>
+        <button onclick="runAnalysis()" id="analyzeBtn" class="bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm">Rakipleri Tara</button>
+      </div>
     </div>
 
-    <!-- AI Rapor -->
+    <!-- ==================== PAZAR FİYAT HARİTASI ==================== -->
+    <div class="bg-navy-light rounded-xl p-5 border border-white/5 mb-6">
+      <h3 class="text-sm font-semibold text-gold mb-4">Pazar Fiyat Haritası</h3>
+      <div id="priceMap" class="space-y-2">
+        <div class="text-white/30 text-center py-4 text-sm">Veri bekleniyor...</div>
+      </div>
+      <div class="mt-4 pt-3 border-t border-white/5">
+        <p class="text-white/40 text-xs">Altın çubuklar = Bosphorus Night (Biz) · Gri çubuklar = Rakipler</p>
+      </div>
+    </div>
+
+    <!-- ==================== AI RAPOR ==================== -->
     <div class="bg-navy-light rounded-xl p-5 border border-white/5 mb-6">
       <h3 class="text-sm font-semibold text-gold mb-2">AI Rapor</h3>
-      <p id="reportSummary" class="text-white text-sm leading-relaxed">Henüz rapor yok. Analizi çalıştırın.</p>
+      <p id="reportSummary" class="text-white text-sm leading-relaxed">Henüz rapor yok. "Rakipleri Tara" butonuna basın.</p>
       <p id="reportDate" class="text-white/30 text-xs mt-2"></p>
     </div>
 
-    <!-- Öneriler -->
+    <!-- ==================== ÖNERİLER ==================== -->
     <div id="recommendationsSection" class="mb-6 space-y-2"></div>
 
-    <!-- Rakip Kartları -->
+    <!-- ==================== TRENDLER ==================== -->
+    <div id="trendsSection" class="mb-6 hidden">
+      <h3 class="text-sm font-semibold text-gold mb-3">Arama Trendleri & Anahtar Kelimeler</h3>
+      <div id="trendsContent" class="space-y-3"></div>
+    </div>
+
+    <!-- ==================== RAKİP KARTLARI ==================== -->
     <h3 class="text-sm font-semibold text-gold mb-3">Rakipler</h3>
     <div id="competitorCards" class="space-y-4 mb-6">
       <div class="text-white/30 text-center py-8">Yükleniyor...</div>
     </div>
 
-    <!-- Fiyat Değişiklikleri -->
+    <!-- ==================== FİYAT DEĞİŞİKLİKLERİ ==================== -->
     <h3 class="text-sm font-semibold text-gold mb-3">Son Fiyat Değişiklikleri</h3>
-    <div id="priceChanges" class="space-y-2"></div>
+    <div id="priceChanges" class="space-y-2 mb-8"></div>
   </div>
 
   <script>
     const API = '/api/panel';
     const token = localStorage.getItem('admin_token');
     const role = localStorage.getItem('admin_role');
-
     if (!token) window.location.href = '/panel/admin-login.html';
     if (role !== 'admin_sahip') { alert('Yetkisiz'); window.location.href = '/panel/admin.html'; }
-
     document.getElementById('adminName').textContent = localStorage.getItem('admin_name') || 'Admin';
+
+    // Bizim fiyatlar
+    const OUR_PACKAGES = [
+      { name: 'Standard', price: 35 },
+      { name: 'Premium', price: 50 },
+      { name: 'VIP', price: 80 },
+    ];
 
     async function api(path, opts = {}) {
       const res = await fetch(`${API}${path}`, {
@@ -82,27 +107,31 @@
       return res.json();
     }
 
+    // ========= SAYFA YÜKLE =========
     async function loadPage() {
-      // Son rapor
-      const report = await api('/competitor-analysis?action=report');
+      const [report, competitors, changes] = await Promise.all([
+        api('/competitor-analysis?action=report'),
+        api('/competitor-analysis?action=competitors'),
+        api('/competitor-analysis?action=price-history'),
+      ]);
+
+      // Rapor
       if (report?.recommendations) {
         const r = report.recommendations;
         document.getElementById('reportSummary').textContent = r.summary || report.content || '';
         document.getElementById('reportDate').textContent = report.created_at
           ? new Date(report.created_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' })
           : '';
-
         // Öneriler
-        const recSection = document.getElementById('recommendationsSection');
         if (r.recommendations?.length) {
-          recSection.innerHTML = '<h3 class="text-sm font-semibold text-gold mb-3">Öneriler</h3>' +
+          document.getElementById('recommendationsSection').innerHTML = '<h3 class="text-sm font-semibold text-gold mb-3">Öneriler</h3>' +
             r.recommendations.map(rec => {
-              const prColors = { high: 'border-red-500/30 bg-red-500/5', medium: 'border-yellow-500/30 bg-yellow-500/5', low: 'border-green-500/30 bg-green-500/5' };
-              const prLabels = { high: 'Yüksek', medium: 'Orta', low: 'Düşük' };
-              return `<div class="rounded-xl p-4 border ${prColors[rec.priority] || 'border-white/10'} text-sm">
+              const pr = { high: ['bg-red-500/10 border-red-500/30', 'bg-red-500/20 text-red-400', 'Yüksek'], medium: ['bg-yellow-500/10 border-yellow-500/30', 'bg-yellow-500/20 text-yellow-400', 'Orta'], low: ['bg-green-500/10 border-green-500/30', 'bg-green-500/20 text-green-400', 'Düşük'] };
+              const p = pr[rec.priority] || pr.low;
+              return `<div class="rounded-xl p-4 border ${p[0]}">
                 <div class="flex justify-between items-start mb-1">
-                  <span class="text-white font-medium">${rec.action}</span>
-                  <span class="text-xs px-2 py-0.5 rounded-full ${rec.priority === 'high' ? 'bg-red-500/20 text-red-400' : rec.priority === 'medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-green-500/20 text-green-400'}">${prLabels[rec.priority] || rec.priority}</span>
+                  <span class="text-white font-medium text-sm">${rec.action}</span>
+                  <span class="text-xs px-2 py-0.5 rounded-full ${p[1]}">${p[2]}</span>
                 </div>
                 <p class="text-white/50 text-xs mt-1">${rec.reason}</p>
               </div>`;
@@ -110,14 +139,80 @@
         }
       }
 
-      // Rakip kartları (tarama verileriyle)
-      const competitors = await api('/competitor-analysis?action=competitors');
-      const cards = document.getElementById('competitorCards');
+      // Fiyat haritası
+      renderPriceMap(competitors);
 
-      if (!competitors?.length) {
-        cards.innerHTML = '<div class="text-white/30 text-center py-8">Rakip bulunamadı</div>';
-        return;
+      // Rakip kartları
+      renderCompetitorCards(competitors);
+
+      // Son tarama tarihi
+      const lastScan = (competitors || []).find(c => c.last_scan?.scanned_at);
+      if (lastScan) {
+        document.getElementById('lastScanDate').textContent = 'Son tarama: ' + new Date(lastScan.last_scan.scanned_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
       }
+
+      // Fiyat değişiklikleri
+      const cd = document.getElementById('priceChanges');
+      if (changes?.length) {
+        cd.innerHTML = changes.map(c => {
+          const up = c.change_pct > 0;
+          return `<div class="bg-navy-light rounded-lg p-3 border border-white/5 flex items-center justify-between">
+            <div><span class="text-white text-sm">${c.competitors?.name || ''}</span> <span class="text-white/40 text-xs ml-2">${c.package_name || ''}</span></div>
+            <div><span class="text-white/40 text-xs line-through">€${c.old_price}</span> <span class="text-white text-sm ml-1">€${c.new_price}</span> <span class="text-xs ml-1 ${up ? 'text-red-400' : 'text-green-400'}">${up ? '↑' : '↓'}${Math.abs(c.change_pct)}%</span></div>
+          </div>`;
+        }).join('');
+      } else {
+        cd.innerHTML = '<div class="text-white/30 text-center py-4 text-sm">Henüz fiyat değişikliği yok</div>';
+      }
+    }
+
+    // ========= FİYAT HARİTASI =========
+    function renderPriceMap(competitors) {
+      const map = document.getElementById('priceMap');
+      if (!competitors?.length) return;
+
+      const allPrices = [];
+      const items = [];
+
+      // Biz
+      OUR_PACKAGES.forEach(p => allPrices.push(p.price));
+      items.push({ name: 'BİZ — Bosphorus Night', min: 35, max: 80, isUs: true });
+
+      // Rakipler
+      competitors.forEach(c => {
+        if (c.last_scan?.price_min) {
+          allPrices.push(c.last_scan.price_min, c.last_scan.price_max);
+          items.push({ name: c.name, min: c.last_scan.price_min, max: c.last_scan.price_max, isUs: false });
+        }
+      });
+
+      if (!allPrices.length) { map.innerHTML = '<div class="text-white/30 text-center py-4 text-sm">Fiyat verisi yok</div>'; return; }
+
+      const maxPrice = Math.max(...allPrices) + 10;
+
+      // Sırala: en ucuzdan en pahalıya
+      items.sort((a, b) => a.min - b.min);
+
+      map.innerHTML = items.map(item => {
+        const leftPct = (item.min / maxPrice * 100).toFixed(1);
+        const widthPct = ((item.max - item.min) / maxPrice * 100).toFixed(1);
+        const barColor = item.isUs ? 'bg-gold' : 'bg-white/20';
+        const textColor = item.isUs ? 'text-gold font-bold' : 'text-white/60';
+
+        return `<div class="flex items-center gap-3">
+          <div class="w-40 text-right text-xs ${textColor} truncate">${item.name}</div>
+          <div class="flex-1 bg-navy-dark rounded-full h-6 relative overflow-hidden">
+            <div class="${barColor} h-full rounded-full absolute" style="left:${leftPct}%;width:${Math.max(parseFloat(widthPct), 2)}%"></div>
+          </div>
+          <div class="w-24 text-xs ${textColor}">€${item.min} - €${item.max}</div>
+        </div>`;
+      }).join('');
+    }
+
+    // ========= RAKİP KARTLARI =========
+    function renderCompetitorCards(competitors) {
+      const cards = document.getElementById('competitorCards');
+      if (!competitors?.length) { cards.innerHTML = '<div class="text-white/30 text-center py-8">Rakip yok</div>'; return; }
 
       cards.innerHTML = competitors.map(comp => {
         const scan = comp.last_scan;
@@ -127,107 +222,154 @@
 
         return `
           <div class="bg-navy-light rounded-xl border border-white/5 overflow-hidden">
-            <!-- Başlık -->
             <div class="p-4 flex items-start justify-between border-b border-white/5">
               <div>
                 <a href="${comp.url}" target="_blank" class="text-white font-bold text-base hover:text-gold transition-colors">${comp.name} ↗</a>
                 <p class="text-white/30 text-xs mt-0.5">${comp.domain}</p>
               </div>
               <div class="text-right">
-                <span class="text-gold font-bold text-lg">${scan?.price_min && scan?.price_max ? `€${scan.price_min}-${scan.price_max}` : 'Bilinmiyor'}</span>
+                <span class="text-gold font-bold text-lg">${scan?.price_min && scan?.price_max ? `€${scan.price_min}-€${scan.price_max}` : '?'}</span>
                 <p class="text-white/30 text-xs">${scan?.scanned_at ? new Date(scan.scanned_at).toLocaleDateString('tr-TR') : 'Taranmadı'}</p>
               </div>
             </div>
 
             ${hasData ? `
-            <!-- Özellikler -->
-            <div class="px-4 py-2 flex gap-3 border-b border-white/5 text-xs">
+            <div class="px-4 py-2 flex flex-wrap gap-2 border-b border-white/5 text-xs">
               ${data.has_whatsapp ? '<span class="text-green-400">✓ WhatsApp</span>' : '<span class="text-red-400">✗ WhatsApp</span>'}
               ${data.has_transfer ? '<span class="text-green-400">✓ Transfer</span>' : '<span class="text-red-400">✗ Transfer</span>'}
               ${data.has_live_music ? '<span class="text-green-400">✓ Canlı Müzik</span>' : '<span class="text-red-400">✗ Canlı Müzik</span>'}
-              ${data.has_dinner ? '<span class="text-green-400">✓ Akşam Yemeği</span>' : '<span class="text-red-400">✗ Akşam Yemeği</span>'}
+              ${data.has_dinner ? '<span class="text-green-400">✓ Yemek</span>' : '<span class="text-red-400">✗ Yemek</span>'}
+              ${data.mobile_friendly ? '<span class="text-green-400">✓ Mobil</span>' : '<span class="text-red-400">✗ Mobil</span>'}
+              ${data.site_quality ? `<span class="text-white/40">Site: ${data.site_quality}</span>` : ''}
             </div>
 
-            <!-- Paketler -->
             ${packages.length ? `
             <div class="px-4 py-3 border-b border-white/5">
               <p class="text-white/50 text-xs font-semibold mb-2">PAKETLER</p>
-              <div class="space-y-3">
+              <div class="space-y-2">
                 ${packages.map(pkg => `
                   <div class="bg-navy-dark/50 rounded-lg p-3">
                     <div class="flex justify-between items-center mb-1">
                       <span class="text-white text-sm font-medium">${pkg.name || 'Paket'}</span>
-                      <span class="text-gold font-bold text-sm">€${pkg.price || '?'}</span>
+                      <span class="text-gold font-bold text-sm">${pkg.currency || '€'}${pkg.price || '?'}</span>
                     </div>
-                    ${pkg.inclusions?.length ? `
-                      <p class="text-green-400/70 text-xs">Dahil: ${pkg.inclusions.join(' · ')}</p>
-                    ` : ''}
-                    ${pkg.exclusions?.length ? `
-                      <p class="text-red-400/70 text-xs mt-1">Hariç: ${pkg.exclusions.join(' · ')}</p>
-                    ` : ''}
+                    ${pkg.inclusions?.length ? `<p class="text-green-400/70 text-xs">✓ ${pkg.inclusions.join(' · ')}</p>` : ''}
+                    ${pkg.exclusions?.length ? `<p class="text-red-400/70 text-xs mt-1">✗ ${pkg.exclusions.join(' · ')}</p>` : ''}
                   </div>
                 `).join('')}
               </div>
             </div>` : ''}
 
-            <!-- Telefon -->
-            ${data.phone_numbers?.length ? `
-            <div class="px-4 py-2 border-b border-white/5 text-xs text-white/40">
-              Tel: ${data.phone_numbers.join(', ')}
+            ${data.phone_numbers?.length ? `<div class="px-4 py-2 border-b border-white/5 text-xs text-white/40">Tel: ${data.phone_numbers.join(', ')}</div>` : ''}
+
+            ${data.estimated_google_ads !== undefined || data.estimated_ad_keywords?.length ? `
+            <div class="px-4 py-2 border-b border-white/5">
+              <p class="text-white/50 text-xs font-semibold mb-1">REKLAM TAHMİNİ</p>
+              <p class="text-xs ${data.estimated_google_ads ? 'text-yellow-400' : 'text-white/30'}">${data.estimated_google_ads ? '📢 Google reklam veriyor (tahmini)' : 'Reklam tespit edilemedi'}</p>
+              ${data.estimated_ad_keywords?.length ? `<p class="text-xs text-white/40 mt-1">Kelimeler: ${data.estimated_ad_keywords.join(', ')}</p>` : ''}
+              ${data.estimated_ad_strategy ? `<p class="text-xs text-white/40 mt-1">${data.estimated_ad_strategy}</p>` : ''}
             </div>` : ''}
 
-            <!-- Güçlü/Zayıf -->
             <div class="px-4 py-3 grid grid-cols-2 gap-3">
               <div>
                 <p class="text-green-400 text-xs font-semibold mb-1">GÜÇLÜ</p>
-                ${(data.unique_features || data.strengths || []).map(s => `<p class="text-green-400/70 text-xs">+ ${s}</p>`).join('') || '<p class="text-white/20 text-xs">—</p>'}
+                ${(data.unique_features || []).map(s => `<p class="text-green-400/70 text-xs">+ ${s}</p>`).join('') || '<p class="text-white/20 text-xs">—</p>'}
               </div>
               <div>
                 <p class="text-red-400 text-xs font-semibold mb-1">ZAYIF</p>
                 ${(data.weaknesses || []).map(w => `<p class="text-red-400/70 text-xs">- ${w}</p>`).join('') || '<p class="text-white/20 text-xs">—</p>'}
               </div>
             </div>
-            ` : `
-            <div class="p-4 text-white/30 text-sm text-center">Henüz taranmadı veya veri alınamadı</div>
-            `}
+            ` : `<div class="p-4 text-white/30 text-sm text-center">Henüz taranmadı veya veri alınamadı</div>`}
           </div>`;
       }).join('');
-
-      // Son tarama tarihi
-      const lastScan = competitors.find(c => c.last_scan?.scanned_at);
-      if (lastScan) {
-        document.getElementById('lastScanDate').textContent = 'Son tarama: ' + new Date(lastScan.last_scan.scanned_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
-      }
-
-      // Fiyat değişiklikleri
-      const changes = await api('/competitor-analysis?action=price-history');
-      const changesDiv = document.getElementById('priceChanges');
-      if (changes?.length) {
-        changesDiv.innerHTML = changes.map(c => {
-          const isUp = c.change_pct > 0;
-          return `<div class="bg-navy-light rounded-lg p-3 border border-white/5 flex items-center justify-between">
-            <div>
-              <span class="text-white text-sm">${c.competitors?.name || ''}</span>
-              <span class="text-white/40 text-xs ml-2">${c.package_name || ''}</span>
-            </div>
-            <div class="text-right">
-              <span class="text-white/40 text-xs line-through">€${c.old_price}</span>
-              <span class="text-white text-sm ml-1">€${c.new_price}</span>
-              <span class="text-xs ml-1 ${isUp ? 'text-red-400' : 'text-green-400'}">${isUp ? '↑' : '↓'}${Math.abs(c.change_pct)}%</span>
-            </div>
-          </div>`;
-        }).join('');
-      } else {
-        changesDiv.innerHTML = '<div class="text-white/30 text-center py-4 text-sm">Henüz fiyat değişikliği tespit edilmedi</div>';
-      }
     }
 
+    // ========= TRENDLER =========
+    async function loadTrends() {
+      const btn = document.getElementById('trendsBtn');
+      btn.textContent = 'Yükleniyor...';
+      btn.disabled = true;
+
+      const section = document.getElementById('trendsSection');
+      const content = document.getElementById('trendsContent');
+      section.classList.remove('hidden');
+
+      try {
+        const data = await api('/competitor-analysis?action=trends');
+        if (data?.error) { content.innerHTML = `<div class="text-red-400 text-sm">${data.error}</div>`; return; }
+
+        let html = '';
+
+        // Sezon özeti
+        if (data.season_summary) {
+          html += `<div class="bg-navy-light rounded-xl p-4 border border-gold/20">
+            <p class="text-gold text-xs font-semibold mb-1">SEZON ÖZETİ</p>
+            <p class="text-white text-sm">${data.season_summary}</p>
+          </div>`;
+        }
+
+        // Anahtar kelimeler tablosu
+        if (data.keywords?.length) {
+          html += `<div class="bg-navy-light rounded-xl p-4 border border-white/5 overflow-x-auto">
+            <p class="text-white/50 text-xs font-semibold mb-3">ANAHTAR KELİMELER</p>
+            <table class="w-full text-xs">
+              <thead><tr class="text-white/40 border-b border-white/5">
+                <th class="text-left py-2 pr-3">Kelime</th>
+                <th class="text-center py-2 px-2">Trend</th>
+                <th class="text-center py-2 px-2">Rekabet</th>
+                <th class="text-center py-2 px-2">Tklm. Maliyet</th>
+                <th class="text-left py-2 px-2">Yoğun Aylar</th>
+                <th class="text-left py-2 pl-2">Not</th>
+              </tr></thead>
+              <tbody>${data.keywords.map(k => {
+                const trendColor = k.trend?.includes('yüksel') ? 'text-green-400' : k.trend?.includes('düş') ? 'text-red-400' : 'text-yellow-400';
+                const compColor = k.competition?.includes('yüksek') ? 'text-red-400' : k.competition?.includes('düşük') ? 'text-green-400' : 'text-yellow-400';
+                return `<tr class="border-b border-white/5">
+                  <td class="py-2 pr-3 text-white font-medium">${k.keyword}</td>
+                  <td class="py-2 px-2 text-center ${trendColor}">${k.trend || '—'}</td>
+                  <td class="py-2 px-2 text-center ${compColor}">${k.competition || '—'}</td>
+                  <td class="py-2 px-2 text-center text-gold">${k.estimated_cpc_eur ? '€' + k.estimated_cpc_eur : '—'}</td>
+                  <td class="py-2 px-2 text-white/60">${(k.peak_months || []).join(', ') || '—'}</td>
+                  <td class="py-2 pl-2 text-white/40">${k.notes || '—'}</td>
+                </tr>`;
+              }).join('')}</tbody>
+            </table>
+          </div>`;
+        }
+
+        // Önerilen kelimeler
+        if (data.recommended_keywords?.length) {
+          html += `<div class="bg-navy-light rounded-xl p-4 border border-green-500/20">
+            <p class="text-green-400 text-xs font-semibold mb-2">ÖNERİLEN ANAHTAR KELİMELER</p>
+            <div class="flex flex-wrap gap-2">${data.recommended_keywords.map(k => `<span class="bg-green-500/10 text-green-400 px-2 py-1 rounded text-xs">${k}</span>`).join('')}</div>
+          </div>`;
+        }
+
+        // Kaçınılacak kelimeler
+        if (data.avoid_keywords?.length) {
+          html += `<div class="bg-navy-light rounded-xl p-4 border border-red-500/20">
+            <p class="text-red-400 text-xs font-semibold mb-2">KAÇINILACAK KELİMELER</p>
+            <div class="flex flex-wrap gap-2">${data.avoid_keywords.map(k => `<span class="bg-red-500/10 text-red-400 px-2 py-1 rounded text-xs">${k}</span>`).join('')}</div>
+          </div>`;
+        }
+
+        content.innerHTML = html || '<div class="text-white/30 text-sm">Trend verisi alınamadı</div>';
+      } catch (e) {
+        content.innerHTML = `<div class="text-red-400 text-sm">Hata: ${e.message}</div>`;
+      }
+
+      btn.textContent = 'Trendler';
+      btn.disabled = false;
+    }
+
+    // ========= ANALİZ ÇALIŞTIR =========
     async function runAnalysis() {
       const btn = document.getElementById('analyzeBtn');
       btn.disabled = true;
 
       const competitors = await api('/competitor-analysis?action=competitors');
-      if (!competitors?.length) { btn.textContent = 'Analiz Çalıştır'; btn.disabled = false; return; }
+      if (!competitors?.length) { btn.textContent = 'Rakipleri Tara'; btn.disabled = false; return; }
 
       for (let i = 0; i < competitors.length; i++) {
         btn.textContent = `Taranıyor ${i + 1}/${competitors.length}: ${competitors[i].name}`;
@@ -242,14 +384,11 @@
 
       btn.textContent = 'Rapor hazırlanıyor...';
       try {
-        await api('/competitor-analysis', {
-          method: 'POST',
-          body: JSON.stringify({ action: 'report' })
-        });
+        await api('/competitor-analysis', { method: 'POST', body: JSON.stringify({ action: 'report' }) });
       } catch (e) {}
 
       await loadPage();
-      btn.textContent = 'Analiz Çalıştır';
+      btn.textContent = 'Rakipleri Tara';
       btn.disabled = false;
     }
 

@@ -33,56 +33,101 @@ export async function askGemini(prompt, retries = 2) {
 
 // Rakip sitesini tara ve bilgileri çıkar
 export async function scanCompetitorSite(url, name) {
-  const prompt = `You are a competitive intelligence analyst for a Bosphorus dinner cruise company in Istanbul.
+  const prompt = `Sen İstanbul Boğaz cruise sektöründe rekabet analizi uzmanısın.
 
-Visit and analyze this competitor's website: ${url} (${name})
+Bu rakip siteyi analiz et: ${url} (${name})
 
-Extract the following information in JSON format. Be precise with prices and package names.
+TÜM METİNLERİ TÜRKÇE YAZ. JSON formatında döndür:
 
 {
   "packages": [
     {
-      "name": "package name",
-      "price": numeric_price,
-      "currency": "EUR or USD or TRY",
-      "inclusions": ["list", "of", "what's included"],
-      "exclusions": ["list", "of", "what's not included"]
+      "name": "paket adı",
+      "price": sayısal_fiyat,
+      "currency": "EUR veya USD veya TRY",
+      "inclusions": ["dahil olan şeyler türkçe"],
+      "exclusions": ["dahil olmayan şeyler türkçe"]
     }
   ],
-  "price_min": lowest_price_numeric,
-  "price_max": highest_price_numeric,
-  "currency": "primary currency used",
+  "price_min": en_düşük_fiyat,
+  "price_max": en_yüksek_fiyat,
+  "currency": "ana para birimi",
   "has_whatsapp": true/false,
   "has_transfer": true/false,
   "has_live_music": true/false,
   "has_dinner": true/false,
-  "phone_numbers": ["list of phone numbers found"],
-  "special_offers": "any current promotions or discounts",
-  "departure_location": "where the cruise departs from",
-  "cruise_duration": "how long the cruise lasts",
-  "unique_features": ["what makes them stand out"],
-  "weaknesses": ["potential weak points based on site content"],
-  "booking_methods": ["website", "whatsapp", "phone", "etc"],
-  "languages_supported": ["en", "tr", "ar", "etc"],
-  "google_ads_visible": true/false,
-  "site_quality": "poor/average/good/excellent",
-  "mobile_friendly": true/false
+  "phone_numbers": ["telefon numaraları"],
+  "special_offers": "güncel kampanya veya indirimler türkçe",
+  "departure_location": "kalkış noktası",
+  "cruise_duration": "süre",
+  "unique_features": ["öne çıkan özellikleri türkçe"],
+  "weaknesses": ["zayıf yönleri türkçe"],
+  "booking_methods": ["rezervasyon yöntemleri"],
+  "languages_supported": ["desteklenen diller"],
+  "site_quality": "zayıf/orta/iyi/mükemmel",
+  "mobile_friendly": true/false,
+  "estimated_google_ads": true/false,
+  "estimated_ad_keywords": ["tahmini reklam kelimeleri"],
+  "estimated_ad_strategy": "reklam stratejisi hakkında tahmin türkçe"
 }
 
-IMPORTANT:
-- Return ONLY valid JSON, no other text
-- If you can't find specific info, use null
-- Prices should be numeric (no currency symbols)
-- Be accurate with the data`;
+ÖNEMLİ:
+- SADECE geçerli JSON döndür, başka metin yazma
+- Bulamadığın bilgi için null kullan
+- Fiyatlar sayısal olsun (para birimi simgesi olmadan)
+- Tüm açıklamalar TÜRKÇE olsun
+- Reklam bilgisi tahmin bazlı olabilir, site içeriğinden çıkar`;
 
   const result = await askGemini(prompt);
 
-  // JSON parse et
   try {
     const cleaned = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
     return JSON.parse(cleaned);
   } catch (e) {
     console.error('Failed to parse Gemini response:', e);
     return { raw_response: result, parse_error: true };
+  }
+}
+
+// Google Trends ve arama kelimeleri analizi
+export async function analyzeTrends() {
+  const prompt = `Sen İstanbul turizm sektöründe dijital pazarlama uzmanısın.
+
+Şu arama kelimeleri hakkında bilgi ver:
+- bosphorus cruise
+- istanbul dinner cruise
+- bosphorus dinner cruise
+- boat tour istanbul
+- istanbul night cruise
+- bosphorus boat tour
+
+TÜM METİNLERİ TÜRKÇE YAZ. JSON formatında döndür:
+
+{
+  "keywords": [
+    {
+      "keyword": "arama kelimesi",
+      "trend": "yükseliyor/düşüyor/stabil",
+      "peak_months": ["en yoğun aylar"],
+      "low_months": ["en düşük aylar"],
+      "competition": "düşük/orta/yüksek",
+      "estimated_cpc_eur": tahmini_tıklama_başı_maliyet,
+      "notes": "türkçe not"
+    }
+  ],
+  "season_summary": "sezon özeti türkçe - hangi aylar yoğun, hangi aylar düşük, ne zaman reklam artırılmalı",
+  "recommended_keywords": ["önerilen ek arama kelimeleri"],
+  "avoid_keywords": ["kaçınılması gereken kelimeler ve nedeni"]
+}
+
+ÖNEMLİ: SADECE geçerli JSON döndür. Tüm açıklamalar TÜRKÇE.`;
+
+  const result = await askGemini(prompt);
+  try {
+    const cleaned = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+    return JSON.parse(cleaned);
+  } catch (e) {
+    console.error('Failed to parse trends response:', e);
+    return { error: 'Parse hatası', raw: result };
   }
 }
