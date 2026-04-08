@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rakip Analiz — Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+      }}}
+    }
+  </script>
+</head>
+<body class="bg-navy-dark min-h-screen text-white">
+
+  <!-- Üst Navigasyon -->
+  <header class="bg-navy-light border-b border-white/10 px-4 py-2 flex items-center justify-between sticky top-0 z-10">
+    <div class="flex items-center gap-6">
+      <h1 class="text-gold font-bold text-lg">ADMIN</h1>
+      <nav class="flex gap-1">
+        <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
+        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">Rakip Analiz</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-white/30 text-xs" id="adminName">—</span>
+      <button onclick="logout()" class="text-white/40 hover:text-red-400 text-xs">Çıkış</button>
+    </div>
+  </header>
+
+  <div class="p-4 max-w-5xl mx-auto">
+
+    <!-- Başlık + Buton -->
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h2 class="text-gold font-bold text-xl">Rakip Analiz</h2>
+        <p class="text-white/40 text-xs mt-1" id="lastScanDate">Son tarama: —</p>
+      </div>
+      <button onclick="runAnalysis()" id="analyzeBtn" class="bg-gold text-navy-dark font-semibold px-5 py-2.5 rounded-lg text-sm">Analiz Çalıştır</button>
+    </div>
+
+    <!-- AI Rapor -->
+    <div class="bg-navy-light rounded-xl p-5 border border-white/5 mb-6">
+      <h3 class="text-sm font-semibold text-gold mb-2">AI Rapor</h3>
+      <p id="reportSummary" class="text-white text-sm leading-relaxed">Henüz rapor yok. Analizi çalıştırın.</p>
+      <p id="reportDate" class="text-white/30 text-xs mt-2"></p>
+    </div>
+
+    <!-- Öneriler -->
+    <div id="recommendationsSection" class="mb-6 space-y-2"></div>
+
+    <!-- Rakip Kartları -->
+    <h3 class="text-sm font-semibold text-gold mb-3">Rakipler</h3>
+    <div id="competitorCards" class="space-y-4 mb-6">
+      <div class="text-white/30 text-center py-8">Yükleniyor...</div>
+    </div>
+
+    <!-- Fiyat Değişiklikleri -->
+    <h3 class="text-sm font-semibold text-gold mb-3">Son Fiyat Değişiklikleri</h3>
+    <div id="priceChanges" class="space-y-2"></div>
+  </div>
+
+  <script>
+    const API = '/api/panel';
+    const token = localStorage.getItem('admin_token');
+    const role = localStorage.getItem('admin_role');
+
+    if (!token) window.location.href = '/panel/admin-login.html';
+    if (role !== 'admin_sahip') { alert('Yetkisiz'); window.location.href = '/panel/admin.html'; }
+
+    document.getElementById('adminName').textContent = localStorage.getItem('admin_name') || 'Admin';
+
+    async function api(path, opts = {}) {
+      const res = await fetch(`${API}${path}`, {
+        ...opts,
+        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', ...opts.headers }
+      });
+      if (res.status === 401) { logout(); return null; }
+      return res.json();
+    }
+
+    async function loadPage() {
+      // Son rapor
+      const report = await api('/competitor-analysis?action=report');
+      if (report?.recommendations) {
+        const r = report.recommendations;
+        document.getElementById('reportSummary').textContent = r.summary || report.content || '';
+        document.getElementById('reportDate').textContent = report.created_at
+          ? new Date(report.created_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+          : '';
+
+        // Öneriler
+        const recSection = document.getElementById('recommendationsSection');
+        if (r.recommendations?.length) {
+          recSection.innerHTML = '<h3 class="text-sm font-semibold text-gold mb-3">Öneriler</h3>' +
+            r.recommendations.map(rec => {
+              const prColors = { high: 'border-red-500/30 bg-red-500/5', medium: 'border-yellow-500/30 bg-yellow-500/5', low: 'border-green-500/30 bg-green-500/5' };
+              const prLabels = { high: 'Yüksek', medium: 'Orta', low: 'Düşük' };
+              return `<div class="rounded-xl p-4 border ${prColors[rec.priority] || 'border-white/10'} text-sm">
+                <div class="flex justify-between items-start mb-1">
+                  <span class="text-white font-medium">${rec.action}</span>
+                  <span class="text-xs px-2 py-0.5 rounded-full ${rec.priority === 'high' ? 'bg-red-500/20 text-red-400' : rec.priority === 'medium' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-green-500/20 text-green-400'}">${prLabels[rec.priority] || rec.priority}</span>
+                </div>
+                <p class="text-white/50 text-xs mt-1">${rec.reason}</p>
+              </div>`;
+            }).join('');
+        }
+      }
+
+      // Rakip kartları (tarama verileriyle)
+      const competitors = await api('/competitor-analysis?action=competitors');
+      const cards = document.getElementById('competitorCards');
+
+      if (!competitors?.length) {
+        cards.innerHTML = '<div class="text-white/30 text-center py-8">Rakip bulunamadı</div>';
+        return;
+      }
+
+      cards.innerHTML = competitors.map(comp => {
+        const scan = comp.last_scan;
+        const data = scan?.raw_data || {};
+        const packages = scan?.packages || data.packages || [];
+        const hasData = scan && !data.parse_error;
+
+        return `
+          <div class="bg-navy-light rounded-xl border border-white/5 overflow-hidden">
+            <!-- Başlık -->
+            <div class="p-4 flex items-start justify-between border-b border-white/5">
+              <div>
+                <a href="${comp.url}" target="_blank" class="text-white font-bold text-base hover:text-gold transition-colors">${comp.name} ↗</a>
+                <p class="text-white/30 text-xs mt-0.5">${comp.domain}</p>
+              </div>
+              <div class="text-right">
+                <span class="text-gold font-bold text-lg">${scan?.price_min && scan?.price_max ? `€${scan.price_min}-${scan.price_max}` : 'Bilinmiyor'}</span>
+                <p class="text-white/30 text-xs">${scan?.scanned_at ? new Date(scan.scanned_at).toLocaleDateString('tr-TR') : 'Taranmadı'}</p>
+              </div>
+            </div>
+
+            ${hasData ? `
+            <!-- Özellikler -->
+            <div class="px-4 py-2 flex gap-3 border-b border-white/5 text-xs">
+              ${data.has_whatsapp ? '<span class="text-green-400">✓ WhatsApp</span>' : '<span class="text-red-400">✗ WhatsApp</span>'}
+              ${data.has_transfer ? '<span class="text-green-400">✓ Transfer</span>' : '<span class="text-red-400">✗ Transfer</span>'}
+              ${data.has_live_music ? '<span class="text-green-400">✓ Canlı Müzik</span>' : '<span class="text-red-400">✗ Canlı Müzik</span>'}
+              ${data.has_dinner ? '<span class="text-green-400">✓ Akşam Yemeği</span>' : '<span class="text-red-400">✗ Akşam Yemeği</span>'}
+            </div>
+
+            <!-- Paketler -->
+            ${packages.length ? `
+            <div class="px-4 py-3 border-b border-white/5">
+              <p class="text-white/50 text-xs font-semibold mb-2">PAKETLER</p>
+              <div class="space-y-3">
+                ${packages.map(pkg => `
+                  <div class="bg-navy-dark/50 rounded-lg p-3">
+                    <div class="flex justify-between items-center mb-1">
+                      <span class="text-white text-sm font-medium">${pkg.name || 'Paket'}</span>
+                      <span class="text-gold font-bold text-sm">€${pkg.price || '?'}</span>
+                    </div>
+                    ${pkg.inclusions?.length ? `
+                      <p class="text-green-400/70 text-xs">Dahil: ${pkg.inclusions.join(' · ')}</p>
+                    ` : ''}
+                    ${pkg.exclusions?.length ? `
+                      <p class="text-red-400/70 text-xs mt-1">Hariç: ${pkg.exclusions.join(' · ')}</p>
+                    ` : ''}
+                  </div>
+                `).join('')}
+              </div>
+            </div>` : ''}
+
+            <!-- Telefon -->
+            ${data.phone_numbers?.length ? `
+            <div class="px-4 py-2 border-b border-white/5 text-xs text-white/40">
+              Tel: ${data.phone_numbers.join(', ')}
+            </div>` : ''}
+
+            <!-- Güçlü/Zayıf -->
+            <div class="px-4 py-3 grid grid-cols-2 gap-3">
+              <div>
+                <p class="text-green-400 text-xs font-semibold mb-1">GÜÇLÜ</p>
+                ${(data.unique_features || data.strengths || []).map(s => `<p class="text-green-400/70 text-xs">+ ${s}</p>`).join('') || '<p class="text-white/20 text-xs">—</p>'}
+              </div>
+              <div>
+                <p class="text-red-400 text-xs font-semibold mb-1">ZAYIF</p>
+                ${(data.weaknesses || []).map(w => `<p class="text-red-400/70 text-xs">- ${w}</p>`).join('') || '<p class="text-white/20 text-xs">—</p>'}
+              </div>
+            </div>
+            ` : `
+            <div class="p-4 text-white/30 text-sm text-center">Henüz taranmadı veya veri alınamadı</div>
+            `}
+          </div>`;
+      }).join('');
+
+      // Son tarama tarihi
+      const lastScan = competitors.find(c => c.last_scan?.scanned_at);
+      if (lastScan) {
+        document.getElementById('lastScanDate').textContent = 'Son tarama: ' + new Date(lastScan.last_scan.scanned_at).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', hour: '2-digit', minute: '2-digit' });
+      }
+
+      // Fiyat değişiklikleri
+      const changes = await api('/competitor-analysis?action=price-history');
+      const changesDiv = document.getElementById('priceChanges');
+      if (changes?.length) {
+        changesDiv.innerHTML = changes.map(c => {
+          const isUp = c.change_pct > 0;
+          return `<div class="bg-navy-light rounded-lg p-3 border border-white/5 flex items-center justify-between">
+            <div>
+              <span class="text-white text-sm">${c.competitors?.name || ''}</span>
+              <span class="text-white/40 text-xs ml-2">${c.package_name || ''}</span>
+            </div>
+            <div class="text-right">
+              <span class="text-white/40 text-xs line-through">€${c.old_price}</span>
+              <span class="text-white text-sm ml-1">€${c.new_price}</span>
+              <span class="text-xs ml-1 ${isUp ? 'text-red-400' : 'text-green-400'}">${isUp ? '↑' : '↓'}${Math.abs(c.change_pct)}%</span>
+            </div>
+          </div>`;
+        }).join('');
+      } else {
+        changesDiv.innerHTML = '<div class="text-white/30 text-center py-4 text-sm">Henüz fiyat değişikliği tespit edilmedi</div>';
+      }
+    }
+
+    async function runAnalysis() {
+      const btn = document.getElementById('analyzeBtn');
+      btn.disabled = true;
+
+      const competitors = await api('/competitor-analysis?action=competitors');
+      if (!competitors?.length) { btn.textContent = 'Analiz Çalıştır'; btn.disabled = false; return; }
+
+      for (let i = 0; i < competitors.length; i++) {
+        btn.textContent = `Taranıyor ${i + 1}/${competitors.length}: ${competitors[i].name}`;
+        try {
+          await api('/competitor-analysis', {
+            method: 'POST',
+            body: JSON.stringify({ action: 'scan', competitor_id: competitors[i].id })
+          });
+        } catch (e) {}
+        if (i < competitors.length - 1) await new Promise(r => setTimeout(r, 3000));
+      }
+
+      btn.textContent = 'Rapor hazırlanıyor...';
+      try {
+        await api('/competitor-analysis', {
+          method: 'POST',
+          body: JSON.stringify({ action: 'report' })
+        });
+      } catch (e) {}
+
+      await loadPage();
+      btn.textContent = 'Analiz Çalıştır';
+      btn.disabled = false;
+    }
+
+    function logout() {
+      localStorage.removeItem('admin_token');
+      localStorage.removeItem('admin_name');
+      localStorage.removeItem('admin_role');
+      window.location.href = '/panel/admin-login.html';
+    }
+
+    loadPage();
+  </script>
+</body>
+</html>
