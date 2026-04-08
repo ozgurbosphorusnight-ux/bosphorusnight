@@ -102,6 +102,7 @@
           localStorage.setItem('boat_token', data.token);
           localStorage.setItem('boat_name', data.boat_name);
           localStorage.setItem('boat_id', data.boat_id);
+          localStorage.setItem('boat_role', data.role);
           window.location.href = '/panel/dashboard.html';
         } else {
           errorMsg.textContent = data.error || 'Hatalı giriş kodu.';

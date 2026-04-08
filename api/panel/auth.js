@@ -11,21 +11,30 @@ export default async function handler(req, res) {
 
   const { data: boat, error } = await supabase
     .from('boats')
-    .select('id, name, slug, login_code')
+    .select('id, name, slug, login_code, owner_code')
     .eq('slug', slug)
     .eq('active', true)
     .single();
 
   if (error || !boat) return res.status(401).json({ error: 'Tekne bulunamadı' });
 
-  if (boat.login_code !== code) return res.status(401).json({ error: 'Hatalı giriş kodu' });
+  // Rol belirle: sahip şifresi mi, personel şifresi mi?
+  let role = null;
+  if (boat.owner_code && code === boat.owner_code) {
+    role = 'tekne_sahip';
+  } else if (code === boat.login_code) {
+    role = 'tekne_personel';
+  } else {
+    return res.status(401).json({ error: 'Hatalı giriş kodu' });
+  }
 
-  // Basit token: base64(boat_id:slug:timestamp)
-  const token = Buffer.from(`${boat.id}:${boat.slug}:${Date.now()}`).toString('base64');
+  // Token: base64(boat_id:slug:role:timestamp)
+  const token = Buffer.from(`${boat.id}:${boat.slug}:${role}:${Date.now()}`).toString('base64');
 
   return res.status(200).json({
     token,
     boat_id: boat.id,
     boat_name: boat.name,
+    role,
   });
 }

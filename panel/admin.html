@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Paneli</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+      }}}
+    }
+  </script>
+  <style>
+    .tab-btn.active { border-color: #c9a84c; color: #c9a84c; }
+    .tab-btn:not(.active) { border-color: transparent; color: rgba(255,255,255,0.4); }
+  </style>
+</head>
+<body class="bg-navy-dark min-h-screen text-white">
+
+  <header class="bg-navy-light border-b border-white/10 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
+    <div>
+      <h1 class="text-gold font-bold text-lg">ADMIN PANEL</h1>
+      <p class="text-white/40 text-xs"><span id="adminName">—</span> · <span id="adminRole" class="text-gold/60">—</span></p>
+    </div>
+    <button onclick="logout()" class="text-white/40 hover:text-red-400 text-sm">Çıkış</button>
+  </header>
+
+  <nav id="tabNav" class="flex border-b border-white/10 bg-navy">
+    <button onclick="showTab('today')" id="tab-today" class="tab-btn active flex-1 py-3 text-sm font-medium text-center border-b-2">Bugün</button>
+    <button onclick="showTab('monthly')" id="tab-monthly" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 hidden">Aylık Özet</button>
+  </nav>
+
+  <!-- BUGÜN TAB -->
+  <div id="panel-today" class="p-4">
+    <div class="flex items-center gap-2 mb-4">
+      <button onclick="changeDate(-1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">←</button>
+      <input type="date" id="dateInput" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-center text-sm focus:border-gold focus:outline-none">
+      <button onclick="changeDate(1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">→</button>
+    </div>
+
+    <!-- Tekne filtresi -->
+    <select id="boatFilter" onchange="loadToday()" class="w-full bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-sm mb-4 focus:border-gold focus:outline-none">
+      <option value="">Tüm Tekneler</option>
+    </select>
+
+    <!-- Genel Özet -->
+    <div class="grid grid-cols-3 gap-3 mb-4">
+      <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
+        <p class="text-2xl font-bold text-gold" id="tGuests">0</p>
+        <p class="text-white/40 text-xs">Misafir</p>
+      </div>
+      <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
+        <p class="text-2xl font-bold text-green-400" id="tExpected">€0</p>
+        <p class="text-white/40 text-xs">Beklenen</p>
+      </div>
+      <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
+        <p class="text-2xl font-bold text-white" id="tCount">0</p>
+        <p class="text-white/40 text-xs">Rezervasyon</p>
+      </div>
+    </div>
+
+    <div id="todayList" class="space-y-3"></div>
+
+    <div id="todaySummary" class="mt-4 bg-navy-light rounded-xl p-4 border border-white/5 hidden">
+      <h3 class="text-sm font-semibold text-white/60 mb-3">Günlük Tahsilat</h3>
+      <div class="grid grid-cols-3 gap-3 text-center">
+        <div><p class="text-lg font-bold text-green-400" id="tsExpected">€0</p><p class="text-white/30 text-xs">Beklenen</p></div>
+        <div><p class="text-lg font-bold text-blue-400" id="tsCollected">€0</p><p class="text-white/30 text-xs">Toplanan</p></div>
+        <div><p class="text-lg font-bold" id="tsDiff">€0</p><p class="text-white/30 text-xs">Fark</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AYLIK ÖZET TAB -->
+  <div id="panel-monthly" class="p-4 hidden">
+    <div class="flex items-center gap-2 mb-4">
+      <button onclick="chMonth(-1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">←</button>
+      <input type="month" id="monthInput" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-center text-sm focus:border-gold focus:outline-none">
+      <button onclick="chMonth(1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">→</button>
+    </div>
+    <div id="monthlyList" class="space-y-3"></div>
+  </div>
+
+  <script>
+    const API = '/api/panel';
+    const token = localStorage.getItem('admin_token');
+    const name = localStorage.getItem('admin_name');
+    const role = localStorage.getItem('admin_role');
+
+    if (!token) window.location.href = '/panel/admin-login.html';
+
+    document.getElementById('adminName').textContent = name || 'Admin';
+    document.getElementById('adminRole').textContent = role === 'admin_sahip' ? 'Yönetici' : 'Personel';
+
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('dateInput').value = today;
+    document.getElementById('monthInput').value = today.substring(0, 7);
+
+    // Sahip ek tab'ları
+    if (role === 'admin_sahip') {
+      document.getElementById('tab-monthly').classList.remove('hidden');
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(`${API}${path}`, {
+        ...opts,
+        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', ...opts.headers }
+      });
+      if (res.status === 401) { logout(); return null; }
+      return res.json();
+    }
+
+    // Tekneleri yükle
+    async function loadBoats() {
+      try {
+        const boats = await api('/boats');
+        if (!boats) return;
+        const sel = document.getElementById('boatFilter');
+        boats.forEach(b => { sel.innerHTML += `<option value="${b.slug}">${b.name}</option>`; });
+      } catch (e) {}
+    }
+
+    function showTab(n) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`tab-${n}`).classList.add('active');
+      ['today', 'monthly'].forEach(t => document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== n));
+      if (n === 'monthly') loadMonthly();
+    }
+
+    function changeDate(d) {
+      const inp = document.getElementById('dateInput');
+      const dt = new Date(inp.value); dt.setDate(dt.getDate() + d);
+      inp.value = dt.toISOString().split('T')[0]; loadToday();
+    }
+    function chMonth(d) {
+      const inp = document.getElementById('monthInput');
+      const [y, m] = inp.value.split('-').map(Number);
+      const dt = new Date(y, m - 1 + d, 1);
+      inp.value = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}`;
+      loadMonthly();
+    }
+
+    async function loadToday() {
+      const date = document.getElementById('dateInput').value;
+      const boatSlug = document.getElementById('boatFilter').value;
+
+      // boat_id'yi slug'dan bul (basit yaklaşım — tüm tekneler zaten yüklü)
+      let url = `/admin-reservations?date=${date}`;
+      const data = await api(url);
+      if (!data) return;
+
+      let filtered = data;
+      if (boatSlug) {
+        filtered = data.filter(r => r.boats?.name && document.querySelector(`#boatFilter option[value="${boatSlug}"]`)?.textContent === r.boats.name);
+      }
+
+      let tGuests = 0, tExpected = 0, tCollected = 0;
+      const list = document.getElementById('todayList');
+      const summary = document.getElementById('todaySummary');
+
+      if (!filtered.length) {
+        list.innerHTML = '<div class="text-white/30 text-center py-8">Rezervasyon yok</div>';
+        summary.classList.add('hidden');
+        document.getElementById('tGuests').textContent = '0';
+        document.getElementById('tExpected').textContent = '€0';
+        document.getElementById('tCount').textContent = '0';
+        return;
+      }
+
+      list.innerHTML = filtered.map(r => {
+        tGuests += r.guests || 0;
+        tExpected += parseFloat(r.expected_amount) || parseFloat(r.total_price) || 0;
+        tCollected += parseFloat(r.collected_amount) || 0;
+        const isArrived = r.attendance === 'arrived';
+        const isNoShow = r.attendance === 'no_show';
+        const expected = r.expected_amount || r.total_price || 0;
+        const boatLabel = r.boats?.name || '';
+
+        return `
+          <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+            <div class="flex items-start justify-between mb-2">
+              <div>
+                <p class="font-semibold text-white">${r.customer_name || 'İsimsiz'}</p>
+                <p class="text-white/40 text-xs">${boatLabel} · ${r.guests || 0} kişi · ${r.package || ''}</p>
+              </div>
+              <span class="text-gold font-bold">€${expected}</span>
+            </div>
+            ${r.special_request ? `<p class="text-xs text-orange-400 mb-2">⚡ ${r.special_request}</p>` : ''}
+            <div class="flex gap-2 mb-3">
+              <button onclick="markAttendance(${r.id}, 'arrived')"
+                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all ${isArrived ? 'bg-green-500 text-white' : 'bg-green-500/10 text-green-400 border border-green-500/30'}">✓ Geldi</button>
+              <button onclick="markAttendance(${r.id}, 'no_show')"
+                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all ${isNoShow ? 'bg-red-500 text-white' : 'bg-red-500/10 text-red-400 border border-red-500/30'}">✗ Gelmedi</button>
+            </div>
+            <div class="grid grid-cols-12 gap-2">
+              <input type="number" step="0.01" placeholder="€" value="${r.collected_amount || ''}"
+                onchange="updatePay(${r.id}, this.value, null, null)"
+                class="col-span-4 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-sm text-center focus:border-gold focus:outline-none">
+              <select onchange="updatePay(${r.id}, null, this.value, null)"
+                class="col-span-3 bg-navy-dark border border-white/10 rounded-lg px-1 py-2 text-white text-sm focus:border-gold focus:outline-none">
+                <option value="" ${!r.payment_method ? 'selected' : ''}>—</option>
+                <option value="cash" ${r.payment_method === 'cash' ? 'selected' : ''}>Nakit</option>
+                <option value="card" ${r.payment_method === 'card' ? 'selected' : ''}>Kart</option>
+              </select>
+              <input type="text" placeholder="Not" value="${r.payment_note || ''}"
+                onchange="updatePay(${r.id}, null, null, this.value)"
+                class="col-span-5 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-sm focus:border-gold focus:outline-none">
+            </div>
+          </div>`;
+      }).join('');
+
+      document.getElementById('tGuests').textContent = tGuests;
+      document.getElementById('tExpected').textContent = `€${tExpected}`;
+      document.getElementById('tCount').textContent = filtered.length;
+
+      summary.classList.remove('hidden');
+      document.getElementById('tsExpected').textContent = `€${tExpected}`;
+      document.getElementById('tsCollected').textContent = `€${tCollected}`;
+      const diff = tCollected - tExpected;
+      const el = document.getElementById('tsDiff');
+      el.textContent = `${diff >= 0 ? '+' : ''}€${diff}`;
+      el.className = `text-lg font-bold ${diff >= 0 ? 'text-green-400' : 'text-red-400'}`;
+    }
+
+    async function markAttendance(id, status) {
+      await api('/admin-reservations', {
+        method: 'PATCH',
+        body: JSON.stringify({ id, checked_in: status === 'arrived', attendance: status })
+      });
+      loadToday();
+    }
+
+    async function updatePay(id, amount, method, note) {
+      const body = { id };
+      if (amount !== null) body.collected_amount = parseFloat(amount) || 0;
+      if (method !== null) body.payment_method = method;
+      if (note !== null) body.payment_note = note;
+      await api('/admin-reservations', { method: 'PATCH', body: JSON.stringify(body) });
+    }
+
+    async function loadMonthly() {
+      const month = document.getElementById('monthInput').value;
+      const data = await api(`/admin-reservations?month=${month}`);
+      if (!data) return;
+
+      const list = document.getElementById('monthlyList');
+      if (!data.length) { list.innerHTML = '<div class="text-white/30 text-center py-8">Veri yok</div>'; return; }
+
+      list.innerHTML = data.map(b => `
+        <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+          <h3 class="text-gold font-bold mb-3">${b.boat_name}</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div><p class="text-white/40 text-xs">Rezervasyon</p><p class="text-lg font-bold">${b.totalReservations}</p></div>
+            <div><p class="text-white/40 text-xs">Misafir</p><p class="text-lg font-bold text-gold">${b.totalGuests}</p></div>
+            <div><p class="text-white/40 text-xs">Beklenen</p><p class="text-lg font-bold text-green-400">€${b.totalExpected}</p></div>
+            <div><p class="text-white/40 text-xs">Toplanan</p><p class="text-lg font-bold text-blue-400">€${b.totalCollected}</p></div>
+            <div><p class="text-white/40 text-xs">Gelen</p><p class="text-lg font-bold text-green-400">${b.arrivedCount}</p></div>
+            <div><p class="text-white/40 text-xs">Gelmeyen</p><p class="text-lg font-bold text-red-400">${b.noShowCount}</p></div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function logout() {
+      localStorage.removeItem('admin_token');
+      localStorage.removeItem('admin_name');
+      localStorage.removeItem('admin_role');
+      window.location.href = '/panel/admin-login.html';
+    }
+
+    document.getElementById('dateInput').addEventListener('change', loadToday);
+    document.getElementById('monthInput').addEventListener('change', loadMonthly);
+
+    loadBoats();
+    loadToday();
+  </script>
+</body>
+</html>

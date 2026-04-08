@@ -17,6 +17,11 @@
       }
     }
   </script>
+  <style>
+    .tab-btn.active { border-color: #c9a84c; color: #c9a84c; }
+    .tab-btn:not(.active) { border-color: transparent; color: rgba(255,255,255,0.4); }
+    input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+  </style>
 </head>
 <body class="bg-navy-dark min-h-screen text-white">
 
@@ -24,28 +29,29 @@
   <header class="bg-navy-light border-b border-white/10 px-4 py-3 flex items-center justify-between sticky top-0 z-10">
     <div>
       <h1 class="text-gold font-bold text-lg" id="boatTitle">—</h1>
-      <p class="text-white/40 text-xs" id="todayDate">—</p>
+      <p class="text-white/40 text-xs"><span id="todayDate">—</span> · <span id="userRole" class="text-gold/60">—</span></p>
     </div>
     <button onclick="logout()" class="text-white/40 hover:text-red-400 text-sm transition-colors">Çıkış</button>
   </header>
 
   <!-- Tab Navigation -->
-  <nav class="flex border-b border-white/10 bg-navy">
-    <button onclick="showTab('today')" id="tab-today" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 border-gold text-gold">Bugün</button>
-    <button onclick="showTab('cari')" id="tab-cari" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 border-transparent text-white/50">Cari</button>
+  <nav id="tabNav" class="flex border-b border-white/10 bg-navy overflow-x-auto">
+    <button onclick="showTab('today')" id="tab-today" class="tab-btn active flex-1 py-3 text-sm font-medium text-center border-b-2 whitespace-nowrap px-2">Bugün</button>
+    <button onclick="showTab('history')" id="tab-history" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 whitespace-nowrap px-2 hidden">Geçmiş</button>
+    <button onclick="showTab('cari')" id="tab-cari" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 whitespace-nowrap px-2 hidden">Cari</button>
+    <button onclick="showTab('summary')" id="tab-summary" class="tab-btn flex-1 py-3 text-sm font-medium text-center border-b-2 whitespace-nowrap px-2 hidden">Özet</button>
   </nav>
 
-  <!-- Bugün Tab -->
+  <!-- ==================== BUGÜN TAB ==================== -->
   <div id="panel-today" class="p-4">
-    <!-- Özet Kartları -->
     <div class="grid grid-cols-3 gap-3 mb-4">
       <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
         <p class="text-2xl font-bold text-gold" id="totalGuests">0</p>
         <p class="text-white/40 text-xs">Misafir</p>
       </div>
       <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
-        <p class="text-2xl font-bold text-green-400" id="totalRevenue">€0</p>
-        <p class="text-white/40 text-xs">Gelir</p>
+        <p class="text-2xl font-bold text-green-400" id="totalExpected">€0</p>
+        <p class="text-white/40 text-xs">Beklenen</p>
       </div>
       <div class="bg-navy-light rounded-xl p-3 text-center border border-white/5">
         <p class="text-2xl font-bold text-white" id="totalReservations">0</p>
@@ -53,22 +59,54 @@
       </div>
     </div>
 
-    <!-- Tarih Seçici -->
     <div class="flex items-center gap-2 mb-4">
       <button onclick="changeDate(-1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">←</button>
       <input type="date" id="dateInput" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-center text-sm focus:border-gold focus:outline-none">
       <button onclick="changeDate(1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">→</button>
     </div>
 
-    <!-- Rezervasyon Listesi -->
-    <div id="reservationList" class="space-y-3">
-      <div class="text-white/30 text-center py-8">Yükleniyor...</div>
+    <div id="reservationList" class="space-y-3"></div>
+
+    <!-- Günlük Tahsilat Özeti -->
+    <div id="dailySummary" class="mt-4 bg-navy-light rounded-xl p-4 border border-white/5 hidden">
+      <h3 class="text-sm font-semibold text-white/60 mb-3">Günlük Tahsilat Özeti</h3>
+      <div class="grid grid-cols-3 gap-3 text-center">
+        <div>
+          <p class="text-lg font-bold text-green-400" id="sumExpected">€0</p>
+          <p class="text-white/30 text-xs">Beklenen</p>
+        </div>
+        <div>
+          <p class="text-lg font-bold text-blue-400" id="sumCollected">€0</p>
+          <p class="text-white/30 text-xs">Toplanan</p>
+        </div>
+        <div>
+          <p class="text-lg font-bold" id="sumDifference">€0</p>
+          <p class="text-white/30 text-xs">Fark</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Cari Tab -->
+  <!-- ==================== GEÇMİŞ TAB ==================== -->
+  <div id="panel-history" class="p-4 hidden">
+    <div class="flex gap-2 mb-3">
+      <input type="date" id="historyFrom" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-sm focus:border-gold focus:outline-none">
+      <input type="date" id="historyTo" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-sm focus:border-gold focus:outline-none">
+    </div>
+    <div class="flex gap-2 mb-4">
+      <select id="historyStatus" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-sm focus:border-gold focus:outline-none">
+        <option value="all">Tümü</option>
+        <option value="arrived">Gelenler</option>
+        <option value="no_show">Gelmeyenler</option>
+        <option value="cancelled">İptaller</option>
+      </select>
+      <button onclick="loadHistory()" class="bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm">Filtrele</button>
+    </div>
+    <div id="historyList" class="space-y-2"></div>
+  </div>
+
+  <!-- ==================== CARİ TAB ==================== -->
   <div id="panel-cari" class="p-4 hidden">
-    <!-- Cari Özet -->
     <div class="grid grid-cols-2 gap-3 mb-4">
       <div class="bg-navy-light rounded-xl p-4 border border-white/5">
         <p class="text-white/40 text-xs mb-1">Toplam Gelir</p>
@@ -79,115 +117,249 @@
         <p class="text-xl font-bold text-orange-400" id="cariCommission">€0</p>
       </div>
     </div>
-
-    <!-- Ay Seçici -->
     <div class="flex items-center gap-2 mb-4">
       <button onclick="changeMonth(-1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">←</button>
       <input type="month" id="monthInput" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-center text-sm focus:border-gold focus:outline-none">
       <button onclick="changeMonth(1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">→</button>
     </div>
+    <div id="transactionList" class="space-y-2"></div>
+  </div>
 
-    <!-- Cari Hareketler -->
-    <div id="transactionList" class="space-y-2">
-      <div class="text-white/30 text-center py-8">Yükleniyor...</div>
+  <!-- ==================== ÖZET TAB ==================== -->
+  <div id="panel-summary" class="p-4 hidden">
+    <div class="flex items-center gap-2 mb-4">
+      <button onclick="changeSummaryMonth(-1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">←</button>
+      <input type="month" id="summaryMonth" class="flex-1 bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white text-center text-sm focus:border-gold focus:outline-none">
+      <button onclick="changeSummaryMonth(1)" class="bg-navy-light border border-white/10 rounded-lg px-3 py-2 text-white/60 hover:text-white">→</button>
+    </div>
+    <div class="space-y-3">
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5 grid grid-cols-2 gap-4">
+        <div><p class="text-white/40 text-xs">Toplam Misafir</p><p class="text-2xl font-bold text-gold" id="smGuests">0</p></div>
+        <div><p class="text-white/40 text-xs">Toplam Rezervasyon</p><p class="text-2xl font-bold text-white" id="smReservations">0</p></div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5 grid grid-cols-2 gap-4">
+        <div><p class="text-white/40 text-xs">Beklenen Tahsilat</p><p class="text-2xl font-bold text-green-400" id="smExpected">€0</p></div>
+        <div><p class="text-white/40 text-xs">Toplanan</p><p class="text-2xl font-bold text-blue-400" id="smCollected">€0</p></div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5 grid grid-cols-3 gap-4">
+        <div><p class="text-white/40 text-xs">Gelen</p><p class="text-xl font-bold text-green-400" id="smArrived">0</p></div>
+        <div><p class="text-white/40 text-xs">Gelmeyen</p><p class="text-xl font-bold text-red-400" id="smNoShow">0</p></div>
+        <div><p class="text-white/40 text-xs">İptal</p><p class="text-xl font-bold text-yellow-400" id="smCancelled">0</p></div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <p class="text-white/40 text-xs">Ort. Kişi Başı Gelir</p>
+        <p class="text-2xl font-bold text-gold" id="smAvg">€0</p>
+      </div>
     </div>
   </div>
 
   <script>
-    const API_BASE = '/api/panel';
+    const API = '/api/panel';
     const token = localStorage.getItem('boat_token');
     const boatName = localStorage.getItem('boat_name');
+    const role = localStorage.getItem('boat_role') || 'tekne_personel';
 
     if (!token) window.location.href = '/panel/login.html';
 
+    // Header
     document.getElementById('boatTitle').textContent = boatName || 'Tekne';
     const today = new Date().toISOString().split('T')[0];
     document.getElementById('todayDate').textContent = new Date().toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+    document.getElementById('userRole').textContent = role === 'tekne_sahip' ? 'Sahip' : 'Personel';
+
+    // Tarih input'ları
     document.getElementById('dateInput').value = today;
     document.getElementById('monthInput').value = today.substring(0, 7);
+    document.getElementById('summaryMonth').value = today.substring(0, 7);
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 86400000).toISOString().split('T')[0];
+    document.getElementById('historyFrom').value = thirtyDaysAgo;
+    document.getElementById('historyTo').value = today;
 
-    async function api(path) {
-      const res = await fetch(`${API_BASE}${path}`, {
-        headers: { 'Authorization': `Bearer ${token}` }
+    // Sahip tab'larını göster
+    if (role === 'tekne_sahip') {
+      document.getElementById('tab-history').classList.remove('hidden');
+      document.getElementById('tab-cari').classList.remove('hidden');
+      document.getElementById('tab-summary').classList.remove('hidden');
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(`${API}${path}`, {
+        ...opts,
+        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', ...opts.headers }
       });
       if (res.status === 401) { logout(); return null; }
       return res.json();
     }
 
+    // Tab sistemi
     function showTab(name) {
-      document.querySelectorAll('.tab-btn').forEach(b => {
-        b.classList.remove('border-gold', 'text-gold');
-        b.classList.add('border-transparent', 'text-white/50');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById(`tab-${name}`).classList.add('active');
+      ['today', 'history', 'cari', 'summary'].forEach(t => {
+        document.getElementById(`panel-${t}`).classList.toggle('hidden', t !== name);
       });
-      document.getElementById(`tab-${name}`).classList.add('border-gold', 'text-gold');
-      document.getElementById(`tab-${name}`).classList.remove('border-transparent', 'text-white/50');
-      document.getElementById('panel-today').classList.toggle('hidden', name !== 'today');
-      document.getElementById('panel-cari').classList.toggle('hidden', name !== 'cari');
       if (name === 'cari') loadTransactions();
+      if (name === 'history') loadHistory();
+      if (name === 'summary') loadSummary();
     }
 
-    function changeDate(delta) {
-      const input = document.getElementById('dateInput');
-      const d = new Date(input.value);
-      d.setDate(d.getDate() + delta);
-      input.value = d.toISOString().split('T')[0];
-      loadReservations();
+    function changeDate(d) {
+      const inp = document.getElementById('dateInput');
+      const dt = new Date(inp.value); dt.setDate(dt.getDate() + d);
+      inp.value = dt.toISOString().split('T')[0]; loadReservations();
     }
-
-    function changeMonth(delta) {
-      const input = document.getElementById('monthInput');
-      const [y, m] = input.value.split('-').map(Number);
-      const d = new Date(y, m - 1 + delta, 1);
-      input.value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+    function changeMonth(d) {
+      const inp = document.getElementById('monthInput');
+      const [y, m] = inp.value.split('-').map(Number);
+      const dt = new Date(y, m - 1 + d, 1);
+      inp.value = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}`;
       loadTransactions();
     }
+    function changeSummaryMonth(d) {
+      const inp = document.getElementById('summaryMonth');
+      const [y, m] = inp.value.split('-').map(Number);
+      const dt = new Date(y, m - 1 + d, 1);
+      inp.value = `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}`;
+      loadSummary();
+    }
 
+    // ========= BUGÜN =========
     async function loadReservations() {
       const date = document.getElementById('dateInput').value;
       const data = await api(`/reservations?date=${date}`);
       if (!data) return;
 
       const list = document.getElementById('reservationList');
+      const summary = document.getElementById('dailySummary');
 
       if (!data.length) {
         list.innerHTML = '<div class="text-white/30 text-center py-8">Bu tarihte rezervasyon yok</div>';
+        summary.classList.add('hidden');
         document.getElementById('totalGuests').textContent = '0';
-        document.getElementById('totalRevenue').textContent = '€0';
+        document.getElementById('totalExpected').textContent = '€0';
         document.getElementById('totalReservations').textContent = '0';
         return;
       }
 
-      let totalGuests = 0, totalRevenue = 0;
+      let tGuests = 0, tExpected = 0, tCollected = 0;
 
       list.innerHTML = data.map(r => {
-        totalGuests += r.guests || 0;
-        totalRevenue += parseFloat(r.total_price) || 0;
-        const statusColors = { pending: 'bg-yellow-500/10 text-yellow-400', confirmed: 'bg-green-500/10 text-green-400', cancelled: 'bg-red-500/10 text-red-400', completed: 'bg-blue-500/10 text-blue-400' };
-        const statusLabels = { pending: 'Bekliyor', confirmed: 'Onaylı', cancelled: 'İptal', completed: 'Tamamlandı' };
+        tGuests += r.guests || 0;
+        tExpected += parseFloat(r.expected_amount) || parseFloat(r.total_price) || 0;
+        tCollected += parseFloat(r.collected_amount) || 0;
+
+        const isArrived = r.attendance === 'arrived';
+        const isNoShow = r.attendance === 'no_show';
+        const expected = r.expected_amount || r.total_price || 0;
+
         return `
-          <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+          <div class="bg-navy-light rounded-xl p-4 border border-white/5" id="rez-${r.id}">
             <div class="flex items-start justify-between mb-2">
               <div>
                 <p class="font-semibold text-white">${r.customer_name || 'İsimsiz'}</p>
-                <p class="text-white/40 text-xs">${r.customer_phone || ''}</p>
+                <p class="text-white/40 text-xs">${r.customer_phone || ''} · ${r.guests || 0} kişi · <span class="capitalize">${r.package || ''}</span></p>
               </div>
-              <span class="text-xs px-2 py-1 rounded-full ${statusColors[r.status] || ''}">${statusLabels[r.status] || r.status}</span>
+              <span class="text-gold font-bold">€${expected}</span>
             </div>
-            <div class="flex items-center gap-4 text-sm text-white/60">
-              <span>${r.guests || 0} kişi</span>
-              <span class="capitalize">${r.package || ''}</span>
-              <span class="text-gold font-medium ml-auto">€${r.total_price || 0}</span>
+            ${r.special_request ? `<p class="text-xs text-orange-400 mb-2">⚡ ${r.special_request}</p>` : ''}
+            ${r.transfer_needed ? '<p class="text-xs text-blue-400 mb-2">🚐 Transfer gerekli</p>' : ''}
+
+            <!-- Check-in Butonları -->
+            <div class="flex gap-2 mb-3">
+              <button onclick="setAttendance(${r.id}, 'arrived')"
+                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all ${isArrived ? 'bg-green-500 text-white' : 'bg-green-500/10 text-green-400 border border-green-500/30'}">
+                ✓ Geldi
+              </button>
+              <button onclick="setAttendance(${r.id}, 'no_show')"
+                class="flex-1 py-2 rounded-lg text-sm font-medium transition-all ${isNoShow ? 'bg-red-500 text-white' : 'bg-red-500/10 text-red-400 border border-red-500/30'}">
+                ✗ Gelmedi
+              </button>
             </div>
-            ${r.special_request ? `<p class="text-xs text-orange-400 mt-2">⚡ ${r.special_request}</p>` : ''}
-            ${r.transfer_needed ? '<p class="text-xs text-blue-400 mt-1">🚐 Transfer gerekli</p>' : ''}
+
+            <!-- Tahsilat -->
+            <div class="grid grid-cols-12 gap-2 items-center">
+              <input type="number" step="0.01" placeholder="Toplanan €"
+                value="${r.collected_amount || ''}"
+                onchange="updatePayment(${r.id}, this.value, null, null)"
+                class="col-span-4 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-sm text-center focus:border-gold focus:outline-none">
+              <select onchange="updatePayment(${r.id}, null, this.value, null)"
+                class="col-span-3 bg-navy-dark border border-white/10 rounded-lg px-1 py-2 text-white text-sm focus:border-gold focus:outline-none">
+                <option value="" ${!r.payment_method ? 'selected' : ''}>—</option>
+                <option value="cash" ${r.payment_method === 'cash' ? 'selected' : ''}>Nakit</option>
+                <option value="card" ${r.payment_method === 'card' ? 'selected' : ''}>Kart</option>
+              </select>
+              <input type="text" placeholder="Not"
+                value="${r.payment_note || ''}"
+                onchange="updatePayment(${r.id}, null, null, this.value)"
+                class="col-span-5 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-sm focus:border-gold focus:outline-none">
+            </div>
           </div>`;
       }).join('');
 
-      document.getElementById('totalGuests').textContent = totalGuests;
-      document.getElementById('totalRevenue').textContent = `€${totalRevenue}`;
+      document.getElementById('totalGuests').textContent = tGuests;
+      document.getElementById('totalExpected').textContent = `€${tExpected}`;
       document.getElementById('totalReservations').textContent = data.length;
+
+      // Günlük özet
+      summary.classList.remove('hidden');
+      document.getElementById('sumExpected').textContent = `€${tExpected}`;
+      document.getElementById('sumCollected').textContent = `€${tCollected}`;
+      const diff = tCollected - tExpected;
+      const diffEl = document.getElementById('sumDifference');
+      diffEl.textContent = `${diff >= 0 ? '+' : ''}€${diff}`;
+      diffEl.className = `text-lg font-bold ${diff >= 0 ? 'text-green-400' : 'text-red-400'}`;
     }
 
+    async function setAttendance(id, status) {
+      const checked_in = status === 'arrived';
+      await api('/reservations', {
+        method: 'PATCH',
+        body: JSON.stringify({ id, checked_in, attendance: status })
+      });
+      loadReservations();
+    }
+
+    async function updatePayment(id, amount, method, note) {
+      const body = { id };
+      if (amount !== null) body.collected_amount = parseFloat(amount) || 0;
+      if (method !== null) body.payment_method = method;
+      if (note !== null) body.payment_note = note;
+      await api('/reservations', { method: 'PATCH', body: JSON.stringify(body) });
+    }
+
+    // ========= GEÇMİŞ =========
+    async function loadHistory() {
+      const from = document.getElementById('historyFrom').value;
+      const to = document.getElementById('historyTo').value;
+      const status = document.getElementById('historyStatus').value;
+      const data = await api(`/history?from=${from}&to=${to}&status=${status}`);
+      if (!data) return;
+
+      const list = document.getElementById('historyList');
+      if (!data.length) {
+        list.innerHTML = '<div class="text-white/30 text-center py-8">Kayıt yok</div>';
+        return;
+      }
+
+      list.innerHTML = data.map(r => {
+        const attColors = { arrived: 'text-green-400', no_show: 'text-red-400' };
+        const attLabels = { arrived: 'Geldi', no_show: 'Gelmedi' };
+        const att = r.attendance || r.status;
+        return `
+          <div class="bg-navy-light rounded-lg p-3 border border-white/5">
+            <div class="flex justify-between items-center mb-1">
+              <span class="text-white font-medium text-sm">${r.customer_name || 'İsimsiz'}</span>
+              <span class="text-xs ${attColors[r.attendance] || 'text-yellow-400'}">${attLabels[r.attendance] || r.status}</span>
+            </div>
+            <div class="flex justify-between text-xs text-white/40">
+              <span>${new Date(r.cruise_date).toLocaleDateString('tr-TR')} · ${r.guests} kişi · ${r.package}</span>
+              <span class="text-gold">€${r.collected_amount || r.total_price || 0}</span>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    // ========= CARİ =========
     async function loadTransactions() {
       const month = document.getElementById('monthInput').value;
       const data = await api(`/transactions?month=${month}`);
@@ -206,16 +378,16 @@
       list.innerHTML = data.map(t => {
         if (t.type === 'income') totalIncome += parseFloat(t.amount);
         if (t.type === 'commission') totalCommission += parseFloat(t.amount);
-        const typeColors = { income: 'text-green-400', expense: 'text-red-400', commission: 'text-orange-400' };
-        const typeLabels = { income: 'Gelir', expense: 'Gider', commission: 'Komisyon' };
+        const colors = { income: 'text-green-400', expense: 'text-red-400', commission: 'text-orange-400' };
+        const labels = { income: 'Gelir', expense: 'Gider', commission: 'Komisyon' };
         const sign = t.type === 'income' ? '+' : '-';
         return `
           <div class="bg-navy-light rounded-lg p-3 border border-white/5 flex items-center justify-between">
             <div>
-              <p class="text-sm text-white">${t.description || typeLabels[t.type]}</p>
+              <p class="text-sm text-white">${t.description || labels[t.type]}</p>
               <p class="text-xs text-white/30">${new Date(t.date).toLocaleDateString('tr-TR')}</p>
             </div>
-            <span class="font-semibold ${typeColors[t.type]}">${sign}€${t.amount}</span>
+            <span class="font-semibold ${colors[t.type]}">${sign}€${t.amount}</span>
           </div>`;
       }).join('');
 
@@ -223,15 +395,30 @@
       document.getElementById('cariCommission').textContent = `€${totalCommission}`;
     }
 
+    // ========= ÖZET =========
+    async function loadSummary() {
+      const month = document.getElementById('summaryMonth').value;
+      const data = await api(`/summary?month=${month}`);
+      if (!data) return;
+
+      document.getElementById('smGuests').textContent = data.totalGuests;
+      document.getElementById('smReservations').textContent = data.totalReservations;
+      document.getElementById('smExpected').textContent = `€${data.totalExpected}`;
+      document.getElementById('smCollected').textContent = `€${data.totalCollected}`;
+      document.getElementById('smArrived').textContent = data.arrivedCount;
+      document.getElementById('smNoShow').textContent = data.noShowCount;
+      document.getElementById('smCancelled').textContent = data.cancelledCount;
+      document.getElementById('smAvg').textContent = `€${data.avgPerGuest}`;
+    }
+
     function logout() {
-      localStorage.removeItem('boat_token');
-      localStorage.removeItem('boat_name');
-      localStorage.removeItem('boat_id');
+      localStorage.clear();
       window.location.href = '/panel/login.html';
     }
 
     document.getElementById('dateInput').addEventListener('change', loadReservations);
     document.getElementById('monthInput').addEventListener('change', loadTransactions);
+    document.getElementById('summaryMonth').addEventListener('change', loadSummary);
 
     loadReservations();
   </script>
