@@ -58,7 +58,7 @@ async function callGoogleAds(query) {
       headers: {
         'Authorization': `Bearer ${accessToken}`,
         'developer-token': DEVELOPER_TOKEN,
-        'login-customer-id': MANAGER_ID,
+        'login-customer-id': CUSTOMER_ID,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ query }),
