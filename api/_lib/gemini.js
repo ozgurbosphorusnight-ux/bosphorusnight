@@ -75,7 +75,11 @@ TÜM METİNLERİ TÜRKÇE YAZ. JSON formatında döndür:
 - SADECE geçerli JSON döndür, başka metin yazma
 - Bulamadığın bilgi için null kullan
 - Fiyatlar sayısal olsun (para birimi simgesi olmadan)
-- Tüm açıklamalar TÜRKÇE olsun
+- unique_features ve weaknesses TÜRKÇE yaz
+- Paket isimleri (name) OLduğu GİBİ orijinal dilde bırak, çevirme
+- inclusions ve exclusions TÜRKÇE yaz
+- estimated_ad_keywords orijinal dilde bırak (hangi dilde reklam veriyorsa o dil)
+- estimated_ad_strategy TÜRKÇE yaz
 - Reklam bilgisi tahmin bazlı olabilir, site içeriğinden çıkar`;
 
   const result = await askGemini(prompt);
