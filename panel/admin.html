@@ -367,14 +367,35 @@
 
     async function runAnalysis() {
       const btn = document.getElementById('analyzeBtn');
-      btn.textContent = 'Analiz ediliyor...';
       btn.disabled = true;
-      try {
-        await api('/competitor-analysis', { method: 'POST' });
-        await loadCompetitors();
-      } catch (e) {
-        alert('Analiz sırasında hata oluştu');
+
+      // Önce rakip listesini al
+      const competitors = await api('/competitor-analysis?action=competitors');
+      if (!competitors?.length) { btn.textContent = 'Analiz Çalıştır'; btn.disabled = false; return; }
+
+      // Tek tek tara
+      for (let i = 0; i < competitors.length; i++) {
+        btn.textContent = `Taranıyor ${i + 1}/${competitors.length}: ${competitors[i].name}`;
+        try {
+          await api('/competitor-analysis', {
+            method: 'POST',
+            body: JSON.stringify({ action: 'scan', competitor_id: competitors[i].id })
+          });
+        } catch (e) { console.error('Scan error:', e); }
+        // Rate limit için 3 saniye bekle
+        if (i < competitors.length - 1) await new Promise(r => setTimeout(r, 3000));
       }
+
+      // Rapor üret
+      btn.textContent = 'Rapor hazırlanıyor...';
+      try {
+        await api('/competitor-analysis', {
+          method: 'POST',
+          body: JSON.stringify({ action: 'report' })
+        });
+      } catch (e) { console.error('Report error:', e); }
+
+      await loadCompetitors();
       btn.textContent = 'Analiz Çalıştır';
       btn.disabled = false;
     }
