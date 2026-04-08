@@ -126,7 +126,16 @@ export async function generateReport(scanResults) {
       weaknesses: r.data.weaknesses,
     }));
 
-  const prompt = `Competitive analysis for Bosphorus Night (Istanbul dinner cruise). Our prices: Standard €35, Premium €50, VIP €80.
+  const prompt = `Competitive analysis for Bosphorus Night (Istanbul dinner cruise).
+
+US (Bosphorus Night):
+- Standard €35: 3hr cruise, open buffet, live Turkish music & DJ, dance shows, Bosphorus night views
+- Premium €50: + priority seating, welcome drink, richer menu
+- VIP €80: + private table, unlimited drinks, hotel transfer, personal host
+- Strengths: 3 clear packages, WhatsApp 24/7, no prepayment, free cancellation 6hrs before, pay on boat
+- Weaknesses: no real customer reviews yet, new brand, stock photos on site
+- Booking: WhatsApp only, no online payment
+- Departure: Kabatas pier, 20:00-23:30
 
 Competitors: ${JSON.stringify(compactResults)}
 
