@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tekne Paneli — Giriş</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+            gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-navy-dark min-h-screen flex items-center justify-center px-4">
+
+  <div class="w-full max-w-sm">
+    <div class="text-center mb-8">
+      <h1 class="text-2xl font-bold text-gold">BOSPHORUS NIGHT</h1>
+      <p class="text-white/50 text-sm mt-1">Tekne Yönetim Paneli</p>
+    </div>
+
+    <div class="bg-navy-light rounded-2xl p-6 border border-white/10">
+      <h2 class="text-white text-lg font-semibold mb-4">Giriş Yap</h2>
+
+      <div id="errorMsg" class="hidden bg-red-500/10 border border-red-500/30 text-red-400 text-sm rounded-lg p-3 mb-4"></div>
+
+      <div class="mb-4">
+        <label class="text-white/60 text-sm mb-1 block">Tekne Seçin</label>
+        <select id="boatSelect" class="w-full bg-navy-dark border border-white/10 rounded-lg px-4 py-3 text-white focus:border-gold focus:outline-none">
+          <option value="">Yükleniyor...</option>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <label class="text-white/60 text-sm mb-1 block">Giriş Kodu</label>
+        <input id="loginCode" type="password" placeholder="Şifrenizi girin"
+          class="w-full bg-navy-dark border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/30 focus:border-gold focus:outline-none">
+      </div>
+
+      <button onclick="login()" id="loginBtn"
+        class="w-full bg-gold hover:bg-gold-dark text-navy-dark font-semibold py-3 rounded-lg transition-colors">
+        Giriş
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const API_BASE = '/api/panel';
+
+    if (localStorage.getItem('boat_token')) {
+      window.location.href = '/panel/dashboard.html';
+    }
+
+    async function loadBoats() {
+      try {
+        const res = await fetch(`${API_BASE}/boats`);
+        const boats = await res.json();
+        const select = document.getElementById('boatSelect');
+        select.innerHTML = '<option value="">Tekne seçin...</option>';
+        boats.forEach(b => {
+          select.innerHTML += `<option value="${b.slug}">${b.name}</option>`;
+        });
+      } catch (e) {
+        document.getElementById('boatSelect').innerHTML = '<option value="">Bağlantı hatası</option>';
+      }
+    }
+
+    async function login() {
+      const slug = document.getElementById('boatSelect').value;
+      const code = document.getElementById('loginCode').value;
+      const errorMsg = document.getElementById('errorMsg');
+      const btn = document.getElementById('loginBtn');
+
+      errorMsg.classList.add('hidden');
+
+      if (!slug || !code) {
+        errorMsg.textContent = 'Tekne seçin ve giriş kodunu girin.';
+        errorMsg.classList.remove('hidden');
+        return;
+      }
+
+      btn.textContent = 'Giriş yapılıyor...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch(`${API_BASE}/auth`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ slug, code }),
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.token) {
+          localStorage.setItem('boat_token', data.token);
+          localStorage.setItem('boat_name', data.boat_name);
+          localStorage.setItem('boat_id', data.boat_id);
+          window.location.href = '/panel/dashboard.html';
+        } else {
+          errorMsg.textContent = data.error || 'Hatalı giriş kodu.';
+          errorMsg.classList.remove('hidden');
+        }
+      } catch (e) {
+        errorMsg.textContent = 'Bağlantı hatası. Tekrar deneyin.';
+        errorMsg.classList.remove('hidden');
+      }
+
+      btn.textContent = 'Giriş';
+      btn.disabled = false;
+    }
+
+    document.getElementById('loginCode').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') login();
+    });
+
+    loadBoats();
+  </script>
+</body>
+</html>
