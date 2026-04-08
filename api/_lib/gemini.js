@@ -1,6 +1,6 @@
 // Gemini AI ile rakip site tarama
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
+const GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
 
 export async function askGemini(prompt, retries = 2) {
   const response = await fetch(`${GEMINI_URL}?key=${GEMINI_API_KEY}`, {
