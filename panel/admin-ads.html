@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reklamlar — Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+      }}}
+    }
+  </script>
+</head>
+<body class="bg-navy-dark min-h-screen text-white">
+
+  <header class="bg-navy-light border-b border-white/10 px-4 py-2 flex items-center justify-between sticky top-0 z-10">
+    <div class="flex items-center gap-6">
+      <h1 class="text-gold font-bold text-lg">ADMIN</h1>
+      <nav class="flex gap-1">
+        <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
+        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Araştırma</a>
+        <a href="/panel/admin-ads.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">Reklamlar</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-white/30 text-xs" id="adminName">—</span>
+      <button onclick="logout()" class="text-white/40 hover:text-red-400 text-xs">Çıkış</button>
+    </div>
+  </header>
+
+  <div class="p-4 max-w-5xl mx-auto">
+    <h2 class="text-gold font-bold text-xl mb-6">Google Ads</h2>
+
+    <!-- Bağlantı Durumu -->
+    <div id="connectionSection" class="bg-navy-light rounded-xl p-5 border border-white/5 mb-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-sm font-semibold text-white">Google Ads Bağlantısı</h3>
+          <p id="connectionStatus" class="text-white/40 text-xs mt-1">Kontrol ediliyor...</p>
+        </div>
+        <button onclick="connectGoogleAds()" id="connectBtn" class="bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm hidden">Bağla</button>
+      </div>
+    </div>
+
+    <!-- Kampanya Performansı -->
+    <div id="campaignSection" class="hidden">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-sm font-semibold text-gold">Kampanya Performansı</h3>
+        <select id="dayRange" onchange="loadCampaigns()" class="bg-navy-light border border-white/10 rounded-lg px-3 py-1 text-white text-xs">
+          <option value="7">Son 7 gün</option>
+          <option value="14">Son 14 gün</option>
+          <option value="30">Son 30 gün</option>
+        </select>
+      </div>
+      <div id="campaignList" class="space-y-3 mb-6"></div>
+
+      <!-- Kelime Performansı -->
+      <h3 class="text-sm font-semibold text-gold mb-3">Anahtar Kelime Performansı</h3>
+      <div id="keywordList" class="overflow-x-auto mb-6">
+        <table class="w-full text-xs">
+          <thead>
+            <tr class="text-white/40 border-b border-white/5">
+              <th class="text-left py-2 pr-3">Kelime</th>
+              <th class="text-center py-2 px-2">Gösterim</th>
+              <th class="text-center py-2 px-2">Tıklama</th>
+              <th class="text-center py-2 px-2">Maliyet</th>
+              <th class="text-center py-2 px-2">Dönüşüm</th>
+            </tr>
+          </thead>
+          <tbody id="keywordBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API = '/api/panel';
+    const token = localStorage.getItem('admin_token');
+    const role = localStorage.getItem('admin_role');
+    if (!token) window.location.href = '/panel/admin-login.html';
+    if (role !== 'admin_sahip') { alert('Yetkisiz'); window.location.href = '/panel/admin.html'; }
+    document.getElementById('adminName').textContent = localStorage.getItem('admin_name') || 'Admin';
+
+    async function api(path) {
+      const res = await fetch(`${API}${path}`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      if (res.status === 401) { logout(); return null; }
+      return res.json();
+    }
+
+    async function checkConnection() {
+      const data = await api('/google-ads?action=status');
+      const status = document.getElementById('connectionStatus');
+      const btn = document.getElementById('connectBtn');
+      const section = document.getElementById('campaignSection');
+
+      if (data?.connected) {
+        status.innerHTML = '<span class="text-green-400">● Bağlı</span>';
+        btn.classList.add('hidden');
+        section.classList.remove('hidden');
+        loadCampaigns();
+        loadKeywords();
+      } else {
+        status.innerHTML = '<span class="text-red-400">● Bağlı değil</span>';
+        btn.classList.remove('hidden');
+      }
+    }
+
+    async function connectGoogleAds() {
+      const data = await api('/google-ads?action=auth-url');
+      if (data?.url) window.location.href = data.url;
+    }
+
+    async function loadCampaigns() {
+      const days = document.getElementById('dayRange').value;
+      const data = await api(`/google-ads?action=campaigns&days=${days}`);
+      const list = document.getElementById('campaignList');
+
+      if (data?.error) {
+        list.innerHTML = `<div class="bg-navy-light rounded-xl p-4 border border-red-500/20 text-red-400 text-sm">${data.error}</div>`;
+        return;
+      }
+
+      if (!data?.length) {
+        list.innerHTML = '<div class="text-white/30 text-center py-4 text-sm">Kampanya verisi yok</div>';
+        return;
+      }
+
+      list.innerHTML = data.map(c => {
+        const statusColor = c.status === 'ENABLED' ? 'text-green-400' : 'text-yellow-400';
+        const statusLabel = c.status === 'ENABLED' ? 'Aktif' : c.status === 'PAUSED' ? 'Duraklatılmış' : c.status;
+        return `
+          <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+            <div class="flex items-center justify-between mb-3">
+              <div>
+                <span class="text-white font-medium">${c.name}</span>
+                <span class="text-xs ${statusColor} ml-2">${statusLabel}</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-4 gap-3 text-center">
+              <div>
+                <p class="text-lg font-bold text-white">${c.impressions.toLocaleString()}</p>
+                <p class="text-white/40 text-xs">Gösterim</p>
+              </div>
+              <div>
+                <p class="text-lg font-bold text-blue-400">${c.clicks.toLocaleString()}</p>
+                <p class="text-white/40 text-xs">Tıklama</p>
+              </div>
+              <div>
+                <p class="text-lg font-bold text-gold">₺${c.cost}</p>
+                <p class="text-white/40 text-xs">Maliyet</p>
+              </div>
+              <div>
+                <p class="text-lg font-bold text-green-400">${c.conversions}</p>
+                <p class="text-white/40 text-xs">Dönüşüm</p>
+              </div>
+            </div>
+          </div>`;
+      }).join('');
+    }
+
+    async function loadKeywords() {
+      const days = document.getElementById('dayRange').value;
+      const data = await api(`/google-ads?action=keywords&days=${days}`);
+      const body = document.getElementById('keywordBody');
+
+      if (data?.error || !data?.length) {
+        body.innerHTML = '<tr><td colspan="5" class="text-center text-white/30 py-4">Kelime verisi yok</td></tr>';
+        return;
+      }
+
+      body.innerHTML = data.map(k => `
+        <tr class="border-b border-white/5">
+          <td class="py-2 pr-3 text-white">${k.keyword}</td>
+          <td class="py-2 px-2 text-center text-white/60">${k.impressions.toLocaleString()}</td>
+          <td class="py-2 px-2 text-center text-blue-400">${k.clicks}</td>
+          <td class="py-2 px-2 text-center text-gold">₺${k.cost}</td>
+          <td class="py-2 px-2 text-center text-green-400">${k.conversions}</td>
+        </tr>
+      `).join('');
+    }
+
+    function logout() {
+      localStorage.removeItem('admin_token');
+      localStorage.removeItem('admin_name');
+      localStorage.removeItem('admin_role');
+      window.location.href = '/panel/admin-login.html';
+    }
+
+    checkConnection();
+  </script>
+</body>
+</html>
