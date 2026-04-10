@@ -36,11 +36,13 @@
   <div class="p-4 max-w-6xl mx-auto">
     <div class="flex items-center justify-between mb-6">
       <h2 class="text-gold font-bold text-xl">İstatistikler</h2>
-      <div class="flex gap-1" id="periodBtns">
-        <button onclick="setPeriod(1)" data-m="1" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Ay</button>
-        <button onclick="setPeriod(3)" data-m="3" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gold/10 text-gold">3 Ay</button>
-        <button onclick="setPeriod(6)" data-m="6" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">6 Ay</button>
-        <button onclick="setPeriod(12)" data-m="12" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Yıl</button>
+      <div class="flex gap-1 flex-wrap justify-end" id="periodBtns">
+        <button onclick="setPeriod(0, 1)" data-p="d1" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">Bugün</button>
+        <button onclick="setPeriod(0, 7)" data-p="d7" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">7 Gün</button>
+        <button onclick="setPeriod(1)" data-p="m1" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Ay</button>
+        <button onclick="setPeriod(3)" data-p="m3" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium bg-gold/10 text-gold">3 Ay</button>
+        <button onclick="setPeriod(6)" data-p="m6" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">6 Ay</button>
+        <button onclick="setPeriod(12)" data-p="m12" class="period-btn px-2 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Yıl</button>
       </div>
     </div>
 
@@ -184,8 +186,13 @@
     document.getElementById('adminName').textContent = localStorage.getItem('admin_name') || 'Admin';
 
     let currentMonths = 3;
+    let currentDays = null;
     let currentGranularity = 'daily';
     const charts = {};
+
+    function periodParam() {
+      return currentDays ? `days=${currentDays}` : `months=${currentMonths}`;
+    }
 
     async function api(path) {
       const res = await fetch(`${API}${path}`, {
@@ -195,14 +202,16 @@
       return res.json();
     }
 
-    function setPeriod(m) {
-      currentMonths = m;
+    function setPeriod(m, d) {
+      if (d) { currentDays = d; currentMonths = 0; }
+      else { currentMonths = m; currentDays = null; }
+      const key = d ? `d${d}` : `m${m}`;
       document.querySelectorAll('.period-btn').forEach(b => {
         b.classList.remove('bg-gold/10', 'text-gold');
         b.classList.add('text-white/40');
       });
-      document.querySelector(`[data-m="${m}"]`).classList.add('bg-gold/10', 'text-gold');
-      document.querySelector(`[data-m="${m}"]`).classList.remove('text-white/40');
+      const active = document.querySelector(`[data-p="${key}"]`);
+      if (active) { active.classList.add('bg-gold/10', 'text-gold'); active.classList.remove('text-white/40'); }
       loadAll();
     }
 
@@ -238,7 +247,7 @@
 
     // ── KPI Kartları ──
     async function loadOverview() {
-      const data = await api(`/admin-stats?action=overview&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=overview&${periodParam()}`);
       if (!data || data.error) return;
       changeText('kpiRevenue', '€' + Math.round(data.totalRevenue).toLocaleString());
       changeText('kpiGuests', data.totalGuests.toLocaleString());
@@ -252,7 +261,7 @@
 
     // ── Gelir Trendi ──
     async function loadRevenueTrend() {
-      const data = await api(`/admin-stats?action=revenue-trend&months=${currentMonths}&granularity=${currentGranularity}`);
+      const data = await api(`/admin-stats?action=revenue-trend&${periodParam()}&granularity=${currentGranularity}`);
       if (!data || data.error) return;
 
       destroyChart('revenue');
@@ -301,7 +310,7 @@
 
     // ── Breakdown: Paket, Tekne, Ülke, Ödeme ──
     async function loadBreakdown() {
-      const data = await api(`/admin-stats?action=breakdown&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=breakdown&${periodParam()}`);
       if (!data || data.error) return;
 
       // Paket Dağılımı
@@ -423,7 +432,7 @@
 
     // ── Saatlik Yoğunluk ──
     async function loadHourly() {
-      const data = await api(`/admin-stats?action=hourly-analysis&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=hourly-analysis&${periodParam()}`);
       if (!data || data.error) return;
 
       const peakLabel = document.getElementById('peakHourLabel');
@@ -464,7 +473,7 @@
 
     // ── Haftalık Yoğunluk ──
     async function loadPeakAnalysis() {
-      const data = await api(`/admin-stats?action=peak-analysis&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=peak-analysis&${periodParam()}`);
       if (!data || data.error) return;
 
       destroyChart('weekly');
@@ -490,7 +499,7 @@
 
     // ── Lead Time ──
     async function loadLeadTime() {
-      const data = await api(`/admin-stats?action=lead-time&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=lead-time&${periodParam()}`);
       if (!data || data.error) return;
 
       destroyChart('leadTime');
@@ -515,7 +524,7 @@
 
     // ── Ads ROI ──
     async function loadAdsRoi() {
-      const data = await api(`/admin-stats?action=ads-roi&months=${currentMonths}`);
+      const data = await api(`/admin-stats?action=ads-roi&${periodParam()}`);
       const container = document.getElementById('adsRoiContent');
       if (!data || data.error) {
         container.innerHTML = '<p class="text-white/30 text-sm text-center py-4">Veri alınamadı</p>';
@@ -576,7 +585,7 @@
         const res = await fetch(`${API}/admin-stats`, {
           method: 'POST',
           headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
-          body: JSON.stringify({ action: 'ai-analysis', months: currentMonths })
+          body: JSON.stringify({ action: 'ai-analysis', months: currentMonths, days: currentDays })
         });
         if (res.status === 401) { logout(); return; }
         const data = await res.json();

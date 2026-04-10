@@ -15,10 +15,14 @@ function parseAdminToken(authHeader) {
   }
 }
 
-function getDateRange(months) {
+function getDateRange(months, days) {
   const end = new Date();
   const start = new Date();
-  start.setMonth(start.getMonth() - months);
+  if (days) {
+    start.setDate(start.getDate() - days);
+  } else {
+    start.setMonth(start.getMonth() - months);
+  }
   return {
     startDate: start.toISOString().split('T')[0],
     endDate: end.toISOString().split('T')[0],
@@ -32,11 +36,12 @@ export default async function handler(req, res) {
 
   // ── POST: AI Analiz ──
   if (req.method === 'POST') {
-    const { action, months: reqMonths } = req.body || {};
+    const { action, months: reqMonths, days: reqDays } = req.body || {};
     if (action !== 'ai-analysis') return res.status(400).json({ error: 'Geçersiz action' });
 
     const months = parseInt(reqMonths) || 3;
-    const { startDate, endDate } = getDateRange(months);
+    const aiDays = reqDays ? parseInt(reqDays) : null;
+    const { startDate, endDate } = getDateRange(months, aiDays);
 
     try {
       // Tüm verileri topla
@@ -181,7 +186,8 @@ SADECE bu JSON formatında yanıt ver (başka metin yazma):
 
   const action = req.query.action;
   const months = parseInt(req.query.months) || 3;
-  const { startDate, endDate } = getDateRange(months);
+  const days = req.query.days ? parseInt(req.query.days) : null;
+  const { startDate, endDate } = getDateRange(months, days);
 
   try {
     // ── OVERVIEW: KPI kartları ──
