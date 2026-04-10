@@ -1,3 +1,4 @@
+import Anthropic from '@anthropic-ai/sdk';
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_SERVICE_KEY);
@@ -25,11 +26,158 @@ function getDateRange(months) {
 }
 
 export default async function handler(req, res) {
-  if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
-
   const user = parseAdminToken(req.headers.authorization);
   if (!user) return res.status(401).json({ error: 'Yetkisiz' });
   if (user.role !== 'admin_sahip') return res.status(403).json({ error: 'Yetkiniz yok' });
+
+  // ── POST: AI Analiz ──
+  if (req.method === 'POST') {
+    const { action, months: reqMonths } = req.body || {};
+    if (action !== 'ai-analysis') return res.status(400).json({ error: 'Geçersiz action' });
+
+    const months = parseInt(reqMonths) || 3;
+    const { startDate, endDate } = getDateRange(months);
+
+    try {
+      // Tüm verileri topla
+      const { data: reservations } = await supabase
+        .from('reservations')
+        .select('cruise_date, created_at, package, boat_id, guests, expected_amount, collected_amount, attendance, status, payment_method, customer_phone')
+        .gte('cruise_date', startDate)
+        .lte('cruise_date', endDate)
+        .neq('status', 'cancelled');
+
+      const { data: boats } = await supabase.from('boats').select('id, name, capacity').eq('active', true);
+
+      const phones = [...new Set((reservations || []).map(r => r.customer_phone).filter(Boolean))];
+      let customers = [];
+      if (phones.length > 0) {
+        const { data } = await supabase.from('customers').select('phone, country, language').in('phone', phones);
+        customers = data || [];
+      }
+      const customerMap = {};
+      for (const c of customers) customerMap[c.phone] = c;
+
+      const rows = reservations || [];
+      const arrived = rows.filter(r => r.attendance === 'arrived');
+
+      // KPI
+      const totalGuests = arrived.reduce((s, r) => s + (r.guests || 0), 0);
+      const totalRevenue = arrived.reduce((s, r) => s + (parseFloat(r.collected_amount) || 0), 0);
+      const noShowCount = rows.filter(r => r.attendance === 'no_show').length;
+
+      // Paket dağılımı
+      const packages = {};
+      for (const r of rows) {
+        const pkg = r.package || 'unknown';
+        if (!packages[pkg]) packages[pkg] = { count: 0, revenue: 0 };
+        packages[pkg].count++;
+        if (r.attendance === 'arrived') packages[pkg].revenue += parseFloat(r.collected_amount) || 0;
+      }
+
+      // Saatlik
+      const hourly = Array(24).fill(0);
+      for (const r of rows) {
+        if (!r.created_at) continue;
+        const h = new Date(r.created_at).getUTCHours();
+        hourly[(h + 3) % 24]++;
+      }
+
+      // Haftalık
+      const dayNames = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
+      const weekly = Array(7).fill(0);
+      for (const r of rows) {
+        weekly[new Date(r.cruise_date).getDay()]++;
+      }
+
+      // Lead time
+      const leadTimes = [];
+      for (const r of rows) {
+        if (!r.created_at || !r.cruise_date) continue;
+        leadTimes.push(Math.max(0, Math.floor((new Date(r.cruise_date) - new Date(r.created_at)) / 86400000)));
+      }
+      const avgLeadTime = leadTimes.length > 0 ? (leadTimes.reduce((a, b) => a + b, 0) / leadTimes.length).toFixed(1) : 0;
+      const sameDayPct = leadTimes.length > 0 ? ((leadTimes.filter(d => d === 0).length / leadTimes.length) * 100).toFixed(1) : 0;
+
+      // Ülkeler
+      const countries = {};
+      for (const r of rows) {
+        const country = customerMap[r.customer_phone]?.country || 'Bilinmiyor';
+        countries[country] = (countries[country] || 0) + 1;
+      }
+      const topCountries = Object.entries(countries).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+      // Tekne doluluk
+      const boatStats = (boats || []).map(b => {
+        const bRows = arrived.filter(r => r.boat_id === b.id);
+        const guests = bRows.reduce((s, r) => s + (r.guests || 0), 0);
+        const days = new Set(rows.filter(r => r.boat_id === b.id).map(r => r.cruise_date)).size || 1;
+        return { name: b.name, capacity: b.capacity, avgGuests: Math.round(guests / days), occupancy: b.capacity > 0 ? Math.round((guests / days / b.capacity) * 100) : 0 };
+      });
+
+      // Ödeme
+      const cashCount = arrived.filter(r => r.payment_method === 'cash').length;
+      const cardCount = arrived.filter(r => r.payment_method === 'card').length;
+
+      // Claude'a gönder
+      const statsData = {
+        period: `Son ${months} ay (${startDate} - ${endDate})`,
+        totalReservations: rows.length,
+        totalGuests,
+        totalRevenue: `€${totalRevenue.toFixed(0)}`,
+        avgPerGuest: totalGuests > 0 ? `€${(totalRevenue / totalGuests).toFixed(1)}` : '€0',
+        noShowRate: rows.length > 0 ? `%${((noShowCount / rows.length) * 100).toFixed(1)}` : '%0',
+        packages,
+        boatStats,
+        topCountries,
+        hourlyDistribution: hourly.map((count, h) => count > 0 ? `${String(h).padStart(2, '0')}:00=${count}` : null).filter(Boolean),
+        weeklyDistribution: dayNames.map((name, i) => `${name}=${weekly[i]}`),
+        avgLeadTimeDays: avgLeadTime,
+        sameDayBookingPct: `%${sameDayPct}`,
+        paymentSplit: `Nakit: ${cashCount}, Kart: ${cardCount}`,
+      };
+
+      const prompt = `Sen bir turizm ve dijital pazarlama uzmanısın. Aşağıdaki İstanbul Boğaz turu istatistiklerini analiz et.
+
+BİZİM İŞLETME (Bosphorus Night):
+- Standard €35: 3 saat, açık büfe, canlı müzik, dans şovları
+- Premium €50: + öncelikli oturma, karşılama içeceği, zengin menü
+- VIP €80: + özel masa, sınırsız içecek, otel transferi
+- Rezervasyon: Sadece WhatsApp, online ödeme yok, teknede ödeme
+- Kalkış: Kabataş iskelesi, 20:00-23:30
+
+İSTATİSTİKLER:
+${JSON.stringify(statsData, null, 2)}
+
+GÖREV: Bu verileri analiz edip TÜRKÇE strateji önerileri ver. Özellikle şunlara odaklan:
+1. Google Ads reklam bütçesini hangi saatlere ve günlere yoğunlaştırmalıyız
+2. Hangi ülkeleri hedeflemeliyiz
+3. Paket fiyatlaması doğru mu, değişiklik lazım mı
+4. No-show oranını nasıl düşürebiliriz
+5. Aynı gün rezervasyon oranı yüksekse/düşükse ne anlama geliyor
+6. Tekne doluluk oranlarına göre operasyonel öneriler
+
+SADECE bu JSON formatında yanıt ver (başka metin yazma):
+{"summary":"2-3 cümle genel değerlendirme","recommendations":[{"action":"yapılması gereken","reason":"neden","priority":"high/medium/low","category":"reklam/fiyat/operasyon/hedef-kitle"}],"ad_strategy":{"best_hours":"reklam için en iyi saat aralıkları","best_days":"reklam için en iyi günler","target_countries":"hedef ülkeler ve neden","budget_tips":"bütçe dağılım önerisi"},"pricing_tips":"fiyatlama önerisi","risk_alerts":["dikkat edilmesi gereken riskler"]}`;
+
+      const claude = new Anthropic({ apiKey: process.env.CLAUDE_API_KEY });
+      const response = await claude.messages.create({
+        model: 'claude-haiku-4-5-20251001',
+        max_tokens: 3000,
+        messages: [{ role: 'user', content: prompt }],
+      });
+
+      const text = response.content[0].text;
+      const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+      const report = JSON.parse(cleaned);
+
+      return res.status(200).json(report);
+    } catch (err) {
+      return res.status(500).json({ error: 'AI analiz hatası', detail: err.message });
+    }
+  }
+
+  if (req.method !== 'GET') return res.status(405).json({ error: 'Method not allowed' });
 
   const action = req.query.action;
   const months = parseInt(req.query.months) || 3;

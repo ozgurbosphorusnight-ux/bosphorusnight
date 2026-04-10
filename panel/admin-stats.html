@@ -68,6 +68,15 @@
       </div>
     </div>
 
+    <!-- AI Analiz -->
+    <div class="bg-navy-light rounded-xl p-4 border border-white/5 mb-6">
+      <div class="flex items-center justify-between">
+        <h3 class="text-sm font-semibold text-gold">AI Strateji Analizi</h3>
+        <button onclick="runAiAnalysis()" id="aiBtn" class="bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gold-light transition-colors">Analiz Yap</button>
+      </div>
+      <div id="aiResult" class="hidden mt-4 space-y-4"></div>
+    </div>
+
     <!-- Gelir Trendi -->
     <div class="bg-navy-light rounded-xl p-4 border border-white/5 mb-6">
       <div class="flex items-center justify-between mb-3">
@@ -552,6 +561,102 @@
           </div>
         </div>
       `;
+    }
+
+    // ── AI Analiz ──
+    async function runAiAnalysis() {
+      const btn = document.getElementById('aiBtn');
+      const result = document.getElementById('aiResult');
+      btn.disabled = true;
+      btn.textContent = 'Analiz ediliyor...';
+      result.classList.remove('hidden');
+      result.innerHTML = '<p class="text-white/30 text-sm text-center py-4">AI verileri analiz ediyor, lütfen bekleyin...</p>';
+
+      try {
+        const res = await fetch(`${API}/admin-stats`, {
+          method: 'POST',
+          headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'ai-analysis', months: currentMonths })
+        });
+        if (res.status === 401) { logout(); return; }
+        const data = await res.json();
+
+        if (data.error) {
+          result.innerHTML = `<p class="text-red-400 text-sm">${data.error}</p>`;
+          btn.textContent = 'Analiz Yap';
+          btn.disabled = false;
+          return;
+        }
+
+        let html = '';
+
+        // Özet
+        if (data.summary) {
+          html += `<div class="bg-navy-dark rounded-lg p-4 border border-gold/20">
+            <p class="text-white text-sm leading-relaxed">${data.summary}</p>
+          </div>`;
+        }
+
+        // Öneriler
+        if (data.recommendations?.length) {
+          html += '<div class="space-y-2">';
+          html += '<p class="text-gold text-xs font-semibold">ÖNERİLER</p>';
+          for (const rec of data.recommendations) {
+            const colors = { high: 'border-red-500/30 bg-red-500/5', medium: 'border-yellow-500/30 bg-yellow-500/5', low: 'border-green-500/30 bg-green-500/5' };
+            const badges = { high: 'bg-red-500/20 text-red-400', medium: 'bg-yellow-500/20 text-yellow-400', low: 'bg-green-500/20 text-green-400' };
+            const catLabels = { reklam: 'Reklam', fiyat: 'Fiyat', operasyon: 'Operasyon', 'hedef-kitle': 'Hedef Kitle' };
+            html += `<div class="rounded-lg p-3 border ${colors[rec.priority] || colors.medium}">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-[10px] px-1.5 py-0.5 rounded ${badges[rec.priority] || badges.medium}">${rec.priority?.toUpperCase()}</span>
+                ${rec.category ? `<span class="text-[10px] text-white/30">${catLabels[rec.category] || rec.category}</span>` : ''}
+              </div>
+              <p class="text-white text-sm font-medium">${rec.action}</p>
+              <p class="text-white/50 text-xs mt-1">${rec.reason}</p>
+            </div>`;
+          }
+          html += '</div>';
+        }
+
+        // Reklam Stratejisi
+        if (data.ad_strategy) {
+          const ad = data.ad_strategy;
+          html += `<div class="bg-navy-dark rounded-lg p-4 border border-white/5">
+            <p class="text-gold text-xs font-semibold mb-3">REKLAM STRATEJİSİ</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+              ${ad.best_hours ? `<div><p class="text-white/40 text-xs mb-1">En İyi Saatler</p><p class="text-white">${ad.best_hours}</p></div>` : ''}
+              ${ad.best_days ? `<div><p class="text-white/40 text-xs mb-1">En İyi Günler</p><p class="text-white">${ad.best_days}</p></div>` : ''}
+              ${ad.target_countries ? `<div><p class="text-white/40 text-xs mb-1">Hedef Ülkeler</p><p class="text-white">${ad.target_countries}</p></div>` : ''}
+              ${ad.budget_tips ? `<div><p class="text-white/40 text-xs mb-1">Bütçe Önerisi</p><p class="text-white">${ad.budget_tips}</p></div>` : ''}
+            </div>
+          </div>`;
+        }
+
+        // Fiyatlama
+        if (data.pricing_tips) {
+          html += `<div class="bg-navy-dark rounded-lg p-3 border border-white/5">
+            <p class="text-gold text-xs font-semibold mb-1">FİYATLAMA</p>
+            <p class="text-white text-sm">${data.pricing_tips}</p>
+          </div>`;
+        }
+
+        // Risk Uyarıları
+        if (data.risk_alerts?.length) {
+          html += '<div class="bg-navy-dark rounded-lg p-3 border border-red-500/20">';
+          html += '<p class="text-red-400 text-xs font-semibold mb-2">DİKKAT</p>';
+          html += '<ul class="space-y-1">';
+          for (const alert of data.risk_alerts) {
+            html += `<li class="text-white/60 text-sm flex items-start gap-2"><span class="text-red-400">•</span>${alert}</li>`;
+          }
+          html += '</ul></div>';
+        }
+
+        result.innerHTML = html || '<p class="text-white/30 text-sm">Analiz sonucu boş döndü</p>';
+      } catch (err) {
+        result.innerHTML = `<p class="text-red-400 text-sm">Hata: ${err.message}</p>`;
+      }
+
+      btn.textContent = 'Tekrar Analiz Yap';
+      btn.disabled = false;
     }
 
     // ── Load All ──
