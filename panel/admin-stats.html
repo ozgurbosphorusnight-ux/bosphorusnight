@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İstatistikler — Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+      }}}
+    }
+  </script>
+</head>
+<body class="bg-navy-dark min-h-screen text-white">
+
+  <header class="bg-navy-light border-b border-white/10 px-4 py-2 flex items-center justify-between sticky top-0 z-10">
+    <div class="flex items-center gap-6">
+      <h1 class="text-gold font-bold text-lg">ADMIN</h1>
+      <nav class="flex gap-1">
+        <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
+        <a href="/panel/admin-stats.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">İstatistikler</a>
+        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Araştırma</a>
+        <a href="/panel/admin-ads.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Reklamlar</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-white/30 text-xs" id="adminName">—</span>
+      <button onclick="logout()" class="text-white/40 hover:text-red-400 text-xs">Çıkış</button>
+    </div>
+  </header>
+
+  <div class="p-4 max-w-6xl mx-auto">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-gold font-bold text-xl">İstatistikler</h2>
+      <div class="flex gap-1" id="periodBtns">
+        <button onclick="setPeriod(1)" data-m="1" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Ay</button>
+        <button onclick="setPeriod(3)" data-m="3" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium bg-gold/10 text-gold">3 Ay</button>
+        <button onclick="setPeriod(6)" data-m="6" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">6 Ay</button>
+        <button onclick="setPeriod(12)" data-m="12" class="period-btn px-3 py-1.5 rounded-lg text-xs font-medium text-white/40 hover:text-white hover:bg-white/5">1 Yıl</button>
+      </div>
+    </div>
+
+    <!-- KPI Kartları -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6" id="kpiCards">
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <p class="text-white/40 text-xs mb-1">Toplam Gelir</p>
+        <p class="text-2xl font-bold text-gold" id="kpiRevenue">—</p>
+        <p class="text-xs mt-1" id="kpiRevenueChange"></p>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <p class="text-white/40 text-xs mb-1">Toplam Misafir</p>
+        <p class="text-2xl font-bold text-white" id="kpiGuests">—</p>
+        <p class="text-xs mt-1" id="kpiGuestsChange"></p>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <p class="text-white/40 text-xs mb-1">Ort. Kişi Başı</p>
+        <p class="text-2xl font-bold text-gold-light" id="kpiAvg">—</p>
+        <p class="text-xs mt-1" id="kpiAvgChange"></p>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <p class="text-white/40 text-xs mb-1">No-Show Oranı</p>
+        <p class="text-2xl font-bold text-red-400" id="kpiNoShow">—</p>
+        <p class="text-xs mt-1" id="kpiNoShowChange"></p>
+      </div>
+    </div>
+
+    <!-- Gelir Trendi -->
+    <div class="bg-navy-light rounded-xl p-4 border border-white/5 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-sm font-semibold text-gold">Gelir Trendi</h3>
+        <div class="flex gap-1">
+          <button onclick="setGranularity('daily')" data-g="daily" class="gran-btn px-2 py-1 rounded text-xs text-gold bg-gold/10">Günlük</button>
+          <button onclick="setGranularity('weekly')" data-g="weekly" class="gran-btn px-2 py-1 rounded text-xs text-white/40 hover:text-white">Haftalık</button>
+          <button onclick="setGranularity('monthly')" data-g="monthly" class="gran-btn px-2 py-1 rounded text-xs text-white/40 hover:text-white">Aylık</button>
+        </div>
+      </div>
+      <div class="h-64">
+        <canvas id="revenueChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Paket + Tekne Doluluk -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Paket Dağılımı</h3>
+        <div class="h-56">
+          <canvas id="packageChart"></canvas>
+        </div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Tekne Doluluk Oranı</h3>
+        <div class="h-56">
+          <canvas id="boatChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ülke + Ödeme -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Müşteri Ülkeleri (Top 10)</h3>
+        <div class="h-56">
+          <canvas id="countryChart"></canvas>
+        </div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Ödeme Yöntemi</h3>
+        <div class="h-56">
+          <canvas id="paymentChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saatlik Yoğunluk -->
+    <div class="bg-navy-light rounded-xl p-4 border border-white/5 mb-6">
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="text-sm font-semibold text-gold">Saatlik Yoğunluk (Rezervasyon Saati)</h3>
+        <p class="text-white/30 text-xs" id="peakHourLabel"></p>
+      </div>
+      <div class="h-64">
+        <canvas id="hourlyChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Haftalık + Lead Time -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Haftalık Yoğunluk</h3>
+        <div class="h-56">
+          <canvas id="weeklyChart"></canvas>
+        </div>
+      </div>
+      <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+        <h3 class="text-sm font-semibold text-gold mb-3">Rezervasyon Zamanlaması</h3>
+        <div class="h-56">
+          <canvas id="leadTimeChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Ads ROI -->
+    <div class="bg-navy-light rounded-xl p-4 border border-white/5 mb-6" id="adsRoiSection">
+      <h3 class="text-sm font-semibold text-gold mb-3">Google Ads ROI</h3>
+      <div id="adsRoiContent">
+        <p class="text-white/30 text-sm text-center py-4">Yükleniyor...</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ── Chart.js Defaults ──
+    Chart.defaults.color = 'rgba(255,255,255,0.5)';
+    Chart.defaults.borderColor = 'rgba(255,255,255,0.05)';
+    Chart.defaults.plugins.legend.labels.color = 'rgba(255,255,255,0.6)';
+    Chart.defaults.responsive = true;
+    Chart.defaults.maintainAspectRatio = false;
+
+    const GOLD = '#c9a84c';
+    const GOLD_LIGHT = '#d4b86a';
+    const GOLD_DARK = '#b8953f';
+    const GREEN = '#4ade80';
+    const RED = '#f87171';
+    const BLUE = '#60a5fa';
+    const WHITE50 = 'rgba(255,255,255,0.5)';
+
+    const API = '/api/panel';
+    const token = localStorage.getItem('admin_token');
+    const role = localStorage.getItem('admin_role');
+    if (!token) window.location.href = '/panel/admin-login.html';
+    if (role !== 'admin_sahip') { alert('Yetkisiz'); window.location.href = '/panel/admin.html'; }
+    document.getElementById('adminName').textContent = localStorage.getItem('admin_name') || 'Admin';
+
+    let currentMonths = 3;
+    let currentGranularity = 'daily';
+    const charts = {};
+
+    async function api(path) {
+      const res = await fetch(`${API}${path}`, {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      if (res.status === 401) { logout(); return null; }
+      return res.json();
+    }
+
+    function setPeriod(m) {
+      currentMonths = m;
+      document.querySelectorAll('.period-btn').forEach(b => {
+        b.classList.remove('bg-gold/10', 'text-gold');
+        b.classList.add('text-white/40');
+      });
+      document.querySelector(`[data-m="${m}"]`).classList.add('bg-gold/10', 'text-gold');
+      document.querySelector(`[data-m="${m}"]`).classList.remove('text-white/40');
+      loadAll();
+    }
+
+    function setGranularity(g) {
+      currentGranularity = g;
+      document.querySelectorAll('.gran-btn').forEach(b => {
+        b.classList.remove('bg-gold/10', 'text-gold');
+        b.classList.add('text-white/40');
+      });
+      document.querySelector(`[data-g="${g}"]`).classList.add('bg-gold/10', 'text-gold');
+      document.querySelector(`[data-g="${g}"]`).classList.remove('text-white/40');
+      loadRevenueTrend();
+    }
+
+    function destroyChart(name) {
+      if (charts[name]) { charts[name].destroy(); charts[name] = null; }
+    }
+
+    function changeText(id, value, suffix = '') {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value + suffix;
+    }
+
+    function renderChange(id, pct, invertColor = false) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (pct === 0 || isNaN(pct)) { el.textContent = ''; return; }
+      const up = pct > 0;
+      const color = invertColor ? (up ? 'text-red-400' : 'text-green-400') : (up ? 'text-green-400' : 'text-red-400');
+      el.className = `text-xs mt-1 ${color}`;
+      el.textContent = `${up ? '↑' : '↓'} ${Math.abs(pct).toFixed(1)}%`;
+    }
+
+    // ── KPI Kartları ──
+    async function loadOverview() {
+      const data = await api(`/admin-stats?action=overview&months=${currentMonths}`);
+      if (!data || data.error) return;
+      changeText('kpiRevenue', '€' + Math.round(data.totalRevenue).toLocaleString());
+      changeText('kpiGuests', data.totalGuests.toLocaleString());
+      changeText('kpiAvg', '€' + data.avgPerGuest.toFixed(1));
+      changeText('kpiNoShow', data.noShowRate.toFixed(1) + '%');
+      renderChange('kpiRevenueChange', data.changes.revenue);
+      renderChange('kpiGuestsChange', data.changes.guests);
+      renderChange('kpiAvgChange', data.changes.avgPerGuest);
+      renderChange('kpiNoShowChange', data.changes.noShowRate, true);
+    }
+
+    // ── Gelir Trendi ──
+    async function loadRevenueTrend() {
+      const data = await api(`/admin-stats?action=revenue-trend&months=${currentMonths}&granularity=${currentGranularity}`);
+      if (!data || data.error) return;
+
+      destroyChart('revenue');
+      const ctx = document.getElementById('revenueChart').getContext('2d');
+
+      const labels = data.map(d => {
+        if (currentGranularity === 'monthly') return d.date;
+        const dt = new Date(d.date);
+        return `${dt.getDate()}/${dt.getMonth() + 1}`;
+      });
+
+      charts.revenue = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'Beklenen (€)',
+              data: data.map(d => d.expected),
+              borderColor: GOLD,
+              backgroundColor: GOLD + '20',
+              fill: true,
+              tension: 0.3,
+              pointRadius: data.length > 60 ? 0 : 3,
+            },
+            {
+              label: 'Toplanan (€)',
+              data: data.map(d => d.collected),
+              borderColor: GREEN,
+              backgroundColor: GREEN + '20',
+              fill: true,
+              tension: 0.3,
+              pointRadius: data.length > 60 ? 0 : 3,
+            }
+          ]
+        },
+        options: {
+          plugins: { legend: { position: 'top', labels: { boxWidth: 12, padding: 15 } } },
+          scales: {
+            y: { beginAtZero: true, ticks: { callback: v => '€' + v } },
+            x: { ticks: { maxTicksLimit: 12 } }
+          }
+        }
+      });
+    }
+
+    // ── Breakdown: Paket, Tekne, Ülke, Ödeme ──
+    async function loadBreakdown() {
+      const data = await api(`/admin-stats?action=breakdown&months=${currentMonths}`);
+      if (!data || data.error) return;
+
+      // Paket Dağılımı
+      destroyChart('package');
+      const pkgLabels = Object.keys(data.packages).map(k => k.charAt(0).toUpperCase() + k.slice(1));
+      const pkgData = Object.values(data.packages).map(v => v.count);
+      charts.package = new Chart(document.getElementById('packageChart').getContext('2d'), {
+        type: 'doughnut',
+        data: {
+          labels: pkgLabels,
+          datasets: [{
+            data: pkgData,
+            backgroundColor: [GOLD_DARK, GOLD, GOLD_LIGHT],
+            borderWidth: 0,
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'bottom', labels: { boxWidth: 10, padding: 10 } },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => {
+                  const key = Object.keys(data.packages)[ctx.dataIndex];
+                  return `Gelir: €${Math.round(data.packages[key].revenue)}`;
+                }
+              }
+            }
+          }
+        }
+      });
+
+      // Tekne Doluluk
+      destroyChart('boat');
+      charts.boat = new Chart(document.getElementById('boatChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: data.boatOccupancy.map(b => b.name),
+          datasets: [{
+            label: 'Doluluk %',
+            data: data.boatOccupancy.map(b => b.occupancyRate),
+            backgroundColor: GOLD + '80',
+            borderColor: GOLD,
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => {
+                  const b = data.boatOccupancy[ctx.dataIndex];
+                  return `Ort. ${b.avgGuests} / ${b.capacity} kişi`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } }
+          }
+        }
+      });
+
+      // Müşteri Ülkeleri
+      destroyChart('country');
+      charts.country = new Chart(document.getElementById('countryChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: data.topCountries.map(c => c.country),
+          datasets: [{
+            label: 'Rezervasyon',
+            data: data.topCountries.map(c => c.count),
+            backgroundColor: GOLD + '80',
+            borderColor: GOLD,
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+          plugins: { legend: { display: false } },
+          scales: { x: { beginAtZero: true, ticks: { stepSize: 1 } } }
+        }
+      });
+
+      // Ödeme Yöntemi
+      destroyChart('payment');
+      const pmLabels = [];
+      const pmData = [];
+      const pmColors = [];
+      if (data.paymentMethods.cash.count > 0) { pmLabels.push('Nakit'); pmData.push(data.paymentMethods.cash.count); pmColors.push(GOLD); }
+      if (data.paymentMethods.card.count > 0) { pmLabels.push('Kart'); pmData.push(data.paymentMethods.card.count); pmColors.push(BLUE); }
+      if (data.paymentMethods.other.count > 0) { pmLabels.push('Diğer'); pmData.push(data.paymentMethods.other.count); pmColors.push(WHITE50); }
+      charts.payment = new Chart(document.getElementById('paymentChart').getContext('2d'), {
+        type: 'doughnut',
+        data: {
+          labels: pmLabels.length ? pmLabels : ['Veri yok'],
+          datasets: [{
+            data: pmData.length ? pmData : [1],
+            backgroundColor: pmColors.length ? pmColors : ['rgba(255,255,255,0.1)'],
+            borderWidth: 0,
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { position: 'bottom', labels: { boxWidth: 10, padding: 10 } },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => {
+                  const key = ['cash', 'card', 'other'][ctx.dataIndex];
+                  if (data.paymentMethods[key]) return `€${Math.round(data.paymentMethods[key].amount)}`;
+                }
+              }
+            }
+          }
+        }
+      });
+    }
+
+    // ── Saatlik Yoğunluk ──
+    async function loadHourly() {
+      const data = await api(`/admin-stats?action=hourly-analysis&months=${currentMonths}`);
+      if (!data || data.error) return;
+
+      const peakLabel = document.getElementById('peakHourLabel');
+      if (data.peakHour !== null) {
+        peakLabel.textContent = `En yoğun saat: ${String(data.peakHour).padStart(2, '0')}:00`;
+      }
+
+      destroyChart('hourly');
+      const maxRes = data.maxReservations;
+      charts.hourly = new Chart(document.getElementById('hourlyChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: data.hours.map(h => h.label),
+          datasets: [{
+            label: 'Rezervasyon',
+            data: data.hours.map(h => h.reservations),
+            backgroundColor: data.hours.map(h => h.reservations === maxRes && maxRes > 0 ? GOLD : GOLD + '50'),
+            borderColor: data.hours.map(h => h.reservations === maxRes && maxRes > 0 ? GOLD : GOLD + '80'),
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                afterLabel: (ctx) => `Misafir: ${data.hours[ctx.dataIndex].guests}`
+              }
+            }
+          },
+          scales: {
+            y: { beginAtZero: true, ticks: { stepSize: 1 } },
+            x: { ticks: { maxRotation: 0 } }
+          }
+        }
+      });
+    }
+
+    // ── Haftalık Yoğunluk ──
+    async function loadPeakAnalysis() {
+      const data = await api(`/admin-stats?action=peak-analysis&months=${currentMonths}`);
+      if (!data || data.error) return;
+
+      destroyChart('weekly');
+      const maxGuests = Math.max(...data.map(d => d.avgGuests));
+      charts.weekly = new Chart(document.getElementById('weeklyChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: data.map(d => d.day),
+          datasets: [{
+            label: 'Ort. Misafir',
+            data: data.map(d => d.avgGuests),
+            backgroundColor: data.map(d => d.avgGuests === maxGuests && maxGuests > 0 ? GOLD : GOLD + '50'),
+            borderColor: GOLD,
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true } }
+        }
+      });
+    }
+
+    // ── Lead Time ──
+    async function loadLeadTime() {
+      const data = await api(`/admin-stats?action=lead-time&months=${currentMonths}`);
+      if (!data || data.error) return;
+
+      destroyChart('leadTime');
+      charts.leadTime = new Chart(document.getElementById('leadTimeChart').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: data.map(d => d.label),
+          datasets: [{
+            label: 'Rezervasyon',
+            data: data.map(d => d.count),
+            backgroundColor: GOLD + '70',
+            borderColor: GOLD,
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+        }
+      });
+    }
+
+    // ── Ads ROI ──
+    async function loadAdsRoi() {
+      const data = await api(`/admin-stats?action=ads-roi&months=${currentMonths}`);
+      const container = document.getElementById('adsRoiContent');
+      if (!data || data.error) {
+        container.innerHTML = '<p class="text-white/30 text-sm text-center py-4">Veri alınamadı</p>';
+        return;
+      }
+
+      if (!data.connected) {
+        container.innerHTML = '<p class="text-white/30 text-sm text-center py-4">Google Ads bağlı değil. <a href="/panel/admin-ads.html" class="text-gold underline">Bağla</a></p>';
+        return;
+      }
+
+      container.innerHTML = `
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <div class="text-center">
+            <p class="text-lg font-bold text-gold">€${data.totalAdSpend.toFixed(0)}</p>
+            <p class="text-white/40 text-xs">Toplam Harcama</p>
+          </div>
+          <div class="text-center">
+            <p class="text-lg font-bold text-white">${data.totalClicks.toLocaleString()}</p>
+            <p class="text-white/40 text-xs">Tıklama</p>
+          </div>
+          <div class="text-center">
+            <p class="text-lg font-bold ${data.costPerBooking > 0 ? 'text-gold-light' : 'text-white/30'}">€${data.costPerBooking.toFixed(1)}</p>
+            <p class="text-white/40 text-xs">Maliyet / Rezervasyon</p>
+          </div>
+          <div class="text-center">
+            <p class="text-lg font-bold ${data.roas >= 1 ? 'text-green-400' : 'text-red-400'}">${data.roas.toFixed(1)}x</p>
+            <p class="text-white/40 text-xs">ROAS</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 mt-3">
+          <div class="text-center">
+            <p class="text-sm font-bold text-white">${data.totalBookings}</p>
+            <p class="text-white/40 text-xs">Rezervasyon</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-bold text-white">${data.totalGuests}</p>
+            <p class="text-white/40 text-xs">Misafir</p>
+          </div>
+          <div class="text-center">
+            <p class="text-sm font-bold text-white">€${data.totalRevenue.toFixed(0)}</p>
+            <p class="text-white/40 text-xs">Toplam Gelir</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // ── Load All ──
+    async function loadAll() {
+      await Promise.all([
+        loadOverview(),
+        loadRevenueTrend(),
+        loadBreakdown(),
+        loadHourly(),
+        loadPeakAnalysis(),
+        loadLeadTime(),
+        loadAdsRoi(),
+      ]);
+    }
+
+    function logout() {
+      localStorage.removeItem('admin_token');
+      localStorage.removeItem('admin_name');
+      localStorage.removeItem('admin_role');
+      window.location.href = '/panel/admin-login.html';
+    }
+
+    loadAll();
+  </script>
+</body>
+</html>
