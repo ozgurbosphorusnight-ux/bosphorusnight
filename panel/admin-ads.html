@@ -13,16 +13,13 @@
       }}}
     }
   </script>
-<style>
-  @media (max-width: 767px) { .desktop-nav { display: none; } }
-</style>
 </head>
 <body class="bg-navy-dark min-h-screen text-white">
 
   <header class="bg-navy-light border-b border-white/10 px-4 py-2 flex items-center justify-between sticky top-0 z-10">
     <div class="flex items-center gap-6">
       <h1 class="text-gold font-bold text-lg">ADMIN</h1>
-      <nav class="flex gap-1 desktop-nav">
+      <nav class="hidden md:flex gap-1">
         <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
         <a href="/panel/admin-stats.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">İstatistikler</a>
         <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Araştırma</a>
@@ -199,7 +196,7 @@
   </script>
 
   <!-- Alt Menü -->
-  <nav class="fixed bottom-0 left-0 right-0 bg-navy-light border-t border-white/10 flex justify-around items-center py-2 z-50 md:hidden">
+  <nav class="fixed bottom-0 left-0 right-0 bg-navy-light border-t border-white/10 flex justify-evenly items-center py-2 z-50 md:hidden">
     <a href="/panel/admin.html" class="flex flex-col items-center gap-1 text-white/40">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25a2.25 2.25 0 0 1-2.25-2.25v-2.25Z"/></svg>
       <span class="text-[10px]">Panel</span>
