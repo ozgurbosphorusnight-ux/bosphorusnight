@@ -27,7 +27,11 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (T[key] && T[key][lang]) {
-      el.textContent = T[key][lang];
+      if (key.startsWith('faq.a')) {
+        el.innerHTML = T[key][lang];
+      } else {
+        el.textContent = T[key][lang];
+      }
     }
   });
 

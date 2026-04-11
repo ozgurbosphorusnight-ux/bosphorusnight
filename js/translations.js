@@ -594,6 +594,15 @@ const T = {
     de: "Häufig gestellte Fragen", es: "Preguntas Frecuentes",
     ru: "Часто задаваемые вопросы", ar: "الأسئلة الشائعة"
   },
+  "faq.q0": { en: "What cruise tours do you offer?", tr: "Hangi tur seçenekleriniz var?", de: "Welche Kreuzfahrten bieten Sie an?", es: "¿Qué cruceros ofrecen?", ru: "Какие круизы вы предлагаете?", ar: "ما هي الرحلات البحرية التي تقدمونها؟" },
+  "faq.a0": {
+    en: "We offer three Bosphorus cruise experiences: <strong>Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong>Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong>Dinner Cruise</strong> (20:45, 3.5 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.",
+    tr: "Üç farklı Boğaz turu deneyimi sunuyoruz: <strong>Gündüz Turu</strong> (12:00, 1.5 saat — panoramik manzara gezisi), <strong>Günbatımı Turu</strong> (17:30, 3 saat — yemek, gün batımı manzarası ve canlı şovlar), <strong>Akşam Turu</strong> (20:45, 3.5 saat — akşam yemeği, Türk gecesi şovu, oryantal dans, DJ ve gece manzarası). Tüm turlar Kabataş İskelesi'nden kalkar.",
+    de: "Wir bieten drei Bosporus-Kreuzfahrt-Erlebnisse: <strong>Tageskreuzfahrt</strong> (12:00, 1,5 Std. — Sightseeing mit Panoramablick), <strong>Sonnenuntergangskreuzfahrt</strong> (17:30, 3 Std. — Abendessen mit Sonnenuntergang und Live-Shows), <strong>Dinner-Kreuzfahrt</strong> (20:45, 3,5 Std. — Abendessen, türkische Nacht, Bauchtanz, DJ und Nachtblick). Alle Kreuzfahrten starten am Kabataş-Pier.",
+    es: "Ofrecemos tres experiencias de crucero por el Bósforo: <strong>Crucero Diurno</strong> (12:00, 1,5 horas — turismo con vistas panorámicas), <strong>Crucero al Atardecer</strong> (17:30, 3 horas — cena con vistas doradas y shows en vivo), <strong>Crucero con Cena</strong> (20:45, 3,5 horas — cena completa, noche turca, danza del vientre, DJ y vistas nocturnas). Todos los cruceros salen del muelle de Kabataş.",
+    ru: "Мы предлагаем три круиза по Босфору: <strong>Дневной круиз</strong> (12:00, 1,5 часа — обзорная экскурсия с панорамными видами), <strong>Круиз на закате</strong> (17:30, 3 часа — ужин с видами заката и живыми шоу), <strong>Ужин-круиз</strong> (20:45, 3,5 часа — ужин, турецкая ночь, танец живота, DJ и ночные виды). Все круизы отправляются с причала Кабаташ.",
+    ar: "نقدم ثلاث تجارب رحلات بحرية في البوسفور: <strong>الرحلة النهارية</strong> (12:00، 1.5 ساعة — جولة سياحية مع إطلالات بانورامية)، <strong>رحلة الغروب</strong> (17:30، 3 ساعات — عشاء مع مناظر الساعة الذهبية وعروض حية)، <strong>رحلة العشاء</strong> (20:45، 3.5 ساعات — عشاء كامل، ليلة تركية، رقص شرقي، DJ ومناظر ليلية خلابة). جميع الرحلات تنطلق من رصيف كاباتاش."
+  },
   "faq.q1": { en: "What's on the dinner menu?", tr: "Yemek menüsünde neler var?", de: "Was steht auf der Speisekarte?", es: "¿Qué hay en el menú de la cena?", ru: "Что в меню ужина?", ar: "ماذا يوجد في قائمة العشاء؟" },
   "faq.a1": {
     en: "All packages include a full dinner with 7 varieties of Turkish meze, your choice of main course (fish, chicken, or meatball), and dessert. VIP packages feature a premium mixed grill platter with selected cuts. Vegetarian options are available on request.",
@@ -756,6 +765,35 @@ const T = {
     en: "Kabataş & Eminönü, Istanbul", tr: "Kabataş & Eminönü, İstanbul",
     de: "Kabataş & Eminönü, Istanbul", es: "Kabataş y Eminönü, Estambul",
     ru: "Кабаташ и Эминёню, Стамбул", ar: "كاباتاش وأمينونو، إسطنبول"
+  },
+
+  "footer.popularTours": {
+    en: "Popular Tours", tr: "Popüler Turlar", de: "Beliebte Touren", es: "Tours Populares",
+    ru: "Популярные туры", ar: "الرحلات الشائعة"
+  },
+  "footer.daytimeCruise": {
+    en: "Bosphorus Daytime Cruise", tr: "Boğaz Gündüz Turu", de: "Bosporus-Tageskreuzfahrt", es: "Crucero Diurno por el Bósforo",
+    ru: "Дневной круиз по Босфору", ar: "رحلة البوسفور النهارية"
+  },
+  "footer.sunsetCruise": {
+    en: "Bosphorus Sunset Cruise", tr: "Boğaz Günbatımı Turu", de: "Bosporus-Sonnenuntergangskreuzfahrt", es: "Crucero al Atardecer por el Bósforo",
+    ru: "Круиз по Босфору на закате", ar: "رحلة غروب البوسفور"
+  },
+  "footer.dinnerCruise": {
+    en: "Bosphorus Dinner Cruise", tr: "Boğaz Yemekli Turu", de: "Bosporus-Dinner-Kreuzfahrt", es: "Crucero con Cena por el Bósforo",
+    ru: "Ужин-круиз по Босфору", ar: "رحلة عشاء البوسفور"
+  },
+  "footer.tonightCruise": {
+    en: "Bosphorus Cruise Tonight", tr: "Bu Gece Boğaz Turu", de: "Bosporus-Kreuzfahrt Heute Abend", es: "Crucero por el Bósforo Esta Noche",
+    ru: "Круиз по Босфору сегодня", ar: "رحلة البوسفور الليلة"
+  },
+  "footer.aboutUs": {
+    en: "About Us", tr: "Hakkımızda", de: "Über Uns", es: "Sobre Nosotros",
+    ru: "О нас", ar: "من نحن"
+  },
+  "footer.blog": {
+    en: "Blog", tr: "Blog", de: "Blog", es: "Blog",
+    ru: "Блог", ar: "المدونة"
   },
 
   // ========== BOOKING COUNT ==========
