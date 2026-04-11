@@ -1,6 +1,14 @@
 {
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/daytime-cruise", "destination": "/cruises/daytime-cruise.html" },
+    { "source": "/sunset-cruise", "destination": "/cruises/sunset-cruise.html" },
+    { "source": "/dinner-cruise", "destination": "/cruises/dinner-cruise.html" },
+    { "source": "/last-minute-tonight", "destination": "/cruises/last-minute-tonight.html" },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/daytime-cruise", "destination": "/cruises/:lang/daytime-cruise.html" },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/sunset-cruise", "destination": "/cruises/:lang/sunset-cruise.html" },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/dinner-cruise", "destination": "/cruises/:lang/dinner-cruise.html" },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/last-minute-tonight", "destination": "/cruises/:lang/last-minute-tonight.html" },
     { "source": "/(.*)", "destination": "/$1" }
   ]
 }

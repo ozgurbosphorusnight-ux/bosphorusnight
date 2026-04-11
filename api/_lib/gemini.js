@@ -15,9 +15,10 @@ export async function askGemini(prompt, retries = 2) {
     }),
   });
 
-  if (response.status === 429 && retries > 0) {
-    console.log(`Gemini rate limited, waiting 30s... (${retries} retries left)`);
-    await new Promise(r => setTimeout(r, 30000));
+  if ((response.status === 429 || response.status === 503) && retries > 0) {
+    const wait = response.status === 503 ? 10000 : 30000;
+    console.log(`Gemini ${response.status}, waiting ${wait/1000}s... (${retries} retries left)`);
+    await new Promise(r => setTimeout(r, wait));
     return askGemini(prompt, retries - 1);
   }
 
@@ -85,12 +86,24 @@ TÜM METİNLERİ TÜRKÇE YAZ. JSON formatında döndür:
   const result = await askGemini(prompt);
 
   try {
-    const cleaned = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    return JSON.parse(cleaned);
+    return extractJSON(result);
   } catch (e) {
     console.error('Failed to parse Gemini response:', e);
+    console.error('Raw response:', result?.substring(0, 500));
     return { raw_response: result, parse_error: true };
   }
+}
+
+function extractJSON(text) {
+  // Markdown code block temizle
+  let cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+  // JSON başlangıcını bul
+  const start = cleaned.indexOf('{');
+  const end = cleaned.lastIndexOf('}');
+  if (start !== -1 && end !== -1) {
+    cleaned = cleaned.substring(start, end + 1);
+  }
+  return JSON.parse(cleaned);
 }
 
 // Google Trends ve arama kelimeleri analizi
@@ -124,14 +137,14 @@ TÜM METİNLERİ TÜRKÇE YAZ. JSON formatında döndür:
   "avoid_keywords": ["kaçınılması gereken kelimeler ve nedeni"]
 }
 
-ÖNEMLİ: SADECE geçerli JSON döndür. Tüm açıklamalar TÜRKÇE.`;
+ÖNEMLİ: SADECE geçerli JSON döndür, başka hiçbir metin yazma. Açıklama, yorum, markdown yazma. Tüm açıklamalar TÜRKÇE.`;
 
   const result = await askGemini(prompt);
   try {
-    const cleaned = result.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    return JSON.parse(cleaned);
+    return extractJSON(result);
   } catch (e) {
     console.error('Failed to parse trends response:', e);
+    console.error('Raw response:', result?.substring(0, 500));
     return { error: 'Parse hatası', raw: result };
   }
 }

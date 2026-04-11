@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bosphorus Night — Google Ads API Design Document</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
+    h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; font-size: 24px; }
+    h2 { color: #333; margin-top: 30px; font-size: 18px; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+    h3 { color: #555; font-size: 15px; margin-top: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; font-size: 14px; }
+    th { background: #f5f5f5; font-weight: 600; }
+    .label { color: #666; font-size: 13px; }
+    .highlight { background: #e8f0fe; padding: 12px 16px; border-radius: 6px; margin: 15px 0; font-size: 14px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; font-size: 14px; }
+    code { background: #f5f5f5; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+    .footer { margin-top: 40px; padding-top: 15px; border-top: 1px solid #ddd; color: #888; font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <h1>Google Ads API — Design Document</h1>
+  <p class="label">Bosphorus Night — Istanbul Dinner Cruise Booking Platform</p>
+
+  <div class="highlight">
+    <strong>Company:</strong> Bosphorus Night<br>
+    <strong>Website:</strong> https://bosphorusnight.com<br>
+    <strong>MCC ID:</strong> 950-210-0352<br>
+    <strong>Contact:</strong> reservation@bosphorusnight.com<br>
+    <strong>Date:</strong> April 2026
+  </div>
+
+  <h2>1. Company Overview</h2>
+  <p>Bosphorus Night is a premium dinner cruise booking company based in Istanbul, Turkey. We connect international tourists with curated Bosphorus dinner cruise experiences, offering three packages (Standard €35, Premium €50, VIP €80). Bookings are handled via WhatsApp, and all customer communication is in English.</p>
+
+  <h2>2. Purpose of Google Ads API Usage</h2>
+  <p>We use the Google Ads API exclusively for <strong>internal business reporting and campaign monitoring</strong> within our private admin dashboard. The API integration serves the following purposes:</p>
+  <ul>
+    <li><strong>Campaign Performance Monitoring:</strong> View impressions, clicks, cost, and conversions for our own Google Ads campaigns</li>
+    <li><strong>Keyword Performance Tracking:</strong> Monitor which keywords drive traffic and bookings</li>
+    <li><strong>ROI Analysis:</strong> Calculate return on ad spend (ROAS) by correlating ad costs with actual reservation revenue</li>
+    <li><strong>Internal Reporting:</strong> Generate performance reports within our admin panel for business decision-making</li>
+  </ul>
+
+  <h2>3. Technical Architecture</h2>
+
+  <h3>3.1 System Overview</h3>
+  <table>
+    <tr><th>Component</th><th>Technology</th></tr>
+    <tr><td>Frontend</td><td>Static HTML/JS admin panel (private, password-protected)</td></tr>
+    <tr><td>Backend</td><td>Vercel Serverless Functions (Node.js)</td></tr>
+    <tr><td>Database</td><td>Supabase (PostgreSQL)</td></tr>
+    <tr><td>Authentication</td><td>Custom token-based auth (admin role only)</td></tr>
+    <tr><td>Google Ads API Version</td><td>v23</td></tr>
+  </table>
+
+  <h3>3.2 API Endpoints Used</h3>
+  <table>
+    <tr><th>Endpoint</th><th>Purpose</th><th>Frequency</th></tr>
+    <tr><td><code>GoogleAdsService.SearchStream</code></td><td>Fetch campaign metrics (impressions, clicks, cost, conversions)</td><td>On-demand (admin views dashboard)</td></tr>
+    <tr><td><code>GoogleAdsService.SearchStream</code></td><td>Fetch keyword performance metrics</td><td>On-demand (admin views dashboard)</td></tr>
+  </table>
+
+  <h3>3.3 Authentication Flow</h3>
+  <ol>
+    <li>Admin clicks "Connect Google Ads" in the private admin panel</li>
+    <li>OAuth 2.0 redirect to Google for consent</li>
+    <li>Callback receives authorization code, exchanges for refresh token</li>
+    <li>Refresh token stored securely in database (Supabase <code>settings</code> table)</li>
+    <li>Subsequent API calls use refresh token to obtain access tokens</li>
+  </ol>
+
+  <h3>3.4 Data Flow Diagram</h3>
+  <pre style="background:#f5f5f5; padding:15px; border-radius:6px; font-size:13px;">
+  Admin Panel (Browser)
+       │
+       ▼
+  /api/panel/google-ads  (Vercel Serverless)
+       │
+       ├── action=status     → Check OAuth connection
+       ├── action=campaigns  → Fetch campaign metrics
+       └── action=keywords   → Fetch keyword metrics
+       │
+       ▼
+  Google Ads API v23
+  (SearchStream GAQL queries)
+  </pre>
+
+  <h2>4. GAQL Queries Used</h2>
+
+  <h3>4.1 Campaign Performance</h3>
+  <pre style="background:#f5f5f5; padding:15px; border-radius:6px; font-size:13px;">
+SELECT
+  campaign.id,
+  campaign.name,
+  campaign.status,
+  metrics.impressions,
+  metrics.clicks,
+  metrics.cost_micros,
+  metrics.conversions
+FROM campaign
+WHERE segments.date DURING LAST_7_DAYS
+  </pre>
+
+  <h3>4.2 Keyword Performance</h3>
+  <pre style="background:#f5f5f5; padding:15px; border-radius:6px; font-size:13px;">
+SELECT
+  ad_group_criterion.keyword.text,
+  ad_group_criterion.keyword.match_type,
+  metrics.impressions,
+  metrics.clicks,
+  metrics.cost_micros,
+  metrics.conversions
+FROM keyword_view
+WHERE segments.date DURING LAST_7_DAYS
+ORDER BY metrics.clicks DESC
+LIMIT 50
+  </pre>
+
+  <h2>5. Access & Security</h2>
+  <ul>
+    <li><strong>Users:</strong> Internal employees only (1-2 admin users)</li>
+    <li><strong>Access control:</strong> Admin panel requires authentication; only <code>admin_sahip</code> role can access Google Ads features</li>
+    <li><strong>Token storage:</strong> OAuth refresh token stored in encrypted database, never exposed to frontend</li>
+    <li><strong>No third-party access:</strong> API is not used for any external service, client, or public-facing feature</li>
+    <li><strong>No automated bidding:</strong> We only read data; no campaign creation or modification via API</li>
+  </ul>
+
+  <h2>6. Rate Limiting & Compliance</h2>
+  <ul>
+    <li>API calls are made <strong>on-demand only</strong> when an admin views the dashboard (not scheduled/automated)</li>
+    <li>Estimated usage: <strong>10-30 API calls per day</strong> maximum</li>
+    <li>We comply with all Google Ads API Terms of Service</li>
+    <li>No data is shared with third parties</li>
+    <li>No end-user data from Google Ads is stored beyond performance metrics</li>
+  </ul>
+
+  <h2>7. Screenshots</h2>
+  <p>The Google Ads integration is part of our private admin dashboard at <code>/panel/admin-ads.html</code>. The dashboard displays:</p>
+  <ul>
+    <li>Connection status (OAuth state)</li>
+    <li>Campaign performance cards (impressions, clicks, cost, conversions)</li>
+    <li>Keyword performance table</li>
+    <li>Date range selector (7/14/30 days)</li>
+  </ul>
+
+  <div class="footer">
+    <p>Bosphorus Night — Google Ads API Design Document — April 2026<br>
+    Contact: reservation@bosphorusnight.com | https://bosphorusnight.com</p>
+  </div>
+
+</body>
+</html>
