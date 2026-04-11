@@ -49,6 +49,16 @@ function setLanguage(lang) {
     updateBoatName();
   }
 
+  // Update mobile bar tour label for new language
+  const barLabel = document.getElementById('mobileBarTourLabel');
+  if (barLabel && typeof selectedTourType !== 'undefined' && selectedTourType) {
+    const t1 = T[`tour.${selectedTourType}.title1`];
+    const t2 = T[`tour.${selectedTourType}.title2`];
+    const name = (t1 ? t1[lang] || t1.en : '') + ' ' + (t2 ? t2[lang] || t2.en : '');
+    const selectedText = T['booking.selected'] ? (T['booking.selected'][lang] || T['booking.selected'].en) : 'selected';
+    barLabel.textContent = name.trim() + ' ' + selectedText;
+  }
+
   // Close lang dropdown
   const dropdown = document.getElementById('langDropdown');
   if (dropdown) dropdown.classList.add('hidden');
