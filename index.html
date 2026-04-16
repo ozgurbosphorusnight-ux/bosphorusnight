@@ -33,7 +33,7 @@
     });
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="assets/data/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/data/favicon.png?v=4" type="image/png">
   <title>Bosphorus Night — Luxury Dinner Cruise Istanbul</title>
   <meta name="description" content="Book your Bosphorus dinner cruise in Istanbul. Live entertainment, stunning night views, and premium dining. Pay on the boat. 7/24 WhatsApp support.">
   <meta property="og:title" content="Bosphorus Night — Luxury Dinner Cruise Istanbul">
@@ -103,11 +103,7 @@
 
     <!-- Boat icon (moves with scroll) -->
     <div id="routeBoat" class="absolute left-1/2 -translate-x-1/2 transition-none z-10" style="top: 0;">
-      <svg width="20" height="24" viewBox="0 0 20 24" class="drop-shadow-[0_0_6px_rgba(201,168,76,0.6)]">
-        <path d="M4,12 L16,12 L14,18 L6,18 Z" fill="#c9a84c" opacity="0.9"/>
-        <line x1="10" y1="12" x2="10" y2="4" stroke="#c9a84c" stroke-width="1.5"/>
-        <path d="M10,4 L16,9 L10,7 Z" fill="#c9a84c" opacity="0.7"/>
-      </svg>
+      <img src="assets/data/logo png lst.png" alt="Boat" class="w-9 h-auto drop-shadow-[0_0_8px_rgba(201,168,76,0.7)]">
     </div>
 
     <!-- Boarding panel removed — now a site section -->
@@ -306,7 +302,7 @@
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo -->
         <a href="#" class="flex items-center overflow-visible">
-          <img src="assets/data/bn logo g last.png" alt="Bosphorus Night" class="h-[160px] lg:h-[160px] w-auto max-w-none -ml-10 mt-4">
+          <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[180px] lg:h-[180px] w-auto max-w-none -ml-4 mt-1">
         </a>
 
         <!-- Desktop Nav -->
@@ -2559,7 +2555,7 @@
         <!-- Logo + Description + Social -->
         <div class="text-center mb-10">
           <a href="#" class="inline-block mb-3">
-            <img src="assets/data/bn logo g last.png" alt="Bosphorus Night" class="h-[160px] w-auto mx-auto">
+            <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[160px] w-auto mx-auto">
           </a>
           <p class="text-white/40 text-sm max-w-md mx-auto mb-5" data-i18n="footer.desc">We help you find the best cruise experience on the Bosphorus.</p>
           <!-- Social Icons -->
@@ -2877,10 +2873,10 @@
     <div class="bg-[#0a0f1e]/95 backdrop-blur-xl border-b border-gold/20 px-5 py-1 flex items-center justify-between flex-shrink-0 lg:rounded-t-2xl lg:border-b-0 lg:pt-3 lg:pb-2 lg:bg-transparent lg:backdrop-blur-none">
       <div class="flex items-center gap-3">
         <div class="flex items-center lg:hidden">
-          <img src="assets/data/bn logo g last.png" alt="Bosphorus Night" class="h-[130px] w-auto max-w-none -ml-8 -mt-6 -mb-10">
+          <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[130px] w-auto max-w-none -ml-5 -mt-8 -mb-10">
         </div>
         <span class="w-px h-6 bg-white/15 -ml-5 lg:hidden"></span>
-        <h3 class="font-display text-sm lg:text-base font-bold text-gold" data-i18n="booking.title">Book Your Cruise</h3>
+        <h3 class="font-display text-sm lg:text-base font-bold text-gold mt-2" data-i18n="booking.title">Book Your Cruise</h3>
       </div>
       <button id="mobileBookClose" onclick="closeMobilePanel()" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Close">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
@@ -2889,6 +2885,8 @@
 
     <!-- Scrollable Content — 4-Step Wizard -->
     <div id="mobileBookPanelContent" class="flex-1 overflow-y-auto relative">
+      <!-- Watermark boat icon -->
+      <img src="assets/data/logo png lst.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-auto opacity-[0.05] pointer-events-none select-none">
 
       <!-- ===== STEP 1: Basic Info ===== -->
       <div id="bookStep1" class="p-5">
@@ -3137,13 +3135,15 @@
 
         <!-- Boarding Pass Ticket -->
         <div class="relative bg-gradient-to-b from-[#152240] to-[#0d1a2e] rounded-2xl overflow-hidden border border-gold/20 shadow-xl shadow-black/30">
+          <!-- Watermark boat icon -->
+          <img src="assets/data/logo png lst.png" alt="" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[220px] h-auto opacity-[0.07] pointer-events-none select-none">
           <!-- Ticket Header -->
           <div class="bg-gradient-to-r from-[#c9a84c] to-[#d4b86a] px-5 py-3 flex items-center justify-between">
             <div class="flex items-center gap-2">
               <svg class="w-5 h-5 text-[#0b1120]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/></svg>
               <span class="text-[#0b1120] text-xs font-bold uppercase tracking-widest" data-i18n="ticket.boardingPass">Boarding Pass</span>
             </div>
-            <span class="text-[#0b1120]/60 text-[10px] font-medium">Bosphorus Night</span>
+            <span class="text-[#0b1120]/60 text-[10px] font-medium">bosphorusnight.com</span>
           </div>
 
           <!-- Ticket Body -->
