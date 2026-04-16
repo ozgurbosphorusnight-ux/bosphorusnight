@@ -123,17 +123,31 @@ const TOURS = {
   dinner: {
     icon: TOUR_ICONS.dinner,
     time: '20:45',
-    duration: '3.5',
+    duration: '3',
     durationUnit: { en: 'Hours', tr: 'Saat', de: 'Stunden', es: 'Horas', ru: 'Часа', ar: 'ساعات' },
     pier: 'Kabataş Pier',
     todayLabel: { en: 'Tonight', tr: 'Bu Gece', de: 'Heute Abend', es: 'Esta Noche', ru: 'Сегодня', ar: 'الليلة' },
     bgImage: 'assets/tours/dinner/boat-night-bridge.jpg',
     prices: {
-      classic:  { standard: 35, premium: 50, vip: 70 },
-      premium:  { standard: 45, premium: 60, vip: 80 },
-      luxury:   { standard: 55, premium: 70, vip: 90 }
+      classic:  { standard: 24, vip: 55 },
+      premium:  { standard: 24, vip: 55 },
+      luxury:   { standard: 24, vip: 55 }
     },
-    boats: ['classic', 'premium', 'luxury'],
+    dinnerPrices: {
+      standard: {
+        nonAlcMP: { old: 40, new: 24 },
+        alcMP: { old: 60, new: 35 },
+        nonAlcTransfer: { old: 55, new: 34 },
+        alcTransfer: { old: 75, new: 45 }
+      },
+      vip: {
+        nonAlcMP: { old: 90, new: 55 },
+        alcMP: { old: 100, new: 60 },
+        nonAlcTransfer: { old: 110, new: 65 },
+        alcTransfer: { old: 115, new: 70 }
+      }
+    },
+    boats: ['classic'],
     heroImage: 'assets/tours/dinner/boat-night-bridge.jpg',
     pills: [
       {
@@ -142,9 +156,9 @@ const TOURS = {
         desc: { en: 'Night departure from Kabataş Pier at 20:45', tr: 'Kabataş İskelesi\'nden 20:45\'te gece kalkışı', de: 'Nachtabfahrt vom Kabataş Pier um 20:45', es: 'Salida nocturna del muelle de Kabataş a las 20:45', ru: 'Ночное отправление с причала Кабаташ в 20:45', ar: 'مغادرة ليلية من رصيف كاباتاش الساعة 20:45' }
       },
       {
-        label: { en: '3.5 Hours', tr: '3.5 Saat', de: '3,5 Std.', es: '3.5 Horas', ru: '3,5 часа', ar: '3.5 ساعات' },
+        label: { en: '3 Hours', tr: '3 Saat', de: '3 Std.', es: '3 Horas', ru: '3 часа', ar: '3 ساعات' },
         imgs: ['assets/tours/dinner/boat-night-bridge.jpg', 'assets/tours/dinner/hall-wide.jpg', 'assets/tours/dinner/hall-wide.jpg'],
-        desc: { en: '3.5-hour cruise past illuminated landmarks', tr: 'Işıklı noktalarda 3.5 saatlik tur', de: '3,5-stündige Fahrt an beleuchteten Sehenswürdigkeiten', es: 'Crucero de 3.5 horas por monumentos iluminados', ru: '3,5-часовой круиз мимо освещённых достопримечательностей', ar: 'رحلة 3.5 ساعات عبر المعالم المضيئة' }
+        desc: { en: '3-hour cruise past illuminated landmarks', tr: 'Işıklı noktalarda 3 saatlik tur', de: '3-stündige Fahrt an beleuchteten Sehenswürdigkeiten', es: 'Crucero de 3 horas por monumentos iluminados', ru: '3-часовой круиз мимо освещённых достопримечательностей', ar: 'رحلة 3 ساعات عبر المعالم المضيئة' }
       },
       {
         label: { en: 'Dinner', tr: 'Yemek', de: 'Abendessen', es: 'Cena', ru: 'Ужин', ar: 'عشاء' },

@@ -35,6 +35,14 @@ function setLanguage(lang) {
     }
   });
 
+  // Update translatable placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (T[key] && T[key][lang]) {
+      el.placeholder = T[key][lang];
+    }
+  });
+
   // Update lang toggle button
   const flag = document.getElementById('langFlag');
   const label = document.getElementById('langLabel');
@@ -166,6 +174,22 @@ function initBoatSelection() {
         boatNameEl.textContent = (T[nameKey] && T[nameKey][currentLang]) ? T[nameKey][currentLang] : tourType;
       }
 
+      // Toggle dinner vs default packages grid + info section
+      const dinnerGrid = document.getElementById('dinnerPackagesGrid');
+      const defaultGrid = document.getElementById('defaultPackagesGrid');
+      const dinnerInfo = document.getElementById('dinnerInfoSection');
+      if (dinnerGrid && defaultGrid) {
+        if (tourType === 'dinner') {
+          dinnerGrid.classList.remove('hidden');
+          defaultGrid.classList.add('hidden');
+          if (dinnerInfo) dinnerInfo.classList.remove('hidden');
+        } else {
+          dinnerGrid.classList.add('hidden');
+          defaultGrid.classList.remove('hidden');
+          if (dinnerInfo) dinnerInfo.classList.add('hidden');
+        }
+      }
+
       // Update prices from tour config
       const prices = TOURS[tourType] ? TOURS[tourType].prices : {};
       const defaultBoat = Object.keys(prices)[0] || 'classic';
@@ -184,40 +208,34 @@ function initBoatSelection() {
       document.querySelectorAll('.wa-book').forEach(btn => {
         btn.removeAttribute('href');
         btn.style.cursor = 'pointer';
-        btn.onclick = function(e) {
-          e.preventDefault();
-          const pkg = btn.dataset.package.toLowerCase(); // "standard", "premium", "vip"
+        // Only override onclick for <a> tags (desktop sidebar links), not <button> tags (wizard buttons)
+        if (btn.tagName === 'A') {
+          btn.onclick = function(e) {
+            e.preventDefault();
+            const pkg = btn.dataset.package.toLowerCase();
+            const bookPackage = document.getElementById('bookPackage');
+            if (bookPackage) bookPackage.value = pkg;
+            if (typeof calculatePrice === 'function') calculatePrice();
 
-          // Set package in booking panel
-          const bookPackage = document.getElementById('bookPackage');
-          const bookPackageMobile = document.getElementById('bookPackageMobile');
-          if (bookPackage) bookPackage.value = pkg;
-          if (bookPackageMobile) bookPackageMobile.value = pkg;
+            // Desktop: scroll to panel and flash highlight
+            const panel = document.getElementById('bookingPanel');
+            if (panel && window.innerWidth >= 1024) {
+              panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              panel.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
+              panel.style.boxShadow = '0 0 30px rgba(201,168,76,0.6), inset 0 0 20px rgba(201,168,76,0.1)';
+              panel.style.transform = 'scale(1.02)';
+              setTimeout(() => {
+                panel.style.boxShadow = '';
+                panel.style.transform = '';
+              }, 1500);
+            }
 
-          // Recalculate price
-          if (typeof calculatePrice === 'function') calculatePrice();
-
-          // Desktop: scroll to panel and flash highlight
-          const panel = document.getElementById('bookingPanel');
-          if (panel && window.innerWidth >= 1024) {
-            // Scroll page so panel is visible
-            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-            // Flash glow effect
-            panel.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
-            panel.style.boxShadow = '0 0 30px rgba(201,168,76,0.6), inset 0 0 20px rgba(201,168,76,0.1)';
-            panel.style.transform = 'scale(1.02)';
-            setTimeout(() => {
-              panel.style.boxShadow = '';
-              panel.style.transform = '';
-            }, 1500);
-          }
-
-          // Mobile: open booking overlay
-          if (window.innerWidth < 1024) {
-            openMobilePanel();
-          }
-        };
+            // Mobile: open wizard with package
+            if (window.innerWidth < 1024) {
+              openMobilePanel(pkg);
+            }
+          };
+        }
       });
 
       // Show packages
@@ -656,6 +674,21 @@ function setTourType(tourType) {
     }
   });
 
+  // Update package options (dinner has only standard/vip, others have standard/premium/vip)
+  ['bookPackage', 'bookPackageMobile'].forEach(id => {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const premOpt = sel.querySelector('option[value="premium"]');
+    if (tourType === 'dinner') {
+      // Hide premium option for dinner
+      if (premOpt) { premOpt.disabled = true; premOpt.style.display = 'none'; }
+      if (sel.value === 'premium') sel.value = 'standard';
+    } else {
+      // Show premium option for other tours
+      if (premOpt) { premOpt.disabled = false; premOpt.style.display = ''; }
+    }
+  });
+
   // Update PRICES reference for calculation
   window._activePrices = tour.prices;
 
@@ -687,9 +720,16 @@ function setTourType(tourType) {
 
 // ========== BOOKING PANEL ==========
 const PRICES = {
-  classic:  { standard: 35, premium: 50, vip: 70 },
-  premium:  { standard: 45, premium: 60, vip: 80 },
-  luxury:   { standard: 55, premium: 70, vip: 90 }
+  classic:  { standard: 24, vip: 55 },
+  premium:  { standard: 24, vip: 55 },
+  luxury:   { standard: 24, vip: 55 }
+};
+
+// Dinner cruise pricing: base + extras
+const DINNER_PRICES = {
+  standard: { base: 24, oldPrice: 40 },
+  vip:      { base: 55, oldPrice: 90 },
+  extras: { glass2: 7, unlimited: 15, transfer: 10, romantic: 15 }
 };
 
 const BOAT_NAMES = {
@@ -814,10 +854,14 @@ function initBookingPanel() {
       });
 
       // Show/hide alcohol counter & soft info
+      const isDinnerTour = typeof selectedTourType !== 'undefined' && selectedTourType === 'dinner';
+
       ['alcoholPanel', 'alcoholPanelMobile'].forEach(id => {
         const el = document.getElementById(id);
         if (el) {
-          if (drink === 'alcohol') el.classList.remove('hidden');
+          // For dinner: hide counter (everyone gets same option)
+          // For other tours: show counter for alcohol
+          if (drink === 'alcohol' && !isDinnerTour) el.classList.remove('hidden');
           else el.classList.add('hidden');
         }
       });
@@ -825,24 +869,27 @@ function initBookingPanel() {
         const el = document.getElementById(id);
         if (el) {
           if (drink === 'soft') el.classList.remove('hidden');
+          else if (drink === 'glass2') {
+            el.classList.remove('hidden');
+            const span = el.querySelector('span');
+            if (span) span.textContent = '2 glasses of alcohol per person';
+          }
           else el.classList.add('hidden');
         }
       });
 
-      if (drink === 'alcohol') {
-        // Set count to 1 if currently 0
+      if (drink === 'alcohol' && !isDinnerTour) {
         ['alcoholCount', 'alcoholCountMobile'].forEach(id => {
           const el = document.getElementById(id);
           if (el && parseInt(el.textContent) === 0) el.textContent = '1';
         });
       } else {
-        // Reset count to 0
         ['alcoholCount', 'alcoholCountMobile'].forEach(id => {
           const el = document.getElementById(id);
           if (el) el.textContent = '0';
         });
       }
-      updateAlcoholInfo();
+      if (!isDinnerTour) updateAlcoholInfo();
       calculatePrice();
     });
   });
@@ -888,13 +935,9 @@ function initBookingPanel() {
     setTimeout(updateScrollArrows, 500);
   }
 
-  // Mobile panel open/close
-  const mobileBtn = document.getElementById('mobileBookBtn');
+  // Mobile panel open/close (mobileBookBtn onclick is in HTML)
   const mobileOverlay = document.getElementById('mobileBookOverlay');
-  const mobilePanel = document.getElementById('mobileBookPanel');
   const mobileClose = document.getElementById('mobileBookClose');
-
-  if (mobileBtn) mobileBtn.addEventListener('click', openMobilePanel);
   if (mobileClose) mobileClose.addEventListener('click', closeMobilePanel);
   if (mobileOverlay) mobileOverlay.addEventListener('click', closeMobilePanel);
 
@@ -944,12 +987,43 @@ function initBookingPanel() {
   });
 }
 
-function openMobilePanel() {
+function openMobilePanel(pkg) {
   const overlay = document.getElementById('mobileBookOverlay');
   const panel = document.getElementById('mobileBookPanel');
   if (overlay) { overlay.classList.remove('hidden'); requestAnimationFrame(() => overlay.classList.add('open')); }
   if (panel) panel.classList.add('open');
   document.body.style.overflow = 'hidden';
+
+  // Reset wizard to step 1
+  wizGoTo(1);
+
+  // Set package if provided
+  if (pkg === 'standard' || pkg === 'vip') {
+    wizSelectPackage(pkg);
+  }
+
+  // Set default date to today
+  const wizDate = document.getElementById('wizDate');
+  if (wizDate && !wizDate.value) {
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    wizDate.value = `${yyyy}-${mm}-${dd}`;
+    wizDate.min = `${yyyy}-${mm}-${dd}`;
+  }
+
+  // Sync language dropdown with current site language
+  const wizLang = document.getElementById('wizLang');
+  if (wizLang) {
+    wizLang.value = currentLang;
+    // Change site language when dropdown changes
+    wizLang.onchange = function() {
+      setLanguage(this.value);
+    };
+  }
+
+  wizCalcPrice();
 }
 
 function closeMobilePanel() {
@@ -1191,40 +1265,73 @@ function updateBoatPreview() {
 }
 
 function calculatePrice() {
-  const boat = document.getElementById('bookBoat').value;
   const pkg = document.getElementById('bookPackage').value;
   const adults = parseInt(document.getElementById('adultCount').textContent);
   const childCount = parseInt(document.getElementById('childCount').textContent);
+  const isDinner = typeof selectedTourType !== 'undefined' && selectedTourType === 'dinner';
 
-  const prices = window._activePrices || PRICES;
-  const basePrice = (prices[boat] && prices[boat][pkg]) ? prices[boat][pkg] : 35;
+  // Determine transfer
+  const transferCheckbox = document.querySelector('.booking-extra[value="transfer"]');
+  const hasTransfer = transferCheckbox ? transferCheckbox.checked : false;
 
-  // Adult total
-  let total = basePrice * adults;
-
-  // Children pricing
+  let total = 0;
   const ageInputs = document.getElementById('childAgeInputs');
-  if (childCount > 0 && ageInputs) {
-    ageInputs.querySelectorAll('select').forEach(sel => {
-      if (sel.value === '0-3') total += 0;
-      else if (sel.value === '3-5') total += Math.round(basePrice * 0.5);
-      else total += basePrice;
-    });
+
+  if (isDinner && DINNER_PRICES[pkg]) {
+    // DINNER CRUISE: base price + extras per person
+    const basePrice = DINNER_PRICES[pkg].base;
+    const transferExtra = DINNER_PRICES.extras.transfer;
+
+    // Determine alcohol extra per person
+    let alcoholExtra = 0;
+    if (window._drinkSelected === 'alcohol') {
+      alcoholExtra = DINNER_PRICES.extras.unlimited; // €11/person
+    } else if (window._drinkSelected === 'glass2') {
+      alcoholExtra = DINNER_PRICES.extras.glass2; // €6/person
+    }
+
+    // Adults
+    total = adults * (basePrice + alcoholExtra + (hasTransfer ? transferExtra : 0));
+
+    // Children pricing (base price + transfer, no alcohol)
+    if (childCount > 0 && ageInputs) {
+      ageInputs.querySelectorAll('select').forEach(sel => {
+        let childPrice = basePrice + (hasTransfer ? transferExtra : 0);
+        if (sel.value === '0-3') total += 0;
+        else if (sel.value === '3-5') total += Math.round(childPrice * 0.5);
+        else total += childPrice;
+      });
+    }
+  } else {
+    // OTHER TOURS: eski sistem
+    const boat = document.getElementById('bookBoat').value;
+    const prices = window._activePrices || PRICES;
+    const basePrice = (prices[boat] && prices[boat][pkg]) ? prices[boat][pkg] : 35;
+
+    total = basePrice * adults;
+
+    if (childCount > 0 && ageInputs) {
+      ageInputs.querySelectorAll('select').forEach(sel => {
+        if (sel.value === '0-3') total += 0;
+        else if (sel.value === '3-5') total += Math.round(basePrice * 0.5);
+        else total += basePrice;
+      });
+    }
+
+    const alcoholCount = parseInt(document.getElementById('alcoholCount').textContent) || 0;
+    total += alcoholCount * 10;
   }
 
-  // Alcohol menu (count × €10)
-  const alcoholCount = parseInt(document.getElementById('alcoholCount').textContent) || 0;
-  total += alcoholCount * 10;
-
-  // Other extras (checkboxes)
+  // Other extras (romantic table, proposal etc)
   document.querySelectorAll('.booking-extra').forEach(input => {
     if (!input.checked) return;
+    // Skip transfer for dinner — already in price
+    if (isDinner && input.value === 'transfer') return;
     const price = parseInt(input.dataset.price) || 0;
     if (price === 0) return;
 
     const pricing = input.dataset.pricing;
     if (pricing === 'person') {
-      // Kişi başı (yetişkin + tam fiyatlı çocuk)
       total += price * adults;
       if (childCount > 0 && ageInputs) {
         ageInputs.querySelectorAll('select').forEach(sel => {
@@ -1233,17 +1340,18 @@ function calculatePrice() {
         });
       }
     } else if (pricing === 'table') {
-      // Masa başı — sabit fiyat
       total += price;
     }
   });
 
   // Update displays
-  document.getElementById('bookTotal').textContent = `€${total}`;
-  document.getElementById('bookTotalMobile').textContent = `€${total}`;
+  const bookTotalEl = document.getElementById('bookTotal');
+  if (bookTotalEl) bookTotalEl.textContent = `€${total}`;
+  const bookTotalMobileEl = document.getElementById('bookTotalMobile');
+  if (bookTotalMobileEl) bookTotalMobileEl.textContent = `€${total}`;
 
   // Update mobile bar starting price
-  const minPrice = PRICES.classic.standard;
+  const minPrice = 24;
   document.getElementById('mobilePrice').textContent = `€${minPrice}`;
 
   // Update WhatsApp links
@@ -1648,3 +1756,551 @@ function initRouteLine() {
   setTimeout(updatePositions, 200);
   window.addEventListener('resize', updatePositions);
 }
+
+// ========== MOBILE BOOKING WIZARD ==========
+// Wizard state
+const wizState = {
+  step: 1,
+  pkg: 'standard',
+  drink: 'soft',
+  drinkCounts: { soft: 0, glass2: 0, unlimited: 0 },
+  transfer: false,
+  romantic: false,
+  contact: null
+};
+
+function wizUpdateProgress(step) {
+  const labels = [
+    (T['wizard.stepPackage'] && T['wizard.stepPackage'][currentLang]) || 'Package',
+    (T['wizard.stepExtras'] && T['wizard.stepExtras'][currentLang]) || 'Extras',
+    (T['wizard.stepInfo'] && T['wizard.stepInfo'][currentLang]) || 'Info',
+    (T['wizard.stepTicket'] && T['wizard.stepTicket'][currentLang]) || 'Ticket'
+  ];
+  document.querySelectorAll('.wiz-progress').forEach(bar => {
+    let html = '';
+    for (let i = 1; i <= 4; i++) {
+      const done = i < step;
+      const active = i === step;
+      const circleClass = done ? 'bg-green-500 text-white' : active ? 'bg-[#c9a84c] text-[#0b1120]' : 'bg-white/10 text-white/30';
+      const labelClass = done ? 'text-green-400' : active ? 'text-[#c9a84c]' : 'text-white/30';
+      const lineClass = done ? 'bg-green-500/50' : 'bg-white/10';
+      html += `<div class="flex flex-col items-center flex-1"><div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold ${circleClass}">${done ? '✓' : i}</div><span class="text-[9px] mt-1 font-medium ${labelClass}">${labels[i-1]}</span></div>`;
+      if (i < 4) html += `<div class="h-0.5 flex-1 ${lineClass} -mt-4"></div>`;
+    }
+    bar.innerHTML = html;
+  });
+}
+
+function wizGoTo(n) {
+  wizState.step = n;
+  ['bookStep1', 'bookStep2', 'bookStep3', 'bookStep4'].forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('hidden', i + 1 !== n);
+  });
+  // Show/hide bottom bar (steps 1, 2, 3 — hidden on step 4)
+  const bar = document.getElementById('wizBottomBar');
+  if (bar) bar.classList.toggle('hidden', n === 4);
+  // Scroll content to top
+  const content = document.getElementById('mobileBookPanelContent');
+  if (content) content.scrollTop = 0;
+  // Update progress bars
+  wizUpdateProgress(n);
+  // Reset drink counts when entering step 2
+  if (n === 2) wizResetDrinkCounts();
+  // Show/hide pickup address block in step 3 based on transfer selection
+  if (n === 3) {
+    const addrBlock = document.getElementById('wizAddressBlock');
+    if (addrBlock) addrBlock.classList.toggle('hidden', !wizState.transfer);
+  }
+  // Update price
+  wizCalcPrice();
+  // Build summary on step 4
+  if (n === 4) wizBuildSummary();
+}
+
+function wizNext() {
+  // Step 2 → 3: validate drinks assigned
+  if (wizState.step === 2) {
+    const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
+    const dc = wizState.drinkCounts;
+    const assigned = dc.soft + dc.glass2 + dc.unlimited;
+    if (assigned !== adults) {
+      const warn = document.getElementById('wizDrinkWarning');
+      if (warn) warn.classList.remove('hidden');
+      return;
+    }
+  }
+  // Step 3 → 4: validate each field with individual warnings
+  if (wizState.step === 3) {
+    const name = (document.getElementById('wizGuestName')?.value || '').trim();
+    const phone = (document.getElementById('wizPhone')?.value || '').trim();
+    const address = (document.getElementById('wizAddress')?.value || '').trim();
+    const nameWarn = document.getElementById('wizNameWarning');
+    const phoneWarn = document.getElementById('wizPhoneWarning');
+    const contactWarn = document.getElementById('wizContactMethodWarning');
+    // Hide all first
+    if (nameWarn) nameWarn.classList.add('hidden');
+    if (phoneWarn) phoneWarn.classList.add('hidden');
+    if (contactWarn) contactWarn.classList.add('hidden');
+
+    let valid = true;
+    if (!name) { if (nameWarn) nameWarn.classList.remove('hidden'); valid = false; }
+    if (!phone) { if (phoneWarn) phoneWarn.classList.remove('hidden'); valid = false; }
+    if (!wizState.contact) { if (contactWarn) contactWarn.classList.remove('hidden'); valid = false; }
+    if (wizState.transfer && !address) {
+      if (contactWarn) { contactWarn.textContent = (T['wizard.enterAddress'] && T['wizard.enterAddress'][currentLang]) || 'Please enter your pickup address'; contactWarn.classList.remove('hidden'); }
+      valid = false;
+    }
+    if (!valid) return;
+  }
+  if (wizState.step < 4) wizGoTo(wizState.step + 1);
+}
+
+function wizSelectPackage(pkg) {
+  wizState.pkg = pkg;
+  const stdBtn = document.getElementById('wizPkgStandard');
+  const vipBtn = document.getElementById('wizPkgVip');
+  if (stdBtn) {
+    stdBtn.className = pkg === 'standard'
+      ? 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]'
+      : 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
+  }
+  if (vipBtn) {
+    vipBtn.className = pkg === 'vip'
+      ? 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]'
+      : 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
+  }
+  // Also sync to desktop sidebar for price calc compatibility
+  const desktopPkg = document.getElementById('bookPackage');
+  if (desktopPkg) desktopPkg.value = pkg;
+  wizCalcPrice();
+}
+
+function wizGuest(id, dir) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  let val = parseInt(el.textContent) || 0;
+  val += dir;
+  if (id === 'wizAdults' && val < 1) val = 1;
+  if (id === 'wizChildren' && val < 0) val = 0;
+  if (val > 20) val = 20;
+  el.textContent = val;
+
+  // Sync to desktop panel
+  if (id === 'wizAdults') {
+    const desktop = document.getElementById('adultCount');
+    if (desktop) desktop.textContent = val;
+    const mobileLegacy = document.getElementById('adultCountMobile');
+    if (mobileLegacy) mobileLegacy.textContent = val;
+  }
+  if (id === 'wizChildren') {
+    const desktop = document.getElementById('childCount');
+    if (desktop) desktop.textContent = val;
+    const mobileLegacy = document.getElementById('childCountMobile');
+    if (mobileLegacy) mobileLegacy.textContent = val;
+    wizUpdateChildAges(val);
+  }
+  wizCalcPrice();
+}
+
+function wizUpdateChildAges(count) {
+  const container = document.getElementById('wizChildAges');
+  const inputs = document.getElementById('wizChildAgeInputs');
+  if (!container || !inputs) return;
+  if (count === 0) {
+    container.classList.add('hidden');
+    inputs.innerHTML = '';
+    return;
+  }
+  container.classList.remove('hidden');
+  // Keep existing selects, add/remove as needed
+  const existing = inputs.querySelectorAll('select');
+  if (existing.length < count) {
+    for (let i = existing.length; i < count; i++) {
+      const sel = document.createElement('select');
+      sel.className = 'bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:border-[#c9a84c]/50 focus:outline-none appearance-none pr-7';
+      sel.style.cssText = "background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 6px center; background-size: 14px;";
+      sel.innerHTML = '<option value="0-3">0-3</option><option value="3-5">3-5</option><option value="5+" selected>5+</option>';
+      sel.addEventListener('change', () => wizCalcPrice());
+      inputs.appendChild(sel);
+    }
+  } else if (existing.length > count) {
+    for (let i = existing.length - 1; i >= count; i--) {
+      existing[i].remove();
+    }
+  }
+}
+
+function wizSelectDrink(drink) {
+  wizState.drink = drink;
+  const btns = { soft: 'wizDrinkSoft', glass2: 'wizDrinkGlass2', unlimited: 'wizDrinkUnlimited' };
+  const activeClass = 'wiz-drink-btn flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]';
+  const inactiveClass = 'wiz-drink-btn flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
+  Object.entries(btns).forEach(([key, id]) => {
+    const el = document.getElementById(id);
+    if (el) el.className = key === drink ? activeClass : inactiveClass;
+  });
+
+  // Update description
+  const desc = document.getElementById('wizDrinkDesc');
+  if (desc) {
+    const descKeys = {
+      soft: 'wizard.softDesc',
+      glass2: 'wizard.glass2Desc',
+      unlimited: 'wizard.unlimitedDesc'
+    };
+    const descTexts = {
+      soft: 'Unlimited tea, coffee, water, cola & juice',
+      glass2: 'Choose from local wine, beer, raki, vodka, or gin',
+      unlimited: 'Unlimited local wine, beer, raki, vodka, gin all night'
+    };
+    desc.setAttribute('data-i18n', descKeys[drink]);
+    desc.textContent = (T[descKeys[drink]] && T[descKeys[drink]][currentLang]) || descTexts[drink];
+  }
+
+  // Sync to legacy drink state
+  window._drinkSelected = drink === 'unlimited' ? 'alcohol' : drink;
+  wizCalcPrice();
+}
+
+function wizDrinkCount(type, dir) {
+  const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
+  const counts = wizState.drinkCounts;
+  const assigned = counts.soft + counts.glass2 + counts.unlimited;
+
+  if (dir === 1) {
+    if (assigned >= adults) return;
+    counts[type]++;
+  } else {
+    if (counts[type] <= 0) return;
+    counts[type]--;
+  }
+
+  // Update displays
+  document.getElementById('wizSoftCount').textContent = counts.soft;
+  document.getElementById('wizGlass2Count').textContent = counts.glass2;
+  document.getElementById('wizUnlimitedCount').textContent = counts.unlimited;
+
+  const newAssigned = counts.soft + counts.glass2 + counts.unlimited;
+  const totalEl = document.getElementById('wizDrinkTotal');
+  if (totalEl) {
+    if (newAssigned === adults) {
+      totalEl.textContent = `✓ ${(T['wizard.drinkComplete'] && T['wizard.drinkComplete'][currentLang]) || 'Drink selection complete'}`;
+      totalEl.className = 'text-xs text-green-400 text-right font-medium';
+    } else {
+      totalEl.textContent = `${newAssigned} / ${adults} — ${(T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests'}`;
+      totalEl.className = 'text-xs text-red-400 text-right font-medium';
+    }
+  }
+
+  // Show/hide warning
+  const warn = document.getElementById('wizDrinkWarning');
+  if (warn) warn.classList.toggle('hidden', newAssigned === adults);
+
+  wizCalcPrice();
+}
+
+function wizResetDrinkCounts() {
+  const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
+  wizState.drinkCounts = { soft: 0, glass2: 0, unlimited: 0 };
+  const softEl = document.getElementById('wizSoftCount');
+  const glass2El = document.getElementById('wizGlass2Count');
+  const unlimitedEl = document.getElementById('wizUnlimitedCount');
+  if (softEl) softEl.textContent = '0';
+  if (glass2El) glass2El.textContent = '0';
+  if (unlimitedEl) unlimitedEl.textContent = '0';
+  const totalEl = document.getElementById('wizDrinkTotal');
+  if (totalEl) {
+    totalEl.textContent = `0 / ${adults} — ${(T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests'}`;
+    totalEl.className = 'text-xs text-red-400 text-right font-medium';
+  }
+}
+
+function wizToggle(type, val) {
+  wizState[type] = val;
+  const activeClass = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]';
+  const inactiveClass = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
+  if (type === 'transfer') {
+    const no = document.getElementById('wizTransferNo');
+    const yes = document.getElementById('wizTransferYes');
+    if (no) no.className = val ? inactiveClass : activeClass;
+    if (yes) yes.className = val ? activeClass : inactiveClass;
+  }
+  if (type === 'romantic') {
+    const no = document.getElementById('wizRomanticNo');
+    const yes = document.getElementById('wizRomanticYes');
+    if (no) no.className = val ? inactiveClass : activeClass;
+    if (yes) yes.className = val ? activeClass : inactiveClass;
+  }
+  wizCalcPrice();
+}
+
+function wizSelectContact(channel) {
+  wizState.contact = channel;
+  const colors = { whatsapp: 'text-[#25D366]', telegram: 'text-[#26A5E4]', wechat: 'text-[#07C160]' };
+  ['whatsapp', 'telegram', 'wechat'].forEach(c => {
+    const btn = document.getElementById('wizContact' + c.charAt(0).toUpperCase() + c.slice(1));
+    if (btn) btn.className = `wiz-contact-btn flex flex-col items-center gap-1 transition-all ${c === channel ? colors[c] : 'text-white/25 hover:text-white/50'}`;
+  });
+}
+
+function wizUpdateTicketName() {
+  const val = (document.getElementById('wizGuestName')?.value || '').trim();
+  const el = document.getElementById('wizTicketName');
+  if (el) el.textContent = val || '—';
+}
+
+function wizUpdateTicketPhone() {
+  const code = document.getElementById('wizCountryCode')?.value || '+90';
+  const num = (document.getElementById('wizPhone')?.value || '').trim();
+  const el = document.getElementById('wizTicketPhone');
+  if (el) el.textContent = num ? `${code} ${num}` : '—';
+}
+function wizGetFullPhone() {
+  const code = document.getElementById('wizCountryCode')?.value || '+90';
+  const num = (document.getElementById('wizPhone')?.value || '').trim();
+  return num ? `${code} ${num}` : '';
+}
+
+function wizCalcPrice() {
+  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 2;
+  const children = parseInt(document.getElementById('wizChildren')?.textContent) || 0;
+  const pkg = wizState.pkg;
+
+  const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
+  const oldPrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].oldPrice : 40;
+
+  // Drink extras — per person counts
+  const dc = wizState.drinkCounts;
+  const drinkCost = (dc.glass2 * DINNER_PRICES.extras.glass2) + (dc.unlimited * DINNER_PRICES.extras.unlimited);
+
+  // Transfer per person (adults + children)
+  const totalGuests = adults + children;
+  const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
+  const transferCost = transferExtra * totalGuests;
+
+  // Base total (adults + children)
+  let total = adults * basePrice;
+
+  // Children pricing
+  const childAgeInputs = document.getElementById('wizChildAgeInputs');
+  if (children > 0 && childAgeInputs) {
+    childAgeInputs.querySelectorAll('select').forEach(sel => {
+      if (sel.value === '0-3') { /* free */ }
+      else if (sel.value === '3-5') total += Math.round(basePrice * 0.5);
+      else total += basePrice;
+    });
+  }
+
+  // Add drink + transfer + romantic
+  total += drinkCost + transferCost;
+  if (wizState.romantic) total += DINNER_PRICES.extras.romantic;
+
+  // Old price calculation
+  let oldTotal = adults * oldPrice;
+  if (children > 0 && childAgeInputs) {
+    childAgeInputs.querySelectorAll('select').forEach(sel => {
+      if (sel.value === '0-3') { /* free */ }
+      else if (sel.value === '3-5') oldTotal += Math.round(oldPrice * 0.5);
+      else oldTotal += oldPrice;
+    });
+  }
+  oldTotal += drinkCost + transferCost;
+  if (wizState.romantic) oldTotal += DINNER_PRICES.extras.romantic;
+
+  const totalPax = adults + children;
+
+  // Update bottom bar price summary
+  const priceEl = document.getElementById('wizBottomPrice');
+  if (priceEl) {
+    priceEl.innerHTML = `<span class="line-through text-white/30">€${oldPrice}</span> <span class="text-[#c9a84c] font-semibold">€${basePrice}</span><span class="text-white/40">/pp</span> <span class="text-white/30">· ${totalPax} pax</span>`;
+  }
+  const totalEl = document.getElementById('wizBottomTotal');
+  if (totalEl) totalEl.textContent = `€${total}`;
+
+  // Update step 3 total
+  const wizTotalEl = document.getElementById('wizTotal');
+  if (wizTotalEl) wizTotalEl.textContent = `€${total}`;
+
+  // Also update desktop total for compatibility
+  const desktopTotal = document.getElementById('bookTotal');
+  if (desktopTotal) desktopTotal.textContent = `€${total}`;
+  const mobileTotal = document.getElementById('bookTotalMobile');
+  if (mobileTotal) mobileTotal.textContent = `€${total}`;
+
+  return total;
+}
+
+function wizBuildSummary() {
+  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 2;
+  const children = parseInt(document.getElementById('wizChildren')?.textContent) || 0;
+  const date = document.getElementById('wizDate')?.value || '';
+  const lang = document.getElementById('wizLang')?.value || 'English';
+  const pkg = wizState.pkg;
+
+  const pkgLabels = {
+    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية' },
+    vip: { en: 'VIP Dinner Cruise', tr: 'VIP Akşam Turu', de: 'VIP Dinner-Kreuzfahrt', es: 'Crucero Cena VIP', ru: 'VIP ужин-круиз', ar: 'رحلة عشاء VIP' }
+  };
+  const pkgLabel = (pkgLabels[pkg] && pkgLabels[pkg][currentLang]) || pkgLabels[pkg].en;
+
+  const drinkNames = {
+    soft: { en: 'Soft Drinks', tr: 'Alkolsüz İçecek', de: 'Alkoholfreie Getränke', es: 'Bebidas Sin Alcohol', ru: 'Безалкогольные напитки', ar: 'مشروبات غير كحولية' },
+    glass2: { en: 'Limited Alcohol (2 Glasses)', tr: 'Sınırlı Alkol (2 Kadeh)', de: 'Begrenzter Alkohol (2 Gläser)', es: 'Alcohol Limitado (2 Copas)', ru: 'Ограниченный алкоголь (2 бокала)', ar: 'كحول محدود (كأسان)' },
+    unlimited: { en: 'Unlimited Alcohol', tr: 'Sınırsız Alkol', de: 'Unbegrenzter Alkohol', es: 'Alcohol Ilimitado', ru: 'Безлимитный алкоголь', ar: 'كحول غير محدود' }
+  };
+  const dc = wizState.drinkCounts;
+  const drinkParts = [];
+  if (dc.soft > 0) drinkParts.push(`${dc.soft} ${(drinkNames.soft[currentLang] || 'Soft Drinks')}`);
+  if (dc.glass2 > 0) drinkParts.push(`${dc.glass2} x ${(drinkNames.glass2[currentLang] || '2 Glasses')}`);
+  if (dc.unlimited > 0) drinkParts.push(`${dc.unlimited} x ${(drinkNames.unlimited[currentLang] || 'Unlimited')}`);
+  const drinkLabel = drinkParts.join(', ') || (drinkNames.soft[currentLang] || 'Soft Drinks');
+
+  // Format date
+  let dateStr = date;
+  try {
+    const d = new Date(date + 'T00:00:00');
+    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA' };
+    dateStr = d.toLocaleDateString(locales[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  } catch(e) {}
+
+  // Ticket fields
+  const ticketPkg = document.getElementById('wizTicketPkg');
+  const ticketDate = document.getElementById('wizTicketDate');
+  const ticketGuests = document.getElementById('wizTicketGuests');
+  const ticketTransfer = document.getElementById('wizTicketTransfer');
+  const ticketRomantic = document.getElementById('wizTicketRomantic');
+
+  if (ticketPkg) ticketPkg.textContent = pkgLabel;
+  if (ticketDate) {
+    try {
+      const d = new Date(date + 'T00:00:00');
+      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA' };
+      ticketDate.textContent = d.toLocaleDateString(locales[currentLang] || 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+    } catch(e) { ticketDate.textContent = date; }
+  }
+  if (ticketGuests) {
+    const adultWords = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' };
+    const childWords = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' };
+    const adultWord = adultWords[currentLang] || 'Adult';
+    const childWord = childWords[currentLang] || 'Child';
+    let guestText = `${adults} ${adultWord}`;
+    if (children > 0) guestText += `, ${children} ${childWord}`;
+    ticketGuests.textContent = guestText;
+  }
+  if (ticketTransfer) {
+    const mpText = (T['ticket.meetingPoint'] && T['ticket.meetingPoint'][currentLang]) || 'Meeting Point';
+    const htText = (T['ticket.hotelPickup'] && T['ticket.hotelPickup'][currentLang]) || 'Hotel Pickup';
+    ticketTransfer.textContent = wizState.transfer ? htText : mpText;
+  }
+  if (ticketRomantic) ticketRomantic.classList.toggle('hidden', !wizState.romantic);
+
+  // Guest name, phone, address from step 3
+  const guestName = (document.getElementById('wizGuestName')?.value || '').trim();
+  const guestPhone = wizGetFullPhone();
+  const guestAddress = (document.getElementById('wizAddress')?.value || '').trim();
+  const ticketName = document.getElementById('wizTicketName');
+  const ticketPhone = document.getElementById('wizTicketPhone');
+  const ticketAddress = document.getElementById('wizTicketAddress');
+  const ticketAddressBlock = document.getElementById('wizTicketAddressBlock');
+  if (ticketName) ticketName.textContent = guestName || '—';
+  if (ticketPhone) ticketPhone.textContent = guestPhone || '—';
+  if (ticketAddressBlock) ticketAddressBlock.classList.toggle('hidden', !wizState.transfer);
+  if (ticketAddress) ticketAddress.textContent = guestAddress || '—';
+
+  // Price breakdown
+  const priceLines = document.getElementById('wizPriceLines');
+  if (priceLines) {
+    const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
+    const totalGuests = adults + children;
+    const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
+
+    let html = '';
+
+    // Soft drinks guests
+    if (dc.soft > 0) {
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel}</p><p class="text-white/30 text-[10px]">${dc.soft} x €${basePrice}</p></div><span class="text-white font-medium">€${dc.soft * basePrice}</span></div>`;
+    }
+
+    // Limited alcohol guests
+    if (dc.glass2 > 0) {
+      const glass2Label = drinkNames.glass2[currentLang] || 'Limited Alcohol';
+      const perPerson = basePrice + DINNER_PRICES.extras.glass2;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${glass2Label}</p><p class="text-white/30 text-[10px]">${dc.glass2} x (€${basePrice}+€${DINNER_PRICES.extras.glass2})</p></div><span class="text-white font-medium">€${dc.glass2 * perPerson}</span></div>`;
+    }
+
+    // Unlimited alcohol guests
+    if (dc.unlimited > 0) {
+      const unlimitedLabel = drinkNames.unlimited[currentLang] || 'Unlimited Alcohol';
+      const perPerson = basePrice + DINNER_PRICES.extras.unlimited;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${unlimitedLabel}</p><p class="text-white/30 text-[10px]">${dc.unlimited} x (€${basePrice}+€${DINNER_PRICES.extras.unlimited})</p></div><span class="text-white font-medium">€${dc.unlimited * perPerson}</span></div>`;
+    }
+
+    // Transfer
+    if (transferExtra > 0) {
+      const transferLabel = (T['ticket.hotelPickup'] && T['ticket.hotelPickup'][currentLang]) || 'Hotel Transfer';
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${totalGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * totalGuests}</span></div>`;
+    }
+
+    // Children
+    const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال' }[currentLang] || 'Children';
+    const childAgeInputs = document.getElementById('wizChildAgeInputs');
+    if (children > 0 && childAgeInputs) {
+      let childTotal = 0;
+      childAgeInputs.querySelectorAll('select').forEach(sel => {
+        const childBase = basePrice + transferExtra;
+        if (sel.value === '0-3') { /* free */ }
+        else if (sel.value === '3-5') childTotal += Math.round(childBase * 0.5);
+        else childTotal += childBase;
+      });
+      if (childTotal > 0) {
+        html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${childrenLabel}</p><p class="text-white/30 text-[10px]">${children} x</p></div><span class="text-white font-medium">€${childTotal}</span></div>`;
+      }
+    }
+
+    // Romantic table
+    if (wizState.romantic) {
+      const romanticLabel = (T['ticket.romanticSetup'] && T['ticket.romanticSetup'][currentLang]) || 'Romantic Table';
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${romanticLabel}</p></div><span class="text-white font-medium">€${DINNER_PRICES.extras.romantic}</span></div>`;
+    }
+    priceLines.innerHTML = html;
+  }
+
+  // Build contact link (WhatsApp / Telegram / WeChat)
+  const total = wizCalcPrice();
+  const adultW = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' }[currentLang] || 'Adult';
+  const childW = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' }[currentLang] || 'Child';
+  const guestStr = `${adults} ${adultW}${children > 0 ? ', ' + children + ' ' + childW : ''}`;
+  const yesNo = { en: ['Yes','No'], tr: ['Evet','Hayır'], de: ['Ja','Nein'], es: ['Sí','No'], ru: ['Да','Нет'], ar: ['نعم','لا'] };
+  const yn = yesNo[currentLang] || yesNo.en;
+  const transferStr = wizState.transfer ? yn[0] : yn[1];
+  const romanticStr = wizState.romantic ? yn[0] : yn[1];
+  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}` : '';
+
+  const msgTemplates = {
+    en: `Hi, I'd like to check availability:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hotel Transfer: ${transferStr}${addressLine}\n💐 Romantic Table: ${romanticStr}\n💰 Total: €${total}\nPlease confirm. Thank you!`,
+    tr: `Merhaba, müsaitlik kontrolü yapmak istiyorum:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Otel Transferi: ${transferStr}${addressLine}\n💐 Romantik Masa: ${romanticStr}\n💰 Toplam: €${total}\nLütfen onaylayın. Teşekkürler!`,
+    de: `Hallo, ich möchte die Verfügbarkeit prüfen:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hoteltransfer: ${transferStr}${addressLine}\n💐 Romantischer Tisch: ${romanticStr}\n💰 Gesamt: €${total}\nBitte bestätigen. Danke!`,
+    es: `Hola, me gustaría verificar la disponibilidad:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer Hotel: ${transferStr}${addressLine}\n💐 Mesa Romántica: ${romanticStr}\n💰 Total: €${total}\nPor favor confirme. ¡Gracias!`,
+    ru: `Здравствуйте, хочу проверить наличие:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Трансфер: ${transferStr}${addressLine}\n💐 Романтический стол: ${romanticStr}\n💰 Итого: €${total}\nПожалуйста, подтвердите. Спасибо!`,
+    ar: `مرحباً، أود التحقق من التوفر:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 النقل: ${transferStr}${addressLine}\n💐 طاولة رومانسية: ${romanticStr}\n💰 الإجمالي: €${total}\nيرجى التأكيد. شكراً!`
+  };
+  const msg = msgTemplates[currentLang] || msgTemplates.en;
+
+  const ctaLink = document.getElementById('wizWhatsApp');
+  if (ctaLink) {
+    if (wizState.contact === 'telegram') {
+      ctaLink.href = `https://t.me/bosphorusnighttour?text=${encodeURIComponent(msg)}`;
+    } else if (wizState.contact === 'wechat') {
+      ctaLink.href = '#';
+    } else {
+      ctaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+    }
+  }
+}
+
+// Listen for date changes
+document.addEventListener('DOMContentLoaded', function() {
+  const wizDate = document.getElementById('wizDate');
+  if (wizDate) wizDate.addEventListener('change', () => wizCalcPrice());
+});

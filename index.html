@@ -296,9 +296,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center gap-2">
-          <span class="font-display text-xl lg:text-2xl font-bold text-gold tracking-wide">BOSPHORUS</span>
-          <span class="font-display text-xs lg:text-sm text-white/70 tracking-widest uppercase">Night</span>
+        <a href="#" class="flex items-center">
+          <img src="assets/data/bosphorus_night_transparent (1).png" alt="Bosphorus Night" class="h-[200px] lg:h-[240px] w-auto -mb-9 -ml-14 -mt-2">
         </a>
 
         <!-- Desktop Nav -->
@@ -486,7 +485,7 @@
         </a>
 
         <!-- Summary info line -->
-        <p class="mt-4 text-white/30 text-xs tracking-wide" data-i18n="last.summary">20:45 · 3.5 hours · Dinner & Live Show · Pay on the boat</p>
+        <p class="mt-4 text-white/30 text-xs tracking-wide" data-i18n="last.summary">20:45 · 3 hours · Dinner & Live Show · Pay on the boat</p>
       </div>
     </div>
   </section>
@@ -605,7 +604,8 @@
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-5">
             <div>
               <span class="text-white/40 text-sm" data-i18n="booking.from">From</span>
-              <span class="text-gold text-3xl font-display font-bold ml-2">€35</span>
+              <span class="text-white/30 text-xl line-through ml-2">€40</span>
+              <span class="text-gold text-3xl font-display font-bold ml-1">€24</span>
               <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
             </div>
             <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="dinner">
@@ -841,7 +841,7 @@
           <div class="bg-gold/10 border-t border-gold/20 px-6 py-4">
             <div class="flex items-center justify-between">
               <span class="text-white/70 text-sm font-medium" data-i18n="booking.from">From</span>
-              <span class="text-gold text-2xl font-display font-bold">€35 <span class="text-white/40 text-xs font-body font-normal" data-i18n="booking.perPerson">/ person</span></span>
+              <span class="text-gold text-2xl font-display font-bold"><span class="text-white/30 text-sm line-through font-normal mr-1">€40</span>€24 <span class="text-white/40 text-xs font-body font-normal" data-i18n="booking.perPerson">/ person</span></span>
             </div>
           </div>
           <div class="px-6 py-3">
@@ -864,11 +864,243 @@
       <div id="packages" class="mt-12 hidden">
         <div class="text-center mb-10">
           <h3 class="font-display text-2xl sm:text-3xl font-bold">
-            <span id="selectedBoatName">Classic Cruise</span> — <span data-i18n="pkg.choose">Choose Your Package</span>
+            <span id="selectedBoatName" class="hidden">Dinner Cruise</span><span data-i18n="pkg.choose">Choose Your Package</span>
           </h3>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+        <div id="dinnerPackagesGrid" class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto hidden">
+
+          <!-- Standard Package -->
+          <div class="package-card glass-card rounded-2xl p-6 flex flex-col relative overflow-hidden bg-[#152240]">
+            <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/dining-romantic.jpg')"></div>
+            <div class="absolute top-4 right-4 z-20 bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">40% OFF</div>
+            <div class="relative z-10 flex flex-col flex-1">
+              <h4 class="font-display text-xl font-bold mb-2" data-i18n="dinner.std.title">Standard Dinner Cruise</h4>
+              <p class="text-white/40 text-xs mb-3" data-i18n="dinner.std.desc">Enjoy a 3-hour Bosphorus night cruise with a full dinner, live Turkish entertainment, and stunning views of Istanbul's skyline.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4 text-[10px]">
+                <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">3hrs · 20:30</span>
+                <span class="text-gold/60 bg-gold/5 px-2 py-0.5 rounded-full border border-gold/10" data-i18n="dinner.privateTable">Private table</span>
+                <span class="text-green-400/60 bg-green-500/5 px-2 py-0.5 rounded-full border border-green-500/10" data-i18n="dinner.freeCancel">Free cancel 2hrs</span>
+                <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10" data-i18n="dinner.halalTax">Halal · All taxes incl.</span>
+              </div>
+              <div class="mb-4">
+                <p class="text-gold/70 text-[10px] uppercase tracking-wider font-semibold mb-1.5" data-i18n="dinner.menuLabel">What's Included</p>
+                <ul class="space-y-1 text-xs text-white/60">
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item1">10 varieties of Turkish meze</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item2">Warm appetizer: crispy pastry rolls with cured beef & cheese</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item3">Main course with seasonal salad: salmon, sea bream, chicken, or meatball</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item4">Dessert: ice cream cake</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item5">Unlimited soft drinks</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item6">Whirling Dervish show, 5 folk dances, belly dance, live music & DJ</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item7">Open-air deck & panoramic viewing terrace</span></li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="text-gold/70 text-[10px] uppercase tracking-wider font-semibold mb-2" data-i18n="dinner.optionalLabel">Optional Add-ons</p>
+                <div class="space-y-2 text-xs">
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.add2GlassTitle">2 Glasses of Alcohol: +€7/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.add2GlassDesc">Choose from local wine, beer, rakı, vodka, or gin</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addUnlimitedTitle">Unlimited Alcohol: +€11/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addUnlimitedDesc">Unlimited local wine, beer, rakı, vodka, gin all night</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addTransferTitle">Hotel Transfer: +€10/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addTransferDesc">Pickup & drop-off from your hotel</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addRomanticTitle">Romantic Table: +€15/table</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addRomanticDesc">Candles, flowers & special setup</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/10">
+                <div>
+                  <span class="text-white/30 text-xs line-through">€40</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1">€24</span>
+                  <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
+                </div>
+                <button onclick="openMobilePanel('standard')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="Standard">
+                  <span data-i18n="dinner.bookBtn">Book Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- VIP Package -->
+          <div class="package-card glass-card rounded-2xl p-6 flex flex-col ring-2 ring-gold/50 relative overflow-hidden bg-[#152240]">
+            <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/boat-night-bridge.jpg')"></div>
+            <div class="absolute top-5 -left-2 z-20">
+              <div class="px-5 py-1.5 shadow-lg border border-yellow-200/60" style="background: linear-gradient(135deg, #d4b86a, #f0e0a0, #d4b86a); clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);">
+                <span class="text-[#0b1120] text-xs font-bold uppercase tracking-wider drop-shadow-sm" data-i18n="dinner.mostPopular">Most Popular</span>
+              </div>
+              <div class="w-2 h-2" style="background: #b8953f; clip-path: polygon(100% 0, 0 0, 100% 100%);"></div>
+            </div>
+            <div class="absolute top-4 right-4 z-20 bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">40% OFF</div>
+            <div class="relative z-10 flex flex-col flex-1">
+              <h4 class="font-display text-xl font-bold mb-2 mt-4" data-i18n="dinner.vip.title">VIP Dinner Cruise</h4>
+              <p class="text-white/40 text-xs mb-3" data-i18n="dinner.vip.desc">Premium dining at the best table near the stage. Upgraded menu with premium mezes, steak options, and VIP service throughout the night.</p>
+              <div class="flex flex-wrap gap-1.5 mb-4 text-[10px]">
+                <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">3hrs · 20:30</span>
+                <span class="text-gold/60 bg-gold/5 px-2 py-0.5 rounded-full border border-gold/10" data-i18n="dinner.nearStage">Near the stage</span>
+                <span class="text-green-400/60 bg-green-500/5 px-2 py-0.5 rounded-full border border-green-500/10" data-i18n="dinner.freeCancel">Free cancel 2hrs</span>
+                <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10" data-i18n="dinner.halalTax">Halal · All taxes incl.</span>
+              </div>
+              <div class="mb-4">
+                <p class="text-gold/70 text-[10px] uppercase tracking-wider font-semibold mb-1.5" data-i18n="dinner.menuLabel">What's Included</p>
+                <ul class="space-y-1 text-xs text-white/60">
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item1">15+ varieties of Turkish meze, served as a traditional spread</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item2">Warm appetizer: crispy pastry rolls with cured beef & cheese</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item3">Main course with seasonal salad (choose one): salmon, sea bream, chicken, meatball, rib-eye steak, or beef steak</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item4">Dessert: ice cream cake</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item5">Unlimited soft drinks</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item6">Whirling Dervish show, 5 folk dances, belly dance, live music & DJ</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item7">Open-air deck & panoramic viewing terrace</span></li>
+                </ul>
+              </div>
+              <div class="mb-4">
+                <p class="text-gold/70 text-[10px] uppercase tracking-wider font-semibold mb-2" data-i18n="dinner.optionalLabel">Optional Add-ons</p>
+                <div class="space-y-2 text-xs">
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.add2GlassTitle">2 Glasses of Alcohol: +€7/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.add2GlassDesc">Choose from local wine, beer, rakı, vodka, or gin</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addUnlimitedTitle">Unlimited Alcohol: +€11/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addUnlimitedDesc">Unlimited local wine, beer, rakı, vodka, gin all night</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addTransferTitle">Hotel Transfer: +€10/person</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addTransferDesc">Pickup & drop-off from your hotel</p></div>
+                  </div>
+                  <div class="flex items-start gap-2 text-white/50">
+                    <span class="text-gold font-bold mt-0.5">+</span>
+                    <div><p class="text-white/70 font-medium" data-i18n="dinner.addRomanticTitle">Romantic Table: +€15/table</p><p class="text-white/30 text-[10px]" data-i18n="dinner.addRomanticDesc">Candles, flowers & special setup</p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between mt-auto pt-4 border-t border-gold/20">
+                <div>
+                  <span class="text-white/30 text-xs line-through">€90</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1">€55</span>
+                  <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
+                </div>
+                <button onclick="openMobilePanel('vip')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="VIP">
+                  <span data-i18n="dinner.bookBtn">Book Now</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cruise Route + Know Before You Go (dinner cruise only) -->
+        <div id="dinnerInfoSection" class="max-w-4xl mx-auto mt-10 hidden">
+
+          <!-- Cruise Route -->
+          <div class="bg-[#152240] rounded-2xl p-6 border border-white/5 mb-6">
+            <h3 class="font-display text-lg font-bold text-gold mb-4">Cruise Route</h3>
+            <div class="flex flex-wrap gap-3 items-center">
+              <span class="inline-flex items-center gap-1.5 text-sm text-white/70">
+                <span class="w-2 h-2 rounded-full bg-gold"></span>Kabataş Pier
+              </span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Dolmabahçe Palace</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Çırağan Palace</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Ortaköy Mosque</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Bosphorus Bridge</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Bebek</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Rumeli Fortress</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">FSM Bridge</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Beylerbeyi Palace</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/50">Maiden's Tower</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="inline-flex items-center gap-1.5 text-sm text-white/70">
+                <span class="w-2 h-2 rounded-full bg-gold"></span>Kabataş Pier
+              </span>
+            </div>
+            <p class="text-white/30 text-[10px] mt-3">Route is for reference only. Itinerary may vary due to weather or sea conditions.</p>
+          </div>
+
+          <!-- Meeting Point -->
+          <div class="bg-[#152240] rounded-2xl p-6 border border-white/5 mb-6">
+            <h3 class="font-display text-lg font-bold text-gold mb-3">Meeting Point</h3>
+            <div class="flex items-start gap-3 mb-4">
+              <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+              <div>
+                <p class="text-white text-sm font-medium">Kabataş Pier, Istanbul</p>
+                <p class="text-white/40 text-xs mt-1">Exact meeting location will be shared via WhatsApp after booking.</p>
+              </div>
+            </div>
+            <div class="rounded-xl overflow-hidden border border-white/10">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d752.3756494696499!2d28.994708702967472!3d41.03613689152337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1776289266333!5m2!1str!2str" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- Know Before You Go -->
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-[#152240] rounded-2xl p-6 border border-white/5">
+              <h3 class="font-display text-lg font-bold text-gold mb-4">Know Before You Go</h3>
+              <ul class="space-y-3 text-sm text-white/60">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                  <span>If you selected hotel transfer, please be ready at your hotel lobby by <strong class="text-white/80">19:00 — 20:00</strong></span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0"/></svg>
+                  <span>Please bring your <strong class="text-white/80">passport or ID card</strong></span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+                  <span>Smart casual dress code recommended — <strong class="text-white/80">it can get cool on deck</strong>, bring a light jacket</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                  <span>Vegetarian, pescetarian and <strong class="text-white/80">halal dietary options</strong> available — let us know when booking</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
+                  <span><strong class="text-white/80">No prepayment required</strong> — pay on the boat (cash or card)</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Not Allowed + Drop-off -->
+            <div class="space-y-6">
+              <div class="bg-[#152240] rounded-2xl p-6 border border-white/5">
+                <h3 class="font-display text-lg font-bold text-gold mb-4">Not Allowed</h3>
+                <ul class="space-y-2 text-sm text-white/50">
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Pets
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Outside food & beverages
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="text-red-400">✕</span> Smoking indoors
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-[#152240] rounded-2xl p-6 border border-white/5">
+                <h3 class="font-display text-lg font-bold text-gold mb-3">Drop-off</h3>
+                <p class="text-white/60 text-sm">All guests are dropped off at <strong class="text-white/80">Kabataş Pier</strong> at approximately 23:30. If you booked hotel transfer, you will be driven back to your hotel after the cruise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Original 3-column packages for daytime/sunset tours -->
+        <div id="defaultPackagesGrid" class="grid md:grid-cols-3 gap-6 lg:gap-8">
 
           <!-- Standard -->
           <div class="package-card glass-card rounded-2xl p-6 lg:p-8 flex flex-col relative overflow-hidden">
@@ -880,21 +1112,12 @@
                 <span class="text-white/40 text-sm">/ person</span>
               </div>
               <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3.5-hour Bosphorus night cruise</span></li>
+                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.dinner">Dinner — 7 meze + salad + main course + dessert</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.choices">4 choices: vegetarian, fish, chicken, meatball</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.table">Private table</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
               </ul>
-              <div class="border-t border-white/10 pt-3 mb-4">
-                <p class="text-[10px] text-gold/50 uppercase tracking-wider mb-2 font-medium" data-i18n="pkg.extras">Optional extras:</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="alcohol" data-i18n="pkg.badge.alcohol">Alcohol €10</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="transfer" data-i18n="pkg.badge.transfer">Transfer €15</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="romantic" data-i18n="pkg.badge.romantic">Romantic €25</span>
-                </div>
-              </div>
               <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="Standard" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
             </div>
           </div>
@@ -910,21 +1133,12 @@
                 <span class="text-white/40 text-sm">/ person</span>
               </div>
               <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3.5-hour Bosphorus night cruise</span></li>
+                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.dinner">Dinner — 7 meze + salad + main course + dessert</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.choices">4 choices: vegetarian, fish, chicken, meatball</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
                 <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.tablePrem">Private table — stage view or window seat</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
               </ul>
-              <div class="border-t border-white/10 pt-3 mb-4">
-                <p class="text-[10px] text-gold/50 uppercase tracking-wider mb-2 font-medium" data-i18n="pkg.extras">Optional extras:</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="alcohol" data-i18n="pkg.badge.alcohol">Alcohol €10</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="transfer" data-i18n="pkg.badge.transfer">Transfer €15</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="romantic" data-i18n="pkg.badge.romantic">Romantic €25</span>
-                </div>
-              </div>
               <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="Premium" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
             </div>
           </div>
@@ -939,27 +1153,21 @@
                 <span class="text-white/40 text-sm">/ person</span>
               </div>
               <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3.5-hour Bosphorus night cruise</span></li>
+                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
                 <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.dinnerVip">VIP menu — premium meze, mixed grill & special dishes</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
                 <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.tableVip">Private VIP table — best location</span></li>
                 <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
                 <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.priority">Priority boarding & VIP service</span></li>
               </ul>
-              <div class="border-t border-white/10 pt-3 mb-4">
-                <p class="text-[10px] text-gold/50 uppercase tracking-wider mb-2 font-medium" data-i18n="pkg.extras">Optional extras:</p>
-                <div class="flex flex-wrap gap-2">
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="alcohol" data-i18n="pkg.badge.alcohol">Alcohol €10</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="transfer" data-i18n="pkg.badge.transfer">Transfer €15</span>
-                  <span class="extra-badge text-xs px-3 py-1 rounded-full bg-gold/15 text-gold/80 border border-gold/25 hover:bg-gold/25 hover:text-gold transition-all cursor-pointer relative" data-tip="romantic" data-i18n="pkg.badge.romantic">Romantic €25</span>
-                </div>
-              </div>
               <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="VIP" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
             </div>
           </div>
         </div>
 
-        <p class="text-center text-white/30 text-xs mt-6" data-i18n="pkg.children">Children 0–3: Free · 3–5: 50% off · 5+: Full price · No prepayment required</p>
+        <!-- Note below packages -->
+        <p class="text-center text-white/40 text-xs mt-6">Meeting Point: Kabatas Pier | Transfer: Hotel pickup & drop-off included</p>
+        <p class="text-center text-white/30 text-xs mt-2" data-i18n="pkg.children">Children 0-3 age: Free  |  3-5 age: 50% off  |  5+ age: Full price · No prepayment required</p>
       </div>
     </div>
   </section>
@@ -985,7 +1193,7 @@
                 <h4 class="font-semibold mb-1" data-i18n="incl.cruise">Bosphorus Night Cruise</h4>
                 <svg class="incl-chevron w-4 h-4 text-gold/40 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
-              <p class="text-white/50 text-sm" data-i18n="incl.cruise.desc">3.5-hour cruise with iconic Istanbul views</p>
+              <p class="text-white/50 text-sm" data-i18n="incl.cruise.desc">3-hour cruise with iconic Istanbul views</p>
             </div>
           </div>
           <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.cruise.detail">Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 20:45, returns at 23:30.</div>
@@ -1090,7 +1298,7 @@
         <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-3" data-i18n="route.title">Your Journey on the Bosphorus</h2>
         <p class="text-white/40 text-sm mt-3 flex items-center justify-center gap-2">
           <span>⛵</span>
-          <span data-i18n="route.subtitle">3.5 hours · 2 continents · 10+ landmarks</span>
+          <span data-i18n="route.subtitle">3 hours · 2 continents · 10+ landmarks</span>
         </p>
       </div>
 
@@ -2185,7 +2393,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a0">We offer three Bosphorus cruise experiences: <strong class="text-white/80">Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong class="text-white/80">Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong class="text-white/80">Dinner Cruise</strong> (20:45, 3.5 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a0">We offer three Bosphorus cruise experiences: <strong class="text-white/80">Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong class="text-white/80">Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong class="text-white/80">Dinner Cruise</strong> (20:45, 3 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.</p>
           </div>
         </div>
 
@@ -2341,9 +2549,8 @@
 
         <!-- Logo + Description + Social -->
         <div class="text-center mb-10">
-          <a href="#" class="inline-flex items-center gap-2 mb-3">
-            <span class="font-display text-2xl font-bold text-gold tracking-wide">BOSPHORUS</span>
-            <span class="font-display text-sm text-white/50 tracking-widest uppercase">Night</span>
+          <a href="#" class="inline-block mb-3">
+            <img src="assets/data/bosphorus_night_transparent (1).png" alt="Bosphorus Night" class="h-14 w-auto mx-auto">
           </a>
           <p class="text-white/40 text-sm max-w-md mx-auto mb-5" data-i18n="footer.desc">We help you find the best cruise experience on the Bosphorus.</p>
           <!-- Social Icons -->
@@ -2546,34 +2753,23 @@
       <div id="childAges" class="hidden mb-3">
         <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.childAges">Child Ages</label>
         <div id="childAgeInputs" class="flex flex-wrap gap-2"></div>
-        <p class="text-white/50 text-[11px] mt-1" data-i18n="booking.childNote">0-3: Free · 3-5: 50% off · 5+: Full price</p>
+        <p class="text-white/50 text-[11px] mt-1" data-i18n="booking.childNote">0-3 age: Free  |  3-5 age: 50% off  |  5+ age: Full price</p>
       </div>
 
-      <!-- Boat -->
-      <div class="mb-3">
-        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.boat">Cruise</label>
-        <select id="bookBoat" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-gold/50 focus:outline-none transition-colors appearance-none cursor-pointer">
-          <option value="classic" data-i18n-opt="booking.classic">Classic Cruise ⭐⭐⭐</option>
-          <option value="premium" selected data-i18n-opt="booking.premium">Premium Cruise ⭐⭐⭐⭐</option>
-          <option value="luxury" data-i18n-opt="booking.luxury">Luxury Yacht ⭐⭐⭐⭐⭐</option>
+      <!-- Boat (hidden, kept for JS compatibility) -->
+      <div class="hidden">
+        <select id="bookBoat">
+          <option value="classic" selected>Classic</option>
         </select>
-        <!-- Boat Preview -->
-        <div id="boatPreview" class="mt-2 rounded-xl overflow-hidden border border-white/10 relative">
-          <img id="boatPreviewImg" src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=400&q=70" alt="" class="w-full h-20 object-cover">
-          <div class="absolute inset-0 bg-gradient-to-r from-navy-dark/80 to-transparent"></div>
-          <div class="absolute bottom-2 left-3">
-            <span id="boatPreviewName" class="text-white text-xs font-semibold">Premium Cruise</span>
-            <div id="boatPreviewStars" class="text-gold text-[10px]">★★★★<span class="text-white/30">★</span></div>
-          </div>
-        </div>
+        <div id="boatPreview"><img id="boatPreviewImg" src="" alt=""><span id="boatPreviewName"></span><div id="boatPreviewStars"></div></div>
       </div>
 
       <!-- Package -->
       <div class="mb-3">
         <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.package">Package</label>
         <select id="bookPackage" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-gold/50 focus:outline-none transition-colors appearance-none cursor-pointer">
-          <option value="standard" data-i18n-opt="pkg.opt.std">Standard</option>
-          <option value="premium" selected data-i18n-opt="pkg.opt.prem">Premium</option>
+          <option value="standard" selected data-i18n-opt="pkg.opt.std">Standard</option>
+          <option value="premium" data-i18n-opt="pkg.opt.prem" disabled style="display:none">Premium</option>
           <option value="vip" data-i18n-opt="pkg.opt.vip">VIP</option>
         </select>
       </div>
@@ -2588,8 +2784,9 @@
           <p id="drinkWarning" class="text-red-400 text-xs font-semibold mb-1.5" data-i18n="booking.drinkWarn">⚠ Please select a drink option</p>
           <!-- Adım 1: Toggle — ikisi de pasif başlar -->
           <div class="flex gap-1.5 mb-2">
-            <button class="drink-toggle flex-1 text-sm py-2.5 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="soft" data-panel="desktop" data-i18n="booking.softDrinkBtn">Soft Drinks</button>
-            <button class="drink-toggle flex-1 text-sm py-2.5 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="alcohol" data-panel="desktop" data-i18n="booking.alcoholBtn">Alcohol +€10</button>
+            <button class="drink-toggle flex-1 text-xs py-2 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="soft" data-panel="desktop" data-i18n="booking.softDrinkBtn">Soft Drinks</button>
+            <button class="drink-toggle flex-1 text-xs py-2 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="glass2" data-panel="desktop" data-i18n="booking.glass2Btn">2 Glasses +€6</button>
+            <button class="drink-toggle flex-1 text-xs py-2 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="alcohol" data-panel="desktop" data-i18n="booking.unlimitedBtn">Unlimited +€11</button>
           </div>
           <!-- Adım 2: Sayaç (gizli, alkol seçilince açılır) -->
           <div id="alcoholPanel" class="hidden">
@@ -2644,11 +2841,11 @@
   </aside>
 
   <!-- ========== MOBILE STICKY BAR (altta) ========== -->
-  <div id="mobileBookBar" class="lg:hidden fixed bottom-0 left-0 w-full z-[55] bg-[#0a0f1e]/95 backdrop-blur-xl border-t border-gold/20 px-4 py-2.5 flex items-center justify-between">
+  <div id="mobileBookBar" class="lg:hidden fixed bottom-0 left-0 z-[55] bg-[#0a0f1e]/95 backdrop-blur-xl border-t border-gold/20 px-4 py-2.5 flex items-center justify-between" style="width: 100vw;">
     <div>
       <div>
         <span class="text-white/50 text-xs" data-i18n="booking.from">From</span>
-        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1">€35</span>
+        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1">€24</span>
         <span class="text-white/30 text-xs ml-1" data-i18n="booking.perPerson">/ person</span>
       </div>
       <p id="mobileBarTourLabel" class="text-gold/50 text-[10px] mt-0.5"></p>
@@ -2661,172 +2858,366 @@
 
   <!-- ========== MOBILE BOOKING SLIDE-UP PANEL ========== -->
   <div id="mobileBookOverlay" onclick="closeMobilePanel()" class="lg:hidden fixed inset-0 z-[59] bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
-  <div id="mobileBookPanel" class="lg:hidden fixed bottom-0 left-0 w-full z-[60] bg-[#0a0f1e] transform translate-y-full transition-transform duration-300 ease-out h-[100dvh] overflow-hidden flex flex-col">
+  <div id="mobileBookPanel" class="lg:hidden fixed bottom-0 left-0 z-[60] bg-[#0a0f1e] transform translate-y-full transition-transform duration-300 ease-out h-[100dvh] overflow-hidden flex flex-col" style="width: 100vw;">
 
     <!-- Panel Header: Logo + Title + Close -->
     <div class="bg-[#0a0f1e]/95 backdrop-blur-xl border-b border-gold/20 px-5 py-3 flex items-center justify-between flex-shrink-0">
       <div class="flex items-center gap-3">
-        <div class="flex items-center gap-1.5">
-          <span class="font-display text-lg font-bold text-gold tracking-wide">BOSPHORUS</span>
-          <span class="font-display text-[10px] text-white/70 tracking-widest uppercase">Night</span>
+        <div class="flex items-center">
+          <img src="assets/data/bosphorus_night_transparent (1).png" alt="Bosphorus Night" class="h-12 w-auto">
         </div>
-        <span class="w-px h-5 bg-white/15"></span>
-        <h3 class="font-display text-sm font-semibold text-gold" data-i18n="booking.title">Book Your Cruise</h3>
+        <span class="w-px h-6 bg-white/15"></span>
+        <h3 class="font-display text-lg font-bold text-gold" data-i18n="booking.title">Book Your Cruise</h3>
       </div>
       <button id="mobileBookClose" onclick="closeMobilePanel()" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Close">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
-    <!-- Scrollable Content -->
+    <!-- Scrollable Content — 4-Step Wizard -->
     <div id="mobileBookPanelContent" class="flex-1 overflow-y-auto relative">
-      <div id="mobileBookPanelBg" class="booking-panel-bg"></div>
-      <div class="p-5 relative z-10">
 
-      <!-- Tour Type Selector Mobile -->
-      <div class="flex gap-1 mb-3 bg-white/5 rounded-xl p-1">
-        <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="daytime"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><span data-i18n="tour.daytime.short">Day</span></button>
-        <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="sunset"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20M6 14a6 6 0 0112 0"/><path d="M12 6v2M5.64 9.64l1.41 1.41M18.36 9.64l-1.41 1.41"/></svg><span data-i18n="tour.sunset.short">Sunset</span></button>
-        <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="dinner"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg><span data-i18n="tour.dinner.short">Dinner</span></button>
-      </div>
-
-      <!-- Tonight Block Mobile -->
-      <div id="tonightBlockMobile" class="mb-3 bg-gold/5 border border-gold/20 rounded-xl px-4 py-2.5 text-center">
-        <div class="flex items-center justify-center gap-2 text-gold font-semibold text-sm">
-          <span id="tonightIconMobile"><svg class="w-4 h-4 inline-block align-middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg></span>
-          <span id="tonightLabelMobile">Tonight</span>
-          <span class="text-white/40">·</span>
-          <span id="tonightTimeMobile">20:45</span>
+      <!-- ===== STEP 1: Basic Info ===== -->
+      <div id="bookStep1" class="p-5">
+        <!-- Progress -->
+        <div class="wiz-progress flex items-center justify-between mb-6 px-2" data-step="1">
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-[#c9a84c] text-[#0b1120]">1</div>
+            <span class="text-[9px] mt-1 text-[#c9a84c] font-medium" data-i18n="wizard.stepPackage">Package</span>
+          </div>
+          <div class="h-0.5 flex-1 bg-white/10 -mt-4"></div>
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-white/10 text-white/30">2</div>
+            <span class="text-[9px] mt-1 text-white/30" data-i18n="wizard.stepExtras">Extras</span>
+          </div>
+          <div class="h-0.5 flex-1 bg-white/10 -mt-4"></div>
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-white/10 text-white/30">3</div>
+            <span class="text-[9px] mt-1 text-white/30" data-i18n="wizard.stepInfo">Info</span>
+          </div>
+          <div class="h-0.5 flex-1 bg-white/10 -mt-4"></div>
+          <div class="flex flex-col items-center flex-1">
+            <div class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold bg-white/10 text-white/30">4</div>
+            <span class="text-[9px] mt-1 text-white/30" data-i18n="wizard.stepTicket">Ticket</span>
+          </div>
         </div>
-        <p class="text-white/40 text-xs mt-1" id="tonightPierMobile">Kabataş Pier</p>
-      </div>
 
-      <!-- Date -->
-      <div class="mb-3">
+        <!-- Package Toggle -->
+        <label class="text-white/80 text-xs font-semibold mb-1.5 block" data-i18n="booking.package">Package</label>
+        <div class="flex gap-2 mb-4">
+          <button id="wizPkgStandard" onclick="wizSelectPackage('standard')" class="wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]" data-i18n="wizard.standard">Standard</button>
+          <button id="wizPkgVip" onclick="wizSelectPackage('vip')" class="wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.vip">VIP</button>
+        </div>
+
+        <!-- Date -->
         <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.date">Date</label>
-        <input type="date" id="bookDateMobile" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-gold/50 focus:outline-none transition-colors">
-      </div>
+        <input type="date" id="wizDate" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors mb-4">
 
-      <!-- Guests -->
-      <div class="grid grid-cols-2 gap-2 mb-3">
-        <div>
-          <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.adults">Adults</label>
-          <div class="flex items-center bg-white/5 border border-white/10 rounded-lg">
-            <button class="guest-btn px-3 py-2 text-white/50 hover:text-gold transition-colors" data-target="adultCountMobile" data-dir="-1">−</button>
-            <span id="adultCountMobile" class="flex-1 text-center text-sm font-semibold">2</span>
-            <button class="guest-btn px-3 py-2 text-white/50 hover:text-gold transition-colors" data-target="adultCountMobile" data-dir="1">+</button>
-          </div>
-        </div>
-        <div>
-          <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.children">Children</label>
-          <div class="flex items-center bg-white/5 border border-white/10 rounded-lg">
-            <button class="guest-btn px-3 py-2 text-white/50 hover:text-gold transition-colors" data-target="childCountMobile" data-dir="-1">−</button>
-            <span id="childCountMobile" class="flex-1 text-center text-sm font-semibold">0</span>
-            <button class="guest-btn px-3 py-2 text-white/50 hover:text-gold transition-colors" data-target="childCountMobile" data-dir="1">+</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Child Ages Mobile -->
-      <div id="childAgesMobile" class="hidden mb-3">
-        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.childAges">Child Ages</label>
-        <div id="childAgeInputsMobile" class="flex flex-wrap gap-2"></div>
-        <p class="text-white/50 text-[11px] mt-1" data-i18n="booking.childNote">0-3: Free · 3-5: 50% off · 5+: Full price</p>
-      </div>
-
-      <!-- Boat -->
-      <div class="mb-3">
-        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.boat">Cruise</label>
-        <select id="bookBoatMobile" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-gold/50 focus:outline-none transition-colors appearance-none cursor-pointer">
-          <option value="classic">Classic Cruise ⭐⭐⭐</option>
-          <option value="premium" selected>Premium Cruise ⭐⭐⭐⭐</option>
-          <option value="luxury">Luxury Yacht ⭐⭐⭐⭐⭐</option>
-        </select>
-        <!-- Boat Preview Mobile -->
-        <div id="boatPreviewMobile" class="mt-2 rounded-xl overflow-hidden border border-white/10 relative">
-          <img id="boatPreviewImgMobile" src="https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=400&q=70" alt="" class="w-full h-20 object-cover">
-          <div class="absolute inset-0 bg-gradient-to-r from-navy-dark/80 to-transparent"></div>
-          <div class="absolute bottom-2 left-3">
-            <span id="boatPreviewNameMobile" class="text-white text-xs font-semibold">Premium Cruise</span>
-            <div id="boatPreviewStarsMobile" class="text-gold text-[10px]">★★★★<span class="text-white/30">★</span></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Package -->
-      <div class="mb-3">
-        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.package">Package</label>
-        <select id="bookPackageMobile" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-gold/50 focus:outline-none transition-colors appearance-none cursor-pointer">
-          <option value="standard" data-i18n-opt="pkg.opt.std">Standard</option>
-          <option value="premium" selected data-i18n-opt="pkg.opt.prem">Premium</option>
-          <option value="vip" data-i18n-opt="pkg.opt.vip">VIP</option>
-        </select>
-      </div>
-
-      <!-- Extras -->
-      <div class="mb-4">
-        <label class="text-white/80 text-xs font-semibold mb-2 block" data-i18n="booking.extras">Extras</label>
-
-        <!-- Alkol Seçimi — iki adımlı zorunlu, başlangıçta seçilmemiş -->
-        <div class="mb-3" id="drinkSectionMobile">
-          <label class="text-white/80 text-xs font-semibold mb-1.5 flex items-center gap-1.5"><svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2l1.5 5H14l1.5-5"/><path d="M12 7v10"/><path d="M7 22h10"/><path d="M12 17a5 5 0 005-5H7a5 5 0 005 5z"/></svg><span data-i18n="booking.drinkLabel">Drink Selection</span></label>
-          <p id="drinkWarningMobile" class="text-red-400 text-xs font-semibold mb-1.5" data-i18n="booking.drinkWarn">⚠ Please select a drink option</p>
-          <!-- Adım 1: Toggle — ikisi de pasif başlar -->
-          <div class="flex gap-1.5 mb-2">
-            <button class="drink-toggle flex-1 text-sm py-2.5 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="soft" data-panel="mobile" data-i18n="booking.softDrinkBtn">Soft Drinks</button>
-            <button class="drink-toggle flex-1 text-sm py-2.5 rounded-lg border border-white/20 bg-white/5 text-white/50 font-medium transition-all hover:border-white/40" data-drink="alcohol" data-panel="mobile" data-i18n="booking.alcoholBtn">Alcohol +€10</button>
-          </div>
-          <!-- Adım 2: Sayaç (gizli, alkol seçilince açılır) -->
-          <div id="alcoholPanelMobile" class="hidden">
-            <div class="flex items-center bg-white/5 border border-white/10 rounded-lg mb-1">
-              <button class="alcohol-btn-mobile px-3 py-2 text-white/50 hover:text-gold transition-colors text-lg" data-dir="-1">−</button>
-              <span id="alcoholCountMobile" class="flex-1 text-center text-sm font-bold text-gold">1</span>
-              <button class="alcohol-btn-mobile px-3 py-2 text-white/50 hover:text-gold transition-colors text-lg" data-dir="1">+</button>
-              <span class="text-white/40 text-xs pr-3">/ <span id="alcoholMaxMobile">2</span></span>
+        <!-- Guests -->
+        <div class="grid grid-cols-2 gap-3 mb-4">
+          <div>
+            <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.adults">Adults</label>
+            <div class="flex items-center bg-white/5 border border-white/10 rounded-lg">
+              <button onclick="wizGuest('wizAdults',-1)" class="px-3 py-2 text-white/50 hover:text-[#c9a84c] transition-colors text-lg">−</button>
+              <span id="wizAdults" class="flex-1 text-center text-sm font-semibold text-white">2</span>
+              <button onclick="wizGuest('wizAdults',1)" class="px-3 py-2 text-white/50 hover:text-[#c9a84c] transition-colors text-lg">+</button>
             </div>
-            <p id="alcoholInfoMobile" class="text-sm font-semibold text-gold px-2 py-1 mt-1"><svg class="w-3.5 h-3.5 inline-block align-middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2l1.5 5H14l1.5-5"/><path d="M12 7v10"/><path d="M7 22h10"/><path d="M12 17a5 5 0 005-5H7a5 5 0 005 5z"/></svg> 1 alcohol · 1 soft drinks</p>
           </div>
-          <!-- Soft drinks info (alkolsüz seçilince görünür) -->
-          <p id="softInfoMobile" class="hidden text-sm font-semibold text-gold px-2 py-1 mt-1 flex items-center gap-1.5"><svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12l-2 18H8L6 2z"/><path d="M6 6h12"/></svg><span data-i18n="booking.softInfo">All guests get unlimited soft drinks</span></p>
+          <div>
+            <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.children">Children</label>
+            <div class="flex items-center bg-white/5 border border-white/10 rounded-lg">
+              <button onclick="wizGuest('wizChildren',-1)" class="px-3 py-2 text-white/50 hover:text-[#c9a84c] transition-colors text-lg">−</button>
+              <span id="wizChildren" class="flex-1 text-center text-sm font-semibold text-white">0</span>
+              <button onclick="wizGuest('wizChildren',1)" class="px-3 py-2 text-white/50 hover:text-[#c9a84c] transition-colors text-lg">+</button>
+            </div>
+          </div>
         </div>
 
-        <!-- Otel Transferi — checkbox, kişi başı -->
-        <div class="flex items-center gap-2 mb-0.5">
-          <label class="flex items-center gap-2 text-sm text-white/70 cursor-pointer flex-1">
-            <input type="checkbox" class="booking-extra-mobile accent-gold w-4 h-4 rounded" data-price="15" data-pricing="person" value="transfer">
-            <span data-i18n="booking.transfer">Hotel Transfer (+€15/person)</span>
-          </label>
-          <button class="extra-info-btn w-5 h-5 flex-shrink-0 flex items-center justify-center text-gold/50 hover:text-gold text-xs border border-gold/20 rounded-full transition-colors" data-tooltip="transfer">ⓘ</button>
+        <!-- Child Ages (shown when children > 0) -->
+        <div id="wizChildAges" class="hidden mb-4">
+          <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="booking.childAges">Child Ages</label>
+          <div id="wizChildAgeInputs" class="flex flex-wrap gap-2"></div>
+          <p class="text-white/50 text-[11px] mt-1" data-i18n="booking.childNote">0-3 age: Free  |  3-5 age: 50% off  |  5+ age: Full price</p>
         </div>
-        <p id="transferInfoMobile" class="hidden text-sm font-semibold text-gold px-2 py-1 mb-1.5 ml-6"><svg class="w-3.5 h-3.5 inline-block align-middle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 5v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg> Transfer x2 — round-trip</p>
 
-        <!-- Romantik Masa — checkbox, masa başı -->
-        <div class="flex items-center gap-2">
-          <label class="flex items-center gap-2 text-sm text-white/70 cursor-pointer flex-1">
-            <input type="checkbox" class="booking-extra-mobile accent-gold w-4 h-4 rounded" data-price="25" data-pricing="table" value="romantic">
-            <span data-i18n="booking.romantic">Romantic Table (+€25/table)</span>
-          </label>
-          <button class="extra-info-btn w-5 h-5 flex-shrink-0 flex items-center justify-center text-gold/50 hover:text-gold text-xs border border-gold/20 rounded-full transition-colors" data-tooltip="romantic">ⓘ</button>
+        <!-- Language -->
+        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="wizard.language">Preferred Language</label>
+        <select id="wizLang" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors mb-2 appearance-none" style="background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px;">
+          <option value="en">English</option>
+          <option value="tr">Türkçe</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="ru">Русский</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div><!-- /bookStep1 -->
+
+      <!-- ===== STEP 2: Add-ons ===== -->
+      <div id="bookStep2" class="p-5 hidden">
+        <!-- Progress -->
+        <div class="wiz-progress flex items-center justify-between mb-6 px-2" data-step="2"></div>
+
+        <!-- Back -->
+        <button onclick="wizGoTo(1)" class="flex items-center gap-1 text-white/50 hover:text-white text-xs mb-4 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          <span data-i18n="wizard.back">Back</span>
+        </button>
+
+        <!-- Drinks — per person counters -->
+        <label class="text-gold font-display text-base font-bold mb-1 block" data-i18n="booking.drinkLabel">Drink Selection</label>
+        <p class="text-white/50 text-xs mb-3" data-i18n="wizard.drinkNote">Choose a drink option for each adult guest</p>
+        <p id="wizDrinkWarning" class="text-red-400 text-xs font-semibold mb-2 hidden" data-i18n="wizard.drinkWarning">Please assign drinks for all adults before continuing</p>
+        <div class="space-y-2 mb-5">
+          <!-- Soft Drinks -->
+          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
+            <div>
+              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.softDrinks">Soft Drinks</p>
+              <p class="text-white/30 text-[10px]" data-i18n="wizard.softNote">Included free</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="wizDrinkCount('soft',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
+              <span id="wizSoftCount" class="text-white font-bold text-sm w-5 text-center">0</span>
+              <button onclick="wizDrinkCount('soft',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+            </div>
+          </div>
+          <!-- 2 Glasses -->
+          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
+            <div>
+              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.glass2Label">2 Glasses of Alcohol</p>
+              <p class="text-white/30 text-[10px]" data-i18n="wizard.glass2Note">+€7/person · Wine, beer, rakı, vodka, or gin</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="wizDrinkCount('glass2',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
+              <span id="wizGlass2Count" class="text-white font-bold text-sm w-5 text-center">0</span>
+              <button onclick="wizDrinkCount('glass2',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+            </div>
+          </div>
+          <!-- Unlimited -->
+          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
+            <div>
+              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.unlimitedLabel">Unlimited Alcohol</p>
+              <p class="text-white/30 text-[10px]" data-i18n="wizard.unlimitedNote">+€15/person · Wine, beer, rakı, vodka, gin all night</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="wizDrinkCount('unlimited',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
+              <span id="wizUnlimitedCount" class="text-white font-bold text-sm w-5 text-center">0</span>
+              <button onclick="wizDrinkCount('unlimited',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+            </div>
+          </div>
+          <p id="wizDrinkTotal" class="text-xs text-red-400 text-right font-medium">0 / 2 adults assigned</p>
         </div>
-      </div>
 
-    </div><!-- /p-5 z-10 -->
+        <!-- Hotel Transfer -->
+        <label class="text-white/80 text-xs font-semibold mb-1.5 block" data-i18n="wizard.transferLabel">Hotel Transfer</label>
+        <div class="flex gap-2 mb-1">
+          <button onclick="wizToggle('transfer',false)" id="wizTransferNo" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]" data-i18n="wizard.no">No</button>
+          <button onclick="wizToggle('transfer',true)" id="wizTransferYes" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.transferYes">Yes +€10/person</button>
+        </div>
+        <p class="text-white/40 text-[11px] mb-5" data-i18n="wizard.transferDesc">Pickup & drop-off from your hotel</p>
+
+        <!-- Romantic Table -->
+        <label class="text-white/80 text-xs font-semibold mb-1.5 block" data-i18n="wizard.romanticLabel">Romantic Table</label>
+        <div class="flex gap-2 mb-1">
+          <button onclick="wizToggle('romantic',false)" id="wizRomanticNo" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]" data-i18n="wizard.no">No</button>
+          <button onclick="wizToggle('romantic',true)" id="wizRomanticYes" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.romanticYes">Yes +€15</button>
+        </div>
+        <p class="text-white/40 text-[11px] mb-5" data-i18n="wizard.romanticDesc">Candles, flowers & special setup</p>
+      </div><!-- /bookStep2 -->
+
+      <!-- ===== STEP 3: Reservation Details (NEW) ===== -->
+      <div id="bookStep3" class="p-5 hidden">
+        <!-- Progress -->
+        <div class="wiz-progress flex items-center justify-between mb-6 px-2" data-step="3"></div>
+
+        <!-- Back -->
+        <button onclick="wizGoTo(2)" class="flex items-center gap-1 text-white/50 hover:text-white text-xs mb-4 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          <span data-i18n="wizard.back">Back</span>
+        </button>
+
+        <!-- Heading -->
+        <h3 class="font-display text-lg font-bold text-[#c9a84c] mb-4" data-i18n="wizard.reservationDetails">Reservation Details</h3>
+
+        <!-- Guest Name -->
+        <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="wizard.guestName">Guest Name</label>
+        <input type="text" id="wizGuestName" oninput="wizUpdateTicketName()" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors mb-1 placeholder-white/30" data-i18n-placeholder="wizard.namePlaceholder" placeholder="Full name" required>
+        <p id="wizNameWarning" class="text-red-400 text-[10px] font-semibold mt-1 mb-1 hidden" data-i18n="wizard.enterName">Please enter your name</p>
+
+        <!-- Phone Number -->
+        <label class="text-white/80 text-xs font-semibold mb-1 block mt-4" data-i18n="wizard.phone">Phone Number</label>
+        <div class="flex gap-2">
+          <select id="wizCountryCode" onchange="wizUpdateTicketPhone()" class="bg-white/5 border border-white/10 rounded-lg px-2 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none appearance-none w-[110px] flex-shrink-0" style="background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 6px center; background-size: 12px;">
+            <option value="+90">🇹🇷 +90</option>
+            <option value="+7">🇷🇺 +7</option>
+            <option value="+966">🇸🇦 +966</option>
+            <option value="+971">🇦🇪 +971</option>
+            <option value="+49">🇩🇪 +49</option>
+            <option value="+44">🇬🇧 +44</option>
+            <option value="+1">🇺🇸 +1</option>
+            <option value="+33">🇫🇷 +33</option>
+            <option value="+39">🇮🇹 +39</option>
+            <option value="+34">🇪🇸 +34</option>
+            <option value="+91">🇮🇳 +91</option>
+            <option value="+86">🇨🇳 +86</option>
+            <option value="+81">🇯🇵 +81</option>
+            <option value="+82">🇰🇷 +82</option>
+            <option value="+62">🇮🇩 +62</option>
+            <option value="+60">🇲🇾 +60</option>
+            <option value="+92">🇵🇰 +92</option>
+            <option value="+359">🇧🇬 +359</option>
+            <option value="+40">🇷🇴 +40</option>
+            <option value="+380">🇺🇦 +380</option>
+            <option value="+20">🇪🇬 +20</option>
+            <option value="+212">🇲🇦 +212</option>
+            <option value="+98">🇮🇷 +98</option>
+            <option value="+61">🇦🇺 +61</option>
+            <option value="+55">🇧🇷 +55</option>
+          </select>
+          <input type="tel" id="wizPhone" oninput="this.value=this.value.replace(/[^0-9 ]/g,'');wizUpdateTicketPhone()" class="flex-1 bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none placeholder-white/30" placeholder="532 520 1700" inputmode="numeric" pattern="[0-9 ]*" required>
+        </div>
+        <p class="text-[#c9a84c]/50 text-[10px] mt-2 mb-1" data-i18n="wizard.phoneNote">We will contact you via this number for booking confirmation</p>
+        <p id="wizPhoneWarning" class="text-red-400 text-[10px] font-semibold mb-3 hidden" data-i18n="wizard.enterPhone">Please enter your phone number</p>
+
+        <!-- Pickup Address (only if transfer selected) -->
+        <div id="wizAddressBlock" class="hidden">
+          <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="wizard.pickupAddress">Pickup Address</label>
+          <input type="text" id="wizAddress" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors mb-4 placeholder-white/30" data-i18n-placeholder="wizard.addressPlaceholder" placeholder="Hotel name or accommodation address">
+        </div>
+
+        <!-- Contact Preference -->
+        <div class="mt-6 mb-4">
+          <label class="text-white/80 text-xs font-semibold mb-3 block" data-i18n="wizard.contactPref">Preferred Contact</label>
+          <div class="flex justify-around mb-2">
+            <button id="wizContactWhatsapp" onclick="wizSelectContact('whatsapp')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              <span class="text-[10px] font-medium">WhatsApp</span>
+            </button>
+            <button id="wizContactTelegram" onclick="wizSelectContact('telegram')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span class="text-[10px] font-medium">Telegram</span>
+            </button>
+            <button id="wizContactWechat" onclick="wizSelectContact('wechat')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
+              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>
+              <span class="text-[10px] font-medium">WeChat</span>
+            </button>
+          </div>
+          <p class="text-[#c9a84c]/40 text-[10px] text-center" data-i18n="wizard.contactNote">We will reach you through this channel</p>
+          <p id="wizContactMethodWarning" class="text-red-400 text-[10px] font-semibold mt-2 hidden text-center" data-i18n="wizard.selectContact">Please select a contact method</p>
+        </div>
+      </div><!-- /bookStep3 -->
+
+      <!-- ===== STEP 4: Ticket Review (moved from old Step 3) ===== -->
+      <div id="bookStep4" class="p-5 hidden">
+        <!-- Progress -->
+        <div class="wiz-progress flex items-center justify-between mb-6 px-2" data-step="4"></div>
+
+        <!-- Back -->
+        <button onclick="wizGoTo(3)" class="flex items-center gap-1 text-white/50 hover:text-white text-xs mb-4 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+          <span data-i18n="wizard.back">Back</span>
+        </button>
+
+        <!-- Review Heading -->
+        <p class="text-white/50 text-xs text-center mb-3" data-i18n="wizard.reviewBooking">Please review your booking</p>
+
+        <!-- Boarding Pass Ticket -->
+        <div class="relative bg-gradient-to-b from-[#152240] to-[#0d1a2e] rounded-2xl overflow-hidden border border-gold/20 shadow-xl shadow-black/30">
+          <!-- Ticket Header -->
+          <div class="bg-gradient-to-r from-[#c9a84c] to-[#d4b86a] px-5 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-[#0b1120]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/></svg>
+              <span class="text-[#0b1120] text-xs font-bold uppercase tracking-widest" data-i18n="ticket.boardingPass">Boarding Pass</span>
+            </div>
+            <span class="text-[#0b1120]/60 text-[10px] font-medium">Bosphorus Night</span>
+          </div>
+
+          <!-- Ticket Body -->
+          <div class="px-5 pt-4 pb-3">
+            <h4 id="wizTicketPkg" class="font-display text-xl font-bold text-gold mb-4">Standard Dinner Cruise</h4>
+
+            <!-- Info Grid -->
+            <div class="grid grid-cols-2 gap-x-4 gap-y-3 mb-4">
+              <div>
+                <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.guestName">Guest Name</p>
+                <p id="wizTicketName" class="text-white text-sm font-medium">—</p>
+              </div>
+              <div>
+                <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.phone">Phone</p>
+                <p id="wizTicketPhone" class="text-white text-sm font-medium">—</p>
+              </div>
+              <div>
+                <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.date">Date</p>
+                <p id="wizTicketDate" class="text-white text-sm font-medium">16 Apr 2026</p>
+              </div>
+              <div>
+                <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.guests">Guests</p>
+                <p id="wizTicketGuests" class="text-white text-sm font-medium">2 Adults</p>
+              </div>
+              <div>
+                <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.transfer">Transfer</p>
+                <p id="wizTicketTransfer" class="text-white text-sm font-medium">Meeting Point</p>
+              </div>
+            </div>
+
+            <!-- Pickup Address (if transfer selected) -->
+            <div id="wizTicketAddressBlock" class="hidden mb-4">
+              <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.pickupAddress">Pickup Address</p>
+              <p id="wizTicketAddress" class="text-white text-sm font-medium">—</p>
+            </div>
+
+            <!-- Romantic (if selected) -->
+            <div id="wizTicketRomantic" class="hidden mb-4">
+              <p class="text-white/30 text-[10px] uppercase tracking-wider" data-i18n="ticket.special">Special</p>
+              <p class="text-gold text-sm font-medium" data-i18n="ticket.romanticSetup">Romantic Table Setup</p>
+            </div>
+          </div>
+
+          <!-- Tear Line -->
+          <div class="relative flex items-center mx-2">
+            <div class="w-4 h-4 rounded-full bg-[#0a0f1e] -ml-4"></div>
+            <div class="flex-1 border-t-2 border-dashed border-white/10 mx-1"></div>
+            <div class="w-4 h-4 rounded-full bg-[#0a0f1e] -mr-4"></div>
+          </div>
+
+          <!-- Price Section -->
+          <div class="px-5 pt-3 pb-4">
+            <div id="wizPriceLines" class="space-y-1.5 text-sm text-white/50 mb-3"></div>
+            <div class="flex justify-between items-center pt-2 border-t border-white/10">
+              <span class="text-white font-semibold text-sm" data-i18n="booking.total">Total</span>
+              <span id="wizTotal" class="text-3xl font-bold text-[#c9a84c] font-display">€48</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Check Availability CTA -->
+        <a id="wizWhatsApp" href="#" target="_blank" onclick="gtag_report_conversion(this.href)" class="block w-full text-center px-6 py-4 rounded-full text-base font-bold bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] transition-colors mt-5 mb-4 shadow-lg shadow-[#c9a84c]/20">
+          <span data-i18n="wizard.checkAvail">Check Availability</span>
+        </a>
+
+        <!-- Trust Messages -->
+        <div class="space-y-2 text-center">
+          <p class="text-white/50 text-xs" data-i18n="wizard.confirmMsg">We'll confirm within 15 minutes via WhatsApp</p>
+          <div class="flex flex-wrap justify-center gap-3 text-[11px] text-white/40">
+            <span data-i18n="wizard.trust1">&#10003; Free cancellation 2hrs</span>
+            <span data-i18n="wizard.trust2">&#10003; No prepayment</span>
+            <span data-i18n="wizard.trust3">&#10003; Pay on the boat</span>
+          </div>
+        </div>
+      </div><!-- /bookStep4 -->
+
     </div><!-- /mobileBookPanelContent -->
 
-    <!-- SABİT ALT KISIM (Mobile) -->
-    <div class="flex-shrink-0 border-t border-gold/20 bg-[#0a0f1e] px-5 py-3">
+    <!-- STICKY BOTTOM BAR (Steps 1, 2 & 3 only) -->
+    <div id="wizBottomBar" class="flex-shrink-0 border-t border-[#c9a84c]/20 bg-[#0a0f1e] px-5 py-3">
       <div class="flex justify-between items-center mb-2">
-        <div>
-          <span class="text-white/80 text-sm font-medium" data-i18n="booking.total">Total</span>
-          <p class="text-white/50 text-[10px]" data-i18n="booking.payNote">Pay on the boat — No prepayment</p>
-        </div>
-        <span id="bookTotalMobile" class="text-2xl font-bold text-gold font-display">€120</span>
+        <div id="wizBottomPrice" class="text-sm text-white/70"></div>
+        <span id="wizBottomTotal" class="text-xl font-bold text-[#c9a84c] font-display">€48</span>
       </div>
-      <a id="bookWhatsAppMobile" href="#" target="_blank" class="btn-gold w-full text-center px-6 py-3.5 rounded-full text-sm font-semibold flex items-center justify-center gap-2">
-        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-        <span data-i18n="booking.cta">Book via WhatsApp</span>
-      </a>
-    </div><!-- /SABİT ALT KISIM Mobile -->
+      <button id="wizNextBtn" onclick="wizNext()" class="w-full px-6 py-3.5 rounded-full text-sm font-semibold bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] transition-colors flex items-center justify-center gap-2">
+        <span data-i18n="wizard.next">Next</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div><!-- /wizBottomBar -->
   </div><!-- /mobileBookPanel -->
 
   <script src="js/main.js"></script>

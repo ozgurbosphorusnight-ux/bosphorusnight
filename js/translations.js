@@ -191,9 +191,9 @@ const T = {
 
   // Package features
   "pkg.f.cruise": {
-    en: "3.5-hour Bosphorus night cruise", tr: "3.5 saatlik Boğaz gece turu",
-    de: "3,5-stündige Bosporus-Nachtkreuzfahrt", es: "Crucero nocturno de 3.5 horas por el Bósforo",
-    ru: "3,5-часовой ночной круиз по Босфору", ar: "رحلة بحرية ليلية لمدة 3.5 ساعات"
+    en: "3-hour Bosphorus night cruise", tr: "3 saatlik Boğaz gece turu",
+    de: "3-stündige Bosporus-Nachtkreuzfahrt", es: "Crucero nocturno de 3 horas por el Bósforo",
+    ru: "3-часовой ночной круиз по Босфору", ar: "رحلة بحرية ليلية لمدة 3 ساعات"
   },
   "pkg.f.dinner": {
     en: "Dinner — 7 meze + main course + dessert", tr: "Yemek — 7 meze + ana yemek + tatlı",
@@ -278,9 +278,9 @@ const T = {
     es: "Crucero Nocturno por el Bósforo", ru: "Ночной круиз по Босфору", ar: "رحلة بحرية ليلية"
   },
   "incl.cruise.desc": {
-    en: "3.5-hour cruise with iconic Istanbul views", tr: "İstanbul'un ikonik manzaralarıyla 3.5 saatlik tur",
-    de: "3,5-stündige Kreuzfahrt mit Blick auf Istanbul", es: "Crucero de 3.5 horas con vistas icónicas de Estambul",
-    ru: "3,5-часовой круиз с видами Стамбула", ar: "رحلة 3.5 ساعات مع مناظر إسطنبول الأيقونية"
+    en: "3-hour cruise with iconic Istanbul views", tr: "İstanbul'un ikonik manzaralarıyla 3 saatlik tur",
+    de: "3-stündige Kreuzfahrt mit Blick auf Istanbul", es: "Crucero de 3 horas con vistas icónicas de Estambul",
+    ru: "3-часовой круиз с видами Стамбула", ar: "رحلة 3 ساعات مع مناظر إسطنبول الأيقونية"
   },
   "incl.dinner": {
     en: "Full Dinner Service", tr: "Tam Yemek Servisi", de: "Vollständiges Abendessen",
@@ -534,12 +534,12 @@ const T = {
     ru: "Узнать о наличии на сегодня", ar: "اسأل عن توفر الليلة"
   },
   "last.summary": {
-    en: "20:45 · 3.5 hours · Dinner & Live Show · Pay on the boat",
-    tr: "20:45 · 3.5 saat · Yemek & Canlı Şov · Teknede ödeme",
-    de: "20:45 · 3,5 Stunden · Abendessen & Live-Show · Bezahlung auf dem Boot",
-    es: "20:45 · 3.5 horas · Cena y Show en Vivo · Pago en el barco",
-    ru: "20:45 · 3,5 часа · Ужин и живое шоу · Оплата на борту",
-    ar: "20:45 · 3.5 ساعات · عشاء وعرض حي · الدفع على القارب"
+    en: "20:45 · 3 hours · Dinner & Live Show · Pay on the boat",
+    tr: "20:45 · 3 saat · Yemek & Canlı Şov · Teknede ödeme",
+    de: "20:45 · 3 Stunden · Abendessen & Live-Show · Bezahlung auf dem Boot",
+    es: "20:45 · 3 horas · Cena y Show en Vivo · Pago en el barco",
+    ru: "20:45 · 3 часа · Ужин и живое шоу · Оплата на борту",
+    ar: "20:45 · 3 ساعات · عشاء وعرض حي · الدفع على القارب"
   },
 
   // ========== WHY CHOOSE US ==========
@@ -596,12 +596,12 @@ const T = {
   },
   "faq.q0": { en: "What cruise tours do you offer?", tr: "Hangi tur seçenekleriniz var?", de: "Welche Kreuzfahrten bieten Sie an?", es: "¿Qué cruceros ofrecen?", ru: "Какие круизы вы предлагаете?", ar: "ما هي الرحلات البحرية التي تقدمونها؟" },
   "faq.a0": {
-    en: "We offer three Bosphorus cruise experiences: <strong>Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong>Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong>Dinner Cruise</strong> (20:45, 3.5 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.",
-    tr: "Üç farklı Boğaz turu deneyimi sunuyoruz: <strong>Gündüz Turu</strong> (12:00, 1.5 saat — panoramik manzara gezisi), <strong>Günbatımı Turu</strong> (17:30, 3 saat — yemek, gün batımı manzarası ve canlı şovlar), <strong>Akşam Turu</strong> (20:45, 3.5 saat — akşam yemeği, Türk gecesi şovu, oryantal dans, DJ ve gece manzarası). Tüm turlar Kabataş İskelesi'nden kalkar.",
-    de: "Wir bieten drei Bosporus-Kreuzfahrt-Erlebnisse: <strong>Tageskreuzfahrt</strong> (12:00, 1,5 Std. — Sightseeing mit Panoramablick), <strong>Sonnenuntergangskreuzfahrt</strong> (17:30, 3 Std. — Abendessen mit Sonnenuntergang und Live-Shows), <strong>Dinner-Kreuzfahrt</strong> (20:45, 3,5 Std. — Abendessen, türkische Nacht, Bauchtanz, DJ und Nachtblick). Alle Kreuzfahrten starten am Kabataş-Pier.",
-    es: "Ofrecemos tres experiencias de crucero por el Bósforo: <strong>Crucero Diurno</strong> (12:00, 1,5 horas — turismo con vistas panorámicas), <strong>Crucero al Atardecer</strong> (17:30, 3 horas — cena con vistas doradas y shows en vivo), <strong>Crucero con Cena</strong> (20:45, 3,5 horas — cena completa, noche turca, danza del vientre, DJ y vistas nocturnas). Todos los cruceros salen del muelle de Kabataş.",
-    ru: "Мы предлагаем три круиза по Босфору: <strong>Дневной круиз</strong> (12:00, 1,5 часа — обзорная экскурсия с панорамными видами), <strong>Круиз на закате</strong> (17:30, 3 часа — ужин с видами заката и живыми шоу), <strong>Ужин-круиз</strong> (20:45, 3,5 часа — ужин, турецкая ночь, танец живота, DJ и ночные виды). Все круизы отправляются с причала Кабаташ.",
-    ar: "نقدم ثلاث تجارب رحلات بحرية في البوسفور: <strong>الرحلة النهارية</strong> (12:00، 1.5 ساعة — جولة سياحية مع إطلالات بانورامية)، <strong>رحلة الغروب</strong> (17:30، 3 ساعات — عشاء مع مناظر الساعة الذهبية وعروض حية)، <strong>رحلة العشاء</strong> (20:45، 3.5 ساعات — عشاء كامل، ليلة تركية، رقص شرقي، DJ ومناظر ليلية خلابة). جميع الرحلات تنطلق من رصيف كاباتاش."
+    en: "We offer three Bosphorus cruise experiences: <strong>Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong>Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong>Dinner Cruise</strong> (20:45, 3 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.",
+    tr: "Üç farklı Boğaz turu deneyimi sunuyoruz: <strong>Gündüz Turu</strong> (12:00, 1.5 saat — panoramik manzara gezisi), <strong>Günbatımı Turu</strong> (17:30, 3 saat — yemek, gün batımı manzarası ve canlı şovlar), <strong>Akşam Turu</strong> (20:45, 3 saat — akşam yemeği, Türk gecesi şovu, oryantal dans, DJ ve gece manzarası). Tüm turlar Kabataş İskelesi'nden kalkar.",
+    de: "Wir bieten drei Bosporus-Kreuzfahrt-Erlebnisse: <strong>Tageskreuzfahrt</strong> (12:00, 1,5 Std. — Sightseeing mit Panoramablick), <strong>Sonnenuntergangskreuzfahrt</strong> (17:30, 3 Std. — Abendessen mit Sonnenuntergang und Live-Shows), <strong>Dinner-Kreuzfahrt</strong> (20:45, 3 Std. — Abendessen, türkische Nacht, Bauchtanz, DJ und Nachtblick). Alle Kreuzfahrten starten am Kabataş-Pier.",
+    es: "Ofrecemos tres experiencias de crucero por el Bósforo: <strong>Crucero Diurno</strong> (12:00, 1,5 horas — turismo con vistas panorámicas), <strong>Crucero al Atardecer</strong> (17:30, 3 horas — cena con vistas doradas y shows en vivo), <strong>Crucero con Cena</strong> (20:45, 3 horas — cena completa, noche turca, danza del vientre, DJ y vistas nocturnas). Todos los cruceros salen del muelle de Kabataş.",
+    ru: "Мы предлагаем три круиза по Босфору: <strong>Дневной круиз</strong> (12:00, 1,5 часа — обзорная экскурсия с панорамными видами), <strong>Круиз на закате</strong> (17:30, 3 часа — ужин с видами заката и живыми шоу), <strong>Ужин-круиз</strong> (20:45, 3 часа — ужин, турецкая ночь, танец живота, DJ и ночные виды). Все круизы отправляются с причала Кабаташ.",
+    ar: "نقدم ثلاث تجارب رحلات بحرية في البوسفور: <strong>الرحلة النهارية</strong> (12:00، 1.5 ساعة — جولة سياحية مع إطلالات بانورامية)، <strong>رحلة الغروب</strong> (17:30، 3 ساعات — عشاء مع مناظر الساعة الذهبية وعروض حية)، <strong>رحلة العشاء</strong> (20:45، 3 ساعات — عشاء كامل، ليلة تركية، رقص شرقي، DJ ومناظر ليلية خلابة). جميع الرحلات تنطلق من رصيف كاباتاش."
   },
   "faq.q1": { en: "What's on the dinner menu?", tr: "Yemek menüsünde neler var?", de: "Was steht auf der Speisekarte?", es: "¿Qué hay en el menú de la cena?", ru: "Что в меню ужина?", ar: "ماذا يوجد في قائمة العشاء؟" },
   "faq.a1": {
@@ -623,12 +623,12 @@ const T = {
   },
   "faq.q3": { en: "Where does the cruise depart and return?", tr: "Tur nereden kalkıp nereye dönüyor?", de: "Wo fährt die Kreuzfahrt ab und zurück?", es: "¿De dónde sale y regresa el crucero?", ru: "Откуда отправляется и возвращается круиз?", ar: "من أين تغادر وتعود الرحلة؟" },
   "faq.a3": {
-    en: "Cruises depart from Kabataş pier at 20:45 and return to the same location at 23:30 (3.5-hour cruise). The exact meeting point will be shared on WhatsApp after booking.",
-    tr: "Turlar Kabataş iskelesinden saat 20:45'te kalkar ve aynı noktaya 23:30'da döner (3.5 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp'tan paylaşılır.",
-    de: "Kreuzfahrten starten vom Pier Kabataş um 20:45 Uhr und kehren um 23:30 Uhr zurück (3,5-stündige Fahrt). Der genaue Treffpunkt wird nach der Buchung über WhatsApp geteilt.",
-    es: "Los cruceros salen del muelle de Kabataş a las 20:45 y regresan al mismo lugar a las 23:30 (crucero de 3.5 horas). El punto de encuentro exacto se compartirá por WhatsApp.",
-    ru: "Круизы отправляются от причала Кабаташ в 20:45 и возвращаются в 23:30 (3,5 часа). Точное место встречи будет отправлено в WhatsApp после бронирования.",
-    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 20:45 وتعود إلى نفس الموقع الساعة 23:30 (رحلة 3.5 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب."
+    en: "Cruises depart from Kabataş pier at 20:45 and return to the same location at 23:30 (3-hour cruise). The exact meeting point will be shared on WhatsApp after booking.",
+    tr: "Turlar Kabataş iskelesinden saat 20:45'te kalkar ve aynı noktaya 23:30'da döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp'tan paylaşılır.",
+    de: "Kreuzfahrten starten vom Pier Kabataş um 20:45 Uhr und kehren um 23:30 Uhr zurück (3-stündige Fahrt). Der genaue Treffpunkt wird nach der Buchung über WhatsApp geteilt.",
+    es: "Los cruceros salen del muelle de Kabataş a las 20:45 y regresan al mismo lugar a las 23:30 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp.",
+    ru: "Круизы отправляются от причала Кабаташ в 20:45 и возвращаются в 23:30 (3 часа). Точное место встречи будет отправлено в WhatsApp после бронирования.",
+    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 20:45 وتعود إلى نفس الموقع الساعة 23:30 (رحلة 3 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب."
   },
   "faq.q4": { en: "What route does the cruise take?", tr: "Tur hangi rotayı izliyor?", de: "Welche Route nimmt die Kreuzfahrt?", es: "¿Qué ruta toma el crucero?", ru: "Каким маршрутом идёт круиз?", ar: "ما هو مسار الرحلة؟" },
   "faq.a4": {
@@ -796,6 +796,158 @@ const T = {
     ru: "Блог", ar: "المدونة"
   },
 
+  // ========== DINNER PACKAGE CARDS ==========
+  "dinner.std.title": {
+    en: "Standard Dinner Cruise", tr: "Standard Akşam Turu", de: "Standard Dinner-Kreuzfahrt", es: "Crucero Cena Estándar",
+    ru: "Стандартный ужин-круиз", ar: "رحلة عشاء قياسية"
+  },
+  "dinner.std.desc": {
+    en: "Enjoy a 3-hour Bosphorus night cruise with a full dinner, live Turkish entertainment, and stunning views of Istanbul's skyline.",
+    tr: "3 saatlik Boğaz gece turunda akşam yemeği, canlı Türk eğlencesi ve İstanbul'un muhteşem manzarasının keyfini çıkarın.",
+    de: "Genießen Sie eine 3-stündige Bosporus-Nachtkreuzfahrt mit Abendessen, türkischer Live-Unterhaltung und atemberaubendem Blick auf Istanbul.",
+    es: "Disfrute de un crucero nocturno de 3 horas por el Bósforo con cena completa, entretenimiento turco en vivo y vistas impresionantes de Estambul.",
+    ru: "Насладитесь 3-часовым ночным круизом по Босфору с ужином, живыми турецкими шоу и потрясающими видами Стамбула.",
+    ar: "استمتع برحلة بحرية ليلية لمدة 3 ساعات في البوسفور مع عشاء كامل وترفيه تركي حي وإطلالات خلابة على أفق إسطنبول."
+  },
+  "dinner.vip.title": {
+    en: "VIP Dinner Cruise", tr: "VIP Akşam Turu", de: "VIP Dinner-Kreuzfahrt", es: "Crucero Cena VIP",
+    ru: "VIP ужин-круиз", ar: "رحلة عشاء VIP"
+  },
+  "dinner.vip.desc": {
+    en: "Premium dining at the best table near the stage. Upgraded menu with premium mezes, steak options, and VIP service throughout the night.",
+    tr: "Sahneye en yakın masada premium yemek deneyimi. Zengin meze seçkisi, biftek seçenekleri ve gece boyunca VIP hizmet.",
+    de: "Premium-Dining am besten Tisch nahe der Bühne. Erweitertes Menü mit Premium-Meze, Steak-Optionen und VIP-Service die ganze Nacht.",
+    es: "Cena premium en la mejor mesa cerca del escenario. Menú mejorado con mezes premium, opciones de bistec y servicio VIP toda la noche.",
+    ru: "Премиум-ужин за лучшим столом у сцены. Расширенное меню с премиум-мезе, стейками и VIP-обслуживанием всю ночь.",
+    ar: "عشاء فاخر على أفضل طاولة بالقرب من المسرح. قائمة مطورة مع مقبلات فاخرة وخيارات ستيك وخدمة VIP طوال الليل."
+  },
+  "dinner.privateTable": {
+    en: "Private table", tr: "Özel masa", de: "Privater Tisch", es: "Mesa privada",
+    ru: "Отдельный стол", ar: "طاولة خاصة"
+  },
+  "dinner.nearStage": {
+    en: "Near the stage", tr: "Sahneye yakın", de: "Nahe der Bühne", es: "Cerca del escenario",
+    ru: "У сцены", ar: "بالقرب من المسرح"
+  },
+  "dinner.freeCancel": {
+    en: "Free cancel 2hrs", tr: "2 saat önce ücretsiz iptal", de: "Kostenlose Stornierung 2 Std.", es: "Cancelación gratis 2hrs",
+    ru: "Бесплатная отмена за 2ч", ar: "إلغاء مجاني قبل ساعتين"
+  },
+  "dinner.halalTax": {
+    en: "Halal · All taxes incl.", tr: "Helal · Vergiler dahil", de: "Halal · Alle Steuern inkl.", es: "Halal · Impuestos incluidos",
+    ru: "Халяль · Все налоги вкл.", ar: "حلال · جميع الضرائب مشمولة"
+  },
+  "dinner.menuLabel": {
+    en: "What's Included", tr: "Dahil Olanlar", de: "Inklusive", es: "Incluido",
+    ru: "Включено", ar: "يشمل"
+  },
+  "dinner.std.item1": {
+    en: "10 varieties of Turkish meze", tr: "10 çeşit Türk mezesi",
+    de: "10 Sorten türkischer Meze", es: "10 variedades de meze turco",
+    ru: "10 видов турецких мезе", ar: "10 أنواع من المقبلات التركية"
+  },
+  "dinner.std.item2": {
+    en: "Warm appetizer: paçanga börek (pastırma & cheese)", tr: "Ara sıcak: paçanga böreği (pastırma ve kaşar)",
+    de: "Warme Vorspeise: Paçanga Börek (Pastırma & Käse)", es: "Entrante caliente: paçanga börek (pastırma y queso)",
+    ru: "Горячая закуска: пачанга бёрек (пастырма и сыр)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة وجبن)"
+  },
+  "dinner.std.item3": {
+    en: "Main course with seasonal salad: salmon, sea bream, chicken, or meatball", tr: "Mevsim salatalı ana yemek: somon, çupra, tavuk veya köfte",
+    de: "Hauptgericht mit saisonalem Salat: Lachs, Dorade, Hähnchen oder Frikadellen", es: "Plato principal con ensalada: salmón, dorada, pollo o albóndigas",
+    ru: "Основное блюдо с сезонным салатом: лосось, дорада, курица или фрикадельки", ar: "طبق رئيسي مع سلطة موسمية: سلمون، دنيس، دجاج أو كفتة"
+  },
+  "dinner.std.item4": {
+    en: "Dessert: ice cream cake", tr: "Tatlı: dondurmalı pasta",
+    de: "Dessert: Eistorte", es: "Postre: tarta helada",
+    ru: "Десерт: торт-мороженое", ar: "حلوى: كعكة الآيس كريم"
+  },
+  "dinner.std.item5": {
+    en: "Unlimited soft drinks (water, cola, juice)", tr: "Sınırsız meşrubat (su, kola, meyve suyu)",
+    de: "Unbegrenzte Softdrinks (Wasser, Cola, Saft)", es: "Refrescos ilimitados (agua, cola, zumo)",
+    ru: "Безлимитные безалкогольные напитки (вода, кола, сок)", ar: "مشروبات غازية غير محدودة (ماء، كولا، عصير)"
+  },
+  "dinner.std.item6": {
+    en: "Whirling Dervish show, 5 folk dances, belly dance, live music & DJ", tr: "Sema gösterisi, 5 halk dansı, oryantal dans, canlı müzik ve DJ",
+    de: "Derwisch-Show, 5 Volkstänze, Bauchtanz, Live-Musik & DJ", es: "Show de derviches, 5 danzas folclóricas, danza del vientre, música en vivo y DJ",
+    ru: "Шоу дервишей, 5 народных танцев, танец живота, живая музыка и DJ", ar: "عرض الدراويش، 5 رقصات شعبية، رقص شرقي، موسيقى حية و DJ"
+  },
+  "dinner.vip.item1": {
+    en: "15+ varieties of Turkish meze, served as a traditional spread", tr: "15+ çeşit Türk mezesi, geleneksel serpme olarak servis",
+    de: "15+ Sorten türkischer Meze, traditionell serviert", es: "15+ variedades de meze turco, servido como spread tradicional",
+    ru: "15+ видов турецких мезе, поданных в традиционном стиле", ar: "15+ نوع من المقبلات التركية، تقدم بأسلوب تقليدي"
+  },
+  "dinner.vip.item2": {
+    en: "Warm appetizer: paçanga börek (pastırma & cheese)", tr: "Ara sıcak: paçanga böreği (pastırma ve kaşar)",
+    de: "Warme Vorspeise: Paçanga Börek (Pastırma & Käse)", es: "Entrante caliente: paçanga börek (pastırma y queso)",
+    ru: "Горячая закуска: пачанга бёрек (пастырма и сыр)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة وجبن)"
+  },
+  "dinner.vip.item3": {
+    en: "Main course with seasonal salad (choose one): salmon, sea bream, chicken, meatball, rib-eye steak, or beef steak",
+    tr: "Mevsim salatalı ana yemek (birini seçin): somon, çupra, tavuk, köfte, antrikot veya biftek",
+    de: "Hauptgericht mit saisonalem Salat (Auswahl): Lachs, Dorade, Hähnchen, Frikadellen, Rib-Eye oder Rindersteak",
+    es: "Plato principal con ensalada (elija uno): salmón, dorada, pollo, albóndigas, chuletón o bistec",
+    ru: "Основное блюдо с салатом (на выбор): лосось, дорада, курица, фрикадельки, рибай или бифштекс",
+    ar: "طبق رئيسي مع سلطة (اختر واحد): سلمون، دنيس، دجاج، كفتة، ريب آي أو ستيك"
+  },
+  "dinner.vip.item4": {
+    en: "Dessert: ice cream cake", tr: "Tatlı: dondurmalı pasta",
+    de: "Dessert: Eistorte", es: "Postre: tarta helada",
+    ru: "Десерт: торт-мороженое", ar: "حلوى: كعكة الآيس كريم"
+  },
+  "dinner.vip.item5": {
+    en: "Unlimited soft drinks (water, cola, juice)", tr: "Sınırsız meşrubat (su, kola, meyve suyu)",
+    de: "Unbegrenzte Softdrinks (Wasser, Cola, Saft)", es: "Refrescos ilimitados (agua, cola, zumo)",
+    ru: "Безлимитные безалкогольные напитки (вода, кола, сок)", ar: "مشروبات غازية غير محدودة (ماء، كولا، عصير)"
+  },
+  "dinner.vip.item6": {
+    en: "Whirling Dervish show, 5 folk dances, belly dance, live music & DJ", tr: "Sema gösterisi, 5 halk dansı, oryantal dans, canlı müzik ve DJ",
+    de: "Derwisch-Show, 5 Volkstänze, Bauchtanz, Live-Musik & DJ", es: "Show de derviches, 5 danzas folclóricas, danza del vientre, música en vivo y DJ",
+    ru: "Шоу дервишей, 5 народных танцев, танец живота, живая музыка и DJ", ar: "عرض الدراويش، 5 رقصات شعبية، رقص شرقي، موسيقى حية و DJ"
+  },
+  "dinner.perPerson": {
+    en: " / person", tr: " / kişi", de: " / Person", es: " / persona",
+    ru: " / чел.", ar: " / شخص"
+  },
+  "dinner.optionalLabel": {
+    en: "Optional Add-ons", tr: "Eklenebilir Seçenekler", de: "Optionale Extras", es: "Complementos Opcionales",
+    ru: "Дополнительные опции", ar: "إضافات اختيارية"
+  },
+  "dinner.addAlcoholTitle": {
+    en: "Alcohol Package: +€10/person", tr: "Alkol Paketi: +€10/kişi", de: "Alkoholpaket: +€10/Person", es: "Paquete Alcohol: +€10/persona",
+    ru: "Пакет алкоголя: +€10/чел.", ar: "باقة كحول: +€10/شخص"
+  },
+  "dinner.addAlcoholDesc": {
+    en: "Unlimited local wine, beer, rakı, vodka, gin", tr: "Sınırsız yerli şarap, bira, rakı, votka, cin",
+    de: "Unbegrenzter lokaler Wein, Bier, Rakı, Wodka, Gin", es: "Vino local, cerveza, rakı, vodka, gin ilimitados",
+    ru: "Безлимитное местное вино, пиво, ракы, водка, джин", ar: "نبيذ محلي، بيرة، راكي، فودكا، جن بلا حدود"
+  },
+  "dinner.addTransferTitle": {
+    en: "Hotel Transfer: +€10/person", tr: "Otel Transferi: +€10/kişi", de: "Hoteltransfer: +€10/Person", es: "Traslado Hotel: +€10/persona",
+    ru: "Трансфер из отеля: +€10/чел.", ar: "نقل فندقي: +€10/شخص"
+  },
+  "dinner.addTransferDesc": {
+    en: "Pickup & drop-off from your hotel", tr: "Otelinizden alınır ve bırakılır",
+    de: "Abholung & Rücktransfer von Ihrem Hotel", es: "Recogida y regreso desde su hotel",
+    ru: "Заберём и отвезём обратно в ваш отель", ar: "التقاط وتوصيل من فندقك"
+  },
+  "dinner.addRomanticTitle": {
+    en: "Romantic Table: +€15/table", tr: "Romantik Masa: +€15/masa", de: "Romantischer Tisch: +€15/Tisch", es: "Mesa Romántica: +€15/mesa",
+    ru: "Романтический стол: +€15/стол", ar: "طاولة رومانسية: +€15/طاولة"
+  },
+  "dinner.addRomanticDesc": {
+    en: "Candles, flowers & special setup", tr: "Mumlar, çiçekler ve özel düzenleme",
+    de: "Kerzen, Blumen & besonderes Arrangement", es: "Velas, flores y decoración especial",
+    ru: "Свечи, цветы и особое оформление", ar: "شموع وزهور وترتيب خاص"
+  },
+  "dinner.mostPopular": {
+    en: "Most Popular", tr: "En Popüler", de: "Beliebteste", es: "Más Popular",
+    ru: "Самый популярный", ar: "الأكثر شعبية"
+  },
+  "dinner.bookBtn": {
+    en: "Book Now", tr: "Rezervasyon Yaptır", de: "Jetzt Buchen", es: "Reservar Ahora",
+    ru: "Забронировать", ar: "احجز الآن"
+  },
+
   // ========== BOOKING COUNT ==========
   "booking.count": {
     en: "guests booked for tonight — join them!",
@@ -933,9 +1085,9 @@ const T = {
     en: "Child Ages", tr: "Çocuk Yaşları", de: "Alter der Kinder", es: "Edades de los Niños", ru: "Возраст детей", ar: "أعمار الأطفال"
   },
   "booking.childNote": {
-    en: "0-3: Free · 3-5: 50% off · 5+: Full price", tr: "0-3: Ücretsiz · 3-5: %50 indirim · 5+: Tam fiyat",
-    de: "0-3: Kostenlos · 3-5: 50% Rabatt · 5+: Voller Preis", es: "0-3: Gratis · 3-5: 50% desc. · 5+: Precio completo",
-    ru: "0-3: Бесплатно · 3-5: 50% скидка · 5+: Полная цена", ar: "0-3: مجاني · 3-5: خصم 50% · 5+: السعر الكامل"
+    en: "0-3 age: Free  |  3-5 age: 50% off  |  5+ age: Full price", tr: "0-3 yaş: Ücretsiz  |  3-5 yaş: %50 indirim  |  5+ yaş: Tam fiyat",
+    de: "0-3 J.: Kostenlos  |  3-5 J.: 50% Rabatt  |  5+ J.: Voller Preis", es: "0-3 años: Gratis  |  3-5 años: 50% desc.  |  5+ años: Precio completo",
+    ru: "0-3 лет: Бесплатно  |  3-5 лет: 50% скидка  |  5+ лет: Полная цена", ar: "0-3 سنة: مجاني  |  3-5 سنة: خصم 50%  |  5+ سنة: السعر الكامل"
   },
   "booking.boat": {
     en: "Cruise", tr: "Tekne", de: "Kreuzfahrt", es: "Crucero", ru: "Круиз", ar: "الرحلة"
@@ -996,7 +1148,7 @@ const T = {
 
   // ========== PACKAGE FEATURES ==========
   "pkg.feat.cruise": {
-    en: "3.5-hour Bosphorus night cruise", tr: "3.5 saat Boğaz gece turu", de: "3,5-stündige Bosporus-Nachtfahrt", es: "Crucero nocturno de 3,5 horas por el Bósforo", ru: "3,5-часовой ночной круиз по Босфору", ar: "رحلة ليلية في البوسفور لمدة 3.5 ساعة"
+    en: "3-hour Bosphorus night cruise", tr: "3 saat Boğaz gece turu", de: "3-stündige Bosporus-Nachtfahrt", es: "Crucero nocturno de 3 horas por el Bósforo", ru: "3-часовой ночной круиз по Босфору", ar: "رحلة ليلية في البوسفور لمدة 3 ساعة"
   },
   "pkg.feat.dinner": {
     en: "Dinner — 7 meze + salad + main course + dessert", tr: "Akşam yemeği — 7 meze + salata + ana yemek + tatlı", de: "Abendessen — 7 Meze + Salat + Hauptgang + Dessert", es: "Cena — 7 meze + ensalada + plato principal + postre", ru: "Ужин — 7 мезе + салат + основное блюдо + десерт", ar: "عشاء — 7 مقبلات + سلطة + طبق رئيسي + حلوى"
@@ -1055,8 +1207,11 @@ const T = {
   "booking.softDrinkBtn": {
     en: "Soft Drinks", tr: "Alkolsüz", de: "Softdrinks", es: "Sin Alcohol", ru: "Безалкогольные", ar: "مشروبات غازية"
   },
-  "booking.alcoholBtn": {
-    en: "Alcohol +€10", tr: "Alkollü +€10", de: "Alkohol +€10", es: "Alcohol +€10", ru: "Алкоголь +€10", ar: "كحول +€10"
+  "booking.glass2Btn": {
+    en: "2 Glasses +€6", tr: "2 Kadeh +€6", de: "2 Gläser +€6", es: "2 Copas +€6", ru: "2 бокала +€6", ar: "كأسان +€6"
+  },
+  "booking.unlimitedBtn": {
+    en: "Unlimited +€11", tr: "Sınırsız +€11", de: "Unbegrenzt +€11", es: "Ilimitado +€11", ru: "Безлимит +€11", ar: "غير محدود +€11"
   },
   "booking.drinkWarn": {
     en: "⚠ Please select a drink option", tr: "⚠ Lütfen içecek seçimi yapın", de: "⚠ Bitte Getränkeoption wählen", es: "⚠ Seleccione una opción de bebida", ru: "⚠ Выберите вариант напитков", ar: "⚠ يرجى اختيار خيار المشروبات"
@@ -1255,5 +1410,477 @@ const T = {
     es: "Muelle de Kabataş",
     ru: "Причал Кабаташ",
     ar: "رصيف كاباتاش"
+  },
+
+  // ========== WIZARD (Mobile Booking Panel) ==========
+  "wizard.step1of4": {
+    en: "Step 1 of 4",
+    tr: "Adım 1 / 4",
+    de: "Schritt 1 von 4",
+    es: "Paso 1 de 4",
+    ru: "Шаг 1 из 4",
+    ar: "الخطوة 1 من 4"
+  },
+  "wizard.step2of4": {
+    en: "Step 2 of 4",
+    tr: "Adım 2 / 4",
+    de: "Schritt 2 von 4",
+    es: "Paso 2 de 4",
+    ru: "Шаг 2 из 4",
+    ar: "الخطوة 2 من 4"
+  },
+  "wizard.step3of4": {
+    en: "Step 3 of 4",
+    tr: "Adım 3 / 4",
+    de: "Schritt 3 von 4",
+    es: "Paso 3 de 4",
+    ru: "Шаг 3 из 4",
+    ar: "الخطوة 3 من 4"
+  },
+  "wizard.step4of4": {
+    en: "Step 4 of 4",
+    tr: "Adım 4 / 4",
+    de: "Schritt 4 von 4",
+    es: "Paso 4 de 4",
+    ru: "Шаг 4 из 4",
+    ar: "الخطوة 4 من 4"
+  },
+  "wizard.standard": {
+    en: "Standard",
+    tr: "Standart",
+    de: "Standard",
+    es: "Estándar",
+    ru: "Стандарт",
+    ar: "قياسي"
+  },
+  "wizard.vip": {
+    en: "VIP",
+    tr: "VIP",
+    de: "VIP",
+    es: "VIP",
+    ru: "VIP",
+    ar: "VIP"
+  },
+  "wizard.language": {
+    en: "Preferred Language",
+    tr: "Tercih Edilen Dil",
+    de: "Bevorzugte Sprache",
+    es: "Idioma preferido",
+    ru: "Предпочитаемый язык",
+    ar: "اللغة المفضلة"
+  },
+  "wizard.back": {
+    en: "Back",
+    tr: "Geri",
+    de: "Zurück",
+    es: "Atrás",
+    ru: "Назад",
+    ar: "رجوع"
+  },
+  "wizard.next": {
+    en: "Next",
+    tr: "İleri",
+    de: "Weiter",
+    es: "Siguiente",
+    ru: "Далее",
+    ar: "التالي"
+  },
+  "wizard.softDrinks": {
+    en: "Soft Drinks",
+    tr: "Alkolsüz",
+    de: "Alkoholfrei",
+    es: "Sin alcohol",
+    ru: "Безалкогольные",
+    ar: "مشروبات غازية"
+  },
+  "wizard.glass2": {
+    en: "2 Glasses +€7",
+    tr: "2 Kadeh +€7",
+    de: "2 Gläser +7 €",
+    es: "2 copas +7 €",
+    ru: "2 бокала +7 €",
+    ar: "كأسان +٧€"
+  },
+  "wizard.unlimited": {
+    en: "Unlimited +€15",
+    tr: "Sınırsız +€15",
+    de: "Unbegrenzt +15 €",
+    es: "Ilimitado +15 €",
+    ru: "Безлимит +15 €",
+    ar: "غير محدود +١٥€"
+  },
+  "wizard.softDesc": {
+    en: "Unlimited tea, coffee, water, cola & juice",
+    tr: "Sınırsız çay, kahve, su, kola ve meyve suyu",
+    de: "Unbegrenzt Tee, Kaffee, Wasser, Cola & Saft",
+    es: "Té, café, agua, cola y zumo ilimitados",
+    ru: "Безлимитный чай, кофе, вода, кола и сок",
+    ar: "شاي وقهوة وماء وكولا وعصير بلا حدود"
+  },
+  "wizard.glass2Desc": {
+    en: "Choose from local wine, beer, rakı, vodka, or gin",
+    tr: "Yerli şarap, bira, rakı, vodka veya cin seçin",
+    de: "Auswahl aus lokalem Wein, Bier, Rakı, Wodka oder Gin",
+    es: "Elija entre vino local, cerveza, rakı, vodka o ginebra",
+    ru: "На выбор: местное вино, пиво, ракы, водка или джин",
+    ar: "اختر من النبيذ المحلي أو البيرة أو العرق أو الفودكا أو الجن"
+  },
+  "wizard.unlimitedDesc": {
+    en: "Unlimited local wine, beer, rakı, vodka, gin all night",
+    tr: "Gece boyunca sınırsız yerli şarap, bira, rakı, vodka, cin",
+    de: "Die ganze Nacht unbegrenzt lokaler Wein, Bier, Rakı, Wodka, Gin",
+    es: "Vino local, cerveza, rakı, vodka y ginebra ilimitados toda la noche",
+    ru: "Безлимитное местное вино, пиво, ракы, водка, джин всю ночь",
+    ar: "نبيذ محلي وبيرة وعرق وفودكا وجن بلا حدود طوال الليل"
+  },
+  "wizard.transferLabel": {
+    en: "Hotel Transfer",
+    tr: "Otel Transferi",
+    de: "Hoteltransfer",
+    es: "Traslado al hotel",
+    ru: "Трансфер из отеля",
+    ar: "نقل من الفندق"
+  },
+  "wizard.no": {
+    en: "No",
+    tr: "Hayır",
+    de: "Nein",
+    es: "No",
+    ru: "Нет",
+    ar: "لا"
+  },
+  "wizard.transferYes": {
+    en: "Yes +€10/person",
+    tr: "Evet +€10/kişi",
+    de: "Ja +10 €/Person",
+    es: "Sí +10 €/persona",
+    ru: "Да +10 €/чел.",
+    ar: "نعم +١٠€/شخص"
+  },
+  "wizard.transferDesc": {
+    en: "Pickup & drop-off from your hotel",
+    tr: "Otelinizden alım ve bırakım",
+    de: "Abholung & Rückfahrt von Ihrem Hotel",
+    es: "Recogida y regreso desde su hotel",
+    ru: "Встреча и доставка от вашего отеля",
+    ar: "التوصيل من وإلى فندقك"
+  },
+  "wizard.romanticLabel": {
+    en: "Romantic Table",
+    tr: "Romantik Masa",
+    de: "Romantischer Tisch",
+    es: "Mesa romántica",
+    ru: "Романтический столик",
+    ar: "طاولة رومانسية"
+  },
+  "wizard.romanticYes": {
+    en: "Yes +€15",
+    tr: "Evet +€15",
+    de: "Ja +15 €",
+    es: "Sí +15 €",
+    ru: "Да +15 €",
+    ar: "نعم +١٥€"
+  },
+  "wizard.romanticDesc": {
+    en: "Candles, flowers & special setup",
+    tr: "Mumlar, çiçekler ve özel düzenleme",
+    de: "Kerzen, Blumen & besondere Dekoration",
+    es: "Velas, flores y decoración especial",
+    ru: "Свечи, цветы и особое оформление",
+    ar: "شموع وزهور وإعداد خاص"
+  },
+  "wizard.summaryTitle": {
+    en: "Booking Summary",
+    tr: "Rezervasyon Özeti",
+    de: "Buchungsübersicht",
+    es: "Resumen de la reserva",
+    ru: "Сводка бронирования",
+    ar: "ملخص الحجز"
+  },
+  "wizard.checkAvail": {
+    en: "Check Availability",
+    tr: "Müsaitlik Kontrolü",
+    de: "Verfügbarkeit prüfen",
+    es: "Consultar disponibilidad",
+    ru: "Проверить наличие",
+    ar: "تحقق من التوفر"
+  },
+  "wizard.confirmMsg": {
+    en: "We'll confirm within 15 minutes via WhatsApp",
+    tr: "WhatsApp üzerinden 15 dakika içinde onay vereceğiz",
+    de: "Wir bestätigen innerhalb von 15 Minuten per WhatsApp",
+    es: "Confirmaremos en 15 minutos por WhatsApp",
+    ru: "Подтвердим в течение 15 минут через WhatsApp",
+    ar: "سنؤكد خلال 15 دقيقة عبر واتساب"
+  },
+  "wizard.trust1": {
+    en: "\u2713 Free cancellation 2hrs before",
+    tr: "\u2713 2 saat öncesine kadar ücretsiz iptal",
+    de: "\u2713 Kostenlose Stornierung bis 2 Std. vorher",
+    es: "\u2713 Cancelación gratuita hasta 2 h antes",
+    ru: "\u2713 Бесплатная отмена за 2 часа",
+    ar: "\u2713 إلغاء مجاني قبل ساعتين"
+  },
+  "wizard.trust2": {
+    en: "\u2713 No prepayment required",
+    tr: "\u2713 Ön ödeme gerekmiyor",
+    de: "\u2713 Keine Vorauszahlung nötig",
+    es: "\u2713 Sin pago anticipado",
+    ru: "\u2713 Предоплата не требуется",
+    ar: "\u2713 لا يلزم دفع مسبق"
+  },
+  "wizard.trust3": {
+    en: "\u2713 Pay on the boat",
+    tr: "\u2713 Teknede ödeyin",
+    de: "\u2713 Bezahlung an Bord",
+    es: "\u2713 Pague en el barco",
+    ru: "\u2713 Оплата на борту",
+    ar: "\u2713 ادفع على متن القارب"
+  },
+
+  // ========== WIZARD — NEW KEYS ==========
+  "wizard.drinkNote": {
+    en: "Choose a drink option for each adult guest",
+    tr: "Her yetişkin misafir için bir içecek seçeneği belirleyin",
+    de: "Wählen Sie eine Getränkeoption für jeden erwachsenen Gast",
+    es: "Elija una opción de bebida para cada adulto",
+    ru: "Выберите вариант напитков для каждого взрослого гостя",
+    ar: "اختر خيار مشروب لكل ضيف بالغ"
+  },
+  "wizard.drinkWarning": {
+    en: "Please assign drinks for all adults before continuing",
+    tr: "Devam etmeden önce tüm yetişkinlere içecek atayın",
+    de: "Bitte weisen Sie allen Erwachsenen Getränke zu, bevor Sie fortfahren",
+    es: "Asigne bebidas a todos los adultos antes de continuar",
+    ru: "Назначьте напитки всем взрослым перед продолжением",
+    ar: "يرجى تحديد المشروبات لجميع البالغين قبل المتابعة"
+  },
+  "wizard.glass2Label": {
+    en: "2 Glasses of Alcohol",
+    tr: "2 Kadeh Alkol",
+    de: "2 Gläser Alkohol",
+    es: "2 copas de alcohol",
+    ru: "2 бокала алкоголя",
+    ar: "كأسان من الكحول"
+  },
+  "wizard.glass2Note": {
+    en: "+€7/person · Wine, beer, rakı, vodka, or gin",
+    tr: "+€7/kişi · Şarap, bira, rakı, vodka veya cin",
+    de: "+7 €/Person · Wein, Bier, Rakı, Wodka oder Gin",
+    es: "+7 €/persona · Vino, cerveza, rakı, vodka o ginebra",
+    ru: "+7 €/чел. · Вино, пиво, ракы, водка или джин",
+    ar: "+٧€/شخص · نبيذ أو بيرة أو عرق أو فودكا أو جن"
+  },
+  "wizard.unlimitedLabel": {
+    en: "Unlimited Alcohol",
+    tr: "Sınırsız Alkol",
+    de: "Unbegrenzter Alkohol",
+    es: "Alcohol ilimitado",
+    ru: "Безлимитный алкоголь",
+    ar: "كحول غير محدود"
+  },
+  "wizard.unlimitedNote": {
+    en: "+€15/person · Wine, beer, rakı, vodka, gin all night",
+    tr: "+€15/kişi · Gece boyunca şarap, bira, rakı, vodka, cin",
+    de: "+15 €/Person · Wein, Bier, Rakı, Wodka, Gin die ganze Nacht",
+    es: "+15 €/persona · Vino, cerveza, rakı, vodka, ginebra toda la noche",
+    ru: "+15 €/чел. · Вино, пиво, ракы, водка, джин всю ночь",
+    ar: "+١٥€/شخص · نبيذ وبيرة وعرق وفودكا وجن طوال الليل"
+  },
+  "wizard.softNote": {
+    en: "Included free",
+    tr: "Ücretsiz dahil",
+    de: "Kostenlos inklusive",
+    es: "Incluido gratis",
+    ru: "Включено бесплатно",
+    ar: "مشمول مجانًا"
+  },
+  "wizard.drinkComplete": {
+    en: "Drink selection complete",
+    tr: "İçecek seçimi tamamlandı",
+    de: "Getränkeauswahl abgeschlossen",
+    es: "Selección de bebidas completa",
+    ru: "Выбор напитков завершён",
+    ar: "تم اختيار المشروبات"
+  },
+  "wizard.drinkRemaining": {
+    en: "Please select drinks for all guests",
+    tr: "Tüm misafirler için içecek seçin",
+    de: "Bitte wählen Sie Getränke für alle Gäste",
+    es: "Seleccione bebidas para todos los huéspedes",
+    ru: "Выберите напитки для всех гостей",
+    ar: "يرجى اختيار المشروبات لجميع الضيوف"
+  },
+
+  // ========== WIZARD — STEP 3 (Reservation Details) ==========
+  "wizard.reservationDetails": {
+    en: "Reservation Details",
+    tr: "Rezervasyon Bilgileri",
+    de: "Reservierungsdetails",
+    es: "Detalles de la reserva",
+    ru: "Данные бронирования",
+    ar: "تفاصيل الحجز"
+  },
+  "wizard.guestName": {
+    en: "Guest Name",
+    tr: "Misafir Adı",
+    de: "Gastname",
+    es: "Nombre del huésped",
+    ru: "Имя гостя",
+    ar: "اسم الضيف"
+  },
+  "wizard.namePlaceholder": {
+    en: "Full name",
+    tr: "Ad Soyad",
+    de: "Vollständiger Name",
+    es: "Nombre completo",
+    ru: "Полное имя",
+    ar: "الاسم الكامل"
+  },
+  "wizard.phone": {
+    en: "Phone Number",
+    tr: "Telefon Numarası",
+    de: "Telefonnummer",
+    es: "Número de teléfono",
+    ru: "Номер телефона",
+    ar: "رقم الهاتف"
+  },
+  "wizard.phonePlaceholder": {
+    en: "+XX XXX XXX XXXX",
+    tr: "+XX XXX XXX XXXX",
+    de: "+XX XXX XXX XXXX",
+    es: "+XX XXX XXX XXXX",
+    ru: "+XX XXX XXX XXXX",
+    ar: "+XX XXX XXX XXXX"
+  },
+  "wizard.stepPackage": {
+    en: "Package", tr: "Paket", de: "Paket", es: "Paquete", ru: "Пакет", ar: "الباقة"
+  },
+  "wizard.stepExtras": {
+    en: "Extras", tr: "Ekstralar", de: "Extras", es: "Extras", ru: "Допы", ar: "إضافات"
+  },
+  "wizard.stepInfo": {
+    en: "Info", tr: "Bilgi", de: "Info", es: "Info", ru: "Инфо", ar: "معلومات"
+  },
+  "wizard.stepTicket": {
+    en: "Ticket", tr: "Bilet", de: "Ticket", es: "Billete", ru: "Билет", ar: "تذكرة"
+  },
+  "wizard.enterName": {
+    en: "Please enter your name", tr: "Lütfen adınızı girin", de: "Bitte geben Sie Ihren Namen ein", es: "Por favor ingrese su nombre",
+    ru: "Пожалуйста, введите ваше имя", ar: "يرجى إدخال اسمك"
+  },
+  "wizard.enterPhone": {
+    en: "Please enter your phone number", tr: "Lütfen telefon numaranızı girin", de: "Bitte geben Sie Ihre Telefonnummer ein", es: "Por favor ingrese su número de teléfono",
+    ru: "Пожалуйста, введите номер телефона", ar: "يرجى إدخال رقم هاتفك"
+  },
+  "wizard.selectContact": {
+    en: "Please select a contact method", tr: "Lütfen iletişim tercihinizi seçin", de: "Bitte wählen Sie eine Kontaktmethode", es: "Por favor seleccione un método de contacto",
+    ru: "Пожалуйста, выберите способ связи", ar: "يرجى اختيار طريقة الاتصال"
+  },
+  "wizard.contactNote": {
+    en: "We will reach you through this channel", tr: "Sizinle bu kanal üzerinden iletişime geçeceğiz", de: "Wir kontaktieren Sie über diesen Kanal", es: "Le contactaremos a través de este canal",
+    ru: "Мы свяжемся с вами через этот канал", ar: "سنتواصل معك عبر هذه القناة"
+  },
+  "wizard.enterAddress": {
+    en: "Please enter your pickup address", tr: "Lütfen alım adresinizi girin", de: "Bitte geben Sie Ihre Abholadresse ein", es: "Por favor ingrese su dirección de recogida",
+    ru: "Пожалуйста, введите адрес подачи", ar: "يرجى إدخال عنوان الاستلام"
+  },
+  "wizard.phoneNote": {
+    en: "We will contact you via this number for booking confirmation",
+    tr: "Rezervasyon onayı için bu numara üzerinden sizinle iletişime geçeceğiz",
+    de: "Wir werden Sie über diese Nummer für die Buchungsbestätigung kontaktieren",
+    es: "Le contactaremos a este número para confirmar la reserva",
+    ru: "Мы свяжемся с вами по этому номеру для подтверждения бронирования",
+    ar: "سنتواصل معك عبر هذا الرقم لتأكيد الحجز"
+  },
+  "wizard.pickupAddress": {
+    en: "Pickup Address",
+    tr: "Alım Adresi",
+    de: "Abholadresse",
+    es: "Dirección de recogida",
+    ru: "Адрес подачи",
+    ar: "عنوان الاستلام"
+  },
+  "wizard.addressPlaceholder": {
+    en: "Hotel name or accommodation address",
+    tr: "Otel adı veya konaklama adresi",
+    de: "Hotelname oder Unterkunftsadresse",
+    es: "Nombre del hotel o dirección del alojamiento",
+    ru: "Название отеля или адрес проживания",
+    ar: "اسم الفندق أو عنوان الإقامة"
+  },
+  "wizard.contactPref": {
+    en: "Preferred Contact",
+    tr: "İletişim Tercihi",
+    de: "Bevorzugter Kontakt",
+    es: "Contacto preferido",
+    ru: "Предпочтительный контакт",
+    ar: "وسيلة التواصل المفضلة"
+  },
+  "wizard.contactWarning": {
+    en: "Please fill in your name and phone number",
+    tr: "Lütfen adınızı ve telefon numaranızı girin",
+    de: "Bitte geben Sie Ihren Namen und Ihre Telefonnummer ein",
+    es: "Por favor, introduzca su nombre y número de teléfono",
+    ru: "Пожалуйста, укажите ваше имя и номер телефона",
+    ar: "يرجى ملء الاسم ورقم الهاتف"
+  },
+  "wizard.reviewBooking": {
+    en: "Please review your booking",
+    tr: "Lütfen biletinizi kontrol edin",
+    de: "Bitte überprüfen Sie Ihre Buchung",
+    es: "Por favor, revise su reserva",
+    ru: "Пожалуйста, проверьте ваше бронирование",
+    ar: "يرجى مراجعة حجزك"
+  },
+  "ticket.guestName": {
+    en: "Guest Name", tr: "Misafir Adı", de: "Gastname", es: "Nombre del Huésped",
+    ru: "Имя гостя", ar: "اسم الضيف"
+  },
+  "ticket.phone": {
+    en: "Phone", tr: "Telefon", de: "Telefon", es: "Teléfono",
+    ru: "Телефон", ar: "الهاتف"
+  },
+  "ticket.pickupAddress": {
+    en: "Pickup Address", tr: "Alım Adresi", de: "Abholadresse", es: "Dirección de Recogida",
+    ru: "Адрес подачи", ar: "عنوان الاستلام"
+  },
+
+  // ========== TICKET / BOARDING PASS ==========
+  "ticket.boardingPass": {
+    en: "Boarding Pass", tr: "Biniş Kartı", de: "Bordkarte", es: "Tarjeta de Embarque",
+    ru: "Посадочный талон", ar: "بطاقة الصعود"
+  },
+  "ticket.date": {
+    en: "Date", tr: "Tarih", de: "Datum", es: "Fecha",
+    ru: "Дата", ar: "التاريخ"
+  },
+  "ticket.guests": {
+    en: "Guests", tr: "Misafirler", de: "Gäste", es: "Huéspedes",
+    ru: "Гости", ar: "الضيوف"
+  },
+  "ticket.drinks": {
+    en: "Drinks", tr: "İçecekler", de: "Getränke", es: "Bebidas",
+    ru: "Напитки", ar: "المشروبات"
+  },
+  "ticket.transfer": {
+    en: "Transfer", tr: "Transfer", de: "Transfer", es: "Transfer",
+    ru: "Трансфер", ar: "النقل"
+  },
+  "ticket.special": {
+    en: "Special", tr: "Özel", de: "Besonderes", es: "Especial",
+    ru: "Особое", ar: "خاص"
+  },
+  "ticket.romanticSetup": {
+    en: "Romantic Table Setup", tr: "Romantik Masa Düzeni", de: "Romantischer Tisch", es: "Mesa Romántica",
+    ru: "Романтическая сервировка", ar: "ترتيب طاولة رومانسية"
+  },
+  "ticket.meetingPoint": {
+    en: "Meeting Point", tr: "Buluşma Noktası", de: "Treffpunkt", es: "Punto de Encuentro",
+    ru: "Место встречи", ar: "نقطة الالتقاء"
+  },
+  "ticket.hotelPickup": {
+    en: "Hotel Pickup", tr: "Otelden Alınma", de: "Hotelabholung", es: "Recogida en Hotel",
+    ru: "Из отеля", ar: "الاستلام من الفندق"
   }
 };
