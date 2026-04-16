@@ -1020,6 +1020,7 @@ function openMobilePanel(pkg) {
     // Change site language when dropdown changes
     wizLang.onchange = function() {
       setLanguage(this.value);
+      wizCalcPrice();
     };
   }
 
@@ -1766,7 +1767,10 @@ const wizState = {
   drinkCounts: { soft: 0, glass2: 0, unlimited: 0 },
   transfer: false,
   romantic: false,
-  contact: null
+  contact: null,
+  transferZoneExtra: 0,
+  transferLat: null,
+  transferLng: null
 };
 
 function wizUpdateProgress(step) {
@@ -1848,7 +1852,14 @@ function wizNext() {
     if (!phone) { if (phoneWarn) phoneWarn.classList.remove('hidden'); valid = false; }
     if (!wizState.contact) { if (contactWarn) contactWarn.classList.remove('hidden'); valid = false; }
     if (wizState.transfer && !address) {
-      if (contactWarn) { contactWarn.textContent = (T['wizard.enterAddress'] && T['wizard.enterAddress'][currentLang]) || 'Please enter your pickup address'; contactWarn.classList.remove('hidden'); }
+      const addrWarn = document.getElementById('wizTransferZoneMsg');
+      if (addrWarn) { addrWarn.innerHTML = `<span class="text-red-400">${(T['wizard.enterAddress'] && T['wizard.enterAddress'][currentLang]) || 'Please enter your pickup address'}</span>`; addrWarn.classList.remove('hidden'); }
+      valid = false;
+    }
+    if (wizState.transfer && address && !detectTransferZone(address)) {
+      const zoneMsg = document.getElementById('wizTransferZoneMsg');
+      const txt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
+      if (zoneMsg) { zoneMsg.innerHTML = `<span class="text-red-400">✕ ${txt}</span>`; zoneMsg.classList.remove('hidden'); }
       valid = false;
     }
     if (!valid) return;
@@ -2092,8 +2103,11 @@ function wizCalcPrice() {
     });
   }
 
-  // Add drink + transfer + romantic
-  total += drinkCost + transferCost;
+  // Zone extra (flat fee per reservation, not per person)
+  const zoneExtra = wizState.transfer ? (wizState.transferZoneExtra || 0) : 0;
+
+  // Add drink + transfer + romantic + zone
+  total += drinkCost + transferCost + zoneExtra;
   if (wizState.romantic) total += DINNER_PRICES.extras.romantic;
 
   // Old price calculation
@@ -2108,12 +2122,17 @@ function wizCalcPrice() {
   oldTotal += drinkCost + transferCost;
   if (wizState.romantic) oldTotal += DINNER_PRICES.extras.romantic;
 
-  const totalPax = adults + children;
-
   // Update bottom bar price summary
   const priceEl = document.getElementById('wizBottomPrice');
   if (priceEl) {
-    priceEl.innerHTML = `<span class="line-through text-white/30">€${oldPrice}</span> <span class="text-[#c9a84c] font-semibold">€${basePrice}</span><span class="text-white/40">/pp</span> <span class="text-white/30">· ${totalPax} pax</span>`;
+    const ppWord = { en: '/person', tr: '/kişi', de: '/Person', es: '/persona', ru: '/чел.', ar: '/شخص' }[currentLang] || '/person';
+    const adultWord = { en: 'adult', tr: 'yetişkin', de: 'Erwachsene', es: 'adulto', ru: 'взр.', ar: 'بالغ' }[currentLang] || 'adult';
+    const adultsWord = { en: 'adults', tr: 'yetişkin', de: 'Erwachsene', es: 'adultos', ru: 'взр.', ar: 'بالغين' }[currentLang] || 'adults';
+    const childWord = { en: 'child', tr: 'çocuk', de: 'Kind', es: 'niño', ru: 'реб.', ar: 'طفل' }[currentLang] || 'child';
+    const childrenWord = { en: 'children', tr: 'çocuk', de: 'Kinder', es: 'niños', ru: 'дет.', ar: 'أطفال' }[currentLang] || 'children';
+    let paxText = `${adults} ${adults === 1 ? adultWord : adultsWord}`;
+    if (children > 0) paxText += `, ${children} ${children === 1 ? childWord : childrenWord}`;
+    priceEl.innerHTML = `<div class="flex items-baseline gap-1.5"><span class="line-through text-white/30 text-xs">€${oldPrice}</span> <span class="text-[#c9a84c] font-bold text-lg">€${basePrice}</span><span class="text-white/40 text-xs">${ppWord}</span></div><div><span class="text-white/40 text-xs">${paxText}</span></div>`;
   }
   const totalEl = document.getElementById('wizBottomTotal');
   if (totalEl) totalEl.textContent = `€${total}`;
@@ -2214,6 +2233,7 @@ function wizBuildSummary() {
     const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
     const totalGuests = adults + children;
     const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
+    const zoneExtra = wizState.transfer ? (wizState.transferZoneExtra || 0) : 0;
 
     let html = '';
 
@@ -2240,6 +2260,12 @@ function wizBuildSummary() {
     if (transferExtra > 0) {
       const transferLabel = (T['ticket.hotelPickup'] && T['ticket.hotelPickup'][currentLang]) || 'Hotel Transfer';
       html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${totalGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * totalGuests}</span></div>`;
+    }
+
+    // Zone extra (flat fee)
+    if (zoneExtra > 0) {
+      const zoneLabel = { en: 'Area surcharge', tr: 'Bölge farkı', de: 'Gebietszuschlag', es: 'Recargo de zona', ru: 'Доплата за район', ar: 'رسوم المنطقة' }[currentLang] || 'Area surcharge';
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${zoneLabel}</p></div><span class="text-white font-medium">€${zoneExtra}</span></div>`;
     }
 
     // Children
@@ -2275,7 +2301,8 @@ function wizBuildSummary() {
   const yn = yesNo[currentLang] || yesNo.en;
   const transferStr = wizState.transfer ? yn[0] : yn[1];
   const romanticStr = wizState.romantic ? yn[0] : yn[1];
-  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}` : '';
+  const mapsLink = (wizState.transferLat && wizState.transferLng) ? `https://maps.google.com/maps?q=${wizState.transferLat},${wizState.transferLng}` : '';
+  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
 
   const msgTemplates = {
     en: `Hi, I'd like to check availability:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hotel Transfer: ${transferStr}${addressLine}\n💐 Romantic Table: ${romanticStr}\n💰 Total: €${total}\nPlease confirm. Thank you!`,
@@ -2304,3 +2331,103 @@ document.addEventListener('DOMContentLoaded', function() {
   const wizDate = document.getElementById('wizDate');
   if (wizDate) wizDate.addEventListener('change', () => wizCalcPrice());
 });
+
+// ========== GOOGLE PLACES AUTOCOMPLETE ==========
+const TRANSFER_ZONES = [
+  { keywords: ['Fatih', 'Sultanahmet', 'Eminönü', 'Aksaray', 'Laleli', 'Sirkeci', 'Beyazıt'], extra: 0, zone: 'A' },
+  { keywords: ['Beşiktaş', 'Ortaköy', 'Levent', 'Etiler', 'Bebek'], extra: 10, zone: 'B' }
+];
+
+function detectTransferZone(address) {
+  const upper = address.toUpperCase();
+  for (const z of TRANSFER_ZONES) {
+    for (const kw of z.keywords) {
+      if (upper.includes(kw.toUpperCase())) return z;
+    }
+  }
+  return null; // bilinmeyen bölge
+}
+
+function initPlacesAutocomplete() {
+  const input = document.getElementById('wizAddress');
+  if (!input) return;
+  let addressMap = null;
+  let addressMarker = null;
+  const autocomplete = new google.maps.places.Autocomplete(input, {
+    types: ['establishment', 'geocode'],
+    componentRestrictions: { country: 'tr' },
+    fields: ['formatted_address', 'name', 'geometry']
+  });
+  autocomplete.addListener('place_changed', () => {
+    const place = autocomplete.getPlace();
+    if (!place) return;
+    const fullAddress = (place.name || '') + ' ' + (place.formatted_address || '');
+    if (place.name) {
+      input.value = place.name + ' — ' + (place.formatted_address || '');
+    }
+    // Save coordinates
+    if (place.geometry && place.geometry.location) {
+      wizState.transferLat = place.geometry.location.lat();
+      wizState.transferLng = place.geometry.location.lng();
+    }
+    // Show map with pin
+    const mapDiv = document.getElementById('wizAddressMap');
+    if (mapDiv && place.geometry && place.geometry.location) {
+      mapDiv.classList.remove('hidden');
+      const loc = place.geometry.location;
+      if (!addressMap) {
+        addressMap = new google.maps.Map(mapDiv, {
+          center: loc,
+          zoom: 15,
+          disableDefaultUI: true,
+          zoomControl: true,
+          styles: [
+            { elementType: 'geometry', stylers: [{ color: '#0b1120' }] },
+            { elementType: 'labels.text.fill', stylers: [{ color: '#c9a84c' }] },
+            { elementType: 'labels.text.stroke', stylers: [{ color: '#0b1120' }] },
+            { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#1a2340' }] },
+            { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0a1628' }] },
+            { featureType: 'poi', elementType: 'geometry', stylers: [{ color: '#111b33' }] }
+          ]
+        });
+      } else {
+        addressMap.setCenter(loc);
+      }
+      if (addressMarker) addressMarker.setMap(null);
+      addressMarker = new google.maps.Marker({
+        position: loc,
+        map: addressMap,
+        title: place.name || '',
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 10,
+          fillColor: '#c9a84c',
+          fillOpacity: 1,
+          strokeColor: '#fff',
+          strokeWeight: 2
+        }
+      });
+    }
+    const zone = detectTransferZone(fullAddress);
+    wizState.transferZoneExtra = zone ? zone.extra : 0;
+    const zoneMsg = document.getElementById('wizTransferZoneMsg');
+    if (zoneMsg) {
+      if (zone && zone.extra === 0) {
+        const txt = { en: 'Transfer is available for this area', tr: 'Transfer bu bölge için uygundur', de: 'Transfer ist für dieses Gebiet verfügbar', es: 'El traslado está disponible para esta zona', ru: 'Трансфер доступен для этого района', ar: 'خدمة النقل متاحة لهذه المنطقة' }[currentLang] || 'Transfer is available for this area';
+        const checkMap = { en: 'Please verify your location on the map', tr: 'Lütfen haritadan konumunuzu kontrol ediniz', de: 'Bitte überprüfen Sie Ihren Standort auf der Karte', es: 'Por favor verifique su ubicación en el mapa', ru: 'Пожалуйста, проверьте ваше местоположение на карте', ar: 'يرجى التحقق من موقعك على الخريطة' }[currentLang] || 'Please verify your location on the map';
+        zoneMsg.innerHTML = `<span class="text-green-400">✓ ${txt}</span><br><span class="text-white/40">📍 ${checkMap}</span>`;
+        zoneMsg.classList.remove('hidden');
+      } else if (zone && zone.extra > 0) {
+        const txt = { en: `Extra €${zone.extra} for this area`, tr: `Bu bölge için ekstra €${zone.extra}`, de: `Aufpreis €${zone.extra} für dieses Gebiet`, es: `Extra €${zone.extra} para esta zona`, ru: `Доплата €${zone.extra} за этот район`, ar: `رسوم إضافية €${zone.extra} لهذه المنطقة` }[currentLang] || `Extra €${zone.extra} for this area`;
+        const checkMap = { en: 'Please verify your location on the map', tr: 'Lütfen haritadan konumunuzu kontrol ediniz', de: 'Bitte überprüfen Sie Ihren Standort auf der Karte', es: 'Por favor verifique su ubicación en el mapa', ru: 'Пожалуйста, проверьте ваше местоположение на карте', ar: 'يرجى التحقق من موقعك على الخريطة' }[currentLang] || 'Please verify your location on the map';
+        zoneMsg.innerHTML = `<span class="text-[#c9a84c]">⚠ ${txt}</span><br><span class="text-white/40">📍 ${checkMap}</span>`;
+        zoneMsg.classList.remove('hidden');
+      } else {
+        const txt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
+        zoneMsg.innerHTML = `<span class="text-red-400">✕ ${txt}</span>`;
+        zoneMsg.classList.remove('hidden');
+      }
+    }
+    wizCalcPrice();
+  });
+}

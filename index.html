@@ -62,6 +62,14 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/tours.js"></script>
   <script src="js/translations.js"></script>
+  <style>
+    .pac-container{background:#0a0f1e;border:1px solid rgba(201,168,76,.3);border-radius:8px;margin-top:4px;font-family:inherit}
+    .pac-item{color:#fff;border-top:1px solid rgba(255,255,255,.05);padding:10px 14px;cursor:pointer;font-size:13px}
+    .pac-item:hover,.pac-item-selected{background:rgba(201,168,76,.1)}
+    .pac-item-query{color:#c9a84c;font-weight:600}
+    .pac-matched{color:#c9a84c}
+    .pac-icon{display:none}
+  </style>
 </head>
 <body class="bg-[#0b1120] text-white font-body antialiased pl-[40px] lg:pl-[60px]">
 
@@ -3081,7 +3089,9 @@
         <!-- Pickup Address (only if transfer selected) -->
         <div id="wizAddressBlock" class="hidden">
           <label class="text-white/80 text-xs font-semibold mb-1 block" data-i18n="wizard.pickupAddress">Pickup Address</label>
-          <input type="text" id="wizAddress" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors mb-4 placeholder-white/30" data-i18n-placeholder="wizard.addressPlaceholder" placeholder="Hotel name or accommodation address">
+          <input type="text" id="wizAddress" class="w-full bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-sm text-white focus:border-[#c9a84c]/50 focus:outline-none transition-colors placeholder-white/30" data-i18n-placeholder="wizard.addressPlaceholder" placeholder="Hotel name or accommodation address">
+          <p id="wizTransferZoneMsg" class="text-[10px] mt-1.5 mb-2 hidden"></p>
+          <div id="wizAddressMap" class="hidden rounded-lg overflow-hidden border border-white/10 mb-3" style="height:150px"></div>
         </div>
 
         <!-- Contact Preference -->
@@ -3209,9 +3219,9 @@
 
     <!-- STICKY BOTTOM BAR (Steps 1, 2 & 3 only) -->
     <div id="wizBottomBar" class="flex-shrink-0 border-t border-[#c9a84c]/20 bg-[#0a0f1e] px-5 py-3">
-      <div class="flex justify-between items-center mb-2">
-        <div id="wizBottomPrice" class="text-sm text-white/70"></div>
-        <span id="wizBottomTotal" class="text-xl font-bold text-[#c9a84c] font-display">€48</span>
+      <div class="flex justify-between items-end mb-2">
+        <div id="wizBottomPrice" class="leading-tight"></div>
+        <span id="wizBottomTotal" class="text-2xl font-bold text-[#c9a84c] font-display">€48</span>
       </div>
       <button id="wizNextBtn" onclick="wizNext()" class="w-full px-6 py-3.5 rounded-full text-sm font-semibold bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] transition-colors flex items-center justify-center gap-2">
         <span data-i18n="wizard.next">Next</span>
@@ -3221,5 +3231,6 @@
   </div><!-- /mobileBookPanel -->
 
   <script src="js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCD3EG7YLMI6xQWZsPtICZIoVIJVGGgtQw&libraries=places&callback=initPlacesAutocomplete" async defer></script>
 </body>
 </html>
