@@ -1029,45 +1029,7 @@ function closeMobilePanel() {
   if (topBar) topBar.style.display = '';
 }
 
-// Swipe down to close mobile panel (only when scrolled to top)
-(function() {
-  let startY = 0;
-  let currentY = 0;
-  let swiping = false;
-
-  document.addEventListener('touchstart', (e) => {
-    const panel = document.getElementById('mobileBookPanel');
-    if (!panel || !panel.classList.contains('open')) return;
-
-    // Only allow swipe-to-close when content is scrolled to top
-    const scrollContainer = document.getElementById('mobileBookPanelContent');
-    if (scrollContainer && scrollContainer.scrollTop > 5) return;
-
-    startY = e.touches[0].clientY;
-    swiping = true;
-  }, { passive: true });
-
-  document.addEventListener('touchmove', (e) => {
-    if (!swiping) return;
-    currentY = e.touches[0].clientY;
-    // Cancel swipe if user scrolls upward (browsing content)
-    if (currentY < startY) {
-      swiping = false;
-    }
-  }, { passive: true });
-
-  document.addEventListener('touchend', () => {
-    if (!swiping) return;
-    const diff = currentY - startY;
-    // 150px+ aşağı kaydırma → kapat (daha yüksek eşik)
-    if (diff > 150) {
-      closeMobilePanel();
-    }
-    swiping = false;
-    startY = 0;
-    currentY = 0;
-  });
-})();
+// Swipe down to close — KALDIRILDI
 
 function syncGuestCounts(sourceId, val) {
   const isMobile = sourceId.includes('Mobile');
