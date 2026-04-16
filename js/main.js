@@ -217,23 +217,8 @@ function initBoatSelection() {
             if (bookPackage) bookPackage.value = pkg;
             if (typeof calculatePrice === 'function') calculatePrice();
 
-            // Desktop: scroll to panel and flash highlight
-            const panel = document.getElementById('bookingPanel');
-            if (panel && window.innerWidth >= 1024) {
-              panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              panel.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
-              panel.style.boxShadow = '0 0 30px rgba(201,168,76,0.6), inset 0 0 20px rgba(201,168,76,0.1)';
-              panel.style.transform = 'scale(1.02)';
-              setTimeout(() => {
-                panel.style.boxShadow = '';
-                panel.style.transform = '';
-              }, 1500);
-            }
-
-            // Mobile: open wizard with package
-            if (window.innerWidth < 1024) {
-              openMobilePanel(pkg);
-            }
+            // Open wizard with package (both mobile and desktop)
+            openMobilePanel(pkg);
           };
         }
       });
@@ -988,11 +973,16 @@ function initBookingPanel() {
 }
 
 function openMobilePanel(pkg) {
+  const isDesktop = window.innerWidth >= 1024;
   const overlay = document.getElementById('mobileBookOverlay');
   const panel = document.getElementById('mobileBookPanel');
-  if (overlay) { overlay.classList.remove('hidden'); requestAnimationFrame(() => overlay.classList.add('open')); }
-  if (panel) panel.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  if (!isDesktop) {
+    if (overlay) { overlay.classList.remove('hidden'); requestAnimationFrame(() => overlay.classList.add('open')); }
+    if (panel) panel.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    const topBar = document.getElementById('topBar');
+    if (topBar) topBar.style.display = 'none';
+  }
 
   // Reset wizard to step 1
   wizGoTo(1);
@@ -1021,6 +1011,7 @@ function openMobilePanel(pkg) {
     wizLang.onchange = function() {
       setLanguage(this.value);
       wizCalcPrice();
+      wizUpdateProgress(wizState.step);
     };
   }
 
@@ -1028,11 +1019,14 @@ function openMobilePanel(pkg) {
 }
 
 function closeMobilePanel() {
+  if (window.innerWidth >= 1024) return; // Desktop'ta kapatılamaz
   const overlay = document.getElementById('mobileBookOverlay');
   const panel = document.getElementById('mobileBookPanel');
   if (panel) panel.classList.remove('open');
   if (overlay) { overlay.classList.remove('open'); setTimeout(() => overlay.classList.add('hidden'), 300); }
   document.body.style.overflow = '';
+  const topBar = document.getElementById('topBar');
+  if (topBar) topBar.style.display = '';
 }
 
 // Swipe down to close mobile panel (only when scrolled to top)
@@ -1286,9 +1280,9 @@ function calculatePrice() {
     // Determine alcohol extra per person
     let alcoholExtra = 0;
     if (window._drinkSelected === 'alcohol') {
-      alcoholExtra = DINNER_PRICES.extras.unlimited; // €11/person
+      alcoholExtra = DINNER_PRICES.extras.unlimited; // €15/person
     } else if (window._drinkSelected === 'glass2') {
-      alcoholExtra = DINNER_PRICES.extras.glass2; // €6/person
+      alcoholExtra = DINNER_PRICES.extras.glass2; // €7/person
     }
 
     // Adults
@@ -2330,6 +2324,17 @@ function wizBuildSummary() {
 document.addEventListener('DOMContentLoaded', function() {
   const wizDate = document.getElementById('wizDate');
   if (wizDate) wizDate.addEventListener('change', () => wizCalcPrice());
+
+  // Desktop: auto-init wizard in sidebar
+  if (window.innerWidth >= 1024) {
+    openMobilePanel('standard');
+    // Set default background for dinner tour
+    const wizBg = document.getElementById('wizPanelBg');
+    if (wizBg) {
+      wizBg.style.backgroundImage = `url(assets/images/gallery/couple-cheers-bridge.jpg)`;
+      wizBg.style.opacity = '0.12';
+    }
+  }
 });
 
 // ========== GOOGLE PLACES AUTOCOMPLETE ==========
