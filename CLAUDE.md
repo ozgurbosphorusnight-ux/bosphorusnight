@@ -72,20 +72,27 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 ### VIP Dinner Menüsü
 15+ premium meze, ana yemek eki (rib-eye, dana bonfile), sahneye yakın masa, VIP servis.
 
-### Çocuk Politikası (2026-04-17 güncel)
+### Çocuk Politikası (2026-04-20 netleştirildi)
 
 | Yaş | Paket fiyatı | Transfer |
 |---|---|---|
-| 0-3 | Ücretsiz | Ücretsiz |
-| 3-8 | %50 indirimli | Normal (€10) |
-| 8+ | Tam fiyat | Normal (€10) |
+| 0-3 (dahil) | Ücretsiz | Ücretsiz |
+| 4-8 (dahil) | %50 indirimli | Normal (€10) |
+| 9+ | Tam fiyat | Normal (€10) |
+
+**Sınır:** 3 yaş dahil ücretsiz, 4'e girdiyse indirimli başlar; 8 dahil indirimli, 9'a girdiyse tam fiyat.
 
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 
-### Transfer Kuralı
-- 18:00'den sonra transfer talebi **alınmaz**
-- 17:00-18:00 arası alınır ancak **teyit gerekir**
+### Transfer Kuralı (2026-04-20 netleştirildi)
+Aynı gün (tur tarihi = bugün) için saat dilimleri:
+- **00:00-17:00** → normal, AI kendisi alır
+- **17:00-19:30** → **gri bölge**: AI Özgür'e escalation, Özgür Telegram'dan "al/reddet" komutu verir (Aşama 4 sonrası). Şimdilik default: AI reddeder.
+- **19:30-21:00** → transfer imkansız, müşteri Kabataş'a kendi gelirse yetişir
+- **21:00+** → bugünün turu kalktı
+
+Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 
 ---
 
@@ -392,6 +399,12 @@ AI'ı gerçek WhatsApp'a bağla. Müşteri mesajları Twilio webhook üzerinden 
 1. **Twilio hesabı aç** — twilio.com/try-twilio
 2. **Meta WhatsApp Business onayı** — Twilio sandbox üzerinden başla, production için 1-2 hafta onay süreci
 3. **Business numara** — Bosphorus Night için WhatsApp Business numarası
+
+### ✅ Sunucu hazır (19 Nisan 2026 gece bitti)
+- Hetzner CCX13 (Nuremberg): IP 178.104.154.29, ayda €19.69
+- `https://api.bosphorusnight.com` — SSL aktif, AI 7/24 çalışıyor
+- SSH erişim: `ssh root@178.104.154.29` (Özgür'ün laptop key'i ile)
+- Detay: memory/hetzner_server.md
 
 ### Teknik Yapılacaklar (AI projesi)
 1. Twilio SDK kurulum: `npm install twilio`
