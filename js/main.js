@@ -1180,8 +1180,8 @@ function updateChildAgeInputs() {
       select.dataset.childIndex = i;
       select.innerHTML = `
         <option value="0-3">0-3</option>
-        <option value="3-5">3-5</option>
-        <option value="5+" selected>5+</option>
+        <option value="4-8">4-8</option>
+        <option value="9+" selected>9+</option>
       `;
       select.addEventListener('change', () => {
         syncChildAges(suffix);
@@ -1255,7 +1255,7 @@ function calculatePrice() {
       ageInputs.querySelectorAll('select').forEach(sel => {
         let childPrice = basePrice + (hasTransfer ? transferExtra : 0);
         if (sel.value === '0-3') total += 0;
-        else if (sel.value === '3-5') total += Math.round(childPrice * 0.5);
+        else if (sel.value === '4-8') total += Math.round(childPrice * 0.5);
         else total += childPrice;
       });
     }
@@ -1270,7 +1270,7 @@ function calculatePrice() {
     if (childCount > 0 && ageInputs) {
       ageInputs.querySelectorAll('select').forEach(sel => {
         if (sel.value === '0-3') total += 0;
-        else if (sel.value === '3-5') total += Math.round(basePrice * 0.5);
+        else if (sel.value === '4-8') total += Math.round(basePrice * 0.5);
         else total += basePrice;
       });
     }
@@ -1292,7 +1292,7 @@ function calculatePrice() {
       total += price * adults;
       if (childCount > 0 && ageInputs) {
         ageInputs.querySelectorAll('select').forEach(sel => {
-          if (sel.value === '3-5') total += Math.round(price * 0.5);
+          if (sel.value === '4-8') total += Math.round(price * 0.5);
           else if (sel.value !== '0-3') total += price;
         });
       }
@@ -1887,7 +1887,7 @@ function wizUpdateChildAges(count) {
       const sel = document.createElement('select');
       sel.className = 'bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:border-[#c9a84c]/50 focus:outline-none appearance-none pr-7';
       sel.style.cssText = "background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 6px center; background-size: 14px;";
-      sel.innerHTML = '<option value="0-3">0-3</option><option value="3-5">3-5</option><option value="5+" selected>5+</option>';
+      sel.innerHTML = '<option value="0-3">0-3</option><option value="4-8">4-8</option><option value="9+" selected>9+</option>';
       sel.addEventListener('change', () => wizCalcPrice());
       inputs.appendChild(sel);
     }
@@ -2054,7 +2054,7 @@ function wizCalcPrice() {
   if (children > 0 && childAgeInputs) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
       if (sel.value === '0-3') { /* free */ }
-      else if (sel.value === '3-5') total += Math.round(basePrice * 0.5);
+      else if (sel.value === '4-8') total += Math.round(basePrice * 0.5);
       else total += basePrice;
     });
   }
@@ -2068,7 +2068,7 @@ function wizCalcPrice() {
   if (children > 0 && childAgeInputs) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
       if (sel.value === '0-3') { /* free */ }
-      else if (sel.value === '3-5') oldTotal += Math.round(oldPrice * 0.5);
+      else if (sel.value === '4-8') oldTotal += Math.round(oldPrice * 0.5);
       else oldTotal += oldPrice;
     });
   }
@@ -2225,7 +2225,7 @@ function wizBuildSummary() {
       childAgeInputs.querySelectorAll('select').forEach(sel => {
         const childBase = basePrice + transferExtra;
         if (sel.value === '0-3') { /* free */ }
-        else if (sel.value === '3-5') childTotal += Math.round(childBase * 0.5);
+        else if (sel.value === '4-8') childTotal += Math.round(childBase * 0.5);
         else childTotal += childBase;
       });
       if (childTotal > 0) {
@@ -2251,7 +2251,7 @@ function wizBuildSummary() {
   const childAgeInputs = document.getElementById('wizChildAgeInputs');
   if (childAgeInputs && children > 0) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
-      childAges.push(sel.value); // "0-3", "3-5", "5+"
+      childAges.push(sel.value); // "0-3", "4-8", "9+"
     });
   }
   const agePart = childAges.length ? ` (${childAges.join(', ')})` : '';

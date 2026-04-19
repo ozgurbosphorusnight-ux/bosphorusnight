@@ -256,12 +256,12 @@ const T = {
     ar: "اختياري: مشروبات كحولية +€30 · نقل +€10"
   },
   "pkg.children": {
-    en: "Children 0–3: Free · 3–5: 50% off · 5+: Full price · No prepayment required",
-    tr: "Çocuklar 0–3: Ücretsiz · 3–5: %50 indirim · 5+: Tam fiyat · Ön ödeme gerekmez",
-    de: "Kinder 0–3: Gratis · 3–5: 50% Rabatt · 5+: Vollpreis · Keine Vorauszahlung",
-    es: "Niños 0–3: Gratis · 3–5: 50% dto. · 5+: Precio completo · Sin prepago",
-    ru: "Дети 0–3: Бесплатно · 3–5: Скидка 50% · 5+: Полная цена · Без предоплаты",
-    ar: "الأطفال 0-3: مجاناً · 3-5: خصم 50% · 5+: السعر الكامل · بدون دفع مسبق"
+    en: "Children 0–3: Free · 4–8: 50% off · 9+: Full price · No prepayment required",
+    tr: "Çocuklar 0–3: Ücretsiz · 4–8: %50 indirim · 9+: Tam fiyat · Ön ödeme gerekmez",
+    de: "Kinder 0–3: Gratis · 4–8: 50% Rabatt · 9+: Vollpreis · Keine Vorauszahlung",
+    es: "Niños 0–3: Gratis · 4–8: 50% dto. · 9+: Precio completo · Sin prepago",
+    ru: "Дети 0–3: Бесплатно · 4–8: Скидка 50% · 9+: Полная цена · Без предоплаты",
+    ar: "الأطفال 0-3: مجاناً · 4-8: خصم 50% · 9+: السعر الكامل · بدون دفع مسبق"
   },
 
   // ========== WHAT'S INCLUDED ==========
@@ -1093,9 +1093,9 @@ const T = {
     en: "Child Ages", tr: "Çocuk Yaşları", de: "Kinderalter", es: "Edades de los Niños", ru: "Возраст детей", ar: "أعمار الأطفال"
   },
   "booking.childNote": {
-    en: "0-3 age: Free  |  3-5 age: 50% off  |  5+ age: Full price", tr: "0-3 yaş: Ücretsiz  |  3-5 yaş: %50 indirim  |  5+ yaş: Tam fiyat",
-    de: "0-3 J.: Gratis  |  3-5 J.: 50% Rabatt  |  5+ J.: Vollpreis", es: "0-3 años: Gratis  |  3-5 años: 50% desc.  |  5+ años: Precio completo",
-    ru: "0-3 лет: Бесплатно  |  3-5 лет: 50% скидка  |  5+ лет: Полная цена", ar: "0-3 سنة: مجاني  |  3-5 سنة: خصم 50%  |  5+ سنة: السعر الكامل"
+    en: "0-3 age: Free  |  4-8 age: 50% off  |  9+ age: Full price", tr: "0-3 yaş: Ücretsiz  |  4-8 yaş: %50 indirim  |  9+ yaş: Tam fiyat",
+    de: "0-3 J.: Gratis  |  4-8 J.: 50% Rabatt  |  9+ J.: Vollpreis", es: "0-3 años: Gratis  |  4-8 años: 50% desc.  |  9+ años: Precio completo",
+    ru: "0-3 лет: Бесплатно  |  4-8 лет: 50% скидка  |  9+ лет: Полная цена", ar: "0-3 سنة: مجاني  |  4-8 سنة: خصم 50%  |  9+ سنة: السعر الكامل"
   },
   "booking.boat": {
     en: "Cruise", tr: "Tekne", de: "Tour", es: "Crucero", ru: "Круиз", ar: "الرحلة"
