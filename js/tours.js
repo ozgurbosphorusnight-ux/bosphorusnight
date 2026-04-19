@@ -122,7 +122,7 @@ const TOURS = {
 
   dinner: {
     icon: TOUR_ICONS.dinner,
-    time: '20:45',
+    time: '21:00',
     duration: '3',
     durationUnit: { en: 'Hours', tr: 'Saat', de: 'Stunden', es: 'Horas', ru: 'Часа', ar: 'ساعات' },
     pier: 'Kabataş Pier',
@@ -151,9 +151,9 @@ const TOURS = {
     heroImage: 'assets/tours/dinner/boat-night-bridge.jpg',
     pills: [
       {
-        label: { en: '20:45', tr: '20:45', de: '20:45', es: '20:45', ru: '20:45', ar: '20:45' },
+        label: { en: '21:00', tr: '21:00', de: '21:00', es: '21:00', ru: '21:00', ar: '21:00' },
         imgs: ['assets/tours/dinner/boat-night-bridge.jpg', 'assets/tours/dinner/boat-pier.jpg', 'assets/tours/dinner/hall-wide.jpg'],
-        desc: { en: 'Night departure from Kabataş Pier at 20:45', tr: 'Kabataş İskelesi\'nden 20:45\'te gece kalkışı', de: 'Nachtabfahrt vom Kabataş Pier um 20:45', es: 'Salida nocturna del muelle de Kabataş a las 20:45', ru: 'Ночное отправление с причала Кабаташ в 20:45', ar: 'مغادرة ليلية من رصيف كاباتاش الساعة 20:45' }
+        desc: { en: 'Night departure from Kabataş Pier at 21:00', tr: 'Kabataş İskelesi\'nden 21:00\'de gece kalkışı', de: 'Nachtabfahrt vom Kabataş Pier um 21:00', es: 'Salida nocturna del muelle de Kabataş a las 21:00', ru: 'Ночное отправление с причала Кабаташ в 21:00', ar: 'مغادرة ليلية من رصيف كاباتاش الساعة 21:00' }
       },
       {
         label: { en: '3 Hours', tr: '3 Saat', de: '3 Std.', es: '3 Horas', ru: '3 часа', ar: '3 ساعات' },
