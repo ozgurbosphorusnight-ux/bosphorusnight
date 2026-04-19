@@ -714,7 +714,7 @@ const PRICES = {
 const DINNER_PRICES = {
   standard: { base: 24, oldPrice: 40 },
   vip:      { base: 55, oldPrice: 90 },
-  extras: { glass2: 7, unlimited: 15, transfer: 10, romantic: 15 }
+  extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
 };
 
 const BOAT_NAMES = {
@@ -1242,9 +1242,9 @@ function calculatePrice() {
     // Determine alcohol extra per person
     let alcoholExtra = 0;
     if (window._drinkSelected === 'alcohol') {
-      alcoholExtra = DINNER_PRICES.extras.unlimited; // €15/person
+      alcoholExtra = DINNER_PRICES.extras.unlimited; // €30/person
     } else if (window._drinkSelected === 'glass2') {
-      alcoholExtra = DINNER_PRICES.extras.glass2; // €7/person
+      alcoholExtra = DINNER_PRICES.extras.glass2; // €15/person
     }
 
     // Adults
