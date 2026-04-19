@@ -2261,7 +2261,10 @@ function wizBuildSummary() {
   const transferStr = wizState.transfer ? yn[0] : yn[1];
   const romanticStr = wizState.romantic ? yn[0] : yn[1];
   const mapsLink = (wizState.transferLat && wizState.transferLng) ? `https://maps.google.com/maps?q=${wizState.transferLat},${wizState.transferLng}` : '';
-  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
+  const roomNumberInput = (document.getElementById('wizRoomNumber')?.value || '').trim();
+  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة' }[currentLang] || 'Room';
+  const roomLine = wizState.transfer && roomNumberInput ? `\n🚪 ${roomLabel}: ${roomNumberInput}` : '';
+  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${roomLine}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
 
   const msgTemplates = {
     en: `Hi, I'd like to check availability:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hotel Transfer: ${transferStr}${addressLine}\n💐 Romantic Table: ${romanticStr}\n💰 Total: €${total}\nPlease confirm. Thank you!`,

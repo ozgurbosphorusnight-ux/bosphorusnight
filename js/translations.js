@@ -1837,6 +1837,30 @@ const T = {
     ru: "Название отеля или адрес проживания",
     ar: "اسم الفندق أو عنوان الإقامة"
   },
+  "wizard.roomNumber": {
+    en: "Room Number",
+    tr: "Oda Numarası",
+    de: "Zimmernummer",
+    es: "Número de habitación",
+    ru: "Номер комнаты",
+    ar: "رقم الغرفة"
+  },
+  "wizard.roomNumberPlaceholder": {
+    en: "e.g. 507",
+    tr: "örn. 507",
+    de: "z.B. 507",
+    es: "ej. 507",
+    ru: "напр. 507",
+    ar: "مثال: 507"
+  },
+  "wizard.roomNumberNote": {
+    en: "So our driver can find you easily. If you don't know yet, you can leave it empty — driver will ask at the lobby.",
+    tr: "Şoförümüzün sizi kolay bulabilmesi için. Henüz bilmiyorsanız boş bırakabilirsiniz — şoför lobide ismen soracak.",
+    de: "Damit unser Fahrer Sie leicht findet. Wenn Sie noch nicht wissen, können Sie es leer lassen — der Fahrer fragt an der Rezeption.",
+    es: "Para que nuestro chofer le encuentre fácilmente. Si aún no lo sabe, puede dejarlo vacío — el chofer preguntará en el lobby.",
+    ru: "Чтобы водитель легко вас нашёл. Если ещё не знаете, можете оставить пустым — водитель спросит в лобби.",
+    ar: "حتى يتمكن سائقنا من إيجادك بسهولة. إذا لم تعرف بعد، يمكنك تركه فارغًا — سيسأل السائق في البهو."
+  },
   "wizard.contactPref": {
     en: "Preferred Contact",
     tr: "İletişim Tercihi",
