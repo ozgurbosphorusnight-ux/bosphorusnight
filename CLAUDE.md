@@ -44,10 +44,10 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 |---|---|---|---|---|---|---|---|
 | DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ bekleniyor | — |
 | SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ bekleniyor | — |
-| DINNER_STD | Standard Dinner Cruise | 3 saat | 20:45 | €24 | €40 | €18 | €6 |
-| DINNER_VIP | VIP Dinner Cruise | 3 saat | 20:45 | €55 | €90 | €40 | €15 |
+| DINNER_STD | Standard Dinner Cruise | 3 saat | 21:00 | €24 | €40 | €18 | €6 |
+| DINNER_VIP | VIP Dinner Cruise | 3 saat | 21:00 | €55 | €90 | €40 | €15 |
 
-**Buluşma:** Kabataş Pier. Ödeme: Pay on the boat (ön ödeme yok).
+**Buluşma:** Kabataş İskelesi. Giriş 20:00'den itibaren, kalkış 21:00. Ödeme: Pay on the boat (ön ödeme yok).
 
 **Rota:** Dolmabahçe → Çırağan → Ortaköy → Bebek → Rumeli Hisarı → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş
 
@@ -95,9 +95,9 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 |---|-------|-------|
 | 0 | Hazırlık (hesaplar) | ✅ BİTTİ |
 | 1 | Veri katmanı (Supabase) | ✅ BİTTİ |
-| 2 | Backend iskelet (Node.js + Express) | 🟡 ŞU AN (seed yüklendi, test + GitHub push kaldı) |
-| 3 | AI beyin (Claude API + prompt + hafıza) | ⏳ |
-| 4 | WhatsApp sales agent MVP | ⏳ |
+| 2 | Backend iskelet (Node.js + Express) | ✅ BİTTİ |
+| 3 | AI beyin (Claude API + prompt + hafıza) | ✅ BİTTİ — Mode A + Mode B parite, 5 iyileştirme (A-E) 2026-04-19'da tamamlandı. Canlı test geçti. |
+| 4 | WhatsApp sales agent MVP | 🔴 AKTİF — Twilio + Meta onay sürecine başlanacak |
 | 5 | Güvenlik ağları (onay, kill switch, anomali) | ⏳ |
 | 6 | Operation agent (teyit, takip, transfer) | ⏳ |
 | 7 | Dashboard + günlük rapor | ⏳ |
@@ -220,15 +220,21 @@ customers.phone, customers.last_contact_at, packages.is_active, availability.dat
 
 Bu durumlarda AI cevap vermez, Özgür'e Telegram/WhatsApp bildirimi gider:
 
-- €500+ rezervasyonlar
-- İlk 30 günde TÜM rezervasyonlar (güven oluşana kadar)
-- Şikayet sinyali içeren konuşmalar
-- Özel tekne talepleri
-- Evlilik teklifi talebi (proposal — standart paket yok, her biri özel Özgür onayı)
-- Menü dışı özel istek (kosher, alerji vb.)
-- Bot 2 denemede anlamadıysa
-- Müşteri "insanla konuşmak istiyorum" dediyse
-- Fiyat pazarlığı
+- **Bloklanmış durumlar** (AI rezervasyon oluşturmaz, Özgür karar):
+  - Şikayet sinyali, agresif müşteri
+  - Özel tekne talepleri (30+ kişi)
+  - Evlilik teklifi talebi (AI önerir, müşteri onaylarsa escalation)
+  - Menü dışı özel istek (kosher, alerji)
+  - Bot 2 denemede anlamadıysa
+  - Müşteri "insanla konuşmak istiyorum"
+  - Fiyat pazarlığı
+  - Tur öncesi 2 saat kala iptal/değişiklik
+- **Bildirim gider ama AI satışa devam eder** (Özgür komut verirse müdahale):
+  - €500+ rezervasyon
+  - 30+ kişi grup (büyük grup, otomatik onay)
+  - Blocked adres için transfer ısrarı
+  - Fiyat uyuşmazlığı €10+ delta (wizard vs DB)
+  - Transfer bölge dışı reddetme
 
 ---
 
@@ -312,12 +318,14 @@ bosphorus-night-ai/
 │   ├── db/
 │   │   ├── supabase.js   (client wrapper)
 │   │   └── queries/      (tablo bazlı query'ler)
-│   ├── channels/         (whatsapp, telegram, wechat, web-form)
-│   ├── agents/           (orchestrator, sales, ops, voice)
-│   ├── claude/           (API + prompts + memory)
-│   ├── safety/           (approval, escalation, kill-switch, anomaly)
-│   ├── scheduled/        (pre-tour, during-tour, post-tour, follow-up)
-│   └── utils/            (logger, language, ticket-pdf)
+│   ├── channels/         (whatsapp [Aşama 4], telegram, wechat, web-form)
+│   ├── agents/           (sales [Mode A+B], orchestrator, ops, voice)
+│   ├── claude/           (client, system-prompt, confirmation-prompt, intent-classifier, memory, tools/)
+│   │   └── tools/        (check-availability, calculate-price, create-reservation, update-reservation, cancel-reservation, trigger-escalation)
+│   ├── safety/           (approval, escalation, kill-switch, anomaly) [Aşama 5]
+│   ├── scheduled/        (pre-tour, during-tour, post-tour, follow-up) [Aşama 6]
+│   └── utils/            (logger, language, ticket-renderer, wizard-parser, name-validator, transfer-zones, markdown-stripper)
+├── public/tickets/       (generated boarding pass PNGs)
 └── docs/
 ```
 
@@ -361,13 +369,59 @@ bosphorus-night-ai/
 
 ---
 
-## 16. ŞU ANKİ GÖREV — AŞAMA 2 — BACKEND İSKELET KURULUMU
+## 16. ŞU ANKİ GÖREV — AŞAMA 4 — WHATSAPP BUSINESS API (TWILIO)
 
 ### KRİTİK: PROJE LOKASYONU
-**AI projesi ayrı bir klasörde:** `C:\Projects\bosphorus-night-ai`
-Bu mevcut site reposu (`c:\Users\DELL\Desktop\bosphorusnight`) DEĞİL. Yeni klasör oluşturulacak.
+**AI projesi:** `C:\Projects\bosphorus-night-ai` (site reposundan ayrı)
+**Site reposu:** `c:\Users\DELL\Desktop\bosphorusnight`
 
-### Amaç
+### Durum — Aşama 3 tamamlandı (2026-04-19)
+- Mode A (wizard teyit) + Mode B (açık sohbet) canlı
+- Bilet PNG renderer (Puppeteer), harita konumu
+- Intent classifier (mid-flow modifications)
+- Update + cancel reservation tools
+- Transfer zones (13 yer + Hilton Bosphorus) single-source
+- Nezaket kuralı + saat-aware tarih teyidi
+- Markdown strip, garbage name detect
+- E2E test script: `npm run test:wizard`
+
+### Aşama 4 Amaç
+AI'ı gerçek WhatsApp'a bağla. Müşteri mesajları Twilio webhook üzerinden AI'a gelsin, AI cevapları + bilet + harita Twilio üzerinden WhatsApp'a geri gitsin. Bundan sonra gerçek trafik alınabilir.
+
+### Ön Koşullar (Özgür)
+1. **Twilio hesabı aç** — twilio.com/try-twilio
+2. **Meta WhatsApp Business onayı** — Twilio sandbox üzerinden başla, production için 1-2 hafta onay süreci
+3. **Business numara** — Bosphorus Night için WhatsApp Business numarası
+
+### Teknik Yapılacaklar (AI projesi)
+1. Twilio SDK kurulum: `npm install twilio`
+2. `src/channels/whatsapp.js` doldurma:
+   - Inbound webhook handler
+   - Outbound `sendMessage(to, body, mediaUrl?)` fonksiyonu
+   - PersistentAction ile location message
+3. `/webhooks/whatsapp` endpoint (`src/index.js`):
+   - Twilio signature doğrulama
+   - Inbound mesajı `handleIncomingMessage` (sales agent) fonksiyonuna yönlendir
+   - Response'u Twilio TwiML veya REST API ile geri gönder
+4. Bilet PNG hosting:
+   - `public/tickets/*.png` dosyalarını publicly accessible URL'ye taşı
+   - Seçenek A: Supabase Storage (önerilen)
+   - Seçenek B: Cloudflare R2 / DigitalOcean Spaces
+   - Seçenek C: Hetzner üzerinde nginx serve
+5. Hetzner VPS kurulumu:
+   - CX22 sipariş
+   - nginx + Let's Encrypt (api.bosphorusnight.com)
+   - PM2 ile pm2 start
+   - `.env` production değerleri
+6. Test:
+   - Twilio sandbox'ta manuel mesaj
+   - Wizard'dan gelen mesaj → AI → bilet gönderim
+   - Mode B sohbet → rezervasyon → bilet
+   - Harita konumu inmemi kontrol et
+
+### Eski "Aşama 2" talimatları aşağıda arşiv olarak tutuluyor (referans)
+
+### Eski Amaç (Aşama 2 — tamamlandı)
 Node.js + Express backend iskeleti kurmak. Supabase'e bağlanmak. İlk endpoint'leri açmak.
 
 ### Adım Adım Yapılacaklar

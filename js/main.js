@@ -2059,11 +2059,8 @@ function wizCalcPrice() {
     });
   }
 
-  // Zone extra (flat fee per reservation, not per person)
-  const zoneExtra = wizState.transfer ? (wizState.transferZoneExtra || 0) : 0;
-
-  // Add drink + transfer + romantic + zone
-  total += drinkCost + transferCost + zoneExtra;
+  // Transfer tek fiyat €10/kişi (izinli bölgelerde), zone surcharge kaldırıldı 2026-04-19
+  total += drinkCost + transferCost;
   if (wizState.romantic) total += DINNER_PRICES.extras.romantic;
 
   // Old price calculation
@@ -2189,7 +2186,7 @@ function wizBuildSummary() {
     const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
     const totalGuests = adults + children;
     const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
-    const zoneExtra = wizState.transfer ? (wizState.transferZoneExtra || 0) : 0;
+    // zoneExtra kaldırıldı 2026-04-19 — tek fiyat transfer
 
     let html = '';
 
@@ -2218,11 +2215,7 @@ function wizBuildSummary() {
       html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${totalGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * totalGuests}</span></div>`;
     }
 
-    // Zone extra (flat fee)
-    if (zoneExtra > 0) {
-      const zoneLabel = { en: 'Area surcharge', tr: 'Bölge farkı', de: 'Gebietszuschlag', es: 'Recargo de zona', ru: 'Доплата за район', ar: 'رسوم المنطقة' }[currentLang] || 'Area surcharge';
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${zoneLabel}</p></div><span class="text-white font-medium">€${zoneExtra}</span></div>`;
-    }
+    // Zone extra (kaldırıldı 2026-04-19 — transfer tek fiyat €10/kişi)
 
     // Children
     const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال' }[currentLang] || 'Children';
@@ -2252,7 +2245,17 @@ function wizBuildSummary() {
   const total = wizCalcPrice();
   const adultW = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' }[currentLang] || 'Adult';
   const childW = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' }[currentLang] || 'Child';
-  const guestStr = `${adults} ${adultW}${children > 0 ? ', ' + children + ' ' + childW : ''}`;
+
+  // Read child age selections from wizard dropdowns (2026-04-19 eklendi — AI için şeffaflık)
+  const childAges = [];
+  const childAgeInputs = document.getElementById('wizChildAgeInputs');
+  if (childAgeInputs && children > 0) {
+    childAgeInputs.querySelectorAll('select').forEach(sel => {
+      childAges.push(sel.value); // "0-3", "3-5", "5+"
+    });
+  }
+  const agePart = childAges.length ? ` (${childAges.join(', ')})` : '';
+  const guestStr = `${adults} ${adultW}${children > 0 ? ', ' + children + ' ' + childW + agePart : ''}`;
   const yesNo = { en: ['Yes','No'], tr: ['Evet','Hayır'], de: ['Ja','Nein'], es: ['Sí','No'], ru: ['Да','Нет'], ar: ['نعم','لا'] };
   const yn = yesNo[currentLang] || yesNo.en;
   const transferStr = wizState.transfer ? yn[0] : yn[1];
@@ -2300,19 +2303,26 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ========== GOOGLE PLACES AUTOCOMPLETE ==========
-const TRANSFER_ZONES = [
-  { keywords: ['Fatih', 'Sultanahmet', 'Eminönü', 'Aksaray', 'Laleli', 'Sirkeci', 'Beyazıt'], extra: 0, zone: 'A' },
-  { keywords: ['Beşiktaş', 'Ortaköy', 'Levent', 'Etiler', 'Bebek'], extra: 10, zone: 'B' }
+// Transfer hizmet alanı — tek liste, €10/kişi (HOTEL_TRANSFER addon)
+// Özgür kararı 2026-04-19 — eski 2-tier "dahil/+€10" kaldırıldı
+// AI tarafı (bosphorus-night-ai/src/config.js) aynı listeyi kullanır
+const TRANSFER_ALLOWED = [
+  'Beşiktaş', 'Sütlüce', 'Sirkeci', 'Topkapı', 'Taksim',
+  'Eminönü', 'Kağıthane', 'Fatih', 'Laleli', 'Sultanahmet',
+  'Sultan Ahmet', // varyant yazım
+  'Ortaköy', 'Beyoğlu',
+  // Özel oteller (semtleri listede olmasa da alınıyor)
+  'Hilton Istanbul Bosphorus'
 ];
 
 function detectTransferZone(address) {
   const upper = address.toUpperCase();
-  for (const z of TRANSFER_ZONES) {
-    for (const kw of z.keywords) {
-      if (upper.includes(kw.toUpperCase())) return z;
+  for (const kw of TRANSFER_ALLOWED) {
+    if (upper.includes(kw.toUpperCase())) {
+      return { extra: 0, allowed: true };
     }
   }
-  return null; // bilinmeyen bölge
+  return null; // izinli değil → transfer yok
 }
 
 function initPlacesAutocomplete() {
@@ -2376,18 +2386,13 @@ function initPlacesAutocomplete() {
       });
     }
     const zone = detectTransferZone(fullAddress);
-    wizState.transferZoneExtra = zone ? zone.extra : 0;
+    wizState.transferZoneExtra = 0; // tek fiyat (2026-04-19 — zone surcharge kaldırıldı)
     const zoneMsg = document.getElementById('wizTransferZoneMsg');
     if (zoneMsg) {
-      if (zone && zone.extra === 0) {
+      if (zone && zone.allowed) {
         const txt = { en: 'Transfer is available for this area', tr: 'Transfer bu bölge için uygundur', de: 'Transfer ist für dieses Gebiet verfügbar', es: 'El traslado está disponible para esta zona', ru: 'Трансфер доступен для этого района', ar: 'خدمة النقل متاحة لهذه المنطقة' }[currentLang] || 'Transfer is available for this area';
         const checkMap = { en: 'Please verify your location on the map', tr: 'Lütfen haritadan konumunuzu kontrol ediniz', de: 'Bitte überprüfen Sie Ihren Standort auf der Karte', es: 'Por favor verifique su ubicación en el mapa', ru: 'Пожалуйста, проверьте ваше местоположение на карте', ar: 'يرجى التحقق من موقعك على الخريطة' }[currentLang] || 'Please verify your location on the map';
         zoneMsg.innerHTML = `<span class="text-green-400">✓ ${txt}</span><br><span class="text-white/40">📍 ${checkMap}</span>`;
-        zoneMsg.classList.remove('hidden');
-      } else if (zone && zone.extra > 0) {
-        const txt = { en: `Extra €${zone.extra} for this area`, tr: `Bu bölge için ekstra €${zone.extra}`, de: `Aufpreis €${zone.extra} für dieses Gebiet`, es: `Extra €${zone.extra} para esta zona`, ru: `Доплата €${zone.extra} за этот район`, ar: `رسوم إضافية €${zone.extra} لهذه المنطقة` }[currentLang] || `Extra €${zone.extra} for this area`;
-        const checkMap = { en: 'Please verify your location on the map', tr: 'Lütfen haritadan konumunuzu kontrol ediniz', de: 'Bitte überprüfen Sie Ihren Standort auf der Karte', es: 'Por favor verifique su ubicación en el mapa', ru: 'Пожалуйста, проверьте ваше местоположение на карте', ar: 'يرجى التحقق من موقعك على الخريطة' }[currentLang] || 'Please verify your location on the map';
-        zoneMsg.innerHTML = `<span class="text-[#c9a84c]">⚠ ${txt}</span><br><span class="text-white/40">📍 ${checkMap}</span>`;
         zoneMsg.classList.remove('hidden');
       } else {
         const txt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
