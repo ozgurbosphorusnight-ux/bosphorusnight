@@ -93,12 +93,10 @@
           <stop offset="100%" stop-color="#2a6a9c" stop-opacity="0"/>
         </linearGradient>
       </defs>
-      <!-- Water glow (very subtle) -->
-      <path d="M20,0 C25,50 15,100 20,150 C25,200 15,250 20,300 C25,350 15,400 20,450 C25,500 15,550 20,600 C25,650 15,700 20,750 C25,800 15,850 20,900 C25,950 15,1000 20,1050"
-            stroke="url(#routeWaterGrad)" stroke-width="10" fill="none" vector-effect="non-scaling-stroke" opacity="0.3"/>
-      <!-- Main wavy line (subtle) -->
-      <path d="M20,0 C25,50 15,100 20,150 C25,200 15,250 20,300 C25,350 15,400 20,450 C25,500 15,550 20,600 C25,650 15,700 20,750 C25,800 15,850 20,900 C25,950 15,1000 20,1050"
-            stroke="url(#routeLineGrad)" stroke-width="2" stroke-dasharray="8 6" fill="none" vector-effect="non-scaling-stroke"/>
+      <!-- Straight dashed route line (solid color — gradient fails on zero-width bbox) -->
+      <line x1="50%" y1="0" x2="50%" y2="100%"
+            stroke="#c9a84c" stroke-opacity="0.3" stroke-width="1.5"
+            stroke-dasharray="4 5" vector-effect="non-scaling-stroke"/>
     </svg>
 
     <!-- Boat icon (moves with scroll) -->
@@ -113,7 +111,7 @@
       <div class="route-marker" data-section="boarding" data-svg="kabatas" data-label="Kabataş" data-time="20:00" data-activity="Boarding · 🎤 Live singer"></div>
       <div class="route-marker" data-section="lastminute" data-svg="dolmabahce" data-label="Dolmabahçe" data-time="21:00" data-activity="Departure · Live singer"></div>
       <!-- <div class="route-marker" data-section="tour-daytime" data-svg="ciragan" data-label="Çırağan" data-time="21:00" data-activity="💃 Folk dance show begins"></div> -->
-      <div class="route-marker" data-section="tour-sunset" data-svg="ortakoy" data-label="Ortaköy" data-time="21:05" data-activity="Folk dances · Photo stop"></div>
+      <!-- Sunset route marker REMOVED 2026-04-20. Restore: docs/sunset-active-snapshot.md -->
       <div class="route-marker" data-section="tour-dinner" data-svg="bridge" data-label="Bridge" data-time="21:10" data-activity="Under the lights"></div>
       <div class="route-marker" data-section="how" data-svg="bebek" data-label="Bebek" data-time="21:20" data-activity="Folk dances continue"></div>
       <div class="route-marker" data-section="trust" data-svg="rumeli" data-label="Rumeli" data-time="21:30" data-activity="Crossing to Asia · Folk dances"></div>
@@ -311,7 +309,7 @@
           <a href="#boats" class="nav-link text-sm font-medium text-white/80 hover:text-gold transition-colors" data-i18n="nav.cruises">Cruises</a>
           <a href="#gallery" class="nav-link text-sm font-medium text-white/80 hover:text-gold transition-colors" data-i18n="nav.gallery">Gallery</a>
           <a href="#faq" class="nav-link text-sm font-medium text-white/80 hover:text-gold transition-colors" data-i18n="nav.faq">FAQ</a>
-          <a href="#boats" class="btn-gold text-sm px-5 py-2.5 rounded-full font-semibold" data-i18n="nav.book">Book on WhatsApp</a>
+          <a href="#boats" class="btn-gold text-sm px-5 py-2.5 rounded-full font-semibold" data-i18n="nav.book">Explore & Book</a>
         </nav>
 
         <!-- Lang + Mobile Menu -->
@@ -346,7 +344,7 @@
     <!-- Mobile Menu -->
     <div id="mobileMenu" class="lg:hidden hidden bg-navy-dark/95 backdrop-blur-xl border-t border-white/10">
       <div class="px-6 py-6 flex flex-col gap-4">
-        <a href="#boats" class="btn-gold text-center text-sm px-5 py-3 rounded-full font-semibold" data-i18n="nav.book">Book on WhatsApp</a>
+        <a href="#boats" class="btn-gold text-center text-sm px-5 py-3 rounded-full font-semibold" data-i18n="nav.book">Explore & Book</a>
         <a href="#hero" class="mobile-nav-link text-white/80 hover:text-gold py-2 transition-colors" data-i18n="nav.home">Home</a>
         <a href="#boats" class="mobile-nav-link text-white/80 hover:text-gold py-2 transition-colors" data-i18n="nav.cruises">Cruises</a>
         <a href="#gallery" class="mobile-nav-link text-white/80 hover:text-gold py-2 transition-colors" data-i18n="nav.gallery">Gallery</a>
@@ -391,15 +389,38 @@
         <button onclick="openMobilePanel('standard')" class="btn-gold w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 cursor-pointer">
           <span data-i18n="booking.bookNow">Book Now</span>
         </button>
-        <a href="#boats" class="btn-outline w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold" data-i18n="hero.cta2">View Cruises</a>
+        <a href="#boats" class="btn-outline w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold" data-i18n="hero.cta2">View Cruise</a>
       </div>
 
-      <p class="mt-6 text-white/40 text-xs" data-i18n="hero.departure">Departures from Kabataş & Eminönü · 21:00 – 23:30</p>
+      <p class="mt-6 text-white/40 text-xs" data-i18n="hero.departure">Departure from Kabataş · 21:00 – 00:00</p>
     </div>
 
     <!-- Scroll Indicator -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
       <svg class="w-6 h-6 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+    </div>
+
+    <!-- ========== HERO MEDIA STAGE (desktop right 320px) — video on top under ticker, collage below ========== -->
+    <div id="heroMediaStage" class="hidden lg:flex lg:flex-col fixed top-8 right-0 bottom-0 w-[320px] z-[40] overflow-hidden pointer-events-none">
+      <div class="hero-video-frame">
+        <div class="hero-video-placeholder">
+          <div class="placeholder-slide active" style="background-image: url('assets/images/gallery/6.jpg')"></div>
+          <div class="placeholder-slide" style="background-image: url('assets/images/gallery/18.jpg')"></div>
+          <div class="placeholder-slide" style="background-image: url('assets/images/gallery/28.jpg')"></div>
+          <div class="placeholder-slide" style="background-image: url('assets/images/gallery/3.jpg')"></div>
+          <div class="placeholder-slide" style="background-image: url('assets/images/gallery/17.jpg')"></div>
+        </div>
+        <video class="hero-video-slot" muted playsinline preload="auto" src="assets/hero-media/video-1.mp4"></video>
+        <video class="hero-video-slot" muted playsinline preload="auto" src="assets/hero-media/video-2.mp4"></video>
+        <video class="hero-video-slot" muted playsinline preload="auto" src="assets/hero-media/video-3.mp4"></video>
+      </div>
+      <div class="hero-collage hero-collage-bottom">
+        <div class="hero-collage-cell" style="background-image: url('assets/images/gallery/19.jpg')"></div>
+        <div class="hero-collage-cell" style="background-image: url('assets/images/gallery/24.jpg')"></div>
+        <div class="hero-collage-cell" style="background-image: url('assets/images/gallery/couple-cheers-bridge.jpg')"></div>
+        <div class="hero-collage-cell" style="background-image: url('assets/images/gallery/21.jpg')"></div>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-navy-dark/60 via-navy-dark/20 to-transparent pointer-events-none"></div>
     </div>
   </section>
 
@@ -446,7 +467,7 @@
         </div>
         <div class="mt-5 text-center space-y-1">
           <!-- Gündüz turu gizli <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><span data-i18n="boarding.time.day">Day Cruise: Boarding 10:00 · Departure 10:30</span></p> -->
-          <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20M6 14a6 6 0 0112 0"/><path d="M12 6v2M5.64 9.64l1.41 1.41M18.36 9.64l-1.41 1.41"/></svg><span data-i18n="boarding.time.sunset">Sunset Cruise: Boarding 17:00 · Departure 17:15</span></p>
+          <!-- Sunset banner REMOVED 2026-04-20. Restore: docs/sunset-active-snapshot.md -->
           <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg><span data-i18n="boarding.time.night">Night Cruise: Boarding 20:00 · Departure 21:00</span></p>
           <p class="text-gold/60 text-xs font-medium mt-1 flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="boarding.time.pier">Kabataş Pier</span></p>
         </div>
@@ -482,10 +503,9 @@
           </div>
         </div>
 
-        <p class="text-white/50 mb-6 max-w-md mx-auto text-sm" data-i18n="last.desc">Our team can check same-day availability for you in seconds. Message us on WhatsApp — we respond instantly, 24/7.</p>
+        <p class="text-white/50 mb-6 max-w-md mx-auto text-sm" data-i18n="last.desc">Our team can check same-day availability for you in seconds. Message us — we respond instantly, 24/7.</p>
         <a href="https://wa.me/905325201700?text=Hi%2C%20is%20there%20availability%20for%20tonight%27s%20cruise%3F" class="btn-gold inline-flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold" target="_blank">
-          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          <span data-i18n="last.cta">Ask for Tonight's Availability</span>
+          <span data-i18n="last.cta">Explore & Book</span>
         </a>
 
         <!-- Summary info line -->
@@ -542,52 +562,7 @@
 
 
   <!-- Panel 2: SUNSET — Yazı SAĞDA -->
-  <section id="tour-sunset" class="relative py-12 lg:py-0 lg:min-h-[80vh] overflow-hidden">
-    <div class="w-full px-0">
-      <div class="grid lg:grid-cols-12 gap-0 items-center">
-        <div class="lg:col-span-7 grid grid-cols-2 gap-0 order-2 lg:order-1">
-          <div class="overflow-hidden h-44 lg:h-[42vh] diag-right col-span-2"><img id="hero-img-sunset" src="" alt="" class="w-full h-full object-cover transition-all duration-500" data-tour-key="sunset" data-img-type="side" data-img-idx="0"></div>
-          <div class="overflow-hidden h-32 lg:h-[36vh] diag-right-sm"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="side" data-img-idx="1"></div>
-          <div class="overflow-hidden h-32 lg:h-[36vh] diag-left-sm"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="side" data-img-idx="2"></div>
-        </div>
-        <div class="lg:col-span-5 relative z-10 py-8 lg:py-16 px-6 lg:pr-12 lg:pl-8 order-1 lg:order-2">
-          <div class="grid grid-cols-2 gap-0 mb-5">
-            <div class="overflow-hidden h-24 lg:h-32 diag-right-sm"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="top" data-img-idx="0"></div>
-            <div class="overflow-hidden h-24 lg:h-32 diag-left-sm"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="top" data-img-idx="1"></div>
-          </div>
-          <div class="inline-flex items-center gap-2 mb-2">
-            <span class="text-gold/60 text-sm font-medium tracking-wider uppercase" data-i18n="tour.sunset.label">Dinner & Show</span>
-            <span class="bg-gradient-to-r from-orange-500 to-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase" data-i18n="tour.popular">Popular</span>
-          </div>
-          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-3">
-            <span data-i18n="tour.sunset.title1">Sunset</span> <span class="text-gold" data-i18n="tour.sunset.title2">Cruise</span>
-          </h2>
-          <p class="text-white/50 text-base lg:text-lg mb-5 leading-relaxed" data-i18n="tour.sunset.desc">Watch the sun set over the Bosphorus while enjoying dinner and live entertainment. The golden hour on the water is unforgettable.</p>
-          <div id="pills-sunset" class="flex flex-wrap gap-2 mb-2"></div>
-          <p class="pill-desc text-gold/70 text-xs mb-4 h-4" data-tour="sunset"></p>
-          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-5">
-            <div>
-              <span class="text-white/40 text-sm" data-i18n="booking.from">From</span>
-              <span class="text-gold text-3xl font-display font-bold ml-2">€35</span>
-              <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
-            </div>
-            <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="sunset">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              <span data-i18n="tour.explore">Explore & Book</span>
-            </button>
-          </div>
-          <div class="grid grid-cols-3 gap-0">
-            <div class="overflow-hidden h-16 lg:h-20 diag-top-right"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="bottom" data-img-idx="0"></div>
-            <div class="overflow-hidden h-16 lg:h-20"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="bottom" data-img-idx="1"></div>
-            <div class="overflow-hidden h-16 lg:h-20 diag-top-left"><img src="" alt="" class="tour-panel-img w-full h-full object-cover" data-tour-key="sunset" data-img-type="bottom" data-img-idx="2"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent"></div>
-
+  <!-- Sunset hero panel REMOVED 2026-04-20 — restore source: docs/sunset-active-snapshot.md -->
 
   <!-- Panel 3: DINNER — Yazı SOLDA -->
   <section id="tour-dinner" class="relative py-12 lg:py-0 lg:min-h-[80vh] overflow-hidden">
@@ -613,7 +588,6 @@
               <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
             </div>
             <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="dinner">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
               <span data-i18n="tour.explore">Explore & Book</span>
             </button>
           </div>
@@ -639,7 +613,7 @@
       <div class="text-center mb-6 scroll-reveal">
         <span class="text-gold text-sm font-medium tracking-wider uppercase" data-i18n="how.label">Simple Booking</span>
         <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-2" data-i18n="how.title">How It Works</h2>
-        <p class="text-white/40 text-base mt-2" data-i18n="how.subtitle">Just Call or Write on WhatsApp. We Handle the Rest.</p>
+        <p class="text-white/40 text-base mt-2" data-i18n="how.subtitle">Write or call us. We'll handle the rest.</p>
       </div>
 
       <div class="space-y-0">
@@ -649,8 +623,8 @@
             <span class="font-display text-6xl lg:text-8xl font-bold text-gold/40 leading-none">01</span>
           </div>
           <div class="pt-2 lg:pt-4 border-l-2 border-gold/25 pl-6 lg:pl-10">
-            <h4 class="font-display text-xl lg:text-2xl font-bold mb-2" data-i18n="boats.label">Choose Your Cruise</h4>
-            <p class="text-white/50 text-sm lg:text-base leading-relaxed" data-i18n="how.s1.desc">Pick your preferred boat, date, and package from our curated selection.</p>
+            <h4 class="font-display text-xl lg:text-2xl font-bold mb-2" data-i18n="how.s1.title">Share Booking Details</h4>
+            <p class="text-white/50 text-sm lg:text-base leading-relaxed" data-i18n="how.s1.desc">Tell us the date, number of guests, and package (Standard or VIP).</p>
           </div>
         </div>
 
@@ -664,7 +638,7 @@
           </div>
           <div class="pt-2 lg:pt-4 border-l-2 border-gold/25 pl-6 lg:pl-10">
             <h4 class="font-display text-xl lg:text-2xl font-bold mb-2" data-i18n="how.s2.title">Write, Call, or We'll Call You</h4>
-            <p class="text-white/50 text-sm lg:text-base leading-relaxed" data-i18n="how.s2.desc">Message us on WhatsApp, give us a call, or leave your number — we'll get back to you instantly.</p>
+            <p class="text-white/50 text-sm lg:text-base leading-relaxed" data-i18n="how.s2.desc">Message or call — whatever works for you. We respond quickly.</p>
           </div>
         </div>
 
@@ -726,153 +700,18 @@
   <!-- ========== BOATS ========== -->
   <section id="boats" class="py-8 lg:py-12">
     <div class="max-w-7xl mx-auto px-4">
-      <!-- Section Header -->
-      <div class="text-center mb-6 scroll-reveal">
-        <span class="text-gold text-sm font-medium tracking-wider uppercase" data-i18n="boats.label">Choose Your Cruise</span>
-        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-3 mb-4" data-i18n="boats.title">Choose Your Experience</h2>
-        <p class="text-white/60 max-w-xl mx-auto" data-i18n="boats.desc">Three ways to experience the Bosphorus. Pick the one that fits your mood.</p>
-      </div>
+      <!-- "Choose Your Experience" header + Tour Cards grid (Sunset + Dinner mini cards) REMOVED 2026-04-20 -->
+      <!-- Restore: docs/sunset-active-snapshot.md. When Sunset/Daytime return, reinstate header + grid. -->
 
-      <!-- Tour Cards -->
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
-
-        <!-- Tour 1: Daytime (GİZLİ) -->
-        <div class="boat-card glass-card rounded-2xl overflow-hidden cursor-pointer group scroll-reveal flex flex-col hidden" data-boat="daytime">
-          <div class="relative h-56 overflow-hidden">
-            <img src="assets/tours/daytime/boat-panorama.jpg" alt="Daytime Cruise" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <svg class="w-7 h-7 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-            </div>
-            <div class="absolute top-4 right-4 bg-navy-dark/70 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span class="text-white text-xs font-medium">12:00 · 1.5h</span>
-            </div>
-          </div>
-          <div class="p-6 pb-4 flex-1 flex flex-col">
-            <h3 class="font-display text-xl font-bold mb-2" data-i18n="tour.daytime.title1">Daytime Cruise</h3>
-            <p class="text-white/60 text-sm mb-3" data-i18n="boats.daytime.desc">Scenic Bosphorus sightseeing under the sunlight. Maiden's Tower, palaces, and bridges.</p>
-            <div class="mt-auto pt-2">
-              <span class="text-gold text-sm font-medium" data-i18n="boats.viewpkg">View Packages →</span>
-            </div>
-          </div>
-          <div class="bg-gold/10 border-t border-gold/20 px-6 py-4">
-            <div class="flex items-center justify-between">
-              <span class="text-white/70 text-sm font-medium" data-i18n="booking.from">From</span>
-              <span class="text-gold text-2xl font-display font-bold">€20 <span class="text-white/40 text-xs font-body font-normal" data-i18n="booking.perPerson">/ person</span></span>
-            </div>
-          </div>
-          <div class="px-6 py-3">
-            <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-              <span class="text-[9px] text-white/30 uppercase tracking-wider mr-0.5">Standart:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Sightseeing</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Soft Drinks</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <span class="text-[9px] text-gold/40 uppercase tracking-wider mr-0.5">Opsiyonel:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/10 text-gold/50 border border-gold/20">+Transfer</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tour 2: Sunset -->
-        <div class="boat-card glass-card rounded-2xl overflow-hidden cursor-pointer group scroll-reveal relative flex flex-col" data-boat="sunset">
-          <div class="relative h-56 overflow-hidden">
-            <img src="assets/tours/sunset/amor-sunset-golden.jpg" alt="Sunset Cruise" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <svg class="w-7 h-7 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20M6 14a6 6 0 0112 0"/><path d="M12 6v2M5.64 9.64l1.41 1.41M18.36 9.64l-1.41 1.41"/></svg>
-            </div>
-            <div class="absolute top-4 right-4 bg-navy-dark/70 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span class="text-white text-xs font-medium">17:30 · 3h</span>
-            </div>
-          </div>
-          <div class="p-6 pb-4 flex-1 flex flex-col">
-            <h3 class="font-display text-xl font-bold mb-2" data-i18n="tour.sunset.title1">Sunset Cruise</h3>
-            <p class="text-white/60 text-sm mb-3" data-i18n="boats.sunset.desc">Golden hour dinner cruise with live entertainment as the sun sets over the Bosphorus.</p>
-            <div class="mt-auto pt-2">
-              <span class="text-gold text-sm font-medium" data-i18n="boats.viewpkg">View Packages →</span>
-            </div>
-          </div>
-          <div class="bg-gold/10 border-t border-gold/20 px-6 py-4">
-            <div class="flex items-center justify-between">
-              <span class="text-white/70 text-sm font-medium" data-i18n="booking.from">From</span>
-              <span class="text-gold text-2xl font-display font-bold">€35 <span class="text-white/40 text-xs font-body font-normal" data-i18n="booking.perPerson">/ person</span></span>
-            </div>
-          </div>
-          <div class="px-6 py-3">
-            <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-              <span class="text-[9px] text-white/30 uppercase tracking-wider mr-0.5">Standart:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Dinner</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Live Show</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <span class="text-[9px] text-gold/40 uppercase tracking-wider mr-0.5">Opsiyonel:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/10 text-gold/50 border border-gold/20">+Alcohol</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/10 text-gold/50 border border-gold/20">+Transfer</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tour 3: Dinner -->
-        <div class="boat-card glass-card rounded-2xl overflow-hidden cursor-pointer group scroll-reveal flex flex-col border-gold/30 shadow-[0_0_30px_rgba(201,168,76,0.15)]" data-boat="dinner">
-          <div class="relative h-56 overflow-hidden">
-            <img src="assets/tours/dinner/boat-night-bridge.jpg" alt="Dinner Cruise" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" loading="lazy">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-4">
-              <svg class="w-7 h-7 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg>
-            </div>
-            <div class="absolute top-4 right-4 bg-navy-dark/70 backdrop-blur-sm px-3 py-1.5 rounded-full flex items-center gap-1.5">
-              <svg class="w-3.5 h-3.5 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-              <span class="text-white text-xs font-medium">21:00 · 3h</span>
-            </div>
-            <!-- Most Popular ribbon -->
-            <div class="absolute top-5 -left-2 z-10">
-              <div class="px-5 py-1.5 shadow-lg border border-yellow-200/60" style="background: linear-gradient(135deg, #d4b86a, #f0e0a0, #d4b86a); clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);">
-                <span class="text-navy-dark text-xs font-bold uppercase tracking-wider drop-shadow-sm">★ Most Popular</span>
-              </div>
-              <div class="w-2 h-2" style="background: #b8953f; clip-path: polygon(100% 0, 0 0, 100% 100%);"></div>
-            </div>
-          </div>
-          <div class="p-6 pb-4 flex-1 flex flex-col">
-            <h3 class="font-display text-xl font-bold mb-2" data-i18n="tour.dinner.title1">Dinner Cruise</h3>
-            <p class="text-white/60 text-sm mb-3" data-i18n="boats.dinner.desc">The ultimate night experience. Dinner, live shows, and Istanbul's illuminated skyline.</p>
-            <div class="mt-auto pt-2">
-              <span class="text-gold text-sm font-medium" data-i18n="boats.viewpkg">View Packages →</span>
-            </div>
-          </div>
-          <div class="bg-gold/10 border-t border-gold/20 px-6 py-4">
-            <div class="flex items-center justify-between">
-              <span class="text-white/70 text-sm font-medium" data-i18n="booking.from">From</span>
-              <span class="text-gold text-2xl font-display font-bold"><span class="text-white/30 text-sm line-through font-normal mr-1">€40</span>€24 <span class="text-white/40 text-xs font-body font-normal" data-i18n="booking.perPerson">/ person</span></span>
-            </div>
-          </div>
-          <div class="px-6 py-3">
-            <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-              <span class="text-[9px] text-white/30 uppercase tracking-wider mr-0.5">Standart:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Dinner</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Live Show</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-white/5 text-white/40 border border-white/10">Night Views</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-1.5">
-              <span class="text-[9px] text-gold/40 uppercase tracking-wider mr-0.5">Opsiyonel:</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/10 text-gold/50 border border-gold/20">+Alcohol</span>
-              <span class="text-[10px] px-2 py-0.5 rounded-full bg-gold/10 text-gold/50 border border-gold/20">+Transfer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- ========== PACKAGES (revealed on boat click) ========== -->
-      <div id="packages" class="mt-12 hidden">
+      <!-- ========== PACKAGES (default visible — direct dinner focus) ========== -->
+      <div id="packages" class="mt-0">
         <div class="text-center mb-10">
           <h3 class="font-display text-2xl sm:text-3xl font-bold">
             <span id="selectedBoatName" class="hidden">Dinner Cruise</span><span data-i18n="pkg.choose">Choose Your Package</span>
           </h3>
         </div>
 
-        <div id="dinnerPackagesGrid" class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto hidden">
+        <div id="dinnerPackagesGrid" class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
 
           <!-- Standard Package -->
           <div class="package-card glass-card rounded-2xl p-6 flex flex-col relative overflow-hidden bg-[#152240]">
@@ -884,7 +723,6 @@
               <div class="flex flex-wrap gap-1.5 mb-4 text-[10px]">
                 <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">3hrs · 21:00</span>
                 <span class="text-gold/60 bg-gold/5 px-2 py-0.5 rounded-full border border-gold/10" data-i18n="dinner.privateTable">Private table</span>
-                <span class="text-green-400/60 bg-green-500/5 px-2 py-0.5 rounded-full border border-green-500/10" data-i18n="dinner.freeCancel">Free cancel 2hrs</span>
                 <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10" data-i18n="dinner.halalTax">Halal · All taxes incl.</span>
               </div>
               <div class="mb-4">
@@ -892,7 +730,7 @@
                 <ul class="space-y-1 text-xs text-white/60">
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item1">10 varieties of Turkish meze</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item2">Warm appetizer: crispy pastry rolls with cured beef & cheese</span></li>
-                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item3">Main course with seasonal salad: salmon, sea bream, chicken, or meatball</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item3">Main course (with seasonal salad, choose one): salmon, sea bream, chicken, meatball, or vegetarian platter (falafel, roasted potatoes, bulgur pilaf, stewed vegetables & onion rings)</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item4">Dessert: ice cream cake</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item5">Unlimited soft drinks</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.std.item6">Whirling Dervish show, 5 folk dances, belly dance, live music & DJ</span></li>
@@ -936,20 +774,18 @@
           <!-- VIP Package -->
           <div class="package-card glass-card rounded-2xl p-6 flex flex-col ring-2 ring-gold/50 relative overflow-hidden bg-[#152240]">
             <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/boat-night-bridge.jpg')"></div>
-            <div class="absolute top-5 -left-2 z-20">
-              <div class="px-5 py-1.5 shadow-lg border border-yellow-200/60" style="background: linear-gradient(135deg, #d4b86a, #f0e0a0, #d4b86a); clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 z-20">
+              <div class="px-5 py-1.5 shadow-lg border border-yellow-200/60 rounded-b-lg" style="background: linear-gradient(135deg, #d4b86a, #f0e0a0, #d4b86a);">
                 <span class="text-[#0b1120] text-xs font-bold uppercase tracking-wider drop-shadow-sm" data-i18n="dinner.mostPopular">Most Popular</span>
               </div>
-              <div class="w-2 h-2" style="background: #b8953f; clip-path: polygon(100% 0, 0 0, 100% 100%);"></div>
             </div>
             <div class="absolute top-4 right-4 z-20 bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">40% OFF</div>
             <div class="relative z-10 flex flex-col flex-1">
-              <h4 class="font-display text-xl font-bold mb-2 mt-4" data-i18n="dinner.vip.title">VIP Dinner Cruise</h4>
+              <h4 class="font-display text-xl font-bold mb-2" data-i18n="dinner.vip.title">VIP Dinner Cruise</h4>
               <p class="text-white/40 text-xs mb-3" data-i18n="dinner.vip.desc">Premium dining at the best table near the stage. Upgraded menu with premium mezes, steak options, and VIP service throughout the night.</p>
               <div class="flex flex-wrap gap-1.5 mb-4 text-[10px]">
                 <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10">3hrs · 21:00</span>
                 <span class="text-gold/60 bg-gold/5 px-2 py-0.5 rounded-full border border-gold/10" data-i18n="dinner.nearStage">Near the stage</span>
-                <span class="text-green-400/60 bg-green-500/5 px-2 py-0.5 rounded-full border border-green-500/10" data-i18n="dinner.freeCancel">Free cancel 2hrs</span>
                 <span class="text-white/40 bg-white/5 px-2 py-0.5 rounded-full border border-white/10" data-i18n="dinner.halalTax">Halal · All taxes incl.</span>
               </div>
               <div class="mb-4">
@@ -957,7 +793,7 @@
                 <ul class="space-y-1 text-xs text-white/60">
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item1">15+ varieties of Turkish meze, served as a traditional spread</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item2">Warm appetizer: crispy pastry rolls with cured beef & cheese</span></li>
-                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item3">Main course with seasonal salad (choose one): salmon, sea bream, chicken, meatball, rib-eye steak, or beef steak</span></li>
+                  <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item3">Main course (with seasonal salad, choose one): salmon, sea bream, chicken, meatball, beef tenderloin, rib-eye, or vegetarian platter (falafel, roasted potatoes, bulgur pilaf, stewed vegetables & onion rings)</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item4">Dessert: ice cream cake</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item5">Unlimited soft drinks</span></li>
                   <li class="flex items-start gap-1.5"><span class="text-gold text-[10px] mt-0.5">✓</span> <span data-i18n="dinner.vip.item6">Whirling Dervish show, 5 folk dances, belly dance, live music & DJ</span></li>
@@ -987,7 +823,7 @@
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-gold/20">
                 <div>
-                  <span class="text-white/30 text-xs line-through">€90</span>
+                  <span class="text-white/30 text-xs line-through">€92</span>
                   <span class="text-gold text-3xl font-bold font-display ml-1">€55</span>
                   <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
                 </div>
@@ -1000,7 +836,7 @@
         </div>
 
         <!-- Cruise Route + Know Before You Go (dinner cruise only) -->
-        <div id="dinnerInfoSection" class="max-w-4xl mx-auto mt-10 hidden">
+        <div id="dinnerInfoSection" class="max-w-4xl mx-auto mt-10">
 
           <!-- Cruise Route -->
           <div class="bg-[#152240] rounded-2xl p-6 border border-white/5 mb-6">
@@ -1026,7 +862,9 @@
               <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               <span class="text-sm text-white/50">Beylerbeyi Palace</span>
               <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-              <span class="text-sm text-white/50">Maiden's Tower</span>
+              <span class="text-sm text-white/50">Üsküdar</span>
+              <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-sm text-white/40 italic">Maiden's Tower <span class="text-white/30 text-[10px]">(visible from distance)</span></span>
               <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
               <span class="inline-flex items-center gap-1.5 text-sm text-white/70">
                 <span class="w-2 h-2 rounded-full bg-gold"></span>Kabataş Pier
@@ -1042,7 +880,7 @@
               <svg class="w-5 h-5 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
               <div>
                 <p class="text-white text-sm font-medium">Kabataş Pier, Istanbul</p>
-                <p class="text-white/40 text-xs mt-1">Exact meeting location will be shared via WhatsApp after booking.</p>
+                <p class="text-white/40 text-xs mt-1" data-i18n="meeting.share">Exact meeting location will be shared via WhatsApp, Telegram or WeChat after booking.</p>
               </div>
             </div>
             <div class="rounded-xl overflow-hidden border border-white/10">
@@ -1067,10 +905,7 @@
                   <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
                   <span>Comfortable, casual attire — <strong class="text-white/80">it can get cool on deck</strong>, bring a light jacket</span>
                 </li>
-                <li class="flex items-start gap-2">
-                  <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                  <span>Vegetarian, pescetarian and <strong class="text-white/80">halal dietary options</strong> available — let us know when booking</span>
-                </li>
+                <!-- Dietary options line removed 2026-04-20 (vegetarian is in package menu; halal is a package tag) -->
                 <li class="flex items-start gap-2">
                   <svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
                   <span><strong class="text-white/80">No prepayment required</strong> — pay on the boat (cash or card)</span>
@@ -1087,91 +922,21 @@
                     <span class="text-red-400">✕</span> Pets
                   </li>
                   <li class="flex items-center gap-2">
-                    <span class="text-red-400">✕</span> Outside food & beverages
-                  </li>
-                  <li class="flex items-center gap-2">
                     <span class="text-red-400">✕</span> Smoking indoors
                   </li>
                 </ul>
               </div>
 
               <div class="bg-[#152240] rounded-2xl p-6 border border-white/5">
-                <h3 class="font-display text-lg font-bold text-gold mb-3">Drop-off</h3>
-                <p class="text-white/60 text-sm">All guests are dropped off at <strong class="text-white/80">Kabataş Pier</strong> at approximately 23:30. If you booked hotel transfer, you will be driven back to your hotel after the cruise.</p>
+                <h3 class="font-display text-lg font-bold text-gold mb-3" data-i18n="dropoff.title">Drop-off</h3>
+                <p class="text-white/60 text-sm" data-i18n="dropoff.desc">All guests are dropped off at <strong class="text-white/80">Kabataş Pier</strong> between 23:30 and 00:00. If you booked hotel transfer, the same driver who picked you up will be waiting at the pier to take you back to your hotel.</p>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Original 3-column packages for daytime/sunset tours -->
-        <div id="defaultPackagesGrid" class="grid md:grid-cols-3 gap-6 lg:gap-8">
-
-          <!-- Standard -->
-          <div class="package-card glass-card rounded-2xl p-6 lg:p-8 flex flex-col relative overflow-hidden">
-            <div class="absolute inset-0 opacity-[0.07] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/meze.jpg')"></div>
-            <div class="relative z-10 flex flex-col flex-1">
-              <h4 class="font-display text-lg font-bold mb-1" data-i18n="pkg.std.name">Standard</h4>
-              <div class="flex items-baseline gap-1 mb-5">
-                <span class="text-3xl font-bold text-gold package-price">€35</span>
-                <span class="text-white/40 text-sm">/ person</span>
-              </div>
-              <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.dinner">Dinner — 10 meze + salad + main course + dessert</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.table">Private table</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
-              </ul>
-              <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="Standard" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-            </div>
-          </div>
-
-          <!-- Premium -->
-          <div class="package-card glass-card rounded-2xl p-6 lg:p-8 flex flex-col ring-2 ring-gold/50 relative overflow-hidden">
-            <div class="absolute inset-0 opacity-[0.07] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/meze-plate.jpg')"></div>
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 z-20 bg-gold text-navy-dark text-sm font-bold px-5 py-1.5 rounded-b-full shadow-lg tracking-wide" data-i18n="pkg.bestValue">Best Value</div>
-            <div class="relative z-10 flex flex-col flex-1">
-              <h4 class="font-display text-lg font-bold mb-1" data-i18n="pkg.prem.name">Premium</h4>
-              <div class="flex items-baseline gap-1 mb-5">
-                <span class="text-3xl font-bold text-gold package-price">€50</span>
-                <span class="text-white/40 text-sm">/ person</span>
-              </div>
-              <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.dinner">Dinner — 10 meze + salad + main course + dessert</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
-                <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.tablePrem">Private table — stage view or window seat</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
-              </ul>
-              <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="Premium" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-            </div>
-          </div>
-
-          <!-- VIP -->
-          <div class="package-card glass-card rounded-2xl p-6 lg:p-8 flex flex-col relative overflow-hidden">
-            <div class="absolute inset-0 opacity-[0.07] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/boat-night-bridge.jpg')"></div>
-            <div class="relative z-10 flex flex-col flex-1">
-              <h4 class="font-display text-lg font-bold mb-1" data-i18n="pkg.vip.name">VIP</h4>
-              <div class="flex items-baseline gap-1 mb-5">
-                <span class="text-3xl font-bold text-gold package-price">€70</span>
-                <span class="text-white/40 text-sm">/ person</span>
-              </div>
-              <ul class="space-y-2.5 mb-5 flex-grow">
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.cruise">3-hour Bosphorus night cruise</span></li>
-                <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.dinnerVip">VIP menu — premium meze, mixed grill & special dishes</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.drinks">Unlimited soft drinks</span></li>
-                <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.tableVip">Private VIP table — best location</span></li>
-                <li class="flex items-start gap-2 text-sm text-white/70"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span data-i18n="pkg.feat.show">Live entertainment & Turkish night show</span></li>
-                <li class="flex items-start gap-2 text-sm text-white"><svg class="w-4 h-4 text-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="font-medium" data-i18n="pkg.feat.priority">Priority boarding & VIP service</span></li>
-              </ul>
-              <a href="#" class="wa-book btn-gold text-center py-3 rounded-full font-semibold text-sm flex items-center justify-center gap-2" data-package="VIP" data-i18n="pkg.select">Select & Customize <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Note below packages -->
-        <p class="text-center text-white/40 text-xs mt-6">Meeting Point: Kabatas Pier | Transfer: Hotel pickup & drop-off included</p>
-        <p class="text-center text-white/30 text-xs mt-2" data-i18n="pkg.children">Children 0-3 age: Free  |  4-8 age: 50% off  |  9+ age: Full price · No prepayment required</p>
+        <!-- defaultPackagesGrid (3-tier Standard €35 / Premium €50 / VIP €70 for daytime+sunset) REMOVED 2026-04-20 -->
+        <!-- Restore: docs/sunset-active-snapshot.md — "DEFAULT PACKAGES GRID" section. Fiyatlar eski, güncelleme gerekir. -->
       </div>
     </div>
   </section>
@@ -1185,7 +950,7 @@
         <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mt-3" data-i18n="incl.title">What's Included</h2>
       </div>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto items-start">
         <!-- Cruise -->
         <div class="incl-item glass-card rounded-xl p-4 cursor-pointer scroll-reveal" data-incl="cruise">
           <div class="flex items-start gap-4">
@@ -1200,7 +965,7 @@
               <p class="text-white/50 text-sm" data-i18n="incl.cruise.desc">3-hour cruise with iconic Istanbul views</p>
             </div>
           </div>
-          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.cruise.detail">Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 21:00, returns at 23:30.</div>
+          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.cruise.detail">Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 21:00, returns between 23:30 and 00:00.</div>
         </div>
 
         <!-- Dinner -->
@@ -1251,7 +1016,7 @@
               <p class="text-white/50 text-sm" data-i18n="incl.transfer.desc">Optional pickup & drop-off from your hotel</p>
             </div>
           </div>
-          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.transfer.detail">Round-trip hotel pickup and drop-off available from Sultanahmet, Taksim, and Beyoğlu areas. Available as an add-on when booking. Mention your hotel location on WhatsApp.</div>
+          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.transfer.detail">Round-trip hotel pickup and drop-off available from Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu areas. Available as an add-on when booking. Please share your hotel location with us.</div>
         </div>
 
         <!-- Support -->
@@ -1265,10 +1030,10 @@
                 <h4 class="font-semibold mb-1" data-i18n="incl.support">7/24 Support</h4>
                 <svg class="incl-chevron w-4 h-4 text-gold/40 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
               </div>
-              <p class="text-white/50 text-sm" data-i18n="incl.support.desc">Instant WhatsApp support anytime</p>
+              <p class="text-white/50 text-sm" data-i18n="incl.support.desc">Instant support anytime</p>
             </div>
           </div>
-          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.support.detail">We're with you before, during, and after your cruise. Message or call us on WhatsApp anytime — we respond instantly, 7 days a week, 24 hours a day.</div>
+          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.support.detail">We're with you before, during, and after your cruise. Message or call anytime — we respond instantly, 7 days a week, 24 hours a day.</div>
         </div>
 
         <!-- Special -->
@@ -1285,7 +1050,7 @@
               <p class="text-white/50 text-sm" data-i18n="incl.special.desc">Romantic table & birthday celebrations</p>
             </div>
           </div>
-          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.special.detail">Celebrating something special? We offer romantic table setup with candles & flowers (+€15) and birthday celebrations. Tell us on WhatsApp!</div>
+          <div class="incl-detail hidden mt-3 pl-16 text-white/40 text-xs leading-relaxed border-t border-white/5 pt-3" data-i18n="incl.special.detail">Celebrating something special? We offer romantic table setup with candles & flowers (+€15) and birthday celebrations. Tell us!</div>
         </div>
       </div>
     </div>
@@ -2308,7 +2073,7 @@
             <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
           </div>
           <h4 class="font-display text-lg font-bold mb-2 text-gold" data-i18n="why.before">Before</h4>
-          <p class="text-white/60 text-sm" data-i18n="why.before.desc">We help you choose the perfect package, answer all your questions, and confirm your reservation — all on WhatsApp.</p>
+          <p class="text-white/60 text-sm" data-i18n="why.before.desc">We help you choose the perfect package, answer all your questions, and confirm your reservation.</p>
         </div>
         <!-- During -->
         <div class="glass-card rounded-2xl p-8 text-center scroll-reveal">
@@ -2373,7 +2138,7 @@
         </div>
         <div class="mt-5 text-center space-y-1">
           <!-- Gündüz turu gizli <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><span data-i18n="arrival.time.day">Day Cruise: Return ~12:30</span></p> -->
-          <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20M6 14a6 6 0 0112 0"/><path d="M12 6v2M5.64 9.64l1.41 1.41M18.36 9.64l-1.41 1.41"/></svg><span data-i18n="arrival.time.sunset">Sunset Cruise: Return ~19:30</span></p>
+          <!-- Sunset arrival REMOVED 2026-04-20. Restore: docs/sunset-active-snapshot.md -->
           <p class="text-gold/50 text-xs flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg><span data-i18n="arrival.time.night">Night Cruise: Return ~23:30</span></p>
           <p class="text-gold/60 text-xs font-medium mt-1 flex items-center justify-center gap-1"><svg class="w-3 h-3 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-i18n="arrival.time.pier">Kabataş Pier</span></p>
         </div>
@@ -2397,7 +2162,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a0">We offer three Bosphorus cruise experiences: <strong class="text-white/80">Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong class="text-white/80">Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong class="text-white/80">Dinner Cruise</strong> (21:00, 3 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a0">We offer the <strong class="text-white/80">Bosphorus Dinner Cruise</strong> (21:00, 3 hours — full dinner, Turkish night show with Whirling Dervish, belly dance, folk dances, live music and DJ, plus stunning night views). Departs from Kabataş Pier.</p>
           </div>
         </div>
 
@@ -2419,7 +2184,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a2">All packages include soft drinks. You can add an unlimited alcohol package for just +€10 per person. This can be arranged during booking on WhatsApp.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a2">All packages include soft (non-alcoholic) drinks. You can add 2 glasses of alcohol for +€15 per person, or an unlimited local alcohol package for +€30 per person. The local package covers vodka, gin, rakı, red and white wine. Imported spirits (whiskey, cognac) are charged separately.</p>
           </div>
         </div>
 
@@ -2430,7 +2195,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a3">Cruises depart from Kabataş pier at 21:00 and return to the same location at 23:30 (3-hour cruise). The exact meeting point will be shared on WhatsApp after booking.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a3">Cruises depart from Kabataş pier at 21:00 and return to the same location between 23:00 and 00:00 (3-hour cruise). The exact meeting point will be shared via WhatsApp / Telegram / WeChat after booking.</p>
           </div>
         </div>
 
@@ -2441,7 +2206,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a4">The cruise sails along the Bosphorus Strait, passing by iconic landmarks including Dolmabahçe Palace, Bosphorus Bridge, Maiden's Tower, Ortaköy Mosque, and more. You'll see Istanbul's stunning skyline illuminated at night from both the European and Asian sides.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a4">Kabataş Pier → Dolmabahçe Palace → Çırağan Palace → Ortaköy Mosque → Bosphorus Bridge → Bebek → Rumeli Fortress → FSM Bridge → Beylerbeyi Palace → Üsküdar → Maiden's Tower (visible from distance) → Kabataş Pier. Route is for reference only. Itinerary may vary due to weather or sea conditions.</p>
           </div>
         </div>
 
@@ -2452,7 +2217,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a5">It depends on your package. Premium tables are closer to the stage, and VIP tables have the best location with an unobstructed view. If stage proximity is important to you, let us know on WhatsApp and we'll arrange the best available spot.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a5">Our boat's dining hall has a panoramic Bosphorus view. No matter where you sit, you can enjoy the full view. The stage is also designed to be visible from every seat, so the shows can be watched easily. (VIP menus are seated closer to the stage.)</p>
           </div>
         </div>
 
@@ -2463,7 +2228,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a6">The cruise features live singer performances, a traditional Turkish Night show with folk dances, belly dance, and DJ music. Entertainment runs until 21:00, followed by a relaxing return cruise.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a6">The cruise features live singer performances, a traditional Turkish Night show with folk dances, belly dance, and DJ music. Entertainment continues uninterrupted until the end of the cruise.</p>
           </div>
         </div>
 
@@ -2474,7 +2239,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a7">Yes! Same-day bookings are available until 20:00 (1 hour before departure). Just message us on WhatsApp and we'll check availability instantly.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a7">Yes! Same-day bookings are available until 20:00 (1 hour before departure). Just message us and we'll check availability instantly.</p>
           </div>
         </div>
 
@@ -2496,7 +2261,7 @@
             <svg class="faq-icon w-5 h-5 text-gold flex-shrink-0 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="faq-content hidden px-6 pb-4">
-            <p class="text-white/60 text-sm" data-i18n="faq.a9">Yes! Hotel transfer is available as an optional add-on for +€10 per person. This includes both pickup from and drop-off to your hotel. Arrange it easily during booking on WhatsApp.</p>
+            <p class="text-white/60 text-sm" data-i18n="faq.a9">Yes! Hotel transfer is available for +€10 per person, including pickup and drop-off. Service areas: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu.</p>
           </div>
         </div>
 
@@ -2542,19 +2307,26 @@
 
   <!-- ========== FOOTER ========== -->
   <footer class="relative">
-    <!-- Footer top image strip -->
-    <div class="relative h-32 overflow-hidden">
-      <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1600&q=60" alt="Bosphorus Night" class="w-full h-full object-cover object-center">
-      <div class="absolute inset-0 bg-gradient-to-b from-[#0b1120] via-transparent to-[#070d18]"></div>
+    <!-- Footer parallax montage — 3 images soft-blended with centered tagline -->
+    <div class="relative h-24 lg:h-32 overflow-hidden">
+      <div class="footer-montage flex h-full">
+        <div class="montage-panel" style="background-image: url('assets/tours/dinner/boat-night-bridge.jpg')"></div>
+        <div class="montage-panel" style="background-image: url('assets/tours/dinner/dining-romantic.jpg')"></div>
+        <div class="montage-panel" style="background-image: url('assets/images/gallery/28.jpg')"></div>
+      </div>
+      <div class="absolute inset-0 bg-gradient-to-b from-[#0b1120] via-[#0b1120]/20 to-[#070d18]"></div>
+      <div class="absolute inset-0 flex items-center justify-center px-4">
+        <h3 class="font-display text-lg md:text-2xl lg:text-3xl font-bold text-gold text-center drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]" data-i18n="footer.tagline">Your Bosphorus Night Awaits</h3>
+      </div>
     </div>
 
-    <div class="bg-[#070d18] pt-10 pb-8 px-4">
+    <div class="bg-[#070d18] pt-4 pb-8 px-4">
       <div class="max-w-6xl mx-auto">
 
         <!-- Logo + Description + Social -->
-        <div class="text-center mb-10">
-          <a href="#" class="inline-block mb-3">
-            <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[160px] w-auto mx-auto">
+        <div class="text-center mb-6">
+          <a href="#" class="inline-block -mb-2">
+            <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[200px] w-auto mx-auto">
           </a>
           <p class="text-white/40 text-sm max-w-md mx-auto mb-5" data-i18n="footer.desc">We help you find the best cruise experience on the Bosphorus.</p>
           <!-- Social Icons -->
@@ -2597,7 +2369,7 @@
             <h5 class="font-semibold mb-3 text-xs uppercase tracking-wider text-gold/60" data-i18n="footer.popularTours">Popular Tours</h5>
             <ul class="space-y-2">
               <!-- <li><a href="/daytime-cruise" class="text-white/40 hover:text-gold text-sm transition-colors" data-i18n="footer.daytimeCruise">Bosphorus Daytime Cruise</a></li> -->
-              <li><a href="/sunset-cruise" class="text-white/40 hover:text-gold text-sm transition-colors" data-i18n="footer.sunsetCruise">Bosphorus Sunset Cruise</a></li>
+              <!-- Sunset footer link REMOVED 2026-04-20. Restore: docs/sunset-active-snapshot.md -->
               <li><a href="/dinner-cruise" class="text-white/40 hover:text-gold text-sm transition-colors" data-i18n="footer.dinnerCruise">Bosphorus Dinner Cruise</a></li>
               <li><a href="/last-minute-tonight" class="text-white/40 hover:text-gold text-sm transition-colors" data-i18n="footer.tonightCruise">Bosphorus Cruise Tonight</a></li>
             </ul>
@@ -2704,11 +2476,9 @@
       <div class="flex-shrink-0">
       <h3 class="font-display text-lg font-bold text-gold mb-2 text-center" data-i18n="booking.title">Book Your Cruise</h3>
 
-      <!-- Tour Type Selector -->
-      <div class="flex gap-1 mb-2 bg-white/5 rounded-xl p-1">
-        <!-- <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="daytime"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><span data-i18n="tour.daytime.short">Day</span></button> -->
-        <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="sunset"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 18h20M6 14a6 6 0 0112 0"/><path d="M12 6v2M5.64 9.64l1.41 1.41M18.36 9.64l-1.41 1.41"/></svg><span data-i18n="tour.sunset.short">Sunset</span></button>
-        <button class="tour-type-btn flex-1 text-xs py-2 rounded-lg transition-all text-white/50 flex items-center justify-center gap-1.5" data-tour-type="dinner"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/><circle cx="17" cy="5" r="1" fill="currentColor" stroke="none"/></svg><span data-i18n="tour.dinner.short">Dinner</span></button>
+      <!-- Tour Type Selector — REMOVED 2026-04-20 (only Dinner active). Restore: docs/sunset-active-snapshot.md -->
+      <div class="hidden" data-tour-type-selector>
+        <button class="tour-type-btn" data-tour-type="dinner"></button>
       </div>
       </div><!-- /SABİT ÜST KISIM -->
 
@@ -2860,8 +2630,8 @@
   </div>
 
   <!-- ========== MOBILE BOOKING SLIDE-UP PANEL ========== -->
-  <div id="mobileBookOverlay" onclick="closeMobilePanel()" class="lg:hidden fixed inset-0 z-[59] bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
-  <div id="mobileBookPanel" class="fixed bottom-0 left-0 z-[60] bg-[#0a0f1e] transform translate-y-full transition-transform duration-300 ease-out h-[100dvh] overflow-hidden flex flex-col w-full lg:top-0 lg:right-0 lg:left-auto lg:bottom-auto lg:w-[320px] lg:h-full lg:translate-y-0 lg:pt-10 lg:pb-2 lg:px-5 lg:z-[55] lg:bg-transparent">
+  <div id="mobileBookOverlay" onclick="closeMobilePanel()" class="fixed inset-0 z-[59] bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobileBookPanel" class="fixed bottom-0 left-0 z-[60] bg-[#0a0f1e] transform translate-y-full transition-transform duration-300 ease-out h-[100dvh] overflow-hidden flex flex-col w-full lg:top-0 lg:right-0 lg:left-auto lg:bottom-auto lg:w-[320px] lg:h-full lg:translate-y-0 lg:pt-10 lg:pb-2 lg:px-5 lg:z-[60] lg:bg-transparent">
     <div class="flex flex-col h-full lg:bg-[#0a0f1e]/95 lg:backdrop-blur-xl lg:border lg:border-gold/15 lg:rounded-2xl lg:shadow-2xl lg:shadow-black/50 lg:relative lg:overflow-hidden lg:h-full">
       <!-- Desktop background image — covers entire card including bottom bar -->
       <div id="wizPanelBg" class="booking-panel-bg max-lg:hidden" style="z-index:0;"></div>
@@ -2876,7 +2646,7 @@
         <span class="w-px h-6 bg-white/15 -ml-5 lg:hidden"></span>
         <h3 class="font-display text-sm lg:text-base font-bold text-gold mt-2" data-i18n="booking.title">Book Your Cruise</h3>
       </div>
-      <button id="mobileBookClose" onclick="closeMobilePanel()" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors" aria-label="Close">
+      <button id="mobileBookClose" onclick="closeMobilePanel()" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 text-white transition-colors lg:absolute lg:top-3 lg:right-3 lg:z-20 lg:w-9 lg:h-9" aria-label="Close">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </div>

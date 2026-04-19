@@ -27,7 +27,7 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (T[key] && T[key][lang]) {
-      if (key.startsWith('faq.a')) {
+      if (key.startsWith('faq.a') || key === 'dropoff.desc' || key.startsWith('incl.') && key.endsWith('.detail')) {
         el.innerHTML = T[key][lang];
       } else {
         el.textContent = T[key][lang];
@@ -346,50 +346,47 @@ function initSmoothScroll() {
 }
 
 // ========== LIVE BOOKING COUNT ==========
+// 24h cycle starting at 20:00 the previous day:
+//   - 20:00: count = that day's START value (never 0)
+//   - 20:00 prev day → 20:00 tour day: grows from start to max (ease-in)
+//   - At 20:00 tour day: hits max, then cycle flips to next day's start
 function initBookingCount() {
   const el = document.getElementById('booking-count');
   if (!el) return;
 
-  // Max per day (0=Sun, 1=Mon, ..., 6=Sat)
-  const dailyMax = [89, 72, 68, 81, 77, 93, 98];
-  const now = new Date();
-  const day = now.getDay();
-  const hour = now.getHours();
-  const minute = now.getMinutes();
-  const max = dailyMax[day];
+  // 0=Sun, 1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri, 6=Sat
+  const dailyStart = [9, 11, 7, 16, 13, 18, 21];
+  const dailyMax   = [116, 87, 93, 104, 88, 119, 129];
 
-  // After 19:00 — show max (full)
-  if (hour >= 19) {
-    el.textContent = max;
-    return;
+  function computeCount() {
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const currentDay = now.getDay();
+
+    let tourDay;
+    let cycleMinutes;
+
+    if (hour >= 20) {
+      tourDay = (currentDay + 1) % 7;
+      cycleMinutes = (hour - 20) * 60 + minute;
+    } else {
+      tourDay = currentDay;
+      cycleMinutes = 4 * 60 + hour * 60 + minute;
+    }
+
+    const start = dailyStart[tourDay];
+    const max = dailyMax[tourDay];
+    const progress = cycleMinutes / 1440;
+    const eased = Math.pow(progress, 1.6);
+    return Math.floor(start + eased * (max - start));
   }
 
-  // Before 08:00 — show 0
-  if (hour < 8) {
-    el.textContent = '0';
-    return;
-  }
+  el.textContent = computeCount();
 
-  // 08:00 to 19:00 — gradual increase
-  const totalMinutes = (hour - 8) * 60 + minute; // minutes since 08:00
-  const maxMinutes = 11 * 60; // 08:00 to 19:00 = 660 min
-  const progress = totalMinutes / maxMinutes;
-
-  // Ease-in curve — starts slow, accelerates toward evening
-  const eased = Math.pow(progress, 1.4);
-  const current = Math.floor(eased * max);
-
-  el.textContent = current;
-
-  // Increment every 2-3 minutes
+  // Refresh every 60s so the 20:00 reset is caught quickly
   setInterval(() => {
-    const now2 = new Date();
-    const h = now2.getHours();
-    const m = now2.getMinutes();
-    if (h >= 19) return;
-    const t = (h - 8) * 60 + m;
-    const p = Math.pow(t / maxMinutes, 1.4);
-    el.textContent = Math.floor(p * max);
+    el.textContent = computeCount();
   }, 150000); // 2.5 minutes
 }
 
@@ -573,14 +570,24 @@ function initTourPanels() {
     });
   });
 
-  // Explore buttons → click the matching boat card to trigger full selection
+  // Explore buttons → scroll to packages section (Paketinizi Seçin)
   document.querySelectorAll('.explore-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const tourType = btn.dataset.tour;
-      // Find and click the matching boat card
+      const packagesSection = document.getElementById('packages');
+      if (!packagesSection) return;
+
+      packagesSection.classList.remove('hidden');
+
+      // If legacy boat-card system still present for this tour, trigger it for full state setup
       const boatCard = document.querySelector(`.boat-card[data-boat="${tourType}"]`);
       if (boatCard) {
         boatCard.click();
+      } else {
+        // Fallback: just scroll
+        setTimeout(() => {
+          packagesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 50);
       }
     });
   });
@@ -713,7 +720,7 @@ const PRICES = {
 // Dinner cruise pricing: base + extras
 const DINNER_PRICES = {
   standard: { base: 24, oldPrice: 40 },
-  vip:      { base: 55, oldPrice: 90 },
+  vip:      { base: 55, oldPrice: 92 },
   extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
 };
 
@@ -976,9 +983,9 @@ function openMobilePanel(pkg) {
   const isDesktop = window.innerWidth >= 1024;
   const overlay = document.getElementById('mobileBookOverlay');
   const panel = document.getElementById('mobileBookPanel');
+  if (overlay) { overlay.classList.remove('hidden'); requestAnimationFrame(() => overlay.classList.add('open')); }
+  if (panel) panel.classList.add('open');
   if (!isDesktop) {
-    if (overlay) { overlay.classList.remove('hidden'); requestAnimationFrame(() => overlay.classList.add('open')); }
-    if (panel) panel.classList.add('open');
     document.body.style.overflow = 'hidden';
     const topBar = document.getElementById('topBar');
     if (topBar) topBar.style.display = 'none';
@@ -1019,7 +1026,6 @@ function openMobilePanel(pkg) {
 }
 
 function closeMobilePanel() {
-  if (window.innerWidth >= 1024) return; // Desktop'ta kapatılamaz
   const overlay = document.getElementById('mobileBookOverlay');
   const panel = document.getElementById('mobileBookPanel');
   if (panel) panel.classList.remove('open');
@@ -1027,6 +1033,117 @@ function closeMobilePanel() {
   document.body.style.overflow = '';
   const topBar = document.getElementById('topBar');
   if (topBar) topBar.style.display = '';
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const panel = document.getElementById('mobileBookPanel');
+    if (panel && panel.classList.contains('open')) closeMobilePanel();
+  }
+});
+
+function initHeroMediaStage() {
+  const stage = document.getElementById('heroMediaStage');
+  if (!stage) return;
+  const bottomCollage = stage.querySelector('.hero-collage-bottom');
+  const videos = Array.from(stage.querySelectorAll('.hero-video-slot'));
+  if (!bottomCollage) return;
+
+  const layouts = [
+    '', 'layout-tl-mega', 'layout-tr-mega',
+    'layout-left-col', 'layout-right-col',
+    'layout-top-row', 'layout-bottom-row',
+  ];
+
+  function clearLayouts(el) {
+    layouts.forEach(l => { if (l) el.classList.remove(l); });
+  }
+
+  function setLayout(el, name) {
+    el.classList.add('fading');
+    setTimeout(() => {
+      clearLayouts(el);
+      if (name) el.classList.add(name);
+      el.classList.remove('fading');
+    }, 400);
+  }
+
+  function playVideo(videoIdx) {
+    return new Promise((resolve) => {
+      const video = videos[videoIdx];
+      if (!video) { resolve(); return; }
+      video.classList.add('active');
+      try { video.currentTime = 0; video.play().catch(() => resolve()); } catch (e) {}
+
+      let done = false;
+      const finish = () => {
+        if (done) return;
+        done = true;
+        clearTimeout(safety);
+        video.removeEventListener('ended', finish);
+        video.classList.remove('active');
+        try { video.pause(); } catch (e) {}
+        resolve();
+      };
+      video.addEventListener('ended', finish, { once: true });
+      const safety = setTimeout(finish, 60000);
+    });
+  }
+
+  const wait = (ms) => new Promise(r => setTimeout(r, ms));
+
+  // Bottom collage cycles through layouts every 5s
+  (async function cycleBottom() {
+    let i = 0;
+    while (true) {
+      setLayout(bottomCollage, layouts[i % layouts.length]);
+      i++;
+      await wait(5000);
+    }
+  })();
+
+  // Placeholder slideshow (plays while waiting for videos, pauses when video is playing)
+  const videoFrame = stage.querySelector('.hero-video-frame');
+  const placeholderSlides = Array.from(stage.querySelectorAll('.placeholder-slide'));
+  (async function cyclePlaceholder() {
+    if (placeholderSlides.length === 0) return;
+    let i = 0;
+    while (true) {
+      await wait(3500);
+      placeholderSlides.forEach(s => s.classList.remove('active'));
+      i = (i + 1) % placeholderSlides.length;
+      placeholderSlides[i].classList.add('active');
+    }
+  })();
+
+  // Middle: cycle videos — one plays to end, next starts. Waits if video not yet loaded.
+  (async function cycleVideos() {
+    if (videos.length === 0) return;
+    let vIdx = 0;
+    while (true) {
+      const video = videos[vIdx];
+      // Wait until video is ready to play through
+      if (video.readyState < 3) {
+        await new Promise((resolve) => {
+          const onReady = () => { video.removeEventListener('canplaythrough', onReady); resolve(); };
+          video.addEventListener('canplaythrough', onReady, { once: true });
+          // Safety: if event never fires, try after 10s anyway
+          setTimeout(onReady, 10000);
+        });
+      }
+      if (videoFrame) videoFrame.classList.add('video-playing');
+      await playVideo(vIdx);
+      if (videoFrame) videoFrame.classList.remove('video-playing');
+      await wait(800); // brief pause between videos — placeholder shows
+      vIdx = (vIdx + 1) % videos.length;
+    }
+  })();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHeroMediaStage);
+} else {
+  initHeroMediaStage();
 }
 
 // Swipe down to close — KALDIRILDI
@@ -2293,10 +2410,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const wizDate = document.getElementById('wizDate');
   if (wizDate) wizDate.addEventListener('change', () => wizCalcPrice());
 
-  // Desktop: auto-init wizard in sidebar
+  // Desktop: preset wizard background (used when user opens it)
   if (window.innerWidth >= 1024) {
-    openMobilePanel('standard');
-    // Set default background for dinner tour
     const wizBg = document.getElementById('wizPanelBg');
     if (wizBg) {
       wizBg.style.backgroundImage = `url(assets/images/gallery/couple-cheers-bridge.jpg)`;

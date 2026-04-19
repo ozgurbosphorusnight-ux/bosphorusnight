@@ -26,7 +26,7 @@ const T = {
     en: "FAQ", tr: "SSS", de: "FAQ", es: "FAQ", ru: "Вопросы", ar: "الأسئلة"
   },
   "nav.book": {
-    en: "Book on WhatsApp", tr: "WhatsApp'tan Rezervasyon", de: "Per WhatsApp buchen", es: "Reservar en WhatsApp", ru: "Забронировать в WhatsApp", ar: "احجز عبر واتساب"
+    en: "Explore & Book", tr: "Keşfet & Rezerve Et", de: "Entdecken & buchen", es: "Explorar y Reservar", ru: "Узнать и забронировать", ar: "استكشف واحجز"
   },
 
   // ========== HERO ==========
@@ -62,16 +62,16 @@ const T = {
     ru: "Проверить наличие в WhatsApp", ar: "تحقق من التوفر عبر واتساب"
   },
   "hero.cta2": {
-    en: "View Cruises", tr: "Turları İncele", de: "Touren ansehen", es: "Ver cruceros",
-    ru: "Смотреть круизы", ar: "عرض الرحلات"
+    en: "View Cruise", tr: "Turu İncele", de: "Tour ansehen", es: "Ver crucero",
+    ru: "Смотреть круиз", ar: "عرض الرحلة"
   },
   "hero.departure": {
-    en: "Departures from Kabataş & Eminönü · 20:45 – 23:30",
-    tr: "Kalkış: Kabataş & Eminönü · 20:45 – 23:30",
-    de: "Abfahrt ab Kabataş & Eminönü · 20:45 – 23:30",
-    es: "Salidas desde Kabataş y Eminönü · 20:45 – 23:30",
-    ru: "Отправление: Кабаташ и Эминёню · 20:45 – 23:30",
-    ar: "المغادرة من كاباتاش وأمينونو · 20:45 – 23:30"
+    en: "Departure from Kabataş · 21:00 – 00:00",
+    tr: "Kalkış: Kabataş · 21:00 – 00:00",
+    de: "Abfahrt ab Kabataş · 21:00 – 00:00",
+    es: "Salida desde Kabataş · 21:00 – 00:00",
+    ru: "Отправление: Кабаташ · 21:00 – 00:00",
+    ar: "المغادرة من كاباتاش · 21:00 – 00:00"
   },
 
   // ========== TRUST BAR ==========
@@ -314,9 +314,9 @@ const T = {
     es: "Soporte 24/7", ru: "Поддержка 24/7", ar: "دعم على مدار الساعة"
   },
   "incl.support.desc": {
-    en: "Instant WhatsApp support anytime", tr: "Her an anlık WhatsApp desteği",
-    de: "WhatsApp-Support rund um die Uhr", es: "Soporte instantáneo en WhatsApp en cualquier momento",
-    ru: "Мгновенная поддержка в WhatsApp", ar: "دعم واتساب فوري في أي وقت"
+    en: "Instant support anytime", tr: "Her an anlık destek",
+    de: "Sofortiger Support rund um die Uhr", es: "Soporte instantáneo en cualquier momento",
+    ru: "Мгновенная поддержка в любое время", ar: "دعم فوري في أي وقت"
   },
   "incl.special": {
     en: "Special Occasions", tr: "Özel Günler", de: "Besondere Anlässe",
@@ -328,12 +328,12 @@ const T = {
     ru: "Романтический стол и празднование дня рождения", ar: "طاولة رومانسية واحتفالات أعياد الميلاد"
   },
   "incl.cruise.detail": {
-    en: "Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 20:45, returns at 23:30.",
-    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 20:45'te kalkar, 23:30'da döner.",
-    de: "Vorbei am Leanderturm, Dolmabahçe-Palast, Bosporus-Brücke, Beylerbeyi-Palast, Ortaköy-Moschee und Rumeli-Festung. Abfahrt 20:45, Rückkehr 23:30.",
-    es: "Navegue junto a la Torre de la Doncella, el Palacio de Dolmabahçe, el Puente del Bósforo, el Palacio de Beylerbeyi, la Mezquita de Ortaköy y la Fortaleza de Rumeli. Sale a las 20:45, regresa a las 23:30.",
-    ru: "Проплывите мимо Девичьей башни, дворца Долмабахче, Босфорского моста, дворца Бейлербейи, мечети Ортакёй и крепости Румели. Отправление в 20:45, возвращение в 23:30.",
-    ar: "أبحر بجوار برج الفتاة، قصر دولمة بهجة، جسر البوسفور، قصر بيلربيي، مسجد أورتاكوي، وقلعة روملي. المغادرة 20:45، العودة 23:30."
+    en: "Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 21:00, returns between 23:30 and 00:00.",
+    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 21:00'te kalkar, 23:30 / 00:00 arası döner.",
+    de: "Vorbei am Leanderturm, Dolmabahçe-Palast, Bosporus-Brücke, Beylerbeyi-Palast, Ortaköy-Moschee und Rumeli-Festung. Abfahrt 21:00, Rückkehr zwischen 23:30 und 00:00.",
+    es: "Navegue junto a la Torre de la Doncella, el Palacio de Dolmabahçe, el Puente del Bósforo, el Palacio de Beylerbeyi, la Mezquita de Ortaköy y la Fortaleza de Rumeli. Sale a las 21:00, regresa entre las 23:30 y las 00:00.",
+    ru: "Проплывите мимо Девичьей башни, дворца Долмабахче, Босфорского моста, дворца Бейлербейи, мечети Ортакёй и крепости Румели. Отправление в 21:00, возвращение между 23:30 и 00:00.",
+    ar: "أبحر بجوار برج الفتاة، قصر دولمة بهجة، جسر البوسفور، قصر بيلربيي، مسجد أورتاكوي، وقلعة روملي. المغادرة 21:00، العودة بين 23:30 و 00:00."
   },
   "incl.dinner.detail": {
     en: "10 types of meze for Standard (15+ for VIP), choice of salmon/sea bass/chicken/meatball main course, and dessert with ice cream. Vegetarian menu available. VIP packages include rib-eye and filet mignon options, plus table near the stage.",
@@ -344,36 +344,36 @@ const T = {
     ar: "10 أنواع مقبلات للباقة الأساسية (15+ للـVIP)، اختيار طبق رئيسي (سلمون/قاروص/دجاج/كفتة) وحلوى مع آيس كريم. قائمة نباتية متوفرة. باقات VIP تشمل ريب آي وفيليه، وطاولة قريبة من المسرح."
   },
   "incl.entertainment.detail": {
-    en: "Live singer performances, traditional Turkish night show with folk dances, belly dance, and DJ music. Entertainment runs until 21:00.",
-    tr: "Canlı şarkıcı performansları, halk dansları ve oryantal dans ile geleneksel Türk gecesi şovu ve DJ müziği. Eğlence 21:00'e kadar devam eder.",
-    de: "Live-Sänger, traditionelle Türkische Nacht mit Volkstanz, Bauchtanz und DJ. Unterhaltung bis 21:00.",
-    es: "Actuaciones de cantante en vivo, show nocturno turco tradicional con danzas folclóricas, danza del vientre y música DJ. Entretenimiento hasta las 21:00.",
-    ru: "Живой певец, традиционное турецкое ночное шоу с народными танцами, танец живота и DJ-музыка. Развлечения до 21:00.",
-    ar: "عروض مغني حي، عرض ليلة تركية تقليدية مع رقصات شعبية، رقص شرقي وموسيقى DJ. الترفيه يستمر حتى الساعة 21:00."
+    en: "Live singer performances, traditional Turkish night show with folk dances, belly dance, and DJ music. Entertainment continues uninterrupted until the end of the cruise.",
+    tr: "Canlı şarkıcı performansları, halk dansları ve oryantal dans ile geleneksel Türk gecesi şovu ve DJ müziği. Eğlence tur sonuna kadar kesintisiz devam eder.",
+    de: "Live-Sänger, traditionelle Türkische Nacht mit Volkstanz, Bauchtanz und DJ. Unterhaltung bis zum Ende der Tour ohne Unterbrechung.",
+    es: "Actuaciones de cantante en vivo, show nocturno turco tradicional con danzas folclóricas, danza del vientre y música DJ. El entretenimiento continúa sin interrupción hasta el final del crucero.",
+    ru: "Живой певец, традиционное турецкое ночное шоу с народными танцами, танец живота и DJ-музыка. Развлечения продолжаются без перерыва до конца круиза.",
+    ar: "عروض مغني حي، عرض ليلة تركية تقليدية مع رقصات شعبية، رقص شرقي وموسيقى DJ. يستمر الترفيه دون انقطاع حتى نهاية الرحلة."
   },
   "incl.transfer.detail": {
-    en: "Round-trip hotel pickup and drop-off available from Sultanahmet, Taksim, and Beyoğlu areas. Available as an add-on when booking. Mention your hotel location on WhatsApp.",
-    tr: "Sultanahmet, Taksim ve Beyoğlu bölgelerinden gidiş-dönüş otel servisi mevcuttur. Rezervasyon sırasında ekstra olarak eklenebilir. Otel konumunuzu WhatsApp'tan belirtin.",
-    de: "Hin- und Rücktransfer ab Sultanahmet, Taksim und Beyoğlu. Als Zusatz buchbar. Teilen Sie Ihr Hotel per WhatsApp mit.",
-    es: "Recogida y devolución al hotel disponible desde Sultanahmet, Taksim y Beyoğlu. Disponible como complemento. Menciona la ubicación de tu hotel en WhatsApp.",
-    ru: "Трансфер из/в отель доступен из районов Султанахмет, Таксим и Бейоглу. Доступен как дополнение при бронировании. Укажите расположение отеля в WhatsApp.",
-    ar: "خدمة نقل ذهاب وعودة متاحة من مناطق السلطان أحمد وتقسيم وبيوغلو. متاحة كإضافة عند الحجز. اذكر موقع فندقك على واتساب."
+    en: "Round-trip hotel pickup and drop-off available from Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu areas. Available as an add-on when booking. Please share your hotel location with us.",
+    tr: "Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy ve Beyoğlu bölgelerinden gidiş-dönüş otel servisi mevcuttur. Rezervasyon sırasında ekstra olarak eklenebilir. Otel konumunuzu bize bildirin.",
+    de: "Hin- und Rücktransfer ab Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy und Beyoğlu. Als Zusatz buchbar. Bitte teilen Sie uns Ihren Hotelstandort mit.",
+    es: "Recogida y devolución al hotel disponible desde Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy y Beyoğlu. Disponible como complemento. Por favor, comparta la ubicación de su hotel con nosotros.",
+    ru: "Трансфер из/в отель доступен из районов Бешикташ, Сютлюдже, Сиркеджи, Топкапы, Таксим, Эминёню, Кягытхане, Фатих, Лалели, Султанахмет, Ортакёй и Бейоглу. Доступен как дополнение при бронировании. Пожалуйста, сообщите нам расположение вашего отеля.",
+    ar: "خدمة نقل ذهاب وعودة متاحة من مناطق بشكتاش، سوتلوجه، سيركجي، طوبكابي، تقسيم، إمينونو، كاغيتهانه، فاتح، لاليلي، السلطان أحمد، أورتاكوي وبيوغلو. متاحة كإضافة عند الحجز. يرجى مشاركة موقع فندقك معنا."
   },
   "incl.support.detail": {
-    en: "We're with you before, during, and after your cruise. Message or call us on WhatsApp anytime — we respond instantly, 7 days a week, 24 hours a day.",
-    tr: "Turunuzun öncesinde, sırasında ve sonrasında yanınızdayız. WhatsApp'tan yazın veya arayın — 7/24 anında cevap veriyoruz.",
-    de: "Wir sind vor, während und nach der Tour für Sie da. Schreiben oder rufen Sie uns auf WhatsApp an — wir antworten sofort, 7 Tage die Woche.",
-    es: "Estamos contigo antes, durante y después de tu crucero. Escríbenos o llámanos en WhatsApp — respondemos al instante, los 7 días de la semana.",
-    ru: "Мы с вами до, во время и после круиза. Пишите или звоните в WhatsApp — отвечаем мгновенно, 7 дней в неделю, 24 часа в сутки.",
-    ar: "نحن معك قبل وأثناء وبعد رحلتك. راسلنا أو اتصل بنا على واتساب — نرد فورًا على مدار الساعة."
+    en: "We're with you before, during, and after your cruise. Message or call anytime — we respond instantly, 7 days a week, 24 hours a day.",
+    tr: "Turunuzun öncesinde, sırasında ve sonrasında yanınızdayız. Yazın veya arayın — 7/24 anında cevap veriyoruz.",
+    de: "Wir sind vor, während und nach der Tour für Sie da. Schreiben oder anrufen — wir antworten sofort, 7 Tage die Woche, 24 Stunden am Tag.",
+    es: "Estamos contigo antes, durante y después de tu crucero. Escribe o llama — respondemos al instante, los 7 días de la semana, las 24 horas.",
+    ru: "Мы с вами до, во время и после круиза. Пишите или звоните — отвечаем мгновенно, 7 дней в неделю, 24 часа в сутки.",
+    ar: "نحن معك قبل وأثناء وبعد رحلتك. راسل أو اتصل — نرد فورًا على مدار الساعة طوال أيام الأسبوع."
   },
   "incl.special.detail": {
-    en: "Celebrating something special? We offer romantic table setup with candles & flowers (+€15) and birthday celebrations. Tell us on WhatsApp!",
-    tr: "Özel bir gün mü kutluyorsunuz? Mum ve çiçeklerle romantik masa düzeni (+€15) ve doğum günü kutlamaları sunuyoruz. WhatsApp'tan bize yazın!",
-    de: "Etwas Besonderes feiern? Romantik-Tisch mit Kerzen & Blumen (+€15) und Geburtstagsfeiern. Schreiben Sie uns per WhatsApp!",
-    es: "¿Celebrando algo especial? Ofrecemos mesa romántica con velas y flores (+€15) y celebraciones de cumpleaños. ¡Escríbenos en WhatsApp!",
-    ru: "Празднуете что-то особенное? Романтический стол со свечами и цветами (+€15) и празднование дня рождения. Напишите нам в WhatsApp!",
-    ar: "تحتفل بمناسبة خاصة؟ نقدم طاولة رومانسية مع شموع وزهور (+€15)، واحتفالات أعياد الميلاد. أخبرنا على واتساب!"
+    en: "Celebrating something special? We offer romantic table setup with candles & flowers (+€15) and birthday celebrations. Tell us!",
+    tr: "Özel bir gün mü kutluyorsunuz? Mum ve çiçeklerle romantik masa düzeni (+€15) ve doğum günü kutlamaları sunuyoruz. Bize yazın!",
+    de: "Etwas Besonderes feiern? Romantik-Tisch mit Kerzen & Blumen (+€15) und Geburtstagsfeiern. Schreiben Sie uns!",
+    es: "¿Celebrando algo especial? Ofrecemos mesa romántica con velas y flores (+€15) y celebraciones de cumpleaños. ¡Escríbenos!",
+    ru: "Празднуете что-то особенное? Романтический стол со свечами и цветами (+€15) и празднование дня рождения. Напишите нам!",
+    ar: "تحتفل بمناسبة خاصة؟ نقدم طاولة رومانسية مع شموع وزهور (+€15)، واحتفالات أعياد الميلاد. أخبرنا!"
   },
 
   // ========== GALLERY ==========
@@ -477,36 +477,36 @@ const T = {
     es: "Cómo Funciona", ru: "Как это работает", ar: "كيف يعمل"
   },
   "how.subtitle": {
-    en: "Just Call or Write on WhatsApp. We Handle the Rest.",
-    tr: "WhatsApp'tan yazın veya arayın. Gerisini biz halledelim.",
-    de: "Schreiben Sie uns auf WhatsApp. Wir erledigen den Rest.",
-    es: "Escríbanos por WhatsApp. Nosotros nos encargamos del resto.",
-    ru: "Напишите нам в WhatsApp. Мы позаботимся обо всём.",
-    ar: "اكتب لنا على واتساب. نحن نتولى الباقي."
+    en: "Write or call us. We'll handle the rest.",
+    tr: "Bize yazın veya arayın. Gerisini biz halledelim.",
+    de: "Schreiben oder rufen Sie uns an. Wir erledigen den Rest.",
+    es: "Escríbenos o llámanos. Nosotros nos encargamos del resto.",
+    ru: "Напишите или позвоните нам. Мы позаботимся об остальном.",
+    ar: "راسلنا أو اتصل بنا. نحن نتولى الباقي."
   },
   "how.s1.title": {
-    en: "Choose Your Cruise", tr: "Turunuzu Seçin", de: "Tour wählen",
-    es: "Elige tu crucero", ru: "Выберите круиз", ar: "اختر رحلتك"
+    en: "Share Booking Details", tr: "Rezervasyon Detaylarını Girin", de: "Buchungsdetails angeben",
+    es: "Comparta los detalles de la reserva", ru: "Укажите детали бронирования", ar: "شارك تفاصيل الحجز"
   },
   "how.s1.desc": {
-    en: "Pick your preferred boat, date, and package from our curated selection.",
-    tr: "Seçilmiş koleksiyonumuzdan tercih ettiğiniz tekne, tarih ve paketi seçin.",
-    de: "Wählen Sie Boot, Datum und Paket aus unserem Angebot.",
-    es: "Elige tu barco, fecha y paquete preferido de nuestra selección.",
-    ru: "Выберите лодку, дату и пакет из нашей подборки.",
-    ar: "اختر القارب والتاريخ والباقة المفضلة لديك من مجموعتنا المختارة."
+    en: "Tell us the date, number of guests, and package (Standard or VIP).",
+    tr: "Tarih, kişi sayısı ve paketi (Standard veya VIP) belirleyin.",
+    de: "Teilen Sie uns Datum, Gästeanzahl und Paket (Standard oder VIP) mit.",
+    es: "Indíquenos la fecha, el número de invitados y el paquete (Standard o VIP).",
+    ru: "Укажите дату, количество гостей и пакет (Standard или VIP).",
+    ar: "أخبرنا بالتاريخ وعدد الضيوف والباقة (القياسية أو VIP)."
   },
   "how.s2.title": {
     en: "Write, Call, or We'll Call You", tr: "Yazın, Arayın veya Biz Sizi Arayalım", de: "Schreiben, anrufen oder wir rufen Sie an",
     es: "Escríbenos, Llámanos o Te Llamamos", ru: "Напишите, Позвоните или Мы Вам Перезвоним", ar: "اكتب، اتصل، أو سنتصل بك"
   },
   "how.s2.desc": {
-    en: "Message us on WhatsApp, give us a call, or leave your number — we'll get back to you instantly.",
-    tr: "WhatsApp'tan yazın, bizi arayın veya numaranızı bırakın — size anında dönelim.",
-    de: "Per WhatsApp schreiben, anrufen oder Nummer hinterlassen — wir melden uns sofort.",
-    es: "Escríbenos por WhatsApp, llámanos o déjanos tu número — te contactaremos al instante.",
-    ru: "Напишите в WhatsApp, позвоните или оставьте номер — мы перезвоним мгновенно.",
-    ar: "راسلنا على واتساب، اتصل بنا، أو اترك رقمك — سنعاود الاتصال بك فورًا."
+    en: "Message or call — whatever works for you. We respond quickly.",
+    tr: "Yazılı veya sesli — size uygun şekilde iletişime geçin. Hızla dönüş yaparız.",
+    de: "Schriftlich oder telefonisch — wie es Ihnen passt. Wir antworten schnell.",
+    es: "Por mensaje o llamada — como prefieras. Respondemos rápido.",
+    ru: "Письменно или по телефону — как вам удобно. Отвечаем быстро.",
+    ar: "كتابياً أو صوتياً — كما يناسبك. نرد بسرعة."
   },
   "how.s3.title": {
     en: "Show Up & Pay on the Boat", tr: "Gelin & Teknede Ödeyin",
@@ -529,25 +529,25 @@ const T = {
     ru: "Нужен круиз сегодня?", ar: "هل تحتاج رحلة الليلة؟"
   },
   "last.desc": {
-    en: "Our team can check same-day availability for you in seconds. Message us on WhatsApp — we respond instantly, 24/7.",
-    tr: "Ekibimiz aynı gün müsaitliği saniyeler içinde kontrol edebilir. WhatsApp'tan yazın — 7/24 anında cevap veriyoruz.",
-    de: "Unser Team prüft die Verfügbarkeit in Sekunden. Schreiben Sie uns per WhatsApp — wir antworten sofort, 24/7.",
-    es: "Nuestro equipo puede verificar la disponibilidad del mismo día en segundos. Escríbenos en WhatsApp — respondemos al instante, 24/7.",
-    ru: "Наша команда проверит наличие на сегодня за секунды. Напишите нам в WhatsApp — мы отвечаем мгновенно, 24/7.",
-    ar: "يمكن لفريقنا التحقق من توفر اليوم نفسه في ثوانٍ. راسلنا عبر واتساب — نستجيب فوراً على مدار الساعة."
+    en: "Our team can check same-day availability for you in seconds. Message us — we respond instantly, 24/7.",
+    tr: "Ekibimiz aynı gün müsaitliği saniyeler içinde kontrol edebilir. Bize yazın — 7/24 anında cevap veriyoruz.",
+    de: "Unser Team prüft die Verfügbarkeit in Sekunden. Schreiben Sie uns — wir antworten sofort, 24/7.",
+    es: "Nuestro equipo puede verificar la disponibilidad del mismo día en segundos. Escríbenos — respondemos al instante, 24/7.",
+    ru: "Наша команда проверит наличие на сегодня за секунды. Напишите нам — мы отвечаем мгновенно, 24/7.",
+    ar: "يمكن لفريقنا التحقق من توفر اليوم نفسه في ثوانٍ. راسلنا — نستجيب فوراً على مدار الساعة."
   },
   "last.cta": {
-    en: "Ask for Tonight's Availability", tr: "Bu Gecenin Müsaitliğini Sor",
-    de: "Verfügbarkeit für heute anfragen", es: "Preguntar por disponibilidad esta noche",
-    ru: "Узнать о наличии на сегодня", ar: "اسأل عن توفر الليلة"
+    en: "Explore & Book", tr: "Keşfet & Rezerve Et",
+    de: "Entdecken & buchen", es: "Explorar y Reservar",
+    ru: "Узнать и забронировать", ar: "استكشف واحجز"
   },
   "last.summary": {
-    en: "20:45 · 3 hours · Dinner & Live Show · Pay on the boat",
-    tr: "20:45 · 3 saat · Yemek & Canlı Şov · Teknede ödeme",
-    de: "20:45 · 3 Stunden · Abendessen & Live-Show · Zahlung an Bord",
-    es: "20:45 · 3 horas · Cena y Show en Vivo · Pago en el barco",
-    ru: "20:45 · 3 часа · Ужин и живое шоу · Оплата на борту",
-    ar: "20:45 · 3 ساعات · عشاء وعرض حي · الدفع على القارب"
+    en: "21:00 · 3 hours · Dinner & Live Show · Pay on the boat",
+    tr: "21:00 · 3 saat · Yemek & Canlı Şov · Teknede ödeme",
+    de: "21:00 · 3 Stunden · Abendessen & Live-Show · Zahlung an Bord",
+    es: "21:00 · 3 horas · Cena y Show en Vivo · Pago en el barco",
+    ru: "21:00 · 3 часа · Ужин и живое шоу · Оплата на борту",
+    ar: "21:00 · 3 ساعات · عشاء وعرض حي · الدفع على القارب"
   },
 
   // ========== WHY CHOOSE US ==========
@@ -563,12 +563,12 @@ const T = {
     en: "Before", tr: "Öncesinde", de: "Vorher", es: "Antes", ru: "До", ar: "قبل"
   },
   "why.before.desc": {
-    en: "We help you choose the perfect package, answer all your questions, and confirm your reservation — all on WhatsApp.",
-    tr: "Mükemmel paketi seçmenize yardım eder, tüm sorularınızı cevaplar ve rezervasyonunuzu onaylarız — hepsi WhatsApp'tan.",
-    de: "Wir helfen beim perfekten Paket, beantworten alle Fragen und bestätigen Ihre Buchung — alles per WhatsApp.",
-    es: "Te ayudamos a elegir el paquete perfecto, respondemos todas tus preguntas y confirmamos tu reserva — todo por WhatsApp.",
-    ru: "Мы поможем выбрать идеальный пакет, ответим на все вопросы и подтвердим бронирование — всё через WhatsApp.",
-    ar: "نساعدك في اختيار الباقة المثالية ونجيب على جميع أسئلتك ونؤكد حجزك — كل ذلك عبر واتساب."
+    en: "We help you choose the perfect package, answer all your questions, and confirm your reservation.",
+    tr: "Mükemmel paketi seçmenize yardım eder, tüm sorularınızı cevaplar ve rezervasyonunuzu onaylarız.",
+    de: "Wir helfen beim perfekten Paket, beantworten alle Fragen und bestätigen Ihre Buchung.",
+    es: "Te ayudamos a elegir el paquete perfecto, respondemos todas tus preguntas y confirmamos tu reserva.",
+    ru: "Мы поможем выбрать идеальный пакет, ответим на все вопросы и подтвердим бронирование.",
+    ar: "نساعدك في اختيار الباقة المثالية ونجيب على جميع أسئلتك ونؤكد حجزك."
   },
   "why.during": {
     en: "During", tr: "Sırasında", de: "Während", es: "Durante", ru: "Во время", ar: "أثناء"
@@ -604,12 +604,12 @@ const T = {
   },
   "faq.q0": { en: "What cruise tours do you offer?", tr: "Hangi tur seçenekleriniz var?", de: "Welche Touren bieten Sie an?", es: "¿Qué cruceros ofrecen?", ru: "Какие круизы вы предлагаете?", ar: "ما هي الرحلات البحرية التي تقدمونها؟" },
   "faq.a0": {
-    en: "We offer three Bosphorus cruise experiences: <strong>Daytime Cruise</strong> (12:00, 1.5 hours — sightseeing with panoramic views), <strong>Sunset Cruise</strong> (17:30, 3 hours — dinner with golden hour views and live shows), and <strong>Dinner Cruise</strong> (20:45, 3 hours — full dinner, Turkish night show, belly dance, DJ and stunning night views). All cruises depart from Kabataş Pier.",
-    tr: "Üç farklı Boğaz turu deneyimi sunuyoruz: <strong>Gündüz Turu</strong> (12:00, 1.5 saat — panoramik manzara gezisi), <strong>Günbatımı Turu</strong> (17:30, 3 saat — yemek, gün batımı manzarası ve canlı şovlar), <strong>Akşam Turu</strong> (20:45, 3 saat — akşam yemeği, Türk gecesi şovu, oryantal dans, DJ ve gece manzarası). Tüm turlar Kabataş İskelesi'nden kalkar.",
-    de: "Drei Bosporus-Touren: <strong>Tagestour</strong> (12:00, 1,5 Std. — Sightseeing mit Panoramablick), <strong>Sonnenuntergangstour</strong> (17:30, 3 Std. — Dinner bei Sonnenuntergang mit Live-Show), <strong>Abendtour</strong> (20:45, 3 Std. — Dinner, Türkische Nacht, Bauchtanz, DJ und Nachtblick). Alle Touren ab Kabataş-Pier.",
-    es: "Ofrecemos tres experiencias de crucero por el Bósforo: <strong>Crucero Diurno</strong> (12:00, 1,5 horas — turismo con vistas panorámicas), <strong>Crucero al Atardecer</strong> (17:30, 3 horas — cena con vistas doradas y shows en vivo), <strong>Crucero con Cena</strong> (20:45, 3 horas — cena completa, noche turca, danza del vientre, DJ y vistas nocturnas). Todos los cruceros salen del muelle de Kabataş.",
-    ru: "Мы предлагаем три круиза по Босфору: <strong>Дневной круиз</strong> (12:00, 1,5 часа — обзорная экскурсия с панорамными видами), <strong>Круиз на закате</strong> (17:30, 3 часа — ужин с видами заката и живыми шоу), <strong>Ужин-круиз</strong> (20:45, 3 часа — ужин, турецкая ночь, танец живота, DJ и ночные виды). Все круизы отправляются с причала Кабаташ.",
-    ar: "نقدم ثلاث تجارب رحلات بحرية في البوسفور: <strong>الرحلة النهارية</strong> (12:00، 1.5 ساعة — جولة سياحية مع إطلالات بانورامية)، <strong>رحلة الغروب</strong> (17:30، 3 ساعات — عشاء مع مناظر الساعة الذهبية وعروض حية)، <strong>رحلة العشاء</strong> (20:45، 3 ساعات — عشاء كامل، ليلة تركية، رقص شرقي، DJ ومناظر ليلية خلابة). جميع الرحلات تنطلق من رصيف كاباتاش."
+    en: "We offer the <strong>Bosphorus Dinner Cruise</strong> (21:00, 3 hours — full dinner, Turkish night show with Whirling Dervish, belly dance, folk dances, live music and DJ, plus stunning night views). Departs from Kabataş Pier.",
+    tr: "<strong>Bosphorus Akşam Yemekli Turu</strong> sunuyoruz (21:00, 3 saat — tam menü akşam yemeği, Mevlana sema gösterisi, oryantal dans, halk oyunları, canlı müzik ve DJ, muhteşem gece manzarası). Kabataş İskelesi'nden kalkar.",
+    de: "Wir bieten die <strong>Bosporus-Dinner-Kreuzfahrt</strong> (21:00, 3 Std. — Dinner, Türkische Nacht mit Derwisch-Tanz, Bauchtanz, Volkstänzen, Live-Musik und DJ, sowie atemberaubende Nachtblicke). Ab Kabataş-Pier.",
+    es: "Ofrecemos el <strong>Crucero con Cena por el Bósforo</strong> (21:00, 3 horas — cena completa, noche turca con Derviches Giradores, danza del vientre, danzas folclóricas, música en vivo y DJ, más vistas nocturnas impresionantes). Sale del muelle de Kabataş.",
+    ru: "Мы предлагаем <strong>Ужин-круиз по Босфору</strong> (21:00, 3 часа — ужин, турецкая ночь с кружащимися дервишами, танец живота, народные танцы, живая музыка и DJ, плюс впечатляющие ночные виды). Отправление с причала Кабаташ.",
+    ar: "نقدم <strong>رحلة عشاء البوسفور</strong> (21:00، 3 ساعات — عشاء كامل، ليلة تركية مع رقصة الدراويش المولوية، رقص شرقي، رقصات شعبية، موسيقى حية وDJ، مع مناظر ليلية رائعة). تنطلق من رصيف كاباتاش."
   },
   "faq.q1": { en: "What's on the dinner menu?", tr: "Yemek menüsünde neler var?", de: "Was gibt es zum Abendessen?", es: "¿Qué hay en el menú de la cena?", ru: "Что в меню ужина?", ar: "ماذا يوجد في قائمة العشاء؟" },
   "faq.a1": {
@@ -622,57 +622,57 @@ const T = {
   },
   "faq.q2": { en: "Are alcoholic drinks included?", tr: "Alkollü içecekler dahil mi?", de: "Sind alkoholische Getränke inklusive?", es: "¿Están incluidas las bebidas alcohólicas?", ru: "Включены ли алкогольные напитки?", ar: "هل المشروبات الكحولية مشمولة؟" },
   "faq.a2": {
-    en: "All packages include soft drinks. You can add an unlimited alcohol package for just +€30 per person. This can be arranged during booking on WhatsApp.",
-    tr: "Tüm paketlerde alkolsüz içecekler dahildir. Kişi başı sadece +€10 ile sınırsız alkol paketi ekleyebilirsiniz. Bu, WhatsApp üzerinden rezervasyon sırasında ayarlanabilir.",
-    de: "Alle Pakete enthalten Softdrinks. Unbegrenztes Alkoholpaket für nur +€30 pro Person buchbar per WhatsApp.",
-    es: "Todos los paquetes incluyen bebidas sin alcohol. Puedes agregar un paquete de alcohol ilimitado por solo +€30 por persona.",
-    ru: "Все пакеты включают безалкогольные напитки. Вы можете добавить безлимитный пакет алкоголя всего за +€10 с человека.",
-    ar: "جميع الباقات تشمل المشروبات الغازية. يمكنك إضافة باقة مشروبات كحولية غير محدودة مقابل +€10 فقط للشخص."
+    en: "All packages include soft (non-alcoholic) drinks. You can add 2 glasses of alcohol for +€15 per person, or an unlimited local alcohol package for +€30 per person. The local package covers vodka, gin, rakı, red and white wine. Imported spirits (whiskey, cognac) are charged separately.",
+    tr: "Tüm paketlere soft (alkolsüz) içecekler dahildir. Kişi başı +€15 ile 2 bardak alkol veya +€30 ile sınırsız yerli alkol paketi ekleyebilirsiniz. Yerli paket; votka, cin, rakı, kırmızı ve beyaz şarap ile sınırlıdır. İthal içkiler (viski, konyak) ekstra ücrete tabidir.",
+    de: "Alle Pakete enthalten alkoholfreie Getränke. Für +€15 pro Person 2 Gläser Alkohol oder für +€30 pro Person ein unbegrenztes lokales Alkoholpaket wählbar. Das lokale Paket umfasst Wodka, Gin, Rakı, Rot- und Weißwein. Importierte Spirituosen (Whisky, Cognac) werden separat berechnet.",
+    es: "Todos los paquetes incluyen bebidas sin alcohol. Puedes añadir 2 copas de alcohol por +€15 por persona, o un paquete de alcohol local ilimitado por +€30 por persona. El paquete local incluye vodka, ginebra, rakı, vino tinto y blanco. Los licores importados (whisky, coñac) se cobran aparte.",
+    ru: "Все пакеты включают безалкогольные напитки. За +€15 с человека можно добавить 2 бокала алкоголя, а за +€30 — безлимитный пакет местного алкоголя. Местный пакет включает водку, джин, ракы, красное и белое вино. Импортный алкоголь (виски, коньяк) оплачивается отдельно.",
+    ar: "جميع الباقات تشمل المشروبات الخفيفة (غير الكحولية). يمكنك إضافة كأسين من الكحول مقابل +€15 للشخص، أو باقة كحول محلية غير محدودة مقابل +€30 للشخص. تشمل الباقة المحلية: فودكا، جن، راكي، نبيذ أحمر وأبيض. المشروبات المستوردة (ويسكي، كونياك) تُحتسب بشكل منفصل."
   },
   "faq.q3": { en: "Where does the cruise depart and return?", tr: "Tur nereden kalkıp nereye dönüyor?", de: "Wo ist Abfahrt und Rückkehr?", es: "¿De dónde sale y regresa el crucero?", ru: "Откуда отправляется и возвращается круиз?", ar: "من أين تغادر وتعود الرحلة؟" },
   "faq.a3": {
-    en: "Cruises depart from Kabataş pier at 20:45 and return to the same location at 23:30 (3-hour cruise). The exact meeting point will be shared on WhatsApp after booking.",
-    tr: "Turlar Kabataş iskelesinden saat 20:45'te kalkar ve aynı noktaya 23:30'da döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp'tan paylaşılır.",
-    de: "Abfahrt ab Kabataş-Pier um 20:45, Rückkehr um 23:30 (3 Stunden). Den genauen Treffpunkt erhalten Sie nach Buchung per WhatsApp.",
-    es: "Los cruceros salen del muelle de Kabataş a las 20:45 y regresan al mismo lugar a las 23:30 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp.",
-    ru: "Круизы отправляются от причала Кабаташ в 20:45 и возвращаются в 23:30 (3 часа). Точное место встречи будет отправлено в WhatsApp после бронирования.",
-    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 20:45 وتعود إلى نفس الموقع الساعة 23:30 (رحلة 3 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب."
+    en: "Cruises depart from Kabataş pier at 21:00 and return to the same location between 23:00 and 00:00 (3-hour cruise). The exact meeting point will be shared via WhatsApp / Telegram / WeChat after booking.",
+    tr: "Turlar Kabataş iskelesinden saat 21:00'te kalkar ve aynı noktaya 23:00 ile 00:00 arasında döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp / Telegram / WeChat ile paylaşılır.",
+    de: "Abfahrt ab Kabataş-Pier um 21:00, Rückkehr zwischen 23:00 und 00:00 (3 Stunden). Den genauen Treffpunkt erhalten Sie nach Buchung per WhatsApp / Telegram / WeChat.",
+    es: "Los cruceros salen del muelle de Kabataş a las 21:00 y regresan al mismo lugar entre las 23:00 y las 00:00 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp / Telegram / WeChat tras la reserva.",
+    ru: "Круизы отправляются от причала Кабаташ в 21:00 и возвращаются между 23:00 и 00:00 (3 часа). Точное место встречи будет отправлено в WhatsApp / Telegram / WeChat после бронирования.",
+    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 21:00 وتعود إلى نفس الموقع بين 23:00 و 00:00 (رحلة 3 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب / تليجرام / وي شات بعد الحجز."
   },
   "faq.q4": { en: "What route does the cruise take?", tr: "Tur hangi rotayı izliyor?", de: "Welche Route fährt die Tour?", es: "¿Qué ruta toma el crucero?", ru: "Каким маршрутом идёт круиз?", ar: "ما هو مسار الرحلة؟" },
   "faq.a4": {
-    en: "The cruise sails along the Bosphorus Strait, passing by iconic landmarks including Dolmabahçe Palace, Bosphorus Bridge, Maiden's Tower, Ortaköy Mosque, and more.",
-    tr: "Tur, Boğaz boyunca ilerleyerek Dolmabahçe Sarayı, Boğaz Köprüsü, Kız Kulesi, Ortaköy Camii ve daha birçok ikonik yapıyı geçer.",
-    de: "Die Tour fährt den Bosporus entlang, vorbei an Dolmabahçe-Palast, Bosporus-Brücke, Leanderturm und Ortaköy-Moschee.",
-    es: "El crucero navega por el estrecho del Bósforo, pasando por monumentos icónicos como el Palacio de Dolmabahçe, el Puente del Bósforo y la Torre de la Doncella.",
-    ru: "Круиз проходит по проливу Босфор, мимо дворца Долмабахче, Босфорского моста, Девичьей башни, мечети Ортакёй и других достопримечательностей.",
-    ar: "تبحر الرحلة عبر مضيق البوسفور، مروراً بمعالم أيقونية مثل قصر دولمة بهجة وجسر البوسفور وبرج الفتاة ومسجد أورتاكوي."
+    en: "Kabataş Pier → Dolmabahçe Palace → Çırağan Palace → Ortaköy Mosque → Bosphorus Bridge → Bebek → Rumeli Fortress → FSM Bridge → Beylerbeyi Palace → Üsküdar → Maiden's Tower (visible from distance) → Kabataş Pier. Route is for reference only. Itinerary may vary due to weather or sea conditions.",
+    tr: "Kabataş İskelesi → Dolmabahçe Sarayı → Çırağan Sarayı → Ortaköy Camii → Boğaz Köprüsü → Bebek → Rumeli Hisarı → FSM Köprüsü → Beylerbeyi Sarayı → Üsküdar → Kız Kulesi (uzaktan görünür) → Kabataş İskelesi. Rota yalnızca referans amaçlıdır. Hava ve deniz koşullarına göre güzergâh değişebilir.",
+    de: "Kabataş-Pier → Dolmabahçe-Palast → Çırağan-Palast → Ortaköy-Moschee → Bosporus-Brücke → Bebek → Rumeli-Festung → FSM-Brücke → Beylerbeyi-Palast → Üsküdar → Leanderturm (aus der Ferne sichtbar) → Kabataş-Pier. Die Route dient nur als Referenz. Je nach Wetter- und Seebedingungen kann der Verlauf variieren.",
+    es: "Embarcadero Kabataş → Palacio Dolmabahçe → Palacio Çırağan → Mezquita Ortaköy → Puente del Bósforo → Bebek → Fortaleza Rumeli → Puente FSM → Palacio Beylerbeyi → Üsküdar → Torre de la Doncella (visible en la distancia) → Embarcadero Kabataş. La ruta es solo de referencia. El itinerario puede variar según las condiciones del tiempo y del mar.",
+    ru: "Пирс Кабаташ → Дворец Долмабахче → Дворец Чираган → Мечеть Ортакёй → Босфорский мост → Бебек → Крепость Румели → Мост ФСМ → Дворец Бейлербейи → Ускюдар → Девичья башня (видна издалека) → Пирс Кабаташ. Маршрут приведён для справки. Программа может меняться из-за погодных и морских условий.",
+    ar: "رصيف قباطاش → قصر دولمة بهجة → قصر تشيراغان → مسجد أورتاكوي → جسر البوسفور → بيبك → قلعة روملي → جسر السلطان محمد الفاتح → قصر بيلربيي → أسكودار → برج الفتاة (يُرى من بعيد) → رصيف قباطاش. المسار للاسترشاد فقط، وقد يتغير حسب ظروف الطقس والبحر."
   },
   "faq.q5": { en: "How close are the tables to the stage?", tr: "Masalar sahneye ne kadar yakın?", de: "Wie nah sind die Tische zur Bühne?", es: "¿Qué tan cerca están las mesas del escenario?", ru: "Как близко столы к сцене?", ar: "ما مدى قرب الطاولات من المسرح؟" },
   "faq.a5": {
-    en: "It depends on your package. Premium tables are closer to the stage, and VIP tables have the best location. Let us know on WhatsApp and we'll arrange the best spot.",
-    tr: "Paketinize bağlıdır. Premium masalar sahneye daha yakındır ve VIP masalar en iyi konumdadır. WhatsApp'tan bize bildirin, en uygun yeri ayarlayalım.",
-    de: "Hängt vom Paket ab. Premium-Tische sind näher zur Bühne, VIP-Tische haben die beste Lage. Per WhatsApp anfragen.",
-    es: "Depende de tu paquete. Las mesas Premium están más cerca del escenario y las VIP tienen la mejor ubicación.",
-    ru: "Зависит от пакета. Премиум-столы ближе к сцене, а VIP-столы расположены в лучшем месте.",
-    ar: "يعتمد على باقتك. طاولات بريميوم أقرب إلى المسرح، وطاولات VIP في أفضل موقع."
+    en: "Our boat's dining hall has a panoramic Bosphorus view. No matter where you sit, you can enjoy the full view. The stage is also designed to be visible from every seat, so the shows can be watched easily. (VIP menus are seated closer to the stage.)",
+    tr: "Tekne salonumuzda panoramik Boğaz manzarası vardır. Nerede oturduğunuzdan bağımsız tüm manzaranın keyfini çıkarabilirsiniz. Aynı zamanda sahne de her yerden görülecek şekildedir, şovlar rahatlıkla izlenebilir. (VIP menüler sahneye daha yakın konumlandırılır.)",
+    de: "Unser Bootssalon bietet einen Panoramablick auf den Bosporus. Egal wo Sie sitzen, Sie genießen die volle Aussicht. Die Bühne ist so gestaltet, dass sie von überall aus zu sehen ist, und die Shows sind bequem zu verfolgen. (VIP-Menüs werden näher zur Bühne platziert.)",
+    es: "El salón de nuestro barco tiene vistas panorámicas al Bósforo. Donde sea que te sientes, puedes disfrutar de toda la vista. El escenario también está diseñado para ser visible desde todas partes, y los shows se pueden ver cómodamente. (Los menús VIP se colocan más cerca del escenario.)",
+    ru: "В салоне нашей лодки — панорамный вид на Босфор. Где бы вы ни сидели, вы сможете наслаждаться всей панорамой. Сцена также расположена так, чтобы её было видно отовсюду, и шоу легко смотреть. (VIP-меню размещаются ближе к сцене.)",
+    ar: "تتميز صالة قاربنا بإطلالة بانورامية على مضيق البوسفور. أينما جلست، يمكنك الاستمتاع بالمنظر بالكامل. كما أن المسرح مصمم ليكون مرئيًا من كل مكان، ويمكن مشاهدة العروض بسهولة. (يتم وضع قوائم VIP أقرب إلى المسرح.)"
   },
   "faq.q6": { en: "What kind of shows and entertainment are there?", tr: "Ne tür şovlar ve eğlence var?", de: "Welche Shows und Unterhaltung gibt es?", es: "¿Qué tipo de shows y entretenimiento hay?", ru: "Какие шоу и развлечения?", ar: "ما نوع العروض والترفيه؟" },
   "faq.a6": {
-    en: "The cruise features live singer performances, a traditional Turkish Night show with folk dances, belly dance, and DJ music. Entertainment runs until 21:00.",
-    tr: "Turda canlı şarkıcı performansları, geleneksel halk danslarıyla Türk Gecesi şovu, oryantal dans ve DJ müziği bulunur. Eğlence 21:00'e kadar devam eder.",
-    de: "Live-Sänger, traditionelle Türkische Nacht mit Volkstänzen, Bauchtanz und DJ-Musik. Unterhaltung bis 21:00.",
-    es: "El crucero incluye cantante en vivo, show nocturno turco con danzas folclóricas, danza del vientre y música DJ. Entretenimiento hasta las 21:00.",
-    ru: "На круизе — живой певец, традиционное турецкое шоу с народными танцами, танец живота и DJ-музыка. Развлечения до 21:00.",
-    ar: "تتميز الرحلة بعروض مغني حي، عرض الليلة التركية التقليدية مع الرقصات الشعبية، رقص شرقي وموسيقى DJ. الترفيه حتى 21:00."
+    en: "The cruise features live singer performances, a traditional Turkish Night show with folk dances, belly dance, and DJ music. Entertainment continues uninterrupted until the end of the cruise.",
+    tr: "Turda canlı şarkıcı performansları, geleneksel halk danslarıyla Türk Gecesi şovu, oryantal dans ve DJ müziği bulunur. Eğlence tur bitimine kadar kesintisiz devam eder.",
+    de: "Live-Sänger, traditionelle Türkische Nacht mit Volkstänzen, Bauchtanz und DJ-Musik. Unterhaltung bis zum Ende der Tour ohne Unterbrechung.",
+    es: "El crucero incluye cantante en vivo, show nocturno turco con danzas folclóricas, danza del vientre y música DJ. El entretenimiento continúa sin interrupción hasta el final del crucero.",
+    ru: "На круизе — живой певец, традиционное турецкое шоу с народными танцами, танец живота и DJ-музыка. Развлечения продолжаются без перерыва до конца круиза.",
+    ar: "تتميز الرحلة بعروض مغني حي، عرض الليلة التركية التقليدية مع الرقصات الشعبية، رقص شرقي وموسيقى DJ. يستمر الترفيه دون انقطاع حتى نهاية الرحلة."
   },
   "faq.q7": { en: "Can I book for tonight?", tr: "Bu gece için rezervasyon yapabilir miyim?", de: "Kann ich für heute Abend buchen?", es: "¿Puedo reservar para esta noche?", ru: "Можно забронировать на сегодня?", ar: "هل يمكنني الحجز لهذه الليلة؟" },
   "faq.a7": {
-    en: "Yes! Same-day bookings are available until 20:00 (1 hour before departure). Just message us on WhatsApp.",
-    tr: "Evet! Aynı gün rezervasyonlar 20:00'ye kadar (kalkıştan 1 saat önce) mümkündür. WhatsApp'tan bize yazın.",
-    de: "Ja! Buchung am selben Tag bis 20:00 möglich (1 Std. vor Abfahrt). Einfach per WhatsApp.",
-    es: "¡Sí! Las reservas del mismo día están disponibles hasta las 20:00. Solo escríbenos en WhatsApp.",
-    ru: "Да! Бронирование в тот же день доступно до 20:00. Просто напишите нам в WhatsApp.",
-    ar: "نعم! الحجوزات في نفس اليوم متاحة حتى الساعة 20:00. فقط راسلنا عبر واتساب."
+    en: "Yes! Same-day bookings are available until 20:00 (1 hour before departure). Just message us.",
+    tr: "Evet! Aynı gün rezervasyonlar 20:00'ye kadar (kalkıştan 1 saat önce) mümkündür. Bize yazın.",
+    de: "Ja! Buchung am selben Tag bis 20:00 möglich (1 Std. vor Abfahrt). Schreiben Sie uns einfach.",
+    es: "¡Sí! Las reservas del mismo día están disponibles hasta las 20:00. Solo escríbenos.",
+    ru: "Да! Бронирование в тот же день доступно до 20:00. Просто напишите нам.",
+    ar: "نعم! الحجوزات في نفس اليوم متاحة حتى الساعة 20:00. فقط راسلنا."
   },
   "faq.q8": { en: "How do I pay?", tr: "Nasıl ödeme yapacağım?", de: "Wie wird bezahlt?", es: "¿Cómo pago?", ru: "Как оплатить?", ar: "كيف أدفع؟" },
   "faq.a8": {
@@ -685,12 +685,12 @@ const T = {
   },
   "faq.q9": { en: "Is hotel transfer available?", tr: "Otel transferi var mı?", de: "Gibt es einen Hoteltransfer?", es: "¿Hay traslado al hotel?", ru: "Есть ли т��ансфер из отеля?", ar: "هل يتوفر نقل من الفندق؟" },
   "faq.a9": {
-    en: "Yes! Hotel transfer is available for +€10 per person, including pickup and drop-off.",
-    tr: "Evet! Otel transferi kişi başı +€10 ile mümkündür. Alım ve bırakım dahildir.",
-    de: "Ja! Hoteltransfer für +€10 pro Person, inkl. Abholung und Rückfahrt.",
-    es: "¡Sí! El traslado al hotel está disponible por +€10 por persona, incluyendo recogida y devolución.",
-    ru: "Да! Трансфер из отеля доступен за +€10 с человека, включая подачу и возврат.",
-    ar: "نعم! خدمة النقل من الفندق متاحة مقابل +€10 للشخص، شاملة الاستلام والتوصيل."
+    en: "Yes! Hotel transfer is available for +€10 per person, including pickup and drop-off. Service areas: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu.",
+    tr: "Evet! Otel transferi kişi başı +€10 ile mümkündür. Alım ve bırakım dahildir. Hizmet bölgeleri: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy ve Beyoğlu.",
+    de: "Ja! Hoteltransfer für +€10 pro Person, inkl. Abholung und Rückfahrt. Servicegebiete: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy und Beyoğlu.",
+    es: "¡Sí! El traslado al hotel está disponible por +€10 por persona, incluyendo recogida y devolución. Zonas de servicio: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy y Beyoğlu.",
+    ru: "Да! Трансфер из отеля доступен за +€10 с человека, включая подачу и возврат. Зоны обслуживания: Бешикташ, Сютлюдже, Сиркеджи, Топкапы, Таксим, Эминёню, Кягытхане, Фатих, Лалели, Султанахмет, Ортакёй и Бейоглу.",
+    ar: "نعم! خدمة النقل من الفندق متاحة مقابل +€10 للشخص، شاملة الاستلام والتوصيل. مناطق الخدمة: بشكتاش، سوتلوجه، سيركجي، طوبكابي، تقسيم، إمينونو، كاغيتهانه، فاتح، لاليلي، السلطان أحمد، أورتاكوي وبيوغلو."
   },
   "faq.q10": { en: "Can I cancel or change my reservation?", tr: "Rezervasyonumu iptal edebilir veya değiştirebilir miyim?", de: "Kann ich stornieren oder ändern?", es: "¿Puedo cancelar o cambiar mi reserva?", ru: "Могу ли я отменить бронирование?", ar: "هل يمكنني إلغاء أو تغيير حجزي؟" },
   "faq.a10": {
@@ -731,6 +731,14 @@ const T = {
   },
 
   // ========== FOOTER ==========
+  "footer.tagline": {
+    en: "Your Bosphorus Night Awaits",
+    tr: "Boğaz Geceniz Sizi Bekliyor",
+    de: "Ihre Bosporus-Nacht wartet",
+    es: "Tu Noche del Bósforo te Espera",
+    ru: "Ваша босфорская ночь ждёт",
+    ar: "ليلة البوسفور في انتظارك"
+  },
   "footer.desc": {
     en: "We help you find the best cruise experience on the Bosphorus.",
     tr: "Boğaz'da en iyi tur deneyimini bulmanıza yardımcı oluyoruz.",
@@ -806,8 +814,8 @@ const T = {
 
   // ========== DINNER PACKAGE CARDS ==========
   "dinner.std.title": {
-    en: "Standard Dinner Cruise", tr: "Standard Akşam Turu", de: "Standard-Abendfahrt", es: "Crucero Cena Estándar",
-    ru: "Стандартный ужин-круиз", ar: "رحلة عشاء قياسية"
+    en: "Standard Menu", tr: "Standart Menü", de: "Standard-Menü", es: "Menú Estándar",
+    ru: "Стандартное меню", ar: "القائمة القياسية"
   },
   "dinner.std.desc": {
     en: "Enjoy a 3-hour Bosphorus night cruise with a full dinner, live Turkish entertainment, and stunning views of Istanbul's skyline.",
@@ -818,8 +826,8 @@ const T = {
     ar: "استمتع برحلة بحرية ليلية لمدة 3 ساعات في البوسفور مع عشاء كامل وترفيه تركي حي وإطلالات خلابة على أفق إسطنبول."
   },
   "dinner.vip.title": {
-    en: "VIP Dinner Cruise", tr: "VIP Akşam Turu", de: "VIP-Abendfahrt", es: "Crucero Cena VIP",
-    ru: "VIP ужин-круиз", ar: "رحلة عشاء VIP"
+    en: "VIP Menu", tr: "VIP Menü", de: "VIP-Menü", es: "Menú VIP",
+    ru: "VIP меню", ar: "قائمة VIP"
   },
   "dinner.vip.desc": {
     en: "Premium dining at the best table near the stage. Upgraded menu with premium mezes, steak options, and VIP service throughout the night.",
@@ -842,8 +850,27 @@ const T = {
     ru: "Бесплатная отмена за 2ч", ar: "إلغاء مجاني قبل ساعتين"
   },
   "dinner.halalTax": {
-    en: "Halal · All taxes incl.", tr: "Helal · Vergiler dahil", de: "Halal · Steuern inkl.", es: "Halal · Impuestos incluidos",
-    ru: "Халяль · Все налоги вкл.", ar: "حلال · جميع الضرائب مشمولة"
+    en: "Halal", tr: "Helal", de: "Halal", es: "Halal",
+    ru: "Халяль", ar: "حلال"
+  },
+  "meeting.share": {
+    en: "Exact meeting location will be shared via WhatsApp, Telegram or WeChat after booking.",
+    tr: "Tam buluşma noktası rezervasyondan sonra WhatsApp, Telegram veya WeChat üzerinden paylaşılacaktır.",
+    de: "Der genaue Treffpunkt wird nach der Buchung über WhatsApp, Telegram oder WeChat geteilt.",
+    es: "La ubicación exacta del encuentro se compartirá vía WhatsApp, Telegram o WeChat después de la reserva.",
+    ru: "Точное место встречи будет отправлено через WhatsApp, Telegram или WeChat после бронирования.",
+    ar: "سيتم مشاركة موقع اللقاء الدقيق عبر واتساب أو تيليجرام أو ويتشات بعد الحجز."
+  },
+  "dropoff.title": {
+    en: "Drop-off", tr: "Dönüş", de: "Rückfahrt", es: "Regreso", ru: "Возвращение", ar: "العودة"
+  },
+  "dropoff.desc": {
+    en: "All guests are dropped off at <strong class=\"text-white/80\">Kabataş Pier</strong> between 23:30 and 00:00. If you booked hotel transfer, the same driver who picked you up will be waiting at the pier to take you back to your hotel.",
+    tr: "Tüm misafirler <strong class=\"text-white/80\">Kabataş İskelesi</strong>'nde 23:30–00:00 arası bırakılır. Otel transferi aldıysanız, sizi otelinizden alan şoförümüz iskelede sizi bekliyor olacak ve otelinize geri götürecek.",
+    de: "Alle Gäste werden zwischen 23:30 und 00:00 am <strong class=\"text-white/80\">Kabataş-Pier</strong> abgesetzt. Wenn Sie einen Hoteltransfer gebucht haben, wartet derselbe Fahrer, der Sie abgeholt hat, am Pier und bringt Sie zurück zum Hotel.",
+    es: "Todos los invitados son dejados en el <strong class=\"text-white/80\">muelle de Kabataş</strong> entre las 23:30 y las 00:00. Si reservó traslado al hotel, el mismo chofer que le recogió le estará esperando en el muelle para llevarle de vuelta al hotel.",
+    ru: "Всех гостей высаживают на <strong class=\"text-white/80\">причале Кабаташ</strong> между 23:30 и 00:00. Если вы забронировали трансфер, тот же водитель, который вас забрал, будет ждать на причале, чтобы отвезти вас обратно в отель.",
+    ar: "يتم إنزال جميع الضيوف عند <strong class=\"text-white/80\">رصيف كاباتاش</strong> بين الساعة 23:30 و 00:00. إذا حجزت نقل الفندق، سينتظرك نفس السائق الذي أقلّك على الرصيف ليعيدك إلى فندقك."
   },
   "dinner.menuLabel": {
     en: "What's Included", tr: "Dahil Olanlar", de: "Inklusive", es: "Incluido",
@@ -855,14 +882,17 @@ const T = {
     ru: "10 видов турецких мезе", ar: "10 أنواع من المقبلات التركية"
   },
   "dinner.std.item2": {
-    en: "Warm appetizer: paçanga börek (pastırma & cheese)", tr: "Ara sıcak: paçanga böreği (pastırma ve kaşar)",
-    de: "Warme Vorspeise: Paçanga Börek (Pastirma & Käse)", es: "Entrante caliente: paçanga börek (pastırma y queso)",
-    ru: "Горячая закуска: пачанга бёрек (пастырма и сыр)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة وجبن)"
+    en: "Warm appetizer: paçanga börek (beef pastırma & kashar cheese)", tr: "Ara sıcak: paçanga böreği (dana pastırması ve kaşar peyniri)",
+    de: "Warme Vorspeise: Paçanga Börek (Rinder-Pastirma & Kashar-Käse)", es: "Entrante caliente: paçanga börek (pastırma de ternera y queso kashar)",
+    ru: "Горячая закуска: пачанга бёрек (говяжья пастырма и сыр кашар)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة بقرية وجبن قشقوان)"
   },
   "dinner.std.item3": {
-    en: "Main course with seasonal salad: salmon, sea bream, chicken, or meatball", tr: "Mevsim salatalı ana yemek: somon, çupra, tavuk veya köfte",
-    de: "Hauptgang mit Salat: Lachs, Dorade, Hähnchen oder Köfte", es: "Plato principal con ensalada: salmón, dorada, pollo o albóndigas",
-    ru: "Основное блюдо с сезонным салатом: лосось, дорада, курица или фрикадельки", ar: "طبق رئيسي مع سلطة موسمية: سلمون، دنيس، دجاج أو كفتة"
+    en: "Main course (with seasonal salad, choose one): salmon, sea bream, chicken, meatball, or vegetarian platter (falafel, roasted potatoes, bulgur pilaf, stewed vegetables & onion rings)",
+    tr: "Ana yemek (mevsim salatasıyla birlikte, birini seçin): somon, çipura, tavuk, köfte veya vejetaryen tabağı (falafel, patates tavası, bulgur pilavı, sebze ve soğan halkası)",
+    de: "Hauptgang (mit Saisonsalat, Auswahl): Lachs, Dorade, Hähnchen, Köfte oder vegetarischer Teller (Falafel, geröstete Kartoffeln, Bulgur-Pilaw, geschmortes Gemüse & Zwiebelringe)",
+    es: "Plato principal (con ensalada de temporada, elija uno): salmón, dorada, pollo, albóndigas o plato vegetariano (falafel, patatas asadas, pilaf de bulgur, verduras estofadas y aros de cebolla)",
+    ru: "Основное блюдо (с сезонным салатом, на выбор): лосось, дорада, курица, фрикадельки или вегетарианская тарелка (фалафель, жареный картофель, плов булгур, тушёные овощи и луковые кольца)",
+    ar: "طبق رئيسي (مع سلطة موسمية، اختر واحد): سلمون، دنيس، دجاج، كفتة أو طبق نباتي (فلافل، بطاطا مقلية، بلغر، خضروات مطبوخة وحلقات بصل)"
   },
   "dinner.std.item4": {
     en: "Dessert: ice cream cake", tr: "Tatlı: dondurmalı pasta",
@@ -879,23 +909,31 @@ const T = {
     de: "Derwisch-Show, 5 Volkstänze, Bauchtanz, Livemusik & DJ", es: "Show de derviches, 5 danzas folclóricas, danza del vientre, música en vivo y DJ",
     ru: "Шоу дервишей, 5 народных танцев, танец живота, живая музыка и DJ", ar: "عرض الدراويش، 5 رقصات شعبية، رقص شرقي، موسيقى حية و DJ"
   },
+  "dinner.std.item7": {
+    en: "Open-air deck & panoramic viewing terrace",
+    tr: "Açık güverte ve panoramik seyir terası",
+    de: "Open-Air-Deck und Panoramaterrasse",
+    es: "Cubierta al aire libre y terraza panorámica",
+    ru: "Открытая палуба и панорамная терраса",
+    ar: "سطح مكشوف وشرفة بانورامية"
+  },
   "dinner.vip.item1": {
     en: "15+ varieties of Turkish meze, served as a traditional spread", tr: "15+ çeşit Türk mezesi, geleneksel serpme olarak servis",
     de: "15+ Sorten türkische Meze, traditionell serviert", es: "15+ variedades de meze turco, servido como spread tradicional",
     ru: "15+ видов турецких мезе, поданных в традиционном стиле", ar: "15+ نوع من المقبلات التركية، تقدم بأسلوب تقليدي"
   },
   "dinner.vip.item2": {
-    en: "Warm appetizer: paçanga börek (pastırma & cheese)", tr: "Ara sıcak: paçanga böreği (pastırma ve kaşar)",
-    de: "Warme Vorspeise: Paçanga Börek (Pastirma & Käse)", es: "Entrante caliente: paçanga börek (pastırma y queso)",
-    ru: "Горячая закуска: пачанга бёрек (пастырма и сыр)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة وجبن)"
+    en: "Warm appetizer: paçanga börek (beef pastırma & kashar cheese)", tr: "Ara sıcak: paçanga böreği (dana pastırması ve kaşar peyniri)",
+    de: "Warme Vorspeise: Paçanga Börek (Rinder-Pastirma & Kashar-Käse)", es: "Entrante caliente: paçanga börek (pastırma de ternera y queso kashar)",
+    ru: "Горячая закуска: пачанга бёрек (говяжья пастырма и сыр кашар)", ar: "مقبلات ساخنة: باچانغا بوريك (بسطرمة بقرية وجبن قشقوان)"
   },
   "dinner.vip.item3": {
-    en: "Main course with seasonal salad (choose one): salmon, sea bream, chicken, meatball, rib-eye steak, or beef steak",
-    tr: "Mevsim salatalı ana yemek (birini seçin): somon, çupra, tavuk, köfte, antrikot veya biftek",
-    de: "Hauptgang mit Salat (Auswahl): Lachs, Dorade, Hähnchen, Köfte, Rib-Eye oder Rindersteak",
-    es: "Plato principal con ensalada (elija uno): salmón, dorada, pollo, albóndigas, chuletón o bistec",
-    ru: "Основное блюдо с салатом (на выбор): лосось, дорада, курица, фрикадельки, рибай или бифштекс",
-    ar: "طبق رئيسي مع سلطة (اختر واحد): سلمون، دنيس، دجاج، كفتة، ريب آي أو ستيك"
+    en: "Main course (with seasonal salad, choose one): salmon, sea bream, chicken, meatball, beef tenderloin, rib-eye, or vegetarian platter (falafel, roasted potatoes, bulgur pilaf, stewed vegetables & onion rings)",
+    tr: "Ana yemek (mevsim salatasıyla birlikte, birini seçin): somon, çipura, tavuk, köfte, dana bonfile, antrikot veya vejetaryen tabağı (falafel, patates tavası, bulgur pilavı, sebze ve soğan halkası)",
+    de: "Hauptgang (mit Saisonsalat, Auswahl): Lachs, Dorade, Hähnchen, Köfte, Rinderfilet, Rib-Eye oder vegetarischer Teller (Falafel, geröstete Kartoffeln, Bulgur-Pilaw, geschmortes Gemüse & Zwiebelringe)",
+    es: "Plato principal (con ensalada de temporada, elija uno): salmón, dorada, pollo, albóndigas, solomillo de ternera, chuletón o plato vegetariano (falafel, patatas asadas, pilaf de bulgur, verduras estofadas y aros de cebolla)",
+    ru: "Основное блюдо (с сезонным салатом, на выбор): лосось, дорада, курица, фрикадельки, говяжья вырезка, рибай или вегетарианская тарелка (фалафель, жареный картофель, плов булгур, тушёные овощи и луковые кольца)",
+    ar: "طبق رئيسي (مع سلطة موسمية، اختر واحد): سلمون، دنيس، دجاج، كفتة، فيليه لحم بقري، ريب آي أو طبق نباتي (فلافل، بطاطا مقلية، بلغر، خضروات مطبوخة وحلقات بصل)"
   },
   "dinner.vip.item4": {
     en: "Dessert: ice cream cake", tr: "Tatlı: dondurmalı pasta",
@@ -911,6 +949,14 @@ const T = {
     en: "Whirling Dervish show, 5 folk dances, belly dance, live music & DJ", tr: "Sema gösterisi, 5 halk dansı, oryantal dans, canlı müzik ve DJ",
     de: "Derwisch-Show, 5 Volkstänze, Bauchtanz, Livemusik & DJ", es: "Show de derviches, 5 danzas folclóricas, danza del vientre, música en vivo y DJ",
     ru: "Шоу дервишей, 5 народных танцев, танец живота, живая музыка и DJ", ar: "عرض الدراويش، 5 رقصات شعبية، رقص شرقي، موسيقى حية و DJ"
+  },
+  "dinner.vip.item7": {
+    en: "Open-air deck & panoramic viewing terrace",
+    tr: "Açık güverte ve panoramik seyir terası",
+    de: "Open-Air-Deck und Panoramaterrasse",
+    es: "Cubierta al aire libre y terraza panorámica",
+    ru: "Открытая палуба и панорамная терраса",
+    ar: "سطح مكشوف وشرفة بانورامية"
   },
   "dinner.perPerson": {
     en: " / person", tr: " / kişi", de: " / Person", es: " / persona",
@@ -1027,6 +1073,22 @@ const T = {
     ar: "شاهد غروب الشمس فوق البوسفور أثناء الاستمتاع بالعشاء والترفيه الحي. الساعة الذهبية على الماء لا تُنسى."
   },
   "tour.sunset.short": { en: "Sunset", tr: "Gün Batımı", de: "Abend", es: "Atardecer", ru: "Закат", ar: "غروب" },
+  "tour.sunset.maintenanceBadge": {
+    en: "In Maintenance",
+    tr: "Bakımda",
+    de: "In Wartung",
+    es: "En Mantenimiento",
+    ru: "На обслуживании",
+    ar: "قيد الصيانة"
+  },
+  "tour.sunset.maintenanceMsg": {
+    en: "Temporarily unavailable — our sunset boat is in maintenance. We'll be back soon.",
+    tr: "Bakım sebebiyle kısa süreliğine bu turda hizmet veremiyoruz. En kısa sürede döneceğiz.",
+    de: "Vorübergehend nicht verfügbar — unser Sunset-Boot ist in Wartung. Wir sind bald zurück.",
+    es: "Temporalmente no disponible — nuestro barco del atardecer está en mantenimiento. Volveremos pronto.",
+    ru: "Временно недоступно — наша лодка на закате на техническом обслуживании. Скоро вернёмся.",
+    ar: "غير متاح مؤقتاً — قارب الغروب قيد الصيانة. سنعود قريباً."
+  },
   "tour.dinner.label": {
     en: "Dinner & Show", tr: "Yemek & Şov", de: "Abendessen & Show", es: "Cena y Show", ru: "Ужин и шоу", ar: "عشاء وعرض"
   },
@@ -1054,7 +1116,7 @@ const T = {
     en: "Choose Your Experience", tr: "Deneyimini Seç", de: "Erlebnis wählen", es: "Elija su Experiencia", ru: "Выберите впечатление", ar: "اختر تجربتك"
   },
   "boats.desc": {
-    en: "Three ways to experience the Bosphorus. Pick the one that fits your mood.", tr: "Boğaz'ı deneyimlemenin üç yolu. Ruh halinize uygun olanı seçin.", de: "Drei Wege, den Bosporus zu erleben. Wählen Sie Ihren.", es: "Tres formas de vivir el Bósforo. Elija la que se adapte a su estado de ánimo.", ru: "Три способа познакомиться с Босфором. Выберите подходящий.", ar: "ثلاث طرق لتجربة البوسفور. اختر ما يناسب مزاجك."
+    en: "Pick the experience that fits your mood on the Bosphorus.", tr: "Boğaz'da ruh halinize uygun deneyimi seçin.", de: "Wählen Sie das Erlebnis, das zu Ihrer Stimmung am Bosporus passt.", es: "Elija la experiencia que mejor se adapte a su estado de ánimo en el Bósforo.", ru: "Выберите впечатление от Босфора, которое подходит вам.", ar: "اختر التجربة التي تناسب مزاجك على البوسفور."
   },
   "boats.viewpkg": {
     en: "View Packages →", tr: "Paketleri Gör →", de: "Pakete ansehen →", es: "Ver Paquetes →", ru: "Смотреть пакеты →", ar: "عرض الباقات ←"
@@ -1424,11 +1486,11 @@ const T = {
     ar: "رحلة غروب الشمس: العودة ~19:30"
   },
   "arrival.time.night": {
-    en: "Night Cruise: Return ~23:30",
-    tr: "Gece Turu: Dönüş ~23:30",
+    en: "Night Cruise: Return 23:30–00:00",
+    tr: "Gece Turu: Dönüş 23:30–00:00",
     de: "Nachtkreuzfahrt: Rückkehr ~23:30",
     es: "Crucero Nocturno: Regreso ~23:30",
-    ru: "Ночной круиз: Возвращение ~23:30",
+    ru: "Ночной круиз: Возвращение 23:30–00:00",
     ar: "رحلة ليلية: العودة ~23:30"
   },
   "arrival.time.pier": {
