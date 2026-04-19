@@ -196,9 +196,9 @@ const T = {
     ru: "3-часовой ночной круиз по Босфору", ar: "رحلة بحرية ليلية لمدة 3 ساعات"
   },
   "pkg.f.dinner": {
-    en: "Dinner — 7 meze + main course + dessert", tr: "Yemek — 7 meze + ana yemek + tatlı",
-    de: "Abendessen — 7 Meze + Hauptgericht + Dessert", es: "Cena — 7 meze + plato principal + postre",
-    ru: "Ужин — 7 мезе + основное блюдо + десерт", ar: "عشاء — 7 مقبلات + طبق رئيسي + حلوى"
+    en: "Dinner — 10 meze + main course + dessert", tr: "Yemek — 10 meze + ana yemek + tatlı",
+    de: "Abendessen — 10 Meze + Hauptgericht + Dessert", es: "Cena — 10 meze + plato principal + postre",
+    ru: "Ужин — 7 мезе + основное блюдо + десерт", ar: "عشاء — 10 مقبلات + طبق رئيسي + حلوى"
   },
   "pkg.f.dinner.vip": {
     en: "VIP dinner — mixed grill platter, premium cuts", tr: "VIP yemek — karışık ızgara tabağı, premium etler",
@@ -287,9 +287,9 @@ const T = {
     es: "Servicio completo de cena", ru: "Полный ужин", ar: "خدمة عشاء كاملة"
   },
   "incl.dinner.desc": {
-    en: "7 meze varieties, main course & dessert", tr: "7 çeşit meze, ana yemek & tatlı",
-    de: "7 Meze-Sorten, Hauptgang & Dessert", es: "7 variedades de meze, plato principal y postre",
-    ru: "7 видов мезе, основное блюдо и десерт", ar: "7 أنواع مقبلات، طبق رئيسي وحلوى"
+    en: "10 meze varieties, main course & dessert", tr: "10 çeşit meze, ana yemek & tatlı",
+    de: "10 Meze-Sorten, Hauptgang & Dessert", es: "10 variedades de meze, plato principal y postre",
+    ru: "10 видов мезе, основное блюдо и десерт", ar: "10 أنواع مقبلات، طبق رئيسي وحلوى"
   },
   "incl.entertainment": {
     en: "Live Entertainment", tr: "Canlı Eğlence", de: "Live-Unterhaltung",
@@ -336,12 +336,12 @@ const T = {
     ar: "أبحر بجوار برج الفتاة، قصر دولمة بهجة، جسر البوسفور، قصر بيلربيي، مسجد أورتاكوي، وقلعة روملي. المغادرة 20:45، العودة 23:30."
   },
   "incl.dinner.detail": {
-    en: "7 types of meze, choice of fish, chicken, or meatball main course, and dessert. Vegetarian menu available. VIP packages include mixed grill platter and premium meat options.",
-    tr: "7 çeşit meze, balık/tavuk/köfte ana yemek seçeneği ve tatlı. Vejetaryen menü mevcuttur. VIP paketlerde karışık ızgara tabağı ve özel et seçenekleri dahildir.",
-    de: "7 Meze-Sorten, Hauptgang nach Wahl (Fisch, Hähnchen oder Köfte) und Dessert. Vegetarisch möglich. VIP-Pakete mit Mixed Grill.",
-    es: "7 tipos de meze, elección de pescado, pollo o albóndigas como plato principal y postre. Menú vegetariano disponible. Los paquetes VIP incluyen parrillada mixta.",
-    ru: "7 видов мезе, выбор рыбы, курицы или котлет на горячее и десерт. Вегетарианское меню доступно. VIP-пакеты включают микс-гриль и премиум мясо.",
-    ar: "7 أنواع مقبلات، اختيار سمك أو دجاج أو كفتة كطبق رئيسي وحلوى. قائمة نباتية متوفرة. باقات VIP تشمل مشاوي مشكلة."
+    en: "10 types of meze for Standard (15+ for VIP), choice of salmon/sea bass/chicken/meatball main course, and dessert with ice cream. Vegetarian menu available. VIP packages include rib-eye and filet mignon options, plus table near the stage.",
+    tr: "Standard'ta 10 çeşit meze (VIP'te 15+), somon/çupra/tavuk/köfte ana yemek seçeneği ve dondurmalı pasta. Vejetaryen menü mevcuttur. VIP paketlerde antrikot ve biftek seçenekleri ile sahneye yakın masa dahildir.",
+    de: "10 Meze-Sorten Standard (15+ für VIP), Hauptgang (Lachs/Wolfsbarsch/Hähnchen/Köfte) und Dessert mit Eis. Vegetarisches Menü verfügbar. VIP-Pakete enthalten Rib-Eye/Filet und Tisch nahe der Bühne.",
+    es: "10 tipos de meze Standard (15+ para VIP), elección de plato principal (salmón/lubina/pollo/albóndigas) y postre con helado. Menú vegetariano disponible. Los paquetes VIP incluyen rib-eye y solomillo, y mesa cerca del escenario.",
+    ru: "10 видов мезе для Standard (15+ для VIP), выбор горячего (лосось/сибас/курица/котлеты) и десерт с мороженым. Вегетарианское меню доступно. VIP-пакеты включают рибай и филе, столик у сцены.",
+    ar: "10 أنواع مقبلات للباقة الأساسية (15+ للـVIP)، اختيار طبق رئيسي (سلمون/قاروص/دجاج/كفتة) وحلوى مع آيس كريم. قائمة نباتية متوفرة. باقات VIP تشمل ريب آي وفيليه، وطاولة قريبة من المسرح."
   },
   "incl.entertainment.detail": {
     en: "Live singer performances, traditional Turkish night show with folk dances, belly dance, and DJ music. Entertainment runs until 21:00.",
@@ -614,8 +614,8 @@ const T = {
   "faq.q1": { en: "What's on the dinner menu?", tr: "Yemek menüsünde neler var?", de: "Was gibt es zum Abendessen?", es: "¿Qué hay en el menú de la cena?", ru: "Что в меню ужина?", ar: "ماذا يوجد في قائمة العشاء؟" },
   "faq.a1": {
     en: "All packages include a full dinner with 7 varieties of Turkish meze, your choice of main course (fish, chicken, or meatball), and dessert. VIP packages feature a premium mixed grill platter with selected cuts. Vegetarian options are available on request.",
-    tr: "Tüm paketler 7 çeşit Türk meze, ana yemek seçenekleri (balık, tavuk veya köfte) ve tatlı içeren tam bir yemek içerir. VIP paketlerde seçkin etlerle premium karışık ızgara tabağı sunulur. İstek üzerine vejetaryen seçenekler mevcuttur.",
-    de: "Alle Pakete enthalten ein Abendessen mit 7 Meze-Sorten, Hauptgang nach Wahl (Fisch, Hähnchen oder Köfte) und Dessert. VIP-Pakete mit Premium-Mixed-Grill.",
+    tr: "Standard pakette 10 çeşit Türk mezesi (VIP'te 15+), somon/çupra/tavuk/köfte ana yemek seçenekleri ve dondurmalı pasta dahildir. VIP pakette antrikot ve biftek seçenekleri, sahneye yakın masa vardır. İstek üzerine vejetaryen menü mevcuttur.",
+    de: "Alle Pakete enthalten Abendessen mit 10 Meze-Sorten Standard (15+ für VIP), Hauptgang (Lachs/Wolfsbarsch/Hähnchen/Köfte) und Dessert mit Eis. VIP-Pakete mit Rib-Eye/Filet.",
     es: "Todos los paquetes incluyen una cena completa con 7 variedades de meze turco, tu elección de plato principal (pescado, pollo o albóndigas) y postre. Los paquetes VIP incluyen una parrillada mixta premium.",
     ru: "Все пакеты включают полный ужин с 7 видами турецких мезе, основное блюдо на выбор (рыба, курица или котлеты) и десерт. VIP-пакеты включают премиальное ассорти гриль.",
     ar: "تشمل جميع الباقات عشاءً كاملاً مع 7 أنواع من المقبلات التركية، واختيارك للطبق الرئيسي (سمك أو دجاج أو كفتة)، وحلوى. تتميز باقات VIP بطبق مشويات فاخر."
@@ -1159,7 +1159,7 @@ const T = {
     en: "3-hour Bosphorus night cruise", tr: "3 saat Boğaz gece turu", de: "3-stündige Bosporus-Nachtfahrt", es: "Crucero nocturno de 3 horas por el Bósforo", ru: "3-часовой ночной круиз по Босфору", ar: "رحلة ليلية في البوسفور لمدة 3 ساعة"
   },
   "pkg.feat.dinner": {
-    en: "Dinner — 7 meze + salad + main course + dessert", tr: "Akşam yemeği — 7 meze + salata + ana yemek + tatlı", de: "Abendessen — 7 Meze + Salat + Hauptgang + Dessert", es: "Cena — 7 meze + ensalada + plato principal + postre", ru: "Ужин — 7 мезе + салат + основное блюдо + десерт", ar: "عشاء — 7 مقبلات + سلطة + طبق رئيسي + حلوى"
+    en: "Dinner — 10 meze + salad + main course + dessert", tr: "Akşam yemeği — 10 meze + salata + ana yemek + tatlı", de: "Abendessen — 10 Meze + Salat + Hauptgang + Dessert", es: "Cena — 10 meze + ensalada + plato principal + postre", ru: "Ужин — 10 мезе + салат + основное блюдо + десерт", ar: "عشاء — 10 مقبلات + سلطة + طبق رئيسي + حلوى"
   },
   "pkg.feat.choices": {
     en: "4 choices: vegetarian, fish, chicken, meatball", tr: "4 seçenek: vejetaryen, balık, tavuk, köfte", de: "4 Optionen: vegetarisch, Fisch, Hähnchen, Frikadellen", es: "4 opciones: vegetariano, pescado, pollo, albóndigas", ru: "4 варианта: вегетарианское, рыба, курица, котлеты", ar: "4 خيارات: نباتي، سمك، دجاج، كفتة"
@@ -1289,7 +1289,7 @@ const T = {
     en: "Premium Cuisine", tr: "Premium Mutfak", de: "Premium-Küche", es: "Cocina Premium", ru: "Премиум-кухня", ar: "مطبخ فاخر"
   },
   "gal.7.desc": {
-    en: "7 meze + main course + dessert", tr: "7 meze + ana yemek + tatlı", de: "7 Meze + Hauptgang + Dessert", es: "7 meze + plato principal + postre", ru: "7 мезе + основное + десерт", ar: "7 مقبلات + طبق رئيسي + حلوى"
+    en: "10 meze + main course + dessert", tr: "10 meze + ana yemek + tatlı", de: "10 Meze + Hauptgang + Dessert", es: "10 meze + plato principal + postre", ru: "10 мезе + основное + десерт", ar: "10 مقبلات + طبق رئيسي + حلوى"
   },
   "gal.8.title": {
     en: "Romantic Evening", tr: "Romantik Akşam", de: "Romantischer Abend", es: "Noche Romántica", ru: "Романтический вечер", ar: "أمسية رومانسية"
@@ -1392,12 +1392,12 @@ const T = {
     ar: "رحلة غروب الشمس: الصعود 17:00 · المغادرة 17:15"
   },
   "boarding.time.night": {
-    en: "Night Cruise: Boarding 20:30 · Departure 20:45",
-    tr: "Gece Turu: Biniş 20:30 · Kalkış 20:45",
-    de: "Nachtkreuzfahrt: Boarding 20:30 · Abfahrt 20:45",
-    es: "Crucero Nocturno: Embarque 20:30 · Salida 20:45",
-    ru: "Ночной круиз: Посадка 20:30 · Отправление 20:45",
-    ar: "رحلة ليلية: الصعود 20:30 · المغادرة 20:45"
+    en: "Night Cruise: Boarding 20:00 · Departure 21:00",
+    tr: "Gece Turu: Biniş 20:00 · Kalkış 21:00",
+    de: "Nachtkreuzfahrt: Boarding 20:00 · Abfahrt 21:00",
+    es: "Crucero Nocturno: Embarque 20:00 · Salida 21:00",
+    ru: "Ночной круиз: Посадка 20:00 · Отправление 21:00",
+    ar: "رحلة ليلية: الصعود 20:00 · المغادرة 21:00"
   },
   "boarding.time.pier": {
     en: "Kabataş Pier",
