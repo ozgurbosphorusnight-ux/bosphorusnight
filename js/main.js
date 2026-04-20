@@ -2117,7 +2117,15 @@ function wizNext() {
       wizScrollToElement('#wizGuestName');
       return;
     }
-    // 2) Phone — must be at least 7 digits (strip non-digits first)
+    // 2a) Country code — must be picked from datalist (no default)
+    if (!wizHasCountryCode()) {
+      const txt = (T['wizard.pickCountry'] && T['wizard.pickCountry'][currentLang]) || 'Please select your country code';
+      if (phoneWarn) { phoneWarn.textContent = txt; phoneWarn.classList.remove('hidden'); }
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizCountryCode');
+      return;
+    }
+    // 2b) Phone — must be at least 7 digits (strip non-digits first)
     const phoneDigits = phone.replace(/\D/g, '');
     if (!phone || phoneDigits.length < 7) {
       const key = !phone ? 'wizard.enterPhone' : 'wizard.invalidPhone';
@@ -2518,12 +2526,32 @@ function wizUpdateTicketName() {
   }
 }
 
+// Country code input is a searchable datalist combobox — value may be "🇹🇷 +90" after selection.
+// This extracts just the "+NN" part for phone formatting.
+function wizGetDialCode() {
+  const raw = document.getElementById('wizCountryCode')?.value || '+90';
+  const m = raw.match(/\+\d+/);
+  return m ? m[0] : '+90';
+}
+
+// Normalize country input after user picks from datalist: collapse "🇹🇷 Türkiye +90" → "🇹🇷 +90".
+function wizOnCountryInput(input) {
+  const val = input.value || '';
+  // Look for flag emoji (regional indicator pair) + dial code in the typed/selected text
+  const flagMatch = val.match(/(\p{RI}\p{RI})/u);
+  const codeMatch = val.match(/\+\d+/);
+  if (flagMatch && codeMatch) {
+    const compact = `${flagMatch[1]} ${codeMatch[0]}`;
+    if (val !== compact) input.value = compact;
+  }
+  if (typeof wizUpdateTicketPhone === 'function') wizUpdateTicketPhone();
+}
+
 function wizUpdateTicketPhone() {
-  const code = document.getElementById('wizCountryCode')?.value || '+90';
   const num = (document.getElementById('wizPhone')?.value || '').trim();
   const el = document.getElementById('wizTicketPhone');
-  if (el) el.textContent = num ? `${code} ${num}` : '—';
-  if (num) {
+  if (el) el.textContent = (num && wizHasCountryCode()) ? `${wizGetDialCode()} ${num}` : '—';
+  if (num && wizHasCountryCode()) {
     const warn = document.getElementById('wizPhoneWarning');
     if (warn) warn.classList.add('hidden');
     const hint = document.getElementById('wizNextHint');
@@ -2561,9 +2589,15 @@ function wizIsValidName(name) {
 }
 
 function wizGetFullPhone() {
-  const code = document.getElementById('wizCountryCode')?.value || '+90';
   const num = (document.getElementById('wizPhone')?.value || '').trim();
-  return num ? `${code} ${num}` : '';
+  if (!num || !wizHasCountryCode()) return '';
+  return `${wizGetDialCode()} ${num}`;
+}
+
+// True when the user has actually picked a country (value contains a flag + dial code).
+function wizHasCountryCode() {
+  const raw = document.getElementById('wizCountryCode')?.value || '';
+  return /\p{RI}\p{RI}/u.test(raw) && /\+\d+/.test(raw);
 }
 
 function wizCalcPrice() {

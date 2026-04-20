@@ -2195,6 +2195,14 @@ const T = {
     en: "Please enter your phone number", tr: "Lütfen telefon numaranızı girin", de: "Bitte geben Sie Ihre Telefonnummer ein", es: "Por favor ingrese su número de teléfono",
     ru: "Пожалуйста, введите номер телефона", ar: "يرجى إدخال رقم هاتفك"
   },
+  "wizard.pickCountry": {
+    en: "Please select your country code", tr: "Lütfen ülke kodunu seçin", de: "Bitte Ländervorwahl auswählen", es: "Por favor seleccione su código de país",
+    ru: "Пожалуйста, выберите код страны", ar: "يرجى اختيار رمز بلدك"
+  },
+  "wizard.countryPlaceholder": {
+    en: "Country", tr: "Ülke", de: "Land", es: "País",
+    ru: "Страна", ar: "الدولة"
+  },
   "wizard.invalidPhone": {
     en: "Please enter a valid phone number", tr: "Lütfen geçerli bir telefon numarası girin", de: "Bitte geben Sie eine gültige Telefonnummer ein", es: "Por favor ingrese un número de teléfono válido",
     ru: "Пожалуйста, введите действительный номер телефона", ar: "يرجى إدخال رقم هاتف صحيح"
