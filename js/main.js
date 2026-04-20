@@ -757,6 +757,20 @@ async function fetchDynamicPrices() {
       if (entry?.price) el.textContent = `€${entry.price}`;
     });
 
+    // Fill strikethrough prices: <span data-original-price="DINNER_STD">€40</span>
+    // Hide if original == current (no discount).
+    document.querySelectorAll('[data-original-price]').forEach(el => {
+      const code = el.dataset.originalPrice;
+      const entry = pkg[code];
+      if (!entry) return;
+      if (entry.original && entry.original > entry.price) {
+        el.textContent = `€${entry.original}`;
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
     // Expose for other modules (wizard, booking panel)
     window.PRICES_DATA = { packages: pkg, addons: addon };
   } catch (err) {

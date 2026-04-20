@@ -29,14 +29,18 @@ export default async function handler(req, res) {
     if (type === 'prices') {
       try {
         const [pkgRes, addonRes] = await Promise.all([
-          supabase.from('packages').select('code, price_eur').eq('is_active', true),
+          supabase.from('packages').select('code, price_eur, original_price_eur').eq('is_active', true),
           supabase.from('addons').select('code, price_eur, price_type'),
         ]);
         if (pkgRes.error) throw pkgRes.error;
         if (addonRes.error) throw addonRes.error;
 
         const packages = {};
-        for (const p of pkgRes.data || []) packages[p.code] = { price: Number(p.price_eur) };
+        for (const p of pkgRes.data || []) {
+          const price = Number(p.price_eur);
+          const original = p.original_price_eur != null ? Number(p.original_price_eur) : price;
+          packages[p.code] = { price, original };
+        }
         const addons = {};
         for (const a of addonRes.data || []) addons[a.code] = { price: Number(a.price_eur), type: a.price_type };
 
@@ -54,7 +58,7 @@ export default async function handler(req, res) {
       if (!user) return res.status(401).json({ error: 'Yetkisiz' });
       try {
         const [pkgRes, addonRes] = await Promise.all([
-          supabase.from('packages').select('code, price_eur, tour_type, tier, is_active, name_translations').order('code'),
+          supabase.from('packages').select('code, price_eur, original_price_eur, tour_type, tier, is_active, name_translations').order('code'),
           supabase.from('addons').select('code, price_eur, price_type, name_translations').order('code'),
         ]);
         if (pkgRes.error) throw pkgRes.error;
@@ -84,7 +88,7 @@ export default async function handler(req, res) {
       return res.status(403).json({ error: 'Sadece yönetici fiyat değiştirebilir' });
     }
 
-    const { type, code, price_eur } = req.body || {};
+    const { type, code, price_eur, original_price_eur } = req.body || {};
     if (!type || !code || price_eur === undefined) {
       return res.status(400).json({ error: 'type, code ve price_eur gerekli' });
     }
@@ -97,9 +101,20 @@ export default async function handler(req, res) {
     }
 
     const table = type === 'package' ? 'packages' : 'addons';
+    const updates = { price_eur: numPrice };
+
+    // Packages also support original_price (for strikethrough / discount calc)
+    if (type === 'package' && original_price_eur !== undefined) {
+      const numOriginal = Number(original_price_eur);
+      if (!Number.isFinite(numOriginal) || numOriginal < 0) {
+        return res.status(400).json({ error: 'Geçersiz normal fiyat' });
+      }
+      updates.original_price_eur = numOriginal;
+    }
+
     const { data, error } = await supabase
       .from(table)
-      .update({ price_eur: numPrice })
+      .update(updates)
       .eq('code', code)
       .select()
       .single();

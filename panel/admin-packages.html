@@ -131,7 +131,59 @@
       per_booking: 'rezervasyon başı',
     };
 
-    function renderRow({ code, price, label, meta, type }) {
+    function calcDiscount(original, price) {
+      if (!original || original <= 0) return 0;
+      return Math.round(((original - price) / original) * 100 * 10) / 10; // 1 decimal
+    }
+
+    function renderPackageRow({ code, price, original, label, meta }) {
+      const disabled = role !== 'admin_sahip' ? 'disabled' : '';
+      const discount = calcDiscount(original, price);
+      return `
+        <div class="bg-navy-light rounded-xl p-4 border border-white/5" data-row-code="${code}">
+          <div class="mb-3">
+            <p class="text-white font-semibold text-sm">${label}</p>
+            <p class="text-white/30 text-xs mt-0.5">${code}${meta ? ' · ' + meta : ''}</p>
+          </div>
+          <div class="grid grid-cols-12 gap-2 items-end">
+            <div class="col-span-12 sm:col-span-4">
+              <label class="text-white/40 text-[10px] uppercase tracking-wide mb-1 block">Normal Fiyat</label>
+              <div class="flex items-center gap-1">
+                <span class="text-white/40 text-sm">€</span>
+                <input type="number" step="0.01" min="0" value="${original}"
+                  data-field="original" data-code="${code}" data-type="package"
+                  data-original-orig="${original}" data-original-price="${price}"
+                  oninput="onPackageInput(this)"
+                  class="pkg-input flex-1 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-base font-semibold focus:border-gold focus:outline-none" ${disabled}>
+              </div>
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label class="text-white/40 text-[10px] uppercase tracking-wide mb-1 block">İndirim</label>
+              <div class="flex items-center gap-1">
+                <input type="number" step="0.1" min="0" max="99" value="${discount}"
+                  data-field="discount" data-code="${code}"
+                  oninput="onPackageInput(this)"
+                  class="pkg-input flex-1 bg-navy-dark border border-white/10 rounded-lg px-2 py-2 text-white text-base font-semibold focus:border-gold focus:outline-none" ${disabled}>
+                <span class="text-white/40 text-sm">%</span>
+              </div>
+            </div>
+            <div class="col-span-6 sm:col-span-3">
+              <label class="text-white/40 text-[10px] uppercase tracking-wide mb-1 block">Satış Fiyatı</label>
+              <div class="bg-navy-dark border border-white/5 rounded-lg px-2 py-2 text-gold font-bold text-base">
+                €<span data-field="display-price" data-code="${code}">${price.toFixed(2)}</span>
+              </div>
+            </div>
+            <div class="col-span-12 sm:col-span-2">
+              <button onclick="savePackagePrice('${code}')" data-code="${code}"
+                class="save-btn w-full bg-gold text-navy-dark font-semibold py-2 rounded-lg text-sm hover:bg-gold-light transition-colors disabled:opacity-30 disabled:cursor-not-allowed" disabled>
+                Kaydet
+              </button>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderAddonRow({ code, price, label, meta }) {
       const disabled = role !== 'admin_sahip' ? 'disabled' : '';
       return `
         <div class="bg-navy-light rounded-xl p-4 border border-white/5">
@@ -144,10 +196,10 @@
           <div class="flex items-center gap-2">
             <span class="text-white/40 text-sm">€</span>
             <input type="number" step="0.01" min="0" value="${price}"
-              data-code="${code}" data-type="${type}" data-original="${price}"
-              onchange="markDirty(this)"
-              class="price-input flex-1 bg-navy-dark border border-white/10 rounded-lg px-3 py-2 text-white text-base font-semibold focus:border-gold focus:outline-none" ${disabled}>
-            <button onclick="savePrice(this)" data-code="${code}" data-type="${type}"
+              data-code="${code}" data-original="${price}"
+              oninput="onAddonInput(this)"
+              class="addon-input flex-1 bg-navy-dark border border-white/10 rounded-lg px-3 py-2 text-white text-base font-semibold focus:border-gold focus:outline-none" ${disabled}>
+            <button onclick="saveAddonPrice(this)" data-code="${code}"
               class="save-btn bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gold-light transition-colors disabled:opacity-30 disabled:cursor-not-allowed" disabled>
               Kaydet
             </button>
@@ -155,24 +207,74 @@
         </div>`;
     }
 
-    function markDirty(input) {
+    function onPackageInput(input) {
+      const code = input.dataset.code;
+      const row = document.querySelector(`[data-row-code="${code}"]`);
+      const originalInput = row.querySelector('[data-field="original"]');
+      const discountInput = row.querySelector('[data-field="discount"]');
+      const display = row.querySelector('[data-field="display-price"]');
+      const btn = row.querySelector('.save-btn');
+
+      const original = Number(originalInput.value) || 0;
+      const discount = Number(discountInput.value) || 0;
+      const price = Math.max(0, original * (1 - discount / 100));
+      display.textContent = price.toFixed(2);
+
+      const origOrig = Number(originalInput.dataset.originalOrig);
+      const origPrice = Number(originalInput.dataset.originalPrice);
+      const changed = original !== origOrig || Math.abs(price - origPrice) > 0.01;
+      btn.disabled = !changed || role !== 'admin_sahip';
+    }
+
+    function onAddonInput(input) {
       const btn = input.parentElement.querySelector('.save-btn');
       const changed = Number(input.value) !== Number(input.dataset.original);
       btn.disabled = !changed || role !== 'admin_sahip';
     }
 
-    async function savePrice(btn) {
+    async function savePackagePrice(code) {
+      const row = document.querySelector(`[data-row-code="${code}"]`);
+      const originalInput = row.querySelector('[data-field="original"]');
+      const discountInput = row.querySelector('[data-field="discount"]');
+      const btn = row.querySelector('.save-btn');
+
+      const original_price_eur = Number(originalInput.value);
+      const discount = Number(discountInput.value) || 0;
+      const price_eur = Math.round((original_price_eur * (1 - discount / 100)) * 100) / 100;
+
+      btn.disabled = true;
+      btn.textContent = '…';
+      const result = await api('/boats', {
+        method: 'PUT',
+        body: JSON.stringify({ type: 'package', code, price_eur, original_price_eur })
+      });
+      btn.textContent = 'Kaydet';
+
+      const status = document.getElementById('statusMsg');
+      if (result?.ok) {
+        originalInput.dataset.originalOrig = original_price_eur;
+        originalInput.dataset.originalPrice = price_eur;
+        status.textContent = `✓ ${code} güncellendi`;
+        status.className = 'text-xs text-green-400';
+      } else {
+        status.textContent = `✗ ${result?.json?.error || 'Hata'}`;
+        status.className = 'text-xs text-red-400';
+        btn.disabled = false;
+      }
+      setTimeout(() => { status.textContent = ''; }, 3000);
+    }
+
+    async function saveAddonPrice(btn) {
       const wrap = btn.parentElement;
-      const input = wrap.querySelector('.price-input');
+      const input = wrap.querySelector('.addon-input');
       const code = btn.dataset.code;
-      const type = btn.dataset.type;
       const price_eur = Number(input.value);
 
       btn.disabled = true;
       btn.textContent = '…';
       const result = await api('/boats', {
         method: 'PUT',
-        body: JSON.stringify({ type, code, price_eur })
+        body: JSON.stringify({ type: 'addon', code, price_eur })
       });
       btn.textContent = 'Kaydet';
 
@@ -197,20 +299,23 @@
       }
       const { packages, addons } = result.json;
 
-      document.getElementById('pkgList').innerHTML = packages.map(p => renderRow({
-        code: p.code,
-        price: p.price_eur,
-        label: PKG_LABELS[p.code] || p.name_translations?.tr || p.code,
-        meta: p.is_active ? `${p.tour_type} · ${p.tier}` : `${p.tour_type} · ${p.tier} · PASİF`,
-        type: 'package',
-      })).join('') || '<div class="text-white/30 text-center py-4 text-sm">Paket yok</div>';
+      document.getElementById('pkgList').innerHTML = packages.map(p => {
+        const price = Number(p.price_eur);
+        const original = p.original_price_eur != null ? Number(p.original_price_eur) : price;
+        return renderPackageRow({
+          code: p.code,
+          price,
+          original,
+          label: PKG_LABELS[p.code] || p.name_translations?.tr || p.code,
+          meta: p.is_active ? `${p.tour_type} · ${p.tier}` : `${p.tour_type} · ${p.tier} · PASİF`,
+        });
+      }).join('') || '<div class="text-white/30 text-center py-4 text-sm">Paket yok</div>';
 
-      document.getElementById('addonList').innerHTML = addons.map(a => renderRow({
+      document.getElementById('addonList').innerHTML = addons.map(a => renderAddonRow({
         code: a.code,
-        price: a.price_eur,
+        price: Number(a.price_eur),
         label: ADDON_LABELS[a.code] || a.name_translations?.tr || a.code,
         meta: PRICE_TYPE_LABELS[a.price_type] || a.price_type,
-        type: 'addon',
       })).join('') || '<div class="text-white/30 text-center py-4 text-sm">Eklenti yok</div>';
     }
 
