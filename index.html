@@ -3186,68 +3186,19 @@
         <!-- Phone Number -->
         <label class="text-white/80 text-xs font-semibold mb-1 block mt-4" data-i18n="wizard.phone">Phone Number</label>
         <div class="flex gap-2 min-w-0">
-          <input type="text" id="wizCountryCode" list="wizCountryList" autocomplete="off" placeholder="Country" data-i18n-placeholder="wizard.countryPlaceholder" oninput="wizOnCountryInput(this)" onchange="wizOnCountryInput(this)" class="bg-white/5 border border-white/10 rounded-lg px-2 py-2.5 text-base text-white focus:border-[#c9a84c]/50 focus:outline-none w-[115px] flex-shrink-0">
-          <datalist id="wizCountryList">
-            <option value="🇹🇷 Türkiye +90"></option>
-            <option value="🇦🇿 Azerbaijan +994"></option>
-            <option value="🇷🇺 Russia +7"></option>
-            <option value="🇸🇦 Saudi Arabia +966"></option>
-            <option value="🇦🇪 UAE +971"></option>
-            <option value="🇰🇼 Kuwait +965"></option>
-            <option value="🇶🇦 Qatar +974"></option>
-            <option value="🇧🇭 Bahrain +973"></option>
-            <option value="🇴🇲 Oman +968"></option>
-            <option value="🇯🇴 Jordan +962"></option>
-            <option value="🇱🇧 Lebanon +961"></option>
-            <option value="🇮🇷 Iran +98"></option>
-            <option value="🇮🇱 Israel +972"></option>
-            <option value="🇪🇬 Egypt +20"></option>
-            <option value="🇲🇦 Morocco +212"></option>
-            <option value="🇩🇪 Germany +49"></option>
-            <option value="🇦🇹 Austria +43"></option>
-            <option value="🇨🇭 Switzerland +41"></option>
-            <option value="🇳🇱 Netherlands +31"></option>
-            <option value="🇧🇪 Belgium +32"></option>
-            <option value="🇬🇧 United Kingdom +44"></option>
-            <option value="🇮🇪 Ireland +353"></option>
-            <option value="🇫🇷 France +33"></option>
-            <option value="🇮🇹 Italy +39"></option>
-            <option value="🇪🇸 Spain +34"></option>
-            <option value="🇵🇹 Portugal +351"></option>
-            <option value="🇬🇷 Greece +30"></option>
-            <option value="🇵🇱 Poland +48"></option>
-            <option value="🇧🇬 Bulgaria +359"></option>
-            <option value="🇷🇴 Romania +40"></option>
-            <option value="🇺🇦 Ukraine +380"></option>
-            <option value="🇸🇪 Sweden +46"></option>
-            <option value="🇳🇴 Norway +47"></option>
-            <option value="🇩🇰 Denmark +45"></option>
-            <option value="🇫🇮 Finland +358"></option>
-            <option value="🇭🇺 Hungary +36"></option>
-            <option value="🇨🇿 Czech Republic +420"></option>
-            <option value="🇺🇸 United States +1"></option>
-            <option value="🇨🇦 Canada +1"></option>
-            <option value="🇲🇽 Mexico +52"></option>
-            <option value="🇧🇷 Brazil +55"></option>
-            <option value="🇦🇷 Argentina +54"></option>
-            <option value="🇦🇺 Australia +61"></option>
-            <option value="🇳🇿 New Zealand +64"></option>
-            <option value="🇨🇳 China +86"></option>
-            <option value="🇭🇰 Hong Kong +852"></option>
-            <option value="🇹🇼 Taiwan +886"></option>
-            <option value="🇯🇵 Japan +81"></option>
-            <option value="🇰🇷 South Korea +82"></option>
-            <option value="🇸🇬 Singapore +65"></option>
-            <option value="🇹🇭 Thailand +66"></option>
-            <option value="🇵🇭 Philippines +63"></option>
-            <option value="🇻🇳 Vietnam +84"></option>
-            <option value="🇮🇩 Indonesia +62"></option>
-            <option value="🇲🇾 Malaysia +60"></option>
-            <option value="🇵🇰 Pakistan +92"></option>
-            <option value="🇧🇩 Bangladesh +880"></option>
-            <option value="🇮🇳 India +91"></option>
-            <option value="🇿🇦 South Africa +27"></option>
-          </datalist>
+          <!-- Custom country combobox — flagcdn.com images, search, popular-first -->
+          <div class="wiz-country-wrapper relative flex-shrink-0">
+            <button type="button" id="wizCountryBtn" onclick="wizToggleCountryList(event)" class="w-[95px] flex items-center gap-1.5 bg-white/5 border border-white/10 rounded-lg px-2 py-2.5 text-base text-white hover:border-white/20 focus:border-[#c9a84c]/50 focus:outline-none transition-colors">
+              <img id="wizCountryFlag" src="" alt="" class="w-5 h-auto flex-shrink-0 hidden">
+              <span id="wizCountryDisplay" class="flex-1 text-left text-sm text-white/40 truncate" data-i18n="wizard.countryPlaceholder">Country</span>
+              <svg class="w-4 h-4 text-[#c9a84c] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+            </button>
+            <input type="hidden" id="wizCountryCode" value="">
+            <div id="wizCountryDropdown" class="hidden absolute top-full left-0 mt-1 w-[min(280px,calc(100vw-40px))] lg:w-[240px] max-h-[min(320px,50vh)] bg-[#0a0f1e] border border-[#c9a84c]/30 rounded-lg shadow-2xl z-[100] flex flex-col overflow-hidden">
+              <input type="text" id="wizCountrySearch" placeholder="Search country..." oninput="wizFilterCountryList()" onclick="event.stopPropagation()" class="flex-shrink-0 w-full bg-white/5 border-b border-white/10 px-3 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none" autocomplete="off">
+              <ul id="wizCountryListUl" class="flex-1 overflow-y-auto py-1 list-none m-0 p-0"></ul>
+            </div>
+          </div>
           <input type="tel" id="wizPhone" oninput="this.value=this.value.replace(/[^0-9 ]/g,'');wizUpdateTicketPhone()" class="flex-1 min-w-0 bg-white/5 border border-white/10 rounded-lg px-3 py-2.5 text-base text-white focus:border-[#c9a84c]/50 focus:outline-none placeholder-white/30" placeholder="532 520 1700" inputmode="numeric" pattern="[0-9 ]*" required>
         </div>
         <p class="text-[#c9a84c]/50 text-[10px] mt-2 mb-1" data-i18n="wizard.phoneNote">We will contact you via this number for booking confirmation</p>

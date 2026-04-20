@@ -2526,26 +2526,161 @@ function wizUpdateTicketName() {
   }
 }
 
-// Country code input is a searchable datalist combobox — value may be "🇹🇷 +90" after selection.
-// This extracts just the "+NN" part for phone formatting.
+// ===== Country dropdown (custom combobox with flagcdn.com flags + search) =====
+// Replaces native <datalist> (Windows doesn't render flag emoji, gives poor UX).
+// wizCountryCode hidden input holds dial code like "+90" (cleaner than mixed format).
+const WIZ_COUNTRIES = [
+  { iso: 'tr', dial: '+90',  name: 'Türkiye' },
+  { iso: 'sa', dial: '+966', name: 'Saudi Arabia' },
+  { iso: 'ae', dial: '+971', name: 'UAE' },
+  { iso: 'ru', dial: '+7',   name: 'Russia' },
+  { iso: 'de', dial: '+49',  name: 'Germany' },
+  { iso: 'ir', dial: '+98',  name: 'Iran' },
+  { iso: 'gb', dial: '+44',  name: 'United Kingdom' },
+  { iso: 'us', dial: '+1',   name: 'United States' },
+  { iso: 'fr', dial: '+33',  name: 'France' },
+  { iso: 'it', dial: '+39',  name: 'Italy' },
+  { iso: 'ar', dial: '+54',  name: 'Argentina' },
+  { iso: 'at', dial: '+43',  name: 'Austria' },
+  { iso: 'au', dial: '+61',  name: 'Australia' },
+  { iso: 'az', dial: '+994', name: 'Azerbaijan' },
+  { iso: 'bd', dial: '+880', name: 'Bangladesh' },
+  { iso: 'be', dial: '+32',  name: 'Belgium' },
+  { iso: 'bg', dial: '+359', name: 'Bulgaria' },
+  { iso: 'bh', dial: '+973', name: 'Bahrain' },
+  { iso: 'br', dial: '+55',  name: 'Brazil' },
+  { iso: 'ca', dial: '+1',   name: 'Canada' },
+  { iso: 'ch', dial: '+41',  name: 'Switzerland' },
+  { iso: 'cn', dial: '+86',  name: 'China' },
+  { iso: 'cz', dial: '+420', name: 'Czech Republic' },
+  { iso: 'dk', dial: '+45',  name: 'Denmark' },
+  { iso: 'eg', dial: '+20',  name: 'Egypt' },
+  { iso: 'es', dial: '+34',  name: 'Spain' },
+  { iso: 'fi', dial: '+358', name: 'Finland' },
+  { iso: 'gr', dial: '+30',  name: 'Greece' },
+  { iso: 'hk', dial: '+852', name: 'Hong Kong' },
+  { iso: 'hu', dial: '+36',  name: 'Hungary' },
+  { iso: 'id', dial: '+62',  name: 'Indonesia' },
+  { iso: 'ie', dial: '+353', name: 'Ireland' },
+  { iso: 'il', dial: '+972', name: 'Israel' },
+  { iso: 'in', dial: '+91',  name: 'India' },
+  { iso: 'jo', dial: '+962', name: 'Jordan' },
+  { iso: 'jp', dial: '+81',  name: 'Japan' },
+  { iso: 'kr', dial: '+82',  name: 'South Korea' },
+  { iso: 'kw', dial: '+965', name: 'Kuwait' },
+  { iso: 'lb', dial: '+961', name: 'Lebanon' },
+  { iso: 'ma', dial: '+212', name: 'Morocco' },
+  { iso: 'mx', dial: '+52',  name: 'Mexico' },
+  { iso: 'my', dial: '+60',  name: 'Malaysia' },
+  { iso: 'nl', dial: '+31',  name: 'Netherlands' },
+  { iso: 'no', dial: '+47',  name: 'Norway' },
+  { iso: 'nz', dial: '+64',  name: 'New Zealand' },
+  { iso: 'om', dial: '+968', name: 'Oman' },
+  { iso: 'ph', dial: '+63',  name: 'Philippines' },
+  { iso: 'pk', dial: '+92',  name: 'Pakistan' },
+  { iso: 'pl', dial: '+48',  name: 'Poland' },
+  { iso: 'pt', dial: '+351', name: 'Portugal' },
+  { iso: 'qa', dial: '+974', name: 'Qatar' },
+  { iso: 'ro', dial: '+40',  name: 'Romania' },
+  { iso: 'se', dial: '+46',  name: 'Sweden' },
+  { iso: 'sg', dial: '+65',  name: 'Singapore' },
+  { iso: 'th', dial: '+66',  name: 'Thailand' },
+  { iso: 'tw', dial: '+886', name: 'Taiwan' },
+  { iso: 'ua', dial: '+380', name: 'Ukraine' },
+  { iso: 'vn', dial: '+84',  name: 'Vietnam' },
+  { iso: 'za', dial: '+27',  name: 'South Africa' },
+];
+// First 10 are popular (shown at top of list)
+const WIZ_POPULAR_COUNT = 10;
+
+// Hidden input value is just "+90" now. Old emoji format also supported for back-compat.
 function wizGetDialCode() {
-  const raw = document.getElementById('wizCountryCode')?.value || '+90';
+  const raw = document.getElementById('wizCountryCode')?.value || '';
   const m = raw.match(/\+\d+/);
   return m ? m[0] : '+90';
 }
 
-// Normalize country input after user picks from datalist: collapse "🇹🇷 Türkiye +90" → "🇹🇷 +90".
-function wizOnCountryInput(input) {
-  const val = input.value || '';
-  // Look for flag emoji (regional indicator pair) + dial code in the typed/selected text
-  const flagMatch = val.match(/(\p{RI}\p{RI})/u);
-  const codeMatch = val.match(/\+\d+/);
-  if (flagMatch && codeMatch) {
-    const compact = `${flagMatch[1]} ${codeMatch[0]}`;
-    if (val !== compact) input.value = compact;
+function wizHasCountryCode() {
+  const raw = document.getElementById('wizCountryCode')?.value || '';
+  return /\+\d+/.test(raw);
+}
+
+// Render the country list, with popular section first if no filter, else filtered A-Z.
+function wizPopulateCountryList(filter) {
+  const ul = document.getElementById('wizCountryListUl');
+  if (!ul) return;
+  const q = (filter || '').toLowerCase().trim();
+
+  const matches = q
+    ? WIZ_COUNTRIES.filter(c =>
+        c.name.toLowerCase().includes(q) || c.dial.includes(q) || c.iso.includes(q)
+      ).slice().sort((a, b) => a.name.localeCompare(b.name))
+    : null;
+
+  const renderItem = (c) => `
+    <li class="flex items-center gap-2 px-3 py-2 hover:bg-[#c9a84c]/10 cursor-pointer text-sm"
+        onclick="wizSelectCountry('${c.iso}','${c.dial}')">
+      <img src="https://flagcdn.com/w20/${c.iso}.png" alt="" class="w-5 h-auto flex-shrink-0">
+      <span class="text-[#c9a84c]/80 text-xs font-mono w-11 flex-shrink-0">${c.dial}</span>
+      <span class="flex-1 text-white/80 truncate">${c.name}</span>
+    </li>`;
+
+  if (!q) {
+    const popular = WIZ_COUNTRIES.slice(0, WIZ_POPULAR_COUNT);
+    const rest = WIZ_COUNTRIES.slice(WIZ_POPULAR_COUNT).slice().sort((a, b) => a.name.localeCompare(b.name));
+    // No labels, no dividers — just popular first, then A-Z, all equal.
+    ul.innerHTML = popular.map(renderItem).join('') + rest.map(renderItem).join('');
+  } else if (matches.length === 0) {
+    ul.innerHTML = '<li class="px-3 py-3 text-center text-white/30 text-xs">No match</li>';
+  } else {
+    ul.innerHTML = matches.map(renderItem).join('');
   }
+}
+
+function wizToggleCountryList(event) {
+  if (event) event.stopPropagation();
+  const dd = document.getElementById('wizCountryDropdown');
+  if (!dd) return;
+  if (dd.classList.contains('hidden')) {
+    wizPopulateCountryList('');
+    dd.classList.remove('hidden');
+    const search = document.getElementById('wizCountrySearch');
+    if (search) { search.value = ''; setTimeout(() => search.focus(), 30); }
+  } else {
+    dd.classList.add('hidden');
+  }
+}
+
+function wizFilterCountryList() {
+  const q = document.getElementById('wizCountrySearch')?.value || '';
+  wizPopulateCountryList(q);
+}
+
+function wizSelectCountry(iso, dial) {
+  const input = document.getElementById('wizCountryCode');
+  if (input) input.value = dial;
+  const flag = document.getElementById('wizCountryFlag');
+  const label = document.getElementById('wizCountryDisplay');
+  if (flag) { flag.src = `https://flagcdn.com/w20/${iso}.png`; flag.classList.remove('hidden'); }
+  if (label) {
+    label.textContent = dial;
+    label.classList.remove('text-white/40');
+    label.classList.add('text-white');
+  }
+  document.getElementById('wizCountryDropdown')?.classList.add('hidden');
   if (typeof wizUpdateTicketPhone === 'function') wizUpdateTicketPhone();
 }
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+  const wrapper = document.querySelector('.wiz-country-wrapper');
+  const dd = document.getElementById('wizCountryDropdown');
+  if (!dd || dd.classList.contains('hidden')) return;
+  if (!wrapper || !wrapper.contains(e.target)) dd.classList.add('hidden');
+});
+
+// Back-compat no-op so any leftover inline handler doesn't throw
+function wizOnCountryInput() {}
 
 function wizUpdateTicketPhone() {
   const num = (document.getElementById('wizPhone')?.value || '').trim();
@@ -2594,11 +2729,7 @@ function wizGetFullPhone() {
   return `${wizGetDialCode()} ${num}`;
 }
 
-// True when the user has actually picked a country (value contains a flag + dial code).
-function wizHasCountryCode() {
-  const raw = document.getElementById('wizCountryCode')?.value || '';
-  return /\p{RI}\p{RI}/u.test(raw) && /\+\d+/.test(raw);
-}
+// (Replaced — see newer custom-dropdown-aware wizHasCountryCode defined above.)
 
 function wizCalcPrice() {
   const adultsRaw = document.getElementById('wizAdults')?.textContent;
