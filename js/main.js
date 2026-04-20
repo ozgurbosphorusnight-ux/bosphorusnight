@@ -15,6 +15,24 @@ function detectLanguage() {
   return 'en';
 }
 
+// Substitute {p.foo} placeholders with live prices from window.PRICES_DATA (fallbacks match DB defaults).
+function substitutePricePlaceholders(text) {
+  if (!text.includes('{p.')) return text;
+  const d = window.PRICES_DATA || {};
+  const addons = d.addons || {};
+  const packages = d.packages || {};
+  const map = {
+    'p.alcohol2':    addons.ALCOHOL_2GLASS?.price     ?? 15,
+    'p.unlimited':   addons.ALCOHOL_UNLIMITED?.price  ?? 30,
+    'p.transfer':    addons.HOTEL_TRANSFER?.price     ?? 10,
+    'p.romantic':    addons.ROMANTIC_TABLE?.price     ?? 15,
+    'p.dinnerStd':   packages.DINNER_STD?.price       ?? 24,
+    'p.dinnerVip':   packages.DINNER_VIP?.price       ?? 55,
+    'p.daytimeStd':  packages.DAYTIME_STD?.price      ?? 20,
+  };
+  return text.replace(/\{(p\.[a-zA-Z0-9]+)\}/g, (_, k) => map[k] ?? '');
+}
+
 function setLanguage(lang) {
   if (!LANGUAGES[lang]) lang = 'en';
   currentLang = lang;
@@ -27,10 +45,12 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (T[key] && T[key][lang]) {
+      const raw = T[key][lang];
+      const text = substitutePricePlaceholders(raw);
       if (key.startsWith('faq.a') || key === 'dropoff.desc' || key.startsWith('incl.') && key.endsWith('.detail')) {
-        el.innerHTML = T[key][lang];
+        el.innerHTML = text;
       } else {
-        el.textContent = T[key][lang];
+        el.textContent = text;
       }
     }
   });
@@ -39,7 +59,7 @@ function setLanguage(lang) {
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (T[key] && T[key][lang]) {
-      el.placeholder = T[key][lang];
+      el.placeholder = substitutePricePlaceholders(T[key][lang]);
     }
   });
 
@@ -771,8 +791,27 @@ async function fetchDynamicPrices() {
       }
     });
 
+    // Update discount badges: <div data-discount-badge="DINNER_STD">40% OFF</div>
+    document.querySelectorAll('[data-discount-badge]').forEach(el => {
+      const code = el.dataset.discountBadge;
+      const entry = pkg[code];
+      if (!entry || !entry.original || entry.original <= entry.price) {
+        el.style.display = 'none';
+        return;
+      }
+      const pct = Math.round(((entry.original - entry.price) / entry.original) * 100);
+      el.textContent = `${pct}% OFF`;
+      el.style.display = '';
+    });
+
     // Expose for other modules (wizard, booking panel)
     window.PRICES_DATA = { packages: pkg, addons: addon };
+
+    // Re-apply translations so {p.*} placeholders in translated strings (e.g. "+€15/person")
+    // get substituted with live values. setLanguage ran on DOMContentLoaded before prices arrived.
+    if (typeof setLanguage === 'function' && typeof currentLang === 'string') {
+      setLanguage(currentLang);
+    }
   } catch (err) {
     console.warn('Dynamic prices fetch failed, using defaults:', err);
   }

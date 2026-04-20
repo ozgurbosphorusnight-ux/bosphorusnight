@@ -240,20 +240,20 @@ const T = {
     ru: "Приоритетная посадка и VIP-обслуживание", ar: "أولوية الصعود ومعاملة VIP"
   },
   "pkg.opt.standard": {
-    en: "Optional: Alcohol +€30 · Transfer +€10 · Romantic table +€15",
-    tr: "Opsiyonel: Alkol +€30 · Transfer +€10 · Romantik masa +€15",
-    de: "Optional: Alkohol +€30 · Transfer +€10 · Romantik-Tisch +€15",
-    es: "Opcional: Alcohol +€30 · Traslado +€10 · Mesa romántica +€15",
-    ru: "Опционально: Алкоголь +€30 · Трансфер +€10 · Романтический стол +€15",
-    ar: "اختياري: مشروبات كحولية +€30 · نقل +€10 · طاولة رومانسية +€15"
+    en: "Optional: Alcohol +€{p.unlimited} · Transfer +€{p.transfer} · Romantic table +€{p.romantic}",
+    tr: "Opsiyonel: Alkol +€{p.unlimited} · Transfer +€{p.transfer} · Romantik masa +€{p.romantic}",
+    de: "Optional: Alkohol +€{p.unlimited} · Transfer +€{p.transfer} · Romantik-Tisch +€{p.romantic}",
+    es: "Opcional: Alcohol +€{p.unlimited} · Traslado +€{p.transfer} · Mesa romántica +€{p.romantic}",
+    ru: "Опционально: Алкоголь +€{p.unlimited} · Трансфер +€{p.transfer} · Романтический стол +€{p.romantic}",
+    ar: "اختياري: مشروبات كحولية +€{p.unlimited} · نقل +€{p.transfer} · طاولة رومانسية +€{p.romantic}"
   },
   "pkg.opt.vip": {
-    en: "Optional: Alcohol +€30 · Transfer +€10",
-    tr: "Opsiyonel: Alkol +€30 · Transfer +€10",
-    de: "Optional: Alkohol +€30 · Transfer +€10",
-    es: "Opcional: Alcohol +€30 · Traslado +€10",
-    ru: "Опционально: Алкоголь +€30 · Трансфер +€10",
-    ar: "اختياري: مشروبات كحولية +€30 · نقل +€10"
+    en: "Optional: Alcohol +€{p.unlimited} · Transfer +€{p.transfer}",
+    tr: "Opsiyonel: Alkol +€{p.unlimited} · Transfer +€{p.transfer}",
+    de: "Optional: Alkohol +€{p.unlimited} · Transfer +€{p.transfer}",
+    es: "Opcional: Alcohol +€{p.unlimited} · Traslado +€{p.transfer}",
+    ru: "Опционально: Алкоголь +€{p.unlimited} · Трансфер +€{p.transfer}",
+    ar: "اختياري: مشروبات كحولية +€{p.unlimited} · نقل +€{p.transfer}"
   },
   "pkg.children": {
     en: "Children 0–3: Free · 4–8: 50% off · 9+: Full price · No prepayment required",
@@ -368,12 +368,12 @@ const T = {
     ar: "نحن معك قبل وأثناء وبعد رحلتك. راسل أو اتصل — نرد فورًا على مدار الساعة طوال أيام الأسبوع."
   },
   "incl.special.detail": {
-    en: "Celebrating something special? We offer romantic table setup with candles & flowers (+€15) and birthday celebrations. Tell us!",
-    tr: "Özel bir gün mü kutluyorsunuz? Mum ve çiçeklerle romantik masa düzeni (+€15) ve doğum günü kutlamaları sunuyoruz. Bize yazın!",
-    de: "Etwas Besonderes feiern? Romantik-Tisch mit Kerzen & Blumen (+€15) und Geburtstagsfeiern. Schreiben Sie uns!",
-    es: "¿Celebrando algo especial? Ofrecemos mesa romántica con velas y flores (+€15) y celebraciones de cumpleaños. ¡Escríbenos!",
-    ru: "Празднуете что-то особенное? Романтический стол со свечами и цветами (+€15) и празднование дня рождения. Напишите нам!",
-    ar: "تحتفل بمناسبة خاصة؟ نقدم طاولة رومانسية مع شموع وزهور (+€15)، واحتفالات أعياد الميلاد. أخبرنا!"
+    en: "Celebrating something special? We offer romantic table setup with candles & flowers (+€{p.romantic}) and birthday celebrations. Tell us!",
+    tr: "Özel bir gün mü kutluyorsunuz? Mum ve çiçeklerle romantik masa düzeni (+€{p.romantic}) ve doğum günü kutlamaları sunuyoruz. Bize yazın!",
+    de: "Etwas Besonderes feiern? Romantik-Tisch mit Kerzen & Blumen (+€{p.romantic}) und Geburtstagsfeiern. Schreiben Sie uns!",
+    es: "¿Celebrando algo especial? Ofrecemos mesa romántica con velas y flores (+€{p.romantic}) y celebraciones de cumpleaños. ¡Escríbenos!",
+    ru: "Празднуете что-то особенное? Романтический стол со свечами и цветами (+€{p.romantic}) и празднование дня рождения. Напишите нам!",
+    ar: "تحتفل بمناسبة خاصة؟ نقدم طاولة رومانسية مع شموع وزهور (+€{p.romantic})، واحتفالات أعياد الميلاد. أخبرنا!"
   },
 
   // ========== GALLERY ==========
@@ -834,12 +834,12 @@ const T = {
   },
   "faq.q2": { en: "Are alcoholic drinks included?", tr: "Alkollü içecekler dahil mi?", de: "Sind alkoholische Getränke inklusive?", es: "¿Están incluidas las bebidas alcohólicas?", ru: "Включены ли алкогольные напитки?", ar: "هل المشروبات الكحولية مشمولة؟" },
   "faq.a2": {
-    en: "All packages include soft (non-alcoholic) drinks. You can add 2 glasses of alcohol for +€15 per person, or an unlimited local alcohol package for +€30 per person. The local package covers vodka, gin, rakı, red and white wine. Imported spirits (whiskey, cognac) are charged separately.",
-    tr: "Tüm paketlere soft (alkolsüz) içecekler dahildir. Kişi başı +€15 ile 2 bardak alkol veya +€30 ile sınırsız yerli alkol paketi ekleyebilirsiniz. Yerli paket; votka, cin, rakı, kırmızı ve beyaz şarap ile sınırlıdır. İthal içkiler (viski, konyak) ekstra ücrete tabidir.",
-    de: "Alle Pakete enthalten alkoholfreie Getränke. Für +€15 pro Person 2 Gläser Alkohol oder für +€30 pro Person ein unbegrenztes lokales Alkoholpaket wählbar. Das lokale Paket umfasst Wodka, Gin, Rakı, Rot- und Weißwein. Importierte Spirituosen (Whisky, Cognac) werden separat berechnet.",
-    es: "Todos los paquetes incluyen bebidas sin alcohol. Puedes añadir 2 copas de alcohol por +€15 por persona, o un paquete de alcohol local ilimitado por +€30 por persona. El paquete local incluye vodka, ginebra, rakı, vino tinto y blanco. Los licores importados (whisky, coñac) se cobran aparte.",
-    ru: "Все пакеты включают безалкогольные напитки. За +€15 с человека можно добавить 2 бокала алкоголя, а за +€30 — безлимитный пакет местного алкоголя. Местный пакет включает водку, джин, ракы, красное и белое вино. Импортный алкоголь (виски, коньяк) оплачивается отдельно.",
-    ar: "جميع الباقات تشمل المشروبات الخفيفة (غير الكحولية). يمكنك إضافة كأسين من الكحول مقابل +€15 للشخص، أو باقة كحول محلية غير محدودة مقابل +€30 للشخص. تشمل الباقة المحلية: فودكا، جن، راكي، نبيذ أحمر وأبيض. المشروبات المستوردة (ويسكي، كونياك) تُحتسب بشكل منفصل."
+    en: "All packages include soft (non-alcoholic) drinks. You can add 2 glasses of alcohol for +€{p.alcohol2} per person, or an unlimited local alcohol package for +€{p.unlimited} per person. The local package covers vodka, gin, rakı, red and white wine. Imported spirits (whiskey, cognac) are charged separately.",
+    tr: "Tüm paketlere soft (alkolsüz) içecekler dahildir. Kişi başı +€{p.alcohol2} ile 2 bardak alkol veya +€{p.unlimited} ile sınırsız yerli alkol paketi ekleyebilirsiniz. Yerli paket; votka, cin, rakı, kırmızı ve beyaz şarap ile sınırlıdır. İthal içkiler (viski, konyak) ekstra ücrete tabidir.",
+    de: "Alle Pakete enthalten alkoholfreie Getränke. Für +€{p.alcohol2} pro Person 2 Gläser Alkohol oder für +€{p.unlimited} pro Person ein unbegrenztes lokales Alkoholpaket wählbar. Das lokale Paket umfasst Wodka, Gin, Rakı, Rot- und Weißwein. Importierte Spirituosen (Whisky, Cognac) werden separat berechnet.",
+    es: "Todos los paquetes incluyen bebidas sin alcohol. Puedes añadir 2 copas de alcohol por +€{p.alcohol2} por persona, o un paquete de alcohol local ilimitado por +€{p.unlimited} por persona. El paquete local incluye vodka, ginebra, rakı, vino tinto y blanco. Los licores importados (whisky, coñac) se cobran aparte.",
+    ru: "Все пакеты включают безалкогольные напитки. За +€{p.alcohol2} с человека можно добавить 2 бокала алкоголя, а за +€{p.unlimited} — безлимитный пакет местного алкоголя. Местный пакет включает водку, джин, ракы, красное и белое вино. Импортный алкоголь (виски, коньяк) оплачивается отдельно.",
+    ar: "جميع الباقات تشمل المشروبات الخفيفة (غير الكحولية). يمكنك إضافة كأسين من الكحول مقابل +€{p.alcohol2} للشخص، أو باقة كحول محلية غير محدودة مقابل +€{p.unlimited} للشخص. تشمل الباقة المحلية: فودكا، جن، راكي، نبيذ أحمر وأبيض. المشروبات المستوردة (ويسكي، كونياك) تُحتسب بشكل منفصل."
   },
   "faq.q3": { en: "Where does the cruise depart and return?", tr: "Tur nereden kalkıp nereye dönüyor?", de: "Wo ist Abfahrt und Rückkehr?", es: "¿De dónde sale y regresa el crucero?", ru: "Откуда отправляется и возвращается круиз?", ar: "من أين تغادر وتعود الرحلة؟" },
   "faq.a3": {
@@ -897,12 +897,12 @@ const T = {
   },
   "faq.q9": { en: "Is hotel transfer available?", tr: "Otel transferi var mı?", de: "Gibt es einen Hoteltransfer?", es: "¿Hay traslado al hotel?", ru: "Есть ли т��ансфер из отеля?", ar: "هل يتوفر نقل من الفندق؟" },
   "faq.a9": {
-    en: "Yes! Hotel transfer is available for +€10 per person, including pickup and drop-off. Service areas: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu.",
-    tr: "Evet! Otel transferi kişi başı +€10 ile mümkündür. Alım ve bırakım dahildir. Hizmet bölgeleri: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy ve Beyoğlu.",
-    de: "Ja! Hoteltransfer für +€10 pro Person, inkl. Abholung und Rückfahrt. Servicegebiete: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy und Beyoğlu.",
-    es: "¡Sí! El traslado al hotel está disponible por +€10 por persona, incluyendo recogida y devolución. Zonas de servicio: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy y Beyoğlu.",
-    ru: "Да! Трансфер из отеля доступен за +€10 с человека, включая подачу и возврат. Зоны обслуживания: Бешикташ, Сютлюдже, Сиркеджи, Топкапы, Таксим, Эминёню, Кягытхане, Фатих, Лалели, Султанахмет, Ортакёй и Бейоглу.",
-    ar: "نعم! خدمة النقل من الفندق متاحة مقابل +€10 للشخص، شاملة الاستلام والتوصيل. مناطق الخدمة: بشكتاش، سوتلوجه، سيركجي، طوبكابي، تقسيم، إمينونو، كاغيتهانه، فاتح، لاليلي، السلطان أحمد، أورتاكوي وبيوغلو."
+    en: "Yes! Hotel transfer is available for +€{p.transfer} per person, including pickup and drop-off. Service areas: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy and Beyoğlu.",
+    tr: "Evet! Otel transferi kişi başı +€{p.transfer} ile mümkündür. Alım ve bırakım dahildir. Hizmet bölgeleri: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy ve Beyoğlu.",
+    de: "Ja! Hoteltransfer für +€{p.transfer} pro Person, inkl. Abholung und Rückfahrt. Servicegebiete: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy und Beyoğlu.",
+    es: "¡Sí! El traslado al hotel está disponible por +€{p.transfer} por persona, incluyendo recogida y devolución. Zonas de servicio: Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy y Beyoğlu.",
+    ru: "Да! Трансфер из отеля доступен за +€{p.transfer} с человека, включая подачу и возврат. Зоны обслуживания: Бешикташ, Сютлюдже, Сиркеджи, Топкапы, Таксим, Эминёню, Кягытхане, Фатих, Лалели, Султанахмет, Ортакёй и Бейоглу.",
+    ar: "نعم! خدمة النقل من الفندق متاحة مقابل +€{p.transfer} للشخص، شاملة الاستلام والتوصيل. مناطق الخدمة: بشكتاش، سوتلوجه، سيركجي، طوبكابي، تقسيم، إمينونو، كاغيتهانه، فاتح، لاليلي، السلطان أحمد، أورتاكوي وبيوغلو."
   },
   "faq.q10": { en: "Can I cancel or change my reservation?", tr: "Rezervasyonumu iptal edebilir veya değiştirebilir miyim?", de: "Kann ich stornieren oder ändern?", es: "¿Puedo cancelar o cambiar mi reserva?", ru: "Могу ли я отменить бронирование?", ar: "هل يمكنني إلغاء أو تغيير حجزي؟" },
   "faq.a10": {
@@ -1203,8 +1203,8 @@ const T = {
     ru: "Дополнительные опции", ar: "إضافات اختيارية"
   },
   "dinner.addAlcoholTitle": {
-    en: "Alcohol Package: +€30/person", tr: "Alkol Paketi: +€30/kişi", de: "Alkoholpaket: +€30/Person", es: "Paquete Alcohol: +€30/persona",
-    ru: "Пакет алкоголя: +€30/чел.", ar: "باقة كحول: +€30/شخص"
+    en: "Alcohol Package: +€{p.unlimited}/person", tr: "Alkol Paketi: +€{p.unlimited}/kişi", de: "Alkoholpaket: +€{p.unlimited}/Person", es: "Paquete Alcohol: +€{p.unlimited}/persona",
+    ru: "Пакет алкоголя: +€{p.unlimited}/чел.", ar: "باقة كحول: +€{p.unlimited}/شخص"
   },
   "dinner.addAlcoholDesc": {
     en: "Unlimited local wine, beer, rakı, vodka, gin", tr: "Sınırsız yerli şarap, bira, rakı, votka, cin",
@@ -1212,8 +1212,8 @@ const T = {
     ru: "Безлимитное местное вино, пиво, ракы, водка, джин", ar: "نبيذ محلي، بيرة، راكي، فودكا، جن بلا حدود"
   },
   "dinner.addTransferTitle": {
-    en: "Hotel Transfer: +€10/person", tr: "Otel Transferi: +€10/kişi", de: "Hoteltransfer: +€10/Person", es: "Traslado Hotel: +€10/persona",
-    ru: "Трансфер из отеля: +€10/чел.", ar: "نقل فندقي: +€10/شخص"
+    en: "Hotel Transfer: +€{p.transfer}/person", tr: "Otel Transferi: +€{p.transfer}/kişi", de: "Hoteltransfer: +€{p.transfer}/Person", es: "Traslado Hotel: +€{p.transfer}/persona",
+    ru: "Трансфер из отеля: +€{p.transfer}/чел.", ar: "نقل فندقي: +€{p.transfer}/شخص"
   },
   "dinner.addTransferDesc": {
     en: "Pickup & drop-off from your hotel", tr: "Otelinizden alınır ve bırakılır",
@@ -1221,8 +1221,8 @@ const T = {
     ru: "Заберём и отвезём обратно в ваш отель", ar: "التقاط وتوصيل من فندقك"
   },
   "dinner.addRomanticTitle": {
-    en: "Romantic Table: +€15/table", tr: "Romantik Masa: +€15/masa", de: "Romantik-Tisch: +€15/Tisch", es: "Mesa Romántica: +€15/mesa",
-    ru: "Романтический стол: +€15/стол", ar: "طاولة رومانسية: +€15/طاولة"
+    en: "Romantic Table: +€{p.romantic}/table", tr: "Romantik Masa: +€{p.romantic}/masa", de: "Romantik-Tisch: +€{p.romantic}/Tisch", es: "Mesa Romántica: +€{p.romantic}/mesa",
+    ru: "Романтический стол: +€{p.romantic}/стол", ar: "طاولة رومانسية: +€{p.romantic}/طاولة"
   },
   "dinner.addRomanticDesc": {
     en: "Candles, flowers & special setup", tr: "Mumlar, çiçekler ve özel düzenleme",
@@ -1409,12 +1409,12 @@ const T = {
     es: "Selección de Bebidas", ru: "Выбор напитков", ar: "اختيار المشروبات"
   },
   "booking.transfer": {
-    en: "Hotel Transfer (+€10/person)", tr: "Otel Transferi (+€10/kişi)", de: "Hoteltransfer (+€10/Person)",
-    es: "Traslado al Hotel (+€10/persona)", ru: "Трансфер из отеля (+€10/чел.)", ar: "نقل من الفندق (+€10/شخص)"
+    en: "Hotel Transfer (+€{p.transfer}/person)", tr: "Otel Transferi (+€{p.transfer}/kişi)", de: "Hoteltransfer (+€{p.transfer}/Person)",
+    es: "Traslado al Hotel (+€{p.transfer}/persona)", ru: "Трансфер из отеля (+€{p.transfer}/чел.)", ar: "نقل من الفندق (+€{p.transfer}/شخص)"
   },
   "booking.romantic": {
-    en: "Romantic Table (+€15/table)", tr: "Romantik Masa (+€15/masa)", de: "Romantik-Tisch (+€15/Tisch)",
-    es: "Mesa Romántica (+€15/mesa)", ru: "Романтический стол (+€15/стол)", ar: "طاولة رومانسية (+€15/طاولة)"
+    en: "Romantic Table (+€{p.romantic}/table)", tr: "Romantik Masa (+€{p.romantic}/masa)", de: "Romantik-Tisch (+€{p.romantic}/Tisch)",
+    es: "Mesa Romántica (+€{p.romantic}/mesa)", ru: "Романтический стол (+€{p.romantic}/стол)", ar: "طاولة رومانسية (+€{p.romantic}/طاولة)"
   },
   "booking.total": {
     en: "Total", tr: "Toplam", de: "Gesamt", es: "Total", ru: "Итого", ar: "الإجمالي"
@@ -1489,10 +1489,10 @@ const T = {
     en: "Optional extras:", tr: "Opsiyonel ekstralar:", de: "Optionale Extras:", es: "Extras opcionales:", ru: "Дополнительные опции:", ar: "إضافات اختيارية:"
   },
   "pkg.badge.alcohol": {
-    en: "Alcohol €30", tr: "Alkol €30", de: "Alkohol €30", es: "Alcohol €30", ru: "Алкоголь €30", ar: "كحول €30"
+    en: "Alcohol €{p.unlimited}", tr: "Alkol €{p.unlimited}", de: "Alkohol €{p.unlimited}", es: "Alcohol €{p.unlimited}", ru: "Алкоголь €{p.unlimited}", ar: "كحول €{p.unlimited}"
   },
   "pkg.badge.transfer": {
-    en: "Transfer €10", tr: "Transfer €10", de: "Transfer €10", es: "Traslado €10", ru: "Трансфер €10", ar: "نقل €10"
+    en: "Transfer €{p.transfer}", tr: "Transfer €{p.transfer}", de: "Transfer €{p.transfer}", es: "Traslado €{p.transfer}", ru: "Трансфер €{p.transfer}", ar: "نقل €{p.transfer}"
   },
   "pkg.badge.romantic": {
     en: "Romantic €25", tr: "Romantik €25", de: "Romantik €25", es: "Romántico €25", ru: "Романтика €25", ar: "رومانسي €25"
@@ -1514,10 +1514,10 @@ const T = {
     en: "Soft Drinks", tr: "Alkolsüz", de: "Softdrinks", es: "Sin Alcohol", ru: "Безалкогольные", ar: "مشروبات غازية"
   },
   "booking.glass2Btn": {
-    en: "2 Glasses +€15", tr: "2 Kadeh +€15", de: "2 Gläser +€15", es: "2 Copas +€15", ru: "2 бокала +€15", ar: "كأسان +€15"
+    en: "2 Glasses +€{p.alcohol2}", tr: "2 Kadeh +€{p.alcohol2}", de: "2 Gläser +€{p.alcohol2}", es: "2 Copas +€{p.alcohol2}", ru: "2 бокала +€{p.alcohol2}", ar: "كأسان +€{p.alcohol2}"
   },
   "booking.unlimitedBtn": {
-    en: "Unlimited +€30", tr: "Sınırsız +€30", de: "Unbegrenzt +€30", es: "Ilimitado +€30", ru: "Безлимит +€30", ar: "غير محدود +€30"
+    en: "Unlimited +€{p.unlimited}", tr: "Sınırsız +€{p.unlimited}", de: "Unbegrenzt +€{p.unlimited}", es: "Ilimitado +€{p.unlimited}", ru: "Безлимит +€{p.unlimited}", ar: "غير محدود +€{p.unlimited}"
   },
   "booking.drinkWarn": {
     en: "⚠ Please select a drink option", tr: "⚠ Lütfen içecek seçimi yapın", de: "⚠ Bitte Getränk wählen", es: "⚠ Seleccione una opción de bebida", ru: "⚠ Выберите вариант напитков", ar: "⚠ يرجى اختيار خيار المشروبات"
@@ -1832,16 +1832,16 @@ const T = {
     ar: "مشروبات غازية"
   },
   "wizard.glass2": {
-    en: "2 Glasses +€15",
-    tr: "2 Kadeh +€15",
+    en: "2 Glasses +€{p.alcohol2}",
+    tr: "2 Kadeh +€{p.alcohol2}",
     de: "2 Gläser +7 €",
     es: "2 copas +7 €",
     ru: "2 бокала +7 €",
     ar: "كأسان +٧€"
   },
   "wizard.unlimited": {
-    en: "Unlimited +€30",
-    tr: "Sınırsız +€30",
+    en: "Unlimited +€{p.unlimited}",
+    tr: "Sınırsız +€{p.unlimited}",
     de: "Unbegrenzt +15 €",
     es: "Ilimitado +15 €",
     ru: "Безлимит +15 €",
@@ -1888,8 +1888,8 @@ const T = {
     ar: "لا"
   },
   "wizard.transferYes": {
-    en: "Yes +€10/person",
-    tr: "Evet +€10/kişi",
+    en: "Yes +€{p.transfer}/person",
+    tr: "Evet +€{p.transfer}/kişi",
     de: "Ja +10 €/Person",
     es: "Sí +10 €/persona",
     ru: "Да +10 €/чел.",
@@ -1920,8 +1920,8 @@ const T = {
     ar: "طاولة رومانسية"
   },
   "wizard.romanticYes": {
-    en: "Yes +€15",
-    tr: "Evet +€15",
+    en: "Yes +€{p.romantic}",
+    tr: "Evet +€{p.romantic}",
     de: "Ja +15 €",
     es: "Sí +15 €",
     ru: "Да +15 €",
@@ -2082,8 +2082,8 @@ const T = {
     ar: "كأسان من الكحول"
   },
   "wizard.glass2Note": {
-    en: "+€15/person · Wine, beer, rakı, vodka, or gin",
-    tr: "+€15/kişi · Şarap, bira, rakı, vodka veya cin",
+    en: "+€{p.alcohol2}/person · Wine, beer, rakı, vodka, or gin",
+    tr: "+€{p.alcohol2}/kişi · Şarap, bira, rakı, vodka veya cin",
     de: "+15 €/Person · Wein, Bier, Rakı, Wodka oder Gin",
     es: "+15 €/persona · Vino, cerveza, rakı, vodka o ginebra",
     ru: "+15 €/чел. · Вино, пиво, ракы, водка или джин",
@@ -2098,8 +2098,8 @@ const T = {
     ar: "كحول غير محدود"
   },
   "wizard.unlimitedNote": {
-    en: "+€30/person · Wine, beer, rakı, vodka, gin all night",
-    tr: "+€30/kişi · Gece boyunca şarap, bira, rakı, vodka, cin",
+    en: "+€{p.unlimited}/person · Wine, beer, rakı, vodka, gin all night",
+    tr: "+€{p.unlimited}/kişi · Gece boyunca şarap, bira, rakı, vodka, cin",
     de: "+30 €/Person · Wein, Bier, Rakı, Wodka, Gin die ganze Nacht",
     es: "+30 €/persona · Vino, cerveza, rakı, vodka, ginebra toda la noche",
     ru: "+30 €/чел. · Вино, пиво, ракы, водка, джин всю ночь",
