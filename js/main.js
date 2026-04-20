@@ -718,11 +718,51 @@ const PRICES = {
 };
 
 // Dinner cruise pricing: base + extras
+// Values are defaults; overridden at runtime by fetchDynamicPrices() from Supabase via /api/public/prices
 const DINNER_PRICES = {
   standard: { base: 24, oldPrice: 40 },
   vip:      { base: 55, oldPrice: 92 },
   extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
 };
+
+// Fetch live prices from Supabase (via /api/public/prices) and apply to DOM + in-memory constants.
+// Runs once on page load. Falls back silently to hardcoded defaults if fetch fails.
+async function fetchDynamicPrices() {
+  try {
+    const res = await fetch('/api/public/prices', { cache: 'no-store' });
+    if (!res.ok) return;
+    const data = await res.json();
+    const pkg = data.packages || {};
+    const addon = data.addons || {};
+
+    // Update dinner package bases
+    if (pkg.DINNER_STD?.price) DINNER_PRICES.standard.base = pkg.DINNER_STD.price;
+    if (pkg.DINNER_VIP?.price) DINNER_PRICES.vip.base = pkg.DINNER_VIP.price;
+
+    // Update addons
+    if (addon.ALCOHOL_2GLASS?.price) DINNER_PRICES.extras.glass2 = addon.ALCOHOL_2GLASS.price;
+    if (addon.ALCOHOL_UNLIMITED?.price) DINNER_PRICES.extras.unlimited = addon.ALCOHOL_UNLIMITED.price;
+    if (addon.HOTEL_TRANSFER?.price) DINNER_PRICES.extras.transfer = addon.HOTEL_TRANSFER.price;
+    if (addon.ROMANTIC_TABLE?.price) DINNER_PRICES.extras.romantic = addon.ROMANTIC_TABLE.price;
+
+    // Also update daytime/sunset PRICES map if provided
+    if (pkg.DAYTIME_STD?.price) {
+      for (const boat of Object.keys(PRICES)) PRICES[boat].standard = pkg.DAYTIME_STD.price;
+    }
+
+    // Fill all [data-price] spans: <span data-price="DINNER_STD">€24</span>
+    document.querySelectorAll('[data-price]').forEach(el => {
+      const code = el.dataset.price;
+      const entry = pkg[code] || addon[code];
+      if (entry?.price) el.textContent = `€${entry.price}`;
+    });
+
+    // Expose for other modules (wizard, booking panel)
+    window.PRICES_DATA = { packages: pkg, addons: addon };
+  } catch (err) {
+    console.warn('Dynamic prices fetch failed, using defaults:', err);
+  }
+}
 
 const BOAT_NAMES = {
   classic: { en: 'Classic Cruise', tr: 'Klasik Cruise', de: 'Klassische Kreuzfahrt', es: 'Crucero Clásico', ru: 'Классический круиз', ar: 'رحلة كلاسيكية' },
@@ -1678,6 +1718,7 @@ function initExtraTooltips() {
 
 // ========== INIT ==========
 document.addEventListener('DOMContentLoaded', () => {
+  fetchDynamicPrices();
   setLanguage(detectLanguage());
   initLangDropdown();
   initHeader();

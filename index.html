@@ -543,7 +543,7 @@
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-5">
             <div>
               <span class="text-white/40 text-sm" data-i18n="booking.from">From</span>
-              <span class="text-gold text-3xl font-display font-bold ml-2">€20</span>
+              <span class="text-gold text-3xl font-display font-bold ml-2" data-price="DAYTIME_STD">€20</span>
               <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
             </div>
             <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="daytime">
@@ -592,7 +592,7 @@
             <div>
               <span class="text-white/40 text-sm" data-i18n="booking.from">From</span>
               <span class="text-white/30 text-xl line-through ml-2">€40</span>
-              <span class="text-gold text-3xl font-display font-bold ml-1">€24</span>
+              <span class="text-gold text-3xl font-display font-bold ml-1" data-price="DINNER_STD">€24</span>
               <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
             </div>
             <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="dinner">
@@ -769,7 +769,7 @@
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/10">
                 <div>
                   <span class="text-white/30 text-xs line-through">€40</span>
-                  <span class="text-gold text-3xl font-bold font-display ml-1">€24</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_STD">€24</span>
                   <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
                 </div>
                 <button onclick="openMobilePanel('standard')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="Standard">
@@ -832,7 +832,7 @@
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-gold/20">
                 <div>
                   <span class="text-white/30 text-xs line-through">€92</span>
-                  <span class="text-gold text-3xl font-bold font-display ml-1">€55</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_VIP">€55</span>
                   <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
                 </div>
                 <button onclick="openMobilePanel('vip')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="VIP">
@@ -2955,7 +2955,7 @@
     <div>
       <div>
         <span class="text-white/50 text-xs" data-i18n="booking.from">From</span>
-        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1">€24</span>
+        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1" data-price="DINNER_STD">€24</span>
         <span class="text-white/30 text-xs ml-1" data-i18n="booking.perPerson">/ person</span>
       </div>
       <p id="mobileBarTourLabel" class="text-gold/50 text-[10px] mt-0.5"></p>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paketler — Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: {
+        navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+        gold: { DEFAULT: '#c9a84c', light: '#d4b86a', dark: '#b8953f' },
+      }}}
+    }
+  </script>
+</head>
+<body class="bg-navy-dark min-h-screen text-white">
+
+  <header class="bg-navy-light border-b border-white/10 px-4 py-2 flex items-center justify-between sticky top-0 z-10">
+    <div class="flex items-center gap-6">
+      <h1 class="text-gold font-bold text-lg">ADMIN</h1>
+      <nav class="hidden md:flex gap-1">
+        <a href="/panel/admin.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Dashboard</a>
+        <a href="/panel/admin-stats.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">İstatistikler</a>
+        <a href="/panel/admin-packages.html" class="px-3 py-2 rounded-lg text-sm font-medium bg-gold/10 text-gold">Paketler</a>
+        <a href="/panel/admin-competitors.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Araştırma</a>
+        <a href="/panel/admin-ads.html" class="px-3 py-2 rounded-lg text-sm font-medium text-white/40 hover:text-white hover:bg-white/5">Reklamlar</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-3">
+      <span class="text-white/30 text-xs" id="adminName">—</span>
+      <button onclick="logout()" class="text-white/40 hover:text-red-400 text-xs">Çıkış</button>
+    </div>
+  </header>
+
+  <div class="p-4 max-w-4xl mx-auto pb-24">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-gold font-bold text-xl">Paketler ve Fiyatlar</h2>
+      <span id="statusMsg" class="text-xs"></span>
+    </div>
+
+    <div id="roleWarning" class="hidden bg-red-500/10 border border-red-500/30 rounded-xl p-3 mb-4 text-red-300 text-sm">
+      ⚠ Sadece yönetici (sahip) fiyat değiştirebilir. Değişikliklerin kaydedilemeyecek.
+    </div>
+
+    <!-- PAKETLER -->
+    <section class="mb-8">
+      <h3 class="text-white/60 text-sm font-semibold mb-3 uppercase tracking-wide">Tur Paketleri</h3>
+      <div id="pkgList" class="space-y-3">
+        <div class="text-white/30 text-center py-8">Yükleniyor…</div>
+      </div>
+    </section>
+
+    <!-- EKLENTILER -->
+    <section>
+      <h3 class="text-white/60 text-sm font-semibold mb-3 uppercase tracking-wide">Eklentiler</h3>
+      <div id="addonList" class="space-y-3">
+        <div class="text-white/30 text-center py-8">Yükleniyor…</div>
+      </div>
+    </section>
+
+    <div class="mt-6 text-xs text-white/40 bg-navy-light rounded-xl p-4 border border-white/5">
+      <p class="mb-1">ℹ Fiyat değişiklikleri kaydedildikten sonra site 5 dakika içinde güncellenir.</p>
+      <p>ℹ AI (WhatsApp/Telegram) aynı Supabase'den okuduğu için anında senkron olur.</p>
+    </div>
+  </div>
+
+  <!-- Alt Menü (mobil) -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-navy-light border-t border-white/10 flex justify-evenly items-center py-2 z-50 md:hidden">
+    <a href="/panel/admin.html" class="flex flex-col items-center gap-1 text-white/40">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25a2.25 2.25 0 0 1-2.25-2.25v-2.25Z"/></svg>
+      <span class="text-[10px]">Panel</span>
+    </a>
+    <a href="/panel/admin-stats.html" class="flex flex-col items-center gap-1 text-white/40">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+      <span class="text-[10px]">İstatistik</span>
+    </a>
+    <a href="/panel/admin-packages.html" class="flex flex-col items-center gap-1 text-gold">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A3.375 3.375 0 108.625 8.25h6.75A3.375 3.375 0 0012 4.875zM12 4.875v16.5M3 11.25h18"/></svg>
+      <span class="text-[10px]">Paketler</span>
+    </a>
+    <a href="/panel/admin-competitors.html" class="flex flex-col items-center gap-1 text-white/40">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
+      <span class="text-[10px]">Araştırma</span>
+    </a>
+    <a href="/panel/admin-ads.html" class="flex flex-col items-center gap-1 text-white/40">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+      <span class="text-[10px]">Reklamlar</span>
+    </a>
+  </nav>
+  <div class="h-16 md:hidden"></div>
+
+  <script>
+    const API = '/api/panel';
+    const token = localStorage.getItem('admin_token');
+    const adminNameVal = localStorage.getItem('admin_name');
+    const role = localStorage.getItem('admin_role');
+
+    if (!token) window.location.href = '/panel/admin-login.html';
+
+    document.getElementById('adminName').textContent = adminNameVal || 'Admin';
+    if (role !== 'admin_sahip') {
+      document.getElementById('roleWarning').classList.remove('hidden');
+    }
+
+    async function api(path, opts = {}) {
+      const res = await fetch(`${API}${path}`, {
+        ...opts,
+        headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json', ...opts.headers }
+      });
+      if (res.status === 401) { logout(); return null; }
+      const json = await res.json().catch(() => null);
+      return { ok: res.ok, status: res.status, json };
+    }
+
+    const PKG_LABELS = {
+      DAYTIME_STD: 'Gündüz Turu',
+      SUNSET_STD: 'Gün Batımı Turu',
+      DINNER_STD: 'Standart Dinner Cruise',
+      DINNER_VIP: 'VIP Dinner Cruise',
+    };
+    const ADDON_LABELS = {
+      ALCOHOL_2GLASS: '2 Bardak Alkol',
+      ALCOHOL_UNLIMITED: 'Sınırsız Alkol',
+      HOTEL_TRANSFER: 'Otel Transferi',
+      ROMANTIC_TABLE: 'Romantik Masa',
+    };
+    const PRICE_TYPE_LABELS = {
+      per_person: 'kişi başı',
+      per_table: 'masa başı',
+      per_booking: 'rezervasyon başı',
+    };
+
+    function renderRow({ code, price, label, meta, type }) {
+      const disabled = role !== 'admin_sahip' ? 'disabled' : '';
+      return `
+        <div class="bg-navy-light rounded-xl p-4 border border-white/5">
+          <div class="flex items-start justify-between gap-3 mb-2">
+            <div class="flex-1 min-w-0">
+              <p class="text-white font-semibold text-sm">${label}</p>
+              <p class="text-white/30 text-xs mt-0.5">${code}${meta ? ' · ' + meta : ''}</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-white/40 text-sm">€</span>
+            <input type="number" step="0.01" min="0" value="${price}"
+              data-code="${code}" data-type="${type}" data-original="${price}"
+              onchange="markDirty(this)"
+              class="price-input flex-1 bg-navy-dark border border-white/10 rounded-lg px-3 py-2 text-white text-base font-semibold focus:border-gold focus:outline-none" ${disabled}>
+            <button onclick="savePrice(this)" data-code="${code}" data-type="${type}"
+              class="save-btn bg-gold text-navy-dark font-semibold px-4 py-2 rounded-lg text-sm hover:bg-gold-light transition-colors disabled:opacity-30 disabled:cursor-not-allowed" disabled>
+              Kaydet
+            </button>
+          </div>
+        </div>`;
+    }
+
+    function markDirty(input) {
+      const btn = input.parentElement.querySelector('.save-btn');
+      const changed = Number(input.value) !== Number(input.dataset.original);
+      btn.disabled = !changed || role !== 'admin_sahip';
+    }
+
+    async function savePrice(btn) {
+      const wrap = btn.parentElement;
+      const input = wrap.querySelector('.price-input');
+      const code = btn.dataset.code;
+      const type = btn.dataset.type;
+      const price_eur = Number(input.value);
+
+      btn.disabled = true;
+      btn.textContent = '…';
+      const result = await api('/packages', {
+        method: 'PUT',
+        body: JSON.stringify({ type, code, price_eur })
+      });
+      btn.textContent = 'Kaydet';
+
+      const status = document.getElementById('statusMsg');
+      if (result?.ok) {
+        input.dataset.original = price_eur;
+        status.textContent = `✓ ${code} güncellendi`;
+        status.className = 'text-xs text-green-400';
+      } else {
+        status.textContent = `✗ ${result?.json?.error || 'Hata'}`;
+        status.className = 'text-xs text-red-400';
+        btn.disabled = false;
+      }
+      setTimeout(() => { status.textContent = ''; }, 3000);
+    }
+
+    async function loadData() {
+      const result = await api('/packages');
+      if (!result?.ok) {
+        document.getElementById('pkgList').innerHTML = '<div class="text-red-400 text-center py-4 text-sm">Yüklenemedi</div>';
+        return;
+      }
+      const { packages, addons } = result.json;
+
+      document.getElementById('pkgList').innerHTML = packages.map(p => renderRow({
+        code: p.code,
+        price: p.price_eur,
+        label: PKG_LABELS[p.code] || p.name_translations?.tr || p.code,
+        meta: p.is_active ? `${p.tour_type} · ${p.tier}` : `${p.tour_type} · ${p.tier} · PASİF`,
+        type: 'package',
+      })).join('') || '<div class="text-white/30 text-center py-4 text-sm">Paket yok</div>';
+
+      document.getElementById('addonList').innerHTML = addons.map(a => renderRow({
+        code: a.code,
+        price: a.price_eur,
+        label: ADDON_LABELS[a.code] || a.name_translations?.tr || a.code,
+        meta: PRICE_TYPE_LABELS[a.price_type] || a.price_type,
+        type: 'addon',
+      })).join('') || '<div class="text-white/30 text-center py-4 text-sm">Eklenti yok</div>';
+    }
+
+    function logout() {
+      localStorage.removeItem('admin_token');
+      localStorage.removeItem('admin_name');
+      localStorage.removeItem('admin_role');
+      window.location.href = '/panel/admin-login.html';
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
