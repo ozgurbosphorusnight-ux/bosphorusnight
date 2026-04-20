@@ -9,6 +9,11 @@ body {
   background: #0b1120;
 }
 
+/* Reviews — hidden state (toggled by show-more button) */
+.review-hidden {
+  display: none !important;
+}
+
 /* ========== ROUTE LINE (left side) ========== */
 .route-marker {
   position: absolute;
@@ -588,13 +593,9 @@ section h2::after {
   box-shadow: 0 0 15px rgba(201, 168, 76, 0.1);
 }
 
-/* Top Bar Ticker */
+/* Top Bar Ticker — seamless infinite scroll */
 .topbar-ticker {
-  animation: topbar-scroll 20s linear infinite;
-}
-
-.topbar-ticker:hover {
-  animation-play-state: paused;
+  animation: topbar-scroll 30s linear infinite;
 }
 
 @keyframes topbar-scroll {

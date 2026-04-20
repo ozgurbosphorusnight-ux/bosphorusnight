@@ -994,10 +994,28 @@ function openMobilePanel(pkg) {
   // Reset wizard to step 1
   wizGoTo(1);
 
-  // Set package if provided
-  if (pkg === 'standard' || pkg === 'vip') {
-    wizSelectPackage(pkg);
-  }
+  // Package selection: user must choose actively, no auto-preselection
+  wizState.pkg = null;
+  wizState.transfer = null;
+  const inactive = 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
+  const stdBtn = document.getElementById('wizPkgStandard');
+  const vipBtn = document.getElementById('wizPkgVip');
+  if (stdBtn) stdBtn.className = inactive;
+  if (vipBtn) vipBtn.className = inactive;
+  const transferInactive = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
+  const tNo = document.getElementById('wizTransferNo');
+  const tYes = document.getElementById('wizTransferYes');
+  if (tNo) tNo.className = transferInactive;
+  if (tYes) tYes.className = transferInactive;
+  // Reset adults count to 0 (force user to pick)
+  const adultsEl = document.getElementById('wizAdults');
+  if (adultsEl) adultsEl.textContent = '0';
+  const childrenEl = document.getElementById('wizChildren');
+  if (childrenEl) childrenEl.textContent = '0';
+  ['wizPackageWarning', 'wizTransferWarning', 'wizNextHint', 'wizDrinkWarning', 'wizAdultsWarning'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.classList.add('hidden');
+  });
 
   // Set default date to today
   const wizDate = document.getElementById('wizDate');
@@ -1835,10 +1853,10 @@ function initRouteLine() {
 // Wizard state
 const wizState = {
   step: 1,
-  pkg: 'standard',
+  pkg: null,
   drink: 'soft',
   drinkCounts: { soft: 0, glass2: 0, unlimited: 0 },
-  transfer: false,
+  transfer: null,
   romantic: false,
   contact: null,
   transferZoneExtra: 0,
@@ -1893,21 +1911,98 @@ function wizGoTo(n) {
   wizCalcPrice();
   // Build summary on step 4
   if (n === 4) wizBuildSummary();
+  // Update Next button state (disable if step 2 requirements not met)
+  wizUpdateNextBtn();
+}
+
+function wizUpdateNextBtn() {
+  // When user picks an option, hide any lingering hint below the Next button
+  const hint = document.getElementById('wizNextHint');
+  if (hint) hint.classList.add('hidden');
+}
+
+function wizScrollToElement(selector) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+  const scrollContainer = document.getElementById('mobileBookPanelContent');
+  if (scrollContainer && scrollContainer.contains(el)) {
+    const targetRect = el.getBoundingClientRect();
+    const containerRect = scrollContainer.getBoundingClientRect();
+    const offset = targetRect.top - containerRect.top + scrollContainer.scrollTop - 80;
+    scrollContainer.scrollTo({ top: offset, behavior: 'smooth' });
+  } else {
+    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
+
+function wizShowNextHint(text) {
+  const hint = document.getElementById('wizNextHint');
+  if (!hint) return;
+  hint.textContent = text;
+  hint.classList.remove('hidden');
+  hint.classList.remove('text-white/50');
+  hint.classList.add('text-red-400', 'font-medium');
 }
 
 function wizNext() {
-  // Step 2 → 3: validate drinks assigned
+  // Step 1 → 2: package + at least one adult required
+  if (wizState.step === 1) {
+    if (!wizState.pkg) {
+      const txt = (T['wizard.packageChoose'] && T['wizard.packageChoose'][currentLang]) || 'Please choose a package';
+      wizShowNextHint(txt);
+      const warn = document.getElementById('wizPackageWarning');
+      if (warn) warn.classList.remove('hidden');
+      wizScrollToElement('#wizPackageWarning');
+      return;
+    }
+    const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
+    if (adults < 1) {
+      const txt = (T['wizard.adultsChoose'] && T['wizard.adultsChoose'][currentLang]) || 'Please enter at least one adult';
+      wizShowNextHint(txt);
+      const warn = document.getElementById('wizAdultsWarning');
+      if (warn) warn.classList.remove('hidden');
+      wizScrollToElement('#wizAdultsWarning');
+      return;
+    }
+    // Child ages — all must be selected
+    const childCount = parseInt(document.getElementById('wizChildren')?.textContent) || 0;
+    if (childCount > 0) {
+      const childSelects = document.querySelectorAll('#wizChildAgeInputs select');
+      const anyUnset = Array.from(childSelects).some(s => !s.value);
+      if (anyUnset) {
+        const txt = (T['wizard.childAgeChoose'] && T['wizard.childAgeChoose'][currentLang]) || 'Please select age for each child';
+        wizShowNextHint(txt);
+        const warn = document.getElementById('wizChildAgeWarning');
+        if (warn) warn.classList.remove('hidden');
+        wizScrollToElement('#wizChildAgeWarning');
+        return;
+      }
+    }
+  }
+  // Step 2 → 3: validate drinks assigned + transfer selection made
   if (wizState.step === 2) {
     const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
     const dc = wizState.drinkCounts;
     const assigned = dc.soft + dc.glass2 + dc.unlimited;
+
     if (assigned !== adults) {
+      const txt = (T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests';
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizDrinkTotal');
       const warn = document.getElementById('wizDrinkWarning');
       if (warn) warn.classList.remove('hidden');
       return;
     }
+    if (wizState.transfer === null) {
+      const txt = (T['wizard.transferChoose'] && T['wizard.transferChoose'][currentLang]) || 'Please choose a transfer option';
+      wizShowNextHint(txt);
+      const warn = document.getElementById('wizTransferWarning');
+      if (warn) warn.classList.remove('hidden');
+      wizScrollToElement('#wizTransferWarning');
+      return;
+    }
   }
-  // Step 3 → 4: validate each field with individual warnings
+  // Step 3 → 4: validate each field sequentially, scroll to first problem
   if (wizState.step === 3) {
     const name = (document.getElementById('wizGuestName')?.value || '').trim();
     const phone = (document.getElementById('wizPhone')?.value || '').trim();
@@ -1915,29 +2010,191 @@ function wizNext() {
     const nameWarn = document.getElementById('wizNameWarning');
     const phoneWarn = document.getElementById('wizPhoneWarning');
     const contactWarn = document.getElementById('wizContactMethodWarning');
-    // Hide all first
-    if (nameWarn) nameWarn.classList.add('hidden');
-    if (phoneWarn) phoneWarn.classList.add('hidden');
-    if (contactWarn) contactWarn.classList.add('hidden');
+    const addrWarn = document.getElementById('wizTransferZoneMsg');
+    // Hide all warnings first
+    [nameWarn, phoneWarn, contactWarn, addrWarn].forEach(w => w && w.classList.add('hidden'));
 
-    let valid = true;
-    if (!name) { if (nameWarn) nameWarn.classList.remove('hidden'); valid = false; }
-    if (!phone) { if (phoneWarn) phoneWarn.classList.remove('hidden'); valid = false; }
-    if (!wizState.contact) { if (contactWarn) contactWarn.classList.remove('hidden'); valid = false; }
+    // 1) Name
+    if (!wizIsValidName(name)) {
+      const key = !name ? 'wizard.enterName' : 'wizard.invalidName';
+      const txt = (T[key] && T[key][currentLang]) || (!name ? 'Please enter your name' : 'Please enter a valid name');
+      if (nameWarn) { nameWarn.textContent = txt; nameWarn.classList.remove('hidden'); }
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizGuestName');
+      return;
+    }
+    // 2) Phone — must be at least 7 digits (strip non-digits first)
+    const phoneDigits = phone.replace(/\D/g, '');
+    if (!phone || phoneDigits.length < 7) {
+      const key = !phone ? 'wizard.enterPhone' : 'wizard.invalidPhone';
+      const txt = (T[key] && T[key][currentLang]) || (!phone ? 'Please enter your phone number' : 'Please enter a valid phone number');
+      if (phoneWarn) { phoneWarn.textContent = txt; phoneWarn.classList.remove('hidden'); }
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizPhone');
+      return;
+    }
+    // 3) Transfer address — required if transfer selected
     if (wizState.transfer && !address) {
-      const addrWarn = document.getElementById('wizTransferZoneMsg');
-      if (addrWarn) { addrWarn.innerHTML = `<span class="text-red-400">${(T['wizard.enterAddress'] && T['wizard.enterAddress'][currentLang]) || 'Please enter your pickup address'}</span>`; addrWarn.classList.remove('hidden'); }
-      valid = false;
+      const txt = (T['wizard.enterAddress'] && T['wizard.enterAddress'][currentLang]) || 'Please enter your pickup address';
+      if (addrWarn) { addrWarn.innerHTML = `<span class="text-red-400">${txt}</span>`; addrWarn.classList.remove('hidden'); }
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizAddress');
+      return;
     }
-    if (wizState.transfer && address && !detectTransferZone(address)) {
-      const zoneMsg = document.getElementById('wizTransferZoneMsg');
-      const txt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
-      if (zoneMsg) { zoneMsg.innerHTML = `<span class="text-red-400">✕ ${txt}</span>`; zoneMsg.classList.remove('hidden'); }
-      valid = false;
+    // 4) Must pick from Google autocomplete (have coordinates)
+    if (wizState.transfer && address && !wizState.transferLat) {
+      const txt = (T['wizard.pickFromList'] && T['wizard.pickFromList'][currentLang]) || 'Please pick your address from the dropdown';
+      if (addrWarn) { addrWarn.innerHTML = `<span class="text-red-400">${txt}</span>`; addrWarn.classList.remove('hidden'); }
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizAddress');
+      return;
     }
-    if (!valid) return;
+    // 5) Zone check — offer "continue without transfer" button (soft block)
+    if (wizState.transfer && address && wizState.transferLat && !detectTransferZone(address)) {
+      const zoneTxt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
+      const btnTxt = (T['wizard.continueWithoutTransfer'] && T['wizard.continueWithoutTransfer'][currentLang]) || 'Continue without transfer · I will come myself';
+      if (addrWarn) {
+        addrWarn.innerHTML = `<div class="text-red-400 text-xs mb-2">✕ ${zoneTxt}</div><button type="button" onclick="wizContinueWithoutTransfer()" class="block w-full text-xs bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] rounded-lg px-3 py-3 transition-colors font-bold shadow-lg shadow-[#c9a84c]/30">${btnTxt}</button>`;
+        addrWarn.classList.remove('hidden');
+      }
+      const hintTxt = (T['wizard.useButtonAbove'] && T['wizard.useButtonAbove'][currentLang]) || 'Tap the button above to continue without transfer';
+      wizShowNextHint(hintTxt);
+      wizScrollToElement('#wizAddress');
+      return;
+    }
+    // 6) Contact preference (after all form fields)
+    if (!wizState.contact) {
+      const txt = (T['wizard.selectContact'] && T['wizard.selectContact'][currentLang]) || 'Please select a contact method';
+      if (contactWarn) contactWarn.classList.remove('hidden');
+      wizShowNextHint(txt);
+      wizScrollToElement('#wizContactMethodWarning');
+      return;
+    }
   }
   if (wizState.step < 4) wizGoTo(wizState.step + 1);
+}
+
+// Keywords indicating accommodation (manual typing fallback)
+const ACCOMMODATION_KEYWORDS = [
+  'hotel', 'otel', 'motel', 'hostel', 'inn', 'suite', 'suit',
+  'airbnb', 'residence', 'resort', 'apart', 'apartment', 'apartmant',
+  'pansiyon', 'pension', 'b&b', 'bed and breakfast', 'gasthaus',
+  'hostal', 'albergue', 'guesthouse', 'guest house',
+  'booking', 'serviced', 'lodge', 'lodging'
+];
+
+function wizLooksLikeAccommodation(text) {
+  if (!text) return false;
+  const lower = text.toLowerCase();
+  return ACCOMMODATION_KEYWORDS.some(kw => lower.includes(kw));
+}
+
+function wizToggleRoomNumber(place) {
+  const addrInput = document.getElementById('wizAddress');
+  const roomBlock = document.getElementById('wizRoomNumberBlock');
+  if (!addrInput || !roomBlock) return;
+  const val = (addrInput.value || '').trim();
+  let isAccommodation = false;
+  if (place && Array.isArray(place.types)) {
+    isAccommodation = place.types.includes('lodging');
+  } else {
+    // Manual typing — fall back to keyword detection
+    isAccommodation = wizLooksLikeAccommodation(val);
+  }
+  roomBlock.classList.toggle('hidden', !isAccommodation);
+}
+
+function wizOnAddressInput() {
+  // Invalidate coords when user edits manually — forces re-pick from dropdown
+  if (wizState.transferLat) {
+    wizState.transferLat = null;
+    wizState.transferLng = null;
+  }
+  // Hide map until a new pick is made
+  const mapDiv = document.getElementById('wizAddressMap');
+  if (mapDiv) mapDiv.classList.add('hidden');
+  // Re-evaluate room number visibility via keyword match
+  wizToggleRoomNumber(null);
+}
+
+function wizContinueWithoutTransfer() {
+  // Switch transfer to "No"
+  wizToggle('transfer', false);
+  // Clear address + coords
+  wizState.transferLat = null;
+  wizState.transferLng = null;
+  const addrInput = document.getElementById('wizAddress');
+  if (addrInput) addrInput.value = '';
+  const addrBlock = document.getElementById('wizAddressBlock');
+  if (addrBlock) addrBlock.classList.add('hidden');
+  const addrWarn = document.getElementById('wizTransferZoneMsg');
+  if (addrWarn) addrWarn.classList.add('hidden');
+  const roomBlock = document.getElementById('wizRoomNumberBlock');
+  if (roomBlock) roomBlock.classList.add('hidden');
+  const mapDiv = document.getElementById('wizAddressMap');
+  if (mapDiv) mapDiv.classList.add('hidden');
+  const hint = document.getElementById('wizNextHint');
+  if (hint) hint.classList.add('hidden');
+  // Recalculate price (transfer -€10 removed)
+  wizCalcPrice();
+  // Re-run validation — catches missing contact preference etc. before advancing
+  wizNext();
+}
+
+function openVideoLightbox(youtubeId) {
+  const box = document.getElementById('videoLightbox');
+  const frame = document.getElementById('videoLightboxFrame');
+  if (!box || !frame) return;
+  frame.src = `https://www.youtube.com/embed/${youtubeId}?autoplay=1&rel=0`;
+  box.classList.remove('hidden');
+  box.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeVideoLightbox() {
+  const box = document.getElementById('videoLightbox');
+  const frame = document.getElementById('videoLightboxFrame');
+  if (!box || !frame) return;
+  frame.src = '';
+  box.classList.add('hidden');
+  box.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// ESC key closes lightbox
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const box = document.getElementById('videoLightbox');
+    if (box && !box.classList.contains('hidden')) closeVideoLightbox();
+  }
+});
+
+function showMoreReviews() {
+  const hidden = document.querySelectorAll('.review-hidden');
+  // Reveal next 5
+  let revealed = 0;
+  for (const el of hidden) {
+    if (revealed >= 5) break;
+    el.classList.remove('review-hidden');
+    revealed++;
+  }
+  // Hide the button if no more hidden reviews
+  const stillHidden = document.querySelectorAll('.review-hidden');
+  if (stillHidden.length === 0) {
+    const wrap = document.getElementById('showMoreWrap');
+    if (wrap) wrap.classList.add('hidden');
+  }
+}
+
+function wizViewPackages() {
+  closeMobilePanel();
+  const packagesSection = document.getElementById('packages');
+  if (!packagesSection) return;
+  packagesSection.classList.remove('hidden');
+  // Wait for panel close animation before scrolling
+  setTimeout(() => {
+    packagesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 400);
 }
 
 function wizSelectPackage(pkg) {
@@ -1957,6 +2214,11 @@ function wizSelectPackage(pkg) {
   // Also sync to desktop sidebar for price calc compatibility
   const desktopPkg = document.getElementById('bookPackage');
   if (desktopPkg) desktopPkg.value = pkg;
+  // Hide package warning and next-button hint
+  const warn = document.getElementById('wizPackageWarning');
+  if (warn) warn.classList.add('hidden');
+  const hint = document.getElementById('wizNextHint');
+  if (hint) hint.classList.add('hidden');
   wizCalcPrice();
 }
 
@@ -1965,7 +2227,7 @@ function wizGuest(id, dir) {
   if (!el) return;
   let val = parseInt(el.textContent) || 0;
   val += dir;
-  if (id === 'wizAdults' && val < 1) val = 1;
+  if (id === 'wizAdults' && val < 0) val = 0;
   if (id === 'wizChildren' && val < 0) val = 0;
   if (val > 20) val = 20;
   el.textContent = val;
@@ -1976,6 +2238,13 @@ function wizGuest(id, dir) {
     if (desktop) desktop.textContent = val;
     const mobileLegacy = document.getElementById('adultCountMobile');
     if (mobileLegacy) mobileLegacy.textContent = val;
+    // Hide adults warning when user increments
+    if (val >= 1) {
+      const warn = document.getElementById('wizAdultsWarning');
+      if (warn) warn.classList.add('hidden');
+      const hint = document.getElementById('wizNextHint');
+      if (hint) hint.classList.add('hidden');
+    }
   }
   if (id === 'wizChildren') {
     const desktop = document.getElementById('childCount');
@@ -2004,8 +2273,15 @@ function wizUpdateChildAges(count) {
       const sel = document.createElement('select');
       sel.className = 'bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:border-[#c9a84c]/50 focus:outline-none appearance-none pr-7';
       sel.style.cssText = "background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 6px center; background-size: 14px;";
-      sel.innerHTML = '<option value="0-3">0-3</option><option value="4-8">4-8</option><option value="9+" selected>9+</option>';
-      sel.addEventListener('change', () => wizCalcPrice());
+      const placeholder = (T['wizard.selectAge'] && T['wizard.selectAge'][currentLang]) || 'Select age';
+      sel.innerHTML = `<option value="" disabled selected>${placeholder}</option><option value="0-3">0-3</option><option value="4-8">4-8</option><option value="9+">9+</option>`;
+      sel.addEventListener('change', () => {
+        wizCalcPrice();
+        const warn = document.getElementById('wizChildAgeWarning');
+        if (warn) warn.classList.add('hidden');
+        const hint = document.getElementById('wizNextHint');
+        if (hint) hint.classList.add('hidden');
+      });
       inputs.appendChild(sel);
     }
   } else if (existing.length > count) {
@@ -2082,6 +2358,7 @@ function wizDrinkCount(type, dir) {
   if (warn) warn.classList.toggle('hidden', newAssigned === adults);
 
   wizCalcPrice();
+  wizUpdateNextBtn();
 }
 
 function wizResetDrinkCounts() {
@@ -2109,6 +2386,9 @@ function wizToggle(type, val) {
     const yes = document.getElementById('wizTransferYes');
     if (no) no.className = val ? inactiveClass : activeClass;
     if (yes) yes.className = val ? activeClass : inactiveClass;
+    const warn = document.getElementById('wizTransferWarning');
+    if (warn) warn.classList.add('hidden');
+    wizUpdateNextBtn();
   }
   if (type === 'romantic') {
     const no = document.getElementById('wizRomanticNo');
@@ -2126,12 +2406,22 @@ function wizSelectContact(channel) {
     const btn = document.getElementById('wizContact' + c.charAt(0).toUpperCase() + c.slice(1));
     if (btn) btn.className = `wiz-contact-btn flex flex-col items-center gap-1 transition-all ${c === channel ? colors[c] : 'text-white/25 hover:text-white/50'}`;
   });
+  const warn = document.getElementById('wizContactMethodWarning');
+  if (warn) warn.classList.add('hidden');
+  const hint = document.getElementById('wizNextHint');
+  if (hint) hint.classList.add('hidden');
 }
 
 function wizUpdateTicketName() {
   const val = (document.getElementById('wizGuestName')?.value || '').trim();
   const el = document.getElementById('wizTicketName');
   if (el) el.textContent = val || '—';
+  if (val) {
+    const warn = document.getElementById('wizNameWarning');
+    if (warn) warn.classList.add('hidden');
+    const hint = document.getElementById('wizNextHint');
+    if (hint) hint.classList.add('hidden');
+  }
 }
 
 function wizUpdateTicketPhone() {
@@ -2139,7 +2429,43 @@ function wizUpdateTicketPhone() {
   const num = (document.getElementById('wizPhone')?.value || '').trim();
   const el = document.getElementById('wizTicketPhone');
   if (el) el.textContent = num ? `${code} ${num}` : '—';
+  if (num) {
+    const warn = document.getElementById('wizPhoneWarning');
+    if (warn) warn.classList.add('hidden');
+    const hint = document.getElementById('wizNextHint');
+    if (hint) hint.classList.add('hidden');
+  }
 }
+// Validate guest name — catches empty, too-short, single-char-repeat, keyboard mash
+function wizIsValidName(name) {
+  if (!name) return false;
+  const trimmed = name.trim();
+  if (trimmed.length < 2) return false;
+  // Must contain at least one letter (any alphabet incl. Turkish, Cyrillic, Arabic, etc.)
+  if (!/[\p{L}]/u.test(trimmed)) return false;
+  // Strip non-letter/non-space characters for deep analysis
+  const clean = trimmed.replace(/[\s\-'.]/g, '').toLowerCase();
+  if (clean.length < 2) return false;
+  // No 3+ identical chars in a row (aaaa, kkkk, 1111)
+  if (/(.)\1\1/.test(clean)) return false;
+  // At least 2 unique characters
+  const unique = new Set(clean);
+  if (unique.size < 2) return false;
+  // Keyboard mash patterns (level 2)
+  const mashPatterns = [
+    'qwerty', 'qwertyu', 'qwertyui', 'qwertyuiop',
+    'asdf', 'asdfg', 'asdfgh', 'asdfghjkl',
+    'zxcv', 'zxcvb', 'zxcvbn', 'zxcvbnm',
+    '123456', '1234567', '12345678', '1234567890',
+    'abcdef', 'abcdefg', 'abcdefghij',
+    'qazwsx', 'qweasd', 'qazwsxedc',
+  ];
+  for (const pattern of mashPatterns) {
+    if (clean.includes(pattern)) return false;
+  }
+  return true;
+}
+
 function wizGetFullPhone() {
   const code = document.getElementById('wizCountryCode')?.value || '+90';
   const num = (document.getElementById('wizPhone')?.value || '').trim();
@@ -2147,9 +2473,18 @@ function wizGetFullPhone() {
 }
 
 function wizCalcPrice() {
-  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 2;
+  const adultsRaw = document.getElementById('wizAdults')?.textContent;
+  const adults = adultsRaw === undefined ? 0 : (parseInt(adultsRaw) || 0);
   const children = parseInt(document.getElementById('wizChildren')?.textContent) || 0;
   const pkg = wizState.pkg;
+
+  // Hide the price row until user has made a package + adult selection (Step 1 incomplete)
+  const priceRow = document.getElementById('wizPriceRow');
+  if (priceRow) {
+    const showPrice = !!pkg && adults >= 1;
+    priceRow.classList.toggle('hidden', !showPrice);
+    if (!showPrice) return;
+  }
 
   const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
   const oldPrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].oldPrice : 40;
@@ -2460,6 +2795,8 @@ function initPlacesAutocomplete() {
     if (place.name) {
       input.value = place.name + ' — ' + (place.formatted_address || '');
     }
+    // Show room number block only if selected place is accommodation (lodging type)
+    wizToggleRoomNumber(place);
     // Save coordinates
     if (place.geometry && place.geometry.location) {
       wizState.transferLat = place.geometry.location.lat();

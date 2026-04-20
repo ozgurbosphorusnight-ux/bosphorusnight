@@ -407,64 +407,276 @@ const T = {
 
   // Review texts
   "reviews.r1": {
-    en: "\"An unforgettable night on the Bosphorus. The views were breathtaking and the dinner was amazing. Perfect for couples!\"",
-    tr: "\"Boğaz'da unutulmaz bir gece. Manzara nefes kesiciydi ve yemek harikaydı. Çiftler için mükemmel!\"",
-    de: "\"Unvergessliche Nacht am Bosporus. Die Aussicht war atemberaubend und das Essen fantastisch. Perfekt für Paare!\"",
-    es: "\"Una noche inolvidable en el Bósforo. Las vistas eran impresionantes y la cena fue increíble. ¡Perfecto para parejas!\"",
-    ru: "\"Незабываемая ночь на Босфоре. Виды захватывали дух, а ужин был потрясающим. Идеально для пар!\"",
-    ar: "\"ليلة لا تُنسى على البوسفور. المناظر كانت خلابة والعشاء كان رائعاً. مثالي للأزواج!\""
+    en: "\"Chose this bosphorus dinner cruise for our anniversary — unforgettable. Candle-lit mezes, attentive service, the Bosphorus in the background. Best dinner cruise Istanbul has to offer.\"",
+    tr: "\"Evlilik yıldönümümüz için bu boğaz yemekli turuna katıldık — unutulmazdı. Mum ışığında meze çeşitleri, ilgili servis, arkada Boğaz. İstanbul'un sunduğu en iyi akşam yemeği tekne turu.\"",
+    de: "\"Wir wählten diese Bosphorus Dinner Cruise für unseren Hochzeitstag — unvergesslich. Mezes im Kerzenschein, aufmerksamer Service, der Bosporus im Hintergrund. Die beste Dinner Cruise Istanbul zu bieten hat.\"",
+    es: "\"Elegimos este crucero con cena por el Bósforo para nuestro aniversario — inolvidable. Mezes a la luz de las velas, servicio atento, el Bósforo de fondo. El mejor dinner cruise Istanbul puede ofrecer.\"",
+    ru: "\"Выбрали этот круиз с ужином по Босфору на годовщину — незабываемо. Мезе при свечах, внимательный сервис, Босфор на заднем плане. Лучший dinner cruise Istanbul может предложить.\"",
+    ar: "\"اخترنا رحلة العشاء على البوسفور لذكرى زواجنا — لا تُنسى. مقبلات على ضوء الشموع، خدمة مميزة، البوسفور في الخلفية. أفضل عشاء على البوسفور في إسطنبول.\""
   },
   "reviews.r1.info": {
-    en: "Couple · United Kingdom", tr: "Çift · İngiltere", de: "Paar · Großbritannien",
-    es: "Pareja · Reino Unido", ru: "Пара · Великобритания", ar: "زوجان · المملكة المتحدة"
+    en: "Couple · Germany", tr: "Çift · Almanya", de: "Paar · Deutschland",
+    es: "Pareja · Alemania", ru: "Пара · Германия", ar: "زوجان · ألمانيا"
   },
   "reviews.r2": {
-    en: "\"We came as a group of 8 friends and had the best time! The Turkish night show was incredible. Will definitely recommend.\"",
-    tr: "\"8 arkadaş olarak geldik ve harika vakit geçirdik! Türk gecesi şovu inanılmazdı. Kesinlikle tavsiye edeceğiz.\"",
-    de: "\"Wir waren 8 Freunde und hatten die beste Zeit! Die Türkische Nacht war unglaublich. Absolut empfehlenswert.\"",
-    es: "\"Vinimos como grupo de 8 amigos y la pasamos increíble. ¡El show de noche turca fue increíble!\"",
-    ru: "\"Мы приехали группой из 8 друзей и отлично провели время! Турецкое шоу было невероятным.\"",
-    ar: "\"جئنا كمجموعة من 8 أصدقاء وقضينا أفضل الأوقات! عرض الليلة التركية كان مذهلاً.\""
+    en: "\"Booked this Istanbul night tour for the views — it exceeded expectations. Ortaköy Mosque glowing, Dolmabahçe lit up, the bridge turning red. Best bosphorus sightseeing shots of my trip.\"",
+    tr: "\"Manzara için bu İstanbul gece turuna katıldım — beklentinin ötesindeydi. Ortaköy Camii parıldıyor, Dolmabahçe aydınlanmış, köprü kırmızıya dönüyor. Yaptığım en iyi boğaz manzarası çekimleri.\"",
+    de: "\"Diese Istanbul Night Tour wegen der Aussicht gebucht — sie übertraf die Erwartungen. Die Ortaköy-Moschee leuchtet, Dolmabahçe erhellt, die Brücke in Rot. Beste Bosphorus Sightseeing-Aufnahmen meiner Reise.\"",
+    es: "\"Reservé este tour nocturno por Estambul por las vistas — superaron expectativas. Mezquita Ortaköy iluminada, Dolmabahçe brillando, el puente en rojo. Las mejores fotos del crucero por el Bósforo.\"",
+    ru: "\"Забронировал этот ночной тур по Стамбулу ради видов — они превзошли ожидания. Мечеть Ортакёй сияет, Долмабахче в огнях, мост становится красным. Лучшие кадры круиза по Босфору.\"",
+    ar: "\"حجزت هذه الجولة الليلية في إسطنبول من أجل المناظر — فاقت توقعاتي. مسجد أورتاكوي يتوهج، قصر دولمة بهجة مضاء، الجسر يتحول إلى الأحمر. أفضل لقطات رحلة البوسفور.\""
   },
   "reviews.r2.info": {
-    en: "Group · Saudi Arabia", tr: "Grup · Suudi Arabistan", de: "Gruppe · Saudi-Arabien",
-    es: "Grupo · Arabia Saudita", ru: "Группа · Саудовская Аравия", ar: "مجموعة · السعودية"
+    en: "Solo · Russia", tr: "Tek · Rusya", de: "Solo · Russland",
+    es: "Solo · Rusia", ru: "Соло · Россия", ar: "فردي · روسيا"
   },
   "reviews.r3": {
-    en: "\"Our kids loved it! The team was so helpful and the food was delicious. Great family experience on the Bosphorus.\"",
-    tr: "\"Çocuklarımız bayıldı! Ekip çok yardımseverdi ve yemekler lezzetliydi. Boğaz'da harika bir aile deneyimi.\"",
-    de: "\"Unsere Kinder waren begeistert! Das Team war sehr hilfsbereit und das Essen köstlich. Tolles Familienerlebnis.\"",
-    es: "\"¡A nuestros hijos les encantó! El equipo fue muy servicial y la comida estaba deliciosa.\"",
-    ru: "\"Нашим детям очень понравилось! Команда была очень внимательной, а еда вкусной.\"",
-    ar: "\"أطفالنا أحبوها! الفريق كان متعاوناً جداً والطعام كان لذيذاً. تجربة عائلية رائعة.\""
+    en: "\"Sailed right under the Bosphorus Bridge lit in red — absolutely magical. Our phone shots came out like postcards. Worth it just for that moment.\"",
+    tr: "\"Kırmızı ışıklı Boğaz Köprüsü'nün tam altından geçtik — büyüleyici. Telefonla çektiklerimiz bile kartpostal gibi çıktı. Sırf bu an için değer.\"",
+    de: "\"Direkt unter der rot beleuchteten Bosporus-Brücke gesegelt — absolut magisch. Selbst unsere Handyfotos wurden wie Postkarten. Allein dafür lohnt es sich.\"",
+    es: "\"Navegamos justo bajo el Puente del Bósforo iluminado en rojo — absolutamente mágico. Nuestras fotos con el móvil salieron como postales.\"",
+    ru: "\"Проплыли прямо под Босфорским мостом, подсвеченным красным — абсолютно волшебно. Снимки с телефона получились как открытки.\"",
+    ar: "\"أبحرنا تحت جسر البوسفور المضاء بالأحمر — ساحر تمامًا. حتى صور الهاتف ظهرت كالبطاقات البريدية. يستحق من أجل تلك اللحظة.\""
   },
   "reviews.r3.info": {
-    en: "Family · Romania", tr: "Aile · Romanya", de: "Familie · Rumänien",
-    es: "Familia · Rumanía", ru: "Семья · Румыния", ar: "عائلة · رومانيا"
+    en: "Couple · United Kingdom", tr: "Çift · Birleşik Krallık", de: "Paar · Vereinigtes Königreich",
+    es: "Pareja · Reino Unido", ru: "Пара · Великобритания", ar: "زوجان · المملكة المتحدة"
   },
   "reviews.r4": {
-    en: "\"Traveling solo and this was the highlight of my Istanbul trip. The booking was so easy — just WhatsApp and done! Amazing night.\"",
-    tr: "\"Solo seyahat ediyordum ve bu İstanbul gezimin en güzel anıydı. Rezervasyon çok kolaydı — sadece WhatsApp! Harika bir gece.\"",
-    de: "\"Als Solo-Reisender das Highlight meiner Istanbul-Reise. Buchung war super einfach — nur WhatsApp! Tolle Nacht.\"",
-    es: "\"Viajando solo y esto fue lo mejor de mi viaje a Estambul. Reservar fue muy fácil — ¡solo WhatsApp!\"",
-    ru: "\"Путешествуя соло, это стало лучшим моментом моей поездки в Стамбул. Бронирование было таким простым — просто WhatsApp!\"",
-    ar: "\"كنت أسافر بمفردي وكانت هذه أبرز لحظات رحلتي إلى إسطنبول. الحجز كان سهلاً جداً — فقط واتساب!\""
+    en: "\"Took the kids. The folk dancers and the dervish show captivated them. Halal menu was respected, staff gave our family attentive care. A perfect Istanbul night.\"",
+    tr: "\"Çocuklarla gittik. Folklor dansları ve semazen gösterisi onları büyüledi. Helal menüye saygı vardı, servis aileye özel ilgi gösterdi. İstanbul'da mükemmel bir gece.\"",
+    de: "\"Wir waren mit den Kindern da. Die Volkstänze und der Derwisch zogen sie in ihren Bann. Das Halal-Menü wurde respektiert, das Personal kümmerte sich aufmerksam um die Familie.\"",
+    es: "\"Fuimos con los niños. Los bailarines folclóricos y el derviche los cautivaron. Se respetó el menú halal, el personal cuidó de la familia con atención.\"",
+    ru: "\"Пошли с детьми. Народные танцы и дервиш их покорили. Халяль-меню соблюдалось, персонал внимательно отнёсся к семье. Идеальный вечер в Стамбуле.\"",
+    ar: "\"اصطحبنا الأطفال. الراقصون الشعبيون وعرض الدرويش أسرهم. تم احترام قائمة الحلال، اهتم الطاقم بعائلتنا. ليلة مثالية في إسطنبول.\""
   },
   "reviews.r4.info": {
-    en: "Solo · Germany", tr: "Solo · Almanya", de: "Solo · Deutschland",
-    es: "Solo · Alemania", ru: "Соло · Германия", ar: "فردي · ألمانيا"
+    en: "Family · UAE", tr: "Aile · BAE", de: "Familie · VAE",
+    es: "Familia · EAU", ru: "Семья · ОАЭ", ar: "عائلة · الإمارات"
   },
   "reviews.r5": {
-    en: "\"I proposed to my girlfriend on the boat and the team helped with everything — flowers, decorations, the perfect table. She said YES!\"",
-    tr: "\"Teknede kız arkadaşıma evlilik teklifi ettim ve ekip her konuda yardımcı oldu — çiçekler, dekorasyon, mükemmel masa. EVET dedi!\"",
-    de: "\"Ich habe meiner Freundin an Bord einen Antrag gemacht und das Team half bei allem — Blumen, Deko, perfekter Tisch. Sie sagte JA!\"",
-    es: "\"Le propuse matrimonio a mi novia en el barco y el equipo ayudó con todo. ¡Dijo que SÍ!\"",
-    ru: "\"Я сделал предложение своей девушке на борту, и команда помогла со всем — цветы, украшения, идеальный столик. Она сказала ДА!\"",
-    ar: "\"عرضت الزواج على صديقتي على القارب وساعدني الفريق في كل شيء — الزهور والديكور والطاولة المثالية. قالت نعم!\""
+    en: "\"We danced until midnight. The DJ, the belly dance show, the live music — pure energy. Our friends from Istanbul said it was the best cruise they'd been on too.\"",
+    tr: "\"Gece yarısına kadar dans ettik. DJ, oryantal şov, canlı müzik — saf enerji. İstanbul'daki arkadaşlarımız bile 'en iyi tekne turu buydu' dedi.\"",
+    de: "\"Wir haben bis Mitternacht getanzt. DJ, Bauchtanz-Show, Live-Musik — pure Energie. Selbst unsere Freunde aus Istanbul sagten, es sei die beste Tour gewesen.\"",
+    es: "\"Bailamos hasta medianoche. El DJ, el show de danza del vientre, la música en vivo — pura energía. Nuestros amigos de Estambul dijeron que fue el mejor crucero.\"",
+    ru: "\"Танцевали до полуночи. DJ, танец живота, живая музыка — чистая энергия. Даже наши друзья из Стамбула сказали, что это был лучший круиз.\"",
+    ar: "\"رقصنا حتى منتصف الليل. DJ، عرض الرقص الشرقي، الموسيقى الحية — طاقة صافية. قال أصدقاؤنا من إسطنبول إنها كانت أفضل رحلة.\""
   },
   "reviews.r5.info": {
-    en: "Couple · United States", tr: "Çift · Amerika", de: "Paar · USA",
-    es: "Pareja · Estados Unidos", ru: "Пара · США", ar: "زوجان · الولايات المتحدة"
+    en: "Couple · Italy", tr: "Çift · İtalya", de: "Paar · Italien",
+    es: "Pareja · Italia", ru: "Пара · Италия", ar: "زوجان · إيطاليا"
+  },
+  "reviews.r6": {
+    en: "\"From boarding to the last course, everything was thoughtful. Food fresh, generous portions, the boat looked like a floating restaurant at night. Recommended.\"",
+    tr: "\"İskeleden son tatlıya kadar her şey özenliydi. Yemek taze, porsiyonlar bol, tekne gece yüzen bir restoran gibiydi. Tavsiye ederim.\"",
+    de: "\"Vom Einsteigen bis zum letzten Gang war alles durchdacht. Frisches Essen, großzügige Portionen, das Boot wirkte nachts wie ein schwimmendes Restaurant. Empfohlen.\"",
+    es: "\"Desde el embarque hasta el último plato, todo fue cuidado. Comida fresca, porciones generosas, el barco parecía un restaurante flotante de noche. Recomendado.\"",
+    ru: "\"От посадки до последнего блюда всё было продумано. Свежая еда, щедрые порции, лодка вечером как плавучий ресторан. Рекомендую.\"",
+    ar: "\"من الصعود إلى آخر طبق، كل شيء كان مدروسًا. طعام طازج، حصص سخية، بدت القارب ليلاً كمطعم عائم. موصى به.\""
+  },
+  "reviews.r6.info": {
+    en: "Family · Saudi Arabia", tr: "Aile · Suudi Arabistan", de: "Familie · Saudi-Arabien",
+    es: "Familia · Arabia Saudita", ru: "Семья · Саудовская Аравия", ar: "عائلة · المملكة العربية السعودية"
+  },
+  "reviews.r7": {
+    en: "\"We love food — and this delivered. Each plate arrived with thought, the meat was tender, the flowers on the table made the whole night feel curated. Best Istanbul meal.\"",
+    tr: "\"Yemek severiz — burada beklediğimizi bulduk. Her tabak özenliydi, et yumuşaktı, masadaki çiçekler akşamı özel hissettirdi. İstanbul'daki en iyi yemeğimiz.\"",
+    de: "\"Wir lieben gutes Essen — und das hier hat überzeugt. Jeder Teller war durchdacht, das Fleisch zart, die Blumen auf dem Tisch machten den Abend besonders.\"",
+    es: "\"Amamos la comida — y aquí encontramos lo que buscábamos. Cada plato fue cuidado, la carne tierna, las flores en la mesa hicieron la noche especial.\"",
+    ru: "\"Мы любим еду — и здесь нас не разочаровали. Каждая подача продумана, мясо нежное, цветы на столе сделали вечер особенным. Лучший ужин в Стамбуле.\"",
+    ar: "\"نحب الطعام — وهذا المكان لبى توقعاتنا. كل طبق جاء بعناية، اللحم كان طرياً، الزهور على الطاولة جعلت الأمسية مميزة.\""
+  },
+  "reviews.r7.info": {
+    en: "Couple · France", tr: "Çift · Fransa", de: "Paar · Frankreich",
+    es: "Pareja · Francia", ru: "Пара · Франция", ar: "زوجان · فرنسا"
+  },
+  "reviews.r8": {
+    en: "\"Took this from the deck — the boat, the bridge, the city skyline all in one frame. Perfect Istanbul souvenir shot.\"",
+    tr: "\"Güverteden tek karede çektim — tekne, köprü, şehir silueti. Mükemmel bir İstanbul hatırası.\"",
+    de: "\"Vom Deck aufgenommen — das Boot, die Brücke, die Stadt-Silhouette in einem Bild. Perfekte Istanbul-Erinnerung.\"",
+    es: "\"Tomé esta foto desde la cubierta — el barco, el puente, el horizonte en un solo cuadro. Recuerdo perfecto de Estambul.\"",
+    ru: "\"Снял с палубы — лодка, мост, силуэт города в одном кадре. Идеальное воспоминание об Стамбуле.\"",
+    ar: "\"التقطت هذه من سطح السفينة — القارب والجسر وأفق المدينة في إطار واحد. تذكار إسطنبول مثالي.\""
+  },
+  "reviews.r8.info": {
+    en: "Solo · United States", tr: "Tek · ABD", de: "Solo · USA",
+    es: "Solo · Estados Unidos", ru: "Соло · США", ar: "فردي · الولايات المتحدة"
+  },
+  "reviews.r9": {
+    en: "\"What impressed me most was the service — attentive without being intrusive. The hall looked elegant under the warm lights. Worth every euro.\"",
+    tr: "\"Beni en çok etkileyen servisti — ilgili ama rahatsız edici değil. Salon sıcak ışıklar altında zarifti. Her euro'ya değer.\"",
+    de: "\"Am meisten beeindruckte der Service — aufmerksam, ohne aufdringlich zu sein. Der Saal wirkte im warmen Licht elegant. Jeden Euro wert.\"",
+    es: "\"Lo que más me impresionó fue el servicio — atento sin ser invasivo. El salón elegante bajo las luces cálidas. Vale cada euro.\"",
+    ru: "\"Больше всего впечатлил сервис — внимательный, но ненавязчивый. Зал в тёплом свете выглядел элегантно. Стоит каждого евро.\"",
+    ar: "\"ما أعجبني أكثر هو الخدمة — منتبهة دون أن تكون متطفلة. القاعة بدت أنيقة تحت الأضواء الدافئة. يستحق كل يورو.\""
+  },
+  "reviews.r9.info": {
+    en: "Solo · Spain", tr: "Tek · İspanya", de: "Solo · Spanien",
+    es: "Solo · España", ru: "Соло · Испания", ar: "فردي · إسبانيا"
+  },
+  "reviews.r10": {
+    en: "\"I live in Istanbul but had never tried a cruise like this. Went with my foreign guests — they all loved it. Professional organization.\"",
+    tr: "\"Istanbul'da yaşıyorum ama ilk kez böyle bir tur denedim. Yurtdışından gelen misafirlerimle gittik, hepsi çok beğendi. Profesyonel bir organizasyon.\"",
+    de: "\"Ich lebe in Istanbul, aber solch eine Tour hatte ich noch nie gemacht. Mit ausländischen Gästen — alle begeistert. Professionelle Organisation.\"",
+    es: "\"Vivo en Estambul pero nunca había probado un crucero así. Fui con invitados extranjeros — les encantó. Organización profesional.\"",
+    ru: "\"Я живу в Стамбуле, но никогда не пробовал такой круиз. Пошёл с иностранными гостями — всем очень понравилось. Профессионально.\"",
+    ar: "\"أعيش في إسطنبول لكنني لم أجرب رحلة كهذه من قبل. ذهبت مع ضيوفي الأجانب — أحبوها جميعًا. تنظيم احترافي.\""
+  },
+  "reviews.r10.info": {
+    en: "Couple · Turkey", tr: "Çift · Türkiye", de: "Paar · Türkei",
+    es: "Pareja · Turquía", ru: "Пара · Турция", ar: "زوجان · تركيا"
+  },
+  "reviews.r11": {
+    en: "\"The Turkish night show was magical — costumes, colors, and the energy of the dancers. I caught this beautiful moment on camera.\"",
+    tr: "\"Türk gecesi şovu büyüleyiciydi — kostümler, renkler, dansçıların enerjisi. Bu güzel anı kameraya aldım.\"",
+    de: "\"Die Türkische Nacht war magisch — Kostüme, Farben, die Energie der Tänzer. Diesen schönen Moment habe ich eingefangen.\"",
+    es: "\"El show de noche turca fue mágico — trajes, colores, la energía de los bailarines. Capturé este hermoso momento.\"",
+    ru: "\"Турецкое ночное шоу было волшебным — костюмы, краски, энергия танцоров. Поймала этот прекрасный момент.\"",
+    ar: "\"عرض الليلة التركية كان سحريًا — الأزياء والألوان وطاقة الراقصين. التقطت هذه اللحظة الجميلة.\""
+  },
+  "reviews.r11.info": {
+    en: "Solo · Japan", tr: "Tek · Japonya", de: "Solo · Japan",
+    es: "Solo · Japón", ru: "Соло · Япония", ar: "فردي · اليابان"
+  },
+  "reviews.r12": {
+    en: "\"Punctual, clean boat, very friendly crew. Price-to-quality ratio is excellent. We'd come back on our next Istanbul visit.\"",
+    tr: "\"Dakik, temiz tekne, çok güler yüzlü ekip. Fiyat-kalite dengesi çok iyi. Bir sonraki İstanbul ziyaretimizde yine geliriz.\"",
+    de: "\"Pünktlich, sauberes Boot, sehr freundliche Crew. Preis-Leistungs-Verhältnis hervorragend. Wir kommen bei unserem nächsten Istanbul-Besuch wieder.\"",
+    es: "\"Puntuales, barco limpio, tripulación muy amable. Relación calidad-precio excelente. Volveremos en nuestra próxima visita a Estambul.\"",
+    ru: "\"Пунктуально, чистая лодка, очень приветливая команда. Соотношение цены и качества отличное. Вернёмся в следующий приезд.\"",
+    ar: "\"في الوقت، قارب نظيف، طاقم ودود جدًا. نسبة الجودة إلى السعر ممتازة. سنعود في زيارتنا القادمة لإسطنبول.\""
+  },
+  "reviews.r12.info": {
+    en: "Couple · Germany", tr: "Çift · Almanya", de: "Paar · Deutschland",
+    es: "Pareja · Alemania", ru: "Пара · Германия", ar: "زوجان · ألمانيا"
+  },
+  "reviews.r13": {
+    en: "\"Every dancer brought a different story. The red-dressed performer in particular had such stage presence — we couldn't look away.\"",
+    tr: "\"Her dansçı farklı bir hikaye anlatıyordu. Özellikle kırmızı elbiseli sanatçının sahne hakimiyeti öyleydi ki gözümüzü ayıramadık.\"",
+    de: "\"Jede Tänzerin erzählte eine andere Geschichte. Die Tänzerin im roten Kleid hatte eine solche Bühnenpräsenz — wir konnten nicht wegsehen.\"",
+    es: "\"Cada bailarín traía una historia diferente. La intérprete vestida de rojo tenía tal presencia escénica que no podíamos apartar la vista.\"",
+    ru: "\"Каждая танцовщица рассказывала свою историю. Исполнительница в красном платье обладала такой сценической харизмой, что оторваться было невозможно.\"",
+    ar: "\"كل راقصة حملت قصة مختلفة. الراقصة ذات الفستان الأحمر تحديدًا كان لها حضور مسرحي لا يُقاوَم — لم نستطع إبعاد أنظارنا.\""
+  },
+  "reviews.r13.info": {
+    en: "Couple · Austria", tr: "Çift · Avusturya", de: "Paar · Österreich",
+    es: "Pareja · Austria", ru: "Пара · Австрия", ar: "زوجان · النمسا"
+  },
+  "reviews.r14": {
+    en: "\"The belly dance performance was incredible — the dancer commanded the whole room. Pure artistry. Felt welcomed all evening on my solo trip.\"",
+    tr: "\"Oryantal dans gösterisi inanılmazdı — dansçı tüm salona hakimdi. Saf sanat. Solo seyahatimde akşam boyunca kendimi hoş karşılanmış hissettim.\"",
+    de: "\"Die Bauchtanz-Performance war unglaublich — die Tänzerin beherrschte den ganzen Saal. Pure Kunst. Auf meiner Solo-Reise fühlte ich mich den ganzen Abend willkommen.\"",
+    es: "\"El espectáculo de danza del vientre fue increíble — la bailarina dominó toda la sala. Puro arte. Me sentí bienvenida durante toda mi noche en solitario.\"",
+    ru: "\"Шоу с танцем живота было невероятным — танцовщица завладела вниманием всего зала. Чистое искусство. На моей сольной поездке я чувствовала себя как дома весь вечер.\"",
+    ar: "\"عرض الرقص الشرقي كان لا يصدق — الراقصة سيطرت على القاعة كلها. فن نقي. شعرت بالترحيب طوال أمسيتي الفردية.\""
+  },
+  "reviews.r14.info": {
+    en: "Solo · Netherlands", tr: "Tek · Hollanda", de: "Solo · Niederlande",
+    es: "Solo · Países Bajos", ru: "Соло · Нидерланды", ar: "فردي · هولندا"
+  },
+  "reviews.r15": {
+    en: "\"Booked last minute via WhatsApp. Response within minutes, confirmed instantly, paid on the boat. Smooth process, great night. Highly recommended.\"",
+    tr: "\"Son dakika WhatsApp'tan rezervasyon yaptım. Dakikalar içinde yanıt, anında onay, teknede ödeme. Pürüzsüz süreç, harika bir gece. Kesinlikle tavsiye ederim.\"",
+    de: "\"Last-Minute über WhatsApp gebucht. Antwort binnen Minuten, sofort bestätigt, an Bord bezahlt. Reibungsloser Ablauf, großartiger Abend. Sehr empfehlenswert.\"",
+    es: "\"Reservé a último minuto por WhatsApp. Respuesta en minutos, confirmado al instante, pagué en el barco. Proceso fluido, gran noche. Muy recomendado.\"",
+    ru: "\"Забронировал в последний момент через WhatsApp. Ответ за минуты, мгновенное подтверждение, оплата на борту. Плавный процесс, отличный вечер.\"",
+    ar: "\"حجزت في اللحظة الأخيرة عبر واتساب. استجابة في دقائق، تأكيد فوري، دفعت على القارب. عملية سلسة، ليلة رائعة. أوصي به بشدة.\""
+  },
+  "reviews.r15.info": {
+    en: "Solo · Russia", tr: "Tek · Rusya", de: "Solo · Russland",
+    es: "Solo · Rusia", ru: "Соло · Россия", ar: "فردي · روسيا"
+  },
+  "reviews.r16": {
+    en: "\"Halal menu was wonderful. Staff answered our questions patiently. Perfect for Muslim travelers visiting Istanbul.\"",
+    tr: "\"Helal menü harikaydı. Ekip sorularımızı sabırla cevapladı. İstanbul'a gelen Müslüman misafirler için mükemmel.\"",
+    de: "\"Halal-Menü war wunderbar. Das Team beantwortete unsere Fragen geduldig. Perfekt für muslimische Reisende.\"",
+    es: "\"Menú halal estupendo. El personal respondió pacientemente a nuestras preguntas. Perfecto para viajeros musulmanes.\"",
+    ru: "\"Халяль-меню было прекрасным. Персонал терпеливо отвечал на наши вопросы. Идеально для мусульманских путешественников.\"",
+    ar: "\"قائمة الحلال كانت رائعة. أجاب الطاقم على أسئلتنا بصبر. مثالي للمسافرين المسلمين.\""
+  },
+  "reviews.r16.info": {
+    en: "Couple · Morocco", tr: "Çift · Fas", de: "Paar · Marokko",
+    es: "Pareja · Marruecos", ru: "Пара · Марокко", ar: "زوجان · المغرب"
+  },
+  "reviews.r17": {
+    en: "\"Pure Istanbul magic. The DJ after dinner kept us dancing until midnight. Incredible energy on the dance floor.\"",
+    tr: "\"Saf İstanbul büyüsü. Yemekten sonra DJ gece yarısına kadar dans ettirdi. Dans pistinde inanılmaz bir enerji.\"",
+    de: "\"Pure Istanbul-Magie. Der DJ nach dem Essen hielt uns bis Mitternacht auf der Tanzfläche. Unglaubliche Energie.\"",
+    es: "\"Pura magia de Estambul. El DJ después de la cena nos mantuvo bailando hasta medianoche. Energía increíble.\"",
+    ru: "\"Чистая магия Стамбула. DJ после ужина удерживал нас на танцполе до полуночи. Невероятная энергия.\"",
+    ar: "\"سحر إسطنبول الخالص. DJ بعد العشاء أبقانا نرقص حتى منتصف الليل. طاقة لا تصدق على حلبة الرقص.\""
+  },
+  "reviews.r17.info": {
+    en: "Solo · Brazil", tr: "Tek · Brezilya", de: "Solo · Brasilien",
+    es: "Solo · Brasil", ru: "Соло · Бразилия", ar: "فردي · البرازيل"
+  },
+  "reviews.r18": {
+    en: "\"Took my parents for their 40th anniversary. They still talk about the dervish performance. Thank you for making it special.\"",
+    tr: "\"Annem ve babamı 40. evlilik yıldönümleri için götürdüm. Hâlâ semazen gösterisini konuşuyorlar. Özel kıldığınız için teşekkürler.\"",
+    de: "\"Brachte meine Eltern zum 40. Hochzeitstag. Sie reden immer noch vom Derwisch-Auftritt. Danke für den besonderen Abend.\"",
+    es: "\"Llevé a mis padres a su 40 aniversario. Todavía hablan del derviche. Gracias por hacerlo especial.\"",
+    ru: "\"Повёз родителей на 40-летие свадьбы. Они до сих пор говорят о выступлении дервиша. Спасибо, что сделали этот вечер особенным.\"",
+    ar: "\"اصطحبت والديّ في الذكرى الأربعين لزواجهما. لا يزالان يتحدثان عن عرض الدرويش. شكرًا لجعلها مميزة.\""
+  },
+  "reviews.r18.info": {
+    en: "Family · India", tr: "Aile · Hindistan", de: "Familie · Indien",
+    es: "Familia · India", ru: "Семья · Индия", ar: "عائلة · الهند"
+  },
+  "reviews.r19": {
+    en: "\"Incredibly organized. On time, exactly as described, clean boat. In Japan we value this — they delivered.\"",
+    tr: "\"İnanılmaz derecede organize. Zamanında, anlatıldığı gibi, temiz tekne. Japonya'da buna değer veririz, gerçekleştirdiler.\"",
+    de: "\"Unglaublich organisiert. Pünktlich, genau wie beschrieben, sauberes Boot. In Japan schätzen wir das — sie haben geliefert.\"",
+    es: "\"Increíblemente organizado. Puntual, como lo describen, barco limpio. En Japón valoramos esto — lo cumplieron.\"",
+    ru: "\"Невероятно организованно. Точно по времени, как описано, чистая лодка. В Японии мы это ценим — они справились.\"",
+    ar: "\"منظم بشكل لا يصدق. في الوقت المحدد، تمامًا كما وُصف، قارب نظيف. في اليابان نقدر هذا — ونجحوا.\""
+  },
+  "reviews.r19.info": {
+    en: "Solo · Japan", tr: "Tek · Japonya", de: "Solo · Japan",
+    es: "Solo · Japón", ru: "Соло · Япония", ar: "فردي · اليابان"
+  },
+  "reviews.r20": {
+    en: "\"Booked the morning of the cruise. Confirmed within 10 minutes. Paid cash on the boat. Could not be easier.\"",
+    tr: "\"Tur sabahı rezervasyon yaptık. 10 dakikada onaylandı. Teknede nakit ödedik. Daha kolay olamazdı.\"",
+    de: "\"Morgens am Tag der Tour gebucht. Binnen 10 Minuten bestätigt. Bar an Bord bezahlt. Könnte nicht einfacher sein.\"",
+    es: "\"Reservamos la mañana del crucero. Confirmado en 10 minutos. Pagamos en efectivo en el barco. No podría ser más fácil.\"",
+    ru: "\"Забронировали утром в день круиза. Подтвердили за 10 минут. Оплатили наличными на борту. Проще не бывает.\"",
+    ar: "\"حجزنا صباح يوم الرحلة. تم التأكيد خلال 10 دقائق. دفعنا نقدًا على القارب. لا يمكن أن يكون أسهل.\""
+  },
+  "reviews.r20.info": {
+    en: "Couple · Australia", tr: "Çift · Avustralya", de: "Paar · Australien",
+    es: "Pareja · Australia", ru: "Пара · Австралия", ar: "زوجان · أستراليا"
+  },
+  "reviews.r21": {
+    en: "\"Italian food snob here. Surprised by how good the Turkish courses were. Meze variety was genuinely impressive.\"",
+    tr: "\"İtalyan yemek meraklısıyım. Türk yemeklerinin ne kadar iyi olduğuna şaşırdım. Meze çeşitliliği gerçekten etkileyiciydi.\"",
+    de: "\"Italienischer Essens-Snob hier. Überrascht, wie gut die türkischen Gänge waren. Die Meze-Vielfalt war wirklich beeindruckend.\"",
+    es: "\"Sibarita italiana aquí. Sorprendida por lo buenos que fueron los platos turcos. La variedad de mezes fue realmente impresionante.\"",
+    ru: "\"Я итальянский гурман. Удивлена, насколько хороши были турецкие блюда. Выбор мезе впечатлил.\"",
+    ar: "\"محبة للطعام الإيطالي. فوجئت بجودة الأطباق التركية. تنوع المقبلات كان مثيرًا للإعجاب.\""
+  },
+  "reviews.r21.info": {
+    en: "Solo · Italy", tr: "Tek · İtalya", de: "Solo · Italien",
+    es: "Solo · Italia", ru: "Соло · Италия", ar: "فردي · إيطاليا"
+  },
+  "reviews.r22": {
+    en: "\"Korean couple visiting Istanbul. Everyone spoke English, the whole evening flowed seamlessly. Highlight of our trip.\"",
+    tr: "\"İstanbul'a gelen Koreli çift. Herkes İngilizce konuşuyordu, akşam sorunsuz akıp gitti. Seyahatimizin en güzel anı.\"",
+    de: "\"Koreanisches Paar zu Besuch in Istanbul. Alle sprachen Englisch, der ganze Abend verlief reibungslos. Höhepunkt unserer Reise.\"",
+    es: "\"Pareja coreana visitando Estambul. Todos hablaban inglés, toda la noche fluyó sin problemas. Lo mejor de nuestro viaje.\"",
+    ru: "\"Корейская пара в Стамбуле. Все говорили по-английски, весь вечер прошёл без сучка и задоринки. Главное впечатление поездки.\"",
+    ar: "\"زوجان كوريان يزوران إسطنبول. الجميع يتحدث الإنجليزية، الأمسية كلها تدفقت بسلاسة. أبرز لحظة رحلتنا.\""
+  },
+  "reviews.r22.info": {
+    en: "Couple · South Korea", tr: "Çift · Güney Kore", de: "Paar · Südkorea",
+    es: "Pareja · Corea del Sur", ru: "Пара · Южная Корея", ar: "زوجان · كوريا الجنوبية"
+  },
+  "reviews.showMore": {
+    en: "+5 more reviews",
+    tr: "+5 yorum daha",
+    de: "+5 weitere Bewertungen",
+    es: "+5 reseñas más",
+    ru: "+5 ещё отзывов",
+    ar: "+٥ تقييمات أخرى"
   },
 
   // ========== HOW IT WORKS ==========
@@ -860,6 +1072,30 @@ const T = {
     es: "La ubicación exacta del encuentro se compartirá vía WhatsApp, Telegram o WeChat después de la reserva.",
     ru: "Точное место встречи будет отправлено через WhatsApp, Telegram или WeChat после бронирования.",
     ar: "سيتم مشاركة موقع اللقاء الدقيق عبر واتساب أو تيليجرام أو ويتشات بعد الحجز."
+  },
+  "meeting.howToFind": {
+    en: "How to find us — walking directions",
+    tr: "Bize nasıl gelirsiniz — yürüyüş tarifi",
+    de: "So finden Sie uns — Wegbeschreibung zu Fuß",
+    es: "Cómo encontrarnos — indicaciones a pie",
+    ru: "Как нас найти — пешая навигация",
+    ar: "كيفية الوصول إلينا — اتجاهات المشي"
+  },
+  "meeting.videoDolmabahce": {
+    en: "From Dolmabahçe", tr: "Dolmabahçe'den", de: "Von Dolmabahçe",
+    es: "Desde Dolmabahçe", ru: "От Долмабахче", ar: "من دولمة بهجة"
+  },
+  "meeting.videoTram": {
+    en: "From Tram Station", tr: "Tramvay İstasyonundan", de: "Von der Tramstation",
+    es: "Desde la Estación de Tranvía", ru: "От трамвайной остановки", ar: "من محطة الترام"
+  },
+  "meeting.videoWalk": {
+    en: "Watch walking route", tr: "Yürüyüş rotasını izle", de: "Gehroute ansehen",
+    es: "Ver ruta a pie", ru: "Смотреть пеший маршрут", ar: "شاهد مسار المشي"
+  },
+  "meeting.videoWalk2": {
+    en: "Watch walking route", tr: "Yürüyüş rotasını izle", de: "Gehroute ansehen",
+    es: "Ver ruta a pie", ru: "Смотреть пеший маршрут", ar: "شاهد مسار المشي"
   },
   "dropoff.title": {
     en: "Drop-off", tr: "Dönüş", de: "Rückfahrt", es: "Regreso", ru: "Возвращение", ar: "العودة"
@@ -1323,6 +1559,18 @@ const T = {
   "gal.2.desc": {
     en: "Premium table arrangement", tr: "Premium masa düzeni", de: "Premium-Tischarrangement", es: "Arreglo de mesa premium", ru: "Премиальная сервировка", ar: "ترتيب طاولة فاخر"
   },
+  "gal.a1.title": {
+    en: "Velvet Dining Hall", tr: "Kadife Yemek Salonu", de: "Samt-Speisesaal", es: "Salón de Terciopelo", ru: "Бархатный зал", ar: "قاعة طعام مخملية"
+  },
+  "gal.a1.desc": {
+    en: "Premium seating with crystal glassware", tr: "Kristal cam takımıyla premium oturma", de: "Premium-Sitze mit Kristallgläsern", es: "Asientos premium con cristalería", ru: "Премиум-места с хрусталем", ar: "مقاعد فاخرة مع أدوات زجاجية كريستالية"
+  },
+  "gal.a2.title": {
+    en: "Signature Mezes", tr: "Özel Meze Tabağı", de: "Signature-Mezes", es: "Mezes de la Casa", ru: "Фирменные мезе", ar: "مقبلات مميزة"
+  },
+  "gal.a2.desc": {
+    en: "Turkish starter selection", tr: "Türk başlangıç seçkisi", de: "Türkische Vorspeisenauswahl", es: "Selección de entrantes turcos", ru: "Турецкие закуски на выбор", ar: "مقبلات تركية متنوعة"
+  },
   "gal.3.title": {
     en: "Luxury Yacht Tour", tr: "Lüks Yat Turu", de: "Luxusyacht-Tour", es: "Tour en Yate de Lujo", ru: "Тур на люкс-яхте", ar: "جولة يخت فاخرة"
   },
@@ -1647,6 +1895,14 @@ const T = {
     ru: "Да +10 €/чел.",
     ar: "نعم +١٠€/شخص"
   },
+  "wizard.transferChoose": {
+    en: "Please choose a transfer option",
+    tr: "Lütfen transfer seçeneğini belirleyin",
+    de: "Bitte wählen Sie eine Transferoption",
+    es: "Por favor selecciona una opción de traslado",
+    ru: "Пожалуйста, выберите вариант трансфера",
+    ar: "يرجى اختيار خيار النقل"
+  },
   "wizard.transferDesc": {
     en: "Pickup & drop-off from your hotel",
     tr: "Otelinizden alım ve bırakım",
@@ -1696,12 +1952,12 @@ const T = {
     ar: "تحقق من التوفر"
   },
   "wizard.confirmMsg": {
-    en: "We'll confirm within 15 minutes via WhatsApp",
-    tr: "WhatsApp üzerinden 15 dakika içinde onay vereceğiz",
-    de: "Wir bestätigen innerhalb von 15 Minuten per WhatsApp",
-    es: "Confirmaremos en 15 minutos por WhatsApp",
-    ru: "Подтвердим в течение 15 минут через WhatsApp",
-    ar: "سنؤكد خلال 15 دقيقة عبر واتساب"
+    en: "We'll confirm instantly",
+    tr: "Anında onay vereceğiz",
+    de: "Wir bestätigen sofort",
+    es: "Confirmaremos al instante",
+    ru: "Подтвердим мгновенно",
+    ar: "سنؤكد فوراً"
   },
   "wizard.trust1": {
     en: "\u2713 Free cancellation 2hrs before",
@@ -1744,6 +2000,78 @@ const T = {
     es: "Asigne bebidas a todos los adultos antes de continuar",
     ru: "Назначьте напитки всем взрослым перед продолжением",
     ar: "يرجى تحديد المشروبات لجميع البالغين قبل المتابعة"
+  },
+  "wizard.transferWarning": {
+    en: "Please choose a transfer option before continuing",
+    tr: "Devam etmeden önce transfer seçeneğini belirleyin",
+    de: "Bitte wählen Sie eine Transferoption, bevor Sie fortfahren",
+    es: "Seleccione una opción de traslado antes de continuar",
+    ru: "Выберите вариант трансфера перед продолжением",
+    ar: "يرجى اختيار خيار النقل قبل المتابعة"
+  },
+  "wizard.packageWarning": {
+    en: "Please choose a package before continuing",
+    tr: "Devam etmeden önce paketi seçin",
+    de: "Bitte wählen Sie ein Paket, bevor Sie fortfahren",
+    es: "Seleccione un paquete antes de continuar",
+    ru: "Выберите пакет перед продолжением",
+    ar: "يرجى اختيار باقة قبل المتابعة"
+  },
+  "wizard.packageChoose": {
+    en: "Please choose a package",
+    tr: "Lütfen paketi seçin",
+    de: "Bitte wählen Sie ein Paket",
+    es: "Por favor seleccione un paquete",
+    ru: "Пожалуйста, выберите пакет",
+    ar: "يرجى اختيار باقة"
+  },
+  "wizard.adultsWarning": {
+    en: "Please enter at least one adult before continuing",
+    tr: "Devam etmeden önce en az bir yetişkin seçin",
+    de: "Bitte wählen Sie mindestens einen Erwachsenen, bevor Sie fortfahren",
+    es: "Seleccione al menos un adulto antes de continuar",
+    ru: "Укажите хотя бы одного взрослого перед продолжением",
+    ar: "يرجى إدخال بالغ واحد على الأقل قبل المتابعة"
+  },
+  "wizard.adultsChoose": {
+    en: "Please enter at least one adult",
+    tr: "Lütfen en az bir yetişkin seçin",
+    de: "Bitte wählen Sie mindestens einen Erwachsenen",
+    es: "Por favor seleccione al menos un adulto",
+    ru: "Пожалуйста, укажите хотя бы одного взрослого",
+    ar: "يرجى إدخال بالغ واحد على الأقل"
+  },
+  "wizard.childAgeWarning": {
+    en: "Please select age for each child before continuing",
+    tr: "Devam etmeden önce her çocuk için yaş seçin",
+    de: "Bitte wählen Sie für jedes Kind ein Alter, bevor Sie fortfahren",
+    es: "Seleccione la edad de cada niño antes de continuar",
+    ru: "Выберите возраст для каждого ребёнка перед продолжением",
+    ar: "يرجى اختيار عمر لكل طفل قبل المتابعة"
+  },
+  "wizard.childAgeChoose": {
+    en: "Please select age for each child",
+    tr: "Lütfen her çocuk için yaş seçin",
+    de: "Bitte wählen Sie für jedes Kind ein Alter",
+    es: "Seleccione la edad de cada niño",
+    ru: "Выберите возраст для каждого ребёнка",
+    ar: "يرجى اختيار عمر لكل طفل"
+  },
+  "wizard.selectAge": {
+    en: "Select age",
+    tr: "Yaş seçin",
+    de: "Alter wählen",
+    es: "Elegir edad",
+    ru: "Выберите возраст",
+    ar: "اختر العمر"
+  },
+  "wizard.viewPackages": {
+    en: "Click to review packages",
+    tr: "Paketleri incelemek için tıklayın",
+    de: "Pakete ansehen",
+    es: "Ver detalles de los paquetes",
+    ru: "Посмотреть пакеты",
+    ar: "اضغط لمعاينة الباقات"
   },
   "wizard.glass2Label": {
     en: "2 Glasses of Alcohol",
@@ -1859,9 +2187,17 @@ const T = {
     en: "Please enter your name", tr: "Lütfen adınızı girin", de: "Bitte geben Sie Ihren Namen ein", es: "Por favor ingrese su nombre",
     ru: "Пожалуйста, введите ваше имя", ar: "يرجى إدخال اسمك"
   },
+  "wizard.invalidName": {
+    en: "Please enter a valid name", tr: "Lütfen geçerli bir isim girin", de: "Bitte geben Sie einen gültigen Namen ein", es: "Por favor ingrese un nombre válido",
+    ru: "Пожалуйста, введите действительное имя", ar: "يرجى إدخال اسم صحيح"
+  },
   "wizard.enterPhone": {
     en: "Please enter your phone number", tr: "Lütfen telefon numaranızı girin", de: "Bitte geben Sie Ihre Telefonnummer ein", es: "Por favor ingrese su número de teléfono",
     ru: "Пожалуйста, введите номер телефона", ar: "يرجى إدخال رقم هاتفك"
+  },
+  "wizard.invalidPhone": {
+    en: "Please enter a valid phone number", tr: "Lütfen geçerli bir telefon numarası girin", de: "Bitte geben Sie eine gültige Telefonnummer ein", es: "Por favor ingrese un número de teléfono válido",
+    ru: "Пожалуйста, введите действительный номер телефона", ar: "يرجى إدخال رقم هاتف صحيح"
   },
   "wizard.selectContact": {
     en: "Please select a contact method", tr: "Lütfen iletişim tercihinizi seçin", de: "Bitte wählen Sie eine Kontaktmethode", es: "Por favor seleccione un método de contacto",
@@ -1892,12 +2228,36 @@ const T = {
     ar: "عنوان الاستلام"
   },
   "wizard.addressPlaceholder": {
-    en: "Hotel name or accommodation address",
-    tr: "Otel adı veya konaklama adresi",
-    de: "Hotelname oder Unterkunftsadresse",
-    es: "Nombre del hotel o dirección del alojamiento",
-    ru: "Название отеля или адрес проживания",
-    ar: "اسم الفندق أو عنوان الإقامة"
+    en: "Type hotel name and pick from list",
+    tr: "Otel adını yazın ve listeden seçin",
+    de: "Hotelname eingeben und aus Liste wählen",
+    es: "Escribe el hotel y elige de la lista",
+    ru: "Введите название и выберите из списка",
+    ar: "اكتب اسم الفندق واختر من القائمة"
+  },
+  "wizard.pickFromList": {
+    en: "Please pick your address from the dropdown list",
+    tr: "Lütfen adresinizi açılan listeden seçin",
+    de: "Bitte wählen Sie Ihre Adresse aus der Liste",
+    es: "Por favor, seleccione su dirección de la lista desplegable",
+    ru: "Пожалуйста, выберите ваш адрес из списка",
+    ar: "يرجى اختيار عنوانك من القائمة المنسدلة"
+  },
+  "wizard.continueWithoutTransfer": {
+    en: "Continue without transfer · I'll come myself",
+    tr: "Transfer olmadan devam et · Kendim geleceğim",
+    de: "Ohne Transfer fortfahren · Ich komme selbst",
+    es: "Continuar sin traslado · Iré por mi cuenta",
+    ru: "Продолжить без трансфера · Я приеду сам",
+    ar: "المتابعة بدون نقل · سآتي بنفسي"
+  },
+  "wizard.useButtonAbove": {
+    en: "Tap the button above to continue without transfer",
+    tr: "Transfer olmadan devam etmek için yukarıdaki butona basın",
+    de: "Tippen Sie oben auf die Schaltfläche, um ohne Transfer fortzufahren",
+    es: "Pulse el botón superior para continuar sin traslado",
+    ru: "Нажмите кнопку выше, чтобы продолжить без трансфера",
+    ar: "اضغط على الزر أعلاه للمتابعة بدون نقل"
   },
   "wizard.roomNumber": {
     en: "Room Number",
