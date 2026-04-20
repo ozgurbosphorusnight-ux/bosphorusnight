@@ -729,7 +729,7 @@ const DINNER_PRICES = {
 // Runs once on page load. Falls back silently to hardcoded defaults if fetch fails.
 async function fetchDynamicPrices() {
   try {
-    const res = await fetch('/api/public/prices', { cache: 'no-store' });
+    const res = await fetch('/api/panel/boats?type=prices', { cache: 'no-store' });
     if (!res.ok) return;
     const data = await res.json();
     const pkg = data.packages || {};

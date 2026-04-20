@@ -170,7 +170,7 @@
 
       btn.disabled = true;
       btn.textContent = '…';
-      const result = await api('/packages', {
+      const result = await api('/boats', {
         method: 'PUT',
         body: JSON.stringify({ type, code, price_eur })
       });
@@ -190,7 +190,7 @@
     }
 
     async function loadData() {
-      const result = await api('/packages');
+      const result = await api('/boats?type=catalog');
       if (!result?.ok) {
         document.getElementById('pkgList').innerHTML = '<div class="text-red-400 text-center py-4 text-sm">Yüklenemedi</div>';
         return;
