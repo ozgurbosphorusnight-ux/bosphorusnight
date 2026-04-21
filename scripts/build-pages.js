@@ -168,8 +168,14 @@ function buildSchemaLd(page, lang, slug) {
       telephone: '+90 532 520 1700',
       address: {
         '@type': 'PostalAddress',
+        streetAddress: 'Kabataş Pier',
         addressLocality: 'Istanbul',
         addressCountry: 'TR'
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: 41.0361,
+        longitude: 28.9947
       },
       identifier: 'TÜRSAB A-17672'
     },
@@ -209,7 +215,56 @@ function buildSchemaLd(page, lang, slug) {
     }))
   } : null;
 
-  const blocks = [tourist];
+  // BreadcrumbList: Home > Page
+  const homeUrl = lang === 'en' ? SITE_URL : `${SITE_URL}/${lang}`;
+  const breadcrumb = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: fix(page.hero.h1).replace(/<[^>]+>/g, ''), item: url }
+    ]
+  };
+
+  // Meeting-point walking direction videos (visible on dinner-oriented landings).
+  const videos = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: 'Walking directions from Dolmabahçe to Kabataş Pier',
+      description: 'Short walking route guide from Dolmabahçe Palace to the Bosphorus Night cruise meeting point at Kabataş Pier.',
+      thumbnailUrl: 'https://img.youtube.com/vi/UcQ3qgyADc4/hqdefault.jpg',
+      contentUrl: 'https://www.youtube.com/watch?v=UcQ3qgyADc4',
+      embedUrl: 'https://www.youtube.com/embed/UcQ3qgyADc4',
+      uploadDate: '2026-04-20',
+      inLanguage: lang
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: 'Walking directions from the Tram Station to Kabataş Pier',
+      description: 'Short walking route guide from the Kabataş tram station to the Bosphorus Night cruise meeting point.',
+      thumbnailUrl: 'https://img.youtube.com/vi/ybAIn2RhwJs/hqdefault.jpg',
+      contentUrl: 'https://www.youtube.com/watch?v=ybAIn2RhwJs',
+      embedUrl: 'https://www.youtube.com/embed/ybAIn2RhwJs',
+      uploadDate: '2026-04-20',
+      inLanguage: lang
+    }
+  ];
+
+  // ImageObject for the landing page OG image.
+  const ogImage = page.images && page.images.og
+    ? `${SITE_URL}${page.images.og}`
+    : 'https://bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+  const heroImage = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    contentUrl: ogImage,
+    caption: fix(page.hero.h1).replace(/<[^>]+>/g, ''),
+    inLanguage: lang
+  };
+
+  const blocks = [tourist, breadcrumb, ...videos, heroImage];
   if (faqSchema) blocks.push(faqSchema);
 
   return blocks
@@ -262,9 +317,9 @@ function buildHtml(slug, lang, template) {
   );
 
   // Path rewrites: /dist/{lang}/*.html → ../../assets/, etc.
-  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="../../$2/');
-  html = html.replace(/url\('(js|css|assets)\//g, "url('../../$1/");
-  html = html.replace(/url\("(js|css|assets)\//g, 'url("../../$1/');
+  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
+  html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
+  html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
   // Title + meta description + OpenGraph tags (all use localized page.meta)
   const metaTitle = fix(page.meta.title);
@@ -288,6 +343,14 @@ function buildHtml(slug, lang, template) {
     /<meta\s+property="og:url"[^>]*>/,
     `<meta property="og:url" content="${urlFor(lang, slug)}">`
   );
+  // og:image + Twitter Card (use landing's OG image if defined, else dinner fallback)
+  const ogImage = (page.images && page.images.og)
+    ? `${SITE_URL}${page.images.og}`
+    : 'https://bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+  html = html.replace(/<meta\s+property="og:image"[^>]*>/g, `<meta property="og:image" content="${ogImage}">`);
+  html = html.replace(/<meta\s+name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${metaTitleAttr}">`);
+  html = html.replace(/<meta\s+name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${metaDescAttr}">`);
+  html = html.replace(/<meta\s+name="twitter:image"[^>]*>/, `<meta name="twitter:image" content="${ogImage}">`);
 
   // Canonical + hreflang + Schema.org JSON-LD — inject right after charset meta
   const canonical = `  <link rel="canonical" href="${urlFor(lang, slug)}">`;

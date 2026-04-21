@@ -1241,26 +1241,33 @@ function initHeroMediaStage() {
     }
   })();
 
-  // Middle: cycle videos — one plays to end, next starts. Waits if video not yet loaded.
+  // Middle: cycle videos — one plays to end, next starts. Works with preload="none"
+  // (kicks off loading explicitly). Also preloads the next video while current one plays.
   (async function cycleVideos() {
     if (videos.length === 0) return;
     let vIdx = 0;
     while (true) {
       const video = videos[vIdx];
-      // Wait until video is ready to play through
+      // Kick off loading and wait until it can play (preload="none" delays otherwise).
       if (video.readyState < 3) {
+        try { video.load(); } catch (e) {}
         await new Promise((resolve) => {
-          const onReady = () => { video.removeEventListener('canplaythrough', onReady); resolve(); };
-          video.addEventListener('canplaythrough', onReady, { once: true });
-          // Safety: if event never fires, try after 10s anyway
-          setTimeout(onReady, 10000);
+          const onReady = () => { video.removeEventListener('canplay', onReady); resolve(); };
+          video.addEventListener('canplay', onReady, { once: true });
+          setTimeout(onReady, 5000); // safety
         });
       }
       if (videoFrame) videoFrame.classList.add('video-playing');
+      // Preload the next video so it's ready when this one ends.
+      const nextIdx = (vIdx + 1) % videos.length;
+      const nextVideo = videos[nextIdx];
+      if (nextVideo && nextVideo.readyState < 3) {
+        try { nextVideo.load(); } catch (e) {}
+      }
       await playVideo(vIdx);
       if (videoFrame) videoFrame.classList.remove('video-playing');
       await wait(800); // brief pause between videos — placeholder shows
-      vIdx = (vIdx + 1) % videos.length;
+      vIdx = nextIdx;
     }
   })();
 }

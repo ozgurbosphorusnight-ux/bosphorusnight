@@ -93,10 +93,33 @@ function buildSchemaLd(lang) {
       addressLocality: 'Istanbul',
       addressCountry: 'TR'
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 41.0361,
+      longitude: 28.9947
+    },
     identifier: 'TÜRSAB A-17672',
     priceRange: '€20 - €90',
     image: 'https://bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     // aggregateRating intentionally omitted — re-added when real reviews are collected.
+    sameAs: [
+      'https://wa.me/905325201700',
+      'https://t.me/bosphorusnight'
+    ]
+  };
+
+  const organization = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Bosphorus Night',
+    url: SITE_URL,
+    logo: 'https://bosphorusnight.com/assets/data/logo png lst.png',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+90 532 520 1700',
+      contactType: 'customer service',
+      availableLanguage: ['English', 'Turkish', 'Arabic', 'Russian', 'German', 'Spanish', 'French', 'Italian', 'Chinese', 'Persian', 'Indonesian', 'Malay', 'Polish', 'Bulgarian', 'Romanian']
+    },
     sameAs: [
       'https://wa.me/905325201700',
       'https://t.me/bosphorusnight'
@@ -116,7 +139,42 @@ function buildSchemaLd(lang) {
     }
   };
 
-  return [business, website]
+  // Meeting-point walking direction videos (YouTube embeds in the page).
+  const videos = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: 'Walking directions from Dolmabahçe to Kabataş Pier',
+      description: 'Short walking route guide from Dolmabahçe Palace to the Bosphorus Night cruise meeting point at Kabataş Pier.',
+      thumbnailUrl: 'https://img.youtube.com/vi/UcQ3qgyADc4/hqdefault.jpg',
+      contentUrl: 'https://www.youtube.com/watch?v=UcQ3qgyADc4',
+      embedUrl: 'https://www.youtube.com/embed/UcQ3qgyADc4',
+      uploadDate: '2026-04-20',
+      inLanguage: lang
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: 'Walking directions from the Tram Station to Kabataş Pier',
+      description: 'Short walking route guide from the Kabataş tram station to the Bosphorus Night cruise meeting point.',
+      thumbnailUrl: 'https://img.youtube.com/vi/ybAIn2RhwJs/hqdefault.jpg',
+      contentUrl: 'https://www.youtube.com/watch?v=ybAIn2RhwJs',
+      embedUrl: 'https://www.youtube.com/embed/ybAIn2RhwJs',
+      uploadDate: '2026-04-20',
+      inLanguage: lang
+    }
+  ];
+
+  // ImageObject for the primary hero / marketing image.
+  const heroImage = {
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    contentUrl: 'https://bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    caption: 'Bosphorus Night dinner cruise boat under illuminated bridge',
+    inLanguage: lang
+  };
+
+  return [business, organization, website, ...videos, heroImage]
     .map((b) => `<script type="application/ld+json">\n${JSON.stringify(b, null, 2)}\n</script>`)
     .join('\n');
 }
@@ -176,9 +234,9 @@ function buildForLang(lang, template) {
   );
 
   // Path rewrites (output depth: dist/{lang}/index.html → ../../)
-  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="../../$2/');
-  html = html.replace(/url\('(js|css|assets)\//g, "url('../../$1/");
-  html = html.replace(/url\("(js|css|assets)\//g, 'url("../../$1/');
+  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
+  html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
+  html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
   // Inject canonical + hreflang + Schema.org JSON-LD after charset meta
   const canonical = `  <link rel="canonical" href="${urlFor(lang)}">`;
@@ -207,6 +265,14 @@ function buildForLang(lang, template) {
   html = html.replace(
     /<meta\s+property="og:url"\s+content="[^"]*">/,
     `<meta property="og:url" content="${urlFor(lang)}">`
+  );
+  html = html.replace(
+    /<meta\s+name="twitter:title"\s+content="[^"]*">/,
+    `<meta name="twitter:title" content="${escapeAttr(title)}">`
+  );
+  html = html.replace(
+    /<meta\s+name="twitter:description"\s+content="[^"]*">/,
+    `<meta name="twitter:description" content="${escapeAttr(description)}">`
   );
 
   // Translate all data-i18n attributes

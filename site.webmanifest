@@ -1,0 +1,13 @@
+{
+  "name": "Bosphorus Night",
+  "short_name": "Bosphorus Night",
+  "description": "Luxury Bosphorus Dinner Cruise in Istanbul",
+  "icons": [
+    { "src": "/assets/data/favicon.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/data/favicon.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0b1120",
+  "background_color": "#0b1120",
+  "display": "standalone",
+  "start_url": "/"
+}
