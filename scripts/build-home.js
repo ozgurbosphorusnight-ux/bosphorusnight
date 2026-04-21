@@ -11,7 +11,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist');
-const SITE_URL = 'https://bosphorusnight.com';
+const SITE_URL = 'https://www.bosphorusnight.com';
 
 // Load enriched translations.js (now includes all 15 languages)
 const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
@@ -100,7 +100,7 @@ function buildSchemaLd(lang) {
     },
     identifier: 'TÜRSAB A-17672',
     priceRange: '€20 - €90',
-    image: 'https://bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     // aggregateRating intentionally omitted — re-added when real reviews are collected.
     sameAs: [
       'https://wa.me/905325201700',
@@ -115,7 +115,7 @@ function buildSchemaLd(lang) {
     '@type': 'Organization',
     name: 'Bosphorus Night',
     url: SITE_URL,
-    logo: 'https://bosphorusnight.com/assets/data/logo png lst.png',
+    logo: 'https://www.bosphorusnight.com/assets/data/logo png lst.png',
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+90 532 520 1700',
@@ -134,11 +134,11 @@ function buildSchemaLd(lang) {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Bosphorus Night',
-    url: 'https://bosphorusnight.com',
+    url: 'https://www.bosphorusnight.com',
     inLanguage: lang,
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://bosphorusnight.com/?q={search_term}',
+      target: 'https://www.bosphorusnight.com/?q={search_term}',
       'query-input': 'required name=search_term'
     }
   };
@@ -173,7 +173,7 @@ function buildSchemaLd(lang) {
   const heroImage = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
-    contentUrl: 'https://bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    contentUrl: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     caption: 'Bosphorus Night dinner cruise boat under illuminated bridge',
     inLanguage: lang
   };

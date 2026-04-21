@@ -51,12 +51,12 @@ const T = {
     fa: "تجربه ممتاز تور دریایی استانبول", fr: "L'expérience de croisière premium d'Istanbul", it: "L'esperienza di crociera premium di Istanbul", zh: "伊斯坦布尔高端游船体验", id: "Pengalaman Pelayaran Premium Istanbul", ms: "Pengalaman Pelayaran Premium Istanbul", pl: "Premium rejs w Stambule", bg: "Премиум круиз в Истанбул", ro: "Experiența de Croazieră Premium a Istanbulului"
   },
   "hero.title1": {
-    en: "Luxury Bosphorus", tr: "Lüks Boğaz", de: "Luxus-Bosporus", es: "Lujoso Bósforo",
+    en: "Luxury Bosphorus", tr: "Lüks Yemekli", de: "Luxus-Bosporus", es: "Lujoso Bósforo",
     ru: "Роскошный Босфор", ar: "البوسفور الفاخر",
     fa: "تور لوکس بسفر", fr: "Croisière dîner de luxe", it: "Crociera di Lusso", zh: "豪华博斯普鲁斯", id: "Pelayaran Makan Malam", ms: "Pelayaran Makan Malam", pl: "Luksusowy rejs z kolacją", bg: "Луксозен круиз", ro: "Croazieră de Lux pe Bosfor"
   },
   "hero.title2": {
-    en: "Dinner Cruise", tr: "Yemekli Turu", de: "Abendfahrt", es: "Crucero con Cena",
+    en: "Dinner Cruise", tr: "Boğaz Turu", de: "Abendfahrt", es: "Crucero con Cena",
     ru: "Ужин на круизе", ar: "رحلة عشاء بحرية",
     fa: "شام در کشتی", fr: "sur le Bosphore", it: "con Cena sul Bosforo", zh: "晚宴游船", id: "Bosphorus Mewah", ms: "Bosphorus Mewah", pl: "po Bosforze", bg: "с вечеря по Босфора", ro: "cu Cină"
   },

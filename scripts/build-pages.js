@@ -11,7 +11,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist');
-const SITE_URL = 'https://bosphorusnight.com';
+const SITE_URL = 'https://www.bosphorusnight.com';
 
 // UI translations (boilerplate: nav, wizard, footer, FAQ, etc.)
 const { T: UI_T } = require(path.join(ROOT, 'js', 'translations.js'));
@@ -255,7 +255,7 @@ function buildSchemaLd(page, lang, slug) {
   // ImageObject for the landing page OG image.
   const ogImage = page.images && page.images.og
     ? `${SITE_URL}${page.images.og}`
-    : 'https://bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+    : 'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
   const heroImage = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
@@ -346,7 +346,7 @@ function buildHtml(slug, lang, template) {
   // og:image + Twitter Card (use landing's OG image if defined, else dinner fallback)
   const ogImage = (page.images && page.images.og)
     ? `${SITE_URL}${page.images.og}`
-    : 'https://bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+    : 'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
   html = html.replace(/<meta\s+property="og:image"[^>]*>/g, `<meta property="og:image" content="${ogImage}">`);
   html = html.replace(/<meta\s+name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${metaTitleAttr}">`);
   html = html.replace(/<meta\s+name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${metaDescAttr}">`);
