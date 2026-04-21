@@ -1,0 +1,23 @@
+name: Weekly Rebuild
+
+# Triggers a fresh Vercel build every Sunday so the Event schema's
+# startDate (tomorrow 21:00 Istanbul) stays in the future for Google.
+# Also runnable on-demand via the Actions tab.
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'  # Every Sunday 03:00 UTC = 06:00 Istanbul
+  workflow_dispatch:
+
+jobs:
+  trigger-rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Vercel deploy hook
+        run: |
+          if [ -z "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK secret is missing"
+            exit 1
+          fi
+          curl -fsSL -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
+          echo "Deploy hook triggered."
