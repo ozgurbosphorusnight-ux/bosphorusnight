@@ -54,7 +54,7 @@ for (const dir of ['js', 'css', 'assets']) {
 }
 
 // 4. Root seviyesinde tek dosyalar
-for (const f of ['site.webmanifest', 'yandex_4dd29513ad557893.html']) {
+for (const f of ['site.webmanifest', 'yandex_745ed021116f94b1.html']) {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(DIST, f));
