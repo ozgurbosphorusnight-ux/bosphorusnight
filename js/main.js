@@ -6,9 +6,16 @@ const BRAND_NAME = 'Bosphorus Night';
 let currentLang = 'en';
 
 function detectLanguage() {
+  // Prefer URL-derived language set by lang-redirect.js (static pages are pre-rendered in that language).
+  if (window.__bnCurrentLang && LANGUAGES[window.__bnCurrentLang]) {
+    return window.__bnCurrentLang;
+  }
+  // Fallback to html[lang] attribute set by the build.
+  const htmlLang = (document.documentElement.getAttribute('lang') || '').toLowerCase();
+  if (LANGUAGES[htmlLang]) return htmlLang;
+  // Last resort: browser language (legacy behavior).
   const browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
   const supported = Object.keys(LANGUAGES);
-  // Check exact match first (e.g. "tr"), then prefix (e.g. "tr-TR" → "tr")
   for (const lang of supported) {
     if (browserLang === lang || browserLang.startsWith(lang + '-')) return lang;
   }
@@ -159,11 +166,17 @@ function initLangDropdown() {
     dropdown.classList.add('hidden');
   });
 
-  // Language buttons
+  // Language buttons — navigate to the static page for that language
+  // (each URL is pre-rendered in its own language; don't re-run setLanguage on top of the static content).
   dropdown.querySelectorAll('[data-lang-code]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      setLanguage(btn.dataset.langCode);
+      const target = btn.dataset.langCode;
+      if (window.navigateToLang) {
+        window.navigateToLang(target);
+      } else {
+        setLanguage(target);
+      }
     });
   });
 }
@@ -1125,9 +1138,10 @@ function openMobilePanel(pkg) {
   const wizLang = document.getElementById('wizLang');
   if (wizLang) {
     wizLang.value = currentLang;
-    // Change site language when dropdown changes
+    // The wizard's language select represents the user's communication preference
+    // (used when we contact them via WhatsApp). Switching site language is done
+    // via the header dropdown / URL. Just recompute the price and progress.
     wizLang.onchange = function() {
-      setLanguage(this.value);
       wizCalcPrice();
       wizUpdateProgress(wizState.step);
     };

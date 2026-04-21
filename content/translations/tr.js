@@ -12,7 +12,7 @@ module.exports = {
       description: 'İstanbul\'un en çok tercih edilen Boğaz yemekli turu. 3 saatlik akşam seferi, Türk yemekleri, canlı halk oyunları ve DJ, panoramik gece manzaraları. TÜRSAB lisanslı. Teknede ödeme — ön ödeme yok.'
     },
     hero: {
-      h1: 'İstanbul\'da Boğaz Yemekli Turu',
+      h1: 'İstanbul Boğazı\'nda Yemekli Boğaz Turu',
       subtitle: 'Üç saatlik canlı eğlence, çok çeşitli Türk ziyafeti ve Boğaz\'ın gece en etkileyici manzarası.',
       badge: '4.8★ · 11.317 yorum'
     },

@@ -1331,3 +1331,20 @@ footer a:hover::after {
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
+
+/* ========== RTL layout fixes (ar, fa) ========== */
+html[dir="rtl"] [data-discount-badge] {
+  right: auto;
+  left: 1rem;
+}
+
+/* "Most Popular" / featured badges that use absolute top-4 right-4 style */
+html[dir="rtl"] .package-card .absolute.top-4.right-4:not([data-discount-badge]) {
+  right: auto;
+  left: 1rem;
+}
+
+/* Arrows in nav/route: flip visual direction for RTL */
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}

@@ -1,14 +1,28 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/cruises/dinner-cruise.html", "destination": "/bosphorus-dinner-cruise", "statusCode": 301 },
+    { "source": "/cruises/sunset-cruise.html", "destination": "/bosphorus-sunset-cruise", "statusCode": 301 },
+    { "source": "/cruises/daytime-cruise.html", "destination": "/bosphorus-trip", "statusCode": 301 },
+    { "source": "/cruises/last-minute-tonight.html", "destination": "/last-minute-bosphorus", "statusCode": 301 },
+
+    { "source": "/dinner-cruise", "destination": "/bosphorus-dinner-cruise", "statusCode": 301 },
+    { "source": "/sunset-cruise", "destination": "/bosphorus-sunset-cruise", "statusCode": 301 },
+    { "source": "/daytime-cruise", "destination": "/bosphorus-trip", "statusCode": 301 },
+    { "source": "/last-minute-tonight", "destination": "/last-minute-bosphorus", "statusCode": 301 },
+
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/dinner-cruise", "destination": "/:lang/bosphorus-dinner-cruise", "statusCode": 301 },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/sunset-cruise", "destination": "/:lang/bosphorus-sunset-cruise", "statusCode": 301 },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/daytime-cruise", "destination": "/:lang/bosphorus-trip", "statusCode": 301 },
+    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/last-minute-tonight", "destination": "/:lang/last-minute-bosphorus", "statusCode": 301 },
+
+    { "source": "/:lang(ja|ko|ur|hi)/:slug*", "destination": "/:slug*", "statusCode": 301 },
+    { "source": "/:lang(ja|ko|ur|hi)", "destination": "/", "statusCode": 301 },
+
+    { "source": "/cruises/:lang/:slug.html", "destination": "/:lang/:slug", "statusCode": 301 }
+  ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/daytime-cruise", "destination": "/cruises/daytime-cruise.html" },
-    { "source": "/sunset-cruise", "destination": "/cruises/sunset-cruise.html" },
-    { "source": "/dinner-cruise", "destination": "/cruises/dinner-cruise.html" },
-    { "source": "/last-minute-tonight", "destination": "/cruises/last-minute-tonight.html" },
-    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/daytime-cruise", "destination": "/cruises/:lang/daytime-cruise.html" },
-    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/sunset-cruise", "destination": "/cruises/:lang/sunset-cruise.html" },
-    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/dinner-cruise", "destination": "/cruises/:lang/dinner-cruise.html" },
-    { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ja|ko|ms|id|ur|hi)/last-minute-tonight", "destination": "/cruises/:lang/last-minute-tonight.html" },
-    { "source": "/(.*)", "destination": "/$1" }
+    { "source": "/api/(.*)", "destination": "/api/$1" }
   ]
 }
