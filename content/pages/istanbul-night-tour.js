@@ -86,7 +86,7 @@ module.exports = {
     },
     {
       q: 'Can I book the Istanbul night tour the same day?',
-      a: 'Often yes — same-day booking is available if seats are open. Weekends fill faster. The booking wizard on this page lets you check availability for tonight and reserve in under 1 minute. WhatsApp us at +90 532 520 1700 for urgent same-day requests.'
+      a: 'Often yes — same-day booking is available if seats are open. Weekends fill faster. The booking wizard on this page lets you check availability for tonight and reserve in under 1 minute. WhatsApp us at +90 532 244 29 22 for urgent same-day requests.'
     }
   ],
 

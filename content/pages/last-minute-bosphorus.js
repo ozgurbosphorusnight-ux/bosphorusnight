@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How last-minute can I book?',
-      a: 'Booking stays open until 18:00 for the 21:00 boat. After 18:00, WhatsApp us directly at +90 532 520 1700 — if seats are open, we can confirm manually. After 19:30 it\'s too tight unless you\'re already at Kabataş Pier and can board fast.'
+      a: 'Booking stays open until 18:00 for the 21:00 boat. After 18:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually. After 19:30 it\'s too tight unless you\'re already at Kabataş Pier and can board fast.'
     },
     {
       q: 'Is last-minute Bosphorus cruise more expensive?',

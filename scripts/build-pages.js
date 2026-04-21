@@ -165,7 +165,7 @@ function buildSchemaLd(page, lang, slug) {
       '@type': 'TravelAgency',
       name: 'Bosphorus Night',
       url: SITE_URL,
-      telephone: '+90 532 520 1700',
+      telephone: '+90 532 244 29 22',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Kabataş Pier',

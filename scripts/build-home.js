@@ -86,7 +86,7 @@ function buildSchemaLd(lang) {
     name: 'Bosphorus Night',
     url,
     inLanguage: lang,
-    telephone: '+90 532 520 1700',
+    telephone: '+90 532 244 29 22',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Kabataş Pier',
@@ -103,7 +103,7 @@ function buildSchemaLd(lang) {
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     // aggregateRating intentionally omitted — re-added when real reviews are collected.
     sameAs: [
-      'https://wa.me/905325201700',
+      'https://wa.me/905322442922',
       'https://t.me/bosphorusnight',
       'https://www.youtube.com/@BosphorusNightTour',
       'https://www.instagram.com/bosphorusnighttour/'
@@ -118,12 +118,12 @@ function buildSchemaLd(lang) {
     logo: 'https://www.bosphorusnight.com/assets/data/logo png lst.png',
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+90 532 520 1700',
+      telephone: '+90 532 244 29 22',
       contactType: 'customer service',
       availableLanguage: ['English', 'Turkish', 'Arabic', 'Russian', 'German', 'Spanish', 'French', 'Italian', 'Chinese', 'Persian', 'Indonesian', 'Malay', 'Polish', 'Bulgarian', 'Romanian']
     },
     sameAs: [
-      'https://wa.me/905325201700',
+      'https://wa.me/905322442922',
       'https://t.me/bosphorusnight',
       'https://www.youtube.com/@BosphorusNightTour',
       'https://www.instagram.com/bosphorusnighttour/'

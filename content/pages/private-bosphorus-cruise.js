@@ -86,7 +86,7 @@ module.exports = {
     },
     {
       q: 'How do I request a private Bosphorus cruise quote?',
-      a: 'Easiest: WhatsApp us at +90 532 520 1700 with (1) your group size, (2) preferred date, (3) occasion (wedding, corporate, birthday), (4) any special requirements. We reply within 1 hour during business times, within 12 hours overnight. We can also arrange a video call to discuss details.'
+      a: 'Easiest: WhatsApp us at +90 532 244 29 22 with (1) your group size, (2) preferred date, (3) occasion (wedding, corporate, birthday), (4) any special requirements. We reply within 1 hour during business times, within 12 hours overnight. We can also arrange a video call to discuss details.'
     }
   ],
 
