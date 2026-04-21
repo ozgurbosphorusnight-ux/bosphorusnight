@@ -352,9 +352,21 @@ function initGallery() {
   const close = lightbox.querySelector('.lightbox-close');
 
   document.querySelectorAll('.gallery-item').forEach(item => {
-    item.addEventListener('click', () => {
+    item.addEventListener('click', (e) => {
+      // Skip if this gallery item is a video (click opens YouTube instead)
+      if (item.getAttribute('onclick') && item.getAttribute('onclick').includes('openVideoLightbox')) return;
       const src = item.querySelector('img');
       if (src) { img.src = src.src; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    });
+  });
+
+  // Hero collage cells — open background image in lightbox
+  document.querySelectorAll('.hero-collage-cell').forEach(cell => {
+    cell.style.cursor = 'pointer';
+    cell.addEventListener('click', () => {
+      const bg = cell.style.backgroundImage || getComputedStyle(cell).backgroundImage;
+      const match = bg.match(/url\(["']?([^"')]+)["']?\)/);
+      if (match) { img.src = match[1]; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
     });
   });
 

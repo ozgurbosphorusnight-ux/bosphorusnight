@@ -104,7 +104,9 @@ function buildSchemaLd(lang) {
     // aggregateRating intentionally omitted — re-added when real reviews are collected.
     sameAs: [
       'https://wa.me/905325201700',
-      'https://t.me/bosphorusnight'
+      'https://t.me/bosphorusnight',
+      'https://www.youtube.com/@BosphorusNightTour',
+      'https://www.instagram.com/bosphorusnighttour/'
     ]
   };
 
@@ -122,7 +124,9 @@ function buildSchemaLd(lang) {
     },
     sameAs: [
       'https://wa.me/905325201700',
-      'https://t.me/bosphorusnight'
+      'https://t.me/bosphorusnight',
+      'https://www.youtube.com/@BosphorusNightTour',
+      'https://www.instagram.com/bosphorusnighttour/'
     ]
   };
 

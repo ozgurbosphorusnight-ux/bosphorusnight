@@ -911,9 +911,12 @@ section h2::after {
   grid-row: span 1;
   border-radius: 12px;
   transition: transform 300ms ease;
+  pointer-events: auto;
+  cursor: pointer;
 }
 .hero-collage-cell:hover {
   transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
 }
 /* Soft fade at top where collage meets the video frame */
 .hero-collage-bottom {
