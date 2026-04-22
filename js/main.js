@@ -370,6 +370,15 @@ function initGallery() {
     });
   });
 
+  // Tour card panel images (dinner/sunset/daytime collages) — open in lightbox
+  document.querySelectorAll('.tour-panel-img, #hero-img-daytime, #hero-img-sunset, #hero-img-dinner').forEach(el => {
+    el.style.cursor = 'pointer';
+    el.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (el.src) { img.src = el.src; lightbox.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    });
+  });
+
   const closeLB = () => { lightbox.classList.remove('active'); document.body.style.overflow = ''; };
   close.addEventListener('click', closeLB);
   lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLB(); });
