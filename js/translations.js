@@ -1254,9 +1254,21 @@ const T = {
     fa: "لغو رایگان ۲ ساعت پیش", fr: "Annulation gratuite 2h", it: "Cancellazione gratuita 2h", zh: "2小时前免费取消", id: "Batal gratis 2 jam", ms: "Batal percuma 2jam", pl: "Bezpłatna anulacja 2h", bg: "Безплатна отмяна 2 ч.", ro: "Anulare gratuită 2 ore"
   },
   "dinner.halalTax": {
-    en: "Halal", tr: "Helal", de: "Halal", es: "Halal",
-    ru: "Халяль", ar: "حلال",
-    fa: "حلال", fr: "Halal", it: "Halal", zh: "清真", id: "Halal", ms: "Halal", pl: "Halal", bg: "Халал", ro: "Halal"
+    en: "Halal options · Wine & cocktails · Taxes incl.",
+    tr: "Helal seçenekler · Şarap ve kokteyl · Vergi dahil",
+    de: "Halal Optionen · Wein & Cocktails · Steuer inkl.",
+    es: "Opciones halal · Vino y cócteles · Impuestos incl.",
+    ru: "Халяль-варианты · Вино и коктейли · Налоги вкл.",
+    ar: "خيارات حلال · نبيذ وكوكتيلات · الضرائب شاملة",
+    fa: "گزینه‌های حلال · شراب و کوکتل · مالیات شامل",
+    fr: "Options halal · Vin & cocktails · Taxes incl.",
+    it: "Opzioni halal · Vino e cocktail · Tasse incl.",
+    zh: "清真选项 · 葡萄酒与鸡尾酒 · 含税",
+    id: "Opsi halal · Anggur & koktail · Termasuk pajak",
+    ms: "Pilihan halal · Wain & koktel · Termasuk cukai",
+    pl: "Opcje halal · Wino & koktajle · Podatki wlicz.",
+    bg: "Халал опции · Вино и коктейли · Вкл. данъци",
+    ro: "Opțiuni halal · Vin și cocktailuri · Taxe incl."
   },
   "meeting.share": {
     en: "Exact meeting location will be shared via WhatsApp, Telegram or WeChat after booking.",
