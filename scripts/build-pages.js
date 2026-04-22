@@ -77,6 +77,30 @@ function urlFor(lang, slug) {
   return lang === 'en' ? `${SITE_URL}/${slug}` : `${SITE_URL}/${lang}/${slug}`;
 }
 
+// ISO locale codes for og:locale (Facebook/OpenGraph convention).
+const OG_LOCALES = {
+  en: 'en_US', tr: 'tr_TR', de: 'de_DE', es: 'es_ES', ru: 'ru_RU',
+  ar: 'ar_SA', fa: 'fa_IR', fr: 'fr_FR', it: 'it_IT', zh: 'zh_CN',
+  id: 'id_ID', ms: 'ms_MY', pl: 'pl_PL', bg: 'bg_BG', ro: 'ro_RO'
+};
+
+// Source has og:locale=en_US + 14 alternates. For non-EN builds, swap:
+// primary → current locale, the current lang's alternate → en_US.
+function swapOgLocale(html, lang) {
+  if (lang === 'en') return html;
+  const current = OG_LOCALES[lang];
+  if (!current) return html;
+  html = html.replace(
+    /<meta property="og:locale" content="en_US">/,
+    `<meta property="og:locale" content="${current}">`
+  );
+  html = html.replace(
+    new RegExp(`<meta property="og:locale:alternate" content="${current}">`),
+    `<meta property="og:locale:alternate" content="en_US">`
+  );
+  return html;
+}
+
 const subPrices = (s) => s.replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??');
 const md = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong class="text-gold">$1</strong>');
 const fix = (s) => md(subPrices(s));
@@ -317,7 +341,7 @@ function buildHtml(slug, lang, template) {
   );
 
   // Path rewrites: /dist/{lang}/*.html → ../../assets/, etc.
-  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
+  html = html.replace(/(src|srcset|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
   html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
   html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
@@ -343,10 +367,9 @@ function buildHtml(slug, lang, template) {
     /<meta\s+property="og:url"[^>]*>/,
     `<meta property="og:url" content="${urlFor(lang, slug)}">`
   );
-  // og:image + Twitter Card (use landing's OG image if defined, else dinner fallback)
-  const ogImage = (page.images && page.images.og)
-    ? `${SITE_URL}${page.images.og}`
-    : 'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+  // og:image + Twitter Card — standardized 1200x630 social card for all landings
+  // (per-landing custom og:image can be re-introduced once each is cropped to 1200x630).
+  const ogImage = `${SITE_URL}/assets/data/og-image.jpg`;
   html = html.replace(/<meta\s+property="og:image"[^>]*>/g, `<meta property="og:image" content="${ogImage}">`);
   html = html.replace(/<meta\s+name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${metaTitleAttr}">`);
   html = html.replace(/<meta\s+name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${metaDescAttr}">`);
@@ -396,6 +419,9 @@ function buildHtml(slug, lang, template) {
 
   // Translate hardcoded English strings (not marked with data-i18n)
   html = translateHardcoded(html, lang);
+
+  // Swap og:locale for non-EN languages
+  html = swapOgLocale(html, lang);
 
   return html;
 }

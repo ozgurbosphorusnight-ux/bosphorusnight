@@ -105,14 +105,45 @@ Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok)
 | 2 | Backend iskelet (Node.js + Express) | ✅ BİTTİ |
 | 3 | AI beyin (Claude API + prompt + hafıza) | ✅ BİTTİ — Mode A + Mode B parite, 5 iyileştirme (A-E) 2026-04-19'da tamamlandı. Canlı test geçti. |
 | 4 | WhatsApp sales agent MVP | 🔴 AKTİF — Twilio + Meta onay sürecine başlanacak |
+| **4.A** | **SEO Sprint #1 (paralel — organik altyapı kapat)** | 🟡 BAŞLIYOR — 2026-04-22 |
 | 5 | Güvenlik ağları (onay, kill switch, anomali) | ⏳ |
+| 5.A | SEO Sprint #2 (GA4, Tour/Event schema, Tailwind build, WebP) | ⏳ |
 | 6 | Operation agent (teyit, takip, transfer) | ⏳ |
+| 6.A | SEO Sprint #3 (GBP, local citations, review → AggregateRating) | ⏳ |
+| 6.B | Country-specific SEO (DE, RU, AR öncelikli: GBP ülke, hreflang geo-variants, Almanca blog, .de domain, partner backlink'ler) | ⏳ |
 | 7 | Dashboard + günlük rapor | ⏳ |
+| 7.A | SEO Dashboard (GSC API + Yandex API + Bing API → sabah raporu) | ⏳ |
 | 8 | Çoklu kanal (Telegram, WeChat) + retention | ⏳ |
+| 8.A | Baidu Webmaster (Çin pazarı) + Yandex boost (Rus pazarı) | ⏳ |
 | 9 | Voice agent (Vapi + ElevenLabs) | ⏳ |
+| 9.A | Voice Search SEO (Speakable schema, FAQ voice-optimize) | ⏳ |
 | 10 | Ads agent (Meta + Google + TikTok) | ⏳ |
+| 10.A | Programmatic SEO landing pages (her kampanya kelimesine) | ⏳ |
 
 **Kural:** Bir aşama bitmeden sonrakine geçilmez. Her aşama sonunda canlı test.
+
+### Aşama 4.A — SEO Sprint #1 Maddeleri (sırayla)
+
+Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür onayıyla tek tek.
+
+| # | Madde | Süre | Durum |
+|---|---|---|---|
+| 1 | Blog sayfalarını build'e dahil et (build-all.js + sitemap) | 30 dk | ⏳ |
+| 2 | Yandex verification hash güncelle (745... → 976b...) | 15 dk | ⏳ |
+| 3 | Bing Webmaster Tools verify + sitemap submit | 20 dk | ⏳ |
+| 4 | Blog yazılarına Article schema JSON-LD ekle (5 yazı) | 45 dk | ⏳ |
+| 5 | og:locale meta tag (16 dil — en_US, tr_TR vs.) | 30 dk | ⏳ |
+| 6 | Google Analytics 4 (GA4) property kurulumu + gtag G-ID | 30 dk | ⏳ |
+| 7 | Ana sayfaya Tour/TouristTrip schema × 4 paket | 45 dk | ⏳ |
+| 8 | Ana sayfaya Event schema (günlük 21:00 kalkış) | 30 dk | ⏳ |
+| 9 | Tailwind CDN → build-time CSS extraction | 2-3 sa | ⏳ |
+| 10 | Görsel optimize: JPG → WebP/AVIF (build pipeline) | 2-3 sa | ⏳ |
+| 11 | og:image width/height meta tag ekle (1200×630) | 10 dk | ⏳ |
+| 12 | Internal linking — ana sayfa 17 landing → blog cross-link | 1 sa | ⏳ |
+| 13 | robots.txt'e AI bot rules (GPTBot, ClaudeBot) | 10 dk | ⏳ |
+| 14 | Structured data validation (Google Rich Results Test × 17 sayfa) | 1 sa | ⏳ |
+
+**Toplam tahmini süre:** 12-15 saat net iş, 3-5 gün içine yayılır.
 
 ---
 

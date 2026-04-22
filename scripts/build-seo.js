@@ -33,6 +33,16 @@ const SLUGS = [
   'bosphorus-night-tour'
 ];
 
+// Blog posts (English only — no multi-lingual for now).
+const BLOG_PAGES = [
+  '/blog/',
+  '/blog/best-bosphorus-dinner-cruise-istanbul',
+  '/blog/bosphorus-sunset-cruise-guide',
+  '/blog/bosphorus-cruise-with-kids-family',
+  '/blog/istanbul-cruise-tonight-last-minute',
+  '/blog/things-to-know-istanbul-boat-tour'
+];
+
 function urlFor(lang, slug) {
   // English at root; others prefixed.
   const prefix = lang === 'en' ? '' : '/' + lang;
@@ -59,18 +69,34 @@ ${xDefault}
   </url>`).join('\n');
 }
 
+function blogBlock(pathPart) {
+  const today = new Date().toISOString().split('T')[0];
+  const loc = SITE_URL + pathPart;
+  const priority = pathPart === '/blog/' ? '0.7' : '0.6';
+  return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
+}
+
 function buildSitemap() {
   const homeBlocks = urlBlock('');
   const landingBlocks = SLUGS.map(urlBlock).join('\n');
+  const blogBlocks = BLOG_PAGES.map(blogBlock).join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${homeBlocks}
 ${landingBlocks}
+${blogBlocks}
 </urlset>
 `;
   fs.writeFileSync(path.join(OUT, 'sitemap.xml'), xml);
-  const urls = (homeBlocks.match(/<url>/g) || []).length + (landingBlocks.match(/<url>/g) || []).length;
+  const urls = (homeBlocks.match(/<url>/g) || []).length
+    + (landingBlocks.match(/<url>/g) || []).length
+    + (blogBlocks.match(/<url>/g) || []).length;
   console.log(`  ✓ dist/sitemap.xml (${urls} URL)`);
 }
 
@@ -78,7 +104,10 @@ function buildRobots() {
   const txt = `User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /panel/
 Disallow: /cruises/
+Disallow: /_next/
+Disallow: /tickets/
 
 Sitemap: ${SITE_URL}/sitemap.xml
 `;

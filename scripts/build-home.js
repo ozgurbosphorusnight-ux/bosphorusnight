@@ -57,6 +57,30 @@ function urlFor(lang) {
   return lang === 'en' ? SITE_URL : `${SITE_URL}/${lang}`;
 }
 
+// ISO locale codes for og:locale (Facebook/OpenGraph convention: language_COUNTRY).
+const OG_LOCALES = {
+  en: 'en_US', tr: 'tr_TR', de: 'de_DE', es: 'es_ES', ru: 'ru_RU',
+  ar: 'ar_SA', fa: 'fa_IR', fr: 'fr_FR', it: 'it_IT', zh: 'zh_CN',
+  id: 'id_ID', ms: 'ms_MY', pl: 'pl_PL', bg: 'bg_BG', ro: 'ro_RO'
+};
+
+// Source has og:locale=en_US + 14 alternates. For non-EN builds, swap: primary
+// becomes current lang's locale, the current lang's alternate becomes en_US.
+function swapOgLocale(html, lang) {
+  if (lang === 'en') return html;
+  const current = OG_LOCALES[lang];
+  if (!current) return html;
+  html = html.replace(
+    /<meta property="og:locale" content="en_US">/,
+    `<meta property="og:locale" content="${current}">`
+  );
+  html = html.replace(
+    new RegExp(`<meta property="og:locale:alternate" content="${current}">`),
+    `<meta property="og:locale:alternate" content="en_US">`
+  );
+  return html;
+}
+
 function buildHreflang() {
   const links = Object.keys(LANGUAGES)
     .map((lang) => `  <link rel="alternate" hreflang="${lang}" href="${urlFor(lang)}">`)
@@ -178,7 +202,169 @@ function buildSchemaLd(lang) {
     inLanguage: lang
   };
 
-  return [business, organization, website, ...videos, heroImage]
+  // Bosphorus itinerary shared across all tour products.
+  const bosphorusItinerary = {
+    '@type': 'ItemList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Kabataş Pier (departure)' },
+      { '@type': 'ListItem', position: 2, name: 'Dolmabahçe Palace' },
+      { '@type': 'ListItem', position: 3, name: 'Çırağan Palace' },
+      { '@type': 'ListItem', position: 4, name: 'Ortaköy Mosque' },
+      { '@type': 'ListItem', position: 5, name: 'Bosphorus Bridge' },
+      { '@type': 'ListItem', position: 6, name: 'Bebek Bay' },
+      { '@type': 'ListItem', position: 7, name: 'Rumeli Fortress' },
+      { '@type': 'ListItem', position: 8, name: 'Anadolu Fortress' },
+      { '@type': 'ListItem', position: 9, name: 'Beylerbeyi Palace' },
+      { '@type': 'ListItem', position: 10, name: 'Kuzguncuk & Üsküdar' },
+      { '@type': 'ListItem', position: 11, name: 'Kabataş Pier (return)' }
+    ]
+  };
+
+  const provider = {
+    '@type': 'TravelAgency',
+    name: 'Bosphorus Night',
+    url: SITE_URL,
+    telephone: '+90 532 244 29 22',
+    identifier: 'TÜRSAB A-17672'
+  };
+
+  const tourBase = (name, description, price, url, image, duration, audience) => ({
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name,
+    description,
+    touristType: audience,
+    inLanguage: lang,
+    image,
+    provider,
+    itinerary: bosphorusItinerary,
+    offers: {
+      '@type': 'Offer',
+      price: String(price),
+      priceCurrency: 'EUR',
+      priceValidUntil: '2026-12-31',
+      availability: 'https://schema.org/InStock',
+      url,
+      validFrom: '2026-01-01'
+    },
+    // ISO 8601 duration
+    subjectOf: {
+      '@type': 'CreativeWork',
+      about: `${duration} departure from Kabataş Pier, Istanbul`
+    }
+  });
+
+  // Daytime and Sunset tours deferred — not active products yet (will be added when
+  // they become bookable and priced).
+
+  const tourDinnerStd = {
+    ...tourBase(
+      'Standard Bosphorus Dinner Cruise',
+      '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 21:00 from Kabataş Pier. Pay on the boat.',
+      24,
+      'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
+      'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+      '21:00',
+      'International tourists, couples, families, groups'
+    ),
+    offers: {
+      '@type': 'Offer',
+      price: '24',
+      priceCurrency: 'EUR',
+      priceValidUntil: '2026-12-31',
+      availability: 'https://schema.org/InStock',
+      url: 'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
+      validFrom: '2026-01-01',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '24',
+        priceCurrency: 'EUR',
+        referenceQuantity: { '@type': 'QuantitativeValue', value: '1', unitCode: 'E50' }
+      }
+    }
+  };
+
+  const tourDinnerVip = tourBase(
+    'VIP Bosphorus Dinner Cruise',
+    '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 21:00 from Kabataş Pier.',
+    55,
+    'https://www.bosphorusnight.com/bosphorus-vip',
+    'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg',
+    '21:00',
+    'Premium travelers, special occasions, VIP guests'
+  );
+
+  // Dinner cruise SocialEvent with recurring daily schedule + 2 offers (Std + VIP).
+  // startDate = tomorrow 21:00 local (Europe/Istanbul = +03:00), refreshed on every build.
+  // A weekly auto-rebuild (GitHub Actions) keeps this evergreen for Google Events rich results.
+  const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
+  const tomorrowDate = tomorrow.toISOString().split('T')[0];
+  const dayAfter = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+
+  const dinnerEvent = {
+    '@context': 'https://schema.org',
+    '@type': 'SocialEvent',
+    name: 'Bosphorus Dinner Cruise — Turkish Night Show',
+    description: '3-hour dinner cruise on the Bosphorus with Turkish folk dance, belly dance, live music, DJ and unlimited soft drinks. Departs 21:00 from Kabataş Pier.',
+    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    inLanguage: lang,
+    startDate: `${tomorrowDate}T21:00:00+03:00`,
+    endDate: `${dayAfter}T00:00:00+03:00`,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: 'Kabataş Pier',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: 'Kabataş İskelesi',
+        addressLocality: 'Istanbul',
+        addressRegion: 'İstanbul',
+        postalCode: '34437',
+        addressCountry: 'TR'
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: 41.0361, longitude: 28.9947 }
+    },
+    organizer: {
+      '@type': 'TravelAgency',
+      name: 'Bosphorus Night',
+      url: SITE_URL,
+      telephone: '+90 532 244 29 22'
+    },
+    performer: {
+      '@type': 'PerformingGroup',
+      name: 'Bosphorus Night Entertainment',
+      description: 'Traditional Mevlana whirling dervish, 5 Turkish folk dances, belly dance show, live music, and DJ set'
+    },
+    offers: [
+      {
+        '@type': 'Offer',
+        name: 'Standard Package',
+        price: '24',
+        priceCurrency: 'EUR',
+        url: 'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
+        availability: 'https://schema.org/InStock',
+        validFrom: '2026-01-01'
+      },
+      {
+        '@type': 'Offer',
+        name: 'VIP Package',
+        price: '55',
+        priceCurrency: 'EUR',
+        url: 'https://www.bosphorusnight.com/bosphorus-vip',
+        availability: 'https://schema.org/InStock',
+        validFrom: '2026-01-01'
+      }
+    ],
+    eventSchedule: {
+      '@type': 'Schedule',
+      repeatFrequency: 'P1D',
+      startDate: '2026-01-01',
+      endDate: '2026-12-31'
+    }
+  };
+
+  return [business, organization, website, ...videos, heroImage, tourDinnerStd, tourDinnerVip, dinnerEvent]
     .map((b) => `<script type="application/ld+json">\n${JSON.stringify(b, null, 2)}\n</script>`)
     .join('\n');
 }
@@ -238,7 +424,7 @@ function buildForLang(lang, template) {
   );
 
   // Path rewrites (output depth: dist/{lang}/index.html → ../../)
-  html = html.replace(/(src|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
+  html = html.replace(/(src|srcset|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
   html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
   html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
@@ -284,6 +470,9 @@ function buildForLang(lang, template) {
 
   // Translate hardcoded English strings that lack data-i18n
   html = translateHardcoded(html, lang);
+
+  // Swap og:locale for non-EN languages
+  html = swapOgLocale(html, lang);
 
   return html;
 }

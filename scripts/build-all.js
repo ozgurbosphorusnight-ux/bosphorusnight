@@ -38,14 +38,17 @@ console.log('🚀 Full build başlıyor\n');
 rmrf(DIST);
 fs.mkdirSync(DIST, { recursive: true });
 
-// 2. HTML üretimi
+// 2. Görselleri optimize et (JPG/PNG → WebP, sadece değişenler)
+run('node scripts/build-images.js');
+
+// 3. HTML üretimi
 run('node scripts/build-home.js');
 run('node scripts/build-pages.js');
 run('node scripts/build-seo.js');
 
 // 3. Static asset'leri dist/'e kopyala (absolute /assets/... paths için)
 console.log('\n📦 Static asset kopyalama...');
-for (const dir of ['js', 'css', 'assets']) {
+for (const dir of ['js', 'css', 'assets', 'blog']) {
   const src = path.join(ROOT, dir);
   if (fs.existsSync(src)) {
     cpdir(src, path.join(DIST, dir));
@@ -53,8 +56,12 @@ for (const dir of ['js', 'css', 'assets']) {
   }
 }
 
-// 4. Root seviyesinde tek dosyalar
-for (const f of ['site.webmanifest', 'yandex_745ed021116f94b1.html']) {
+// 4. Tailwind CSS build-time extraction — deferred to Aşama 5.A (Core Web Vitals sprint).
+// Files ready: tailwind.config.js, src/tailwind-input.css, scripts/build-tailwind.js
+// run('node scripts/build-tailwind.js');
+
+// 5. Root seviyesinde tek dosyalar
+for (const f of ['site.webmanifest']) {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(DIST, f));
@@ -62,7 +69,7 @@ for (const f of ['site.webmanifest', 'yandex_745ed021116f94b1.html']) {
   }
 }
 
-// 5. English'i dist/en/ → dist/ root'a taşı (production'da EN root'ta olacak)
+// 6. English'i dist/en/ → dist/ root'a taşı (production'da EN root'ta olacak)
 const enDir = path.join(DIST, 'en');
 if (fs.existsSync(enDir)) {
   for (const f of fs.readdirSync(enDir)) {
