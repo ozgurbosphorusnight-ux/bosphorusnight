@@ -3041,18 +3041,40 @@ function wizBuildSummary() {
         try {
           ctaLink.style.opacity = '0.6';
           ctaLink.setAttribute('data-busy', '1');
-          // Wizard data topla
+          // Wizard data topla — wizState'te olmayan field'lar DOM'dan okunur
+          const wizDateValue = document.getElementById('wizDate')?.value || null;
+          // wizState.pkg: 'standard' | 'vip' → AI kod: DINNER_STD | DINNER_VIP
+          const packageCode =
+            wizState.pkg === 'standard' ? 'DINNER_STD' :
+            wizState.pkg === 'vip' ? 'DINNER_VIP' :
+            wizState.pkg;
+          // wizState.drink: 'soft' (addon yok) | 'glass2' | 'unlimited'
+          const addonCodes = [];
+          if (wizState.drink === 'glass2') addonCodes.push('ALCOHOL_2GLASS');
+          if (wizState.drink === 'unlimited') addonCodes.push('ALCOHOL_UNLIMITED');
+          if (wizState.transfer) addonCodes.push('HOTEL_TRANSFER');
+          if (wizState.romantic) addonCodes.push('ROMANTIC_TABLE');
+
+          // Child ages from wizard (0-3 free, 4-8 half, 9+ full)
+          const childAges = [];
+          document.querySelectorAll('#wizChildAgeInputs select').forEach(sel => {
+            if (sel.value) childAges.push(sel.value);
+          });
+
           const wizardData = {
             name: guestName,
             phone: guestPhone,
-            date: wizState.date,
-            package: wizState.package,
-            package_code: wizState.package,
-            adults: wizState.adults,
-            children: wizState.children,
+            date: wizDateValue,
+            package: wizState.pkg,          // site-internal 'standard' | 'vip'
+            package_code: packageCode,       // AI enum 'DINNER_STD' | 'DINNER_VIP'
+            adults: adults,                   // wizCalcPrice scope
+            children: children,               // wizCalcPrice scope
+            child_ages: childAges,
             infants: 0,
-            addons: (wizState.drink ? [wizState.drink] : []).concat(wizState.romantic ? ['ROMANTIC_TABLE'] : []),
-            transfer: wizState.transfer,
+            addons: addonCodes,
+            addon_codes: addonCodes,          // AI tool naming compat
+            transfer: wizState.transfer ? true : false,
+            transfer_needed: wizState.transfer ? true : false,
             pickup_address: wizState.transfer ? guestAddress : null,
             hotel: wizState.transfer ? guestAddress : null,
             room_number: (document.getElementById('wizRoomNumber')?.value || '').trim() || null,
