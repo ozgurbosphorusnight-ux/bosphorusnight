@@ -108,7 +108,7 @@ Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok)
 | **4.A** | **SEO Sprint #1 (paralel — organik altyapı kapat)** | 🟡 BAŞLIYOR — 2026-04-22 |
 | 5 | Güvenlik ağları (onay, kill switch, anomali) | ⏳ |
 | 5.A | SEO Sprint #2 (GA4, Tour/Event schema, Tailwind build, WebP) | ⏳ |
-| 6 | Operation agent (teyit, takip, transfer) | ⏳ |
+| 6 | Operation agent (teyit, takip, transfer) + Multi-agent altyapı (Paperclip-inspired) | ⏳ |
 | 6.A | SEO Sprint #3 (GBP, local citations, review → AggregateRating) | ⏳ |
 | 6.B | Country-specific SEO (DE, RU, AR öncelikli: GBP ülke, hreflang geo-variants, Almanca blog, .de domain, partner backlink'ler) | ⏳ |
 | 7 | Dashboard + günlük rapor | ⏳ |
@@ -119,8 +119,72 @@ Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok)
 | 9.A | Voice Search SEO (Speakable schema, FAQ voice-optimize) | ⏳ |
 | 10 | Ads agent (Meta + Google + TikTok) | ⏳ |
 | 10.A | Programmatic SEO landing pages (her kampanya kelimesine) | ⏳ |
+| **11** | **Turizm ürün genişlemesi — aynı site, ek SKU'lar (son aşama)** | ⏳ |
+| **P6** | **Panel Sprint 6 — Rezervasyonlar sayfası yenileme (paralel)** | 🟡 AKTİF — 2026-04-23 |
+| **P7** | **Panel Sprint 7 — Konuşmalar sayfası yenileme (paralel)** | 🟡 AKTİF — 2026-04-23 |
 
 **Kural:** Bir aşama bitmeden sonrakine geçilmez. Her aşama sonunda canlı test.
+Panel sprint'leri (P-prefix) AI aşamalarına paralel ilerleyebilir; Aşama 4 WhatsApp kurulumu beklerken panel tarafında görsel + CRUD işleri yapılıyor.
+
+### Panel Sprint 6 — Rezervasyonlar sayfası yenileme maddeleri (sırayla)
+
+Panel `/reservations` sayfası komple yenileniyor. Her madde ayrı commit.
+
+| # | Madde | Süre | Durum |
+|---|---|---|---|
+| 1 | API query params: search + status[] + date_range (tur+kayıt) + package + channel | 25 dk | ⏳ |
+| 2 | API: limit/offset + total count (load more desteği) | 10 dk | ⏳ |
+| 3 | API: `/reservations/export` PDF endpoint (filtrelenmiş liste, Puppeteer) | 30 dk | ⏳ |
+| 4 | UI: `ReservationFilters` component — 6 ana filtre (arama, durum chip, tur/kayıt tarihi, paket, kanal) | 45 dk | ⏳ |
+| 5 | UI: Hızlı butonlar — Bugün / Yarın / Bu Hafta / Bu Ay / Gelecek / Geçmiş | 15 dk | ⏳ |
+| 6 | UI: Ek filtreler — kişi aralığı, tutar aralığı, dil, transfer var/yok | 20 dk | ⏳ |
+| 7 | UI: Derin filtreler — eskalasyon, AI/insan, büyük grup kısayolu | 20 dk | ⏳ |
+| 8 | UI: Aktif filtre chipleri (× ile kapat) + "Hepsini temizle" | 15 dk | ⏳ |
+| 9 | UI: "20 daha yükle" butonu + "N/toplam" sayacı | 10 dk | ⏳ |
+| 10 | UI: Sütun başlıklarından sıralama (tarih, tutar, kayıt tarihi, isim) | 15 dk | ⏳ |
+| 11 | UI: Satır başına durum butonları — ✅ Geldi / ❌ Gelmedi / 🚫 İptal (manuel transition) | 15 dk | ⏳ |
+| 12 | API: `PATCH /reservations/[id]/status` endpoint + `system_logs` kayıt | 15 dk | ⏳ |
+| 13 | UI: PDF indir butonu (filtre bilgisiyle + toplam ciro + kişi özet) | 10 dk | ⏳ |
+| 14 | Canlı test — 7 rez üstünde her filtre + sıralama + pdf + durum değişimi | 20 dk | ⏳ |
+
+**Toplam: ~4.5 saat net iş, 1-2 günlük çalışma.**
+
+**Paket seçenekleri filtrede:** `DINNER_STD` · `DINNER_VIP` (DAYTIME/SUNSET maliyeti netleşince eklenir).
+**Kanal seçenekleri filtrede:** `WhatsApp` · `Telegram` · `WeChat` (Aşama 4/8 açıldıkça dolar).
+**Durum seçenekleri:** `pending` · `confirmed` · `completed` · `cancelled` · `no_show` — default seçili `pending + confirmed`.
+
+**Aşama 6 ile bağlantı:** Madde 11'deki manuel durum butonları, Aşama 6 Operation Agent geldiğinde aynı `PATCH .../status` endpoint'ini kullanarak otomatikleşir (confirmed/completed/no_show transitions). Şimdi manuel, sonra otomatik — altyapı aynı.
+
+### Panel Sprint 7 — Konuşmalar sayfası yenileme maddeleri
+
+Panel `/conversations` sayfası komple yenileniyor.
+
+| # | Madde | Süre | Durum |
+|---|---|---|---|
+| 1 | API query params: search + channel + language + status + result + date_range | 25 dk | ⏳ |
+| 2 | API: limit/offset + total count + sıralama | 10 dk | ⏳ |
+| 3 | API: `/conversations/export` PDF endpoint | 25 dk | ⏳ |
+| 4 | API: `POST /conversations/[id]/analyze` — Observer anlık analiz tetikleyici | 20 dk | ⏳ |
+| 5 | API: `/conversations/active-count` — son 5 dk aktifler sayısı | 10 dk | ⏳ |
+| 6 | UI: `ConversationFilters` — arama, kanal, dil, durum, sonuç, tarih | 45 dk | ⏳ |
+| 7 | UI: Dil sütunu — bayrak + kod (🇹🇷 TR / 🇺🇸 EN / 🇩🇪 DE / vb.) | 15 dk | ⏳ |
+| 8 | UI: Durum çipleri renkli — active=yeşil, closed=gri, escalated=kırmızı | 10 dk | ⏳ |
+| 9 | UI: Sonuç genişlet — rezervasyon ✓ / iptal / eskalasyon / pending / ayrıldı | 15 dk | ⏳ |
+| 10 | UI: Müşteri ismine tıklayınca → `/customers/[id]` detay sayfası | 10 dk | ⏳ |
+| 11 | UI: Satıra tıklayınca → `/conversations/[id]` mesaj timeline (zaten var) | 5 dk | ⏳ |
+| 12 | UI: Satır sonunda 🔍 "Observer ile analiz et" butonu (quality score toast) | 20 dk | ⏳ |
+| 13 | UI: Üstte "🟢 Şu an N yazıyor" badge — tıklayınca aktifleri filtreler | 15 dk | ⏳ |
+| 14 | UI: "20 daha yükle" butonu + "N/toplam" sayacı + sıralama | 15 dk | ⏳ |
+| 15 | UI: Aktif filtre chipleri (× ile kapat) + hepsini temizle | 10 dk | ⏳ |
+| 16 | UI: PDF indir butonu | 10 dk | ⏳ |
+| 17 | Canlı test — 8 konuşma üstünde tüm filtre + analiz + pdf | 20 dk | ⏳ |
+
+**Toplam: ~4.5 saat net iş.**
+
+**Paylaşılan altyapı (Sprint 6 + 7):**
+Her iki sprint'te ortak kullanılacak komponentler önce çıkartılacak — `ListFilters`, `LoadMoreButton`, `FilterChips`, `PdfExportButton` — böylece her iki sayfa için de tek kaynak.
+
+**Tahmini toplam (Sprint 6 + 7 beraber): ~7-9 saat**, paylaşılan infra ile kazanılan ~1 saat dahil.
 
 ### Aşama 4.A — SEO Sprint #1 Maddeleri (sırayla)
 
@@ -144,6 +208,45 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 14 | Structured data validation (Google Rich Results Test × 17 sayfa) | 1 sa | ⏳ |
 
 **Toplam tahmini süre:** 12-15 saat net iş, 3-5 gün içine yayılır.
+
+### Aşama 11 — Turizm Ürün Genişlemesi (son aşama, Aşama 10 bittikten sonra)
+
+Stratejik karar (2026-04-22): İş **sadece turizm dikeyinde** büyüyecek. Sağlık turizmi, saç ekimi, diş, estetik, oturma izni/vatandaşlık gibi farklı dikeyler masa dışı. Tek dikeyde derinlik, çok dikeyde dağılma değil.
+
+Bosphorus Night markasının ve motorunun üstüne **aynı site + aynı wizard + aynı AI agent + aynı Supabase şema** üstüne turizm SKU'ları eklenecek. Her SKU için: `packages` tablosuna satır, AI agent'a ürün context'i, wizard'a ürün kartı, partner operatörle revenue share sözleşmesi.
+
+| # | Ürün | Partner | Tahmini müşteri başı marj |
+|---|------|---------|---------------------------|
+| 1 | VIP havalimanı transfer | Lüks transfer firması (2-3 seçenek) | €40-80 |
+| 2 | Yat / özel tekne kiralama (saatlik + günlük) | Yat sahipleri | €60-200 |
+| 3 | Kapadokya sıcak hava balonu (aracılık) | Kapadokya balon operatörleri | €25-50/kişi |
+| 4 | Hamam + masaj rezervasyonu | Çemberlitaş/Süleymaniye/Hürrem Sultan | €15-40/kişi |
+| 5 | İstanbul 2-3 günlük paket (uçak+otel+tekne+şehir turu) | Otel + tur operatör kombinasyonu | değişken, yüksek sepet |
+| 6 | Gece kulübü + premium restoran rezervasyonu | Mekanlarla doğrudan | %20-30 komisyon |
+
+**Yapılacaklar:**
+1. Partner sözleşmeleri (her SKU için en az 2 yedek operatör)
+2. `packages.category` ve `packages.vertical_code` kolonları — wizard doğru akışa yönlendirsin
+3. AI agent için her ürüne ait upsell kuralları (ör. tekne tur sonrası Kapadokya öner)
+4. Ayrı teyit + operasyon akışı (transfer tekne ile aynı mantıkta değil)
+5. Reklam (Aşama 10) bittikten sonra her ürüne ayrı kampanya
+
+**Beklenen etki:** Ortalama müşteri değeri €70 → €180+, customer lifetime value 2-3x.
+
+### Aşama 6 ön-iş — Multi-Agent Altyapı (Paperclip-inspired)
+
+Operation agent (Aşama 6) gelmeden önce **agent orkestrasyon altyapısı** kurulacak. İlham kaynağı: [Paperclip](https://github.com/paperclipai/paperclip) — açık kaynak (MIT), self-hosted AI agent yönetim platformu. Lokal klon: `_temp/paperclip/` (geçici, pattern'ler kendi koduna geçince silinecek).
+
+**Çalınacak 4 pattern (kendi kodumuzla, dependency yok):**
+
+1. **Org chart** → Supabase `agents` tablosu: code, role, reports_to, monthly_budget_eur, current_spend_eur, status, goals jsonb, heartbeat_cron, system_prompt_ref. Yeni agent eklemek = DB satırı eklemek.
+2. **Ticket sistemi** → Supabase `agent_tickets` tablosu: id, assigned_to, parent_id, type, priority, status, context, due_at. Mevcut `escalations` bunun alt-türü olur.
+3. **Heartbeat scheduler** → n8n cron + agent başına schedule (SALES webhook, OPS 10 dk, ADS 6 sa, ORCH sabah 09:00).
+4. **Budget guard** → `src/safety/budget-guard.js`, her Claude API çağrısından önce check, %80 uyarı + %100 auto-pause + Özgür bildirimi.
+
+**Migration 008** ile bu altyapı kurulur, sonra OPS (Aşama 6), VOICE (Aşama 9), ADS (Aşama 10) agent'ları aynı altyapı üstüne **DB satırı olarak** eklenir — kod çoğaltma yok.
+
+**Detay:** `memory/paperclip_reference.md` ve `_temp/paperclip/_NEDEN_BURADA.md`.
 
 ---
 
