@@ -3032,11 +3032,60 @@ function wizBuildSummary() {
   const ctaLink = document.getElementById('wizWhatsApp');
   if (ctaLink) {
     if (wizState.contact === 'telegram') {
-      ctaLink.href = `https://t.me/bosphorusnighttour?text=${encodeURIComponent(msg)}`;
+      // Deep link handoff — wizard data AI backend'e POST edilir, dönen link'e yönlendir.
+      // Önce placeholder href (handler click'te async çalışır), click handler devreye alınır.
+      ctaLink.href = 'javascript:void(0)';
+      ctaLink.onclick = async function(e) {
+        e.preventDefault();
+        const originalText = ctaLink.textContent || ctaLink.innerText;
+        try {
+          ctaLink.style.opacity = '0.6';
+          ctaLink.setAttribute('data-busy', '1');
+          // Wizard data topla
+          const wizardData = {
+            name: guestName,
+            phone: guestPhone,
+            date: wizState.date,
+            package: wizState.package,
+            package_code: wizState.package,
+            adults: wizState.adults,
+            children: wizState.children,
+            infants: 0,
+            addons: (wizState.drink ? [wizState.drink] : []).concat(wizState.romantic ? ['ROMANTIC_TABLE'] : []),
+            transfer: wizState.transfer,
+            pickup_address: wizState.transfer ? guestAddress : null,
+            hotel: wizState.transfer ? guestAddress : null,
+            room_number: (document.getElementById('wizRoomNumber')?.value || '').trim() || null,
+            language: currentLang,
+            total_eur: total,
+            special_request: (document.getElementById('wizSpecialRequest')?.value || '').trim() || null,
+          };
+          const resp = await fetch('https://api.bosphorusnight.com/wizard/telegram-handoff', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ wizard: wizardData }),
+          });
+          const data = await resp.json();
+          if (data?.ok && data.link) {
+            window.location.href = data.link;
+          } else {
+            // Fallback: direkt bot chat'i aç, müşteri manuel yazsın
+            window.location.href = `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`;
+          }
+        } catch (err) {
+          console.warn('Telegram handoff başarısız, fallback:', err);
+          window.location.href = `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`;
+        } finally {
+          ctaLink.style.opacity = '1';
+          ctaLink.removeAttribute('data-busy');
+        }
+      };
     } else if (wizState.contact === 'wechat') {
       ctaLink.href = '#';
+      ctaLink.onclick = null;
     } else {
       ctaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+      ctaLink.onclick = null;
     }
   }
 }
