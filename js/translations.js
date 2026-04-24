@@ -27,8 +27,8 @@ const T = {
     fa: "خانه", fr: "Accueil", it: "Home", zh: "首页", id: "Beranda", ms: "Utama", pl: "Strona główna", bg: "Начало", ro: "Acasă"
   },
   "nav.cruises": {
-    en: "Cruises", tr: "Turlar", de: "Touren", es: "Cruceros", ru: "Круизы", ar: "الرحلات",
-    fa: "تورها", fr: "Croisières", it: "Crociere", zh: "游船", id: "Pelayaran", ms: "Pelayaran", pl: "Rejsy", bg: "Круизи", ro: "Croaziere"
+    en: "Packages", tr: "Paketler", de: "Pakete", es: "Paquetes", ru: "Пакеты", ar: "الباقات",
+    fa: "پکیج‌ها", fr: "Forfaits", it: "Pacchetti", zh: "套餐", id: "Paket", ms: "Pakej", pl: "Pakiety", bg: "Пакети", ro: "Pachete"
   },
   "nav.gallery": {
     en: "Gallery", tr: "Galeri", de: "Galerie", es: "Galería", ru: "Галерея", ar: "معرض الصور",
