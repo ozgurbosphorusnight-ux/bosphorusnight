@@ -193,7 +193,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | # | Madde | Süre | Durum |
 |---|---|---|---|
 | 1 | Blog sayfalarını build'e dahil et (build-all.js + sitemap) | 30 dk | ⏳ |
-| 2 | Yandex verification hash güncelle (745... → 976b...) | 15 dk | ⏳ |
+| 2 | Yandex verification hash güncelle (745... → 976b... → c5b81ef1cac4597c) | 15 dk | ✅ (2026-04-24) |
 | 3 | Bing Webmaster Tools verify + sitemap submit | 20 dk | ⏳ |
 | 4 | Blog yazılarına Article schema JSON-LD ekle (5 yazı) | 45 dk | ⏳ |
 | 5 | og:locale meta tag (16 dil — en_US, tr_TR vs.) | 30 dk | ⏳ |
