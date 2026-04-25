@@ -164,22 +164,25 @@ ls C:\Projects\bosphorus-night-ai          # AI
 ls C:\Projects\bosphorus-night-panel       # panel
 ```
 
-### 3.2 Eski PC'den transfer klasörünü kopyala (SMB)
+### 3.2 Eski PC'den transfer klasörünü kopyala (USB)
 
-PowerShell — eski PC'nin hostname'ini biliyorsun (Faz 1.4):
-```powershell
-$source = "\\<eski-pc-adi>\Transfer-to-NewPC"
-$dest = "C:\Transfer-from-OldPC"
-robocopy $source $dest /E /COPY:DAT /R:3
-```
+**Not (26 Nisan 2026):** SMB / HTTP yöntemleri Wi-Fi network problemleri (Public profile, firewall) yüzünden çalışmadı. **USB belleğe geçildi.**
 
-`robocopy` ağ üzerinden hızlı kopyalar. /E = alt klasörler dahil, /R:3 = 3 deneme.
+1. USB belleği eski PC'ye tak
+2. `C:\Transfer-to-NewPC` klasörünü tamamen USB'ye kopyala (sürükle-bırak veya Ctrl+C → Ctrl+V)
+3. USB'yi güvenli çıkar (taskbar'daki USB ikonu → Eject)
+4. USB'yi yeni PC'ye tak
+5. Yeni PC'de `C:` diskine yapıştır → `C:\Transfer-from-OldPC` adında olsun
 
-Bittikten sonra:
+Doğrula:
 ```powershell
 ls C:\Transfer-from-OldPC
 ```
-Klasörler: secrets, ssh, claude, vscode, notlar.txt — hepsi olmalı.
+Klasörler: secrets, ssh, claude, vscode, personal, notlar.txt — hepsi olmalı.
+
+**Aspectapp da varsa** — Özgür Aspectapp klasörünü ve Desktop'taki Aspect Excel/Make dosyalarını da Transfer'e ekledi. Yeni PC'de:
+- `C:\Transfer-from-OldPC\Aspectapp` → kopyala → `C:\Users\dell\Aspectapp` (eski yola benzer)
+- `C:\Transfer-from-OldPC\personal\Documents\Aspect-files\` → istediğin yere koy
 
 ### 3.3 Secret'ları yerleştir
 
