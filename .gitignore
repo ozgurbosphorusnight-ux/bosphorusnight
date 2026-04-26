@@ -6,3 +6,5 @@ dist/
 preview/
 *.bak
 _temp/
+
+.vercel
