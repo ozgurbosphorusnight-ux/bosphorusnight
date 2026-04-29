@@ -14,16 +14,17 @@ module.exports = {
     gallery: [
       '/assets/tours/dinner/hall-wide.jpg',
       '/assets/tours/dinner/dining-romantic.jpg',
-      '/assets/tours/dinner/boat-night-bridge.jpg',
+      '/assets/tours/dinner/folk-dance.jpg',
       '/assets/tours/dinner/whirling-dervish.jpg',
-      '/assets/tours/dinner/meze.jpg',
-      '/assets/tours/dinner/folk-dance.jpg'
+      '/assets/tours/dinner/belly-dance.jpg',
+      '/assets/tours/dinner/boat-night-bridge.jpg',
+      '/assets/tours/dinner/meze.jpg'
     ]
   },
 
   meta: {
-    title: 'Halal Bosphorus Dinner Cruise from €{p.dinnerStd} — Muslim-Friendly Istanbul',
-    description: '100% halal Bosphorus dinner cruise. Halal meat, alcohol optional, family-appropriate entertainment. From €{p.dinnerStd}/person. Free cancellation, pay on boat. 11,317 reviews.'
+    title: 'Halal Bosphorus Dinner Cruise from €{p.dinnerStd} — Live Show + Night Tour',
+    description: '3-hour Bosphorus dinner cruise: live folklore show, illuminated bridges, panoramic Bosphorus night views. Halal menu available on request. Free cancellation, pay on boat.'
   },
 
   hero: {
