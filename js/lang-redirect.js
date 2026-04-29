@@ -11,6 +11,13 @@
 (function () {
   'use strict';
 
+  // Skip on localhost — dev server only has the English source; redirecting
+  // to /tr/ etc. would 404. Production has all 15 langs pre-built.
+  var host = window.location.hostname;
+  if (host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local')) {
+    return;
+  }
+
   var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro'];
   var STORAGE_KEY = 'bn_lang';
 
