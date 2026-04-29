@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Istanbul Night Tour — Best Evening Experience on the Bosphorus',
-    description: 'Istanbul\'s top-rated night tour: 3-hour Bosphorus cruise with dinner, live folklore, and illuminated bridges. 4.8★, TÜRSAB-licensed, pay on boat. The definitive Istanbul evening.'
+    title: 'Istanbul Night Tour from €{p.dinnerStd} — Bosphorus Dinner Cruise + Show',
+    description: '3-hour Bosphorus cruise with dinner and live show. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews. Hotel transfer optional.'
   },
 
   hero: {

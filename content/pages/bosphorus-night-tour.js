@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Night Tour — Illuminated Istanbul Cruise with Dinner',
-    description: 'Bosphorus night tour with dinner and live show. 21:00 departure, illuminated bridges, Turkish folklore, 3 hours on the water. From €{p.dinnerStd}/person — pay on boat.'
+    title: 'Bosphorus Night Tour from €{p.dinnerStd} — Dinner Cruise + Live Show',
+    description: '3-hour Bosphorus night tour with dinner and live show. Departs 21:00 from Kabataş, illuminated bridges. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {

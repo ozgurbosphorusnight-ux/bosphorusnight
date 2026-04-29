@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: '100% Halal Bosphorus Dinner Cruise — Istanbul | Muslim-Friendly',
-    description: 'Halal-certified Bosphorus dinner cruise in Istanbul. 100% halal meat, alcohol optional (never pushed), family-appropriate entertainment, prayer breaks respected. From €{p.dinnerStd}/person.'
+    title: 'Halal Bosphorus Dinner Cruise from €{p.dinnerStd} — Muslim-Friendly Istanbul',
+    description: '100% halal Bosphorus dinner cruise. Halal meat, alcohol optional, family-appropriate entertainment. From €{p.dinnerStd}/person. Free cancellation, pay on boat. 11,317 reviews.'
   },
 
   hero: {

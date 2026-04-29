@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus VIP Cruise — Premium Dinner, Stage-Front Seats | Istanbul',
-    description: 'Bosphorus VIP dinner cruise in Istanbul. Premium mezes, steak options, stage-front seating, priority service. Was €{p.dinnerVipOriginal}, now €{p.dinnerVip}/person. Pay on boat.'
+    title: 'Bosphorus VIP Cruise from €{p.dinnerVip} — Premium Dinner, Stage Seating',
+    description: 'Bosphorus VIP dinner cruise: premium mezes, steak options, stage-front table, priority service. Was €{p.dinnerVipOriginal}, now €{p.dinnerVip}. Free cancellation, pay on boat.'
   },
 
   hero: {

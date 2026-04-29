@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Istanbul Boat Tour — Bosphorus Cruise with Dinner & Show',
-    description: 'Istanbul\'s best boat tour: 3-hour Bosphorus cruise with full dinner, live folklore, and illuminated night views. From €{p.dinnerStd}/person, pay on boat, 4.8★ rated.'
+    title: 'Istanbul Boat Tour from €{p.dinnerStd} — Bosphorus Cruise + Dinner + Show',
+    description: '3-hour Istanbul boat tour: Bosphorus cruise, full Turkish dinner, live folklore, illuminated night views. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {

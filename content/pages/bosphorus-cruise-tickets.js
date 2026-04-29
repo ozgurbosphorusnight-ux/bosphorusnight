@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Cruise Tickets — Direct Booking, Pay on Boat from €{p.dinnerStd}',
-    description: 'Buy Bosphorus cruise tickets directly. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. No prepayment, pay on the boat. Free cancellation 2hrs before. 4.8★ rated, TÜRSAB A-17672.'
+    title: 'Bosphorus Cruise Tickets from €{p.dinnerStd} — Pay on Boat, No Prepayment',
+    description: 'Direct Bosphorus cruise tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. No prepayment, pay on boat. Free cancellation up to 2 hours before. 11,317 traveler reviews.'
   },
 
   hero: {

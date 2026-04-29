@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Private Bosphorus Cruise — Charter Your Own Boat | Istanbul',
-    description: 'Private Bosphorus cruise charter for groups, families, corporate events, weddings. Exclusive boat, custom menu, flexible duration. Minimum 25 guests. WhatsApp us for a quote.'
+    title: 'Private Bosphorus Cruise — Charter a Boat in Istanbul (25+ guests)',
+    description: 'Private Bosphorus cruise charter for groups, weddings, corporate events. Exclusive boat, custom menu, flexible duration. Free cancellation. WhatsApp for a custom quote.'
   },
 
   hero: {

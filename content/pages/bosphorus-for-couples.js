@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Cruise for Couples — Date Night on the Water | Istanbul',
-    description: 'Bosphorus dinner cruise for couples. Private table, illuminated bridges, live music, romantic table setup option. From €{p.dinnerStd}/person. Pay on boat — perfect date night in Istanbul.'
+    title: 'Bosphorus Cruise for Couples from €{p.dinnerStd} — Date Night Istanbul',
+    description: 'Bosphorus dinner cruise for couples. Private table, illuminated bridges, romantic setup option. From €{p.dinnerStd}/person. Free cancellation, pay on boat. 11,317 reviews.'
   },
 
   hero: {

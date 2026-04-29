@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Dinner Cruise Istanbul — Premium Bosphorus Night Tour from €{p.dinnerStd}',
-    description: 'Istanbul\'s top-rated dinner cruise on the Bosphorus. 3-hour evening with Turkish feast, live folklore, illuminated bridges. TÜRSAB-licensed, pay on boat, no prepayment.'
+    title: 'Dinner Cruise Istanbul from €{p.dinnerStd} — Bosphorus Night Tour',
+    description: '3-hour Istanbul dinner cruise on the Bosphorus. Multi-course Turkish menu, live folklore, illuminated bridges. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {

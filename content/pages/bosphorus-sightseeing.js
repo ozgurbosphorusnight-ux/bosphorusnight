@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Sightseeing — All Istanbul Landmarks from the Water',
-    description: 'Bosphorus sightseeing cruise covers every major landmark: Dolmabahçe, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, Beylerbeyi, Maiden\'s Tower. 3-hour evening tour with dinner, €{p.dinnerStd}.'
+    title: 'Bosphorus Sightseeing from €{p.dinnerStd} — Istanbul Landmarks by Boat',
+    description: 'Bosphorus sightseeing cruise: Dolmabahçe, Ortaköy, Bosphorus Bridge, Rumeli, Beylerbeyi, Maiden\'s Tower. 3-hour evening with dinner. Free cancellation, pay on boat.'
   },
 
   hero: {

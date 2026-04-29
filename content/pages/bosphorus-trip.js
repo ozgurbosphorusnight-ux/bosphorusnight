@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Trip — Premium Istanbul Cruise Experience from €{p.dinnerStd}',
-    description: 'Plan your Bosphorus trip: 3-hour dinner cruise with Turkish feast, live folklore show, illuminated night views. 4.8★ rated, pay on boat, 12 service zones for transfer.'
+    title: 'Bosphorus Trip from €{p.dinnerStd} — Istanbul Dinner Cruise + Show',
+    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night views. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {

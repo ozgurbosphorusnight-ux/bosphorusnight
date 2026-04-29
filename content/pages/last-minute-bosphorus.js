@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Last-Minute Bosphorus Cruise — Book for Tonight, Pay on Boat',
-    description: 'Last-minute Bosphorus cruise booking for tonight. Same-day availability, pay on boat, no prepayment. WhatsApp confirmation in minutes. From €{p.dinnerStd}/person.'
+    title: 'Last-Minute Bosphorus Cruise from €{p.dinnerStd} — Book Tonight, Pay Aboard',
+    description: 'Same-day Bosphorus cruise booking. WhatsApp confirmation in minutes. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {

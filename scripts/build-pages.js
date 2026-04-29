@@ -176,6 +176,16 @@ function buildHreflang(slug) {
 function buildSchemaLd(page, lang, slug) {
   const url = urlFor(lang, slug);
 
+  // Image array — Google uses this for search thumbnails and image carousels.
+  // Pull from per-page images.gallery (5-6 high-quality tour photos),
+  // prepend the standardized 1200x630 og-image as the canonical hero.
+  // Multiple images give Google flexibility for different aspect ratios
+  // (square, 4:3, 16:9) across search contexts.
+  const galleryUrls = (page.images && Array.isArray(page.images.gallery) ? page.images.gallery : [])
+    .slice(0, 5)
+    .map((p) => p.startsWith('http') ? p : `${SITE_URL}${p}`);
+  const tripImages = [`${SITE_URL}/assets/data/og-image.jpg`, ...galleryUrls];
+
   // TouristTrip schema
   const tourist = {
     '@context': 'https://schema.org',
@@ -183,6 +193,7 @@ function buildSchemaLd(page, lang, slug) {
     name: fix(page.meta.title).replace(/<[^>]+>/g, ''),
     description: fix(page.meta.description),
     url,
+    image: tripImages,
     inLanguage: lang,
     touristType: 'International tourists',
     provider: {
@@ -250,8 +261,64 @@ function buildSchemaLd(page, lang, slug) {
     ]
   };
 
-  // Meeting-point walking direction videos (visible on dinner-oriented landings).
-  const videos = [
+  // Promotional + meeting-point videos. Google can render a video carousel
+  // in search results when 2+ VideoObject schemas are present, dramatically
+  // boosting CTR vs text-only listings. Tour-type specific selection so each
+  // landing shows the most relevant promo videos (dinner pages → dinner+show,
+  // sunset pages → boat+views).
+  const promoVideoLibrary = {
+    dinner: [
+      {
+        id: 'uC3BPhgTfYA',
+        name: 'Dinner & Atmosphere — Bosphorus Night Cruise',
+        description: 'Inside the Bosphorus dinner cruise: multi-course Turkish menu, candlelit tables, panoramic Bosphorus views by night.'
+      },
+      {
+        id: 'zzDJ7xoXnuc',
+        name: 'Live Show Highlights — Bosphorus Dinner Cruise',
+        description: 'Live Turkish folklore, whirling dervish, and belly dance performances aboard the Bosphorus Night dinner cruise.'
+      },
+      {
+        id: 'M1wKCgj2O_M',
+        name: 'Luxury Yacht Tour — Bosphorus by Night',
+        description: 'Aerial and onboard footage of the Bosphorus Night luxury cruise — illuminated bridges, palaces, and the Istanbul skyline at night.'
+      }
+    ],
+    sunset: [
+      {
+        id: 'eJTOiPx_eus',
+        name: 'Boat Tour — Bosphorus Sunset Cruise',
+        description: 'Onboard scenes from the Bosphorus sunset cruise: golden hour light over the strait, palaces, and historic shores.'
+      },
+      {
+        id: 'gbohvuBi64o',
+        name: 'Under the Bridge — Bosphorus Views',
+        description: 'Sailing under the iconic Bosphorus Bridge — sweeping views of Istanbul from the water at golden hour.'
+      },
+      {
+        id: '-ArhYpC9tbY',
+        name: 'Guest Moments — Bosphorus Cruise',
+        description: 'Real guests enjoying the Bosphorus cruise experience: views, photos, and toasts on the water.'
+      }
+    ]
+  };
+
+  const tourType = page.tourType === 'sunset' ? 'sunset' : 'dinner';
+  const promoVideos = (promoVideoLibrary[tourType] || []).map((v) => ({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: v.name,
+    description: v.description,
+    thumbnailUrl: `https://img.youtube.com/vi/${v.id}/hqdefault.jpg`,
+    contentUrl: `https://www.youtube.com/watch?v=${v.id}`,
+    embedUrl: `https://www.youtube.com/embed/${v.id}`,
+    uploadDate: '2026-04-20',
+    inLanguage: lang
+  }));
+
+  // Meeting-point walking direction videos — useful for buyer-intent searches
+  // ("how to get to Kabataş", "where is the meeting point").
+  const meetingVideos = [
     {
       '@context': 'https://schema.org',
       '@type': 'VideoObject',
@@ -275,6 +342,8 @@ function buildSchemaLd(page, lang, slug) {
       inLanguage: lang
     }
   ];
+
+  const videos = [...promoVideos, ...meetingVideos];
 
   // ImageObject for the landing page OG image.
   const ogImage = page.images && page.images.og

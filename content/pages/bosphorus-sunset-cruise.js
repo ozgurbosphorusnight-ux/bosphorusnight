@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Bosphorus Sunset Cruise — Golden Hour Tour with Dinner | Istanbul',
-    description: 'Bosphorus sunset cruise in Istanbul. Board at 17:30, watch Dolmabahçe & Ortaköy Mosque glow in golden light, dinner continues into illuminated night. 3-hour tour, from €35/person.'
+    title: 'Bosphorus Sunset Cruise from €35 — Golden Hour + Dinner',
+    description: 'Bosphorus sunset cruise from Kabataş, 17:30 departure. Golden-hour palaces, dinner continues into illuminated night. 3 hours. Free cancellation, pay on boat. 11,317 reviews.'
   },
 
   hero: {

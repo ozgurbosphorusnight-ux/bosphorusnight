@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Istanbul Cruise Price — Transparent Rates, Pay on Boat from €{p.dinnerStd}',
-    description: 'Istanbul Bosphorus cruise prices: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kids 0-3 free. Add-ons transparent (alcohol +€{p.unlimited}, transfer +€{p.transfer}). No hidden fees.'
+    title: 'Istanbul Cruise Price from €{p.dinnerStd} — Transparent Rates, No Hidden Fees',
+    description: 'Istanbul Bosphorus cruise prices: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kids 0-3 free, 4-8 half price. Add-ons transparent. Free cancellation, pay on boat.'
   },
 
   hero: {

@@ -22,8 +22,8 @@ module.exports = {
   },
 
   meta: {
-    title: 'Romantic Bosphorus Cruise — Candlelit Dinner for Couples | Istanbul',
-    description: 'The most romantic Bosphorus cruise in Istanbul. Candlelit table, roses, VIP setup, multi-course dinner under the illuminated bridges. Anniversary, honeymoon, surprise — book from €{p.dinnerStd}/person.'
+    title: 'Romantic Bosphorus Cruise from €{p.dinnerStd} — Candlelit Dinner for 2',
+    description: 'Romantic Bosphorus cruise: candlelit table, roses, multi-course dinner under illuminated bridges. From €{p.dinnerStd}/person. Free cancellation, pay on boat. Anniversary & honeymoon ready.'
   },
 
   hero: {
