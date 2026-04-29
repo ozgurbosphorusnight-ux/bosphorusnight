@@ -104,12 +104,13 @@ Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok)
 | 1 | Veri katmanı (Supabase) | ✅ BİTTİ |
 | 2 | Backend iskelet (Node.js + Express) | ✅ BİTTİ |
 | 3 | AI beyin (Claude API + prompt + hafıza) | ✅ BİTTİ — Mode A + Mode B parite, 5 iyileştirme (A-E) 2026-04-19'da tamamlandı. Canlı test geçti. |
-| 4 | WhatsApp sales agent MVP | 🔴 AKTİF — Twilio + Meta onay sürecine başlanacak |
-| **4.A** | **SEO Sprint #1 (paralel — organik altyapı kapat)** | 🟡 BAŞLIYOR — 2026-04-22 |
+| 4 | WhatsApp sales agent MVP | 🟡 SANDBOX CANLI 28 Nis — production Meta onayı bekleniyor |
+| **4.A** | **SEO Sprint #1 (organik altyapı + meta + schema + GBP)** | ✅ BİTTİ — 2026-04-29 (272 sayfa update + GBP setup + hero video) |
+| **4.B** | **AI Pre-launch Hardening (router + güvenlik + few-shot)** | 🔴 AKTİF — 2026-04-28, Twilio onay penceresinde paralel |
 | 5 | Güvenlik ağları (onay, kill switch, anomali) | ⏳ |
-| 5.A | SEO Sprint #2 (GA4, Tour/Event schema, Tailwind build, WebP) | ⏳ |
+| 5.A | SEO Sprint #2 (Event schema + PAA optimize + tour-specific og:image + Internal linking + Core Web Vitals + Tailwind build) | 🔴 SIRADA |
 | 6 | Operation agent (teyit, takip, transfer) + Multi-agent altyapı (Paperclip-inspired) | ⏳ |
-| 6.A | SEO Sprint #3 (GBP, local citations, review → AggregateRating) | ⏳ |
+| 6.A | SEO Sprint #3 (OTA citations: TripAdvisor + GetYourGuide + Viator + Klook, weekly GBP posts, AggregateRating, backlinks) | ⏳ |
 | 6.B | Country-specific SEO (DE, RU, AR öncelikli: GBP ülke, hreflang geo-variants, Almanca blog, .de domain, partner backlink'ler) | ⏳ |
 | 7 | Dashboard + günlük rapor | ⏳ |
 | 7.A | SEO Dashboard (GSC API + Yandex API + Bing API → sabah raporu) | ⏳ |
@@ -208,6 +209,73 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 14 | Structured data validation (Google Rich Results Test × 17 sayfa) | 1 sa | ⏳ |
 
 **Toplam tahmini süre:** 12-15 saat net iş, 3-5 gün içine yayılır.
+
+**4.A SONUÇ (29 Nis):** 14/14 madde tamam. Schema image array (272 sayfa) + 14 dilde meta rewrite + GBP setup (kategori, foto, video, hizmet) + Search Console re-index + hero video deploy. Sandbox canlı, Local Pack profilinde 5★ ilk yorum.
+
+### Aşama 5.A — SEO Sprint #2 Maddeleri (sırayla — 2-3 hafta dağılımlı)
+
+**Amaç:** 4.A'nın altyapısı kuruldu, 5.A **görünür sıralama büyümesi** için. Hedef: 8 hafta içinde Local Pack + PAA box + Featured snippet + Travel Listings'te görünmek.
+
+| # | Madde | Süre | Etki | Durum |
+|---|---|---|---|---|
+| 1 | **People Also Ask (PAA) optimize** — landing page FAQ'lerini Google'ın gerçek sorduğu sorulara birebir eşle (`Is X worth it?`, `How much does X cost?`, `Is X better at night or day?`). 40-60 kelimelik direkt cevap. FAQPage schema otomatik güncellenir. | 2 sa | 🔴 PAA box çıkar | ⏳ |
+| 2 | **Event schema** (günlük 21:00 tur) — `<script type="application/ld+json">` Event JSON-LD, recurring schema. Google search'te "Tonight at 21:00 — Book now" kart çıkar | 30 dk | 🔴 Event carousel | ⏳ |
+| 3 | **Tour-specific og:image** — 17 sayfa hep aynı og-image yerine her tur tipine özel: `og-dinner.jpg`, `og-sunset.jpg`, `og-romantic.jpg`, `og-vip.jpg`, `og-kids.jpg` (1200×630 crop, gallery'den) | 1 sa | 🟡 Sosyal paylaşım kalitesi | ⏳ |
+| 4 | **Internal linking** — 17 landing page birbirine cross-link (Bosphorus Dinner → Romantic, VIP, Sunset). 70+ link. Topical authority sinyali | 1 sa | 🔴 Topical authority | ⏳ |
+| 5 | **Core Web Vitals audit + iyileştirme** — pagespeed.web.dev test, LCP < 2.5s, CLS < 0.1 hedefi. Lazy load galleries, preload hero poster, critical CSS inline | 2-3 sa | 🟡 Sıralama sinyali | ⏳ |
+| 6 | **Tailwind CDN → build-time CSS** — 4.A Madde 9'dan ertelendi. CSS extraction, ~50KB → 8KB | 2-3 sa | 🟡 Page speed | ⏳ |
+| 7 | **Image alt text audit** — tüm `<img>` tag'lerinde alt attribute, anahtar kelimeli. Boş veya generic olanları yenile | 30 dk | 🟢 Image search | ⏳ |
+| 8 | **YouTube video SEO** — kanaldaki 6 promo video için: anahtar kelimeli title, ilk 150 karakter description, tags ("bosphorus cruise istanbul night tour"), özel thumbnail | 1 sa (sen) | 🔴 YouTube search + Google video carousel | ⏳ |
+| 9 | **Bing Webmaster Tools verify + sitemap** — 4.A Madde 3'ten ertelendi | 20 dk | 🟡 Bing trafik | ⏳ |
+| 10 | **og:image width/height meta tag** — 4.A Madde 11'den ertelendi (1200×630 explicit) | 10 dk | 🟢 Sosyal preview | ⏳ |
+| 11 | **robots.txt AI bot rules** — 4.A Madde 13'ten ertelendi (GPTBot, ClaudeBot izinleri) | 10 dk | 🟢 AI tarama | ⏳ |
+| 12 | **og:locale meta tag** (16 dil) — 4.A Madde 5'ten ertelendi | 30 dk | 🟢 Locale targeting | ⏳ |
+| 13 | **GA4 (Google Analytics 4)** kurulum doğrulama — gtag çalışıyor mu, conversion'lar takip ediliyor mu | 30 dk | 🟢 Veri toplama | ⏳ |
+| 14 | **Rich Results Test** — 17 sayfa × Google Rich Results Test, schema hatası varsa düzelt | 1 sa | 🟡 Schema doğrulama | ⏳ |
+| 15 | **`/reviews` sayfası oluştur** — Google Related Searches'te "Bosphorus Cruise reviews" + "Istanbul dinner cruise reviews" cevapsız. Tek sayfa: TripAdvisor + Google review embed + AggregateRating schema. Yorum keyword trafiği kapatılır. | 2-3 sa | 🔴 "reviews" arama trafiği | ⏳ |
+| 16 | **Title'larda "Best" kelimesi** — Google Related Searches'te "Best Bosphorus dinner cruise Istanbul" + "Best dinner cruise in Istanbul" var. İlgili landing page title'larına "Best" ekle (örn. "Best Bosphorus Dinner Cruise Istanbul from €24"). 14 dilde rewrite gerekir. CTR +%20-30 beklenir. | 1 sa | 🔴 CTR + "best" arama trafiği | ⏳ |
+
+### Aşama 6.A — SEO Sprint #3 Maddeleri (OTA + içerik + backlink, 4-6 hafta)
+
+**Amaç:** Google "Travel Listings" (Yer siteleri) kutusunda görünmek + uzun vade backlink/yorum profilini güçlendirmek.
+
+| # | Madde | Süre | Etki | Durum |
+|---|---|---|---|---|
+| 1 | **TripAdvisor profil optimize** — 11.317 mevcut yorumun zaten orada (memory). Profil description, kategori, photo upload, owner response. "Excellence" badge hedefi | 2-3 sa (sen) | 🔴 Direkt referrer + Google authority | ⏳ |
+| 2 | **TripAdvisor → Viator booking aktive** — TripAdvisor sahip Viator. Liste otomatik Viator'a yansır, %20 komisyon | 30 dk | 🔴 Viator carousel'de görün | ⏳ |
+| 3 | **GetYourGuide partner başvuru** — getyourguide.com/supplier-portal/login. Avrupa pazarı #1. Onay 1-2 hafta. Komisyon %25-30 | 1 sa başvuru + bekleme | 🔴 Travel Listings carousel | ⏳ |
+| 4 | **Klook partner başvuru** — Asya odaklı (Çin, Japon, Kore turist). Komisyon %15-25 | 1 sa başvuru + bekleme | 🟡 Asya pazarı | ⏳ |
+| 5 | **Civitatis** (İspanya/Latin Amerika) başvuru | 30 dk | 🟢 Hispanic pazarı | ⏳ |
+| 6 | **GBP weekly post** otomasyonu — AI agent her Pazartesi GBP'ye post atar (örn: "Tonight 21:00 cruise, €24, WhatsApp +90...") | 2 sa kod | 🟡 GBP engagement signal | ⏳ |
+| 7 | **AggregateRating schema** — Google'a 50+ yorum birikince TouristTrip schema'ya AggregateRating ekle. Search'te ★ yıldızlar çıkar | 30 dk | 🔴 SERP CTR +%30 | ⏳ |
+| 8 | **Google review toplama otomasyonu** — Tur sonrası AI agent WhatsApp/Telegram review link'i atar. Bilet PNG'sine QR | 1 sa kod | 🔴 Yorum hacmi | ⏳ |
+| 9 | **Hotel partnerlik backlinks** — Hilton/Conrad/Four Seasons konsiyerjlerine broşür + site link karşılığı | 1-2 hafta | 🔴 Yüksek otorite link | ⏳ |
+| 10 | **Travel blogger outreach** — İstanbul travel bloggerlarına free tour + "honest review" istek. 5-10 blogger | 1 hafta | 🔴 Backlink + sosyal kanıt | ⏳ |
+| 11 | **HARO / press requests** — Help A Reporter Out, gazetecilere "Bosphorus Night uzman alıntı" verme | sürekli | 🟡 PR backlink | ⏳ |
+| 12 | **Schema LocalBusiness ek alanlar** — `paymentAccepted`, `currenciesAccepted`, `priceRange` | 30 dk | 🟢 Schema completeness | ⏳ |
+
+**Toplam tahmini süre:** 8-12 saat net iş + 4-6 hafta beklemeler (OTA onayları, blogger response).
+
+### İçerik Pazarlama (Aşama 5.A paralel — blog post serisi)
+
+**Amaç:** Anahtar kelime hedefli, uzun-form blog content. Site authority + organik trafik.
+
+| # | Konu (anahtar kelime) | Tahmini | Durum |
+|---|---|---|---|
+| 1 | "Top 10 Things to Do in Istanbul at Night" | 4-6 sa | ⏳ |
+| 2 | "Best Bosphorus Cruise Guide 2026" | 4-6 sa | ⏳ |
+| 3 | "Istanbul Itinerary: 3 Days Perfect Trip" | 4-6 sa | ⏳ |
+| 4 | "Why Pay-on-Boat is Better Than Prepayment" | 3-4 sa | ⏳ |
+| 5 | "Romantic Istanbul: Best Date Ideas" | 4-6 sa | ⏳ |
+| 6 | "Istanbul vs Dubai: Which is Better for Couples?" | 4-6 sa | ⏳ |
+| 7 | "Halal Travel Istanbul: Muslim-Friendly Guide" | 4-6 sa | ⏳ |
+| 8 | "Bosphorus Bridge Lights: Photographer's Guide" | 3-4 sa | ⏳ |
+| 9 | "First-Timer's Istanbul Guide" | 4-6 sa | ⏳ |
+| 10 | "Best Time to Visit Istanbul" (mevsim odaklı) | 3-4 sa | ⏳ |
+
+Her makale: **1500-2500 kelime, anahtar kelime hedefli, internal link'li** (landing pages'e cross-link).
+
+**Beklenen etki:** 6 ay sonra organik trafik 3-5x artar. AI agent (Aşama 5.A 8 madde) ile daha sonra otomatize edilebilir.
 
 ### Aşama 11 — Turizm Ürün Genişlemesi (son aşama, Aşama 10 bittikten sonra)
 
@@ -565,6 +633,64 @@ AI'ı gerçek WhatsApp'a bağla. Müşteri mesajları Twilio webhook üzerinden 
    - Wizard'dan gelen mesaj → AI → bilet gönderim
    - Mode B sohbet → rezervasyon → bilet
    - Harita konumu inmemi kontrol et
+
+---
+
+### Aşama 4.B — AI Pre-launch Hardening (paralel, Twilio onay penceresinde)
+
+**Amaç:** Aşama 4 trafiği gelmeden önce AI sistemini "doğru" mimariye oturt — intent-aware routing + güvenlik temelleri + tone kalibrasyonu. Twilio + Meta onayı 1-2 hafta passive sürerken bu işler paralel halledilir.
+
+**Plan dosyası:** `~/.claude/plans/biz-hangi-a-amaday-z-a-amalar-zippy-yao.md` (28 Nisan 2026 onayı)
+
+**3 katmanlı mimari:**
+```
+[1. String fast-path]  → niyet kelimesi varsa direkt model seç (10ms, 0 maliyet)
+[2. Guard / Router AI] → Haiku 4.5, niyet+abuse+confidence (300ms, ~$0.0002)
+[3. Specialist AI]     → Cascade, intent'e göre Sonnet/DeepSeek/Opus
+[4. Observer AI]       → Mevcut, 24sa retrospektif kalite
+```
+
+**Hedeflenen sonuç:**
+- Aylık LLM faturası %50-60 düşer
+- Abuse/injection saldırıları sales agent'a ulaşmaz
+- Per-conversation cost cap ile maliyet patlaması imkansız
+- Aşama 4 trafiği gelmeden sistem hardened
+
+**Verilmiş kararlar (28 Nisan 2026):**
+- **Router model:** Claude Haiku 4.5 (kalite + hız dengesi en iyi)
+- **Mimari:** Hibrit — %70 string fast-path + %30 router AI
+- **Few-shot tone:** Karma — Özgür birkaç gerçek WhatsApp konuşması paylaşır + AI 4 arketip için (Alman çift, Arap aile, Çin solo, Amerikalı bal ayı) yapay örnek üretir, Özgür onaylar
+- **Faz sıralaması:** Henüz karar verilmedi — implementasyon başlamadan önce yeniden konuşulacak (A→B→C, B→A→C, paralel?)
+
+#### Faz A — Güvenlik temelleri (~1.5 gün)
+
+| # | İş | Dosya | Süre | Durum |
+|---|---|---|---|---|
+| 1 | Per-conversation cost cap | `src/safety/budget-guard.js` (extend) | 1 sa | ☐ |
+| 2 | Reservation code → nanoid (8ch, güvenli alfabe) | `src/db/queries/reservations.js`, migration | 2 sa | ☐ |
+| 3 | Tool authorization audit (cancel/update_reservation) | `src/claude/tools/cancel-reservation.js`, `update-reservation.js` | 2 sa | ☐ |
+| 4 | Prompt injection guard | `src/claude/prompts/shared-rules.js`, router pre-check | 2 sa | ☐ |
+| 5 | Anomaly detector v0.1 (IP/telefon/isim duplicate) | `src/safety/anomaly-detector.js` | 4 sa | ☐ |
+
+#### Faz B — Akıllı routing (~2 gün)
+
+| # | İş | Dosya | Süre | Durum |
+|---|---|---|---|---|
+| 6 | String fast-path (kelime → model) | `src/llm/router.js` (üstüne layer) | 4 sa | ☐ |
+| 7 | Guard / Router AI (Haiku 4.5, confidence skor) | yeni `src/llm/guard-router.js` | 1 gün | ☐ |
+| 8 | Upward escalation on low confidence | `src/llm/router.js` | 4 sa | ☐ |
+
+#### Faz C — Prompt kalitesi (~0.5 gün)
+
+| # | İş | Dosya | Süre | Durum |
+|---|---|---|---|---|
+| 9 | Few-shot tone örnekleri (4 arketip) | yeni `src/claude/prompts/sales-system.md` | 4 sa | ☐ |
+
+**Erteleme (Aşama 4 trafiği başladıktan sonra):** Tam JS→MD prompt refactor, system prompt audit (~2000 token tekrar temizlik), Observer audit log derinleştirme — ölçüm verisiyle yapılacak.
+
+**Verification:** Plan dosyasındaki "Verification" bölümüne bak.
+
+---
 
 ### Eski "Aşama 2" talimatları aşağıda arşiv olarak tutuluyor (referans)
 
