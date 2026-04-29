@@ -8,8 +8,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: 'Rejs z Kolacją po Bosforze w Stambule — Premium Wieczór, od €{p.dinnerStd}',
-      description: 'Najczęściej wybierany rejs z kolacją po Bosforze w Stambule. 3-godzinny wieczorny rejs, kuchnia turecka, tańce ludowe na żywo i DJ, panoramiczne widoki nocne. Licencja TÜRSAB. Płatność na pokładzie — bez przedpłaty.'
+      title: 'Rejs z Kolacją Bosfor od €{p.dinnerStd} — Tour Nocny Stambuł + Pokaz',
+      description: 'Rejs z kolacją 3 godziny po Bosforze: tureckie wielodaniowe menu i pokaz folklorystyczny na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs z Kolacją po Bosforze w Stambule',
@@ -44,8 +44,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: 'Rejs po Bosforze z Dziećmi — Rodzinny Rejs z Kolacją w Stambule',
-      description: 'Rodzinny rejs z kolacją po Bosforze. Dzieci 0-3 lata bezpłatnie, 4-8 lat za pół ceny. Zadaszona bezpieczna przestrzeń, menu dla dzieci, wczesny wypływ. Od €{p.dinnerStd}/dorosłego — płatność na pokładzie.'
+      title: 'Bosfor z Dziećmi — Rejs Rodzinny od €{p.dinnerStd}/dorosły',
+      description: 'Rodzinny rejs z kolacją po Bosforze. Dzieci 0-3 gratis, 4-8 połowa ceny. Bezpieczna sala, menu dla dzieci. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
     },
     hero: {
       h1: 'Rejs po Bosforze z Dziećmi',
@@ -80,8 +80,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: 'Romantyczny Rejs po Bosforze — Kolacja przy Świecach dla Par | Stambuł',
-      description: 'Najbardziej romantyczny rejs po Bosforze w Stambule. Stół przy świecach, róże, aranżacja VIP, bogata kolacja, pod podświetlonymi mostami. Rocznica, miesiąc miodowy, niespodzianka — zarezerwuj od €{p.dinnerStd}/osobę.'
+      title: 'Romantyczny Rejs Bosfor od €{p.dinnerStd} — Kolacja przy Świecach dla 2',
+      description: 'Romantyczny rejs po Bosforze: stół przy świecach, róże, wielodaniowa kolacja pod oświetlonymi mostami. Od €{p.dinnerStd}/osoba. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Romantyczny Rejs po Bosforze',
@@ -116,8 +116,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: '100% Halal Rejs z Kolacją po Bosforze — Stambuł | Przyjazny Muzułmanom',
-      description: 'Rejs z kolacją po Bosforze z certyfikatem halal. 100% mięso halal, alkohol opcjonalny (nigdy narzucany), rozrywka przyjazna rodzinom, szacunek dla czasu modlitwy. Od €{p.dinnerStd}/osobę.'
+      title: 'Halal Rejs z Kolacją Bosfor od €{p.dinnerStd} — Pokaz Live + Tour Nocny',
+      description: 'Rejs z kolacją 3 godziny po Bosforze: pokaz folklorystyczny na żywo, oświetlone mosty, panoramiczny Bosfor nocą. Menu halal dostępne na życzenie. Bezpłatne anulowanie.'
     },
     hero: {
       h1: 'Halal Rejs po Bosforze w Stambule',
@@ -152,8 +152,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Rejs VIP po Bosforze — Premium Kolacja, Miejsca przy Scenie | Stambuł',
-      description: 'Rejs VIP z kolacją po Bosforze w Stambule. Premium mezze, opcje stekowe, miejsca przy scenie, priorytetowa obsługa. Od €{p.dinnerVipOriginal}, teraz €{p.dinnerVip}/osobę. Płatność na pokładzie.'
+      title: 'Rejs VIP Bosfor od €{p.dinnerVip} — Premium Kolacja, Miejsce VIP',
+      description: 'VIP rejs z kolacją Bosfor: premium meze, opcje stekowe, stolik przy scenie, priorytetowa obsługa. Wcześniej €{p.dinnerVipOriginal}, teraz €{p.dinnerVip}.'
     },
     hero: {
       h1: 'Rejs VIP po Bosforze',
@@ -188,8 +188,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: 'Prywatny Rejs po Bosforze — Wynajmij Własną Łódź | Stambuł',
-      description: 'Prywatny rejs po Bosforze z wynajmem dla grup, rodzin, wydarzeń firmowych, ślubów. Wyłączna łódź, niestandardowe menu, elastyczny czas trwania. Minimum 25 gości. Wycena przez WhatsApp.'
+      title: 'Prywatny Rejs Bosfor — Czarter Łodzi w Stambule (25+ gości)',
+      description: 'Prywatny rejs Bosfor dla grup, ślubów, wydarzeń firmowych. Ekskluzywna łódź, menu na zamówienie, elastyczny czas. Bezpłatne anulowanie. WhatsApp po wycenę.'
     },
     hero: {
       h1: 'Prywatny Rejs po Bosforze',
@@ -224,8 +224,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: 'Rejs po Bosforze dla Par — Randka na Wodzie | Stambuł',
-      description: 'Rejs z kolacją po Bosforze dla par. Prywatny stół, podświetlone mosty, muzyka na żywo, opcja aranżacji stolika romantycznego. Od €{p.dinnerStd}/osobę. Płatność na pokładzie — idealna randka w Stambule.'
+      title: 'Bosfor dla Par od €{p.dinnerStd} — Romantyczny Wieczór Stambuł',
+      description: 'Rejs z kolacją Bosfor dla par. Prywatny stolik, oświetlone mosty, romantyczna aranżacja opcjonalna. Od €{p.dinnerStd}/osoba. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs po Bosforze dla Par',
@@ -260,8 +260,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Rejs o Zachodzie Słońca po Bosforze — Złota Godzina i Kolacja | Stambuł',
-      description: 'Rejs o zachodzie słońca po Bosforze w Stambule. Wejście na pokład o 17:30, oglądaj Dolmabahçe i Meczet Ortaköy rozbłyskujące w złotym świetle, kolacja przechodzi w podświetloną noc. 3-godzinny rejs od €35/osobę.'
+      title: 'Rejs o Zachodzie Bosfor od €35 — Złota Godzina + Kolacja',
+      description: 'Rejs o zachodzie Bosfor z Kabataş, wypłynięcie 17:30. Pałace w złotym świetle, kolacja przechodzi w oświetloną noc. 3 godziny. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs o Zachodzie Słońca po Bosforze',
@@ -296,8 +296,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: 'Nocny Rejs po Bosforze — Podświetlony Stambuł, Rejs z Kolacją',
-      description: 'Nocny rejs po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00, podświetlone mosty, tureckie tańce ludowe, 3 godziny na wodzie. Od €{p.dinnerStd}/osobę — płatność na pokładzie.'
+      title: 'Tour Nocny Bosfor od €{p.dinnerStd} — Rejs z Kolacją + Pokaz Live',
+      description: 'Tour nocny 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
     },
     hero: {
       h1: 'Nocny Rejs po Bosforze',
@@ -332,8 +332,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: 'Rejs z Kolacją w Stambule — Premium Nocny Rejs po Bosforze, od €{p.dinnerStd}',
-      description: 'Najczęściej wybierany rejs z kolacją po Bosforze w Stambule. 3-godzinny wieczór, turecka uczta, tańce ludowe na żywo, podświetlone mosty. Licencja TÜRSAB, płatność na pokładzie, bez przedpłaty.'
+      title: 'Rejs z Kolacją Stambuł od €{p.dinnerStd} — Tour Nocny Bosfor',
+      description: 'Rejs z kolacją 3 godziny w Stambule po Bosforze. Tureckie wielodaniowe menu, folklor na żywo, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
     },
     hero: {
       h1: 'Rejs z Kolacją w Stambule',
@@ -368,8 +368,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: 'Nocna Wycieczka po Stambule — Najlepsze Wieczorne Doświadczenie na Bosforze',
-      description: 'Najczęściej wybierana nocna wycieczka po Stambule: 3-godzinny rejs po Bosforze z kolacją, tańcami ludowymi na żywo i podświetlonymi mostami. 4,8★, licencja TÜRSAB, płatność na pokładzie. Klarowny stambulski wieczór.'
+      title: 'Tour Nocny Stambuł od €{p.dinnerStd} — Rejs z Kolacją Bosfor + Pokaz',
+      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii. Transfer z hotelu opcjonalny.'
     },
     hero: {
       h1: 'Nocna Wycieczka po Stambule',
@@ -404,8 +404,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: 'Wycieczka Łodzią po Stambule — Rejs po Bosforze z Kolacją i Pokazem',
-      description: 'Najlepsza wycieczka łodzią w Stambule: 3-godzinny rejs po Bosforze z pełną kolacją, tańcami ludowymi na żywo i podświetlonymi widokami nocnymi. Od €{p.dinnerStd}/osobę, płatność na pokładzie, ocena 4,8★.'
+      title: 'Wycieczka Łodzią Stambuł od €{p.dinnerStd} — Bosfor + Kolacja + Pokaz',
+      description: 'Wycieczka łodzią 3 godziny: rejs Bosfor, pełna turecka kolacja, folklor na żywo, oświetlone widoki nocne. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
     },
     hero: {
       h1: 'Wycieczka Łodzią po Stambule',
@@ -440,8 +440,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: 'Wycieczka po Bosforze — Premium Stambulskie Doświadczenie, od €{p.dinnerStd}',
-      description: 'Zaplanuj wycieczkę po Bosforze: 3-godzinny rejs z kolacją, turecką ucztą, pokazem tańców ludowych na żywo, nocnymi widokami. Ocena 4,8★, płatność na pokładzie, 12 stref obsługi transferu.'
+      title: 'Wycieczka Bosfor od €{p.dinnerStd} — Rejs z Kolacją Stambuł + Pokaz',
+      description: 'Wycieczka 3 godziny po Bosforze: turecka kolacja, folklor na żywo, oświetlone widoki nocne. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Wycieczka po Bosforze',
@@ -476,8 +476,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: 'Bilety na Rejs po Bosforze — Bezpośrednia Rezerwacja, od €{p.dinnerStd} Płatność na Pokładzie',
-      description: 'Kup bilety na rejs po Bosforze bezpośrednio. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Bez przedpłaty, płatność na pokładzie. Bezpłatna anulacja do 2 godzin. Ocena 4,8★, TÜRSAB A-17672.'
+      title: 'Bilety na Rejs Bosfor od €{p.dinnerStd} — Płatność na Pokładzie',
+      description: 'Bezpośrednie bilety na rejs Bosfor. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Bez przedpłaty, płatność na pokładzie. Bezpłatne anulowanie do 2h przed. 11 317 opinii.'
     },
     hero: {
       h1: 'Bilety na Rejs po Bosforze',
@@ -512,8 +512,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: 'Rejs po Bosforze na Ostatnią Chwilę — Rezerwacja na Dziś, Płatność na Pokładzie',
-      description: 'Rezerwacja rejsu po Bosforze na ostatnią chwilę na dziś wieczór. Dostępność tego samego dnia, płatność na pokładzie, bez przedpłaty. Potwierdzenie WhatsApp w ciągu minut. Od €{p.dinnerStd}/osobę.'
+      title: 'Bosfor Last Minute od €{p.dinnerStd} — Rezerwuj Dziś, Płać na Pokładzie',
+      description: 'Rezerwacja rejsu Bosfor tego samego dnia. Potwierdzenie WhatsApp w minutach. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs po Bosforze na Ostatnią Chwilę',
@@ -548,8 +548,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: 'Cena Rejsu po Stambule — Przejrzyste Stawki, od €{p.dinnerStd} Płatność na Pokładzie',
-      description: 'Ceny rejsów po Bosforze w Stambule: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Dzieci 0-3 lata bezpłatnie. Przejrzyste dodatki (alkohol +€{p.unlimited}, transfer +€{p.transfer}). Bez ukrytych opłat.'
+      title: 'Cena Rejsu Stambuł od €{p.dinnerStd} — Przejrzyste Stawki',
+      description: 'Ceny rejsów Bosfor Stambuł: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Dzieci 0-3 gratis, 4-8 połowa ceny. Dodatki przejrzyste. Bezpłatne anulowanie.'
     },
     hero: {
       h1: 'Cena Rejsu po Stambule',
@@ -584,8 +584,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: 'Zwiedzanie Bosforu — Wszystkie Stambulskie Zabytki z Wody',
-      description: 'Wycieczka zwiedzająca po Bosforze obejmuje każdy wielki zabytek: Dolmabahçe, Meczet Ortaköy, Most Bosforski, Rumeli Hisarı, Beylerbeyi, Wieża Panny. 3-godzinny wieczorny rejs z kolacją, €{p.dinnerStd}.'
+      title: 'Sightseeing Bosfor od €{p.dinnerStd} — Zabytki Stambułu z Wody',
+      description: 'Rejs sightseeing Bosfor: Dolmabahçe, Ortaköy, Most Bosfor, Rumeli, Beylerbeyi, Wieża Panny. Tour wieczorny 3h z kolacją. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Zwiedzanie Bosforu',

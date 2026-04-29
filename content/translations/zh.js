@@ -8,8 +8,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: '博斯普鲁斯海峡晚宴游船 伊斯坦布尔 — 高端夜游，€{p.dinnerStd}起',
-      description: '伊斯坦布尔最受欢迎的博斯普鲁斯晚宴游船。3小时傍晚航程，土耳其佳肴、民族歌舞秀与DJ现场、海峡夜景全景。TÜRSAB持牌。船上付款——无需预付。'
+      title: '博斯普鲁斯晚餐游船 €{p.dinnerStd}起 — 伊斯坦布尔夜游 + 表演',
+      description: '3小时博斯普鲁斯晚餐游船：多道土耳其菜单和现场民俗表演。21:00从卡巴塔什出发。免费取消，船上付款。11,317条游客评价。'
     },
     hero: {
       h1: '伊斯坦布尔博斯普鲁斯海峡晚宴游船',
@@ -44,8 +44,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: '亲子博斯普鲁斯游船 — 家庭友好晚宴游船 伊斯坦布尔',
-      description: '家庭友好的博斯普鲁斯晚宴游船。0-3岁免费，4-8岁半价。室内安全区域、儿童菜单、早归航程。€{p.dinnerStd}／成人起——船上付款。'
+      title: '亲子博斯普鲁斯游船 — 家庭晚餐游船 €{p.dinnerStd}/成人起',
+      description: '家庭友好的博斯普鲁斯晚餐游船。0-3岁免费，4-8岁半价。安全室内座位，儿童菜单。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '亲子博斯普鲁斯游船',
@@ -80,8 +80,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: '浪漫博斯普鲁斯游船 — 情侣烛光晚宴 伊斯坦布尔',
-      description: '伊斯坦布尔最浪漫的博斯普鲁斯游船。烛光餐桌、玫瑰花束、VIP布置、多道菜晚宴、灯火辉煌的大桥下。周年纪念、蜜月、惊喜——€{p.dinnerStd}／人起预订。'
+      title: '博斯普鲁斯浪漫游船 €{p.dinnerStd}起 — 烛光晚餐双人游',
+      description: '博斯普鲁斯浪漫游船：烛光餐桌、玫瑰、灯火通明大桥下的多道晚餐。每人€{p.dinnerStd}起。免费取消，船上付款。'
     },
     hero: {
       h1: '浪漫博斯普鲁斯游船',
@@ -116,8 +116,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: '100%清真博斯普鲁斯晚宴游船 — 伊斯坦布尔 | 穆斯林友好',
-      description: '清真认证博斯普鲁斯晚宴游船。100%清真肉类、酒水可选（绝不强加）、家庭友好娱乐、尊重礼拜时间。€{p.dinnerStd}／人起。'
+      title: '清真博斯普鲁斯晚餐游船 €{p.dinnerStd}起 — 现场表演 + 夜游',
+      description: '3小时博斯普鲁斯晚餐游船：现场民俗表演、灯火通明大桥、博斯普鲁斯夜景全景。提供清真菜单。免费取消，船上付款。'
     },
     hero: {
       h1: '伊斯坦布尔清真博斯普鲁斯游船',
@@ -152,8 +152,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: '博斯普鲁斯VIP游船 — 尊享晚宴、舞台前座席 | 伊斯坦布尔',
-      description: '伊斯坦布尔博斯普鲁斯VIP晚宴游船。尊享冷盘、牛排主菜选项、舞台前座席、优先服务。原价€{p.dinnerVipOriginal}，现€{p.dinnerVip}／人。船上付款。'
+      title: '博斯普鲁斯VIP游船 €{p.dinnerVip}起 — 高级晚餐、舞台前座位',
+      description: '博斯普鲁斯VIP晚餐游船：高级开胃菜、牛排选项、舞台前餐桌、优先服务。原€{p.dinnerVipOriginal}，现€{p.dinnerVip}。'
     },
     hero: {
       h1: '博斯普鲁斯VIP游船',
@@ -188,8 +188,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: '私人博斯普鲁斯游船 — 包船租赁 | 伊斯坦布尔',
-      description: '为团体、家庭、企业活动、婚礼提供私人博斯普鲁斯游船包租服务。独享游船、定制菜单、灵活时长。最低25位宾客。报价请WhatsApp联系。'
+      title: '博斯普鲁斯包船 — 伊斯坦布尔船只租赁（25+客人）',
+      description: '博斯普鲁斯包船游船：团体、婚礼、企业活动。专属船只、定制菜单、灵活时长。免费取消。WhatsApp获取报价。'
     },
     hero: {
       h1: '私人博斯普鲁斯游船',
@@ -224,8 +224,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: '情侣博斯普鲁斯游船 — 水上约会之夜 | 伊斯坦布尔',
-      description: '情侣博斯普鲁斯晚宴游船。专属餐桌、灯火大桥、现场音乐、可选浪漫餐桌布置。€{p.dinnerStd}／人起。船上付款——伊斯坦布尔完美约会之夜。'
+      title: '情侣博斯普鲁斯游船 €{p.dinnerStd}起 — 伊斯坦布尔约会之夜',
+      description: '情侣博斯普鲁斯晚餐游船。私人桌、灯火通明大桥、可选浪漫布置。每人€{p.dinnerStd}起。免费取消，船上付款。'
     },
     hero: {
       h1: '情侣博斯普鲁斯游船',
@@ -260,8 +260,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: '博斯普鲁斯日落游船 — 黄金时段与晚宴 | 伊斯坦布尔',
-      description: '伊斯坦布尔博斯普鲁斯日落游船。17:30登船，欣赏多尔玛巴切与奥尔塔科伊清真寺在金色光芒中闪耀，晚宴持续到灯火辉煌的夜晚。3小时游船，€35／人起。'
+      title: '博斯普鲁斯日落游船 €35起 — 黄金时刻 + 晚餐',
+      description: '博斯普鲁斯日落游船从卡巴塔什出发，17:30启航。金色光芒中的宫殿，晚餐持续到灯火通明的夜晚。3小时。免费取消，船上付款。'
     },
     hero: {
       h1: '博斯普鲁斯日落游船',
@@ -296,8 +296,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: '博斯普鲁斯夜游 — 灯火伊斯坦布尔晚宴游船',
-      description: '博斯普鲁斯夜游含晚宴与现场表演。21:00出发，灯火大桥、土耳其民族舞、水上3小时。€{p.dinnerStd}／人起——船上付款。'
+      title: '博斯普鲁斯夜游 €{p.dinnerStd}起 — 晚餐游船 + 现场表演',
+      description: '3小时博斯普鲁斯夜游配晚餐和现场表演。21:00从卡巴塔什出发，灯火通明大桥。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '博斯普鲁斯夜游',
@@ -332,8 +332,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: '伊斯坦布尔晚宴游船 — 高端博斯普鲁斯夜游，€{p.dinnerStd}起',
-      description: '伊斯坦布尔最受欢迎的博斯普鲁斯晚宴游船。3小时傍晚、土耳其盛宴、现场民族歌舞、灯火大桥。TÜRSAB持牌、船上付款、无需预付。'
+      title: '伊斯坦布尔晚餐游船 €{p.dinnerStd}起 — 博斯普鲁斯夜游',
+      description: '3小时伊斯坦布尔博斯普鲁斯晚餐游船。多道土耳其菜单、现场民俗表演、灯火通明大桥。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '伊斯坦布尔晚宴游船',
@@ -368,8 +368,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: '伊斯坦布尔夜游 — 博斯普鲁斯上最佳傍晚体验',
-      description: '伊斯坦布尔最受欢迎的夜游：3小时博斯普鲁斯游船含晚宴、现场民族歌舞与灯火大桥。4.8★、TÜRSAB持牌、船上付款。纯正的伊斯坦布尔之夜。'
+      title: '伊斯坦布尔夜游 €{p.dinnerStd}起 — 博斯普鲁斯晚餐游船 + 表演',
+      description: '3小时博斯普鲁斯游船配晚餐和现场表演。21:00从卡巴塔什出发。免费取消，船上付款。11,317条游客评价。可选酒店接送。'
     },
     hero: {
       h1: '伊斯坦布尔夜游',
@@ -404,8 +404,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: '伊斯坦布尔游船 — 含晚宴与表演的博斯普鲁斯游船',
-      description: '伊斯坦布尔最佳游船：3小时博斯普鲁斯游船含完整晚宴、现场民族歌舞与灯火夜景。€{p.dinnerStd}／人起、船上付款、4.8★好评。'
+      title: '伊斯坦布尔游船游 €{p.dinnerStd}起 — 博斯普鲁斯 + 晚餐 + 表演',
+      description: '3小时伊斯坦布尔游船游：博斯普鲁斯巡游、完整土耳其晚餐、现场民俗表演、灯火通明夜景。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '伊斯坦布尔游船',
@@ -440,8 +440,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: '博斯普鲁斯之旅 — 高端伊斯坦布尔游船体验，€{p.dinnerStd}起',
-      description: '规划您的博斯普鲁斯之旅：3小时晚宴游船含土耳其盛宴、现场民族歌舞、灯火夜景。4.8★好评、船上付款、12个接送服务区域。'
+      title: '博斯普鲁斯之旅 €{p.dinnerStd}起 — 伊斯坦布尔晚餐游船 + 表演',
+      description: '3小时博斯普鲁斯之旅：土耳其晚餐、现场民俗表演、灯火通明夜景。21:00从卡巴塔什出发。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '博斯普鲁斯之旅',
@@ -476,8 +476,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: '博斯普鲁斯游船票 — 直接预订，€{p.dinnerStd}起船上付款',
-      description: '直接购买博斯普鲁斯游船票。标准€{p.dinnerStd}、VIP €{p.dinnerVip}。无需预付、船上付款。2小时前免费取消。4.8★好评、TÜRSAB A-17672。'
+      title: '博斯普鲁斯游船票 €{p.dinnerStd}起 — 船上付款，无需预付',
+      description: '直接预订博斯普鲁斯游船票。标准€{p.dinnerStd}，VIP €{p.dinnerVip}。无需预付，船上付款。出发前2小时免费取消。11,317条评价。'
     },
     hero: {
       h1: '博斯普鲁斯游船票',
@@ -512,8 +512,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: '临时博斯普鲁斯游船 — 今晚预订、船上付款',
-      description: '今晚临时博斯普鲁斯游船预订。当天余位、船上付款、无需预付。WhatsApp几分钟内确认。€{p.dinnerStd}／人起。'
+      title: '博斯普鲁斯当日预订 €{p.dinnerStd}起 — 今晚预订，船上付款',
+      description: '当日博斯普鲁斯游船预订。WhatsApp几分钟内确认。21:00从卡巴塔什出发。免费取消，船上付款。11,317条评价。'
     },
     hero: {
       h1: '临时博斯普鲁斯游船',
@@ -548,8 +548,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: '伊斯坦布尔游船价格 — 透明价格，€{p.dinnerStd}起船上付款',
-      description: '伊斯坦布尔博斯普鲁斯游船价格：标准€{p.dinnerStd}、VIP €{p.dinnerVip}。0-3岁免费。透明附加项（酒水+€{p.unlimited}、接送+€{p.transfer}）。无隐藏费用。'
+      title: '伊斯坦布尔游船价格 €{p.dinnerStd}起 — 透明价格，无隐藏费用',
+      description: '伊斯坦布尔博斯普鲁斯游船价格：标准€{p.dinnerStd}，VIP €{p.dinnerVip}。0-3岁免费，4-8岁半价。附加项透明。免费取消，船上付款。'
     },
     hero: {
       h1: '伊斯坦布尔游船价格',
@@ -584,8 +584,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: '博斯普鲁斯观光 — 从水上览尽伊斯坦布尔地标',
-      description: '博斯普鲁斯观光游船涵盖每个主要地标：多尔玛巴切、奥尔塔科伊清真寺、博斯普鲁斯大桥、鲁梅利堡垒、贝伊勒尔贝伊、少女塔。3小时傍晚游船含晚宴，€{p.dinnerStd}。'
+      title: '博斯普鲁斯观光 €{p.dinnerStd}起 — 水上看伊斯坦布尔地标',
+      description: '博斯普鲁斯观光游船：多尔玛巴赫切宫、奥尔塔科伊、博斯普鲁斯大桥、鲁梅利、贝勒贝伊、少女塔。3小时夜游配晚餐。免费取消。'
     },
     hero: {
       h1: '博斯普鲁斯观光',

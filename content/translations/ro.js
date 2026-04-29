@@ -9,8 +9,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: 'Croazieră cu Cină pe Bosfor Istanbul — Tur Nocturn Premium, de la €{p.dinnerStd}',
-      description: 'Cea mai apreciată croazieră cu cină pe Bosfor din Istanbul. Croazieră nocturnă de 3 ore, bucătărie turcească, dansuri populare live și DJ, priveliști panoramice ale Istanbulului nocturn. Licențiat TÜRSAB. Plata pe vapor — fără plată în avans.'
+      title: 'Croazieră Cină Bosfor de la €{p.dinnerStd} — Tur Nocturn Istanbul + Spectacol',
+      description: 'Croazieră cu cină 3 ore pe Bosfor: meniu turcesc multifel și spectacol folcloric live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Croazieră cu Cină pe Bosfor în Istanbul',
@@ -45,8 +45,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: 'Croazieră pe Bosfor cu Copii — Croazieră cu Cină pentru Familie Istanbul',
-      description: 'Croazieră cu cină pe Bosfor prietenoasă cu familiile. 0-3 ani gratuit, 4-8 ani la jumătate de preț. Spațiu interior sigur, meniu pentru copii, plecare devreme. De la €{p.dinnerStd}/adult — plata pe vapor.'
+      title: 'Bosfor cu Copii — Croazieră de Familie de la €{p.dinnerStd}/adult',
+      description: 'Croazieră cu cină Bosfor prietenoasă cu familia. Copii 0-3 gratis, 4-8 jumătate de preț. Sală interioară sigură, meniu pentru copii. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Croazieră pe Bosfor cu Copii',
@@ -81,8 +81,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: 'Croazieră Romantică pe Bosfor — Cină la Lumina Lumânărilor pentru Cupluri | Istanbul',
-      description: 'Cea mai romantică croazieră pe Bosfor din Istanbul. Masă la lumina lumânărilor, trandafiri, aranjament VIP, cină cu multiple feluri, sub podurile iluminate. Aniversare, lună de miere, surpriză — rezervați de la €{p.dinnerStd}/persoană.'
+      title: 'Croazieră Romantică Bosfor de la €{p.dinnerStd} — Cină la Lumânări',
+      description: 'Croazieră romantică Bosfor: masă la lumânări, trandafiri, cină multifel sub poduri iluminate. De la €{p.dinnerStd}/persoană. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Croazieră Romantică pe Bosfor',
@@ -117,8 +117,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: 'Croazieră cu Cină 100% Halal pe Bosfor — Istanbul | Prietenos Musulmanilor',
-      description: 'Croazieră cu cină pe Bosfor certificată halal. Carne 100% halal, alcool opțional (niciodată impus), divertisment potrivit familiei, respect pentru orele de rugăciune. De la €{p.dinnerStd}/persoană.'
+      title: 'Croazieră Cină Halal Bosfor de la €{p.dinnerStd} — Spectacol + Tur Nocturn',
+      description: 'Croazieră cu cină 3 ore pe Bosfor: spectacol folcloric live, poduri iluminate, panoramă Bosfor noaptea. Meniu halal disponibil la cerere. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Croazieră Halal pe Bosfor în Istanbul',
@@ -153,8 +153,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Croazieră VIP pe Bosfor — Cină Premium, Locuri în Față la Scenă | Istanbul',
-      description: 'Croazieră VIP cu cină pe Bosfor în Istanbul. Mezeluri premium, opțiuni de steak, locuri în față la scenă, serviciu prioritar. De la €{p.dinnerVipOriginal}, acum €{p.dinnerVip}/persoană. Plata pe vapor.'
+      title: 'Croazieră VIP Bosfor de la €{p.dinnerVip} — Cină Premium, Loc VIP',
+      description: 'Croazieră cu cină VIP Bosfor: meze premium, opțiuni de friptură, masă în fața scenei, serviciu prioritar. Anterior €{p.dinnerVipOriginal}, acum €{p.dinnerVip}.'
     },
     hero: {
       h1: 'Croazieră VIP pe Bosfor',
@@ -189,8 +189,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: 'Croazieră Privată pe Bosfor — Închiriați Propriul Vapor | Istanbul',
-      description: 'Închiriere croazieră privată pe Bosfor pentru grupuri, familii, evenimente corporate, nunți. Vapor privat, meniu personalizat, durată flexibilă. Minim 25 de oaspeți. Scrieți pe WhatsApp pentru preț.'
+      title: 'Croazieră Privată Bosfor — Închiriere Barcă Istanbul (25+ invitați)',
+      description: 'Croazieră privată Bosfor pentru grupuri, nunți, evenimente corporate. Barcă exclusivă, meniu personalizat, durată flexibilă. Anulare gratuită. WhatsApp pentru ofertă.'
     },
     hero: {
       h1: 'Croazieră Privată pe Bosfor',
@@ -225,8 +225,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: 'Croazieră pe Bosfor pentru Cupluri — Seară Romantică pe Apă | Istanbul',
-      description: 'Croazieră cu cină pe Bosfor pentru cupluri. Masă privată, poduri iluminate, muzică live, opțiune aranjament romantic. De la €{p.dinnerStd}/persoană. Plata pe vapor — seara perfectă în Istanbul.'
+      title: 'Bosfor pentru Cupluri de la €{p.dinnerStd} — Seară Romantică Istanbul',
+      description: 'Croazieră cu cină Bosfor pentru cupluri. Masă privată, poduri iluminate, decor romantic opțional. De la €{p.dinnerStd}/persoană. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Croazieră pe Bosfor pentru Cupluri',
@@ -261,8 +261,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Croazieră la Apus pe Bosfor — Ora de Aur și Cina | Istanbul',
-      description: 'Croazieră la apus pe Bosfor în Istanbul. Îmbarcare la 17:30, priviți Dolmabahçe și Moscheea Ortaköy strălucind în lumina aurie, cina continuă în noaptea iluminată. Croazieră de 3 ore, de la €35/persoană.'
+      title: 'Croazieră Apus Bosfor de la €35 — Ora de Aur + Cină',
+      description: 'Croazieră apus Bosfor din Kabataş, plecare 17:30. Palate în lumină aurie, cină continuă în noaptea iluminată. 3 ore. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Croazieră la Apus pe Bosfor',
@@ -297,8 +297,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: 'Tur Nocturn pe Bosfor — Croazieră cu Cină în Istanbulul Iluminat',
-      description: 'Tur nocturn pe Bosfor cu cină și spectacol live. Plecare 21:00, poduri iluminate, dansuri populare turcești, 3 ore pe apă. De la €{p.dinnerStd}/persoană — plata pe vapor.'
+      title: 'Tur Nocturn Bosfor de la €{p.dinnerStd} — Croazieră Cină + Spectacol Live',
+      description: 'Tur nocturn 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş, poduri iluminate. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Tur Nocturn pe Bosfor',
@@ -333,8 +333,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: 'Croazieră cu Cină Istanbul — Tur Premium Nocturn pe Bosfor, de la €{p.dinnerStd}',
-      description: 'Cea mai apreciată croazieră cu cină pe Bosfor din Istanbul. Seară de 3 ore, cină turcească, dansuri populare live, poduri iluminate. Licențiat TÜRSAB, plata pe vapor, fără plată în avans.'
+      title: 'Croazieră Cină Istanbul de la €{p.dinnerStd} — Tur Nocturn Bosfor',
+      description: 'Croazieră cu cină 3 ore în Istanbul pe Bosfor. Meniu turcesc multifel, folclor live, poduri iluminate. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Croazieră cu Cină Istanbul',
@@ -369,8 +369,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: 'Tur de Istanbul Noaptea — Cea Mai Bună Experiență de Seară pe Bosfor',
-      description: 'Cel mai apreciat tur de Istanbul noaptea: croazieră pe Bosfor de 3 ore cu cină, dansuri populare live și poduri iluminate. 4,8★, licențiat TÜRSAB, plata pe vapor. Seara perfectă în Istanbul.'
+      title: 'Tur Nocturn Istanbul de la €{p.dinnerStd} — Croazieră Cină Bosfor + Spectacol',
+      description: 'Croazieră 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii. Transfer hotel opțional.'
     },
     hero: {
       h1: 'Tur de Istanbul Noaptea',
@@ -405,8 +405,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: 'Tur cu Vaporul în Istanbul — Croazieră pe Bosfor cu Cină și Spectacol',
-      description: 'Cel mai bun tur cu vaporul din Istanbul: croazieră pe Bosfor de 3 ore cu cină completă, dansuri populare live și priveliști nocturne iluminate. De la €{p.dinnerStd}/persoană, plata pe vapor, evaluare 4,8★.'
+      title: 'Tur cu Barca Istanbul de la €{p.dinnerStd} — Bosfor + Cină + Spectacol',
+      description: 'Tur cu barca 3 ore: croazieră Bosfor, cină turcească completă, folclor live, peisaje nocturne iluminate. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Tur cu Vaporul în Istanbul',
@@ -441,8 +441,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: 'Excursie pe Bosfor — Experiență Premium de Tur în Istanbul, de la €{p.dinnerStd}',
-      description: 'Planificați excursia pe Bosfor: croazieră cu cină de 3 ore cu ospăț turcesc, spectacol de dansuri populare live, priveliști nocturne iluminate. Evaluare 4,8★, plata pe vapor, 12 zone de transfer.'
+      title: 'Excursie Bosfor de la €{p.dinnerStd} — Croazieră Cină Istanbul + Spectacol',
+      description: 'Excursie 3 ore pe Bosfor: cină turcească, folclor live, peisaje nocturne iluminate. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Excursie pe Bosfor',
@@ -477,8 +477,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: 'Bilete Croazieră pe Bosfor — Rezervare Directă, de la €{p.dinnerStd} Plata pe Vapor',
-      description: 'Cumpărați bilete pentru croaziera pe Bosfor direct. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Fără plată în avans, plata pe vapor. Anulare gratuită cu 2 ore înainte. Evaluare 4,8★, TÜRSAB A-17672.'
+      title: 'Bilete Croazieră Bosfor de la €{p.dinnerStd} — Plată la Bord',
+      description: 'Bilete directe croazieră Bosfor. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Fără avans, plată la bord. Anulare gratuită până cu 2h înainte. 11.317 recenzii.'
     },
     hero: {
       h1: 'Bilete Croazieră pe Bosfor',
@@ -513,8 +513,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: 'Croazieră pe Bosfor în Ultimul Moment — Rezervare pentru Diseară, Plata pe Vapor',
-      description: 'Rezervare croazieră pe Bosfor în ultimul moment pentru diseară. Disponibilitate în aceeași zi, plata pe vapor, fără plată în avans. Confirmare WhatsApp în câteva minute. De la €{p.dinnerStd}/persoană.'
+      title: 'Bosfor Last Minute de la €{p.dinnerStd} — Rezervă Astăzi, Plătește la Bord',
+      description: 'Rezervare croazieră Bosfor în aceeași zi. Confirmare WhatsApp în minute. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Croazieră pe Bosfor în Ultimul Moment',
@@ -549,8 +549,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: 'Preț Croazieră Istanbul — Tarife Transparente, de la €{p.dinnerStd} Plata pe Vapor',
-      description: 'Prețuri croaziere pe Bosfor în Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 ani gratuit. Suplimente transparente (alcool +€{p.unlimited}, transfer +€{p.transfer}). Fără taxe ascunse.'
+      title: 'Preț Croazieră Istanbul de la €{p.dinnerStd} — Tarife Transparente',
+      description: 'Prețuri croazieră Bosfor Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Copii 0-3 gratis, 4-8 jumătate de preț. Suplimente transparente. Anulare gratuită.'
     },
     hero: {
       h1: 'Preț Croazieră Istanbul',
@@ -585,8 +585,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: 'Turism pe Bosfor — Toate Reperele Istanbulului de pe Apă',
-      description: 'Turul turistic pe Bosfor acoperă fiecare reper major: Dolmabahçe, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı, Beylerbeyi, Turnul Fecioarei. Tur de seară de 3 ore cu cină, €{p.dinnerStd}.'
+      title: 'Sightseeing Bosfor de la €{p.dinnerStd} — Obiective Istanbul de pe Apă',
+      description: 'Croazieră sightseeing Bosfor: Dolmabahçe, Ortaköy, Pod Bosfor, Rumeli, Beylerbeyi, Turnul Fecioarei. Tur seară 3h cu cină. Anulare gratuită, plată la bord.'
     },
     hero: {
       h1: 'Turism pe Bosfor',

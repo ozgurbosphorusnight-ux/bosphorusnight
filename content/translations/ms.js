@@ -9,8 +9,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: 'Pelayaran Makan Malam Bosphorus Istanbul — Pelayaran Premium, dari €{p.dinnerStd}',
-      description: 'Pelayaran makan malam Bosphorus pilihan utama di Istanbul. Pelayaran petang 3 jam, hidangan Turki, persembahan tarian rakyat dan DJ, pemandangan malam panoramik. Berlesen TÜRSAB. Bayar di atas bot — tiada bayaran pendahuluan.'
+      title: 'Pelayaran Makan Malam Bosphorus dari €{p.dinnerStd} — Tur Malam Istanbul + Persembahan',
+      description: 'Pelayaran makan malam 3 jam di Bosphorus: menu Turki pelbagai hidangan dan persembahan folklor langsung. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Makan Malam Bosphorus di Istanbul',
@@ -45,8 +45,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: 'Pelayaran Bosphorus Bersama Anak-Anak — Pelayaran Mesra Keluarga Istanbul',
-      description: 'Pelayaran makan malam Bosphorus mesra keluarga. Umur 0-3 percuma, 4-8 separuh harga. Ruang dalaman selamat, menu kanak-kanak, bertolak awal. Dari €{p.dinnerStd}/dewasa — bayar di atas bot.'
+      title: 'Bosphorus dengan Anak — Pelayaran Keluarga dari €{p.dinnerStd}/dewasa',
+      description: 'Pelayaran makan malam Bosphorus mesra keluarga. Anak 0-3 percuma, 4-8 separuh harga. Ruang dalam selamat, menu kanak-kanak. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus Bersama Anak-Anak',
@@ -81,8 +81,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: 'Pelayaran Romantik Bosphorus — Makan Malam Lilin untuk Pasangan | Istanbul',
-      description: 'Pelayaran Bosphorus paling romantik di Istanbul. Meja lilin, bunga mawar, susunan VIP, makan malam berbilang hidangan, di bawah jambatan yang diterangi. Ulang tahun, bulan madu, kejutan — tempah dari €{p.dinnerStd}/orang.'
+      title: 'Pelayaran Romantik Bosphorus dari €{p.dinnerStd} — Makan Malam Lilin',
+      description: 'Pelayaran romantik Bosphorus: meja lilin, ros, makan malam pelbagai hidangan di bawah jambatan bercahaya. Dari €{p.dinnerStd}/orang. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Romantik Bosphorus',
@@ -117,8 +117,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: 'Pelayaran Makan Malam Bosphorus 100% Halal — Istanbul | Mesra Muslim',
-      description: 'Pelayaran makan malam Bosphorus diperakui halal. Daging 100% halal, alkohol pilihan (tidak pernah dipaksa), hiburan sesuai keluarga, hormati waktu solat. Dari €{p.dinnerStd}/orang.'
+      title: 'Pelayaran Makan Malam Halal Bosphorus dari €{p.dinnerStd} — Persembahan + Tur Malam',
+      description: 'Pelayaran makan malam 3 jam Bosphorus: persembahan folklor langsung, jambatan bercahaya, panorama Bosphorus malam. Menu halal tersedia atas permintaan. Pembatalan percuma.'
     },
     hero: {
       h1: 'Pelayaran Halal Bosphorus di Istanbul',
@@ -153,8 +153,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Pelayaran VIP Bosphorus — Hidangan Premium, Tempat Duduk Hadapan Pentas | Istanbul',
-      description: 'Pelayaran makan malam VIP Bosphorus di Istanbul. Meze premium, pilihan stik, tempat duduk hadapan pentas, layanan keutamaan. Dari €{p.dinnerVipOriginal}, kini €{p.dinnerVip}/orang. Bayar di atas bot.'
+      title: 'Pelayaran VIP Bosphorus dari €{p.dinnerVip} — Makan Malam Premium',
+      description: 'Pelayaran makan malam VIP Bosphorus: meze premium, pilihan steak, meja hadapan pentas, perkhidmatan keutamaan. Sebelumnya €{p.dinnerVipOriginal}, kini €{p.dinnerVip}.'
     },
     hero: {
       h1: 'Pelayaran VIP Bosphorus',
@@ -189,8 +189,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: 'Pelayaran Peribadi Bosphorus — Sewa Bot Anda Sendiri | Istanbul',
-      description: 'Sewa pelayaran peribadi Bosphorus untuk kumpulan, keluarga, acara korporat, majlis perkahwinan. Bot peribadi, menu tersuai, tempoh fleksibel. Minimum 25 tetamu. Hantar mesej WhatsApp untuk harga.'
+      title: 'Pelayaran Persendirian Bosphorus — Sewa Bot di Istanbul (25+ tetamu)',
+      description: 'Pelayaran persendirian Bosphorus untuk kumpulan, perkahwinan, acara korporat. Bot eksklusif, menu khas, tempoh fleksibel. Pembatalan percuma. WhatsApp untuk sebut harga.'
     },
     hero: {
       h1: 'Pelayaran Peribadi Bosphorus',
@@ -225,8 +225,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: 'Pelayaran Bosphorus untuk Pasangan — Malam Janji Temu di Atas Air | Istanbul',
-      description: 'Pelayaran makan malam Bosphorus untuk pasangan. Meja peribadi, jambatan diterangi, muzik langsung, pilihan susunan meja romantik. Dari €{p.dinnerStd}/orang. Bayar di atas bot — malam janji temu sempurna di Istanbul.'
+      title: 'Bosphorus untuk Pasangan dari €{p.dinnerStd} — Malam Romantik Istanbul',
+      description: 'Pelayaran makan malam Bosphorus untuk pasangan. Meja peribadi, jambatan bercahaya, hiasan romantik pilihan. Dari €{p.dinnerStd}/orang. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus untuk Pasangan',
@@ -261,8 +261,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Pelayaran Matahari Terbenam Bosphorus — Waktu Keemasan dan Makan Malam | Istanbul',
-      description: 'Pelayaran matahari terbenam Bosphorus di Istanbul. Pendaftaran masuk 17:30, saksikan Dolmabahçe dan Masjid Ortaköy bersinar dalam cahaya keemasan, makan malam berterusan ke malam yang diterangi. Pelayaran 3 jam, dari €35/orang.'
+      title: 'Pelayaran Matahari Terbenam Bosphorus dari €35 — Jam Emas + Makan Malam',
+      description: 'Pelayaran matahari terbenam Bosphorus dari Kabataş, bertolak 17:30. Istana dalam cahaya emas, makan malam berterusan ke malam bercahaya. 3 jam. Pembatalan percuma.'
     },
     hero: {
       h1: 'Pelayaran Matahari Terbenam Bosphorus',
@@ -297,8 +297,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: 'Pelayaran Malam Bosphorus — Pelayaran Makan Malam Istanbul Diterangi',
-      description: 'Pelayaran malam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00, jambatan diterangi, tarian rakyat Turki, 3 jam di atas air. Dari €{p.dinnerStd}/orang — bayar di atas bot.'
+      title: 'Tur Malam Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Persembahan',
+      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş, jambatan bercahaya. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Malam Bosphorus',
@@ -333,8 +333,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: 'Pelayaran Makan Malam Istanbul — Pelayaran Malam Bosphorus Premium, dari €{p.dinnerStd}',
-      description: 'Pelayaran makan malam Bosphorus pilihan utama di Istanbul. Petang 3 jam, jamuan Turki, tarian rakyat langsung, jambatan diterangi. Berlesen TÜRSAB, bayar di atas bot, tiada bayaran pendahuluan.'
+      title: 'Pelayaran Makan Malam Istanbul dari €{p.dinnerStd} — Tur Malam Bosphorus',
+      description: 'Pelayaran makan malam 3 jam di Istanbul Bosphorus. Menu Turki pelbagai hidangan, folklor langsung, jambatan bercahaya. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
     },
     hero: {
       h1: 'Pelayaran Makan Malam Istanbul',
@@ -369,8 +369,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: 'Pelayaran Malam Istanbul — Pengalaman Petang Terbaik di Bosphorus',
-      description: 'Pelayaran malam pilihan utama Istanbul: pelayaran Bosphorus 3 jam dengan makan malam, tarian rakyat langsung dan jambatan diterangi. 4.8★, berlesen TÜRSAB, bayar di atas bot. Petang Istanbul pasti.'
+      title: 'Tur Malam Istanbul dari €{p.dinnerStd} — Pelayaran Bosphorus + Persembahan',
+      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan. Pengangkutan hotel pilihan.'
     },
     hero: {
       h1: 'Pelayaran Malam Istanbul',
@@ -405,8 +405,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: 'Pelayaran Bot Istanbul — Pelayaran Bosphorus dengan Makan Malam dan Persembahan',
-      description: 'Pelayaran bot terbaik di Istanbul: pelayaran Bosphorus 3 jam dengan makan malam penuh, tarian rakyat langsung dan pemandangan malam diterangi. Dari €{p.dinnerStd}/orang, bayar di atas bot, dinilai 4.8★.'
+      title: 'Tur Bot Istanbul dari €{p.dinnerStd} — Bosphorus + Makan Malam + Persembahan',
+      description: 'Tur bot 3 jam: pelayaran Bosphorus, makan malam Turki lengkap, folklor langsung, pemandangan malam bercahaya. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
     },
     hero: {
       h1: 'Pelayaran Bot Istanbul',
@@ -441,8 +441,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: 'Persiaran Bosphorus — Pengalaman Pelayaran Istanbul Premium, dari €{p.dinnerStd}',
-      description: 'Rancang persiaran Bosphorus anda: pelayaran makan malam 3 jam dengan jamuan Turki, persembahan tarian rakyat langsung, pemandangan malam diterangi. Dinilai 4.8★, bayar di atas bot, 12 zon perkhidmatan untuk pemindahan.'
+      title: 'Perjalanan Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Persembahan',
+      description: 'Perjalanan 3 jam Bosphorus: makan malam Turki, folklor langsung, pemandangan malam bercahaya. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Persiaran Bosphorus',
@@ -477,8 +477,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: 'Tiket Pelayaran Bosphorus — Tempahan Terus, Bayar di Atas Bot dari €{p.dinnerStd}',
-      description: 'Beli tiket pelayaran Bosphorus terus. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Tiada bayaran pendahuluan, bayar di atas bot. Pembatalan percuma 2 jam sebelum. Dinilai 4.8★, TÜRSAB A-17672.'
+      title: 'Tiket Pelayaran Bosphorus dari €{p.dinnerStd} — Bayar di Kapal',
+      description: 'Tiket langsung pelayaran Bosphorus. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Tiada deposit, bayar di kapal. Pembatalan percuma hingga 2 jam sebelumnya. 11,317 ulasan.'
     },
     hero: {
       h1: 'Tiket Pelayaran Bosphorus',
@@ -513,8 +513,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: 'Pelayaran Bosphorus Saat Akhir — Tempah untuk Malam Ini, Bayar di Atas Bot',
-      description: 'Tempahan pelayaran Bosphorus saat akhir untuk malam ini. Kekosongan hari yang sama, bayar di atas bot, tiada bayaran pendahuluan. Pengesahan WhatsApp dalam minit. Dari €{p.dinnerStd}/orang.'
+      title: 'Bosphorus Saat Akhir dari €{p.dinnerStd} — Tempah Malam Ini, Bayar di Kapal',
+      description: 'Tempahan pelayaran Bosphorus hari yang sama. Pengesahan WhatsApp dalam minit. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus Saat Akhir',
@@ -549,8 +549,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: 'Harga Pelayaran Istanbul — Kadar Telus, Bayar di Atas Bot dari €{p.dinnerStd}',
-      description: 'Harga pelayaran Bosphorus Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Umur 0-3 percuma. Tambahan telus (alkohol +€{p.unlimited}, pemindahan +€{p.transfer}). Tiada caj tersembunyi.'
+      title: 'Harga Pelayaran Istanbul dari €{p.dinnerStd} — Kadar Telus',
+      description: 'Harga pelayaran Bosphorus Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Anak 0-3 percuma, 4-8 separuh harga. Tambahan telus. Pembatalan percuma.'
     },
     hero: {
       h1: 'Harga Pelayaran Istanbul',
@@ -585,8 +585,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: 'Bersiar-Siar Bosphorus — Semua Mercu Tanda Istanbul dari Air',
-      description: 'Pelayaran bersiar-siar Bosphorus merangkumi setiap mercu tanda utama: Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus, Rumeli Hisarı, Beylerbeyi, Menara Maiden. Pelayaran petang 3 jam dengan makan malam, €{p.dinnerStd}.'
+      title: 'Sightseeing Bosphorus dari €{p.dinnerStd} — Mercu Tanda Istanbul dari Air',
+      description: 'Pelayaran sightseeing Bosphorus: Dolmabahçe, Ortaköy, Jambatan Bosphorus, Rumeli, Beylerbeyi, Menara Dara. Tur petang 3 jam dengan makan malam. Pembatalan percuma.'
     },
     hero: {
       h1: 'Bersiar-Siar Bosphorus',

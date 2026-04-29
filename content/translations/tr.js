@@ -8,8 +8,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: 'Boğaz Yemekli Tur İstanbul — Premium Gece Turu, €{p.dinnerStd}\'den',
-      description: 'İstanbul\'un en çok tercih edilen Boğaz yemekli turu. 3 saatlik akşam seferi, Türk yemekleri, canlı halk oyunları ve DJ, panoramik gece manzaraları. TÜRSAB lisanslı. Teknede ödeme — ön ödeme yok.'
+      title: 'Boğaz Yemekli Tur €{p.dinnerStd}\'den — İstanbul Gece Turu + Şov',
+      description: '3 saatlik Boğaz yemekli turu: çok çeşitli Türk menüsü ve canlı halk oyunları şovu. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'İstanbul Boğazı\'nda Yemekli Boğaz Turu',
@@ -44,8 +44,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: 'Çocuklu Boğaz Turu — Aile Dostu Yemekli Tur İstanbul',
-      description: 'Aile dostu Boğaz yemekli tur. 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Kapalı güvenli alan, çocuk menüsü, erken kalkış. €{p.dinnerStd}/yetişkin\'den — teknede ödeme.'
+      title: 'Çocuklu Boğaz Turu — Aile Dostu Yemekli Tur, €{p.dinnerStd}/yetişkin\'den',
+      description: 'Aile dostu Boğaz yemekli turu. 0-3 yaş ücretsiz, 4-8 yarı fiyat. Güvenli iç salon, çocuk dostu menü. €{p.dinnerStd}/yetişkin\'den. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'Çocuklu Boğaz Turu',
@@ -80,8 +80,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: 'Romantik Boğaz Turu — Çiftler İçin Mumlu Akşam Yemeği | İstanbul',
-      description: 'İstanbul\'un en romantik Boğaz turu. Mumlu masa, güller, VIP düzenleme, çok çeşitli akşam yemeği, aydınlatılmış köprüler altında. Yıldönümü, balayı, sürpriz — €{p.dinnerStd}/kişi\'den rezerve edin.'
+      title: 'Romantik Boğaz Turu €{p.dinnerStd}\'den — 2 Kişilik Mum Işığında Akşam',
+      description: 'Romantik Boğaz turu: mum ışığında masa, güller, aydınlatılmış köprüler altında çok çeşitli akşam yemeği. €{p.dinnerStd}/kişi\'den. Ücretsiz iptal, teknede ödeme. Yıldönümü ve balayı için ideal.'
     },
     hero: {
       h1: 'Romantik Boğaz Turu',
@@ -116,8 +116,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: '%100 Helal Boğaz Yemekli Tur — İstanbul | Müslüman Dostu',
-      description: 'Helal sertifikalı Boğaz yemekli tur. %100 helal et, alkol opsiyonel (asla dayatılmaz), aile uygun eğlence, namaz vakitleri saygılı. €{p.dinnerStd}/kişi\'den.'
+      title: 'Helal Boğaz Yemekli Tur €{p.dinnerStd}\'den — Canlı Şov + Gece Turu',
+      description: '3 saatlik Boğaz yemekli turu: canlı halk oyunları şovu, aydınlatılmış köprüler, panoramik Boğaz gece manzaraları. Helal menü talep üzerine. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'İstanbul\'da Helal Boğaz Turu',
@@ -152,8 +152,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Boğaz VIP Turu — Premium Yemek, Sahne Önü Koltuklar | İstanbul',
-      description: 'İstanbul\'da Boğaz VIP yemekli tur. Premium mezeler, biftek seçenekleri, sahne önü oturma, öncelikli hizmet. €{p.dinnerVipOriginal}\'den, şimdi €{p.dinnerVip}/kişi. Teknede ödeme.'
+      title: 'Boğaz VIP Turu €{p.dinnerVip}\'den — Premium Yemek, Sahne Önü Masa',
+      description: 'Boğaz VIP yemekli turu: premium mezeler, dana eti seçenekleri, sahne önü masa, öncelikli servis. Eski €{p.dinnerVipOriginal}, şimdi €{p.dinnerVip}. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'Boğaz VIP Turu',
@@ -188,8 +188,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: 'Özel Boğaz Turu — Kendi Teknenizi Kiralayın | İstanbul',
-      description: 'Gruplar, aileler, kurumsal etkinlikler, düğünler için özel Boğaz turu kiralama. Özel tekne, özel menü, esnek süre. Minimum 25 misafir. Fiyat için WhatsApp\'tan yazın.'
+      title: 'Özel Boğaz Turu — İstanbul\'da Tekne Kiralama (25+ kişi)',
+      description: 'Özel Boğaz turu kiralama: gruplar, düğünler, kurumsal etkinlikler için. Özel tekne, özel menü, esnek süre. Ücretsiz iptal. Özel teklif için WhatsApp\'tan yazın.'
     },
     hero: {
       h1: 'Özel Boğaz Turu',
@@ -224,8 +224,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: 'Çiftler İçin Boğaz Turu — Su Üstünde Randevu Gecesi | İstanbul',
-      description: 'Çiftler için Boğaz yemekli turu. Özel masa, aydınlatılmış köprüler, canlı müzik, romantik masa düzeni opsiyonu. €{p.dinnerStd}/kişi\'den. Teknede ödeme — İstanbul\'da mükemmel randevu gecesi.'
+      title: 'Çiftler İçin Boğaz Turu €{p.dinnerStd}\'den — İstanbul Randevu Gecesi',
+      description: 'Çiftler için Boğaz yemekli turu. Özel masa, aydınlatılmış köprüler, romantik kurulum opsiyonu. €{p.dinnerStd}/kişi\'den. Ücretsiz iptal, teknede ödeme. 11.317 yorum.'
     },
     hero: {
       h1: 'Çiftler İçin Boğaz Turu',
@@ -260,8 +260,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Boğaz Gün Batımı Turu — Altın Saat ve Yemek | İstanbul',
-      description: 'İstanbul\'da Boğaz gün batımı turu. 17:30\'da biniş, Dolmabahçe ve Ortaköy Camii\'nin altın ışıkta parlayışını izleyin, yemek aydınlatılmış geceye devam eder. 3 saatlik tur, €35/kişi\'den.'
+      title: 'Boğaz Gün Batımı Turu €35\'den — Altın Saat + Akşam Yemeği',
+      description: 'Boğaz gün batımı turu, Kabataş\'tan 17:30 kalkış. Altın saat manzarası saraylar, akşam yemeği aydınlatılmış geceye uzanır. 3 saat. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'Boğaz Gün Batımı Turu',
@@ -296,8 +296,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: 'Boğaz Gece Turu — Aydınlatılmış İstanbul Yemekli Tur',
-      description: 'Boğaz gece turu yemek ve canlı şov ile. 21:00 kalkış, aydınlatılmış köprüler, Türk halk oyunları, 3 saat su üstünde. €{p.dinnerStd}/kişi\'den — teknede ödeme.'
+      title: 'Boğaz Gece Turu €{p.dinnerStd}\'den — Yemekli Tur + Canlı Şov',
+      description: '3 saatlik Boğaz gece turu: akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış, aydınlatılmış köprüler. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'Boğaz Gece Turu',
@@ -332,8 +332,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: 'İstanbul Yemekli Tur — Premium Boğaz Gece Turu, €{p.dinnerStd}\'den',
-      description: 'İstanbul\'un en çok tercih edilen Boğaz yemekli turu. 3 saatlik akşam, Türk ziyafeti, canlı halk oyunları, aydınlatılmış köprüler. TÜRSAB lisanslı, teknede ödeme, ön ödeme yok.'
+      title: 'İstanbul Yemekli Tur €{p.dinnerStd}\'den — Boğaz Gece Turu',
+      description: '3 saatlik İstanbul Boğaz yemekli turu. Çok çeşitli Türk menüsü, canlı halk oyunları, aydınlatılmış köprüler. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'İstanbul Yemekli Tur',
@@ -368,8 +368,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: 'İstanbul Gece Turu — Boğaz\'da En İyi Akşam Deneyimi',
-      description: 'İstanbul\'un en çok tercih edilen gece turu: 3 saatlik Boğaz turu yemek, canlı halk oyunları ve aydınlatılmış köprülerle. 4.8★, TÜRSAB lisanslı, teknede ödeme. Net İstanbul akşamı.'
+      title: 'İstanbul Gece Turu €{p.dinnerStd}\'den — Boğaz Yemekli Tur + Şov',
+      description: '3 saatlik Boğaz turu, akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu. Otel transfer opsiyonel.'
     },
     hero: {
       h1: 'İstanbul Gece Turu',
@@ -404,8 +404,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: 'İstanbul Tekne Turu — Yemekli ve Şovlu Boğaz Turu',
-      description: 'İstanbul\'un en iyi tekne turu: 3 saatlik Boğaz turu tam yemek, canlı halk oyunları ve aydınlatılmış gece manzaralarıyla. €{p.dinnerStd}/kişi\'den, teknede ödeme, 4.8★ puan.'
+      title: 'İstanbul Tekne Turu €{p.dinnerStd}\'den — Boğaz Turu + Yemek + Şov',
+      description: '3 saatlik İstanbul tekne turu: Boğaz seyri, çok çeşitli Türk yemeği, canlı halk oyunları, aydınlatılmış gece manzaraları. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'İstanbul Tekne Turu',
@@ -440,8 +440,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: 'Boğaz Gezisi — Premium İstanbul Tur Deneyimi, €{p.dinnerStd}\'den',
-      description: 'Boğaz gezinizi planlayın: 3 saatlik yemekli tur Türk ziyafeti, canlı halk oyunları şovu, aydınlatılmış gece manzaralarıyla. 4.8★ puan, teknede ödeme, transfer için 12 hizmet bölgesi.'
+      title: 'Boğaz Gezisi €{p.dinnerStd}\'den — İstanbul Yemekli Turu + Şov',
+      description: '3 saatlik Boğaz gezisi: Türk yemeği, canlı halk oyunları, aydınlatılmış gece manzaraları. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'Boğaz Gezisi',
@@ -476,8 +476,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: 'Boğaz Turu Biletleri — Direkt Rezervasyon, €{p.dinnerStd}\'den Teknede Ödeme',
-      description: 'Boğaz turu biletlerini direkt satın alın. Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. Ön ödeme yok, teknede ödeme. 2 saat öncesine ücretsiz iptal. 4.8★ puan, TÜRSAB A-17672.'
+      title: 'Boğaz Turu Biletleri €{p.dinnerStd}\'den — Teknede Ödeme, Ön Ödeme Yok',
+      description: 'Direkt Boğaz turu biletleri. Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. Ön ödeme yok, teknede ödeme. Tur öncesi 2 saate kadar ücretsiz iptal. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'Boğaz Turu Biletleri',
@@ -512,8 +512,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: 'Son Dakika Boğaz Turu — Bu Gece İçin Rezervasyon, Teknede Ödeme',
-      description: 'Bu gece için son dakika Boğaz turu rezervasyonu. Aynı gün müsaitlik, teknede ödeme, ön ödeme yok. Dakikalar içinde WhatsApp onayı. €{p.dinnerStd}/kişi\'den.'
+      title: 'Son Dakika Boğaz Turu €{p.dinnerStd}\'den — Bugün Rezervasyon, Teknede Ödeme',
+      description: 'Aynı gün Boğaz turu rezervasyonu. WhatsApp ile dakikalar içinde onay. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
     },
     hero: {
       h1: 'Son Dakika Boğaz Turu',
@@ -548,8 +548,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: 'İstanbul Tur Fiyatı — Şeffaf Oranlar, €{p.dinnerStd}\'den Teknede Ödeme',
-      description: 'İstanbul Boğaz turu fiyatları: Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 yaş ücretsiz. Şeffaf eklentiler (alkol +€{p.unlimited}, transfer +€{p.transfer}). Gizli ücret yok.'
+      title: 'İstanbul Tur Fiyatı €{p.dinnerStd}\'den — Şeffaf Oranlar, Gizli Ücret Yok',
+      description: 'İstanbul Boğaz turu fiyatları: Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 yaş ücretsiz, 4-8 yarı fiyat. Eklentiler şeffaf. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'İstanbul Tur Fiyatı',
@@ -584,8 +584,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: 'Boğaz Sightseeing — Tüm İstanbul Dönüm Noktaları Sudan',
-      description: 'Boğaz sightseeing turu her büyük dönüm noktasını kapsar: Dolmabahçe, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı, Beylerbeyi, Kız Kulesi. 3 saatlik akşam turu yemek ile, €{p.dinnerStd}.'
+      title: 'Boğaz Sightseeing €{p.dinnerStd}\'den — İstanbul Dönüm Noktaları Sudan',
+      description: 'Boğaz sightseeing turu: Dolmabahçe, Ortaköy, Boğaz Köprüsü, Rumeli, Beylerbeyi, Kız Kulesi. 3 saatlik akşam turu, akşam yemekli. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'Boğaz Sightseeing',

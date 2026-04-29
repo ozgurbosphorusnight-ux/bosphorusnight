@@ -8,8 +8,8 @@ module.exports = {
 
   'bosphorus-dinner-cruise': {
     meta: {
-      title: 'Crucero con Cena por el Bósforo Estambul — Tour Nocturno Premium, desde €{p.dinnerStd}',
-      description: 'El crucero con cena por el Bósforo más recomendado de Estambul. Travesía nocturna de 3 horas, cocina turca, danzas folclóricas en vivo y DJ, vistas nocturnas panorámicas. Licencia TÜRSAB. Pago a bordo — sin prepago.'
+      title: 'Crucero con Cena Bósforo desde €{p.dinnerStd} — Tour Nocturno Estambul + Show',
+      description: 'Crucero con cena de 3 horas por el Bósforo: menú turco multiplato y espectáculo folklórico en vivo. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Crucero con Cena por el Bósforo en Estambul',
@@ -44,8 +44,8 @@ module.exports = {
 
   'bosphorus-with-kids': {
     meta: {
-      title: 'Crucero por el Bósforo con Niños — Tour con Cena Familiar Estambul',
-      description: 'Crucero con cena por el Bósforo apto para familias. 0-3 años gratis, 4-8 años a mitad de precio. Zona cerrada segura, menú infantil, salida temprana. Desde €{p.dinnerStd}/adulto — pago a bordo.'
+      title: 'Crucero Bósforo con Niños — Tour Familiar desde €{p.dinnerStd}/adulto',
+      description: 'Crucero con cena por el Bósforo apto para familias. Niños 0-3 gratis, 4-8 mitad de precio. Salón interior seguro, menú infantil. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Crucero por el Bósforo con Niños',
@@ -80,8 +80,8 @@ module.exports = {
 
   'romantic-bosphorus-cruise': {
     meta: {
-      title: 'Crucero Romántico por el Bósforo — Cena a la Luz de las Velas para Parejas | Estambul',
-      description: 'El crucero por el Bósforo más romántico de Estambul. Mesa a la luz de las velas, rosas, decoración VIP, cena generosa, bajo puentes iluminados. Aniversario, luna de miel, sorpresa — reserve desde €{p.dinnerStd}/persona.'
+      title: 'Crucero Romántico Bósforo desde €{p.dinnerStd} — Cena a la Luz de Velas',
+      description: 'Crucero romántico por el Bósforo: mesa a la luz de velas, rosas, cena multiplato bajo puentes iluminados. Desde €{p.dinnerStd}/persona. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Crucero Romántico por el Bósforo',
@@ -116,8 +116,8 @@ module.exports = {
 
   'halal-bosphorus-cruise': {
     meta: {
-      title: 'Crucero con Cena 100% Halal por el Bósforo — Estambul | Apto para Musulmanes',
-      description: 'Crucero con cena por el Bósforo con certificación halal. 100% carne halal, alcohol opcional (nunca impuesto), entretenimiento apto para familias, respeto por los horarios de oración. Desde €{p.dinnerStd}/persona.'
+      title: 'Crucero Halal Bósforo desde €{p.dinnerStd} — Show en Vivo + Tour Nocturno',
+      description: 'Crucero con cena de 3 horas por el Bósforo: espectáculo folklórico en vivo, puentes iluminados, vistas panorámicas nocturnas. Menú halal disponible. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Crucero Halal por el Bósforo en Estambul',
@@ -152,8 +152,8 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Crucero VIP por el Bósforo — Cena Premium, Asientos Delanteros | Estambul',
-      description: 'Crucero VIP con cena por el Bósforo en Estambul. Mezze premium, opciones de entrecot, asientos delanteros, servicio prioritario. Antes €{p.dinnerVipOriginal}, ahora €{p.dinnerVip}/persona. Pago a bordo.'
+      title: 'Crucero VIP Bósforo desde €{p.dinnerVip} — Cena Premium, Asientos VIP',
+      description: 'Crucero VIP con cena en el Bósforo: mezes premium, opciones de carne, mesa frente al escenario, servicio prioritario. Antes €{p.dinnerVipOriginal}, ahora €{p.dinnerVip}.'
     },
     hero: {
       h1: 'Crucero VIP por el Bósforo',
@@ -188,8 +188,8 @@ module.exports = {
 
   'private-bosphorus-cruise': {
     meta: {
-      title: 'Crucero Privado por el Bósforo — Alquile Su Propio Barco | Estambul',
-      description: 'Alquiler de crucero privado por el Bósforo para grupos, familias, eventos corporativos, bodas. Barco privado, menú personalizado, duración flexible. Mínimo 25 huéspedes. Escriba por WhatsApp para precios.'
+      title: 'Crucero Privado Bósforo — Alquiler de Barco en Estambul (25+ invitados)',
+      description: 'Crucero privado por el Bósforo para grupos, bodas, eventos corporativos. Barco exclusivo, menú a medida, duración flexible. Cancelación gratuita. WhatsApp para presupuesto.'
     },
     hero: {
       h1: 'Crucero Privado por el Bósforo',
@@ -224,8 +224,8 @@ module.exports = {
 
   'bosphorus-for-couples': {
     meta: {
-      title: 'Crucero por el Bósforo para Parejas — Noche de Cita en el Agua | Estambul',
-      description: 'Crucero con cena por el Bósforo para parejas. Mesa privada, puentes iluminados, música en vivo, opción de decoración romántica. Desde €{p.dinnerStd}/persona. Pago a bordo — la noche de cita perfecta en Estambul.'
+      title: 'Crucero Bósforo para Parejas desde €{p.dinnerStd} — Cita Nocturna Estambul',
+      description: 'Crucero con cena para parejas en el Bósforo. Mesa privada, puentes iluminados, decoración romántica opcional. Desde €{p.dinnerStd}/persona. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Crucero por el Bósforo para Parejas',
@@ -260,8 +260,8 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Crucero al Atardecer por el Bósforo — Hora Dorada y Cena | Estambul',
-      description: 'Crucero al atardecer por el Bósforo en Estambul. Embarque a las 17:30, contemple cómo Dolmabahçe y la Mezquita de Ortaköy brillan a la luz dorada, la cena continúa hasta la noche iluminada. Tour de 3 horas, desde €35/persona.'
+      title: 'Crucero Atardecer Bósforo desde €35 — Hora Dorada + Cena',
+      description: 'Crucero al atardecer por el Bósforo desde Kabataş, salida 17:30. Palacios en luz dorada, cena hasta la noche iluminada. 3 horas. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Crucero al Atardecer por el Bósforo',
@@ -296,8 +296,8 @@ module.exports = {
 
   'bosphorus-night-tour': {
     meta: {
-      title: 'Tour Nocturno por el Bósforo — Crucero con Cena en Estambul Iluminado',
-      description: 'Tour nocturno por el Bósforo con cena y espectáculo en vivo. Salida 21:00, puentes iluminados, danzas folclóricas turcas, 3 horas en el agua. Desde €{p.dinnerStd}/persona — pago a bordo.'
+      title: 'Tour Nocturno Bósforo desde €{p.dinnerStd} — Cena + Show en Vivo',
+      description: 'Tour nocturno de 3 horas por el Bósforo con cena y show en vivo. Salida 21:00 desde Kabataş, puentes iluminados. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Tour Nocturno por el Bósforo',
@@ -332,8 +332,8 @@ module.exports = {
 
   'dinner-cruise-istanbul': {
     meta: {
-      title: 'Crucero con Cena Estambul — Tour Nocturno Premium por el Bósforo, desde €{p.dinnerStd}',
-      description: 'El crucero con cena por el Bósforo más recomendado de Estambul. Velada de 3 horas, banquete turco, danzas folclóricas en vivo, puentes iluminados. Licencia TÜRSAB, pago a bordo, sin prepago.'
+      title: 'Crucero con Cena Estambul desde €{p.dinnerStd} — Tour Nocturno Bósforo',
+      description: 'Crucero con cena de 3 horas por el Bósforo en Estambul. Menú turco multiplato, folklore en vivo, puentes iluminados. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Crucero con Cena Estambul',
@@ -368,8 +368,8 @@ module.exports = {
 
   'istanbul-night-tour': {
     meta: {
-      title: 'Tour Nocturno Estambul — La Mejor Experiencia Nocturna en el Bósforo',
-      description: 'El tour nocturno más recomendado de Estambul: crucero de 3 horas por el Bósforo con cena, danzas folclóricas en vivo y puentes iluminados. 4,8★, licencia TÜRSAB, pago a bordo. Velada definitiva en Estambul.'
+      title: 'Tour Nocturno Estambul desde €{p.dinnerStd} — Crucero Cena Bósforo + Show',
+      description: 'Crucero de 3 horas con cena y show en vivo. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas. Traslado al hotel opcional.'
     },
     hero: {
       h1: 'Tour Nocturno Estambul',
@@ -404,8 +404,8 @@ module.exports = {
 
   'istanbul-boat-tour': {
     meta: {
-      title: 'Tour en Barco Estambul — Crucero por el Bósforo con Cena y Espectáculo',
-      description: 'El mejor tour en barco de Estambul: crucero por el Bósforo de 3 horas con cena completa, danzas folclóricas en vivo y vistas nocturnas iluminadas. Desde €{p.dinnerStd}/persona, pago a bordo, calificación 4,8★.'
+      title: 'Tour en Barco Estambul desde €{p.dinnerStd} — Crucero + Cena + Show',
+      description: 'Tour en barco de 3 horas: crucero por el Bósforo, cena turca completa, folklore en vivo, vistas nocturnas iluminadas. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Tour en Barco Estambul',
@@ -440,8 +440,8 @@ module.exports = {
 
   'bosphorus-trip': {
     meta: {
-      title: 'Excursión por el Bósforo — Experiencia Premium de Tour Estambul, desde €{p.dinnerStd}',
-      description: 'Planifique su excursión por el Bósforo: crucero con cena de 3 horas con banquete turco, espectáculo de danzas folclóricas en vivo, vistas nocturnas iluminadas. Calificación 4,8★, pago a bordo, 12 zonas de servicio para traslado.'
+      title: 'Viaje Bósforo desde €{p.dinnerStd} — Crucero Cena Estambul + Show',
+      description: 'Viaje de 3 horas por el Bósforo: cena turca, folklore en vivo, vistas nocturnas iluminadas. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Excursión por el Bósforo',
@@ -476,8 +476,8 @@ module.exports = {
 
   'bosphorus-cruise-tickets': {
     meta: {
-      title: 'Entradas para el Crucero por el Bósforo — Reserva Directa, desde €{p.dinnerStd} Pago a Bordo',
-      description: 'Compre entradas para el crucero por el Bósforo directamente. Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. Sin prepago, pago a bordo. Cancelación gratuita 2 horas antes. Calificación 4,8★, TÜRSAB A-17672.'
+      title: 'Tickets Crucero Bósforo desde €{p.dinnerStd} — Pago a Bordo, Sin Anticipo',
+      description: 'Tickets directos del crucero por el Bósforo. Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. Sin anticipo, pago a bordo. Cancelación gratuita hasta 2hrs antes. 11.317 reseñas.'
     },
     hero: {
       h1: 'Entradas para el Crucero por el Bósforo',
@@ -512,8 +512,8 @@ module.exports = {
 
   'last-minute-bosphorus': {
     meta: {
-      title: 'Crucero por el Bósforo Última Hora — Reserve para Esta Noche, Pago a Bordo',
-      description: 'Reserva de crucero por el Bósforo de última hora para esta noche. Disponibilidad el mismo día, pago a bordo, sin prepago. Confirmación por WhatsApp en minutos. Desde €{p.dinnerStd}/persona.'
+      title: 'Bósforo Última Hora desde €{p.dinnerStd} — Reserva Hoy, Paga a Bordo',
+      description: 'Reserva del crucero Bósforo el mismo día. Confirmación por WhatsApp en minutos. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
     },
     hero: {
       h1: 'Crucero por el Bósforo Última Hora',
@@ -548,8 +548,8 @@ module.exports = {
 
   'istanbul-cruise-price': {
     meta: {
-      title: 'Precio del Crucero Estambul — Tarifas Transparentes, desde €{p.dinnerStd} Pago a Bordo',
-      description: 'Precios del crucero por el Bósforo de Estambul: Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 años gratis. Complementos transparentes (alcohol +€{p.unlimited}, traslado +€{p.transfer}). Sin cargos ocultos.'
+      title: 'Precio Crucero Estambul desde €{p.dinnerStd} — Tarifas Transparentes, Sin Sorpresas',
+      description: 'Precios crucero Bósforo Estambul: Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. Niños 0-3 gratis, 4-8 mitad. Add-ons transparentes. Cancelación gratuita, pago a bordo.'
     },
     hero: {
       h1: 'Precio del Crucero Estambul',
@@ -584,8 +584,8 @@ module.exports = {
 
   'bosphorus-sightseeing': {
     meta: {
-      title: 'Turismo por el Bósforo — Todos los Monumentos de Estambul desde el Agua',
-      description: 'El tour turístico por el Bósforo cubre todos los grandes monumentos: Dolmabahçe, Mezquita de Ortaköy, Puente del Bósforo, Rumeli Hisarı, Beylerbeyi, Torre de la Doncella. Tour nocturno de 3 horas con cena, €{p.dinnerStd}.'
+      title: 'Sightseeing Bósforo desde €{p.dinnerStd} — Monumentos Estambul Desde el Agua',
+      description: 'Crucero sightseeing por el Bósforo: Dolmabahçe, Ortaköy, Puente del Bósforo, Rumeli, Beylerbeyi, Torre de la Doncella. Tour de 3hrs con cena. Cancelación gratuita.'
     },
     hero: {
       h1: 'Turismo por el Bósforo',

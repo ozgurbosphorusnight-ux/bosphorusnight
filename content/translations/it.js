@@ -8,8 +8,8 @@ module.exports = {
 
   "bosphorus-dinner-cruise": {
     meta: {
-      title: "Crociera con Cena sul Bosforo Istanbul — Tour Notturno Premium, da €{p.dinnerStd}",
-      description: "La crociera con cena sul Bosforo più apprezzata di Istanbul. Navigazione serale di 3 ore, banchetto turco a più portate, folklore dal vivo e DJ, vedute notturne panoramiche. Licenza TÜRSAB. Pagamento a bordo — nessun anticipo."
+      title: 'Crociera Cena Bosforo da €{p.dinnerStd} — Tour Notturno Istanbul + Show',
+      description: 'Crociera cena 3 ore sul Bosforo: menu turco multi-portate e spettacolo folkloristico dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Crociera con Cena sul Bosforo a Istanbul",
@@ -44,8 +44,8 @@ module.exports = {
 
   "bosphorus-with-kids": {
     meta: {
-      title: "Tour del Bosforo con Bambini — Crociera con Cena a Misura di Famiglia Istanbul",
-      description: "Crociera con cena sul Bosforo a misura di famiglia. 0-3 anni gratis, 4-8 anni metà prezzo. Area interna sicura, menu per bambini, partenza anticipata. Da €{p.dinnerStd}/adulto — pagamento a bordo."
+      title: 'Bosforo con Bambini — Crociera Famiglia da €{p.dinnerStd}/adulto',
+      description: 'Crociera cena Bosforo per famiglie. Bambini 0-3 gratis, 4-8 metà prezzo. Sala interna sicura, menu bambini. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Tour del Bosforo con Bambini",
@@ -80,8 +80,8 @@ module.exports = {
 
   "romantic-bosphorus-cruise": {
     meta: {
-      title: "Crociera Romantica sul Bosforo — Cena a Lume di Candela per Coppie | Istanbul",
-      description: "La crociera sul Bosforo più romantica di Istanbul. Tavolo a lume di candela, rose, allestimento VIP, cena a più portate, sotto ponti illuminati. Anniversario, luna di miele, sorpresa — prenoti da €{p.dinnerStd}/persona."
+      title: 'Crociera Romantica Bosforo da €{p.dinnerStd} — Cena a Lume di Candela',
+      description: 'Crociera romantica sul Bosforo: tavolo a lume di candela, rose, cena multi-portate sotto i ponti illuminati. Da €{p.dinnerStd}/persona. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera Romantica sul Bosforo",
@@ -116,8 +116,8 @@ module.exports = {
 
   "halal-bosphorus-cruise": {
     meta: {
-      title: "Crociera con Cena sul Bosforo 100% Halal — Istanbul | A Misura di Musulmani",
-      description: "Crociera con cena sul Bosforo certificata halal. Carne 100% halal, alcol opzionale (mai imposto), intrattenimento adatto alle famiglie, rispetto degli orari di preghiera. Da €{p.dinnerStd}/persona."
+      title: 'Crociera Cena Halal Bosforo da €{p.dinnerStd} — Show Live + Tour Notturno',
+      description: 'Crociera cena 3 ore sul Bosforo: spettacolo folkloristico dal vivo, ponti illuminati, panorama notturno. Menu halal disponibile su richiesta. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera Halal sul Bosforo a Istanbul",
@@ -152,8 +152,8 @@ module.exports = {
 
   "bosphorus-vip": {
     meta: {
-      title: "Tour VIP sul Bosforo — Cena Premium, Posti Vicino al Palco | Istanbul",
-      description: "Crociera VIP con cena sul Bosforo a Istanbul. Meze premium, opzioni di bistecca, posti vicino al palco, servizio prioritario. Da €{p.dinnerVipOriginal}, ora €{p.dinnerVip}/persona. Pagamento a bordo."
+      title: 'Crociera VIP Bosforo da €{p.dinnerVip} — Cena Premium, Posto VIP',
+      description: 'Crociera cena VIP Bosforo: meze premium, opzioni di carne, tavolo davanti al palco, servizio prioritario. Prima €{p.dinnerVipOriginal}, ora €{p.dinnerVip}.'
     },
     hero: {
       h1: "Tour VIP sul Bosforo",
@@ -188,8 +188,8 @@ module.exports = {
 
   "private-bosphorus-cruise": {
     meta: {
-      title: "Crociera Privata sul Bosforo — Noleggi la Sua Barca | Istanbul",
-      description: "Noleggio di crociera privata sul Bosforo per gruppi, famiglie, eventi aziendali, matrimoni. Barca privata, menu personalizzato, durata flessibile. Minimo 25 ospiti. Ci scriva su WhatsApp per un preventivo."
+      title: 'Crociera Privata Bosforo — Noleggio Barca a Istanbul (25+ ospiti)',
+      description: 'Crociera privata Bosforo per gruppi, matrimoni, eventi aziendali. Barca esclusiva, menu personalizzato, durata flessibile. Cancellazione gratuita. WhatsApp per preventivo.'
     },
     hero: {
       h1: "Crociera Privata sul Bosforo",
@@ -224,8 +224,8 @@ module.exports = {
 
   "bosphorus-for-couples": {
     meta: {
-      title: "Tour del Bosforo per Coppie — Serata Romantica sull'Acqua | Istanbul",
-      description: "Crociera con cena sul Bosforo per coppie. Tavolo privato, ponti illuminati, musica dal vivo, opzione allestimento romantico. Da €{p.dinnerStd}/persona. Pagamento a bordo — la serata romantica perfetta a Istanbul."
+      title: 'Bosforo per Coppie da €{p.dinnerStd} — Serata Romantica Istanbul',
+      description: 'Crociera cena per coppie sul Bosforo. Tavolo privato, ponti illuminati, allestimento romantico opzionale. Da €{p.dinnerStd}/persona. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour del Bosforo per Coppie",
@@ -260,8 +260,8 @@ module.exports = {
 
   "bosphorus-sunset-cruise": {
     meta: {
-      title: "Crociera al Tramonto sul Bosforo — Ora Dorata e Cena | Istanbul",
-      description: "Crociera al tramonto sul Bosforo a Istanbul. Imbarco alle 17:30, osservi Dolmabahçe e la Moschea di Ortaköy brillare nella luce dorata, cena mentre prosegue la notte illuminata. Tour di 3 ore, da €35/persona."
+      title: 'Crociera Tramonto Bosforo da €35 — Ora Dorata + Cena',
+      description: 'Crociera tramonto Bosforo da Kabataş, partenza 17:30. Palazzi nella luce dorata, cena fino alla notte illuminata. 3 ore. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera al Tramonto sul Bosforo",
@@ -296,8 +296,8 @@ module.exports = {
 
   "bosphorus-night-tour": {
     meta: {
-      title: "Tour Notturno sul Bosforo — Crociera con Cena nella Istanbul Illuminata",
-      description: "Tour notturno sul Bosforo con cena e spettacolo dal vivo. Partenza alle 21:00, ponti illuminati, folklore turco, 3 ore sull'acqua. Da €{p.dinnerStd}/persona — pagamento a bordo."
+      title: 'Tour Notturno Bosforo da €{p.dinnerStd} — Crociera Cena + Show Live',
+      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Tour Notturno sul Bosforo",
@@ -332,8 +332,8 @@ module.exports = {
 
   "dinner-cruise-istanbul": {
     meta: {
-      title: "Crociera con Cena Istanbul — Tour Notturno Premium sul Bosforo, da €{p.dinnerStd}",
-      description: "La crociera con cena sul Bosforo più apprezzata di Istanbul. Serata di 3 ore, banchetto turco, folklore dal vivo, ponti illuminati. Autorizzato TÜRSAB, pagamento a bordo, nessun anticipo."
+      title: 'Crociera Cena Istanbul da €{p.dinnerStd} — Tour Notturno Bosforo',
+      description: 'Crociera cena 3 ore a Istanbul sul Bosforo. Menu turco multi-portate, folklore dal vivo, ponti illuminati. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Crociera con Cena Istanbul",
@@ -368,8 +368,8 @@ module.exports = {
 
   "istanbul-night-tour": {
     meta: {
-      title: "Tour Notturno di Istanbul — La Migliore Esperienza Serale sul Bosforo",
-      description: "Il tour notturno più apprezzato di Istanbul: tour di 3 ore sul Bosforo con cena, folklore dal vivo e ponti illuminati. 4,8★, autorizzato TÜRSAB, pagamento a bordo. Una serata a Istanbul ben definita."
+      title: 'Tour Notturno Istanbul da €{p.dinnerStd} — Crociera Cena Bosforo + Show',
+      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni. Transfer hotel opzionale.'
     },
     hero: {
       h1: "Tour Notturno di Istanbul",
@@ -404,8 +404,8 @@ module.exports = {
 
   "istanbul-boat-tour": {
     meta: {
-      title: "Tour in Barca a Istanbul — Crociera sul Bosforo con Cena e Spettacolo",
-      description: "Il miglior tour in barca a Istanbul: tour di 3 ore sul Bosforo con cena completa, folklore dal vivo e vedute notturne illuminate. Da €{p.dinnerStd}/persona, pagamento a bordo, valutazione 4,8★."
+      title: 'Tour in Barca Istanbul da €{p.dinnerStd} — Crociera + Cena + Show',
+      description: 'Tour in barca 3 ore: crociera Bosforo, cena turca completa, folklore dal vivo, viste notturne illuminate. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Tour in Barca a Istanbul",
@@ -440,8 +440,8 @@ module.exports = {
 
   "bosphorus-trip": {
     meta: {
-      title: "Gita sul Bosforo — Esperienza di Tour Premium a Istanbul, da €{p.dinnerStd}",
-      description: "Pianifichi la Sua gita sul Bosforo: crociera con cena di 3 ore con banchetto turco, spettacolo di folklore dal vivo, vedute notturne illuminate. Valutazione 4,8★, pagamento a bordo, 12 aree di servizio per il transfer."
+      title: 'Gita Bosforo da €{p.dinnerStd} — Crociera Cena Istanbul + Show',
+      description: 'Gita 3 ore sul Bosforo: cena turca, folklore dal vivo, viste notturne illuminate. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Gita sul Bosforo",
@@ -476,8 +476,8 @@ module.exports = {
 
   "bosphorus-cruise-tickets": {
     meta: {
-      title: "Biglietti Crociera sul Bosforo — Prenotazione Diretta, da €{p.dinnerStd} Pagamento a Bordo",
-      description: "Acquisti i biglietti per la crociera sul Bosforo direttamente. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Nessun anticipo, pagamento a bordo. Cancellazione gratuita 2 ore prima. Valutazione 4,8★, TÜRSAB A-17672."
+      title: 'Biglietti Crociera Bosforo da €{p.dinnerStd} — Pagamento a Bordo, Niente Anticipo',
+      description: 'Biglietti diretti crociera Bosforo. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Niente anticipo, pagamento a bordo. Cancellazione gratuita fino a 2h prima. 11.317 recensioni.'
     },
     hero: {
       h1: "Biglietti Crociera sul Bosforo",
@@ -512,8 +512,8 @@ module.exports = {
 
   "last-minute-bosphorus": {
     meta: {
-      title: "Crociera sul Bosforo Last Minute — Prenoti per Stasera, Pagamento a Bordo",
-      description: "Prenotazione last minute della crociera sul Bosforo per stasera. Disponibilità nello stesso giorno, pagamento a bordo, nessun anticipo. Conferma su WhatsApp in pochi minuti. Da €{p.dinnerStd}/persona."
+      title: 'Bosforo Last Minute da €{p.dinnerStd} — Prenota Stasera, Paga a Bordo',
+      description: 'Prenotazione crociera Bosforo stesso giorno. Conferma WhatsApp in minuti. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Crociera sul Bosforo Last Minute",
@@ -548,8 +548,8 @@ module.exports = {
 
   "istanbul-cruise-price": {
     meta: {
-      title: "Prezzo Crociera Istanbul — Tariffe Trasparenti, da €{p.dinnerStd} Pagamento a Bordo",
-      description: "Prezzi della crociera sul Bosforo a Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 anni gratis. Extra trasparenti (alcol +€{p.unlimited}, transfer +€{p.transfer}). Nessun costo nascosto."
+      title: 'Prezzo Crociera Istanbul da €{p.dinnerStd} — Tariffe Trasparenti',
+      description: 'Prezzi crociera Bosforo Istanbul: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Bambini 0-3 gratis, 4-8 metà prezzo. Add-on trasparenti. Cancellazione gratuita.'
     },
     hero: {
       h1: "Prezzo Crociera Istanbul",
@@ -584,8 +584,8 @@ module.exports = {
 
   "bosphorus-sightseeing": {
     meta: {
-      title: "Visita al Bosforo — Tutti i Monumenti di Istanbul dall'Acqua",
-      description: "Il tour di visita al Bosforo copre ogni grande monumento: Dolmabahçe, Moschea di Ortaköy, Ponte del Bosforo, Rumeli Hisarı, Beylerbeyi, Torre della Fanciulla. Tour serale di 3 ore con cena, €{p.dinnerStd}."
+      title: 'Sightseeing Bosforo da €{p.dinnerStd} — Monumenti Istanbul dall\'Acqua',
+      description: 'Crociera sightseeing Bosforo: Dolmabahçe, Ortaköy, Ponte Bosforo, Rumeli, Beylerbeyi, Torre della Vergine. Tour serale 3h con cena. Cancellazione gratuita.'
     },
     hero: {
       h1: "Visita al Bosforo",
