@@ -33,8 +33,8 @@ function substitutePricePlaceholders(text) {
     'p.unlimited':   addons.ALCOHOL_UNLIMITED?.price  ?? 30,
     'p.transfer':    addons.HOTEL_TRANSFER?.price     ?? 10,
     'p.romantic':    addons.ROMANTIC_TABLE?.price     ?? 15,
-    'p.dinnerStd':   packages.DINNER_STD?.price       ?? 24,
-    'p.dinnerVip':   packages.DINNER_VIP?.price       ?? 55,
+    'p.dinnerStd':   packages.DINNER_STD?.price       ?? 24.3,
+    'p.dinnerVip':   packages.DINNER_VIP?.price       ?? 55.2,
     'p.daytimeStd':  packages.DAYTIME_STD?.price      ?? 20,
   };
   return text.replace(/\{(p\.[a-zA-Z0-9]+)\}/g, (_, k) => map[k] ?? '');
@@ -766,16 +766,16 @@ function setTourType(tourType) {
 
 // ========== BOOKING PANEL ==========
 const PRICES = {
-  classic:  { standard: 24, vip: 55 },
-  premium:  { standard: 24, vip: 55 },
-  luxury:   { standard: 24, vip: 55 }
+  classic:  { standard: 24.3, vip: 55.2 },
+  premium:  { standard: 24.3, vip: 55.2 },
+  luxury:   { standard: 24.3, vip: 55.2 }
 };
 
 // Dinner cruise pricing: base + extras
 // Values are defaults; overridden at runtime by fetchDynamicPrices() from Supabase via /api/public/prices
 const DINNER_PRICES = {
-  standard: { base: 24, oldPrice: 40 },
-  vip:      { base: 55, oldPrice: 92 },
+  standard: { base: 24.3, oldPrice: 40.5 },
+  vip:      { base: 55.2, oldPrice: 92 },
   extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
 };
 
@@ -2787,8 +2787,8 @@ function wizCalcPrice() {
     if (!showPrice) return;
   }
 
-  const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
-  const oldPrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].oldPrice : 40;
+  const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24.3;
+  const oldPrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].oldPrice : 40.5;
 
   // Drink extras — per person counts
   const dc = wizState.drinkCounts;
@@ -2936,7 +2936,7 @@ function wizBuildSummary() {
   // Price breakdown
   const priceLines = document.getElementById('wizPriceLines');
   if (priceLines) {
-    const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24;
+    const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24.3;
     const totalGuests = adults + children;
     const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
     // zoneExtra kaldırıldı 2026-04-19 — tek fiyat transfer
