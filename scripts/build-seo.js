@@ -101,13 +101,56 @@ ${blogBlocks}
 }
 
 function buildRobots() {
-  const txt = `User-agent: *
+  // Private paths blocked for every crawler.
+  const DISALLOW = [
+    '/api/',
+    '/panel/',
+    '/cruises/',
+    '/_next/',
+    '/tickets/'
+  ];
+
+  // AI bots explicitly welcomed — same private-path rules.
+  // Explicit blocks signal "you're allowed" to bots that default to opt-in.
+  const AI_BOTS = [
+    'GPTBot',              // OpenAI training crawler
+    'ChatGPT-User',        // OpenAI on-demand fetch
+    'OAI-SearchBot',       // OpenAI SearchGPT
+    'ClaudeBot',           // Anthropic crawler
+    'Claude-Web',          // Anthropic on-demand
+    'anthropic-ai',        // Anthropic alt UA
+    'PerplexityBot',       // Perplexity crawler
+    'Perplexity-User',     // Perplexity on-demand
+    'Google-Extended',     // Google Bard/Gemini training
+    'CCBot',               // Common Crawl (most LLM training sets)
+    'Bytespider',          // ByteDance / TikTok / Doubao
+    'Applebot-Extended',   // Apple Intelligence
+    'cohere-ai',           // Cohere
+    'Amazonbot',           // Amazon
+    'DuckAssistBot',       // DuckDuckGo AI
+    'Meta-ExternalAgent',  // Meta AI training
+    'Meta-ExternalFetcher',// Meta AI on-demand
+    'YandexAdditional',    // Yandex AI (Alice)
+    'PetalBot'             // Huawei Petal Search
+  ];
+
+  const disallowLines = DISALLOW.map((p) => `Disallow: ${p}`).join('\n');
+
+  const defaultBlock = `User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /panel/
-Disallow: /cruises/
-Disallow: /_next/
-Disallow: /tickets/
+${disallowLines}`;
+
+  const aiBlocks = AI_BOTS.map((bot) => `User-agent: ${bot}
+Allow: /
+${disallowLines}`).join('\n\n');
+
+  const txt = `# Bosphorus Night — robots.txt
+# All search engines and AI bots are welcome.
+# Only private paths (/api, /panel, /tickets, Next.js internals) are blocked.
+
+${defaultBlock}
+
+${aiBlocks}
 
 Sitemap: ${SITE_URL}/sitemap.xml
 `;
