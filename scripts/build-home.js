@@ -177,7 +177,7 @@ function buildSchemaLd(lang) {
       thumbnailUrl: 'https://img.youtube.com/vi/UcQ3qgyADc4/hqdefault.jpg',
       contentUrl: 'https://www.youtube.com/watch?v=UcQ3qgyADc4',
       embedUrl: 'https://www.youtube.com/embed/UcQ3qgyADc4',
-      uploadDate: '2026-04-20',
+      uploadDate: '2026-04-20T00:00:00+03:00',
       inLanguage: lang
     },
     {
@@ -188,7 +188,7 @@ function buildSchemaLd(lang) {
       thumbnailUrl: 'https://img.youtube.com/vi/ybAIn2RhwJs/hqdefault.jpg',
       contentUrl: 'https://www.youtube.com/watch?v=ybAIn2RhwJs',
       embedUrl: 'https://www.youtube.com/embed/ybAIn2RhwJs',
-      uploadDate: '2026-04-20',
+      uploadDate: '2026-04-20T00:00:00+03:00',
       inLanguage: lang
     }
   ];
