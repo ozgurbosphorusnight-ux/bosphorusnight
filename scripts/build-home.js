@@ -232,6 +232,19 @@ function buildSchemaLd(lang) {
     name: 'Bosphorus Night',
     url: SITE_URL,
     telephone: '+90 532 244 29 22',
+    priceRange: '€20 - €90',
+    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Kabataş Pier',
+      addressLocality: 'Istanbul',
+      addressCountry: 'TR'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 41.0361,
+      longitude: 28.9947
+    },
     identifier: {
       '@type': 'PropertyValue',
       propertyID: 'TURSAB',

@@ -201,6 +201,8 @@ function buildSchemaLd(page, lang, slug) {
       name: 'Bosphorus Night',
       url: SITE_URL,
       telephone: '+90 532 244 29 22',
+      priceRange: '€20 - €90',
+      image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Kabataş Pier',
