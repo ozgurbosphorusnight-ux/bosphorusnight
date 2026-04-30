@@ -61,7 +61,7 @@ for (const dir of ['js', 'css', 'assets', 'blog']) {
 // run('node scripts/build-tailwind.js');
 
 // 5. Root seviyesinde tek dosyalar
-for (const f of ['site.webmanifest']) {
+for (const f of ['site.webmanifest', 'llms.txt']) {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(DIST, f));

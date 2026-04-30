@@ -120,7 +120,12 @@ function buildSchemaLd(lang) {
       latitude: 41.0361,
       longitude: 28.9947
     },
-    identifier: 'TÜRSAB A-17672',
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'TURSAB',
+      name: 'TÜRSAB License',
+      value: 'A-17672'
+    },
     priceRange: '€20 - €90',
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     // aggregateRating intentionally omitted — re-added when real reviews are collected.
@@ -128,7 +133,9 @@ function buildSchemaLd(lang) {
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
       'https://www.youtube.com/@BosphorusNightTour',
-      'https://www.instagram.com/bosphorusnighttour/'
+      'https://www.instagram.com/bosphorusnighttour/',
+      'https://www.facebook.com/bosphorusnighttours/',
+      'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
     ]
   };
 
@@ -148,7 +155,9 @@ function buildSchemaLd(lang) {
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
       'https://www.youtube.com/@BosphorusNightTour',
-      'https://www.instagram.com/bosphorusnighttour/'
+      'https://www.instagram.com/bosphorusnighttour/',
+      'https://www.facebook.com/bosphorusnighttours/',
+      'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
     ]
   };
 
@@ -223,7 +232,20 @@ function buildSchemaLd(lang) {
     name: 'Bosphorus Night',
     url: SITE_URL,
     telephone: '+90 532 244 29 22',
-    identifier: 'TÜRSAB A-17672'
+    identifier: {
+      '@type': 'PropertyValue',
+      propertyID: 'TURSAB',
+      name: 'TÜRSAB License',
+      value: 'A-17672'
+    },
+    sameAs: [
+      'https://wa.me/905322442922',
+      'https://t.me/BosphorusnightReservation_Bot',
+      'https://www.youtube.com/@BosphorusNightTour',
+      'https://www.instagram.com/bosphorusnighttour/',
+      'https://www.facebook.com/bosphorusnighttours/',
+      'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
+    ]
   };
 
   const tourBase = (name, description, price, url, image, duration, audience) => ({

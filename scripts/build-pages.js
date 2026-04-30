@@ -212,7 +212,20 @@ function buildSchemaLd(page, lang, slug) {
         latitude: 41.0361,
         longitude: 28.9947
       },
-      identifier: 'TÜRSAB A-17672'
+      identifier: {
+        '@type': 'PropertyValue',
+        propertyID: 'TURSAB',
+        name: 'TÜRSAB License',
+        value: 'A-17672'
+      },
+      sameAs: [
+        'https://wa.me/905322442922',
+        'https://t.me/BosphorusnightReservation_Bot',
+        'https://www.youtube.com/@BosphorusNightTour',
+        'https://www.instagram.com/bosphorusnighttour/',
+        'https://www.facebook.com/bosphorusnighttours/',
+        'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
+      ]
     },
     offers: {
       '@type': 'Offer',
