@@ -75,6 +75,15 @@ const T = {
     ru: "Без предоплаты — оплата на борту", ar: "بدون دفع مسبق — ادفع على القارب",
     fa: "بدون پیش‌پرداخت — پرداخت روی کشتی", fr: "Aucun prépaiement — Paiement à bord", it: "Nessun anticipo — Pagamento a bordo", zh: "无需预付——船上付款", id: "Tanpa pembayaran di muka — Bayar di kapal", ms: "Tiada bayaran pendahuluan — Bayar di atas bot", pl: "Bez przedpłaty — płatność na pokładzie", bg: "Без предплащане — плащане на борда", ro: "Fără plată în avans — Plata pe vapor"
   },
+  "meta.home.description": {
+    en: "3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.",
+    tr: "3 saatlik Boğaz yemekli turu €24'ten. Tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 21:00 kalkış. Otel transfer opsiyonel.",
+    de: "3-stündige Bosporus-Dinnerfahrt ab €24/Person. Volles Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 21:00 ab Kabataş. Hoteltransfer verfügbar.",
+    es: "Crucero con cena de 3h por el Bósforo desde €24. Menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 21:00 desde Kabataş. Traslado al hotel disponible.",
+    ru: "3-часовой круиз с ужином по Босфору от €24. Полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 21:00 от Кабаташа. Доступен трансфер.",
+    ar: "رحلة عشاء بحرية لمدة 3 ساعات في البوسفور من €24. قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق 21:00 من كاباتاش. نقل من الفندق متاح.",
+    fa: "تور شام سه‌ساعته بسفر از €24/نفر. منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 21:00 از کاباتاش. ترانسفر هتل موجود است.", fr: "Croisière dîner 3h sur le Bosphore dès €24. Menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş. Transfert hôtel disponible.", it: "Crociera con cena di 3h sul Bosforo da €24/persona. Menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza 21:00 da Kabataş. Trasferimento hotel disponibile.", zh: "3小时博斯普鲁斯晚餐游船,€24/人起。完整菜单、梅夫拉那、土耳其民间舞、肚皮舞和DJ。21:00从卡巴塔什码头出发。可选酒店接送。", id: "Pelayaran makan malam Bosphorus 3 jam mulai €24/orang. Menu lengkap, Mevlana, tari rakyat, tari perut & DJ. Berangkat 21:00 dari Kabataş. Antar-jemput hotel tersedia.", ms: "Pelayaran makan malam Bosphorus 3 jam dari €24/orang. Menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 21:00 dari Kabataş. Pemindahan hotel tersedia.", pl: "3-godzinny rejs z kolacją po Bosforze od €24/osoba. Pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd 21:00 z Kabataş. Transfer hotelowy dostępny.", bg: "3-часов круиз с вечеря по Босфора от €24/човек. Пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване 21:00 от Кабаташ. Хотелски трансфер опционален.", ro: "Croazieră cu cină de 3 ore pe Bosfor de la €24/persoană. Meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 21:00 din Kabataş. Transfer hotelier disponibil."
+  },
   "hero.cta1": {
     en: "Check Availability on WhatsApp", tr: "WhatsApp'tan Müsaitlik Sor",
     de: "Verfügbarkeit per WhatsApp prüfen", es: "Consultar disponibilidad en WhatsApp",
@@ -1216,13 +1225,13 @@ const T = {
     fa: "منوی استاندارد", fr: "Menu Standard", it: "Menu Standard", zh: "标准菜单", id: "Menu Standar", ms: "Menu Standard", pl: "Menu Standard", bg: "Стандартно меню", ro: "Meniu Standard"
   },
   "dinner.std.desc": {
-    en: "Enjoy a 3-hour Bosphorus night cruise with a full dinner, live Turkish entertainment, and stunning views of Istanbul's skyline.",
-    tr: "3 saatlik Boğaz gece turunda akşam yemeği, canlı Türk eğlencesi ve İstanbul'un muhteşem manzarasının keyfini çıkarın.",
-    de: "3-stündige Bosporus-Nachtfahrt mit Abendessen, türkischer Live-Show und toller Aussicht auf Istanbul.",
-    es: "Disfrute de un crucero nocturno de 3 horas por el Bósforo con cena completa, entretenimiento turco en vivo y vistas impresionantes de Estambul.",
-    ru: "Насладитесь 3-часовым ночным круизом по Босфору с ужином, живыми турецкими шоу и потрясающими видами Стамбула.",
-    ar: "استمتع برحلة بحرية ليلية لمدة 3 ساعات في البوسفور مع عشاء كامل وترفيه تركي حي وإطلالات خلابة على أفق إسطنبول.",
-    fa: "از تور شبانه سه‌ساعته بسفر با شام کامل، سرگرمی زنده ترکی و مناظر خیره‌کننده خط آسمان استانبول لذت ببرید.", fr: "Profitez d'une croisière nocturne de 3 heures sur le Bosphore avec dîner complet, divertissement turc en direct et vues éblouissantes sur l'horizon d'Istanbul.", it: "Goda di una crociera notturna di 3 ore sul Bosforo con cena completa, intrattenimento turco dal vivo e splendide vedute dello skyline di Istanbul.", zh: "享受3小时博斯普鲁斯夜游,含完整晚宴、现场土耳其娱乐,以及伊斯坦布尔天际线的壮丽景色。", id: "Nikmati pelayaran malam Bosphorus 3 jam dengan makan malam lengkap, hiburan Turki langsung, dan pemandangan cakrawala Istanbul yang memukau.", ms: "Nikmati pelayaran malam Bosphorus 3 jam dengan makan malam penuh, hiburan Turki langsung dan pemandangan ufuk Istanbul yang menakjubkan.", pl: "Ciesz się 3-godzinnym nocnym rejsem po Bosforze z pełną kolacją, turecką rozrywką na żywo i zapierającymi dech w piersiach widokami na panoramę Stambułu.", bg: "Насладете се на 3-часов нощен круиз по Босфора с пълна вечеря, турско забавление на живо и зашеметяващи гледки към силуета на Истанбул.", ro: "Bucurați-vă de o croazieră nocturnă de 3 ore pe Bosfor cu cină completă, divertisment turcesc live și priveliști uimitoare ale siluetei Istanbulului."
+    en: "3-hour Bosphorus dinner cruise with full menu, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş.",
+    tr: "3 saatlik Boğaz yemekli turu: tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 21:00 kalkış.",
+    de: "3-stündige Bosporus-Dinnerfahrt mit komplettem Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 21:00 ab Kabataş.",
+    es: "Crucero con cena de 3 horas por el Bósforo: menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 21:00 desde Kabataş.",
+    ru: "3-часовой круиз с ужином по Босфору: полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 21:00 от Кабаташа.",
+    ar: "رحلة بحرية مع عشاء لمدة 3 ساعات في البوسفور: قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق الساعة 21:00 من كاباتاش.",
+    fa: "تور شام سه‌ساعته بسفر: منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 21:00 از کاباتاش.", fr: "Croisière dîner de 3 heures sur le Bosphore : menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş.", it: "Crociera con cena di 3 ore sul Bosforo: menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza alle 21:00 da Kabataş.", zh: "3小时博斯普鲁斯晚餐游船:完整菜单、梅夫拉那旋转舞、土耳其民间舞、肚皮舞和DJ。21:00从卡巴塔什码头出发。", id: "Pelayaran makan malam Bosphorus 3 jam: menu lengkap, Mevlana, tari rakyat, tari perut, dan DJ. Berangkat pukul 21:00 dari Kabataş.", ms: "Pelayaran makan malam Bosphorus 3 jam: menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 21:00 dari Kabataş.", pl: "3-godzinny rejs z kolacją po Bosforze: pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd o 21:00 z Kabataş.", bg: "3-часов круиз с вечеря по Босфора: пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване в 21:00 от Кабаташ.", ro: "Croazieră cu cină de 3 ore pe Bosfor: meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 21:00 din Kabataş."
   },
   "dinner.vip.title": {
     en: "VIP Menu", tr: "VIP Menü", de: "VIP-Menü", es: "Menú VIP",
@@ -1238,10 +1247,10 @@ const T = {
     ar: "عشاء فاخر على أفضل طاولة بالقرب من المسرح. قائمة مطورة مع مقبلات فاخرة وخيارات ستيك وخدمة VIP طوال الليل.",
     fa: "غذاخوری ممتاز در بهترین میز نزدیک صحنه. منوی ارتقا یافته با مزه‌های ممتاز، گزینه‌های استیک و خدمات VIP در تمام شب.", fr: "Dîner premium à la meilleure table près de la scène. Menu rehaussé avec mezzés premium, options steak et service VIP toute la soirée.", it: "Cena premium al miglior tavolo vicino al palco. Menu aggiornato con meze premium, opzioni di bistecca e servizio VIP per tutta la serata.", zh: "靠近舞台最佳餐桌的高级用餐。升级菜单含尊享冷盘、牛排选项,以及整晚的VIP服务。", id: "Santap premium di meja terbaik dekat panggung. Menu yang ditingkatkan dengan meze premium, pilihan steak, dan layanan VIP sepanjang malam.", ms: "Santapan premium di meja terbaik berdekatan pentas. Menu dinaik taraf dengan meze premium, pilihan stik dan layanan VIP sepanjang malam.", pl: "Premium kolacja przy najlepszym stole w pobliżu sceny. Ulepszone menu z premium mezze, opcjami stekowymi i obsługą VIP przez cały wieczór.", bg: "Премиум вечеря на най-добрата маса близо до сцената. Подобрено меню с премиум мезета, варианти със стек и VIP обслужване през цялата нощ.", ro: "Cină premium la cea mai bună masă lângă scenă. Meniu îmbunătățit cu mezeluri premium, opțiuni de steak și serviciu VIP pe toată durata serii."
   },
-  "dinner.privateTable": {
-    en: "Private table", tr: "Özel masa", de: "Privater Tisch", es: "Mesa privada",
-    ru: "Отдельный стол", ar: "طاولة خاصة",
-    fa: "میز خصوصی", fr: "Table privée", it: "Tavolo privato", zh: "专属餐桌", id: "Meja privat", ms: "Meja peribadi", pl: "Prywatny stół", bg: "Лична маса", ro: "Masă privată"
+  "dinner.payOnBoat": {
+    en: "Pay on the boat", tr: "Teknede ödeme", de: "Zahlung an Bord", es: "Paga en el barco",
+    ru: "Оплата на борту", ar: "الدفع على متن القارب",
+    fa: "پرداخت در قایق", fr: "Payer à bord", it: "Paga a bordo", zh: "船上付款", id: "Bayar di perahu", ms: "Bayar di atas bot", pl: "Płatność na łodzi", bg: "Плащане на лодката", ro: "Plata pe vapor"
   },
   "dinner.nearStage": {
     en: "Near the stage", tr: "Sahneye yakın", de: "Nahe der Bühne", es: "Cerca del escenario",

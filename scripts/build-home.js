@@ -92,12 +92,10 @@ function buildMeta(lang) {
   const pick = (key, fallback) => (T[key] && T[key][lang]) || (T[key] && T[key].en) || fallback;
   const title1 = pick('hero.title1', 'Luxury Bosphorus');
   const title2 = pick('hero.title2', 'Dinner Cruise');
-  const subtitle = pick('hero.subtitle', 'Live entertainment · Dinner · Bosphorus night views · 7/24 instant support');
-  const noprepay = pick('hero.noprepay', 'No prepayment — Pay on the boat');
   // CJK languages don't use spaces between words.
   const sep = lang === 'zh' ? '' : ' ';
   const title = `${title1}${sep}${title2} — Bosphorus Night Istanbul`;
-  const description = `${subtitle}. ${noprepay}.`;
+  const description = pick('meta.home.description', '3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.');
   return { title, description };
 }
 
@@ -305,7 +303,7 @@ function buildSchemaLd(lang) {
     '@context': 'https://schema.org',
     '@type': 'SocialEvent',
     name: 'Bosphorus Dinner Cruise — Turkish Night Show',
-    description: '3-hour dinner cruise on the Bosphorus with Turkish folk dance, belly dance, live music, DJ and unlimited soft drinks. Departs 21:00 from Kabataş Pier.',
+    description: '3-hour Bosphorus dinner cruise from €24/person with full menu, Mevlana whirling dervish, Turkish folk dance, belly dance, live music & DJ. Departs 21:00 from Kabataş Pier. Pay on the boat. Hotel transfer available.',
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     inLanguage: lang,
     startDate: `${tomorrowDate}T21:00:00+03:00`,
