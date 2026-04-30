@@ -19,7 +19,7 @@ module.exports = {
     },
     intro: [
       '**Croaziera cu cină pe Bosfor** este cea mai iconică experiență de seară din Istanbul. Turul nostru pleacă la ora 20:00 de la debarcaderul Kabataș și navighează pe sub podurile Bosfor și Fatih Sultan Mehmet iluminate, oferindu-vă o cină turcească cu multiple feluri, dansuri populare live, dans oriental și un set DJ care animă puntea până la 23:00.',
-      'Spre deosebire de vapoarele obișnuite care populează peisajul nocturn al Istanbulului, **croaziera noastră cu cină pe Bosfor** este licențiată TÜRSAB (A-17672) și evaluată cu 4,8★ de peste 11.317 călători pe Google și TripAdvisor. Menținem grupurile mici și serviciul călduros — și, pentru că plătiți pe vapor, nu există niciun risc în a face rezervarea în avans.',
+      'Spre deosebire de vapoarele obișnuite care populează peisajul nocturn al Istanbulului, **croaziera noastră cu cină pe Bosfor** este licențiată TÜRSAB (A-17672) și evaluată cu 4,8★ de peste 11.317 călători. Menținem grupurile mici și serviciul călduros — și, pentru că plătiți pe vapor, nu există niciun risc în a face rezervarea în avans.',
       'Fie că sărbătoriți o aniversare, căutați o seară premium în Istanbul pentru familia dumneavoastră, fie că doriți cea mai fotogenică tranziție apus-noapte a orașului — aceasta este croaziera cu cină recomandată în primul rând de localnicii din Istanbul.'
     ],
     highlights: [

@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       "La **croisière dîner sur le Bosphore** est l'expérience nocturne la plus emblématique d'Istanbul. Notre croisière part de l'embarcadère de Kabataş à 20h00 et glisse sous les ponts illuminés du Bosphore et Fatih Sultan Mehmet, tout en proposant un festin turc varié, des danses folkloriques en direct, une danse orientale et un set DJ qui anime le pont jusqu'à 23h00.",
-      "Contrairement aux bateaux de croisière ordinaires qui peuplent les nuits d'Istanbul, notre **croisière dîner sur le Bosphore** est agréée TÜRSAB (A-17672) et a été notée 4,8★ par plus de 11 317 voyageurs sur Google et TripAdvisor. Nous gardons le groupe restreint et le service chaleureux — et comme vous payez à bord, réserver à l'avance ne présente aucun risque.",
+      "Contrairement aux bateaux de croisière ordinaires qui peuplent les nuits d'Istanbul, notre **croisière dîner sur le Bosphore** est agréée TÜRSAB (A-17672) et a été notée 4,8★ par plus de 11 317 voyageurs. Nous gardons le groupe restreint et le service chaleureux — et comme vous payez à bord, réserver à l'avance ne présente aucun risque.",
       "Que vous fêtiez un anniversaire, cherchiez une soirée istanbouliote premium en famille, ou souhaitiez la plus belle transition coucher de soleil-nuit de la ville — c'est la croisière dîner que les Istanbouliotes recommandent en premier."
     ],
     highlights: [

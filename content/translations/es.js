@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       'El **crucero con cena por el Bósforo** es la experiencia nocturna más icónica de Estambul. Nuestro tour parte del muelle de Kabataş a las 20:00 y desliza bajo los iluminados puentes del Bósforo y Fatih Sultan Mehmet mientras sirve un generoso banquete turco, danzas folclóricas en vivo, danza oriental y un set de DJ que mantiene la cubierta con ambiente hasta las 23:00.',
-      'A diferencia de los barcos turísticos corrientes que llenan el Bósforo por la noche, nuestro **crucero con cena por el Bósforo** cuenta con licencia TÜRSAB (A-17672) y ha sido calificado con 4,8★ por más de 11.317 viajeros en Google y TripAdvisor. Mantenemos el grupo reducido y el servicio cálido — y como usted paga a bordo, reservar con antelación no tiene ningún riesgo.',
+      'A diferencia de los barcos turísticos corrientes que llenan el Bósforo por la noche, nuestro **crucero con cena por el Bósforo** cuenta con licencia TÜRSAB (A-17672) y ha sido calificado con 4,8★ por más de 11.317 viajeros. Mantenemos el grupo reducido y el servicio cálido — y como usted paga a bordo, reservar con antelación no tiene ningún riesgo.',
       '¿Celebra un aniversario, busca una velada premium en Estambul para su familia o quiere la transición atardecer-noche más fotogénica de la ciudad? Este es el crucero con cena que los habitantes de Estambul recomiendan primero.'
     ],
     highlights: [

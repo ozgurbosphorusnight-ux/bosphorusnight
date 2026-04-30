@@ -36,7 +36,7 @@ module.exports = {
   intro: [
     'The **Bosphorus dinner cruise** is Istanbul\'s most iconic evening experience. Boarding at Kabataş Pier at 20:00, our vessel glides beneath the illuminated spans of the Bosphorus and Fatih Sultan Mehmet bridges while you enjoy a multi-course Turkish feast, live folklore performances, belly dancing, and a DJ set that keeps the deck alive until 23:00.',
 
-    'Unlike the many generic tour boats crowding the Istanbul nightscape, our **Bosphorus dinner cruise** is TÜRSAB-licensed (A-17672) and rated 4.8★ by more than 11,317 travelers on Google and TripAdvisor. We keep the group small, the service warm, and — because you pay on the boat — you risk nothing by booking in advance.',
+    'Unlike the many generic tour boats crowding the Istanbul nightscape, our **Bosphorus dinner cruise** is TÜRSAB-licensed (A-17672) and rated 4.8★ by more than 11,317 travelers. We keep the group small, the service warm, and — because you pay on the boat — you risk nothing by booking in advance.',
 
     'Whether you\'re celebrating an anniversary, treating your family to a premium Istanbul evening, or simply craving the city\'s most photogenic sunset-to-night transition, this is the dinner cruise Istanbul regulars recommend first.'
   ],

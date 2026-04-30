@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       '**Boğaz yemekli turu**, İstanbul\'un en ikonik akşam deneyimidir. 20:00\'de Kabataş İskelesi\'nden başlayan turumuz, aydınlatılmış Boğaz ve Fatih Sultan Mehmet köprülerinin altından süzülürken çok çeşitli Türk yemekleri, canlı halk oyunları, oryantal dans ve 23:00\'e kadar güverteyi canlı tutan DJ seti sunar.',
-      'İstanbul\'un gece manzarasını dolduran sıradan tur teknelerinin aksine, **Boğaz yemekli turumuz** TÜRSAB lisanslıdır (A-17672) ve Google ile TripAdvisor\'da 11.317\'den fazla gezgin tarafından 4.8★ olarak değerlendirilmiştir. Grubu küçük, hizmeti sıcak tutarız — ve teknede ödediğiniz için önceden rezervasyon yapmanın hiçbir riski yoktur.',
+      'İstanbul\'un gece manzarasını dolduran sıradan tur teknelerinin aksine, **Boğaz yemekli turumuz** TÜRSAB lisanslıdır (A-17672) ve 11.317\'den fazla gezgin tarafından 4.8★ olarak değerlendirilmiştir. Grubu küçük, hizmeti sıcak tutarız — ve teknede ödediğiniz için önceden rezervasyon yapmanın hiçbir riski yoktur.',
       'Yıldönümü mü kutluyorsunuz, aileniz için premium bir İstanbul akşamı mı arıyorsunuz, yoksa şehrin en fotojenik gün batımı-gece geçişini mi istiyorsunuz — İstanbul sakinlerinin ilk önerdiği yemekli tur bu.'
     ],
     highlights: [

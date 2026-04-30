@@ -19,7 +19,7 @@ module.exports = {
     },
     intro: [
       '**Pelayaran makan malam Bosphorus** ialah pengalaman petang paling ikonik di Istanbul. Pelayaran kami bermula dari Jeti Kabataş pada jam 20:00, meluncur di bawah Jambatan Bosphorus dan Jambatan Fatih Sultan Mehmet yang diterangi, sambil menghidangkan jamuan Turki berbilang hidangan, tarian rakyat langsung, tarian oryantal dan set DJ yang menghidupkan dek sehingga 23:00.',
-      'Berbeza dengan bot pelancong biasa yang memenuhi pemandangan malam Istanbul, **pelayaran makan malam Bosphorus kami** berlesen TÜRSAB (A-17672) dan dinilai 4.8★ oleh lebih 11,317 pengembara di Google dan TripAdvisor. Kami mengekalkan kumpulan kecil dan perkhidmatan mesra — dan kerana anda membayar di atas bot, tiada sebarang risiko untuk membuat tempahan awal.',
+      'Berbeza dengan bot pelancong biasa yang memenuhi pemandangan malam Istanbul, **pelayaran makan malam Bosphorus kami** berlesen TÜRSAB (A-17672) dan dinilai 4.8★ oleh lebih 11,317 pengembara. Kami mengekalkan kumpulan kecil dan perkhidmatan mesra — dan kerana anda membayar di atas bot, tiada sebarang risiko untuk membuat tempahan awal.',
       'Sama ada anda menyambut ulang tahun, mencari petang Istanbul premium untuk keluarga, atau menginginkan peralihan matahari terbenam ke malam yang paling fotogenik di bandar ini — inilah pelayaran makan malam yang pertama disyorkan oleh penduduk Istanbul.'
     ],
     highlights: [

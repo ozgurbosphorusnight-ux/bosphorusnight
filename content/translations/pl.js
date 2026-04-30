@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       '**Rejs z kolacją po Bosforze** to najbardziej kultowe wieczorne doświadczenie w Stambule. Nasz rejs rozpoczyna się o 20:00 przy przystani Kabataş — płynąc pod podświetlonymi mostami Bosforu i Fatih Sultan Mehmet, serwujemy bogatą kuchnię turecką, pokazy tańca ludowego, taniec brzucha i set DJ-a, który trzyma pokład w ruchu aż do 23:00.',
-      'W przeciwieństwie do zwykłych łodzi turystycznych tłoczących się po Bosforze, nasz **rejs z kolacją po Bosforze** posiada licencję TÜRSAB (A-17672) i został oceniony na 4,8★ przez ponad 11 317 podróżnych w Google i TripAdvisor. Utrzymujemy kameralne grupy i ciepłą obsługę — a ponieważ płacą Państwo na pokładzie, rezerwacja z wyprzedzeniem nie wiąże się z żadnym ryzykiem.',
+      'W przeciwieństwie do zwykłych łodzi turystycznych tłoczących się po Bosforze, nasz **rejs z kolacją po Bosforze** posiada licencję TÜRSAB (A-17672) i został oceniony na 4,8★ przez ponad 11 317 podróżnych. Utrzymujemy kameralne grupy i ciepłą obsługę — a ponieważ płacą Państwo na pokładzie, rezerwacja z wyprzedzeniem nie wiąże się z żadnym ryzykiem.',
       'Czy świętują Państwo rocznicę, szukają premium stambulskiego wieczoru dla rodziny, czy pragną najbardziej fotogenicznego przejścia z zachodu słońca w noc — to jest rejs z kolacją, który mieszkańcy Stambułu polecają w pierwszej kolejności.'
     ],
     highlights: [

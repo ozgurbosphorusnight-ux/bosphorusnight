@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       'Die **Bosporus-Schifffahrt mit Dinner** ist Istanbuls ikonischstes Abenderlebnis. Unser Schiff legt um 20:00 Uhr am Kabataş-Pier ab und gleitet unter den beleuchteten Bögen der Bosporus- und Fatih-Sultan-Mehmet-Brücken hindurch, während Sie ein mehrgängiges türkisches Festmahl, Live-Folklore-Aufführungen, orientalischen Tanz und ein DJ-Set genießen, das das Deck bis 23:00 Uhr zum Leben erweckt.',
-      'Im Gegensatz zu den vielen generischen Tourbooten, die die Istanbuler Nachtkulisse bevölkern, ist unsere **Bosporus-Schifffahrt mit Dinner** TÜRSAB-lizenziert (A-17672) und wurde von mehr als 11.317 Reisenden auf Google und TripAdvisor mit 4,8★ bewertet. Wir halten die Gruppe klein, den Service herzlich — und da Sie an Bord zahlen, gehen Sie mit einer Vorabbuchung kein Risiko ein.',
+      'Im Gegensatz zu den vielen generischen Tourbooten, die die Istanbuler Nachtkulisse bevölkern, ist unsere **Bosporus-Schifffahrt mit Dinner** TÜRSAB-lizenziert (A-17672) und wurde von mehr als 11.317 Reisenden mit 4,8★ bewertet. Wir halten die Gruppe klein, den Service herzlich — und da Sie an Bord zahlen, gehen Sie mit einer Vorabbuchung kein Risiko ein.',
       'Ob Sie einen Jahrestag feiern, einen Premium-Abend in Istanbul mit Ihrer Familie suchen oder einfach den fotogensten Übergang von Sonnenuntergang zu Nacht der Stadt erleben möchten — dies ist die Dinner-Cruise, die Einheimische in Istanbul zuerst empfehlen.'
     ],
     highlights: [

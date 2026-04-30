@@ -18,7 +18,7 @@ module.exports = {
     },
     intro: [
       "La **crociera con cena sul Bosforo** è l'esperienza serale più iconica di Istanbul. La nostra barca salpa alle 20:00 dal molo di Kabataş e scivola sotto le arcate illuminate dei ponti del Bosforo e di Fatih Sultan Mehmet, mentre Lei gusta un banchetto turco a più portate, spettacoli folkloristici dal vivo, danza orientale e un set DJ che anima il ponte fino alle 23:00.",
-      "A differenza delle numerose barche turistiche generiche che popolano la notte di Istanbul, la nostra **crociera con cena sul Bosforo** è autorizzata TÜRSAB (A-17672) e valutata 4,8★ da oltre 11.317 viaggiatori su Google e TripAdvisor. Manteniamo il gruppo ristretto, il servizio caloroso — e poiché il pagamento avviene a bordo, prenotare in anticipo non comporta alcun rischio.",
+      "A differenza delle numerose barche turistiche generiche che popolano la notte di Istanbul, la nostra **crociera con cena sul Bosforo** è autorizzata TÜRSAB (A-17672) e valutata 4,8★ da oltre 11.317 viaggiatori. Manteniamo il gruppo ristretto, il servizio caloroso — e poiché il pagamento avviene a bordo, prenotare in anticipo non comporta alcun rischio.",
       "Che stia celebrando un anniversario, cercando una serata premium a Istanbul per la Sua famiglia, o desideri semplicemente il passaggio tramonto-notte più fotogenico della città — questa è la crociera con cena che gli abitanti di Istanbul raccomandano per primi."
     ],
     highlights: [
