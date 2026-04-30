@@ -27,7 +27,7 @@ const KNOWN_TYPES = new Set([
   'Place', 'PostalAddress', 'GeoCoordinates', 'ContactPoint',
   'Offer', 'PriceSpecification', 'UnitPriceSpecification', 'QuantitativeValue',
   'PerformingGroup', 'Schedule', 'SearchAction', 'WebPage',
-  'ItemList', 'CreativeWork', 'Person',
+  'ItemList', 'CreativeWork', 'Person', 'PropertyValue',
 ]);
 
 // Minimal required fields per @type (Google Rich Results essentials).
