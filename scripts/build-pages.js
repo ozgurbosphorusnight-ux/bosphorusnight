@@ -13,6 +13,8 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.bosphorusnight.com';
 
+const { buildBosphorusItinerary, buildBosphorusMentions } = require('./_wikidata-entities.js');
+
 // UI translations (boilerplate: nav, wizard, footer, FAQ, etc.)
 const { T: UI_T } = require(path.join(ROOT, 'js', 'translations.js'));
 
@@ -237,15 +239,8 @@ function buildSchemaLd(page, lang, slug) {
       url,
       validFrom: new Date().toISOString().split('T')[0]
     },
-    itinerary: {
-      '@type': 'ItemList',
-      numberOfItems: 11,
-      itemListElement: [
-        'Kabataş Pier', 'Dolmabahçe Palace', 'Çırağan Palace', 'Ortaköy Mosque',
-        'Bosphorus Bridge', 'Bebek', 'Rumeli Fortress', 'FSM Bridge',
-        'Beylerbeyi Palace', 'Üsküdar', 'Maiden\'s Tower'
-      ].map((n, i) => ({ '@type': 'ListItem', position: i + 1, name: n }))
-    }
+    itinerary: buildBosphorusItinerary(),
+    mentions: buildBosphorusMentions()
     // aggregateRating intentionally omitted — we add it back once real, verifiable
     // reviews are collected (Google Business Profile / TripAdvisor / on-site reviews).
   };

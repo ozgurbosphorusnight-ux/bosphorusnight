@@ -13,6 +13,8 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.bosphorusnight.com';
 
+const { buildBosphorusItinerary, buildBosphorusMentions } = require('./_wikidata-entities.js');
+
 // Load enriched translations.js (now includes all 15 languages)
 const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
 
@@ -209,23 +211,9 @@ function buildSchemaLd(lang) {
     inLanguage: lang
   };
 
-  // Bosphorus itinerary shared across all tour products.
-  const bosphorusItinerary = {
-    '@type': 'ItemList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Kabataş Pier (departure)' },
-      { '@type': 'ListItem', position: 2, name: 'Dolmabahçe Palace' },
-      { '@type': 'ListItem', position: 3, name: 'Çırağan Palace' },
-      { '@type': 'ListItem', position: 4, name: 'Ortaköy Mosque' },
-      { '@type': 'ListItem', position: 5, name: 'Bosphorus Bridge' },
-      { '@type': 'ListItem', position: 6, name: 'Bebek Bay' },
-      { '@type': 'ListItem', position: 7, name: 'Rumeli Fortress' },
-      { '@type': 'ListItem', position: 8, name: 'Anadolu Fortress' },
-      { '@type': 'ListItem', position: 9, name: 'Beylerbeyi Palace' },
-      { '@type': 'ListItem', position: 10, name: 'Kuzguncuk & Üsküdar' },
-      { '@type': 'ListItem', position: 11, name: 'Kabataş Pier (return)' }
-    ]
-  };
+  // Bosphorus itinerary (shared) — Wikidata @id per stop where available.
+  const bosphorusItinerary = buildBosphorusItinerary();
+  const bosphorusMentions = buildBosphorusMentions();
 
   const provider = {
     '@type': 'TravelAgency',
@@ -271,6 +259,7 @@ function buildSchemaLd(lang) {
     image,
     provider,
     itinerary: bosphorusItinerary,
+    mentions: bosphorusMentions,
     offers: {
       '@type': 'Offer',
       price: String(price),
