@@ -9,6 +9,11 @@
     { "source": "/cruises/daytime-cruise.html", "destination": "/bosphorus-trip", "statusCode": 301 },
     { "source": "/cruises/last-minute-tonight.html", "destination": "/last-minute-bosphorus", "statusCode": 301 },
 
+    { "source": "/cruises/dinner-cruise", "destination": "/bosphorus-dinner-cruise", "statusCode": 301 },
+    { "source": "/cruises/sunset-cruise", "destination": "/bosphorus-sunset-cruise", "statusCode": 301 },
+    { "source": "/cruises/daytime-cruise", "destination": "/bosphorus-trip", "statusCode": 301 },
+    { "source": "/cruises/last-minute-tonight", "destination": "/last-minute-bosphorus", "statusCode": 301 },
+
     { "source": "/dinner-cruise", "destination": "/bosphorus-dinner-cruise", "statusCode": 301 },
     { "source": "/sunset-cruise", "destination": "/bosphorus-sunset-cruise", "statusCode": 301 },
     { "source": "/daytime-cruise", "destination": "/bosphorus-trip", "statusCode": 301 },
@@ -22,7 +27,8 @@
     { "source": "/:lang(ja|ko|ur|hi)/:slug*", "destination": "/:slug*", "statusCode": 301 },
     { "source": "/:lang(ja|ko|ur|hi)", "destination": "/", "statusCode": 301 },
 
-    { "source": "/cruises/:lang/:slug.html", "destination": "/:lang/:slug", "statusCode": 301 }
+    { "source": "/cruises/:lang/:slug.html", "destination": "/:lang/:slug", "statusCode": 301 },
+    { "source": "/cruises/:lang/:slug", "destination": "/:lang/:slug", "statusCode": 301 }
   ],
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/$1" }
