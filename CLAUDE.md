@@ -12,7 +12,8 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 - **Lokasyon:** İstanbul, Türkiye
 - **TÜRSAB Lisans:** A-17672
 - **Müşteri profili:** Uluslararası turistler (EN, TR, DE, ES, RU, AR)
-- **Rating:** 4.8★ / 11.317 yorum
+- **Müşteri tabanı:** 11.317+ geçmiş misafir (iç rezervasyon sistemi, 2014'ten beri) · 4.8★ iç memnuniyet ortalaması
+- **Public yorum profili (1 May 2026):** Google 6 yorum · TripAdvisor profil yok · GBP yeni açıldı 29 Nis
 - **Rakipler:** Mega Lüfer, Bosphorus Cruise, Bosporus Cruise, Dinner Cruise Bosphorus, Tourlance, Bosfor, Pereme, Turna
 
 ---
@@ -114,7 +115,7 @@ Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok)
 | 6.B | Country-specific SEO (DE, RU, AR öncelikli: GBP ülke, hreflang geo-variants, Almanca blog, .de domain, partner backlink'ler) | ⏳ |
 | 7 | Dashboard + günlük rapor | ⏳ |
 | 7.A | SEO Dashboard (GSC API + Yandex API + Bing API → sabah raporu) | ⏳ |
-| 8 | Çoklu kanal (Telegram, WeChat) + retention | ⏳ |
+| 8 | Çoklu kanal (Telegram ✅, WeChat, Klook OTA) + retention | ⏳ |
 | 8.A | Baidu Webmaster (Çin pazarı) + Yandex boost (Rus pazarı) | ⏳ |
 | 9 | Voice agent (Vapi + ElevenLabs) | ⏳ |
 | 9.A | Voice Search SEO (Speakable schema, FAQ voice-optimize) | ⏳ |
@@ -228,7 +229,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 8 | **YouTube video SEO** — kanaldaki 6 promo video için: anahtar kelimeli title, ilk 150 karakter description, tags ("bosphorus cruise istanbul night tour"), özel thumbnail | 1 sa (sen) | 🔴 YouTube search + Google video carousel | ⏳ |
 | 9 | **Bing Webmaster Tools verify + sitemap** — 4.A Madde 3'ten ertelendi | 20 dk | 🟡 Bing trafik | ⏳ |
 | 10 | **og:image width/height meta tag** — 4.A Madde 11'den ertelendi (1200×630 explicit) | 10 dk | 🟢 Sosyal preview | ⏳ |
-| 11 | **robots.txt AI bot rules** — 4.A Madde 13'ten ertelendi (GPTBot, ClaudeBot izinleri) | 10 dk | 🟢 AI tarama | ⏳ |
+| 11 | **robots.txt AI bot rules** — 4.A Madde 13'ten ertelendi (GPTBot, ClaudeBot izinleri) | 10 dk | 🟢 AI tarama | ✅ 1 May (commit 23401d5) — 19 AI bot açık Allow + tüm arama motorları |
 | 12 | **og:locale meta tag** (16 dil) — 4.A Madde 5'ten ertelendi | 30 dk | 🟢 Locale targeting | ⏳ |
 | 13 | **GA4 (Google Analytics 4)** kurulum doğrulama — gtag çalışıyor mu, conversion'lar takip ediliyor mu | 30 dk | 🟢 Veri toplama | ⏳ |
 | 14 | **Rich Results Test** — 17 sayfa × Google Rich Results Test, schema hatası varsa düzelt | 1 sa | 🟡 Schema doğrulama | ⏳ |
@@ -241,7 +242,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 
 | # | Madde | Süre | Etki | Durum |
 |---|---|---|---|---|
-| 1 | **TripAdvisor profil optimize** — 11.317 mevcut yorumun zaten orada (memory). Profil description, kategori, photo upload, owner response. "Excellence" badge hedefi | 2-3 sa (sen) | 🔴 Direkt referrer + Google authority | ⏳ |
+| 1 | **TripAdvisor profil oluştur + optimize** — Profil yok (1 May 2026), önce sayfa kayıt et, sonra description, kategori, photo upload, owner response. İlk 50 yorum birikene kadar yatırım | 3-4 sa (sen) | 🔴 Direkt referrer + Google authority | ⏳ |
 | 2 | **TripAdvisor → Viator booking aktive** — TripAdvisor sahip Viator. Liste otomatik Viator'a yansır, %20 komisyon | 30 dk | 🔴 Viator carousel'de görün | ⏳ |
 | 3 | **GetYourGuide partner başvuru** — getyourguide.com/supplier-portal/login. Avrupa pazarı #1. Onay 1-2 hafta. Komisyon %25-30 | 1 sa başvuru + bekleme | 🔴 Travel Listings carousel | ⏳ |
 | 4 | **Klook partner başvuru** — Asya odaklı (Çin, Japon, Kore turist). Komisyon %15-25 | 1 sa başvuru + bekleme | 🟡 Asya pazarı | ⏳ |
@@ -276,6 +277,119 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 Her makale: **1500-2500 kelime, anahtar kelime hedefli, internal link'li** (landing pages'e cross-link).
 
 **Beklenen etki:** 6 ay sonra organik trafik 3-5x artar. AI agent (Aşama 5.A 8 madde) ile daha sonra otomatize edilebilir.
+
+### Aşama 8 — WeChat Official Account entegrasyonu (Çin pazarı)
+
+Aşama 8'in alt-iş kalemi. Telegram + retention ile birlikte ele alınacak. **Karar henüz verilmedi**, konuşulacak (29 Nis 2026 not edildi).
+
+**Bağlam:** Site wizard'ında WeChat seçeneği görsel olarak var ama CTA butonu ölü (`href="#"`, [js/main.js:3105-3107](js/main.js#L3105-L3107)). Çinli müşteri seçerse hiçbir yere gitmiyor — sessiz kırık. Ya kaldırılacak (ara çözüm) ya da gerçek entegrasyon yapılacak.
+
+**Önemli arka plan:** Çin'de WhatsApp + Telegram bloklu (sadece VPN'liler kullanır). WeChat olmadan Çinli turist alımı çok düşük. Ama Tencent onayı zorlu süreç.
+
+#### Faz 1 — Hesap kurulumu (Özgür, 2-4 hafta beklemeli)
+
+| # | İş | Süre | Maliyet |
+|---|---|---|---|
+| 1 | WeChat Official Account başvurusu — **Service Account (服务号)** tipi (Subscription Account API'si zayıf) | 2 sa belge | $99/yıl Tencent verify fee |
+| 2 | Belge hazırlığı: TÜRSAB A-17672 lisansı İngilizce tercüme + apostil, ticaret sicil gazetesi apostil, Özgür pasaport | 1 hafta | ~₺2.000-3.000 tercüme/apostil |
+| 3 | Hong Kong şirket alternatifi (Çin supervisor zorunluluğu çıkarsa) | 1 hafta | $300-500 kurulum + ~$200/yıl |
+| 4 | Tencent onay süreci | 2-4 hafta bekleme | — |
+| 5 | Onay sonrası AppID + AppSecret + Token + EncodingAESKey | — | — |
+
+**Risk:** %30 ihtimalle ilk seferde reddediliyor (belge eksiği). Hong Kong şirketi olmazsa onay %50.
+
+#### Faz 2 — Teknik entegrasyon (~25 sa net iş)
+
+WhatsApp/Telegram **gibi değil**: XML protokol + AES şifreleme + 48 saat pencere kuralı.
+
+| # | İş | Dosya | Süre |
+|---|---|---|---|
+| 1 | `npm install xml2js wechat-crypto` | package.json | 30 dk |
+| 2 | Webhook handler (XML parse + AES decrypt) | `src/channels/wechat.js` | 4 sa |
+| 3 | `sendMessage(openid, body)` — Customer Service Messages API | `src/channels/wechat.js` | 3 sa |
+| 4 | Media upload — bilet PNG Tencent CDN'e yükle, `media_id` al, mesaja ekle (PNG direct URL gönderilemiyor) | `src/channels/wechat.js` | 3 sa |
+| 5 | Migration 019: `customers.wechat_openid` UNIQUE | migration | 30 dk |
+| 6 | Customer matching — OpenID resolve, sales agent adapter | `src/agents/sales.js` + queries | 2 sa |
+| 7 | `/webhooks/wechat` endpoint — signature verify + routing | `src/index.js` | 2 sa |
+| 8 | Sales agent — WeChat 48 sa pencere kuralı (proaktif mesaj yasak, sadece template) | sales.js | 4 sa |
+| 9 | Template message kaydı (Tencent panel) — "Rezervasyon teyidi", "Tur hatırlatma", "Transfer geliyor" 3 şablon | Tencent panel + kod | 1 sa kayıt + 1-2 gün Tencent onay |
+| 10 | Site wizard handoff — WeChat'te `wa.me`/`t.me` gibi link yok. Çözüm: QR modal aç → müşteri WeChat'te tara → bot'a düşer | `js/main.js` wizard | 3 sa |
+| 11 | Test (VPN ile Çinli arkadaş veya fake hesap) | sandbox | 4 sa |
+
+#### Kritik teknik tuzaklar
+
+1. **48 saat pencere kuralı** — Müşteri yazdıktan 48 sa içinde free-form cevap, sonra sadece **önceden Tencent onaylı template message**. "Tura 30 dk kala transfer hatırlatma" → template gerekli, free-form değil.
+2. **Bilet PNG sorunu** — Dış URL kabul edilmiyor, her bilet için Tencent CDN upload + `media_id` al. Geçici media 3 gün, kalıcı için ayrı flow.
+3. **Test imkansız (VPN olmadan)** — Çin dışından mp.weixin.qq.com kısmen bloklu, geliştirici dokümanları Çince orijinalden okunması gerekebiliyor.
+4. **Customer Service personel limiti** — Service Account'ta max 10 "agent". AI tek agent olarak çalışır, OK.
+5. **TÜRSAB Çin'de tanınmıyor** — Marketing'de "Government-licensed Istanbul tour operator" daha iyi çalışıyor.
+
+#### Karar verilecekler
+
+- [ ] Şu ana kadar kaç Çinli müşteri sinyali geldi? (TripAdvisor + form + Telegram). <5/ay ise erteleme mantıklı.
+- [ ] Çin pazarı stratejik öncelik mi? (Klook partner — Aşama 6.A Madde 4 başvuru + Aşama 8 Klook entegrasyonu — ile birlikte yürür; **karar 29 Nis: Klook önce, WeChat paralel beklemede**)
+- [ ] Hong Kong şirketi açma iştahı var mı?
+- [ ] **Ara çözüm:** Tencent onayı beklerken wizard'da WeChat seçeneği kaldırılsın mı yoksa Telegram fallback mı? (şu an ölü buton, dönüşüm sızıntısı)
+
+**Beklenen etki:** Çinli turist hacmi 0 → ayda 20-50 (Klook + WeChat birlikte). Customer base çeşitlenmesi.
+
+### Aşama 8 — Klook OTA entegrasyonu (Asya + global pazar)
+
+Aşama 8'in ikinci alt-iş kalemi (WeChat'le birlikte). **Strateji kararı (29 Nis 2026):** Çinli turist için Telegram işe yaramaz (Çin'de bloklu, sadece VPN'liler), WeChat ise Tencent verify çilesi (2-4 hafta + ~$300 + ret riski). **Klook bu iki çözümün ortak köprüsü** — onların verified hesabı + müşteri ilişkisi + ödeme + Çince destek. Biz sadece booking + tur günü ops alıyoruz. Aynı entegrasyonla Japon, Kore, Singapur, Tayvan müşterisi de geliyor.
+
+**Sıralama kararı (29 Nis 2026):** Önce kendi sitemiz tam sisteme oturmalı (Aşama 4 WhatsApp production + Aşama 6 ops agent), **sonra** Klook entegrasyonu. Klook müşterisi sales agent'a düşmez (Klook chat bizden uzak), doğrudan **ops agent'a** akar.
+
+#### Faz 1 — Başvuru (Özgür, 1-2 hafta beklemeli)
+
+| # | İş | Süre | Maliyet |
+|---|---|---|---|
+| 1 | **Fiyat stratejisi karar** — Klook %15-25 komisyon alır, mevcut €24 STD'de marj sıfırlanır. Yol seçimi: Klook'a yüksek fiyat (€34 STD / €75 VIP) veya sadece VIP koy veya müşteri kazanımı yatırımı | 1-2 sa konuşma | — |
+| 2 | merchant.klook.com → "Become a Partner" formu | 30 dk | — |
+| 3 | Belge: TÜRSAB A-17672 İngilizce tercüme + apostil (WeChat için zaten hazırlanıyorsa paylaşımlı), ticaret sicil, sigorta poliçe, banka bilgisi (USD/HKD wire) | 1 hafta | ~₺2.000 (apostil paylaşımlı) |
+| 4 | Yüksek çözünürlüklü 10-15 foto (1920×1080), İngilizce + (ideal) Çince ürün açıklamaları | 2-3 sa | — |
+| 5 | Klook account manager onay süreci | 1-2 hafta bekleme | — |
+| 6 | Onay sonrası: ürün listing'i Klook AM ile birlikte yapılır + komisyon oranı pazarlık | 1 sa | — |
+
+**Başvuru kanalı:** TripAdvisor → Viator zinciri Klook'a yansımaz, **doğrudan Klook merchant portal**'dan başvuru gerekiyor.
+
+#### Faz 2 — Teknik entegrasyon (yöntem seçimi)
+
+Klook **direkt Partner API'si yeni başlayanlara açık değil** — typical 100+ booking/ay hacim threshold + account manager onayı. Üç yol var:
+
+| Yol | Yöntem | Süre | Avantaj | Dezavantaj |
+|---|---|---|---|---|
+| **A — Email parser** (önerim) | Klook her booking'i email atar → Gmail Pub/Sub webhook → parser → `reservations` INSERT | ~6 sa | Onay çıkar çıkmaz çalışır, $0 ek maliyet | Email format değişirse parser kırılır (yılda 1-2x) |
+| **B — Bokun channel manager** | Bokun aracı Klook + GetYourGuide + Viator + Airbnb tek panel + API'sinden çekersin | ~12 sa kod + ~$50-100/ay Bokun fee | 4 OTA tek başvuru, sağlam API | Bokun bağımlılığı, mimariyi adapte et |
+| **C — Direkt Klook API** | Klook native API | ~20 sa | Tam kontrol, native | Account manager onayı şart, hacim sonrası 3-6 ay |
+
+#### Yol A teknik plan (önerim — başlangıç için)
+
+| # | İş | Dosya | Süre |
+|---|---|---|---|
+| 1 | Gmail API kurulum (reservation@bosphorusnight.com Pub/Sub topic + service account) | google-cloud + .env | 1 sa |
+| 2 | Webhook handler — Pub/Sub push notification al, mesaj ID'siyle Gmail API'den HTML body çek | `src/channels/klook-email.js` | 2 sa |
+| 3 | HTML parser — Klook email template'inden müşteri/paket/tarih/kişi/ödeme parse et | `src/channels/klook-email.js` | 2 sa |
+| 4 | Migration 020: `reservations.channel='klook'` enum + `klook_booking_id` UNIQUE kolon | migration | 30 dk |
+| 5 | Customer resolve — email/ad'la mevcut `customers` eşle, yeni ise INSERT (channel='klook') | sales adapter + queries | 1 sa |
+| 6 | Ops agent `channel='klook'` flag — T-24sa teyit, T-30dk transfer, tur günü WhatsApp/SMS bağlantısı (Klook chat'te olmaz) | ops.js | 1 sa |
+| 7 | Test — Klook sandbox booking → email → DB → ops trigger | sandbox | 1 sa |
+
+#### Kritik tuzaklar
+
+1. **Komisyon marj baskısı** — Mevcut DINNER_STD €24'te %25 komisyon = €0 marj. Klook'ta **fiyat yüksek tutulmalı** (€34+) veya **sadece VIP** satılmalı. Sözleşmedeki "Best Price Guarantee" maddesini dikkatli oku — sitendekinden yüksek fiyat yasak olabilir.
+2. **Sales agent Klook müşterisine konuşmaz** — Klook "Customer Communication Policy" gereği müşteri Klook chat'inden çıkamaz. AI sales agent sadece direct kanal (web wizard, WhatsApp, Telegram) kullanır. Klook müşterisi tamamen ops agent'ın işi.
+3. **Müşteri telefonu görünmeyebilir** — Klook müşteri telefonunu paylaşmayabilir. **Çözüm:** Klook profilinde "WhatsApp number required at checkout" iste, yoksa tur günü ops zincirinde kopukluk olur.
+4. **İade politikası farkı** — Klook müşterinin ödediği parayı tutar, biz tur sonrası ödeme alırız. **Risk:** No-show'da Klook müşteriye iade verir, biz boş yere boat hazırlamış oluruz. Sözleşmede "tour-day cancellation = no refund" şartı kritik.
+5. **Türkçe destek beklenmesin (özellik, bug değil)** — Klook Çin/Asya müşterisi tamamen Klook'un sorumluluğu, biz sadece tur günü iletişim. Sales pipeline yükü Klook üstünde.
+
+#### Karar verilecekler
+
+- [ ] Klook fiyat stratejisi: yüksek fiyat (€34/€75) mi, sadece VIP mi, müşteri kazanımı yatırımı mı?
+- [ ] Faz 2 yolu: A (email parser, hızlı) mı, B (Bokun, 4 OTA bir arada) mi?
+- [ ] Klook üstünden ilk pilot pazar Çin mi, Japonya/Kore mi, hepsi mi (listeleme dilleri buna göre)?
+- [ ] Aşama sıralaması teyidi: Aşama 4 + Aşama 6 bittikten sonra Aşama 8'in ilk kalemi Klook mu olsun? (WeChat onayı paralel beklemeli)
+
+**Beklenen etki:** Asya pazarına 0 → ayda 20-40 booking erişim. Komisyon sonrası net €1-3K/ay ek ciro (fiyat stratejisine göre). WeChat onayı geldiğinde 2 kanal birden açılır, etki 2x'e çıkar.
 
 ### Aşama 11 — Turizm Ürün Genişlemesi (son aşama, Aşama 10 bittikten sonra)
 
@@ -666,11 +780,11 @@ AI'ı gerçek WhatsApp'a bağla. Müşteri mesajları Twilio webhook üzerinden 
 
 | # | İş | Dosya | Süre | Durum |
 |---|---|---|---|---|
-| 1 | Per-conversation cost cap | `src/safety/budget-guard.js` (extend) | 1 sa | ☐ |
-| 2 | Reservation code → nanoid (8ch, güvenli alfabe) | `src/db/queries/reservations.js`, migration | 2 sa | ☐ |
-| 3 | Tool authorization audit (cancel/update_reservation) | `src/claude/tools/cancel-reservation.js`, `update-reservation.js` | 2 sa | ☐ |
-| 4 | Prompt injection guard | `src/claude/prompts/shared-rules.js`, router pre-check | 2 sa | ☐ |
-| 5 | Anomaly detector v0.1 (IP/telefon/isim duplicate) | `src/safety/anomaly-detector.js` | 4 sa | ☐ |
+| 1 | Per-customer conversation cap (20 warn / 40 block, 24sa rolling, manuel açma /aç) | `src/safety/conversation-cap.js` + cap-messages.js + sales.js + telegram-admin.js, migration 018 | 2 sa | ✅ 29 Nis (commit 7fd1978) |
+| 2 | ~~Reservation code → nanoid~~ — **KAPATILDI 29 Nis**: mevcut format `BN20260427DKQ3S` zaten random (5ch base36 + tarih), Özgür "yeterli" dedi. Brute force riski düşük. | — | — | ✅ kabul edildi |
+| 3 | ~~Tool authorization audit~~ — **ZATEN YAPILMIŞ**: sales.js:218-226 enrichedInput pattern AI input'unu gerçek customer.id ile override ediyor; 4 hassas tool'da DB `eq('customer_id', ...)` koruması var. Saldırgan başkasının kodunu öğrense bile iptal edemez. | — | — | ✅ doğrulandı 29 Nis |
+| 4 | Prompt injection guard (2 katmanlı: SAFETY_RULES prompt + ~30 pattern regex pre-filter) | shared-rules.js + system-prompt.js + sales.js + prompt-injection-detector.js | 2 sa | ✅ 29 Nis (commit 2a58ed4) |
+| 5 | Anomaly detector v0.1 (3 kural: R1 hızlı tekrar rez, R2 yeni müşteri büyük grup, R3 tg-phone mismatch) | anomaly-detector.js + create-reservation.js | 1.5 sa | ✅ 29 Nis (commit a164351) |
 
 #### Faz B — Akıllı routing (~2 gün)
 
