@@ -45,8 +45,10 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 |---|---|---|---|---|---|---|---|
 | DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ bekleniyor | — |
 | SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ bekleniyor | — |
-| DINNER_STD | Standard Dinner Cruise | 3 saat | 21:00 | €24 | €40 | €18 | €6 |
-| DINNER_VIP | VIP Dinner Cruise | 3 saat | 21:00 | €55 | €90 | €40 | €15 |
+| DINNER_STD | Standard Dinner Cruise | 3 saat | 21:00 | €24.30 | €40 | €18 | €6.30 |
+| DINNER_VIP | VIP Dinner Cruise | 3 saat | 21:00 | €55.20 | €90 | €40 | €15.20 |
+
+> ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse buradan da güncelle + AI prompt'unda da güncelle (`src/claude/system-prompt.js` 4 yer + `src/claude/prompts/red-lines.md` 3 yer + `shared-rules.js:96` 1 yer). Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker.
 
 **Buluşma:** Kabataş İskelesi. Giriş 20:00'den itibaren, kalkış 21:00. Ödeme: Pay on the boat (ön ödeme yok).
 
