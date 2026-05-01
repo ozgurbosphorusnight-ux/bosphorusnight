@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'How do I request a private Bosphorus cruise quote?',
       a: 'Easiest: WhatsApp us at +90 532 244 29 22 with (1) your group size, (2) preferred date, (3) occasion (wedding, corporate, birthday), (4) any special requirements. We reply within 1 hour during business times, within 12 hours overnight. We can also arrange a video call to discuss details.'
+    },
+    {
+      q: 'How much does a private yacht charter cost on the Bosphorus?',
+      a: 'Private Bosphorus yacht charter prices vary by yacht size and duration — typically €500–3,000 for 3–4 hours. Bosphorus Night arranges private cruises on request; contact via WhatsApp +90 532 244 29 22 with your group size, date, and budget for a custom quote.'
+    },
+    {
+      q: 'Can I book a private Bosphorus cruise just for a marriage proposal?',
+      a: 'Yes — Bosphorus Night arranges private proposals on the boat. Options include a reserved Romantic Table (+€{p.romantic}) on a regular cruise, or a full boat charter for absolute privacy. Contact WhatsApp +90 532 244 29 22 with your date for a quote.'
     }
   ],
 

@@ -88,6 +88,14 @@ module.exports = {
     {
       q: 'What should I wear to the Bosphorus dinner cruise?',
       a: 'Smart casual. Istanbul evenings can be windy even in summer — we recommend a light jacket or shawl. No dress code is enforced, but swimwear, flip-flops, or athletic wear may feel out of place at dinner.'
+    },
+    {
+      q: 'Is the Bosphorus dinner cruise worth it?',
+      a: 'For most travelers, yes. €{p.dinnerStd}/person includes a 3-hour cruise, full dinner (10 mezes, main course, dessert), unlimited soft drinks, live music, DJ, traditional folk dances, and belly dance show. With 4.8★ from 11,317 reviews and pay-on-boat policy, the risk is minimal.'
+    },
+    {
+      q: 'What\'s the best Bosphorus dinner cruise in Istanbul?',
+      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 21:00 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
     }
   ],
 

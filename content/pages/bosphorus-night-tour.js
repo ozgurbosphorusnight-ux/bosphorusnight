@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'What if I don\'t speak Turkish — is the tour in English?',
       a: 'The crew speaks English. Entertainment (whirling dervish, folk dances, music) needs no language. Dinner menu is in English. Booking via WhatsApp / Telegram / WeChat works in multiple languages (English, Arabic, Russian, German, French, Spanish). No Turkish needed.'
+    },
+    {
+      q: 'Is the Bosphorus night tour safe?',
+      a: 'Yes — Bosphorus Night operates a TÜRSAB-licensed (A-17672) boat with current safety certificates and regular maintenance. The Bosphorus is calm and well-patrolled at night. The 21:00 departure from Kabataş Pier is in central Istanbul, accessible by tram and metro.'
+    },
+    {
+      q: 'What\'s the best night activity in Istanbul?',
+      a: 'A Bosphorus night cruise consistently ranks as Istanbul\'s top evening activity. Bosphorus Night offers a 3-hour cruise with full dinner, live music, DJ, folk dances, belly dance, and the Mevlana whirling dervish for €{p.dinnerStd}/person — combining sightseeing of illuminated palaces and bridges with a complete meal in one ticket.'
     }
   ],
 

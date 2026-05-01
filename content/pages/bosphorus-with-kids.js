@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Do I need to bring a stroller onboard?',
       a: 'You can, but we recommend leaving bulky strollers at your hotel (or with our driver if you booked transfer — we\'ll keep it safe). Our boat has narrow corridors and the decks have steps. A light baby carrier is easier onboard.'
+    },
+    {
+      q: 'What\'s the best Bosphorus cruise for families with children?',
+      a: 'Bosphorus Night\'s Standard Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 21:00 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
+    },
+    {
+      q: 'Are there activities for kids on the Bosphorus cruise?',
+      a: 'The cruise includes traditional folk dances (5 regions), the Mevlana whirling dervish, a belly dance show, and live music — visually engaging for kids. There is no dedicated kids\' play area or animator, but entertainment runs continuously through the 3-hour cruise.'
     }
   ],
 

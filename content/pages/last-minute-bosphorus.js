@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'What if I\'m already at Kabataş and want to board?',
       a: 'If you\'re at the pier and there are open seats, you can walk up and board. WhatsApp us or ask the crew — if there\'s space we\'ll add you. Same pay-on-boat price. Called "walk-on" in cruise terms — works here.'
+    },
+    {
+      q: 'Where can I find last-minute Bosphorus cruise deals tonight?',
+      a: 'Bosphorus Night accepts last-minute bookings for the 21:00 cruise when seats are available — direct via WhatsApp +90 532 244 29 22 or website. Same €{p.dinnerStd} Standard price (no last-minute markup). Pay on boat. Boarding 20:00 at Kabataş Pier.'
+    },
+    {
+      q: 'Is last-minute Bosphorus booking reliable?',
+      a: 'With Bosphorus Night, yes — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. Last-minute bookings depend on seat availability; weekends and summer peak may sell out by afternoon. WhatsApp confirmation within minutes — pay on boat, no prepayment risk.'
     }
   ],
 

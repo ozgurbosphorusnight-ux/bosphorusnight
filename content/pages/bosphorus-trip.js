@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'What are the Bosphorus trip stops?',
       a: 'It\'s a continuous cruise — we don\'t stop at landmarks (no disembarking). The boat passes each landmark at close distance, crew explains what you\'re seeing, you stay comfortable at your table or move to the open deck for photos. No queueing, no walking — just a smooth 3 hours on the water.'
+    },
+    {
+      q: 'How much does a Bosphorus trip cost in 2026?',
+      a: 'In 2026, a Bosphorus dinner trip with Bosphorus Night starts at €{p.dinnerStd}/person Standard, €{p.dinnerVip}/person VIP. Both include a 3-hour cruise, dinner, and shows. Add-ons: alcohol €{p.alcohol2}–€{p.unlimited}, hotel transfer €{p.transfer}. Pay on boat — no prepayment.'
+    },
+    {
+      q: 'What\'s the difference between a Bosphorus trip and a regular ferry ride?',
+      a: 'Public city ferries are commuter transport — no dinner, no commentary, daytime routes. A Bosphorus trip with Bosphorus Night is a 3-hour evening tourist cruise with full dinner, live music, DJ, traditional shows, and a complete Asian-and-European shore route from Kabataş, starting at €{p.dinnerStd}/person.'
     }
   ],
 

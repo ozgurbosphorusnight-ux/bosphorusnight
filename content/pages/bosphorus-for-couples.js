@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Is there a dance floor — can we dance?',
       a: 'Yes — after the dinner service (~22:30), the DJ starts and the open deck becomes a dance area. Many couples dance slow songs under the string lights with the Bosphorus Bridge in the background. Some of the best photos you\'ll take in Istanbul.'
+    },
+    {
+      q: 'Is the Bosphorus cruise good for a first date?',
+      a: 'Yes — the relaxed 3-hour format suits a first date. Standard tables seat 4–6 (mixed) or VIP seating at €{p.dinnerVip}/person offers more privacy near the stage. Add the Romantic Table package (+€{p.romantic}/booking) for flowers, candles, and a private corner.'
+    },
+    {
+      q: 'What\'s the most romantic dinner cruise in Istanbul for couples?',
+      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 21:00 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
     }
   ],
 

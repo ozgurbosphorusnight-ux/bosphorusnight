@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Is the Istanbul dinner cruise suitable for vegetarians / halal / dietary restrictions?',
       a: 'Yes — all meat is halal-certified. Vegetarian main course (falafel, roasted potatoes, bulgur pilaf, stewed vegetables, onion rings) available at no extra cost. Allergies can be accommodated if you tell us when booking. Alcohol is optional add-on, never pushed.'
+    },
+    {
+      q: 'Is a dinner cruise in Istanbul worth it?',
+      a: 'For first-time Istanbul visitors, yes — it combines sightseeing, dinner, and entertainment in 3 hours. Bosphorus Night charges €{p.dinnerStd}/person Standard, including 10 mezes, main course, soft drinks, live music, DJ, and traditional shows. 4.8★ from 11,317 reviews suggests reliability.'
+    },
+    {
+      q: 'What\'s the cheapest dinner cruise in Istanbul?',
+      a: 'Bosphorus Night offers a Standard Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. The 3-hour format includes full dinner (10 mezes, main course, dessert), soft drinks, live music, DJ, folk dances, and the Mevlana whirling dervish. Pay on boat, no prepayment required.'
     }
   ],
 

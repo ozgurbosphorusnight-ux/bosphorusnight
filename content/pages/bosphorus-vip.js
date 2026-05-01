@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Is the VIP cruise suitable for a business dinner with clients?',
       a: 'Yes — VIP is the most common choice for business dinners in Istanbul. Private table, quiet enough for conversation, impressive menu and views. Many guests book VIP + unlimited alcohol to host clients. Halal-certified (good for Gulf business travelers). Let us know when booking so we can reserve a quieter back-VIP table.'
+    },
+    {
+      q: 'Is the VIP Bosphorus cruise worth the extra cost over Standard?',
+      a: 'For couples and special occasions, yes. VIP at €{p.dinnerVip}/person (vs Standard €{p.dinnerStd}) adds 15+ premium mezes, a rib-eye or beef tenderloin upgrade, stage-front seating with the best panoramic view, and dedicated VIP service throughout the 3-hour cruise.'
+    },
+    {
+      q: 'What premium food is served on the VIP Bosphorus cruise?',
+      a: 'VIP includes 15+ premium mezes plus everything in Standard, with the main course upgraded to rib-eye steak or beef tenderloin (seafood and lamb available on request). Ice cream cake dessert. Soft drinks unlimited. Alcohol is a separate add-on (€{p.alcohol2}–€{p.unlimited}/person).'
     }
   ],
 

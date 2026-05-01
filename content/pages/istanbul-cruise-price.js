@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Any group discount on Istanbul cruise price?',
       a: 'For groups of 10+, we can offer a 5-10% discount — WhatsApp us with your group size. For 25+ consider booking a private cruise (whole boat for your group, custom menu). For 2-9 people, standard prices apply — already 40% off regular rate.'
+    },
+    {
+      q: 'What\'s the cheapest Istanbul Bosphorus cruise option?',
+      a: 'Bosphorus Night offers a Standard Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), with full dinner, live music, and traditional shows over 3 hours. Daytime sightseeing-only cruises are a separate category without dinner. Original price was €{p.dinnerStdOriginal}, now €{p.dinnerStd}.'
+    },
+    {
+      q: 'Why is the Istanbul cruise so affordable?',
+      a: 'Istanbul\'s lower operating costs (fuel, crew, food) keep dinner cruises at accessible price points. Bosphorus Night offers a 3-hour cruise with full dinner and entertainment from €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), with quality reflected by 4.8★ from 11,317 reviews.'
     }
   ],
 

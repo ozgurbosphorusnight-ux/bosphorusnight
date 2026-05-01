@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'What should we wear for a romantic Bosphorus cruise?',
       a: 'Smart casual to elegant — many couples dress up (dresses, jackets). No strict dress code, but the atmosphere is more special than casual tourism. Bring a light jacket or shawl — deck can be cool even in summer. Comfortable shoes if you plan to dance after dinner.'
+    },
+    {
+      q: 'What\'s the most romantic activity to do in Istanbul at night?',
+      a: 'A Bosphorus dinner cruise is among Istanbul\'s most romantic evening activities — illuminated palaces, two iconic bridges, and dinner under the stars. Bosphorus Night\'s 21:00 cruise (€{p.dinnerStd}+) with the Romantic Table add-on (+€{p.romantic}) suits anniversaries, dates, and proposals.'
+    },
+    {
+      q: 'Where is the best place to propose on a Bosphorus boat?',
+      a: 'The Bosphorus Bridge (15 July Martyrs Bridge) crossing around 22:00 is the most popular proposal moment — illuminated city skyline, the bridge above, calm waters below. Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table (+€{p.romantic}) is a typical proposal setup.'
     }
   ],
 

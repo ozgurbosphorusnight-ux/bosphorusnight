@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Are kids\' Bosphorus cruise tickets free?',
       a: 'Children **0-3 sail completely free** (no charge, no fee, including transfer). Ages **4-8 at 50% off** (€{p.dinnerStd}/2 = €12 on Standard). Ages **9+ full adult price**. Prices capped and transparent — no "infant surcharge" tricks.'
+    },
+    {
+      q: 'Are Bosphorus cruise tickets cheaper online or at the dock?',
+      a: 'Online direct booking with Bosphorus Night is recommended: €{p.dinnerStd}/person, guaranteed seat for the 21:00 departure, full pricing transparency, and no online prepayment — pay on the boat. Same-day availability is subject to capacity.'
+    },
+    {
+      q: 'How early should I book Bosphorus cruise tickets?',
+      a: 'Same-day booking is usually possible if seats are available. For weekends, holidays, or summer peak (June–September), book 2–3 days ahead. Bosphorus Night accepts reservations up to a few hours before the 21:00 departure when capacity allows.'
     }
   ],
 

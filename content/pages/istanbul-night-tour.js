@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Can I book the Istanbul night tour the same day?',
       a: 'Often yes — same-day booking is available if seats are open. Weekends fill faster. The booking wizard on this page lets you check availability for tonight and reserve in under 1 minute. WhatsApp us at +90 532 244 29 22 for urgent same-day requests.'
+    },
+    {
+      q: 'What can you do in Istanbul at night?',
+      a: 'Top evening activities include a Bosphorus dinner cruise (€{p.dinnerStd}+, Bosphorus Night daily at 21:00), Galata Tower views, illuminated Sultanahmet walks, a traditional Turkish bath, and rooftop dining in Beyoğlu. The dinner cruise combines sightseeing and dinner in one trip.'
+    },
+    {
+      q: 'Is Istanbul nightlife safe for tourists?',
+      a: 'Central Istanbul (Sultanahmet, Beyoğlu, Beşiktaş, Kabataş) is generally safe at night with active police presence. Tourist areas are well-lit. Bosphorus Night\'s 21:00 cruise from Kabataş is in a central, well-patrolled area; hotel transfer (+€{p.transfer}/person) adds extra convenience.'
     }
   ],
 

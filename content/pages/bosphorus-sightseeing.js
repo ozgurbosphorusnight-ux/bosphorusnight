@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Can I photograph landmarks from the boat?',
       a: 'Yes — absolutely. The open deck has excellent vantage points for photography. Landmarks pass within 100-200 meters of the boat. Smartphone photos turn out great; DSLR/mirrorless users can get stunning shots, especially during the golden-to-blue hour transition of early evening.'
+    },
+    {
+      q: 'What\'s the best way to see the Bosphorus?',
+      a: 'A 3-hour evening cruise covers both the Asian and European shores, passing 10+ landmarks: Dolmabahçe, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, and Üsküdar. Bosphorus Night runs daily at 21:00 from Kabataş Pier, €{p.dinnerStd}/person.'
+    },
+    {
+      q: 'Can I visit Bosphorus palaces from the cruise?',
+      a: 'The cruise sails past Dolmabahçe, Çırağan, and Beylerbeyi palaces with photo opportunities through panoramic windows, but does not dock for tours. To enter the palaces, plan a separate daytime visit. The Bosphorus Night cruise focuses on illuminated views and dinner.'
     }
   ],
 

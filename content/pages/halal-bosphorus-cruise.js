@@ -88,6 +88,14 @@ module.exports = {
     {
       q: 'Does the Bosphorus cruise halal apply to hotel transfer too?',
       a: 'The hotel transfer is just a car ride — no food or drink involved, so no halal concern. Our drivers are professional, respectful, and punctual. Transfer areas cover Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, and 8 other central zones where Muslim travelers typically stay.'
+    },
+    {
+      q: 'What\'s the best halal cruise in Istanbul?',
+      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 21:00 from Kabataş. Vegetarian options available.'
+    },
+    {
+      q: 'Is there a separate halal-only Bosphorus cruise?',
+      a: 'Bosphorus Night does not run a separate halal-only ship — it operates a halal-friendly mixed cruise where alcohol is an optional add-on and meat is halal-certified. Muslim families and groups can request seating away from alcohol-serving tables in advance.'
     }
   ],
 

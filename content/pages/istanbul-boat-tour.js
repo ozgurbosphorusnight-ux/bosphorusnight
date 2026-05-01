@@ -87,6 +87,14 @@ module.exports = {
     {
       q: 'Do I need to bring anything to the boat tour?',
       a: 'Passport or ID card (for boat log), light jacket (deck can be cool), comfortable shoes if you plan to dance. Smartphone for photos. Cash or card for paying on the boat (both accepted). Everything else — food, drinks, entertainment — is on the boat.'
+    },
+    {
+      q: 'Is the Istanbul boat tour worth it for tourists?',
+      a: 'A boat tour on the Bosphorus is one of Istanbul\'s signature experiences — you see palaces, fortresses, and bridges from both Asia and Europe in 3 hours. Bosphorus Night\'s evening tour (€{p.dinnerStd}/person) adds full dinner and entertainment, ranking 4.8★ from 11,317 reviews.'
+    },
+    {
+      q: 'What\'s the difference between a Bosphorus boat tour and Golden Horn?',
+      a: 'The Bosphorus tour covers the strait separating Asia and Europe (Dolmabahçe to Anadolu Hisarı, ~25 km). The Golden Horn is a smaller inlet on the European side (Eyüp to Galata Bridge). Bosphorus Night\'s tour focuses on the Bosphorus, not the Golden Horn.'
     }
   ],
 
