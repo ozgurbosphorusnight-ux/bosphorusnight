@@ -2379,6 +2379,38 @@ const T = {
     en: "Bosphorus Bridge at night", tr: "Boğaziçi Köprüsü gece", de: "Bosporus-Brücke bei Nacht", es: "Puente del Bósforo de noche", ru: "Мост через Босфор ночью", ar: "جسر البوسفور ليلاً",
     fa: "پل بسفر در شب", fr: "Pont du Bosphore la nuit", it: "Il Ponte del Bosforo di notte", zh: "夜晚的博斯普鲁斯大桥", id: "Jembatan Bosphorus di malam hari", ms: "Jambatan Bosphorus pada waktu malam", pl: "Most Bosforski nocą", bg: "Мостът на Босфора през нощта", ro: "Podul Bosfor noaptea"
   },
+  "gal.v3.title": {
+    en: "Live Show Highlights", tr: "Canlı Şov Anları", de: "Live-Show-Highlights", es: "Momentos del Show en Vivo", ru: "Лучшие моменты шоу", ar: "أبرز لحظات العرض الحي",
+    fa: "نقاط برجسته نمایش زنده", fr: "Temps forts du spectacle", it: "I momenti dello spettacolo", zh: "现场表演精彩瞬间", id: "Sorotan Pertunjukan Langsung", ms: "Sorotan Persembahan Langsung", pl: "Najlepsze momenty pokazu", bg: "Акценти от живото шоу", ro: "Momente din spectacolul live"
+  },
+  "gal.v3.desc": {
+    en: "Turkish night on the Bosphorus", tr: "Boğaz'da Türk gecesi", de: "Türkische Nacht am Bosporus", es: "Noche turca en el Bósforo", ru: "Турецкая ночь на Босфоре", ar: "ليلة تركية على البوسفور",
+    fa: "شب ترکی در بسفر", fr: "Soirée turque sur le Bosphore", it: "Serata turca sul Bosforo", zh: "博斯普鲁斯的土耳其之夜", id: "Malam Turki di Bosphorus", ms: "Malam Turki di Bosphorus", pl: "Turecka noc nad Bosforem", bg: "Турска нощ на Босфора", ro: "Seară turcească pe Bosfor"
+  },
+  "gal.v4.title": {
+    en: "Dinner & Atmosphere", tr: "Yemek ve Atmosfer", de: "Dinner & Atmosphäre", es: "Cena y Ambiente", ru: "Ужин и атмосфера", ar: "العشاء والأجواء",
+    fa: "شام و فضا", fr: "Dîner & Ambiance", it: "Cena e atmosfera", zh: "晚餐与氛围", id: "Makan Malam & Suasana", ms: "Makan Malam & Suasana", pl: "Kolacja i atmosfera", bg: "Вечеря и атмосфера", ro: "Cină și atmosferă"
+  },
+  "gal.v4.desc": {
+    en: "A taste of the evening", tr: "Akşamdan bir tat", de: "Ein Vorgeschmack auf den Abend", es: "Un anticipo de la velada", ru: "Вкус вечера", ar: "لمحة عن المساء",
+    fa: "طعمی از شب", fr: "Un avant-goût de la soirée", it: "Un assaggio della serata", zh: "夜晚的一份品味", id: "Cicipan malam ini", ms: "Cita rasa malam ini", pl: "Smak wieczoru", bg: "Вкус от вечерта", ro: "O mostră a serii"
+  },
+  "gal.v5.title": {
+    en: "Guest Moments", tr: "Misafir Anları", de: "Gäste-Momente", es: "Momentos de los Invitados", ru: "Моменты гостей", ar: "لحظات الضيوف",
+    fa: "لحظات مهمانان", fr: "Moments des invités", it: "Momenti degli ospiti", zh: "宾客瞬间", id: "Momen Tamu", ms: "Detik Tetamu", pl: "Chwile gości", bg: "Моменти с гостите", ro: "Momente ale oaspeților"
+  },
+  "gal.v5.desc": {
+    en: "Happy travellers aboard", tr: "Mutlu yolcular gemide", de: "Glückliche Gäste an Bord", es: "Viajeros felices a bordo", ru: "Счастливые путешественники на борту", ar: "مسافرون سعداء على متن السفينة",
+    fa: "مسافران شاد در کشتی", fr: "Voyageurs heureux à bord", it: "Viaggiatori felici a bordo", zh: "船上的快乐旅客", id: "Para pelancong bahagia di atas kapal", ms: "Para pengembara gembira di atas kapal", pl: "Szczęśliwi podróżni na pokładzie", bg: "Щастливи пътници на борда", ro: "Călători fericiți la bord"
+  },
+  "gal.v6.title": {
+    en: "Boat Tour", tr: "Tekne Turu", de: "Bootstour", es: "Tour en Barco", ru: "Морская прогулка", ar: "جولة بالقارب",
+    fa: "تور قایق", fr: "Tour en bateau", it: "Tour in barca", zh: "游船之旅", id: "Tur Perahu", ms: "Pelayaran Perahu", pl: "Wycieczka łodzią", bg: "Обиколка с лодка", ro: "Tur cu barca"
+  },
+  "gal.v6.desc": {
+    en: "Sailing the Bosphorus", tr: "Boğaz'da yelken", de: "Segeln auf dem Bosporus", es: "Navegando el Bósforo", ru: "Плавание по Босфору", ar: "الإبحار في البوسفور",
+    fa: "قایقرانی در بسفر", fr: "Navigation sur le Bosphore", it: "Navigando il Bosforo", zh: "畅游博斯普鲁斯", id: "Berlayar di Bosphorus", ms: "Belayar di Bosphorus", pl: "Żeglowanie po Bosforze", bg: "Плаване по Босфора", ro: "Navigând pe Bosfor"
+  },
   "gal.7.title": {
     en: "Premium Cuisine", tr: "Premium Mutfak", de: "Premium-Küche", es: "Cocina Premium", ru: "Премиум-кухня", ar: "مطبخ فاخر",
     fa: "آشپزی ممتاز", fr: "Cuisine premium", it: "Cucina premium", zh: "高级美食", id: "Masakan Premium", ms: "Masakan Premium", pl: "Kuchnia premium", bg: "Премиум кухня", ro: "Bucătărie Premium"
