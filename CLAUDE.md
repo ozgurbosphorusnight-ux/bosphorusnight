@@ -211,7 +211,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 5 | og:locale meta tag (16 dil — en_US, tr_TR vs.) | 30 dk | ⏳ |
 | 6 | Google Analytics 4 (GA4) property kurulumu + gtag G-ID | 30 dk | ⏳ |
 | 7 | Ana sayfaya Tour/TouristTrip schema × 4 paket | 45 dk | ⏳ |
-| 8 | Ana sayfaya Event schema (günlük 21:00 kalkış) | 30 dk | ⏳ |
+| 8 | Ana sayfaya Event schema (günlük 21:00 kalkış) | 30 dk | ✅ 2 May (5.A Madde 2'de tamamlandı, fiyat sync + evergreen + 15 dil i18n) |
 | 9 | Tailwind CDN → build-time CSS extraction | 2-3 sa | ⏳ |
 | 10 | Görsel optimize: JPG → WebP/AVIF (build pipeline) | 2-3 sa | ⏳ |
 | 11 | og:image width/height meta tag ekle (1200×630) | 10 dk | ⏳ |
@@ -230,7 +230,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | # | Madde | Süre | Etki | Durum |
 |---|---|---|---|---|
 | 1 | **People Also Ask (PAA) optimize** — landing page FAQ'lerini Google'ın gerçek sorduğu sorulara birebir eşle (`Is X worth it?`, `How much does X cost?`, `Is X better at night or day?`). 40-60 kelimelik direkt cevap. FAQPage schema otomatik güncellenir. | 2 sa | 🔴 PAA box çıkar | ⏳ |
-| 2 | **Event schema** (günlük 21:00 tur) — `<script type="application/ld+json">` Event JSON-LD, recurring schema. Google search'te "Tonight at 21:00 — Book now" kart çıkar | 30 dk | 🔴 Event carousel | ⏳ |
+| 2 | **Event schema** (günlük 21:00 tur) — `<script type="application/ld+json">` Event JSON-LD, recurring schema. Google search'te "Tonight at 21:00 — Book now" kart çıkar | 30 dk | 🔴 Event carousel | ✅ 2 May (commit 2172912) — fiyat sync €24.30/€55.20, evergreen schedule (bugün+365), 15 dil i18n (name+description). build-home.js + build-pages.js subPrices regex final pass. Bug #1 site repo'da da kapatıldı. |
 | 3 | **Tour-specific og:image** — 17 sayfa hep aynı og-image yerine her tur tipine özel: `og-dinner.jpg`, `og-sunset.jpg`, `og-romantic.jpg`, `og-vip.jpg`, `og-kids.jpg` (1200×630 crop, gallery'den) | 1 sa | 🟡 Sosyal paylaşım kalitesi | ⏳ |
 | 4 | **Internal linking** — 17 landing page birbirine cross-link (Bosphorus Dinner → Romantic, VIP, Sunset). 70+ link. Topical authority sinyali | 1 sa | 🔴 Topical authority | ⏳ |
 | 5 | **Core Web Vitals audit + iyileştirme** — pagespeed.web.dev test, LCP < 2.5s, CLS < 0.1 hedefi. Lazy load galleries, preload hero poster, critical CSS inline | 2-3 sa | 🟡 Sıralama sinyali | ⏳ |
