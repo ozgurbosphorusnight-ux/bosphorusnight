@@ -285,7 +285,7 @@ Bir sessizlik. **Sam** kahvesini yudumlar:
 
 **Ece:** Ben şu sayıyı sormak isterim: **wizard'ı başlatan kullanıcılardan kaçı 4. adıma ulaşıyor**? Bunu kimse söyleyemedi.
 
-**Lina:** Ben de bunu sormak istedim. Funnel analytics yok mu? GA4 var (`session_state_2026_04_22_seo_sprint.md` — G-7D31HN33VE). Wizard adımlarına event firing yapıyor mu?
+**Lina:** Ben de bunu sormak istedim. Funnel analytics yok mu? GA4 var (`session_state_2026_04_22_seo_sprint.md` — G-P09XEBMNWE). Wizard adımlarına event firing yapıyor mu?
 
 **Volkan:** GA4 kuruldu ama event tracking nedir bilmiyorum. Default page view'lar çalışıyor sanırım. Adım adım conversion için custom event'ler lazım: `wizard_step_1_complete`, `wizard_step_2_complete`, vs. Memory'de yoksa muhtemelen yapılmamış.
 
