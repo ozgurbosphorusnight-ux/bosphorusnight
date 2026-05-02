@@ -62,10 +62,13 @@ const SLUGS = [
 
 // Price placeholders. Runtime site also fetches from Supabase via fetchDynamicPrices().
 // Values here are the build-time fallbacks (also used for meta tags / SSR snapshot).
+// Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
+// Dinner fiyatları STRING — €24.30 trailing zero korunsun (Number('24.30').toString()=='24.3').
+// Keep in sync with build-home.js PRICES.
 const PRICES = {
-  dinnerStd: 24,
+  dinnerStd: '24.30',
   dinnerStdOriginal: 40,
-  dinnerVip: 55,
+  dinnerVip: '55.20',
   dinnerVipOriginal: 90,
   alcohol2: 15,
   unlimited: 30,
@@ -103,7 +106,12 @@ function swapOgLocale(html, lang) {
   return html;
 }
 
-const subPrices = (s) => s.replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??');
+// Bug #1 sync: T çevirilerinde literal "€24"/"€55" kalmış olabilir → PRICES'tan canlı çek.
+// (?!\.\d|\d) cümle sonu noktasını match eder ("€24."), "€24.30" / "€243" reject.
+const subPrices = (s) => s
+  .replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??')
+  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`)
+  .replace(/€55(?!\.\d|\d)/g, `€${PRICES.dinnerVip}`);
 const md = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong class="text-gold">$1</strong>');
 const fix = (s) => md(subPrices(s));
 
@@ -602,7 +610,9 @@ function main() {
     for (const slug of SLUGS) {
       try {
         const html = buildHtml(slug, lang, template);
-        fs.writeFileSync(path.join(dir, `${slug}.html`), html);
+        // Final pass: subPrices tüm HTML'i tarar, kaynak index.html'deki literal "€24"/"€55"
+        // span'larını PRICES'tan canlı değere çevirir (Bug #1 sync).
+        fs.writeFileSync(path.join(dir, `${slug}.html`), subPrices(html));
         ok++;
         langStats[lang]++;
       } catch (err) {

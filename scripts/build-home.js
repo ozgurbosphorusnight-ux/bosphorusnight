@@ -22,12 +22,22 @@ const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
 const HARDCODED_EN = require(path.join(ROOT, 'content', 'ui-translations', '_hardcoded-en.json'));
 const HARDCODED_ALL = require(path.join(ROOT, 'content', 'ui-translations', '_hardcoded-all.json'));
 
-// Keep in sync with build-pages.js PRICES
+// Keep in sync with build-pages.js PRICES.
+// Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
+// Bug #1 sync: schema + UI placeholders use these literals → drift olmasın diye DB ile aynı.
+// dinner fiyatları STRING (€24.30 trailing zero korunsun, Number(24.30).toString()=='24.3').
 const PRICES = {
-  dinnerStd: 24, dinnerStdOriginal: 40, dinnerVip: 55, dinnerVipOriginal: 90,
+  dinnerStd: '24.30', dinnerStdOriginal: 40, dinnerVip: '55.20', dinnerVipOriginal: 90,
   alcohol2: 15, unlimited: 30, transfer: 10, romantic: 15
 };
-const subPrices = (s) => s.replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??');
+// Replaces {p.key} placeholders + literal €24/€55 mentions left in legacy translations.
+// Bug #1 sync — drift kapatma: T sözlüğündeki çevirilerde "€24"/"€55" literal yazılmış olabilir,
+// bunları PRICES'tan canlı değere çek. (?!\.\d|\d) lookahead — sadece "€24.30" / "€243"
+// devam eden literal sayıları reject eder, cümle sonu noktası ("€24.") yine match eder.
+const subPrices = (s) => s
+  .replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??')
+  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`)
+  .replace(/€55(?!\.\d|\d)/g, `€${PRICES.dinnerVip}`);
 
 function translateHardcoded(html, lang) {
   if (lang === 'en') return html;
@@ -262,7 +272,7 @@ function buildSchemaLd(lang) {
     mentions: bosphorusMentions,
     offers: {
       '@type': 'Offer',
-      price: String(price),
+      price: Number(price).toFixed(2),
       priceCurrency: 'EUR',
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
@@ -283,7 +293,7 @@ function buildSchemaLd(lang) {
     ...tourBase(
       'Standard Bosphorus Dinner Cruise',
       '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 21:00 from Kabataş Pier. Pay on the boat.',
-      24,
+      24.30,
       'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
       'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       '21:00',
@@ -291,7 +301,7 @@ function buildSchemaLd(lang) {
     ),
     offers: {
       '@type': 'Offer',
-      price: '24',
+      price: '24.30',
       priceCurrency: 'EUR',
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
@@ -299,7 +309,7 @@ function buildSchemaLd(lang) {
       validFrom: '2026-01-01',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '24',
+        price: '24.30',
         priceCurrency: 'EUR',
         referenceQuantity: { '@type': 'QuantitativeValue', value: '1', unitCode: 'E50' }
       }
@@ -309,7 +319,7 @@ function buildSchemaLd(lang) {
   const tourDinnerVip = tourBase(
     'VIP Bosphorus Dinner Cruise',
     '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 21:00 from Kabataş Pier.',
-    55,
+    55.20,
     'https://www.bosphorusnight.com/bosphorus-vip',
     'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg',
     '21:00',
@@ -323,11 +333,24 @@ function buildSchemaLd(lang) {
   const tomorrowDate = tomorrow.toISOString().split('T')[0];
   const dayAfter = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
+  // i18n name + description for SocialEvent (15 dilde build edilen anasayfaya inject)
+  // pick(): T sözlüğünde varsa lang, yoksa en, yoksa fallback. subPrices(): {p.dinnerStd}
+  // placeholder'ı PRICES'ten replace eder → fiyat drift kapatılır.
+  const pick = (key, fallback) => (T[key] && T[key][lang]) || (T[key] && T[key].en) || fallback;
+  const sep = lang === 'zh' ? '' : ' ';
+  // Schema name: title1+title2 çevrilir (15 dilde T'de var), "— Turkish Night Show" literal
+  // (alt-başlık her dilde tek tip, schema name'i kısa tutar — uzun reklam metni Google'da kırpılır).
+  const eventName = `${pick('hero.title1', 'Luxury Bosphorus')}${sep}${pick('hero.title2', 'Dinner Cruise')} — Turkish Night Show`;
+  const eventDescription = subPrices(pick(
+    'meta.home.description',
+    '3-hour Bosphorus dinner cruise from €{p.dinnerStd}/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.'
+  ));
+
   const dinnerEvent = {
     '@context': 'https://schema.org',
     '@type': 'SocialEvent',
-    name: 'Bosphorus Dinner Cruise — Turkish Night Show',
-    description: '3-hour Bosphorus dinner cruise from €24/person with full menu, Mevlana whirling dervish, Turkish folk dance, belly dance, live music & DJ. Departs 21:00 from Kabataş Pier. Pay on the boat. Hotel transfer available.',
+    name: eventName,
+    description: eventDescription,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     inLanguage: lang,
     startDate: `${tomorrowDate}T21:00:00+03:00`,
@@ -362,7 +385,7 @@ function buildSchemaLd(lang) {
       {
         '@type': 'Offer',
         name: 'Standard Package',
-        price: '24',
+        price: '24.30',
         priceCurrency: 'EUR',
         url: 'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
         availability: 'https://schema.org/InStock',
@@ -371,18 +394,20 @@ function buildSchemaLd(lang) {
       {
         '@type': 'Offer',
         name: 'VIP Package',
-        price: '55',
+        price: '55.20',
         priceCurrency: 'EUR',
         url: 'https://www.bosphorusnight.com/bosphorus-vip',
         availability: 'https://schema.org/InStock',
         validFrom: '2026-01-01'
       }
     ],
+    // Evergreen schedule: bugünden 1 yıl ileri. Build her hafta yenilenir
+    // (GitHub Actions cron) — 2027'de "etkinlik bitti" sorunu yaşanmaz.
     eventSchedule: {
       '@type': 'Schedule',
       repeatFrequency: 'P1D',
-      startDate: '2026-01-01',
-      endDate: '2026-12-31'
+      startDate: new Date().toISOString().split('T')[0],
+      endDate: new Date(Date.now() + 365 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
     }
   };
 
@@ -512,7 +537,9 @@ function main() {
       const dir = path.join(OUT, lang);
       fs.mkdirSync(dir, { recursive: true });
       const html = buildForLang(lang, template);
-      fs.writeFileSync(path.join(dir, 'index.html'), html);
+      // Final pass: subPrices regex tüm HTML'i tarayıp literal "€24"/"€55" geçen yerleri
+      // (kaynak index.html'de span içinde hardcoded olan price etiketleri) PRICES'tan replace eder.
+      fs.writeFileSync(path.join(dir, 'index.html'), subPrices(html));
       ok++;
       console.log(`  ✓ dist/${lang}/index.html (${(html.length / 1024).toFixed(1)} KB)`);
     } catch (err) {

@@ -48,7 +48,15 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 | DINNER_STD | Standard Dinner Cruise | 3 saat | 21:00 | €24.30 | €40 | €18 | €6.30 |
 | DINNER_VIP | VIP Dinner Cruise | 3 saat | 21:00 | €55.20 | €90 | €40 | €15.20 |
 
-> ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse buradan da güncelle + AI prompt'unda da güncelle (`src/claude/system-prompt.js` 4 yer + `src/claude/prompts/red-lines.md` 3 yer + `shared-rules.js:96` 1 yer). Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker.
+> ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse 6 yerde birden güncelle:
+> 1. AI prompt: `src/claude/system-prompt.js` 4 yer
+> 2. AI prompt: `src/claude/prompts/red-lines.md` 3 yer
+> 3. AI prompt: `shared-rules.js:96` 1 yer
+> 4. Site CLAUDE.md §3 (bu tablo)
+> 5. Site build: `scripts/build-home.js` PRICES sabiti (anasayfa schema + UI)
+> 6. Site build: `scripts/build-pages.js` PRICES sabiti (17 landing schema + UI)
+>
+> Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker. Site build script'leri PRICES sabitinden + subPrices regex (literal "€24"/"€55" yakalama) ile drift kapatılır.
 
 **Buluşma:** Kabataş İskelesi. Giriş 20:00'den itibaren, kalkış 21:00. Ödeme: Pay on the boat (ön ödeme yok).
 
