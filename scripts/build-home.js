@@ -14,6 +14,7 @@ const OUT = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.bosphorusnight.com';
 
 const { buildBosphorusItinerary, buildBosphorusMentions } = require('./_wikidata-entities.js');
+const { buildMetaPixelOnly, buildAnalyticsBodyEnd } = require('./_analytics-snippet.js');
 
 // Load enriched translations.js (now includes all 15 languages)
 const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
@@ -539,7 +540,11 @@ function main() {
       const html = buildForLang(lang, template);
       // Final pass: subPrices regex tüm HTML'i tarayıp literal "€24"/"€55" geçen yerleri
       // (kaynak index.html'de span içinde hardcoded olan price etiketleri) PRICES'tan replace eder.
-      fs.writeFileSync(path.join(dir, 'index.html'), subPrices(html));
+      // Analytics inject: Meta Pixel head'e + bnTrack body sonuna. GA4/Ads zaten root'ta hardcoded.
+      const withAnalytics = subPrices(html)
+        .replace('</head>', `${buildMetaPixelOnly()}\n</head>`)
+        .replace('</body>', `${buildAnalyticsBodyEnd()}\n</body>`);
+      fs.writeFileSync(path.join(dir, 'index.html'), withAnalytics);
       ok++;
       console.log(`  ✓ dist/${lang}/index.html (${(html.length / 1024).toFixed(1)} KB)`);
     } catch (err) {

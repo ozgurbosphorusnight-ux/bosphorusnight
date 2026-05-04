@@ -3037,6 +3037,13 @@ function wizBuildSummary() {
       ctaLink.href = 'javascript:void(0)';
       ctaLink.onclick = async function(e) {
         e.preventDefault();
+        // Conversion event: Lead (Meta Pixel + GA4 üstünden, server-side eklenecek)
+        if (window.bnTrack) {
+          window.bnTrack('Lead', {
+            value: total, currency: 'EUR',
+            content_name: pkgLabel, contact_method: 'telegram',
+          });
+        }
         const originalText = ctaLink.textContent || ctaLink.innerText;
         try {
           ctaLink.style.opacity = '0.6';
@@ -3107,7 +3114,19 @@ function wizBuildSummary() {
       ctaLink.onclick = null;
     } else {
       ctaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
-      ctaLink.onclick = null;
+      ctaLink.onclick = function() {
+        // Lead event (Meta Pixel + GA4) + Google Ads conversion (gtag_report_conversion)
+        if (window.bnTrack) {
+          window.bnTrack('Lead', {
+            value: total, currency: 'EUR',
+            content_name: pkgLabel, contact_method: 'whatsapp',
+          });
+        }
+        if (typeof gtag_report_conversion === 'function') {
+          return gtag_report_conversion(ctaLink.href);
+        }
+        return true;
+      };
     }
   }
 }
