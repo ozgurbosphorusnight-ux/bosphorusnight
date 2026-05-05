@@ -217,7 +217,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 11 | og:image width/height meta tag ekle (1200×630) | 10 dk | ⏳ |
 | 12 | Internal linking — ana sayfa 17 landing → blog cross-link | 1 sa | ⏳ |
 | 13 | robots.txt'e AI bot rules (GPTBot, ClaudeBot) | 10 dk | ⏳ |
-| 14 | Structured data validation (Google Rich Results Test × 17 sayfa) | 1 sa | ⏳ |
+| 14 | Structured data validation (Google Rich Results Test × 17 sayfa) | 1 sa | ✅ 5 May (yerel validator 296/296 dosya 0 hata) |
 
 **Toplam tahmini süre:** 12-15 saat net iş, 3-5 gün içine yayılır.
 
@@ -241,8 +241,8 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 10 | **og:image width/height meta tag** — 4.A Madde 11'den ertelendi (1200×630 explicit) | 10 dk | 🟢 Sosyal preview | ⏳ |
 | 11 | **robots.txt AI bot rules** — 4.A Madde 13'ten ertelendi (GPTBot, ClaudeBot izinleri) | 10 dk | 🟢 AI tarama | ✅ 1 May (commit 23401d5) — 19 AI bot açık Allow + tüm arama motorları |
 | 12 | **og:locale meta tag** (16 dil) — 4.A Madde 5'ten ertelendi | 30 dk | 🟢 Locale targeting | ⏳ |
-| 13 | **GA4 (Google Analytics 4)** kurulum doğrulama — gtag çalışıyor mu, conversion'lar takip ediliyor mu | 30 dk | 🟢 Veri toplama | ⏳ |
-| 14 | **Rich Results Test** — 17 sayfa × Google Rich Results Test, schema hatası varsa düzelt | 1 sa | 🟡 Schema doğrulama | ⏳ |
+| 13 | **GA4 (Google Analytics 4)** kurulum doğrulama — gtag çalışıyor mu, conversion'lar takip ediliyor mu | 30 dk | 🟢 Veri toplama | ✅ 2 May (commit 037e39e) — Doğrulama sırasında bug bulundu: eski G-7D31HN33VE Google backend'inde 404 dönüyordu (11 gün sıfır veri). Yeni stream `Bosphorus Night Web v2` → ID `G-P09XEBMNWE`. 8 dosyada toplu replace, push edildi, Vercel deploy ediliyor. |
+| 14 | **Rich Results Test** — 17 sayfa × Google Rich Results Test, schema hatası varsa düzelt | 1 sa | 🟡 Schema doğrulama | ✅ 5 May (`scripts/validate-schema.js` çalıştırıldı: 296 HTML, 2598 JSON-LD bloku, **0 hata**. Yapısal validasyon temiz, Google Rich Results için hazır. Ekstra Google online validator ile manuel sanity check opsiyonel) |
 | 15 | **`/reviews` sayfası oluştur** — Google Related Searches'te "Bosphorus Cruise reviews" + "Istanbul dinner cruise reviews" cevapsız. Tek sayfa: TripAdvisor + Google review embed + AggregateRating schema. Yorum keyword trafiği kapatılır. | 2-3 sa | 🔴 "reviews" arama trafiği | ⏳ **ERTELENDİ 2 May** — şu an Google 6 yorum + TripAdvisor 0 = yetersiz hacim. Önce 6.A Madde 8 (yorum toplama otomasyonu) → 50+ Google yorum + 6.A Madde 1 (TripAdvisor profili açma) tamamlansın, sonra bu sayfa anlamlı. Acele yapılırsa zayıf sosyal kanıt + Google rich result marjinal. |
 | 16 | **Title'larda "Best" kelimesi** — Google Related Searches'te "Best Bosphorus dinner cruise Istanbul" + "Best dinner cruise in Istanbul" var. İlgili landing page title'larına "Best" ekle (örn. "Best Bosphorus Dinner Cruise Istanbul from €24"). 14 dilde rewrite gerekir. CTR +%20-30 beklenir. | 1 sa | 🔴 CTR + "best" arama trafiği | ⏳ |
 
