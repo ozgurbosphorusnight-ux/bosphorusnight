@@ -77,6 +77,39 @@ const PRICES = {
   romantic: 15
 };
 
+// 5.A Madde 16 — "Best" prefix tablosu (high-intent slug'larda title'a eklenir).
+// Google Related Searches: "Best Bosphorus dinner cruise Istanbul" yıllık arama hacmi
+// büyük → title'da "Best" varsa CTR +%20-30. Sadece commercial intent slug'larda
+// uygulanır (örn. "bosphorus-with-kids" gibi yumuşak slug'larda anlamsız olur).
+const BEST_PREFIXES = {
+  en: 'Best', tr: 'En İyi', de: 'Beste', es: 'Mejor',
+  ru: 'Лучший', ar: 'أفضل', fa: 'بهترین', fr: 'Meilleur',
+  it: 'Migliore', zh: '最佳', pl: 'Najlepszy', bg: 'Най-добрият',
+  ro: 'Cel mai bun', id: 'Terbaik', ms: 'Terbaik',
+};
+
+const BEST_SLUGS = new Set([
+  'bosphorus-dinner-cruise',
+  'bosphorus-night-tour',
+  'dinner-cruise-istanbul',
+  'romantic-bosphorus-cruise',
+  'bosphorus-vip',
+  'private-bosphorus-cruise',
+  'bosphorus-sunset-cruise',
+  'bosphorus-cruise-tickets',
+  'istanbul-night-tour',
+  'istanbul-boat-tour',
+]);
+
+function applyBestPrefix(title, slug, lang) {
+  if (!BEST_SLUGS.has(slug)) return title;
+  const prefix = BEST_PREFIXES[lang] || BEST_PREFIXES.en;
+  // Idempotent: prefix zaten varsa ekleme (case-insensitive)
+  const lowered = title.toLowerCase().trim();
+  if (lowered.startsWith(prefix.toLowerCase())) return title;
+  return `${prefix} ${title}`;
+}
+
 // Build URL path for a language/slug combo. English at root; others prefixed.
 // dist/en/X.html → /X (root). dist/tr/X.html → /tr/X.
 function urlFor(lang, slug) {
@@ -434,7 +467,10 @@ function buildHtml(slug, lang, template) {
   html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
   // Title + meta description + OpenGraph tags (all use localized page.meta)
-  const metaTitle = fix(page.meta.title);
+  // 5.A Madde 16: "Best" prefix for high-intent slugs (CTR +%20-30 expected).
+  // Google "Related Searches" gösterir: "Best Bosphorus dinner cruise Istanbul",
+  // "Best dinner cruise in Istanbul". Title'da "Best" var → match → CTR yükselir.
+  const metaTitle = applyBestPrefix(fix(page.meta.title), slug, lang);
   const metaDesc = fix(page.meta.description);
   const metaTitleAttr = metaTitle.replace(/"/g, '&quot;');
   const metaDescAttr = metaDesc.replace(/"/g, '&quot;');
