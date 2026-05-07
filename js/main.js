@@ -2057,6 +2057,25 @@ function wizUpdateNextBtn() {
   if (hint) hint.classList.add('hidden');
 }
 
+/**
+ * Bugün için saat ≥ 18:00 (Europe/Istanbul) ise transfer rezervasyonu kapalı.
+ * Yarın ve sonrası her zaman açık. CLAUDE.md §3 Transfer Kuralı.
+ *
+ * @param {string} dateValue YYYY-MM-DD format (wizDate.value)
+ * @returns {boolean} true = transfer alınabilir, false = bugün için 18:00 geçti
+ */
+function wizIsTransferTimeAvailable(dateValue) {
+  if (!dateValue) return true;
+  const todayIstanbul = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' });
+  if (dateValue !== todayIstanbul) return true; // yarın+ her zaman açık
+  const hourIstanbul = Number(
+    new Intl.DateTimeFormat('en-GB', {
+      hour: '2-digit', hour12: false, timeZone: 'Europe/Istanbul',
+    }).format(new Date()),
+  );
+  return Number.isFinite(hourIstanbul) ? hourIstanbul < 18 : true;
+}
+
 function wizScrollToElement(selector) {
   const el = document.querySelector(selector);
   if (!el) return;
@@ -2136,6 +2155,23 @@ function wizNext() {
       if (warn) warn.classList.remove('hidden');
       wizScrollToElement('#wizTransferWarning');
       return;
+    }
+    // 18:00 sonrası bugün için transfer kapalı — "Kabataş'a kendim gelirim" akışına yönlendir
+    if (wizState.transfer === true) {
+      const dateValue = document.getElementById('wizDate')?.value;
+      if (!wizIsTransferTimeAvailable(dateValue)) {
+        const title = (T['wizard.transferTimeBlockedTitle'] && T['wizard.transferTimeBlockedTitle'][currentLang]) || 'Today’s transfer window closed';
+        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:00. You can still join the cruise by reaching Kabataş Pier on your own by 20:30.';
+        const btn = (T['wizard.transferTimeBlockedAction'] && T['wizard.transferTimeBlockedAction'][currentLang]) || 'I will come to Kabataş myself';
+        const warn = document.getElementById('wizTransferWarning');
+        if (warn) {
+          warn.innerHTML = `<div class="text-red-400 text-sm font-medium mb-1">⏰ ${title}</div><div class="text-white/80 text-xs mb-3">${body}</div><button type="button" onclick="wizContinueWithoutTransfer()" class="block w-full text-xs bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] rounded-lg px-3 py-3 transition-colors font-bold shadow-lg shadow-[#c9a84c]/30">${btn}</button>`;
+          warn.classList.remove('hidden');
+        }
+        wizShowNextHint(title);
+        wizScrollToElement('#wizTransferWarning');
+        return;
+      }
     }
   }
   // Step 3 → 4: validate each field sequentially, scroll to first problem
@@ -3134,7 +3170,23 @@ function wizBuildSummary() {
 // Listen for date changes
 document.addEventListener('DOMContentLoaded', function() {
   const wizDate = document.getElementById('wizDate');
-  if (wizDate) wizDate.addEventListener('change', () => wizCalcPrice());
+  if (wizDate) {
+    wizDate.addEventListener('change', () => {
+      wizCalcPrice();
+      // Transfer = true seçiliyken kullanıcı tarihi bugüne çevirip 18:00'ı geçmişse,
+      // sessiz uyumsuzluk yaratmamak için uyarı göster (Step 2'deyken görünür).
+      if (wizState.transfer === true && !wizIsTransferTimeAvailable(wizDate.value) && wizState.step <= 2) {
+        const title = (T['wizard.transferTimeBlockedTitle'] && T['wizard.transferTimeBlockedTitle'][currentLang]) || 'Today’s transfer window closed';
+        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:00. You can still join the cruise by reaching Kabataş Pier on your own by 20:30.';
+        const btn = (T['wizard.transferTimeBlockedAction'] && T['wizard.transferTimeBlockedAction'][currentLang]) || 'I will come to Kabataş myself';
+        const warn = document.getElementById('wizTransferWarning');
+        if (warn) {
+          warn.innerHTML = `<div class="text-red-400 text-sm font-medium mb-1">⏰ ${title}</div><div class="text-white/80 text-xs mb-3">${body}</div><button type="button" onclick="wizContinueWithoutTransfer()" class="block w-full text-xs bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] rounded-lg px-3 py-3 transition-colors font-bold shadow-lg shadow-[#c9a84c]/30">${btn}</button>`;
+          warn.classList.remove('hidden');
+        }
+      }
+    });
+  }
 
   // Desktop: preset wizard background (used when user opens it)
   if (window.innerWidth >= 1024) {

@@ -96,14 +96,18 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 
-### Transfer Kuralı (2026-04-20 netleştirildi)
+### Transfer Kuralı (2026-05-06 güncellendi — 18:00 kesin engel)
 Aynı gün (tur tarihi = bugün) için saat dilimleri:
-- **00:00-17:00** → normal, AI kendisi alır
-- **17:00-19:30** → **gri bölge**: AI Özgür'e escalation, Özgür Telegram'dan "al/reddet" komutu verir (Aşama 4 sonrası). Şimdilik default: AI reddeder.
-- **19:30-21:00** → transfer imkansız, müşteri Kabataş'a kendi gelirse yetişir
+- **00:00-18:00** → normal, AI kendisi alır
+- **18:00-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 20:30'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
 - **21:00+** → bugünün turu kalktı
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
+
+**Tek source of truth:**
+- Frontend (wizard): `js/main.js` → `wizIsTransferTimeAvailable(date)` + Step 2→3 validation
+- Backend (AI): `src/utils/transfer-zones.js` → `isTransferTimeWindowOpen(tourDate)` + create-reservation tool
+- 15 dilde mesaj: `js/translations.js` (`wizard.transferTimeBlocked*`)
 
 ---
 
