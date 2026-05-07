@@ -255,8 +255,8 @@ function buildSchemaLd(page, lang, slug) {
       },
       geo: {
         '@type': 'GeoCoordinates',
-        latitude: 41.036085,
-        longitude: 28.994866
+        latitude: 41.0360985,
+        longitude: 28.9948784
       },
       identifier: {
         '@type': 'PropertyValue',
