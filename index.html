@@ -104,6 +104,10 @@
     .pac-item-query{color:#c9a84c;font-weight:600}
     .pac-matched{color:#c9a84c}
     .pac-icon{display:none}
+    /* iOS auto-zoom guard: focus on form field <16px triggers zoom-on-focus. !important needed to override Tailwind .text-sm. Mobile only — desktop keeps 14px. */
+    @media (max-width: 767px){
+      input, select, textarea { font-size: 16px !important; }
+    }
   </style>
 </head>
 <body class="bg-[#0b1120] text-white font-body antialiased pl-[40px] lg:pl-[60px]">
