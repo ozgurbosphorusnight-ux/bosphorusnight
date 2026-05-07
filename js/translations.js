@@ -3146,22 +3146,22 @@ const T = {
     fa: "از این شماره برای تأیید رزرو با شما تماس خواهیم گرفت", fr: "Nous vous contacterons à ce numéro pour la confirmation", it: "La contatteremo tramite questo numero per la conferma della prenotazione", zh: "我们将通过此号码联系您确认预订", id: "Kami akan menghubungi Anda via nomor ini untuk konfirmasi pemesanan", ms: "Kami akan menghubungi anda melalui nombor ini untuk pengesahan tempahan", pl: "Skontaktujemy się z Państwem pod tym numerem w celu potwierdzenia rezerwacji", bg: "Ще се свържем с Вас на този номер за потвърждение на резервацията", ro: "Vă vom contacta prin acest număr pentru confirmarea rezervării"
   },
   "wizard.pickupAddress": {
-    en: "Pickup Address",
-    tr: "Alım Adresi",
-    de: "Abholadresse",
-    es: "Dirección de recogida",
-    ru: "Адрес подачи",
-    ar: "عنوان الاستلام",
-    fa: "آدرس سوار شدن", fr: "Adresse de prise en charge", it: "Indirizzo di prelievo", zh: "接送地址", id: "Alamat Penjemputan", ms: "Alamat Ambil", pl: "Adres odbioru", bg: "Адрес за вземане", ro: "Adresa de Preluare"
+    en: "Where should we pick you up?",
+    tr: "Sizi nereden alalım?",
+    de: "Wo sollen wir Sie abholen?",
+    es: "¿Dónde le recogemos?",
+    ru: "Где вас забрать?",
+    ar: "من أين نأخذكم؟",
+    fa: "شما را از کجا سوار کنیم؟", fr: "Où devons-nous vous chercher?", it: "Dove vi veniamo a prendere?", zh: "在哪里接您？", id: "Di mana kami menjemput Anda?", ms: "Di mana kami akan menjemput Anda?", pl: "Skąd Państwa zabrać?", bg: "Откъде да Ви вземем?", ro: "De unde să vă luăm?"
   },
   "wizard.addressPlaceholder": {
-    en: "Type hotel name and pick from list",
-    tr: "Otel adını yazın ve listeden seçin",
-    de: "Hotelname eingeben und aus Liste wählen",
-    es: "Escribe el hotel y elige de la lista",
-    ru: "Введите название и выберите из списка",
-    ar: "اكتب اسم الفندق واختر من القائمة",
-    fa: "نام هتل را بنویسید و از فهرست انتخاب کنید", fr: "Tapez le nom de l'hôtel et choisissez dans la liste", it: "Digiti il nome dell'hotel e scelga dall'elenco", zh: "输入酒店名称并从列表中选择", id: "Ketik nama hotel dan pilih dari daftar", ms: "Taip nama hotel dan pilih dari senarai", pl: "Wpisz nazwę hotelu i wybierz z listy", bg: "Напишете име на хотел и изберете от списъка", ro: "Tastați numele hotelului și alegeți din listă"
+    en: "Enter hotel name or address",
+    tr: "Otel adı veya adres yazın",
+    de: "Hotelname oder Adresse eingeben",
+    es: "Escribe el hotel o la dirección",
+    ru: "Введите название отеля или адрес",
+    ar: "اكتب اسم الفندق أو العنوان",
+    fa: "نام هتل یا آدرس را بنویسید", fr: "Tapez le nom de l'hôtel ou l'adresse", it: "Inserisci il nome dell'hotel o l'indirizzo", zh: "输入酒店名称或地址", id: "Ketik nama hotel atau alamat", ms: "Taip nama hotel atau alamat", pl: "Wpisz nazwę hotelu lub adres", bg: "Напишете името на хотела или адреса", ro: "Tastați numele hotelului sau adresa"
   },
   "wizard.pickFromList": {
     en: "Please pick your address from the dropdown list",
