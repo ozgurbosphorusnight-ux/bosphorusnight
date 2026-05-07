@@ -2231,7 +2231,7 @@ function wizNext() {
     }
     // 5) Zone check — offer "continue without transfer" button (soft block)
     if (wizState.transfer && address && wizState.transferLat && !detectTransferZone(address)) {
-      const zoneTxt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
+      const zoneTxt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة', fa: 'برای این منطقه خدمات ترانسفر ارائه نمی‌دهیم', fr: 'Nous ne proposons pas de service de transfert pour cette zone', it: 'Non offriamo servizio di transfer per questa zona', zh: '我们不为此区域提供接送服务', id: 'Kami tidak menyediakan layanan antar-jemput ke area ini', ms: 'Kami tidak menawarkan perkhidmatan pemindahan ke kawasan ini', pl: 'Nie oferujemy usługi transferu do tego obszaru', bg: 'Не предлагаме трансфер до тази зона', ro: 'Nu oferim serviciu de transfer pentru această zonă' }[currentLang] || 'We do not offer transfer service to this area';
       const btnTxt = (T['wizard.continueWithoutTransfer'] && T['wizard.continueWithoutTransfer'][currentLang]) || 'Continue without transfer · I will come myself';
       if (addrWarn) {
         addrWarn.innerHTML = `<div class="text-red-400 text-xs mb-2">✕ ${zoneTxt}</div><button type="button" onclick="wizContinueWithoutTransfer()" class="block w-full text-xs bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] rounded-lg px-3 py-3 transition-colors font-bold shadow-lg shadow-[#c9a84c]/30">${btnTxt}</button>`;
@@ -3028,7 +3028,7 @@ function wizBuildSummary() {
   let dateStr = date;
   try {
     const d = new Date(date + 'T00:00:00');
-    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA' };
+    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO' };
     dateStr = d.toLocaleDateString(locales[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   } catch(e) {}
 
@@ -3043,13 +3043,13 @@ function wizBuildSummary() {
   if (ticketDate) {
     try {
       const d = new Date(date + 'T00:00:00');
-      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA' };
+      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO' };
       ticketDate.textContent = d.toLocaleDateString(locales[currentLang] || 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
     } catch(e) { ticketDate.textContent = date; }
   }
   if (ticketGuests) {
-    const adultWords = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' };
-    const childWords = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' };
+    const adultWords = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ', fa: 'بزرگسال', fr: 'Adulte', it: 'Adulto', zh: '成人', id: 'Dewasa', ms: 'Dewasa', pl: 'Dorosły', bg: 'Възрастен', ro: 'Adult' };
+    const childWords = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل', fa: 'کودک', fr: 'Enfant', it: 'Bambino', zh: '儿童', id: 'Anak', ms: 'Kanak-kanak', pl: 'Dziecko', bg: 'Дете', ro: 'Copil' };
     const adultWord = adultWords[currentLang] || 'Adult';
     const childWord = childWords[currentLang] || 'Child';
     let guestText = `${adults} ${adultWord}`;
@@ -3158,7 +3158,7 @@ function wizBuildSummary() {
   const romanticStr = wizState.romantic ? yn[0] : yn[1];
   const mapsLink = (wizState.transferLat && wizState.transferLng) ? `https://maps.google.com/maps?q=${wizState.transferLat},${wizState.transferLng}` : '';
   const roomNumberInput = (document.getElementById('wizRoomNumber')?.value || '').trim();
-  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة' }[currentLang] || 'Room';
+  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة', fa: 'اتاق', fr: 'Chambre', it: 'Stanza', zh: '房间', id: 'Kamar', ms: 'Bilik', pl: 'Pokój', bg: 'Стая', ro: 'Cameră' }[currentLang] || 'Room';
   const roomLine = wizState.transfer && roomNumberInput ? `\n🚪 ${roomLabel}: ${roomNumberInput}` : '';
   const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${roomLine}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
 
@@ -3168,7 +3168,16 @@ function wizBuildSummary() {
     de: `Hallo, ich möchte die Verfügbarkeit prüfen:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hoteltransfer: ${transferStr}${addressLine}\n💐 Romantischer Tisch: ${romanticStr}\n💰 Gesamt: €${total}\nBitte bestätigen. Danke!`,
     es: `Hola, me gustaría verificar la disponibilidad:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer Hotel: ${transferStr}${addressLine}\n💐 Mesa Romántica: ${romanticStr}\n💰 Total: €${total}\nPor favor confirme. ¡Gracias!`,
     ru: `Здравствуйте, хочу проверить наличие:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Трансфер: ${transferStr}${addressLine}\n💐 Романтический стол: ${romanticStr}\n💰 Итого: €${total}\nПожалуйста, подтвердите. Спасибо!`,
-    ar: `مرحباً، أود التحقق من التوفر:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 النقل: ${transferStr}${addressLine}\n💐 طاولة رومانسية: ${romanticStr}\n💰 الإجمالي: €${total}\nيرجى التأكيد. شكراً!`
+    ar: `مرحباً، أود التحقق من التوفر:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 النقل: ${transferStr}${addressLine}\n💐 طاولة رومانسية: ${romanticStr}\n💰 الإجمالي: €${total}\nيرجى التأكيد. شكراً!`,
+    fa: `سلام، می‌خواهم در دسترس بودن را بررسی کنم:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 ترانسفر هتل: ${transferStr}${addressLine}\n💐 میز رمانتیک: ${romanticStr}\n💰 جمع کل: €${total}\nلطفاً تأیید کنید. متشکرم!`,
+    fr: `Bonjour, je voudrais vérifier la disponibilité :\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfert hôtel : ${transferStr}${addressLine}\n💐 Table romantique : ${romanticStr}\n💰 Total : €${total}\nMerci de confirmer. Merci !`,
+    it: `Ciao, vorrei verificare la disponibilità:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer hotel: ${transferStr}${addressLine}\n💐 Tavolo romantico: ${romanticStr}\n💰 Totale: €${total}\nPer favore conferma. Grazie!`,
+    zh: `您好，我想查看可用性：\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 酒店接送：${transferStr}${addressLine}\n💐 浪漫餐桌：${romanticStr}\n💰 总计：€${total}\n请确认。谢谢！`,
+    id: `Halo, saya ingin memeriksa ketersediaan:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Antar-jemput hotel: ${transferStr}${addressLine}\n💐 Meja romantis: ${romanticStr}\n💰 Total: €${total}\nMohon dikonfirmasi. Terima kasih!`,
+    ms: `Hai, saya ingin menyemak ketersediaan:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Pemindahan hotel: ${transferStr}${addressLine}\n💐 Meja romantik: ${romanticStr}\n💰 Jumlah: €${total}\nSila sahkan. Terima kasih!`,
+    pl: `Cześć, chciałbym sprawdzić dostępność:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer z hotelu: ${transferStr}${addressLine}\n💐 Stolik romantyczny: ${romanticStr}\n💰 Razem: €${total}\nProszę o potwierdzenie. Dziękuję!`,
+    bg: `Здравейте, искам да проверя наличността:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Хотелски трансфер: ${transferStr}${addressLine}\n💐 Романтична маса: ${romanticStr}\n💰 Общо: €${total}\nМоля, потвърдете. Благодаря!`,
+    ro: `Bună, aș dori să verific disponibilitatea:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer hotel: ${transferStr}${addressLine}\n💐 Masă romantică: ${romanticStr}\n💰 Total: €${total}\nVă rog să confirmați. Mulțumesc!`
   };
   const msg = msgTemplates[currentLang] || msgTemplates.en;
 
