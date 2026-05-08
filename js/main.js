@@ -2,6 +2,17 @@
 const WA_NUMBER = '905322442922';
 const BRAND_NAME = 'Bosphorus Night';
 
+// ========== ENTRY LANDING TRACKER ==========
+// First page user landed on this session — used as Lead attribution dimension in GA4.
+(function trackEntryLanding(){
+  try {
+    if (!sessionStorage.getItem('bn_entry_landing')) {
+      sessionStorage.setItem('bn_entry_landing', location.pathname || '/');
+      sessionStorage.setItem('bn_entry_referrer', document.referrer || 'direct');
+    }
+  } catch (e) { /* sessionStorage disabled (private mode) — ignore */ }
+})();
+
 // ========== LANGUAGE ==========
 let currentLang = 'en';
 
@@ -2028,6 +2039,15 @@ function wizUpdateProgress(step) {
 
 function wizGoTo(n) {
   wizState.step = n;
+  // Funnel tracking: GA4 + Meta Pixel — wizard_step_view event for each step transition
+  if (window.bnTrack) {
+    window.bnTrack('wizard_step_view', {
+      step: n,
+      step_name: ['package', 'extras', 'info', 'ticket'][n - 1] || String(n),
+      language: currentLang,
+      landing_page: (function(){ try { return sessionStorage.getItem('bn_entry_landing') || location.pathname; } catch(e) { return location.pathname; } })(),
+    });
+  }
   ['bookStep1', 'bookStep2', 'bookStep3', 'bookStep4'].forEach((id, i) => {
     const el = document.getElementById(id);
     if (el) el.classList.toggle('hidden', i + 1 !== n);
@@ -3198,6 +3218,9 @@ function wizBuildSummary() {
           window.bnTrack('Lead', {
             value: total, currency: 'EUR',
             content_name: pkgLabel, contact_method: 'telegram',
+            language: currentLang,
+            landing_page: (function(){ try { return sessionStorage.getItem('bn_entry_landing') || location.pathname; } catch(e) { return location.pathname; } })(),
+            entry_referrer: (function(){ try { return sessionStorage.getItem('bn_entry_referrer') || 'direct'; } catch(e) { return 'direct'; } })(),
           });
         }
         const originalText = ctaLink.textContent || ctaLink.innerText;
@@ -3276,6 +3299,9 @@ function wizBuildSummary() {
           window.bnTrack('Lead', {
             value: total, currency: 'EUR',
             content_name: pkgLabel, contact_method: 'whatsapp',
+            language: currentLang,
+            landing_page: (function(){ try { return sessionStorage.getItem('bn_entry_landing') || location.pathname; } catch(e) { return location.pathname; } })(),
+            entry_referrer: (function(){ try { return sessionStorage.getItem('bn_entry_referrer') || 'direct'; } catch(e) { return 'direct'; } })(),
           });
         }
         if (typeof gtag_report_conversion === 'function') {
