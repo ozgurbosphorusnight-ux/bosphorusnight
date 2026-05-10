@@ -39,6 +39,8 @@ const server = http.createServer((req, res) => {
   const parsed = url.parse(req.url);
   let pathname = decodeURIComponent(parsed.pathname || '/');
   if (pathname === '/') pathname = '/index.html';
+  // Trailing slash dizinleri index.html'e çevir (production Vercel gibi)
+  else if (pathname.endsWith('/')) pathname += 'index.html';
 
   // Build preview rewrite: JS-driven asset paths (tours.js etc.) resolve
   // relative to page URL. For /dist/{lang|test}/page.html requesting
@@ -54,6 +56,18 @@ const server = http.createServer((req, res) => {
   }
 
   fs.stat(filePath, (err, stat) => {
+    // Clean URL fallback (Vercel-style): /city-guide/foo → /city-guide/foo.html
+    if ((err || !stat.isFile()) && !path.extname(filePath)) {
+      const htmlPath = filePath + '.html';
+      return fs.stat(htmlPath, (err2, stat2) => {
+        if (err2 || !stat2.isFile()) {
+          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+          return res.end(`404 — ${pathname} yok`);
+        }
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-cache' });
+        fs.createReadStream(htmlPath).pipe(res);
+      });
+    }
     if (err || !stat.isFile()) {
       res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
       return res.end(`404 — ${pathname} yok`);

@@ -48,7 +48,7 @@ run('node scripts/build-seo.js');
 
 // 3. Static asset'leri dist/'e kopyala (absolute /assets/... paths için)
 console.log('\n📦 Static asset kopyalama...');
-for (const dir of ['js', 'css', 'assets', 'blog']) {
+for (const dir of ['js', 'css', 'assets', 'blog', 'city-guide']) {
   const src = path.join(ROOT, dir);
   if (fs.existsSync(src)) {
     cpdir(src, path.join(DIST, dir));
