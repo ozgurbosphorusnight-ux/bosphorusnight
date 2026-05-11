@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tour Nocturne Bosphore dès €{p.dinnerStd} — Croisière Dîner + Spectacle',
-      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord. Ce soir à 21h — dernières places, réservez tôt.'
     },
     hero: {
       h1: "Croisière nocturne sur le Bosphore",
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocturne Istanbul dès €{p.dinnerStd} — Croisière Dîner Bosphore + Spectacle',
-      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis. Transfert hôtel optionnel.'
+      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis. Transfert hôtel optionnel. Croisière de ce soir à 21h — places limitées restantes.'
     },
     hero: {
       h1: "Visite nocturne d'Istanbul",
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Billets Croisière Bosphore dès €{p.dinnerStd} — Paiement à Bord, Sans Acompte',
-      description: 'Billets directs croisière Bosphore. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Sans acompte, paiement à bord. Annulation gratuite jusqu\'à 2h avant. 11 317 avis.'
+      description: 'Billets directs croisière Bosphore. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Sans acompte, paiement à bord. Annulation gratuite jusqu\'à 2h avant. 11 317 avis. Les places de ce soir partent vite — réservez avant 18 h.'
     },
     hero: {
       h1: "Billets croisière sur le Bosphore",

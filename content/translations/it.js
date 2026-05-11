@@ -297,7 +297,7 @@ module.exports = {
   "bosphorus-night-tour": {
     meta: {
       title: 'Tour Notturno Bosforo da €{p.dinnerStd} — Crociera Cena + Show Live',
-      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo. Stasera alle 21:00 — ultimi posti, prenota presto.'
     },
     hero: {
       h1: "Tour Notturno sul Bosforo",
@@ -369,7 +369,7 @@ module.exports = {
   "istanbul-night-tour": {
     meta: {
       title: 'Tour Notturno Istanbul da €{p.dinnerStd} — Crociera Cena Bosforo + Show',
-      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni. Transfer hotel opzionale.'
+      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni. Transfer hotel opzionale. Crociera di stasera alle 21:00 — posti limitati.'
     },
     hero: {
       h1: "Tour Notturno di Istanbul",
@@ -477,7 +477,7 @@ module.exports = {
   "bosphorus-cruise-tickets": {
     meta: {
       title: 'Biglietti Crociera Bosforo da €{p.dinnerStd} — Pagamento a Bordo, Niente Anticipo',
-      description: 'Biglietti diretti crociera Bosforo. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Niente anticipo, pagamento a bordo. Cancellazione gratuita fino a 2h prima. 11.317 recensioni.'
+      description: 'Biglietti diretti crociera Bosforo. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Niente anticipo, pagamento a bordo. Cancellazione gratuita fino a 2h prima. 11.317 recensioni. I posti di stasera si esauriscono in fretta — prenota entro le 18:00.'
     },
     hero: {
       h1: "Biglietti Crociera sul Bosforo",

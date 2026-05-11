@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tour Nocny Bosfor od €{p.dinnerStd} — Rejs z Kolacją + Pokaz Live',
-      description: 'Tour nocny 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
+      description: 'Tour nocny 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. Dziś o 21:00 — ostatnie miejsca, rezerwuj wcześniej.'
     },
     hero: {
       h1: 'Nocny Rejs po Bosforze',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocny Stambuł od €{p.dinnerStd} — Rejs z Kolacją Bosfor + Pokaz',
-      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii. Transfer z hotelu opcjonalny.'
+      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii. Transfer z hotelu opcjonalny. Dzisiejszy rejs o 21:00 — ograniczona liczba miejsc.'
     },
     hero: {
       h1: 'Nocna Wycieczka po Stambule',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Bilety na Rejs Bosfor od €{p.dinnerStd} — Płatność na Pokładzie',
-      description: 'Bezpośrednie bilety na rejs Bosfor. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Bez przedpłaty, płatność na pokładzie. Bezpłatne anulowanie do 2h przed. 11 317 opinii.'
+      description: 'Bezpośrednie bilety na rejs Bosfor. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Bez przedpłaty, płatność na pokładzie. Bezpłatne anulowanie do 2h przed. 11 317 opinii. Miejsca na dziś szybko się kończą — zarezerwuj przed 18:00.'
     },
     hero: {
       h1: 'Bilety na Rejs po Bosforze',

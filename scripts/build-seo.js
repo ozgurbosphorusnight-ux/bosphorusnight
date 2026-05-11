@@ -43,15 +43,17 @@ const BLOG_PAGES = [
   '/blog/things-to-know-istanbul-boat-tour'
 ];
 
-// City Guide pages (English only for now — multi-dil sonraki sprint).
-const CITY_GUIDE_PAGES = [
-  '/city-guide/',
-  '/city-guide/istanbul-3-day-itinerary',
-  '/city-guide/romantic-istanbul-guide',
-  '/city-guide/best-photo-spots-bosphorus',
-  '/city-guide/things-to-do-istanbul-at-night',
-  '/city-guide/halal-istanbul-guide',
-  '/city-guide/bosphorus-bridges-guide'
+// City Guide — 17 dilde (EN + 16 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ms/pl/ro/ru/tr/ur/zh)
+const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur'];
+
+const CITY_GUIDE_SLUGS = [
+  '', // hub (trailing slash)
+  'istanbul-3-day-itinerary',
+  'romantic-istanbul-guide',
+  'best-photo-spots-bosphorus',
+  'things-to-do-istanbul-at-night',
+  'halal-istanbul-guide',
+  'bosphorus-bridges-guide'
 ];
 
 function urlFor(lang, slug) {
@@ -92,24 +94,36 @@ function blogBlock(pathPart) {
   </url>`;
 }
 
-function cityGuideBlock(pathPart) {
+function cityGuideUrlFor(lang, slug) {
+  const prefix = lang === 'en' ? '' : '/' + lang;
+  if (!slug) return SITE_URL + prefix + '/city-guide/';
+  return SITE_URL + prefix + '/city-guide/' + slug;
+}
+
+function cityGuideUrlBlock(slug) {
   const today = new Date().toISOString().split('T')[0];
-  const loc = SITE_URL + pathPart;
-  // Hub slightly higher priority than alt sayfalar
-  const priority = pathPart === '/city-guide/' ? '0.7' : '0.6';
-  return `  <url>
-    <loc>${loc}</loc>
+  const alternates = CITY_GUIDE_LANGUAGES
+    .map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${cityGuideUrlFor(lang, slug)}" />`)
+    .join('\n');
+  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${cityGuideUrlFor('en', slug)}" />`;
+  // Hub priority slightly higher; EN root above translations
+  const hubBoost = slug === '' ? 0.1 : 0;
+
+  return CITY_GUIDE_LANGUAGES.map((lang) => `  <url>
+    <loc>${cityGuideUrlFor(lang, slug)}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>${priority}</priority>
-  </url>`;
+    <changefreq>weekly</changefreq>
+    <priority>${(lang === 'en' ? 0.8 : 0.7) + hubBoost}</priority>
+${alternates}
+${xDefault}
+  </url>`).join('\n');
 }
 
 function buildSitemap() {
   const homeBlocks = urlBlock('');
   const landingBlocks = SLUGS.map(urlBlock).join('\n');
   const blogBlocks = BLOG_PAGES.map(blogBlock).join('\n');
-  const cityGuideBlocks = CITY_GUIDE_PAGES.map(cityGuideBlock).join('\n');
+  const cityGuideBlocks = CITY_GUIDE_SLUGS.map(cityGuideUrlBlock).join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">

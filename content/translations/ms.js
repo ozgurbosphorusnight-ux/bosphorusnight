@@ -298,7 +298,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tur Malam Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Persembahan',
-      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş, jambatan bercahaya. Pembatalan percuma, bayar di kapal.'
+      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş, jambatan bercahaya. Pembatalan percuma, bayar di kapal. Malam ini 21:00 — tempat terakhir, tempah awal.'
     },
     hero: {
       h1: 'Pelayaran Malam Bosphorus',
@@ -370,7 +370,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tur Malam Istanbul dari €{p.dinnerStd} — Pelayaran Bosphorus + Persembahan',
-      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan. Pengangkutan hotel pilihan.'
+      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan. Pengangkutan hotel pilihan. Pelayaran malam ini 21:00 — tempat terhad.'
     },
     hero: {
       h1: 'Pelayaran Malam Istanbul',
@@ -478,7 +478,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Tiket Pelayaran Bosphorus dari €{p.dinnerStd} — Bayar di Kapal',
-      description: 'Tiket langsung pelayaran Bosphorus. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Tiada deposit, bayar di kapal. Pembatalan percuma hingga 2 jam sebelumnya. 11,317 ulasan.'
+      description: 'Tiket langsung pelayaran Bosphorus. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Tiada deposit, bayar di kapal. Pembatalan percuma hingga 2 jam sebelumnya. 11,317 ulasan. Tempat duduk malam ini cepat habis — tempah sebelum 18:00.'
     },
     hero: {
       h1: 'Tiket Pelayaran Bosphorus',

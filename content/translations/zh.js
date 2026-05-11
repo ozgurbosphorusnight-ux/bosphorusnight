@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: '博斯普鲁斯夜游 €{p.dinnerStd}起 — 晚餐游船 + 现场表演',
-      description: '3小时博斯普鲁斯夜游配晚餐和现场表演。21:00从卡巴塔什出发，灯火通明大桥。免费取消，船上付款。11,317条评价。'
+      description: '3小时博斯普鲁斯夜游配晚餐和现场表演。21:00从卡巴塔什出发，灯火通明大桥。免费取消，船上付款。今晚21:00 — 最后名额所剩无几,尽早预订。'
     },
     hero: {
       h1: '博斯普鲁斯夜游',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: '伊斯坦布尔夜游 €{p.dinnerStd}起 — 博斯普鲁斯晚餐游船 + 表演',
-      description: '3小时博斯普鲁斯游船配晚餐和现场表演。21:00从卡巴塔什出发。免费取消，船上付款。11,317条游客评价。可选酒店接送。'
+      description: '3小时博斯普鲁斯游船配晚餐和现场表演。21:00从卡巴塔什出发。免费取消，船上付款。11,317条游客评价。可选酒店接送。今晚21:00航班 — 名额有限。'
     },
     hero: {
       h1: '伊斯坦布尔夜游',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: '博斯普鲁斯游船票 €{p.dinnerStd}起 — 船上付款，无需预付',
-      description: '直接预订博斯普鲁斯游船票。标准€{p.dinnerStd}，VIP €{p.dinnerVip}。无需预付，船上付款。出发前2小时免费取消。11,317条评价。'
+      description: '直接预订博斯普鲁斯游船票。标准€{p.dinnerStd}，VIP €{p.dinnerVip}。无需预付，船上付款。出发前2小时免费取消。11,317条评价。今晚座位常售罄 — 请于18:00前预订。'
     },
     hero: {
       h1: '博斯普鲁斯游船票',

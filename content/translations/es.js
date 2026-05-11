@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tour Nocturno Bósforo desde €{p.dinnerStd} — Cena + Show en Vivo',
-      description: 'Tour nocturno de 3 horas por el Bósforo con cena y show en vivo. Salida 21:00 desde Kabataş, puentes iluminados. Cancelación gratuita, pago a bordo. 11.317 reseñas.'
+      description: 'Tour nocturno de 3 horas por el Bósforo con cena y show en vivo. Salida 21:00 desde Kabataş, puentes iluminados. Cancelación gratuita, pago a bordo. Esta noche a las 21:00 — últimas plazas, reserve pronto.'
     },
     hero: {
       h1: 'Tour Nocturno por el Bósforo',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocturno Estambul desde €{p.dinnerStd} — Crucero Cena Bósforo + Show',
-      description: 'Crucero de 3 horas con cena y show en vivo. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas. Traslado al hotel opcional.'
+      description: 'Crucero de 3 horas con cena y show en vivo. Salida 21:00 desde Kabataş. Cancelación gratuita, pago a bordo. 11.317 reseñas. Traslado al hotel opcional. Crucero de esta noche a las 21:00 — quedan plazas limitadas.'
     },
     hero: {
       h1: 'Tour Nocturno Estambul',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Tickets Crucero Bósforo desde €{p.dinnerStd} — Pago a Bordo, Sin Anticipo',
-      description: 'Tickets directos del crucero por el Bósforo. Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. Sin anticipo, pago a bordo. Cancelación gratuita hasta 2hrs antes. 11.317 reseñas.'
+      description: 'Tickets directos del crucero por el Bósforo. Estándar €{p.dinnerStd}, VIP €{p.dinnerVip}. Sin anticipo, pago a bordo. Cancelación gratuita hasta 2hrs antes. 11.317 reseñas. Los asientos de esta noche se agotan rápido — reserve antes de las 18:00.'
     },
     hero: {
       h1: 'Entradas para el Crucero por el Bósforo',

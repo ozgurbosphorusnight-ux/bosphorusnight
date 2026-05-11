@@ -56,6 +56,18 @@ for (const dir of ['js', 'css', 'assets', 'blog', 'city-guide']) {
   }
 }
 
+// 3b. City Guide multi-dil — 16 dilin çevirileri (src/city-guide-i18n/{lang}/* → dist/{lang}/city-guide/)
+const CITY_GUIDE_LANGS = ['ar', 'bg', 'de', 'es', 'fa', 'fr', 'hi', 'id', 'it', 'ms', 'pl', 'ro', 'ru', 'tr', 'ur', 'zh'];
+console.log('\n🌐 City Guide multi-dil...');
+for (const lang of CITY_GUIDE_LANGS) {
+  const src = path.join(ROOT, 'src', 'city-guide-i18n', lang);
+  const dst = path.join(DIST, lang, 'city-guide');
+  if (fs.existsSync(src)) {
+    cpdir(src, dst);
+    console.log(`  ✓ ${lang}/city-guide/`);
+  }
+}
+
 // 4. Tailwind CSS build-time extraction — deferred to Aşama 5.A (Core Web Vitals sprint).
 // Files ready: tailwind.config.js, src/tailwind-input.css, scripts/build-tailwind.js
 // run('node scripts/build-tailwind.js');

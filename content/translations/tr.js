@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Boğaz Gece Turu €{p.dinnerStd}\'den — Yemekli Tur + Canlı Şov',
-      description: '3 saatlik Boğaz gece turu: akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış, aydınlatılmış köprüler. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
+      description: '3 saatlik Boğaz gece turu: akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış, aydınlatılmış köprüler. Ücretsiz iptal, teknede ödeme. Bu akşam 21:00\'de — son yerler doluyor, erken rezervasyon yapın.'
     },
     hero: {
       h1: 'Boğaz Gece Turu',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'İstanbul Gece Turu €{p.dinnerStd}\'den — Boğaz Yemekli Tur + Şov',
-      description: '3 saatlik Boğaz turu, akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu. Otel transfer opsiyonel.'
+      description: '3 saatlik Boğaz turu, akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu. Otel transfer opsiyonel. Bu akşam 21:00 turu — sınırlı sayıda yer.'
     },
     hero: {
       h1: 'İstanbul Gece Turu',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Boğaz Turu Biletleri €{p.dinnerStd}\'den — Teknede Ödeme, Ön Ödeme Yok',
-      description: 'Direkt Boğaz turu biletleri. Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. Ön ödeme yok, teknede ödeme. Tur öncesi 2 saate kadar ücretsiz iptal. 11.317 gezgin yorumu.'
+      description: 'Direkt Boğaz turu biletleri. Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. Ön ödeme yok, teknede ödeme. Tur öncesi 2 saate kadar ücretsiz iptal. 11.317 gezgin yorumu. Bu akşamın yerleri hızla doluyor — 18:00\'den önce rezervasyon yapın.'
     },
     hero: {
       h1: 'Boğaz Turu Biletleri',

@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Bosporus Nachttour ab €{p.dinnerStd} — Dinner-Kreuzfahrt + Live-Show',
-      description: '3-stündige Bosporus-Nachttour mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş, beleuchtete Brücken. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündige Bosporus-Nachttour mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş, beleuchtete Brücken. Kostenlose Stornierung, Zahlung an Bord. Heute Abend 21:00 — letzte Plätze füllen sich, früh buchen.'
     },
     hero: {
       h1: 'Bosporus-Nachttour',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Istanbul Nachttour ab €{p.dinnerStd} — Bosporus Dinner-Kreuzfahrt + Show',
-      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen. Hoteltransfer optional.'
+      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen. Hoteltransfer optional. Heutige 21:00-Tour — begrenzte Plätze.'
     },
     hero: {
       h1: 'Istanbul-Nachttour',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Bosporus-Tickets ab €{p.dinnerStd} — Zahlung an Bord, keine Vorkasse',
-      description: 'Direkte Bosporus-Kreuzfahrt-Tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Keine Vorkasse, Zahlung an Bord. Kostenlose Stornierung bis 2 Std. vorher. 11.317 Bewertungen.'
+      description: 'Direkte Bosporus-Kreuzfahrt-Tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Keine Vorkasse, Zahlung an Bord. Kostenlose Stornierung bis 2 Std. vorher. 11.317 Bewertungen. Heute Abend verfügbare Plätze sind oft schnell weg — bis 18:00 buchen.'
     },
     hero: {
       h1: 'Bosporus-Cruise-Tickets',
