@@ -14,7 +14,7 @@ const LANGUAGES = {
   it: { flag: 'it', label: 'Italiano', dir: 'ltr' },
   zh: { flag: 'cn', label: '中文', dir: 'ltr' },
   id: { flag: 'id', label: 'Indonesia', dir: 'ltr' },
-  ms: { flag: 'my', label: 'Bahasa Melayu', dir: 'ltr' },
+  ms: { flag: 'my', label: 'Malaysia', dir: 'ltr' },
   pl: { flag: 'pl', label: 'Polski', dir: 'ltr' },
   bg: { flag: 'bg', label: 'Български', dir: 'ltr' },
   ro: { flag: 'ro', label: 'Română', dir: 'ltr' }

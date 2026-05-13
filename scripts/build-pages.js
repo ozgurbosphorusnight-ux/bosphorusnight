@@ -35,7 +35,7 @@ const LANGUAGES = {
   it: { label: 'Italiano', dir: 'ltr' },
   zh: { label: '中文', dir: 'ltr' },
   id: { label: 'Indonesia', dir: 'ltr' },
-  ms: { label: 'Bahasa Melayu', dir: 'ltr' },
+  ms: { label: 'Malaysia', dir: 'ltr' },
   pl: { label: 'Polski', dir: 'ltr' },
   bg: { label: 'Български', dir: 'ltr' },
   ro: { label: 'Română', dir: 'ltr' }
