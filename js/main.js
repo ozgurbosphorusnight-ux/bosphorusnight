@@ -149,6 +149,22 @@ function initHeader() {
   });
 }
 
+// ========== FLOATING WHATSAPP — sayfa en altına inince gizle ==========
+function initFloatingWhatsappVisibility() {
+  const wa = document.getElementById('floatingWhatsapp');
+  if (!wa) return;
+  const BOTTOM_OFFSET = 80; // sayfa sonuna kalan piksel — bunun altına inince gizle
+  const check = () => {
+    const atBottom = (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - BOTTOM_OFFSET);
+    wa.classList.toggle('opacity-0', atBottom);
+    wa.classList.toggle('translate-y-4', atBottom);
+    wa.classList.toggle('pointer-events-none', atBottom);
+  };
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+}
+
 // ========== MOBILE MENU ==========
 function initMobileMenu() {
   const toggle = document.getElementById('menuToggle');
@@ -1839,6 +1855,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setLanguage(detectLanguage());
   initLangDropdown();
   initHeader();
+  initFloatingWhatsappVisibility();
   initMobileMenu();
   initBoatSelection();
   initFAQ();
