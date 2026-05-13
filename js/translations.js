@@ -17,7 +17,11 @@ const LANGUAGES = {
   ms: { flag: 'my', label: 'Malaysia', dir: 'ltr' },
   pl: { flag: 'pl', label: 'Polski', dir: 'ltr' },
   bg: { flag: 'bg', label: 'Български', dir: 'ltr' },
-  ro: { flag: 'ro', label: 'Română', dir: 'ltr' }
+  ro: { flag: 'ro', label: 'Română', dir: 'ltr' },
+  hi: { flag: 'in', label: 'हिन्दी', dir: 'ltr' },
+  ur: { flag: 'pk', label: 'اردو', dir: 'rtl' },
+  ja: { flag: 'jp', label: '日本語', dir: 'ltr' },
+  ko: { flag: 'kr', label: '한국어', dir: 'ltr' }
 };
 
 const T = {
