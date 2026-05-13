@@ -334,7 +334,6 @@ function buildSchemaLd(lang) {
   // A weekly auto-rebuild (GitHub Actions) keeps this evergreen for Google Events rich results.
   const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const tomorrowDate = tomorrow.toISOString().split('T')[0];
-  const dayAfter = new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
 
   // i18n name + description for SocialEvent (15 dilde build edilen anasayfaya inject)
   // pick(): T sözlüğünde varsa lang, yoksa en, yoksa fallback. subPrices(): {p.dinnerStd}
@@ -357,7 +356,7 @@ function buildSchemaLd(lang) {
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     inLanguage: lang,
     startDate: `${tomorrowDate}T20:30:00+03:00`,
-    endDate: `${dayAfter}T00:00:00+03:00`,
+    endDate: `${tomorrowDate}T23:30:00+03:00`,
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {

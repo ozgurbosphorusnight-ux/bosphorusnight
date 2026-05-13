@@ -1178,14 +1178,17 @@ function openMobilePanel(pkg) {
     if (el) el.classList.add('hidden');
   });
 
-  // Set default date — after 20:00 Istanbul time, today is no longer bookable (boat departs 20:30, last entry 20:00). Skip to tomorrow.
+  // Set default date — after 19:30 Istanbul time, today is no longer bookable in wizard
+  // (boat departs 20:30, last entry 19:30 — same-day cutoff orta yol, AI WhatsApp'ta dar pencere uyarısı verir).
   const wizDate = document.getElementById('wizDate');
   if (wizDate && !wizDate.value) {
-    const istHour = parseInt(new Intl.DateTimeFormat('en-US', {
-      timeZone: 'Europe/Istanbul', hour: 'numeric', hour12: false
-    }).format(new Date()), 10);
+    const fmt = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', hour12: false
+    }).formatToParts(new Date());
+    const istHour = Number(fmt.find((p) => p.type === 'hour')?.value);
+    const istMin = Number(fmt.find((p) => p.type === 'minute')?.value);
     const target = new Date();
-    if (istHour >= 20) target.setDate(target.getDate() + 1);
+    if (istHour >= 20 || (istHour === 19 && istMin >= 30)) target.setDate(target.getDate() + 1);
     const yyyy = target.getFullYear();
     const mm = String(target.getMonth() + 1).padStart(2, '0');
     const dd = String(target.getDate()).padStart(2, '0');
