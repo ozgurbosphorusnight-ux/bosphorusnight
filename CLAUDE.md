@@ -240,7 +240,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 5 | og:locale meta tag (16 dil — en_US, tr_TR vs.) | 30 dk | ⏳ |
 | 6 | Google Analytics 4 (GA4) property kurulumu + gtag G-ID | 30 dk | ⏳ |
 | 7 | Ana sayfaya Tour/TouristTrip schema × 4 paket | 45 dk | ⏳ |
-| 8 | Ana sayfaya Event schema (günlük 21:00 kalkış) | 30 dk | ✅ 2 May (5.A Madde 2'de tamamlandı, fiyat sync + evergreen + 15 dil i18n) |
+| 8 | Ana sayfaya Event schema (günlük 20:30 kalkış) | 30 dk | ✅ 2 May (5.A Madde 2'de tamamlandı, fiyat sync + evergreen + 15 dil i18n) |
 | 9 | Tailwind CDN → build-time CSS extraction | 2-3 sa | ⏳ |
 | 10 | Görsel optimize: JPG → WebP/AVIF (build pipeline) | 2-3 sa | ⏳ |
 | 11 | og:image width/height meta tag ekle (1200×630) | 10 dk | ⏳ |
