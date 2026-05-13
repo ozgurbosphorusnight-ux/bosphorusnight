@@ -45,8 +45,8 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 |---|---|---|---|---|---|---|---|
 | DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ bekleniyor | — |
 | SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ bekleniyor | — |
-| DINNER_STD | Standard Dinner Cruise | 3 saat | 21:00 | €24.30 | €40 | €18 | €6.30 |
-| DINNER_VIP | VIP Dinner Cruise | 3 saat | 21:00 | €55.20 | €90 | €40 | €15.20 |
+| DINNER_STD | Standard Dinner Cruise | 3 saat | 20:30 | €24.30 | €40 | €18 | €6.30 |
+| DINNER_VIP | VIP Dinner Cruise | 3 saat | 20:30 | €55.20 | €90 | €40 | €15.20 |
 
 > ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse 6 yerde birden güncelle:
 > 1. AI prompt: `src/claude/system-prompt.js` 4 yer
@@ -58,7 +58,7 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 >
 > Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker. Site build script'leri PRICES sabitinden + subPrices regex (literal "€24"/"€55" yakalama) ile drift kapatılır.
 
-**Buluşma:** Kabataş İskelesi. Giriş 20:00'den itibaren, kalkış 21:00. Ödeme: Pay on the boat (ön ödeme yok).
+**Buluşma:** Kabataş İskelesi. Giriş 19:30'dan itibaren, kalkış 20:30, yanaşma 23:30. Ödeme: Pay on the boat (ön ödeme yok).
 
 **Rota:** Dolmabahçe → Çırağan → Ortaköy → Bebek → Rumeli Hisarı → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş
 
@@ -99,8 +99,8 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 ### Transfer Kuralı (2026-05-06 güncellendi — 18:00 kesin engel)
 Aynı gün (tur tarihi = bugün) için saat dilimleri:
 - **00:00-18:00** → normal, AI kendisi alır
-- **18:00-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 20:30'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
-- **21:00+** → bugünün turu kalktı
+- **18:00-20:30** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 20:30'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
+- **20:30+** → bugünün turu kalktı
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 

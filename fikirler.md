@@ -14,7 +14,7 @@
 - **Durum:** [ ] Bekliyor
 
 ### 2. Tonight's Cruise — Canlı Durum Bloğu
-- **Ne:** "Tonight's cruise departs at 21:00 — 12 spots left" + doluluk progress bar
+- **Ne:** "Tonight's cruise departs at 20:30 — 12 spots left" + doluluk progress bar
 - **Neden:** Urgency + scarcity = en güçlü satış tetikleyicisi. "Bu akşam bir şey yapalım" diyen turist için kritik
 - **Not:** Başlangıçta saate/güne göre değişen simüle veri, ileride gerçek doluluk verisi bağlanacak
 - **Durum:** [ ] Bekliyor

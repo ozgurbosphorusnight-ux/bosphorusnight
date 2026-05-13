@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       q: 'How long is the dinner cruise — and what time does it start?',
-      a: '3 hours total. Boarding from 19:30, boat departs 20:30 sharp, returns around 23:30 (midnight). We recommend arriving 15-20 minutes early to settle in and pick your seat.'
+      a: '3 hours total. Boarding from 19:30, boat departs 20:30 sharp, returns around 23:30. We recommend arriving 15-20 minutes early to settle in and pick your seat.'
     },
     {
       q: 'Do I need to book in advance or can I show up?',

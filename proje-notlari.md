@@ -114,8 +114,8 @@ Rakiplerden en büyük fark: Tur öncesi, sırası ve sonrası sürekli iletişi
 
 ## Tur Detayları
 - Sadece gece turu (gündüz turu ileride eklenecek)
-- Kalkış saati: 21:00
-- Dönüş saati: 00:00 (3 saat)
+- Kalkış saati: 20:30 (giriş 19:30'dan itibaren)
+- Dönüş saati: 23:30 (3 saat)
 - Kalkış noktaları: Kabataş ve Eminönü
 - Ödeme: Teknede ödeme (No prepayment — pay on the boat)
 - Bugünkü tur için son rezervasyon: 19:00

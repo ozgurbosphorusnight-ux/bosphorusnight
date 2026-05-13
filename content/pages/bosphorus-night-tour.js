@@ -66,7 +66,7 @@ module.exports = {
   faq: [
     {
       q: 'What time is the Bosphorus night tour?',
-      a: 'Boarding from 19:30 at Kabataş Pier. Boat departs 20:30 sharp, returns around 23:30 (midnight). We recommend arriving 20 minutes before boarding to get settled and choose seats.'
+      a: 'Boarding from 19:30 at Kabataş Pier. Boat departs 20:30 sharp, returns around 23:30. We recommend arriving 20 minutes before boarding to get settled and choose seats.'
     },
     {
       q: 'How much is the Bosphorus night tour?',

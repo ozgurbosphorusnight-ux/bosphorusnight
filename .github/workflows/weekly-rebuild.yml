@@ -1,7 +1,7 @@
 name: Weekly Rebuild
 
 # Triggers a fresh Vercel build every Sunday so the Event schema's
-# startDate (tomorrow 21:00 Istanbul) stays in the future for Google.
+# startDate (tomorrow 20:30 Istanbul) stays in the future for Google.
 # Also runnable on-demand via the Actions tab.
 
 on:

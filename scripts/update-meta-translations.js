@@ -383,7 +383,7 @@ const TRANSLATIONS = {
   fr: {
     'bosphorus-dinner-cruise': {
       title: 'Croisière Dîner Bosphore dès €{p.dinnerStd} — Tour Nocturne Istanbul + Spectacle',
-      description: 'Croisière dîner 3h sur le Bosphore : menu turc multi-plats et spectacle folklorique en direct. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Croisière dîner 3h sur le Bosphore : menu turc multi-plats et spectacle folklorique en direct. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
     },
     'bosphorus-with-kids': {
       title: 'Bosphore avec Enfants — Croisière Familiale dès €{p.dinnerStd}/adulte',
@@ -399,7 +399,7 @@ const TRANSLATIONS = {
     },
     'bosphorus-trip': {
       title: 'Excursion Bosphore dès €{p.dinnerStd} — Croisière Dîner Istanbul + Spectacle',
-      description: 'Excursion 3h sur le Bosphore : dîner turc, folklore en direct, vues nocturnes illuminées. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Excursion 3h sur le Bosphore : dîner turc, folklore en direct, vues nocturnes illuminées. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
     },
     'istanbul-boat-tour': {
       title: 'Tour en Bateau Istanbul dès €{p.dinnerStd} — Croisière + Dîner + Spectacle',
@@ -407,7 +407,7 @@ const TRANSLATIONS = {
     },
     'istanbul-night-tour': {
       title: 'Tour Nocturne Istanbul dès €{p.dinnerStd} — Croisière Dîner Bosphore + Spectacle',
-      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis. Transfert hôtel optionnel.'
+      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis. Transfert hôtel optionnel.'
     },
     'private-bosphorus-cruise': {
       title: 'Croisière Privée Bosphore — Location de Bateau à Istanbul (25+ invités)',
@@ -423,7 +423,7 @@ const TRANSLATIONS = {
     },
     'bosphorus-night-tour': {
       title: 'Tour Nocturne Bosphore dès €{p.dinnerStd} — Croisière Dîner + Spectacle',
-      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 21h00 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord. 11 317 avis.'
     },
     'dinner-cruise-istanbul': {
       title: 'Croisière Dîner Istanbul dès €{p.dinnerStd} — Tour Nocturne Bosphore',
@@ -439,7 +439,7 @@ const TRANSLATIONS = {
     },
     'last-minute-bosphorus': {
       title: 'Bosphore Dernière Minute dès €{p.dinnerStd} — Réservez Ce Soir',
-      description: 'Réservation croisière Bosphore le jour même. Confirmation WhatsApp en minutes. Départ 21h00 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Réservation croisière Bosphore le jour même. Confirmation WhatsApp en minutes. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
     },
     'istanbul-cruise-price': {
       title: 'Prix Croisière Istanbul dès €{p.dinnerStd} — Tarifs Transparents',
@@ -596,7 +596,7 @@ const TRANSLATIONS = {
   fa: {
     'bosphorus-dinner-cruise': {
       title: 'کروز شام بسفر از €{p.dinnerStd} — تور شب استانبول + شو',
-      description: 'کروز شام ۳ ساعته در بسفر: منوی متنوع ترکی و شوی فولکلور زنده. حرکت ۲۱:۰۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر مسافر.'
+      description: 'کروز شام ۳ ساعته در بسفر: منوی متنوع ترکی و شوی فولکلور زنده. حرکت ۲۰:۳۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر مسافر.'
     },
     'bosphorus-with-kids': {
       title: 'بسفر با کودکان — کروز خانوادگی از €{p.dinnerStd}/بزرگسال',
@@ -612,7 +612,7 @@ const TRANSLATIONS = {
     },
     'bosphorus-trip': {
       title: 'سفر بسفر از €{p.dinnerStd} — کروز شام استانبول + شو',
-      description: 'سفر ۳ ساعته در بسفر: شام ترکی، فولکلور زنده، چشم‌اندازهای شب نورانی. حرکت ۲۱:۰۰ از کاباتاش. لغو رایگان، پرداخت در کشتی.'
+      description: 'سفر ۳ ساعته در بسفر: شام ترکی، فولکلور زنده، چشم‌اندازهای شب نورانی. حرکت ۲۰:۳۰ از کاباتاش. لغو رایگان، پرداخت در کشتی.'
     },
     'istanbul-boat-tour': {
       title: 'تور قایق استانبول از €{p.dinnerStd} — بسفر + شام + شو',
@@ -620,7 +620,7 @@ const TRANSLATIONS = {
     },
     'istanbul-night-tour': {
       title: 'تور شب استانبول از €{p.dinnerStd} — کروز شام بسفر + شو',
-      description: 'کروز ۳ ساعته بسفر با شام و شوی زنده. حرکت ۲۱:۰۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر. ترانسفر هتل اختیاری.'
+      description: 'کروز ۳ ساعته بسفر با شام و شوی زنده. حرکت ۲۰:۳۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر. ترانسفر هتل اختیاری.'
     },
     'private-bosphorus-cruise': {
       title: 'کروز خصوصی بسفر — اجاره قایق در استانبول (۲۵+ مهمان)',
@@ -636,7 +636,7 @@ const TRANSLATIONS = {
     },
     'bosphorus-night-tour': {
       title: 'تور شب بسفر از €{p.dinnerStd} — کروز شام + شوی زنده',
-      description: 'تور شب ۳ ساعته بسفر با شام و شوی زنده. حرکت ۲۱:۰۰ از کاباتاش، پل‌های نورانی. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر.'
+      description: 'تور شب ۳ ساعته بسفر با شام و شوی زنده. حرکت ۲۰:۳۰ از کاباتاش، پل‌های نورانی. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر.'
     },
     'dinner-cruise-istanbul': {
       title: 'کروز شام استانبول از €{p.dinnerStd} — تور شب بسفر',
@@ -652,7 +652,7 @@ const TRANSLATIONS = {
     },
     'last-minute-bosphorus': {
       title: 'بسفر دقیقه آخر از €{p.dinnerStd} — امشب رزرو کنید، در کشتی پرداخت',
-      description: 'رزرو کروز بسفر همان روز. تأیید واتساپ در دقایق. حرکت ۲۱:۰۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر.'
+      description: 'رزرو کروز بسفر همان روز. تأیید واتساپ در دقایق. حرکت ۲۰:۳۰ از کاباتاش. لغو رایگان، پرداخت در کشتی. ۱۱،۳۱۷ نظر.'
     },
     'istanbul-cruise-price': {
       title: 'قیمت کروز استانبول از €{p.dinnerStd} — قیمت‌های شفاف',
