@@ -104,6 +104,18 @@ Aynı gün (tur tarihi = bugün) için saat dilimleri:
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 
+### Same-day Booking Cutoff (2026-05-14 güncellendi — orta yol)
+Aynı gün rezervasyon kabul saatleri:
+- **00:00-19:30** → normal, AI rezerve eder
+- **19:30-20:30** → **DAR PENCERE**. AI önce uyarır: "Şu an çok dar bir pencere, transfer veremem ve Kabataş'a doğrudan gelmen lazım — 20:30'a yetişebilir misin?" Müşteri "evet" derse rezerve eder, "hayır/emin değilim" derse yarın için pitch.
+- **20:30+** → kalkış geçti, tool reddediyor + yarın pitch
+
+**Tek source of truth:**
+- Site terms.html: "Same-day until 19:30 (1 hour before departure)"
+- AI prompt: `src/claude/system-prompt.js` § TRANSFER CUTOFF tablosu (19:30-20:30 satırı)
+- AI tool: `src/claude/tools/create-reservation.js:189` (20:30 hard reddet)
+- Wizard: `js/main.js` Step 2→3 validation (cutoff parametresi)
+
 **Tek source of truth:**
 - Frontend (wizard): `js/main.js` → `wizIsTransferTimeAvailable(date)` + Step 2→3 validation
 - Backend (AI): `src/utils/transfer-zones.js` → `isTransferTimeWindowOpen(tourDate)` + create-reservation tool
