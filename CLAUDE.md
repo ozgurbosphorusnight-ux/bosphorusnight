@@ -60,6 +60,19 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 
 **Buluşma:** Kabataş İskelesi. Giriş 19:30'dan itibaren, kalkış 20:30, yanaşma 23:30. Ödeme: Pay on the boat (ön ödeme yok).
 
+> ⚠️ **Saat kanonik kaynak: Supabase `packages` tablosu — 3 alan.** Saat değişirse bu 3 DB alanı + 5 kod yeri birden güncelle:
+> 1. **DB:** `packages.departure_time` (TIME kolonu) — örn `"20:30:00"`
+> 2. **DB:** `packages.inclusions->>service_starts_at` (jsonb) — örn `"19:30"` (giriş)
+> 3. **DB:** `packages.inclusions->>departure_at` (jsonb) — örn `"20:30"` (kalkış)
+> 4. **DB (opsiyonel):** `packages.inclusions->>return_at` (jsonb) — örn `"23:30"` (yanaşma)
+> 5. AI prompt: `src/claude/system-prompt.js` (TRANSFER CUTOFF tablosu + Tur saati başlığı + transfer pencereleri + Gi vakası vs.)
+> 6. AI prompt: `src/claude/prompts/shared-rules.js`, `red-lines.md`, `intents/complaint.md`
+> 7. AI script: `src/scripts/seed-observer-context.js` + `update-observer-context-{probe,v3,v4}.js` + test fixture'lar
+> 8. Site CLAUDE.md §3 (Buluşma satırı + paket tablosu Kalkış sütunu) + Same-day Booking Cutoff bölümü
+> 9. Site UI: `cruises/`, `content/translations/`, `content/ui-translations/`, `js/translations.js`, `terms.html`, `llms.txt`, `index.html`, `blog/`, `src/city-guide-i18n/`, `panel/PackageEditor.tsx` placeholder
+>
+> **DB önceliklidir:** AI tool fallback'leri (`?? '19:30'` / `?? '20:30'`) sadece DB boşsa devreye girer. DB'de eski değer durduğu sürece AI hâlâ eski saati verir — 14 May'da bu bug bulundu, müşteri-facing site güncellenmesine rağmen AI prod'da hâlâ "21:00 kalkış" diyordu. Update sonrası `pm2 restart bosphorus-ai` yap (cache temizle).
+
 **Rota:** Dolmabahçe → Çırağan → Ortaköy → Bebek → Rumeli Hisarı → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş
 
 ### Eklentiler
