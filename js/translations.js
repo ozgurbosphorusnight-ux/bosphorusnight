@@ -3139,7 +3139,8 @@ const T = {
   "floatingWa.tooltip": {
     en: "Reply in 2 min", tr: "2 dakikada cevap", de: "Antwort in 2 Min", es: "Respuesta en 2 min",
     ru: "Ответ за 2 мин", ar: "رد خلال دقيقتين",
-    fa: "پاسخ در ۲ دقیقه", fr: "Réponse en 2 min", it: "Risposta in 2 min", zh: "2 分钟内回复", id: "Balas dalam 2 menit", ms: "Balas dalam 2 minit", pl: "Odpowiedź w 2 min", bg: "Отговор за 2 мин", ro: "Răspuns în 2 min"
+    fa: "پاسخ در ۲ دقیقه", fr: "Réponse en 2 min", it: "Risposta in 2 min", zh: "2 分钟内回复", id: "Balas dalam 2 menit", ms: "Balas dalam 2 minit", pl: "Odpowiedź w 2 min", bg: "Отговор за 2 мин", ro: "Răspuns în 2 min",
+    hi: "2 मिनट में जवाब", ur: "2 منٹ میں جواب"
   },
   "floatingWa.label": {
     en: "We're online · Chat now",
@@ -3156,7 +3157,9 @@ const T = {
     ms: "Kami dalam talian · Sembang sekarang",
     pl: "Jesteśmy online · Napisz teraz",
     bg: "Онлайн сме · Пишете сега",
-    ro: "Suntem online · Discută acum"
+    ro: "Suntem online · Discută acum",
+    hi: "हम ऑनलाइन हैं · अभी चैट करें",
+    ur: "ہم آن لائن ہیں · ابھی چیٹ کریں"
   },
   "floatingWa.message": {
     en: "Hi! I'd like to ask about the Bosphorus Night cruise.",
@@ -3173,7 +3176,9 @@ const T = {
     ms: "Hai! Saya ingin bertanya tentang Bosphorus Night cruise.",
     pl: "Cześć! Chciałbym zapytać o rejs Bosphorus Night.",
     bg: "Здравейте! Бих искал да попитам за круиза Bosphorus Night.",
-    ro: "Bună! Aș dori să întreb despre croaziera Bosphorus Night."
+    ro: "Bună! Aș dori să întreb despre croaziera Bosphorus Night.",
+    hi: "नमस्ते! मैं Bosphorus Night क्रूज़ के बारे में जानकारी चाहता हूँ।",
+    ur: "ہیلو! میں Bosphorus Night کروز کے بارے میں پوچھنا چاہتا ہوں۔"
   },
   "wizard.enterAddress": {
     en: "Please enter your pickup address", tr: "Lütfen alım adresinizi girin", de: "Bitte geben Sie Ihre Abholadresse ein", es: "Por favor ingrese su dirección de recogida",

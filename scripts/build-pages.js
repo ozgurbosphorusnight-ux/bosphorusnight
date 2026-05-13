@@ -544,10 +544,41 @@ function buildHtml(slug, lang, template) {
   // Translate hardcoded English strings (not marked with data-i18n)
   html = translateHardcoded(html, lang);
 
+  // Floating WhatsApp pill — wa.me href'i dile özgü mesaj ile değiştir
+  // (data-i18n yalnız visible text'i çeviriyor, href hardcoded EN kalıyor)
+  html = translateFloatingWaHref(html, lang);
+
+  // RTL diller (AR, FA, UR) için pill konumunu sağa swap et
+  if (lang === 'ar' || lang === 'fa' || lang === 'ur') {
+    html = swapFloatingWaToRtl(html);
+  }
+
   // Swap og:locale for non-EN languages
   html = swapOgLocale(html, lang);
 
   return html;
+}
+
+// Floating WhatsApp href'i dile özgü URL-encoded mesajla değiştir.
+function translateFloatingWaHref(html, lang) {
+  const msg = (UI_T['floatingWa.message'] && (UI_T['floatingWa.message'][lang] || UI_T['floatingWa.message'].en)) || '';
+  if (!msg) return html;
+  const encoded = encodeURIComponent(msg);
+  return html.replace(
+    /(<a\s+id="floatingWhatsapp"[^>]*\shref=")https:\/\/wa\.me\/(\d+)\?text=[^"]*(")/,
+    `$1https://wa.me/$2?text=${encoded}$3`
+  );
+}
+
+// RTL dillerinde pill sol kenardan sağ kenara taşı: left-12 → right-12, -left-1 → -right-1
+function swapFloatingWaToRtl(html) {
+  return html.replace(
+    /(<a\s+id="floatingWhatsapp"[^>]*\sclass=")([^"]+)(")/,
+    (_, pre, cls, post) => `${pre}${cls.replace(/\bleft-12\b/, 'right-12')}${post}`
+  ).replace(
+    /(<svg\s+class=")(absolute -left-1)([^"]*")/,
+    (_, pre, target, post) => `${pre}absolute -right-1${post}`
+  );
 }
 
 function translateHardcoded(html, lang) {
