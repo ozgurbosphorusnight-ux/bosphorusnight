@@ -34,7 +34,7 @@ const LANGUAGES = {
   fr: { label: 'Français', dir: 'ltr' },
   it: { label: 'Italiano', dir: 'ltr' },
   zh: { label: '中文', dir: 'ltr' },
-  id: { label: 'Bahasa Indonesia', dir: 'ltr' },
+  id: { label: 'Indonesia', dir: 'ltr' },
   ms: { label: 'Bahasa Melayu', dir: 'ltr' },
   pl: { label: 'Polski', dir: 'ltr' },
   bg: { label: 'Български', dir: 'ltr' },

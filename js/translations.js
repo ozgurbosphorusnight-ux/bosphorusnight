@@ -13,7 +13,7 @@ const LANGUAGES = {
   fr: { flag: 'fr', label: 'Français', dir: 'ltr' },
   it: { flag: 'it', label: 'Italiano', dir: 'ltr' },
   zh: { flag: 'cn', label: '中文', dir: 'ltr' },
-  id: { flag: 'id', label: 'Bahasa Indonesia', dir: 'ltr' },
+  id: { flag: 'id', label: 'Indonesia', dir: 'ltr' },
   ms: { flag: 'my', label: 'Bahasa Melayu', dir: 'ltr' },
   pl: { flag: 'pl', label: 'Polski', dir: 'ltr' },
   bg: { flag: 'bg', label: 'Български', dir: 'ltr' },
