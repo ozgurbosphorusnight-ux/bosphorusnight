@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Trip from €{p.dinnerStd} — Istanbul Dinner Cruise + Show',
-    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night views. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night views. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How long does a Bosphorus trip take?',
-      a: 'Our Bosphorus trip is 3 hours total (21:00 departure, 00:00 return). Shorter options exist (1-hour sightseeing ferries, 90-min tours) but they skip food and entertainment. For a complete evening experience, 3 hours is ideal — enough to see everything, not too long to be tiring.'
+      a: 'Our Bosphorus trip is 3 hours total (20:30 departure, 23:30 return). Shorter options exist (1-hour sightseeing ferries, 90-min tours) but they skip food and entertainment. For a complete evening experience, 3 hours is ideal — enough to see everything, not too long to be tiring.'
     },
     {
       q: 'Is a Bosphorus trip worth it?',

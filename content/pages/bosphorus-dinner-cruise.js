@@ -24,7 +24,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Dinner Cruise from €{p.dinnerStd} — Istanbul Night Tour + Show',
-    description: '3-hour Bosphorus dinner cruise with multi-course Turkish menu and live folklore show. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: '3-hour Bosphorus dinner cruise with multi-course Turkish menu and live folklore show. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {
@@ -34,7 +34,7 @@ module.exports = {
   },
 
   intro: [
-    'The **Bosphorus dinner cruise** is Istanbul\'s most iconic evening experience. Boarding at Kabataş Pier at 20:00, our vessel glides beneath the illuminated spans of the Bosphorus and Fatih Sultan Mehmet bridges while you enjoy a multi-course Turkish feast, live folklore performances, belly dancing, and a DJ set that keeps the deck alive until 23:00.',
+    'The **Bosphorus dinner cruise** is Istanbul\'s most iconic evening experience. Boarding at Kabataş Pier at 19:30, our vessel glides beneath the illuminated spans of the Bosphorus and Fatih Sultan Mehmet bridges while you enjoy a multi-course Turkish feast, live folklore performances, belly dancing, and a DJ set that keeps the deck alive until 23:00.',
 
     'Unlike the many generic tour boats crowding the Istanbul nightscape, our **Bosphorus dinner cruise** is TÜRSAB-licensed (A-17672) and rated 4.8★ by more than 11,317 travelers. We keep the group small, the service warm, and — because you pay on the boat — you risk nothing by booking in advance.',
 
@@ -67,7 +67,7 @@ module.exports = {
   faq: [
     {
       q: 'What time does the Bosphorus dinner cruise depart?',
-      a: 'Boarding starts at 20:00 at Kabataş Pier. The boat leaves at 21:00 sharp and returns around 00:00. We recommend arriving 15-20 minutes early to get comfortable and choose your seat.'
+      a: 'Boarding starts at 19:30 at Kabataş Pier. The boat leaves at 20:30 sharp and returns around 23:30. We recommend arriving 15-20 minutes early to get comfortable and choose your seat.'
     },
     {
       q: 'How much does the Bosphorus dinner cruise cost?',
@@ -95,7 +95,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best Bosphorus dinner cruise in Istanbul?',
-      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 21:00 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
+      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 20:30 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
     }
   ],
 

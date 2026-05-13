@@ -11,11 +11,11 @@ const newFaqs = {
   'bosphorus-cruise-tickets': [
     {
       q: 'Are Bosphorus cruise tickets cheaper online or at the dock?',
-      a: 'Online direct booking with Bosphorus Night is recommended: €{p.dinnerStd}/person, guaranteed seat for the 21:00 departure, full pricing transparency, and no online prepayment — pay on the boat. Same-day availability is subject to capacity.'
+      a: 'Online direct booking with Bosphorus Night is recommended: €{p.dinnerStd}/person, guaranteed seat for the 20:30 departure, full pricing transparency, and no online prepayment — pay on the boat. Same-day availability is subject to capacity.'
     },
     {
       q: 'How early should I book Bosphorus cruise tickets?',
-      a: 'Same-day booking is usually possible if seats are available. For weekends, holidays, or summer peak (June–September), book 2–3 days ahead. Bosphorus Night accepts reservations up to a few hours before the 21:00 departure when capacity allows.'
+      a: 'Same-day booking is usually possible if seats are available. For weekends, holidays, or summer peak (June–September), book 2–3 days ahead. Bosphorus Night accepts reservations up to a few hours before the 20:30 departure when capacity allows.'
     }
   ],
   'bosphorus-dinner-cruise': [
@@ -25,7 +25,7 @@ const newFaqs = {
     },
     {
       q: 'What\'s the best Bosphorus dinner cruise in Istanbul?',
-      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 21:00 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
+      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 20:30 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
     }
   ],
   'bosphorus-for-couples': [
@@ -35,13 +35,13 @@ const newFaqs = {
     },
     {
       q: 'What\'s the most romantic dinner cruise in Istanbul for couples?',
-      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 21:00 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
+      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 20:30 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
     }
   ],
   'bosphorus-night-tour': [
     {
       q: 'Is the Bosphorus night tour safe?',
-      a: 'Yes — Bosphorus Night operates a TÜRSAB-licensed (A-17672) boat with current safety certificates and regular maintenance. The Bosphorus is calm and well-patrolled at night. The 21:00 departure from Kabataş Pier is in central Istanbul, accessible by tram and metro.'
+      a: 'Yes — Bosphorus Night operates a TÜRSAB-licensed (A-17672) boat with current safety certificates and regular maintenance. The Bosphorus is calm and well-patrolled at night. The 20:30 departure from Kabataş Pier is in central Istanbul, accessible by tram and metro.'
     },
     {
       q: 'What\'s the best night activity in Istanbul?',
@@ -51,7 +51,7 @@ const newFaqs = {
   'bosphorus-sightseeing': [
     {
       q: 'What\'s the best way to see the Bosphorus?',
-      a: 'A 3-hour evening cruise covers both the Asian and European shores, passing 10+ landmarks: Dolmabahçe, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, and Üsküdar. Bosphorus Night runs daily at 21:00 from Kabataş Pier, €{p.dinnerStd}/person.'
+      a: 'A 3-hour evening cruise covers both the Asian and European shores, passing 10+ landmarks: Dolmabahçe, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, and Üsküdar. Bosphorus Night runs daily at 20:30 from Kabataş Pier, €{p.dinnerStd}/person.'
     },
     {
       q: 'Can I visit Bosphorus palaces from the cruise?',
@@ -61,11 +61,11 @@ const newFaqs = {
   'bosphorus-sunset-cruise': [
     {
       q: 'What time does the sun set in Istanbul?',
-      a: 'In summer (June–July), Istanbul sunsets are around 20:30–20:45. In winter, around 16:30–17:00. For a sunset-and-night experience, Bosphorus Night\'s 21:00 dinner cruise from Kabataş catches the late blue hour and the illuminated landmarks afterward.'
+      a: 'In summer (June–July), Istanbul sunsets are around 20:30–20:45. In winter, around 16:30–17:00. For a sunset-and-night experience, Bosphorus Night\'s 20:30 dinner cruise from Kabataş catches the late blue hour and the illuminated landmarks afterward.'
     },
     {
       q: 'Is the Bosphorus sunset cruise worth it?',
-      a: 'Yes — sunset over the Bosphorus Bridge is one of Istanbul\'s signature views. Bosphorus Night\'s 21:00 dinner cruise (€{p.dinnerStd}/person) catches the post-sunset blue hour plus the illuminated palaces, with a full dinner and live shows over 3 hours.'
+      a: 'Yes — sunset over the Bosphorus Bridge is one of Istanbul\'s signature views. Bosphorus Night\'s 20:30 dinner cruise (€{p.dinnerStd}/person) catches the post-sunset blue hour plus the illuminated palaces, with a full dinner and live shows over 3 hours.'
     }
   ],
   'bosphorus-trip': [
@@ -91,7 +91,7 @@ const newFaqs = {
   'bosphorus-with-kids': [
     {
       q: 'What\'s the best Bosphorus cruise for families with children?',
-      a: 'Bosphorus Night\'s Standard Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 21:00 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
+      a: 'Bosphorus Night\'s Standard Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 20:30 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
     },
     {
       q: 'Are there activities for kids on the Bosphorus cruise?',
@@ -111,7 +111,7 @@ const newFaqs = {
   'halal-bosphorus-cruise': [
     {
       q: 'What\'s the best halal cruise in Istanbul?',
-      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 21:00 from Kabataş. Vegetarian options available.'
+      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 20:30 from Kabataş. Vegetarian options available.'
     },
     {
       q: 'Is there a separate halal-only Bosphorus cruise?',
@@ -141,17 +141,17 @@ const newFaqs = {
   'istanbul-night-tour': [
     {
       q: 'What can you do in Istanbul at night?',
-      a: 'Top evening activities include a Bosphorus dinner cruise (€{p.dinnerStd}+, Bosphorus Night daily at 21:00), Galata Tower views, illuminated Sultanahmet walks, a traditional Turkish bath, and rooftop dining in Beyoğlu. The dinner cruise combines sightseeing and dinner in one trip.'
+      a: 'Top evening activities include a Bosphorus dinner cruise (€{p.dinnerStd}+, Bosphorus Night daily at 20:30), Galata Tower views, illuminated Sultanahmet walks, a traditional Turkish bath, and rooftop dining in Beyoğlu. The dinner cruise combines sightseeing and dinner in one trip.'
     },
     {
       q: 'Is Istanbul nightlife safe for tourists?',
-      a: 'Central Istanbul (Sultanahmet, Beyoğlu, Beşiktaş, Kabataş) is generally safe at night with active police presence. Tourist areas are well-lit. Bosphorus Night\'s 21:00 cruise from Kabataş is in a central, well-patrolled area; hotel transfer (+€{p.transfer}/person) adds extra convenience.'
+      a: 'Central Istanbul (Sultanahmet, Beyoğlu, Beşiktaş, Kabataş) is generally safe at night with active police presence. Tourist areas are well-lit. Bosphorus Night\'s 20:30 cruise from Kabataş is in a central, well-patrolled area; hotel transfer (+€{p.transfer}/person) adds extra convenience.'
     }
   ],
   'last-minute-bosphorus': [
     {
       q: 'Where can I find last-minute Bosphorus cruise deals tonight?',
-      a: 'Bosphorus Night accepts last-minute bookings for the 21:00 cruise when seats are available — direct via WhatsApp +90 532 244 29 22 or website. Same €{p.dinnerStd} Standard price (no last-minute markup). Pay on boat. Boarding 20:00 at Kabataş Pier.'
+      a: 'Bosphorus Night accepts last-minute bookings for the 20:30 cruise when seats are available — direct via WhatsApp +90 532 244 29 22 or website. Same €{p.dinnerStd} Standard price (no last-minute markup). Pay on boat. Boarding 19:30 at Kabataş Pier.'
     },
     {
       q: 'Is last-minute Bosphorus booking reliable?',
@@ -171,7 +171,7 @@ const newFaqs = {
   'romantic-bosphorus-cruise': [
     {
       q: 'What\'s the most romantic activity to do in Istanbul at night?',
-      a: 'A Bosphorus dinner cruise is among Istanbul\'s most romantic evening activities — illuminated palaces, two iconic bridges, and dinner under the stars. Bosphorus Night\'s 21:00 cruise (€{p.dinnerStd}+) with the Romantic Table add-on (+€{p.romantic}) suits anniversaries, dates, and proposals.'
+      a: 'A Bosphorus dinner cruise is among Istanbul\'s most romantic evening activities — illuminated palaces, two iconic bridges, and dinner under the stars. Bosphorus Night\'s 20:30 cruise (€{p.dinnerStd}+) with the Romantic Table add-on (+€{p.romantic}) suits anniversaries, dates, and proposals.'
     },
     {
       q: 'Where is the best place to propose on a Bosphorus boat?',

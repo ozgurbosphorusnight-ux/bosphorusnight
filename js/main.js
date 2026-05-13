@@ -434,10 +434,10 @@ function initSmoothScroll() {
 }
 
 // ========== LIVE BOOKING COUNT ==========
-// 24h cycle starting at 20:00 the previous day:
-//   - 20:00: count = that day's START value (never 0)
-//   - 20:00 prev day → 20:00 tour day: grows from start to max (ease-in)
-//   - At 20:00 tour day: hits max, then cycle flips to next day's start
+// 24h cycle starting at 19:30 the previous day:
+//   - 19:30: count = that day's START value (never 0)
+//   - 19:30 prev day → 19:30 tour day: grows from start to max (ease-in)
+//   - At 19:30 tour day: hits max, then cycle flips to next day's start
 function initBookingCount() {
   const el = document.getElementById('booking-count');
   if (!el) return;
@@ -472,7 +472,7 @@ function initBookingCount() {
 
   el.textContent = computeCount();
 
-  // Refresh every 60s so the 20:00 reset is caught quickly
+  // Refresh every 60s so the 19:30 reset is caught quickly
   setInterval(() => {
     el.textContent = computeCount();
   }, 150000); // 2.5 minutes
@@ -1178,7 +1178,7 @@ function openMobilePanel(pkg) {
     if (el) el.classList.add('hidden');
   });
 
-  // Set default date — after 20:00 Istanbul time, today is no longer bookable (boat departs 21:00, last entry 20:45). Skip to tomorrow.
+  // Set default date — after 20:00 Istanbul time, today is no longer bookable (boat departs 20:30, last entry 20:00). Skip to tomorrow.
   const wizDate = document.getElementById('wizDate');
   if (wizDate && !wizDate.value) {
     const istHour = parseInt(new Intl.DateTimeFormat('en-US', {

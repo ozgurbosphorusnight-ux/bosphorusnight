@@ -60,7 +60,7 @@ module.exports = {
     {
       icon: 'prayer',
       title: 'Prayer time respected',
-      desc: 'If Maghrib or Isha falls during boarding (20:00-21:00), our staff can direct you to the quiet prayer space at Kabataş Pier before we depart. Just mention when booking.'
+      desc: 'If Maghrib or Isha falls during boarding (19:30-20:30), our staff can direct you to the quiet prayer space at Kabataş Pier before we depart. Just mention when booking.'
     }
   ],
 
@@ -79,7 +79,7 @@ module.exports = {
     },
     {
       q: 'Can I pray on the boat?',
-      a: 'There is no dedicated prayer room on the boat, but we recommend praying before boarding at 20:00 (Maghrib often falls in this window). Kabataş Pier has prayer facilities. If you need to pray during the 21:00-00:00 cruise (for Isha), speak with the crew — we can arrange a quiet corner on the deck.'
+      a: 'There is no dedicated prayer room on the boat, but we recommend praying before boarding at 19:30 (Maghrib often falls in this window). Kabataş Pier has prayer facilities. If you need to pray during the 20:30-23:30 cruise (for Isha), speak with the crew — we can arrange a quiet corner on the deck.'
     },
     {
       q: 'What are the prices for a Muslim family of 4 (2 adults, 2 kids)?',
@@ -91,7 +91,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best halal cruise in Istanbul?',
-      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 21:00 from Kabataş. Vegetarian options available.'
+      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 20:30 from Kabataş. Vegetarian options available.'
     },
     {
       q: 'Is there a separate halal-only Bosphorus cruise?',

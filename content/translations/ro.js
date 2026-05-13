@@ -10,7 +10,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Croazieră Cină Bosfor de la €{p.dinnerStd} — Tur Nocturn Istanbul + Spectacol',
-      description: 'Croazieră cu cină 3 ore pe Bosfor: meniu turcesc multifel și spectacol folcloric live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Croazieră cu cină 3 ore pe Bosfor: meniu turcesc multifel și spectacol folcloric live. Plecare 20:30 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Croazieră cu Cină pe Bosfor în Istanbul',
@@ -18,7 +18,7 @@ module.exports = {
       badge: '4,8★ · 11.317 recenzii'
     },
     intro: [
-      '**Croaziera cu cină pe Bosfor** este cea mai iconică experiență de seară din Istanbul. Turul nostru pleacă la ora 20:00 de la debarcaderul Kabataș și navighează pe sub podurile Bosfor și Fatih Sultan Mehmet iluminate, oferindu-vă o cină turcească cu multiple feluri, dansuri populare live, dans oriental și un set DJ care animă puntea până la 23:00.',
+      '**Croaziera cu cină pe Bosfor** este cea mai iconică experiență de seară din Istanbul. Turul nostru pleacă la ora 19:30 de la debarcaderul Kabataș și navighează pe sub podurile Bosfor și Fatih Sultan Mehmet iluminate, oferindu-vă o cină turcească cu multiple feluri, dansuri populare live, dans oriental și un set DJ care animă puntea până la 23:00.',
       'Spre deosebire de vapoarele obișnuite care populează peisajul nocturn al Istanbulului, **croaziera noastră cu cină pe Bosfor** este licențiată TÜRSAB (A-17672) și evaluată cu 4,8★ de peste 11.317 călători. Menținem grupurile mici și serviciul călduros — și, pentru că plătiți pe vapor, nu există niciun risc în a face rezervarea în avans.',
       'Fie că sărbătoriți o aniversare, căutați o seară premium în Istanbul pentru familia dumneavoastră, fie că doriți cea mai fotogenică tranziție apus-noapte a orașului — aceasta este croaziera cu cină recomandată în primul rând de localnicii din Istanbul.'
     ],
@@ -29,7 +29,7 @@ module.exports = {
       { title: 'De la €{p.dinnerStd}/persoană — plata pe vapor', desc: 'Croazieră Standard €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Croaziera VIP cu loc în față la scenă și meniu premium €{p.dinnerVip}. Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
     ],
     faq: [
-      { q: 'Când începe croaziera cu cină pe Bosfor?', a: 'Îmbarcarea începe la ora 20:00 la debarcaderul Kabataș. Vaporul pleacă la 21:00 și se întoarce în jurul orei 00:00. Vă recomandăm să ajungeți cu 15-20 de minute mai devreme pentru a vă așeza și a vă relaxa.' },
+      { q: 'Când începe croaziera cu cină pe Bosfor?', a: 'Îmbarcarea începe la ora 19:30 la debarcaderul Kabataș. Vaporul pleacă la 20:30 și se întoarce în jurul orei 00:00. Vă recomandăm să ajungeți cu 15-20 de minute mai devreme pentru a vă așeza și a vă relaxa.' },
       { q: 'Cât costă croaziera cu cină pe Bosfor?', a: 'Croaziera Standard €{p.dinnerStd}/persoană (preț normal €{p.dinnerStdOriginal}). Croaziera VIP cu loc în față la scenă și meniu premium €{p.dinnerVip}/persoană. 0-3 ani gratuit, 4-8 ani cu 50% reducere. Plata se face pe vapor — fără plată în avans.' },
       { q: 'Alcoolul este inclus în croaziera cu cină?', a: 'Băuturile răcoritoare nelimitate (apă, cola, suc) sunt incluse în preț. Pachetele cu alcool sunt opționale: 2 pahare +€{p.alcohol2}/persoană sau alcool local nelimitat (vin, bere, rachiu, vodcă, gin) +€{p.unlimited}/persoană. Băuturile de import se taxează separat pe vapor.' },
       { q: 'Există transfer de la hotel?', a: 'Da — serviciul de preluare și ducere înapoi este +€{p.transfer}/persoană. Zone deservite: Beșiktaș, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane și Sütlüce. Puteți selecta această opțiune în formularul de rezervare.' },
@@ -134,13 +134,13 @@ module.exports = {
       { title: 'Meniu 100% certificat halal', desc: 'Toată carnea (somon, biban de mare, pui, chiftele, vită, antricot) este certificată halal de la furnizori aprobați. Bucătăria urmează pregătirea halal. Fără produse din porc sau aditivi non-halal. Opțiunile vegetariene sunt întotdeauna disponibile.' },
       { title: 'Alcoolul opțional, niciodată impus', desc: 'Pachetele de alcool sunt supliment — nu sunt incluse în mod implicit. Băuturile răcoritoare (apă, cola, suc) sunt nelimitate și gratuite. Masa dumneavoastră rămâne fără alcool dacă nu cereți în mod explicit. Echipajul respectă în tăcere alegerea dumneavoastră.' },
       { title: 'Divertisment prietenos cu familia', desc: 'Spectacol sema, dansuri populare turcești tradiționale, muzică turcească live. Fără spectacole în stil de club de noapte, fără conținut nepotrivit. Sigur pentru copii, respectuos pentru familii. Dansul oriental este o formă de artă tradițională, prezentată cu modestie.' },
-      { title: 'Respect pentru orele de rugăciune', desc: 'Dacă îmbarcarea coincide cu maghrib sau ișa (20:00-21:00), personalul nostru vă poate îndruma către zona liniștită de rugăciune de la debarcaderul Kabataș înainte de plecare. Doar anunțați-ne la rezervare.' }
+      { title: 'Respect pentru orele de rugăciune', desc: 'Dacă îmbarcarea coincide cu maghrib sau ișa (19:30-20:30), personalul nostru vă poate îndruma către zona liniștită de rugăciune de la debarcaderul Kabataș înainte de plecare. Doar anunțați-ne la rezervare.' }
     ],
     faq: [
       { q: 'Croaziera pe Bosfor este 100% halal?', a: 'Da — fiecare produs din carne din meniu (pește, pui, chiftele, mușchi de vită, antricot, miel) este certificat halal de la furnizori aprobați. Bucătăria urmează standardele de pregătire halal. Pe vapor nu se servește nicăieri porc. Nu este o „opțiune halal" — întreg meniul este halal.' },
       { q: 'Alți oaspeți de pe vapor beau alcool?', a: 'Unii oaspeți adaugă pachetul de alcool opțional (+€{p.unlimited}/persoană). Mesele sunt separate în mod natural — puteți cere o zonă fără alcool. Echipajul nu aduce alcool decât dacă este comandat în mod specific de un oaspete. Băuturile răcoritoare (nelimitate) sunt incluse pentru toată lumea.' },
       { q: 'Această croazieră este potrivită pentru familii musulmane cu copii?', a: 'Da — este una dintre cele mai respectate croaziere pentru familii din Istanbul. Divertismentul este modest (dansuri populare, sema, muzică turcească), copiii sub 3 ani sunt gratuit, 4-8 ani beneficiază de 50% reducere. Fără atmosferă de club de noapte. Familiile din Golf, Indonezia, Malaezia, Pakistan și Maroc rezervă regulat această croazieră.' },
-      { q: 'Pot să mă rog pe vapor?', a: 'Nu există o sală de rugăciune dedicată pe vapor, dar vă recomandăm să vă rugați înainte de îmbarcarea de la 20:00 (rugăciunea maghrib coincide adesea cu acest interval). Debarcaderul Kabataș are facilități de rugăciune. Dacă trebuie să vă rugați în timpul navigației 21:00-00:00 (ișa), vorbiți cu echipajul — putem aranja un colț liniștit pe punte.' },
+      { q: 'Pot să mă rog pe vapor?', a: 'Nu există o sală de rugăciune dedicată pe vapor, dar vă recomandăm să vă rugați înainte de îmbarcarea de la 19:30 (rugăciunea maghrib coincide adesea cu acest interval). Debarcaderul Kabataș are facilități de rugăciune. Dacă trebuie să vă rugați în timpul navigației 20:30-00:00 (ișa), vorbiți cu echipajul — putem aranja un colț liniștit pe punte.' },
       { q: 'Care sunt prețurile pentru o familie musulmană de 4 persoane (2 adulți, 2 copii)?', a: 'Croazieră Standard: 2 × €{p.dinnerStd} + 2 × €12 (jumătate de preț 4-8 ani) = €72. Dacă copiii sunt sub 3 ani, gratuit: 2 × €{p.dinnerStd} = €48. Adăugați €10 transfer de la hotel per adult. Total: €48-92 pentru familia de 4 persoane, fără plată în avans, plata pe vapor.' },
       { q: 'Transferul de la hotel este și el halal?', a: 'Transferul de la hotel este doar o călătorie cu mașina — nu este implicată mâncare sau băutură, deci nu există preocupare halal. Șoferii noștri sunt profesioniști, respectuoși și punctuali. Zonele de transfer acoperă Sultanahmet, Taksim, Beșiktaș, Laleli, Fatih și alte 8 cartiere centrale în care călătorii musulmani cazează de obicei.' }
     ],
@@ -205,7 +205,7 @@ module.exports = {
     highlights: [
       { title: 'Întregul vapor, doar pentru dumneavoastră', desc: 'Fără alți oaspeți. Grupul dumneavoastră deține fiecare punte, fiecare masă. Stabiliți propria muzică, cod vestimentar, program. Intimitatea contează — o respectăm.' },
       { title: 'Meniu personalizat și pachet de băuturi', desc: 'Lucrați cu bucătarul nostru pentru a personaliza meniul: mezeluri specifice, alegeri de fel principal, preparate adaptate culturii sau nevoilor dietetice. Pachete de alcool, cupe de șampanie, baruri de cocktail personalizate — toate pot fi aranjate.' },
-      { title: 'Durată și plecare flexibile', desc: '3 ore standard pot fi extinse la 4-5 ore. Alegeți plecarea de zi la 12:00, apus la 17:30 sau seară la 21:00. Doriți zi lucrătoare în loc de weekend? Nicio problemă — ne adaptăm la programul dumneavoastră.' },
+      { title: 'Durată și plecare flexibile', desc: '3 ore standard pot fi extinse la 4-5 ore. Alegeți plecarea de zi la 12:00, apus la 17:30 sau seară la 20:30. Doriți zi lucrătoare în loc de weekend? Nicio problemă — ne adaptăm la programul dumneavoastră.' },
       { title: 'Decor personalizat, formație, program', desc: 'Decorațiuni personalizate (baloane, bannere, aranjamente florale), formație live în loc de DJ, servirea tortului de nuntă, coordonare fotograf, discursuri — adăugați orice are nevoie evenimentul dumneavoastră. Suntem organizatori de evenimente, nu doar operatori de vapor.' }
     ],
     faq: [
@@ -249,7 +249,7 @@ module.exports = {
       { q: 'Cât costă croaziera pe Bosfor pentru 2 persoane?', a: '2 persoane Standard: 2 × €{p.dinnerStd} = €48. 2 persoane VIP: 2 × €{p.dinnerVip} = €110. Adăugați transfer de la hotel pentru doi: +€{p.transfer}×2 = €20. Adăugați alcool nelimitat pentru doi: +€{p.unlimited}×2 = €60. Fără plată în avans — plata pe vapor.' },
       { q: 'Cuplurile pot aduce propriul vin sau șampanie?', a: 'Nu permitem alcool din exterior (din motive de licență de operare). Dar avem vin local nelimitat (+€{p.unlimited}/persoană) și putem aranja vinuri premium de import sau șampanie contra unei taxe — întrebați la rezervare. Prosecco, Chianti și Cabernet sunt cererile premium populare.' },
       { q: 'Este o problemă dacă nu bem alcool — suntem neobișnuiți?', a: 'Deloc — multe cupluri sar complet peste alcool, fie din motive halal, fie pur și simplu din preferință. Băuturile răcoritoare nelimitate (apă, suc, cola) sunt incluse. Nimeni nu se uită de două ori dacă masa dumneavoastră este fără alcool. Multe cupluri musulmane din Arabia Saudită, Iran și Indonezia rezervă această croazieră.' },
-      { q: 'Când este cel mai bine croaziera pe Bosfor pentru cupluri — apus sau seară?', a: 'Seara (plecare 21:00) este cea mai iconică — poduri iluminate, reflexii pe apă, palate luminate. Apusul (plecare 17:30) este mai devreme și are frumusețe de oră aurie, dar croaziera cu cină este specific la 21:00. Dacă doriți ambele, majoritatea cuplurilor rezervă croazierele de apus și de seară în zile diferite.' },
+      { q: 'Când este cel mai bine croaziera pe Bosfor pentru cupluri — apus sau seară?', a: 'Seara (plecare 20:30) este cea mai iconică — poduri iluminate, reflexii pe apă, palate luminate. Apusul (plecare 17:30) este mai devreme și are frumusețe de oră aurie, dar croaziera cu cină este specific la 20:30. Dacă doriți ambele, majoritatea cuplurilor rezervă croazierele de apus și de seară în zile diferite.' },
       { q: 'Există ring de dans — putem dansa?', a: 'Da — după servirea cinei (~22:30), DJ-ul începe și puntea deschisă devine zona de dans. Multe cupluri dansează melodii lente sub lumini cu Podul Bosfor în fundal. Câteva dintre cele mai frumoase fotografii pe care le veți face în Istanbul.' }
     ],
     cta: {
@@ -282,23 +282,23 @@ module.exports = {
     ],
     faq: [
       { q: 'Când pleacă croaziera la apus pe Bosfor?', a: 'Îmbarcarea începe la 17:00, vaporul pleacă la 17:30, se întoarce în jurul orei 20:30. Aranjăm acest lucru să se întâmple exact când soarele apune pe apă — variază ușor cu sezonul (vara 18:30, iarna 17:00). Ajustăm plecarea cu 15-30 de minute sezonier.' },
-      { q: 'Croaziera la apus pe Bosfor este aceeași cu croaziera cu cină?', a: 'Similar, dar la ore diferite. Croaziera la apus pleacă la 17:30 cu cina servită în timpul croazierei (ora de aur + seară devreme). Croaziera cu cină este la 21:00 — după întuneric, priveliști nocturne pure. Același vapor, același meniu, același divertisment — doar iluminare diferită. Unii oaspeți le fac pe ambele în zile diferite.' },
+      { q: 'Croaziera la apus pe Bosfor este aceeași cu croaziera cu cină?', a: 'Similar, dar la ore diferite. Croaziera la apus pleacă la 17:30 cu cina servită în timpul croazierei (ora de aur + seară devreme). Croaziera cu cină este la 20:30 — după întuneric, priveliști nocturne pure. Același vapor, același meniu, același divertisment — doar iluminare diferită. Unii oaspeți le fac pe ambele în zile diferite.' },
       { q: 'Cât costă croaziera la apus pe Bosfor?', a: 'Croaziera la apus Standard de la €35/persoană (3 ore, cină completă, divertisment live). Opțiunea VIP cu loc în față la scenă și mezeluri premium €55/persoană. Plata pe vapor — fără plată în avans. 0-3 ani gratuit, 4-8 ani la jumătate de preț.' },
       { q: 'Croaziera la apus este mai bună decât croaziera cu cină (de seară)?', a: '„Mai bună" depinde de ce vreți. Apus = cele mai bune fotografii, lumină aurie, ritm mai lent, seară mai devreme. Seară = cele mai iconice lumini (poduri iluminate), cel mai bun divertisment, cină mai târzie. Fotografii aleg apusul. Cuplurile la seara romantică aleg seara. Familiile cu copii aleg de obicei apusul (se termină devreme).' },
       { q: 'Ce să aduc la croaziera la apus?', a: 'Smartphone sau cameră pentru fotografii (ora de aur cerșește). Jachetă subțire — vântul crește la apus și puntea poate deveni rapid rece seara devreme. Ochelari de soare pentru primele 30 de minute. Ținută smart-casual — luați cina, dar fără cod vestimentar strict.' },
-      { q: 'Pot rămâne pe croazieră pentru a vedea podurile iluminate noaptea?', a: 'Croaziera la apus este de 3 ore (17:30-20:30), deci la sfârșit veți vedea Podul Bosfor complet iluminat și Turnul Fecioarei luminat. Dacă doriți priveliștile nocturne de VÂRF (21:00-00:00, toate restaurantele și monumentele complet iluminate), rezervați croaziera cu cină de la 21:00. Cea mai bună soluție: rezervați ambele în seri diferite.' }
+      { q: 'Pot rămâne pe croazieră pentru a vedea podurile iluminate noaptea?', a: 'Croaziera la apus este de 3 ore (17:30-20:30), deci la sfârșit veți vedea Podul Bosfor complet iluminat și Turnul Fecioarei luminat. Dacă doriți priveliștile nocturne de VÂRF (20:30-00:00, toate restaurantele și monumentele complet iluminate), rezervați croaziera cu cină de la 20:30. Cea mai bună soluție: rezervați ambele în seri diferite.' }
     ],
     cta: {
       primary: 'Rezervați Croaziera la Apus · Plata pe Vapor',
       secondary: 'Plecare 17:30 · Apus + cină incluse · Anulare gratuită cu 2 ore înainte',
-      tertiary: 'Vedeți Croaziera cu Cină de Seară (21:00)'
+      tertiary: 'Vedeți Croaziera cu Cină de Seară (20:30)'
     }
   },
 
   'bosphorus-night-tour': {
     meta: {
       title: 'Tur Nocturn Bosfor de la €{p.dinnerStd} — Croazieră Cină + Spectacol Live',
-      description: 'Tur nocturn 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş, poduri iluminate. Anulare gratuită, plată la bord. Diseară la 21:00 — ultimele locuri, rezervați devreme.'
+      description: 'Tur nocturn 3 ore pe Bosfor cu cină și spectacol live. Plecare 20:30 din Kabataş, poduri iluminate. Anulare gratuită, plată la bord. Diseară la 20:30 — ultimele locuri, rezervați devreme.'
     },
     hero: {
       h1: 'Tur Nocturn pe Bosfor',
@@ -307,17 +307,17 @@ module.exports = {
     },
     intro: [
       '**Turul nocturn pe Bosfor** este cea mai recomandată activitate de seară din Istanbul. Iată de ce: după întuneric, Bosforul se transformă. Podul Bosfor alternează între albastru, violet și auriu. Palatul Dolmabahçe strălucește în galben cald. Moscheea Ortaköy se reflectă perfect în apa neagră. Fiecare reper al Istanbulului atinge punctul culminant de dramatism noaptea.',
-      '**Turul nostru nocturn pe Bosfor cu cină** ambalează seara iconică completă: 3 ore pe apă (21:00-00:00), cină turcească cu multiple feluri, dansuri populare live (sema, 5 dansuri populare, dans oriental), muzică live și set DJ care animă puntea până la sfârșitul nopții. Fiecare oaspete primește același program — fără opțiune „de bază" care sare cele mai bune părți.',
+      '**Turul nostru nocturn pe Bosfor cu cină** ambalează seara iconică completă: 3 ore pe apă (20:30-00:00), cină turcească cu multiple feluri, dansuri populare live (sema, 5 dansuri populare, dans oriental), muzică live și set DJ care animă puntea până la sfârșitul nopții. Fiecare oaspete primește același program — fără opțiune „de bază" care sare cele mai bune părți.',
       'Fie că este prima dumneavoastră vizită la Istanbul și căutați „singurul lucru pe care trebuie să-l faceți noaptea", fie că ați mai fost aici și doriți cele mai fotogenice 3 ore din oraș, acesta este **turul nocturn pe Bosfor** evaluat cu 4,8★ de peste 11.317 călători. Licențiat TÜRSAB, plata pe vapor, fără plată în avans.'
     ],
     highlights: [
-      { title: 'Bosforul iluminat la punctul culminant de dramatism', desc: 'Podul Bosfor își schimbă culoarea (albastru, violet, auriu), palatele strălucesc galben, Moscheea Ortaköy se reflectă în apa neagră. 21:00-00:00 iluminare maximă pentru toate reperele Istanbulului.' },
+      { title: 'Bosforul iluminat la punctul culminant de dramatism', desc: 'Podul Bosfor își schimbă culoarea (albastru, violet, auriu), palatele strălucesc galben, Moscheea Ortaköy se reflectă în apa neagră. 20:30-00:00 iluminare maximă pentru toate reperele Istanbulului.' },
       { title: 'Spectacol turcesc tradițional pe vapor', desc: 'Spectacol sema, 5 dansuri populare tradiționale (din regiuni diferite ale Turciei), dans oriental, muzică turcească live, apoi set DJ. 40 de minute de spectacol, apoi muzica + cina continuă.' },
       { title: 'Cină completă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald (paçanga böreği), fel principal (somon, biban de mare, pui, chiftele, vegetarian — alegerea dumneavoastră), desert (tort cu înghețată), băuturi răcoritoare nelimitate. Certificat halal.' },
       { title: 'Traseu complet pe Bosfor', desc: 'Kabataș → Dolmabahçe → Palatul Çırağan → Moscheea Ortaköy → Bebek → Rumeli Hisarı → Podul Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Turnul Fecioarei → Kabataș.' }
     ],
     faq: [
-      { q: 'Când este turul nocturn pe Bosfor?', a: 'Îmbarcarea de la ora 20:00 la debarcaderul Kabataș. Vaporul pleacă la 21:00, revine în jurul orei 00:00 (miezul nopții). Vă recomandăm să ajungeți cu 20 de minute mai devreme pentru a vă instala și alege locul.' },
+      { q: 'Când este turul nocturn pe Bosfor?', a: 'Îmbarcarea de la ora 19:30 la debarcaderul Kabataș. Vaporul pleacă la 20:30, revine în jurul orei 00:00 (miezul nopții). Vă recomandăm să ajungeți cu 20 de minute mai devreme pentru a vă instala și alege locul.' },
       { q: 'Cât costă turul nocturn pe Bosfor?', a: 'Turul nocturn Standard (3 ore, cină, spectacol): €{p.dinnerStd}/persoană (fost €{p.dinnerStdOriginal}). VIP cu loc în față la scenă și meniu premium: €{p.dinnerVip}/persoană (fost €{p.dinnerVipOriginal}). 0-3 ani gratuit, 4-8 ani la jumătate de preț. Plata pe vapor.' },
       { q: 'Care este diferența între turul nocturn pe Bosfor și croaziera cu cină?', a: 'Același lucru, cuvânt cheie diferit. „Tur nocturn pe Bosfor" este modul în care caută mulți călători; „croazieră cu cină" este termenul din industrie. Același vapor, același program de 3 ore, același meniu, același spectacol. Alegeți termenul de căutare preferat — experiența este aceeași.' },
       { q: 'Turul nocturn pe Bosfor sau croaziera la apus — care e mai valoros?', a: 'Turul nocturn = Istanbul iluminat, dramatism maxim de lumină, program complet de divertisment, cele mai iconice fotografii ale podurilor iluminate. Apusul = oră aurie, ritm mai lent, se termină la 20:30. Dacă faceți doar unul: turul nocturn este mai iconic. Mulți le fac pe ambele în zile diferite.' },
@@ -326,7 +326,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Rezervați Turul Nocturn · Plata pe Vapor',
-      secondary: 'Plecare 21:00 · 3 ore · Cină + spectacol incluse · Anulare gratuită cu 2 ore înainte',
+      secondary: 'Plecare 20:30 · 3 ore · Cină + spectacol incluse · Anulare gratuită cu 2 ore înainte',
       tertiary: 'Disponibilitate în Seara Aceasta'
     }
   },
@@ -342,8 +342,8 @@ module.exports = {
       badge: '4,8★ · 11.317 recenzii · TÜRSAB A-17672'
     },
     intro: [
-      'Căutați o **croazieră cu cină în Istanbul**? Ați găsit ce recomandă majoritatea călătorilor. Seara noastră de 3 ore pe Bosfor combină o cină turcească completă cu multiple feluri, dansuri populare live și cele mai fotogenice priveliști ale orașului — totul de pe un vapor confortabil care pleacă la ora 21:00 de la debarcaderul Kabataș.',
-      'Experiența **croazierei cu cină Istanbul**: urcați la 20:00, vă așezați, priviți Palatul Dolmabahçe în timp ce plecăm, cina începe când ne apropiem de Moscheea Ortaköy, spectacolul începe (sema, dansuri populare, oriental), iar până la desert sunteți sub Podul Bosfor iluminat. Până la miezul nopții vă întoarceți la Kabataș cu un colaj iconic de fotografii și stomacul plin.',
+      'Căutați o **croazieră cu cină în Istanbul**? Ați găsit ce recomandă majoritatea călătorilor. Seara noastră de 3 ore pe Bosfor combină o cină turcească completă cu multiple feluri, dansuri populare live și cele mai fotogenice priveliști ale orașului — totul de pe un vapor confortabil care pleacă la ora 20:30 de la debarcaderul Kabataș.',
+      'Experiența **croazierei cu cină Istanbul**: urcați la 19:30, vă așezați, priviți Palatul Dolmabahçe în timp ce plecăm, cina începe când ne apropiem de Moscheea Ortaköy, spectacolul începe (sema, dansuri populare, oriental), iar până la desert sunteți sub Podul Bosfor iluminat. Până la miezul nopții vă întoarceți la Kabataș cu un colaj iconic de fotografii și stomacul plin.',
       '€{p.dinnerStd}/persoană pentru croaziera Standard (fost €{p.dinnerStdOriginal}) sau €{p.dinnerVip}/persoană pentru VIP cu locuri în față la scenă (fost €{p.dinnerVipOriginal}). Plata pe vapor — fără plată în avans, fără risc. Licențiat TÜRSAB A-17672, evaluat cu 4,8★ de peste 11.317 călători.'
     ],
     highlights: [
@@ -356,7 +356,7 @@ module.exports = {
       { q: 'Cât costă croaziera cu cină în Istanbul?', a: 'Croaziera noastră cu cină Standard €{p.dinnerStd}/persoană (preț normal €{p.dinnerStdOriginal}). VIP cu loc în față la scenă și meniu premium €{p.dinnerVip}/persoană (preț normal €{p.dinnerVipOriginal}). 0-3 ani gratuit, 4-8 ani cu 50% reducere. Plata pe vapor — fără plată în avans.' },
       { q: 'Ce este inclus în prețul croazierei cu cină Istanbul?', a: 'Tur de 3 ore pe Bosfor, cină turcească cu multiple feluri (mezeluri, aperitiv cald, fel principal, desert), băuturi răcoritoare nelimitate, spectacol de dansuri populare live (sema, dansuri populare, oriental), muzică live + DJ, acces punte deschisă, taxe incluse. Transferul de la hotel și alcoolul sunt suplimente opționale.' },
       { q: 'De unde pleacă croaziera cu cină Istanbul?', a: 'Debarcaderul Kabataș, Istanbul — pe malul european, lângă Palatul Dolmabahçe. Locul exact de întâlnire se comunică prin WhatsApp / Telegram / WeChat după rezervare. Videoclipurile de drum pe jos de la stația de tramvai Dolmabahçe și stația de tramvai Kabataș se află în secțiunea punctului de întâlnire de mai sus.' },
-      { q: 'Cât durează croaziera cu cină — și când începe?', a: 'Total 3 ore. Îmbarcare de la 20:00, vaporul pleacă exact la 21:00, revine în jurul orei 00:00 (miezul nopții). Vă recomandăm să ajungeți cu 15-20 de minute mai devreme pentru a vă instala și alege locul.' },
+      { q: 'Cât durează croaziera cu cină — și când începe?', a: 'Total 3 ore. Îmbarcare de la 19:30, vaporul pleacă exact la 20:30, revine în jurul orei 00:00 (miezul nopții). Vă recomandăm să ajungeți cu 15-20 de minute mai devreme pentru a vă instala și alege locul.' },
       { q: 'Trebuie să rezerv în avans sau pot veni direct?', a: 'Rezervați în avans — locurile se ocupă, mai ales în weekenduri și vacanțe. Rezervările în aceeași zi sunt adesea posibile, dar nu garantate. Formularul de pe această pagină vă asigură un loc în mai puțin de 1 minut. Plata pe vapor, deci nu există risc financiar să rezervați devreme.' },
       { q: 'Croaziera cu cină Istanbul este potrivită pentru vegetarieni / halal / restricții alimentare?', a: 'Da — toată carnea este certificată halal. Fel principal vegetarian (falafel, cartofi prăjiți, pilaf de bulgur, tocană de legume, rondele de ceapă) disponibil fără cost suplimentar. Alergiile pot fi acomodate dacă sunt anunțate la rezervare. Alcoolul este un supliment opțional, niciodată impus.' }
     ],
@@ -370,7 +370,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tur Nocturn Istanbul de la €{p.dinnerStd} — Croazieră Cină Bosfor + Spectacol',
-      description: 'Croazieră 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii. Transfer hotel opțional. Croaziera de diseară la 21:00 — locuri limitate.'
+      description: 'Croazieră 3 ore pe Bosfor cu cină și spectacol live. Plecare 20:30 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii. Transfer hotel opțional. Croaziera de diseară la 20:30 — locuri limitate.'
     },
     hero: {
       h1: 'Tur de Istanbul Noaptea',
@@ -392,7 +392,7 @@ module.exports = {
       { q: 'Care este cel mai bun tur nocturn din Istanbul?', a: 'Croaziera cu cină pe Bosfor este constant clasată pe #1. Motivele: (1) vă oferă toate priveliștile nocturne iconice de pe apă, (2) include cina și spectacolul într-un singur pachet, (3) 3 ore sunt suficiente pentru a vedea mult fără oboseală, (4) punct central de întâlnire, (5) plata pe vapor reduce frecarea rezervării. Majoritatea ghidurilor de călătorie din Istanbul o recomandă ca „singurul lucru obligatoriu de făcut noaptea".' },
       { q: 'Cât costă turul de Istanbul noaptea?', a: 'Turul nostru nocturn cu cină pe Bosfor: Standard €{p.dinnerStd}/persoană, VIP €{p.dinnerVip}/persoană. Inclus turul, cina, divertismentul, băuturile răcoritoare. Opțional: alcool +€{p.unlimited}/persoană, transfer de la hotel +€{p.transfer}/persoană. Plata pe vapor — fără plată în avans.' },
       { q: 'Turul de Istanbul noaptea este sigur pentru călătorii solo?', a: 'Da — foarte sigur. Vapor licențiat TÜRSAB, echipaj profesionist vorbitor de engleză, CCTV pe punte, veste de salvare disponibile. Mulți călători solo rezervă acest tur. Cinați la o masă partajată sau privată (la alegere) și seara este incluzivă — întâlniți alți călători dacă doriți sau păstrați-vă pentru dumneavoastră.' },
-      { q: 'Care este cel mai bun moment pentru un tur nocturn în Istanbul?', a: 'Turul nostru cu cină pe Bosfor este 21:00-00:00 (3 ore). Acesta este momentul de iluminare de vârf pentru toate reperele Istanbulului — poduri complet iluminate, palate strălucitoare, luna pe apă. Dacă doriți mai devreme (ora aurie), luați în considerare turul la apus de la 17:30.' },
+      { q: 'Care este cel mai bun moment pentru un tur nocturn în Istanbul?', a: 'Turul nostru cu cină pe Bosfor este 20:30-00:00 (3 ore). Acesta este momentul de iluminare de vârf pentru toate reperele Istanbulului — poduri complet iluminate, palate strălucitoare, luna pe apă. Dacă doriți mai devreme (ora aurie), luați în considerare turul la apus de la 17:30.' },
       { q: 'Cum ajung la punctul de întâlnire pentru turul nocturn din Istanbul?', a: 'Punctul de întâlnire este debarcaderul Kabataș (malul european central, lângă Palatul Dolmabahçe). Cu tramvaiul: T1 până la stația Kabataș (capăt de linie). Cu taxiul: ~15 min din Taksim. Pe jos: 20 min din Taksim pe Bulevardul İnönü. Pe această pagină există videoclipuri cu direcțiile pe jos. Transfer de la hotel disponibil cu +€{p.transfer}/persoană dacă preferați.' },
       { q: 'Pot rezerva turul de Istanbul noaptea în aceeași zi?', a: 'Adesea da, mai ales în zilele lucrătoare. Weekendurile se umplu mai repede. Formularul de rezervare de pe această pagină vă permite să verificați disponibilitatea pentru diseară și să rezervați în mai puțin de 1 minut. Pentru cereri urgente în aceeași zi, scrieți-ne pe WhatsApp la +90 532 244 29 22.' }
     ],
@@ -415,18 +415,18 @@ module.exports = {
     },
     intro: [
       'Când căutați „tur cu vaporul în Istanbul", căutați singurul lucru care definește orașul de pe apă: Bosforul. Turul nostru cu vaporul pe Bosfor de 3 ore vă trece pe lângă fiecare reper major din Istanbul — Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı, Palatul Beylerbeyi și Turnul Fecioarei — cu cină turcească completă și divertisment live.',
-      'Spre deosebire de multele feriboturi turistice de 1 oră care acoperă mai puțin din Bosfor și sar peste cină și divertisment, **turul nostru cu vaporul în Istanbul** este o experiență completă de seară: îmbarcare la 20:00 la debarcaderul Kabataș, tur până la miezul nopții, 10 mezeluri, fel principal, desert, sema, dansuri populare, dans oriental și DJ. Obțineți și ieșirea de seară ca parte a turului.',
+      'Spre deosebire de multele feriboturi turistice de 1 oră care acoperă mai puțin din Bosfor și sar peste cină și divertisment, **turul nostru cu vaporul în Istanbul** este o experiență completă de seară: îmbarcare la 19:30 la debarcaderul Kabataș, tur până la miezul nopții, 10 mezeluri, fel principal, desert, sema, dansuri populare, dans oriental și DJ. Obțineți și ieșirea de seară ca parte a turului.',
       'Fie că aveți o seară sau o săptămână întreagă la Istanbul, acest **tur cu vaporul în Istanbul** face treaba. 4,8★ de la peste 11.317 călători, licențiat TÜRSAB (A-17672), meniu certificat halal și plata pe vapor — fără angajament financiar până nu sunteți mulțumit de experiență.'
     ],
     highlights: [
       { title: 'Toate reperele majore ale Bosforului', desc: 'Dolmabahçe, Çırağan, Moscheea Ortaköy, Podul Bosfor, Bebek, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, Üsküdar, Turnul Fecioarei. Ambele maluri, european și asiatic, într-un singur tur.' },
       { title: 'Cină + spectacol incluse', desc: 'Nu doar un tur cu vaporul — cină turcească completă cu multiple feluri, spectacole de dansuri populare live, sema, dans oriental, DJ. Ceea ce face 3 ore distractive, nu doar turism.' },
-      { title: 'Plecare de seară (cea mai bună iluminare)', desc: 'Plecarea de la 21:00 surprinde Bosforul iluminat în plină strălucire — poduri, palate, moschei toate iluminate. Mai dramatic decât tururile de zi care arată aceleași repere în lumină plată.' },
+      { title: 'Plecare de seară (cea mai bună iluminare)', desc: 'Plecarea de la 20:30 surprinde Bosforul iluminat în plină strălucire — poduri, palate, moschei toate iluminate. Mai dramatic decât tururile de zi care arată aceleași repere în lumină plată.' },
       { title: 'Rezervare ușoară, plată ușoară', desc: 'Rezervați cu formularul de pe această pagină în mai puțin de 1 minut. Plata pe vapor — fără plată în avans. Transfer de la hotel disponibil de la +€{p.transfer}/persoană. Anulare gratuită cu 2 ore înainte de plecare.' }
     ],
     faq: [
       { q: 'Care este cel mai bun tur cu vaporul în Istanbul?', a: 'Croaziera cu cină pe Bosfor este constant clasată pe #1. Acoperă toate reperele majore, include cina și divertismentul și rulează seara când reperele sunt iluminate. Alte opțiuni (feriboturi hop-on, vapoare turistice de dimineață) acoperă trasee mai scurte, sar cina și nu includ divertisment. Pentru o seară în Istanbul, acesta este cel mai complet tur cu vaporul.' },
-      { q: 'Cât durează turul cu vaporul în Istanbul?', a: '3 ore. Îmbarcare de la 20:00 la debarcaderul Kabataș, plecare 21:00, revenire ~00:00. Acoperă Bosforul complet de la Dolmabahçe la Rumeli Hisarı și înapoi. Suficient timp pentru cină completă + spectacol fără oboseală.' },
+      { q: 'Cât durează turul cu vaporul în Istanbul?', a: '3 ore. Îmbarcare de la 19:30 la debarcaderul Kabataș, plecare 20:30, revenire ~00:00. Acoperă Bosforul complet de la Dolmabahçe la Rumeli Hisarı și înapoi. Suficient timp pentru cină completă + spectacol fără oboseală.' },
       { q: 'Cât costă turul cu vaporul în Istanbul?', a: 'Turul nostru cu vaporul și cină: Standard €{p.dinnerStd}/persoană (fost €{p.dinnerStdOriginal}), VIP cu meniu premium €{p.dinnerVip}/persoană (fost €{p.dinnerVipOriginal}). 0-3 ani gratuit, 4-8 ani la jumătate de preț. Plata pe vapor. Alcoolul și transferul de la hotel sunt suplimente opționale.' },
       { q: 'De unde pleacă tururile cu vaporul în Istanbul?', a: 'Vaporul nostru pleacă de la debarcaderul Kabataș, malul european central al Istanbulului, lângă Palatul Dolmabahçe. Accesibil cu tramvaiul T1 (stația Kabataș), taxi 15 min din Taksim sau pe jos 20 min din Taksim. Transfer de la hotel disponibil din cartierele centrale cu +€{p.transfer}/persoană.' },
       { q: 'Acest tur cu vaporul este potrivit pentru familiile cu copii?', a: 'Da — foarte prietenos cu familia. Copiii 0-3 ani sunt gratuit, 4-8 ani 50% reducere. Zonă interioară acoperită, meniu pentru copii la cerere și divertisment (sema, dansuri populare) captivant pentru copii. Multe familii din toată lumea rezervă acest tur.' },
@@ -442,7 +442,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Excursie Bosfor de la €{p.dinnerStd} — Croazieră Cină Istanbul + Spectacol',
-      description: 'Excursie 3 ore pe Bosfor: cină turcească, folclor live, peisaje nocturne iluminate. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Excursie 3 ore pe Bosfor: cină turcească, folclor live, peisaje nocturne iluminate. Plecare 20:30 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Excursie pe Bosfor',
@@ -462,7 +462,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Care sunt cele mai bune excursii pe Bosfor în Istanbul?', a: 'Turul cu cină de seară este constant pe primele locuri. Opțiunile de zi (feriboturi în buclă de 1 oră, vapoare turistice de 2 ore) arată mai puțin și nu includ cină. Pentru valoare, este greu de învins un tur de 3 ore cu cină, spectacol și punct central de întâlnire. Costul turului nostru €{p.dinnerStd} elimină nevoia unei seri separate cu cină + divertisment.' },
-      { q: 'Cât durează o excursie pe Bosfor?', a: 'Excursia noastră pe Bosfor durează 3 ore în total (plecare 21:00, revenire 00:00). Există opțiuni mai scurte (feriboturi turistice de 1 oră, tururi de 90 de minute), dar sar cina și divertismentul. Pentru experiența completă de seară, 3 ore sunt ideale — suficient pentru a vedea totul fără a obosi.' },
+      { q: 'Cât durează o excursie pe Bosfor?', a: 'Excursia noastră pe Bosfor durează 3 ore în total (plecare 20:30, revenire 00:00). Există opțiuni mai scurte (feriboturi turistice de 1 oră, tururi de 90 de minute), dar sar cina și divertismentul. Pentru experiența completă de seară, 3 ore sunt ideale — suficient pentru a vedea totul fără a obosi.' },
       { q: 'Excursia pe Bosfor merită?', a: 'Da — aproape fiecare ghid de călătorie din Istanbul listează „croaziera pe Bosfor" în top 5 lucruri obligatorii. Orașul a fost construit în jurul acestui strâmtoare; dacă nu ați văzut Bosforul de pe apă, nu ați văzut cu adevărat Istanbulul. Turul nostru specific de seară adaugă cină și divertisment, făcând o ieșire completă de seară în loc de doar turism.' },
       { q: 'Ce să aduc la excursia pe Bosfor?', a: 'Pașaport sau carte de identitate (pentru înregistrarea pe vapor), jachetă subțire (seara puntea este răcoroasă), smartphone/cameră, încălțăminte confortabilă pentru ringul de dans. Numerar sau card pentru plată. Orice altceva este pe vapor. Transfer de la hotel disponibil cu +€{p.transfer}/persoană dacă nu doriți să folosiți transportul public.' },
       { q: 'Excursia pe Bosfor este potrivită pentru copii?', a: 'Da — foarte prietenoasă cu copiii. Copiii 0-3 ani sunt gratuit (transfer inclus), 4-8 ani 50% reducere. Zonă interioară acoperită, meniu pentru copii la cerere și divertisment delicat și captivant. Multe familii rezervă această excursie ca punctul culminant al călătoriei lor în Istanbul.' },
@@ -487,13 +487,13 @@ module.exports = {
     },
     intro: [
       'Căutați **bilete pentru croaziera pe Bosfor**? Cumpărați direct. Biletele noastre sunt €{p.dinnerStd} (Standard) sau €{p.dinnerVip} (VIP) — 40% reducere față de prețul normal (€{p.dinnerStdOriginal} și €{p.dinnerVipOriginal}). Site-urile de rezervări terți adaugă de obicei 20-40% comision. Rezervând direct, economisiți — și tot plătiți pe vapor.',
-      'Procesul nostru de **bilete pentru croaziera pe Bosfor**: completați formularul de pe această pagină în mai puțin de 1 minut (data, număr de oaspeți, pachet, contact), confirmăm instant prin WhatsApp / Telegram / WeChat, apăreți la debarcaderul Kabataș la 20:00, plătiți pe vapor, vă bucurați de croaziera cu cină de 3 ore. Fără bilet fizic de imprimat, fără cupon de primit pe email — confirmarea este biletul dumneavoastră.',
+      'Procesul nostru de **bilete pentru croaziera pe Bosfor**: completați formularul de pe această pagină în mai puțin de 1 minut (data, număr de oaspeți, pachet, contact), confirmăm instant prin WhatsApp / Telegram / WeChat, apăreți la debarcaderul Kabataș la 19:30, plătiți pe vapor, vă bucurați de croaziera cu cină de 3 ore. Fără bilet fizic de imprimat, fără cupon de primit pe email — confirmarea este biletul dumneavoastră.',
       'Fie că rezervați croaziera cu cină pentru diseară sau o rezervați pentru o dată specifică săptămâna viitoare, **biletele pentru croaziera pe Bosfor direct** sunt cel mai rapid mod. Evaluare 4,8★, licențiat TÜRSAB (A-17672), meniu certificat halal și suportă suplimente de transfer de la hotel și alcool.'
     ],
     highlights: [
       { title: 'Rezervare directă — fără taxe de intermediar', desc: '€{p.dinnerStd} Standard, €{p.dinnerVip} VIP. Site-urile terți percep €30-80+ pentru același tur. Economisiți rezervând direct de la noi. Fără taxe ascunse, fără adaos de comision.' },
       { title: 'Plata pe vapor — fără plată în avans', desc: 'Rezervați acum locul, plătiți când urcați pe vapor. Numerar sau card acceptate. Gratuit dacă anulați cu 2+ ore înainte de plecare. Zero risc financiar să rezervați devreme.' },
-      { title: 'Confirmare în mai puțin de 1 minut', desc: 'Completați formularul → confirmăm prin WhatsApp / Telegram / WeChat. Fără cupon PDF de email de imprimat. Mesajul nostru este biletul dumneavoastră. Ajungeți la debarcader la 20:00.' },
+      { title: 'Confirmare în mai puțin de 1 minut', desc: 'Completați formularul → confirmăm prin WhatsApp / Telegram / WeChat. Fără cupon PDF de email de imprimat. Mesajul nostru este biletul dumneavoastră. Ajungeți la debarcader la 19:30.' },
       { title: 'Preț actual de lansare 40% REDUCERE', desc: 'Standard fost €{p.dinnerStdOriginal}, acum €{p.dinnerStd}. VIP fost €{p.dinnerVipOriginal}, acum €{p.dinnerVip}. 40% reducere pentru că rezervați direct. Nu este un truc cu termen limitat — este prețul nostru standard de rezervare directă.' }
     ],
     faq: [
@@ -501,7 +501,7 @@ module.exports = {
       { q: 'De unde pot cumpăra bilete pentru croaziera pe Bosfor?', a: 'Direct de pe această pagină — completați formularul de rezervare, confirmăm instant prin WhatsApp / Telegram / WeChat. Plata pe vapor. Platformele terți (Viator, GetYourGuide, Klook) vând și bilete, dar de obicei percep €30-80+ — acesta este adaosul intermediarului. Direct este cel mai ieftin și mai rapid.' },
       { q: 'Trebuie să imprim biletul pentru croaziera pe Bosfor?', a: 'Nu — nu este necesar bilet fizic sau cupon. După rezervare, vă trimitem o confirmare prin WhatsApp (sau Telegram/WeChat) cu punctul de întâlnire, ora și numele rezervării. Doar arătați telefonul la debarcader. Atât.' },
       { q: 'Pot anula sau returna biletul pentru croaziera pe Bosfor?', a: 'Da — anulare gratuită cu până la 2 ore înainte de plecare. Doar scrieți pe WhatsApp. Pentru că încă nu ați plătit (plata pe vapor), nu este necesară restituire — pur și simplu nu veniți, fără costuri. Mult mai flexibil decât biletele plătite în avans de la terți.' },
-      { q: 'Biletele pentru croaziera pe Bosfor sunt disponibile în aceeași zi?', a: 'Adesea da, mai ales în zilele lucrătoare. Weekendurile și vacanțele se umplu mai repede. Verificați disponibilitatea prin formularul de rezervare — se actualizează în timp real. Rezervarea în aceeași zi este de obicei posibilă cu câteva ore înainte de plecarea de la 21:00. Pentru cereri urgente, WhatsApp.' },
+      { q: 'Biletele pentru croaziera pe Bosfor sunt disponibile în aceeași zi?', a: 'Adesea da, mai ales în zilele lucrătoare. Weekendurile și vacanțele se umplu mai repede. Verificați disponibilitatea prin formularul de rezervare — se actualizează în timp real. Rezervarea în aceeași zi este de obicei posibilă cu câteva ore înainte de plecarea de la 20:30. Pentru cereri urgente, WhatsApp.' },
       { q: 'Biletele pentru copii la croaziera pe Bosfor sunt gratuite?', a: 'Copiii **0-3 ani complet gratuit** (fără taxe, fără costuri ascunse, transfer inclus). **4-8 ani 50% reducere** (€{p.dinnerStd}/2 = €12 la Standard). **9+ ani preț întreg pentru adulți.** Prețuri plafonate și transparente — fără trucuri de „supliment pentru bebeluș".' }
     ],
     cta: {
@@ -514,7 +514,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosfor Last Minute de la €{p.dinnerStd} — Rezervă Astăzi, Plătește la Bord',
-      description: 'Rezervare croazieră Bosfor în aceeași zi. Confirmare WhatsApp în minute. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Rezervare croazieră Bosfor în aceeași zi. Confirmare WhatsApp în minute. Plecare 20:30 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
     },
     hero: {
       h1: 'Croazieră pe Bosfor în Ultimul Moment',
@@ -522,8 +522,8 @@ module.exports = {
       badge: 'Rezervare în Aceeași Zi · Confirmat în Câteva Minute · Plata pe Vapor'
     },
     intro: [
-      'Ați aterizat în Istanbul în această după-amiază și doriți o seară minunată diseară? **Croaziera pe Bosfor în ultimul moment** funcționează. Rezervăm special locuri pentru rezervările în aceeași zi, pentru că știm că mulți călători decid dimineața. Completați formularul aici, confirmăm prin WhatsApp în câteva minute, apăreți la debarcaderul Kabataș la 20:00, plătiți pe vapor, vă bucurați.',
-      '**Croaziera noastră pe Bosfor în ultimul moment** are același program de seară ca rezervările anticipate: 3 ore pe apă (21:00-00:00), cină turcească cu multiple feluri, spectacol de dansuri populare live, sema, dans oriental, DJ. Palatul Dolmabahçe iluminat, Moscheea Ortaköy, Podul Bosfor — aceleași priveliști iconice. Același preț €{p.dinnerStd} Standard sau €{p.dinnerVip} VIP.',
+      'Ați aterizat în Istanbul în această după-amiază și doriți o seară minunată diseară? **Croaziera pe Bosfor în ultimul moment** funcționează. Rezervăm special locuri pentru rezervările în aceeași zi, pentru că știm că mulți călători decid dimineața. Completați formularul aici, confirmăm prin WhatsApp în câteva minute, apăreți la debarcaderul Kabataș la 19:30, plătiți pe vapor, vă bucurați.',
+      '**Croaziera noastră pe Bosfor în ultimul moment** are același program de seară ca rezervările anticipate: 3 ore pe apă (20:30-00:00), cină turcească cu multiple feluri, spectacol de dansuri populare live, sema, dans oriental, DJ. Palatul Dolmabahçe iluminat, Moscheea Ortaköy, Podul Bosfor — aceleași priveliști iconice. Același preț €{p.dinnerStd} Standard sau €{p.dinnerVip} VIP.',
       'Anularea în aceeași zi este gratuită cu până la 2 ore înainte de plecare, deoarece **plata pe vapor** înseamnă că încă nu ați promis nimic. Ați rezervat la 14:00 și v-ați schimbat planurile până la 19:00? Doar scrieți pe WhatsApp — fără restituire, fără problemă. Aceasta este flexibilitatea **turului de Istanbul în ultimul moment** pe care călătorii o apreciază.'
     ],
     highlights: [
@@ -534,10 +534,10 @@ module.exports = {
     ],
     faq: [
       { q: 'Chiar pot rezerva croaziera pe Bosfor pentru diseară?', a: 'Da — des. Rezervăm locuri pentru rezervările în aceeași zi. Verificați formularul de mai sus pentru disponibilitatea din seara aceasta. Dacă sunt locuri disponibile, puteți rezerva până la 18:00 (3 ore înainte de plecare). Weekendurile sunt mai aglomerate — rezervați mai devreme în zi dacă este posibil.' },
-      { q: 'Cât de în ultimul moment pot rezerva?', a: 'Rezervările rămân deschise până la 18:00 pentru vaporul de la 21:00. După 18:00, scrieți-ne direct pe WhatsApp la +90 532 244 29 22 — dacă sunt locuri libere, putem confirma manual. După 19:30 este foarte aglomerat dacă nu sunteți deja la debarcaderul Kabataș și vă puteți îmbarca rapid.' },
+      { q: 'Cât de în ultimul moment pot rezerva?', a: 'Rezervările rămân deschise până la 18:00 pentru vaporul de la 20:30. După 18:00, scrieți-ne direct pe WhatsApp la +90 532 244 29 22 — dacă sunt locuri libere, putem confirma manual. După 19:30 este foarte aglomerat dacă nu sunteți deja la debarcaderul Kabataș și vă puteți îmbarca rapid.' },
       { q: 'Croaziera pe Bosfor în ultimul moment este mai scumpă?', a: 'Nu — același preț ca rezervarea anticipată. €{p.dinnerStd} Standard, €{p.dinnerVip} VIP. Nu facem „prețuri dinamice" sau surtaxe pentru ultimul moment. Același vapor, aceeași cină, același spectacol, același preț.' },
       { q: 'Ce se întâmplă dacă turul din această seară este complet?', a: 'Turul de mâine este de obicei deschis — operăm 365 de zile pe an, în fiecare zi. Puteți rezerva pentru mâine și tot să fiți „în ultimul moment", însemnând că tocmai ați decis. Tururile din zilele lucrătoare au mai mult spațiu decât weekendurile.' },
-      { q: 'Puteți aranja transferul de la hotel în ultimul moment?', a: 'Transferul în aceeași zi este posibil până la ~17:00 pentru turul de la 21:00. După 17:00, s-ar putea să nu avem șofer disponibil — în acest caz, puteți lua un taxi la debarcaderul Kabataș (15 min din Taksim, 10 min din Sultanahmet, ~€10-15). Central și ușor.' },
+      { q: 'Puteți aranja transferul de la hotel în ultimul moment?', a: 'Transferul în aceeași zi este posibil până la ~17:00 pentru turul de la 20:30. După 17:00, s-ar putea să nu avem șofer disponibil — în acest caz, puteți lua un taxi la debarcaderul Kabataș (15 min din Taksim, 10 min din Sultanahmet, ~€10-15). Central și ușor.' },
       { q: 'Dacă sunt deja la Kabataș și vreau să urc?', a: 'Dacă sunteți la debarcader și sunt locuri libere, puteți urca pur și simplu. Scrieți-ne pe WhatsApp sau întrebați echipajul — dacă este loc, vă adăugăm. Același preț, plata pe vapor. În termeni de tur se numește „walk-on" — funcționează aici.' }
     ],
     cta: {
@@ -573,7 +573,7 @@ module.exports = {
       { q: 'Există taxe ascunse în prețul turului din Istanbul?', a: 'Nu. Prețul include: tur de 3 ore, cină completă (mezeluri, aperitiv, fel principal, desert), băuturi răcoritoare nelimitate, spectacol live, taxe. Suplimentele opționale (alcool, transfer, masă romantică) sunt separate și cu preț transparent — plătiți doar pentru ce adăugați. Fără „taxă de serviciu", „taxă portuară", supliment surpriză.' },
       { q: 'De ce prețul turului din Istanbul este 40% reducere — este un truc?', a: 'Fără truc. Prețul normal €{p.dinnerStdOriginal}/€{p.dinnerVipOriginal} este ce percep site-urile de rezervări terți (Viator, GetYourGuide, Klook) — cu comisioanele lor. Rezervați direct și obțineți €{p.dinnerStd}/€{p.dinnerVip}. Aceasta este diferența de 40%. Fără trucuri de preț limitat sau dinamic.' },
       { q: 'Cum se compară prețul turului din Istanbul cu alte opțiuni?', a: 'Feriboturi în buclă: €5-10, 1 oră, fără cină, fără divertisment, doar turism. Tururi economice cu cină: €20-30, aglomerate, mâncare medie, spectacol scurt. Standardul nostru (€{p.dinnerStd}): 3 ore, cină completă, spectacol complet, masă privată, licențiat TÜRSAB. VIP (€{p.dinnerVip}): în față la scenă, meniu premium. Iahturi resort: €100-150+, excesiv pentru călătorii solo/cupluri.' },
-      { q: 'Trebuie să plătesc în avans prețul turului din Istanbul?', a: 'Nu — **plata pe vapor**. Rezervați acum (formular de 1 minut), confirmăm pe WhatsApp, veniți la 20:00 și plătiți pe vapor (numerar sau card). Anulare gratuită cu până la 2 ore înainte. Zero angajament financiar până nu sunteți mulțumit.' },
+      { q: 'Trebuie să plătesc în avans prețul turului din Istanbul?', a: 'Nu — **plata pe vapor**. Rezervați acum (formular de 1 minut), confirmăm pe WhatsApp, veniți la 19:30 și plătiți pe vapor (numerar sau card). Anulare gratuită cu până la 2 ore înainte. Zero angajament financiar până nu sunteți mulțumit.' },
       { q: 'Există reduceri de grup la prețul turului din Istanbul?', a: 'Pentru grupuri de 10+, putem oferi 5-10% reducere — scrieți pe WhatsApp cu dimensiunea grupului. Pentru 25+, luați în considerare turul privat (întregul vapor pentru grupul dumneavoastră, meniu personalizat). Pentru 2-9 persoane se aplică prețurile standard — deja 40% reducere față de prețul normal.' }
     ],
     cta: {
@@ -595,7 +595,7 @@ module.exports = {
     },
     intro: [
       '**Turismul pe Bosfor** de pe apă bate orice tur cu autobuzul. Bosforul este cea mai istorică cale navigabilă a orașului — sultani otomani, împărați bizantini, negustori greci și nave de război ruse au trecut cu toții pe aici. Astăzi turul nostru de 3 ore, cu comentarii de la echipajul vorbitor de engleză, trece pe lângă fiecare reper major al Istanbulului care definește zarea.',
-      'Traseul **turului nostru turistic pe Bosfor** (plecare de seară, 21:00-00:00):\n\n1. **Palatul Dolmabahçe** — reședința otomană din secolul al XIX-lea, iluminată noaptea\n2. **Palatul Çırağan** — acum hotel de lux, istorie regală\n3. **Moscheea Ortaköy** — una dintre cele mai fotografiate moschei din Istanbul, pe apă\n4. **Podul Bosfor** — alternează noaptea între albastru, violet, auriu\n5. **Bebek** — cartier elegant de pe malul european\n6. **Rumeli Hisarı** — construit de Fatih Sultan Mehmet în 1452 înainte de cucerirea Constantinopolului\n7. **Podul Fatih Sultan Mehmet** — al doilea pod al Bosforului, arc dramatic\n8. **Palatul Beylerbeyi** — malul asiatic, reședință de vară otomană\n9. **Üsküdar** — malul asiatic al Istanbulului, cartier tradițional\n10. **Turnul Fecioarei** — turn pe mica insulă, unul dintre cele mai romantice simboluri ale Istanbulului',
+      'Traseul **turului nostru turistic pe Bosfor** (plecare de seară, 20:30-00:00):\n\n1. **Palatul Dolmabahçe** — reședința otomană din secolul al XIX-lea, iluminată noaptea\n2. **Palatul Çırağan** — acum hotel de lux, istorie regală\n3. **Moscheea Ortaköy** — una dintre cele mai fotografiate moschei din Istanbul, pe apă\n4. **Podul Bosfor** — alternează noaptea între albastru, violet, auriu\n5. **Bebek** — cartier elegant de pe malul european\n6. **Rumeli Hisarı** — construit de Fatih Sultan Mehmet în 1452 înainte de cucerirea Constantinopolului\n7. **Podul Fatih Sultan Mehmet** — al doilea pod al Bosforului, arc dramatic\n8. **Palatul Beylerbeyi** — malul asiatic, reședință de vară otomană\n9. **Üsküdar** — malul asiatic al Istanbulului, cartier tradițional\n10. **Turnul Fecioarei** — turn pe mica insulă, unul dintre cele mai romantice simboluri ale Istanbulului',
       'Cina și divertismentul sunt incluse — nu separat — astfel **turismul pe Bosfor** se transformă într-o seară completă. Cină turcească cu multiple feluri, spectacol de dansuri populare live, sema, dans oriental, DJ. Evaluare 4,8★ de la peste 11.317 călători, licențiat TÜRSAB A-17672.'
     ],
     highlights: [

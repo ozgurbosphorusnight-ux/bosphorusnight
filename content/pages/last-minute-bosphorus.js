@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Last-Minute Bosphorus Cruise from €{p.dinnerStd} — Book Tonight, Pay Aboard',
-    description: 'Same-day Bosphorus cruise booking. WhatsApp confirmation in minutes. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: 'Same-day Bosphorus cruise booking. WhatsApp confirmation in minutes. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
   },
 
   hero: {
@@ -33,9 +33,9 @@ module.exports = {
   },
 
   intro: [
-    'Landed in Istanbul this afternoon and want a great evening tonight? The **last-minute Bosphorus cruise** works. We hold back seats for same-day bookings specifically because we know many travelers decide the morning-of. Fill the wizard here, we confirm via WhatsApp in minutes, you show up at Kabataş Pier at 20:00, pay on the boat, enjoy.',
+    'Landed in Istanbul this afternoon and want a great evening tonight? The **last-minute Bosphorus cruise** works. We hold back seats for same-day bookings specifically because we know many travelers decide the morning-of. Fill the wizard here, we confirm via WhatsApp in minutes, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy.',
 
-    'Our **last-minute Bosphorus cruise** has the same evening itinerary as advance bookings: 3 hours on the water (21:00-00:00), multi-course Turkish dinner, live folklore show, whirling dervish, belly dance, DJ. Illuminated Dolmabahçe Palace, Ortaköy Mosque, Bosphorus Bridge — same iconic views. Same €{p.dinnerStd} Standard or €{p.dinnerVip} VIP price.',
+    'Our **last-minute Bosphorus cruise** has the same evening itinerary as advance bookings: 3 hours on the water (20:30-23:30), multi-course Turkish dinner, live folklore show, whirling dervish, belly dance, DJ. Illuminated Dolmabahçe Palace, Ortaköy Mosque, Bosphorus Bridge — same iconic views. Same €{p.dinnerStd} Standard or €{p.dinnerVip} VIP price.',
 
     'Same-day cancellation is free up to 2 hours before departure, since **pay-on-boat** means you\'ve committed nothing yet. If you booked at 14:00 and change plans by 19:00, just message us — no refund, no issue. This is the **last-minute Istanbul cruise** flexibility travelers appreciate.'
   ],
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How last-minute can I book?',
-      a: 'Booking stays open until 18:00 for the 21:00 boat. After 18:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually. After 19:30 it\'s too tight unless you\'re already at Kabataş Pier and can board fast.'
+      a: 'Booking stays open until 18:00 for the 20:30 boat. After 18:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually. After 19:30 it\'s too tight unless you\'re already at Kabataş Pier and can board fast.'
     },
     {
       q: 'Is last-minute Bosphorus cruise more expensive?',
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Can you arrange last-minute hotel transfer?',
-      a: 'Same-day transfer is possible until ~17:00 for 21:00 cruise. After 17:00, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
+      a: 'Same-day transfer is possible until ~17:00 for 20:30 cruise. After 17:00, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
     },
     {
       q: 'What if I\'m already at Kabataş and want to board?',
@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'Where can I find last-minute Bosphorus cruise deals tonight?',
-      a: 'Bosphorus Night accepts last-minute bookings for the 21:00 cruise when seats are available — direct via WhatsApp +90 532 244 29 22 or website. Same €{p.dinnerStd} Standard price (no last-minute markup). Pay on boat. Boarding 20:00 at Kabataş Pier.'
+      a: 'Bosphorus Night accepts last-minute bookings for the 20:30 cruise when seats are available — direct via WhatsApp +90 532 244 29 22 or website. Same €{p.dinnerStd} Standard price (no last-minute markup). Pay on boat. Boarding 19:30 at Kabataş Pier.'
     },
     {
       q: 'Is last-minute Bosphorus booking reliable?',

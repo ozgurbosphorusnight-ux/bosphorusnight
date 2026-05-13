@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus sunset cruise the same as the dinner cruise?',
-      a: 'Similar but different time. Sunset cruise departs 17:30 with dinner served during the cruise (golden hour + early night). Dinner cruise departs 21:00 — after dark, pure night views. Same boat, same menu, same entertainment — just different lighting. Some guests do both on different days.'
+      a: 'Similar but different time. Sunset cruise departs 17:30 with dinner served during the cruise (golden hour + early night). Dinner cruise departs 20:30 — after dark, pure night views. Same boat, same menu, same entertainment — just different lighting. Some guests do both on different days.'
     },
     {
       q: 'What\'s the price of the Bosphorus sunset cruise?',
@@ -86,22 +86,22 @@ module.exports = {
     },
     {
       q: 'Can I stay on the sunset cruise to see the fully lit bridges at night?',
-      a: 'The sunset cruise is 3 hours (17:30-20:30), so by the end you see the Bosphorus Bridge fully lit up and Maiden\'s Tower illuminated. If you want the PEAK night views (21:00-00:00 when all restaurants and monuments are fully lit), book the 21:00 dinner cruise instead. Best of both: book both on different nights.'
+      a: 'The sunset cruise is 3 hours (17:30-20:30), so by the end you see the Bosphorus Bridge fully lit up and Maiden\'s Tower illuminated. If you want the PEAK night views (20:30-23:30 when all restaurants and monuments are fully lit), book the 20:30 dinner cruise instead. Best of both: book both on different nights.'
     },
     {
       q: 'What time does the sun set in Istanbul?',
-      a: 'In summer (June–July), Istanbul sunsets are around 20:30–20:45. In winter, around 16:30–17:00. For a sunset-and-night experience, Bosphorus Night\'s 21:00 dinner cruise from Kabataş catches the late blue hour and the illuminated landmarks afterward.'
+      a: 'In summer (June–July), Istanbul sunsets are around 20:30–20:45. In winter, around 16:30–17:00. For a sunset-and-night experience, Bosphorus Night\'s 20:30 dinner cruise from Kabataş catches the late blue hour and the illuminated landmarks afterward.'
     },
     {
       q: 'Is the Bosphorus sunset cruise worth it?',
-      a: 'Yes — sunset over the Bosphorus Bridge is one of Istanbul\'s signature views. Bosphorus Night\'s 21:00 dinner cruise (€{p.dinnerStd}/person) catches the post-sunset blue hour plus the illuminated palaces, with a full dinner and live shows over 3 hours.'
+      a: 'Yes — sunset over the Bosphorus Bridge is one of Istanbul\'s signature views. Bosphorus Night\'s 20:30 dinner cruise (€{p.dinnerStd}/person) catches the post-sunset blue hour plus the illuminated palaces, with a full dinner and live shows over 3 hours.'
     }
   ],
 
   cta: {
     primary: 'Book Sunset Cruise · Pay on Boat',
     secondary: '17:30 departure · Sunset + dinner included · Free cancellation 2hrs before',
-    tertiary: 'See Night Dinner Cruise (21:00)'
+    tertiary: 'See Night Dinner Cruise (20:30)'
   },
 
   schema: {

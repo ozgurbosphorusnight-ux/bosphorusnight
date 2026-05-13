@@ -108,7 +108,7 @@ function buildMeta(lang) {
   // CJK languages don't use spaces between words.
   const sep = lang === 'zh' ? '' : ' ';
   const title = `${title1}${sep}${title2} — Bosphorus Night Istanbul`;
-  const description = pick('meta.home.description', '3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.');
+  const description = pick('meta.home.description', '3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.');
   return { title, description };
 }
 
@@ -124,8 +124,9 @@ function buildSchemaLd(lang) {
     telephone: '+90 532 244 29 22',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Kabataş Pier',
-      addressLocality: 'Istanbul',
+      streetAddress: 'Ömer Avni, Meclis-i Mebusan Cd. Kabataş Vapur İskelesi',
+      addressLocality: 'Beyoğlu/İstanbul',
+      postalCode: '34427',
       addressCountry: 'TR'
     },
     geo: {
@@ -235,8 +236,9 @@ function buildSchemaLd(lang) {
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Kabataş Pier',
-      addressLocality: 'Istanbul',
+      streetAddress: 'Ömer Avni, Meclis-i Mebusan Cd. Kabataş Vapur İskelesi',
+      addressLocality: 'Beyoğlu/İstanbul',
+      postalCode: '34427',
       addressCountry: 'TR'
     },
     geo: {
@@ -293,11 +295,11 @@ function buildSchemaLd(lang) {
   const tourDinnerStd = {
     ...tourBase(
       'Standard Bosphorus Dinner Cruise',
-      '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 21:00 from Kabataş Pier. Pay on the boat.',
+      '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 20:30 from Kabataş Pier. Pay on the boat.',
       24.30,
       'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
       'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
-      '21:00',
+      '20:30',
       'International tourists, couples, families, groups'
     ),
     offers: {
@@ -319,16 +321,16 @@ function buildSchemaLd(lang) {
 
   const tourDinnerVip = tourBase(
     'VIP Bosphorus Dinner Cruise',
-    '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 21:00 from Kabataş Pier.',
+    '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 20:30 from Kabataş Pier.',
     55.20,
     'https://www.bosphorusnight.com/bosphorus-vip',
     'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg',
-    '21:00',
+    '20:30',
     'Premium travelers, special occasions, VIP guests'
   );
 
   // Dinner cruise SocialEvent with recurring daily schedule + 2 offers (Std + VIP).
-  // startDate = tomorrow 21:00 local (Europe/Istanbul = +03:00), refreshed on every build.
+  // startDate = tomorrow 20:30 local (Europe/Istanbul = +03:00), refreshed on every build.
   // A weekly auto-rebuild (GitHub Actions) keeps this evergreen for Google Events rich results.
   const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const tomorrowDate = tomorrow.toISOString().split('T')[0];
@@ -344,7 +346,7 @@ function buildSchemaLd(lang) {
   const eventName = `${pick('hero.title1', 'Luxury Bosphorus')}${sep}${pick('hero.title2', 'Dinner Cruise')} — Turkish Night Show`;
   const eventDescription = subPrices(pick(
     'meta.home.description',
-    '3-hour Bosphorus dinner cruise from €{p.dinnerStd}/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.'
+    '3-hour Bosphorus dinner cruise from €{p.dinnerStd}/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.'
   ));
 
   const dinnerEvent = {
@@ -354,7 +356,7 @@ function buildSchemaLd(lang) {
     description: eventDescription,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     inLanguage: lang,
-    startDate: `${tomorrowDate}T21:00:00+03:00`,
+    startDate: `${tomorrowDate}T20:30:00+03:00`,
     endDate: `${dayAfter}T00:00:00+03:00`,
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',

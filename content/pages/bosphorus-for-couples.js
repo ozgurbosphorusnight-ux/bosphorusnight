@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'What time is best for a couples Bosphorus cruise — sunset or night?',
-      a: 'Night (21:00 departure) is the most iconic — illuminated bridges, reflections on water, lit-up palaces. Sunset (17:30 departure) is earlier and golden-hour beautiful but the dinner cruise specifically is 21:00. If you want both, most couples book the sunset daytime and dinner night cruises on different days.'
+      a: 'Night (20:30 departure) is the most iconic — illuminated bridges, reflections on water, lit-up palaces. Sunset (17:30 departure) is earlier and golden-hour beautiful but the dinner cruise specifically is 20:30. If you want both, most couples book the sunset daytime and dinner night cruises on different days.'
     },
     {
       q: 'Is there a dance floor — can we dance?',
@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'What\'s the most romantic dinner cruise in Istanbul for couples?',
-      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 21:00 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
+      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 20:30 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
     }
   ],
 

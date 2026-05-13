@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'When you search "**Istanbul boat tour**", you\'re looking for the one thing that defines the city from the water: the Bosphorus. Our 3-hour Bosphorus boat tour takes you past every major Istanbul landmark — Dolmabahçe Palace, Ortaköy Mosque, the Bosphorus Bridge, Rumeli Fortress, Beylerbeyi Palace, and Maiden\'s Tower — with a full Turkish dinner and live entertainment included.',
 
-    'Unlike the many 1-hour sightseeing ferries that cover less of the Bosphorus and skip food and entertainment, our **Istanbul boat tour** is the full evening experience: boarding at Kabataş Pier at 20:00, cruising until midnight, with 10 mezes, a main course, dessert, whirling dervish, folk dances, belly dance, and DJ. You get the tour AND the night out.',
+    'Unlike the many 1-hour sightseeing ferries that cover less of the Bosphorus and skip food and entertainment, our **Istanbul boat tour** is the full evening experience: boarding at Kabataş Pier at 19:30, cruising until midnight, with 10 mezes, a main course, dessert, whirling dervish, folk dances, belly dance, and DJ. You get the tour AND the night out.',
 
     'Whether you have one evening in Istanbul or a full week, this is the **boat tour Istanbul** delivers on. 4.8★ rated by 11,317+ travelers, TÜRSAB-licensed (A-17672), halal-certified menu, and pay-on-boat — no financial commitment until you\'re satisfied with the experience.'
   ],
@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'time',
       title: 'Evening departure (best lighting)',
-      desc: '21:00 departure catches the illuminated Bosphorus in full glow — bridges, palaces, mosques all lit up. More dramatic than daytime tours that show the same landmarks in flat light.'
+      desc: '20:30 departure catches the illuminated Bosphorus in full glow — bridges, palaces, mosques all lit up. More dramatic than daytime tours that show the same landmarks in flat light.'
     },
     {
       icon: 'easy',
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How long is the Istanbul boat tour?',
-      a: '3 hours. Boarding from 20:00 at Kabataş Pier, departure 21:00, return ~00:00. Covers the full Bosphorus from Dolmabahçe to Rumeli Fortress and back. Enough time for full dinner + show without being tiring.'
+      a: '3 hours. Boarding from 19:30 at Kabataş Pier, departure 20:30, return ~23:30. Covers the full Bosphorus from Dolmabahçe to Rumeli Fortress and back. Enough time for full dinner + show without being tiring.'
     },
     {
       q: 'How much is an Istanbul boat tour?',

@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best Bosphorus cruise for families with children?',
-      a: 'Bosphorus Night\'s Standard Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 21:00 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
+      a: 'Bosphorus Night\'s Standard Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 20:30 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
     },
     {
       q: 'Are there activities for kids on the Bosphorus cruise?',

@@ -33,9 +33,9 @@ module.exports = {
   },
 
   intro: [
-    'Looking for a **dinner cruise in Istanbul**? You\'ve found the one most travelers recommend. Our 3-hour evening on the Bosphorus combines a full multi-course Turkish dinner, live folklore performances, and the most photogenic views of the city — all from a comfortable boat that departs Kabataş Pier at 21:00.',
+    'Looking for a **dinner cruise in Istanbul**? You\'ve found the one most travelers recommend. Our 3-hour evening on the Bosphorus combines a full multi-course Turkish dinner, live folklore performances, and the most photogenic views of the city — all from a comfortable boat that departs Kabataş Pier at 20:30.',
 
-    'The **Istanbul dinner cruise** experience: board at 20:00, settle in, watch Dolmabahçe Palace slide by as we depart, dinner begins as we approach Ortaköy Mosque, the show starts (whirling dervish, folk dances, belly dance), and by the time dessert arrives you\'re under the illuminated Bosphorus Bridge. By midnight you\'re back at Kabataş with a camera roll of iconic photos and a full stomach.',
+    'The **Istanbul dinner cruise** experience: board at 19:30, settle in, watch Dolmabahçe Palace slide by as we depart, dinner begins as we approach Ortaköy Mosque, the show starts (whirling dervish, folk dances, belly dance), and by the time dessert arrives you\'re under the illuminated Bosphorus Bridge. By midnight you\'re back at Kabataş with a camera roll of iconic photos and a full stomach.',
 
     'From €{p.dinnerStd}/person for the Standard cruise (was €{p.dinnerStdOriginal}) or €{p.dinnerVip}/person for VIP (was €{p.dinnerVipOriginal}) with stage-front seats. Pay on the boat — no prepayment, no risk. TÜRSAB A-17672 licensed, 4.8★ rated by 11,317+ travelers.'
   ],
@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       q: 'How long is the dinner cruise — and what time does it start?',
-      a: '3 hours total. Boarding from 20:00, boat departs 21:00 sharp, returns around 00:00 (midnight). We recommend arriving 15-20 minutes early to settle in and pick your seat.'
+      a: '3 hours total. Boarding from 19:30, boat departs 20:30 sharp, returns around 23:30 (midnight). We recommend arriving 15-20 minutes early to settle in and pick your seat.'
     },
     {
       q: 'Do I need to book in advance or can I show up?',

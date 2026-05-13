@@ -36,7 +36,7 @@ const SKIP = new Set([
   // Acronyms / codes
   'FSM', 'VIP', 'EN', 'TR',
   // Symbols only / numbers
-  '16 Apr 2026', '2 Adults', '0 / 2 adults assigned', '40% OFF', '3hrs · 21:00',
+  '16 Apr 2026', '2 Adults', '0 / 2 adults assigned', '40% OFF', '3hrs · 20:30',
   'OUTBOUND →', '← RETURN', '▲ RETURN',
   // Already have dinner.std.title translated via T: "Standard Dinner Cruise"
   'Standard Dinner Cruise',

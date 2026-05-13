@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'Looking for **Bosphorus cruise tickets**? Buy direct. Our tickets are €{p.dinnerStd} (Standard) or €{p.dinnerVip} (VIP) — 40% off the regular rate (€{p.dinnerStdOriginal} and €{p.dinnerVipOriginal}). Third-party booking sites typically add 20-40% commission. By booking direct, you save — and you can still pay on the boat.',
 
-    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, package, contact), we confirm via WhatsApp / Telegram / WeChat instantly, you show up at Kabataş Pier at 20:00, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
+    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, package, contact), we confirm via WhatsApp / Telegram / WeChat instantly, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
 
     'Whether you\'re booking tonight\'s dinner cruise or reserving for a specific date next week, **Bosphorus cruise tickets direct** is the fastest way. 4.8★ rated, TÜRSAB-licensed (A-17672), halal-certified menu, and supports hotel transfer and alcohol add-ons.'
   ],
@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'fast',
       title: 'Confirmation in under 1 minute',
-      desc: 'Fill wizard → we confirm via WhatsApp / Telegram / WeChat. No emailed PDF voucher to print. Our message is your ticket. Just show up at the pier at 20:00.'
+      desc: 'Fill wizard → we confirm via WhatsApp / Telegram / WeChat. No emailed PDF voucher to print. Our message is your ticket. Just show up at the pier at 19:30.'
     },
     {
       icon: 'discount',
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Are Bosphorus cruise tickets available on same day?',
-      a: 'Often yes, especially on weekdays. Weekends and holidays fill up fast. Check availability via the booking wizard — we update in real-time. Same-day booking typically possible until a few hours before 21:00 departure. WhatsApp for urgent requests.'
+      a: 'Often yes, especially on weekdays. Weekends and holidays fill up fast. Check availability via the booking wizard — we update in real-time. Same-day booking typically possible until a few hours before 20:30 departure. WhatsApp for urgent requests.'
     },
     {
       q: 'Are kids\' Bosphorus cruise tickets free?',
@@ -90,11 +90,11 @@ module.exports = {
     },
     {
       q: 'Are Bosphorus cruise tickets cheaper online or at the dock?',
-      a: 'Online direct booking with Bosphorus Night is recommended: €{p.dinnerStd}/person, guaranteed seat for the 21:00 departure, full pricing transparency, and no online prepayment — pay on the boat. Same-day availability is subject to capacity.'
+      a: 'Online direct booking with Bosphorus Night is recommended: €{p.dinnerStd}/person, guaranteed seat for the 20:30 departure, full pricing transparency, and no online prepayment — pay on the boat. Same-day availability is subject to capacity.'
     },
     {
       q: 'How early should I book Bosphorus cruise tickets?',
-      a: 'Same-day booking is usually possible if seats are available. For weekends, holidays, or summer peak (June–September), book 2–3 days ahead. Bosphorus Night accepts reservations up to a few hours before the 21:00 departure when capacity allows.'
+      a: 'Same-day booking is usually possible if seats are available. For weekends, holidays, or summer peak (June–September), book 2–3 days ahead. Bosphorus Night accepts reservations up to a few hours before the 20:30 departure when capacity allows.'
     }
   ],
 

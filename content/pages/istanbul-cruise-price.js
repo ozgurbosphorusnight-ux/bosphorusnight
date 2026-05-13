@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Do I need to pay the Istanbul cruise price upfront?',
-      a: 'No — **pay on the boat**. You reserve now (1-minute wizard), we confirm via WhatsApp, you show up at 20:00 and pay on the boat (cash or card). Free cancellation up to 2 hours before. Zero financial commitment until you\'re satisfied.'
+      a: 'No — **pay on the boat**. You reserve now (1-minute wizard), we confirm via WhatsApp, you show up at 19:30 and pay on the boat (cash or card). Free cancellation up to 2 hours before. Zero financial commitment until you\'re satisfied.'
     },
     {
       q: 'Any group discount on Istanbul cruise price?',

@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Night Tour from €{p.dinnerStd} — Dinner Cruise + Live Show',
-    description: '3-hour Bosphorus night tour with dinner and live show. Departs 21:00 from Kabataş, illuminated bridges. Free cancellation, pay on boat. Tonight at 21:00 — last spots filling, book early.'
+    description: '3-hour Bosphorus night tour with dinner and live show. Departs 20:30 from Kabataş, illuminated bridges. Free cancellation, pay on boat. Tonight at 20:30 — last spots filling, book early.'
   },
 
   hero: {
@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'The **Bosphorus night tour** is the single most recommended evening activity in Istanbul. There\'s a reason: after dark, the Bosphorus transforms. The Bosphorus Bridge shifts between blue, purple, and gold. Dolmabahçe Palace glows warm yellow. Ortaköy Mosque mirrors perfectly on the black water. Every Istanbul landmark hits peak drama at night.',
 
-    'Our **Bosphorus night tour with dinner** packages the full iconic evening: 3 hours on the water (21:00-00:00), a multi-course Turkish feast, live folklore performances (whirling dervish, 5 folk dances, belly dance), live music, and a DJ set that keeps the deck alive until the end. Every guest gets the same itinerary — there\'s no "basic" option that skips the best parts.',
+    'Our **Bosphorus night tour with dinner** packages the full iconic evening: 3 hours on the water (20:30-23:30), a multi-course Turkish feast, live folklore performances (whirling dervish, 5 folk dances, belly dance), live music, and a DJ set that keeps the deck alive until the end. Every guest gets the same itinerary — there\'s no "basic" option that skips the best parts.',
 
     'Whether it\'s your first Istanbul trip and you\'re looking for "the one thing you must do at night", or you\'ve been here before and want the most photogenic 3 hours in the city, this is the **Bosphorus night tour** with 4.8★ from 11,317+ travelers. TÜRSAB-licensed, pay-on-boat, no prepayment.'
   ],
@@ -44,7 +44,7 @@ module.exports = {
     {
       icon: 'lights',
       title: 'Illuminated Bosphorus at peak drama',
-      desc: 'Bosphorus Bridge shifts colors (blue, purple, gold), palaces glow yellow, Ortaköy Mosque mirrors on black water. 21:00-00:00 is peak illumination for all Istanbul landmarks.'
+      desc: 'Bosphorus Bridge shifts colors (blue, purple, gold), palaces glow yellow, Ortaköy Mosque mirrors on black water. 20:30-23:30 is peak illumination for all Istanbul landmarks.'
     },
     {
       icon: 'show',
@@ -66,7 +66,7 @@ module.exports = {
   faq: [
     {
       q: 'What time is the Bosphorus night tour?',
-      a: 'Boarding from 20:00 at Kabataş Pier. Boat departs 21:00 sharp, returns around 00:00 (midnight). We recommend arriving 20 minutes before boarding to get settled and choose seats.'
+      a: 'Boarding from 19:30 at Kabataş Pier. Boat departs 20:30 sharp, returns around 23:30 (midnight). We recommend arriving 20 minutes before boarding to get settled and choose seats.'
     },
     {
       q: 'How much is the Bosphorus night tour?',
@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus night tour safe?',
-      a: 'Yes — Bosphorus Night operates a TÜRSAB-licensed (A-17672) boat with current safety certificates and regular maintenance. The Bosphorus is calm and well-patrolled at night. The 21:00 departure from Kabataş Pier is in central Istanbul, accessible by tram and metro.'
+      a: 'Yes — Bosphorus Night operates a TÜRSAB-licensed (A-17672) boat with current safety certificates and regular maintenance. The Bosphorus is calm and well-patrolled at night. The 20:30 departure from Kabataş Pier is in central Istanbul, accessible by tram and metro.'
     },
     {
       q: 'What\'s the best night activity in Istanbul?',
@@ -100,7 +100,7 @@ module.exports = {
 
   cta: {
     primary: 'Book Night Tour · Pay on Boat',
-    secondary: '21:00 departure · 3 hours · Dinner + show included · Free cancellation 2hrs before',
+    secondary: '20:30 departure · 3 hours · Dinner + show included · Free cancellation 2hrs before',
     tertiary: 'Check Tonight\'s Availability'
   },
 

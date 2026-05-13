@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Istanbul Night Tour from €{p.dinnerStd} — Bosphorus Dinner Cruise + Show',
-    description: '3-hour Bosphorus cruise with dinner and live show. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews. Hotel transfer optional. Tonight\'s 21:00 cruise — limited spots remain.'
+    description: '3-hour Bosphorus cruise with dinner and live show. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews. Hotel transfer optional. Tonight\'s 20:30 cruise — limited spots remain.'
   },
 
   hero: {
@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       q: 'What time is best for a night tour in Istanbul?',
-      a: 'Our Bosphorus dinner cruise is 21:00-00:00 (3 hours). That\'s peak illumination time for all Istanbul landmarks — bridges fully lit, palaces glowing, moon over the water. If you want earlier (golden hour), consider the sunset cruise at 17:30 instead.'
+      a: 'Our Bosphorus dinner cruise is 20:30-23:30 (3 hours). That\'s peak illumination time for all Istanbul landmarks — bridges fully lit, palaces glowing, moon over the water. If you want earlier (golden hour), consider the sunset cruise at 17:30 instead.'
     },
     {
       q: 'How do I get to the Istanbul night tour meeting point?',
@@ -90,11 +90,11 @@ module.exports = {
     },
     {
       q: 'What can you do in Istanbul at night?',
-      a: 'Top evening activities include a Bosphorus dinner cruise (€{p.dinnerStd}+, Bosphorus Night daily at 21:00), Galata Tower views, illuminated Sultanahmet walks, a traditional Turkish bath, and rooftop dining in Beyoğlu. The dinner cruise combines sightseeing and dinner in one trip.'
+      a: 'Top evening activities include a Bosphorus dinner cruise (€{p.dinnerStd}+, Bosphorus Night daily at 20:30), Galata Tower views, illuminated Sultanahmet walks, a traditional Turkish bath, and rooftop dining in Beyoğlu. The dinner cruise combines sightseeing and dinner in one trip.'
     },
     {
       q: 'Is Istanbul nightlife safe for tourists?',
-      a: 'Central Istanbul (Sultanahmet, Beyoğlu, Beşiktaş, Kabataş) is generally safe at night with active police presence. Tourist areas are well-lit. Bosphorus Night\'s 21:00 cruise from Kabataş is in a central, well-patrolled area; hotel transfer (+€{p.transfer}/person) adds extra convenience.'
+      a: 'Central Istanbul (Sultanahmet, Beyoğlu, Beşiktaş, Kabataş) is generally safe at night with active police presence. Tourist areas are well-lit. Bosphorus Night\'s 20:30 cruise from Kabataş is in a central, well-patrolled area; hotel transfer (+€{p.transfer}/person) adds extra convenience.'
     }
   ],
 

@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     '**Bosphorus sightseeing** from the water beats any bus tour. The strait is the city\'s most historic waterway — Ottoman sultans, Byzantine emperors, Greek merchants, and Russian warships all sailed it. Today our 3-hour cruise passes every major Istanbul landmark that defines the skyline, with commentary from our English-speaking crew.',
 
-    'Our **Bosphorus sightseeing cruise** route (evening departure, 21:00-00:00):\n\n1. **Dolmabahçe Palace** — 19th-century Ottoman residence, illuminated at night\n2. **Çırağan Palace** — now a luxury hotel, royal history\n3. **Ortaköy Mosque** — one of Istanbul\'s most photographed mosques, right on the water\n4. **Bosphorus Bridge** — shifts between blue, purple, gold at night\n5. **Bebek** — chic European neighborhood\n6. **Rumeli Fortress** — built by Fatih Sultan Mehmet in 1452 before conquest of Constantinople\n7. **Fatih Sultan Mehmet Bridge** — second Bosphorus bridge, dramatic arch\n8. **Beylerbeyi Palace** — Asian shore, Ottoman summer residence\n9. **Üsküdar** — Istanbul\'s Asian side, traditional neighborhood\n10. **Maiden\'s Tower** — small island tower, one of Istanbul\'s most romantic symbols',
+    'Our **Bosphorus sightseeing cruise** route (evening departure, 20:30-23:30):\n\n1. **Dolmabahçe Palace** — 19th-century Ottoman residence, illuminated at night\n2. **Çırağan Palace** — now a luxury hotel, royal history\n3. **Ortaköy Mosque** — one of Istanbul\'s most photographed mosques, right on the water\n4. **Bosphorus Bridge** — shifts between blue, purple, gold at night\n5. **Bebek** — chic European neighborhood\n6. **Rumeli Fortress** — built by Fatih Sultan Mehmet in 1452 before conquest of Constantinople\n7. **Fatih Sultan Mehmet Bridge** — second Bosphorus bridge, dramatic arch\n8. **Beylerbeyi Palace** — Asian shore, Ottoman summer residence\n9. **Üsküdar** — Istanbul\'s Asian side, traditional neighborhood\n10. **Maiden\'s Tower** — small island tower, one of Istanbul\'s most romantic symbols',
 
     'Dinner and entertainment are included — not separate — so **Bosphorus sightseeing** becomes a complete evening. Multi-course Turkish meal, live folklore show, whirling dervish, belly dance, DJ. 4.8★ rated by 11,317+ travelers, TÜRSAB A-17672 licensed.'
   ],
@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best way to see the Bosphorus?',
-      a: 'A 3-hour evening cruise covers both the Asian and European shores, passing 10+ landmarks: Dolmabahçe, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, and Üsküdar. Bosphorus Night runs daily at 21:00 from Kabataş Pier, €{p.dinnerStd}/person.'
+      a: 'A 3-hour evening cruise covers both the Asian and European shores, passing 10+ landmarks: Dolmabahçe, Çırağan, Ortaköy Mosque, Bosphorus Bridge, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, and Üsküdar. Bosphorus Night runs daily at 20:30 from Kabataş Pier, €{p.dinnerStd}/person.'
     },
     {
       q: 'Can I visit Bosphorus palaces from the cruise?',

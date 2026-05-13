@@ -122,7 +122,7 @@ const TOURS = {
 
   dinner: {
     icon: TOUR_ICONS.dinner,
-    time: '21:00',
+    time: '20:30',
     duration: '3',
     durationUnit: { en: 'Hours', tr: 'Saat', de: 'Stunden', es: 'Horas', ru: 'Часа', ar: 'ساعات', fa: 'ساعت', fr: 'Heures', it: 'Ore', zh: '小时', id: 'Jam', ms: 'Jam', pl: 'Godzin', bg: 'Часа', ro: 'Ore' },
     pier: 'Kabataş Pier',
@@ -151,9 +151,9 @@ const TOURS = {
     heroImage: '/assets/tours/dinner/boat-night-bridge.jpg',
     pills: [
       {
-        label: { en: '21:00', tr: '21:00', de: '21:00', es: '21:00', ru: '21:00', ar: '21:00', fa: '21:00', fr: '21:00', it: '21:00', zh: '21:00', id: '21:00', ms: '21:00', pl: '21:00', bg: '21:00', ro: '21:00' },
+        label: { en: '20:30', tr: '20:30', de: '20:30', es: '20:30', ru: '20:30', ar: '20:30', fa: '20:30', fr: '20:30', it: '20:30', zh: '20:30', id: '20:30', ms: '20:30', pl: '20:30', bg: '20:30', ro: '20:30' },
         imgs: ['/assets/tours/dinner/boat-night-bridge.jpg', '/assets/tours/dinner/boat-pier.jpg', '/assets/tours/dinner/hall-wide.jpg'],
-        desc: { en: 'Night departure from Kabataş Pier at 21:00', tr: 'Kabataş İskelesi\'nden 21:00\'de gece kalkışı', de: 'Nachtabfahrt vom Kabataş Pier um 21:00', es: 'Salida nocturna del muelle de Kabataş a las 21:00', ru: 'Ночное отправление с причала Кабаташ в 21:00', ar: 'مغادرة ليلية من رصيف كاباتاش الساعة 21:00', fa: 'حرکت شبانه از اسکله کاباتاش ساعت 21:00', fr: 'Départ nocturne depuis l\'embarcadère de Kabataş à 21h00', it: 'Partenza notturna dal molo di Kabataş alle 21:00', zh: '21:00从卡巴塔什码头夜间出发', id: 'Keberangkatan malam dari Dermaga Kabataş pukul 21:00', ms: 'Perlepasan malam dari Jeti Kabataş pada 21:00', pl: 'Wieczorny odjazd z przystani Kabataş o 21:00', bg: 'Вечерно отплаване от кейа Кабаташ в 21:00', ro: 'Plecare nocturnă de la debarcaderul Kabataş la 21:00' }
+        desc: { en: 'Night departure from Kabataş Pier at 20:30', tr: 'Kabataş İskelesi\'nden 20:30\'de gece kalkışı', de: 'Nachtabfahrt vom Kabataş Pier um 20:30', es: 'Salida nocturna del muelle de Kabataş a las 20:30', ru: 'Ночное отправление с причала Кабаташ в 20:30', ar: 'مغادرة ليلية من رصيف كاباتاش الساعة 20:30', fa: 'حرکت شبانه از اسکله کاباتاش ساعت 20:30', fr: 'Départ nocturne depuis l\'embarcadère de Kabataş à 21h00', it: 'Partenza notturna dal molo di Kabataş alle 20:30', zh: '20:30从卡巴塔什码头夜间出发', id: 'Keberangkatan malam dari Dermaga Kabataş pukul 20:30', ms: 'Perlepasan malam dari Jeti Kabataş pada 20:30', pl: 'Wieczorny odjazd z przystani Kabataş o 20:30', bg: 'Вечерно отплаване от кейа Кабаташ в 20:30', ro: 'Plecare nocturnă de la debarcaderul Kabataş la 20:30' }
       },
       {
         label: { en: '3 Hours', tr: '3 Saat', de: '3 Std.', es: '3 Horas', ru: '3 часа', ar: '3 ساعات', fa: '3 ساعت', fr: '3 Heures', it: '3 Ore', zh: '3 小时', id: '3 Jam', ms: '3 Jam', pl: '3 Godziny', bg: '3 Часа', ro: '3 Ore' },

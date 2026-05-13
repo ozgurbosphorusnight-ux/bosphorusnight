@@ -76,13 +76,13 @@ const T = {
     fa: "بدون پیش‌پرداخت — پرداخت روی کشتی", fr: "Aucun prépaiement — Paiement à bord", it: "Nessun anticipo — Pagamento a bordo", zh: "无需预付——船上付款", id: "Tanpa pembayaran di muka — Bayar di kapal", ms: "Tiada bayaran pendahuluan — Bayar di atas bot", pl: "Bez przedpłaty — płatność na pokładzie", bg: "Без предплащане — плащане на борда", ro: "Fără plată în avans — Plata pe vapor"
   },
   "meta.home.description": {
-    en: "3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.",
-    tr: "3 saatlik Boğaz yemekli turu €24'ten. Tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 21:00 kalkış. Otel transfer opsiyonel.",
-    de: "3-stündige Bosporus-Dinnerfahrt ab €24/Person. Volles Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 21:00 ab Kabataş. Hoteltransfer verfügbar.",
-    es: "Crucero con cena de 3h por el Bósforo desde €24. Menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 21:00 desde Kabataş. Traslado al hotel disponible.",
-    ru: "3-часовой круиз с ужином по Босфору от €24. Полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 21:00 от Кабаташа. Доступен трансфер.",
-    ar: "رحلة عشاء بحرية لمدة 3 ساعات في البوسفور من €24. قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق 21:00 من كاباتاش. نقل من الفندق متاح.",
-    fa: "تور شام سه‌ساعته بسفر از €24/نفر. منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 21:00 از کاباتاش. ترانسفر هتل موجود است.", fr: "Croisière dîner 3h sur le Bosphore dès €24. Menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş. Transfert hôtel disponible.", it: "Crociera con cena di 3h sul Bosforo da €24/persona. Menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza 21:00 da Kabataş. Trasferimento hotel disponibile.", zh: "3小时博斯普鲁斯晚餐游船,€24/人起。完整菜单、梅夫拉那、土耳其民间舞、肚皮舞和DJ。21:00从卡巴塔什码头出发。可选酒店接送。", id: "Pelayaran makan malam Bosphorus 3 jam mulai €24/orang. Menu lengkap, Mevlana, tari rakyat, tari perut & DJ. Berangkat 21:00 dari Kabataş. Antar-jemput hotel tersedia.", ms: "Pelayaran makan malam Bosphorus 3 jam dari €24/orang. Menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 21:00 dari Kabataş. Pemindahan hotel tersedia.", pl: "3-godzinny rejs z kolacją po Bosforze od €24/osoba. Pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd 21:00 z Kabataş. Transfer hotelowy dostępny.", bg: "3-часов круиз с вечеря по Босфора от €24/човек. Пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване 21:00 от Кабаташ. Хотелски трансфер опционален.", ro: "Croazieră cu cină de 3 ore pe Bosfor de la €24/persoană. Meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 21:00 din Kabataş. Transfer hotelier disponibil."
+    en: "3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.",
+    tr: "3 saatlik Boğaz yemekli turu €24'ten. Tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 20:30 kalkış. Otel transfer opsiyonel.",
+    de: "3-stündige Bosporus-Dinnerfahrt ab €24/Person. Volles Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 20:30 ab Kabataş. Hoteltransfer verfügbar.",
+    es: "Crucero con cena de 3h por el Bósforo desde €24. Menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 20:30 desde Kabataş. Traslado al hotel disponible.",
+    ru: "3-часовой круиз с ужином по Босфору от €24. Полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 20:30 от Кабаташа. Доступен трансфер.",
+    ar: "رحلة عشاء بحرية لمدة 3 ساعات في البوسفور من €24. قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق 20:30 من كاباتاش. نقل من الفندق متاح.",
+    fa: "تور شام سه‌ساعته بسفر از €24/نفر. منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 20:30 از کاباتاش. ترانسفر هتل موجود است.", fr: "Croisière dîner 3h sur le Bosphore dès €24. Menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş. Transfert hôtel disponible.", it: "Crociera con cena di 3h sul Bosforo da €24/persona. Menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza 20:30 da Kabataş. Trasferimento hotel disponibile.", zh: "3小时博斯普鲁斯晚餐游船,€24/人起。完整菜单、梅夫拉那、土耳其民间舞、肚皮舞和DJ。20:30从卡巴塔什码头出发。可选酒店接送。", id: "Pelayaran makan malam Bosphorus 3 jam mulai €24/orang. Menu lengkap, Mevlana, tari rakyat, tari perut & DJ. Berangkat 20:30 dari Kabataş. Antar-jemput hotel tersedia.", ms: "Pelayaran makan malam Bosphorus 3 jam dari €24/orang. Menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 20:30 dari Kabataş. Pemindahan hotel tersedia.", pl: "3-godzinny rejs z kolacją po Bosforze od €24/osoba. Pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd 20:30 z Kabataş. Transfer hotelowy dostępny.", bg: "3-часов круиз с вечеря по Босфора от €24/човек. Пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване 20:30 от Кабаташ. Хотелски трансфер опционален.", ro: "Croazieră cu cină de 3 ore pe Bosfor de la €24/persoană. Meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 20:30 din Kabataş. Transfer hotelier disponibil."
   },
   "hero.cta1": {
     en: "Check Availability on WhatsApp", tr: "WhatsApp'tan Müsaitlik Sor",
@@ -96,13 +96,13 @@ const T = {
     fa: "مشاهده تور", fr: "Voir la croisière", it: "Vedi la crociera", zh: "查看游船", id: "Lihat Pelayaran", ms: "Lihat Pelayaran", pl: "Zobacz rejs", bg: "Вижте круиза", ro: "Vedeți Croaziera"
   },
   "hero.departure": {
-    en: "Departure from Kabataş · 21:00 – 00:00",
-    tr: "Kalkış: Kabataş · 21:00 – 00:00",
-    de: "Abfahrt ab Kabataş · 21:00 – 00:00",
-    es: "Salida desde Kabataş · 21:00 – 00:00",
-    ru: "Отправление: Кабаташ · 21:00 – 00:00",
-    ar: "المغادرة من كاباتاش · 21:00 – 00:00",
-    fa: "حرکت از کاباتاش · ۲۱:۰۰ – ۰۰:۰۰", fr: "Départ de Kabataş · 21h00 – 00h00", it: "Partenza da Kabataş · 21:00 – 00:00", zh: "卡巴塔什启航 · 21:00 – 00:00", id: "Keberangkatan dari Kabataş · 21:00 – 00:00", ms: "Bertolak dari Kabataş · 21:00 – 00:00", pl: "Wypłynięcie z Kabataş · 21:00 – 00:00", bg: "Отплаване от Кабаташ · 21:00 – 00:00", ro: "Plecare din Kabataș · 21:00 – 00:00"
+    en: "Departure from Kabataş · 20:30 – 00:00",
+    tr: "Kalkış: Kabataş · 20:30 – 00:00",
+    de: "Abfahrt ab Kabataş · 20:30 – 00:00",
+    es: "Salida desde Kabataş · 20:30 – 00:00",
+    ru: "Отправление: Кабаташ · 20:30 – 00:00",
+    ar: "المغادرة من كاباتاش · 20:30 – 00:00",
+    fa: "حرکت از کاباتاش · ۲۱:۰۰ – ۰۰:۰۰", fr: "Départ de Kabataş · 21h00 – 00h00", it: "Partenza da Kabataş · 20:30 – 00:00", zh: "卡巴塔什启航 · 20:30 – 00:00", id: "Keberangkatan dari Kabataş · 20:30 – 00:00", ms: "Bertolak dari Kabataş · 20:30 – 00:00", pl: "Wypłynięcie z Kabataş · 20:30 – 00:00", bg: "Отплаване от Кабаташ · 20:30 – 00:00", ro: "Plecare din Kabataș · 20:30 – 00:00"
   },
 
   // ========== TRUST BAR ==========
@@ -410,13 +410,13 @@ const T = {
     fa: "میز رمانتیک و جشن تولد", fr: "Table romantique & célébrations d'anniversaire", it: "Tavolo romantico e celebrazioni di compleanno", zh: "浪漫餐桌与生日庆祝", id: "Meja romantis & perayaan ulang tahun", ms: "Meja romantik & sambutan hari jadi", pl: "Stół romantyczny i uroczystości urodzinowe", bg: "Романтична маса и празнуване на рожден ден", ro: "Masă romantică și sărbători de zi de naștere"
   },
   "incl.cruise.detail": {
-    en: "Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 21:00, returns between 23:30 and 00:00.",
-    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 21:00'te kalkar, 23:30 / 00:00 arası döner.",
-    de: "Vorbei am Leanderturm, Dolmabahçe-Palast, Bosporus-Brücke, Beylerbeyi-Palast, Ortaköy-Moschee und Rumeli-Festung. Abfahrt 21:00, Rückkehr zwischen 23:30 und 00:00.",
-    es: "Navegue junto a la Torre de la Doncella, el Palacio de Dolmabahçe, el Puente del Bósforo, el Palacio de Beylerbeyi, la Mezquita de Ortaköy y la Fortaleza de Rumeli. Sale a las 21:00, regresa entre las 23:30 y las 00:00.",
-    ru: "Проплывите мимо Девичьей башни, дворца Долмабахче, Босфорского моста, дворца Бейлербейи, мечети Ортакёй и крепости Румели. Отправление в 21:00, возвращение между 23:30 и 00:00.",
-    ar: "أبحر بجوار برج الفتاة، قصر دولمة بهجة، جسر البوسفور، قصر بيلربيي، مسجد أورتاكوي، وقلعة روملي. المغادرة 21:00، العودة بين 23:30 و 00:00.",
-    fa: "از کنار برج دختر، کاخ دلمه‌باغچه، پل بسفر، کاخ بی‌لربه‌یی، مسجد اورتاکوی و قلعه روم‌ایلی عبور می‌کنید. ساعت ۲۱:۰۰ از کاباتاش حرکت می‌کند و بین ۲۳:۳۰ تا ۰۰:۰۰ بازمی‌گردد.", fr: "Naviguez devant la Tour de Léandre, le palais de Dolmabahçe, le pont du Bosphore, le palais de Beylerbeyi, la mosquée d'Ortaköy et la forteresse de Rumeli. Départ de Kabataş à 21h00, retour entre 23h30 et 00h00.", it: "Navighi accanto alla Torre della Fanciulla, al Palazzo Dolmabahçe, al Ponte del Bosforo, al Palazzo Beylerbeyi, alla Moschea di Ortaköy e al Rumeli Hisarı. Parte da Kabataş alle 21:00 e rientra tra le 23:30 e le 00:00.", zh: "驶过少女塔、多尔玛巴切宫、博斯普鲁斯大桥、贝伊勒尔贝伊宫、奥尔塔科伊清真寺与鲁梅利堡垒。21:00从卡巴塔什启航，23:30至00:00之间返航。", id: "Berlayar melewati Menara Gadis, Istana Dolmabahçe, Jembatan Bosphorus, Istana Beylerbeyi, Masjid Ortaköy, dan Benteng Rumeli. Berangkat dari Kabataş pukul 21:00, kembali antara 23:30 dan 00:00.", ms: "Belayar melepasi Menara Maiden, Istana Dolmabahçe, Jambatan Bosphorus, Istana Beylerbeyi, Masjid Ortaköy dan Kubu Rumeli. Bertolak dari Kabataş pada 21:00, kembali antara 23:30 dan 00:00.", pl: "Płyń obok Wieży Panny, Pałacu Dolmabahçe, Mostu Bosforskiego, Pałacu Beylerbeyi, Meczetu Ortaköy i Twierdzy Rumeli Hisarı. Wypłynięcie z Kabataş o 21:00, powrót między 23:30 a 00:00.", bg: "Плавайте покрай Кулата на девойката, двореца Долмабахче, моста на Босфора, двореца Бейлербей, джамията Ортакьой и Румелийската крепост. Отплаване от Кабаташ в 21:00 ч., връщане между 23:30 и 00:00 ч.", ro: "Navigați pe lângă Turnul Fecioarei, Palatul Dolmabahçe, Podul Bosfor, Palatul Beylerbeyi, Moscheea Ortaköy și Fortăreața Rumeli. Pleacă din Kabataș la 21:00, se întoarce între 23:30 și 00:00."
+    en: "Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 20:30, returns between 23:30 and 00:00.",
+    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 20:30'te kalkar, 23:30 / 00:00 arası döner.",
+    de: "Vorbei am Leanderturm, Dolmabahçe-Palast, Bosporus-Brücke, Beylerbeyi-Palast, Ortaköy-Moschee und Rumeli-Festung. Abfahrt 20:30, Rückkehr zwischen 23:30 und 00:00.",
+    es: "Navegue junto a la Torre de la Doncella, el Palacio de Dolmabahçe, el Puente del Bósforo, el Palacio de Beylerbeyi, la Mezquita de Ortaköy y la Fortaleza de Rumeli. Sale a las 20:30, regresa entre las 23:30 y las 00:00.",
+    ru: "Проплывите мимо Девичьей башни, дворца Долмабахче, Босфорского моста, дворца Бейлербейи, мечети Ортакёй и крепости Румели. Отправление в 20:30, возвращение между 23:30 и 00:00.",
+    ar: "أبحر بجوار برج الفتاة، قصر دولمة بهجة، جسر البوسفور، قصر بيلربيي، مسجد أورتاكوي، وقلعة روملي. المغادرة 20:30، العودة بين 23:30 و 00:00.",
+    fa: "از کنار برج دختر، کاخ دلمه‌باغچه، پل بسفر، کاخ بی‌لربه‌یی، مسجد اورتاکوی و قلعه روم‌ایلی عبور می‌کنید. ساعت ۲۱:۰۰ از کاباتاش حرکت می‌کند و بین ۲۳:۳۰ تا ۰۰:۰۰ بازمی‌گردد.", fr: "Naviguez devant la Tour de Léandre, le palais de Dolmabahçe, le pont du Bosphore, le palais de Beylerbeyi, la mosquée d'Ortaköy et la forteresse de Rumeli. Départ de Kabataş à 21h00, retour entre 23h30 et 00h00.", it: "Navighi accanto alla Torre della Fanciulla, al Palazzo Dolmabahçe, al Ponte del Bosforo, al Palazzo Beylerbeyi, alla Moschea di Ortaköy e al Rumeli Hisarı. Parte da Kabataş alle 20:30 e rientra tra le 23:30 e le 00:00.", zh: "驶过少女塔、多尔玛巴切宫、博斯普鲁斯大桥、贝伊勒尔贝伊宫、奥尔塔科伊清真寺与鲁梅利堡垒。20:30从卡巴塔什启航，23:30至00:00之间返航。", id: "Berlayar melewati Menara Gadis, Istana Dolmabahçe, Jembatan Bosphorus, Istana Beylerbeyi, Masjid Ortaköy, dan Benteng Rumeli. Berangkat dari Kabataş pukul 20:30, kembali antara 23:30 dan 00:00.", ms: "Belayar melepasi Menara Maiden, Istana Dolmabahçe, Jambatan Bosphorus, Istana Beylerbeyi, Masjid Ortaköy dan Kubu Rumeli. Bertolak dari Kabataş pada 20:30, kembali antara 23:30 dan 00:00.", pl: "Płyń obok Wieży Panny, Pałacu Dolmabahçe, Mostu Bosforskiego, Pałacu Beylerbeyi, Meczetu Ortaköy i Twierdzy Rumeli Hisarı. Wypłynięcie z Kabataş o 20:30, powrót między 23:30 a 00:00.", bg: "Плавайте покрай Кулата на девойката, двореца Долмабахче, моста на Босфора, двореца Бейлербей, джамията Ортакьой и Румелийската крепост. Отплаване от Кабаташ в 20:30 ч., връщане между 23:30 и 00:00 ч.", ro: "Navigați pe lângă Turnul Fecioarei, Palatul Dolmabahçe, Podul Bosfor, Palatul Beylerbeyi, Moscheea Ortaköy și Fortăreața Rumeli. Pleacă din Kabataș la 20:30, se întoarce între 23:30 și 00:00."
   },
   "incl.dinner.detail": {
     en: "10 types of meze for Standard (15+ for VIP), choice of salmon/sea bass/chicken/meatball main course, and dessert with ice cream. Vegetarian menu available. VIP packages include rib-eye and filet mignon options, plus table near the stage.",
@@ -904,13 +904,13 @@ const T = {
     fa: "مشاهده و رزرو", fr: "Explorer & réserver", it: "Esplora e Prenota", zh: "查看与预订", id: "Jelajahi & Pesan", ms: "Terokai & Tempah", pl: "Przeglądaj i rezerwuj", bg: "Разгледайте и резервирайте", ro: "Explorați și Rezervați"
   },
   "last.summary": {
-    en: "21:00 · 3 hours · Dinner & Live Show · Pay on the boat",
-    tr: "21:00 · 3 saat · Yemek & Canlı Şov · Teknede ödeme",
-    de: "21:00 · 3 Stunden · Abendessen & Live-Show · Zahlung an Bord",
-    es: "21:00 · 3 horas · Cena y Show en Vivo · Pago en el barco",
-    ru: "21:00 · 3 часа · Ужин и живое шоу · Оплата на борту",
-    ar: "21:00 · 3 ساعات · عشاء وعرض حي · الدفع على القارب",
-    fa: "۲۱:۰۰ · ۳ ساعت · شام و نمایش زنده · پرداخت روی کشتی", fr: "21h00 · 3 heures · Dîner & spectacle live · Paiement à bord", it: "21:00 · 3 ore · Cena e spettacolo dal vivo · Pagamento a bordo", zh: "21:00 · 3小时 · 晚宴与现场表演 · 船上付款", id: "21:00 · 3 jam · Makan Malam & Pertunjukan Langsung · Bayar di kapal", ms: "21:00 · 3 jam · Makan Malam & Persembahan Langsung · Bayar di atas bot", pl: "21:00 · 3 godziny · Kolacja i pokaz na żywo · Płatność na pokładzie", bg: "21:00 ч. · 3 часа · Вечеря и шоу на живо · Плащане на борда", ro: "21:00 · 3 ore · Cină și Spectacol Live · Plata pe vapor"
+    en: "20:30 · 3 hours · Dinner & Live Show · Pay on the boat",
+    tr: "20:30 · 3 saat · Yemek & Canlı Şov · Teknede ödeme",
+    de: "20:30 · 3 Stunden · Abendessen & Live-Show · Zahlung an Bord",
+    es: "20:30 · 3 horas · Cena y Show en Vivo · Pago en el barco",
+    ru: "20:30 · 3 часа · Ужин и живое шоу · Оплата на борту",
+    ar: "20:30 · 3 ساعات · عشاء وعرض حي · الدفع على القارب",
+    fa: "۲۱:۰۰ · ۳ ساعت · شام و نمایش زنده · پرداخت روی کشتی", fr: "21h00 · 3 heures · Dîner & spectacle live · Paiement à bord", it: "20:30 · 3 ore · Cena e spettacolo dal vivo · Pagamento a bordo", zh: "20:30 · 3小时 · 晚宴与现场表演 · 船上付款", id: "20:30 · 3 jam · Makan Malam & Pertunjukan Langsung · Bayar di kapal", ms: "20:30 · 3 jam · Makan Malam & Persembahan Langsung · Bayar di atas bot", pl: "20:30 · 3 godziny · Kolacja i pokaz na żywo · Płatność na pokładzie", bg: "20:30 ч. · 3 часа · Вечеря и шоу на живо · Плащане на борда", ro: "20:30 · 3 ore · Cină și Spectacol Live · Plata pe vapor"
   },
 
   // ========== WHY CHOOSE US ==========
@@ -977,13 +977,13 @@ const T = {
   },
   "faq.q0": { en: "What cruise tours do you offer?", tr: "Hangi tur seçenekleriniz var?", de: "Welche Touren bieten Sie an?", es: "¿Qué cruceros ofrecen?", ru: "Какие круизы вы предлагаете?", ar: "ما هي الرحلات البحرية التي تقدمونها؟", fa: "چه تورهایی ارائه می‌کنید؟", fr: "Quelles croisières proposez-vous ?", it: "Quali tour di crociera offrite?", zh: "您提供哪些游船?", id: "Tur pelayaran apa yang Anda tawarkan?", ms: "Apakah tur pelayaran yang anda tawarkan?", pl: "Jakie rejsy oferują Państwo?", bg: "Какви круизни турове предлагате?", ro: "Ce tururi de croazieră oferiți?" },
   "faq.a0": {
-    en: "We offer the <strong>Bosphorus Dinner Cruise</strong> (21:00, 3 hours — full dinner, Turkish night show with Whirling Dervish, belly dance, folk dances, live music and DJ, plus stunning night views). Departs from Kabataş Pier.",
-    tr: "<strong>Bosphorus Akşam Yemekli Turu</strong> sunuyoruz (21:00, 3 saat — tam menü akşam yemeği, Mevlana sema gösterisi, oryantal dans, halk oyunları, canlı müzik ve DJ, muhteşem gece manzarası). Kabataş İskelesi'nden kalkar.",
-    de: "Wir bieten die <strong>Bosporus-Dinner-Kreuzfahrt</strong> (21:00, 3 Std. — Dinner, Türkische Nacht mit Derwisch-Tanz, Bauchtanz, Volkstänzen, Live-Musik und DJ, sowie atemberaubende Nachtblicke). Ab Kabataş-Pier.",
-    es: "Ofrecemos el <strong>Crucero con Cena por el Bósforo</strong> (21:00, 3 horas — cena completa, noche turca con Derviches Giradores, danza del vientre, danzas folclóricas, música en vivo y DJ, más vistas nocturnas impresionantes). Sale del muelle de Kabataş.",
-    ru: "Мы предлагаем <strong>Ужин-круиз по Босфору</strong> (21:00, 3 часа — ужин, турецкая ночь с кружащимися дервишами, танец живота, народные танцы, живая музыка и DJ, плюс впечатляющие ночные виды). Отправление с причала Кабаташ.",
-    ar: "نقدم <strong>رحلة عشاء البوسفور</strong> (21:00، 3 ساعات — عشاء كامل، ليلة تركية مع رقصة الدراويش المولوية، رقص شرقي، رقصات شعبية، موسيقى حية وDJ، مع مناظر ليلية رائعة). تنطلق من رصيف كاباتاش.",
-    fa: "ما <strong>تور شام بسفر</strong> را ارائه می‌کنیم (۲۱:۰۰، ۳ ساعت — شام کامل، نمایش شب ترکی با رقص سماع، رقص شرقی، رقص‌های محلی، موسیقی زنده و دی‌جی، به‌علاوه مناظر خیره‌کننده شبانه). حرکت از اسکله کاباتاش.", fr: "Nous proposons la <strong>Croisière dîner sur le Bosphore</strong> (21h00, 3 heures — dîner complet, soirée turque avec derviche tourneur, danse orientale, danses folkloriques, musique live et DJ, ainsi que des vues nocturnes éblouissantes). Départ de l'embarcadère de Kabataş.", it: "Offriamo la <strong>Crociera con Cena sul Bosforo</strong> (21:00, 3 ore — cena completa, spettacolo della serata turca con Dervisci Rotanti, danza orientale, danze folkloristiche, musica dal vivo e DJ, più splendide vedute notturne). Parte dal molo di Kabataş.", zh: "我们提供<strong>博斯普鲁斯晚宴游船</strong>(21:00,3小时——完整晚宴、含旋转舞、肚皮舞、民族舞、现场音乐与DJ的土耳其之夜表演,以及震撼夜景)。从卡巴塔什码头启航。", id: "Kami menawarkan <strong>Pelayaran Makan Malam Bosphorus</strong> (21:00, 3 jam — makan malam lengkap, pertunjukan malam Turki dengan Darwis Berputar, tari oriental, tarian rakyat, musik langsung dan DJ, ditambah pemandangan malam yang memukau). Berangkat dari Dermaga Kabataş.", ms: "Kami menawarkan <strong>Pelayaran Makan Malam Bosphorus</strong> (21:00, 3 jam — makan malam penuh, persembahan malam Turki dengan Darwish Berputar, tarian oryantal, tarian rakyat, muzik langsung dan DJ, serta pemandangan malam yang mengagumkan). Bertolak dari Jeti Kabataş.", pl: "Oferujemy <strong>Rejs z kolacją po Bosforze</strong> (21:00, 3 godziny — pełna kolacja, turecki pokaz nocny z wirującym derwiszem, tańcem brzucha, tańcami ludowymi, muzyką na żywo i DJ-em oraz zapierającymi dech w piersiach widokami nocnymi). Wypłynięcie z przystani Kabataş.", bg: "Предлагаме <strong>круиз с вечеря по Босфора</strong> (21:00 ч., 3 часа — пълна вечеря, турска нощна програма с танцуващи дервиши, танц на корема, фолклорни танци, музика на живо и DJ, плюс зашеметяващи нощни гледки). Отплаване от пристанището Кабаташ.", ro: "Oferim <strong>Croaziera cu Cină pe Bosfor</strong> (21:00, 3 ore — cină completă, spectacol de seară turcească cu Derviș Rotitor, dans oriental, dansuri populare, muzică live și DJ, plus priveliști nocturne uimitoare). Pleacă din debarcaderul Kabataș."
+    en: "We offer the <strong>Bosphorus Dinner Cruise</strong> (20:30, 3 hours — full dinner, Turkish night show with Whirling Dervish, belly dance, folk dances, live music and DJ, plus stunning night views). Departs from Kabataş Pier.",
+    tr: "<strong>Bosphorus Akşam Yemekli Turu</strong> sunuyoruz (20:30, 3 saat — tam menü akşam yemeği, Mevlana sema gösterisi, oryantal dans, halk oyunları, canlı müzik ve DJ, muhteşem gece manzarası). Kabataş İskelesi'nden kalkar.",
+    de: "Wir bieten die <strong>Bosporus-Dinner-Kreuzfahrt</strong> (20:30, 3 Std. — Dinner, Türkische Nacht mit Derwisch-Tanz, Bauchtanz, Volkstänzen, Live-Musik und DJ, sowie atemberaubende Nachtblicke). Ab Kabataş-Pier.",
+    es: "Ofrecemos el <strong>Crucero con Cena por el Bósforo</strong> (20:30, 3 horas — cena completa, noche turca con Derviches Giradores, danza del vientre, danzas folclóricas, música en vivo y DJ, más vistas nocturnas impresionantes). Sale del muelle de Kabataş.",
+    ru: "Мы предлагаем <strong>Ужин-круиз по Босфору</strong> (20:30, 3 часа — ужин, турецкая ночь с кружащимися дервишами, танец живота, народные танцы, живая музыка и DJ, плюс впечатляющие ночные виды). Отправление с причала Кабаташ.",
+    ar: "نقدم <strong>رحلة عشاء البوسفور</strong> (20:30، 3 ساعات — عشاء كامل، ليلة تركية مع رقصة الدراويش المولوية، رقص شرقي، رقصات شعبية، موسيقى حية وDJ، مع مناظر ليلية رائعة). تنطلق من رصيف كاباتاش.",
+    fa: "ما <strong>تور شام بسفر</strong> را ارائه می‌کنیم (۲۱:۰۰، ۳ ساعت — شام کامل، نمایش شب ترکی با رقص سماع، رقص شرقی، رقص‌های محلی، موسیقی زنده و دی‌جی، به‌علاوه مناظر خیره‌کننده شبانه). حرکت از اسکله کاباتاش.", fr: "Nous proposons la <strong>Croisière dîner sur le Bosphore</strong> (21h00, 3 heures — dîner complet, soirée turque avec derviche tourneur, danse orientale, danses folkloriques, musique live et DJ, ainsi que des vues nocturnes éblouissantes). Départ de l'embarcadère de Kabataş.", it: "Offriamo la <strong>Crociera con Cena sul Bosforo</strong> (20:30, 3 ore — cena completa, spettacolo della serata turca con Dervisci Rotanti, danza orientale, danze folkloristiche, musica dal vivo e DJ, più splendide vedute notturne). Parte dal molo di Kabataş.", zh: "我们提供<strong>博斯普鲁斯晚宴游船</strong>(20:30,3小时——完整晚宴、含旋转舞、肚皮舞、民族舞、现场音乐与DJ的土耳其之夜表演,以及震撼夜景)。从卡巴塔什码头启航。", id: "Kami menawarkan <strong>Pelayaran Makan Malam Bosphorus</strong> (20:30, 3 jam — makan malam lengkap, pertunjukan malam Turki dengan Darwis Berputar, tari oriental, tarian rakyat, musik langsung dan DJ, ditambah pemandangan malam yang memukau). Berangkat dari Dermaga Kabataş.", ms: "Kami menawarkan <strong>Pelayaran Makan Malam Bosphorus</strong> (20:30, 3 jam — makan malam penuh, persembahan malam Turki dengan Darwish Berputar, tarian oryantal, tarian rakyat, muzik langsung dan DJ, serta pemandangan malam yang mengagumkan). Bertolak dari Jeti Kabataş.", pl: "Oferujemy <strong>Rejs z kolacją po Bosforze</strong> (20:30, 3 godziny — pełna kolacja, turecki pokaz nocny z wirującym derwiszem, tańcem brzucha, tańcami ludowymi, muzyką na żywo i DJ-em oraz zapierającymi dech w piersiach widokami nocnymi). Wypłynięcie z przystani Kabataş.", bg: "Предлагаме <strong>круиз с вечеря по Босфора</strong> (20:30 ч., 3 часа — пълна вечеря, турска нощна програма с танцуващи дервиши, танц на корема, фолклорни танци, музика на живо и DJ, плюс зашеметяващи нощни гледки). Отплаване от пристанището Кабаташ.", ro: "Oferim <strong>Croaziera cu Cină pe Bosfor</strong> (20:30, 3 ore — cină completă, spectacol de seară turcească cu Derviș Rotitor, dans oriental, dansuri populare, muzică live și DJ, plus priveliști nocturne uimitoare). Pleacă din debarcaderul Kabataș."
   },
   "faq.q1": { en: "What's on the dinner menu?", tr: "Yemek menüsünde neler var?", de: "Was gibt es zum Abendessen?", es: "¿Qué hay en el menú de la cena?", ru: "Что в меню ужина?", ar: "ماذا يوجد في قائمة العشاء؟", fa: "منوی شام چیست؟", fr: "Que contient le menu du dîner ?", it: "Cosa c'è nel menu della cena?", zh: "晚宴菜单有什么?", id: "Apa yang ada di menu makan malam?", ms: "Apakah menu makan malam?", pl: "Co jest w menu kolacyjnym?", bg: "Какво е в менюто за вечеря?", ro: "Ce este în meniul de cină?" },
   "faq.a1": {
@@ -1007,13 +1007,13 @@ const T = {
   },
   "faq.q3": { en: "Where does the cruise depart and return?", tr: "Tur nereden kalkıp nereye dönüyor?", de: "Wo ist Abfahrt und Rückkehr?", es: "¿De dónde sale y regresa el crucero?", ru: "Откуда отправляется и возвращается круиз?", ar: "من أين تغادر وتعود الرحلة؟", fa: "کشتی از کجا حرکت می‌کند و کجا بازمی‌گردد؟", fr: "D'où part et où revient la croisière ?", it: "Da dove parte e dove rientra la crociera?", zh: "游船从哪里启航与返航?", id: "Di mana pelayaran berangkat dan kembali?", ms: "Di manakah pelayaran bertolak dan kembali?", pl: "Skąd wypływa rejs i gdzie wraca?", bg: "Откъде тръгва и връща ли се круизът?", ro: "De unde pleacă și unde se întoarce croaziera?" },
   "faq.a3": {
-    en: "Cruises depart from Kabataş pier at 21:00 and return to the same location between 23:00 and 00:00 (3-hour cruise). The exact meeting point will be shared via WhatsApp / Telegram / WeChat after booking.",
-    tr: "Turlar Kabataş iskelesinden saat 21:00'te kalkar ve aynı noktaya 23:00 ile 00:00 arasında döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp / Telegram / WeChat ile paylaşılır.",
-    de: "Abfahrt ab Kabataş-Pier um 21:00, Rückkehr zwischen 23:00 und 00:00 (3 Stunden). Den genauen Treffpunkt erhalten Sie nach Buchung per WhatsApp / Telegram / WeChat.",
-    es: "Los cruceros salen del muelle de Kabataş a las 21:00 y regresan al mismo lugar entre las 23:00 y las 00:00 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp / Telegram / WeChat tras la reserva.",
-    ru: "Круизы отправляются от причала Кабаташ в 21:00 и возвращаются между 23:00 и 00:00 (3 часа). Точное место встречи будет отправлено в WhatsApp / Telegram / WeChat после бронирования.",
-    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 21:00 وتعود إلى نفس الموقع بين 23:00 و 00:00 (رحلة 3 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب / تليجرام / وي شات بعد الحجز.",
-    fa: "تورها ساعت ۲۱:۰۰ از اسکله کاباتاش حرکت می‌کنند و بین ۲۳:۰۰ تا ۰۰:۰۰ به همان مکان بازمی‌گردند (تور ۳ ساعته). نقطه دقیق ملاقات پس از رزرو از طریق واتس‌اپ / تلگرام / وی‌چت به اشتراک گذاشته می‌شود.", fr: "Les croisières partent de l'embarcadère de Kabataş à 21h00 et retournent au même endroit entre 23h00 et 00h00 (croisière de 3 heures). Le point de rendez-vous exact sera communiqué par WhatsApp / Telegram / WeChat après la réservation.", it: "Le crociere partono dal molo di Kabataş alle 21:00 e rientrano nello stesso luogo tra le 23:00 e le 00:00 (crociera di 3 ore). Il punto d'incontro esatto sarà condiviso via WhatsApp / Telegram / WeChat dopo la prenotazione.", zh: "游船从卡巴塔什码头21:00启航,约23:00至00:00之间返回同一地点(3小时游船)。预订后具体集合地点将通过WhatsApp / Telegram / WeChat告知。", id: "Pelayaran berangkat dari dermaga Kabataş pukul 21:00 dan kembali ke lokasi yang sama antara 23:00 dan 00:00 (pelayaran 3 jam). Titik pertemuan yang tepat akan dibagikan via WhatsApp / Telegram / WeChat setelah pemesanan.", ms: "Pelayaran bertolak dari jeti Kabataş pada 21:00 dan kembali ke lokasi yang sama antara 23:00 dan 00:00 (pelayaran 3 jam). Titik pertemuan tepat akan dikongsi melalui WhatsApp / Telegram / WeChat selepas tempahan.", pl: "Rejsy wypływają z przystani Kabataş o 21:00 i wracają do tego samego miejsca między 23:00 a 00:00 (3-godzinny rejs). Dokładne miejsce spotkania zostanie udostępnione przez WhatsApp / Telegram / WeChat po rezerwacji.", bg: "Круизите тръгват от пристанището Кабаташ в 21:00 ч. и се връщат на същото място между 23:00 и 00:00 ч. (3-часов круиз). Точното място за среща ще бъде споделено чрез WhatsApp / Telegram / WeChat след резервацията.", ro: "Croazierele pleacă de la debarcaderul Kabataș la 21:00 și se întorc în aceeași locație între 23:00 și 00:00 (croazieră de 3 ore). Punctul exact de întâlnire va fi împărtășit prin WhatsApp / Telegram / WeChat după rezervare."
+    en: "Cruises depart from Kabataş pier at 20:30 and return to the same location between 23:00 and 00:00 (3-hour cruise). The exact meeting point will be shared via WhatsApp / Telegram / WeChat after booking.",
+    tr: "Turlar Kabataş iskelesinden saat 20:30'te kalkar ve aynı noktaya 23:00 ile 00:00 arasında döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp / Telegram / WeChat ile paylaşılır.",
+    de: "Abfahrt ab Kabataş-Pier um 20:30, Rückkehr zwischen 23:00 und 00:00 (3 Stunden). Den genauen Treffpunkt erhalten Sie nach Buchung per WhatsApp / Telegram / WeChat.",
+    es: "Los cruceros salen del muelle de Kabataş a las 20:30 y regresan al mismo lugar entre las 23:00 y las 00:00 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp / Telegram / WeChat tras la reserva.",
+    ru: "Круизы отправляются от причала Кабаташ в 20:30 и возвращаются между 23:00 и 00:00 (3 часа). Точное место встречи будет отправлено в WhatsApp / Telegram / WeChat после бронирования.",
+    ar: "تغادر الرحلات من رصيف كاباتاش الساعة 20:30 وتعود إلى نفس الموقع بين 23:00 و 00:00 (رحلة 3 ساعات). سيتم مشاركة نقطة الالتقاء عبر واتساب / تليجرام / وي شات بعد الحجز.",
+    fa: "تورها ساعت ۲۱:۰۰ از اسکله کاباتاش حرکت می‌کنند و بین ۲۳:۰۰ تا ۰۰:۰۰ به همان مکان بازمی‌گردند (تور ۳ ساعته). نقطه دقیق ملاقات پس از رزرو از طریق واتس‌اپ / تلگرام / وی‌چت به اشتراک گذاشته می‌شود.", fr: "Les croisières partent de l'embarcadère de Kabataş à 21h00 et retournent au même endroit entre 23h00 et 00h00 (croisière de 3 heures). Le point de rendez-vous exact sera communiqué par WhatsApp / Telegram / WeChat après la réservation.", it: "Le crociere partono dal molo di Kabataş alle 20:30 e rientrano nello stesso luogo tra le 23:00 e le 00:00 (crociera di 3 ore). Il punto d'incontro esatto sarà condiviso via WhatsApp / Telegram / WeChat dopo la prenotazione.", zh: "游船从卡巴塔什码头20:30启航,约23:00至00:00之间返回同一地点(3小时游船)。预订后具体集合地点将通过WhatsApp / Telegram / WeChat告知。", id: "Pelayaran berangkat dari dermaga Kabataş pukul 20:30 dan kembali ke lokasi yang sama antara 23:00 dan 00:00 (pelayaran 3 jam). Titik pertemuan yang tepat akan dibagikan via WhatsApp / Telegram / WeChat setelah pemesanan.", ms: "Pelayaran bertolak dari jeti Kabataş pada 20:30 dan kembali ke lokasi yang sama antara 23:00 dan 00:00 (pelayaran 3 jam). Titik pertemuan tepat akan dikongsi melalui WhatsApp / Telegram / WeChat selepas tempahan.", pl: "Rejsy wypływają z przystani Kabataş o 20:30 i wracają do tego samego miejsca między 23:00 a 00:00 (3-godzinny rejs). Dokładne miejsce spotkania zostanie udostępnione przez WhatsApp / Telegram / WeChat po rezerwacji.", bg: "Круизите тръгват от пристанището Кабаташ в 20:30 ч. и се връщат на същото място между 23:00 и 00:00 ч. (3-часов круиз). Точното място за среща ще бъде споделено чрез WhatsApp / Telegram / WeChat след резервацията.", ro: "Croazierele pleacă de la debarcaderul Kabataș la 20:30 și se întorc în aceeași locație între 23:00 și 00:00 (croazieră de 3 ore). Punctul exact de întâlnire va fi împărtășit prin WhatsApp / Telegram / WeChat după rezervare."
   },
   "faq.q4": { en: "What route does the cruise take?", tr: "Tur hangi rotayı izliyor?", de: "Welche Route fährt die Tour?", es: "¿Qué ruta toma el crucero?", ru: "Каким маршрутом идёт круиз?", ar: "ما هو مسار الرحلة؟", fa: "مسیر تور کدام است؟", fr: "Quel itinéraire suit la croisière ?", it: "Che itinerario segue la crociera?", zh: "游船走什么航线?", id: "Rute apa yang dilalui pelayaran?", ms: "Apakah laluan yang diambil pelayaran?", pl: "Jaką trasą płynie rejs?", bg: "Какъв маршрут следва круизът?", ro: "Ce rută urmează croaziera?" },
   "faq.a4": {
@@ -1047,13 +1047,13 @@ const T = {
   },
   "faq.q7": { en: "Can I book for tonight?", tr: "Bu gece için rezervasyon yapabilir miyim?", de: "Kann ich für heute Abend buchen?", es: "¿Puedo reservar para esta noche?", ru: "Можно забронировать на сегодня?", ar: "هل يمكنني الحجز لهذه الليلة؟", fa: "آیا می‌توانم برای امشب رزرو کنم؟", fr: "Puis-je réserver pour ce soir ?", it: "Posso prenotare per stasera?", zh: "可以预订今晚吗?", id: "Bisakah saya memesan untuk malam ini?", ms: "Bolehkah saya menempah untuk malam ini?", pl: "Czy mogę zarezerwować na dziś?", bg: "Мога ли да резервирам за тази вечер?", ro: "Pot rezerva pentru seara aceasta?" },
   "faq.a7": {
-    en: "Yes! Same-day bookings are available until 20:00 (1 hour before departure). Just message us.",
-    tr: "Evet! Aynı gün rezervasyonlar 20:00'ye kadar (kalkıştan 1 saat önce) mümkündür. Bize yazın.",
-    de: "Ja! Buchung am selben Tag bis 20:00 möglich (1 Std. vor Abfahrt). Schreiben Sie uns einfach.",
-    es: "¡Sí! Las reservas del mismo día están disponibles hasta las 20:00. Solo escríbenos.",
-    ru: "Да! Бронирование в тот же день доступно до 20:00. Просто напишите нам.",
-    ar: "نعم! الحجوزات في نفس اليوم متاحة حتى الساعة 20:00. فقط راسلنا.",
-    fa: "بله! رزرو در همان روز تا ساعت ۲۰:۰۰ (یک ساعت پیش از حرکت) امکان‌پذیر است. فقط به ما پیام دهید.", fr: "Oui ! Les réservations du jour même sont possibles jusqu'à 20h00 (1 heure avant le départ). Écrivez-nous simplement.", it: "Sì! Le prenotazioni in giornata sono disponibili fino alle 20:00 (1 ora prima della partenza). Ci scriva semplicemente.", zh: "可以!当日预订可至20:00(启航前1小时)。直接发信息给我们即可。", id: "Ya! Pemesanan hari yang sama tersedia hingga pukul 20:00 (1 jam sebelum keberangkatan). Cukup kirim pesan kepada kami.", ms: "Ya! Tempahan hari sama tersedia sehingga 20:00 (1 jam sebelum bertolak). Cuma hantar mesej kepada kami.", pl: "Tak! Rezerwacje tego samego dnia są dostępne do 20:00 (1 godzina przed wypłynięciem). Wystarczy do nas napisać.", bg: "Да! Резервации за същия ден са възможни до 20:00 ч. (1 час преди отплаването). Просто ни пишете.", ro: "Da! Rezervările în aceeași zi sunt disponibile până la 20:00 (cu 1 oră înainte de plecare). Scrieți-ne."
+    en: "Yes! Same-day bookings are available until 19:30 (1 hour before departure). Just message us.",
+    tr: "Evet! Aynı gün rezervasyonlar 19:30'ye kadar (kalkıştan 1 saat önce) mümkündür. Bize yazın.",
+    de: "Ja! Buchung am selben Tag bis 19:30 möglich (1 Std. vor Abfahrt). Schreiben Sie uns einfach.",
+    es: "¡Sí! Las reservas del mismo día están disponibles hasta las 19:30. Solo escríbenos.",
+    ru: "Да! Бронирование в тот же день доступно до 19:30. Просто напишите нам.",
+    ar: "نعم! الحجوزات في نفس اليوم متاحة حتى الساعة 19:30. فقط راسلنا.",
+    fa: "بله! رزرو در همان روز تا ساعت ۲۰:۰۰ (یک ساعت پیش از حرکت) امکان‌پذیر است. فقط به ما پیام دهید.", fr: "Oui ! Les réservations du jour même sont possibles jusqu'à 20h00 (1 heure avant le départ). Écrivez-nous simplement.", it: "Sì! Le prenotazioni in giornata sono disponibili fino alle 19:30 (1 ora prima della partenza). Ci scriva semplicemente.", zh: "可以!当日预订可至19:30(启航前1小时)。直接发信息给我们即可。", id: "Ya! Pemesanan hari yang sama tersedia hingga pukul 19:30 (1 jam sebelum keberangkatan). Cukup kirim pesan kepada kami.", ms: "Ya! Tempahan hari sama tersedia sehingga 19:30 (1 jam sebelum bertolak). Cuma hantar mesej kepada kami.", pl: "Tak! Rezerwacje tego samego dnia są dostępne do 19:30 (1 godzina przed wypłynięciem). Wystarczy do nas napisać.", bg: "Да! Резервации за същия ден са възможни до 19:30 ч. (1 час преди отплаването). Просто ни пишете.", ro: "Da! Rezervările în aceeași zi sunt disponibile până la 19:30 (cu 1 oră înainte de plecare). Scrieți-ne."
   },
   "faq.q8": { en: "How do I pay?", tr: "Nasıl ödeme yapacağım?", de: "Wie wird bezahlt?", es: "¿Cómo pago?", ru: "Как оплатить?", ar: "كيف أدفع؟", fa: "چگونه پرداخت کنم؟", fr: "Comment payer ?", it: "Come si paga?", zh: "如何付款?", id: "Bagaimana cara membayar?", ms: "Bagaimana saya membayar?", pl: "Jak płacę?", bg: "Как да платя?", ro: "Cum plătesc?" },
   "faq.a8": {
@@ -1327,13 +1327,13 @@ const T = {
     fa: "منوی استاندارد", fr: "Menu Standard", it: "Menu Standard", zh: "标准菜单", id: "Menu Standar", ms: "Menu Standard", pl: "Menu Standard", bg: "Стандартно меню", ro: "Meniu Standard"
   },
   "dinner.std.desc": {
-    en: "3-hour Bosphorus dinner cruise with full menu, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş.",
-    tr: "3 saatlik Boğaz yemekli turu: tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 21:00 kalkış.",
-    de: "3-stündige Bosporus-Dinnerfahrt mit komplettem Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 21:00 ab Kabataş.",
-    es: "Crucero con cena de 3 horas por el Bósforo: menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 21:00 desde Kabataş.",
-    ru: "3-часовой круиз с ужином по Босфору: полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 21:00 от Кабаташа.",
-    ar: "رحلة بحرية مع عشاء لمدة 3 ساعات في البوسفور: قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق الساعة 21:00 من كاباتاش.",
-    fa: "تور شام سه‌ساعته بسفر: منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 21:00 از کاباتاش.", fr: "Croisière dîner de 3 heures sur le Bosphore : menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş.", it: "Crociera con cena di 3 ore sul Bosforo: menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza alle 21:00 da Kabataş.", zh: "3小时博斯普鲁斯晚餐游船:完整菜单、梅夫拉那旋转舞、土耳其民间舞、肚皮舞和DJ。21:00从卡巴塔什码头出发。", id: "Pelayaran makan malam Bosphorus 3 jam: menu lengkap, Mevlana, tari rakyat, tari perut, dan DJ. Berangkat pukul 21:00 dari Kabataş.", ms: "Pelayaran makan malam Bosphorus 3 jam: menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 21:00 dari Kabataş.", pl: "3-godzinny rejs z kolacją po Bosforze: pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd o 21:00 z Kabataş.", bg: "3-часов круиз с вечеря по Босфора: пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване в 21:00 от Кабаташ.", ro: "Croazieră cu cină de 3 ore pe Bosfor: meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 21:00 din Kabataş."
+    en: "3-hour Bosphorus dinner cruise with full menu, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş.",
+    tr: "3 saatlik Boğaz yemekli turu: tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 20:30 kalkış.",
+    de: "3-stündige Bosporus-Dinnerfahrt mit komplettem Menü, Mevlana, Volkstanz, Bauchtanz und DJ. Abfahrt 20:30 ab Kabataş.",
+    es: "Crucero con cena de 3 horas por el Bósforo: menú completo, Mevlana, danzas folclóricas, danza del vientre y DJ. Salida 20:30 desde Kabataş.",
+    ru: "3-часовой круиз с ужином по Босфору: полное меню, Мевляна, народные танцы, танец живота и DJ. Отправление в 20:30 от Кабаташа.",
+    ar: "رحلة بحرية مع عشاء لمدة 3 ساعات في البوسفور: قائمة كاملة، مولانا، رقص شعبي، رقص شرقي و DJ. الانطلاق الساعة 20:30 من كاباتاش.",
+    fa: "تور شام سه‌ساعته بسفر: منوی کامل، مولانا، رقص محلی، رقص شرقی و DJ. حرکت ساعت 20:30 از کاباتاش.", fr: "Croisière dîner de 3 heures sur le Bosphore : menu complet, Mevlana, danses folkloriques, danse du ventre et DJ. Départ 21h00 de Kabataş.", it: "Crociera con cena di 3 ore sul Bosforo: menù completo, Mevlana, danze popolari, danza del ventre e DJ. Partenza alle 20:30 da Kabataş.", zh: "3小时博斯普鲁斯晚餐游船:完整菜单、梅夫拉那旋转舞、土耳其民间舞、肚皮舞和DJ。20:30从卡巴塔什码头出发。", id: "Pelayaran makan malam Bosphorus 3 jam: menu lengkap, Mevlana, tari rakyat, tari perut, dan DJ. Berangkat pukul 20:30 dari Kabataş.", ms: "Pelayaran makan malam Bosphorus 3 jam: menu penuh, Mevlana, tarian rakyat, tarian perut & DJ. Bertolak 20:30 dari Kabataş.", pl: "3-godzinny rejs z kolacją po Bosforze: pełne menu, Mevlana, tańce ludowe, taniec brzucha i DJ. Odjazd o 20:30 z Kabataş.", bg: "3-часов круиз с вечеря по Босфора: пълно меню, Мевляна, народни танци, кючек и DJ. Тръгване в 20:30 от Кабаташ.", ro: "Croazieră cu cină de 3 ore pe Bosfor: meniu complet, Mevlana, dansuri populare, dans din buric și DJ. Plecare 20:30 din Kabataş."
   },
   "dinner.vip.title": {
     en: "VIP Menu", tr: "VIP Menü", de: "VIP-Menü", es: "Menú VIP",
@@ -1629,21 +1629,21 @@ const T = {
     pl: "Czas trwania", bg: "Продължителност", ro: "Durată"
   },
   "compare.durationVal": {
-    en: "3 hours · 21:00 departure from Kabataş",
-    tr: "3 saat · Kabataş'tan 21:00 kalkış",
-    de: "3 Stunden · 21:00 Abfahrt ab Kabataş",
-    es: "3 horas · salida 21:00 desde Kabataş",
-    ru: "3 часа · отправление в 21:00 от Кабаташ",
-    ar: "3 ساعات · انطلاق الساعة 21:00 من كاباتاش",
+    en: "3 hours · 20:30 departure from Kabataş",
+    tr: "3 saat · Kabataş'tan 20:30 kalkış",
+    de: "3 Stunden · 20:30 Abfahrt ab Kabataş",
+    es: "3 horas · salida 20:30 desde Kabataş",
+    ru: "3 часа · отправление в 20:30 от Кабаташ",
+    ar: "3 ساعات · انطلاق الساعة 20:30 من كاباتاش",
     fa: "۳ ساعت · حرکت ساعت ۲۱:۰۰ از کاباتاش",
     fr: "3 heures · départ 21h00 de Kabataş",
-    it: "3 ore · partenza ore 21:00 da Kabataş",
-    zh: "3小时 · 21:00从卡巴塔什出发",
-    id: "3 jam · berangkat pukul 21:00 dari Kabataş",
-    ms: "3 jam · bertolak 21:00 dari Kabataş",
-    pl: "3 godziny · odjazd o 21:00 z Kabataş",
-    bg: "3 часа · тръгване в 21:00 от Кабаташ",
-    ro: "3 ore · plecare 21:00 din Kabataş"
+    it: "3 ore · partenza ore 20:30 da Kabataş",
+    zh: "3小时 · 20:30从卡巴塔什出发",
+    id: "3 jam · berangkat pukul 20:30 dari Kabataş",
+    ms: "3 jam · bertolak 20:30 dari Kabataş",
+    pl: "3 godziny · odjazd o 20:30 z Kabataş",
+    bg: "3 часа · тръгване в 20:30 от Кабаташ",
+    ro: "3 ore · plecare 20:30 din Kabataş"
   },
   "compare.meze": {
     en: "Meze courses", tr: "Meze çeşidi", de: "Meze-Gänge",
@@ -2548,13 +2548,13 @@ const T = {
     fa: "تور غروب: سوار شدن ۱۷:۰۰ · حرکت ۱۷:۱۵", fr: "Croisière coucher de soleil : embarquement 17h00 · départ 17h15", it: "Crociera al Tramonto: Imbarco 17:00 · Partenza 17:15", zh: "日落游船:17:00登船 · 17:15启航", id: "Pelayaran Matahari Terbenam: Naik kapal 17:00 · Keberangkatan 17:15", ms: "Pelayaran Matahari Terbenam: Menaiki 17:00 · Bertolak 17:15", pl: "Rejs o zachodzie słońca: wejście 17:00 · wypłynięcie 17:15", bg: "Залезен круиз: качване 17:00 · отплаване 17:15", ro: "Croazieră la Apus: Îmbarcare 17:00 · Plecare 17:15"
   },
   "boarding.time.night": {
-    en: "Night Cruise: Boarding 20:00 · Departure 21:00",
-    tr: "Gece Turu: Biniş 20:00 · Kalkış 21:00",
-    de: "Nachtkreuzfahrt: Boarding 20:00 · Abfahrt 21:00",
-    es: "Crucero Nocturno: Embarque 20:00 · Salida 21:00",
-    ru: "Ночной круиз: Посадка 20:00 · Отправление 21:00",
-    ar: "رحلة ليلية: الصعود 20:00 · المغادرة 21:00",
-    fa: "تور شبانه: سوار شدن ۲۰:۰۰ · حرکت ۲۱:۰۰", fr: "Croisière nocturne : embarquement 20h00 · départ 21h00", it: "Crociera Notturna: Imbarco 20:00 · Partenza 21:00", zh: "夜间游船:20:00登船 · 21:00启航", id: "Pelayaran Malam: Naik kapal 20:00 · Keberangkatan 21:00", ms: "Pelayaran Malam: Menaiki 20:00 · Bertolak 21:00", pl: "Nocny rejs: wejście 20:00 · wypłynięcie 21:00", bg: "Нощен круиз: качване 20:00 · отплаване 21:00", ro: "Croazieră de Noapte: Îmbarcare 20:00 · Plecare 21:00"
+    en: "Night Cruise: Boarding 19:30 · Departure 20:30",
+    tr: "Gece Turu: Biniş 19:30 · Kalkış 20:30",
+    de: "Nachtkreuzfahrt: Boarding 19:30 · Abfahrt 20:30",
+    es: "Crucero Nocturno: Embarque 19:30 · Salida 20:30",
+    ru: "Ночной круиз: Посадка 19:30 · Отправление 20:30",
+    ar: "رحلة ليلية: الصعود 19:30 · المغادرة 20:30",
+    fa: "تور شبانه: سوار شدن ۲۰:۰۰ · حرکت ۲۱:۰۰", fr: "Croisière nocturne : embarquement 20h00 · départ 21h00", it: "Crociera Notturna: Imbarco 19:30 · Partenza 20:30", zh: "夜间游船:19:30登船 · 20:30启航", id: "Pelayaran Malam: Naik kapal 19:30 · Keberangkatan 20:30", ms: "Pelayaran Malam: Menaiki 19:30 · Bertolak 20:30", pl: "Nocny rejs: wejście 19:30 · wypłynięcie 20:30", bg: "Нощен круиз: качване 19:30 · отплаване 20:30", ro: "Croazieră de Noapte: Îmbarcare 19:30 · Plecare 20:30"
   },
   "boarding.time.pier": {
     en: "Kabataş Pier",

@@ -9,7 +9,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Rejs z Kolacją Bosfor od €{p.dinnerStd} — Tour Nocny Stambuł + Pokaz',
-      description: 'Rejs z kolacją 3 godziny po Bosforze: tureckie wielodaniowe menu i pokaz folklorystyczny na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
+      description: 'Rejs z kolacją 3 godziny po Bosforze: tureckie wielodaniowe menu i pokaz folklorystyczny na żywo. Wypłynięcie 20:30 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs z Kolacją po Bosforze w Stambule',
@@ -17,7 +17,7 @@ module.exports = {
       badge: '4,8★ · 11 317 opinii'
     },
     intro: [
-      '**Rejs z kolacją po Bosforze** to najbardziej kultowe wieczorne doświadczenie w Stambule. Nasz rejs rozpoczyna się o 20:00 przy przystani Kabataş — płynąc pod podświetlonymi mostami Bosforu i Fatih Sultan Mehmet, serwujemy bogatą kuchnię turecką, pokazy tańca ludowego, taniec brzucha i set DJ-a, który trzyma pokład w ruchu aż do 23:00.',
+      '**Rejs z kolacją po Bosforze** to najbardziej kultowe wieczorne doświadczenie w Stambule. Nasz rejs rozpoczyna się o 19:30 przy przystani Kabataş — płynąc pod podświetlonymi mostami Bosforu i Fatih Sultan Mehmet, serwujemy bogatą kuchnię turecką, pokazy tańca ludowego, taniec brzucha i set DJ-a, który trzyma pokład w ruchu aż do 23:00.',
       'W przeciwieństwie do zwykłych łodzi turystycznych tłoczących się po Bosforze, nasz **rejs z kolacją po Bosforze** posiada licencję TÜRSAB (A-17672) i został oceniony na 4,8★ przez ponad 11 317 podróżnych. Utrzymujemy kameralne grupy i ciepłą obsługę — a ponieważ płacą Państwo na pokładzie, rezerwacja z wyprzedzeniem nie wiąże się z żadnym ryzykiem.',
       'Czy świętują Państwo rocznicę, szukają premium stambulskiego wieczoru dla rodziny, czy pragną najbardziej fotogenicznego przejścia z zachodu słońca w noc — to jest rejs z kolacją, który mieszkańcy Stambułu polecają w pierwszej kolejności.'
     ],
@@ -28,7 +28,7 @@ module.exports = {
       { title: 'Od €{p.dinnerStd}/osobę — płatność na pokładzie', desc: 'Standardowy rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Rejs VIP z miejscami przy scenie i menu premium €{p.dinnerVip}. Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
     ],
     faq: [
-      { q: 'O której zaczyna się rejs z kolacją po Bosforze?', a: 'Wejście na pokład przy przystani Kabataş rozpoczyna się o 20:00. Łódź wypływa o 21:00 i wraca około 00:00. Zalecamy przybycie 15-20 minut wcześniej, aby zająć miejsce i się rozgościć.' },
+      { q: 'O której zaczyna się rejs z kolacją po Bosforze?', a: 'Wejście na pokład przy przystani Kabataş rozpoczyna się o 19:30. Łódź wypływa o 20:30 i wraca około 00:00. Zalecamy przybycie 15-20 minut wcześniej, aby zająć miejsce i się rozgościć.' },
       { q: 'Ile kosztuje rejs z kolacją po Bosforze?', a: 'Standardowy rejs €{p.dinnerStd}/osobę (cena regularna €{p.dinnerStdOriginal}). Rejs VIP z miejscami przy scenie i menu premium €{p.dinnerVip}/osobę. Dzieci 0-3 lata bezpłatnie, 4-8 lat 50% zniżki. Płatność odbywa się na pokładzie — bez przedpłaty.' },
       { q: 'Czy alkohol jest wliczony w cenę rejsu z kolacją?', a: 'Nieograniczone napoje bezalkoholowe (woda, cola, soki) są wliczone w cenę. Pakiety alkoholowe są opcjonalne: 2 kieliszki +€{p.alcohol2}/osobę lub nieograniczony alkohol lokalny (wino, piwo, rakı, wódka, gin) +€{p.unlimited}/osobę. Alkohole importowane wyceniane są osobno na pokładzie.' },
       { q: 'Czy oferują Państwo transfer z hotelu?', a: 'Tak — odbiór i odwiezienie kosztują +€{p.transfer}/osobę. Strefy obsługi: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane i Sütlüce. Mogą Państwo wybrać w kreatorze rezerwacji.' },
@@ -133,13 +133,13 @@ module.exports = {
       { title: 'Menu z certyfikatem 100% halal', desc: 'Całe mięso (łosoś, dorada, kurczak, kotlety, wołowina, antrykot) posiada certyfikat halal od zatwierdzonych dostawców. Kuchnia przestrzega zasad przygotowania halal. Bez produktów wieprzowych i dodatków niehalal. Opcje wegetariańskie zawsze dostępne.' },
       { title: 'Alkohol opcjonalny, nigdy narzucany', desc: 'Pakiety alkoholowe to dodatek — nie są domyślnie wliczone. Napoje bezalkoholowe (woda, cola, sok) są nieograniczone i bezpłatne. Stół pozostaje bezalkoholowy, chyba że wyraźnie Państwo poproszą. Załoga dyskretnie szanuje Państwa wybór.' },
       { title: 'Rozrywka przyjazna rodzinom', desc: 'Pokaz sema, tradycyjne tureckie tańce ludowe, turecka muzyka na żywo. Bez klubowych występów, bez nieodpowiednich treści. Bezpieczne dla dzieci, pełne szacunku dla rodzin. Taniec brzucha to tradycyjna forma sztuki, prezentowana skromnie.' },
-      { title: 'Szacunek dla czasu modlitwy', desc: 'Jeśli czas wejścia na pokład przypada na Maghrib lub Iszę (20:00-21:00), nasza załoga może przed odpłynięciem skierować Państwa do cichej strefy modlitewnej na przystani Kabataş. Wystarczy poinformować przy rezerwacji.' }
+      { title: 'Szacunek dla czasu modlitwy', desc: 'Jeśli czas wejścia na pokład przypada na Maghrib lub Iszę (19:30-20:30), nasza załoga może przed odpłynięciem skierować Państwa do cichej strefy modlitewnej na przystani Kabataş. Wystarczy poinformować przy rezerwacji.' }
     ],
     faq: [
       { q: 'Czy rejs po Bosforze jest w 100% halal?', a: 'Tak — każdy produkt mięsny w menu (ryby, kurczak, kotlety, polędwica wołowa, antrykot, jagnięcina) posiada certyfikat halal od zatwierdzonych dostawców. Kuchnia przestrzega standardów przygotowania halal. Wieprzowina nie jest serwowana nigdzie na łodzi. To nie jest "opcja halal" — całe menu jest halal.' },
       { q: 'Czy inni goście na tym rejsie piją alkohol?', a: 'Niektórzy goście dodają opcjonalny pakiet alkoholowy (+€{p.unlimited}/osobę). Stoły są naturalnie oddzielone — mogą Państwo poprosić o sekcję bezalkoholową. Załoga nie przynosi alkoholu, chyba że zostanie wyraźnie zamówiony przez gościa. Napoje bezalkoholowe (nieograniczone) są wliczone dla wszystkich.' },
       { q: 'Czy ten rejs jest odpowiedni dla muzułmańskich rodzin z dziećmi?', a: 'Tak — to jeden z najbardziej szanowanych dla rodzin rejsów w Stambule. Rozrywka jest skromna (tańce ludowe, sema, muzyka turecka), dzieci poniżej 3 lat bezpłatnie, 4-8 lat 50% zniżki. Bez klubowej atmosfery. Rodziny z regionu Zatoki, Indonezji, Malezji, Pakistanu i Maroka regularnie rezerwują ten rejs.' },
-      { q: 'Czy mogę modlić się na pokładzie?', a: 'Na łodzi nie ma dedykowanego pomieszczenia modlitewnego, ale zalecamy modlitwę przed wejściem na pokład o 20:00 (Maghrib zwykle mieści się w tym oknie). Na przystani Kabataş dostępne są udogodnienia modlitewne. Jeśli muszą Państwo modlić się podczas rejsu 21:00-00:00 (Isza), proszę porozmawiać z załogą — możemy zorganizować cichy kąt na pokładzie.' },
+      { q: 'Czy mogę modlić się na pokładzie?', a: 'Na łodzi nie ma dedykowanego pomieszczenia modlitewnego, ale zalecamy modlitwę przed wejściem na pokład o 19:30 (Maghrib zwykle mieści się w tym oknie). Na przystani Kabataş dostępne są udogodnienia modlitewne. Jeśli muszą Państwo modlić się podczas rejsu 20:30-00:00 (Isza), proszę porozmawiać z załogą — możemy zorganizować cichy kąt na pokładzie.' },
       { q: 'Jakie są ceny dla muzułmańskiej rodziny 4-osobowej (2 dorosłych, 2 dzieci)?', a: 'Rejs Standard: 2 × €{p.dinnerStd} + 2 × €12 (4-8 lat pół ceny) = €72. Jeśli dzieci poniżej 3 lat są bezpłatne: 2 × €{p.dinnerStd} = €48. Dodaj €10 transfer hotelowy na dorosłego. Suma: €48-92 dla rodziny 4-osobowej, bez przedpłaty, płatność na pokładzie.' },
       { q: 'Czy transfer hotelowy jest również halal?', a: 'Transfer hotelowy to tylko przejazd samochodem — nie dotyczy jedzenia ani napojów, więc kwestia halal nie ma zastosowania. Nasi kierowcy są profesjonalni, szanujący i punktualni. Strefy transferu obejmują Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih i 8 innych centralnych dzielnic, gdzie muzułmańscy podróżni zazwyczaj się zatrzymują.' }
     ],
@@ -204,7 +204,7 @@ module.exports = {
     highlights: [
       { title: 'Cała łódź, tylko dla Państwa', desc: 'Żadnych innych gości. Państwa grupa ma każdy pokład, każdy stół. Wybierają Państwo swoją muzykę, swój dress code, swój program. Prywatność ma znaczenie — szanujemy to.' },
       { title: 'Niestandardowe menu i pakiet napojów', desc: 'Współpracujcie z naszym szefem kuchni, aby dostosować menu: konkretne mezze, wybory dań głównych, potrawy specyficzne dla Państwa kultury lub potrzeb dietetycznych. Pakiety alkoholowe, kieliszki szampana, niestandardowe bary koktajlowe — wszystko można zaaranżować.' },
-      { title: 'Elastyczny czas trwania i godzina wypłynięcia', desc: 'Standardowe 3 godziny można wydłużyć do 4-5. Wybierają Państwo wypłynięcie dzienne o 12:00, zachód słońca o 17:30 lub noc o 21:00. Chcą Państwo dzień powszedni zamiast weekendu? Nie problem — dostosujemy się do Państwa harmonogramu.' },
+      { title: 'Elastyczny czas trwania i godzina wypłynięcia', desc: 'Standardowe 3 godziny można wydłużyć do 4-5. Wybierają Państwo wypłynięcie dzienne o 12:00, zachód słońca o 17:30 lub noc o 20:30. Chcą Państwo dzień powszedni zamiast weekendu? Nie problem — dostosujemy się do Państwa harmonogramu.' },
       { title: 'Niestandardowy wystrój, zespół, program', desc: 'Dodaj niestandardowe dekoracje (balony, banery, aranżacje kwiatowe), zespół na żywo zamiast DJ-a, serwis tortu weselnego, koordynację fotografa, przemówienia — cokolwiek Państwa wydarzenie wymaga. Jesteśmy planistami wydarzeń, nie tylko operatorami łodzi.' }
     ],
     faq: [
@@ -248,7 +248,7 @@ module.exports = {
       { q: 'Ile kosztuje rejs po Bosforze dla 2 osób?', a: '2 osoby Standard: 2 × €{p.dinnerStd} = €48. 2 osoby VIP: 2 × €{p.dinnerVip} = €110. Dodaj transfer hotelowy dla obu: +€{p.transfer}×2 = €20. Dodaj nieograniczony alkohol dla obu: +€{p.unlimited}×2 = €60. Bez przedpłaty — płatność na pokładzie.' },
       { q: 'Czy pary mogą przynieść własne wino lub szampana?', a: 'Nie zezwalamy na alkohol z zewnątrz (z powodów licencji operacyjnej). Ale mamy nieograniczone wino lokalne (+€{p.unlimited}/osobę) i możemy zorganizować premium wina importowane lub szampana za dodatkową opłatą — prosimy pytać przy rezerwacji. Prosecco, Chianti i Cabernet to popularne prośby premium.' },
       { q: 'Czy to w porządku, jeśli nie pijemy alkoholu — czy będziemy wyglądać nietypowo?', a: 'Wcale nie — wiele par całkowicie pomija alkohol, z powodów halal lub po prostu preferencji. Nieograniczone napoje bezalkoholowe (woda, sok, cola) są wliczone. Jeśli Państwa stół jest bezalkoholowy, nikt nie zwróci na to uwagi. Wiele muzułmańskich par z Arabii Saudyjskiej, Iranu i Indonezji rezerwuje ten rejs.' },
-      { q: 'Kiedy jest najlepszy rejs po Bosforze dla par — zachód słońca czy noc?', a: 'Noc (21:00 wypłynięcie) jest najbardziej kultowa — podświetlone mosty, odbicia na wodzie, rozświetlone pałace. Zachód słońca (17:30 wypłynięcie) jest wcześniejszy i ma piękno złotej godziny, ale rejs z kolacją jest konkretnie o 21:00. Jeśli chcą Państwo obu, większość par rezerwuje rejsy zachodu słońca i nocne w różne dni.' },
+      { q: 'Kiedy jest najlepszy rejs po Bosforze dla par — zachód słońca czy noc?', a: 'Noc (20:30 wypłynięcie) jest najbardziej kultowa — podświetlone mosty, odbicia na wodzie, rozświetlone pałace. Zachód słońca (17:30 wypłynięcie) jest wcześniejszy i ma piękno złotej godziny, ale rejs z kolacją jest konkretnie o 20:30. Jeśli chcą Państwo obu, większość par rezerwuje rejsy zachodu słońca i nocne w różne dni.' },
       { q: 'Czy jest parkiet do tańca — czy możemy tańczyć?', a: 'Tak — po kolacji (~22:30) pojawia się DJ, a otwarty pokład zamienia się w strefę taneczną. Wiele par tańczy powolne piosenki pod światłami z Mostem Bosforskim w tle. Niektóre z najlepszych zdjęć, jakie Państwo zrobią w Stambule.' }
     ],
     cta: {
@@ -281,23 +281,23 @@ module.exports = {
     ],
     faq: [
       { q: 'O której wypływa rejs o zachodzie słońca po Bosforze?', a: 'Wejście na pokład rozpoczyna się o 17:00, łódź wypływa o 17:30, wraca około 20:30. Czas jest tak ustawiony, aby zachód słońca odbywał się na wodzie — to różni się nieco w zależności od sezonu (18:30 latem, 17:00 zimą). Sezonowo dostosowujemy wypłynięcie o 15-30 minut.' },
-      { q: 'Czy rejs o zachodzie słońca po Bosforze jest taki sam jak rejs z kolacją?', a: 'Podobny, ale inny czas. Rejs o zachodzie słońca wypływa o 17:30 z kolacją serwowaną podczas rejsu (złota godzina + wczesny wieczór). Rejs z kolacją o 21:00 — po zmroku, czyste widoki nocne. Ta sama łódź, to samo menu, ta sama rozrywka — tylko inne oświetlenie. Niektórzy goście robią oba w różne dni.' },
+      { q: 'Czy rejs o zachodzie słońca po Bosforze jest taki sam jak rejs z kolacją?', a: 'Podobny, ale inny czas. Rejs o zachodzie słońca wypływa o 17:30 z kolacją serwowaną podczas rejsu (złota godzina + wczesny wieczór). Rejs z kolacją o 20:30 — po zmroku, czyste widoki nocne. Ta sama łódź, to samo menu, ta sama rozrywka — tylko inne oświetlenie. Niektórzy goście robią oba w różne dni.' },
       { q: 'Jaka jest cena rejsu o zachodzie słońca po Bosforze?', a: 'Standardowy rejs o zachodzie słońca od €35/osobę (3 godziny, pełna kolacja, rozrywka na żywo). Opcja VIP z miejscami przy scenie i mezze premium €55/osobę. Płatność na pokładzie — bez przedpłaty. Dzieci 0-3 lata bezpłatnie, 4-8 lat pół ceny.' },
       { q: 'Czy rejs o zachodzie słońca jest lepszy niż rejs z kolacją (nocny)?', a: '"Lepszy" zależy od tego, czego Państwo chcą. Zachód słońca = najlepsze zdjęcia, złote światło, wolniejszy rytm, wcześniejszy wieczór. Noc = najbardziej kultowe światła (podświetlone mosty), najlepsza rozrywka, późniejsza kolacja. Fotografowie wybierają zachód słońca. Pary na randce wybierają noc. Rodziny z dziećmi często wybierają zachód słońca (kończy się wcześniej).' },
       { q: 'Co zabrać na rejs o zachodzie słońca?', a: 'Smartfon lub aparat do zdjęć (złota godzina błaga). Cienka marynarka — wiatr wzmaga się o zachodzie słońca, wcześni wieczór na pokładzie może szybko się ochłodzić. Okulary przeciwsłoneczne na pierwsze 30 minut. Strój smart-casual — jedzą Państwo kolację, ale nie ma ścisłego dress code\'u.' },
-      { q: 'Czy mogę zostać na rejsie, aby zobaczyć podświetlone mosty w nocy?', a: 'Rejs o zachodzie słońca trwa 3 godziny (17:30-20:30), więc pod koniec widzą Państwo Most Bosforski w pełni podświetlony i Wieżę Panny rozświetloną. Jeśli chcą SZCZYTOWYCH nocnych widoków (21:00-00:00, wszystkie restauracje i zabytki w pełnej iluminacji), proszę zarezerwować rejs z kolacją o 21:00. Najlepsze z obu: zarezerwować oba w różne noce.' }
+      { q: 'Czy mogę zostać na rejsie, aby zobaczyć podświetlone mosty w nocy?', a: 'Rejs o zachodzie słońca trwa 3 godziny (17:30-20:30), więc pod koniec widzą Państwo Most Bosforski w pełni podświetlony i Wieżę Panny rozświetloną. Jeśli chcą SZCZYTOWYCH nocnych widoków (20:30-00:00, wszystkie restauracje i zabytki w pełnej iluminacji), proszę zarezerwować rejs z kolacją o 20:30. Najlepsze z obu: zarezerwować oba w różne noce.' }
     ],
     cta: {
       primary: 'Zarezerwuj Rejs o Zachodzie Słońca · Płatność na Pokładzie',
       secondary: 'Wypłynięcie 17:30 · Zachód słońca + kolacja wliczone · Bezpłatna anulacja do 2 godzin',
-      tertiary: 'Zobacz Nocny Rejs z Kolacją (21:00)'
+      tertiary: 'Zobacz Nocny Rejs z Kolacją (20:30)'
     }
   },
 
   'bosphorus-night-tour': {
     meta: {
       title: 'Tour Nocny Bosfor od €{p.dinnerStd} — Rejs z Kolacją + Pokaz Live',
-      description: 'Tour nocny 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. Dziś o 21:00 — ostatnie miejsca, rezerwuj wcześniej.'
+      description: 'Tour nocny 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 20:30 z Kabataş, oświetlone mosty. Bezpłatne anulowanie, płatność na pokładzie. Dziś o 20:30 — ostatnie miejsca, rezerwuj wcześniej.'
     },
     hero: {
       h1: 'Nocny Rejs po Bosforze',
@@ -306,17 +306,17 @@ module.exports = {
     },
     intro: [
       '**Nocny rejs po Bosforze** to najbardziej polecana wieczorna aktywność w Stambule. Powód jest taki: po zmroku Bosfor się przemienia. Most Bosforski cyklicznie przechodzi między błękitem, fioletem i złotem. Pałac Dolmabahçe świeci ciepłym żółtym światłem. Meczet Ortaköy idealnie odbija się w czarnej wodzie. Każdy stambulski punkt orientacyjny osiąga szczyt dramatyzmu nocą.',
-      'Nasz **nocny rejs po Bosforze z kolacją** pakuje cały kultowy wieczór: 3 godziny na wodzie (21:00-00:00), bogata turecka uczta, tańce ludowe na żywo (sema, 5 tańców ludowych, taniec brzucha), muzyka na żywo i set DJ-a, który utrzymuje pokład w ruchu do końca nocy. Każdy gość otrzymuje ten sam program — żadnej "podstawowej" opcji, która pomija najlepsze części.',
+      'Nasz **nocny rejs po Bosforze z kolacją** pakuje cały kultowy wieczór: 3 godziny na wodzie (20:30-00:00), bogata turecka uczta, tańce ludowe na żywo (sema, 5 tańców ludowych, taniec brzucha), muzyka na żywo i set DJ-a, który utrzymuje pokład w ruchu do końca nocy. Każdy gość otrzymuje ten sam program — żadnej "podstawowej" opcji, która pomija najlepsze części.',
       'Niezależnie od tego, czy to Państwa pierwsza podróż do Stambułu i szukają "tej jedynej rzeczy do zrobienia nocą", czy byli tu wcześniej i chcą najbardziej fotogenicznych 3 godzin w mieście — to jest **nocny rejs po Bosforze** oceniony na 4,8★ przez ponad 11 317 podróżnych. Licencja TÜRSAB, płatność na pokładzie, bez przedpłaty.'
     ],
     highlights: [
-      { title: 'Podświetlony Bosfor w szczycie dramatyzmu', desc: 'Most Bosforski zmienia kolory (niebieski, fioletowy, złoty), pałace świecą żółto, Meczet Ortaköy odbija się w czarnej wodzie. 21:00-00:00 to szczytowe oświetlenie dla wszystkich stambulskich punktów orientacyjnych.' },
+      { title: 'Podświetlony Bosfor w szczycie dramatyzmu', desc: 'Most Bosforski zmienia kolory (niebieski, fioletowy, złoty), pałace świecą żółto, Meczet Ortaköy odbija się w czarnej wodzie. 20:30-00:00 to szczytowe oświetlenie dla wszystkich stambulskich punktów orientacyjnych.' },
       { title: 'Tradycyjny turecki pokaz na pokładzie', desc: 'Pokaz sema, 5 tradycyjnych tańców ludowych (z różnych regionów Turcji), taniec brzucha, turecka muzyka na żywo, potem set DJ-a. 40 minut występu, potem muzyka + kolacja kontynuują.' },
       { title: 'Pełna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka (paçanga böreği), danie główne (łosoś, dorada, kurczak, kotlety, wegetariańskie — Państwa wybór), deser (ciasto z lodami), nieograniczone napoje bezalkoholowe. Certyfikat halal.' },
       { title: 'Pełna trasa Bosforu', desc: 'Kabataş → Dolmabahçe → Pałac Çırağan → Meczet Ortaköy → Bebek → Rumeli Hisarı → Most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Wieża Panny → Kabataş.' }
     ],
     faq: [
-      { q: 'O której jest nocny rejs po Bosforze?', a: 'Wejście na pokład przy przystani Kabataş od 20:00. Łódź wypływa o 21:00, wraca około 00:00 (północ). Zalecamy przybycie 20 minut wcześniej, aby się rozgościć i wybrać miejsce.' },
+      { q: 'O której jest nocny rejs po Bosforze?', a: 'Wejście na pokład przy przystani Kabataş od 19:30. Łódź wypływa o 20:30, wraca około 00:00 (północ). Zalecamy przybycie 20 minut wcześniej, aby się rozgościć i wybrać miejsce.' },
       { q: 'Ile kosztuje nocny rejs po Bosforze?', a: 'Standardowy rejs nocny (3 godziny, kolacja, pokaz): €{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}). VIP z miejscami przy scenie i menu premium: €{p.dinnerVip}/osobę (dawniej €{p.dinnerVipOriginal}). Dzieci 0-3 lata bezpłatnie, 4-8 lat pół ceny. Płatność na pokładzie.' },
       { q: 'Jaka jest różnica między nocnym rejsem po Bosforze a rejsem z kolacją?', a: 'To samo, inne słowo kluczowe. "Nocny rejs po Bosforze" to jak szukają podróżni; "rejs z kolacją" to termin branżowy. Ta sama łódź, ten sam 3-godzinny program, to samo menu, ten sam pokaz. Proszę wybrać preferowany termin wyszukiwania — doświadczenie jest takie samo.' },
       { q: 'Nocny rejs po Bosforze vs rejs o zachodzie słońca?', a: 'Nocny rejs = podświetlony Stambuł, szczytowy dramatyzm światła, pełny program rozrywki, najbardziej kultowe zdjęcia podświetlonych mostów. Zachód słońca = złota godzina, wolniejszy rytm, kończy się o 20:30. Jeśli robi Państwo tylko jedno: nocny rejs jest bardziej kultowy. Wielu robi oba w różne dni.' },
@@ -325,7 +325,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Zarezerwuj Nocny Rejs · Płatność na Pokładzie',
-      secondary: 'Wypłynięcie 21:00 · 3 godziny · Kolacja + pokaz wliczone · Bezpłatna anulacja do 2 godzin',
+      secondary: 'Wypłynięcie 20:30 · 3 godziny · Kolacja + pokaz wliczone · Bezpłatna anulacja do 2 godzin',
       tertiary: 'Dostępność na Dziś'
     }
   },
@@ -341,8 +341,8 @@ module.exports = {
       badge: '4,8★ · 11 317 opinii · TÜRSAB A-17672'
     },
     intro: [
-      'Szukają Państwo **rejsu z kolacją w Stambule**? Znaleźli Państwo to, co większość podróżnych poleca. Nasz 3-godzinny wieczór na Bosforze łączy pełną bogatą turecką kolację, tańce ludowe na żywo i najbardziej fotogeniczne widoki miasta — wszystko z komfortowej łodzi wypływającej o 21:00 z przystani Kabataş.',
-      'Doświadczenie **rejsu z kolacją w Stambule**: wejście na pokład o 20:00, rozgoszczenie się, obserwacja przepłynięcia obok Pałacu Dolmabahçe przy wypływaniu, zaczyna się kolacja podczas zbliżania do Meczetu Ortaköy, zaczyna się pokaz (sema, tańce ludowe, taniec brzucha), do momentu deseru płyną Państwo pod podświetlonym Mostem Bosforskim. Wracają do Kabataş do północy z ikonicznym kolażem zdjęć i pełnym brzuchem.',
+      'Szukają Państwo **rejsu z kolacją w Stambule**? Znaleźli Państwo to, co większość podróżnych poleca. Nasz 3-godzinny wieczór na Bosforze łączy pełną bogatą turecką kolację, tańce ludowe na żywo i najbardziej fotogeniczne widoki miasta — wszystko z komfortowej łodzi wypływającej o 20:30 z przystani Kabataş.',
+      'Doświadczenie **rejsu z kolacją w Stambule**: wejście na pokład o 19:30, rozgoszczenie się, obserwacja przepłynięcia obok Pałacu Dolmabahçe przy wypływaniu, zaczyna się kolacja podczas zbliżania do Meczetu Ortaköy, zaczyna się pokaz (sema, tańce ludowe, taniec brzucha), do momentu deseru płyną Państwo pod podświetlonym Mostem Bosforskim. Wracają do Kabataş do północy z ikonicznym kolażem zdjęć i pełnym brzuchem.',
       '€{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}) za rejs Standard lub €{p.dinnerVip}/osobę (dawniej €{p.dinnerVipOriginal}) za VIP z miejscami przy scenie. Płatność na pokładzie — bez przedpłaty, bez ryzyka. Licencja TÜRSAB A-17672, oceniony na 4,8★ przez ponad 11 317 podróżnych.'
     ],
     highlights: [
@@ -355,7 +355,7 @@ module.exports = {
       { q: 'Ile kosztuje rejs z kolacją w Stambule?', a: 'Nasz standardowy rejs z kolacją €{p.dinnerStd}/osobę (cena regularna €{p.dinnerStdOriginal}). VIP z miejscami przy scenie i menu premium €{p.dinnerVip}/osobę (cena regularna €{p.dinnerVipOriginal}). Dzieci 0-3 lata bezpłatnie, 4-8 lat 50% zniżki. Płatność na pokładzie — bez przedpłaty.' },
       { q: 'Co jest wliczone w cenę rejsu z kolacją w Stambule?', a: '3-godzinny rejs po Bosforze, bogata turecka kolacja (mezze, ciepła przystawka, danie główne, deser), nieograniczone napoje bezalkoholowe, pokaz tańców ludowych na żywo (sema, tańce ludowe, taniec brzucha), muzyka na żywo + DJ, dostęp do otwartego pokładu, podatki wliczone. Transfer hotelowy i alkohol są opcjonalnymi dodatkami.' },
       { q: 'Skąd wypływa rejs z kolacją w Stambule?', a: 'Przystań Kabataş, Stambuł — strona europejska, obok Pałacu Dolmabahçe. Dokładny punkt zbiórki udostępniany po rezerwacji przez WhatsApp / Telegram / WeChat. Filmy trasy pieszo z przystanku tramwajowego Dolmabahçe i stacji tramwajowej Kabataş w sekcji punktu zbiórki powyżej.' },
-      { q: 'Jak długo trwa rejs z kolacją — i kiedy się zaczyna?', a: '3 godziny łącznie. Wejście na pokład od 20:00, łódź wypływa dokładnie o 21:00, wraca około 00:00 (północ). Zalecamy przybycie 15-20 minut wcześniej, aby się rozgościć i wybrać miejsce.' },
+      { q: 'Jak długo trwa rejs z kolacją — i kiedy się zaczyna?', a: '3 godziny łącznie. Wejście na pokład od 19:30, łódź wypływa dokładnie o 20:30, wraca około 00:00 (północ). Zalecamy przybycie 15-20 minut wcześniej, aby się rozgościć i wybrać miejsce.' },
       { q: 'Czy muszę rezerwować z wyprzedzeniem, czy mogę po prostu przyjść?', a: 'Proszę rezerwować z wyprzedzeniem — miejsca się zapełniają, szczególnie w weekendy i święta. Rezerwacja tego samego dnia często możliwa, ale nie gwarantowana. Kreator na tej stronie załatwi miejsce w mniej niż 1 minutę. Płatność na pokładzie, więc nie ma ryzyka finansowego przy wcześniejszej rezerwacji.' },
       { q: 'Czy rejs z kolacją w Stambule nadaje się dla wegetarian / halal / ograniczeń dietetycznych?', a: 'Tak — całe mięso posiada certyfikat halal. Wegetariańskie danie główne (falafel, pieczone ziemniaki, pilaw z bulguru, gulasz warzywny, krążki cebulowe) dostępne bez dodatkowej opłaty. Alergie można uwzględnić, jeśli zostaną zgłoszone przy rezerwacji. Alkohol opcjonalny dodatek, nigdy narzucany.' }
     ],
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocny Stambuł od €{p.dinnerStd} — Rejs z Kolacją Bosfor + Pokaz',
-      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii. Transfer z hotelu opcjonalny. Dzisiejszy rejs o 21:00 — ograniczona liczba miejsc.'
+      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 20:30 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii. Transfer z hotelu opcjonalny. Dzisiejszy rejs o 20:30 — ograniczona liczba miejsc.'
     },
     hero: {
       h1: 'Nocna Wycieczka po Stambule',
@@ -391,7 +391,7 @@ module.exports = {
       { q: 'Jaka jest najlepsza nocna wycieczka w Stambule?', a: 'Rejs z kolacją po Bosforze konsekwentnie zajmuje #1. Dlaczego: (1) daje wszystkie kultowe nocne widoki z wody, (2) zawiera kolację i pokaz w jednym pakiecie, (3) 3 godziny wystarczy, aby zobaczyć dużo bez zmęczenia, (4) centralny punkt zbiórki, (5) płatność na pokładzie redukuje tarcia rezerwacyjne. Większość przewodników podróży po Stambule poleca to jako "jedyną rzecz obowiązkowo do zrobienia nocą".' },
       { q: 'Ile kosztuje nocna wycieczka po Stambule?', a: 'Nasz rejs z kolacją po Bosforze: Standard €{p.dinnerStd}/osobę, VIP €{p.dinnerVip}/osobę. Rejs, kolacja, rozrywka, napoje bezalkoholowe wliczone. Opcjonalnie: alkohol +€{p.unlimited}/osobę, transfer hotelowy +€{p.transfer}/osobę. Płatność na pokładzie — bez przedpłaty.' },
       { q: 'Czy nocna wycieczka po Stambule jest bezpieczna dla podróżnych solo?', a: 'Tak — bardzo bezpieczna. Łódź z licencją TÜRSAB, profesjonalna anglojęzyczna załoga, CCTV na pokładzie, kamizelki ratunkowe dostępne. Wielu podróżnych solo rezerwuje ten rejs. Jecie Państwo przy współdzielonym lub prywatnym stole (wybór), a wieczór jest inkluzywny — poznają Państwo innych podróżnych, jeśli chcą, lub pozostaną sami.' },
-      { q: 'Kiedy jest najlepszy czas na nocną wycieczkę po Stambule?', a: 'Nasz rejs z kolacją po Bosforze 21:00-00:00 (3 godziny). To czas szczytowego oświetlenia wszystkich stambulskich zabytków — mosty w pełni podświetlone, pałace świecą, księżyc nad wodą. Jeśli chcą Państwo wcześniej (złota godzina), proszę rozważyć rejs o zachodzie słońca 17:30.' },
+      { q: 'Kiedy jest najlepszy czas na nocną wycieczkę po Stambule?', a: 'Nasz rejs z kolacją po Bosforze 20:30-00:00 (3 godziny). To czas szczytowego oświetlenia wszystkich stambulskich zabytków — mosty w pełni podświetlone, pałace świecą, księżyc nad wodą. Jeśli chcą Państwo wcześniej (złota godzina), proszę rozważyć rejs o zachodzie słońca 17:30.' },
       { q: 'Jak dotrzeć do punktu zbiórki nocnej wycieczki w Stambule?', a: 'Punkt zbiórki to przystań Kabataş (centralna strona europejska, obok Pałacu Dolmabahçe). Tramwajem: T1 do stacji Kabataş (koniec linii). Taksówką: z Taksim ~15 min. Pieszo: z Taksim w dół İnönü Caddesi 20 min. Filmy z instrukcjami pieszo na tej stronie. Transfer hotelowy +€{p.transfer}/osobę dostępny, jeśli wolą Państwo.' },
       { q: 'Czy mogę zarezerwować nocną wycieczkę po Stambule tego samego dnia?', a: 'Często tak, szczególnie w dni powszednie. Weekendy zapełniają się szybciej. Kreator rezerwacji na tej stronie pozwala sprawdzić dostępność na dziś wieczór i zarezerwować w mniej niż 1 minutę. W przypadku pilnych próśb na ten sam dzień proszę napisać na WhatsApp +90 532 244 29 22.' }
     ],
@@ -414,18 +414,18 @@ module.exports = {
     },
     intro: [
       'Gdy wyszukują Państwo "wycieczki łodzią po Stambule", szukają jednej rzeczy, która definiuje miasto z wody: Bosforu. Nasza 3-godzinna wycieczka łodzią po Bosforze zabiera Państwa obok każdego wielkiego stambulskiego zabytku — Pałac Dolmabahçe, Meczet Ortaköy, Most Bosforski, Rumeli Hisarı, Pałac Beylerbeyi i Wieża Panny — z pełną turecką kolacją i rozrywką na żywo.',
-      'W przeciwieństwie do wielu 1-godzinnych promów widokowych, które obejmują mniej Bosforu i pomijają kolację i rozrywkę, nasza **wycieczka łodzią po Stambule** to pełne wieczorne doświadczenie: wejście na pokład o 20:00 przy przystani Kabataş, rejs do północy, 10 mezze, danie główne, deser, sema, tańce ludowe, taniec brzucha i DJ. Otrzymują Państwo wycieczkę ORAZ wieczór w mieście w jednym.',
+      'W przeciwieństwie do wielu 1-godzinnych promów widokowych, które obejmują mniej Bosforu i pomijają kolację i rozrywkę, nasza **wycieczka łodzią po Stambule** to pełne wieczorne doświadczenie: wejście na pokład o 19:30 przy przystani Kabataş, rejs do północy, 10 mezze, danie główne, deser, sema, tańce ludowe, taniec brzucha i DJ. Otrzymują Państwo wycieczkę ORAZ wieczór w mieście w jednym.',
       'Czy mają Państwo jedną noc w Stambule, czy cały tydzień, ta **wycieczka łodzią po Stambule** wykonuje zadanie. 4,8★ od ponad 11 317 podróżnych, licencja TÜRSAB (A-17672), menu z certyfikatem halal i płatność na pokładzie — bez zobowiązań finansowych, dopóki nie będą Państwo zadowoleni z doświadczenia.'
     ],
     highlights: [
       { title: 'Wszystkie wielkie zabytki Bosforu', desc: 'Dolmabahçe, Çırağan, Meczet Ortaköy, Most Bosforski, Bebek, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, Üsküdar, Wieża Panny. Zarówno wybrzeże europejskie jak i azjatyckie w jednym rejsie.' },
       { title: 'Kolacja + pokaz wliczone', desc: 'Nie tylko wycieczka łodzią — pełna bogata turecka kolacja, występy tańców ludowych na żywo, sema, taniec brzucha, DJ. To właśnie czyni te 3 godziny zabawnymi, nie tylko widokowymi.' },
-      { title: 'Wieczorne wypłynięcie (najlepsze oświetlenie)', desc: 'Wypłynięcie 21:00 chwyta podświetlony Bosfor w pełnej glorii — mosty, pałace, meczety wszystkie podświetlone. Bardziej dramatyczne niż wycieczki dzienne pokazujące te same zabytki w płaskim świetle.' },
+      { title: 'Wieczorne wypłynięcie (najlepsze oświetlenie)', desc: 'Wypłynięcie 20:30 chwyta podświetlony Bosfor w pełnej glorii — mosty, pałace, meczety wszystkie podświetlone. Bardziej dramatyczne niż wycieczki dzienne pokazujące te same zabytki w płaskim świetle.' },
       { title: 'Łatwa rezerwacja, łatwa płatność', desc: 'Zarezerwuj w mniej niż 1 minutę kreatorem na tej stronie. Płatność na pokładzie — bez przedpłaty. Transfer hotelowy dostępny od +€{p.transfer}/osobę. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
     ],
     faq: [
       { q: 'Jaka jest najlepsza wycieczka łodzią w Stambule?', a: 'Rejs z kolacją po Bosforze konsekwentnie zajmuje #1. Obejmuje wszystkie wielkie zabytki, zawiera kolację i rozrywkę, działa wieczorem, gdy zabytki są podświetlone. Inne opcje (promy hop-on, poranne łodzie widokowe) obejmują krótsze trasy, pomijają kolację i nie zawierają rozrywki. Na stambulski wieczór to najpełniejsza wycieczka łodzią.' },
-      { q: 'Jak długo trwa wycieczka łodzią po Stambule?', a: '3 godziny. Wejście na pokład przy przystani Kabataş od 20:00, wypłynięcie 21:00, powrót ~00:00. Obejmuje cały Bosfor od Dolmabahçe do Rumeli Hisarı i z powrotem. Wystarczający czas na pełną kolację + pokaz bez zmęczenia.' },
+      { q: 'Jak długo trwa wycieczka łodzią po Stambule?', a: '3 godziny. Wejście na pokład przy przystani Kabataş od 19:30, wypłynięcie 20:30, powrót ~00:00. Obejmuje cały Bosfor od Dolmabahçe do Rumeli Hisarı i z powrotem. Wystarczający czas na pełną kolację + pokaz bez zmęczenia.' },
       { q: 'Ile kosztuje wycieczka łodzią po Stambule?', a: 'Nasza wycieczka łodzią z kolacją: Standard €{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}), VIP z menu premium €{p.dinnerVip}/osobę (dawniej €{p.dinnerVipOriginal}). Dzieci 0-3 lata bezpłatnie, 4-8 lat pół ceny. Płatność na pokładzie. Alkohol i transfer hotelowy to opcjonalne dodatki.' },
       { q: 'Skąd wypływają wycieczki łodzią po Stambule?', a: 'Nasza łódź wypływa z przystani Kabataş, centralna strona europejska Stambułu, obok Pałacu Dolmabahçe. Dostępna tramwajem T1 (stacja Kabataş), taksówką 15 min z Taksim lub pieszo 20 min z Taksim. Transfer hotelowy z centralnych dzielnic dostępny za +€{p.transfer}/osobę.' },
       { q: 'Czy ta wycieczka łodzią nadaje się dla rodzin z dziećmi?', a: 'Tak — bardzo przyjazna rodzinom. Dzieci 0-3 lata bezpłatnie, 4-8 lat 50% zniżki. Zadaszone siedzenia wewnętrzne, menu dla dzieci na życzenie, rozrywka (sema, tańce ludowe) angażująca dla dzieci. Wiele rodzin z całego świata rezerwuje ten rejs.' },
@@ -441,7 +441,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Wycieczka Bosfor od €{p.dinnerStd} — Rejs z Kolacją Stambuł + Pokaz',
-      description: 'Wycieczka 3 godziny po Bosforze: turecka kolacja, folklor na żywo, oświetlone widoki nocne. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
+      description: 'Wycieczka 3 godziny po Bosforze: turecka kolacja, folklor na żywo, oświetlone widoki nocne. Wypłynięcie 20:30 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Wycieczka po Bosforze',
@@ -461,7 +461,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Jakie są najlepsze wycieczki po Bosforze w Stambule?', a: 'Wieczorny rejs z kolacją konsekwentnie plasuje się na szczycie. Opcje dzienne (1-godzinne promy publiczne, 2-godzinne łodzie widokowe) pokazują mniej i nie zawierają kolacji. Dla wartości trudno pobić 3-godzinny rejs z kolacją, pokazem i centralnym punktem zwrotnym. Koszt naszego rejsu €{p.dinnerStd} eliminuje potrzebę oddzielnej kolacji + wieczoru rozrywki.' },
-      { q: 'Jak długo trwa wycieczka po Bosforze?', a: 'Nasza wycieczka po Bosforze trwa 3 godziny łącznie (wypłynięcie 21:00, powrót 00:00). Istnieją krótsze opcje (1-godzinne promy widokowe, 90-minutowe wycieczki), ale pomijają kolację i rozrywkę. Na pełne wieczorne doświadczenie 3 godziny są idealne — wystarczy, aby zobaczyć wszystko bez zmęczenia.' },
+      { q: 'Jak długo trwa wycieczka po Bosforze?', a: 'Nasza wycieczka po Bosforze trwa 3 godziny łącznie (wypłynięcie 20:30, powrót 00:00). Istnieją krótsze opcje (1-godzinne promy widokowe, 90-minutowe wycieczki), ale pomijają kolację i rozrywkę. Na pełne wieczorne doświadczenie 3 godziny są idealne — wystarczy, aby zobaczyć wszystko bez zmęczenia.' },
       { q: 'Czy wycieczka po Bosforze jest tego warta?', a: 'Tak — prawie każdy przewodnik podróży po Stambule wymienia "rejs po Bosforze" jako jedną z top 5 rzeczy obowiązkowo do zrobienia. Miasto zostało zbudowane wokół tej cieśniny; jeśli nie widzieli Państwo Bosforu z wody, nie widzieli Państwo Stambułu naprawdę. Nasza szczególna wieczorna wycieczka dodaje kolację i rozrywkę, czyniąc to pełnym wieczorem wyjścia zamiast tylko widokowania.' },
       { q: 'Co zabrać na wycieczkę po Bosforze?', a: 'Paszport lub dowód (do rejestracji na łodzi), cienka marynarka (wieczory na pokładzie chłodne), smartfon/aparat, wygodne buty na parkiet. Gotówka lub karta do płatności. Wszystko inne na pokładzie. Transfer hotelowy dostępny za +€{p.transfer}/osobę, jeśli wolą Państwo nie używać transportu publicznego.' },
       { q: 'Czy wycieczka po Bosforze jest odpowiednia dla dzieci?', a: 'Tak — bardzo przyjazna dzieciom. Dzieci 0-3 lata bezpłatnie (transfer wliczony), 4-8 lat 50% zniżki. Zadaszone siedzenia wewnętrzne, menu dla dzieci na życzenie, rozrywka delikatna i angażująca. Wiele rodzin rezerwuje to jako główny element swojej podróży do Stambułu.' },
@@ -486,13 +486,13 @@ module.exports = {
     },
     intro: [
       'Szukają Państwo **biletów na rejs po Bosforze**? Proszę kupić bezpośrednio. Nasze bilety to €{p.dinnerStd} (Standard) lub €{p.dinnerVip} (VIP) — 40% zniżki od cen regularnych (€{p.dinnerStdOriginal} i €{p.dinnerVipOriginal}). Strony rezerwacyjne osób trzecich zazwyczaj dodają 20-40% prowizji. Rezerwując bezpośrednio, oszczędzają Państwo — a nadal mogą płacić na pokładzie.',
-      'Nasz proces **biletów na rejs po Bosforze**: wypełnić kreatora na tej stronie w mniej niż 1 minutę (data, liczba gości, pakiet, kontakt), potwierdzamy natychmiast przez WhatsApp / Telegram / WeChat, zjawiają się Państwo o 20:00 przy przystani Kabataş, płacą na pokładzie, cieszą 3-godzinnym rejsem z kolacją. Bez fizycznego biletu do wydrukowania, bez kuponu do emaila — nasze potwierdzenie to Państwa bilet.',
+      'Nasz proces **biletów na rejs po Bosforze**: wypełnić kreatora na tej stronie w mniej niż 1 minutę (data, liczba gości, pakiet, kontakt), potwierdzamy natychmiast przez WhatsApp / Telegram / WeChat, zjawiają się Państwo o 19:30 przy przystani Kabataş, płacą na pokładzie, cieszą 3-godzinnym rejsem z kolacją. Bez fizycznego biletu do wydrukowania, bez kuponu do emaila — nasze potwierdzenie to Państwa bilet.',
       'Niezależnie od tego, czy rezerwują Państwo rejs z kolacją na dziś wieczór czy zaklepują konkretną datę na przyszły tydzień, **bilety na rejs po Bosforze bezpośrednio** to najszybsza droga. Ocena 4,8★, licencja TÜRSAB (A-17672), menu z certyfikatem halal i obsługa dodatków transferu hotelowego i alkoholowych.'
     ],
     highlights: [
       { title: 'Rezerwacja bezpośrednia — bez opłat pośrednika', desc: '€{p.dinnerStd} Standard, €{p.dinnerVip} VIP. Strony osób trzecich pobierają €30-80+ za tę samą wycieczkę. Rezerwując bezpośrednio u nas, oszczędzają Państwo. Bez ukrytych opłat, bez narzutu prowizji.' },
       { title: 'Płatność na pokładzie — bez przedpłaty', desc: 'Zarezerwuj miejsce teraz, zapłać przy wejściu na pokład. Akceptowana gotówka lub karta. Bezpłatne, jeśli anulują Państwo 2+ godziny przed odpłynięciem. Zero ryzyka finansowego przy wcześniejszym zaklepaniu.' },
-      { title: 'Potwierdzenie w mniej niż 1 minutę', desc: 'Wypełnij kreatora → potwierdzamy przez WhatsApp / Telegram / WeChat. Bez PDF kuponu do wydrukowania. Nasza wiadomość to Państwa bilet. Zjawić się o 20:00 przy przystani.' },
+      { title: 'Potwierdzenie w mniej niż 1 minutę', desc: 'Wypełnij kreatora → potwierdzamy przez WhatsApp / Telegram / WeChat. Bez PDF kuponu do wydrukowania. Nasza wiadomość to Państwa bilet. Zjawić się o 19:30 przy przystani.' },
       { title: '40% ZNIŻKI cena launchowa', desc: 'Standard dawniej €{p.dinnerStdOriginal}, teraz €{p.dinnerStd}. VIP dawniej €{p.dinnerVipOriginal}, teraz €{p.dinnerVip}. 40% zniżki, ponieważ rezerwują Państwo bezpośrednio. Nie jest to liczba ograniczona czasowo — to nasza standardowa cena bezpośredniej rezerwacji.' }
     ],
     faq: [
@@ -500,7 +500,7 @@ module.exports = {
       { q: 'Gdzie mogę kupić bilety na rejs po Bosforze?', a: 'Bezpośrednio na tej stronie — wypełnić kreatora rezerwacji, potwierdzamy natychmiast przez WhatsApp / Telegram / WeChat. Płatność na pokładzie. Platformy osób trzecich (Viator, GetYourGuide, Klook) również sprzedają bilety, ale zazwyczaj pobierają €30-80+ — to narzut pośrednika. Bezpośrednio to najtaniej i najszybciej.' },
       { q: 'Czy muszę wydrukować bilet na rejs po Bosforze?', a: 'Nie — fizyczny bilet lub kupon nie jest wymagany. Po rezerwacji wysyłamy Państwu potwierdzenie przez WhatsApp (lub Telegram/WeChat) z punktem zbiórki, czasem i nazwiskiem na rezerwacji. Po prostu pokazać telefon przy przystani. To wszystko.' },
       { q: 'Czy mogę anulować lub zwrócić bilet na rejs po Bosforze?', a: 'Tak — bezpłatna anulacja do 2 godzin przed odpłynięciem. Po prostu napisać na WhatsApp. Ponieważ nie zapłacili Państwo jeszcze (płatność na pokładzie), zwrot nie jest potrzebny — po prostu nie zjawiają się, bez opłaty. Znacznie bardziej elastyczne niż opłacone z góry bilety osób trzecich.' },
-      { q: 'Czy bilety na rejs po Bosforze są dostępne tego samego dnia?', a: 'Często tak, szczególnie w dni powszednie. Weekendy i święta zapełniają się szybciej. Sprawdź dostępność przez kreatora rezerwacji — aktualizuje się w czasie rzeczywistym. Rezerwacja tego samego dnia zazwyczaj możliwa do kilku godzin przed wypłynięciem 21:00. WhatsApp na pilne prośby.' },
+      { q: 'Czy bilety na rejs po Bosforze są dostępne tego samego dnia?', a: 'Często tak, szczególnie w dni powszednie. Weekendy i święta zapełniają się szybciej. Sprawdź dostępność przez kreatora rezerwacji — aktualizuje się w czasie rzeczywistym. Rezerwacja tego samego dnia zazwyczaj możliwa do kilku godzin przed wypłynięciem 20:30. WhatsApp na pilne prośby.' },
       { q: 'Czy bilety dziecięce na rejs po Bosforze są bezpłatne?', a: 'Dzieci **0-3 lata całkowicie bezpłatnie** (bez opłat, bez ukrytych kosztów, transfer wliczony). **4-8 lat 50% zniżki** (Standard €{p.dinnerStd}/2 = €12). **Od 9 lat pełna cena dorosłego.** Ceny pułapowe i przejrzyste — bez sztuczek "opłata za niemowlęta".' }
     ],
     cta: {
@@ -513,7 +513,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosfor Last Minute od €{p.dinnerStd} — Rezerwuj Dziś, Płać na Pokładzie',
-      description: 'Rezerwacja rejsu Bosfor tego samego dnia. Potwierdzenie WhatsApp w minutach. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
+      description: 'Rezerwacja rejsu Bosfor tego samego dnia. Potwierdzenie WhatsApp w minutach. Wypłynięcie 20:30 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs po Bosforze na Ostatnią Chwilę',
@@ -521,8 +521,8 @@ module.exports = {
       badge: 'Rezerwacja Tego Samego Dnia · Potwierdzenie w Minutach · Płatność na Pokładzie'
     },
     intro: [
-      'Wylądowali Państwo w Stambule dziś po południu i chcą wspaniałego wieczoru? **Rejs po Bosforze na ostatnią chwilę** się sprawdza. Wiemy, że wielu podróżnych decyduje się rano, więc specjalnie rezerwujemy miejsca na rezerwacje tego samego dnia. Wypełnij kreatora tutaj, potwierdzamy przez WhatsApp w minutach, zjawiają się Państwo o 20:00 przy przystani Kabataş, płacą na pokładzie, cieszą.',
-      'Nasz **rejs po Bosforze na ostatnią chwilę** ma taki sam program wieczorny jak rezerwacje z wyprzedzeniem: 3 godziny na wodzie (21:00-00:00), bogata turecka kolacja, pokaz tańców ludowych na żywo, sema, taniec brzucha, DJ. Podświetlony Pałac Dolmabahçe, Meczet Ortaköy, Most Bosforski — te same kultowe widoki. Ta sama cena €{p.dinnerStd} Standard lub €{p.dinnerVip} VIP.',
+      'Wylądowali Państwo w Stambule dziś po południu i chcą wspaniałego wieczoru? **Rejs po Bosforze na ostatnią chwilę** się sprawdza. Wiemy, że wielu podróżnych decyduje się rano, więc specjalnie rezerwujemy miejsca na rezerwacje tego samego dnia. Wypełnij kreatora tutaj, potwierdzamy przez WhatsApp w minutach, zjawiają się Państwo o 19:30 przy przystani Kabataş, płacą na pokładzie, cieszą.',
+      'Nasz **rejs po Bosforze na ostatnią chwilę** ma taki sam program wieczorny jak rezerwacje z wyprzedzeniem: 3 godziny na wodzie (20:30-00:00), bogata turecka kolacja, pokaz tańców ludowych na żywo, sema, taniec brzucha, DJ. Podświetlony Pałac Dolmabahçe, Meczet Ortaköy, Most Bosforski — te same kultowe widoki. Ta sama cena €{p.dinnerStd} Standard lub €{p.dinnerVip} VIP.',
       'Anulacja tego samego dnia jest bezpłatna do 2 godzin przed odpłynięciem, ponieważ **płatność na pokładzie** oznacza, że nie zobowiązali się Państwo jeszcze do niczego. Zarezerwowali o 14:00 i zmienili plany o 19:00? Po prostu napisać na WhatsApp — bez zwrotu, bez problemu. To elastyczność **wycieczki po Stambule na ostatnią chwilę**, którą podróżni doceniają.'
     ],
     highlights: [
@@ -533,10 +533,10 @@ module.exports = {
     ],
     faq: [
       { q: 'Czy naprawdę mogę zarezerwować rejs po Bosforze na dziś wieczór?', a: 'Tak — często. Rezerwujemy miejsca na rezerwacje tego samego dnia. Sprawdź kreator powyżej pod kątem dostępności na dziś wieczór. Jeśli miejsca dostępne, mogą Państwo rezerwować do 18:00 (3 godziny przed odpłynięciem). Weekendy bardziej napięte — rezerwować wcześniej w ciągu dnia, jeśli możliwe.' },
-      { q: 'Jak w ostatniej chwili mogę zarezerwować?', a: 'Rezerwacja pozostaje otwarta do 18:00 dla łodzi 21:00. Po 18:00 proszę napisać bezpośrednio na WhatsApp +90 532 244 29 22 — jeśli miejsca otwarte, możemy potwierdzić ręcznie. Po 19:30 jest bardzo napięte, chyba że są Państwo już przy przystani Kabataş i mogą szybko wejść.' },
+      { q: 'Jak w ostatniej chwili mogę zarezerwować?', a: 'Rezerwacja pozostaje otwarta do 18:00 dla łodzi 20:30. Po 18:00 proszę napisać bezpośrednio na WhatsApp +90 532 244 29 22 — jeśli miejsca otwarte, możemy potwierdzić ręcznie. Po 19:30 jest bardzo napięte, chyba że są Państwo już przy przystani Kabataş i mogą szybko wejść.' },
       { q: 'Czy rejs po Bosforze na ostatnią chwilę jest droższy?', a: 'Nie — ta sama cena co rezerwacja z wyprzedzeniem. €{p.dinnerStd} Standard, €{p.dinnerVip} VIP. Nie stosujemy "dynamicznych cen" ani dopłaty last-minute. Ta sama łódź, ta sama kolacja, ten sam pokaz, ta sama cena.' },
       { q: 'Co jeśli dzisiejszy rejs jest kompletnie pełny?', a: 'Jutrzejszy zwykle otwarty — operujemy codziennie, 365 dni w roku. Mogą Państwo zarezerwować na jutro i wciąż być "last minute" w sensie, że dopiero zdecydowali. Rejsy w dni powszednie mają więcej miejsca niż weekendy.' },
-      { q: 'Czy możecie zorganizować transfer hotelowy na ostatnią chwilę?', a: 'Transfer tego samego dnia możliwy do ~17:00 dla rejsu 21:00. Po 17:00 możemy nie mieć dostępnego kierowcy — w takim przypadku mogą Państwo wziąć taksówkę do przystani Kabataş (15 min z Taksim, 10 min z Sultanahmet, ~€10-15). Centralnie i łatwo.' },
+      { q: 'Czy możecie zorganizować transfer hotelowy na ostatnią chwilę?', a: 'Transfer tego samego dnia możliwy do ~17:00 dla rejsu 20:30. Po 17:00 możemy nie mieć dostępnego kierowcy — w takim przypadku mogą Państwo wziąć taksówkę do przystani Kabataş (15 min z Taksim, 10 min z Sultanahmet, ~€10-15). Centralnie i łatwo.' },
       { q: 'Co jeśli jestem już przy Kabataş i chcę wejść na pokład?', a: 'Jeśli są Państwo przy przystani i są otwarte miejsca, można podejść i wejść na pokład. Napisać do nas na WhatsApp lub zapytać załogę — dodamy Państwa, jeśli miejsce. Ta sama cena płatności na pokładzie. Nazywa się to "walk-on" w terminologii rejsów — tutaj działa.' }
     ],
     cta: {
@@ -572,7 +572,7 @@ module.exports = {
       { q: 'Czy w cenie rejsu po Stambule są ukryte opłaty?', a: 'Nie. Cena zawiera: 3-godzinny rejs, pełną kolację (mezze, przystawka, danie główne, deser), nieograniczone napoje bezalkoholowe, pokaz na żywo, podatki. Opcjonalne dodatki (alkohol, transfer, stół romantyczny) są oddzielne i przejrzyście wycenione — płacą Państwo tylko za to, co dodadzą. Bez "opłaty serwisowej", "opłaty portowej", zaskakujących dopłat.' },
       { q: 'Dlaczego cena rejsu po Stambule to 40% zniżki — czy to sztuczka?', a: 'Bez sztuczek. Cena regularna to €{p.dinnerStdOriginal}/€{p.dinnerVipOriginal}, co pobierają strony rezerwacyjne osób trzecich (Viator, GetYourGuide, Klook) — z ich prowizjami. Rezerwować bezpośrednio i otrzymają Państwo €{p.dinnerStd}/€{p.dinnerVip}. To właśnie różnica 40%. Żadnych sztuczek ograniczonych czasowo ani dynamicznych cen.' },
       { q: 'Jak cena rejsu po Stambule porównuje się do innych opcji?', a: 'Promy publiczne: €5-10, 1 godzina, bez kolacji, bez rozrywki, tylko widokowanie. Budżetowe rejsy z kolacją: €20-30, tłoczno, przeciętna kolacja, krótki pokaz. Nasz Standard (€{p.dinnerStd}): 3 godziny, pełna kolacja, pełen pokaz, prywatny stół, licencja TÜRSAB. VIP (€{p.dinnerVip}): miejsca przy scenie, menu premium. Jachty resort: €100-150+, przesada dla podróżnych solo/par.' },
-      { q: 'Czy muszę zapłacić cenę rejsu po Stambule z góry?', a: 'Nie — **płatność na pokładzie**. Rezerwują Państwo teraz (1-minutowy kreator), potwierdzamy na WhatsApp, zjawiają się o 20:00 i płacą na pokładzie (gotówka lub karta). Bezpłatna anulacja do 2 godzin przed odpłynięciem. Zero zobowiązania finansowego do momentu zadowolenia.' },
+      { q: 'Czy muszę zapłacić cenę rejsu po Stambule z góry?', a: 'Nie — **płatność na pokładzie**. Rezerwują Państwo teraz (1-minutowy kreator), potwierdzamy na WhatsApp, zjawiają się o 19:30 i płacą na pokładzie (gotówka lub karta). Bezpłatna anulacja do 2 godzin przed odpłynięciem. Zero zobowiązania finansowego do momentu zadowolenia.' },
       { q: 'Czy w cenie rejsu po Stambule są zniżki grupowe?', a: 'Dla grup 10+ możemy zaoferować 5-10% zniżki — proszę napisać na WhatsApp z wielkością grupy. Dla 25+ proszę rozważyć prywatny rejs (cała łódź dla Państwa grupy, niestandardowe menu). Dla 2-9 osób obowiązują standardowe ceny — już 40% zniżki od regularnej.' }
     ],
     cta: {
@@ -594,7 +594,7 @@ module.exports = {
     },
     intro: [
       '**Zwiedzanie Bosforu** z wody pokonuje każdą wycieczkę autobusową. Bosfor to najbardziej historyczna droga wodna miasta — sułtani osmańscy, cesarze bizantyjscy, kupcy greccy i rosyjskie okręty wojenne — wszyscy tędy przepłynęli. Dziś nasz 3-godzinny rejs, z komentarzem naszej anglojęzycznej załogi, przepływa obok każdego wielkiego stambulskiego zabytku, który definiuje panoramę.',
-      'Trasa naszej **wycieczki zwiedzającej po Bosforze** (wieczorne wypłynięcie, 21:00-00:00):\n\n1. **Pałac Dolmabahçe** — 19-wieczna rezydencja osmańska, podświetlona nocą\n2. **Pałac Çırağan** — obecnie luksusowy hotel, historia królewska\n3. **Meczet Ortaköy** — jeden z najczęściej fotografowanych meczetów Stambułu, na wodzie\n4. **Most Bosforski** — cyklicznie między błękitem, fioletem, złotem w nocy\n5. **Bebek** — elegancka dzielnica europejska\n6. **Rumeli Hisarı** — zbudowany w 1452 przez Mehmeta Zdobywcę przed podbojem Konstantynopola\n7. **Most Fatih Sultan Mehmet** — drugi most bosforski, dramatyczne łuki\n8. **Pałac Beylerbeyi** — strona azjatycka, letnia rezydencja osmańska\n9. **Üsküdar** — azjatycka strona Stambułu, tradycyjna dzielnica\n10. **Wieża Panny** — wieża na małej wyspie, jeden z najromantyczniejszych symboli Stambułu',
+      'Trasa naszej **wycieczki zwiedzającej po Bosforze** (wieczorne wypłynięcie, 20:30-00:00):\n\n1. **Pałac Dolmabahçe** — 19-wieczna rezydencja osmańska, podświetlona nocą\n2. **Pałac Çırağan** — obecnie luksusowy hotel, historia królewska\n3. **Meczet Ortaköy** — jeden z najczęściej fotografowanych meczetów Stambułu, na wodzie\n4. **Most Bosforski** — cyklicznie między błękitem, fioletem, złotem w nocy\n5. **Bebek** — elegancka dzielnica europejska\n6. **Rumeli Hisarı** — zbudowany w 1452 przez Mehmeta Zdobywcę przed podbojem Konstantynopola\n7. **Most Fatih Sultan Mehmet** — drugi most bosforski, dramatyczne łuki\n8. **Pałac Beylerbeyi** — strona azjatycka, letnia rezydencja osmańska\n9. **Üsküdar** — azjatycka strona Stambułu, tradycyjna dzielnica\n10. **Wieża Panny** — wieża na małej wyspie, jeden z najromantyczniejszych symboli Stambułu',
       'Kolacja i rozrywka wliczone — nie oddzielne — więc **zwiedzanie Bosforu** zamienia się w pełen wieczór. Bogata turecka kolacja, pokaz tańców ludowych na żywo, sema, taniec brzucha, DJ. Ocena 4,8★ od ponad 11 317 podróżnych, licencja TÜRSAB A-17672.'
     ],
     highlights: [

@@ -249,8 +249,9 @@ function buildSchemaLd(page, lang, slug) {
       image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       address: {
         '@type': 'PostalAddress',
-        streetAddress: 'Kabataş Pier',
-        addressLocality: 'Istanbul',
+        streetAddress: 'Ömer Avni, Meclis-i Mebusan Cd. Kabataş Vapur İskelesi',
+        addressLocality: 'Beyoğlu/İstanbul',
+        postalCode: '34427',
         addressCountry: 'TR'
       },
       geo: {

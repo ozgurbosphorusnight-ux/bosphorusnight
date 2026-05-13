@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'What\'s the most romantic activity to do in Istanbul at night?',
-      a: 'A Bosphorus dinner cruise is among Istanbul\'s most romantic evening activities — illuminated palaces, two iconic bridges, and dinner under the stars. Bosphorus Night\'s 21:00 cruise (€{p.dinnerStd}+) with the Romantic Table add-on (+€{p.romantic}) suits anniversaries, dates, and proposals.'
+      a: 'A Bosphorus dinner cruise is among Istanbul\'s most romantic evening activities — illuminated palaces, two iconic bridges, and dinner under the stars. Bosphorus Night\'s 20:30 cruise (€{p.dinnerStd}+) with the Romantic Table add-on (+€{p.romantic}) suits anniversaries, dates, and proposals.'
     },
     {
       q: 'Where is the best place to propose on a Bosphorus boat?',

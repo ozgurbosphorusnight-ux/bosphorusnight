@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'timing',
       title: 'Flexible duration & departure',
-      desc: 'Standard 3 hours can extend to 4-5 hours. Choose 12:00 daytime, 17:30 sunset, or 21:00 night departure. Want a weekday instead of weekend? Just ask — we\'ll work with your schedule.'
+      desc: 'Standard 3 hours can extend to 4-5 hours. Choose 12:00 daytime, 17:30 sunset, or 20:30 night departure. Want a weekday instead of weekend? Just ask — we\'ll work with your schedule.'
     },
     {
       icon: 'event',
