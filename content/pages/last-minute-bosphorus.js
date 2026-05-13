@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'transfer',
       title: 'Same-day hotel transfer often available',
-      desc: 'Hotel transfer normally needs 24h notice, but for same-day bookings between 14:00-17:00 we can often arrange pickup for +€{p.transfer}/person. WhatsApp us for urgent transfer requests.'
+      desc: 'Hotel transfer normally needs 24h notice, but for same-day bookings between 14:00-18:00 we can often arrange pickup for +€{p.transfer}/person. WhatsApp us for urgent transfer requests.'
     }
   ],
 
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Can you arrange last-minute hotel transfer?',
-      a: 'Same-day transfer is possible until ~17:00 for 20:30 cruise. After 17:00, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
+      a: 'Same-day transfer is possible until ~18:00 for 20:30 cruise. After 18:00, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
     },
     {
       q: 'What if I\'m already at Kabataş and want to board?',
