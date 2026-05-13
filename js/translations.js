@@ -3126,10 +3126,54 @@ const T = {
     ru: "Пожалуйста, выберите способ связи", ar: "يرجى اختيار طريقة الاتصال",
     fa: "لطفاً یک روش تماس انتخاب کنید", fr: "Veuillez sélectionner un moyen de contact", it: "Per favore selezioni un metodo di contatto", zh: "请选择一种联系方式", id: "Silakan pilih metode kontak", ms: "Sila pilih kaedah hubungan", pl: "Prosimy wybrać metodę kontaktu", bg: "Моля, изберете метод за контакт", ro: "Vă rugăm să selectați o metodă de contact"
   },
-  "wizard.contactNote": {
-    en: "We will reach you through this channel", tr: "Sizinle bu kanal üzerinden iletişime geçeceğiz", de: "Wir kontaktieren Sie über diesen Kanal", es: "Le contactaremos a través de este canal",
-    ru: "Мы свяжемся с вами через этот канал", ar: "سنتواصل معك عبر هذه القناة",
-    fa: "از این کانال با شما تماس خواهیم گرفت", fr: "Nous vous contacterons via ce canal", it: "La contatteremo tramite questo canale", zh: "我们将通过此渠道联系您", id: "Kami akan menghubungi Anda melalui saluran ini", ms: "Kami akan menghubungi anda melalui saluran ini", pl: "Skontaktujemy się z Państwem przez ten kanał", bg: "Ще се свържем с Вас по този канал", ro: "Vă vom contacta prin acest canal"
+  "wizard.contactWhatsappHint": {
+    en: "Fastest reply", tr: "En hızlı cevap", de: "Schnellste Antwort", es: "Respuesta más rápida",
+    ru: "Самый быстрый ответ", ar: "أسرع رد",
+    fa: "سریع‌ترین پاسخ", fr: "Réponse la plus rapide", it: "Risposta più rapida", zh: "回复最快", id: "Balasan tercepat", ms: "Balasan terpantas", pl: "Najszybsza odpowiedź", bg: "Най-бърз отговор", ro: "Cel mai rapid răspuns"
+  },
+  "wizard.contactTelegramHint": {
+    en: "Alternative", tr: "Alternatif", de: "Alternative", es: "Alternativa",
+    ru: "Альтернатива", ar: "بديل",
+    fa: "جایگزین", fr: "Alternative", it: "Alternativa", zh: "备用方式", id: "Alternatif", ms: "Alternatif", pl: "Alternatywa", bg: "Алтернатива", ro: "Alternativă"
+  },
+  "floatingWa.tooltip": {
+    en: "Reply in 2 min", tr: "2 dakikada cevap", de: "Antwort in 2 Min", es: "Respuesta en 2 min",
+    ru: "Ответ за 2 мин", ar: "رد خلال دقيقتين",
+    fa: "پاسخ در ۲ دقیقه", fr: "Réponse en 2 min", it: "Risposta in 2 min", zh: "2 分钟内回复", id: "Balas dalam 2 menit", ms: "Balas dalam 2 minit", pl: "Odpowiedź w 2 min", bg: "Отговор за 2 мин", ro: "Răspuns în 2 min"
+  },
+  "floatingWa.label": {
+    en: "Chat on WhatsApp now",
+    tr: "WhatsApp'tan yazın",
+    de: "Jetzt auf WhatsApp chatten",
+    es: "Chatear en WhatsApp ahora",
+    ru: "Написать в WhatsApp",
+    ar: "تواصل عبر WhatsApp الآن",
+    fa: "همین حالا در واتساپ چت کنید",
+    fr: "Discuter sur WhatsApp",
+    it: "Chatta su WhatsApp ora",
+    zh: "立即在 WhatsApp 上聊天",
+    id: "Chat di WhatsApp sekarang",
+    ms: "Sembang di WhatsApp sekarang",
+    pl: "Napisz na WhatsApp",
+    bg: "Пишете в WhatsApp",
+    ro: "Discută pe WhatsApp acum"
+  },
+  "floatingWa.message": {
+    en: "Hi! I'd like to ask about the Bosphorus Night cruise.",
+    tr: "Merhaba! Bosphorus Night turu hakkında bilgi almak istiyorum.",
+    de: "Hallo! Ich möchte mich über die Bosphorus Night Kreuzfahrt informieren.",
+    es: "¡Hola! Me gustaría preguntar sobre el crucero Bosphorus Night.",
+    ru: "Здравствуйте! Хотел бы узнать о круизе Bosphorus Night.",
+    ar: "مرحبا! أود أن أستفسر عن رحلة Bosphorus Night.",
+    fa: "سلام! می‌خواهم درباره تور Bosphorus Night اطلاعات بگیرم.",
+    fr: "Bonjour ! Je souhaiterais des informations sur la croisière Bosphorus Night.",
+    it: "Salve! Vorrei avere informazioni sulla crociera Bosphorus Night.",
+    zh: "您好!我想咨询 Bosphorus Night 游船。",
+    id: "Halo! Saya ingin bertanya tentang Bosphorus Night cruise.",
+    ms: "Hai! Saya ingin bertanya tentang Bosphorus Night cruise.",
+    pl: "Cześć! Chciałbym zapytać o rejs Bosphorus Night.",
+    bg: "Здравейте! Бих искал да попитам за круиза Bosphorus Night.",
+    ro: "Bună! Aș dori să întreb despre croaziera Bosphorus Night."
   },
   "wizard.enterAddress": {
     en: "Please enter your pickup address", tr: "Lütfen alım adresinizi girin", de: "Bitte geben Sie Ihre Abholadresse ein", es: "Por favor ingrese su dirección de recogida",
@@ -3269,13 +3313,13 @@ const T = {
     fa: "تا راننده ما به‌راحتی شما را پیدا کند. اگر هنوز نمی‌دانید، می‌توانید خالی بگذارید — راننده در لابی سؤال خواهد کرد.", fr: "Pour que notre chauffeur vous trouve facilement. Si vous ne le savez pas encore, laissez vide — le chauffeur demandera à la réception.", it: "Così il nostro autista può trovarLa facilmente. Se non lo conosce ancora, può lasciarlo vuoto — l'autista chiederà alla reception.", zh: "便于司机顺利找到您。若尚不知晓,可留空——司机将在大堂询问。", id: "Agar sopir kami dapat menemukan Anda dengan mudah. Jika Anda belum tahu, Anda dapat mengosongkannya — sopir akan menanyakan di lobi.", ms: "Supaya pemandu kami mudah mencari anda. Jika anda belum tahu, anda boleh biarkan kosong — pemandu akan bertanya di lobi.", pl: "Aby nasz kierowca mógł Państwa łatwo znaleźć. Jeśli jeszcze Państwo nie wiedzą, można zostawić puste — kierowca zapyta w recepcji.", bg: "За да може шофьорът ни да Ви намери лесно. Ако все още не знаете, може да оставите полето празно — шофьорът ще попита на рецепцията.", ro: "Pentru ca șoferul nostru să vă găsească ușor. Dacă nu știți încă, puteți lăsa gol — șoferul va întreba la recepție."
   },
   "wizard.contactPref": {
-    en: "Preferred Contact",
-    tr: "İletişim Tercihi",
-    de: "Bevorzugter Kontakt",
-    es: "Contacto preferido",
-    ru: "Предпочтительный контакт",
-    ar: "وسيلة التواصل المفضلة",
-    fa: "روش تماس ترجیحی", fr: "Contact préféré", it: "Contatto preferito", zh: "首选联系方式", id: "Kontak Pilihan", ms: "Hubungan Pilihan", pl: "Preferowany kontakt", bg: "Предпочитан контакт", ro: "Contact Preferat"
+    en: "How should we reach you?",
+    tr: "Sizinle nereden iletişime geçelim?",
+    de: "Wie sollen wir Sie erreichen?",
+    es: "¿Cómo le contactamos?",
+    ru: "Как с вами связаться?",
+    ar: "كيف نتواصل معك؟",
+    fa: "چگونه با شما تماس بگیریم؟", fr: "Comment vous joindre ?", it: "Come possiamo contattarLa?", zh: "通过哪个渠道联系您?", id: "Bagaimana kami menghubungi Anda?", ms: "Bagaimana kami hubungi anda?", pl: "Jak mamy się skontaktować?", bg: "Как да се свържем с Вас?", ro: "Cum vă contactăm?"
   },
   "wizard.contactWarning": {
     en: "Please fill in your name and phone number",

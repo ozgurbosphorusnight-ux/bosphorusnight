@@ -3156,6 +3156,30 @@
     </button>
   </div>
 
+  <!-- ========== FLOATING WHATSAPP PILL (avatar dışa taşan, ince pill) ========== -->
+  <a id="floatingWhatsapp"
+     href="https://wa.me/905322442922?text=Hi!%20I'd%20like%20to%20ask%20about%20the%20Bosphorus%20Night%20cruise."
+     target="_blank"
+     rel="noopener"
+     onclick="if(window.bnTrack){window.bnTrack('Lead',{value:0,currency:'EUR',contact_method:'whatsapp',content_name:'floating_button',language:(window.currentLang||'en')});}"
+     aria-label="Chat on WhatsApp"
+     class="group fixed left-8 bottom-20 lg:bottom-6 z-[54] inline-flex items-center pl-11 pr-4 py-1.5 rounded-full border border-[#25D366]/60 bg-[#0a0f1e]/70 backdrop-blur-md hover:border-[#25D366] hover:bg-[#0a0f1e]/90 transition-all shadow-lg shadow-black/20">
+    <!-- WhatsApp resmi logo (solid yeşil bubble + tail + beyaz phone) — pill'in üst-alt + solundan dışa taşan -->
+    <svg class="absolute -left-1 top-1/2 -translate-y-1/2 w-10 h-10 drop-shadow-md" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <!-- Solid yeşil speech bubble + tail -->
+      <path fill="#25D366" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/>
+      <!-- Beyaz phone receiver (üstüne overlay) -->
+      <path fill="#FFFFFF" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <!-- Metin -->
+    <span class="text-white text-xs font-semibold whitespace-nowrap" data-i18n="floatingWa.label">Chat on WhatsApp now</span>
+    <!-- "Live" yeşil nokta (yanıp sönen) -->
+    <span class="relative flex w-2 h-2 flex-shrink-0 ml-2">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span>
+    </span>
+  </a>
+
   <!-- ========== VIDEO LIGHTBOX (YouTube popup) ========== -->
   <div id="videoLightbox" class="fixed inset-0 z-[70] hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4" onclick="if(event.target.id==='videoLightbox')closeVideoLightbox()">
     <div class="relative w-full max-w-3xl">
@@ -3420,23 +3444,22 @@
 
         <!-- Contact Preference -->
         <div class="mt-6 mb-4">
-          <label class="text-white/80 text-xs font-semibold mb-3 block" data-i18n="wizard.contactPref">Preferred Contact</label>
-          <div class="flex justify-around mb-2">
-            <button id="wizContactWhatsapp" onclick="wizSelectContact('whatsapp')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-              <span class="text-[10px] font-medium">WhatsApp</span>
+          <label class="text-white text-sm font-semibold mb-3 block" data-i18n="wizard.contactPref">How should we reach you?</label>
+          <div class="grid grid-cols-2 gap-3 mb-2">
+            <button id="wizContactWhatsapp" type="button" onclick="wizSelectContact('whatsapp')" class="wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#25D366]/40 bg-[#25D366]/5 hover:bg-[#25D366]/15 hover:border-[#25D366]/70 transition-all min-h-[96px]">
+              <svg class="w-8 h-8 text-[#25D366]" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.61.609l4.458-1.495A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.24 0-4.326-.728-6.012-1.96l-.42-.312-2.647.887.887-2.647-.312-.42A9.935 9.935 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              <span class="text-white text-sm font-bold">WhatsApp</span>
+              <span class="text-white/60 text-[10px] font-medium" data-i18n="wizard.contactWhatsappHint">Fastest reply</span>
+              <svg class="wiz-contact-check absolute top-2 right-2 w-4 h-4 text-white hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             </button>
-            <button id="wizContactTelegram" onclick="wizSelectContact('telegram')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
-              <span class="text-[10px] font-medium">Telegram</span>
-            </button>
-            <button id="wizContactWechat" onclick="wizSelectContact('wechat')" class="wiz-contact-btn flex flex-col items-center gap-1 transition-all text-white/25 hover:text-white/50">
-              <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18z"/></svg>
-              <span class="text-[10px] font-medium">WeChat</span>
+            <button id="wizContactTelegram" type="button" onclick="wizSelectContact('telegram')" class="wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#26A5E4]/40 bg-[#26A5E4]/5 hover:bg-[#26A5E4]/15 hover:border-[#26A5E4]/70 transition-all min-h-[96px]">
+              <svg class="w-8 h-8 text-[#26A5E4]" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              <span class="text-white text-sm font-bold">Telegram</span>
+              <span class="text-white/60 text-[10px] font-medium" data-i18n="wizard.contactTelegramHint">Alternative</span>
+              <svg class="wiz-contact-check absolute top-2 right-2 w-4 h-4 text-white hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             </button>
           </div>
-          <p class="text-[#c9a84c]/40 text-[10px] text-center" data-i18n="wizard.contactNote">We will reach you through this channel</p>
-          <p id="wizContactMethodWarning" class="text-red-400 text-[10px] font-semibold mt-2 hidden text-center" data-i18n="wizard.selectContact">Please select a contact method</p>
+          <p id="wizContactMethodWarning" class="text-red-400 text-xs font-semibold mt-2 hidden text-center" data-i18n="wizard.selectContact">Please select a contact method</p>
         </div>
       </div><!-- /bookStep3 -->
 

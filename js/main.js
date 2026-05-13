@@ -123,6 +123,13 @@ function setLanguage(lang) {
   if (document.getElementById('bookWhatsApp')) {
     calculatePrice();
   }
+
+  // Update floating WhatsApp pre-filled message for new language
+  const floatingWa = document.getElementById('floatingWhatsapp');
+  if (floatingWa && T['floatingWa.message']) {
+    const msg = T['floatingWa.message'][lang] || T['floatingWa.message'].en;
+    floatingWa.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+  }
 }
 
 function updateBoatName() {
@@ -2605,10 +2612,41 @@ function wizToggle(type, val) {
 
 function wizSelectContact(channel) {
   wizState.contact = channel;
-  const colors = { whatsapp: 'text-[#25D366]', telegram: 'text-[#26A5E4]', wechat: 'text-[#07C160]' };
-  ['whatsapp', 'telegram', 'wechat'].forEach(c => {
+  const themes = {
+    whatsapp: {
+      defaultCls: 'wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#25D366]/40 bg-[#25D366]/5 hover:bg-[#25D366]/15 hover:border-[#25D366]/70 transition-all min-h-[96px]',
+      selectedCls: 'wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#25D366] bg-[#25D366] hover:bg-[#25D366] hover:border-[#25D366] transition-all min-h-[96px] shadow-lg shadow-[#25D366]/30',
+      iconSelectedColor: 'text-white',
+      iconDefaultColor: 'text-[#25D366]',
+    },
+    telegram: {
+      defaultCls: 'wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#26A5E4]/40 bg-[#26A5E4]/5 hover:bg-[#26A5E4]/15 hover:border-[#26A5E4]/70 transition-all min-h-[96px]',
+      selectedCls: 'wiz-contact-card relative flex flex-col items-center justify-center gap-1.5 py-4 px-3 rounded-xl border-2 border-[#26A5E4] bg-[#26A5E4] hover:bg-[#26A5E4] hover:border-[#26A5E4] transition-all min-h-[96px] shadow-lg shadow-[#26A5E4]/30',
+      iconSelectedColor: 'text-white',
+      iconDefaultColor: 'text-[#26A5E4]',
+    },
+  };
+  ['whatsapp', 'telegram'].forEach(c => {
     const btn = document.getElementById('wizContact' + c.charAt(0).toUpperCase() + c.slice(1));
-    if (btn) btn.className = `wiz-contact-btn flex flex-col items-center gap-1 transition-all ${c === channel ? colors[c] : 'text-white/25 hover:text-white/50'}`;
+    if (!btn) return;
+    const theme = themes[c];
+    const isSelected = c === channel;
+    btn.className = isSelected ? theme.selectedCls : theme.defaultCls;
+    // Icon color swap (selected → beyaz, default → brand)
+    const icon = btn.querySelector('svg.w-8');
+    if (icon) {
+      icon.classList.remove('text-white', theme.iconDefaultColor);
+      icon.classList.add(isSelected ? theme.iconSelectedColor : theme.iconDefaultColor);
+    }
+    // Hint metni rengi swap (selected → white/90, default → white/60)
+    const hint = btn.querySelector('[data-i18n$="Hint"]');
+    if (hint) {
+      hint.classList.remove('text-white/60', 'text-white/90');
+      hint.classList.add(isSelected ? 'text-white/90' : 'text-white/60');
+    }
+    // Checkmark göster/gizle
+    const check = btn.querySelector('.wiz-contact-check');
+    if (check) check.classList.toggle('hidden', !isSelected);
   });
   const warn = document.getElementById('wizContactMethodWarning');
   if (warn) warn.classList.add('hidden');
@@ -3161,7 +3199,7 @@ function wizBuildSummary() {
     priceLines.innerHTML = html;
   }
 
-  // Build contact link (WhatsApp / Telegram / WeChat)
+  // Build contact link (WhatsApp / Telegram)
   const total = wizCalcPrice();
   const adultW = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' }[currentLang] || 'Adult';
   const childW = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' }[currentLang] || 'Child';
@@ -3288,9 +3326,6 @@ function wizBuildSummary() {
           ctaLink.removeAttribute('data-busy');
         }
       };
-    } else if (wizState.contact === 'wechat') {
-      ctaLink.href = '#';
-      ctaLink.onclick = null;
     } else {
       ctaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
       ctaLink.onclick = function() {
