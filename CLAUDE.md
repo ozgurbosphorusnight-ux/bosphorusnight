@@ -164,7 +164,8 @@ Aynı gün rezervasyon kabul saatleri:
 | **P6** | **Panel Sprint 6 — Rezervasyonlar sayfası yenileme (paralel)** | 🟡 AKTİF — 2026-04-23 |
 | **P7** | **Panel Sprint 7 — Konuşmalar sayfası yenileme (paralel)** | 🟡 AKTİF — 2026-04-23 |
 | **L1** | **Dil Genişlemesi — Ukraynaca ekle + hi/ur/ja/ko/uk için tam çeviri (site UI + AI prompt) + dropdown sıralama (müşteri-hacim bazlı)** | ⏳ 2026-05-14 not edildi |
-| **P8** | **Panel Sprint 8 — Tekne Cari/Bakiye sayfası: alacak/alındı + manuel düzeltme + otomatik hesap (rez × fiyat) + tahsil edilen/bekleyen filtre + gün gün + PDF** | ⏳ 2026-05-14 not edildi |
+| **P8** | **Panel Sprint 8 — Tekne Cari/Bakiye + Mutabakat sistemi (Settlements)** | ✅ BİTTİ 2026-05-14 (Migration 027+028 + 6 API + 2 sayfa + Mutabakat dialog + PDF) |
+| **P9** | **WhatsApp Otomatik Gönderim (Mutabakat + Tekne Bildirim)** — boats.owner_phone + Twilio template + panel "Gönder" butonu otomatik tetik | ⏳ ertelendi 2026-05-14 (manuel PDF gönderim şu an yeterli) |
 
 **Kural:** Bir aşama bitmeden sonrakine geçilmez. Her aşama sonunda canlı test.
 Panel sprint'leri (P-prefix) AI aşamalarına paralel ilerleyebilir; Aşama 4 WhatsApp kurulumu beklerken panel tarafında görsel + CRUD işleri yapılıyor.
