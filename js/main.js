@@ -132,6 +132,10 @@ function setLanguage(lang) {
   }
 }
 
+// Expose for lang-redirect.js fallback (langs without pre-built static pages
+// fall through to JS-based language switching via T translations).
+window.setLanguage = setLanguage;
+
 function updateBoatName() {
   const boatNameEl = document.getElementById('selectedBoatName');
   if (!boatNameEl || !selectedBoat) return;

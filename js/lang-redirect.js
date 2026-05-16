@@ -18,6 +18,8 @@
     return;
   }
 
+  // Langs with pre-built static pages at /xx/ (build-pages.js output).
+  // Other langs (uk, hi, ur, ja, ko) use JS-based switching via window.setLanguage.
   var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro'];
   var STORAGE_KEY = 'bn_lang';
 
@@ -96,7 +98,14 @@
 
   // Exposed for dropdown handler.
   window.navigateToLang = function (targetLang) {
-    if (SUPPORTED.indexOf(targetLang) === -1) return;
+    // Langs without pre-built static pages: fall through to JS-based switching.
+    if (SUPPORTED.indexOf(targetLang) === -1) {
+      getLsSet(targetLang);
+      if (typeof window.setLanguage === 'function') {
+        window.setLanguage(targetLang);
+      }
+      return;
+    }
     getLsSet(targetLang);
     var newPath = rewritePathForLang(window.location.pathname, targetLang);
     window.location.href = newPath + window.location.search + window.location.hash;
