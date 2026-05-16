@@ -1351,3 +1351,13 @@ html[dir="rtl"] .package-card .absolute.top-4.right-4:not([data-discount-badge])
 html[dir="rtl"] .rtl-flip {
   transform: scaleX(-1);
 }
+
+/* Wizard X (close) button: desktop sidebar uses lg:absolute lg:right-3.
+ * In RTL the booking title flows to physical right, overlapping the X.
+ * Move X to physical left so title gets its full top width. */
+@media (min-width: 1024px) {
+  html[dir="rtl"] #mobileBookClose {
+    right: auto;
+    left: 0.75rem;
+  }
+}
