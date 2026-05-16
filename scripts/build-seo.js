@@ -35,8 +35,8 @@ const SLUGS = [
   'bosphorus-night-tour'
 ];
 
-// Blog — EN root + 10 dil. Diğer 9 dil sonraki oturumlarda eklenecek.
-const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro'];
+// Blog — EN root + 14 dil. PROMPT 4'te fa/fr/it/zh eklendi (15 dil toplam).
+const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh'];
 
 const BLOG_SLUGS = [
   '', // hub (trailing slash)
