@@ -35,8 +35,8 @@ const SLUGS = [
   'bosphorus-night-tour'
 ];
 
-// Blog — EN root + 5 dil (hi/ja/ko/ur/uk). Diğer 14 dil sonraki oturumlarda eklenecek.
-const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk'];
+// Blog — EN root + 10 dil. Diğer 9 dil sonraki oturumlarda eklenecek.
+const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro'];
 
 const BLOG_SLUGS = [
   '', // hub (trailing slash)
