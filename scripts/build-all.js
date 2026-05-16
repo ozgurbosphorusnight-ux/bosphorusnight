@@ -69,8 +69,8 @@ for (const lang of CITY_GUIDE_LANGS) {
 }
 
 // 3c. Blog multi-dil — sadece çevirisi olan diller (src/blog-i18n/{lang}/* → dist/{lang}/blog/)
-// İlk parti: hi, ja, ko, ur, uk (Sprint L1 dilleri). Diğer 14 dil sonraki oturumlarda.
-const BLOG_LANGS = ['hi', 'ja', 'ko', 'ur', 'uk'];
+// Sprint L1: hi, ja, ko, ur, uk. PROMPT 5: id, ms, pl, bg, ro eklendi (5 dil × 6 sayfa = 30 dosya).
+const BLOG_LANGS = ['hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro'];
 console.log('\n📝 Blog multi-dil...');
 for (const lang of BLOG_LANGS) {
   const src = path.join(ROOT, 'src', 'blog-i18n', lang);
