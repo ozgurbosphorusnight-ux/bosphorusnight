@@ -2139,6 +2139,16 @@ function wizScrollToElement(selector) {
   } else {
     el.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
+  // Shake the target so the eye lands on it. If the element is a hidden input
+  // (e.g. wizCountryCode), shake its visible parent instead.
+  let shakeTarget = el;
+  if (el.type === 'hidden' || (el.offsetWidth === 0 && el.offsetHeight === 0)) {
+    shakeTarget = el.parentElement || el;
+  }
+  shakeTarget.classList.remove('wiz-shake');
+  void shakeTarget.offsetWidth; // force reflow so re-adding triggers animation
+  shakeTarget.classList.add('wiz-shake');
+  setTimeout(() => shakeTarget.classList.remove('wiz-shake'), 500);
 }
 
 function wizShowNextHint(text) {
