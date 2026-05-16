@@ -3099,15 +3099,15 @@ function wizBuildSummary() {
   const pkg = wizState.pkg;
 
   const pkgLabels = {
-    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية' },
-    vip: { en: 'VIP Dinner Cruise', tr: 'VIP Akşam Turu', de: 'VIP Dinner-Kreuzfahrt', es: 'Crucero Cena VIP', ru: 'VIP ужин-круиз', ar: 'رحلة عشاء VIP' }
+    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية', fa: 'تور دینر استاندارد', fr: 'Croisière Dîner Standard', it: 'Crociera Cena Standard', zh: '标准晚餐游船', id: 'Pelayaran Makan Malam Standar', ms: 'Pelayaran Makan Malam Standard', pl: 'Standardowy rejs z kolacją', bg: 'Стандартен круиз с вечеря', ro: 'Croazieră cu Cină Standard', uk: 'Стандартний круїз з вечерею', hi: 'स्टैंडर्ड डिनर क्रूज़', ur: 'اسٹینڈرڈ ڈنر کروز', ja: 'スタンダード ディナークルーズ', ko: '스탠다드 디너 크루즈' },
+    vip: { en: 'VIP Dinner Cruise', tr: 'VIP Akşam Turu', de: 'VIP Dinner-Kreuzfahrt', es: 'Crucero Cena VIP', ru: 'VIP ужин-круиз', ar: 'رحلة عشاء VIP', fa: 'تور دینر VIP', fr: 'Croisière Dîner VIP', it: 'Crociera Cena VIP', zh: 'VIP晚餐游船', id: 'Pelayaran Makan Malam VIP', ms: 'Pelayaran Makan Malam VIP', pl: 'Rejs VIP z kolacją', bg: 'VIP круиз с вечеря', ro: 'Croazieră VIP cu Cină', uk: 'VIP круїз з вечерею', hi: 'VIP डिनर क्रूज़', ur: 'VIP ڈنر کروز', ja: 'VIP ディナークルーズ', ko: 'VIP 디너 크루즈' }
   };
   const pkgLabel = (pkgLabels[pkg] && pkgLabels[pkg][currentLang]) || pkgLabels[pkg].en;
 
   const drinkNames = {
-    soft: { en: 'Soft Drinks', tr: 'Alkolsüz İçecek', de: 'Alkoholfreie Getränke', es: 'Bebidas Sin Alcohol', ru: 'Безалкогольные напитки', ar: 'مشروبات غير كحولية' },
-    glass2: { en: 'Limited Alcohol (2 Glasses)', tr: 'Sınırlı Alkol (2 Kadeh)', de: 'Begrenzter Alkohol (2 Gläser)', es: 'Alcohol Limitado (2 Copas)', ru: 'Ограниченный алкоголь (2 бокала)', ar: 'كحول محدود (كأسان)' },
-    unlimited: { en: 'Unlimited Alcohol', tr: 'Sınırsız Alkol', de: 'Unbegrenzter Alkohol', es: 'Alcohol Ilimitado', ru: 'Безлимитный алкоголь', ar: 'كحول غير محدود' }
+    soft: { en: 'Soft Drinks', tr: 'Alkolsüz İçecek', de: 'Alkoholfreie Getränke', es: 'Bebidas Sin Alcohol', ru: 'Безалкогольные напитки', ar: 'مشروبات غير كحولية', fa: 'نوشیدنی غیرالکلی', fr: 'Boissons non-alcoolisées', it: 'Bevande analcoliche', zh: '无酒精饮料', id: 'Minuman ringan', ms: 'Minuman ringan', pl: 'Napoje bezalkoholowe', bg: 'Безалкохолни напитки', ro: 'Băuturi non-alcoolice', uk: 'Безалкогольні напої', hi: 'सॉफ्ट ड्रिंक्स', ur: 'سافٹ ڈرنکس', ja: 'ソフトドリンク', ko: '무알콜 음료' },
+    glass2: { en: 'Limited Alcohol (2 Glasses)', tr: 'Sınırlı Alkol (2 Kadeh)', de: 'Begrenzter Alkohol (2 Gläser)', es: 'Alcohol Limitado (2 Copas)', ru: 'Ограниченный алкоголь (2 бокала)', ar: 'كحول محدود (كأسان)', fa: 'الکل محدود (۲ گیلاس)', fr: 'Alcool limité (2 verres)', it: 'Alcool limitato (2 bicchieri)', zh: '限量酒精 (2杯)', id: 'Alkohol terbatas (2 gelas)', ms: 'Alkohol terhad (2 gelas)', pl: 'Ograniczony alkohol (2 kieliszki)', bg: 'Ограничен алкохол (2 чаши)', ro: 'Alcool limitat (2 pahare)', uk: 'Лімітований алкоголь (2 келихи)', hi: 'सीमित शराब (2 गिलास)', ur: 'محدود الکحل (2 گلاس)', ja: '制限付きアルコール (2杯)', ko: '제한 알코올 (2잔)' },
+    unlimited: { en: 'Unlimited Alcohol', tr: 'Sınırsız Alkol', de: 'Unbegrenzter Alkohol', es: 'Alcohol Ilimitado', ru: 'Безлимитный алкоголь', ar: 'كحول غير محدود', fa: 'الکل نامحدود', fr: 'Alcool illimité', it: 'Alcool illimitato', zh: '无限酒精', id: 'Alkohol tanpa batas', ms: 'Alkohol tanpa had', pl: 'Alkohol bez ograniczeń', bg: 'Неограничен алкохол', ro: 'Alcool nelimitat', uk: 'Безлімітний алкоголь', hi: 'असीमित शराब', ur: 'لامحدود الکحل', ja: '無制限アルコール', ko: '무제한 알코올' }
   };
   const dc = wizState.drinkCounts;
   const drinkParts = [];
@@ -3120,7 +3120,7 @@ function wizBuildSummary() {
   let dateStr = date;
   try {
     const d = new Date(date + 'T00:00:00');
-    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO' };
+    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO', uk: 'uk-UA', hi: 'hi-IN', ur: 'ur-PK', ja: 'ja-JP', ko: 'ko-KR' };
     dateStr = d.toLocaleDateString(locales[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   } catch(e) {}
 
@@ -3135,13 +3135,13 @@ function wizBuildSummary() {
   if (ticketDate) {
     try {
       const d = new Date(date + 'T00:00:00');
-      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO' };
+      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO', uk: 'uk-UA', hi: 'hi-IN', ur: 'ur-PK', ja: 'ja-JP', ko: 'ko-KR' };
       ticketDate.textContent = d.toLocaleDateString(locales[currentLang] || 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
     } catch(e) { ticketDate.textContent = date; }
   }
   if (ticketGuests) {
-    const adultWords = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ', fa: 'بزرگسال', fr: 'Adulte', it: 'Adulto', zh: '成人', id: 'Dewasa', ms: 'Dewasa', pl: 'Dorosły', bg: 'Възрастен', ro: 'Adult' };
-    const childWords = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل', fa: 'کودک', fr: 'Enfant', it: 'Bambino', zh: '儿童', id: 'Anak', ms: 'Kanak-kanak', pl: 'Dziecko', bg: 'Дете', ro: 'Copil' };
+    const adultWords = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ', fa: 'بزرگسال', fr: 'Adulte', it: 'Adulto', zh: '成人', id: 'Dewasa', ms: 'Dewasa', pl: 'Dorosły', bg: 'Възрастен', ro: 'Adult', uk: 'Дорослий', hi: 'वयस्क', ur: 'بالغ', ja: '大人', ko: '성인' };
+    const childWords = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل', fa: 'کودک', fr: 'Enfant', it: 'Bambino', zh: '儿童', id: 'Anak', ms: 'Kanak-kanak', pl: 'Dziecko', bg: 'Дете', ro: 'Copil', uk: 'Дитина', hi: 'बच्चा', ur: 'بچہ', ja: '子供', ko: '어린이' };
     const adultWord = adultWords[currentLang] || 'Adult';
     const childWord = childWords[currentLang] || 'Child';
     let guestText = `${adults} ${adultWord}`;
@@ -3206,7 +3206,7 @@ function wizBuildSummary() {
     // Zone extra (kaldırıldı 2026-04-19 — transfer tek fiyat €10/kişi)
 
     // Children
-    const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال' }[currentLang] || 'Children';
+    const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال', fa: 'کودکان', fr: 'Enfants', it: 'Bambini', zh: '儿童', id: 'Anak-anak', ms: 'Kanak-kanak', pl: 'Dzieci', bg: 'Деца', ro: 'Copii', uk: 'Діти', hi: 'बच्चे', ur: 'بچے', ja: 'お子様', ko: '어린이들' }[currentLang] || 'Children';
     const childAgeInputs = document.getElementById('wizChildAgeInputs');
     if (children > 0 && childAgeInputs) {
       let childTotal = 0;
@@ -3231,8 +3231,8 @@ function wizBuildSummary() {
 
   // Build contact link (WhatsApp / Telegram)
   const total = wizCalcPrice();
-  const adultW = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ' }[currentLang] || 'Adult';
-  const childW = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل' }[currentLang] || 'Child';
+  const adultW = { en: 'Adult', tr: 'Yetişkin', de: 'Erwachsene', es: 'Adulto', ru: 'Взрослый', ar: 'بالغ', fa: 'بزرگسال', fr: 'Adulte', it: 'Adulto', zh: '成人', id: 'Dewasa', ms: 'Dewasa', pl: 'Dorosły', bg: 'Възрастен', ro: 'Adult', uk: 'Дорослий', hi: 'वयस्क', ur: 'بالغ', ja: '大人', ko: '성인' }[currentLang] || 'Adult';
+  const childW = { en: 'Child', tr: 'Çocuk', de: 'Kind', es: 'Niño', ru: 'Ребёнок', ar: 'طفل', fa: 'کودک', fr: 'Enfant', it: 'Bambino', zh: '儿童', id: 'Anak', ms: 'Kanak-kanak', pl: 'Dziecko', bg: 'Дете', ro: 'Copil', uk: 'Дитина', hi: 'बच्चा', ur: 'بچہ', ja: '子供', ko: '어린이' }[currentLang] || 'Child';
 
   // Read child age selections from wizard dropdowns (2026-04-19 eklendi — AI için şeffaflık)
   const childAges = [];
@@ -3244,13 +3244,13 @@ function wizBuildSummary() {
   }
   const agePart = childAges.length ? ` (${childAges.join(', ')})` : '';
   const guestStr = `${adults} ${adultW}${children > 0 ? ', ' + children + ' ' + childW + agePart : ''}`;
-  const yesNo = { en: ['Yes','No'], tr: ['Evet','Hayır'], de: ['Ja','Nein'], es: ['Sí','No'], ru: ['Да','Нет'], ar: ['نعم','لا'] };
+  const yesNo = { en: ['Yes','No'], tr: ['Evet','Hayır'], de: ['Ja','Nein'], es: ['Sí','No'], ru: ['Да','Нет'], ar: ['نعم','لا'], fa: ['بله','خیر'], fr: ['Oui','Non'], it: ['Sì','No'], zh: ['是','否'], id: ['Ya','Tidak'], ms: ['Ya','Tidak'], pl: ['Tak','Nie'], bg: ['Да','Не'], ro: ['Da','Nu'], uk: ['Так','Ні'], hi: ['हाँ','नहीं'], ur: ['ہاں','نہیں'], ja: ['はい','いいえ'], ko: ['네','아니요'] };
   const yn = yesNo[currentLang] || yesNo.en;
   const transferStr = wizState.transfer ? yn[0] : yn[1];
   const romanticStr = wizState.romantic ? yn[0] : yn[1];
   const mapsLink = (wizState.transferLat && wizState.transferLng) ? `https://maps.google.com/maps?q=${wizState.transferLat},${wizState.transferLng}` : '';
   const roomNumberInput = (document.getElementById('wizRoomNumber')?.value || '').trim();
-  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة', fa: 'اتاق', fr: 'Chambre', it: 'Stanza', zh: '房间', id: 'Kamar', ms: 'Bilik', pl: 'Pokój', bg: 'Стая', ro: 'Cameră' }[currentLang] || 'Room';
+  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة', fa: 'اتاق', fr: 'Chambre', it: 'Stanza', zh: '房间', id: 'Kamar', ms: 'Bilik', pl: 'Pokój', bg: 'Стая', ro: 'Cameră', uk: 'Кімната', hi: 'कमरा', ur: 'کمرہ', ja: '部屋', ko: '객실' }[currentLang] || 'Room';
   const roomLine = wizState.transfer && roomNumberInput ? `\n🚪 ${roomLabel}: ${roomNumberInput}` : '';
   const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${roomLine}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
 
@@ -3269,7 +3269,12 @@ function wizBuildSummary() {
     ms: `Hai, saya ingin menyemak ketersediaan:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Pemindahan hotel: ${transferStr}${addressLine}\n💐 Meja romantik: ${romanticStr}\n💰 Jumlah: €${total}\nSila sahkan. Terima kasih!`,
     pl: `Cześć, chciałbym sprawdzić dostępność:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer z hotelu: ${transferStr}${addressLine}\n💐 Stolik romantyczny: ${romanticStr}\n💰 Razem: €${total}\nProszę o potwierdzenie. Dziękuję!`,
     bg: `Здравейте, искам да проверя наличността:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Хотелски трансфер: ${transferStr}${addressLine}\n💐 Романтична маса: ${romanticStr}\n💰 Общо: €${total}\nМоля, потвърдете. Благодаря!`,
-    ro: `Bună, aș dori să verific disponibilitatea:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer hotel: ${transferStr}${addressLine}\n💐 Masă romantică: ${romanticStr}\n💰 Total: €${total}\nVă rog să confirmați. Mulțumesc!`
+    ro: `Bună, aș dori să verific disponibilitatea:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Transfer hotel: ${transferStr}${addressLine}\n💐 Masă romantică: ${romanticStr}\n💰 Total: €${total}\nVă rog să confirmați. Mulțumesc!`,
+    uk: `Вітаємо, я хотів(-ла) б перевірити доступність:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Трансфер з готелю: ${transferStr}${addressLine}\n💐 Романтичний столик: ${romanticStr}\n💰 Загалом: €${total}\nБудь ласка, підтвердьте. Дякую!`,
+    hi: `नमस्ते, मैं उपलब्धता की जाँच करना चाहता हूँ:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 होटल ट्रांसफर: ${transferStr}${addressLine}\n💐 रोमांटिक टेबल: ${romanticStr}\n💰 कुल: €${total}\nकृपया पुष्टि करें। धन्यवाद!`,
+    ur: `السلام علیکم، میں دستیابی چیک کرنا چاہتا ہوں:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 ہوٹل ٹرانسفر: ${transferStr}${addressLine}\n💐 رومانوی میز: ${romanticStr}\n💰 کل: €${total}\nبراہِ کرم تصدیق فرمائیں۔ شکریہ!`,
+    ja: `こんにちは、空き状況を確認したいです：\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 ホテル送迎: ${transferStr}${addressLine}\n💐 ロマンチックテーブル: ${romanticStr}\n💰 合計: €${total}\nご確認をお願いいたします。ありがとうございます！`,
+    ko: `안녕하세요, 예약 가능 여부를 확인하고 싶습니다:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 호텔 픽업: ${transferStr}${addressLine}\n💐 로맨틱 테이블: ${romanticStr}\n💰 총액: €${total}\n확인 부탁드립니다. 감사합니다!`
   };
   const msg = msgTemplates[currentLang] || msgTemplates.en;
 
