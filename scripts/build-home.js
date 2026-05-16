@@ -472,6 +472,17 @@ function buildForLang(lang, template) {
     `<html lang="${lang}" data-lang="${lang}" dir="${langMeta.dir}">`
   );
 
+  // Lang switcher button: bake current flag + label into static HTML.
+  // Without this, /uk/ briefly shows gb.png+EN on load until JS runs (FOUC).
+  html = html.replace(
+    /<img\s+id="langFlag"\s+src="https:\/\/flagcdn\.com\/w20\/gb\.png"[^>]*>/,
+    `<img id="langFlag" src="https://flagcdn.com/w20/${langMeta.flag}.png" alt="${lang.toUpperCase()}" class="w-5 h-auto rounded-sm">`
+  );
+  html = html.replace(
+    /<span\s+id="langLabel">EN<\/span>/,
+    `<span id="langLabel">${lang.toUpperCase()}</span>`
+  );
+
   // Path rewrites (output depth: dist/{lang}/index.html → ../../)
   html = html.replace(/(src|srcset|href)="(js|css|assets|lang|blog)\//g, '$1="/$2/');
   html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");

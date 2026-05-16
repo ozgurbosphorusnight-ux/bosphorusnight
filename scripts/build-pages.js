@@ -24,26 +24,26 @@ const HARDCODED_EN = require(path.join(ROOT, 'content', 'ui-translations', '_har
 const HARDCODED_ALL = require(path.join(ROOT, 'content', 'ui-translations', '_hardcoded-all.json'));
 
 const LANGUAGES = {
-  en: { label: 'English', dir: 'ltr' },
-  tr: { label: 'Türkçe', dir: 'ltr' },
-  ar: { label: 'العربية', dir: 'rtl' },
-  de: { label: 'Deutsch', dir: 'ltr' },
-  fa: { label: 'فارسی', dir: 'rtl' },
-  ru: { label: 'Русский', dir: 'ltr' },
-  es: { label: 'Español', dir: 'ltr' },
-  fr: { label: 'Français', dir: 'ltr' },
-  it: { label: 'Italiano', dir: 'ltr' },
-  zh: { label: '中文', dir: 'ltr' },
-  id: { label: 'Indonesia', dir: 'ltr' },
-  ms: { label: 'Malaysia', dir: 'ltr' },
-  pl: { label: 'Polski', dir: 'ltr' },
-  bg: { label: 'Български', dir: 'ltr' },
-  ro: { label: 'Română', dir: 'ltr' },
-  uk: { label: 'Українська', dir: 'ltr' },
-  hi: { label: 'हिन्दी', dir: 'ltr' },
-  ur: { label: 'اردو', dir: 'rtl' },
-  ja: { label: '日本語', dir: 'ltr' },
-  ko: { label: '한국어', dir: 'ltr' }
+  en: { label: 'English', dir: 'ltr', flag: 'gb' },
+  tr: { label: 'Türkçe', dir: 'ltr', flag: 'tr' },
+  ar: { label: 'العربية', dir: 'rtl', flag: 'sa' },
+  de: { label: 'Deutsch', dir: 'ltr', flag: 'de' },
+  fa: { label: 'فارسی', dir: 'rtl', flag: 'ir' },
+  ru: { label: 'Русский', dir: 'ltr', flag: 'ru' },
+  es: { label: 'Español', dir: 'ltr', flag: 'es' },
+  fr: { label: 'Français', dir: 'ltr', flag: 'fr' },
+  it: { label: 'Italiano', dir: 'ltr', flag: 'it' },
+  zh: { label: '中文', dir: 'ltr', flag: 'cn' },
+  id: { label: 'Indonesia', dir: 'ltr', flag: 'id' },
+  ms: { label: 'Malaysia', dir: 'ltr', flag: 'my' },
+  pl: { label: 'Polski', dir: 'ltr', flag: 'pl' },
+  bg: { label: 'Български', dir: 'ltr', flag: 'bg' },
+  ro: { label: 'Română', dir: 'ltr', flag: 'ro' },
+  uk: { label: 'Українська', dir: 'ltr', flag: 'ua' },
+  hi: { label: 'हिन्दी', dir: 'ltr', flag: 'in' },
+  ur: { label: 'اردو', dir: 'rtl', flag: 'pk' },
+  ja: { label: '日本語', dir: 'ltr', flag: 'jp' },
+  ko: { label: '한국어', dir: 'ltr', flag: 'kr' }
 };
 
 const SLUGS = [
@@ -465,6 +465,17 @@ function buildHtml(slug, lang, template) {
   html = html.replace(
     /<html\s+lang="[^"]*"\s+data-lang="[^"]*">/,
     `<html lang="${lang}" data-lang="${lang}" dir="${langMeta.dir}">`
+  );
+
+  // Lang switcher button: bake current flag + label into static HTML.
+  // Without this, /uk/ briefly shows gb.png+EN on load until JS runs (FOUC).
+  html = html.replace(
+    /<img\s+id="langFlag"\s+src="https:\/\/flagcdn\.com\/w20\/gb\.png"[^>]*>/,
+    `<img id="langFlag" src="https://flagcdn.com/w20/${langMeta.flag}.png" alt="${lang.toUpperCase()}" class="w-5 h-auto rounded-sm">`
+  );
+  html = html.replace(
+    /<span\s+id="langLabel">EN<\/span>/,
+    `<span id="langLabel">${lang.toUpperCase()}</span>`
   );
 
   // Path rewrites: /dist/{lang}/*.html → ../../assets/, etc.

@@ -24,9 +24,6 @@
     { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/daytime-cruise", "destination": "/:lang/bosphorus-trip", "statusCode": 301 },
     { "source": "/:lang(tr|ru|de|es|ar|bg|ro|zh|fr|it|ms|id)/last-minute-tonight", "destination": "/:lang/last-minute-bosphorus", "statusCode": 301 },
 
-    { "source": "/:lang(ja|ko|ur|hi)/:slug*", "destination": "/:slug*", "statusCode": 301 },
-    { "source": "/:lang(ja|ko|ur|hi)", "destination": "/", "statusCode": 301 },
-
     { "source": "/cruises/:lang/:slug.html", "destination": "/:lang/:slug", "statusCode": 301 },
     { "source": "/cruises/:lang/:slug", "destination": "/:lang/:slug", "statusCode": 301 }
   ],
