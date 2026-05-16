@@ -11,7 +11,9 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.bosphorusnight.com';
 
-const LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro'];
+// Sprint L1: 5 yeni dil eklendi (uk/hi/ur/ja/ko). build-pages.js + build-home.js
+// bu diller için statik sayfa üretiyor; sitemap'ta listelenmesi gerek.
+const LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko'];
 
 const SLUGS = [
   'bosphorus-dinner-cruise',
