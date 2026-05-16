@@ -485,5 +485,7 @@
   "extra.alt.premiumTable": "Premium Table Setup",
   "extra.alt.romanticDining": "Romantic Dining on Bosphorus",
   "extra.alt.whirlingDervish": "Whirling Dervish Show",
-  "extra.alt.wineService": "Wine Service"
+  "extra.alt.wineService": "Wine Service",
+  "footer.cityGuide": "City Guide",
+  "wizard.defaultGuests": "2 Adults"
 }

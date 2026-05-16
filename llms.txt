@@ -88,17 +88,27 @@ Español (/es/), العربية (/ar/), Français (/fr/), Italiano (/it/),
 فارسی (/fa/), اردو (/ur/), हिन्दी (/hi/), 中文 (/zh/),
 日本語 (/ja/), 한국어 (/ko/), Bahasa Indonesia (/id/), Bahasa Melayu (/ms/).
 
-### Native-script search keywords
+### Native-script search keywords (all 19 languages)
 
 - Korean: 이스탄불 보스포러스 디너 크루즈 / 보스포러스 야간 투어 / 이스탄불 야경 크루즈
 - Japanese: イスタンブール ボスポラス海峡 ディナークルーズ / 夜のクルーズ
 - Hindi: इस्तांबुल बॉस्फोरस डिनर क्रूज़ / बॉस्फोरस नाइट टूर
 - Urdu: استنبول باسفورس ڈنر کروز / باسفورس نائٹ ٹور
 - Ukrainian: Стамбул круїз Босфором з вечерею / нічний тур Босфор
-- Arabic: رحلة عشاء البوسفور إسطنبول
-- Russian: ужин-круиз по Босфору Стамбул
-- Chinese: 伊斯坦布尔 博斯普鲁斯海峡 晚餐游船
-- Persian: تور شام بسفر استانبول
+- Arabic: رحلة عشاء البوسفور إسطنبول / جولة ليلية البوسفور
+- Russian: ужин-круиз по Босфору Стамбул / вечерний тур Босфор
+- Chinese: 伊斯坦布尔 博斯普鲁斯海峡 晚餐游船 / 博斯普鲁斯夜游
+- Persian: تور شام بسفر استانبول / گشت شبانه بسفر
+- Turkish: İstanbul Boğaz akşam yemekli tekne turu / Boğaz gece turu / Boğaz turu
+- German: Bosporus Dinner-Bootsfahrt Istanbul / Bosporus Nachttour / Bosporus Rundfahrt
+- Spanish: crucero con cena Bósforo Estambul / tour nocturno Bósforo / crucero Estambul
+- French: croisière dîner Bosphore Istanbul / tour nocturne Bosphore / croisière Istanbul
+- Italian: crociera cena Bosforo Istanbul / tour notturno Bosforo / crociera Istanbul
+- Polish: rejs z kolacją po Bosforze Stambuł / wieczorny rejs Bosfor
+- Bulgarian: круиз с вечеря по Босфора Истанбул / нощна обиколка Босфор
+- Romanian: croazieră cu cină pe Bosfor Istanbul / tur nocturn Bosfor
+- Indonesian: pelayaran makan malam Bosphorus Istanbul / tur malam Bosphorus
+- Malay: pelayaran makan malam Bosphorus Istanbul / tur malam Bosphorus
 
 ## Popular For
 

@@ -91,6 +91,8 @@ const BEST_PREFIXES = {
   ru: 'Лучший', ar: 'أفضل', fa: 'بهترین', fr: 'Meilleur',
   it: 'Migliore', zh: '最佳', pl: 'Najlepszy', bg: 'Най-добрият',
   ro: 'Cel mai bun', id: 'Terbaik', ms: 'Terbaik',
+  uk: 'Найкращий', hi: 'सर्वश्रेष्ठ', ur: 'بہترین',
+  ja: '最高の', ko: '최고의',
 };
 
 const BEST_SLUGS = new Set([
