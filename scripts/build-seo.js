@@ -35,8 +35,8 @@ const SLUGS = [
   'bosphorus-night-tour'
 ];
 
-// Blog — EN root + 14 dil. PROMPT 4'te fa/fr/it/zh eklendi (15 dil toplam).
-const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh'];
+// Blog — EN root + 19 dil. PROMPT 3'te tr/de/es/ru/ar eklendi (20 dil toplam).
+const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar'];
 
 const BLOG_SLUGS = [
   '', // hub (trailing slash)
