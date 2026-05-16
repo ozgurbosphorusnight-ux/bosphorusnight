@@ -351,7 +351,7 @@ const T = {
   "incl.cruise": {
     en: "Bosphorus Night Cruise", tr: "Boğaz Gece Turu", de: "Bosporus-Nachtfahrt",
     es: "Crucero Nocturno por el Bósforo", ru: "Ночной круиз по Босфору", ar: "رحلة بحرية ليلية",
-    fa: "تور شبانه بسفر", fr: "Croisière nocturne sur le Bosphore", it: "Crociera notturna sul Bosforo", zh: "博斯普鲁斯夜游", id: "Pelayaran Malam Bosphorus", ms: "Pelayaran Malam Bosphorus", pl: "Nocny rejs po Bosforze", bg: "Нощен круиз по Босфора", ro: "Croazieră Nocturnă pe Bosfor", uk: "Bosphorus Night Круїз", ja: "Bosphorus Nightクルーズ", ko: "Bosphorus Night 크루즈", hi: "Bosphorus Night Cruise", ur: "Bosphorus Night کروز"
+    fa: "تور شبانه بسفر", fr: "Croisière nocturne sur le Bosphore", it: "Crociera notturna sul Bosforo", zh: "博斯普鲁斯夜游", id: "Pelayaran Malam Bosphorus", ms: "Pelayaran Malam Bosphorus", pl: "Nocny rejs po Bosforze", bg: "Нощен круиз по Босфора", ro: "Croazieră Nocturnă pe Bosfor", uk: "Bosphorus Night Круїз", ja: "Bosphorus Nightクルーズ", ko: "Bosphorus Night 크루즈", hi: "Bosphorus रात्रि क्रूज़", ur: "Bosphorus Night کروز"
   },
   "incl.cruise.desc": {
     en: "3-hour cruise with iconic Istanbul views", tr: "İstanbul'un ikonik manzaralarıyla 3 saatlik tur",
@@ -2541,7 +2541,7 @@ const T = {
     es: "Crucero Diurno: Embarque 10:00 · Salida 10:30",
     ru: "Дневной круиз: Посадка 10:00 · Отправление 10:30",
     ar: "رحلة نهارية: الصعود 10:00 · المغادرة 10:30",
-    fa: "تور روزانه: سوار شدن ۱۰:۰۰ · حرکت ۱۰:۳۰", fr: "Croisière diurne : embarquement 10h00 · départ 10h30", it: "Crociera Diurna: Imbarco 10:00 · Partenza 10:30", zh: "白天游船:10:00登船 · 10:30启航", id: "Pelayaran Siang: Naik kapal 10:00 · Keberangkatan 10:30", ms: "Pelayaran Siang: Menaiki 10:00 · Bertolak 10:30", pl: "Dzienny rejs: wejście 10:00 · wypłynięcie 10:30", bg: "Дневен круиз: качване 10:00 · отплаване 10:30", ro: "Croazieră de Zi: Îmbarcare 10:00 · Plecare 10:30", uk: "Денний круїз: Посадка 10:00 &middot; Відправлення 10:30", ja: "デイクルーズ：乗船 10:00 &middot; 出航 10:30", ko: "Day Cruise: 승선 10:00 · 출항 10:30", hi: "Day Cruise: बोर्डिंग 10:00 &middot; प्रस्थान 10:30", ur: "Day Cruise: بورڈنگ 10:00 &middot; روانگی 10:30"
+    fa: "تور روزانه: سوار شدن ۱۰:۰۰ · حرکت ۱۰:۳۰", fr: "Croisière diurne : embarquement 10h00 · départ 10h30", it: "Crociera Diurna: Imbarco 10:00 · Partenza 10:30", zh: "白天游船:10:00登船 · 10:30启航", id: "Pelayaran Siang: Naik kapal 10:00 · Keberangkatan 10:30", ms: "Pelayaran Siang: Menaiki 10:00 · Bertolak 10:30", pl: "Dzienny rejs: wejście 10:00 · wypłynięcie 10:30", bg: "Дневен круиз: качване 10:00 · отплаване 10:30", ro: "Croazieră de Zi: Îmbarcare 10:00 · Plecare 10:30", uk: "Денний круїз: Посадка 10:00 &middot; Відправлення 10:30", ja: "デイクルーズ：乗船 10:00 &middot; 出航 10:30", ko: "데이 크루즈: 승선 10:00 · 출항 10:30", hi: "दिन क्रूज़: बोर्डिंग 10:00 &middot; प्रस्थान 10:30", ur: "ڈے کروز: بورڈنگ 10:00 &middot; روانگی 10:30"
   },
   "boarding.time.sunset": {
     en: "Sunset Cruise: Boarding 17:00 · Departure 17:15",
@@ -2550,7 +2550,7 @@ const T = {
     es: "Crucero al Atardecer: Embarque 17:00 · Salida 17:15",
     ru: "Круиз на закате: Посадка 17:00 · Отправление 17:15",
     ar: "رحلة غروب الشمس: الصعود 17:00 · المغادرة 17:15",
-    fa: "تور غروب: سوار شدن ۱۷:۰۰ · حرکت ۱۷:۱۵", fr: "Croisière coucher de soleil : embarquement 17h00 · départ 17h15", it: "Crociera al Tramonto: Imbarco 17:00 · Partenza 17:15", zh: "日落游船:17:00登船 · 17:15启航", id: "Pelayaran Matahari Terbenam: Naik kapal 17:00 · Keberangkatan 17:15", ms: "Pelayaran Matahari Terbenam: Menaiki 17:00 · Bertolak 17:15", pl: "Rejs o zachodzie słońca: wejście 17:00 · wypłynięcie 17:15", bg: "Залезен круиз: качване 17:00 · отплаване 17:15", ro: "Croazieră la Apus: Îmbarcare 17:00 · Plecare 17:15", uk: "Круїз на заході сонця: Посадка 17:00 &middot; Відправлення 17:15", ja: "サンセットクルーズ：乗船 17:00 &middot; 出航 17:15", ko: "Sunset Cruise: 승선 17:00 · 출항 17:15", hi: "Sunset Cruise: बोर्डिंग 17:00 &middot; प्रस्थान 17:15", ur: "Sunset Cruise: بورڈنگ 17:00 &middot; روانگی 17:15"
+    fa: "تور غروب: سوار شدن ۱۷:۰۰ · حرکت ۱۷:۱۵", fr: "Croisière coucher de soleil : embarquement 17h00 · départ 17h15", it: "Crociera al Tramonto: Imbarco 17:00 · Partenza 17:15", zh: "日落游船:17:00登船 · 17:15启航", id: "Pelayaran Matahari Terbenam: Naik kapal 17:00 · Keberangkatan 17:15", ms: "Pelayaran Matahari Terbenam: Menaiki 17:00 · Bertolak 17:15", pl: "Rejs o zachodzie słońca: wejście 17:00 · wypłynięcie 17:15", bg: "Залезен круиз: качване 17:00 · отплаване 17:15", ro: "Croazieră la Apus: Îmbarcare 17:00 · Plecare 17:15", uk: "Круїз на заході сонця: Посадка 17:00 &middot; Відправлення 17:15", ja: "サンセットクルーズ：乗船 17:00 &middot; 出航 17:15", ko: "선셋 크루즈: 승선 17:00 · 출항 17:15", hi: "सूर्यास्त क्रूज़: बोर्डिंग 17:00 &middot; प्रस्थान 17:15", ur: "سن سیٹ کروز: بورڈنگ 17:00 &middot; روانگی 17:15"
   },
   "boarding.time.night": {
     en: "Night Cruise: Boarding 19:30 · Departure 20:30",
@@ -2559,7 +2559,7 @@ const T = {
     es: "Crucero Nocturno: Embarque 19:30 · Salida 20:30",
     ru: "Ночной круиз: Посадка 19:30 · Отправление 20:30",
     ar: "رحلة ليلية: الصعود 19:30 · المغادرة 20:30",
-    fa: "تور شبانه: سوار شدن ۲۰:۰۰ · حرکت ۲۰:۳۰", fr: "Croisière nocturne : embarquement 20h00 · départ 20h30", it: "Crociera Notturna: Imbarco 19:30 · Partenza 20:30", zh: "夜间游船:19:30登船 · 20:30启航", id: "Pelayaran Malam: Naik kapal 19:30 · Keberangkatan 20:30", ms: "Pelayaran Malam: Menaiki 19:30 · Bertolak 20:30", pl: "Nocny rejs: wejście 19:30 · wypłynięcie 20:30", bg: "Нощен круиз: качване 19:30 · отплаване 20:30", ro: "Croazieră de Noapte: Îmbarcare 19:30 · Plecare 20:30", uk: "Нічний круїз: Посадка 19:30 &middot; Відправлення 20:30", ja: "ナイトクルーズ：乗船 19:30 &middot; 出航 20:30", ko: "Night Cruise: 승선 19:30 · 출항 20:30", hi: "Night Cruise: बोर्डिंग 19:30 &middot; प्रस्थान 20:30", ur: "Night Cruise: بورڈنگ 19:30 &middot; روانگی 20:30"
+    fa: "تور شبانه: سوار شدن ۲۰:۰۰ · حرکت ۲۰:۳۰", fr: "Croisière nocturne : embarquement 20h00 · départ 20h30", it: "Crociera Notturna: Imbarco 19:30 · Partenza 20:30", zh: "夜间游船:19:30登船 · 20:30启航", id: "Pelayaran Malam: Naik kapal 19:30 · Keberangkatan 20:30", ms: "Pelayaran Malam: Menaiki 19:30 · Bertolak 20:30", pl: "Nocny rejs: wejście 19:30 · wypłynięcie 20:30", bg: "Нощен круиз: качване 19:30 · отплаване 20:30", ro: "Croazieră de Noapte: Îmbarcare 19:30 · Plecare 20:30", uk: "Нічний круїз: Посадка 19:30 &middot; Відправлення 20:30", ja: "ナイトクルーズ：乗船 19:30 &middot; 出航 20:30", ko: "나이트 크루즈: 승선 19:30 · 출항 20:30", hi: "रात्रि क्रूज़: बोर्डिंग 19:30 &middot; प्रस्थान 20:30", ur: "نائٹ کروز: بورڈنگ 19:30 &middot; روانگی 20:30"
   },
   "boarding.time.pier": {
     en: "Kabataş Pier",
@@ -2577,7 +2577,7 @@ const T = {
     es: "Crucero Diurno: Regreso ~12:30",
     ru: "Дневной круиз: Возвращение ~12:30",
     ar: "رحلة نهارية: العودة ~12:30",
-    fa: "تور روزانه: بازگشت حدود ۱۲:۳۰", fr: "Croisière diurne : retour ~12h30", it: "Crociera Diurna: Ritorno ~12:30", zh: "白天游船:约12:30返航", id: "Pelayaran Siang: Kembali ~12:30", ms: "Pelayaran Siang: Kembali ~12:30", pl: "Dzienny rejs: powrót ~12:30", bg: "Дневен круиз: завръщане ~12:30", ro: "Croazieră de Zi: Întoarcere ~12:30", uk: "Денний круїз: Повернення ~12:30", ja: "デイクルーズ：帰港 ~12:30", ko: "Day Cruise: 복귀 ~12:30", hi: "Day Cruise: वापसी ~12:30", ur: "Day Cruise: واپسی ~12:30"
+    fa: "تور روزانه: بازگشت حدود ۱۲:۳۰", fr: "Croisière diurne : retour ~12h30", it: "Crociera Diurna: Ritorno ~12:30", zh: "白天游船:约12:30返航", id: "Pelayaran Siang: Kembali ~12:30", ms: "Pelayaran Siang: Kembali ~12:30", pl: "Dzienny rejs: powrót ~12:30", bg: "Дневен круиз: завръщане ~12:30", ro: "Croazieră de Zi: Întoarcere ~12:30", uk: "Денний круїз: Повернення ~12:30", ja: "デイクルーズ：帰港 ~12:30", ko: "데이 크루즈: 복귀 ~12:30", hi: "दिन क्रूज़: वापसी ~12:30", ur: "ڈے کروز: واپسی ~12:30"
   },
   "arrival.time.sunset": {
     en: "Sunset Cruise: Return ~19:30",
@@ -2586,7 +2586,7 @@ const T = {
     es: "Crucero al Atardecer: Regreso ~19:30",
     ru: "Круиз на закате: Возвращение ~19:30",
     ar: "رحلة غروب الشمس: العودة ~19:30",
-    fa: "تور غروب: بازگشت حدود ۱۹:۳۰", fr: "Croisière coucher de soleil : retour ~19h30", it: "Crociera al Tramonto: Ritorno ~19:30", zh: "日落游船:约19:30返航", id: "Pelayaran Matahari Terbenam: Kembali ~19:30", ms: "Pelayaran Matahari Terbenam: Kembali ~19:30", pl: "Rejs o zachodzie słońca: powrót ~19:30", bg: "Залезен круиз: завръщане ~19:30", ro: "Croazieră la Apus: Întoarcere ~19:30", uk: "Круїз на заході сонця: Повернення ~19:30", ja: "サンセットクルーズ：帰港 ~19:30", ko: "Sunset Cruise: 복귀 ~19:30", hi: "Sunset Cruise: वापसी ~19:30", ur: "Sunset Cruise: واپسی ~19:30"
+    fa: "تور غروب: بازگشت حدود ۱۹:۳۰", fr: "Croisière coucher de soleil : retour ~19h30", it: "Crociera al Tramonto: Ritorno ~19:30", zh: "日落游船:约19:30返航", id: "Pelayaran Matahari Terbenam: Kembali ~19:30", ms: "Pelayaran Matahari Terbenam: Kembali ~19:30", pl: "Rejs o zachodzie słońca: powrót ~19:30", bg: "Залезен круиз: завръщане ~19:30", ro: "Croazieră la Apus: Întoarcere ~19:30", uk: "Круїз на заході сонця: Повернення ~19:30", ja: "サンセットクルーズ：帰港 ~19:30", ko: "선셋 크루즈: 복귀 ~19:30", hi: "सूर्यास्त क्रूज़: वापसी ~19:30", ur: "سن سیٹ کروز: واپسی ~19:30"
   },
   "arrival.time.night": {
     en: "Night Cruise: Return 23:30",
@@ -2595,7 +2595,7 @@ const T = {
     es: "Crucero Nocturno: Regreso ~23:30",
     ru: "Ночной круиз: Возвращение 23:30",
     ar: "رحلة ليلية: العودة ~23:30",
-    fa: "تور شبانه: بازگشت ۲۳:۳۰", fr: "Croisière nocturne : retour 23h30", it: "Crociera Notturna: Ritorno 23:30", zh: "夜间游船:23:30返航", id: "Pelayaran Malam: Kembali 23:30", ms: "Pelayaran Malam: Kembali 23:30", pl: "Nocny rejs: powrót 23:30", bg: "Нощен круиз: завръщане 23:30", ro: "Croazieră de Noapte: Întoarcere 23:30", uk: "Нічний круїз: Повернення 23:30", ja: "ナイトクルーズ：帰港 23:30", ko: "Night Cruise: 복귀 23:30", hi: "Night Cruise: वापसी 23:30", ur: "Night Cruise: واپسی 23:30"
+    fa: "تور شبانه: بازگشت ۲۳:۳۰", fr: "Croisière nocturne : retour 23h30", it: "Crociera Notturna: Ritorno 23:30", zh: "夜间游船:23:30返航", id: "Pelayaran Malam: Kembali 23:30", ms: "Pelayaran Malam: Kembali 23:30", pl: "Nocny rejs: powrót 23:30", bg: "Нощен круиз: завръщане 23:30", ro: "Croazieră de Noapte: Întoarcere 23:30", uk: "Нічний круїз: Повернення 23:30", ja: "ナイトクルーズ：帰港 23:30", ko: "나이트 크루즈: 복귀 23:30", hi: "रात्रि क्रूज़: वापसी 23:30", ur: "نائٹ کروز: واپسی 23:30"
   },
   "arrival.time.pier": {
     en: "Kabataş Pier",
