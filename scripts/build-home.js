@@ -488,6 +488,15 @@ function buildForLang(lang, template) {
   html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
   html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
+  // Language-aware nav/footer links: /blog/ and /city-guide/ → /{lang}/blog/ and /{lang}/city-guide/
+  // EN stays at root, all other langs get lang-prefixed paths.
+  if (lang !== 'en') {
+    html = html.replace(/href="\/blog\//g, `href="/${lang}/blog/`);
+    html = html.replace(/href="\/blog"/g, `href="/${lang}/blog/"`);
+    html = html.replace(/href="\/city-guide\//g, `href="/${lang}/city-guide/`);
+    html = html.replace(/href="\/city-guide"/g, `href="/${lang}/city-guide/"`);
+  }
+
   // Inject canonical + hreflang + Schema.org JSON-LD after charset meta
   const canonical = `  <link rel="canonical" href="${urlFor(lang)}">`;
   const hreflang = buildHreflang();

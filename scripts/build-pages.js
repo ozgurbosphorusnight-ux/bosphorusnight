@@ -485,6 +485,14 @@ function buildHtml(slug, lang, template) {
   html = html.replace(/url\('(js|css|assets)\//g, "url('/$1/");
   html = html.replace(/url\("(js|css|assets)\//g, 'url("/$1/');
 
+  // Language-aware nav/footer links: /blog/ and /city-guide/ → /{lang}/blog/ and /{lang}/city-guide/
+  if (lang !== 'en') {
+    html = html.replace(/href="\/blog\//g, `href="/${lang}/blog/`);
+    html = html.replace(/href="\/blog"/g, `href="/${lang}/blog/"`);
+    html = html.replace(/href="\/city-guide\//g, `href="/${lang}/city-guide/`);
+    html = html.replace(/href="\/city-guide"/g, `href="/${lang}/city-guide/"`);
+  }
+
   // Title + meta description + OpenGraph tags (all use localized page.meta)
   // 5.A Madde 16: "Best" prefix for high-intent slugs (CTR +%20-30 expected).
   // Google "Related Searches" gösterir: "Best Bosphorus dinner cruise Istanbul",
