@@ -108,6 +108,16 @@
     @media (max-width: 767px){
       input, select, textarea { font-size: 16px !important; }
     }
+    /* Wizard validation shake — fires once when Continue hits an error. Honors reduced motion. */
+    @keyframes wiz-shake-h {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(3px); }
+    }
+    .wiz-shake { animation: wiz-shake-h 400ms ease-in-out; }
+    @media (prefers-reduced-motion: reduce) { .wiz-shake { animation: none; } }
   </style>
 </head>
 <body class="bg-[#0b1120] text-white font-body antialiased pl-[40px] lg:pl-[60px]">
@@ -372,22 +382,23 @@
               <button data-lang-code="en" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/gb.png" alt="EN" class="w-5 h-auto rounded-sm"> English</button>
               <button data-lang-code="tr" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/tr.png" alt="TR" class="w-5 h-auto rounded-sm"> Türkçe</button>
               <button data-lang-code="de" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/de.png" alt="DE" class="w-5 h-auto rounded-sm"> Deutsch</button>
+              <button data-lang-code="ru" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/ru.png" alt="RU" class="w-5 h-auto rounded-sm"> Русский</button>
               <button data-lang-code="es" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/es.png" alt="ES" class="w-5 h-auto rounded-sm"> Español</button>
+              <button data-lang-code="ar" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/sa.png" alt="AR" class="w-5 h-auto rounded-sm"> العربية</button>
               <button data-lang-code="fr" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/fr.png" alt="FR" class="w-5 h-auto rounded-sm"> Français</button>
               <button data-lang-code="it" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/it.png" alt="IT" class="w-5 h-auto rounded-sm"> Italiano</button>
-              <button data-lang-code="ru" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/ru.png" alt="RU" class="w-5 h-auto rounded-sm"> Русский</button>
+              <button data-lang-code="uk" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/ua.png" alt="UK" class="w-5 h-auto rounded-sm"> Українська</button>
               <button data-lang-code="pl" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/pl.png" alt="PL" class="w-5 h-auto rounded-sm"> Polski</button>
               <button data-lang-code="ro" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/ro.png" alt="RO" class="w-5 h-auto rounded-sm"> Română</button>
               <button data-lang-code="bg" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/bg.png" alt="BG" class="w-5 h-auto rounded-sm"> Български</button>
-              <button data-lang-code="ar" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/sa.png" alt="AR" class="w-5 h-auto rounded-sm"> العربية</button>
               <button data-lang-code="fa" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/ir.png" alt="FA" class="w-5 h-auto rounded-sm"> فارسی</button>
-              <button data-lang-code="zh" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/cn.png" alt="ZH" class="w-5 h-auto rounded-sm"> 中文</button>
-              <button data-lang-code="id" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/id.png" alt="ID" class="w-5 h-auto rounded-sm"> Indonesia</button>
-              <button data-lang-code="ms" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/my.png" alt="MS" class="w-5 h-auto rounded-sm"> Malaysia</button>
-              <button data-lang-code="hi" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/in.png" alt="HI" class="w-5 h-auto rounded-sm"> हिन्दी</button>
               <button data-lang-code="ur" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/pk.png" alt="UR" class="w-5 h-auto rounded-sm"> اردو</button>
+              <button data-lang-code="hi" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/in.png" alt="HI" class="w-5 h-auto rounded-sm"> हिन्दी</button>
+              <button data-lang-code="zh" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/cn.png" alt="ZH" class="w-5 h-auto rounded-sm"> 中文</button>
               <button data-lang-code="ja" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/jp.png" alt="JA" class="w-5 h-auto rounded-sm"> 日本語</button>
               <button data-lang-code="ko" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/kr.png" alt="KO" class="w-5 h-auto rounded-sm"> 한국어</button>
+              <button data-lang-code="id" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/id.png" alt="ID" class="w-5 h-auto rounded-sm"> Indonesia</button>
+              <button data-lang-code="ms" class="w-full flex items-center gap-3 px-4 py-2.5 text-sm text-white/70 hover:bg-gold/10 hover:text-gold transition-colors"><img src="https://flagcdn.com/w20/my.png" alt="MS" class="w-5 h-auto rounded-sm"> Malaysia</button>
             </div>
           </div>
 
@@ -3304,22 +3315,23 @@
           <option value="en">English</option>
           <option value="tr">Türkçe</option>
           <option value="de">Deutsch</option>
+          <option value="ru">Русский</option>
           <option value="es">Español</option>
+          <option value="ar">العربية</option>
           <option value="fr">Français</option>
           <option value="it">Italiano</option>
-          <option value="ru">Русский</option>
+          <option value="uk">Українська</option>
           <option value="pl">Polski</option>
           <option value="ro">Română</option>
           <option value="bg">Български</option>
-          <option value="ar">العربية</option>
           <option value="fa">فارسی</option>
-          <option value="zh">中文</option>
-          <option value="id">Indonesia</option>
-          <option value="ms">Malaysia</option>
-          <option value="hi">हिन्दी</option>
           <option value="ur">اردو</option>
+          <option value="hi">हिन्दी</option>
+          <option value="zh">中文</option>
           <option value="ja">日本語</option>
           <option value="ko">한국어</option>
+          <option value="id">Indonesia</option>
+          <option value="ms">Malaysia</option>
         </select>
       </div><!-- /bookStep1 -->
 
