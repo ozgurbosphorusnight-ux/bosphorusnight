@@ -35,18 +35,20 @@ const SLUGS = [
   'bosphorus-night-tour'
 ];
 
-// Blog posts (English only — no multi-lingual for now).
-const BLOG_PAGES = [
-  '/blog/',
-  '/blog/best-bosphorus-dinner-cruise-istanbul',
-  '/blog/bosphorus-sunset-cruise-guide',
-  '/blog/bosphorus-cruise-with-kids-family',
-  '/blog/istanbul-cruise-tonight-last-minute',
-  '/blog/things-to-know-istanbul-boat-tour'
+// Blog — EN root + 5 dil (hi/ja/ko/ur/uk). Diğer 14 dil sonraki oturumlarda eklenecek.
+const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk'];
+
+const BLOG_SLUGS = [
+  '', // hub (trailing slash)
+  'best-bosphorus-dinner-cruise-istanbul',
+  'bosphorus-sunset-cruise-guide',
+  'bosphorus-cruise-with-kids-family',
+  'istanbul-cruise-tonight-last-minute',
+  'things-to-know-istanbul-boat-tour'
 ];
 
-// City Guide — 17 dilde (EN + 16 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ms/pl/ro/ru/tr/ur/zh)
-const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur'];
+// City Guide — 20 dilde (EN + 19 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ja/ko/ms/pl/ro/ru/tr/uk/ur/zh)
+const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur', 'ja', 'ko', 'uk'];
 
 const CITY_GUIDE_SLUGS = [
   '', // hub (trailing slash)
@@ -84,16 +86,29 @@ ${xDefault}
   </url>`).join('\n');
 }
 
-function blogBlock(pathPart) {
+function blogUrlFor(lang, slug) {
+  const prefix = lang === 'en' ? '' : '/' + lang;
+  if (!slug) return SITE_URL + prefix + '/blog/';
+  return SITE_URL + prefix + '/blog/' + slug;
+}
+
+function blogUrlBlock(slug) {
   const today = new Date().toISOString().split('T')[0];
-  const loc = SITE_URL + pathPart;
-  const priority = pathPart === '/blog/' ? '0.7' : '0.6';
-  return `  <url>
-    <loc>${loc}</loc>
+  const alternates = BLOG_LANGUAGES
+    .map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${blogUrlFor(lang, slug)}" />`)
+    .join('\n');
+  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${blogUrlFor('en', slug)}" />`;
+  // Hub priority slightly higher; EN root above translations
+  const hubBoost = slug === '' ? 0.1 : 0;
+
+  return BLOG_LANGUAGES.map((lang) => `  <url>
+    <loc>${blogUrlFor(lang, slug)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>${priority}</priority>
-  </url>`;
+    <priority>${(lang === 'en' ? 0.7 : 0.6) + hubBoost}</priority>
+${alternates}
+${xDefault}
+  </url>`).join('\n');
 }
 
 function cityGuideUrlFor(lang, slug) {
@@ -124,7 +139,7 @@ ${xDefault}
 function buildSitemap() {
   const homeBlocks = urlBlock('');
   const landingBlocks = SLUGS.map(urlBlock).join('\n');
-  const blogBlocks = BLOG_PAGES.map(blogBlock).join('\n');
+  const blogBlocks = BLOG_SLUGS.map(blogUrlBlock).join('\n');
   const cityGuideBlocks = CITY_GUIDE_SLUGS.map(cityGuideUrlBlock).join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"

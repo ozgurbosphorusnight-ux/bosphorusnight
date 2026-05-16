@@ -56,8 +56,8 @@ for (const dir of ['js', 'css', 'assets', 'blog', 'city-guide']) {
   }
 }
 
-// 3b. City Guide multi-dil — 16 dilin çevirileri (src/city-guide-i18n/{lang}/* → dist/{lang}/city-guide/)
-const CITY_GUIDE_LANGS = ['ar', 'bg', 'de', 'es', 'fa', 'fr', 'hi', 'id', 'it', 'ms', 'pl', 'ro', 'ru', 'tr', 'ur', 'zh'];
+// 3b. City Guide multi-dil — 19 dilin çevirileri (src/city-guide-i18n/{lang}/* → dist/{lang}/city-guide/)
+const CITY_GUIDE_LANGS = ['ar', 'bg', 'de', 'es', 'fa', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'ms', 'pl', 'ro', 'ru', 'tr', 'uk', 'ur', 'zh'];
 console.log('\n🌐 City Guide multi-dil...');
 for (const lang of CITY_GUIDE_LANGS) {
   const src = path.join(ROOT, 'src', 'city-guide-i18n', lang);
@@ -65,6 +65,19 @@ for (const lang of CITY_GUIDE_LANGS) {
   if (fs.existsSync(src)) {
     cpdir(src, dst);
     console.log(`  ✓ ${lang}/city-guide/`);
+  }
+}
+
+// 3c. Blog multi-dil — sadece çevirisi olan diller (src/blog-i18n/{lang}/* → dist/{lang}/blog/)
+// İlk parti: hi, ja, ko, ur, uk (Sprint L1 dilleri). Diğer 14 dil sonraki oturumlarda.
+const BLOG_LANGS = ['hi', 'ja', 'ko', 'ur', 'uk'];
+console.log('\n📝 Blog multi-dil...');
+for (const lang of BLOG_LANGS) {
+  const src = path.join(ROOT, 'src', 'blog-i18n', lang);
+  const dst = path.join(DIST, lang, 'blog');
+  if (fs.existsSync(src)) {
+    cpdir(src, dst);
+    console.log(`  ✓ ${lang}/blog/`);
   }
 }
 
