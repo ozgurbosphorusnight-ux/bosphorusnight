@@ -19,8 +19,8 @@
   }
 
   // Langs with pre-built static pages at /xx/ (build-pages.js output).
-  // Other langs (uk, hi, ur, ja, ko) use JS-based switching via window.setLanguage.
-  var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro'];
+  // All 20 langs supported after Sprint L1 build-pages.js extension.
+  var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko'];
   var STORAGE_KEY = 'bn_lang';
 
   function getLsGet() {

@@ -166,6 +166,7 @@ Aynı gün rezervasyon kabul saatleri:
 | **L1** | **Dil Genişlemesi — Ukraynaca ekle + hi/ur/ja/ko/uk için tam çeviri (site UI + AI prompt) + dropdown sıralama (müşteri-hacim bazlı)** | ⏳ 2026-05-14 not edildi |
 | **P8** | **Panel Sprint 8 — Tekne Cari/Bakiye + Mutabakat sistemi (Settlements)** | ✅ BİTTİ 2026-05-14 (Migration 027+028 + 6 API + 2 sayfa + Mutabakat dialog + PDF) |
 | **P9** | **WhatsApp Otomatik Gönderim (Mutabakat + Tekne Bildirim)** — boats.owner_phone + Twilio template + panel "Gönder" butonu otomatik tetik | ⏳ ertelendi 2026-05-14 (manuel PDF gönderim şu an yeterli) |
+| **LUX** | **Multi-Brand Altyapı (luxurybosphorustour.com aktivasyonu için)** — Seçenek C (shared core + brand-aware): `prompts/bn/` + `prompts/lux/` + `prompts/shared/` ayrımı, Twilio numara→brand routing, tool brand-lock, panel marka filtresi. Detay: `memory/sprint_lux_multibrand_architecture.md`. ~2-3 gün net iş. Tetik: Lux sitesi içerik %80+ tamam olunca. | ⏳ 2026-05-16 not edildi |
 
 **Kural:** Bir aşama bitmeden sonrakine geçilmez. Her aşama sonunda canlı test.
 Panel sprint'leri (P-prefix) AI aşamalarına paralel ilerleyebilir; Aşama 4 WhatsApp kurulumu beklerken panel tarafında görsel + CRUD işleri yapılıyor.
@@ -578,6 +579,14 @@ customers.phone, customers.last_contact_at, packages.is_active, availability.dat
 8. **Token/maliyet kaydı.** Her Claude çağrısının Euro maliyeti `messages`'a.
 9. **Küçük adımlar.** Her aşama canlı test olmadan kapanmaz.
 10. **Özgür müşteriyle konuşmaz.** Bu yüzden eskalasyon > satıştan önemli.
+11. **Anthropic API key'i ASLA Özgür onayı olmadan tüketilmez.** Repo'daki `.env` dosyalarındaki `ANTHROPIC_API_KEY` prod faturasına bağlıdır. Claude Code şu işleri Özgür açık onay vermeden çalıştırmaz:
+    - `npm run test:wizard` veya başka `test:*` komutları
+    - `node src/scripts/*` (observer-probe, update-observer-context, seed-observer-context, vb.)
+    - `node src/scripts/db-check.js` hariç tüm script'ler — Anthropic'e giden olan/olmayan tüm script önce sorulur
+    - `/test-chat`, `/admin/provider-test/claude`, `/admin/observer/run-*` endpoint'leri (canlı sunucuda)
+    - Anthropic SDK'yı doğrudan çağıran tek seferlik test kodu yazıp çalıştırma
+    - **Reason:** Önceki oturumlarda script'ler `.env` key'i ile Anthropic'e gidip prod kredisini sıfırladı (2026-05-06 ve 2026-05-16 iki kere). Max aboneliği bu durumlardan korumaz — script Anthropic'e çıkar çıkmaz `.env` key'ten yer.
+    - **İstisna:** Özgür "şu komutu çalıştır", "test et", "observer çalıştır" gibi **açık ve spesifik** onay verirse çalıştırılır. "Devam et" / "tamam" genel onayları script çalıştırma izni değildir.
 
 ---
 

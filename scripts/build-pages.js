@@ -38,7 +38,12 @@ const LANGUAGES = {
   ms: { label: 'Malaysia', dir: 'ltr' },
   pl: { label: 'Polski', dir: 'ltr' },
   bg: { label: 'Български', dir: 'ltr' },
-  ro: { label: 'Română', dir: 'ltr' }
+  ro: { label: 'Română', dir: 'ltr' },
+  uk: { label: 'Українська', dir: 'ltr' },
+  hi: { label: 'हिन्दी', dir: 'ltr' },
+  ur: { label: 'اردو', dir: 'rtl' },
+  ja: { label: '日本語', dir: 'ltr' },
+  ko: { label: '한국어', dir: 'ltr' }
 };
 
 const SLUGS = [
