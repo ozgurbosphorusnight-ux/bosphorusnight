@@ -9,7 +9,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Croisière Dîner Bosphore dès €{p.dinnerStd} — Tour Nocturne Istanbul + Spectacle',
-      description: 'Croisière dîner 3h sur le Bosphore : menu turc multi-plats et spectacle folklorique en direct. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Croisière dîner 3h sur le Bosphore : menu turc multi-plats et spectacle folklorique en direct. Départ 20h30 de Kabataş.'
     },
     hero: {
       h1: "Croisière dîner sur le Bosphore à Istanbul",
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosphore avec Enfants — Croisière Familiale dès €{p.dinnerStd}/adulte',
-      description: 'Croisière dîner Bosphore familiale. Enfants 0-3 gratuits, 4-8 demi-tarif. Salle intérieure sécurisée, menu enfants. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Croisière dîner Bosphore familiale. Enfants 0-3 gratuits, 4-8 demi-tarif. Salle intérieure sécurisée, menu enfants. Annulation gratuite, paiement à bord.'
     },
     hero: {
       h1: "Croisière sur le Bosphore avec enfants",
@@ -81,7 +81,7 @@ module.exports = {
   'romantic-bosphorus-cruise': {
     meta: {
       title: 'Croisière Romantique Bosphore dès €{p.dinnerStd} — Dîner aux Chandelles',
-      description: 'Croisière romantique sur le Bosphore : table aux chandelles, roses, dîner multi-plats sous les ponts illuminés. Dès €{p.dinnerStd}/personne. Annulation gratuite, paiement à bord.'
+      description: 'Croisière romantique sur le Bosphore : table aux chandelles, roses, dîner multi-plats sous les ponts illuminés. Dès €{p.dinnerStd}/personne.'
     },
     hero: {
       h1: "Croisière romantique sur le Bosphore",
@@ -117,7 +117,7 @@ module.exports = {
   'halal-bosphorus-cruise': {
     meta: {
       title: 'Croisière Dîner Halal Bosphore dès €{p.dinnerStd} — Spectacle + Tour Nocturne',
-      description: 'Croisière dîner 3h sur le Bosphore : spectacle folklorique en direct, ponts illuminés, vues panoramiques nocturnes. Menu halal disponible. Annulation gratuite, paiement à bord.'
+      description: 'Croisière dîner 3h sur le Bosphore : spectacle folklorique en direct, ponts illuminés, vues panoramiques nocturnes. Menu halal disponible.'
     },
     hero: {
       h1: "Croisière halal sur le Bosphore à Istanbul",
@@ -153,7 +153,7 @@ module.exports = {
   'bosphorus-vip': {
     meta: {
       title: 'Croisière VIP Bosphore dès €{p.dinnerVip} — Dîner Premium, Place VIP',
-      description: 'Croisière dîner VIP Bosphore : mezzés premium, options viande, table devant la scène, service prioritaire. Avant €{p.dinnerVipOriginal}, maintenant €{p.dinnerVip}.'
+      description: 'Croisière dîner VIP Bosphore : mezzés premium, options viande, table devant la scène, service prioritaire.'
     },
     hero: {
       h1: "Croisière VIP sur le Bosphore",
@@ -189,7 +189,7 @@ module.exports = {
   'private-bosphorus-cruise': {
     meta: {
       title: 'Croisière Privée Bosphore — Location de Bateau à Istanbul (25+ invités)',
-      description: 'Croisière privée Bosphore pour groupes, mariages, événements d\'entreprise. Bateau exclusif, menu sur mesure, durée flexible. Annulation gratuite. WhatsApp pour devis.'
+      description: 'Croisière privée Bosphore pour groupes, mariages, événements d\'entreprise. Bateau exclusif, menu sur mesure, durée flexible. Annulation gratuite.'
     },
     hero: {
       h1: "Croisière privée sur le Bosphore",
@@ -225,7 +225,7 @@ module.exports = {
   'bosphorus-for-couples': {
     meta: {
       title: 'Bosphore pour Couples dès €{p.dinnerStd} — Soirée Romantique Istanbul',
-      description: 'Croisière dîner Bosphore pour couples. Table privée, ponts illuminés, décor romantique optionnel. Dès €{p.dinnerStd}/personne. Annulation gratuite, paiement à bord.'
+      description: 'Croisière dîner Bosphore pour couples. Table privée, ponts illuminés, décor romantique optionnel. Dès €{p.dinnerStd}/personne.'
     },
     hero: {
       h1: "Croisière sur le Bosphore pour couples",
@@ -261,7 +261,7 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Croisière Coucher de Soleil Bosphore dès €35 — Heure Dorée + Dîner',
-      description: 'Croisière coucher de soleil Bosphore depuis Kabataş, départ 17h30. Palais à la lumière dorée, dîner jusqu\'à la nuit illuminée. 3 heures. Annulation gratuite, paiement à bord.'
+      description: 'Croisière coucher de soleil Bosphore depuis Kabataş, départ 17h30. Palais à la lumière dorée, dîner jusqu\'à la nuit illuminée. 3 heures.'
     },
     hero: {
       h1: "Croisière coucher de soleil sur le Bosphore",
@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tour Nocturne Bosphore dès €{p.dinnerStd} — Croisière Dîner + Spectacle',
-      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord. Ce soir à 21h — dernières places, réservez tôt.'
+      description: 'Tour nocturne 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş, ponts illuminés. Annulation gratuite, paiement à bord.'
     },
     hero: {
       h1: "Croisière nocturne sur le Bosphore",
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocturne Istanbul dès €{p.dinnerStd} — Croisière Dîner Bosphore + Spectacle',
-      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis. Transfert hôtel optionnel. Croisière de ce soir à 21h — places limitées restantes.'
+      description: 'Croisière 3h sur le Bosphore avec dîner et spectacle en direct. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
     },
     hero: {
       h1: "Visite nocturne d'Istanbul",
@@ -441,7 +441,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Excursion Bosphore dès €{p.dinnerStd} — Croisière Dîner Istanbul + Spectacle',
-      description: 'Excursion 3h sur le Bosphore : dîner turc, folklore en direct, vues nocturnes illuminées. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord. 11 317 avis.'
+      description: 'Excursion 3h sur le Bosphore : dîner turc, folklore en direct, vues nocturnes illuminées. Départ 20h30 de Kabataş. Annulation gratuite, paiement à bord.'
     },
     hero: {
       h1: "Excursion sur le Bosphore",
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Billets Croisière Bosphore dès €{p.dinnerStd} — Paiement à Bord, Sans Acompte',
-      description: 'Billets directs croisière Bosphore. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Sans acompte, paiement à bord. Annulation gratuite jusqu\'à 2h avant. 11 317 avis. Les places de ce soir partent vite — réservez avant 18 h.'
+      description: 'Billets directs croisière Bosphore. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Sans acompte, paiement à bord. Annulation gratuite jusqu\'à 2h avant.'
     },
     hero: {
       h1: "Billets croisière sur le Bosphore",
@@ -549,7 +549,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Prix Croisière Istanbul dès €{p.dinnerStd} — Tarifs Transparents',
-      description: 'Prix croisière Bosphore Istanbul : Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Enfants 0-3 gratuits, 4-8 demi-tarif. Suppléments transparents. Annulation gratuite.'
+      description: 'Prix croisière Bosphore Istanbul : Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Enfants 0-3 gratuits, 4-8 demi-tarif. Suppléments transparents.'
     },
     hero: {
       h1: "Prix croisière Istanbul",

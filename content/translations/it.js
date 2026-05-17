@@ -9,7 +9,7 @@ module.exports = {
   "bosphorus-dinner-cruise": {
     meta: {
       title: 'Crociera Cena Bosforo da €{p.dinnerStd} — Tour Notturno Istanbul + Show',
-      description: 'Crociera cena 3 ore sul Bosforo: menu turco multi-portate e spettacolo folkloristico dal vivo. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Crociera cena 3 ore sul Bosforo: menu turco multi-portate e spettacolo folkloristico dal vivo. Partenza 20:30 da Kabataş.'
     },
     hero: {
       h1: "Crociera con Cena sul Bosforo a Istanbul",
@@ -45,7 +45,7 @@ module.exports = {
   "bosphorus-with-kids": {
     meta: {
       title: 'Bosforo con Bambini — Crociera Famiglia da €{p.dinnerStd}/adulto',
-      description: 'Crociera cena Bosforo per famiglie. Bambini 0-3 gratis, 4-8 metà prezzo. Sala interna sicura, menu bambini. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Crociera cena Bosforo per famiglie. Bambini 0-3 gratis, 4-8 metà prezzo. Sala interna sicura, menu bambini. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour del Bosforo con Bambini",
@@ -81,7 +81,7 @@ module.exports = {
   "romantic-bosphorus-cruise": {
     meta: {
       title: 'Crociera Romantica Bosforo da €{p.dinnerStd} — Cena a Lume di Candela',
-      description: 'Crociera romantica sul Bosforo: tavolo a lume di candela, rose, cena multi-portate sotto i ponti illuminati. Da €{p.dinnerStd}/persona. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Crociera romantica sul Bosforo: tavolo a lume di candela, rose, cena multi-portate sotto i ponti illuminati. Da €{p.dinnerStd}/persona.'
     },
     hero: {
       h1: "Crociera Romantica sul Bosforo",
@@ -117,7 +117,7 @@ module.exports = {
   "halal-bosphorus-cruise": {
     meta: {
       title: 'Crociera Cena Halal Bosforo da €{p.dinnerStd} — Show Live + Tour Notturno',
-      description: 'Crociera cena 3 ore sul Bosforo: spettacolo folkloristico dal vivo, ponti illuminati, panorama notturno. Menu halal disponibile su richiesta. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Crociera cena 3 ore sul Bosforo: spettacolo folkloristico dal vivo, ponti illuminati, panorama notturno. Menu halal disponibile su richiesta.'
     },
     hero: {
       h1: "Crociera Halal sul Bosforo a Istanbul",
@@ -189,7 +189,7 @@ module.exports = {
   "private-bosphorus-cruise": {
     meta: {
       title: 'Crociera Privata Bosforo — Noleggio Barca a Istanbul (25+ ospiti)',
-      description: 'Crociera privata Bosforo per gruppi, matrimoni, eventi aziendali. Barca esclusiva, menu personalizzato, durata flessibile. Cancellazione gratuita. WhatsApp per preventivo.'
+      description: 'Crociera privata Bosforo per gruppi, matrimoni, eventi aziendali. Barca esclusiva, menu personalizzato, durata flessibile. Cancellazione gratuita.'
     },
     hero: {
       h1: "Crociera Privata sul Bosforo",
@@ -225,7 +225,7 @@ module.exports = {
   "bosphorus-for-couples": {
     meta: {
       title: 'Bosforo per Coppie da €{p.dinnerStd} — Serata Romantica Istanbul',
-      description: 'Crociera cena per coppie sul Bosforo. Tavolo privato, ponti illuminati, allestimento romantico opzionale. Da €{p.dinnerStd}/persona. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Crociera cena per coppie sul Bosforo. Tavolo privato, ponti illuminati, allestimento romantico opzionale. Da €{p.dinnerStd}/persona.'
     },
     hero: {
       h1: "Tour del Bosforo per Coppie",
@@ -261,7 +261,7 @@ module.exports = {
   "bosphorus-sunset-cruise": {
     meta: {
       title: 'Crociera Tramonto Bosforo da €35 — Ora Dorata + Cena',
-      description: 'Crociera tramonto Bosforo da Kabataş, partenza 17:30. Palazzi nella luce dorata, cena fino alla notte illuminata. 3 ore. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Crociera tramonto Bosforo da Kabataş, partenza 17:30. Palazzi nella luce dorata, cena fino alla notte illuminata. 3 ore.'
     },
     hero: {
       h1: "Crociera al Tramonto sul Bosforo",
@@ -297,7 +297,7 @@ module.exports = {
   "bosphorus-night-tour": {
     meta: {
       title: 'Tour Notturno Bosforo da €{p.dinnerStd} — Crociera Cena + Show Live',
-      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo. Stasera alle 20:30 — ultimi posti, prenota presto.'
+      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour Notturno sul Bosforo",
@@ -333,7 +333,7 @@ module.exports = {
   "dinner-cruise-istanbul": {
     meta: {
       title: 'Crociera Cena Istanbul da €{p.dinnerStd} — Tour Notturno Bosforo',
-      description: 'Crociera cena 3 ore a Istanbul sul Bosforo. Menu turco multi-portate, folklore dal vivo, ponti illuminati. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Crociera cena 3 ore a Istanbul sul Bosforo. Menu turco multi-portate, folklore dal vivo, ponti illuminati. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera con Cena Istanbul",
@@ -369,7 +369,7 @@ module.exports = {
   "istanbul-night-tour": {
     meta: {
       title: 'Tour Notturno Istanbul da €{p.dinnerStd} — Crociera Cena Bosforo + Show',
-      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni. Transfer hotel opzionale. Crociera di stasera alle 20:30 — posti limitati.'
+      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Tour Notturno di Istanbul",
@@ -405,7 +405,7 @@ module.exports = {
   "istanbul-boat-tour": {
     meta: {
       title: 'Tour in Barca Istanbul da €{p.dinnerStd} — Crociera + Cena + Show',
-      description: 'Tour in barca 3 ore: crociera Bosforo, cena turca completa, folklore dal vivo, viste notturne illuminate. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Tour in barca 3 ore: crociera Bosforo, cena turca completa, folklore dal vivo, viste notturne illuminate. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour in Barca a Istanbul",
@@ -441,7 +441,7 @@ module.exports = {
   "bosphorus-trip": {
     meta: {
       title: 'Gita Bosforo da €{p.dinnerStd} — Crociera Cena Istanbul + Show',
-      description: 'Gita 3 ore sul Bosforo: cena turca, folklore dal vivo, viste notturne illuminate. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Gita 3 ore sul Bosforo: cena turca, folklore dal vivo, viste notturne illuminate. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Gita sul Bosforo",
@@ -477,7 +477,7 @@ module.exports = {
   "bosphorus-cruise-tickets": {
     meta: {
       title: 'Biglietti Crociera Bosforo da €{p.dinnerStd} — Pagamento a Bordo, Niente Anticipo',
-      description: 'Biglietti diretti crociera Bosforo. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Niente anticipo, pagamento a bordo. Cancellazione gratuita fino a 2h prima. 11.317 recensioni. I posti di stasera si esauriscono in fretta — prenota entro le 18:00.'
+      description: 'Biglietti diretti crociera Bosforo. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Niente anticipo, pagamento a bordo.'
     },
     hero: {
       h1: "Biglietti Crociera sul Bosforo",
@@ -513,7 +513,7 @@ module.exports = {
   "last-minute-bosphorus": {
     meta: {
       title: 'Bosforo Last Minute da €{p.dinnerStd} — Prenota Stasera, Paga a Bordo',
-      description: 'Prenotazione crociera Bosforo stesso giorno. Conferma WhatsApp in minuti. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Prenotazione crociera Bosforo stesso giorno. Conferma WhatsApp in minuti. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera sul Bosforo Last Minute",

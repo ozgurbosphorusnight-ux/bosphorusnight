@@ -11,7 +11,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Pelayaran Makan Malam Bosphorus dari €{p.dinnerStd} — Tur Malam Istanbul + Show',
-      description: 'Pelayaran makan malam 3 jam di Bosphorus: menu Turki multi-hidangan dan pertunjukan folklor langsung. Berangkat 20:30 dari Kabataş. Pembatalan gratis, bayar di kapal. 11.317 ulasan.'
+      description: 'Pelayaran makan malam 3 jam di Bosphorus: menu Turki multi-hidangan dan pertunjukan folklor langsung. Berangkat 20:30 dari Kabataş.'
     },
     hero: {
       h1: 'Pelayaran Makan Malam Bosphorus di Istanbul',
@@ -83,7 +83,7 @@ module.exports = {
   'romantic-bosphorus-cruise': {
     meta: {
       title: 'Pelayaran Romantis Bosphorus dari €{p.dinnerStd} — Makan Malam Lilin Berdua',
-      description: 'Pelayaran romantis Bosphorus: meja lilin, mawar, makan malam multi-hidangan di bawah jembatan bercahaya. Dari €{p.dinnerStd}/orang. Pembatalan gratis, bayar di kapal.'
+      description: 'Pelayaran romantis Bosphorus: meja lilin, mawar, makan malam multi-hidangan di bawah jembatan bercahaya. Dari €{p.dinnerStd}/orang.'
     },
     hero: {
       h1: 'Pelayaran Romantis Bosphorus',
@@ -155,7 +155,7 @@ module.exports = {
   'bosphorus-vip': {
     meta: {
       title: 'Pelayaran VIP Bosphorus dari €{p.dinnerVip} — Makan Malam Premium',
-      description: 'Pelayaran makan malam VIP Bosphorus: meze premium, pilihan steak, meja depan panggung, layanan prioritas. Sebelumnya €{p.dinnerVipOriginal}, sekarang €{p.dinnerVip}.'
+      description: 'Pelayaran makan malam VIP Bosphorus: meze premium, pilihan steak, meja depan panggung, layanan prioritas.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus VIP',
@@ -191,7 +191,7 @@ module.exports = {
   'private-bosphorus-cruise': {
     meta: {
       title: 'Pelayaran Pribadi Bosphorus — Sewa Kapal di Istanbul (25+ tamu)',
-      description: 'Pelayaran pribadi Bosphorus untuk grup, pernikahan, acara perusahaan. Kapal eksklusif, menu khusus, durasi fleksibel. Pembatalan gratis. WhatsApp untuk penawaran.'
+      description: 'Pelayaran pribadi Bosphorus untuk grup, pernikahan, acara perusahaan. Kapal eksklusif, menu khusus, durasi fleksibel. Pembatalan gratis.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus Privat',
@@ -227,7 +227,7 @@ module.exports = {
   'bosphorus-for-couples': {
     meta: {
       title: 'Bosphorus untuk Pasangan dari €{p.dinnerStd} — Malam Romantis Istanbul',
-      description: 'Pelayaran makan malam Bosphorus untuk pasangan. Meja pribadi, jembatan bercahaya, dekorasi romantis opsional. Dari €{p.dinnerStd}/orang. Pembatalan gratis, bayar di kapal.'
+      description: 'Pelayaran makan malam Bosphorus untuk pasangan. Meja pribadi, jembatan bercahaya, dekorasi romantis opsional. Dari €{p.dinnerStd}/orang.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus untuk Pasangan',
@@ -263,7 +263,7 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Pelayaran Senja Bosphorus dari €35 — Jam Emas + Makan Malam',
-      description: 'Pelayaran senja Bosphorus dari Kabataş, berangkat 17:30. Istana dalam cahaya emas, makan malam berlanjut ke malam bercahaya. 3 jam. Pembatalan gratis, bayar di kapal.'
+      description: 'Pelayaran senja Bosphorus dari Kabataş, berangkat 17:30. Istana dalam cahaya emas, makan malam berlanjut ke malam bercahaya. 3 jam.'
     },
     hero: {
       h1: 'Pelayaran Matahari Terbenam Bosphorus',
@@ -299,7 +299,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tur Malam Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Show Live',
-      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan show langsung. Berangkat 20:30 dari Kabataş, jembatan bercahaya. Pembatalan gratis, bayar di kapal. Malam ini pukul 20:30 — kursi terakhir, pesan sekarang.'
+      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan show langsung. Berangkat 20:30 dari Kabataş, jembatan bercahaya. Pembatalan gratis, bayar di kapal.'
     },
     hero: {
       h1: 'Tur Malam Bosphorus',
@@ -335,7 +335,7 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Pelayaran Makan Malam Istanbul dari €{p.dinnerStd} — Tur Malam Bosphorus',
-      description: 'Pelayaran makan malam 3 jam di Istanbul Bosphorus. Menu Turki multi-hidangan, folklor langsung, jembatan bercahaya. Pembatalan gratis, bayar di kapal. 11.317 ulasan.'
+      description: 'Pelayaran makan malam 3 jam di Istanbul Bosphorus. Menu Turki multi-hidangan, folklor langsung, jembatan bercahaya. Pembatalan gratis, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Makan Malam Istanbul',
@@ -371,7 +371,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tur Malam Istanbul dari €{p.dinnerStd} — Pelayaran Makan Malam Bosphorus + Show',
-      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan show langsung. Berangkat 20:30 dari Kabataş. Pembatalan gratis, bayar di kapal. 11.317 ulasan. Antar-jemput hotel opsional. Pelayaran malam ini pukul 20:30 — kursi terbatas.'
+      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan show langsung. Berangkat 20:30 dari Kabataş. Pembatalan gratis, bayar di kapal. 11.317 ulasan.'
     },
     hero: {
       h1: 'Tur Malam Istanbul',
@@ -407,7 +407,7 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Tur Kapal Istanbul dari €{p.dinnerStd} — Bosphorus + Makan Malam + Show',
-      description: 'Tur kapal 3 jam: pelayaran Bosphorus, makan malam Turki lengkap, folklor langsung, pemandangan malam bercahaya. Pembatalan gratis, bayar di kapal. 11.317 ulasan.'
+      description: 'Tur kapal 3 jam: pelayaran Bosphorus, makan malam Turki lengkap, folklor langsung, pemandangan malam bercahaya. Pembatalan gratis, bayar di kapal.'
     },
     hero: {
       h1: 'Tur Perahu Istanbul',
@@ -443,7 +443,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Perjalanan Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam Istanbul + Show',
-      description: 'Perjalanan 3 jam di Bosphorus: makan malam Turki, folklor langsung, pemandangan malam bercahaya. Berangkat 20:30 dari Kabataş. Pembatalan gratis, bayar di kapal.'
+      description: 'Perjalanan 3 jam di Bosphorus: makan malam Turki, folklor langsung, pemandangan malam bercahaya. Berangkat 20:30 dari Kabataş.'
     },
     hero: {
       h1: 'Perjalanan Bosphorus',
@@ -479,7 +479,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Tiket Pelayaran Bosphorus dari €{p.dinnerStd} — Bayar di Kapal',
-      description: 'Tiket langsung pelayaran Bosphorus. Standar €{p.dinnerStd}, VIP €{p.dinnerVip}. Tanpa uang muka, bayar di kapal. Pembatalan gratis hingga 2 jam sebelumnya. 11.317 ulasan. Kursi malam ini cepat habis — pesan sebelum 18:00.'
+      description: 'Tiket langsung pelayaran Bosphorus. Standar €{p.dinnerStd}, VIP €{p.dinnerVip}. Tanpa uang muka, bayar di kapal. Pembatalan gratis hingga 2 jam sebelumnya.'
     },
     hero: {
       h1: 'Tiket Pelayaran Bosphorus',
@@ -587,7 +587,7 @@ module.exports = {
   'bosphorus-sightseeing': {
     meta: {
       title: 'Sightseeing Bosphorus dari €{p.dinnerStd} — Landmark Istanbul dari Air',
-      description: 'Pelayaran sightseeing Bosphorus: Dolmabahçe, Ortaköy, Jembatan Bosphorus, Rumeli, Beylerbeyi, Menara Gadis. Tur malam 3 jam dengan makan malam. Pembatalan gratis.'
+      description: 'Pelayaran sightseeing Bosphorus: Dolmabahçe, Ortaköy, Jembatan Bosphorus, Rumeli, Beylerbeyi, Menara Gadis. Tur malam 3 jam dengan makan malam.'
     },
     hero: {
       h1: 'Sightseeing Bosphorus',

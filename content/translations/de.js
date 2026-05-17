@@ -9,7 +9,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Bosporus Dinner-Kreuzfahrt ab €{p.dinnerStd} — Istanbul Nachttour + Show',
-      description: '3-stündige Bosporus Dinner-Kreuzfahrt mit mehrgängigem türkischem Menü und Live-Folkloreshow. Abfahrt 20:30 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündige Bosporus Dinner-Kreuzfahrt mit mehrgängigem türkischem Menü und Live-Folkloreshow. Abfahrt 20:30 ab Kabataş.'
     },
     hero: {
       h1: 'Bosporus-Dinner-Cruise in Istanbul',
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporus mit Kindern — Familien-Dinner-Kreuzfahrt ab €{p.dinnerStd}/Erw.',
-      description: 'Familienfreundliche Bosporus Dinner-Kreuzfahrt. Kinder 0-3 frei, 4-8 halber Preis. Sicherer Innenbereich, kinderfreundliches Menü. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Familienfreundliche Bosporus Dinner-Kreuzfahrt. Kinder 0-3 frei, 4-8 halber Preis. Sicherer Innenbereich, kinderfreundliches Menü.'
     },
     hero: {
       h1: 'Bosporus-Tour mit Kindern',
@@ -81,7 +81,7 @@ module.exports = {
   'romantic-bosphorus-cruise': {
     meta: {
       title: 'Romantische Bosporus-Kreuzfahrt ab €{p.dinnerStd} — Candle-Light-Dinner für 2',
-      description: 'Romantische Bosporus-Kreuzfahrt: Tisch im Kerzenschein, Rosen, mehrgängiges Dinner unter beleuchteten Brücken. Ab €{p.dinnerStd}/Person. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Romantische Bosporus-Kreuzfahrt: Tisch im Kerzenschein, Rosen, mehrgängiges Dinner unter beleuchteten Brücken. Ab €{p.dinnerStd}/Person.'
     },
     hero: {
       h1: 'Romantische Bosporus-Cruise',
@@ -117,7 +117,7 @@ module.exports = {
   'halal-bosphorus-cruise': {
     meta: {
       title: 'Halal Bosporus Dinner-Kreuzfahrt ab €{p.dinnerStd} — Live-Show + Nachttour',
-      description: '3-stündige Bosporus Dinner-Kreuzfahrt: Live-Folkloreshow, beleuchtete Brücken, Panoramablick auf den Bosporus bei Nacht. Halal-Menü auf Anfrage. Kostenlose Stornierung, Zahlung an Bord.'
+      description: '3-stündige Bosporus Dinner-Kreuzfahrt: Live-Folkloreshow, beleuchtete Brücken, Panoramablick auf den Bosporus bei Nacht. Halal-Menü auf Anfrage.'
     },
     hero: {
       h1: 'Halal Bosporus-Cruise in Istanbul',
@@ -153,7 +153,7 @@ module.exports = {
   'bosphorus-vip': {
     meta: {
       title: 'Bosporus VIP-Kreuzfahrt ab €{p.dinnerVip} — Premium Dinner, Bühnenplatz',
-      description: 'Bosporus VIP Dinner-Kreuzfahrt: Premium-Mezze, Steak-Optionen, Tisch direkt vor der Bühne, bevorzugter Service. Vorher €{p.dinnerVipOriginal}, jetzt €{p.dinnerVip}. Kostenlose Stornierung.'
+      description: 'Bosporus VIP Dinner-Kreuzfahrt: Premium-Mezze, Steak-Optionen, Tisch direkt vor der Bühne, bevorzugter Service.'
     },
     hero: {
       h1: 'Bosporus VIP-Cruise',
@@ -189,7 +189,7 @@ module.exports = {
   'private-bosphorus-cruise': {
     meta: {
       title: 'Private Bosporus-Kreuzfahrt — Boot Charter in Istanbul (25+ Gäste)',
-      description: 'Private Bosporus-Kreuzfahrt-Charter für Gruppen, Hochzeiten, Firmenevents. Exklusives Boot, individuelles Menü, flexible Dauer. Kostenlose Stornierung. WhatsApp für ein Angebot.'
+      description: 'Private Bosporus-Kreuzfahrt-Charter für Gruppen, Hochzeiten, Firmenevents. Exklusives Boot, individuelles Menü, flexible Dauer. Kostenlose Stornierung.'
     },
     hero: {
       h1: 'Private Bosporus-Cruise',
@@ -225,7 +225,7 @@ module.exports = {
   'bosphorus-for-couples': {
     meta: {
       title: 'Bosporus für Paare ab €{p.dinnerStd} — Date Night Istanbul',
-      description: 'Bosporus Dinner-Kreuzfahrt für Paare. Privater Tisch, beleuchtete Brücken, romantische Tischdekoration optional. Ab €{p.dinnerStd}/Person. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Bosporus Dinner-Kreuzfahrt für Paare. Privater Tisch, beleuchtete Brücken, romantische Tischdekoration optional. Ab €{p.dinnerStd}/Person.'
     },
     hero: {
       h1: 'Bosporus-Tour für Paare',
@@ -261,7 +261,7 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Bosporus Sunset-Kreuzfahrt ab €35 — Goldene Stunde + Dinner',
-      description: 'Bosporus Sunset-Kreuzfahrt ab Kabataş, Abfahrt 17:30. Paläste im goldenen Licht, Dinner geht in beleuchtete Nacht über. 3 Stunden. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Bosporus Sunset-Kreuzfahrt ab Kabataş, Abfahrt 17:30. Paläste im goldenen Licht, Dinner geht in beleuchtete Nacht über. 3 Stunden.'
     },
     hero: {
       h1: 'Bosporus-Sonnenuntergangscruise',
@@ -297,7 +297,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Bosporus Nachttour ab €{p.dinnerStd} — Dinner-Kreuzfahrt + Live-Show',
-      description: '3-stündige Bosporus-Nachttour mit Dinner und Live-Show. Abfahrt 20:30 ab Kabataş, beleuchtete Brücken. Kostenlose Stornierung, Zahlung an Bord. Heute Abend 20:30 — letzte Plätze füllen sich, früh buchen.'
+      description: '3-stündige Bosporus-Nachttour mit Dinner und Live-Show. Abfahrt 20:30 ab Kabataş, beleuchtete Brücken. Kostenlose Stornierung, Zahlung an Bord.'
     },
     hero: {
       h1: 'Bosporus-Nachttour',
@@ -333,7 +333,7 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Dinner-Kreuzfahrt Istanbul ab €{p.dinnerStd} — Bosporus Nachttour',
-      description: '3-stündige Istanbul Dinner-Kreuzfahrt auf dem Bosporus. Mehrgängiges türkisches Menü, Live-Folklore, beleuchtete Brücken. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündige Istanbul Dinner-Kreuzfahrt auf dem Bosporus. Mehrgängiges türkisches Menü, Live-Folklore, beleuchtete Brücken.'
     },
     hero: {
       h1: 'Dinner-Cruise Istanbul',
@@ -369,7 +369,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Istanbul Nachttour ab €{p.dinnerStd} — Bosporus Dinner-Kreuzfahrt + Show',
-      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 20:30 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen. Hoteltransfer optional. Heutige 20:30-Tour — begrenzte Plätze.'
+      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 20:30 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
     },
     hero: {
       h1: 'Istanbul-Nachttour',
@@ -405,7 +405,7 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Istanbul Bootstour ab €{p.dinnerStd} — Bosporus-Kreuzfahrt + Dinner + Show',
-      description: '3-stündige Istanbul Bootstour: Bosporus-Fahrt, türkisches Dinner, Live-Folklore, beleuchtete Nachtansichten. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündige Istanbul Bootstour: Bosporus-Fahrt, türkisches Dinner, Live-Folklore, beleuchtete Nachtansichten. Kostenlose Stornierung, Zahlung an Bord.'
     },
     hero: {
       h1: 'Istanbul-Bootstour',
@@ -441,7 +441,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Bosporus-Trip ab €{p.dinnerStd} — Istanbul Dinner-Kreuzfahrt + Show',
-      description: '3-stündiger Bosporus-Trip: türkisches Dinner, Live-Folklore, beleuchtete Nachtansichten. Abfahrt 20:30 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündiger Bosporus-Trip: türkisches Dinner, Live-Folklore, beleuchtete Nachtansichten. Abfahrt 20:30 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord.'
     },
     hero: {
       h1: 'Bosporus-Ausflug',
@@ -477,7 +477,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Bosporus-Tickets ab €{p.dinnerStd} — Zahlung an Bord, keine Vorkasse',
-      description: 'Direkte Bosporus-Kreuzfahrt-Tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Keine Vorkasse, Zahlung an Bord. Kostenlose Stornierung bis 2 Std. vorher. 11.317 Bewertungen. Heute Abend verfügbare Plätze sind oft schnell weg — bis 18:00 buchen.'
+      description: 'Direkte Bosporus-Kreuzfahrt-Tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Keine Vorkasse, Zahlung an Bord. Kostenlose Stornierung bis 2 Std.'
     },
     hero: {
       h1: 'Bosporus-Cruise-Tickets',
@@ -549,7 +549,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Istanbul Kreuzfahrt-Preise ab €{p.dinnerStd} — Transparent, keine versteckten Kosten',
-      description: 'Istanbul Bosporus-Kreuzfahrt-Preise: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kinder 0-3 frei, 4-8 halber Preis. Add-ons transparent. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Istanbul Bosporus-Kreuzfahrt-Preise: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kinder 0-3 frei, 4-8 halber Preis. Add-ons transparent.'
     },
     hero: {
       h1: 'Istanbul-Cruise-Preis',
@@ -585,7 +585,7 @@ module.exports = {
   'bosphorus-sightseeing': {
     meta: {
       title: 'Bosporus Sightseeing ab €{p.dinnerStd} — Istanbul-Sehenswürdigkeiten vom Boot',
-      description: 'Bosporus Sightseeing-Kreuzfahrt: Dolmabahçe, Ortaköy, Bosporus-Brücke, Rumeli, Beylerbeyi, Mädchenturm. 3-stündige Abendtour mit Dinner. Kostenlose Stornierung, Zahlung an Bord.'
+      description: 'Bosporus Sightseeing-Kreuzfahrt: Dolmabahçe, Ortaköy, Bosporus-Brücke, Rumeli, Beylerbeyi, Mädchenturm. 3-stündige Abendtour mit Dinner.'
     },
     hero: {
       h1: 'Bosporus-Sightseeing',
