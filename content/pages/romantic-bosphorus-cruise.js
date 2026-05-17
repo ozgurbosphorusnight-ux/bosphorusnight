@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Romantic Bosphorus Cruise from €{p.dinnerStd} — Candlelit Dinner for 2',
-    description: 'Romantic Bosphorus cruise: candlelit table, roses, multi-course dinner under illuminated bridges. From €{p.dinnerStd}/person. Free cancellation, pay on boat. Anniversary & honeymoon ready.'
+    description: 'Romantic Bosphorus cruise: candlelit table, roses, dinner under illuminated bridges. From €{p.dinnerStd}/person. Pay on boat, free cancellation.'
   },
 
   hero: {

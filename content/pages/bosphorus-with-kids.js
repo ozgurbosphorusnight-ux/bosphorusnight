@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise with Kids — Family Dinner Tour from €{p.dinnerStd}/adult',
-    description: 'Family-friendly Bosphorus dinner cruise. Kids 0-3 free, 4-8 half price. Safe indoor seating, child-friendly menu. From €{p.dinnerStd}/adult. Free cancellation, pay on boat.'
+    description: 'Family-friendly Bosphorus dinner cruise. Kids 0-3 free, 4-8 half price. Indoor seating, child-friendly menu. From €{p.dinnerStd}/adult. Pay on boat.'
   },
 
   hero: {

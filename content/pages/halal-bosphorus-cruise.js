@@ -24,7 +24,7 @@ module.exports = {
 
   meta: {
     title: 'Halal Bosphorus Dinner Cruise from €{p.dinnerStd} — Live Show + Night Tour',
-    description: '3-hour Bosphorus dinner cruise: live folklore show, illuminated bridges, panoramic Bosphorus night views. Halal menu available on request. Free cancellation, pay on boat.'
+    description: '3-hour Bosphorus dinner cruise: halal menu on request, live folklore, illuminated bridges, panoramic night views. Pay on boat.'
   },
 
   hero: {

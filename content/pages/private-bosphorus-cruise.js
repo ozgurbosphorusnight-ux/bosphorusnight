@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Private Bosphorus Cruise — Charter a Boat in Istanbul (25+ guests)',
-    description: 'Private Bosphorus cruise charter for groups, weddings, corporate events. Exclusive boat, custom menu, flexible duration. Free cancellation. WhatsApp for a custom quote.'
+    description: 'Private Bosphorus cruise charter for groups, weddings, corporate events. Exclusive boat, custom menu. WhatsApp for a custom quote.'
   },
 
   hero: {

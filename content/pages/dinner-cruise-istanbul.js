@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Dinner Cruise Istanbul from €{p.dinnerStd} — Bosphorus Night Tour',
-    description: '3-hour Istanbul dinner cruise on the Bosphorus. Multi-course Turkish menu, live folklore, illuminated bridges. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: '3-hour Istanbul dinner cruise on the Bosphorus: Turkish menu, live folklore, illuminated bridges. Pay on boat. 11,317 reviews.'
   },
 
   hero: {

@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Trip from €{p.dinnerStd} — Istanbul Dinner Cruise + Show',
-    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night views. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night. 20:30 from Kabataş. Pay on boat. 11,317 reviews.'
   },
 
   hero: {

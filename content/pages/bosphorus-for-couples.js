@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise for Couples from €{p.dinnerStd} — Date Night Istanbul',
-    description: 'Bosphorus dinner cruise for couples. Private table, illuminated bridges, romantic setup option. From €{p.dinnerStd}/person. Free cancellation, pay on boat. 11,317 reviews.'
+    description: 'Bosphorus dinner cruise for couples. Private table, illuminated bridges, romantic setup. From €{p.dinnerStd}/person. Pay on boat. 11K+ reviews.'
   },
 
   hero: {

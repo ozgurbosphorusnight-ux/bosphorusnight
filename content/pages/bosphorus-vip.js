@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus VIP Cruise from €{p.dinnerVip} — Premium Dinner, Stage Seating',
-    description: 'Bosphorus VIP dinner cruise: premium mezes, steak options, stage-front table, priority service. Was €{p.dinnerVipOriginal}, now €{p.dinnerVip}. Free cancellation, pay on boat.'
+    description: 'Bosphorus VIP dinner cruise: premium mezes, steak, stage-front table, priority service. €{p.dinnerVipOriginal} → €{p.dinnerVip}. Pay on boat.'
   },
 
   hero: {

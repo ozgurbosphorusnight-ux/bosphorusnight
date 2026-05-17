@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Istanbul Cruise Price from €{p.dinnerStd} — Transparent Rates, No Hidden Fees',
-    description: 'Istanbul Bosphorus cruise prices: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kids 0-3 free, 4-8 half price. Add-ons transparent. Free cancellation, pay on boat.'
+    description: 'Istanbul Bosphorus cruise prices: Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. Kids 0-3 free, 4-8 half. Transparent add-ons. Pay on boat.'
   },
 
   hero: {

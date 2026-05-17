@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Sunset Cruise from €35 — Golden Hour + Dinner',
-    description: 'Bosphorus sunset cruise from Kabataş, 17:30 departure. Golden-hour palaces, dinner continues into illuminated night. 3 hours. Free cancellation, pay on boat. 11,317 reviews.'
+    description: 'Bosphorus sunset cruise from Kabataş, 17:30 departure. Golden-hour palaces, dinner into illuminated night. 3 hours. Pay on boat. 11K+ reviews.'
   },
 
   hero: {

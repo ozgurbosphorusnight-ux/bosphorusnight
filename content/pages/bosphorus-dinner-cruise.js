@@ -24,7 +24,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Dinner Cruise from €{p.dinnerStd} — Istanbul Night Tour + Show',
-    description: '3-hour Bosphorus dinner cruise with multi-course Turkish menu and live folklore show. Departs 20:30 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: '3-hour Bosphorus dinner cruise: multi-course Turkish menu, live folklore show. 20:30 from Kabataş. Pay on boat. 11,317 reviews.'
   },
 
   hero: {

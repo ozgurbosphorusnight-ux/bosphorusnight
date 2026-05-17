@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Night Tour from €{p.dinnerStd} — Dinner Cruise + Live Show',
-    description: '3-hour Bosphorus night tour with dinner and live show. Departs 20:30 from Kabataş, illuminated bridges. Free cancellation, pay on boat. Tonight at 20:30 — last spots filling, book early.'
+    description: '3-hour Bosphorus night tour with dinner & live show. 20:30 from Kabataş, illuminated bridges. Pay on boat, free cancellation. Book today.'
   },
 
   hero: {
