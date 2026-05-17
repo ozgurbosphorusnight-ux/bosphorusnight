@@ -47,6 +47,12 @@ const BLOG_SLUGS = [
   'things-to-know-istanbul-boat-tour'
 ];
 
+// Blog slug'lar henüz sadece EN'de var (19 dil çevirisi sonraki sprint'te eklenir).
+// Bunlar sitemap'e SADECE EN URL'i olarak girer; 19 dil için URL üretilmez (404 önlemek).
+const BLOG_SLUGS_EN_ONLY = [
+  'best-time-bosphorus-cruise'
+];
+
 // City Guide — 20 dilde (EN + 19 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ja/ko/ms/pl/ro/ru/tr/uk/ur/zh)
 const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur', 'ja', 'ko', 'uk'];
 
@@ -111,6 +117,20 @@ ${xDefault}
   </url>`).join('\n');
 }
 
+// EN-only blog slug için: sadece tek URL, alternate yok, x-default = kendisi
+function blogUrlBlockEnOnly(slug) {
+  const today = new Date().toISOString().split('T')[0];
+  const url = blogUrlFor('en', slug);
+  return `  <url>
+    <loc>${url}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="${url}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${url}" />
+  </url>`;
+}
+
 function cityGuideUrlFor(lang, slug) {
   const prefix = lang === 'en' ? '' : '/' + lang;
   if (!slug) return SITE_URL + prefix + '/city-guide/';
@@ -140,6 +160,7 @@ function buildSitemap() {
   const homeBlocks = urlBlock('');
   const landingBlocks = SLUGS.map(urlBlock).join('\n');
   const blogBlocks = BLOG_SLUGS.map(blogUrlBlock).join('\n');
+  const blogEnOnlyBlocks = BLOG_SLUGS_EN_ONLY.map(blogUrlBlockEnOnly).join('\n');
   const cityGuideBlocks = CITY_GUIDE_SLUGS.map(cityGuideUrlBlock).join('\n');
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -147,6 +168,7 @@ function buildSitemap() {
 ${homeBlocks}
 ${landingBlocks}
 ${blogBlocks}
+${blogEnOnlyBlocks}
 ${cityGuideBlocks}
 </urlset>
 `;
@@ -154,6 +176,7 @@ ${cityGuideBlocks}
   const urls = (homeBlocks.match(/<url>/g) || []).length
     + (landingBlocks.match(/<url>/g) || []).length
     + (blogBlocks.match(/<url>/g) || []).length
+    + (blogEnOnlyBlocks.match(/<url>/g) || []).length
     + (cityGuideBlocks.match(/<url>/g) || []).length;
   console.log(`  ✓ dist/sitemap.xml (${urls} URL)`);
 }
