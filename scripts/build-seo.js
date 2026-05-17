@@ -44,14 +44,13 @@ const BLOG_SLUGS = [
   'bosphorus-sunset-cruise-guide',
   'bosphorus-cruise-with-kids-family',
   'istanbul-cruise-tonight-last-minute',
-  'things-to-know-istanbul-boat-tour'
-];
-
-// Blog slug'lar henüz sadece EN'de var (19 dil çevirisi sonraki sprint'te eklenir).
-// Bunlar sitemap'e SADECE EN URL'i olarak girer; 19 dil için URL üretilmez (404 önlemek).
-const BLOG_SLUGS_EN_ONLY = [
+  'things-to-know-istanbul-boat-tour',
   'best-time-bosphorus-cruise'
 ];
+
+// EN-only slug listesi (19 dil çevirisi yapılana kadar buraya konur)
+// Şu an boş — tüm slug'lar 19 dilde mevcut.
+const BLOG_SLUGS_EN_ONLY = [];
 
 // City Guide — 20 dilde (EN + 19 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ja/ko/ms/pl/ro/ru/tr/uk/ur/zh)
 const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur', 'ja', 'ko', 'uk'];
