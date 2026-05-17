@@ -85,8 +85,8 @@ for (const lang of BLOG_LANGS) {
 // Files ready: tailwind.config.js, src/tailwind-input.css, scripts/build-tailwind.js
 // run('node scripts/build-tailwind.js');
 
-// 5. Root seviyesinde tek dosyalar
-for (const f of ['site.webmanifest', 'llms.txt', 'privacy.html', 'terms.html']) {
+// 5. Root seviyesinde tek dosyalar (IndexNow key dosyası dahil)
+for (const f of ['site.webmanifest', 'llms.txt', 'privacy.html', 'terms.html', 'b94dc1d001fd47909cdbe7434f1a0be6.txt']) {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) {
     fs.copyFileSync(src, path.join(DIST, f));
