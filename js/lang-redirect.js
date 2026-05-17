@@ -11,12 +11,9 @@
 (function () {
   'use strict';
 
-  // Skip on localhost — dev server only has the English source; redirecting
-  // to /tr/ etc. would 404. Production has all 15 langs pre-built.
-  var host = window.location.hostname;
-  if (host === 'localhost' || host === '127.0.0.1' || host.endsWith('.local')) {
-    return;
-  }
+  // Note: Previously skipped on localhost because dev server only had the
+  // English source. Now dist/ has all 20 langs pre-built (Sprint L1), so
+  // localhost can use the same lang detection / redirect logic as production.
 
   // Langs with pre-built static pages at /xx/ (build-pages.js output).
   // All 20 langs supported after Sprint L1 build-pages.js extension.
