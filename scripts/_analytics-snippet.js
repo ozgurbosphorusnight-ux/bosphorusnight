@@ -70,7 +70,7 @@ function buildAnalyticsHead() {
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1"
-    alt=""/></noscript>`);
+    alt="Meta Pixel tracking"/></noscript>`);
   }
 
   return parts.join('\n');
@@ -134,7 +134,7 @@ function buildMetaPixelOnly() {
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1"
-    alt=""/></noscript>`;
+    alt="Meta Pixel tracking"/></noscript>`;
 }
 
 module.exports = {
