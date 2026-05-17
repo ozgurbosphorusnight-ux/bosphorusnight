@@ -360,6 +360,7 @@ const T = {
     ['Bosphorus Bridge', 'Boğaz Köprüsü'],
     ['Bosphorus Strait', 'İstanbul Boğazı'],
     ['Bosphorus', 'Boğaz'],
+    ['Istanbul', 'İstanbul'],
   ],
   de: [
     ['Bosphorus Night Dinner Cruise', 'Bosporus-Dinner-Bootsfahrt am Abend'],
@@ -384,6 +385,7 @@ const T = {
     ['Bosphorus Bridge', 'Puente del Bósforo'],
     ['Bosphorus Strait', 'Estrecho del Bósforo'],
     ['Bosphorus', 'Bósforo'],
+    ['Istanbul', 'Estambul'],
   ],
   fr: [
     ['Bosphorus Night Dinner Cruise', 'Croisière-dîner Soirée Bosphore'],
