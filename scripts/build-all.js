@@ -108,3 +108,15 @@ const elapsed = ((Date.now() - start) / 1000).toFixed(1);
 console.log(`\n✅ Build tamam (${elapsed}s)`);
 console.log(`   Output: ${DIST}`);
 console.log(`   Yayınlanmaya hazır.`);
+
+// 7. IndexNow auto-ping: Bing/Yandex/Naver/Seznam'a sitemap URL'leri bildir
+// Fail-soft: IndexNow hata verirse build başarılı sayılır (verification süreci normal).
+// SKIP_INDEXNOW=1 env var ile atlanabilir.
+if (process.env.SKIP_INDEXNOW !== '1') {
+  console.log('\n🔔 IndexNow ping...');
+  try {
+    execSync('node scripts/notify-indexnow.js', { stdio: 'inherit', cwd: ROOT });
+  } catch (err) {
+    console.log('   (IndexNow ping başarısız — verification beklenebilir, build OK)');
+  }
+}
