@@ -469,6 +469,9 @@ function detectLang(filePath) {
   // src/blog-i18n/ko/...
   m = norm.match(/\/src\/(?:blog|city-guide|cruises)-i18n\/([a-z]{2})\//);
   if (m) return m[1];
+  // dist/ko/...  (post-build pass)
+  m = norm.match(/\/dist\/([a-z]{2})\//);
+  if (m) return m[1];
   return null;
 }
 
@@ -479,9 +482,20 @@ function localize(text, patterns) {
   let t = text;
 
   // 1. Protect URL attributes (href, src, content, action, url, @id)
-  t = t.replace(/(href|src|content|action|url|@id|"@id"|"url"|"image"|"logo")\s*[:=]\s*"[^"]*"/g, (m) => {
+  t = t.replace(/(href|src|action)\s*=\s*"[^"]*"/g, (m) => {
     protectedSlots.push(m);
     return `${protectedSlots.length - 1}`;
+  });
+
+  // JSON-LD URL fields
+  t = t.replace(/"(@id|url|image|logo|sameAs)"\s*:\s*"[^"]*"/g, (m) => {
+    protectedSlots.push(m);
+    return `${protectedSlots.length - 1}`;
+  });
+  // URL-bearing meta content (og:url, og:image, canonical)
+  t = t.replace(/<meta\s+(?:property|name)="(?:og:url|og:image|twitter:image)"\s+content="[^"]*"/g, (m) => {
+    protectedSlots.push(m);
+    return `${protectedSlots.length - 1}`;
   });
 
   // 2. Protect parenthesized EN keywords like "(Bosphorus)", "(Kabataş)" — kept intentionally for SEO
@@ -527,6 +541,8 @@ const TARGETS = [
   'src/blog-i18n',
   'src/city-guide-i18n',
   'src/cruises-i18n',
+  // Post-build pass: dist HTML'leri — EN master content fallback'larını yakala
+  'dist',
 ];
 
 const files = [];
