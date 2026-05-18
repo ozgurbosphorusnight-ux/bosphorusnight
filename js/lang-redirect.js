@@ -58,6 +58,12 @@
     }
 
     // Case C: plain /... (English root in prod)
+    // On localhost dev-server the flat /xx/ structure doesn't exist — only /dist/xx/.
+    // Production (Vercel) flattens dist/<lang>/ to /<lang>/, so /tr/index.html works there.
+    var isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocalhost && (path === '/' || path === '/index.html')) {
+      return '/dist/' + targetLang + '/index.html';
+    }
     if (targetLang === 'en') return path;
     return '/' + targetLang + path;
   }
