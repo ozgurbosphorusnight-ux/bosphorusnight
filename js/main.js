@@ -2295,7 +2295,7 @@ function wizNext() {
       return;
     }
     // 5) Zone check — offer "continue without transfer" button (soft block)
-    if (wizState.transfer && address && wizState.transferLat && !detectTransferZone(address)) {
+    if (wizState.transfer && address && wizState.transferLat && !detectTransferZone(wizState.transferFormattedAddress || address)) {
       const zoneTxt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة', fa: 'برای این منطقه خدمات ترانسفر ارائه نمی‌دهیم', fr: 'Nous ne proposons pas de service de transfert pour cette zone', it: 'Non offriamo servizio di transfer per questa zona', zh: '我们不为此区域提供接送服务', id: 'Kami tidak menyediakan layanan antar-jemput ke area ini', ms: 'Kami tidak menawarkan perkhidmatan pemindahan ke kawasan ini', pl: 'Nie oferujemy usługi transferu do tego obszaru', bg: 'Не предлагаме трансфер до тази зона', ro: 'Nu oferim serviciu de transfer pentru această zonă' }[currentLang] || 'We do not offer transfer service to this area';
       const btnTxt = (T['wizard.continueWithoutTransfer'] && T['wizard.continueWithoutTransfer'][currentLang]) || 'Continue without transfer · I will come myself';
       if (addrWarn) {
@@ -3465,6 +3465,10 @@ function initPlacesAutocomplete() {
       wizState.transferLat = place.geometry.location.lat();
       wizState.transferLng = place.geometry.location.lng();
     }
+    // Save formatted address separately — used for zone check.
+    // Hotel names sometimes contain misleading district keywords ("Taksim Bosphorus")
+    // while the real location is elsewhere. Zone match must run on address only, not name.
+    wizState.transferFormattedAddress = place.formatted_address || '';
     // Show map with pin
     const mapDiv = document.getElementById('wizAddressMap');
     if (mapDiv && place.geometry && place.geometry.location) {
@@ -3503,7 +3507,7 @@ function initPlacesAutocomplete() {
         }
       });
     }
-    const zone = detectTransferZone(fullAddress);
+    const zone = detectTransferZone(place.formatted_address || '');
     wizState.transferZoneExtra = 0; // tek fiyat (2026-04-19 — zone surcharge kaldırıldı)
     const zoneMsg = document.getElementById('wizTransferZoneMsg');
     if (zoneMsg) {
