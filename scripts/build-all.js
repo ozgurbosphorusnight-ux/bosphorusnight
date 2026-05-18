@@ -81,9 +81,9 @@ for (const lang of BLOG_LANGS) {
   }
 }
 
-// 4. Tailwind CSS build-time extraction — deferred to Aşama 5.A (Core Web Vitals sprint).
-// Files ready: tailwind.config.js, src/tailwind-input.css, scripts/build-tailwind.js
-// run('node scripts/build-tailwind.js');
+// 4. Tailwind CSS build-time extraction → dist/css/tailwind.css
+// Replaces cdn.tailwindcss.com runtime JIT (350 KB JS) with ~45 KB static CSS.
+run('node scripts/build-tailwind.js');
 
 // 5. Root seviyesinde tek dosyalar (IndexNow key dosyası dahil)
 for (const f of ['site.webmanifest', 'llms.txt', 'privacy.html', 'terms.html', 'b94dc1d001fd47909cdbe7434f1a0be6.txt']) {
@@ -103,6 +103,11 @@ if (fs.existsSync(enDir)) {
   fs.rmdirSync(enDir);
   console.log(`  ✓ dist/en/* → dist/ root`);
 }
+
+// 6b. Tailwind CDN script bloğunu tüm dist HTML'lerinden strip et,
+// yerine /css/tailwind.css link tag'i koy. (Kaynak HTML'ler değişmez —
+// lokal preview için CDN orada kalıyor.)
+run('node scripts/_strip-tailwind-cdn.js');
 
 const elapsed = ((Date.now() - start) / 1000).toFixed(1);
 console.log(`\n✅ Build tamam (${elapsed}s)`);

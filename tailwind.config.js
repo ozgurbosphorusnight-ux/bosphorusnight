@@ -3,6 +3,9 @@ module.exports = {
   content: [
     './index.html',
     './blog/**/*.html',
+    './city-guide/**/*.html',
+    './src/blog-i18n/**/*.html',
+    './src/city-guide-i18n/**/*.html',
     './cruises/**/*.html',
     './js/**/*.js',
     './scripts/**/*.js',
