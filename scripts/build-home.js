@@ -15,6 +15,7 @@ const SITE_URL = 'https://www.bosphorusnight.com';
 
 const { buildBosphorusItinerary, buildBosphorusMentions } = require('./_wikidata-entities.js');
 const { buildMetaPixelOnly, buildAnalyticsBodyEnd } = require('./_analytics-snippet.js');
+const { buildInlineTScript, replaceTranslationsScriptTag } = require('./_inline-translations.js');
 
 // Load enriched translations.js (now includes all 15 languages)
 const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
@@ -542,6 +543,13 @@ function buildForLang(lang, template) {
 
   // Swap og:locale for non-EN languages
   html = swapOgLocale(html, lang);
+
+  // Replace external <script src="/js/translations.js"></script> (671 KB) with
+  // an inline bootstrap that exposes only this page's language + EN fallback.
+  // subPrices is passed so T values with {p.dinnerStd}/€24/€55 placeholders are
+  // resolved at build time, not left for runtime.
+  const inlineT = buildInlineTScript(T, LANGUAGES, lang, subPrices);
+  html = replaceTranslationsScriptTag(html, inlineT);
 
   return html;
 }
