@@ -3511,16 +3511,31 @@ function initPlacesAutocomplete() {
     wizState.transferZoneExtra = 0; // tek fiyat (2026-04-19 — zone surcharge kaldırıldı)
     const zoneMsg = document.getElementById('wizTransferZoneMsg');
     if (zoneMsg) {
-      if (zone && zone.allowed) {
-        const txt = { en: 'Transfer is available for this area', tr: 'Transfer bu bölge için uygundur', de: 'Transfer ist für dieses Gebiet verfügbar', es: 'El traslado está disponible para esta zona', ru: 'Трансфер доступен для этого района', ar: 'خدمة النقل متاحة لهذه المنطقة' }[currentLang] || 'Transfer is available for this area';
-        const checkMap = { en: 'Please verify your location on the map', tr: 'Lütfen haritadan konumunuzu kontrol ediniz', de: 'Bitte überprüfen Sie Ihren Standort auf der Karte', es: 'Por favor verifique su ubicación en el mapa', ru: 'Пожалуйста, проверьте ваше местоположение на карте', ar: 'يرجى التحقق من موقعك على الخريطة' }[currentLang] || 'Please verify your location on the map';
-        zoneMsg.innerHTML = `<span class="text-green-400">✓ ${txt}</span><br><span class="text-white/40">📍 ${checkMap}</span>`;
-        zoneMsg.classList.remove('hidden');
-      } else {
-        const txt = { en: 'We do not offer transfer service to this area', tr: 'Bu bölgeye transfer hizmetimiz bulunmamaktadır', de: 'Für dieses Gebiet bieten wir keinen Transferservice an', es: 'No ofrecemos servicio de traslado a esta zona', ru: 'Мы не предоставляем трансфер в этот район', ar: 'لا نقدم خدمة النقل إلى هذه المنطقة' }[currentLang] || 'We do not offer transfer service to this area';
-        zoneMsg.innerHTML = `<span class="text-red-400">✕ ${txt}</span>`;
-        zoneMsg.classList.remove('hidden');
+      // Selected-location banner: shows full formatted address + zone verdict in large type.
+      // Reason: Google Autocomplete dropdown truncates address; some hotel brand names contain
+      // misleading district keywords ("Hotel Taksim Bosphorus" while located in Büyükçekmece).
+      // Customer must clearly see the actual address AFTER selection.
+      const labelText = { en: 'Selected location', tr: 'Seçilen konum', de: 'Ausgewählter Standort', es: 'Ubicación seleccionada', ru: 'Выбранное местоположение', ar: 'الموقع المحدد', fa: 'مکان انتخاب شده', fr: 'Lieu sélectionné', it: 'Posizione selezionata', zh: '已选位置', id: 'Lokasi terpilih', ms: 'Lokasi dipilih', pl: 'Wybrana lokalizacja', bg: 'Избрано местоположение', ro: 'Locație selectată' }[currentLang] || 'Selected location';
+      zoneMsg.innerHTML =
+        `<div class="text-[10px] uppercase tracking-wider text-[#c9a84c]/80 mb-1.5 font-semibold">📍 ${labelText}</div>` +
+        `<div id="wizSelectedAddress" class="text-white text-sm font-medium leading-snug mb-2"></div>` +
+        `<div id="wizZoneStatus" class="border-t border-white/10 pt-2 text-xs"></div>`;
+      // XSS-safe: address from Google API written via textContent.
+      const addrEl = document.getElementById('wizSelectedAddress');
+      if (addrEl) addrEl.textContent = place.formatted_address || place.name || '';
+      const statusEl = document.getElementById('wizZoneStatus');
+      if (statusEl) {
+        if (zone && zone.allowed) {
+          const txt = { en: 'Transfer available for this area', tr: 'Transfer bu bölge için uygundur', de: 'Transfer ist für dieses Gebiet verfügbar', es: 'El traslado está disponible para esta zona', ru: 'Трансфер доступен для этого района', ar: 'خدمة النقل متاحة لهذه المنطقة' }[currentLang] || 'Transfer available for this area';
+          const checkMap = { en: 'Please verify your hotel on the map below', tr: 'Lütfen otelinizi aşağıdaki haritadan kontrol ediniz', de: 'Bitte überprüfen Sie Ihr Hotel auf der Karte unten', es: 'Por favor verifique su hotel en el mapa de abajo', ru: 'Пожалуйста, проверьте отель на карте ниже', ar: 'يرجى التحقق من فندقك على الخريطة أدناه' }[currentLang] || 'Please verify your hotel on the map below';
+          statusEl.innerHTML = `<div class="text-green-400 font-semibold">✓ ${txt}</div><div class="text-white/50 text-[11px] mt-0.5">📍 ${checkMap}</div>`;
+        } else {
+          const txt = { en: 'Outside our transfer service area', tr: 'Transfer hizmet alanımız dışında', de: 'Außerhalb unseres Transfer-Servicegebiets', es: 'Fuera de nuestra zona de servicio de traslado', ru: 'За пределами зоны нашего трансфера', ar: 'خارج منطقة خدمة النقل لدينا' }[currentLang] || 'Outside our transfer service area';
+          const hint = { en: 'Please pick a hotel in central Istanbul (Taksim, Beyoğlu, Sultanahmet, Beşiktaş, etc.)', tr: 'Lütfen merkez İstanbul\'da bir otel seçiniz (Taksim, Beyoğlu, Sultanahmet, Beşiktaş, vb.)', de: 'Bitte wählen Sie ein Hotel im Zentrum von Istanbul (Taksim, Beyoğlu, Sultanahmet, Beşiktaş, usw.)', es: 'Por favor elija un hotel en el centro de Estambul (Taksim, Beyoğlu, Sultanahmet, Beşiktaş, etc.)', ru: 'Пожалуйста, выберите отель в центре Стамбула (Таксим, Бейоглу, Султанахмет, Бешикташ и т.д.)', ar: 'يرجى اختيار فندق في وسط اسطنبول (تقسيم، بيوغلو، السلطان أحمد، بشيكتاش، إلخ)' }[currentLang] || 'Please pick a hotel in central Istanbul (Taksim, Beyoğlu, Sultanahmet, Beşiktaş, etc.)';
+          statusEl.innerHTML = `<div class="text-red-400 font-semibold">✕ ${txt}</div><div class="text-white/50 text-[11px] mt-0.5">${hint}</div>`;
+        }
       }
+      zoneMsg.classList.remove('hidden');
     }
     wizCalcPrice();
   });
