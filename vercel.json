@@ -28,6 +28,7 @@
     { "source": "/cruises/:lang/:slug", "destination": "/:lang/:slug", "statusCode": 301 }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" }
+    { "source": "/api/(.*)", "destination": "/api/$1" },
+    { "source": "/adres/:token", "destination": "/adres" }
   ]
 }

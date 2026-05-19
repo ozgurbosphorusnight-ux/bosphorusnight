@@ -695,7 +695,7 @@ bosphorus-night-ai/
 │   ├── channels/         (whatsapp [Aşama 4], telegram, wechat, web-form)
 │   ├── agents/           (sales [Mode A+B], orchestrator, ops, voice)
 │   ├── claude/           (client, system-prompt, confirmation-prompt, intent-classifier, memory, tools/)
-│   │   └── tools/        (check-availability, calculate-price, create-reservation, update-reservation, cancel-reservation, trigger-escalation)
+│   │   └── tools/        (10 tool: check-availability, calculate-price, create-reservation, update-reservation, cancel-reservation, trigger-escalation, resend-ticket, send-boarding-info, update-customer-profile, lookup-hotel-address)
 │   ├── safety/           (approval, escalation, kill-switch, anomaly) [Aşama 5]
 │   ├── scheduled/        (pre-tour, during-tour, post-tour, follow-up) [Aşama 6]
 │   └── utils/            (logger, language, ticket-renderer, wizard-parser, name-validator, transfer-zones, markdown-stripper)
