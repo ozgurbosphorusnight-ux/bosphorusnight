@@ -2334,21 +2334,6 @@ function wizLooksLikeAccommodation(text) {
   return ACCOMMODATION_KEYWORDS.some(kw => lower.includes(kw));
 }
 
-function wizToggleRoomNumber(place) {
-  const addrInput = document.getElementById('wizAddress');
-  const roomBlock = document.getElementById('wizRoomNumberBlock');
-  if (!addrInput || !roomBlock) return;
-  const val = (addrInput.value || '').trim();
-  let isAccommodation = false;
-  if (place && Array.isArray(place.types)) {
-    isAccommodation = place.types.includes('lodging');
-  } else {
-    // Manual typing — fall back to keyword detection
-    isAccommodation = wizLooksLikeAccommodation(val);
-  }
-  roomBlock.classList.toggle('hidden', !isAccommodation);
-}
-
 function wizOnAddressInput() {
   // Invalidate coords when user edits manually — forces re-pick from dropdown
   if (wizState.transferLat) {
@@ -2358,8 +2343,6 @@ function wizOnAddressInput() {
   // Hide map until a new pick is made
   const mapDiv = document.getElementById('wizAddressMap');
   if (mapDiv) mapDiv.classList.add('hidden');
-  // Re-evaluate room number visibility via keyword match
-  wizToggleRoomNumber(null);
 }
 
 function wizContinueWithoutTransfer() {
@@ -2374,8 +2357,6 @@ function wizContinueWithoutTransfer() {
   if (addrBlock) addrBlock.classList.add('hidden');
   const addrWarn = document.getElementById('wizTransferZoneMsg');
   if (addrWarn) addrWarn.classList.add('hidden');
-  const roomBlock = document.getElementById('wizRoomNumberBlock');
-  if (roomBlock) roomBlock.classList.add('hidden');
   const mapDiv = document.getElementById('wizAddressMap');
   if (mapDiv) mapDiv.classList.add('hidden');
   const hint = document.getElementById('wizNextHint');
@@ -3253,10 +3234,7 @@ function wizBuildSummary() {
   const transferStr = wizState.transfer ? yn[0] : yn[1];
   const romanticStr = wizState.romantic ? yn[0] : yn[1];
   const mapsLink = (wizState.transferLat && wizState.transferLng) ? `https://maps.google.com/maps?q=${wizState.transferLat},${wizState.transferLng}` : '';
-  const roomNumberInput = (document.getElementById('wizRoomNumber')?.value || '').trim();
-  const roomLabel = { en: 'Room', tr: 'Oda', de: 'Zimmer', es: 'Habitación', ru: 'Комната', ar: 'غرفة', fa: 'اتاق', fr: 'Chambre', it: 'Stanza', zh: '房间', id: 'Kamar', ms: 'Bilik', pl: 'Pokój', bg: 'Стая', ro: 'Cameră', uk: 'Кімната', hi: 'कमरा', ur: 'کمرہ', ja: '部屋', ko: '객실' }[currentLang] || 'Room';
-  const roomLine = wizState.transfer && roomNumberInput ? `\n🚪 ${roomLabel}: ${roomNumberInput}` : '';
-  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${roomLine}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
+  const addressLine = wizState.transfer && guestAddress ? `\n📍 ${guestAddress}${mapsLink ? '\n🗺 ' + mapsLink : ''}` : '';
 
   const msgTemplates = {
     en: `Hi, I'd like to check availability:\n👤 ${guestName}\n📞 ${guestPhone}\n📅 ${dateStr}\n🎫 ${pkgLabel}\n👥 ${guestStr}\n🍷 ${drinkLabel}\n🚗 Hotel Transfer: ${transferStr}${addressLine}\n💐 Romantic Table: ${romanticStr}\n💰 Total: €${total}\nPlease confirm. Thank you!`,
@@ -3340,7 +3318,6 @@ function wizBuildSummary() {
             transfer_needed: wizState.transfer ? true : false,
             pickup_address: wizState.transfer ? guestAddress : null,
             hotel: wizState.transfer ? guestAddress : null,
-            room_number: (document.getElementById('wizRoomNumber')?.value || '').trim() || null,
             language: currentLang,
             total_eur: total,
             special_request: (document.getElementById('wizSpecialRequest')?.value || '').trim() || null,
@@ -3458,8 +3435,6 @@ function initPlacesAutocomplete() {
     if (place.name) {
       input.value = place.name + ' — ' + (place.formatted_address || '');
     }
-    // Show room number block only if selected place is accommodation (lodging type)
-    wizToggleRoomNumber(place);
     // Save coordinates
     if (place.geometry && place.geometry.location) {
       wizState.transferLat = place.geometry.location.lat();
