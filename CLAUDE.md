@@ -86,7 +86,7 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 | HOTEL_TRANSFER | Otel transferi | €10 | €5 | €5 | per_person |
 | ROMANTIC_TABLE | Romantik masa | €15 | €10 | €5 | per_booking |
 
-**Örnek:** DINNER_STD (€24) + ALCOHOL_UNLIMITED (€30) = **€54/kişi** satış.
+**Örnek:** DINNER_STD (€24.30) + ALCOHOL_UNLIMITED (€30) = **€54.30/kişi** satış.
 
 **PROPOSAL_PACKAGE kaldırıldı** — artık standart paket olarak satılmıyor. Müşteri "evlilik teklifi" talep ederse eskalasyona gider (§ 8).
 
@@ -277,7 +277,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 13 | **GA4 (Google Analytics 4)** kurulum doğrulama — gtag çalışıyor mu, conversion'lar takip ediliyor mu | 30 dk | 🟢 Veri toplama | ✅ 2 May (commit 037e39e) — Doğrulama sırasında bug bulundu: eski G-7D31HN33VE Google backend'inde 404 dönüyordu (11 gün sıfır veri). Yeni stream `Bosphorus Night Web v2` → ID `G-P09XEBMNWE`. 8 dosyada toplu replace, push edildi, Vercel deploy ediliyor. |
 | 14 | **Rich Results Test** — 17 sayfa × Google Rich Results Test, schema hatası varsa düzelt | 1 sa | 🟡 Schema doğrulama | ✅ 5 May (`scripts/validate-schema.js` çalıştırıldı: 296 HTML, 2598 JSON-LD bloku, **0 hata**. Yapısal validasyon temiz, Google Rich Results için hazır. Ekstra Google online validator ile manuel sanity check opsiyonel) |
 | 15 | **`/reviews` sayfası oluştur** — Google Related Searches'te "Bosphorus Cruise reviews" + "Istanbul dinner cruise reviews" cevapsız. Tek sayfa: TripAdvisor + Google review embed + AggregateRating schema. Yorum keyword trafiği kapatılır. | 2-3 sa | 🔴 "reviews" arama trafiği | ⏳ **ERTELENDİ 2 May** — şu an Google 6 yorum + TripAdvisor 0 = yetersiz hacim. Önce 6.A Madde 8 (yorum toplama otomasyonu) → 50+ Google yorum + 6.A Madde 1 (TripAdvisor profili açma) tamamlansın, sonra bu sayfa anlamlı. Acele yapılırsa zayıf sosyal kanıt + Google rich result marjinal. |
-| 16 | **Title'larda "Best" kelimesi** — Google Related Searches'te "Best Bosphorus dinner cruise Istanbul" + "Best dinner cruise in Istanbul" var. İlgili landing page title'larına "Best" ekle (örn. "Best Bosphorus Dinner Cruise Istanbul from €24"). 14 dilde rewrite gerekir. CTR +%20-30 beklenir. | 1 sa | 🔴 CTR + "best" arama trafiği | ⏳ |
+| 16 | **Title'larda "Best" kelimesi** — Google Related Searches'te "Best Bosphorus dinner cruise Istanbul" + "Best dinner cruise in Istanbul" var. İlgili landing page title'larına "Best" ekle (örn. "Best Bosphorus Dinner Cruise Istanbul from €24.30"). 14 dilde rewrite gerekir. CTR +%20-30 beklenir. | 1 sa | 🔴 CTR + "best" arama trafiği | ⏳ |
 
 ### Aşama 6.A — SEO Sprint #3 Maddeleri (OTA + içerik + backlink, 4-6 hafta)
 
@@ -290,7 +290,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 3 | **GetYourGuide partner başvuru** — getyourguide.com/supplier-portal/login. Avrupa pazarı #1. Onay 1-2 hafta. Komisyon %25-30 | 1 sa başvuru + bekleme | 🔴 Travel Listings carousel | ⏳ |
 | 4 | **Klook partner başvuru** — Asya odaklı (Çin, Japon, Kore turist). Komisyon %15-25 | 1 sa başvuru + bekleme | 🟡 Asya pazarı | ⏳ |
 | 5 | **Civitatis** (İspanya/Latin Amerika) başvuru | 30 dk | 🟢 Hispanic pazarı | ⏳ |
-| 6 | **GBP weekly post** otomasyonu — AI agent her Pazartesi GBP'ye post atar (örn: "Tonight 21:00 cruise, €24, WhatsApp +90...") | 2 sa kod | 🟡 GBP engagement signal | ⏳ |
+| 6 | **GBP weekly post** otomasyonu — AI agent her Pazartesi GBP'ye post atar (örn: "Tonight 20:30 cruise, €24.30, WhatsApp +90...") | 2 sa kod | 🟡 GBP engagement signal | ⏳ |
 | 7 | **AggregateRating schema** — Google'a 50+ yorum birikince TouristTrip schema'ya AggregateRating ekle. Search'te ★ yıldızlar çıkar | 30 dk | 🔴 SERP CTR +%30 | ⏳ |
 | 8 | **Google review toplama otomasyonu** — Tur sonrası AI agent WhatsApp/Telegram review link'i atar. Bilet PNG'sine QR | 1 sa kod | 🔴 Yorum hacmi | ⏳ |
 | 9 | **Hotel partnerlik backlinks** — Hilton/Conrad/Four Seasons konsiyerjlerine broşür + site link karşılığı | 1-2 hafta | 🔴 Yüksek otorite link | ⏳ |
@@ -386,7 +386,7 @@ Aşama 8'in ikinci alt-iş kalemi (WeChat'le birlikte). **Strateji kararı (29 N
 
 | # | İş | Süre | Maliyet |
 |---|---|---|---|
-| 1 | **Fiyat stratejisi karar** — Klook %15-25 komisyon alır, mevcut €24 STD'de marj sıfırlanır. Yol seçimi: Klook'a yüksek fiyat (€34 STD / €75 VIP) veya sadece VIP koy veya müşteri kazanımı yatırımı | 1-2 sa konuşma | — |
+| 1 | **Fiyat stratejisi karar** — Klook %15-25 komisyon alır, mevcut €24.30 STD'de marj sıfırlanır. Yol seçimi: Klook'a yüksek fiyat (€34 STD / €75 VIP) veya sadece VIP koy veya müşteri kazanımı yatırımı | 1-2 sa konuşma | — |
 | 2 | merchant.klook.com → "Become a Partner" formu | 30 dk | — |
 | 3 | Belge: TÜRSAB A-17672 İngilizce tercüme + apostil (WeChat için zaten hazırlanıyorsa paylaşımlı), ticaret sicil, sigorta poliçe, banka bilgisi (USD/HKD wire) | 1 hafta | ~₺2.000 (apostil paylaşımlı) |
 | 4 | Yüksek çözünürlüklü 10-15 foto (1920×1080), İngilizce + (ideal) Çince ürün açıklamaları | 2-3 sa | — |
@@ -419,7 +419,7 @@ Klook **direkt Partner API'si yeni başlayanlara açık değil** — typical 100
 
 #### Kritik tuzaklar
 
-1. **Komisyon marj baskısı** — Mevcut DINNER_STD €24'te %25 komisyon = €0 marj. Klook'ta **fiyat yüksek tutulmalı** (€34+) veya **sadece VIP** satılmalı. Sözleşmedeki "Best Price Guarantee" maddesini dikkatli oku — sitendekinden yüksek fiyat yasak olabilir.
+1. **Komisyon marj baskısı** — Mevcut DINNER_STD €24.30'da %25 komisyon = €0 marj. Klook'ta **fiyat yüksek tutulmalı** (€34+) veya **sadece VIP** satılmalı. Sözleşmedeki "Best Price Guarantee" maddesini dikkatli oku — sitendekinden yüksek fiyat yasak olabilir.
 2. **Sales agent Klook müşterisine konuşmaz** — Klook "Customer Communication Policy" gereği müşteri Klook chat'inden çıkamaz. AI sales agent sadece direct kanal (web wizard, WhatsApp, Telegram) kullanır. Klook müşterisi tamamen ops agent'ın işi.
 3. **Müşteri telefonu görünmeyebilir** — Klook müşteri telefonunu paylaşmayabilir. **Çözüm:** Klook profilinde "WhatsApp number required at checkout" iste, yoksa tur günü ops zincirinde kopukluk olur.
 4. **İade politikası farkı** — Klook müşterinin ödediği parayı tutar, biz tur sonrası ödeme alırız. **Risk:** No-show'da Klook müşteriye iade verir, biz boş yere boat hazırlamış oluruz. Sözleşmede "tour-day cancellation = no refund" şartı kritik.
@@ -626,9 +626,9 @@ Bu durumlarda AI cevap vermez, Özgür'e Telegram/WhatsApp bildirimi gider:
 ## 10. EKONOMİK BAĞLAM
 
 ### Birim ekonomi
-- Satış: €24/kişi (Dinner Standard)
+- Satış: €24.30/kişi (Dinner Standard)
 - Maliyet: €18/kişi (geçici)
-- Brüt marj: €6/kişi = %25
+- Brüt marj: €6.30/kişi = %26
 - Ortalama rezervasyon: ~2.8 kişi
 - Rezervasyon başı brüt kâr: ~€17
 
