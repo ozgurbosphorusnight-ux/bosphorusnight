@@ -69,7 +69,7 @@ const PUBDATE = {
 const SITE = 'https://www.bosphorusnight.com';
 // Hreflang chain: EN + 19 çevirili dil. PROMPT 3/4/5 sonraki oturumlarda genişledi.
 // build-seo.js BLOG_LANGUAGES ile sync olmalı.
-const HREFLANG_ALL = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar'];
+const HREFLANG_ALL = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
 
 function hreflang(slug, isIndex) {
   return HREFLANG_ALL.map((l) => {

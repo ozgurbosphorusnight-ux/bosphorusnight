@@ -75,7 +75,11 @@ function urlFor(lang) {
 const OG_LOCALES = {
   en: 'en_US', tr: 'tr_TR', de: 'de_DE', es: 'es_ES', ru: 'ru_RU',
   ar: 'ar_SA', fa: 'fa_IR', fr: 'fr_FR', it: 'it_IT', zh: 'zh_CN',
-  id: 'id_ID', ms: 'ms_MY', pl: 'pl_PL', bg: 'bg_BG', ro: 'ro_RO'
+  id: 'id_ID', ms: 'ms_MY', pl: 'pl_PL', bg: 'bg_BG', ro: 'ro_RO',
+  uk: 'uk_UA', hi: 'hi_IN', ur: 'ur_PK', ja: 'ja_JP', ko: 'ko_KR',
+  pt: 'pt_PT', nl: 'nl_NL', el: 'el_GR', cs: 'cs_CZ', hu: 'hu_HU',
+  sv: 'sv_SE', da: 'da_DK', no: 'nb_NO', fi: 'fi_FI', sk: 'sk_SK',
+  sl: 'sl_SI', lv: 'lv_LV'
 };
 
 // Source has og:locale=en_US + 14 alternates. For non-EN builds, swap: primary
