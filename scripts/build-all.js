@@ -44,7 +44,8 @@ run('node scripts/build-images.js');
 // 3. HTML üretimi
 run('node scripts/build-home.js');
 run('node scripts/build-pages.js');
-run('node scripts/build-seo.js');
+// build-seo.js DELIBERATELY moved below — it scans dist/ via existsSync, so it
+// must run AFTER blog/city-guide copy steps to see all real URLs.
 
 // 3. Static asset'leri dist/'e kopyala (absolute /assets/... paths için)
 console.log('\n📦 Static asset kopyalama...');
@@ -56,8 +57,10 @@ for (const dir of ['js', 'css', 'assets', 'blog', 'city-guide']) {
   }
 }
 
-// 3b. City Guide multi-dil — 19 dilin çevirileri (src/city-guide-i18n/{lang}/* → dist/{lang}/city-guide/)
-const CITY_GUIDE_LANGS = ['ar', 'bg', 'de', 'es', 'fa', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'ms', 'pl', 'ro', 'ru', 'tr', 'uk', 'ur', 'zh'];
+// 3b. City Guide multi-dil — 31 dilin çevirileri (src/city-guide-i18n/{lang}/* → dist/{lang}/city-guide/)
+// Sprint L2 (May 2026): +12 European langs — pt, nl, el, cs, hu, sv, da, no, fi, sk, sl, lv.
+// Build skips missing dirs via existsSync — list defines the upper bound, content rolls in over time.
+const CITY_GUIDE_LANGS = ['ar', 'bg', 'cs', 'da', 'de', 'el', 'es', 'fa', 'fi', 'fr', 'hi', 'hu', 'id', 'it', 'ja', 'ko', 'lv', 'ms', 'nl', 'no', 'pl', 'pt', 'ro', 'ru', 'sk', 'sl', 'sv', 'tr', 'uk', 'ur', 'zh'];
 console.log('\n🌐 City Guide multi-dil...');
 for (const lang of CITY_GUIDE_LANGS) {
   const src = path.join(ROOT, 'src', 'city-guide-i18n', lang);
@@ -70,7 +73,8 @@ for (const lang of CITY_GUIDE_LANGS) {
 
 // 3c. Blog multi-dil — sadece çevirisi olan diller (src/blog-i18n/{lang}/* → dist/{lang}/blog/)
 // Sprint L1: hi, ja, ko, ur, uk. PROMPT 5: id, ms, pl, bg, ro. PROMPT 4: fa, fr, it, zh. PROMPT 3: tr, de, es, ru, ar (19 dil × 6 sayfa).
-const BLOG_LANGS = ['hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar'];
+// Sprint L2 (May 2026): +12 European langs — pt, nl, el, cs, hu, sv, da, no, fi, sk, sl, lv. Build skips via existsSync.
+const BLOG_LANGS = ['hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
 console.log('\n📝 Blog multi-dil...');
 for (const lang of BLOG_LANGS) {
   const src = path.join(ROOT, 'src', 'blog-i18n', lang);
@@ -80,6 +84,10 @@ for (const lang of BLOG_LANGS) {
     console.log(`  ✓ ${lang}/blog/`);
   }
 }
+
+// 3d. SEO sitemap — runs NOW (after blog/city-guide copy) so existsSync filter
+// captures the full URL set, not just landing pages.
+run('node scripts/build-seo.js');
 
 // 4. Tailwind CSS build-time extraction → dist/css/tailwind.css
 // Replaces cdn.tailwindcss.com runtime JIT (350 KB JS) with ~45 KB static CSS.

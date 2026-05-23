@@ -16,8 +16,8 @@
   // localhost can use the same lang detection / redirect logic as production.
 
   // Langs with pre-built static pages at /xx/ (build-pages.js output).
-  // All 20 langs supported after Sprint L1 build-pages.js extension.
-  var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko'];
+  // Sprint L1: 20 langs. Sprint L2 (May 2026): +12 European langs.
+  var SUPPORTED = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
   var STORAGE_KEY = 'bn_lang';
 
   function getLsGet() {

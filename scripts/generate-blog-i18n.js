@@ -16,7 +16,7 @@ const ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(__dirname, 'blog-i18n-data');
 const OUT_ROOT = path.join(ROOT, 'src', 'blog-i18n');
 
-const LANGS = ['hi', 'ja', 'ko', 'ur', 'uk'];
+const LANGS = ['hi', 'ja', 'ko', 'ur', 'uk', 'pt', 'no', 'fi'];
 
 const SLUGS = [
   'best-bosphorus-dinner-cruise-istanbul',

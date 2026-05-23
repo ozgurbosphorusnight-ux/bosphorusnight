@@ -44,7 +44,17 @@ const LANGUAGES = {
   hi: { label: 'हिन्दी', dir: 'ltr', flag: 'in' },
   ur: { label: 'اردو', dir: 'rtl', flag: 'pk' },
   ja: { label: '日本語', dir: 'ltr', flag: 'jp' },
-  ko: { label: '한국어', dir: 'ltr', flag: 'kr' }
+  ko: { label: '한국어', dir: 'ltr', flag: 'kr' },
+  // Sprint L2 (May 2026): +9 European langs.
+  pt: { label: 'Português', dir: 'ltr', flag: 'pt' },
+  nl: { label: 'Nederlands', dir: 'ltr', flag: 'nl' },
+  cs: { label: 'Čeština', dir: 'ltr', flag: 'cz' },
+  hu: { label: 'Magyar', dir: 'ltr', flag: 'hu' },
+  sv: { label: 'Svenska', dir: 'ltr', flag: 'se' },
+  da: { label: 'Dansk', dir: 'ltr', flag: 'dk' },
+  no: { label: 'Norsk', dir: 'ltr', flag: 'no' },
+  fi: { label: 'Suomi', dir: 'ltr', flag: 'fi' },
+  sk: { label: 'Slovenčina', dir: 'ltr', flag: 'sk' }
 };
 
 const SLUGS = [
@@ -449,11 +459,17 @@ function loadPage(slug, lang) {
     meta: t.meta || en.meta,
     hero: { ...en.hero, ...t.hero },
     intro: t.intro || en.intro,
-    highlights: (t.highlights || en.highlights).map((h, i) => ({
-      icon: en.highlights[i] ? en.highlights[i].icon : undefined,
-      title: h.title || en.highlights[i].title,
-      desc: h.desc || en.highlights[i].desc
-    })),
+    highlights: (t.highlights || en.highlights).map((h, i) => {
+      const enH = en.highlights[i] || {};
+      // Legacy schema tolerance: {icon: emoji, text: '...'} → fold text into desc;
+      // leave title empty so the translated copy doesn't get an English h3 above it.
+      const hasLegacyText = h.text && !h.title && !h.desc;
+      return {
+        icon: enH.icon || h.icon || 'star',
+        title: hasLegacyText ? '' : (h.title || enH.title || ''),
+        desc: hasLegacyText ? h.text : (h.desc || enH.desc || '')
+      };
+    }),
     faq: t.faq || en.faq,
     cta: { ...en.cta, ...t.cta }
   };

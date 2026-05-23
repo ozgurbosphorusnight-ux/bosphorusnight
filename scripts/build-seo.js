@@ -13,7 +13,8 @@ const SITE_URL = 'https://www.bosphorusnight.com';
 
 // Sprint L1: 5 yeni dil eklendi (uk/hi/ur/ja/ko). build-pages.js + build-home.js
 // bu diller için statik sayfa üretiyor; sitemap'ta listelenmesi gerek.
-const LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko'];
+// Sprint L2 (May 2026): +12 European langs — pt, nl, el, cs, hu, sv, da, no, fi, sk, sl, lv.
+const LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'uk', 'hi', 'ur', 'ja', 'ko', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
 
 const SLUGS = [
   'bosphorus-dinner-cruise',
@@ -36,7 +37,8 @@ const SLUGS = [
 ];
 
 // Blog — EN root + 19 dil. PROMPT 3'te tr/de/es/ru/ar eklendi (20 dil toplam).
-const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar'];
+// Sprint L2: +12 European langs.
+const BLOG_LANGUAGES = ['en', 'hi', 'ja', 'ko', 'ur', 'uk', 'id', 'ms', 'pl', 'bg', 'ro', 'fa', 'fr', 'it', 'zh', 'tr', 'de', 'es', 'ru', 'ar', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
 
 const BLOG_SLUGS = [
   '', // hub (trailing slash)
@@ -53,7 +55,8 @@ const BLOG_SLUGS = [
 const BLOG_SLUGS_EN_ONLY = [];
 
 // City Guide — 20 dilde (EN + 19 çeviri: ar/bg/de/es/fa/fr/hi/id/it/ja/ko/ms/pl/ro/ru/tr/uk/ur/zh)
-const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur', 'ja', 'ko', 'uk'];
+// Sprint L2: +12 European langs.
+const CITY_GUIDE_LANGUAGES = ['en', 'tr', 'de', 'es', 'ru', 'ar', 'fa', 'fr', 'it', 'zh', 'id', 'ms', 'pl', 'bg', 'ro', 'hi', 'ur', 'ja', 'ko', 'uk', 'pt', 'nl', 'el', 'cs', 'hu', 'sv', 'da', 'no', 'fi', 'sk', 'sl', 'lv'];
 
 const CITY_GUIDE_SLUGS = [
   '', // hub (trailing slash)
@@ -72,16 +75,42 @@ function urlFor(lang, slug) {
   return SITE_URL + prefix + '/' + slug;
 }
 
+// Filesystem reality check — only emit URLs whose HTML actually exists in dist/.
+// Prevents Sprint L2 partial state from publishing dead URLs (e.g. lang declared
+// in LANGUAGES array but build-pages.js / build-all.js skipped it).
+function landingExists(lang, slug) {
+  const langDir = lang === 'en' ? OUT : path.join(OUT, lang);
+  if (!slug) return fs.existsSync(path.join(langDir, 'index.html'));
+  return fs.existsSync(path.join(langDir, slug + '.html'));
+}
+function blogExists(lang, slug) {
+  const base = lang === 'en' ? path.join(OUT, 'blog') : path.join(OUT, lang, 'blog');
+  if (!slug) return fs.existsSync(path.join(base, 'index.html'));
+  return fs.existsSync(path.join(base, slug + '.html'))
+      || fs.existsSync(path.join(base, slug, 'index.html'));
+}
+function cityGuideExists(lang, slug) {
+  const base = lang === 'en' ? path.join(OUT, 'city-guide') : path.join(OUT, lang, 'city-guide');
+  if (!slug) return fs.existsSync(path.join(base, 'index.html'));
+  return fs.existsSync(path.join(base, slug + '.html'))
+      || fs.existsSync(path.join(base, slug, 'index.html'));
+}
+
 // Builds one <url> block with hreflang alternates.
+// Only emits <url> for langs whose HTML actually exists in dist/.
+// hreflang alternates are also filtered to existing pages, otherwise Google
+// considers the entire <url> entry inconsistent.
 function urlBlock(slug) {
   const today = new Date().toISOString().split('T')[0];
-  const alternates = LANGUAGES
+  const presentLangs = LANGUAGES.filter((lang) => landingExists(lang, slug));
+  const alternates = presentLangs
     .map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${urlFor(lang, slug)}" />`)
     .join('\n');
-  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor('en', slug)}" />`;
+  const xDefault = landingExists('en', slug)
+    ? `    <xhtml:link rel="alternate" hreflang="x-default" href="${urlFor('en', slug)}" />`
+    : '';
 
-  // One <url> per language (Google prefers explicit per-lang entries).
-  return LANGUAGES.map((lang) => `  <url>
+  return presentLangs.map((lang) => `  <url>
     <loc>${urlFor(lang, slug)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
@@ -99,14 +128,16 @@ function blogUrlFor(lang, slug) {
 
 function blogUrlBlock(slug) {
   const today = new Date().toISOString().split('T')[0];
-  const alternates = BLOG_LANGUAGES
+  const presentLangs = BLOG_LANGUAGES.filter((lang) => blogExists(lang, slug));
+  const alternates = presentLangs
     .map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${blogUrlFor(lang, slug)}" />`)
     .join('\n');
-  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${blogUrlFor('en', slug)}" />`;
-  // Hub priority slightly higher; EN root above translations
+  const xDefault = blogExists('en', slug)
+    ? `    <xhtml:link rel="alternate" hreflang="x-default" href="${blogUrlFor('en', slug)}" />`
+    : '';
   const hubBoost = slug === '' ? 0.1 : 0;
 
-  return BLOG_LANGUAGES.map((lang) => `  <url>
+  return presentLangs.map((lang) => `  <url>
     <loc>${blogUrlFor(lang, slug)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>monthly</changefreq>
@@ -138,14 +169,16 @@ function cityGuideUrlFor(lang, slug) {
 
 function cityGuideUrlBlock(slug) {
   const today = new Date().toISOString().split('T')[0];
-  const alternates = CITY_GUIDE_LANGUAGES
+  const presentLangs = CITY_GUIDE_LANGUAGES.filter((lang) => cityGuideExists(lang, slug));
+  const alternates = presentLangs
     .map((lang) => `    <xhtml:link rel="alternate" hreflang="${lang}" href="${cityGuideUrlFor(lang, slug)}" />`)
     .join('\n');
-  const xDefault = `    <xhtml:link rel="alternate" hreflang="x-default" href="${cityGuideUrlFor('en', slug)}" />`;
-  // Hub priority slightly higher; EN root above translations
+  const xDefault = cityGuideExists('en', slug)
+    ? `    <xhtml:link rel="alternate" hreflang="x-default" href="${cityGuideUrlFor('en', slug)}" />`
+    : '';
   const hubBoost = slug === '' ? 0.1 : 0;
 
-  return CITY_GUIDE_LANGUAGES.map((lang) => `  <url>
+  return presentLangs.map((lang) => `  <url>
     <loc>${cityGuideUrlFor(lang, slug)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>

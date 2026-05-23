@@ -22,7 +22,19 @@ const LANGUAGES = {
   ja: { flag: 'jp', label: '日本語', dir: 'ltr' },
   ko: { flag: 'kr', label: '한국어', dir: 'ltr' },
   id: { flag: 'id', label: 'Indonesia', dir: 'ltr' },
-  ms: { flag: 'my', label: 'Malaysia', dir: 'ltr' }
+  ms: { flag: 'my', label: 'Malaysia', dir: 'ltr' },
+  pt: { flag: 'pt', label: 'Português', dir: 'ltr' },
+  nl: { flag: 'nl', label: 'Nederlands', dir: 'ltr' },
+  el: { flag: 'gr', label: 'Ελληνικά', dir: 'ltr' },
+  cs: { flag: 'cz', label: 'Čeština', dir: 'ltr' },
+  hu: { flag: 'hu', label: 'Magyar', dir: 'ltr' },
+  sv: { flag: 'se', label: 'Svenska', dir: 'ltr' },
+  da: { flag: 'dk', label: 'Dansk', dir: 'ltr' },
+  no: { flag: 'no', label: 'Norsk', dir: 'ltr' },
+  fi: { flag: 'fi', label: 'Suomi', dir: 'ltr' },
+  sk: { flag: 'sk', label: 'Slovenčina', dir: 'ltr' },
+  sl: { flag: 'si', label: 'Slovenščina', dir: 'ltr' },
+  lv: { flag: 'lv', label: 'Latviešu', dir: 'ltr' }
 };
 
 const T = {
