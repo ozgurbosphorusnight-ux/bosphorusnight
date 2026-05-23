@@ -75,28 +75,41 @@
   var currentLang = getCurrentLang();
   var stored = getLsGet();
 
-  // Returning user with saved preference different from current URL → redirect.
-  if (stored && SUPPORTED.indexOf(stored) !== -1 && stored !== currentLang) {
-    var newPath = rewritePathForLang(window.location.pathname, stored);
-    if (newPath !== window.location.pathname) {
-      window.location.replace(newPath + window.location.search + window.location.hash);
-      return;
-    }
-  }
+  // If the URL already has an explicit /xx/ lang prefix, the user (or Googlebot)
+  // chose this lang on purpose — never redirect away. Otherwise Googlebot tags
+  // every /xx/ landing page as "Yönlendirmeli sayfa" (Redirected page) and skips
+  // indexing it, killing multi-lingual SEO. Sync localStorage so subsequent
+  // root-page visits land back on the same lang.
+  var path = window.location.pathname;
+  var hasExplicitLangPrefix = /^\/(?:dist\/)?[a-z]{2}(?:\/|$)/.test(path);
 
-  // First-time visitor: try to match browser language.
-  if (!stored) {
-    var browserLang = ((navigator.language || navigator.userLanguage || '') + '').slice(0, 2).toLowerCase();
-    if (SUPPORTED.indexOf(browserLang) !== -1 && browserLang !== currentLang) {
-      getLsSet(browserLang);
-      var newPath2 = rewritePathForLang(window.location.pathname, browserLang);
-      if (newPath2 !== window.location.pathname) {
-        window.location.replace(newPath2 + window.location.search + window.location.hash);
+  if (hasExplicitLangPrefix) {
+    getLsSet(currentLang);
+  } else {
+    // No explicit prefix → respect stored preference or browser language.
+    // Returning user with saved preference different from current URL → redirect.
+    if (stored && SUPPORTED.indexOf(stored) !== -1 && stored !== currentLang) {
+      var newPath = rewritePathForLang(window.location.pathname, stored);
+      if (newPath !== window.location.pathname) {
+        window.location.replace(newPath + window.location.search + window.location.hash);
         return;
       }
     }
-    // Otherwise remember what they landed on (prevents repeated detection).
-    getLsSet(currentLang);
+
+    // First-time visitor: try to match browser language.
+    if (!stored) {
+      var browserLang = ((navigator.language || navigator.userLanguage || '') + '').slice(0, 2).toLowerCase();
+      if (SUPPORTED.indexOf(browserLang) !== -1 && browserLang !== currentLang) {
+        getLsSet(browserLang);
+        var newPath2 = rewritePathForLang(window.location.pathname, browserLang);
+        if (newPath2 !== window.location.pathname) {
+          window.location.replace(newPath2 + window.location.search + window.location.hash);
+          return;
+        }
+      }
+      // Otherwise remember what they landed on (prevents repeated detection).
+      getLsSet(currentLang);
+    }
   }
 
   // Exposed for dropdown handler.
