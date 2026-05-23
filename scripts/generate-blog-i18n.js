@@ -16,7 +16,12 @@ const ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(__dirname, 'blog-i18n-data');
 const OUT_ROOT = path.join(ROOT, 'src', 'blog-i18n');
 
-const LANGS = ['hi', 'ja', 'ko', 'ur', 'uk', 'pt', 'no', 'fi'];
+// Sprint L2 (May 2026): hi/ja/ko/ur/uk excluded — their blog-i18n-data sources have
+// "Bosphorus Night stays Latin" but the committed HTML pages were manually corrected
+// to localized brand (बॉस्फोरस की रात / ボスポラスの夜 / etc.) in the 17 May audit.
+// Regenerating from data would revert that fix. Until data sources are localized,
+// keep these langs out of the LANGS list — committed HTML stays canonical.
+const LANGS = ['pt', 'no', 'fi', 'el', 'sl', 'lv'];
 
 const SLUGS = [
   'best-bosphorus-dinner-cruise-istanbul',

@@ -54,7 +54,11 @@ const LANGUAGES = {
   da: { label: 'Dansk', dir: 'ltr', flag: 'dk' },
   no: { label: 'Norsk', dir: 'ltr', flag: 'no' },
   fi: { label: 'Suomi', dir: 'ltr', flag: 'fi' },
-  sk: { label: 'Slovenčina', dir: 'ltr', flag: 'sk' }
+  sk: { label: 'Slovenčina', dir: 'ltr', flag: 'sk' },
+  // Sprint L2 final (May 2026): +3 last EU langs (el/sl/lv).
+  el: { label: 'Ελληνικά', dir: 'ltr', flag: 'gr' },
+  sl: { label: 'Slovenščina', dir: 'ltr', flag: 'si' },
+  lv: { label: 'Latviešu', dir: 'ltr', flag: 'lv' }
 };
 
 const SLUGS = [
