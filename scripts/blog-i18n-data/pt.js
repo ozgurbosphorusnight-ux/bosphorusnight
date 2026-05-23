@@ -15,12 +15,12 @@ module.exports = {
     relatedTitle: 'Artigos Relacionados',
     readMore: 'Ler mais',
     floatingChat: 'Online · Conversar',
-    copyright: '© 2026 Bosphorus Night. Todos os direitos reservados.',
+    copyright: '© 2026 Bósforo Noturno. Todos os direitos reservados.',
     tursab: 'Samerames Tur Turizm Seyahat Org. ve Reklam Ltd. Sti. · TURSAB A-17672',
-    waHelloText: 'Olá! Gostaria de saber mais sobre o cruzeiro Bosphorus Night.'
+    waHelloText: 'Olá! Gostaria de saber mais sobre o cruzeiro Bósforo Noturno.'
   },
   indexData: {
-    title: 'Blog — Bosphorus Night',
+    title: 'Blog — Bósforo Noturno',
     description: 'Dicas de cruzeiro no Bósforo, guias e artigos especializados para planear o seu jantar-cruzeiro em Istambul.',
     h1: 'Blog',
     intro: 'Dicas de cruzeiro, guias de Istambul e informação local para uma experiência inesquecível no Bósforo.'

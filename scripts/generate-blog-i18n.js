@@ -23,6 +23,19 @@ const OUT_ROOT = path.join(ROOT, 'src', 'blog-i18n');
 // keep these langs out of the LANGS list — committed HTML stays canonical.
 const LANGS = ['pt', 'no', 'fi', 'el', 'sl', 'lv'];
 
+// Brand name per language. Memory rule: only `bosphorusnight.com` domain stays
+// Latin; the brand "Bosphorus Night" reads as "X at Night" in each language.
+// Used in og:image:alt, schema.org Organization name (publisher + author).
+const BRAND = {
+  en: 'Bosphorus Night',
+  pt: 'Bósforo Noturno',
+  no: 'Bosporos om natten',
+  fi: 'Bosporinsalmen yöt',
+  el: 'Βόσπορος τη Νύχτα',
+  sl: 'Bospor ponoči',
+  lv: 'Bosfors naktī'
+};
+
 const SLUGS = [
   'best-bosphorus-dinner-cruise-istanbul',
   'bosphorus-sunset-cruise-guide',
@@ -77,7 +90,7 @@ function head({ lang, dir, title, description, ogUrl, canonical, ogImage, jsonLd
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:alt" content="${ogImageAlt || 'Bosphorus Night'}">
+  <meta property="og:image:alt" content="${ogImageAlt || BRAND[lang] || BRAND.en}">
   <link rel="canonical" href="${canonical}">
 ${hreflang(ogUrl.replace(/^.*\/blog\/?/, '').replace(/\/$/, ''), ogUrl.endsWith('/blog/'))}
   <script type="application/ld+json">
@@ -188,7 +201,7 @@ function renderIndex(data) {
     inLanguage: lang,
     publisher: {
       '@type': 'Organization',
-      name: 'Bosphorus Night',
+      name: BRAND[lang] || BRAND.en,
       logo: { '@type': 'ImageObject', url: `${SITE}/assets/data/logo png lst.png` }
     },
     blogPost: SLUGS.map((slug) => ({
@@ -255,10 +268,10 @@ function renderArticle(data, slug) {
     datePublished: PUBDATE[slug] + 'T00:00:00+03:00',
     dateModified: '2026-05-17T00:00:00+03:00',
     inLanguage: lang,
-    author: { '@type': 'Organization', name: 'Bosphorus Night', url: SITE },
+    author: { '@type': 'Organization', name: BRAND[lang] || BRAND.en, url: SITE },
     publisher: {
       '@type': 'Organization',
-      name: 'Bosphorus Night',
+      name: BRAND[lang] || BRAND.en,
       logo: { '@type': 'ImageObject', url: `${SITE}/assets/data/logo png lst.png` }
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': url }
