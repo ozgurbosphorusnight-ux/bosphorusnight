@@ -85,10 +85,6 @@ for (const lang of BLOG_LANGS) {
   }
 }
 
-// 3d. SEO sitemap — runs NOW (after blog/city-guide copy) so existsSync filter
-// captures the full URL set, not just landing pages.
-run('node scripts/build-seo.js');
-
 // 4. Tailwind CSS build-time extraction → dist/css/tailwind.css
 // Replaces cdn.tailwindcss.com runtime JIT (350 KB JS) with ~45 KB static CSS.
 run('node scripts/build-tailwind.js');
@@ -111,6 +107,12 @@ if (fs.existsSync(enDir)) {
   fs.rmdirSync(enDir);
   console.log(`  ✓ dist/en/* → dist/ root`);
 }
+
+// 6c. SEO sitemap — runs AFTER EN flatten + blog/city-guide copy so
+// landingExists/blogExists/cityGuideExists see real EN root files
+// (dist/bosphorus-dinner-cruise.html, etc.). Earlier this ran BEFORE flatten
+// and EN URLs were silently dropped from sitemap.
+run('node scripts/build-seo.js');
 
 // 6b. Tailwind CDN script bloğunu tüm dist HTML'lerinden strip et,
 // yerine /css/tailwind.css link tag'i koy. (Kaynak HTML'ler değişmez —
