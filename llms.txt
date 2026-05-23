@@ -91,7 +91,7 @@ Português (/pt/), Nederlands (/nl/), Ελληνικά (/el/), Čeština (/cs/),
 Magyar (/hu/), Svenska (/sv/), Dansk (/da/), Norsk (/no/),
 Suomi (/fi/), Slovenčina (/sk/), Slovenščina (/sl/), Latviešu (/lv/).
 
-### Native-script search keywords (all 19 languages)
+### Native-script search keywords (all 31 languages)
 
 - Korean: 이스탄불 보스포러스 디너 크루즈 / 보스포러스 야간 투어 / 이스탄불 야경 크루즈
 - Japanese: イスタンブール ボスポラス海峡 ディナークルーズ / 夜のクルーズ
@@ -112,6 +112,18 @@ Suomi (/fi/), Slovenčina (/sk/), Slovenščina (/sl/), Latviešu (/lv/).
 - Romanian: croazieră cu cină pe Bosfor Istanbul / tur nocturn Bosfor
 - Indonesian: pelayaran makan malam Bosphorus Istanbul / tur malam Bosphorus
 - Malay: pelayaran makan malam Bosphorus Istanbul / tur malam Bosphorus
+- Portuguese: cruzeiro com jantar no Bósforo Istambul / passeio noturno Bósforo / Bósforo Noturno
+- Dutch: dinercruise Bosporus Istanbul / nachttour Bosporus / Bosporus bij Nacht
+- Greek: κρουαζιέρα με δείπνο στον Βόσπορο Κωνσταντινούπολη / νυχτερινή κρουαζιέρα Βόσπορος
+- Czech: večerní plavba po Bosporu Istanbul / noční plavba Bospor / Bospor v noci
+- Hungarian: vacsorás hajóút a Boszporuszon Isztambul / éjszakai túra Boszporusz / Boszporusz Éjszaka
+- Swedish: middagskryssning på Bosporen Istanbul / nattkryssning Bosporen / Bosporen om natten
+- Danish: middagskrydstogt på Bosporus Istanbul / aftentur Bosporus / Bosporus om natten
+- Norwegian: middagscruise på Bosporos Istanbul / kveldscruise Bosporos / Bosporos om natten
+- Finnish: illallisristeily Bosporinsalmella Istanbul / iltaristeily Bosporinsalmi / Bosporinsalmen yöt
+- Slovak: plavba s večerou po Bospore Istanbul / nočná plavba Bospor / Bospor v noci
+- Slovenian: večerja s plovbo po Bosporju Istanbul / nočna plovba Bospor / Bospor ponoči
+- Latvian: vakariņas ar kruīzu pa Bosforu Stambula / nakts kruīzs Bosfors / Bosfors naktī
 
 ## Popular For
 
