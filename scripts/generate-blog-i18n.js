@@ -21,7 +21,7 @@ const OUT_ROOT = path.join(ROOT, 'src', 'blog-i18n');
 // to localized brand (बॉस्फोरस की रात / ボスポラスの夜 / etc.) in the 17 May audit.
 // Regenerating from data would revert that fix. Until data sources are localized,
 // keep these langs out of the LANGS list — committed HTML stays canonical.
-const LANGS = ['pt', 'no', 'fi', 'el', 'sl', 'lv'];
+const LANGS = ['pt', 'no', 'fi', 'el', 'sl', 'lv', 'cs', 'da', 'hu', 'nl', 'sk', 'sv'];
 
 // Brand name per language. Memory rule: only `bosphorusnight.com` domain stays
 // Latin; the brand "Bosphorus Night" reads as "X at Night" in each language.
@@ -33,7 +33,13 @@ const BRAND = {
   fi: 'Bosporinsalmen yöt',
   el: 'Βόσπορος τη Νύχτα',
   sl: 'Bospor ponoči',
-  lv: 'Bosfors naktī'
+  lv: 'Bosfors naktī',
+  cs: 'Bospor v noci',
+  da: 'Bosporus om natten',
+  nl: 'Bosporus bij Nacht',
+  sk: 'Bospor v noci',
+  sv: 'Bosporen om natten',
+  hu: 'Boszporusz Éjszaka'
 };
 
 const SLUGS = [
