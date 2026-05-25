@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" data-lang="{{lang}}" dir="{{dir}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{content.meta.title}}</title>
+  <meta name="description" content="{{content.meta.description}}">
+
+  <link rel="canonical" href="https://www.bosphorusnight.com/{{url_prefix}}{{slug}}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/data/favicon.png?v=5" type="image/png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/data/favicon.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/data/favicon.png?v=5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/favicon.png?v=5">
+
+  <!-- Hreflang — injected by build script -->
+  {{hreflang}}
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{content.meta.og_title}}">
+  <meta property="og:description" content="{{content.meta.og_description}}">
+  <meta property="og:image" content="/assets/images/tosunpasa/exterior-og-thumbnail.webp">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="{{og_locale}}">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BoatTrip",
+    "name": "Tosunpaşa — Bosphorus Night",
+    "description": "{{content.schema.description}}",
+    "vehicleConfiguration": "{{content.schema.vehicle_config}}",
+    "numberOfPassengers": 600,
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Bosphorus Night",
+      "url": "https://www.bosphorusnight.com",
+      "telephone": "+90 532 244 29 22",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "TURSAB",
+        "value": "A-17672"
+      }
+    }
+  }
+  </script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { dark: '#0b1120', DEFAULT: '#101a30', light: '#152240' },
+            gold: '#d4af37'
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    body { background: #0b1120; color: white; font-family: Inter, system-ui, sans-serif; }
+    .font-display { font-family: 'Playfair Display', serif; }
+    .text-gold { color: #d4af37; }
+    .bg-gold { background-color: #d4af37; }
+    .border-gold { border-color: #d4af37; }
+    .hero-gradient { background: linear-gradient(180deg, rgba(11,17,32,0.4) 0%, rgba(11,17,32,0.7) 60%, #0b1120 100%); }
+    .section-divider { background: linear-gradient(90deg, transparent, rgba(212,175,55,0.3), transparent); height: 1px; }
+    .feature-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); transition: all 0.3s; }
+    .feature-card:hover { background: rgba(212,175,55,0.05); border-color: rgba(212,175,55,0.2); }
+    .compare-row:nth-child(odd) { background: rgba(255,255,255,0.02); }
+    .gallery-img { transition: transform 0.4s; object-fit: cover; }
+    .gallery-img:hover { transform: scale(1.04); }
+  </style>
+</head>
+<body class="bg-navy-dark text-white">
+
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+      <a href="/{{url_prefix}}" class="flex items-center">
+        <img src="/assets/data/bn lg.png" alt="Bosphorus Night" class="h-[150px] lg:h-[180px] w-auto max-w-none -ml-2 mt-1">
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="/{{url_prefix}}" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">{{content.nav.home}}</a>
+        <a href="/{{url_prefix}}#boats" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">{{content.nav.cruises}}</a>
+        <a href="/{{url_prefix}}{{slug}}" class="text-sm font-medium text-gold">{{content.nav.our_boat}}</a>
+        <a href="/{{url_prefix}}#gallery" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">{{content.nav.gallery}}</a>
+        <a href="/{{url_prefix}}#faq" class="text-sm font-medium text-white/80 hover:text-gold transition-colors">{{content.nav.faq}}</a>
+        <a href="/{{url_prefix}}#boats" class="bg-gold text-navy-dark text-sm px-5 py-2.5 rounded-full font-semibold hover:bg-yellow-400 transition-colors">{{content.nav.book}}</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="/assets/images/tosunpasa/exterior-pier-sunset.webp" alt="{{content.hero.image_alt}}" class="w-full h-full object-cover">
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+  <div class="relative container mx-auto px-4 text-center max-w-4xl">
+    <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.hero.tag}}</p>
+    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+      {{content.hero.h1_line1}}<br>
+      <span class="text-gold">{{content.hero.h1_line2}}</span><br>
+      {{content.hero.h1_line3}}
+    </h1>
+    <p class="text-xl sm:text-2xl text-white/80 mb-4 font-light">{{content.hero.sub}}</p>
+    <p class="text-base sm:text-lg text-white/60 max-w-2xl mx-auto mb-8 leading-relaxed">{{content.hero.description}}</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/{{url_prefix}}#boats" class="bg-gold text-navy-dark px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 transition-colors">{{content.hero.cta}}</a>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/30 animate-bounce">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+  </div>
+</section>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s1.tag}}</p>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">{{content.s1.title}}</h2>
+    <p class="text-lg sm:text-xl text-white/70 leading-relaxed">{{content.s1.body}}</p>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s2.tag}}</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{{content.s2.title}}</h2>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+      <div class="grid grid-cols-3 px-6 py-4 border-b border-white/10 text-sm uppercase tracking-wider">
+        <div class="text-white/40">{{content.s2.col_feature}}</div>
+        <div class="text-gold font-semibold">{{content.s2.col_us}}</div>
+        <div class="text-white/40">{{content.s2.col_avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4 border-b border-white/5">
+        <div class="text-white/70 font-medium">{{content.s2.r_age.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_age.us}}</div>
+        <div class="text-white/50">{{content.s2.r_age.avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4 border-b border-white/5">
+        <div class="text-white/70 font-medium">{{content.s2.r_length.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_length.us}}</div>
+        <div class="text-white/50">{{content.s2.r_length.avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4 border-b border-white/5">
+        <div class="text-white/70 font-medium">{{content.s2.r_capacity.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_capacity.us}}</div>
+        <div class="text-white/50">{{content.s2.r_capacity.avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4 border-b border-white/5">
+        <div class="text-white/70 font-medium">{{content.s2.r_decks.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_decks.us}}</div>
+        <div class="text-white/50">{{content.s2.r_decks.avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4 border-b border-white/5">
+        <div class="text-white/70 font-medium">{{content.s2.r_climate.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_climate.us}}</div>
+        <div class="text-white/50">{{content.s2.r_climate.avg}}</div>
+      </div>
+      <div class="compare-row grid grid-cols-3 px-6 py-4">
+        <div class="text-white/70 font-medium">{{content.s2.r_restrooms.label}}</div>
+        <div class="text-white font-semibold">{{content.s2.r_restrooms.us}}</div>
+        <div class="text-white/50">{{content.s2.r_restrooms.avg}}</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="text-center mb-12">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s3.tag}}</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{{content.s3.title}}</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="feature-card rounded-2xl p-6">
+        <div class="text-gold text-3xl mb-3">🟢</div>
+        <h3 class="font-display text-xl font-semibold mb-3">{{content.s3.deck1.title}}</h3>
+        <p class="text-white/60 leading-relaxed">{{content.s3.deck1.body}}</p>
+      </div>
+      <div class="feature-card rounded-2xl p-6">
+        <div class="text-gold text-3xl mb-3">🟢</div>
+        <h3 class="font-display text-xl font-semibold mb-3">{{content.s3.deck2.title}}</h3>
+        <p class="text-white/60 leading-relaxed">{{content.s3.deck2.body}}</p>
+      </div>
+      <div class="feature-card rounded-2xl p-6">
+        <div class="text-gold text-3xl mb-3">🟢</div>
+        <h3 class="font-display text-xl font-semibold mb-3">{{content.s3.deck3.title}}</h3>
+        <p class="text-white/60 leading-relaxed">{{content.s3.deck3.body}}</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="feature-card rounded-2xl p-6">
+        <h3 class="font-display text-xl font-semibold mb-3 text-gold">{{content.s3.restrooms.title}}</h3>
+        <p class="text-white/60 leading-relaxed">{{content.s3.restrooms.body}}</p>
+      </div>
+      <div class="feature-card rounded-2xl p-6">
+        <h3 class="font-display text-xl font-semibold mb-3 text-gold">{{content.s3.climate.title}}</h3>
+        <p class="text-white/60 leading-relaxed">{{content.s3.climate.body}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <div class="text-center mb-12">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s4.tag}}</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{{content.s4.title}}</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">👶</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.stroller.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.stroller.body}}</p>
+        </div>
+      </div>
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">🪑</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.highchair.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.highchair.body}}</p>
+        </div>
+      </div>
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">🦺</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.lifevest.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.lifevest.body}}</p>
+        </div>
+      </div>
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">👵</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.elderly.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.elderly.body}}</p>
+        </div>
+      </div>
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">🚶</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.mobility.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.mobility.body}}</p>
+        </div>
+      </div>
+      <div class="feature-card rounded-xl p-5 flex items-start gap-4">
+        <div class="text-3xl">♿</div>
+        <div>
+          <h4 class="font-semibold mb-1">{{content.s4.wheelchair.title}}</h4>
+          <p class="text-white/60 text-sm">{{content.s4.wheelchair.body}} <em class="text-white/50">{{content.s4.wheelchair.note}}</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-4xl text-center">
+    <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s5.tag}}</p>
+    <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold mb-8 leading-tight">{{content.s5.title}}</h2>
+    <p class="text-lg sm:text-xl text-white/70 leading-relaxed mb-6">{{content.s5.body}}</p>
+    <p class="text-base text-gold/80 italic">{{content.s5.cta_text}}</p>
+  </div>
+</section>
+
+<section class="py-12 sm:py-16">
+  <div class="container mx-auto px-4 max-w-7xl">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/exterior-tosunpasa-wide.webp" alt="{{content.gallery.alt1}}" class="gallery-img w-full h-full" loading="lazy"></div>
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/interior-live-music.webp" alt="{{content.gallery.alt2}}" class="gallery-img w-full h-full" loading="lazy"></div>
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/stage-dance-show.webp" alt="{{content.gallery.alt3}}" class="gallery-img w-full h-full" loading="lazy"></div>
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/stage-whirling-dervish.webp" alt="{{content.gallery.alt4}}" class="gallery-img w-full h-full" loading="lazy"></div>
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/interior-salon-1.webp" alt="{{content.gallery.alt5}}" class="gallery-img w-full h-full" loading="lazy"></div>
+      <div class="aspect-[4/3] overflow-hidden rounded-xl"><img src="/assets/images/tosunpasa/exterior-boat-1.webp" alt="{{content.gallery.alt6}}" class="gallery-img w-full h-full" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-20 sm:py-28">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="text-center mb-12">
+      <p class="text-gold uppercase tracking-widest text-sm font-semibold mb-4">{{content.s7.tag}}</p>
+      <h2 class="font-display text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">{{content.s7.title}}</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="feature-card rounded-xl p-5">
+        <h4 class="text-gold font-semibold mb-2">{{content.s7.boarding}}</h4>
+        <p class="text-white/80 text-2xl font-display">19:30</p>
+      </div>
+      <div class="feature-card rounded-xl p-5">
+        <h4 class="text-gold font-semibold mb-2">{{content.s7.departure}}</h4>
+        <p class="text-white/80 text-2xl font-display">20:30</p>
+      </div>
+      <div class="feature-card rounded-xl p-5">
+        <h4 class="text-gold font-semibold mb-2">{{content.s7.return}}</h4>
+        <p class="text-white/80 text-2xl font-display">23:30</p>
+      </div>
+      <div class="feature-card rounded-xl p-5">
+        <h4 class="text-gold font-semibold mb-2">{{content.s7.parking.title}}</h4>
+        <p class="text-white/80 text-sm leading-relaxed">{{content.s7.parking.body}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider container mx-auto"></div>
+
+<section class="py-24 sm:py-32 relative overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="/assets/images/tosunpasa/exterior-tosunpasa-wide.webp" alt="" class="w-full h-full object-cover opacity-30">
+    <div class="absolute inset-0 bg-gradient-to-b from-navy-dark via-navy-dark/70 to-navy-dark"></div>
+  </div>
+  <div class="relative container mx-auto px-4 max-w-3xl text-center">
+    <h2 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+      {{content.s8.title_line1}}<br>{{content.s8.title_line2_pre}} <span class="text-gold">Tosunpaşa</span>{{content.s8.title_line2_post}}
+    </h2>
+    <p class="text-lg text-white/70 mb-8">{{content.s8.subtitle}}</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/{{url_prefix}}#boats" class="bg-gold text-navy-dark px-8 py-4 rounded-full font-semibold hover:bg-yellow-400 transition-colors">{{content.s8.cta_book}}</a>
+      <a href="https://wa.me/905322442922" target="_blank" class="border border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:border-gold hover:text-gold transition-colors">{{content.s8.cta_whatsapp}}</a>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-navy-dark border-t border-white/5 py-10">
+  <div class="container mx-auto px-4 text-center">
+    <p class="text-white/40 text-sm mb-3"><span class="text-gold font-semibold">Bosphorus Night</span> · TÜRSAB A-17672 · {{content.footer.location}}</p>
+    <p class="text-white/30 text-xs">{{content.footer.copyright}}</p>
+  </div>
+</footer>
+
+</body>
+</html>

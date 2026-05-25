@@ -534,7 +534,7 @@ Tek Supabase'de (bosphorus-ai). Site ile AI birleşti 2026-04-17. Seed data yük
 9. **system_logs** — audit trail (level, source, event_type, metadata jsonb)
 
 ### Site Tabloları (8 — 2026-04-17'de taşındı)
-10. **boats** — tekneler (3 kayıt: Tosunpaşa, Lüfer, AMOR). BIGSERIAL id, slug UNIQUE, login_code + owner_code.
+10. **boats** — tekneler (1 kayıt: Tosunpaşa, id=1). BIGSERIAL id, slug UNIQUE, login_code + owner_code. *(Migration 033, 2026-05-25: Lüfer + AMOR silindi — tek tekne operasyonu netleşti.)*
 11. **admin_users** — admin panel kullanıcıları (2 kayıt: ozgur/admin_sahip, personel1/admin_personel). BIGSERIAL id.
 12. **competitors** — rakip firmalar (8 kayıt). BIGSERIAL id, domain UNIQUE.
 13. **competitor_scans** — Gemini tarama sonuçları (36 kayıt). raw_data + packages jsonb.
