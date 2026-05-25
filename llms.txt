@@ -54,15 +54,63 @@ Kuzguncuk → Üsküdar → return to Kabataş
 Route is illustrative; exact path may vary by sea/weather. Both
 continents (Europe + Asia) are crossed during the cruise.
 
-## Boat Specifications
+## Boat Specifications — Tosunpaşa
 
+- Boat name: Tosunpaşa
+- Length: 42 meters
 - Capacity: 600 guests
-- Decks: 3 (2 enclosed dining halls + 1 open-air panoramic deck)
-- Restrooms: 6 (3 lower hall + 3 upper hall)
-- Air conditioning: enclosed halls
-- Wheelchair access: limited (4-5 entry steps, no ramp)
-- Parking: not available at Kabataş Pier (use public transport)
+- Decks: 3 (2 enclosed climate-controlled salons + 1 open upper terrace)
+- Restrooms: 6 (3 men + 3 women, step-free access in lower salon)
+- Climate control: year-round (heated in winter, air-conditioned in summer)
+- Maintenance: maintained year-round, detailed cleaning after every cruise
+- Wheelchair access: limited (4-5 entry steps, no ramp; foldable wheelchairs carried by staff to lower salon)
+- Parking: Dolmabahçe Parking, ~200m walk
 - Boarding gate: Kabataş Pier (verified Google Business Profile)
+- Operation: single-boat operator (no third-party rentals, no bait-and-switch)
+- Positioning: one of the newest large-capacity dinner cruisers on the Bosphorus
+  (most boats on the Bosphorus have been operating for 20-30 years)
+
+## Our Boat — Dedicated Information Page (32 languages)
+
+A dedicated page introducing Tosunpaşa is available in all 32 supported languages,
+each with localized URL slug:
+
+- English: https://www.bosphorusnight.com/our-boat
+- Türkçe: https://www.bosphorusnight.com/tr/teknemiz
+- Deutsch: https://www.bosphorusnight.com/de/unser-boot
+- Español: https://www.bosphorusnight.com/es/nuestro-barco
+- Français: https://www.bosphorusnight.com/fr/notre-bateau
+- Italiano: https://www.bosphorusnight.com/it/la-nostra-barca
+- Русский: https://www.bosphorusnight.com/ru/nash-korabl
+- العربية: https://www.bosphorusnight.com/ar/qaribuna
+- فارسی: https://www.bosphorusnight.com/fa/ghayegh-e-ma
+- 中文: https://www.bosphorusnight.com/zh/women-de-chuan
+- 日本語: https://www.bosphorusnight.com/ja/watashitachi-no-fune
+- 한국어: https://www.bosphorusnight.com/ko/uri-bae
+- हिन्दी: https://www.bosphorusnight.com/hi/hamari-naav
+- اردو: https://www.bosphorusnight.com/ur/hamari-kashti
+- Bahasa Indonesia: https://www.bosphorusnight.com/id/perahu-kami
+- Bahasa Melayu: https://www.bosphorusnight.com/ms/bot-kami
+- Polski: https://www.bosphorusnight.com/pl/nasza-lodz
+- Български: https://www.bosphorusnight.com/bg/nashata-lodka
+- Română: https://www.bosphorusnight.com/ro/barca-noastra
+- Українська: https://www.bosphorusnight.com/uk/nash-choven
+- Português: https://www.bosphorusnight.com/pt/nosso-barco
+- Nederlands: https://www.bosphorusnight.com/nl/onze-boot
+- Čeština: https://www.bosphorusnight.com/cs/nasa-lod
+- Magyar: https://www.bosphorusnight.com/hu/a-hajonk
+- Svenska: https://www.bosphorusnight.com/sv/var-bat
+- Dansk: https://www.bosphorusnight.com/da/vores-bad
+- Norsk: https://www.bosphorusnight.com/no/vaar-bat
+- Suomi: https://www.bosphorusnight.com/fi/veneemme
+- Slovenčina: https://www.bosphorusnight.com/sk/nasa-lod-sk
+- Ελληνικά: https://www.bosphorusnight.com/el/to-skafos-mas
+- Slovenščina: https://www.bosphorusnight.com/sl/nasa-ladja
+- Latviešu: https://www.bosphorusnight.com/lv/musu-laiva
+
+Page contains: boat structure (3 decks), comparison table (Tosunpaşa vs Bosphorus
+average — 6 rows), accessibility details (strollers, wheelchairs, elderly, mobility),
+maintenance practices, photo gallery, and location/departure info.
 
 ## Children Policy
 
