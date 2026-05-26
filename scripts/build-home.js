@@ -154,6 +154,8 @@ function buildSchemaLd(lang) {
       'https://www.youtube.com/@BosphorusNightTour',
       'https://www.instagram.com/bosphorusnighttour/',
       'https://www.facebook.com/bosphorusnighttours/',
+      'https://www.tiktok.com/@bosphorusnight.com',
+      'https://www.pinterest.com/bosphorusnight/',
       'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
     ]
   };
@@ -176,6 +178,8 @@ function buildSchemaLd(lang) {
       'https://www.youtube.com/@BosphorusNightTour',
       'https://www.instagram.com/bosphorusnighttour/',
       'https://www.facebook.com/bosphorusnighttours/',
+      'https://www.tiktok.com/@bosphorusnight.com',
+      'https://www.pinterest.com/bosphorusnight/',
       'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
     ]
   };
@@ -263,6 +267,8 @@ function buildSchemaLd(lang) {
       'https://www.youtube.com/@BosphorusNightTour',
       'https://www.instagram.com/bosphorusnighttour/',
       'https://www.facebook.com/bosphorusnighttours/',
+      'https://www.tiktok.com/@bosphorusnight.com',
+      'https://www.pinterest.com/bosphorusnight/',
       'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
     ]
   };

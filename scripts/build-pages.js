@@ -297,6 +297,8 @@ function buildSchemaLd(page, lang, slug) {
         'https://www.youtube.com/@BosphorusNightTour',
         'https://www.instagram.com/bosphorusnighttour/',
         'https://www.facebook.com/bosphorusnighttours/',
+        'https://www.tiktok.com/@bosphorusnight.com',
+        'https://www.pinterest.com/bosphorusnight/',
         'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
       ]
     },
