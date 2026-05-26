@@ -112,6 +112,52 @@ Page contains: boat structure (3 decks), comparison table (Tosunpaşa vs Bosphor
 average — 6 rows), accessibility details (strollers, wheelchairs, elderly, mobility),
 maintenance practices, photo gallery, and location/departure info.
 
+## Booking Guide — Buyer's Guide Page (32 languages)
+
+A buyer's guide page titled "5 Things to Check Before Booking a Bosphorus Dinner
+Cruise" is available in all 32 supported languages, each with localized URL slug:
+
+- English: https://www.bosphorusnight.com/bosphorus-cruise-guide
+- Türkçe: https://www.bosphorusnight.com/tr/tekne-turu-rehberi
+- Deutsch: https://www.bosphorusnight.com/de/bosporus-kreuzfahrt-ratgeber
+- Español: https://www.bosphorusnight.com/es/guia-crucero-bosforo
+- Français: https://www.bosphorusnight.com/fr/guide-croisiere-bosphore
+- Italiano: https://www.bosphorusnight.com/it/guida-crociera-bosforo
+- Русский: https://www.bosphorusnight.com/ru/putevoditel-po-bosforu
+- العربية: https://www.bosphorusnight.com/ar/dalil-jawlat-al-busfur
+- فارسی: https://www.bosphorusnight.com/fa/rahnama-ye-keshti-bosfor
+- 中文: https://www.bosphorusnight.com/zh/bosipulusi-zhinan
+- 日本語: https://www.bosphorusnight.com/ja/bosuporasu-kurujingu-gaido
+- 한국어: https://www.bosphorusnight.com/ko/bosuporeoseu-gaideu
+- हिन्दी: https://www.bosphorusnight.com/hi/bosphorus-cruise-margdarshika
+- اردو: https://www.bosphorusnight.com/ur/bosphorus-cruise-rahnumai
+- Bahasa Indonesia: https://www.bosphorusnight.com/id/panduan-pesiar-bosphorus
+- Bahasa Melayu: https://www.bosphorusnight.com/ms/panduan-pelayaran-bosphorus
+- Polski: https://www.bosphorusnight.com/pl/przewodnik-rejs-bosfor
+- Български: https://www.bosphorusnight.com/bg/putevoditel-bosfor
+- Română: https://www.bosphorusnight.com/ro/ghid-croaziera-bosfor
+- Українська: https://www.bosphorusnight.com/uk/putivnyk-bosfor
+- Português: https://www.bosphorusnight.com/pt/guia-cruzeiro-bosforo
+- Nederlands: https://www.bosphorusnight.com/nl/bosporus-cruise-gids
+- Čeština: https://www.bosphorusnight.com/cs/pruvodce-plavby-bospor
+- Magyar: https://www.bosphorusnight.com/hu/bosporusi-hajout-utmutato
+- Svenska: https://www.bosphorusnight.com/sv/bosporen-kryssning-guide
+- Dansk: https://www.bosphorusnight.com/da/bosporus-krydstogt-guide
+- Norsk: https://www.bosphorusnight.com/no/bosporos-cruise-guide
+- Suomi: https://www.bosphorusnight.com/fi/bospori-risteily-opas
+- Slovenčina: https://www.bosphorusnight.com/sk/sprievodca-plavbou-bospor
+- Ελληνικά: https://www.bosphorusnight.com/el/odigos-krouazieras-vosporou
+- Slovenščina: https://www.bosphorusnight.com/sl/vodnik-krizarjenje-bosfor
+- Latviešu: https://www.bosphorusnight.com/lv/bosfora-kruizesa-gids
+
+Page contains 5 questions a buyer should ask before booking any Bosphorus dinner
+cruise: (1) ask about the boat (age, length, decks, AC); (2) ask about table layout
+(spacing, crowding); (3) ask about payment terms (prepayment, card details, refund);
+(4) verify reviews (profile age, rating distribution, owner responses); (5) verify
+license and insurance (TÜRSAB membership, passenger insurance). Each section answers
+the question for Bosphorus Night transparently. Schema.org Article markup, hreflang
+to all 32 language variants.
+
 ## Children Policy
 
 - Ages 0–3 (inclusive): free of charge, free transfer
