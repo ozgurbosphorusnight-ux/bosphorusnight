@@ -1960,7 +1960,119 @@
         }
       }
     },
-    "bg": { "lang": "bg", "dir": "ltr", "slug": "putevoditel-bosfor", "url_prefix": "bg/", "og_locale": "bg_BG", "content": null },
+    "bg": {
+      "lang": "bg",
+      "dir": "ltr",
+      "slug": "putevoditel-bosfor",
+      "url_prefix": "bg/",
+      "og_locale": "bg_BG",
+      "content": {
+        "meta": {
+          "title": "5 неща за проверка преди резервация на вечерен круиз по Босфора | Bosphorus Night",
+          "description": "Преди да резервирате вечерен круиз по Босфора, задайте тези 5 въпроса: възраст на кораба, подредба на масите, плащане, ревюта, лиценз. Честен пътеводител за купувача.",
+          "og_title": "5 неща за проверка преди резервация на вечерен круиз по Босфора",
+          "og_description": "Информиран пътеводител за купувача — какво да попитате, какво да пропуснете."
+        },
+        "nav": {
+          "home": "Начало",
+          "cruises": "Круизи",
+          "our_boat": "Нашият кораб",
+          "guide": "Пътеводител",
+          "gallery": "Галерия",
+          "book": "Разгледай & резервирай"
+        },
+        "hero": {
+          "image_alt": "Пътеводител за купувача Bosphorus Night",
+          "tag": "Пътеводител",
+          "h1_line1": "5 неща за проверка",
+          "h1_line2_pre": "преди резервация на",
+          "h1_line2_highlight": "вечерен круиз по Босфора",
+          "h1_line2_post": "",
+          "sub": "Какво да попитате, какво да пропуснете — информиран пътеводител.",
+          "description": "Всяка вечер се продават десетки вечерни круизи по Босфора. Всички използват едни и същи снимки, всички дават едни и същи обещания. За да разпознаете кой наистина предлага вечерта, която си представяте, задайте тези пет въпроса преди резервация."
+        },
+        "toc": {
+          "label": "Съдържание",
+          "s1": "Попитайте за кораба",
+          "s2": "Попитайте за подредбата на масите",
+          "s3": "Попитайте за плащането",
+          "s4": "Внимавайте с ревютата",
+          "s5": "Попитайте за лиценз и застраховка"
+        },
+        "s1": {
+          "tag": "01 — Попитайте за кораба",
+          "title": "На кой кораб ще се качите? Възраст, дължина, капацитет?",
+          "body": "Повечето оператори казват „луксозен кораб\", без да назоват кораба. Защото повечето не управляват собствен кораб — наемат този, който е свободен тази вечер на кея. Двама гости, резервирали от един и същ линк, могат да се озоват на различни кораби в различни вечери.",
+          "ask_label": "Питайте това",
+          "q1": "Как се казва корабът?",
+          "q2": "Каква е дължината, колко палуби?",
+          "q3": "Колко е стар? (Кораби на 20-30 години все още работят по Босфора.)",
+          "q4": "Климатик — само в салона или и на горната палуба?",
+          "answer_label": "При нас",
+          "answer_body": "Имаме един кораб — Tosunpaşa. Дълъг 42 метра, 3 палуби, климатизиран, ново поколение. Корабът на снимките ни е корабът, на който се качвате.",
+          "answer_link": "Разгледайте Tosunpaşa →",
+          "image_alt": "Външен вид на Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Попитайте за подредбата на масите",
+          "title": "Как е подредбата на масите за вечеря? Стегнато или просторно?",
+          "body": "Някои оператори на „вечерен круиз\" набутват 300 гости в салон за 200. Сядате лакът до лакът със съседната маса и едва местите стола. Не го виждате на снимките — те са правени в празен салон.",
+          "ask_label": "Питайте това",
+          "q1": "Какво е минималното пространство на маса на човек в см?",
+          "q2": "Достатъчно ли е разстоянието между масите, за да минава сервитьорът удобно?",
+          "q3": "Можете ли да покажете снимка на пълно резервирана вечер?",
+          "answer_label": "При нас",
+          "answer_body": "Капацитет 600 гости, просторна подредба — сервитьорите се движат между масите удобно, има реално разстояние със съседната маса. Без натъпкване.",
+          "image_alt": "Интериор на салона Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Попитайте за плащането",
+          "title": "Изисква предплащане? Иска данни на картата?",
+          "body": "Повечето OTA (Klook, GetYourGuide, Viator) вземат предплащане. Парите ви излизат рано, половината отива в комисиона, и ако круизът се отмени, възстановяването отнема 7-14 дни, често повече.",
+          "ask_label": "Питайте това",
+          "q1": "Плащане сега или на кораба?",
+          "q2": "Каква е политиката за отмяна? (Повечето OTA: до 24 часа преди.)",
+          "q3": "Колко време отнема възстановяването? В каква валута?",
+          "q4": "Задължителни ли са данните на картата?",
+          "answer_label": "При нас",
+          "answer_body": "Плащане на кораба. Без предплащане, без данни на карта. Плащате, когато стигнете кораба. Безплатна отмяна до 2 часа преди — без главоболия с възстановяване, защото няма какво да се възстановява."
+        },
+        "s4": {
+          "tag": "04 — Внимавайте с ревютата",
+          "title": "Истински ли са ревютата? Кога е създаден профилът?",
+          "body": "TripAdvisor и Google съхраняват хиляди фалшиви ревюта. Типични признаци: новосъздаден профил, 50 ревюта всички 5 звезди, всички написани през последните 3 месеца. Истинският бизнес има по-стар профил, разнообразно разпределение (3-4-5 звезди), и собственикът отговаря на негативни ревюта.",
+          "ask_label": "Проверете това",
+          "q1": "На колко години е профилът в Google?",
+          "q2": "Натрупаха ли се ревютата естествено, или се появиха всичките през последните 2 месеца?",
+          "q3": "Има ли ревюта от 3-4 звезди? Отговаря ли собственикът?",
+          "q4": "Има ли множество фирмени записи под едно и също име? (Често срещан трик.)",
+          "answer_label": "При нас",
+          "answer_body": "Работим от 2014 г. Вътрешните ни записи показват 11 317 гости, средно 4,8★. Профилът ни в Google е нов (отворен на 29 април 2026 г.), затова публичните ревюта все още са малко. Лицензът ни TÜRSAB е проверим: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Попитайте за лиценз и застраховка",
+          "title": "Член ли е на TÜRSAB? Има ли застраховка?",
+          "body": "За да работи като туристическа агенция в Türkiye, се изисква лиценз TÜRSAB (Сдружение на туристическите агенции в Türkiye). Оператор без лиценз не е законен — при инцидент, жалба или отмяна нямате правно основание. Само лицензът TÜRSAB не е достатъчен; операторът на кораба също трябва да има пътническа застраховка.",
+          "ask_label": "Питайте това",
+          "q1": "Какъв е вашият номер на лиценз TÜRSAB? (Формат A-XXXXX, проверим.)",
+          "q2": "Какво покрива пътническата застраховка на кораба?",
+          "q3": "При инцидент коя застраховка влиза в действие?",
+          "answer_label": "При нас",
+          "answer_body": "TÜRSAB A-17672 — лицензът ни е проверим на tursab.org.tr. Всеки гост на борда е покрит от пътническата застраховка."
+        },
+        "cta": {
+          "title_pre": "Сега знаете",
+          "title_highlight": "какво да попитате",
+          "title_post": ".",
+          "body": "След като зададете тези 5 въпроса, не е трудно да различите кой оператор предлага реална услуга и кой просто продава снимки. Операторът, който отговаря ясно, не крие кораба си и споделя лиценза си — това е вашият оператор.",
+          "button": "Ако искате да погледнете отблизо: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Пристан Кабаташ, Истанбул",
+          "copyright": "© 2026 Bosphorus Night — Всички права запазени."
+        }
+      }
+    },
     "ro": { "lang": "ro", "dir": "ltr", "slug": "ghid-croaziera-bosfor", "url_prefix": "ro/", "og_locale": "ro_RO", "content": null },
     "uk": {
       "lang": "uk",
@@ -2301,13 +2413,349 @@
         }
       }
     },
-    "cs": { "lang": "cs", "dir": "ltr", "slug": "pruvodce-plavby-bospor", "url_prefix": "cs/", "og_locale": "cs_CZ", "content": null },
-    "hu": { "lang": "hu", "dir": "ltr", "slug": "bosporusi-hajout-utmutato", "url_prefix": "hu/", "og_locale": "hu_HU", "content": null },
+    "cs": {
+      "lang": "cs",
+      "dir": "ltr",
+      "slug": "pruvodce-plavby-bospor",
+      "url_prefix": "cs/",
+      "og_locale": "cs_CZ",
+      "content": {
+        "meta": {
+          "title": "5 věcí ke kontrole před rezervací večerní plavby po Bosporu | Bosphorus Night",
+          "description": "Před rezervací večerní plavby po Bosporu se zeptejte na těchto 5 věcí: stáří lodi, uspořádání stolů, platba, recenze, licence. Upřímný průvodce pro kupujícího.",
+          "og_title": "5 věcí ke kontrole před rezervací večerní plavby po Bosporu",
+          "og_description": "Informovaný průvodce pro kupujícího — na co se ptát, co přeskočit."
+        },
+        "nav": {
+          "home": "Domů",
+          "cruises": "Plavby",
+          "our_boat": "Naše loď",
+          "guide": "Průvodce",
+          "gallery": "Galerie",
+          "book": "Prohlédnout & rezervovat"
+        },
+        "hero": {
+          "image_alt": "Průvodce kupujícího Bosphorus Night",
+          "tag": "Průvodce",
+          "h1_line1": "5 věcí ke kontrole",
+          "h1_line2_pre": "před rezervací",
+          "h1_line2_highlight": "večerní plavby po Bosporu",
+          "h1_line2_post": "",
+          "sub": "Na co se ptát, co přeskočit — informovaný průvodce pro kupujícího.",
+          "description": "Každý večer se prodávají desítky večerních plaveb po Bosporu. Všechny používají stejné fotky, všechny dávají stejné sliby. Abyste poznali, která skutečně nabízí večer, jaký si představujete, položte před rezervací těchto pět otázek."
+        },
+        "toc": {
+          "label": "Obsah",
+          "s1": "Zeptejte se na loď",
+          "s2": "Zeptejte se na uspořádání stolů",
+          "s3": "Zeptejte se na platbu",
+          "s4": "Pozor na recenze",
+          "s5": "Zeptejte se na licenci a pojištění"
+        },
+        "s1": {
+          "tag": "01 — Zeptejte se na loď",
+          "title": "Na jakou loď nastoupíte? Stáří, délka, kapacita?",
+          "body": "Většina provozovatelů říká „luxusní loď\" bez uvedení názvu lodi. Protože většina neprovozuje vlastní loď — pronajímají si tu, která je daný večer dostupná u nábřeží. Dva hosté, kteří rezervují přes stejný odkaz, mohou skončit na různých lodích v různé večery.",
+          "ask_label": "Zeptejte se na toto",
+          "q1": "Jak se loď jmenuje?",
+          "q2": "Jaká je délka, kolik palub?",
+          "q3": "Jak je stará? (Lodě 20-30 let staré stále pluje po Bosporu.)",
+          "q4": "Klimatizace — jen salon, nebo i horní paluba?",
+          "answer_label": "U nás",
+          "answer_body": "Máme jedinou loď — Tosunpaşa. 42 metrů dlouhá, 3 paluby, klimatizovaná, nová generace. Loď, kterou vidíte na našich fotkách, je loď, na kterou nastoupíte.",
+          "answer_link": "Podívejte se na Tosunpaşa →",
+          "image_alt": "Vnější pohled na Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Zeptejte se na uspořádání stolů",
+          "title": "Jaké je uspořádání stolů u večeře? Stísněné nebo prostorné?",
+          "body": "Někteří provozovatelé „večerní plavby\" cpou 300 hostů do salonu pro 200. Sedíte loket vedle lokte se sousedním stolem a sotva pohnete židlí. Na fotkách to neuvidíte — byly pořízeny v prázdném salonu.",
+          "ask_label": "Zeptejte se na toto",
+          "q1": "Jaká je minimální plocha stolu na osobu v cm?",
+          "q2": "Je mezi stoly dost místa, aby číšník pohodlně prošel?",
+          "q3": "Můžete ukázat fotku z plně rezervovaného večera?",
+          "answer_label": "U nás",
+          "answer_body": "Kapacita 600 hostů, prostorné uspořádání — číšníci se pohybují mezi stoly pohodlně, je skutečný odstup od sousedního stolu. Žádné mačkání.",
+          "image_alt": "Interiér salonu Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Zeptejte se na platbu",
+          "title": "Vyžaduje platbu předem? Žádá údaje karty?",
+          "body": "Většina OTA (Klook, GetYourGuide, Viator) bere platbu předem. Vaše peníze odcházejí dřív, polovina jde na provizi, a pokud je plavba zrušena, vrácení peněz trvá 7-14 dní, často déle.",
+          "ask_label": "Zeptejte se na toto",
+          "q1": "Platba teď, nebo na lodi?",
+          "q2": "Jaká je storno podmínka? (Většina OTA: do 24 hodin předem.)",
+          "q3": "Jak dlouho trvá vrácení peněz? V jaké měně?",
+          "q4": "Jsou údaje karty povinné?",
+          "answer_label": "U nás",
+          "answer_body": "Platba na lodi. Žádná platba předem, žádné údaje karty. Platíte, když dorazíte k lodi. Bezplatné storno do 2 hodin předem — žádné starosti s vrácením, protože není co vracet."
+        },
+        "s4": {
+          "tag": "04 — Pozor na recenze",
+          "title": "Jsou recenze pravé? Kdy byl profil založen?",
+          "body": "TripAdvisor i Google hostí tisíce falešných recenzí. Typické signály: čerstvě otevřený profil, 50 recenzí všech 5 hvězdiček, všechny napsané v posledních 3 měsících. Skutečný podnik má starší profil, smíšené rozložení (3-4-5 hvězdiček), a majitel reaguje na negativní recenze.",
+          "ask_label": "Ověřte toto",
+          "q1": "Jak starý je profil na Google?",
+          "q2": "Hromadily se recenze přirozeně, nebo všechny najednou za poslední 2 měsíce?",
+          "q3": "Jsou tam recenze 3-4 hvězdiček? Odpověděl majitel?",
+          "q4": "Existuje více firemních zápisů pod stejným jménem? (Běžný trik.)",
+          "answer_label": "U nás",
+          "answer_body": "Působíme od roku 2014. Naše interní záznamy ukazují 11 317 hostů, průměr 4,8★. Náš profil na Google je nový (otevřen 29. dubna 2026), takže veřejných recenzí je zatím málo. Naše licence TÜRSAB je ověřitelná: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Zeptejte se na licenci a pojištění",
+          "title": "Je členem TÜRSAB? Existuje pojištění?",
+          "body": "Pro provoz cestovní kanceláře v Türkiye je nutná licence TÜRSAB (Sdružení tureckých cestovních kanceláří). Provozovatel bez licence není legální — v případě úrazu, stížnosti nebo zrušení nemáte právní oporu. Samotná licence TÜRSAB nestačí; provozovatel lodi musí mít i pojištění pasažérů.",
+          "ask_label": "Zeptejte se na toto",
+          "q1": "Jaké je vaše číslo licence TÜRSAB? (Formát A-XXXXX, ověřitelný.)",
+          "q2": "Co kryje pojištění pasažérů lodi?",
+          "q3": "V případě nehody, které pojištění zasáhne?",
+          "answer_label": "U nás",
+          "answer_body": "TÜRSAB A-17672 — naše licence je ověřitelná na tursab.org.tr. Každý host na palubě je krytý pojištěním pasažérů."
+        },
+        "cta": {
+          "title_pre": "Teď víte,",
+          "title_highlight": "na co se ptát",
+          "title_post": ".",
+          "body": "Když položíte těchto 5 otázek, není těžké rozeznat, který provozovatel nabízí skutečnou službu a který prodává jen fotky. Provozovatel, který odpovídá jasně, neskrývá svou loď a sdílí svou licenci — to je váš provozovatel.",
+          "button": "Pokud se chcete podívat zblízka: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Přístaviště Kabataş, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Všechna práva vyhrazena."
+        }
+      }
+    },
+    "hu": {
+      "lang": "hu",
+      "dir": "ltr",
+      "slug": "bosporusi-hajout-utmutato",
+      "url_prefix": "hu/",
+      "og_locale": "hu_HU",
+      "content": {
+        "meta": {
+          "title": "5 dolog, amit ellenőrizni kell, mielőtt bosporusi vacsorás hajóutat foglal | Bosphorus Night",
+          "description": "Mielőtt bosporusi vacsorás hajóutat foglal, tegye fel ezt az 5 kérdést: hajó kora, asztalbeosztás, fizetés, vélemények, engedély. Őszinte vásárlói útmutató.",
+          "og_title": "5 dolog, amit ellenőrizni kell, mielőtt bosporusi vacsorás hajóutat foglal",
+          "og_description": "Tájékozott vásárlói útmutató — mit kérdezzen, mit hagyjon ki."
+        },
+        "nav": {
+          "home": "Kezdőlap",
+          "cruises": "Hajóutak",
+          "our_boat": "A hajónk",
+          "guide": "Útmutató",
+          "gallery": "Galéria",
+          "book": "Megnézés & foglalás"
+        },
+        "hero": {
+          "image_alt": "Bosphorus Night vásárlói útmutató",
+          "tag": "Útmutató",
+          "h1_line1": "5 dolog, amit ellenőrizni kell,",
+          "h1_line2_pre": "mielőtt",
+          "h1_line2_highlight": "bosporusi vacsorás hajóutat",
+          "h1_line2_post": " foglal",
+          "sub": "Mit kérdezzen, mit hagyjon ki — tájékozott vásárlói útmutató.",
+          "description": "Minden este több tucat bosporusi vacsorás hajóutat árulnak. Mind ugyanazokat a képeket használja, mind ugyanazokat az ígéreteket teszi. Hogy felismerje, melyik nyújtja valóban az estét, amit elképzel, tegye fel foglalás előtt ezt az öt kérdést."
+        },
+        "toc": {
+          "label": "Tartalom",
+          "s1": "Kérdezzen a hajóról",
+          "s2": "Kérdezzen az asztalbeosztásról",
+          "s3": "Kérdezzen a fizetésről",
+          "s4": "Figyeljen a véleményekre",
+          "s5": "Kérdezzen a licencről és biztosításról"
+        },
+        "s1": {
+          "tag": "01 — Kérdezzen a hajóról",
+          "title": "Melyik hajóra fog felszállni? Életkor, hossz, kapacitás?",
+          "body": "A legtöbb üzemeltető „luxushajót\" mond a hajó neve nélkül. Mert a többségük nem saját hajót üzemeltet — azt bérlik az adott estére, ami éppen elérhető a parton. Két vendég, aki ugyanazon a linken keresztül foglal, különböző hajón találhatja magát különböző estéken.",
+          "ask_label": "Ezt kérdezze",
+          "q1": "Mi a hajó neve?",
+          "q2": "Milyen hosszú, hány fedélzettel?",
+          "q3": "Hány éves? (20-30 éves hajók még mindig közlekednek a Boszporuszon.)",
+          "q4": "Légkondicionálás — csak a szalonban, vagy a felső fedélzeten is?",
+          "answer_label": "Nálunk",
+          "answer_body": "Egyetlen hajónk van — Tosunpaşa. 42 méter hosszú, 3 fedélzet, légkondicionált, új generáció. A fotóinkon látható hajó az a hajó, amelyre felszáll.",
+          "answer_link": "Nézze meg a Tosunpaşát →",
+          "image_alt": "Tosunpaşa kívülről"
+        },
+        "s2": {
+          "tag": "02 — Kérdezzen az asztalbeosztásról",
+          "title": "Milyen az asztalbeosztás a vacsoránál? Szűkös vagy tágas?",
+          "body": "Néhány „vacsorás hajóút\" üzemeltető 300 vendéget zsúfol egy 200 férőhelyes szalonba. Könyök könyök mellett ül a szomszéd asztallal, és alig tudja mozdítani a székét. A fotókon ez nem látszik — üres szalonban készültek.",
+          "ask_label": "Ezt kérdezze",
+          "q1": "Mennyi a minimum asztalterület személyenként cm-ben?",
+          "q2": "Elég-e a hely az asztalok között, hogy a pincér kényelmesen átférjen?",
+          "q3": "Tud mutatni fotót egy teljesen lefoglalt estéről?",
+          "answer_label": "Nálunk",
+          "answer_body": "600 fő kapacitás, tágas elrendezés — a pincérek kényelmesen mozognak az asztalok között, valódi távolság van a szomszéd asztallal. Nincs zsúfolás.",
+          "image_alt": "Tosunpaşa szalonbelső"
+        },
+        "s3": {
+          "tag": "03 — Kérdezzen a fizetésről",
+          "title": "Előrefizetést kér? Kártyaadatokat kér?",
+          "body": "A legtöbb OTA (Klook, GetYourGuide, Viator) előrefizetést szed. A pénze előbb elmegy, a fele jutalékra megy, és ha a hajóutat lemondják, a visszatérítés 7-14 nap, gyakran tovább.",
+          "ask_label": "Ezt kérdezze",
+          "q1": "Most fizessek, vagy a hajón?",
+          "q2": "Mi a lemondási feltétel? (A legtöbb OTA: 24 órával előtte.)",
+          "q3": "Mennyi a visszatérítés ideje? Milyen pénznemben?",
+          "q4": "Kötelezőek a kártyaadatok?",
+          "answer_label": "Nálunk",
+          "answer_body": "Fizetés a hajón. Nincs előrefizetés, nincs kártyaadat. Akkor fizet, amikor odaér a hajóhoz. Ingyenes lemondás 2 órával előtte — nincs visszatérítési bonyodalom, mert nincs mit visszatéríteni."
+        },
+        "s4": {
+          "tag": "04 — Figyeljen a véleményekre",
+          "title": "Valódiak a vélemények? Mikor nyitották a profilt?",
+          "body": "A TripAdvisor és a Google több ezer hamis véleményt tárol. Tipikus jelek: frissen nyitott profil, 50 vélemény mind 5 csillag, mind az elmúlt 3 hónapban írva. Egy valódi vállalkozás profilja idősebb, vegyes eloszlású értékelésekkel (3-4-5 csillag), és a tulajdonos válaszol a negatív véleményekre.",
+          "ask_label": "Ezt ellenőrizze",
+          "q1": "Mennyi idős a Google-profil?",
+          "q2": "Természetesen halmozódtak a vélemények, vagy az elmúlt 2 hónapban egyszerre jelentek meg?",
+          "q3": "Vannak 3-4 csillagos vélemények? Válaszolt a tulajdonos?",
+          "q4": "Van több cégbejegyzés ugyanazon a néven? (Gyakori trükk.)",
+          "answer_label": "Nálunk",
+          "answer_body": "2014 óta működünk. Belső nyilvántartásunk 11 317 vendéget mutat, 4,8★ átlag. Google-profilunk új (2026. április 29-én nyitottuk), így a nyilvános vélemények még kevesek. TÜRSAB licencünk ellenőrizhető: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Kérdezzen a licencről és biztosításról",
+          "title": "TÜRSAB-tag? Van biztosítás?",
+          "body": "Türkiye-ben utazási irodaként működéshez TÜRSAB-licenc (Török Utazási Irodák Szövetsége) szükséges. Licenc nélküli üzemeltető nem legális — baleset, panasz vagy lemondás esetén nincs jogi alapja. Önmagában a TÜRSAB-licenc nem elég; a hajóüzemeltetőnek utasbiztosítással is rendelkeznie kell.",
+          "ask_label": "Ezt kérdezze",
+          "q1": "Mi az Ön TÜRSAB licencszáma? (Formátum A-XXXXX, ellenőrizhető.)",
+          "q2": "Mire terjed ki a hajó utasbiztosítása?",
+          "q3": "Baleset esetén melyik biztosítás lép működésbe?",
+          "answer_label": "Nálunk",
+          "answer_body": "TÜRSAB A-17672 — licencünk ellenőrizhető a tursab.org.tr oldalon. Minden fedélzetre lépő vendég utasbiztosítás alá tartozik."
+        },
+        "cta": {
+          "title_pre": "Most már tudja,",
+          "title_highlight": "mit kérdezzen",
+          "title_post": ".",
+          "body": "Ha felteszi ezt az 5 kérdést, nem nehéz megkülönböztetni, melyik üzemeltető nyújt valódi szolgáltatást, és melyik csak fotókat árul. Az üzemeltető, aki világosan válaszol, nem rejti el a hajóját és megosztja a licencét — az az Ön üzemeltetője.",
+          "button": "Ha közelebbről megnézné: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Kabataş kikötő, Isztambul",
+          "copyright": "© 2026 Bosphorus Night — Minden jog fenntartva."
+        }
+      }
+    },
     "sv": { "lang": "sv", "dir": "ltr", "slug": "bosporen-kryssning-guide", "url_prefix": "sv/", "og_locale": "sv_SE", "content": null },
     "da": { "lang": "da", "dir": "ltr", "slug": "bosporus-krydstogt-guide", "url_prefix": "da/", "og_locale": "da_DK", "content": null },
     "no": { "lang": "no", "dir": "ltr", "slug": "bosporos-cruise-guide", "url_prefix": "no/", "og_locale": "no_NO", "content": null },
     "fi": { "lang": "fi", "dir": "ltr", "slug": "bospori-risteily-opas", "url_prefix": "fi/", "og_locale": "fi_FI", "content": null },
-    "sk": { "lang": "sk", "dir": "ltr", "slug": "sprievodca-plavbou-bospor", "url_prefix": "sk/", "og_locale": "sk_SK", "content": null },
+    "sk": {
+      "lang": "sk",
+      "dir": "ltr",
+      "slug": "sprievodca-plavbou-bospor",
+      "url_prefix": "sk/",
+      "og_locale": "sk_SK",
+      "content": {
+        "meta": {
+          "title": "5 vecí na kontrolu pred rezerváciou večernej plavby po Bospore | Bosphorus Night",
+          "description": "Pred rezerváciou večernej plavby po Bospore položte týchto 5 otázok: vek lode, usporiadanie stolov, platba, recenzie, licencia. Úprimný sprievodca pre kupujúceho.",
+          "og_title": "5 vecí na kontrolu pred rezerváciou večernej plavby po Bospore",
+          "og_description": "Informovaný sprievodca pre kupujúceho — na čo sa pýtať, čo preskočiť."
+        },
+        "nav": {
+          "home": "Domov",
+          "cruises": "Plavby",
+          "our_boat": "Naša loď",
+          "guide": "Sprievodca",
+          "gallery": "Galéria",
+          "book": "Pozrieť & rezervovať"
+        },
+        "hero": {
+          "image_alt": "Sprievodca kupujúceho Bosphorus Night",
+          "tag": "Sprievodca",
+          "h1_line1": "5 vecí na kontrolu",
+          "h1_line2_pre": "pred rezerváciou",
+          "h1_line2_highlight": "večernej plavby po Bospore",
+          "h1_line2_post": "",
+          "sub": "Na čo sa pýtať, čo preskočiť — informovaný sprievodca pre kupujúceho.",
+          "description": "Každý večer sa predávajú desiatky večerných plavieb po Bospore. Všetky používajú tie isté fotky, všetky dávajú tie isté sľuby. Aby ste rozoznali, ktorá skutočne ponúka večer, aký si predstavujete, položte pred rezerváciou týchto päť otázok."
+        },
+        "toc": {
+          "label": "Obsah",
+          "s1": "Spýtajte sa na loď",
+          "s2": "Spýtajte sa na usporiadanie stolov",
+          "s3": "Spýtajte sa na platbu",
+          "s4": "Pozor na recenzie",
+          "s5": "Spýtajte sa na licenciu a poistenie"
+        },
+        "s1": {
+          "tag": "01 — Spýtajte sa na loď",
+          "title": "Na akú loď nastúpite? Vek, dĺžka, kapacita?",
+          "body": "Väčšina prevádzkovateľov hovorí „luxusná loď\" bez pomenovania lode. Pretože väčšina neprevádzkuje vlastnú loď — prenajímajú si tú, ktorá je v daný večer dostupná pri nábreží. Dvaja hostia, ktorí rezervujú cez ten istý odkaz, môžu skončiť na rôznych lodiach v rôzne večery.",
+          "ask_label": "Spýtajte sa toto",
+          "q1": "Ako sa loď volá?",
+          "q2": "Aká je dĺžka, koľko palúb?",
+          "q3": "Aká je stará? (Lode staré 20-30 rokov ešte stále jazdia po Bospore.)",
+          "q4": "Klimatizácia — len salón, alebo aj horná paluba?",
+          "answer_label": "U nás",
+          "answer_body": "Máme jednu loď — Tosunpaşa. Dlhá 42 metrov, 3 paluby, klimatizovaná, novej generácie. Loď, ktorú vidíte na našich fotkách, je loď, na ktorú nastúpite.",
+          "answer_link": "Pozrieť Tosunpaşa →",
+          "image_alt": "Vonkajší pohľad na Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Spýtajte sa na usporiadanie stolov",
+          "title": "Aké je usporiadanie stolov pri večeri? Stiesnené alebo priestranné?",
+          "body": "Niektorí prevádzkovatelia „večernej plavby\" napchajú 300 hostí do salónu pre 200. Sedíte lakeť pri lakti so susedným stolom a kreslom sa sotva pohnete. Nevidíte to na fotkách — boli urobené v prázdnom salóne.",
+          "ask_label": "Spýtajte sa toto",
+          "q1": "Aká je minimálna plocha stola na osobu v cm?",
+          "q2": "Je medzi stolmi dosť miesta, aby čašník pohodlne prešiel?",
+          "q3": "Môžete ukázať fotku plne obsadeného večera?",
+          "answer_label": "U nás",
+          "answer_body": "Kapacita 600 hostí, priestranné usporiadanie — čašníci sa pohodlne pohybujú medzi stolmi, je skutočná vzdialenosť so susedným stolom. Žiadne tlačenie.",
+          "image_alt": "Interiér salónu Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Spýtajte sa na platbu",
+          "title": "Vyžaduje platbu vopred? Žiada údaje karty?",
+          "body": "Väčšina OTA (Klook, GetYourGuide, Viator) berie platbu vopred. Vaše peniaze odchádzajú skôr, polovica ide na províziu, a ak je plavba zrušená, vrátenie peňazí trvá 7-14 dní, často viac.",
+          "ask_label": "Spýtajte sa toto",
+          "q1": "Platba teraz alebo na lodi?",
+          "q2": "Aké je storno? (Väčšina OTA: do 24 hodín pred.)",
+          "q3": "Ako dlho trvá vrátenie peňazí? V akej mene?",
+          "q4": "Sú údaje karty povinné?",
+          "answer_label": "U nás",
+          "answer_body": "Platba na lodi. Žiadna platba vopred, žiadne údaje karty. Platíte, keď prídete k lodi. Bezplatné storno do 2 hodín — žiadne starosti s vrátením, lebo nie je čo vracať."
+        },
+        "s4": {
+          "tag": "04 — Pozor na recenzie",
+          "title": "Sú recenzie pravé? Kedy bol profil založený?",
+          "body": "TripAdvisor a Google hostí tisíce falošných recenzií. Typické znaky: čerstvo otvorený profil, 50 recenzií všetkých 5 hviezd, všetky napísané v posledných 3 mesiacoch. Skutočný podnik má starší profil, zmiešané rozloženie (3-4-5 hviezd), a majiteľ reaguje na negatívne recenzie.",
+          "ask_label": "Overte toto",
+          "q1": "Aký starý je profil na Google?",
+          "q2": "Hromadili sa recenzie prirodzene, alebo všetky naraz za posledné 2 mesiace?",
+          "q3": "Sú tam recenzie 3-4 hviezd? Odpovedal majiteľ?",
+          "q4": "Existuje viac firemných záznamov pod tým istým menom? (Bežný trik.)",
+          "answer_label": "U nás",
+          "answer_body": "Pôsobíme od roku 2014. Naše interné záznamy ukazujú 11 317 hostí, priemer 4,8★. Náš profil na Google je nový (otvorený 29. apríla 2026), takže verejných recenzií je zatiaľ málo. Naša licencia TÜRSAB je overiteľná: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Spýtajte sa na licenciu a poistenie",
+          "title": "Je členom TÜRSAB? Existuje poistenie?",
+          "body": "Na prevádzku cestovnej kancelárie v Türkiye je potrebná licencia TÜRSAB (Združenie tureckých cestovných kancelárií). Prevádzkovateľ bez licencie nie je legálny — v prípade úrazu, sťažnosti alebo zrušenia nemáte právny základ. Samotná licencia TÜRSAB nestačí; prevádzkovateľ lode musí mať aj poistenie pasažierov.",
+          "ask_label": "Spýtajte sa toto",
+          "q1": "Aké je vaše číslo licencie TÜRSAB? (Formát A-XXXXX, overiteľný.)",
+          "q2": "Čo kryje poistenie pasažierov lode?",
+          "q3": "V prípade nehody, ktoré poistenie zasiahne?",
+          "answer_label": "U nás",
+          "answer_body": "TÜRSAB A-17672 — naša licencia je overiteľná na tursab.org.tr. Každý hosť na palube je krytý poistením pasažierov."
+        },
+        "cta": {
+          "title_pre": "Teraz viete,",
+          "title_highlight": "na čo sa pýtať",
+          "title_post": ".",
+          "body": "Keď položíte týchto 5 otázok, nie je ťažké rozoznať, ktorý prevádzkovateľ ponúka skutočnú službu a ktorý predáva len fotky. Prevádzkovateľ, ktorý odpovedá jasne, neskrýva svoju loď a zdieľa svoju licenciu — to je váš prevádzkovateľ.",
+          "button": "Ak sa chcete pozrieť zblízka: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Prístav Kabataş, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Všetky práva vyhradené."
+        }
+      }
+    },
     "el": {
       "lang": "el",
       "dir": "ltr",
