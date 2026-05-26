@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/assets/data/favicon.png?v=5" type="image/png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/data/favicon.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/data/favicon.png?v=5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/data/favicon.png?v=5">
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <meta property="og:title" content="{{meta.og_title}}">
+  <meta property="og:description" content="{{meta.og_description}}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.bosphorusnight.com/{{url_prefix}}blog/{{slug}}">
+  <meta property="og:image" content="https://www.bosphorusnight.com/assets/images/tosunpasa/exterior-pier-sunset.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/webp">
+  <meta property="og:locale" content="{{og_locale}}">
+  <meta property="article:published_time" content="2026-05-26">
+  <link rel="canonical" href="https://www.bosphorusnight.com/{{url_prefix}}blog/{{slug}}">
+
+  {{hreflang}}
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{meta.title}}",
+    "description": "{{meta.description}}",
+    "image": "https://www.bosphorusnight.com/assets/images/tosunpasa/exterior-pier-sunset.webp",
+    "datePublished": "2026-05-26T00:00:00+03:00",
+    "dateModified": "{{today}}",
+    "inLanguage": "{{lang}}",
+    "author": { "@type": "Organization", "name": "Bosphorus Night", "url": "https://www.bosphorusnight.com" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bosphorus Night",
+      "logo": { "@type": "ImageObject", "url": "https://www.bosphorusnight.com/assets/data/logo png lst.png" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.bosphorusnight.com/{{url_prefix}}blog/{{slug}}" }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy-dark': '#0b1120',
+            'navy': '#101a30',
+            'navy-light': '#152240',
+            'gold': '#c9a84c',
+            'gold-light': '#d4b86a',
+          }
+        }
+      }
+    }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P09XEBMNWE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P09XEBMNWE');
+    gtag('config', 'AW-18073952031');
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .prose h2 { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: white; padding-top: 1rem; margin-bottom: 0.75rem; }
+    .prose strong { color: white; font-weight: 600; }
+    .prose a { color: #c9a84c; }
+    .prose a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="bg-[#0b1120] text-white min-h-screen">
+
+  <header class="bg-[#0b1120]/90 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="/{{url_prefix}}" class="flex items-center overflow-visible" dir="ltr"><img src="/assets/data/bn lg.png" alt="Bosphorus Night" class="h-[150px] lg:h-[180px] w-auto max-w-none -ml-2 mt-1"></a>
+      <div class="flex gap-4">
+        <a href="/{{url_prefix}}blog/" class="text-white/60 hover:text-[#c9a84c] text-sm transition-colors">{{nav.blog}}</a>
+        <a href="/{{url_prefix}}" class="text-white/60 hover:text-[#c9a84c] text-sm transition-colors">{{nav.home}}</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <a href="/{{url_prefix}}blog/" class="text-[#c9a84c] text-sm hover:underline">&larr; {{back_to_blog}}</a>
+
+    <article class="mt-8">
+      <time class="text-white/30 text-xs uppercase tracking-wider">{{date}}</time>
+      <h1 style="font-family:'Playfair Display',serif" class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6 leading-tight">{{h1}}</h1>
+
+      <img src="/assets/images/tosunpasa/{{hero_image}}" alt="{{hero_alt}}" class="w-full rounded-2xl mb-8 aspect-[16/9] object-cover">
+
+      <div class="prose prose-invert max-w-none text-white/70 leading-relaxed space-y-6 text-[15px]">
+{{body_html}}
+      </div>
+
+      <div class="mt-12 max-w-3xl mx-auto text-center bg-gradient-to-br from-[#152240] to-[#101a30] border border-[#c9a84c]/20 rounded-2xl p-10">
+        <h3 style="font-family:'Playfair Display',serif" class="text-2xl md:text-3xl font-bold text-white mb-4">{{cta.title}}</h3>
+        <p class="text-white/60 mb-8">{{cta.body}}</p>
+        <a href="/{{url_prefix}}" class="inline-flex items-center gap-2 bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] font-semibold px-8 py-3 rounded-full transition-colors">
+          {{cta.button}}
+          <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="mt-16">
+        <h3 style="font-family:'Playfair Display',serif" class="text-xl font-bold text-white mb-6">{{related.heading}}</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+{{related_cards_html}}
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="border-t border-white/5 py-8 text-center mt-16">
+    <p class="text-white/30 text-sm">&copy; 2026 Bosphorus Night. {{footer.rights}}</p>
+    <p class="text-white/15 text-xs mt-2">Samerames Tur Turizm Seyahat Org. ve Reklam Ltd. Sti. &middot; TURSAB A-17672</p>
+  </footer>
+
+  <a id="floatingWhatsapp"
+     href="https://wa.me/905322442922?text={{wa.message_encoded}}"
+     target="_blank"
+     rel="noopener"
+     onclick="if(window.bnTrack){window.bnTrack('Lead',{value:0,currency:'EUR',contact_method:'whatsapp',content_name:'floating_button',language:'{{lang}}'});}"
+     aria-label="{{wa.aria}}"
+     class="group fixed left-12 bottom-20 lg:bottom-6 z-[54] inline-flex items-center pl-11 pr-4 py-1.5 rounded-full border border-[#25D366]/60 bg-[#0a0f1e]/70 backdrop-blur-md hover:border-[#25D366] hover:bg-[#0a0f1e]/90 shadow-lg shadow-black/20 transition-all duration-300">
+    <svg class="absolute -left-1 top-1/2 -translate-y-1/2 w-10 h-10 drop-shadow-md" viewBox="0 0 24 24"><path fill="#25D366" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/><path fill="#FFFFFF" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="text-white text-xs font-semibold whitespace-nowrap">{{wa.label}}</span>
+    <span class="relative flex w-2 h-2 flex-shrink-0 ml-2">
+      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+      <span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span>
+    </span>
+  </a>
+  <script>
+  (function(){
+    var wa=document.getElementById('floatingWhatsapp');if(!wa)return;
+    var f=function(){var b=(window.innerHeight+window.scrollY)>=(document.body.offsetHeight-80);
+      wa.classList.toggle('opacity-0',b);wa.classList.toggle('translate-y-4',b);wa.classList.toggle('pointer-events-none',b);};
+    window.addEventListener('scroll',f,{passive:true});window.addEventListener('resize',f);f();
+  })();
+  </script>
+</body>
+</html>

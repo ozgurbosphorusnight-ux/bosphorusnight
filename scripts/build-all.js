@@ -46,6 +46,7 @@ run('node scripts/build-home.js');
 run('node scripts/build-pages.js');
 run('node scripts/build-fleet.js'); // "Our Boat" / "Teknemiz" — 32 dilde Tosunpaşa sayfası
 run('node scripts/build-guide.js'); // "Booking Guide" / "Rehber" — 32 dilde 5-soru rehberi
+// build-blog-kabatas runs AFTER blog/ copy below (otherwise blog/ copy overwrites generated files)
 // build-seo.js DELIBERATELY moved below — it scans dist/ via existsSync, so it
 // must run AFTER blog/city-guide copy steps to see all real URLs.
 
@@ -87,6 +88,10 @@ for (const lang of BLOG_LANGS) {
   }
 }
 
+// 3d. Kabataş blog posts (2 posts × N langs from template+JSON)
+// Runs AFTER blog/ copy so generated files aren't overwritten.
+run('node scripts/build-blog-kabatas.js');
+
 // 4. Tailwind CSS build-time extraction → dist/css/tailwind.css
 // Replaces cdn.tailwindcss.com runtime JIT (350 KB JS) with ~45 KB static CSS.
 run('node scripts/build-tailwind.js');
@@ -125,6 +130,7 @@ run('node scripts/build-seo.js');
 // Runs AFTER build-seo.js which generates the base sitemap.
 run('node scripts/append-fleet-to-sitemap.js');
 run('node scripts/append-guide-to-sitemap.js'); // 32 Rehber URL'leri sitemap'e ekle
+run('node scripts/append-blog-kabatas-to-sitemap.js'); // Kabataş blog URL'leri (2 post × N dil) sitemap'e ekle
 
 // 6b. Tailwind CDN script bloğunu tüm dist HTML'lerinden strip et,
 // yerine /css/tailwind.css link tag'i koy. (Kaynak HTML'ler değişmez —

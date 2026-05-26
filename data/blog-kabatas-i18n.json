@@ -1,0 +1,366 @@
+{
+  "_meta": {
+    "description": "Kabataş blog posts (2 posts × 32 languages). Used by scripts/build-blog-kabatas.js. Each post has its own canonical key with localized slug + content per language. Languages with content: TR, EN. Others have skeleton — add content via batch translation.",
+    "lastUpdated": "2026-05-26",
+    "hero_images": {
+      "how-to-reach": "exterior-pier-sunset.webp",
+      "what-to-do-near": "exterior-tosunpasa-wide.webp"
+    }
+  },
+  "posts": {
+    "how-to-reach": {
+      "canonical_en_slug": "how-to-reach-kabatas-pier",
+      "languages": {
+        "en": {
+          "lang": "en",
+          "dir": "ltr",
+          "slug": "how-to-reach-kabatas-pier",
+          "url_prefix": "",
+          "og_locale": "en_US",
+          "content": {
+            "meta": {
+              "title": "How to Reach Kabataş Pier and Get Back — Bosphorus Dinner Cruise",
+              "description": "Step-by-step directions to Kabataş Pier from Eminönü, Sultanahmet, Beşiktaş, Taksim, and both Istanbul airports — plus how to get back after the cruise ends at 23:30. Departure point for Bosphorus Night's dinner cruises.",
+              "og_title": "How to Reach Kabataş Pier and Get Back — Bosphorus Dinner Cruise",
+              "og_description": "Directions to and from Kabataş Pier — from every major Istanbul district and both airports."
+            },
+            "nav": { "blog": "Blog", "home": "Home" },
+            "back_to_blog": "Back to Blog",
+            "date": "May 26, 2026",
+            "h1": "How to Reach Kabataş Pier and Get Back — Bosphorus Dinner Cruise",
+            "hero_alt": "Kabataş Pier at sunset with Tosunpaşa moored, the departure point for Bosphorus Night dinner cruises",
+            "body_html": [
+              "<p>Kabataş İskelesi (Kabataş Pier) sits on the European shore of the Bosphorus, a few hundred meters south of Dolmabahçe Palace and just below the famous Taksim hill. It is one of the busiest passenger piers in Istanbul and — relevant if you are reading this — the official departure point for Bosphorus Night's dinner cruise. Boarding opens at 19:30 and the boat (Tosunpaşa) leaves the pier at 20:30 sharp, returning at 23:30.</p>",
+              "<p>Most first-time visitors find Kabataş easy to reach once they understand which line goes where. The pier is served by the T1 tram, the F1 funicular from Taksim, public ferries, the seaside coastal road from Beşiktaş, and direct buses from both Istanbul airports. Below is a practical guide for the most common starting points in the city.</p>",
+              "<h2>Where Is Kabataş Pier?</h2>",
+              "<p>Address: <strong>Kemankeş Karamustafa Paşa Mahallesi, Kabataş İskele Sokak, Beyoğlu / Istanbul</strong>. The pier is on the European side, immediately south of Dolmabahçe Palace. Google Maps coordinates: 41.0335° N, 28.9925° E. The closest landmarks are Dolmabahçe Palace (300 m north), the funicular station to Taksim (50 m), and the T1 tram terminal (next to the pier).</p>",
+              "<p>When you arrive, look for the white passenger pier with the city ferry boats and private cruise boats moored side by side. Tosunpaşa is the largest boat at the dock during evening hours — 42 meters long, three decks, lit in warm gold. There are staff on the pier who can direct you to the correct boat.</p>",
+              "<h2>From Eminönü</h2>",
+              "<p>This is the easiest connection in Istanbul. Take the <strong>T1 tram</strong> from Eminönü towards Kabataş. The tram runs every 5–7 minutes, costs around 27 TL (Istanbulkart) per ride, and reaches Kabataş in roughly 12 minutes. Kabataş is the last stop, so you cannot miss it. When you exit the tram, the pier is 30 seconds away on your right.</p>",
+              "<p>If you prefer to walk along the water, Eminönü to Kabataş along the coastal road is about 3.5 km — roughly 40 minutes at a relaxed pace. It is a pleasant walk past Karaköy and Galataport with sea views the whole way, but plan at least an hour to allow for stops.</p>",
+              "<h2>From Sultanahmet</h2>",
+              "<p>The <strong>T1 tram</strong> runs directly between Sultanahmet and Kabataş. Board at Sultanahmet station (just outside the Hagia Sophia and Blue Mosque) and ride 8 stops to Kabataş — about 20 minutes in total. Same fare as above (around 27 TL with Istanbulkart). Trams in Istanbul are clean, well-marked in English, and connect most of the historic peninsula to the modern center in a single ride.</p>",
+              "<h2>From Beşiktaş</h2>",
+              "<p>Beşiktaş is the closest district to Kabataş. The simplest option is to walk along the seaside promenade — about 1.5 km, or 15 minutes at an easy pace. You pass Dolmabahçe Palace on the way, which is worth a few minutes even if you do not stop in. The walk is flat, scenic, and well-lit after dark.</p>",
+              "<p>If you prefer not to walk, the <strong>dolmuş</strong> (shared minibus) from Beşiktaş to Kabataş takes about 5 minutes and costs around 15–20 TL. Or take a taxi for roughly 80–120 TL depending on traffic.</p>",
+              "<h2>From Taksim</h2>",
+              "<p>This is the fastest connection of all. Take the <strong>F1 funicular</strong> from Taksim Square down to Kabataş. It is a single stop, runs every 3–5 minutes, takes 90 seconds underground, and costs the standard Istanbulkart fare. The Taksim end of the funicular is on the corner of Taksim Square next to the Marmara Hotel — clearly signposted in English. The Kabataş end opens directly onto the pier complex.</p>",
+              "<p>If you want to walk instead, Taksim to Kabataş is downhill all the way — about 1 km on Tarlabaşı or 1.2 km on Sıraselviler. The hill is steep, so most visitors take the funicular both ways.</p>",
+              "<h2>From Istanbul Airport (IST)</h2>",
+              "<p>The most reliable option is the <strong>Havaist H-2</strong> bus, which runs from IST directly to Taksim. The bus takes 60–90 minutes depending on traffic and costs around 270 TL. From Taksim, take the F1 funicular as described above (1 minute to Kabataş).</p>",
+              "<p>Alternatively, take the <strong>M11 metro</strong> from IST to Gayrettepe, change to <strong>M2</strong> towards Yenikapı, get off at Taksim, and walk to the funicular. Total journey is around 75 minutes and costs about 70 TL — slower than the bus but cheaper. A direct taxi from IST to Kabataş runs around 1,500–2,000 TL during normal hours and 60–90 minutes in light traffic.</p>",
+              "<h2>From Sabiha Gökçen Airport (SAW)</h2>",
+              "<p>From SAW (Asian side), take the <strong>Havabüs</strong> direct to Taksim — 90–120 minutes and around 200 TL. From Taksim, F1 funicular to Kabataş. A taxi from SAW to Kabataş is around 1,200–1,800 TL and takes 60–90 minutes depending on Bosphorus Bridge traffic.</p>",
+              "<p>If you prefer public transport throughout, take the <strong>M4 metro</strong> from SAW to Kadıköy, then a ferry across the Bosphorus to Kabataş — a longer route but a memorable one if you have time and want to arrive by water.</p>",
+              "<h2>Hotel Transfer for Bosphorus Night Guests</h2>",
+              "<p>If you are booked on our dinner cruise and prefer not to figure out the route yourself, we offer hotel pickup for €10 per person within central Istanbul. Pickup begins around 18:00–19:00 depending on your hotel's location and traffic, and our driver brings you directly to the pier in time for the 19:30 boarding. You can add this to your booking when you reserve, or message us on WhatsApp afterwards to arrange it.</p>",
+              "<p>For most central neighborhoods — Sultanahmet, Beyoğlu, Taksim, Şişli, Beşiktaş, Galata, Karaköy — the transfer is straightforward. For more distant areas (Asian side, Bakırköy, Florya, Zeytinburnu) please confirm with us first; we can usually arrange it but the pickup time will be earlier.</p>",
+              "<h2>After the Cruise — Getting Back from Kabataş at 23:30</h2>",
+              "<p>Your Bosphorus cruise returns to Kabataş at <strong>23:30</strong>. Transport options narrow slightly after this hour but are still available. Here are the practical choices for the return journey:</p>",
+              "<p><strong>T1 Tram (runs until 00:30):</strong> The easiest way back if you're staying in Eminönü, Sultanahmet, Karaköy, Cevizlibağ, or further down the line. The tram is still running when the cruise ends, but the last departures are between 00:00 and 00:30. About 20 minutes back to Sultanahmet.</p>",
+              "<p><strong>F1 Funicular to Taksim (runs until 00:00):</strong> A single 90-second stop for Taksim, Beyoğlu, and İstiklal Caddesi. The last service runs close to midnight, so board by 23:45 to be safe.</p>",
+              "<p><strong>Taxi:</strong> Available 24/7. Approximate fares — Sultanahmet ~200 TL, Taksim ~80–100 TL, Şişli ~150 TL, Levent ~200 TL, Asian side 400–600 TL (bridge traffic varies). A taxi rank operates at the Kabataş pier entrance, or use BiTaksi/UberTR apps.</p>",
+              "<p><strong>Dolmuş (shared minibus):</strong> Runs to Beşiktaş during busier hours but service thins out late at night — a taxi is the safer choice.</p>",
+              "<p><strong>Bosphorus Night return transfer:</strong> Return drop-off to your hotel is not included in the standard packages, but it can be added on request for €10 per person. If you opt for this, our driver meets you at the pier as the cruise ends.</p>",
+              "<h2>Practical Tips</h2>",
+              "<p>Aim to arrive at Kabataş between 19:30 and 19:45. Boarding opens at 19:30 and the boat leaves promptly at 20:30 — late arrivals cannot be accommodated once we are on the water. If you are coming by tram or funicular, the pier is a 30-second walk from either exit. If you are driving, paid parking is available at Dolmabahçe Otoparkı (about 200 m walk to the pier) at around 50–80 TL for the evening.</p>",
+              "<p>Bring a light jacket — even in summer, the Bosphorus breeze cools the deck after sunset. And do not worry if you arrive a few minutes early; the upper terrace of the boat is the best vantage point to watch the city light up as departure approaches.</p>"
+            ],
+            "cta": {
+              "title": "Now You Know the Way — Ready to Board?",
+              "body": "Tosunpaşa departs Kabataş Pier every evening at 20:30. Live music, traditional shows, and dinner included — pay on the boat, no card details required.",
+              "button": "Book Your Cruise — From €24.30"
+            },
+            "related": {
+              "heading": "Related Articles",
+              "cards": [
+                { "url": "/blog/best-bosphorus-dinner-cruise-istanbul.html", "title": "Best Bosphorus Dinner Cruise in Istanbul 2026", "desc": "Complete guide to packages, pricing, and what to expect." },
+                { "url": "_OTHER_POST_", "title": "What to Do Near Kabataş Pier", "desc": "Before and after the cruise — Dolmabahçe, Galataport, Karaköy, late-night spots." },
+                { "url": "/blog/things-to-know-istanbul-boat-tour.html", "title": "10 Things to Know Before Your Istanbul Boat Tour", "desc": "Essential tips for first-time Bosphorus cruisers." },
+                { "url": "/bosphorus-cruise-guide", "title": "5 Things to Check Before Booking a Bosphorus Cruise", "desc": "An honest buyer's guide — what to ask, what to skip." }
+              ]
+            },
+            "footer": { "rights": "All rights reserved." },
+            "wa": {
+              "message_encoded": "Hi!%20I'd%20like%20to%20ask%20about%20the%20Bosphorus%20Night%20cruise.",
+              "aria": "Chat on WhatsApp",
+              "label": "We're online · Chat now"
+            }
+          }
+        },
+        "tr": {
+          "lang": "tr",
+          "dir": "ltr",
+          "slug": "kabatasa-nasil-gidilir",
+          "url_prefix": "tr/",
+          "og_locale": "tr_TR",
+          "content": {
+            "meta": {
+              "title": "Kabataş İskelesi'ne Nasıl Gidilir ve Geri Nasıl Dönülür? — Boğaz Akşam Yemekli Tur",
+              "description": "Eminönü, Sultanahmet, Beşiktaş, Taksim ve İstanbul havalimanlarından Kabataş İskelesi'ne adım adım yol tarifi + tur sonrası 23:30'dan sonra dönüş seçenekleri. Bosphorus Night kalkış noktası.",
+              "og_title": "Kabataş İskelesi'ne Nasıl Gidilir ve Geri Nasıl Dönülür?",
+              "og_description": "Kabataş İskelesi'ne her semt ve havalimanından adım adım yol tarifi + dönüş seçenekleri."
+            },
+            "nav": { "blog": "Blog", "home": "Ana Sayfa" },
+            "back_to_blog": "Blog'a Dön",
+            "date": "26 Mayıs 2026",
+            "h1": "Kabataş İskelesi'ne Nasıl Gidilir ve Geri Nasıl Dönülür? — Boğaz Akşam Yemekli Tur",
+            "hero_alt": "Günbatımında Kabataş İskelesi ve yanaşmış Tosunpaşa — Bosphorus Night akşam yemekli turunun kalkış noktası",
+            "body_html": [
+              "<p>Kabataş İskelesi, Boğaz'ın Avrupa yakasında, Dolmabahçe Sarayı'nın birkaç yüz metre güneyinde ve Taksim tepesinin hemen altında yer alır. İstanbul'un en yoğun yolcu iskelelerinden biri ve — bu yazıyı okuyorsanız ilgilenmenizin sebebi — Bosphorus Night akşam yemekli teknesinin resmi kalkış noktasıdır. Yolcu kabulü 19:30'da başlar, teknemiz Tosunpaşa iskeleyi tam 20:30'da bırakır ve 23:30'da geri yanaşır.</p>",
+              "<p>İstanbul'a ilk gelenlerin çoğu, hangi hattın nereye gittiğini bir kez kavradıklarında Kabataş'ı kolayca buluyor. İskeleye T1 tramvayı, Taksim'den F1 füniküleri, şehir vapurları, Beşiktaş'tan gelen sahil yolu ve iki havalimanından gelen otobüs hatları hizmet veriyor. Aşağıda şehrin en sık tercih edilen başlangıç noktalarından pratik bir rehber bulacaksınız.</p>",
+              "<h2>Kabataş İskelesi Nerede?</h2>",
+              "<p>Adres: <strong>Kemankeş Karamustafa Paşa Mahallesi, Kabataş İskele Sokak, Beyoğlu / İstanbul</strong>. İskele Avrupa yakasında, Dolmabahçe Sarayı'nın hemen güneyindedir. Google Maps koordinatları: 41.0335° K, 28.9925° D. En yakın referans noktaları Dolmabahçe Sarayı (300 m kuzeyde), Taksim'e çıkan füniküler istasyonu (50 m) ve T1 tramvayının son durağıdır (iskelenin yanında).</p>",
+              "<p>Vardığınızda, şehir vapurlarının ve özel tur teknelerinin yan yana yanaştığı beyaz yolcu iskelesini görürsünüz. Tosunpaşa, akşam saatlerinde iskeledeki en büyük teknedir — 42 metre uzunluğunda, 3 katlı, sıcak altın ışıkla aydınlatılır. İskelede sizi doğru tekneye yönlendirebilecek görevliler bulunur.</p>",
+              "<h2>Eminönü'nden</h2>",
+              "<p>Bu, İstanbul'daki en kolay bağlantıdır. Eminönü'nden <strong>T1 tramvayı</strong>na Kabataş yönüne binin. Tramvay her 5–7 dakikada bir kalkar, sefer başına yaklaşık 27 TL (İstanbulkart) tutar ve Kabataş'a yaklaşık 12 dakikada ulaşır. Kabataş son durak, yani kaçırma şansınız yok. Tramvaydan inince iskele sağınızda, 30 saniyelik yürüme mesafesindedir.</p>",
+              "<p>Su kenarından yürümeyi tercih ederseniz, Eminönü'nden Kabataş'a sahil yolundan yaklaşık 3,5 km — rahat bir tempoyla 40 dakika. Karaköy ve Galataport önünden geçen, baştan sona deniz manzaralı keyifli bir yürüyüştür; mola payı bırakıp en az bir saat hesaplayın.</p>",
+              "<h2>Sultanahmet'ten</h2>",
+              "<p><strong>T1 tramvayı</strong> Sultanahmet ile Kabataş arasında doğrudan çalışır. Sultanahmet durağından (Ayasofya ve Sultanahmet Camii'nin hemen dışında) binin ve Kabataş'a kadar 8 durak ilerleyin — toplam yaklaşık 20 dakika. Ücret yukarıdaki ile aynı (İstanbulkart'la yaklaşık 27 TL). İstanbul tramvayları temiz, İngilizce işaretlemeli ve tarihi yarımadanın çoğunu modern merkezle tek hatta bağlar.</p>",
+              "<h2>Beşiktaş'tan</h2>",
+              "<p>Beşiktaş, Kabataş'a en yakın semttir. En basit seçenek sahil yürüyüş yolundan ilerlemektir — yaklaşık 1,5 km, rahat bir tempoyla 15 dakika. Yol üzerinde Dolmabahçe Sarayı'nın önünden geçersiniz; içeri girmeseniz bile birkaç dakika ayırmaya değer. Yürüyüş düz, manzaralı ve hava karardıktan sonra da iyi aydınlatılmış.</p>",
+              "<p>Yürümek istemezseniz, Beşiktaş–Kabataş arası <strong>dolmuş</strong> yaklaşık 5 dakika sürer ve 15–20 TL civarı tutar. Trafiğe göre 80–120 TL civarı bir taksi de bulabilirsiniz.</p>",
+              "<h2>Taksim'den</h2>",
+              "<p>En hızlı bağlantı budur. Taksim Meydanı'ndan Kabataş'a <strong>F1 füniküleri</strong>ne binin. Tek duraktır, her 3–5 dakikada bir kalkar, yer altından 90 saniye sürer ve standart İstanbulkart ücretine tabidir. Taksim ucu, Marmara Oteli'nin yanındadır — İngilizce levhalarla net işaretli. Kabataş ucu doğrudan iskele alanına açılır.</p>",
+              "<p>Yürümek isterseniz, Taksim'den Kabataş'a tamamen iniş — Tarlabaşı'ndan yaklaşık 1 km, Sıraselviler'den 1,2 km. Yokuş dik olduğundan çoğu ziyaretçi gidişi ve dönüşü füniküleriyle yapar.</p>",
+              "<h2>İstanbul Havalimanı'ndan (IST)</h2>",
+              "<p>En güvenilir seçenek IST'den Taksim'e doğrudan giden <strong>Havaist H-2</strong> otobüsüdür. Trafiğe göre 60–90 dakika sürer ve yaklaşık 270 TL tutar. Taksim'den yukarıda anlatıldığı gibi F1 füniküleri (1 dakika Kabataş'a).</p>",
+              "<p>Alternatif olarak, IST'den <strong>M11 metro</strong> ile Gayrettepe'ye gidin, oradan Yenikapı yönünde <strong>M2</strong>'ye aktarın, Taksim'de inip füniküler yürüyün. Toplam yolculuk yaklaşık 75 dakika ve 70 TL civarı — otobüsten yavaş ama daha ucuz. IST'den Kabataş'a direkt taksi normal saatlerde 1.500–2.000 TL ve hafif trafikte 60–90 dakika.</p>",
+              "<h2>Sabiha Gökçen Havalimanı'ndan (SAW)</h2>",
+              "<p>SAW (Asya yakası) için <strong>Havabüs</strong> Taksim'e direkt gider — 90–120 dakika ve yaklaşık 200 TL. Taksim'den F1 füniküleri ile Kabataş'a. SAW'dan Kabataş'a taksi 1.200–1.800 TL civarı, Boğaz Köprüsü trafiğine göre 60–90 dakika.</p>",
+              "<p>Bütün yolu toplu taşımayla yapmayı tercih ederseniz, SAW'dan <strong>M4 metro</strong> ile Kadıköy'e geçin, oradan Kabataş'a vapur — daha uzun bir güzergâh ama zamanınız varsa ve suyla varmak isterseniz unutulmaz bir alternatif.</p>",
+              "<h2>Bosphorus Night Misafirleri İçin Otel Transferi</h2>",
+              "<p>Akşam yemekli turumuza rezervasyon yaptıysanız ve güzergâhı kendiniz çözmek istemiyorsanız, merkezi İstanbul'da kişi başı €10 karşılığında otel transferi sağlıyoruz. Otelinizin konumuna ve trafiğe göre 18:00–19:00 arası başlayan transferimiz sizi 19:30 kabulü için iskeleye getirir. Rezervasyon sırasında ekleyebilir veya sonradan WhatsApp üzerinden de düzenleyebilirsiniz.</p>",
+              "<p>Merkez semtlerin çoğunda — Sultanahmet, Beyoğlu, Taksim, Şişli, Beşiktaş, Galata, Karaköy — transfer kolay. Daha uzak bölgeler (Anadolu yakası, Bakırköy, Florya, Zeytinburnu) için önce bizimle teyit edin; genelde düzenleyebiliriz ama alış saati daha erken olur.</p>",
+              "<h2>Tur Sonrası — 23:30'da Kabataş'tan Dönüş</h2>",
+              "<p>Boğaz turunuz <strong>23:30</strong>'da Kabataş'a yanaşır. Bu saatten sonra ulaşım seçenekleri biraz daralır ama tükenmez. İşte gece geri dönüş için pratik seçenekler:</p>",
+              "<p><strong>T1 Tramvay (00:30'a kadar):</strong> Eminönü, Sultanahmet, Karaköy, Cevizlibağ ve Bağcılar yönü için en kolay yol. Tramvay turun bittiği saatte hâlâ çalışır, ancak son seferleri 00:00–00:30 arasında. Sultanahmet'e dönüş ~20 dakika.</p>",
+              "<p><strong>F1 Füniküler (00:00'a kadar):</strong> Taksim, Beyoğlu, İstiklal Caddesi yönü için 90 saniyelik tek durak. Son seferi gece yarısına yakın, o yüzden 23:45'e kadar binmiş olun.</p>",
+              "<p><strong>Taksi:</strong> 7/24 hizmet. Tahmini ücretler — Sultanahmet ~200 TL, Taksim ~80–100 TL, Şişli ~150 TL, Levent ~200 TL, Anadolu yakası 400–600 TL (köprü trafiği değişken). Kabataş iskele girişinde taksi durağı bulunur veya BiTaksi/UberTR uygulamasından çağırabilirsiniz.</p>",
+              "<p><strong>Dolmuş:</strong> Beşiktaş'a yoğun saatlerde işliyor ama gece geç saatte azalır, taksi daha güvenli.</p>",
+              "<p><strong>Bosphorus Night otel dönüş hizmeti:</strong> Otelinize geri dönüş için standart paketlerde transfer dahil değildir, ancak talep üzerine kişi başı €10 ile ekleyebilirsiniz. Bu hizmeti tercih ederseniz şoförümüz tur bittikten sonra sizi iskelede karşılar.</p>",
+              "<h2>Pratik İpuçları</h2>",
+              "<p>Kabataş'a 19:30–19:45 arası varmaya çalışın. Yolcu kabulü 19:30'da açılır ve tekne tam 20:30'da kalkar — biz suya çıktıktan sonra geç gelenler maalesef alınamaz. Tramvay veya füniküler ile geliyorsanız, iskele her iki çıkıştan da 30 saniyelik bir yürüyüş mesafesindedir. Arabayla geliyorsanız, Dolmabahçe Otoparkı'nda akşam için 50–80 TL civarı ücretli park bulunur (iskeleye yaklaşık 200 m yürüme).</p>",
+              "<p>Yanınıza ince bir mont alın — yaz olsa bile Boğaz rüzgârı güneş battıktan sonra güverteyi serinletir. Birkaç dakika erken varırsanız endişelenmeyin; teknenin üst terası, kalkış yaklaşırken şehrin ışıklarının yanmasını izlemek için en iyi noktadır.</p>"
+            ],
+            "cta": {
+              "title": "Yolu Öğrendiniz — Şimdi Yola Çıkalım mı?",
+              "body": "Tosunpaşa her akşam Kabataş İskelesi'nden 20:30'da kalkar. Canlı müzik, halk oyunları ve akşam yemeği dahil — ödeme teknede, kart bilgisi istemiyoruz.",
+              "button": "Rezervasyon Yap — €24.30'dan başlıyor"
+            },
+            "related": {
+              "heading": "İlgili Yazılar",
+              "cards": [
+                { "url": "/tr/blog/best-bosphorus-dinner-cruise-istanbul.html", "title": "İstanbul'da En İyi Boğaz Akşam Yemekli Tur 2026", "desc": "Paketler, fiyatlar ve beklenebilecekler için tam rehber." },
+                { "url": "_OTHER_POST_", "title": "Kabataş İskelesi Çevresinde Ne Yapılır?", "desc": "Tur öncesi ve sonrası — Dolmabahçe, Galataport, Karaköy, gece geç saat." },
+                { "url": "/tr/blog/things-to-know-istanbul-boat-tour.html", "title": "Boğaz Turu Öncesi Bilinmesi Gereken 10 Şey", "desc": "İlk kez Boğaz turuna çıkanlar için temel ipuçları." },
+                { "url": "/tr/tekne-turu-rehberi", "title": "Boğaz Tekne Turu Almadan Önce 5 Şey", "desc": "Dürüst alıcı rehberi — neyi sorun, neyi atlayın." }
+              ]
+            },
+            "footer": { "rights": "Tüm hakları saklıdır." },
+            "wa": {
+              "message_encoded": "Merhaba!%20Bosphorus%20Night%20turu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
+              "aria": "WhatsApp'tan yaz",
+              "label": "Çevrimiçiyiz · Hemen yaz"
+            }
+          }
+        },
+        "de": { "lang": "de", "dir": "ltr", "slug": "wie-man-zum-kabatas-pier-kommt", "url_prefix": "de/", "og_locale": "de_DE", "content": null },
+        "es": { "lang": "es", "dir": "ltr", "slug": "como-llegar-al-muelle-kabatas", "url_prefix": "es/", "og_locale": "es_ES", "content": null },
+        "fr": { "lang": "fr", "dir": "ltr", "slug": "comment-aller-au-quai-de-kabatas", "url_prefix": "fr/", "og_locale": "fr_FR", "content": null },
+        "it": { "lang": "it", "dir": "ltr", "slug": "come-arrivare-al-molo-di-kabatas", "url_prefix": "it/", "og_locale": "it_IT", "content": null },
+        "ru": { "lang": "ru", "dir": "ltr", "slug": "kak-dobratsya-do-prichala-kabatash", "url_prefix": "ru/", "og_locale": "ru_RU", "content": null },
+        "ar": { "lang": "ar", "dir": "rtl", "slug": "kayfiyat-alwusul-ila-marsa-kabatash", "url_prefix": "ar/", "og_locale": "ar_SA", "content": null },
+        "fa": { "lang": "fa", "dir": "rtl", "slug": "chegune-be-eskele-kabatash-berasim", "url_prefix": "fa/", "og_locale": "fa_IR", "content": null },
+        "zh": { "lang": "zh", "dir": "ltr", "slug": "ruhe-qianwang-kabatasi-matou", "url_prefix": "zh/", "og_locale": "zh_CN", "content": null },
+        "ja": { "lang": "ja", "dir": "ltr", "slug": "kabatashu-futo-eno-ikikata", "url_prefix": "ja/", "og_locale": "ja_JP", "content": null },
+        "ko": { "lang": "ko", "dir": "ltr", "slug": "kabataseu-buduro-ganeun-bangbeop", "url_prefix": "ko/", "og_locale": "ko_KR", "content": null },
+        "hi": { "lang": "hi", "dir": "ltr", "slug": "kabatas-pier-kaise-pahunchein", "url_prefix": "hi/", "og_locale": "hi_IN", "content": null },
+        "ur": { "lang": "ur", "dir": "rtl", "slug": "kabatas-pier-kaise-pohnchein", "url_prefix": "ur/", "og_locale": "ur_PK", "content": null },
+        "id": { "lang": "id", "dir": "ltr", "slug": "cara-ke-dermaga-kabatas", "url_prefix": "id/", "og_locale": "id_ID", "content": null },
+        "ms": { "lang": "ms", "dir": "ltr", "slug": "cara-ke-pangkalan-kabatas", "url_prefix": "ms/", "og_locale": "ms_MY", "content": null },
+        "pl": { "lang": "pl", "dir": "ltr", "slug": "jak-dotrzec-do-przystani-kabatas", "url_prefix": "pl/", "og_locale": "pl_PL", "content": null },
+        "bg": { "lang": "bg", "dir": "ltr", "slug": "kak-da-stignete-do-pristanishte-kabatash", "url_prefix": "bg/", "og_locale": "bg_BG", "content": null },
+        "ro": { "lang": "ro", "dir": "ltr", "slug": "cum-sa-ajungi-la-debarcaderul-kabatas", "url_prefix": "ro/", "og_locale": "ro_RO", "content": null },
+        "uk": { "lang": "uk", "dir": "ltr", "slug": "yak-distatysya-do-prychalu-kabatash", "url_prefix": "uk/", "og_locale": "uk_UA", "content": null },
+        "pt": { "lang": "pt", "dir": "ltr", "slug": "como-chegar-ao-cais-de-kabatas", "url_prefix": "pt/", "og_locale": "pt_PT", "content": null },
+        "nl": { "lang": "nl", "dir": "ltr", "slug": "hoe-bereik-je-de-kabatas-pier", "url_prefix": "nl/", "og_locale": "nl_NL", "content": null },
+        "cs": { "lang": "cs", "dir": "ltr", "slug": "jak-se-dostat-na-molo-kabatas", "url_prefix": "cs/", "og_locale": "cs_CZ", "content": null },
+        "hu": { "lang": "hu", "dir": "ltr", "slug": "hogyan-juss-el-a-kabatas-kikotobe", "url_prefix": "hu/", "og_locale": "hu_HU", "content": null },
+        "sv": { "lang": "sv", "dir": "ltr", "slug": "sa-har-kommer-du-till-kabatas-piren", "url_prefix": "sv/", "og_locale": "sv_SE", "content": null },
+        "da": { "lang": "da", "dir": "ltr", "slug": "sadan-kommer-du-til-kabatas-piren", "url_prefix": "da/", "og_locale": "da_DK", "content": null },
+        "no": { "lang": "no", "dir": "ltr", "slug": "slik-kommer-du-til-kabatas-piren", "url_prefix": "no/", "og_locale": "no_NO", "content": null },
+        "fi": { "lang": "fi", "dir": "ltr", "slug": "nain-paaset-kabatasin-laiturille", "url_prefix": "fi/", "og_locale": "fi_FI", "content": null },
+        "sk": { "lang": "sk", "dir": "ltr", "slug": "ako-sa-dostat-na-mol-kabatas", "url_prefix": "sk/", "og_locale": "sk_SK", "content": null },
+        "el": { "lang": "el", "dir": "ltr", "slug": "pos-na-pate-stin-apovathra-kabatas", "url_prefix": "el/", "og_locale": "el_GR", "content": null },
+        "sl": { "lang": "sl", "dir": "ltr", "slug": "kako-do-pomola-kabatas", "url_prefix": "sl/", "og_locale": "sl_SI", "content": null },
+        "lv": { "lang": "lv", "dir": "ltr", "slug": "ka-nokliut-lidz-kabatasas-piestatnei", "url_prefix": "lv/", "og_locale": "lv_LV", "content": null }
+      }
+    },
+    "what-to-do-near": {
+      "canonical_en_slug": "what-to-do-near-kabatas-pier",
+      "languages": {
+        "en": {
+          "lang": "en",
+          "dir": "ltr",
+          "slug": "what-to-do-near-kabatas-pier",
+          "url_prefix": "",
+          "og_locale": "en_US",
+          "content": {
+            "meta": {
+              "title": "What to Do Near Kabataş Pier — Before and After Your Bosphorus Cruise",
+              "description": "Arrived early or want to extend the night after the cruise? Best things to see and do near Kabataş Pier: Dolmabahçe Palace, Galataport, Karaköy, Beşiktaş, Taksim, and late-night spots.",
+              "og_title": "What to Do Near Kabataş Pier — Before and After Your Bosphorus Cruise",
+              "og_description": "Things to see and do near Kabataş Pier, before and after the cruise."
+            },
+            "nav": { "blog": "Blog", "home": "Home" },
+            "back_to_blog": "Back to Blog",
+            "date": "May 26, 2026",
+            "h1": "What to Do Near Kabataş Pier — Before and After Your Bosphorus Cruise",
+            "hero_alt": "Kabataş Pier at golden hour with the city skyline behind, near Dolmabahçe Palace",
+            "body_html": [
+              "<p>Most guests arrive at Kabataş Pier somewhere between 19:00 and 19:30 — comfortable margin before our 19:30 boarding call. But many arrive even earlier: an hour or two ahead. Maybe the metro was faster than expected, maybe the hotel pickup avoided traffic, or maybe you simply did not want to risk being late. Whatever the reason, you now have time on your hands and one of the most beautiful stretches of the Bosphorus around you.</p>",
+              "<p>The good news is that Kabataş sits at the doorstep of some of Istanbul's most visited landmarks. Within 15 minutes' walk you can see Ottoman palaces, modern waterfront promenades, historic neighborhoods, and one of the city's best sunset viewpoints. Below is a guide to the best ways to spend an hour or two near the pier before boarding Tosunpaşa.</p>",
+              "<h2>Dolmabahçe Palace (3-minute walk)</h2>",
+              "<p>The closest landmark to Kabataş is also one of the most photogenic in Istanbul. <strong>Dolmabahçe Palace</strong> is the last great palace of the Ottoman Empire — built in 1856, mixing European Baroque and traditional Ottoman style, with crystal chandeliers, gold-leaf ceilings, and a 600-meter waterfront facade. The palace closes at 16:00 (last entry 15:00), so unless you are visiting much earlier in the day, you will not be able to go inside. But the <strong>exterior</strong> at dusk is spectacular: the white marble glows in the golden hour, the gates and gardens are lit up, and the Bosphorus reflects the warm light off the building. A 5-minute walk along the seaside fence with a few photo stops is a perfect way to spend 15-20 minutes before the cruise.</p>",
+              "<h2>Galataport (12-minute walk)</h2>",
+              "<p><strong>Galataport</strong> is Istanbul's new flagship waterfront complex — a 1.2 km stretch of restored historic buildings turned into shops, cafés, restaurants, and the Istanbul Modern art museum. The walk from Kabataş is flat, along the water, and takes about 12 minutes. If you have a full hour to spare, this is the easiest option: grab a coffee at one of the dozens of cafés (many with sea views), browse the shops, or just walk the promenade. It is a popular spot among locals after work, so it has a relaxed, urban atmosphere — less touristy than Sultanahmet, more contemporary than the historic peninsula.</p>",
+              "<h2>Karaköy (15-minute walk)</h2>",
+              "<p>Just past Galataport, <strong>Karaköy</strong> is the old port district that has transformed in the last 15 years into one of Istanbul's most fashionable neighborhoods. Narrow streets full of specialty coffee shops, design studios, baklava patisseries, and small wine bars. If you are interested in trying a piece of <em>baklava</em> from one of the city's most respected makers — <strong>Karaköy Güllüoğlu</strong> on the waterfront — this is the right time. They serve until late evening. The walk back to Kabataş is 15 minutes, so plan accordingly to be at the pier by 19:30.</p>",
+              "<h2>Beşiktaş (15-minute walk)</h2>",
+              "<p>In the other direction — north along the coastal road — lies <strong>Beşiktaş</strong>, one of Istanbul's most lively traditional neighborhoods. The walk from Kabataş takes 15 minutes, passing Dolmabahçe Palace on the way. The heart of Beşiktaş is <strong>Çarşı</strong> (the marketplace), with seafood restaurants, traditional meze houses, and the famous Beşiktaş Eagle statue (worth a photo if you are a football fan). For a quick meal, Köfteci Hüseyin or Tarihi Köfteci Arnavutköy do simple Turkish meatballs that locals queue for. Time it carefully so you can walk back to the pier comfortably.</p>",
+              "<h2>Taksim (90 seconds by funicular)</h2>",
+              "<p>If you have a full hour or more and want to see Istanbul's modern heart, take the <strong>F1 funicular</strong> from Kabataş up to Taksim Square — it takes 90 seconds underground and runs every 3-5 minutes. From Taksim, the famous <strong>İstiklal Caddesi</strong> begins — a pedestrian shopping street stretching 1.4 km down to Galata Tower, lined with shops, cafés, historic churches, and the nostalgic red tram. Even a 30-minute walk down İstiklal and back gives you a feel for modern Istanbul. Just remember the funicular runs until midnight, so you cannot miss it, but allow plenty of time to walk back if you go far down İstiklal.</p>",
+              "<h2>If You Only Have 30 Minutes</h2>",
+              "<p>The shortest worthwhile option is the <strong>Dolmabahçe Palace exterior walk</strong>. Five minutes there, ten minutes admiring the facade and waterfront, five minutes back — and you are still at the pier by 19:30 with time to spare. Plus you get to see the palace at its most beautiful: lit up against the dusk sky, with the Bosphorus behind it.</p>",
+              "<h2>After the Cruise — Extending the Night Past 23:30</h2>",
+              "<p>The cruise returns to Kabataş at 23:30. If you'd rather not end the evening here, the surrounding districts are still very much alive late into the night. A few options:</p>",
+              "<p><strong>Karaköy &amp; Galata (5–15 min walk or short taxi):</strong> Karaköy has become one of Istanbul's most popular nightlife districts. Asma Altı, Ünlü Lokantası, Karaköy Lokantası serve until late. The streets around Galata Tower are lined with small bars and wine cellars — Solera, Münferit, and similar spots stay open until 02:00.</p>",
+              "<p><strong>Taksim &amp; İstiklal Caddesi (90 seconds by funicular):</strong> Istanbul's modern center never really sleeps. Cafés and döner stands on İstiklal stay open until 03:00–04:00. Side streets in Beyoğlu (Asmalımescit, Nevizade) host lively meyhanes until 02:00.</p>",
+              "<p><strong>Beşiktaş Çarşı (15-min walk):</strong> Walk north along the coastal road. The Çarşı area has a wide range of spots open until 01:00–02:00 — late-night meatballs at Köfteci Hüseyin, balık-ekmek stands by the water, or cross into Cihangir for coffee.</p>",
+              "<p><strong>Just heading back to the hotel:</strong> If you'd rather not extend the night, see the \"After the Cruise\" section in our <a href=\"_OTHER_POST_\">getting-to-and-from-Kabataş guide</a> for transport — T1 tram runs until 00:30, the F1 funicular until 00:00, taxis 24/7.</p>",
+              "<h2>Practical Tips</h2>",
+              "<p>However you spend the time, make sure to be back at Kabataş Pier by <strong>19:30</strong> for boarding. The boat leaves at 20:30 sharp and we cannot wait for late arrivals once we are on the water. If you are walking, use the time before sunset to spot the pier from the road so you know exactly where to return — there are no parking-style signs, just look for the white passenger pier with the larger illuminated boat. Tosunpaşa is the largest boat at the dock during evening hours.</p>",
+              "<p>Coffee and small snacks are available at the pier-side cafés if you want to wait in one place rather than walking. If you brought luggage from a hotel checkout, our staff can help store it on the boat once you board — please ask.</p>"
+            ],
+            "cta": {
+              "title": "Ready for the Main Event?",
+              "body": "Whatever you do beforehand, the highlight of the evening is the cruise itself. Tosunpaşa departs Kabataş at 20:30 — live music, traditional shows, and dinner included.",
+              "button": "Book Your Cruise — From €24.30"
+            },
+            "related": {
+              "heading": "Related Articles",
+              "cards": [
+                { "url": "_OTHER_POST_", "title": "How to Reach Kabataş Pier — Step-by-Step Directions", "desc": "Directions from Eminönü, Sultanahmet, Beşiktaş, Taksim, and both airports." },
+                { "url": "/blog/best-bosphorus-dinner-cruise-istanbul.html", "title": "Best Bosphorus Dinner Cruise in Istanbul 2026", "desc": "Complete guide to packages, pricing, and what to expect." },
+                { "url": "/blog/things-to-know-istanbul-boat-tour.html", "title": "10 Things to Know Before Your Istanbul Boat Tour", "desc": "Essential tips for first-time Bosphorus cruisers." },
+                { "url": "/bosphorus-cruise-guide", "title": "5 Things to Check Before Booking a Bosphorus Cruise", "desc": "An honest buyer's guide — what to ask, what to skip." }
+              ]
+            },
+            "footer": { "rights": "All rights reserved." },
+            "wa": {
+              "message_encoded": "Hi!%20I'd%20like%20to%20ask%20about%20the%20Bosphorus%20Night%20cruise.",
+              "aria": "Chat on WhatsApp",
+              "label": "We're online · Chat now"
+            }
+          }
+        },
+        "tr": {
+          "lang": "tr",
+          "dir": "ltr",
+          "slug": "kabatas-cevresinde-ne-yapilir",
+          "url_prefix": "tr/",
+          "og_locale": "tr_TR",
+          "content": {
+            "meta": {
+              "title": "Kabataş İskelesi Çevresinde Ne Yapılır? — Tur Öncesi ve Sonrası Rehberi",
+              "description": "Boğaz turu için Kabataş'a erken mi geldiniz veya tur bittikten sonra geceyi sürdürmek mi istiyorsunuz? Dolmabahçe Sarayı, Galataport, Karaköy, Beşiktaş, Taksim ve gece geç saat açık yerler.",
+              "og_title": "Kabataş İskelesi Çevresinde Ne Yapılır?",
+              "og_description": "Tur öncesi ve sonrası — Dolmabahçe, Galataport, Karaköy, Beşiktaş, Taksim ve gece geç saat."
+            },
+            "nav": { "blog": "Blog", "home": "Ana Sayfa" },
+            "back_to_blog": "Blog'a Dön",
+            "date": "26 Mayıs 2026",
+            "h1": "Kabataş İskelesi Çevresinde Ne Yapılır? — Tur Öncesi ve Sonrası Rehberi",
+            "hero_alt": "Altın saatte Kabataş İskelesi ve arkada şehir silueti — Dolmabahçe Sarayı yakınında",
+            "body_html": [
+              "<p>Misafirlerin çoğu Kabataş İskelesi'ne 19:00–19:30 arası varır — 19:30 kabul saatine rahat marj kalır. Ama bazıları daha erken gelir: bir-iki saat öncesinden. Belki metro umulandan hızlı çıkmıştır, belki otel transferi trafiği yakalamamıştır, belki de geç kalma riskini istememiştir. Sebebi her ne olursa olsun şimdi vaktiniz var ve Boğaz'ın en güzel köşelerinden birindesiniz.</p>",
+              "<p>İyi haber: Kabataş, İstanbul'un en çok ziyaret edilen pek çok noktasına yürüme mesafesinde. 15 dakikalık yürüyüşle Osmanlı saraylarını, yenilenmiş sahil hattını, tarihi semtleri ve şehrin en güzel günbatımı manzaralarından birini görebilirsiniz. Aşağıda, Tosunpaşa'ya binmeden önce iskele çevresinde bir-iki saatinizi nasıl değerlendirebileceğinize dair bir rehber bulacaksınız.</p>",
+              "<h2>Dolmabahçe Sarayı (3 dakika yürüme)</h2>",
+              "<p>Kabataş'a en yakın landmark, aynı zamanda İstanbul'un en fotojenik noktalarından biri. <strong>Dolmabahçe Sarayı</strong>, Osmanlı'nın son büyük sarayı — 1856'da yapıldı, Avrupa Barok ve geleneksel Osmanlı tarzını birleştirir; kristal avizeler, altın yaldız tavanlar ve 600 metrelik Boğaz cephesi vardır. Saray 16:00'da kapanır (son giriş 15:00), o yüzden günün ilerleyen saatinde geliyorsanız içeri girmek mümkün değil. Ama akşam <strong>dış cephesi</strong> muhteşem: beyaz mermer altın saatte parıldar, kapılar ve bahçeler aydınlatılır, Boğaz binadan yansıyan ışığı yansıtır. Sahile yakın çitin önünde fotoğraf molalarıyla 5-6 dakikalık bir yürüyüş, tur öncesi 15-20 dakikayı değerlendirmenin mükemmel yolu.</p>",
+              "<h2>Galataport (12 dakika yürüme)</h2>",
+              "<p><strong>Galataport</strong>, İstanbul'un yeni amiral sahil kompleksi — 1,2 km uzunluğunda restore edilmiş tarihi binalar, içlerinde mağazalar, kafeler, restoranlar ve İstanbul Modern sanat müzesi. Kabataş'tan yürüyüş düz, sahil boyu ve 12 dakika sürer. Tam bir saat boş vaktiniz varsa en kolay seçenek burası: onlarca kafeden birinde bir kahve için (çoğunun deniz manzarası vardır), mağazalara bir bakın ya da sadece promenadda yürüyün. İşçıkışı sonrası yerlilerin de tercih ettiği bir yer, o yüzden rahat, modern bir atmosferi var — Sultanahmet'ten daha az turist kalabalığı, tarihi yarımadadan daha güncel.</p>",
+              "<h2>Karaköy (15 dakika yürüme)</h2>",
+              "<p>Galataport'un hemen ötesinde, <strong>Karaköy</strong> — son 15 yılda İstanbul'un en modaya uygun semtlerinden birine dönüşmüş eski liman bölgesi. Specialty kahveciler, tasarım atölyeleri, baklavacılar ve küçük şarap barlarıyla dolu dar sokaklar. Şehrin en saygın baklavacılarından birinden — sahildeki <strong>Karaköy Güllüoğlu</strong>'ndan — bir tatlı denemek isterseniz bu doğru zaman. Akşam geç saate kadar açık. Kabataş'a dönüş yürüyüşü 15 dakika, o yüzden 19:30'a kadar iskelede olacak şekilde zamanlamanızı yapın.</p>",
+              "<h2>Beşiktaş (15 dakika yürüme)</h2>",
+              "<p>Diğer yönde — sahil yoluyla kuzeyde — İstanbul'un en canlı semtlerinden biri olan <strong>Beşiktaş</strong> bulunuyor. Kabataş'tan yürüyüş 15 dakika, yol üzerinde Dolmabahçe Sarayı'nın önünden geçersiniz. Beşiktaş'ın kalbi <strong>Çarşı</strong> — balık restoranları, geleneksel meyhaneler ve ünlü Beşiktaş Kartal heykeli (futbol seven biriyseniz fotoğraf almaya değer). Hızlı bir yemek için Köfteci Hüseyin ya da Tarihi Köfteci Arnavutköy yerlilerin kuyruk olduğu basit Türk köfteleri yapıyor. Zamanı dikkatli ayarlayın ki iskeleye rahat dönesiniz.</p>",
+              "<h2>Taksim (90 saniye füniküler ile)</h2>",
+              "<p>Tam bir saatinizden fazla vaktiniz varsa ve İstanbul'un modern kalbini görmek isterseniz Kabataş'tan Taksim Meydanı'na <strong>F1 füniküleri</strong>ne binin — yer altından 90 saniye sürer, her 3-5 dakikada bir kalkar. Taksim'den, ünlü <strong>İstiklal Caddesi</strong> başlıyor — 1,4 km uzunluğunda mağazalar, kafeler, tarihi kiliseler ve nostaljik kırmızı tramvayla çevrelenmiş yaya alışveriş caddesi. İstiklal'den 30 dakikalık bir aşağı-yukarı yürüyüş bile size modern İstanbul'un havasını verir. Füniküler gece yarısına kadar çalışıyor, kaçırma riski yok ama İstiklal'de uzağa giderseniz dönüş için bol vakit bırakın.</p>",
+              "<h2>Sadece 30 Dakikanız Varsa</h2>",
+              "<p>En kısa ama değerli seçenek <strong>Dolmabahçe Sarayı dış cephe yürüyüşü</strong>. Beş dakika gidiş, on dakika cepheye ve sahile bakma, beş dakika dönüş — ve 19:30'da hala iskeledesiniz, vakit fazla. Üstelik sarayı en güzel halinde görüyorsunuz: alacakaranlık göğüne karşı aydınlatılmış, arkasında Boğaz.</p>",
+              "<h2>Tur Sonrası — 23:30'dan Sonra Geceyi Sürdürmek</h2>",
+              "<p>Tur 23:30'da Kabataş'a yanaşır. Akşamı burada bitirmek istemeyenler için civar bölgede gece geç saatte hâlâ canlı yerler var. İşte birkaç öneri:</p>",
+              "<p><strong>Karaköy &amp; Galata (5–15 dk yürüme veya kısa taksi):</strong> Karaköy son yılların en popüler gece bölgelerinden. Asma Altı, Ünlü Lokantası, Karaköy Lokantası gece geç saate kadar açık. Galata Kulesi çevresindeki sokaklar küçük bar ve şarap mahzeneleriyle dolu — Solera, Münferit gibi mekânlar 02:00'a kadar hizmet verir.</p>",
+              "<p><strong>Taksim &amp; İstiklal Caddesi (90 saniye füniküler):</strong> İstanbul'un gecesi hiç durmaz. İstiklal Caddesi'ndeki kafeler ve dönerciler gece 03:00–04:00'a kadar açık. Beyoğlu yan sokaklarında (Asmalımescit, Nevizade) meyhaneler 02:00'a kadar canlı.</p>",
+              "<p><strong>Beşiktaş Çarşı (15 dk yürüme):</strong> Sahil yolundan kuzeye doğru. Çarşı bölgesi 01:00–02:00'a kadar açık çeşitli mekanlar barındırır — Köfteci Hüseyin'den geç gece köfteleri, balık-ekmek tezgâhları, veya Cihangir tarafına geçip kahve içebilirsiniz.</p>",
+              "<p><strong>Sadece otele dönüş:</strong> Geceyi uzatmak istemiyorsanız, ulaşım seçenekleri için <a href=\"_OTHER_POST_\">Geliş ve Dönüş Rehberi</a>'nin sonundaki \"Tur Sonrası Dönüş\" bölümüne bakın — T1 tramvayı 00:30'a, F1 füniküleri 00:00'a kadar çalışır, taksi 7/24.</p>",
+              "<h2>Pratik İpuçları</h2>",
+              "<p>Vaktinizi nasıl geçirirseniz geçirin, kabul için <strong>19:30</strong>'a kadar Kabataş İskelesi'ne dönmüş olun. Tekne 20:30'da kalkar ve biz suya çıktıktan sonra geç kalanları bekleyemeyiz. Yürüyüş yapıyorsanız, güneş batmadan iskelenin yerini yoldan tespit edin ki nereye geri döneceğinizi tam bilesiniz — park yeri tarzı tabela yok, sadece daha büyük aydınlatılmış teknenin yanaştığı beyaz yolcu iskelesini arayın. Tosunpaşa akşam saatlerinde iskeledeki en büyük teknedir.</p>",
+              "<p>Tek bir yerde beklemek isterseniz iskele kenarında kafelerden kahve ve küçük atıştırmalıklar bulabilirsiniz. Otelden çıkışla geldiyseniz yanınızda bavul varsa, ekibimiz binince tekneye yerleştirmenize yardımcı olur — sorun yeterli.</p>"
+            ],
+            "cta": {
+              "title": "Ana Olay İçin Hazır mısınız?",
+              "body": "Öncesinde ne yaparsanız yapın, akşamın asıl yıldızı turun kendisi. Tosunpaşa Kabataş'tan 20:30'da kalkar — canlı müzik, halk oyunları ve akşam yemeği dahil.",
+              "button": "Rezervasyon Yap — €24.30'dan başlıyor"
+            },
+            "related": {
+              "heading": "İlgili Yazılar",
+              "cards": [
+                { "url": "_OTHER_POST_", "title": "Kabataş İskelesi'ne Nasıl Gidilir? — Adım Adım Yol Tarifi", "desc": "Eminönü, Sultanahmet, Beşiktaş, Taksim ve havalimanlarından yol tarifi." },
+                { "url": "/tr/blog/best-bosphorus-dinner-cruise-istanbul.html", "title": "İstanbul'da En İyi Boğaz Akşam Yemekli Tur 2026", "desc": "Paketler, fiyatlar ve beklenebilecekler için tam rehber." },
+                { "url": "/tr/blog/things-to-know-istanbul-boat-tour.html", "title": "Boğaz Turu Öncesi Bilinmesi Gereken 10 Şey", "desc": "İlk kez Boğaz turuna çıkanlar için temel ipuçları." },
+                { "url": "/tr/tekne-turu-rehberi", "title": "Boğaz Tekne Turu Almadan Önce 5 Şey", "desc": "Dürüst alıcı rehberi — neyi sorun, neyi atlayın." }
+              ]
+            },
+            "footer": { "rights": "Tüm hakları saklıdır." },
+            "wa": {
+              "message_encoded": "Merhaba!%20Bosphorus%20Night%20turu%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.",
+              "aria": "WhatsApp'tan yaz",
+              "label": "Çevrimiçiyiz · Hemen yaz"
+            }
+          }
+        },
+        "de": { "lang": "de", "dir": "ltr", "slug": "was-man-in-der-naehe-des-kabatas-piers-tun-kann", "url_prefix": "de/", "og_locale": "de_DE", "content": null },
+        "es": { "lang": "es", "dir": "ltr", "slug": "que-hacer-cerca-del-muelle-kabatas", "url_prefix": "es/", "og_locale": "es_ES", "content": null },
+        "fr": { "lang": "fr", "dir": "ltr", "slug": "que-faire-pres-du-quai-de-kabatas", "url_prefix": "fr/", "og_locale": "fr_FR", "content": null },
+        "it": { "lang": "it", "dir": "ltr", "slug": "cosa-fare-vicino-al-molo-di-kabatas", "url_prefix": "it/", "og_locale": "it_IT", "content": null },
+        "ru": { "lang": "ru", "dir": "ltr", "slug": "chto-delat-okolo-prichala-kabatash", "url_prefix": "ru/", "og_locale": "ru_RU", "content": null },
+        "ar": { "lang": "ar", "dir": "rtl", "slug": "madha-tafal-bijawar-marsa-kabatash", "url_prefix": "ar/", "og_locale": "ar_SA", "content": null },
+        "fa": { "lang": "fa", "dir": "rtl", "slug": "che-kar-konim-nazdik-eskele-kabatash", "url_prefix": "fa/", "og_locale": "fa_IR", "content": null },
+        "zh": { "lang": "zh", "dir": "ltr", "slug": "kabatasi-matou-fujin-keyi-zuo-shenme", "url_prefix": "zh/", "og_locale": "zh_CN", "content": null },
+        "ja": { "lang": "ja", "dir": "ltr", "slug": "kabatashu-futo-shuhen-de-suru-koto", "url_prefix": "ja/", "og_locale": "ja_JP", "content": null },
+        "ko": { "lang": "ko", "dir": "ltr", "slug": "kabataseu-budu-geuncheo-eseo-hal-il", "url_prefix": "ko/", "og_locale": "ko_KR", "content": null },
+        "hi": { "lang": "hi", "dir": "ltr", "slug": "kabatas-pier-ke-paas-kya-karein", "url_prefix": "hi/", "og_locale": "hi_IN", "content": null },
+        "ur": { "lang": "ur", "dir": "rtl", "slug": "kabatas-pier-ke-qareeb-kya-karein", "url_prefix": "ur/", "og_locale": "ur_PK", "content": null },
+        "id": { "lang": "id", "dir": "ltr", "slug": "apa-yang-bisa-dilakukan-di-dekat-dermaga-kabatas", "url_prefix": "id/", "og_locale": "id_ID", "content": null },
+        "ms": { "lang": "ms", "dir": "ltr", "slug": "apa-yang-boleh-dibuat-berhampiran-pangkalan-kabatas", "url_prefix": "ms/", "og_locale": "ms_MY", "content": null },
+        "pl": { "lang": "pl", "dir": "ltr", "slug": "co-robic-w-poblizu-przystani-kabatas", "url_prefix": "pl/", "og_locale": "pl_PL", "content": null },
+        "bg": { "lang": "bg", "dir": "ltr", "slug": "kakvo-da-pravite-okolo-pristanishte-kabatash", "url_prefix": "bg/", "og_locale": "bg_BG", "content": null },
+        "ro": { "lang": "ro", "dir": "ltr", "slug": "ce-sa-faci-langa-debarcaderul-kabatas", "url_prefix": "ro/", "og_locale": "ro_RO", "content": null },
+        "uk": { "lang": "uk", "dir": "ltr", "slug": "shcho-robyty-bilya-prychalu-kabatash", "url_prefix": "uk/", "og_locale": "uk_UA", "content": null },
+        "pt": { "lang": "pt", "dir": "ltr", "slug": "o-que-fazer-perto-do-cais-de-kabatas", "url_prefix": "pt/", "og_locale": "pt_PT", "content": null },
+        "nl": { "lang": "nl", "dir": "ltr", "slug": "wat-te-doen-bij-de-kabatas-pier", "url_prefix": "nl/", "og_locale": "nl_NL", "content": null },
+        "cs": { "lang": "cs", "dir": "ltr", "slug": "co-delat-v-okoli-mola-kabatas", "url_prefix": "cs/", "og_locale": "cs_CZ", "content": null },
+        "hu": { "lang": "hu", "dir": "ltr", "slug": "mit-csinaljunk-a-kabatas-kikoto-kozeleben", "url_prefix": "hu/", "og_locale": "hu_HU", "content": null },
+        "sv": { "lang": "sv", "dir": "ltr", "slug": "vad-man-kan-gora-nara-kabatas-piren", "url_prefix": "sv/", "og_locale": "sv_SE", "content": null },
+        "da": { "lang": "da", "dir": "ltr", "slug": "hvad-man-kan-lave-naer-kabatas-piren", "url_prefix": "da/", "og_locale": "da_DK", "content": null },
+        "no": { "lang": "no", "dir": "ltr", "slug": "hva-du-kan-gjore-i-naerheten-av-kabatas-piren", "url_prefix": "no/", "og_locale": "no_NO", "content": null },
+        "fi": { "lang": "fi", "dir": "ltr", "slug": "mita-tehda-kabatasin-laiturin-lahella", "url_prefix": "fi/", "og_locale": "fi_FI", "content": null },
+        "sk": { "lang": "sk", "dir": "ltr", "slug": "co-robit-blizko-mola-kabatas", "url_prefix": "sk/", "og_locale": "sk_SK", "content": null },
+        "el": { "lang": "el", "dir": "ltr", "slug": "ti-na-kanete-konta-stin-apovathra-kabatas", "url_prefix": "el/", "og_locale": "el_GR", "content": null },
+        "sl": { "lang": "sl", "dir": "ltr", "slug": "kaj-poceti-blizu-pomola-kabatas", "url_prefix": "sl/", "og_locale": "sl_SI", "content": null },
+        "lv": { "lang": "lv", "dir": "ltr", "slug": "ko-darit-tuvu-kabatasas-piestatnei", "url_prefix": "lv/", "og_locale": "lv_LV", "content": null }
+      }
+    }
+  }
+}
