@@ -45,6 +45,7 @@ run('node scripts/build-images.js');
 run('node scripts/build-home.js');
 run('node scripts/build-pages.js');
 run('node scripts/build-fleet.js'); // "Our Boat" / "Teknemiz" — 32 dilde Tosunpaşa sayfası
+run('node scripts/build-guide.js'); // "Booking Guide" / "Rehber" — 32 dilde 5-soru rehberi
 // build-seo.js DELIBERATELY moved below — it scans dist/ via existsSync, so it
 // must run AFTER blog/city-guide copy steps to see all real URLs.
 
@@ -112,6 +113,7 @@ if (fs.existsSync(enDir)) {
 // 6b. Inject "Our Boat" / "Teknemiz" nav link into all 32 index.html files
 // Runs AFTER EN flatten so dist/index.html (EN) is in its final location.
 run('node scripts/inject-fleet-nav.js');
+run('node scripts/inject-guide-nav.js'); // "Rehber" nav link — runs AFTER fleet so order is Cruises → Our Boat → Guide
 
 // 6c. SEO sitemap — runs AFTER EN flatten + blog/city-guide copy so
 // landingExists/blogExists/cityGuideExists see real EN root files
@@ -122,6 +124,7 @@ run('node scripts/build-seo.js');
 // 6d. Append 32 fleet (Our Boat) URLs to sitemap.
 // Runs AFTER build-seo.js which generates the base sitemap.
 run('node scripts/append-fleet-to-sitemap.js');
+run('node scripts/append-guide-to-sitemap.js'); // 32 Rehber URL'leri sitemap'e ekle
 
 // 6b. Tailwind CDN script bloğunu tüm dist HTML'lerinden strip et,
 // yerine /css/tailwind.css link tag'i koy. (Kaynak HTML'ler değişmez —
