@@ -1621,12 +1621,460 @@
         }
       }
     },
-    "id": { "lang": "id", "dir": "ltr", "slug": "panduan-pesiar-bosphorus", "url_prefix": "id/", "og_locale": "id_ID", "content": null },
-    "ms": { "lang": "ms", "dir": "ltr", "slug": "panduan-pelayaran-bosphorus", "url_prefix": "ms/", "og_locale": "ms_MY", "content": null },
-    "pl": { "lang": "pl", "dir": "ltr", "slug": "przewodnik-rejs-bosfor", "url_prefix": "pl/", "og_locale": "pl_PL", "content": null },
+    "id": {
+      "lang": "id",
+      "dir": "ltr",
+      "slug": "panduan-pesiar-bosphorus",
+      "url_prefix": "id/",
+      "og_locale": "id_ID",
+      "content": {
+        "meta": {
+          "title": "5 Hal yang Harus Diperiksa Sebelum Memesan Pesiar Makan Malam di Bosphorus | Bosphorus Night",
+          "description": "Sebelum memesan pesiar makan malam di Bosphorus, tanyakan 5 hal ini: usia kapal, tata letak meja, pembayaran, ulasan, lisensi. Panduan jujur untuk pembeli.",
+          "og_title": "5 Hal yang Harus Diperiksa Sebelum Memesan Pesiar Makan Malam di Bosphorus",
+          "og_description": "Panduan pembeli yang tercerahkan — apa yang ditanyakan, apa yang dilewati."
+        },
+        "nav": {
+          "home": "Beranda",
+          "cruises": "Pesiar",
+          "our_boat": "Kapal Kami",
+          "guide": "Panduan",
+          "gallery": "Galeri",
+          "book": "Jelajah & Pesan"
+        },
+        "hero": {
+          "image_alt": "Panduan pembeli Bosphorus Night",
+          "tag": "Panduan",
+          "h1_line1": "5 Hal yang Harus Diperiksa Sebelum",
+          "h1_line2_pre": "Memesan",
+          "h1_line2_highlight": "Pesiar Makan Malam Bosphorus",
+          "h1_line2_post": "",
+          "sub": "Apa yang ditanyakan, apa yang dilewati — panduan pembeli yang tercerahkan.",
+          "description": "Setiap malam puluhan pesiar makan malam Bosphorus dijual. Semua menggunakan foto yang sama, semua memberikan janji yang sama. Untuk mengetahui mana yang benar-benar memberikan malam yang Anda bayangkan, tanyakan lima hal ini sebelum memesan."
+        },
+        "toc": {
+          "label": "Daftar Isi",
+          "s1": "Tanyakan tentang kapal",
+          "s2": "Tanyakan tentang tata letak meja",
+          "s3": "Tanyakan tentang pembayaran",
+          "s4": "Perhatikan ulasan",
+          "s5": "Tanyakan tentang lisensi & asuransi"
+        },
+        "s1": {
+          "tag": "01 — Tanyakan tentang kapal",
+          "title": "Kapal apa yang akan Anda naiki? Usia, panjang, kapasitas?",
+          "body": "Sebagian besar operator mengatakan \"kapal mewah\" tanpa menyebut nama kapal. Karena sebagian besar tidak mengoperasikan kapal mereka sendiri — mereka menyewa apa pun yang tersedia malam itu di dermaga. Dua tamu yang memesan lewat tautan yang sama bisa berakhir di kapal berbeda pada malam berbeda.",
+          "ask_label": "Tanyakan ini",
+          "q1": "Apa nama kapalnya?",
+          "q2": "Berapa panjangnya, berapa dek?",
+          "q3": "Berapa umurnya? (Kapal 20-30 tahun masih beroperasi di Bosphorus.)",
+          "q4": "AC — hanya salon, atau juga dek atas?",
+          "answer_label": "Di tempat kami",
+          "answer_body": "Kami memiliki satu kapal — Tosunpaşa. Panjang 42 meter, 3 dek, ber-AC, generasi baru. Kapal yang Anda lihat di foto kami adalah kapal yang Anda naiki.",
+          "answer_link": "Lihat Tosunpaşa →",
+          "image_alt": "Tampak luar Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Tanyakan tentang tata letak meja",
+          "title": "Bagaimana tata letak meja saat makan malam? Sempit atau luas?",
+          "body": "Beberapa operator \"pesiar makan malam\" menjejalkan salon 200 kursi dengan 300 tamu. Anda duduk siku ke siku dengan meja sebelah dan sulit menggeser kursi. Anda tidak akan melihatnya di foto — foto diambil di salon kosong.",
+          "ask_label": "Tanyakan ini",
+          "q1": "Berapa ruang minimum meja per orang dalam cm?",
+          "q2": "Apakah jarak antar meja cukup untuk pelayan lewat dengan nyaman?",
+          "q3": "Bisakah ditunjukkan foto malam yang sudah penuh?",
+          "answer_label": "Di tempat kami",
+          "answer_body": "Kapasitas 600 tamu, tata letak luas — pelayan bergerak leluasa antar meja, ada jarak nyata dengan meja sebelah. Tanpa berjejal.",
+          "image_alt": "Interior salon Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Tanyakan tentang pembayaran",
+          "title": "Bayar di muka? Diminta data kartu?",
+          "body": "Sebagian besar OTA (Klook, GetYourGuide, Viator) mengambil pembayaran di muka. Uang Anda keluar lebih dulu, setengahnya jadi komisi, dan jika pesiar dibatalkan pengembalian dana butuh 7-14 hari, sering lebih lama.",
+          "ask_label": "Tanyakan ini",
+          "q1": "Bayar sekarang atau di kapal?",
+          "q2": "Apa kebijakan pembatalan? (Mayoritas OTA: hingga 24 jam sebelumnya.)",
+          "q3": "Berapa lama pengembalian dana? Dalam mata uang apa?",
+          "q4": "Apakah data kartu wajib?",
+          "answer_label": "Di tempat kami",
+          "answer_body": "Bayar di kapal. Tidak ada pembayaran di muka, tidak ada data kartu. Anda bayar saat tiba di kapal. Pembatalan gratis hingga 2 jam sebelumnya — tanpa repot pengembalian, karena tidak ada yang perlu dikembalikan."
+        },
+        "s4": {
+          "tag": "04 — Perhatikan ulasan",
+          "title": "Apakah ulasannya asli? Kapan profil dibuat?",
+          "body": "TripAdvisor dan Google menampung ribuan ulasan palsu. Tanda khas: profil baru dibuka, 50 ulasan semuanya 5 bintang, semua ditulis 3 bulan terakhir. Bisnis asli profilnya lebih tua, sebaran rating campuran (3-4-5 bintang), dan pemilik membalas ulasan negatif.",
+          "ask_label": "Periksa ini",
+          "q1": "Berapa umur profil Google?",
+          "q2": "Apakah ulasan terkumpul secara alami atau muncul sekaligus 2 bulan terakhir?",
+          "q3": "Apakah ada ulasan 3-4 bintang? Apakah pemilik menanggapi?",
+          "q4": "Apakah ada beberapa daftar bisnis dengan nama sama? (Trik umum.)",
+          "answer_label": "Di tempat kami",
+          "answer_body": "Kami beroperasi sejak 2014. Catatan internal kami menunjukkan 11.317 tamu, rata-rata 4,8★. Profil Google kami baru (dibuka 29 April 2026), jadi ulasan publik masih sedikit. Lisensi TÜRSAB kami dapat diverifikasi: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Tanyakan tentang lisensi & asuransi",
+          "title": "Anggota TÜRSAB? Ada asuransi?",
+          "body": "Untuk beroperasi sebagai agen perjalanan di Türkiye dibutuhkan lisensi TÜRSAB (Asosiasi Agen Perjalanan Türkiye). Operator tanpa lisensi tidak sah — saat kecelakaan, keluhan, atau pembatalan Anda tidak punya dasar hukum. Lisensi TÜRSAB saja tidak cukup; operator kapal juga harus memiliki asuransi penumpang.",
+          "ask_label": "Tanyakan ini",
+          "q1": "Berapa nomor lisensi TÜRSAB Anda? (Format A-XXXXX, dapat diverifikasi.)",
+          "q2": "Apa cakupan asuransi penumpang kapal?",
+          "q3": "Saat kecelakaan, asuransi mana yang berlaku?",
+          "answer_label": "Di tempat kami",
+          "answer_body": "TÜRSAB A-17672 — lisensi kami dapat diverifikasi di tursab.org.tr. Setiap tamu yang naik dijamin asuransi penumpang."
+        },
+        "cta": {
+          "title_pre": "Sekarang Anda tahu",
+          "title_highlight": "apa yang ditanyakan",
+          "title_post": ".",
+          "body": "Setelah menanyakan 5 hal ini, tidak sulit membedakan operator yang menawarkan layanan sungguhan dari yang hanya menjual foto. Operator yang menjawab dengan jelas, tidak menyembunyikan kapal, dan membagikan lisensinya — itulah operator Anda.",
+          "button": "Jika ingin melihat lebih dekat: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Dermaga Kabataş, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Hak cipta dilindungi."
+        }
+      }
+    },
+    "ms": {
+      "lang": "ms",
+      "dir": "ltr",
+      "slug": "panduan-pelayaran-bosphorus",
+      "url_prefix": "ms/",
+      "og_locale": "ms_MY",
+      "content": {
+        "meta": {
+          "title": "5 Perkara untuk Disemak Sebelum Menempah Pelayaran Makan Malam Bosphorus | Bosphorus Night",
+          "description": "Sebelum menempah pelayaran makan malam Bosphorus, tanyakan 5 perkara ini: usia bot, susun atur meja, pembayaran, ulasan, lesen. Panduan jujur untuk pembeli.",
+          "og_title": "5 Perkara untuk Disemak Sebelum Menempah Pelayaran Makan Malam Bosphorus",
+          "og_description": "Panduan pembeli yang berpengetahuan — apa yang ditanya, apa yang dilangkau."
+        },
+        "nav": {
+          "home": "Laman Utama",
+          "cruises": "Pelayaran",
+          "our_boat": "Bot Kami",
+          "guide": "Panduan",
+          "gallery": "Galeri",
+          "book": "Teroka & Tempah"
+        },
+        "hero": {
+          "image_alt": "Panduan pembeli Bosphorus Night",
+          "tag": "Panduan",
+          "h1_line1": "5 Perkara untuk Disemak Sebelum",
+          "h1_line2_pre": "Menempah",
+          "h1_line2_highlight": "Pelayaran Makan Malam Bosphorus",
+          "h1_line2_post": "",
+          "sub": "Apa yang ditanya, apa yang dilangkau — panduan pembeli yang berpengetahuan.",
+          "description": "Setiap malam berpuluh-puluh pelayaran makan malam Bosphorus dijual. Semua menggunakan foto yang sama, semua membuat janji yang sama. Untuk membezakan mana yang benar-benar memberikan malam yang anda bayangkan, tanyakan lima perkara ini sebelum menempah."
+        },
+        "toc": {
+          "label": "Kandungan",
+          "s1": "Tanya tentang bot",
+          "s2": "Tanya tentang susun atur meja",
+          "s3": "Tanya tentang pembayaran",
+          "s4": "Perhatikan ulasan",
+          "s5": "Tanya tentang lesen & insurans"
+        },
+        "s1": {
+          "tag": "01 — Tanya tentang bot",
+          "title": "Bot mana yang akan anda naiki? Usia, panjang, kapasiti?",
+          "body": "Kebanyakan operator menyebut \"bot mewah\" tanpa menamakan bot itu. Kerana kebanyakannya tidak mengendalikan bot mereka sendiri — mereka menyewa apa-apa yang tersedia malam itu di jeti. Dua tetamu yang menempah melalui pautan sama boleh berakhir di bot berbeza pada malam berbeza.",
+          "ask_label": "Tanya ini",
+          "q1": "Apakah nama bot?",
+          "q2": "Berapa panjang, berapa tingkat?",
+          "q3": "Berapa umurnya? (Bot 20-30 tahun masih beroperasi di Bosphorus.)",
+          "q4": "Penghawa dingin — hanya salun, atau dek atas juga?",
+          "answer_label": "Di pihak kami",
+          "answer_body": "Kami ada satu bot — Tosunpaşa. Panjang 42 meter, 3 dek, berhawa dingin, generasi baharu. Bot dalam foto kami ialah bot yang anda naiki.",
+          "answer_link": "Lihat Tosunpaşa →",
+          "image_alt": "Pandangan luar Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Tanya tentang susun atur meja",
+          "title": "Bagaimana susun atur meja semasa makan malam? Sempit atau lapang?",
+          "body": "Sesetengah operator \"pelayaran makan malam\" menjejalkan salun 200 tempat duduk dengan 300 tetamu. Anda duduk siku ke siku dengan meja sebelah dan sukar menggerakkan kerusi. Anda tidak akan nampak ini dalam foto — foto diambil dalam salun kosong.",
+          "ask_label": "Tanya ini",
+          "q1": "Berapa ruang minimum meja setiap orang dalam cm?",
+          "q2": "Cukupkah jarak antara meja untuk pelayan lalu dengan selesa?",
+          "q3": "Bolehkah ditunjukkan foto malam yang penuh?",
+          "answer_label": "Di pihak kami",
+          "answer_body": "Kapasiti 600 tetamu, susun atur lapang — pelayan bergerak selesa antara meja, ada jarak sebenar dengan meja sebelah. Tiada sesakan.",
+          "image_alt": "Dalaman salun Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Tanya tentang pembayaran",
+          "title": "Perlu bayar dahulu? Minta butiran kad?",
+          "body": "Kebanyakan OTA (Klook, GetYourGuide, Viator) mengambil bayaran dahulu. Wang anda keluar lebih awal, separuh masuk komisen, dan jika pelayaran dibatalkan, pemulangan mengambil 7-14 hari, selalunya lebih lama.",
+          "ask_label": "Tanya ini",
+          "q1": "Bayar sekarang atau di atas bot?",
+          "q2": "Apakah polisi pembatalan? (Kebanyakan OTA: sehingga 24 jam sebelumnya.)",
+          "q3": "Berapa lama pemulangan? Dalam mata wang apa?",
+          "q4": "Adakah butiran kad diperlukan?",
+          "answer_label": "Di pihak kami",
+          "answer_body": "Bayar di atas bot. Tiada bayaran awal, tiada butiran kad. Anda bayar apabila tiba di bot. Pembatalan percuma sehingga 2 jam sebelumnya — tiada kerumitan pemulangan, kerana tiada apa untuk dipulangkan."
+        },
+        "s4": {
+          "tag": "04 — Perhatikan ulasan",
+          "title": "Adakah ulasan asli? Bila profil dibuka?",
+          "body": "TripAdvisor dan Google menyimpan ribuan ulasan palsu. Tanda biasa: profil baru dibuka, 50 ulasan semua 5 bintang, semua ditulis 3 bulan terakhir. Perniagaan sebenar profilnya lebih tua, taburan penilaian campuran (3-4-5 bintang), dan pemilik membalas ulasan negatif.",
+          "ask_label": "Semak ini",
+          "q1": "Berapa umur profil Google?",
+          "q2": "Adakah ulasan terkumpul secara semula jadi atau muncul serentak 2 bulan terakhir?",
+          "q3": "Ada ulasan 3-4 bintang? Pemilik menjawab?",
+          "q4": "Adakah ada beberapa senarai perniagaan dengan nama yang sama? (Helah biasa.)",
+          "answer_label": "Di pihak kami",
+          "answer_body": "Kami beroperasi sejak 2014. Rekod dalaman kami menunjukkan 11,317 tetamu, purata 4.8★. Profil Google kami baharu (dibuka 29 April 2026), jadi ulasan awam masih sedikit. Lesen TÜRSAB kami boleh disahkan: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Tanya tentang lesen & insurans",
+          "title": "Ahli TÜRSAB? Ada insurans?",
+          "body": "Untuk beroperasi sebagai agensi pelancongan di Türkiye memerlukan lesen TÜRSAB (Persatuan Agensi Pelancongan Türkiye). Operator tanpa lesen tidak sah — sekiranya kemalangan, aduan atau pembatalan anda tiada asas undang-undang. Lesen TÜRSAB sahaja tidak mencukupi; operator bot juga mesti memiliki insurans penumpang.",
+          "ask_label": "Tanya ini",
+          "q1": "Apakah nombor lesen TÜRSAB anda? (Format A-XXXXX, boleh disahkan.)",
+          "q2": "Apakah liputan insurans penumpang bot?",
+          "q3": "Sekiranya kemalangan, insurans mana yang berkuat kuasa?",
+          "answer_label": "Di pihak kami",
+          "answer_body": "TÜRSAB A-17672 — lesen kami boleh disahkan di tursab.org.tr. Setiap tetamu yang menaiki bot dilindungi oleh insurans penumpang."
+        },
+        "cta": {
+          "title_pre": "Kini anda tahu",
+          "title_highlight": "apa yang ditanya",
+          "title_post": ".",
+          "body": "Setelah menanyakan 5 perkara ini, tidaklah sukar untuk membezakan operator yang menawarkan perkhidmatan sebenar daripada yang hanya menjual foto. Operator yang menjawab dengan jelas, tidak menyembunyikan botnya, dan berkongsi lesennya — itulah operator anda.",
+          "button": "Jika anda ingin lihat lebih dekat: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Jeti Kabataş, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Hak cipta terpelihara."
+        }
+      }
+    },
+    "pl": {
+      "lang": "pl",
+      "dir": "ltr",
+      "slug": "przewodnik-rejs-bosfor",
+      "url_prefix": "pl/",
+      "og_locale": "pl_PL",
+      "content": {
+        "meta": {
+          "title": "5 rzeczy do sprawdzenia przed rezerwacją rejsu z kolacją po Bosforze | Bosphorus Night",
+          "description": "Przed rezerwacją rejsu z kolacją po Bosforze zadaj te 5 pytań: wiek statku, układ stołów, płatność, opinie, licencja. Uczciwy przewodnik dla kupującego.",
+          "og_title": "5 rzeczy do sprawdzenia przed rezerwacją rejsu z kolacją po Bosforze",
+          "og_description": "Świadomy przewodnik dla kupującego — o co pytać, czego nie."
+        },
+        "nav": {
+          "home": "Strona główna",
+          "cruises": "Rejsy",
+          "our_boat": "Nasz statek",
+          "guide": "Przewodnik",
+          "gallery": "Galeria",
+          "book": "Poznaj i rezerwuj"
+        },
+        "hero": {
+          "image_alt": "Przewodnik dla kupującego Bosphorus Night",
+          "tag": "Przewodnik",
+          "h1_line1": "5 rzeczy do sprawdzenia",
+          "h1_line2_pre": "przed rezerwacją",
+          "h1_line2_highlight": "rejsu z kolacją po Bosforze",
+          "h1_line2_post": "",
+          "sub": "O co pytać, czego nie — świadomy przewodnik dla kupującego.",
+          "description": "Każdej nocy sprzedawane są dziesiątki rejsów z kolacją po Bosforze. Wszystkie używają tych samych zdjęć, wszystkie składają te same obietnice. Aby rozpoznać, który naprawdę zapewnia wieczór, jaki sobie wyobrażasz, zadaj te pięć pytań przed rezerwacją."
+        },
+        "toc": {
+          "label": "Spis treści",
+          "s1": "Zapytaj o statek",
+          "s2": "Zapytaj o układ stołów",
+          "s3": "Zapytaj o płatność",
+          "s4": "Uważaj na opinie",
+          "s5": "Zapytaj o licencję i ubezpieczenie"
+        },
+        "s1": {
+          "tag": "01 — Zapytaj o statek",
+          "title": "Na jaki statek wejdziesz? Wiek, długość, pojemność?",
+          "body": "Większość operatorów mówi „luksusowy statek\" bez nazwania statku. Bo większość nie obsługuje własnego statku — wynajmują ten, który jest dostępny tego wieczoru z nabrzeża. Dwoje gości rezerwujących z tego samego linku może trafić na różne statki w różne wieczory.",
+          "ask_label": "Zapytaj o to",
+          "q1": "Jak nazywa się statek?",
+          "q2": "Jaka długość, ile pokładów?",
+          "q3": "Ile ma lat? (Statki 20-30-letnie nadal pływają po Bosforze.)",
+          "q4": "Klimatyzacja — tylko salon, czy także górny pokład?",
+          "answer_label": "U nas",
+          "answer_body": "Mamy jeden statek — Tosunpaşa. 42 metry długości, 3 pokłady, klimatyzowany, nowa generacja. Statek widoczny na naszych zdjęciach to statek, na który wsiadasz.",
+          "answer_link": "Poznaj Tosunpaşa →",
+          "image_alt": "Widok zewnętrzny Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Zapytaj o układ stołów",
+          "title": "Jaki jest układ stołów przy kolacji? Ciasny czy przestronny?",
+          "body": "Niektórzy operatorzy „rejsu z kolacją\" upychają 300 gości w salonie na 200 miejsc. Siedzisz łokieć w łokieć z sąsiednim stolikiem i ledwie możesz przesunąć krzesło. Nie zobaczysz tego na zdjęciach — zostały zrobione w pustym salonie.",
+          "ask_label": "Zapytaj o to",
+          "q1": "Jaka jest minimalna przestrzeń przy stole na osobę w cm?",
+          "q2": "Czy odległość między stolikami pozwala kelnerowi swobodnie przejść?",
+          "q3": "Czy możesz pokazać zdjęcie wieczoru z pełnym obłożeniem?",
+          "answer_label": "U nas",
+          "answer_body": "Pojemność 600 gości, przestronny układ — kelnerzy poruszają się swobodnie między stolikami, jest realny dystans z sąsiednim stolikiem. Bez upychania.",
+          "image_alt": "Wnętrze salonu Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Zapytaj o płatność",
+          "title": "Wymagana przedpłata? Proszą o dane karty?",
+          "body": "Większość OTA (Klook, GetYourGuide, Viator) pobiera przedpłatę. Twoje pieniądze wychodzą wcześniej, połowa idzie na prowizję, a jeśli rejs zostaje odwołany, zwrot trwa 7-14 dni, często dłużej.",
+          "ask_label": "Zapytaj o to",
+          "q1": "Płatność teraz czy na statku?",
+          "q2": "Jaka jest polityka anulowania? (Większość OTA: do 24 godzin przed.)",
+          "q3": "Ile trwa zwrot? W jakiej walucie?",
+          "q4": "Czy dane karty są wymagane?",
+          "answer_label": "U nas",
+          "answer_body": "Płatność na statku. Bez przedpłaty, bez danych karty. Płacisz po przyjściu do statku. Bezpłatne anulowanie do 2 godzin przed — bez kłopotu zwrotu, bo nie ma czego zwracać."
+        },
+        "s4": {
+          "tag": "04 — Uważaj na opinie",
+          "title": "Czy opinie są prawdziwe? Kiedy powstał profil?",
+          "body": "TripAdvisor i Google przechowują tysiące fałszywych opinii. Typowe sygnały: świeżo otwarty profil, 50 opinii wszystkie 5 gwiazdek, wszystkie napisane w ostatnich 3 miesiącach. Prawdziwa firma ma starszy profil, zróżnicowany rozkład ocen (3-4-5 gwiazdek), a właściciel odpowiada na negatywne opinie.",
+          "ask_label": "Sprawdź to",
+          "q1": "Ile lat ma profil Google?",
+          "q2": "Czy opinie narastały naturalnie, czy nagle w ciągu ostatnich 2 miesięcy?",
+          "q3": "Czy są opinie 3-4 gwiazdkowe? Czy właściciel odpowiedział?",
+          "q4": "Czy są wielokrotne wizytówki firmy pod tą samą nazwą? (Popularny chwyt.)",
+          "answer_label": "U nas",
+          "answer_body": "Działamy od 2014 roku. Nasze wewnętrzne zapisy pokazują 11 317 gości, średnia 4,8★. Nasz profil Google jest nowy (otwarty 29 kwietnia 2026), więc publicznych opinii jest jeszcze niewiele. Nasza licencja TÜRSAB jest weryfikowalna: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Zapytaj o licencję i ubezpieczenie",
+          "title": "Czy są członkiem TÜRSAB? Czy mają ubezpieczenie?",
+          "body": "Aby działać jako biuro podróży w Türkiye, wymagana jest licencja TÜRSAB (Tureckie Stowarzyszenie Biur Podróży). Operator bez licencji nie jest legalny — w razie wypadku, skargi lub anulowania nie masz podstaw prawnych. Sama licencja TÜRSAB to za mało; operator statku musi również mieć ubezpieczenie pasażerów.",
+          "ask_label": "Zapytaj o to",
+          "q1": "Jaki jest wasz numer licencji TÜRSAB? (Format A-XXXXX, weryfikowalny.)",
+          "q2": "Co obejmuje ubezpieczenie pasażerów statku?",
+          "q3": "W razie wypadku, które ubezpieczenie się aktywuje?",
+          "answer_label": "U nas",
+          "answer_body": "TÜRSAB A-17672 — nasza licencja jest weryfikowalna na tursab.org.tr. Każdy gość na pokładzie jest objęty ubezpieczeniem pasażerów."
+        },
+        "cta": {
+          "title_pre": "Teraz wiesz,",
+          "title_highlight": "o co pytać",
+          "title_post": ".",
+          "body": "Po zadaniu tych 5 pytań nie jest trudno odróżnić operatora oferującego prawdziwą usługę od tego, który sprzedaje tylko zdjęcia. Operator, który odpowiada jasno, nie ukrywa statku i dzieli się licencją — to twój operator.",
+          "button": "Jeśli chcesz przyjrzeć się bliżej: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Nabrzeże Kabataş, Stambuł",
+          "copyright": "© 2026 Bosphorus Night — Wszelkie prawa zastrzeżone."
+        }
+      }
+    },
     "bg": { "lang": "bg", "dir": "ltr", "slug": "putevoditel-bosfor", "url_prefix": "bg/", "og_locale": "bg_BG", "content": null },
     "ro": { "lang": "ro", "dir": "ltr", "slug": "ghid-croaziera-bosfor", "url_prefix": "ro/", "og_locale": "ro_RO", "content": null },
-    "uk": { "lang": "uk", "dir": "ltr", "slug": "putivnyk-bosfor", "url_prefix": "uk/", "og_locale": "uk_UA", "content": null },
+    "uk": {
+      "lang": "uk",
+      "dir": "ltr",
+      "slug": "putivnyk-bosfor",
+      "url_prefix": "uk/",
+      "og_locale": "uk_UA",
+      "content": {
+        "meta": {
+          "title": "5 речей, які потрібно перевірити перед бронюванням круїзу з вечерею Босфором | Bosphorus Night",
+          "description": "Перед бронюванням круїзу з вечерею Босфором поставте ці 5 запитань: вік судна, розсадка, оплата, відгуки, ліцензія. Чесний путівник для покупця.",
+          "og_title": "5 речей, які потрібно перевірити перед бронюванням круїзу з вечерею Босфором",
+          "og_description": "Поінформований путівник для покупця — що питати, що пропустити."
+        },
+        "nav": {
+          "home": "Головна",
+          "cruises": "Круїзи",
+          "our_boat": "Наш човен",
+          "guide": "Путівник",
+          "gallery": "Галерея",
+          "book": "Огляд та бронювання"
+        },
+        "hero": {
+          "image_alt": "Путівник покупця Bosphorus Night",
+          "tag": "Путівник",
+          "h1_line1": "5 речей, які потрібно перевірити",
+          "h1_line2_pre": "перед бронюванням",
+          "h1_line2_highlight": "круїзу з вечерею Босфором",
+          "h1_line2_post": "",
+          "sub": "Що питати, що пропустити — поінформований путівник для покупця.",
+          "description": "Щовечора продаються десятки круїзів із вечерею Босфором. Усі використовують ті самі фото, усі дають ті самі обіцянки. Щоб відрізнити, який справді подарує вечір, який ви уявляєте, поставте ці п'ять запитань перед бронюванням."
+        },
+        "toc": {
+          "label": "Зміст",
+          "s1": "Запитайте про човен",
+          "s2": "Запитайте про розсадку",
+          "s3": "Запитайте про оплату",
+          "s4": "Зверніть увагу на відгуки",
+          "s5": "Запитайте про ліцензію та страховку"
+        },
+        "s1": {
+          "tag": "01 — Запитайте про човен",
+          "title": "На який човен ви підете? Вік, довжина, місткість?",
+          "body": "Більшість операторів каже «розкішний човен», не називаючи самого човна. Бо більшість не керує власним судном — вони орендують той, що доступний цього вечора з причалу. Двоє гостей, які бронюють за одним посиланням, можуть опинитися на різних човнах у різні вечори.",
+          "ask_label": "Запитайте це",
+          "q1": "Як називається човен?",
+          "q2": "Яка довжина, скільки палуб?",
+          "q3": "Скільки йому років? (Судна 20-30 років усе ще працюють на Босфорі.)",
+          "q4": "Кондиціонер — тільки в салоні, чи й на верхній палубі?",
+          "answer_label": "У нас",
+          "answer_body": "У нас один човен — Tosunpaşa. 42 метри завдовжки, 3 палуби, кондиціонований, нове покоління. Човен на наших фото — це човен, на який ви сідаєте.",
+          "answer_link": "Подивитися Tosunpaşa →",
+          "image_alt": "Зовнішній вигляд Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Запитайте про розсадку",
+          "title": "Яка розсадка за вечерею? Тісно чи просторо?",
+          "body": "Деякі оператори «круїзу з вечерею» заповнюють салон на 200 місць 300 гостями. Сидите лікоть до ліктя із сусіднім столиком і ледве рухаєте стілець. На фото цього не побачите — їх знято в порожньому салоні.",
+          "ask_label": "Запитайте це",
+          "q1": "Яка мінімальна площа столу на людину в см?",
+          "q2": "Чи є достатньо місця між столами, щоб офіціант проходив комфортно?",
+          "q3": "Чи можете показати фото вечора з повним залом?",
+          "answer_label": "У нас",
+          "answer_body": "Місткість 600 гостей, просторе розташування — офіціанти вільно рухаються між столами, є справжня відстань із сусіднім столом. Без скупчення.",
+          "image_alt": "Інтер'єр салону Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Запитайте про оплату",
+          "title": "Передоплата? Запитують дані картки?",
+          "body": "Більшість OTA (Klook, GetYourGuide, Viator) беруть передоплату. Ваші гроші йдуть наперед, половина — у комісію, і якщо круїз скасовано, повернення триває 7-14 днів, часто більше.",
+          "ask_label": "Запитайте це",
+          "q1": "Платити зараз чи на човні?",
+          "q2": "Яка політика скасування? (Більшість OTA: до 24 годин.)",
+          "q3": "Скільки триває повернення? У якій валюті?",
+          "q4": "Дані картки обов'язкові?",
+          "answer_label": "У нас",
+          "answer_body": "Оплата на човні. Без передоплати, без даних картки. Платите, коли приходите до човна. Безкоштовне скасування за 2 години до — без клопотів із поверненням, бо нічого не треба повертати."
+        },
+        "s4": {
+          "tag": "04 — Зверніть увагу на відгуки",
+          "title": "Чи справжні відгуки? Коли відкрито профіль?",
+          "body": "TripAdvisor і Google містять тисячі підроблених відгуків. Типові ознаки: щойно відкритий профіль, 50 відгуків усі 5 зірок, усі написані за останні 3 місяці. Справжній бізнес має старший профіль, змішане розподілення оцінок (3-4-5 зірок), і власник відповідає на негативні відгуки.",
+          "ask_label": "Перевірте це",
+          "q1": "Скільки років профілю Google?",
+          "q2": "Чи відгуки накопичувалися природно, чи з'явилися одразу за останні 2 місяці?",
+          "q3": "Чи є відгуки 3-4 зірок? Чи відповів власник?",
+          "q4": "Чи є кілька карток бізнесу під тією самою назвою? (Поширений трюк.)",
+          "answer_label": "У нас",
+          "answer_body": "Працюємо з 2014 року. Внутрішні записи показують 11 317 гостей, у середньому 4,8★. Наш профіль Google новий (відкрито 29 квітня 2026), тому публічних відгуків поки мало. Наша ліцензія TÜRSAB підтверджується: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Запитайте про ліцензію та страховку",
+          "title": "Є членом TÜRSAB? Чи є страховка?",
+          "body": "Для діяльності як туристичне агентство в Туреччині потрібна ліцензія TÜRSAB (Асоціація туристичних агентств Туреччини). Оператор без ліцензії не є законним — у разі ДТП, скарги чи скасування у вас немає правової основи. Самої ліцензії TÜRSAB недостатньо; оператор човна також повинен мати страховку пасажирів.",
+          "ask_label": "Запитайте це",
+          "q1": "Який ваш номер ліцензії TÜRSAB? (Формат A-XXXXX, перевірюваний.)",
+          "q2": "Що покриває страховка пасажирів човна?",
+          "q3": "У разі аварії яка страховка діє?",
+          "answer_label": "У нас",
+          "answer_body": "TÜRSAB A-17672 — наша ліцензія перевіряється на tursab.org.tr. Кожен гість на борту покритий страховкою пасажирів."
+        },
+        "cta": {
+          "title_pre": "Тепер ви знаєте,",
+          "title_highlight": "що питати",
+          "title_post": ".",
+          "body": "Поставивши ці 5 запитань, неважко розпізнати оператора, який пропонує реальну послугу, від того, хто продає лише фотографії. Оператор, який відповідає чітко, не приховує свого човна і ділиться ліцензією — це ваш оператор.",
+          "button": "Якщо хочете подивитися ближче: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Причал Кабаташ, Стамбул",
+          "copyright": "© 2026 Bosphorus Night — Усі права захищені."
+        }
+      }
+    },
     "pt": {
       "lang": "pt",
       "dir": "ltr",
