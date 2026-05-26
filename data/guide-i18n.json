@@ -152,10 +152,458 @@
         }
       }
     },
-    "en": { "lang": "en", "dir": "ltr", "slug": "bosphorus-cruise-guide", "url_prefix": "", "og_locale": "en_US", "content": null },
-    "de": { "lang": "de", "dir": "ltr", "slug": "bosporus-kreuzfahrt-ratgeber", "url_prefix": "de/", "og_locale": "de_DE", "content": null },
-    "es": { "lang": "es", "dir": "ltr", "slug": "guia-crucero-bosforo", "url_prefix": "es/", "og_locale": "es_ES", "content": null },
-    "fr": { "lang": "fr", "dir": "ltr", "slug": "guide-croisiere-bosphore", "url_prefix": "fr/", "og_locale": "fr_FR", "content": null },
+    "en": {
+      "lang": "en",
+      "dir": "ltr",
+      "slug": "bosphorus-cruise-guide",
+      "url_prefix": "",
+      "og_locale": "en_US",
+      "content": {
+        "meta": {
+          "title": "5 Things to Check Before Booking a Bosphorus Dinner Cruise | Bosphorus Night",
+          "description": "Before booking a Bosphorus dinner cruise, ask these 5 questions: boat age, table layout, payment terms, reviews, license. An honest buyer's guide for Istanbul night cruises.",
+          "og_title": "5 Things to Check Before Booking a Bosphorus Dinner Cruise",
+          "og_description": "An informed buyer's guide — what to ask, what to skip."
+        },
+        "nav": {
+          "home": "Home",
+          "cruises": "Cruises",
+          "our_boat": "Our Boat",
+          "guide": "Guide",
+          "gallery": "Gallery",
+          "book": "Explore & Book"
+        },
+        "hero": {
+          "image_alt": "Bosphorus Night buyer's guide",
+          "tag": "Guide",
+          "h1_line1": "5 Things to Check",
+          "h1_line2_pre": "Before Booking a",
+          "h1_line2_highlight": "Bosphorus Dinner Cruise",
+          "h1_line2_post": "",
+          "sub": "What to ask, what to skip — an informed buyer's guide.",
+          "description": "Dozens of Bosphorus dinner cruises are sold every night. They all use the same photos, all make the same promises. To tell which one actually delivers the evening you're imagining, ask these five things before you book."
+        },
+        "toc": {
+          "label": "Contents",
+          "s1": "Ask about the boat",
+          "s2": "Ask about table layout",
+          "s3": "Ask about payment",
+          "s4": "Watch the reviews",
+          "s5": "Ask about license & insurance"
+        },
+        "s1": {
+          "tag": "01 — Ask about the boat",
+          "title": "Which boat will you board? Its age, length, capacity?",
+          "body": "Most operators say \"luxury boat\" without naming the boat. Because most don't operate their own boat — they rent whichever one is available that night from the pier. Two guests who book through the same link can sail on different boats on different nights.",
+          "ask_label": "Ask this",
+          "q1": "What is the boat's name?",
+          "q2": "How long, how many decks?",
+          "q3": "How old is it? (20–30 year-old boats are still in service on the Bosphorus.)",
+          "q4": "Air conditioning — salon only, or upper deck too?",
+          "answer_label": "How we do it",
+          "answer_body": "We have one boat — Tosunpaşa. 42 meters long, 3 decks, climate-controlled, new generation. The boat you see in our photos is the boat you board.",
+          "answer_link": "See Tosunpaşa →",
+          "image_alt": "Tosunpaşa exterior view"
+        },
+        "s2": {
+          "tag": "02 — Ask about table layout",
+          "title": "How is the dining layout? Cramped or spacious?",
+          "body": "Some \"dinner cruise\" operators pack a 200-seat salon with 300 guests. You sit elbow-to-elbow with the next table and can barely move your chair. You won't see this in the photos — the photos were taken in an empty salon.",
+          "ask_label": "Ask this",
+          "q1": "What is the minimum table space per person, in cm?",
+          "q2": "Is there enough room between tables for waiters to pass comfortably?",
+          "q3": "Can you show me a photo of a fully booked evening?",
+          "answer_label": "How we do it",
+          "answer_body": "600-guest capacity, spacious layout — waiters move easily between tables, there's real space between you and the next group. No packing.",
+          "image_alt": "Tosunpaşa salon interior"
+        },
+        "s3": {
+          "tag": "03 — Ask about payment",
+          "title": "Prepayment required? Card details requested?",
+          "body": "Most OTAs (Klook, GetYourGuide, Viator) take prepayment. Your money goes out, half of it goes to commission, and if the cruise is cancelled the refund takes 7–14 days — often longer.",
+          "ask_label": "Ask this",
+          "q1": "Pay now, or pay on the boat?",
+          "q2": "What's the cancellation policy? (Most OTAs: up to 24 hours.)",
+          "q3": "How long does a refund take? In which currency?",
+          "q4": "Are card details required?",
+          "answer_label": "How we do it",
+          "answer_body": "Pay-on-boat. No prepayment, no card details. You pay when you arrive at the boat. Free cancellation up to 2 hours before — no refund hassle, because there's no payment to refund."
+        },
+        "s4": {
+          "tag": "04 — Watch the reviews",
+          "title": "Are the reviews real? How old is the profile?",
+          "body": "TripAdvisor and Google host thousands of fake reviews. Typical signs: a newly opened profile, 50 reviews all 5-star, all written in the past 3 months. A genuine business has an older profile, a mixed spread of ratings (3-4-5 stars), and owner responses to negative reviews.",
+          "ask_label": "Check this",
+          "q1": "How old is the Google profile?",
+          "q2": "Did the reviews accumulate naturally, or all at once in the past 2 months?",
+          "q3": "Are there 3-4 star reviews, and has the owner responded?",
+          "q4": "Are there multiple business listings under the same name? (A common trick.)",
+          "answer_label": "How we do it",
+          "answer_body": "We've been operating since 2014. Our internal records show 11,317 guests, 4.8★ average. Our Google profile is new (opened 29 April 2026), so public reviews are still few. Our TÜRSAB license is verifiable: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Ask about license & insurance",
+          "title": "Is the operator TÜRSAB-licensed? Is the boat insured?",
+          "body": "To operate as a travel agency in Türkiye, a company must hold a TÜRSAB (Türkiye Travel Agencies Association) license. An unlicensed operator is not legal — in case of accident, complaint, or cancellation, you have no legal recourse. A TÜRSAB license alone isn't enough; the boat operator must also carry passenger insurance.",
+          "ask_label": "Ask this",
+          "q1": "What's your TÜRSAB license number? (Format: A-XXXXX, verifiable.)",
+          "q2": "What does your passenger insurance cover?",
+          "q3": "In case of an accident, which insurance kicks in?",
+          "answer_label": "How we do it",
+          "answer_body": "TÜRSAB A-17672 — our license is verifiable on tursab.org.tr. Every guest who boards is covered by passenger insurance."
+        },
+        "cta": {
+          "title_pre": "Now you know",
+          "title_highlight": "what to ask",
+          "title_post": ".",
+          "body": "Once you ask these 5 questions, it's not hard to tell which operator is offering a real service and which is just selling photographs. The operator who gives clear answers, doesn't hide their boat, and shares their license — that's your operator.",
+          "button": "If you'd like to take a closer look: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Kabataş Pier, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — All rights reserved."
+        }
+      }
+    },
+    "de": {
+      "lang": "de",
+      "dir": "ltr",
+      "slug": "bosporus-kreuzfahrt-ratgeber",
+      "url_prefix": "de/",
+      "og_locale": "de_DE",
+      "content": {
+        "meta": {
+          "title": "5 Dinge, die Sie vor einer Bosporus-Dinner-Kreuzfahrt prüfen sollten | Bosphorus Night",
+          "description": "Bevor Sie eine Bosporus-Dinner-Kreuzfahrt buchen, stellen Sie diese 5 Fragen: Bootsalter, Tischanordnung, Zahlungsbedingungen, Bewertungen, Lizenz. Ein ehrlicher Käuferleitfaden.",
+          "og_title": "5 Dinge, die Sie vor einer Bosporus-Dinner-Kreuzfahrt prüfen sollten",
+          "og_description": "Ein informierter Käuferleitfaden — was fragen, was überspringen."
+        },
+        "nav": {
+          "home": "Startseite",
+          "cruises": "Kreuzfahrten",
+          "our_boat": "Unser Boot",
+          "guide": "Ratgeber",
+          "gallery": "Galerie",
+          "book": "Entdecken & Buchen"
+        },
+        "hero": {
+          "image_alt": "Bosphorus Night Käuferleitfaden",
+          "tag": "Ratgeber",
+          "h1_line1": "5 Dinge, die Sie vor einer",
+          "h1_line2_pre": "",
+          "h1_line2_highlight": "Bosporus-Dinner-Kreuzfahrt",
+          "h1_line2_post": " prüfen sollten",
+          "sub": "Was fragen, was überspringen — ein informierter Käuferleitfaden.",
+          "description": "Jeden Abend werden Dutzende Bosporus-Dinner-Kreuzfahrten verkauft. Alle verwenden dieselben Fotos, alle machen dieselben Versprechen. Um herauszufinden, welche wirklich den Abend liefert, den Sie sich vorstellen, stellen Sie vor der Buchung diese fünf Fragen."
+        },
+        "toc": {
+          "label": "Inhalt",
+          "s1": "Fragen Sie nach dem Boot",
+          "s2": "Fragen Sie nach der Tischanordnung",
+          "s3": "Fragen Sie nach der Zahlung",
+          "s4": "Achten Sie auf die Bewertungen",
+          "s5": "Fragen Sie nach Lizenz & Versicherung"
+        },
+        "s1": {
+          "tag": "01 — Fragen Sie nach dem Boot",
+          "title": "Welches Boot besteigen Sie? Alter, Länge, Kapazität?",
+          "body": "Die meisten Anbieter sagen „Luxusboot\", ohne das Boot zu benennen. Weil die meisten kein eigenes Boot betreiben — sie mieten am Abend, welches gerade verfügbar ist. Zwei Gäste, die über denselben Link buchen, können an unterschiedlichen Abenden auf unterschiedlichen Booten landen.",
+          "ask_label": "Fragen Sie",
+          "q1": "Wie heißt das Boot?",
+          "q2": "Wie lang, wie viele Decks?",
+          "q3": "Wie alt ist es? (20–30 Jahre alte Boote sind noch immer im Einsatz auf dem Bosporus.)",
+          "q4": "Klimaanlage — nur Salon, oder auch Oberdeck?",
+          "answer_label": "Bei uns",
+          "answer_body": "Wir haben ein Boot — Tosunpaşa. 42 Meter lang, 3 Decks, klimatisiert, neue Generation. Das Boot auf unseren Fotos ist das Boot, das Sie betreten.",
+          "answer_link": "Tosunpaşa ansehen →",
+          "image_alt": "Tosunpaşa Außenansicht"
+        },
+        "s2": {
+          "tag": "02 — Fragen Sie nach der Tischanordnung",
+          "title": "Wie ist die Tischanordnung beim Dinner? Eng oder geräumig?",
+          "body": "Einige „Dinner-Kreuzfahrt\"-Anbieter packen einen Salon mit 200 Plätzen mit 300 Gästen voll. Sie sitzen Schulter an Schulter mit dem Nachbartisch und können Ihren Stuhl kaum bewegen. Auf den Fotos sehen Sie das nicht — die Fotos wurden in einem leeren Salon gemacht.",
+          "ask_label": "Fragen Sie",
+          "q1": "Wie viel Mindestplatz pro Person am Tisch in cm?",
+          "q2": "Genügend Abstand zwischen den Tischen, damit der Kellner bequem passieren kann?",
+          "q3": "Können Sie ein Foto eines voll ausgebuchten Abends zeigen?",
+          "answer_label": "Bei uns",
+          "answer_body": "600 Gäste Kapazität, geräumige Anordnung — Kellner bewegen sich mühelos zwischen den Tischen, echter Abstand zum Nachbartisch. Kein Zusammenpressen.",
+          "image_alt": "Tosunpaşa Salon Innenansicht"
+        },
+        "s3": {
+          "tag": "03 — Fragen Sie nach der Zahlung",
+          "title": "Vorauszahlung erforderlich? Kartendaten verlangt?",
+          "body": "Die meisten OTAs (Klook, GetYourGuide, Viator) verlangen Vorauszahlung. Ihr Geld geht raus, die Hälfte fließt als Provision ab, und bei Stornierung dauert die Rückerstattung 7–14 Tage — oft länger.",
+          "ask_label": "Fragen Sie",
+          "q1": "Jetzt zahlen oder an Bord?",
+          "q2": "Was ist die Stornierungsrichtlinie? (Die meisten OTAs: bis zu 24 Stunden.)",
+          "q3": "Wie lange dauert die Rückerstattung? In welcher Währung?",
+          "q4": "Sind Kartendaten erforderlich?",
+          "answer_label": "Bei uns",
+          "answer_body": "Zahlung an Bord. Keine Vorauszahlung, keine Kartendaten. Sie zahlen, wenn Sie am Boot ankommen. Kostenlose Stornierung bis 2 Stunden vorher — keine Rückerstattungsprobleme, denn es gibt nichts zurückzuerstatten."
+        },
+        "s4": {
+          "tag": "04 — Achten Sie auf die Bewertungen",
+          "title": "Sind die Bewertungen echt? Wann wurde das Profil erstellt?",
+          "body": "TripAdvisor und Google enthalten Tausende gefälschter Bewertungen. Typische Anzeichen: ein neu erstelltes Profil, 50 Bewertungen alle 5 Sterne, alle in den letzten 3 Monaten geschrieben. Ein echtes Unternehmen hat ein älteres Profil, eine gemischte Bewertungsspanne (3-4-5 Sterne), und der Inhaber antwortet auf negative Bewertungen.",
+          "ask_label": "Prüfen Sie",
+          "q1": "Wie alt ist das Google-Profil?",
+          "q2": "Sind die Bewertungen organisch entstanden oder kamen sie in den letzten 2 Monaten gebündelt?",
+          "q3": "Gibt es 3-4-Sterne-Bewertungen, hat der Inhaber geantwortet?",
+          "q4": "Gibt es mehrere Unternehmensprofile unter demselben Namen? (Ein gängiger Trick.)",
+          "answer_label": "Bei uns",
+          "answer_body": "Wir sind seit 2014 tätig. Unsere internen Aufzeichnungen zeigen 11.317 Gäste, 4,8★ Durchschnitt. Unser Google-Profil ist neu (eröffnet am 29. April 2026), öffentliche Bewertungen sind noch wenige. Unsere TÜRSAB-Lizenz ist überprüfbar: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Fragen Sie nach Lizenz & Versicherung",
+          "title": "TÜRSAB-Mitglied? Versicherung vorhanden?",
+          "body": "Um in der Türkei als Reisebüro tätig zu sein, ist eine TÜRSAB-Lizenz (Türkische Vereinigung der Reisebüros) erforderlich. Ein unlizenzierter Anbieter ist nicht legal — bei Unfall, Beschwerde oder Stornierung haben Sie keinen Rechtsanspruch. Eine TÜRSAB-Lizenz allein reicht nicht; der Bootsbetreiber muss auch eine Passagierversicherung haben.",
+          "ask_label": "Fragen Sie",
+          "q1": "Wie lautet Ihre TÜRSAB-Lizenznummer? (Format: A-XXXXX, überprüfbar.)",
+          "q2": "Was deckt die Passagierversicherung des Bootes ab?",
+          "q3": "Welche Versicherung greift im Unfallfall?",
+          "answer_label": "Bei uns",
+          "answer_body": "TÜRSAB A-17672 — unsere Lizenz ist auf tursab.org.tr überprüfbar. Jeder Gast an Bord ist durch die Passagierversicherung gedeckt."
+        },
+        "cta": {
+          "title_pre": "Jetzt wissen Sie,",
+          "title_highlight": "was zu fragen ist",
+          "title_post": ".",
+          "body": "Wenn Sie diese 5 Fragen stellen, ist es nicht schwer zu erkennen, welcher Anbieter einen echten Service bietet und welcher nur Fotos verkauft. Der Anbieter, der klare Antworten gibt, sein Boot nicht versteckt und seine Lizenz teilt — das ist Ihr Anbieter.",
+          "button": "Wenn Sie näher hinsehen möchten: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Kabataş Pier, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Alle Rechte vorbehalten."
+        }
+      }
+    },
+    "es": {
+      "lang": "es",
+      "dir": "ltr",
+      "slug": "guia-crucero-bosforo",
+      "url_prefix": "es/",
+      "og_locale": "es_ES",
+      "content": {
+        "meta": {
+          "title": "5 cosas que comprobar antes de reservar un crucero con cena por el Bósforo | Bosphorus Night",
+          "description": "Antes de reservar un crucero con cena por el Bósforo, haga estas 5 preguntas: edad del barco, disposición de mesas, pago, opiniones, licencia. Guía honesta del comprador.",
+          "og_title": "5 cosas que comprobar antes de reservar un crucero con cena por el Bósforo",
+          "og_description": "Una guía informada del comprador: qué preguntar, qué omitir."
+        },
+        "nav": {
+          "home": "Inicio",
+          "cruises": "Cruceros",
+          "our_boat": "Nuestro barco",
+          "guide": "Guía",
+          "gallery": "Galería",
+          "book": "Explorar y reservar"
+        },
+        "hero": {
+          "image_alt": "Guía del comprador de Bosphorus Night",
+          "tag": "Guía",
+          "h1_line1": "5 cosas que comprobar antes de",
+          "h1_line2_pre": "reservar un",
+          "h1_line2_highlight": "crucero con cena por el Bósforo",
+          "h1_line2_post": "",
+          "sub": "Qué preguntar, qué omitir — una guía informada del comprador.",
+          "description": "Cada noche se venden decenas de cruceros con cena por el Bósforo. Todos usan las mismas fotos, todos hacen las mismas promesas. Para distinguir cuál ofrece realmente la noche que imagina, haga estas cinco preguntas antes de reservar."
+        },
+        "toc": {
+          "label": "Contenido",
+          "s1": "Pregunte por el barco",
+          "s2": "Pregunte por la disposición de mesas",
+          "s3": "Pregunte por el pago",
+          "s4": "Atención a las opiniones",
+          "s5": "Pregunte por la licencia y el seguro"
+        },
+        "s1": {
+          "tag": "01 — Pregunte por el barco",
+          "title": "¿Qué barco abordará? Edad, eslora, capacidad",
+          "body": "La mayoría de los operadores dice «barco de lujo» sin nombrar el barco. Porque la mayoría no opera su propio barco — alquilan el que esté disponible esa noche desde el muelle. Dos clientes que reserven por el mismo enlace pueden acabar en barcos distintos en noches distintas.",
+          "ask_label": "Pregunte esto",
+          "q1": "¿Cómo se llama el barco?",
+          "q2": "¿Qué eslora tiene, cuántas cubiertas?",
+          "q3": "¿Cuántos años tiene? (Barcos de 20-30 años siguen operando en el Bósforo.)",
+          "q4": "¿Aire acondicionado en el salón únicamente, o también en la cubierta superior?",
+          "answer_label": "En nuestro caso",
+          "answer_body": "Tenemos un solo barco — Tosunpaşa. 42 metros de eslora, 3 cubiertas, climatizado, nueva generación. El barco de las fotos es el barco al que sube.",
+          "answer_link": "Ver Tosunpaşa →",
+          "image_alt": "Vista exterior de Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Pregunte por la disposición de mesas",
+          "title": "¿Cómo es la disposición de mesas? ¿Apretada o amplia?",
+          "body": "Algunos operadores de «cruceros con cena» llenan un salón de 200 plazas con 300 invitados. Estará codo con codo con la mesa de al lado y apenas podrá mover la silla. No lo verá en las fotos — están tomadas en un salón vacío.",
+          "ask_label": "Pregunte esto",
+          "q1": "¿Cuánto espacio mínimo de mesa por persona, en cm?",
+          "q2": "¿Hay suficiente distancia entre mesas para que el camarero pase con comodidad?",
+          "q3": "¿Puede mostrar una foto de una noche con aforo completo?",
+          "answer_label": "En nuestro caso",
+          "answer_body": "Capacidad para 600 invitados, disposición amplia — los camareros se mueven con comodidad, hay espacio real con la mesa contigua. Sin apretujamientos.",
+          "image_alt": "Interior del salón de Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Pregunte por el pago",
+          "title": "¿Requiere prepago? ¿Pide datos de tarjeta?",
+          "body": "La mayoría de las OTA (Klook, GetYourGuide, Viator) cobran por adelantado. Su dinero sale, la mitad se va en comisión, y si se cancela el crucero el reembolso tarda 7-14 días, a menudo más.",
+          "ask_label": "Pregunte esto",
+          "q1": "¿Se paga ahora o a bordo?",
+          "q2": "¿Cuál es la política de cancelación? (La mayoría de OTA: hasta 24 horas antes.)",
+          "q3": "¿Cuánto tarda el reembolso? ¿En qué moneda?",
+          "q4": "¿Son obligatorios los datos de tarjeta?",
+          "answer_label": "En nuestro caso",
+          "answer_body": "Pago a bordo. Sin prepago, sin datos de tarjeta. Paga cuando llega al barco. Cancelación gratuita hasta 2 horas antes — sin problemas de reembolso, porque no hay nada que reembolsar."
+        },
+        "s4": {
+          "tag": "04 — Atención a las opiniones",
+          "title": "¿Son reales las opiniones? ¿Cuándo se abrió el perfil?",
+          "body": "TripAdvisor y Google alojan miles de opiniones falsas. Señales típicas: un perfil recién abierto, 50 opiniones todas de 5 estrellas, todas escritas en los últimos 3 meses. Un negocio auténtico tiene un perfil más antiguo, un abanico mixto (3-4-5 estrellas), y el propietario responde a las opiniones negativas.",
+          "ask_label": "Compruebe esto",
+          "q1": "¿Cuántos años tiene el perfil de Google?",
+          "q2": "¿Las opiniones llegaron de forma orgánica o se acumularon en los últimos 2 meses?",
+          "q3": "¿Hay opiniones de 3-4 estrellas? ¿Ha respondido el propietario?",
+          "q4": "¿Hay varios listados de negocio con el mismo nombre? (Truco habitual.)",
+          "answer_label": "En nuestro caso",
+          "answer_body": "Operamos desde 2014. Nuestros registros internos muestran 11.317 invitados, 4,8★ de media. Nuestro perfil de Google es reciente (abierto el 29 de abril de 2026), por lo que las opiniones públicas aún son pocas. Nuestra licencia TÜRSAB es verificable: A-17672."
+        },
+        "s5": {
+          "tag": "05 — Pregunte por la licencia y el seguro",
+          "title": "¿Es miembro de TÜRSAB? ¿Hay seguro?",
+          "body": "Para operar como agencia de viajes en Türkiye se requiere una licencia TÜRSAB (Asociación Turca de Agencias de Viajes). Un operador sin licencia no es legal — en caso de accidente, queja o cancelación no tiene amparo legal. La licencia TÜRSAB por sí sola no basta; el operador del barco también debe contar con seguro de pasajeros.",
+          "ask_label": "Pregunte esto",
+          "q1": "¿Cuál es su número de licencia TÜRSAB? (Formato A-XXXXX, verificable.)",
+          "q2": "¿Qué cubre el seguro de pasajeros del barco?",
+          "q3": "¿Qué seguro actúa en caso de accidente?",
+          "answer_label": "En nuestro caso",
+          "answer_body": "TÜRSAB A-17672 — nuestra licencia es verificable en tursab.org.tr. Cada invitado a bordo está cubierto por el seguro de pasajeros."
+        },
+        "cta": {
+          "title_pre": "Ahora sabe",
+          "title_highlight": "qué preguntar",
+          "title_post": ".",
+          "body": "Cuando haga estas 5 preguntas no le costará distinguir qué operador ofrece un servicio real y cuál vende solo fotos. El operador que responde con claridad, no esconde su barco y comparte su licencia — ese es su operador.",
+          "button": "Si quiere echar un vistazo de cerca: Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Muelle de Kabataş, Estambul",
+          "copyright": "© 2026 Bosphorus Night — Todos los derechos reservados."
+        }
+      }
+    },
+    "fr": {
+      "lang": "fr",
+      "dir": "ltr",
+      "slug": "guide-croisiere-bosphore",
+      "url_prefix": "fr/",
+      "og_locale": "fr_FR",
+      "content": {
+        "meta": {
+          "title": "5 choses à vérifier avant de réserver une croisière dîner sur le Bosphore | Bosphorus Night",
+          "description": "Avant de réserver une croisière dîner sur le Bosphore, posez ces 5 questions : âge du bateau, agencement des tables, paiement, avis, licence. Un guide honnête pour l'acheteur.",
+          "og_title": "5 choses à vérifier avant de réserver une croisière dîner sur le Bosphore",
+          "og_description": "Un guide éclairé pour l'acheteur — quoi demander, quoi ignorer."
+        },
+        "nav": {
+          "home": "Accueil",
+          "cruises": "Croisières",
+          "our_boat": "Notre bateau",
+          "guide": "Guide",
+          "gallery": "Galerie",
+          "book": "Découvrir & réserver"
+        },
+        "hero": {
+          "image_alt": "Guide de l'acheteur Bosphorus Night",
+          "tag": "Guide",
+          "h1_line1": "5 choses à vérifier avant",
+          "h1_line2_pre": "de réserver une",
+          "h1_line2_highlight": "croisière dîner sur le Bosphore",
+          "h1_line2_post": "",
+          "sub": "Quoi demander, quoi ignorer — un guide éclairé pour l'acheteur.",
+          "description": "Des dizaines de croisières dîner sur le Bosphore sont vendues chaque soir. Toutes utilisent les mêmes photos, toutes font les mêmes promesses. Pour distinguer celle qui offre vraiment la soirée que vous imaginez, posez ces cinq questions avant de réserver."
+        },
+        "toc": {
+          "label": "Sommaire",
+          "s1": "Renseignez-vous sur le bateau",
+          "s2": "Renseignez-vous sur l'agencement des tables",
+          "s3": "Renseignez-vous sur le paiement",
+          "s4": "Méfiez-vous des avis",
+          "s5": "Renseignez-vous sur la licence et l'assurance"
+        },
+        "s1": {
+          "tag": "01 — Renseignez-vous sur le bateau",
+          "title": "Sur quel bateau monterez-vous ? Âge, longueur, capacité ?",
+          "body": "La plupart des opérateurs disent « bateau de luxe » sans nommer le bateau. Parce que la plupart n'exploitent pas leur propre bateau — ils louent celui qui est disponible ce soir-là depuis le quai. Deux clients qui réservent via le même lien peuvent se retrouver sur des bateaux différents selon le soir.",
+          "ask_label": "Demandez ceci",
+          "q1": "Quel est le nom du bateau ?",
+          "q2": "Quelle longueur, combien de ponts ?",
+          "q3": "Quel âge a-t-il ? (Des bateaux de 20-30 ans naviguent encore sur le Bosphore.)",
+          "q4": "Climatisation — uniquement le salon, ou aussi le pont supérieur ?",
+          "answer_label": "Chez nous",
+          "answer_body": "Nous avons un seul bateau — Tosunpaşa. 42 mètres de long, 3 ponts, climatisé, nouvelle génération. Le bateau que vous voyez sur nos photos est celui que vous prenez.",
+          "answer_link": "Découvrir Tosunpaşa →",
+          "image_alt": "Vue extérieure de Tosunpaşa"
+        },
+        "s2": {
+          "tag": "02 — Renseignez-vous sur l'agencement des tables",
+          "title": "Comment sont disposées les tables ? Serrées ou spacieuses ?",
+          "body": "Certains opérateurs de « croisière dîner » entassent 300 invités dans un salon prévu pour 200. Vous serez coude à coude avec la table voisine et pourrez à peine bouger votre chaise. Vous ne le verrez pas sur les photos — elles sont prises dans un salon vide.",
+          "ask_label": "Demandez ceci",
+          "q1": "Quel espace minimum de table par personne, en cm ?",
+          "q2": "Y a-t-il assez d'espace entre les tables pour que le serveur passe à l'aise ?",
+          "q3": "Pouvez-vous me montrer la photo d'une soirée complète ?",
+          "answer_label": "Chez nous",
+          "answer_body": "Capacité de 600 invités, agencement spacieux — les serveurs circulent sans contrainte, il y a un vrai espace avec la table voisine. Pas d'entassement.",
+          "image_alt": "Intérieur du salon de Tosunpaşa"
+        },
+        "s3": {
+          "tag": "03 — Renseignez-vous sur le paiement",
+          "title": "Paiement à l'avance ? Coordonnées de carte demandées ?",
+          "body": "La plupart des OTA (Klook, GetYourGuide, Viator) exigent un prépaiement. Votre argent part, la moitié file en commission, et si la croisière est annulée le remboursement prend 7 à 14 jours, souvent davantage.",
+          "ask_label": "Demandez ceci",
+          "q1": "Paiement maintenant ou à bord ?",
+          "q2": "Quelle est la politique d'annulation ? (La plupart des OTA : jusqu'à 24 heures avant.)",
+          "q3": "Combien de temps prend un remboursement ? Dans quelle devise ?",
+          "q4": "Les coordonnées de carte sont-elles obligatoires ?",
+          "answer_label": "Chez nous",
+          "answer_body": "Paiement à bord. Pas de prépaiement, pas de coordonnées de carte. Vous payez en arrivant au bateau. Annulation gratuite jusqu'à 2 heures avant — aucun souci de remboursement, puisqu'il n'y a rien à rembourser."
+        },
+        "s4": {
+          "tag": "04 — Méfiez-vous des avis",
+          "title": "Les avis sont-ils authentiques ? Quand le profil a-t-il été créé ?",
+          "body": "TripAdvisor et Google hébergent des milliers d'avis falsifiés. Signes typiques : un profil récemment ouvert, 50 avis tous 5 étoiles, tous écrits ces 3 derniers mois. Une entreprise réelle a un profil plus ancien, une distribution mixte (3-4-5 étoiles), et le propriétaire répond aux avis négatifs.",
+          "ask_label": "Vérifiez ceci",
+          "q1": "Quel âge a le profil Google ?",
+          "q2": "Les avis se sont-ils accumulés naturellement, ou en bloc ces 2 derniers mois ?",
+          "q3": "Y a-t-il des avis 3-4 étoiles ? Le propriétaire a-t-il répondu ?",
+          "q4": "Plusieurs fiches d'entreprise sous le même nom ? (Astuce courante.)",
+          "answer_label": "Chez nous",
+          "answer_body": "Nous sommes actifs depuis 2014. Nos registres internes recensent 11 317 invités, 4,8★ de moyenne. Notre profil Google est récent (ouvert le 29 avril 2026), les avis publics restent donc peu nombreux. Notre licence TÜRSAB est vérifiable : A-17672."
+        },
+        "s5": {
+          "tag": "05 — Renseignez-vous sur la licence et l'assurance",
+          "title": "Membre de TÜRSAB ? Y a-t-il une assurance ?",
+          "body": "Pour opérer en tant qu'agence de voyages en Türkiye, une licence TÜRSAB (Association des agences de voyages de Türkiye) est requise. Un opérateur non licencié n'est pas légal — en cas d'accident, de plainte ou d'annulation vous n'avez aucun recours juridique. Une licence TÜRSAB seule ne suffit pas ; l'exploitant du bateau doit aussi avoir une assurance passagers.",
+          "ask_label": "Demandez ceci",
+          "q1": "Quel est votre numéro de licence TÜRSAB ? (Format A-XXXXX, vérifiable.)",
+          "q2": "Que couvre l'assurance passagers du bateau ?",
+          "q3": "Quelle assurance intervient en cas d'accident ?",
+          "answer_label": "Chez nous",
+          "answer_body": "TÜRSAB A-17672 — notre licence est vérifiable sur tursab.org.tr. Chaque invité à bord est couvert par l'assurance passagers."
+        },
+        "cta": {
+          "title_pre": "Vous savez maintenant",
+          "title_highlight": "quoi demander",
+          "title_post": ".",
+          "body": "Une fois ces 5 questions posées, il n'est pas difficile de distinguer l'opérateur qui propose un vrai service de celui qui vend simplement des photos. L'opérateur qui répond clairement, ne cache pas son bateau et partage sa licence — c'est votre opérateur.",
+          "button": "Si vous souhaitez regarder de plus près : Tosunpaşa →"
+        },
+        "footer": {
+          "location": "Embarcadère de Kabataş, Istanbul",
+          "copyright": "© 2026 Bosphorus Night — Tous droits réservés."
+        }
+      }
+    },
     "it": { "lang": "it", "dir": "ltr", "slug": "guida-crociera-bosforo", "url_prefix": "it/", "og_locale": "it_IT", "content": null },
     "ru": { "lang": "ru", "dir": "ltr", "slug": "putevoditel-po-bosforu", "url_prefix": "ru/", "og_locale": "ru_RU", "content": null },
     "ar": { "lang": "ar", "dir": "rtl", "slug": "dalil-jawlat-al-busfur", "url_prefix": "ar/", "og_locale": "ar_SA", "content": null },

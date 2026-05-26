@@ -65,10 +65,26 @@ if (urlBlocks.length === 0) {
 
 let sitemap = fs.readFileSync(SITEMAP, 'utf8');
 
-// Idempotency: detect any guide slug already present
-const sampleSlug = langs.tr && langs.tr.slug ? langs.tr.slug : 'bosphorus-cruise-guide';
-if (sitemap.includes(`/${sampleSlug}<`) || sitemap.includes('/bosphorus-cruise-guide<')) {
-  console.log('⚠️  Sitemap already contains guide URLs. Skipping to avoid duplicates.');
+// All guide loc URLs (regardless of whether content currently exists — covers cleanup).
+const allGuideLocs = new Set();
+for (const [code, data] of Object.entries(langs)) {
+  const loc = data.url_prefix
+    ? `${SITE_URL}/${data.url_prefix}${data.slug}`
+    : `${SITE_URL}/${data.slug}`;
+  allGuideLocs.add(loc);
+}
+
+// Strip any existing guide <url> blocks so we can re-insert with current hreflang set.
+const beforeCount = (sitemap.match(/<url>/g) || []).length;
+sitemap = sitemap.replace(/  <url>\s*\n\s*<loc>([^<]+)<\/loc>[\s\S]*?<\/url>\n?/g, (match, loc) => {
+  return allGuideLocs.has(loc) ? '' : match;
+});
+const afterStripCount = (sitemap.match(/<url>/g) || []).length;
+const removed = beforeCount - afterStripCount;
+
+if (urlBlocks.length === 0) {
+  fs.writeFileSync(SITEMAP, sitemap);
+  console.log(`⚠️  No languages with content. Removed ${removed} stale guide URL(s).`);
   process.exit(0);
 }
 
@@ -78,5 +94,5 @@ sitemap = sitemap.replace('</urlset>', `${injection}</urlset>`);
 fs.writeFileSync(SITEMAP, sitemap);
 
 const urlCount = (sitemap.match(/<url>/g) || []).length;
-console.log(`✅ Sitemap updated. Added ${urlBlocks.length} URL(s).`);
+console.log(`✅ Sitemap updated. Removed ${removed} stale guide URL(s), added ${urlBlocks.length} fresh.`);
 console.log(`   Total URLs now: ${urlCount}`);
