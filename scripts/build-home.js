@@ -23,6 +23,7 @@ const { T, LANGUAGES } = require(path.join(ROOT, 'js', 'translations.js'));
 // Hardcoded UI strings (not marked with data-i18n in index.html, or with keys missing from T)
 const HARDCODED_EN = require(path.join(ROOT, 'content', 'ui-translations', '_hardcoded-en.json'));
 const HARDCODED_ALL = require(path.join(ROOT, 'content', 'ui-translations', '_hardcoded-all.json'));
+const SCHEMA_I18N = require('./schema-i18n.js');
 
 // Keep in sync with build-pages.js PRICES.
 // Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
@@ -303,15 +304,18 @@ function buildSchemaLd(lang) {
   // Daytime and Sunset tours deferred — not active products yet (will be added when
   // they become bookable and priced).
 
+  // Per-lang TouristTrip name + description + audience (with EN fallback). Source: scripts/schema-i18n.js.
+  const sPick = (group, field) => SCHEMA_I18N[group][field][lang] || SCHEMA_I18N[group][field].en;
+
   const tourDinnerStd = {
     ...tourBase(
-      'Standard Bosphorus Dinner Cruise',
-      '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 20:30 from Kabataş Pier. Pay on the boat.',
+      sPick('std', 'name'),
+      sPick('std', 'description'),
       24.30,
       'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
       'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       '20:30',
-      'International tourists, couples, families, groups'
+      sPick('std', 'audience')
     ),
     offers: {
       '@type': 'Offer',
@@ -331,13 +335,13 @@ function buildSchemaLd(lang) {
   };
 
   const tourDinnerVip = tourBase(
-    'VIP Bosphorus Dinner Cruise',
-    '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 20:30 from Kabataş Pier.',
+    sPick('vip', 'name'),
+    sPick('vip', 'description'),
     55.20,
     'https://www.bosphorusnight.com/bosphorus-vip',
     'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg',
     '20:30',
-    'Premium travelers, special occasions, VIP guests'
+    sPick('vip', 'audience')
   );
 
   // Dinner cruise SocialEvent with recurring daily schedule + 2 offers (Std + VIP).

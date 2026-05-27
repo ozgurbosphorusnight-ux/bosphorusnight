@@ -158,6 +158,50 @@ license and insurance (TÜRSAB membership, passenger insurance). Each section an
 the question for Bosphorus Night transparently. Schema.org Article markup, hreflang
 to all 32 language variants.
 
+## Blog Posts — Travel Articles (32 languages each, EN URLs listed below)
+
+Long-form travel guides and informational articles. Each post is translated into 32
+languages with localized URL slugs; only the canonical EN URL is listed here.
+For per-language URLs, see sitemap.xml.
+
+- Best Bosphorus dinner cruise in Istanbul (complete buyer's guide):
+  https://www.bosphorusnight.com/blog/best-bosphorus-dinner-cruise-istanbul
+- When is the best time to book a Bosphorus cruise (month-by-month, 2026):
+  https://www.bosphorusnight.com/blog/best-time-bosphorus-cruise
+- Bosphorus cruise with kids — family-friendly guide:
+  https://www.bosphorusnight.com/blog/bosphorus-cruise-with-kids-family
+- Bosphorus sunset cruise — what to expect:
+  https://www.bosphorusnight.com/blog/bosphorus-sunset-cruise-guide
+- Bosphorus cruise tonight — last-minute booking guide:
+  https://www.bosphorusnight.com/blog/istanbul-cruise-tonight-last-minute
+- 10 things to know before your Istanbul boat tour:
+  https://www.bosphorusnight.com/blog/things-to-know-istanbul-boat-tour
+- How to reach Kabataş Pier (walking + transit directions):
+  https://www.bosphorusnight.com/blog/how-to-reach-kabatas-pier
+- What to do near Kabataş Pier before your cruise:
+  https://www.bosphorusnight.com/blog/what-to-do-near-kabatas-pier
+
+Blog index: https://www.bosphorusnight.com/blog/
+
+## City Guide — Istanbul Travel Articles (32 languages)
+
+Practical Istanbul travel content beyond cruises. Each guide localized to 32 languages.
+
+- Things to do in Istanbul at night:
+  https://www.bosphorusnight.com/city-guide/things-to-do-istanbul-at-night
+- Istanbul 3-day itinerary:
+  https://www.bosphorusnight.com/city-guide/istanbul-3-day-itinerary
+- Romantic Istanbul guide:
+  https://www.bosphorusnight.com/city-guide/romantic-istanbul-guide
+- Halal Istanbul guide:
+  https://www.bosphorusnight.com/city-guide/halal-istanbul-guide
+- Best photo spots on the Bosphorus:
+  https://www.bosphorusnight.com/city-guide/best-photo-spots-bosphorus
+- Bosphorus bridges guide:
+  https://www.bosphorusnight.com/city-guide/bosphorus-bridges-guide
+
+City guide index: https://www.bosphorusnight.com/city-guide/
+
 ## Children Policy
 
 - Ages 0–3 (inclusive): free of charge, free transfer
