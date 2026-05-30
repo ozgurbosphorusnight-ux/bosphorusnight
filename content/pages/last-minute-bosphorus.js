@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'fast',
       title: 'Confirmation in under 5 minutes',
-      desc: 'Fill wizard → WhatsApp/Telegram/WeChat message with confirmation → done. No email voucher to wait for, no QR code to print. Our message is your ticket.'
+      desc: 'Fill wizard → WhatsApp/Telegram message with confirmation → done. No email voucher to wait for, no QR code to print. Our message is your ticket.'
     },
     {
       icon: 'pay',

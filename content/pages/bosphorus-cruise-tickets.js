@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'Looking for **Bosphorus cruise tickets**? Buy direct. Our tickets are €{p.dinnerStd} (Standard) or €{p.dinnerVip} (VIP) — 40% off the regular rate (€{p.dinnerStdOriginal} and €{p.dinnerVipOriginal}). Third-party booking sites typically add 20-40% commission. By booking direct, you save — and you can still pay on the boat.',
 
-    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, package, contact), we confirm via WhatsApp / Telegram / WeChat instantly, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
+    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, package, contact), we confirm via WhatsApp / Telegram instantly, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
 
     'Whether you\'re booking tonight\'s dinner cruise or reserving for a specific date next week, **Bosphorus cruise tickets direct** is the fastest way. 4.8★ rated, TÜRSAB-licensed (A-17672), halal-certified menu, and supports hotel transfer and alcohol add-ons.'
   ],
@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'fast',
       title: 'Confirmation in under 1 minute',
-      desc: 'Fill wizard → we confirm via WhatsApp / Telegram / WeChat. No emailed PDF voucher to print. Our message is your ticket. Just show up at the pier at 19:30.'
+      desc: 'Fill wizard → we confirm via WhatsApp / Telegram. No emailed PDF voucher to print. Our message is your ticket. Just show up at the pier at 19:30.'
     },
     {
       icon: 'discount',
@@ -70,11 +70,11 @@ module.exports = {
     },
     {
       q: 'Where can I buy Bosphorus cruise tickets?',
-      a: 'Directly on this page — fill the booking wizard, we confirm instantly via WhatsApp / Telegram / WeChat. Pay on the boat. Third-party platforms (Viator, GetYourGuide, Klook) also sell tickets but typically charge €30-80+ — that\'s middleman markup. Direct is cheapest and fastest.'
+      a: 'Directly on this page — fill the booking wizard, we confirm instantly via WhatsApp / Telegram. Pay on the boat. Third-party platforms (Viator, GetYourGuide, Klook) also sell tickets but typically charge €30-80+ — that\'s middleman markup. Direct is cheapest and fastest.'
     },
     {
       q: 'Do I need to print a Bosphorus cruise ticket?',
-      a: 'No — no physical ticket or voucher needed. After you book, we send you a confirmation via WhatsApp (or Telegram/WeChat) with the meeting point, time, and your reservation name. Just show your phone at the pier. That\'s it.'
+      a: 'No — no physical ticket or voucher needed. After you book, we send you a confirmation via WhatsApp (or Telegram) with the meeting point, time, and your reservation name. Just show your phone at the pier. That\'s it.'
     },
     {
       q: 'Can I cancel or refund my Bosphorus cruise ticket?',

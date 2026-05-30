@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'How do I book the Bosphorus VIP cruise?',
-      a: 'Use the booking wizard on this page — select "VIP" in Step 1, pick your date, enter guest count, then contact details. Your request goes via WhatsApp / Telegram / WeChat and we confirm instantly. Pay on the boat, not now.'
+      a: 'Use the booking wizard on this page — select "VIP" in Step 1, pick your date, enter guest count, then contact details. Your request goes via WhatsApp / Telegram and we confirm instantly. Pay on the boat, not now.'
     },
     {
       q: 'Is the VIP cruise suitable for a business dinner with clients?',

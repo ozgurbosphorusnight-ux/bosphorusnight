@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       q: 'Where does the dinner cruise Istanbul depart from?',
-      a: 'Kabataş Pier, Istanbul — on the European side, next to Dolmabahçe Palace. Exact meeting location is shared via WhatsApp / Telegram / WeChat after booking. Walking videos from Dolmabahçe tram stop and Kabataş tram station on the meeting point section above.'
+      a: 'Kabataş Pier, Istanbul — on the European side, next to Dolmabahçe Palace. Exact meeting location is shared via WhatsApp / Telegram after booking. Walking videos from Dolmabahçe tram stop and Kabataş tram station on the meeting point section above.'
     },
     {
       q: 'How long is the dinner cruise — and what time does it start?',

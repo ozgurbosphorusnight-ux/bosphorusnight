@@ -86,7 +86,7 @@ module.exports = {
     },
     {
       q: 'What if I don\'t speak Turkish — is the tour in English?',
-      a: 'The crew speaks English. Entertainment (whirling dervish, folk dances, music) needs no language. Dinner menu is in English. Booking via WhatsApp / Telegram / WeChat works in multiple languages (English, Arabic, Russian, German, French, Spanish). No Turkish needed.'
+      a: 'The crew speaks English. Entertainment (whirling dervish, folk dances, music) needs no language. Dinner menu is in English. Booking via WhatsApp / Telegram works in multiple languages (English, Arabic, Russian, German, French, Spanish). No Turkish needed.'
     },
     {
       q: 'Is the Bosphorus night tour safe?',
