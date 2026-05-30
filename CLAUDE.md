@@ -45,8 +45,8 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 |---|---|---|---|---|---|---|---|
 | DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ bekleniyor | — |
 | SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ bekleniyor | — |
-| DINNER_STD | Standard Dinner Cruise | 3 saat | 20:30 | €24.30 | €40 | €18 | €6.30 |
-| DINNER_VIP | VIP Dinner Cruise | 3 saat | 20:30 | €55.20 | €90 | €40 | €15.20 |
+| DINNER_STD | Standard Dinner Cruise | 3 saat | 20:30 | €24.30 | €40.50 | €18 | €6.30 |
+| DINNER_VIP | VIP Dinner Cruise | 3 saat | 20:30 | €55.20 | €92 | €40 | €15.20 |
 
 > ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse 6 yerde birden güncelle:
 > 1. AI prompt: `src/claude/system-prompt.js` 4 yer
