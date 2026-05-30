@@ -5,6 +5,6 @@ export default function middleware(req) {
 
   // app.bosphorusnight.com → panel login sayfasına yönlendir
   if (host.startsWith('app.')) {
-    return Response.redirect(new URL('/panel/login.html', req.url), 302);
+    return Response.redirect('https://panel.bosphorusnight.com', 302);
   }
 }

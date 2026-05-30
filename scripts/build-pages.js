@@ -88,9 +88,9 @@ const SLUGS = [
 // Keep in sync with build-home.js PRICES.
 const PRICES = {
   dinnerStd: '24.30',
-  dinnerStdOriginal: 40,
+  dinnerStdOriginal: 40.5,
   dinnerVip: '55.20',
-  dinnerVipOriginal: 90,
+  dinnerVipOriginal: 92,
   alcohol2: 15,
   unlimited: 30,
   transfer: 10,

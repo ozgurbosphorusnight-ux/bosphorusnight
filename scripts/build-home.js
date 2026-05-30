@@ -30,7 +30,7 @@ const SCHEMA_I18N = require('./schema-i18n.js');
 // Bug #1 sync: schema + UI placeholders use these literals → drift olmasın diye DB ile aynı.
 // dinner fiyatları STRING (€24.30 trailing zero korunsun, Number(24.30).toString()=='24.3').
 const PRICES = {
-  dinnerStd: '24.30', dinnerStdOriginal: 40, dinnerVip: '55.20', dinnerVipOriginal: 90,
+  dinnerStd: '24.30', dinnerStdOriginal: 40.5, dinnerVip: '55.20', dinnerVipOriginal: 92,
   alcohol2: 15, unlimited: 30, transfer: 10, romantic: 15
 };
 // Replaces {p.key} placeholders + literal €24/€55 mentions left in legacy translations.

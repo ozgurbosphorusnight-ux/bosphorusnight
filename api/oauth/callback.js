@@ -6,11 +6,11 @@ export default async function handler(req, res) {
   const { code, error } = req.query;
 
   if (error) {
-    return res.status(400).send(`OAuth hatası: ${error}. <a href="/panel/admin.html">Geri dön</a>`);
+    return res.status(400).send(`OAuth hatası: ${error}. <a href="https://panel.bosphorusnight.com">Geri dön</a>`);
   }
 
   if (!code) {
-    return res.status(400).send('Kod bulunamadı. <a href="/panel/admin.html">Geri dön</a>');
+    return res.status(400).send('Kod bulunamadı. <a href="https://panel.bosphorusnight.com">Geri dön</a>');
   }
 
   try {
@@ -30,7 +30,7 @@ export default async function handler(req, res) {
     const tokenData = await tokenRes.json();
 
     if (tokenData.error) {
-      return res.status(400).send(`Token hatası: ${tokenData.error_description}. <a href="/panel/admin.html">Geri dön</a>`);
+      return res.status(400).send(`Token hatası: ${tokenData.error_description}. <a href="https://panel.bosphorusnight.com">Geri dön</a>`);
     }
 
     // Refresh token'ı Supabase'e kaydet
@@ -52,11 +52,11 @@ export default async function handler(req, res) {
         <div style="text-align:center;">
           <h1 style="color:#c9a84c;">✓ Google Ads Bağlandı!</h1>
           <p>Token başarıyla kaydedildi.</p>
-          <a href="/panel/admin.html" style="color:#c9a84c;">Admin Paneline Dön</a>
+          <a href="https://panel.bosphorusnight.com" style="color:#c9a84c;">Admin Paneline Dön</a>
         </div>
       </body></html>
     `);
   } catch (err) {
-    return res.status(500).send(`Hata: ${err.message}. <a href="/panel/admin.html">Geri dön</a>`);
+    return res.status(500).send(`Hata: ${err.message}. <a href="https://panel.bosphorusnight.com">Geri dön</a>`);
   }
 }
