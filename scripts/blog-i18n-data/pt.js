@@ -17,7 +17,8 @@ module.exports = {
     floatingChat: 'Online · Conversar',
     copyright: '© 2026 Bósforo Noturno. Todos os direitos reservados.',
     tursab: 'Samerames Tur Turizm Seyahat Org. ve Reklam Ltd. Sti. · TURSAB A-17672',
-    waHelloText: 'Olá! Gostaria de saber mais sobre o cruzeiro Bósforo Noturno.'
+    waHelloText: 'Olá! Gostaria de saber mais sobre o cruzeiro Bósforo Noturno.',
+    bookBtn: 'Reserve o seu cruzeiro — a partir de €24,30',
   },
   indexData: {
     title: 'Blog — Bósforo Noturno',
