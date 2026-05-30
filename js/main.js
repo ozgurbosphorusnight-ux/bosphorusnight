@@ -1578,7 +1578,7 @@ function calculatePrice() {
     // OTHER TOURS: eski sistem
     const boat = document.getElementById('bookBoat').value;
     const prices = window._activePrices || PRICES;
-    const basePrice = (prices[boat] && prices[boat][pkg]) ? prices[boat][pkg] : 35;
+    const basePrice = (prices[boat] && prices[boat][pkg]) ? prices[boat][pkg] : DINNER_PRICES.standard.base;
 
     total = basePrice * adults;
 
