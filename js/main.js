@@ -2,16 +2,60 @@
 const WA_NUMBER = '905322442922';
 const BRAND_NAME = 'Bosphorus Night';
 
-// ========== ENTRY LANDING TRACKER ==========
-// First page user landed on this session — used as Lead attribution dimension in GA4.
+// ========== ENTRY LANDING + AD ATTRIBUTION TRACKER ==========
+// Captures: first landing page (this session) + ad click IDs (gclid/gbraid/wbraid)
+// + utm params. Used as GA4 Lead dimension AND carried through the wizard handoff
+// → AI → reservation, so we can answer "did this booking come from Google Ads?"
+// and (Phase 2) upload offline conversions back to Google Ads.
+const BN_GCLID_TTL_MS = 90 * 24 * 60 * 60 * 1000; // 90 gün — Google'ın default conversion window'u
 (function trackEntryLanding(){
   try {
     if (!sessionStorage.getItem('bn_entry_landing')) {
       sessionStorage.setItem('bn_entry_landing', location.pathname || '/');
       sessionStorage.setItem('bn_entry_referrer', document.referrer || 'direct');
     }
-  } catch (e) { /* sessionStorage disabled (private mode) — ignore */ }
+    // Ad click IDs — persist in localStorage (survives navigation + return visits within
+    // the window). gclid = standard, gbraid/wbraid = iOS app/web campaigns (different upload field).
+    const params = new URLSearchParams(location.search);
+    const clickId = params.get('gclid') || params.get('gbraid') || params.get('wbraid');
+    if (clickId) {
+      const clickIdType = params.get('gclid') ? 'gclid' : (params.get('gbraid') ? 'gbraid' : 'wbraid');
+      localStorage.setItem('bn_gclid', clickId);
+      localStorage.setItem('bn_gclid_type', clickIdType);
+      localStorage.setItem('bn_gclid_ts', String(Date.now()));
+    }
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(k => {
+      const v = params.get(k);
+      if (v) localStorage.setItem('bn_' + k, v);
+    });
+  } catch (e) { /* storage disabled (private mode) — ignore */ }
 })();
+
+// Read captured attribution as a flat object for wizard handoff payloads.
+// gclid is only returned if still within the 90-day window (else null = treat as organic).
+function bnGetAttribution(){
+  const out = {
+    gclid: null, gclid_type: null,
+    utm_source: null, utm_medium: null, utm_campaign: null, utm_term: null, utm_content: null,
+    landing_page: null, entry_referrer: null,
+  };
+  try {
+    const ts = parseInt(localStorage.getItem('bn_gclid_ts') || '0', 10);
+    if (ts && (Date.now() - ts) < BN_GCLID_TTL_MS) {
+      out.gclid = localStorage.getItem('bn_gclid') || null;
+      out.gclid_type = localStorage.getItem('bn_gclid_type') || null;
+    }
+    out.utm_source = localStorage.getItem('bn_utm_source') || null;
+    out.utm_medium = localStorage.getItem('bn_utm_medium') || null;
+    out.utm_campaign = localStorage.getItem('bn_utm_campaign') || null;
+    out.utm_term = localStorage.getItem('bn_utm_term') || null;
+    out.utm_content = localStorage.getItem('bn_utm_content') || null;
+    out.landing_page = sessionStorage.getItem('bn_entry_landing') || location.pathname;
+    out.entry_referrer = sessionStorage.getItem('bn_entry_referrer') || 'direct';
+  } catch (e) { /* ignore */ }
+  return out;
+}
+window.bnGetAttribution = bnGetAttribution;
 
 // ========== LANGUAGE ==========
 let currentLang = 'en';
@@ -3324,6 +3368,8 @@ function wizBuildSummary() {
             language: currentLang,
             total_eur: total,
             special_request: (document.getElementById('wizSpecialRequest')?.value || '').trim() || null,
+            // Ad attribution — carried into AI so reservation knows its source (Google Ads / organic).
+            attribution: (typeof bnGetAttribution === 'function') ? bnGetAttribution() : null,
           };
           const resp = await fetch('https://api.bosphorusnight.com/wizard/telegram-handoff', {
             method: 'POST',
@@ -3358,6 +3404,28 @@ function wizBuildSummary() {
             entry_referrer: (function(){ try { return sessionStorage.getItem('bn_entry_referrer') || 'direct'; } catch(e) { return 'direct'; } })(),
           });
         }
+        // Attribution prelead — wa.me'de arka kanal yok, o yüzden gclid'i telefonla
+        // eşlenmek üzere backend'e bırak. keepalive: sayfa WhatsApp'a giderken bile
+        // gönderilir. Sadece reklam/utm varsa fire eder (organikte boş kayıt yaratmaz).
+        try {
+          const attribution = (typeof bnGetAttribution === 'function') ? bnGetAttribution() : null;
+          if (attribution && (attribution.gclid || attribution.utm_source)) {
+            fetch('https://api.bosphorusnight.com/wizard/web-lead', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              keepalive: true,
+              body: JSON.stringify({
+                phone: guestPhone,
+                name: guestName,
+                channel: 'whatsapp',
+                language: currentLang,
+                package_code: (wizState.pkg === 'standard' ? 'DINNER_STD' : wizState.pkg === 'vip' ? 'DINNER_VIP' : wizState.pkg),
+                total_eur: total,
+                attribution: attribution,
+              }),
+            }).catch(function(){ /* fire-and-forget */ });
+          }
+        } catch (e) { /* ignore */ }
         if (typeof gtag_report_conversion === 'function') {
           return gtag_report_conversion(ctaLink.href);
         }
