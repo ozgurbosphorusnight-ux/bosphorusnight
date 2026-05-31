@@ -28,9 +28,9 @@ const SCHEMA_I18N = require('./schema-i18n.js');
 // Keep in sync with build-pages.js PRICES.
 // Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
 // Bug #1 sync: schema + UI placeholders use these literals → drift olmasın diye DB ile aynı.
-// dinner fiyatları STRING (€24.30 trailing zero korunsun, Number(24.30).toString()=='24.3').
+// dinner fiyatları STRING. Özgür kararı 31 May: trailing zero YOK → "24.3"/"55.2" göster (CLAUDE.md §3 notu güncellenecek).
 const PRICES = {
-  dinnerStd: '24.30', dinnerStdOriginal: 40.5, dinnerVip: '55.20', dinnerVipOriginal: 92,
+  dinnerStd: '24.3', dinnerStdOriginal: 40.5, dinnerVip: '55.2', dinnerVipOriginal: 92,
   alcohol2: 15, unlimited: 30, transfer: 10, romantic: 15
 };
 // Replaces {p.key} placeholders + literal €24/€55 mentions left in legacy translations.
@@ -319,7 +319,7 @@ function buildSchemaLd(lang) {
     ),
     offers: {
       '@type': 'Offer',
-      price: '24.30',
+      price: '24.3',
       priceCurrency: 'EUR',
       priceValidUntil: '2026-12-31',
       availability: 'https://schema.org/InStock',
@@ -327,7 +327,7 @@ function buildSchemaLd(lang) {
       validFrom: '2026-01-01',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '24.30',
+        price: '24.3',
         priceCurrency: 'EUR',
         referenceQuantity: { '@type': 'QuantitativeValue', value: '1', unitCode: 'E50' }
       }
@@ -402,7 +402,7 @@ function buildSchemaLd(lang) {
       {
         '@type': 'Offer',
         name: 'Standard Package',
-        price: '24.30',
+        price: '24.3',
         priceCurrency: 'EUR',
         url: 'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
         availability: 'https://schema.org/InStock',
@@ -411,7 +411,7 @@ function buildSchemaLd(lang) {
       {
         '@type': 'Offer',
         name: 'VIP Package',
-        price: '55.20',
+        price: '55.2',
         priceCurrency: 'EUR',
         url: 'https://www.bosphorusnight.com/bosphorus-vip',
         availability: 'https://schema.org/InStock',

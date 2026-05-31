@@ -102,6 +102,18 @@ const T = {
     fa: "بدون پیش‌پرداخت — پرداخت روی کشتی", fr: "Aucun prépaiement — Paiement à bord", it: "Nessun anticipo — Pagamento a bordo", zh: "无需预付——船上付款", id: "Tanpa pembayaran di muka — Bayar di kapal", ms: "Tiada bayaran pendahuluan — Bayar di atas bot", pl: "Bez przedpłaty — płatność na pokładzie", bg: "Без предплащане — плащане на борда", ro: "Fără plată în avans — Plata pe vapor", uk: "Без передоплати — Оплата на борту", ja: "事前決済不要 — 船上でお支払い", ko: "선불 결제 없음 — 보트에서 결제하세요", hi: "कोई अग्रिम भुगतान नहीं — नाव पर भुगतान करें", ur: "پیشگی ادائیگی نہیں — کشتی پر ادائیگی کریں",
     cs: "Bez platby předem — Plaťte na palubě", da: "Ingen forudbetaling — Betal om bord", el: "Καμία προπληρωμή — Πληρώνεις στο πλοίο", fi: "Ei ennakkomaksua — maksa laivalla", hu: "Nincs előleg — A hajón fizetsz", lv: "Bez priekšapmaksas — maksā uz kuģa", nl: "Geen vooruitbetaling — Betaal aan boord", no: "Ingen forhåndsbetaling — Betal om bord", pt: "Sem pagamento antecipado — Pagamento a bordo", sk: "Bez platby vopred — Plaťte na palube", sl: "Brez predplačila — Plačaš na ladji", sv: "Ingen förskottsbetalning — Betala ombord"
   },
+  "hero.menuStd": {
+    en: "Standard Menu", tr: "Standart Menü", de: "Standard-Menü", es: "Menú Estándar",
+    ru: "Стандартное меню", ar: "قائمة عادية",
+    fa: "منوی استاندارد", fr: "Menu Standard", it: "Menù Standard", zh: "标准菜单", id: "Menu Standar", ms: "Menu Standard", pl: "Menu standardowe", bg: "Стандартно меню", ro: "Meniu Standard", uk: "Стандартне меню", ja: "スタンダードメニュー", ko: "스탠다드 메뉴", hi: "स्टैंडर्ड मेन्यू", ur: "اسٹینڈرڈ مینو",
+    cs: "Standardní menu", da: "Standardmenu", el: "Κανονικό μενού", fi: "Vakiomenu", hu: "Standard menü", lv: "Standarta ēdienkarte", nl: "Standaardmenu", no: "Standardmeny", pt: "Menu Standard", sk: "Štandardné menu", sl: "Standardni meni", sv: "Standardmeny"
+  },
+  "hero.menuVip": {
+    en: "VIP Menu", tr: "VIP Menü", de: "VIP-Menü", es: "Menú VIP",
+    ru: "VIP-меню", ar: "قائمة VIP",
+    fa: "منوی VIP", fr: "Menu VIP", it: "Menù VIP", zh: "VIP菜单", id: "Menu VIP", ms: "Menu VIP", pl: "Menu VIP", bg: "VIP меню", ro: "Meniu VIP", uk: "VIP-меню", ja: "VIPメニュー", ko: "VIP 메뉴", hi: "वीआईपी मेन्यू", ur: "وی آئی پی مینو",
+    cs: "VIP menu", da: "VIP-menu", el: "Μενού VIP", fi: "VIP-menu", hu: "VIP menü", lv: "VIP ēdienkarte", nl: "VIP-menu", no: "VIP-meny", pt: "Menu VIP", sk: "VIP menu", sl: "VIP meni", sv: "VIP-meny"
+  },
   "meta.home.description": {
     en: "3-hour Bosphorus dinner cruise from €24.30/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.",
     tr: "3 saatlik Boğaz yemekli turu €24.30'dan. Tam menü, Mevlana, halk oyunları, oryantal ve DJ. Kabataş'tan 20:30 kalkış. Otel transfer opsiyonel.",

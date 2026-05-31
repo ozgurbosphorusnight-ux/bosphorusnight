@@ -431,7 +431,7 @@
   </header>
 
   <!-- ========== HERO ========== -->
-  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+  <section id="hero" class="relative min-h-screen flex items-start lg:items-center justify-center overflow-hidden">
     <!-- Background: autoplay video with image poster fallback -->
     <div class="absolute inset-0">
       <video autoplay loop muted playsinline preload="auto"
@@ -454,12 +454,12 @@
     <div id="particles" class="absolute inset-0 pointer-events-none"></div>
 
     <!-- Content -->
-    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto pt-16 sm:pt-20">
-      <div class="inline-block mb-6 px-5 py-2 border border-gold/20 rounded-full bg-gold/5 backdrop-blur-sm">
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto pt-[104px] lg:pt-20">
+      <div class="inline-block mb-2 px-5 py-2 border border-gold/20 rounded-full bg-gold/5 backdrop-blur-sm">
         <span class="text-gold text-xs sm:text-sm font-medium tracking-[0.2em] uppercase" data-i18n="hero.badge">Istanbul's Premium Cruise Experience</span>
       </div>
 
-      <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] mb-6">
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] mb-3">
         <span data-i18n="hero.title1">Luxury Bosphorus</span><br>
         <span class="gradient-text" data-i18n="hero.title2">Dinner Cruise</span>
       </h1>
@@ -468,7 +468,27 @@
         Live entertainment · Dinner · Bosphorus night views · 7/24 instant support
       </p>
 
-      <p class="text-gold/80 text-sm mb-8 font-medium" data-i18n="hero.noprepay">No prepayment — Pay on the boat</p>
+      <!-- Price tags (Standard / VIP menu) — compact, on-theme, clickable → jump to package card below -->
+      <div class="flex flex-row items-stretch justify-center gap-2 mb-5 max-w-[300px] sm:max-w-sm mx-auto">
+        <a href="#card-standard" class="flex-1 rounded-lg border border-gold/30 bg-black/30 backdrop-blur-md hover:bg-gold/10 hover:border-gold/60 transition-all px-2 py-2 text-center">
+          <div class="text-gold/80 text-[9px] sm:text-[10px] font-semibold tracking-[0.12em] uppercase" data-i18n="hero.menuStd">Standard Menu</div>
+          <div class="flex items-baseline justify-center gap-1.5 mt-1">
+            <span class="text-white/30 text-[10px] line-through" data-original-price="DINNER_STD">€40.5</span>
+            <span class="text-gold text-base sm:text-lg font-display font-bold leading-none" data-price="DINNER_STD">€24.3</span>
+            <span class="text-white/40 text-[9px]" data-i18n="dinner.perPerson"> / person</span>
+          </div>
+        </a>
+        <a href="#card-vip" class="flex-1 rounded-lg border border-gold/30 bg-black/30 backdrop-blur-md hover:bg-gold/10 hover:border-gold/60 transition-all px-2 py-2 text-center">
+          <div class="text-gold/80 text-[9px] sm:text-[10px] font-semibold tracking-[0.12em] uppercase" data-i18n="hero.menuVip">VIP Menu</div>
+          <div class="flex items-baseline justify-center gap-1.5 mt-1">
+            <span class="text-white/30 text-[10px] line-through" data-original-price="DINNER_VIP">€92</span>
+            <span class="text-gold text-base sm:text-lg font-display font-bold leading-none" data-price="DINNER_VIP">€55.2</span>
+            <span class="text-white/40 text-[9px]" data-i18n="dinner.perPerson"> / person</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="text-gold/80 text-sm mb-4 font-medium" data-i18n="hero.noprepay">No prepayment — Pay on the boat</p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <button onclick="openMobilePanel('standard')" class="btn-gold w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 cursor-pointer">
@@ -477,12 +497,12 @@
         <a href="#boats" class="btn-outline w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold" data-i18n="hero.cta2">View Cruise</a>
       </div>
 
-      <p class="mt-6 text-white/40 text-xs" data-i18n="hero.departure">Departure from Kabataş · 20:30 – 23:30</p>
-    </div>
+      <p class="mt-3 text-white/40 text-xs" data-i18n="hero.departure">Departure from Kabataş · 20:30 – 23:30</p>
 
-    <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-      <svg class="w-6 h-6 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      <!-- Scroll Indicator — moved directly below the departure line -->
+      <div class="flex justify-center mt-4 animate-bounce">
+        <svg class="w-6 h-6 text-gold/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+      </div>
     </div>
 
     <!-- ========== HERO MEDIA STAGE (desktop right 320px) — video on top under ticker, collage below ========== -->
@@ -669,8 +689,8 @@
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-5">
             <div>
               <span class="text-white/40 text-sm" data-i18n="booking.from">From</span>
-              <span class="text-white/30 text-xl line-through ml-2" data-original-price="DINNER_STD">€40.50</span>
-              <span class="text-gold text-3xl font-display font-bold ml-1" data-price="DINNER_STD">€24</span>
+              <span class="text-white/30 text-xl line-through ml-2" data-original-price="DINNER_STD">€40.5</span>
+              <span class="text-gold text-3xl font-display font-bold ml-1" data-price="DINNER_STD">€24.3</span>
               <span class="text-white/30 text-sm ml-1" data-i18n="booking.perPerson">/ person</span>
             </div>
             <button class="btn-gold explore-btn px-7 py-3 rounded-full text-sm flex items-center gap-2" data-tour="dinner">
@@ -800,7 +820,7 @@
         <div id="dinnerPackagesGrid" class="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
 
           <!-- Standard Package -->
-          <div class="package-card glass-card rounded-2xl p-6 flex flex-col relative overflow-hidden bg-[#152240]">
+          <div id="card-standard" class="package-card glass-card rounded-2xl p-6 flex flex-col relative overflow-hidden bg-[#152240] scroll-mt-28">
             <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/dining-romantic.jpg')"></div>
             <div class="absolute top-4 right-4 z-20 bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg" data-discount-badge="DINNER_STD">40% OFF</div>
             <div class="relative z-10 flex flex-col flex-1">
@@ -846,8 +866,8 @@
               </div>
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-white/10">
                 <div>
-                  <span class="text-white/30 text-xs line-through" data-original-price="DINNER_STD">€40.50</span>
-                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_STD">€24</span>
+                  <span class="text-white/30 text-xs line-through" data-original-price="DINNER_STD">€40.5</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_STD">€24.3</span>
                   <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
                 </div>
                 <button onclick="openMobilePanel('standard')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="Standard">
@@ -858,7 +878,7 @@
           </div>
 
           <!-- VIP Package -->
-          <div class="package-card glass-card rounded-2xl p-6 flex flex-col ring-2 ring-gold/50 relative overflow-hidden bg-[#152240]">
+          <div id="card-vip" class="package-card glass-card rounded-2xl px-6 pb-6 pt-10 flex flex-col ring-2 ring-gold/50 relative overflow-hidden bg-[#152240] scroll-mt-28">
             <div class="absolute inset-0 opacity-[0.06] bg-cover bg-center pointer-events-none" style="background-image: url('assets/tours/dinner/boat-night-bridge.jpg')"></div>
             <div class="absolute top-0 left-1/2 -translate-x-1/2 z-20">
               <div class="px-5 py-1.5 shadow-lg border border-yellow-200/60 rounded-b-lg" style="background: linear-gradient(135deg, #d4b86a, #f0e0a0, #d4b86a);">
@@ -910,7 +930,7 @@
               <div class="flex items-center justify-between mt-auto pt-4 border-t border-gold/20">
                 <div>
                   <span class="text-white/30 text-xs line-through" data-original-price="DINNER_VIP">€92</span>
-                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_VIP">€55</span>
+                  <span class="text-gold text-3xl font-bold font-display ml-1" data-price="DINNER_VIP">€55.2</span>
                   <span class="text-white/40 text-[10px]" data-i18n="dinner.perPerson"> / person</span>
                 </div>
                 <button onclick="openMobilePanel('vip')" class="wa-book px-5 py-2.5 rounded-full font-semibold text-sm bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] cursor-pointer" data-package="VIP">
@@ -935,8 +955,8 @@
                 <thead>
                   <tr class="bg-white/[.04] border-b border-white/10">
                     <th class="text-left p-3 text-gold/80 font-semibold w-1/3" data-i18n="compare.featureLabel">Feature</th>
-                    <th class="text-left p-3 text-white/80 font-semibold"><span data-i18n="compare.std">Standard</span> <span class="text-gold">€24</span></th>
-                    <th class="text-left p-3 text-white/80 font-semibold"><span data-i18n="compare.vip">VIP</span> <span class="text-gold">€55</span></th>
+                    <th class="text-left p-3 text-white/80 font-semibold"><span data-i18n="compare.std">Standard</span> <span class="text-gold">€24.3</span></th>
+                    <th class="text-left p-3 text-white/80 font-semibold"><span data-i18n="compare.vip">VIP</span> <span class="text-gold">€55.2</span></th>
                   </tr>
                 </thead>
                 <tbody class="text-white/70">
@@ -949,7 +969,7 @@
                   <tr class="border-b border-white/5"><td class="p-3 text-white/50" data-i18n="compare.drinks">Soft drinks</td><td class="p-3" data-i18n="compare.drinksVal">Unlimited</td><td class="p-3" data-i18n="compare.drinksVal">Unlimited</td></tr>
                   <tr class="border-b border-white/5"><td class="p-3 text-white/50" data-i18n="compare.payment">Payment</td><td class="p-3" data-i18n="compare.paymentVal">Pay on the boat (no prepayment)</td><td class="p-3" data-i18n="compare.paymentVal">Pay on the boat (no prepayment)</td></tr>
                   <tr class="border-b border-white/5"><td class="p-3 text-white/50" data-i18n="compare.cancellation">Cancellation</td><td class="p-3" data-i18n="compare.cancellationVal">Free up to 2 hours before departure</td><td class="p-3" data-i18n="compare.cancellationVal">Free up to 2 hours before departure</td></tr>
-                  <tr><td class="p-3 text-white/50" data-i18n="compare.price">Price per person</td><td class="p-3"><span class="text-gold text-lg font-bold">€24</span> <span class="text-white/30 text-xs line-through ml-1">€40.50</span></td><td class="p-3 text-gold/90"><span class="text-gold text-lg font-bold">€55</span> <span class="text-white/30 text-xs line-through ml-1">€92</span></td></tr>
+                  <tr><td class="p-3 text-white/50" data-i18n="compare.price">Price per person</td><td class="p-3"><span class="text-gold text-lg font-bold">€24.3</span> <span class="text-white/30 text-xs line-through ml-1">€40.5</span></td><td class="p-3 text-gold/90"><span class="text-gold text-lg font-bold">€55.2</span> <span class="text-white/30 text-xs line-through ml-1">€92</span></td></tr>
                 </tbody>
               </table>
             </div>
@@ -3164,7 +3184,7 @@
     <div>
       <div>
         <span class="text-white/50 text-xs" data-i18n="booking.from">From</span>
-        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1" data-price="DINNER_STD">€24</span>
+        <span id="mobilePrice" class="text-xl font-bold text-gold font-display ml-1" data-price="DINNER_STD">€24.3</span>
         <span class="text-white/30 text-xs ml-1" data-i18n="booking.perPerson">/ person</span>
       </div>
       <p id="mobileBarTourLabel" class="text-gold/50 text-[10px] mt-0.5"></p>

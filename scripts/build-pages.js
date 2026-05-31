@@ -84,12 +84,12 @@ const SLUGS = [
 // Price placeholders. Runtime site also fetches from Supabase via fetchDynamicPrices().
 // Values here are the build-time fallbacks (also used for meta tags / SSR snapshot).
 // Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
-// Dinner fiyatları STRING — €24.30 trailing zero korunsun (Number('24.30').toString()=='24.3').
+// Dinner fiyatları STRING. Özgür kararı 31 May: trailing zero YOK → "24.3"/"55.2".
 // Keep in sync with build-home.js PRICES.
 const PRICES = {
-  dinnerStd: '24.30',
+  dinnerStd: '24.3',
   dinnerStdOriginal: 40.5,
-  dinnerVip: '55.20',
+  dinnerVip: '55.2',
   dinnerVipOriginal: 92,
   alcohol2: 15,
   unlimited: 30,

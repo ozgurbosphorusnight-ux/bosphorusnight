@@ -861,6 +861,9 @@ const DINNER_PRICES = {
   extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
 };
 
+// Format a price for display: drop trailing zeros so it reads cleanly — "24.3", "55.2", "40.5", "92".
+const fmtEuro = (n) => String(Number(n));
+
 // Fetch live prices from Supabase (via /api/public/prices) and apply to DOM + in-memory constants.
 // Runs once on page load. Falls back silently to hardcoded defaults if fetch fails.
 async function fetchDynamicPrices() {
@@ -890,7 +893,7 @@ async function fetchDynamicPrices() {
     document.querySelectorAll('[data-price]').forEach(el => {
       const code = el.dataset.price;
       const entry = pkg[code] || addon[code];
-      if (entry?.price) el.textContent = `€${entry.price}`;
+      if (entry?.price) el.textContent = `€${fmtEuro(entry.price)}`;
     });
 
     // Fill strikethrough prices: <span data-original-price="DINNER_STD">€40</span>
@@ -900,7 +903,7 @@ async function fetchDynamicPrices() {
       const entry = pkg[code];
       if (!entry) return;
       if (entry.original && entry.original > entry.price) {
-        el.textContent = `€${entry.original}`;
+        el.textContent = `€${fmtEuro(entry.original)}`;
         el.style.display = '';
       } else {
         el.style.display = 'none';
@@ -1666,9 +1669,9 @@ function calculatePrice() {
   const bookTotalMobileEl = document.getElementById('bookTotalMobile');
   if (bookTotalMobileEl) bookTotalMobileEl.textContent = `€${total}`;
 
-  // Update mobile bar starting price
-  const minPrice = 24;
-  document.getElementById('mobilePrice').textContent = `€${minPrice}`;
+  // Update mobile bar starting price (DB-synced base, not hardcoded; fmtEuro drops trailing zero → €24.3)
+  const minPrice = DINNER_PRICES.standard.base;
+  document.getElementById('mobilePrice').textContent = `€${fmtEuro(minPrice)}`;
 
   // Update WhatsApp links
   updateWhatsAppLinks(total);
