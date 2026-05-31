@@ -3407,12 +3407,16 @@ function wizBuildSummary() {
             entry_referrer: (function(){ try { return sessionStorage.getItem('bn_entry_referrer') || 'direct'; } catch(e) { return 'direct'; } })(),
           });
         }
-        // Attribution prelead — wa.me'de arka kanal yok, o yüzden gclid'i telefonla
+        // Attribution prelead — wa.me'de arka kanal yok, o yüzden kaynağı telefonla
         // eşlenmek üzere backend'e bırak. keepalive: sayfa WhatsApp'a giderken bile
-        // gönderilir. Sadece reklam/utm varsa fire eder (organikte boş kayıt yaratmaz).
+        // gönderilir. Reklam (gclid/utm) VEYA gerçek referrer (ChatGPT/Google/sosyal)
+        // varsa fire eder — sadece saf "direct"te boş kayıt yaratmaz.
         try {
           const attribution = (typeof bnGetAttribution === 'function') ? bnGetAttribution() : null;
-          if (attribution && (attribution.gclid || attribution.utm_source)) {
+          const _ref = attribution && attribution.entry_referrer ? attribution.entry_referrer : '';
+          const _hasSignal = attribution && (attribution.gclid || attribution.utm_source ||
+            (_ref && _ref !== 'direct' && _ref.indexOf('bosphorusnight') === -1));
+          if (_hasSignal) {
             fetch('https://api.bosphorusnight.com/wizard/web-lead', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
