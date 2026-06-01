@@ -16,6 +16,8 @@ const SITE_URL = 'https://www.bosphorusnight.com';
 const { buildBosphorusItinerary, buildBosphorusMentions } = require('./_wikidata-entities.js');
 const { buildMetaPixelOnly, buildAnalyticsBodyEnd } = require('./_analytics-snippet.js');
 const { buildInlineTScript, replaceTranslationsScriptTag } = require('./_inline-translations.js');
+// Google reviews (cards + stat tokens) — shared with build-home.js, single JSON source.
+const { GREVIEWS, injectGoogleReviews } = require('./_google-reviews.js');
 
 // UI translations (boilerplate: nav, wizard, footer, FAQ, etc.)
 const { T: UI_T } = require(path.join(ROOT, 'js', 'translations.js'));
@@ -96,6 +98,9 @@ const PRICES = {
   transfer: 10,
   romantic: 15
 };
+
+// Google Business Profile rating — ortak _google-reviews.js JSON snapshot'ından (drift yok).
+const RATING = { value: String(GREVIEWS.rating), count: GREVIEWS.reviewCount };
 
 // 5.A Madde 16 — "Best" prefix tablosu (high-intent slug'larda title'a eklenir).
 // Google Related Searches: "Best Bosphorus dinner cruise Istanbul" yıllık arama hacmi
@@ -300,7 +305,20 @@ function buildSchemaLd(page, lang, slug) {
         'https://www.tiktok.com/@bosphorusnight.com',
         'https://www.pinterest.com/bosphorusnight/',
         'https://maps.app.goo.gl/CAGjhxLTBJfGtUas9'
-      ]
+      ],
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: RATING.value,
+        reviewCount: RATING.count,
+        bestRating: '5',
+        worstRating: '1'
+      },
+      review: GREVIEWS.reviews.slice(0, 5).map((r) => ({
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: String(r.rating), bestRating: '5', worstRating: '1' },
+        author: { '@type': 'Person', name: r.name },
+        reviewBody: r.text
+      }))
     },
     offers: {
       '@type': 'Offer',
@@ -312,8 +330,9 @@ function buildSchemaLd(page, lang, slug) {
     },
     itinerary: buildBosphorusItinerary(),
     mentions: buildBosphorusMentions()
-    // aggregateRating intentionally omitted — we add it back once real, verifiable
-    // reviews are collected (Google Business Profile / TripAdvisor / on-site reviews).
+    // aggregateRating lives on provider (TravelAgency = rich-result-eligible LocalBusiness),
+    // not here on TouristTrip (Google review snippet ignores TouristTrip type). Added 1 Jun 2026
+    // once GBP reached 41 verified reviews / 5.0.
   };
 
   // FAQPage schema — include the keyword FAQ for this page
@@ -616,6 +635,9 @@ function buildHtml(slug, lang, template) {
   // resolved at build time, not left for runtime.
   const inlineT = buildInlineTScript(UI_T, LANGUAGES, lang, subPrices);
   html = replaceTranslationsScriptTag(html, inlineT);
+
+  // Real Google reviews (cards + stat tokens) — same section as homepage, all 32 langs.
+  html = injectGoogleReviews(html, lang);
 
   return html;
 }

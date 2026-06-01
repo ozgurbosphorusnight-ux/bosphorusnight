@@ -33,6 +33,10 @@ const PRICES = {
   dinnerStd: '24.3', dinnerStdOriginal: 40.5, dinnerVip: '55.2', dinnerVipOriginal: 92,
   alcohol2: 15, unlimited: 30, transfer: 10, romantic: 15
 };
+// Google Business Profile yorumları — ortak modül (build-pages.js ile paylaşımlı tek kaynak).
+// Veri: assets/data/google-reviews.json. Hetzner cron'u dosyayı tazeler.
+const { GREVIEWS, injectGoogleReviews } = require('./_google-reviews.js');
+const RATING = { value: String(GREVIEWS.rating), count: GREVIEWS.reviewCount };
 // Replaces {p.key} placeholders + literal €24/€55 mentions left in legacy translations.
 // Bug #1 sync — drift kapatma: T sözlüğündeki çevirilerde "€24"/"€55" literal yazılmış olabilir,
 // bunları PRICES'tan canlı değere çek. (?!\.\d|\d) lookahead — sadece "€24.30" / "€243"
@@ -148,7 +152,19 @@ function buildSchemaLd(lang) {
     },
     priceRange: '€20 - €90',
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
-    // aggregateRating intentionally omitted — re-added when real reviews are collected.
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: RATING.value,
+      reviewCount: RATING.count,
+      bestRating: '5',
+      worstRating: '1'
+    },
+    review: GREVIEWS.reviews.slice(0, 5).map((r) => ({
+      '@type': 'Review',
+      reviewRating: { '@type': 'Rating', ratingValue: String(r.rating), bestRating: '5', worstRating: '1' },
+      author: { '@type': 'Person', name: r.name },
+      reviewBody: r.text
+    })),
     sameAs: [
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
@@ -517,6 +533,9 @@ function buildForLang(lang, template) {
   const hreflang = buildHreflang();
   const schemaLd = buildSchemaLd(lang);
   html = html.replace(/(<meta charset="UTF-8">)/, `$1\n${canonical}\n${hreflang}\n${schemaLd}`);
+
+  // Inject real Google reviews (cards + stat tokens) — shared with build-pages.js.
+  html = injectGoogleReviews(html, lang);
 
   // Localize <title>, description, and OpenGraph tags from translation keys.
   const { title, description } = buildMeta(lang);
