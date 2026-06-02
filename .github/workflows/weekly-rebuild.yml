@@ -1,12 +1,13 @@
-name: Weekly Rebuild
+name: Daily Rebuild
 
-# Triggers a fresh Vercel build every Sunday so the Event schema's
-# startDate (tomorrow 20:30 Istanbul) stays in the future for Google.
+# Triggers a fresh Vercel build every day so the Event schema's startDate
+# (tomorrow 20:30 Istanbul) never goes stale for Google, and Google reviews,
+# llms.txt and every page stay fresh daily.
 # Also runnable on-demand via the Actions tab.
 
 on:
   schedule:
-    - cron: '0 3 * * 0'  # Every Sunday 03:00 UTC = 06:00 Istanbul
+    - cron: '0 3 * * *'  # Every day 03:00 UTC = 06:00 Istanbul
   workflow_dispatch:
 
 jobs:
