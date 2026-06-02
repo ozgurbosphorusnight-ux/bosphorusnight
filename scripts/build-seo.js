@@ -122,7 +122,8 @@ ${xDefault}
 
 function blogUrlFor(lang, slug) {
   const prefix = lang === 'en' ? '' : '/' + lang;
-  if (!slug) return SITE_URL + prefix + '/blog/';
+  // Hub URL has no trailing slash (vercel.json trailingSlash:false). Posts: /blog/<slug>.
+  if (!slug) return SITE_URL + prefix + '/blog';
   return SITE_URL + prefix + '/blog/' + slug;
 }
 
@@ -163,7 +164,8 @@ function blogUrlBlockEnOnly(slug) {
 
 function cityGuideUrlFor(lang, slug) {
   const prefix = lang === 'en' ? '' : '/' + lang;
-  if (!slug) return SITE_URL + prefix + '/city-guide/';
+  // Hub URL has no trailing slash (vercel.json trailingSlash:false). Posts: /city-guide/<slug>.
+  if (!slug) return SITE_URL + prefix + '/city-guide';
   return SITE_URL + prefix + '/city-guide/' + slug;
 }
 
