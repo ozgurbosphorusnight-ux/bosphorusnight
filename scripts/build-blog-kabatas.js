@@ -20,6 +20,21 @@ const OUT_ROOT = path.join(ROOT, 'dist');
 const SITE_URL = 'https://www.bosphorusnight.com';
 const TODAY = new Date().toISOString().split('T')[0];
 
+// Localized brand per language (site convention: only the bosphorusnight.com
+// domain stays Latin; the brand reads as "X at Night" in each language). Used
+// for the {{brand}} placeholder (schema author/publisher name, logo alt, footer).
+// en omitted → falls back to Latin "Bosphorus Night".
+const BRAND = {
+  tr: 'Boğaz Gecesi', de: 'Bosporus-Nacht', es: 'Noche del Bósforo', fr: 'Soirée Bosphore',
+  it: 'Notte sul Bosforo', ru: 'Босфорская ночь', ar: 'ليلة البوسفور', fa: 'شب بسفر',
+  zh: '博斯普鲁斯之夜', id: 'Malam Bosphorus', ms: 'Malam Bosphorus', pl: 'Noc nad Bosforem',
+  bg: 'Босфорска нощ', ro: 'Noaptea Bosforului', uk: 'Босфорська ніч', pt: 'Bósforo Noturno',
+  nl: 'Bosporus bij Nacht', cs: 'Bospor v noci', hu: 'Boszporusz Éjszaka', sv: 'Bosporen om natten',
+  da: 'Bosporus om natten', no: 'Bosporos om natten', fi: 'Bosporinsalmen yöt', sk: 'Bospor v noci',
+  el: 'Βόσπορος τη Νύχτα', sl: 'Bospor ponoči', lv: 'Bosfors naktī', ja: 'ボスポラスの夜',
+  ko: '보스포루스의 밤', hi: 'बॉस्फोरस की रात', ur: 'باسفورس کی رات',
+};
+
 function resolveKey(obj, dottedKey) {
   return dottedKey.split('.').reduce((acc, k) => (acc == null ? acc : acc[k]), obj);
 }
@@ -89,6 +104,7 @@ function renderTemplate(template, langData, otherPostUrl, hreflangBlock, heroIma
   // Single-segment placeholders
   html = html.replace(/\{\{([\w]+)\}\}/g, (match, key) => {
     if (key === 'lang') return langData.lang;
+    if (key === 'brand') return BRAND[langData.lang] || 'Bosphorus Night';
     if (key === 'dir') return langData.dir;
     if (key === 'slug') return langData.slug;
     if (key === 'url_prefix') return langData.url_prefix;
