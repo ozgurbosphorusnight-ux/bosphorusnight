@@ -154,21 +154,25 @@ const OG_LOCALES = {
   sl: 'sl_SI', lv: 'lv_LV'
 };
 
-// Source has og:locale=en_US + 14 alternates. For non-EN builds, swap:
-// primary → current locale, the current lang's alternate → en_US.
-function swapOgLocale(html, lang) {
-  if (lang === 'en') return html;
-  const current = OG_LOCALES[lang];
-  if (!current) return html;
-  html = html.replace(
-    /<meta property="og:locale" content="en_US">/,
-    `<meta property="og:locale" content="${current}">`
+// Rebuild the whole og:locale block from all 32 languages: primary = current lang,
+// the other 31 as alternates. Source index.html hardcodes only 14 alternates; the old
+// swap-only logic left 17 newer langs (and en_US on those pages) missing. Generating
+// from OG_LOCALES keeps this in lockstep with LANGUAGES.
+function buildOgLocaleBlock(lang) {
+  const primary = OG_LOCALES[lang] || 'en_US';
+  const lines = [`  <meta property="og:locale" content="${primary}">`];
+  for (const l of Object.keys(LANGUAGES)) {
+    if (l === lang || !OG_LOCALES[l]) continue;
+    lines.push(`  <meta property="og:locale:alternate" content="${OG_LOCALES[l]}">`);
+  }
+  return lines.join('\n');
+}
+
+function injectOgLocale(html, lang) {
+  return html.replace(
+    /[ \t]*<meta property="og:locale" content="[^"]*">\r?\n(?:[ \t]*<meta property="og:locale:alternate" content="[^"]*">\r?\n)*/,
+    buildOgLocaleBlock(lang) + '\n'
   );
-  html = html.replace(
-    new RegExp(`<meta property="og:locale:alternate" content="${current}">`),
-    `<meta property="og:locale:alternate" content="en_US">`
-  );
-  return html;
 }
 
 // Bug #1 sync: T çevirilerinde literal "€24"/"€55" kalmış olabilir → PRICES'tan canlı çek.
@@ -626,8 +630,8 @@ function buildHtml(slug, lang, template) {
     html = swapFloatingWaToRtl(html);
   }
 
-  // Swap og:locale for non-EN languages
-  html = swapOgLocale(html, lang);
+  // Rebuild og:locale block from all 32 languages (primary = current lang)
+  html = injectOgLocale(html, lang);
 
   // Replace external <script src="/js/translations.js"></script> (671 KB) with
   // an inline bootstrap that exposes only this page's language + EN fallback.

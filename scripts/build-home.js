@@ -87,21 +87,42 @@ const OG_LOCALES = {
   sl: 'sl_SI', lv: 'lv_LV'
 };
 
-// Source has og:locale=en_US + 14 alternates. For non-EN builds, swap: primary
-// becomes current lang's locale, the current lang's alternate becomes en_US.
-function swapOgLocale(html, lang) {
-  if (lang === 'en') return html;
-  const current = OG_LOCALES[lang];
-  if (!current) return html;
-  html = html.replace(
-    /<meta property="og:locale" content="en_US">/,
-    `<meta property="og:locale" content="${current}">`
+// English names for schema.org Organization.contactPoint.availableLanguage.
+// Generated from LANGUAGES so it stays in sync (was hardcoded to 15, site has 32).
+const LANG_NAMES = {
+  en: 'English', tr: 'Turkish', de: 'German', es: 'Spanish', ru: 'Russian',
+  ar: 'Arabic', fa: 'Persian', fr: 'French', it: 'Italian', zh: 'Chinese',
+  id: 'Indonesian', ms: 'Malay', pl: 'Polish', bg: 'Bulgarian', ro: 'Romanian',
+  uk: 'Ukrainian', hi: 'Hindi', ur: 'Urdu', ja: 'Japanese', ko: 'Korean',
+  pt: 'Portuguese', nl: 'Dutch', el: 'Greek', cs: 'Czech', hu: 'Hungarian',
+  sv: 'Swedish', da: 'Danish', no: 'Norwegian', fi: 'Finnish', sk: 'Slovak',
+  sl: 'Slovenian', lv: 'Latvian'
+};
+const AVAILABLE_LANGUAGES = Object.keys(LANGUAGES).map((l) => LANG_NAMES[l] || l);
+
+// Wikidata knowledge-graph entity for the brand (reciprocal link so Google/AI can
+// resolve "Bosphorus Night" to its entity — referenced in llms.txt too).
+const WIKIDATA_ENTITY = 'https://www.wikidata.org/wiki/Q139595356';
+
+// Rebuild the whole og:locale block from all 32 languages: primary = current lang,
+// the other 31 as alternates. Source index.html only hardcodes 14 alternates and the
+// old swap-only logic left 17 newer langs (and en_US on those pages) missing from
+// the alternate list. Generating from OG_LOCALES keeps this in lockstep with LANGUAGES.
+function buildOgLocaleBlock(lang) {
+  const primary = OG_LOCALES[lang] || 'en_US';
+  const lines = [`  <meta property="og:locale" content="${primary}">`];
+  for (const l of Object.keys(LANGUAGES)) {
+    if (l === lang || !OG_LOCALES[l]) continue;
+    lines.push(`  <meta property="og:locale:alternate" content="${OG_LOCALES[l]}">`);
+  }
+  return lines.join('\n');
+}
+
+function injectOgLocale(html, lang) {
+  return html.replace(
+    /[ \t]*<meta property="og:locale" content="[^"]*">\r?\n(?:[ \t]*<meta property="og:locale:alternate" content="[^"]*">\r?\n)*/,
+    buildOgLocaleBlock(lang) + '\n'
   );
-  html = html.replace(
-    new RegExp(`<meta property="og:locale:alternate" content="${current}">`),
-    `<meta property="og:locale:alternate" content="en_US">`
-  );
-  return html;
 }
 
 function buildHreflang() {
@@ -128,6 +149,7 @@ function buildSchemaLd(lang) {
   const business = {
     '@context': 'https://schema.org',
     '@type': 'TravelAgency',
+    '@id': WIKIDATA_ENTITY,
     name: 'Bosphorus Night',
     url,
     inLanguage: lang,
@@ -166,6 +188,7 @@ function buildSchemaLd(lang) {
       reviewBody: r.text
     })),
     sameAs: [
+      'https://www.wikidata.org/wiki/Q139595356',
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
       'https://www.youtube.com/@BosphorusNightTour',
@@ -187,9 +210,10 @@ function buildSchemaLd(lang) {
       '@type': 'ContactPoint',
       telephone: '+90 532 244 29 22',
       contactType: 'customer service',
-      availableLanguage: ['English', 'Turkish', 'Arabic', 'Russian', 'German', 'Spanish', 'French', 'Italian', 'Chinese', 'Persian', 'Indonesian', 'Malay', 'Polish', 'Bulgarian', 'Romanian']
+      availableLanguage: AVAILABLE_LANGUAGES
     },
     sameAs: [
+      'https://www.wikidata.org/wiki/Q139595356',
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
       'https://www.youtube.com/@BosphorusNightTour',
@@ -279,6 +303,7 @@ function buildSchemaLd(lang) {
       value: 'A-17672'
     },
     sameAs: [
+      'https://www.wikidata.org/wiki/Q139595356',
       'https://wa.me/905322442922',
       'https://t.me/BosphorusnightReservation_Bot',
       'https://www.youtube.com/@BosphorusNightTour',
@@ -362,7 +387,7 @@ function buildSchemaLd(lang) {
 
   // Dinner cruise SocialEvent with recurring daily schedule + 2 offers (Std + VIP).
   // startDate = tomorrow 20:30 local (Europe/Istanbul = +03:00), refreshed on every build.
-  // A weekly auto-rebuild (GitHub Actions) keeps this evergreen for Google Events rich results.
+  // A daily auto-rebuild (GitHub Actions cron) keeps this evergreen for Google Events rich results.
   const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const tomorrowDate = tomorrow.toISOString().split('T')[0];
 
@@ -434,7 +459,7 @@ function buildSchemaLd(lang) {
         validFrom: '2026-01-01'
       }
     ],
-    // Evergreen schedule: bugünden 1 yıl ileri. Build her hafta yenilenir
+    // Evergreen schedule: bugünden 1 yıl ileri. Build her gün yenilenir
     // (GitHub Actions cron) — 2027'de "etkinlik bitti" sorunu yaşanmaz.
     eventSchedule: {
       '@type': 'Schedule',
@@ -594,8 +619,8 @@ function buildForLang(lang, template) {
   // Translate hardcoded English strings that lack data-i18n
   html = translateHardcoded(html, lang);
 
-  // Swap og:locale for non-EN languages
-  html = swapOgLocale(html, lang);
+  // Rebuild og:locale block from all 32 languages (primary = current lang)
+  html = injectOgLocale(html, lang);
 
   // Replace external <script src="/js/translations.js"></script> (671 KB) with
   // an inline bootstrap that exposes only this page's language + EN fallback.
