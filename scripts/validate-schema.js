@@ -28,6 +28,7 @@ const KNOWN_TYPES = new Set([
   'Offer', 'PriceSpecification', 'UnitPriceSpecification', 'QuantitativeValue',
   'PerformingGroup', 'Schedule', 'SearchAction', 'WebPage',
   'ItemList', 'CreativeWork', 'Person', 'PropertyValue',
+  'Review', 'Rating', 'AggregateRating', 'BoatTrip',
 ]);
 
 // Minimal required fields per @type (Google Rich Results essentials).

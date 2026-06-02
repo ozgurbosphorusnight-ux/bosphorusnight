@@ -444,7 +444,27 @@ function buildSchemaLd(lang) {
     }
   };
 
-  return [business, organization, website, ...videos, heroImage, tourDinnerStd, tourDinnerVip, dinnerEvent]
+  // FAQPage schema — built from the homepage's visible FAQ (faq.qN/faq.aN), localized.
+  // Content is already on the page (id="faq"), so this is Google-compliant + no visual change.
+  const faqKeys = Object.keys(T)
+    .filter((k) => /^faq\.q\d+$/.test(k))
+    .sort((a, b) => Number(a.slice(5)) - Number(b.slice(5)));
+  const faqMainEntity = faqKeys.map((qKey) => {
+    const i = qKey.slice(5);
+    const qRaw = (T[qKey] && (T[qKey][lang] || T[qKey].en)) || '';
+    const aRaw = (T['faq.a' + i] && (T['faq.a' + i][lang] || T['faq.a' + i].en)) || '';
+    const q = subPrices(qRaw).replace(/<[^>]+>/g, '').trim();
+    const a = subPrices(aRaw).replace(/<[^>]+>/g, '').trim();
+    return q && a
+      ? { '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } }
+      : null;
+  }).filter(Boolean);
+  const faqSchema = faqMainEntity.length
+    ? { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqMainEntity }
+    : null;
+
+  return [business, organization, website, ...videos, heroImage, tourDinnerStd, tourDinnerVip, dinnerEvent, faqSchema]
+    .filter(Boolean)
     .map((b) => `<script type="application/ld+json">\n${JSON.stringify(b, null, 2)}\n</script>`)
     .join('\n');
 }
