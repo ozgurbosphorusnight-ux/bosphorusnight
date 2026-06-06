@@ -12,7 +12,7 @@ const path = require('path');
 
 // ========== CONFIGURATION ==========
 const SITE_URL = 'https://bosphorusnight.com';
-const WA_NUMBER = '905528881888';
+const WA_NUMBER = '905322442922';
 const GA_ID = 'AW-18073952031';
 const OUTPUT_DIR = path.join(__dirname, '..', 'cruises');
 
