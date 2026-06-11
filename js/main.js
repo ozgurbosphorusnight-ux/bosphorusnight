@@ -84,8 +84,8 @@ function substitutePricePlaceholders(text) {
   const addons = d.addons || {};
   const packages = d.packages || {};
   const map = {
-    'p.alcohol2':    addons.ALCOHOL_2GLASS?.price     ?? 15,
-    'p.unlimited':   addons.ALCOHOL_UNLIMITED?.price  ?? 30,
+    'p.alcohol2':    addons.ALCOHOL_2GLASS?.price     ?? 10,
+    'p.unlimited':   addons.ALCOHOL_UNLIMITED?.price  ?? 25,
     'p.transfer':    addons.HOTEL_TRANSFER?.price     ?? 10,
     'p.romantic':    addons.ROMANTIC_TABLE?.price     ?? 15,
     'p.dinnerStd':   packages.DINNER_STD?.price       ?? 24.3,
@@ -858,7 +858,7 @@ const PRICES = {
 const DINNER_PRICES = {
   standard: { base: 24.3, oldPrice: 40.5 },
   vip:      { base: 55.2, oldPrice: 92 },
-  extras: { glass2: 15, unlimited: 30, transfer: 10, romantic: 15 }
+  extras: { glass2: 10, unlimited: 25, transfer: 10, romantic: 15 }
 };
 
 // Format a price for display: drop trailing zeros so it reads cleanly — "24.3", "55.2", "40.5", "92".

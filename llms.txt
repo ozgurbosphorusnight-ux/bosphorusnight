@@ -39,8 +39,8 @@ the website wizard, in 32 languages.
 
 ## Add-ons (delta pricing on top of base tour)
 
-- 2 glasses of alcohol: +€15/person
-- Unlimited alcohol: +€30/person
+- 2 glasses of alcohol: +€10/person
+- Unlimited alcohol: +€25/person
 - Hotel transfer (Sultanahmet, Taksim, Beyoğlu, Beşiktaş, Sirkeci, Eminönü, Karaköy zones): +€10/person
 - Romantic table arrangement (flowers, candles): +€15/booking
 

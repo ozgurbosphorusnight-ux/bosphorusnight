@@ -31,7 +31,7 @@ const SCHEMA_I18N = require('./schema-i18n.js');
 // dinner fiyatları STRING. Özgür kararı 31 May: trailing zero YOK → "24.3"/"55.2" göster (CLAUDE.md §3 notu güncellenecek).
 const PRICES = {
   dinnerStd: '24.3', dinnerStdOriginal: 40.5, dinnerVip: '55.2', dinnerVipOriginal: 92,
-  alcohol2: 15, unlimited: 30, transfer: 10, romantic: 15
+  alcohol2: 10, unlimited: 25, transfer: 10, romantic: 15
 };
 // Google Business Profile yorumları — ortak modül (build-pages.js ile paylaşımlı tek kaynak).
 // Veri: assets/data/google-reviews.json. Hetzner cron'u dosyayı tazeler.

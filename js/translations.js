@@ -3123,20 +3123,20 @@ const T = {
   "wizard.glass2": {
     en: "2 Glasses +€{p.alcohol2}",
     tr: "2 Kadeh +€{p.alcohol2}",
-    de: "2 Gläser +7 €",
-    es: "2 copas +7 €",
-    ru: "2 бокала +7 €",
-    ar: "كأسان +٧€",
+    de: "2 Gläser +€{p.alcohol2}",
+    es: "2 copas +€{p.alcohol2}",
+    ru: "2 бокала +€{p.alcohol2}",
+    ar: "كأسان +€{p.alcohol2}",
     fa: "۲ لیوان +€{p.alcohol2}", fr: "2 verres +€{p.alcohol2}", it: "2 bicchieri +€{p.alcohol2}", zh: "2杯酒+€{p.alcohol2}", id: "2 Gelas +€{p.alcohol2}", ms: "2 Gelas +€{p.alcohol2}", pl: "2 kieliszki +€{p.alcohol2}", bg: "2 чаши +€{p.alcohol2}", ro: "2 Pahare +€{p.alcohol2}", uk: "2 келихи +€{p.alcohol2}", ja: "グラス2杯 +€{p.alcohol2}", ko: "2잔 +€{p.alcohol2}", hi: "2 ग्लास +€{p.alcohol2}", ur: "2 گلاس +€{p.alcohol2}",
     cs: "2 sklenice +€{p.alcohol2}", da: "2 glas +€{p.alcohol2}", el: "2 ποτήρια +€{p.alcohol2}", fi: "2 lasia +€{p.alcohol2}", hu: "2 pohár +€{p.alcohol2}", lv: "2 glāzes +€{p.alcohol2}", nl: "2 glazen +€{p.alcohol2}", no: "2 glass +€{p.alcohol2}", pt: "2 Copos +€{p.alcohol2}", sk: "2 poháre +€{p.alcohol2}", sl: "2 kozarca +€{p.alcohol2}", sv: "2 glas +€{p.alcohol2}"
   },
   "wizard.unlimited": {
     en: "Unlimited +€{p.unlimited}",
     tr: "Sınırsız +€{p.unlimited}",
-    de: "Unbegrenzt +15 €",
-    es: "Ilimitado +15 €",
-    ru: "Безлимит +15 €",
-    ar: "غير محدود +١٥€",
+    de: "Unbegrenzt +€{p.unlimited}",
+    es: "Ilimitado +€{p.unlimited}",
+    ru: "Безлимит +€{p.unlimited}",
+    ar: "غير محدود +€{p.unlimited}",
     fa: "نامحدود +€{p.unlimited}", fr: "Illimité +€{p.unlimited}", it: "Illimitato +€{p.unlimited}", zh: "无限畅饮+€{p.unlimited}", id: "Tanpa Batas +€{p.unlimited}", ms: "Tanpa Had +€{p.unlimited}", pl: "Nieograniczone +€{p.unlimited}", bg: "Неограничено +€{p.unlimited}", ro: "Nelimitat +€{p.unlimited}", uk: "Необмежено +€{p.unlimited}", ja: "飲み放題 +€{p.unlimited}", ko: "무제한 +€{p.unlimited}", hi: "असीमित +€{p.unlimited}", ur: "لامحدود +€{p.unlimited}",
     cs: "Neomezené +€{p.unlimited}", da: "Ubegrænset +€{p.unlimited}", el: "Απεριόριστα +€{p.unlimited}", fi: "Rajaton +€{p.unlimited}", hu: "Korlátlan +€{p.unlimited}", lv: "Neierobežoti +€{p.unlimited}", nl: "Onbeperkt +€{p.unlimited}", no: "Ubegrenset +€{p.unlimited}", pt: "Ilimitado +€{p.unlimited}", sk: "Neobmedzené +€{p.unlimited}", sl: "Neomejeno +€{p.unlimited}", sv: "Obegränsat +€{p.unlimited}"
   },
@@ -3435,10 +3435,10 @@ const T = {
   "wizard.glass2Note": {
     en: "+€{p.alcohol2}/person · Wine, beer, rakı, vodka, or gin",
     tr: "+€{p.alcohol2}/kişi · Şarap, bira, rakı, vodka veya cin",
-    de: "+15 €/Person · Wein, Bier, Rakı, Wodka oder Gin",
-    es: "+15 €/persona · Vino, cerveza, rakı, vodka o ginebra",
-    ru: "+15 €/чел. · Вино, пиво, ракы, водка или джин",
-    ar: "+١٥€/شخص · نبيذ أو بيرة أو عرق أو فودكا أو جن",
+    de: "+€{p.alcohol2}/Person · Wein, Bier, Rakı, Wodka oder Gin",
+    es: "+€{p.alcohol2}/persona · Vino, cerveza, rakı, vodka o ginebra",
+    ru: "+€{p.alcohol2}/чел. · Вино, пиво, ракы, водка или джин",
+    ar: "+€{p.alcohol2}/شخص · نبيذ أو بيرة أو عرق أو فودكا أو جن",
     fa: "+€{p.alcohol2}/نفر · شراب، آبجو، راکی، ودکا یا جین", fr: "+€{p.alcohol2}/personne · vin, bière, rakı, vodka ou gin", it: "+€{p.alcohol2}/persona · Vino, birra, rakı, vodka o gin", zh: "+€{p.alcohol2}／人 · 葡萄酒、啤酒、拉克酒、伏特加或金酒", id: "+€{p.alcohol2}/orang · Anggur, bir, rakı, vodka, atau gin", ms: "+€{p.alcohol2}/orang · Wain, bir, rakı, vodka atau gin", pl: "+€{p.alcohol2}/osobę · Wino, piwo, rakı, wódka lub gin", bg: "+€{p.alcohol2}/човек · вино, бира, ракъ, водка или джин", ro: "+€{p.alcohol2}/persoană · Vin, bere, rachiu, vodcă sau gin", uk: "+€{p.alcohol2}/особа &middot; Вино, пиво, ракі, горілка або джин", ja: "+€{p.alcohol2}/お一人様 &middot; ワイン、ビール、ラク、ウォッカ、またはジン", ko: "+€{p.alcohol2}/인 &middot; 와인, 맥주, 라크, 보드카 또는 진", hi: "+€{p.alcohol2}/व्यक्ति &middot; वाइन, बीयर, राकी, वोदका, या जिन", ur: "+€{p.alcohol2}/فی شخص &middot; شراب، بیئر، راکی، ووڈکا، یا جن",
     cs: "+€{p.alcohol2}/osoba · Víno, pivo, rakı, vodka nebo gin", da: "+€{p.alcohol2}/person · Vin, øl, rakı, vodka eller gin", el: "+€{p.alcohol2}/άτομο · Κρασί, μπύρα, ρακή, βότκα ή τζιν", fi: "+€{p.alcohol2}/henkilö · Viini, olut, rakı, vodka tai gin", hu: "+€{p.alcohol2}/fő · Bor, sör, rakı, vodka vagy gin", lv: "+€{p.alcohol2}/personai · Vīns, alus, rakı, degvīns vai džins", nl: "+€{p.alcohol2}/persoon · Wijn, bier, rakı, wodka of gin", no: "+€{p.alcohol2}/person · Vin, øl, rakı, vodka eller gin", pt: "+€{p.alcohol2}/pessoa · Vinho, cerveja, rakı, vodka ou gin", sk: "+€{p.alcohol2}/osoba · Víno, pivo, rakı, vodka alebo gin", sl: "+€{p.alcohol2}/oseba · Vino, pivo, rakija, vodka ali gin", sv: "+€{p.alcohol2}/person · Vin, öl, rakı, vodka eller gin"
   },
@@ -3455,10 +3455,10 @@ const T = {
   "wizard.unlimitedNote": {
     en: "+€{p.unlimited}/person · Wine, beer, rakı, vodka, gin all night",
     tr: "+€{p.unlimited}/kişi · Gece boyunca şarap, bira, rakı, vodka, cin",
-    de: "+30 €/Person · Wein, Bier, Rakı, Wodka, Gin die ganze Nacht",
-    es: "+30 €/persona · Vino, cerveza, rakı, vodka, ginebra toda la noche",
-    ru: "+30 €/чел. · Вино, пиво, ракы, водка, джин всю ночь",
-    ar: "+٣٠€/شخص · نبيذ وبيرة وعرق وفودكا وجن طوال الليل",
+    de: "+€{p.unlimited}/Person · Wein, Bier, Rakı, Wodka, Gin die ganze Nacht",
+    es: "+€{p.unlimited}/persona · Vino, cerveza, rakı, vodka, ginebra toda la noche",
+    ru: "+€{p.unlimited}/чел. · Вино, пиво, ракы, водка, джин всю ночь",
+    ar: "+€{p.unlimited}/شخص · نبيذ وبيرة وعرق وفودكا وجن طوال الليل",
     fa: "+€{p.unlimited}/نفر · شراب، آبجو، راکی، ودکا و جین در تمام شب", fr: "+€{p.unlimited}/personne · vin, bière, rakı, vodka, gin toute la soirée", it: "+€{p.unlimited}/persona · Vino, birra, rakı, vodka, gin tutta la notte", zh: "+€{p.unlimited}／人 · 整晚无限畅饮葡萄酒、啤酒、拉克酒、伏特加、金酒", id: "+€{p.unlimited}/orang · Anggur, bir, rakı, vodka, gin sepanjang malam", ms: "+€{p.unlimited}/orang · Wain, bir, rakı, vodka, gin sepanjang malam", pl: "+€{p.unlimited}/osobę · Wino, piwo, rakı, wódka, gin całą noc", bg: "+€{p.unlimited}/човек · вино, бира, ракъ, водка, джин цяла нощ", ro: "+€{p.unlimited}/persoană · Vin, bere, rachiu, vodcă, gin toată noaptea", uk: "+€{p.unlimited}/особа &middot; Вино, пиво, ракі, горілка, джин весь вечір", ja: "+€{p.unlimited}/お一人様 &middot; ワイン、ビール、ラク、ウォッカ、ジンを終夜お楽しみいただけます", ko: "+€{p.unlimited}/인 &middot; 와인, 맥주, 라크, 보드카, 진 밤새 무제한", hi: "+€{p.unlimited}/व्यक्ति &middot; वाइन, बीयर, राकी, वोदका, जिन पूरी रात", ur: "+€{p.unlimited}/فی شخص &middot; شراب، بیئر، راکی، ووڈکا، جن پوری رات",
     cs: "+€{p.unlimited}/osoba · Víno, pivo, rakı, vodka, gin celou noc", da: "+€{p.unlimited}/person · Vin, øl, rakı, vodka, gin hele aftenen", el: "+€{p.unlimited}/άτομο · Κρασί, μπύρα, ρακή, βότκα, τζιν όλη τη νύχτα", fi: "+€{p.unlimited}/henkilö · Viini, olut, rakı, vodka, gin koko illan", hu: "+€{p.unlimited}/fő · Bor, sör, rakı, vodka, gin egész este", lv: "+€{p.unlimited}/personai · Vīns, alus, rakı, degvīns, džins visu vakaru", nl: "+€{p.unlimited}/persoon · Wijn, bier, rakı, wodka, gin de hele avond", no: "+€{p.unlimited}/person · Vin, øl, rakı, vodka, gin hele kvelden", pt: "+€{p.unlimited}/pessoa · Vinho, cerveja, rakı, vodka, gin durante toda a noite", sk: "+€{p.unlimited}/osoba · Víno, pivo, rakı, vodka, gin celú noc", sl: "+€{p.unlimited}/oseba · Vino, pivo, rakija, vodka, gin ves večer", sv: "+€{p.unlimited}/person · Vin, öl, rakı, vodka, gin hela kvällen"
   },

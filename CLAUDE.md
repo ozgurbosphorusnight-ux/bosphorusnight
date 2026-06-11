@@ -13,7 +13,7 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 - **TÜRSAB Lisans:** A-17672
 - **Müşteri profili:** Uluslararası turistler (EN, TR, DE, ES, RU, AR)
 - **Müşteri tabanı:** 11.317+ geçmiş misafir (iç rezervasyon sistemi, 2014'ten beri) · 4.8★ iç memnuniyet ortalaması
-- **Public yorum profili (1 May 2026):** Google 6 yorum · TripAdvisor profil yok · GBP yeni açıldı 29 Nis
+- **Public yorum profili (2 Haz 2026):** Google **41 yorum, hepsi 5★** (1 May'da 6'ydı, bir ayda 6→41) · TripAdvisor profil yok (**bilinçli karar — OTA/aggregator'lara girilmeyecek, bağımsız kal, marj koru**) · GBP açıldı 29 Nis. Strateji: AI görünürlüğü TripAdvisor/OTA yerine bağımsız kaynaklardan kazanılacak → Google yorumlarını 11.317 misafirle 150-200'e çıkar + Reddit/basın.
 - **Rakipler:** Mega Lüfer, Bosphorus Cruise, Bosporus Cruise, Dinner Cruise Bosphorus, Tourlance, Bosfor, Pereme, Turna
 
 ---
@@ -81,12 +81,12 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 
 | Kod | İsim | Satış | Maliyet | Marj | Tip |
 |---|---|---|---|---|---|
-| ALCOHOL_2GLASS | 2 bardak alkol | €15 | €10 | €5 | per_person |
-| ALCOHOL_UNLIMITED | Sınırsız alkol | €30 | €20 | €10 | per_person |
+| ALCOHOL_2GLASS | 2 bardak alkol | €10 | €10 | €0 | per_person |
+| ALCOHOL_UNLIMITED | Sınırsız alkol | €25 | €20 | €5 | per_person |
 | HOTEL_TRANSFER | Otel transferi | €10 | €5 | €5 | per_person |
 | ROMANTIC_TABLE | Romantik masa | €15 | €10 | €5 | per_booking |
 
-**Örnek:** DINNER_STD (€24.30) + ALCOHOL_UNLIMITED (€30) = **€54.30/kişi** satış.
+**Örnek:** DINNER_STD (€24.30) + ALCOHOL_UNLIMITED (€25) = **€49.30/kişi** satış.
 
 **PROPOSAL_PACKAGE kaldırıldı** — artık standart paket olarak satılmıyor. Müşteri "evlilik teklifi" talep ederse eskalasyona gider (§ 8).
 

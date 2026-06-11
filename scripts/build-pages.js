@@ -93,8 +93,8 @@ const PRICES = {
   dinnerStdOriginal: 40.5,
   dinnerVip: '55.2',
   dinnerVipOriginal: 92,
-  alcohol2: 15,
-  unlimited: 30,
+  alcohol2: 10,
+  unlimited: 25,
   transfer: 10,
   romantic: 15
 };
