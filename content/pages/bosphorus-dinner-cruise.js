@@ -79,7 +79,7 @@ module.exports = {
     },
     {
       q: 'Do you offer hotel transfer for the Bosphorus dinner cruise?',
-      a: 'Yes — hotel pickup and drop-off is available for +€{p.transfer}/person. Service zones cover Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, and Sütlüce. Book transfer in the wizard below.'
+      a: 'Yes — hotel pickup and drop-off is available for +€{p.transfer}/person. Service zones cover Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce, and Şişli. Book transfer in the wizard below.'
     },
     {
       q: 'Is the Bosphorus dinner cruise halal-friendly?',

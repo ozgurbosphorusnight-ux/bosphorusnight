@@ -87,7 +87,7 @@ module.exports = {
     },
     {
       q: 'Does the Bosphorus cruise halal apply to hotel transfer too?',
-      a: 'The hotel transfer is just a car ride — no food or drink involved, so no halal concern. Our drivers are professional, respectful, and punctual. Transfer areas cover Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, and 8 other central zones where Muslim travelers typically stay.'
+      a: 'The hotel transfer is just a car ride — no food or drink involved, so no halal concern. Our drivers are professional, respectful, and punctual. Transfer areas cover Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli, and 8 other central zones where Muslim travelers typically stay.'
     },
     {
       q: 'What\'s the best halal cruise in Istanbul?',

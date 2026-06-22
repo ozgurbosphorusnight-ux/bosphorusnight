@@ -134,6 +134,27 @@ Aynı gün rezervasyon kabul saatleri:
 - Backend (AI): `src/utils/transfer-zones.js` → `isTransferTimeWindowOpen(tourDate)` + create-reservation tool
 - 15 dilde mesaj: `js/translations.js` (`wizard.transferTimeBlocked*`)
 
+### Transfer İzinli Semt Listesi (district whitelist — kanonik kaynak + drift footprint)
+> ⚠️ Saat-cutoff'tan AYRI. Yeni semt eklenir/çıkarılırsa (örn. 2026-06-22 **Şişli** eklendi → 13 semt + Hilton) bu yerlerin HEPSİ birden güncellenir, yoksa drift olur:
+>
+> **Davranış (kanonik, kod):**
+> 1. AI: `src/config.js` → `TRANSFER_ALLOWED` (küçük harf) — TÜM consumer'lar buradan okur (transfer-zones.js, create/update-reservation, lookup-hotel-address, address-confirm). `pm2 restart bosphorus-ai`.
+> 2. Site: `js/main.js` → `TRANSFER_ALLOWED` (büyük harf) — `detectTransferZone()`; kopya-yapıştır parite. Vercel kaynaktan derler (dist'e dokunma).
+>
+> **Açıklayıcı metin (davranışı etkilemez ama tutarlı olmalı):**
+> 3. AI prompt: `src/claude/system-prompt.js` § TRANSFER HİZMET ALANI ("N semt" sayısı + İZİNLİ listesi + "N bölge alıyoruz" cümlesi)
+> 4. AI prompt: `src/claude/prompts/intents/price.md` (`İZİNLİ (N semt): ...`)
+> 5. AI test: `src/scripts/test-transfer-zones.js` fixture (⚠️ ÇALIŞTIRMA — §7.11 Anthropic key kuralı; pure-local olsa da onay iste)
+> 6. Site i18n home: `js/translations.js` (`incl.transfer.detail` + `faq.a9`, 32 dil) + `index.html` EN default (2 yer)
+> 7. Site landing: `content/pages/{bosphorus-dinner-cruise,halal-bosphorus-cruise}.js` + `content/translations/*.js` (24 dil × dinner+halal FAQ)
+> 8. Site UI: `content/ui-translations/*.json` (`_hardcoded-en`/`_hardcoded-all`/`_auto-en` + per-lang JSON)
+> 9. `llms.txt` zone listesi
+> 10. Doc/memory: `memory/our_business.md` (kanonik liste + "N Yer" sayısı), bu CLAUDE.md + `AGENTS.md` "N yer + Hilton" satırı, `memory/github_open_data_repo.md`
+>
+> **Harici (owner işi, repo dışı):** GitHub open-data `hotel-to-pier-distances.json` → yeni semt için iskele mesafe satırı.
+>
+> **Transliterasyon kuralı (i18n):** Latin diller `Şişli` aynen; ru/bg → Шишли, ar → شيشلي, fa → شیشلی, zh → 希什利, ja `faq.a9` katakana シシリ (ama `incl.transfer.detail` Latin). Her değerde ÇEVRESİNDEKİ semtlerin yazımına bak, körlemesine tablo uygulama.
+
 ---
 
 ## 4. 10 AŞAMALI İNŞA PLANI
@@ -754,7 +775,7 @@ bosphorus-night-ai/
 - Bilet PNG renderer (Puppeteer), harita konumu
 - Intent classifier (mid-flow modifications)
 - Update + cancel reservation tools
-- Transfer zones (13 yer + Hilton Bosphorus) single-source
+- Transfer zones (14 yer + Hilton Bosphorus) single-source
 - Nezaket kuralı + saat-aware tarih teyidi
 - Markdown strip, garbage name detect
 - E2E test script: `npm run test:wizard`
