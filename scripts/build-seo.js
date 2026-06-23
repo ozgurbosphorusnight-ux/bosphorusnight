@@ -220,7 +220,10 @@ function buildRobots() {
   const DISALLOW = [
     '/api/',
     '/panel/',
-    '/cruises/',
+    // '/cruises/' intentionally NOT blocked: it has no live content (only 301
+    // redirects in vercel.json). Blocking it stopped Google from following the
+    // 301s, leaving old URLs stuck as "blocked by robots" / "page with redirect"
+    // in Search Console. Let crawlers fetch → see 301 → consolidate cleanly.
     '/_next/',
     '/tickets/'
   ];
