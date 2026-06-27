@@ -4,6 +4,8 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
+    { "source": "/r/:code", "destination": "https://api.bosphorusnight.com/r/:code", "statusCode": 302 },
+
     { "source": "/cruises/dinner-cruise.html", "destination": "/bosphorus-dinner-cruise", "statusCode": 301 },
     { "source": "/cruises/sunset-cruise.html", "destination": "/bosphorus-sunset-cruise", "statusCode": 301 },
     { "source": "/cruises/daytime-cruise.html", "destination": "/bosphorus-trip", "statusCode": 301 },
