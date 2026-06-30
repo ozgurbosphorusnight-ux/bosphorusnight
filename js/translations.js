@@ -3362,6 +3362,16 @@ const T = {
     fa: "لطفاً یک پکیج انتخاب کنید", fr: "Veuillez choisir un forfait", it: "Per favore scelga un pacchetto", zh: "请选择套餐", id: "Silakan pilih paket", ms: "Sila pilih pakej", pl: "Prosimy wybrać pakiet", bg: "Моля, изберете пакет", ro: "Vă rugăm să alegeți un pachet", uk: "Будь ласка, оберіть пакет", ja: "パッケージをお選びください", ko: "패키지를 선택해 주시기 바랍니다", hi: "कृपया एक पैकेज चुनें", ur: "براہ کرم ایک پیکیج منتخب کریں",
     cs: "Vyberte si balíček", da: "Vælg venligst en pakke", el: "Παρακαλώ διάλεξε πακέτο", fi: "Valitse paketti", hu: "Kérjük, válassz csomagot", lv: "Izvēlies paketi", nl: "Kies een pakket", no: "Velg en pakke", pt: "Por favor escolha um pacote", sk: "Vyberte si balík", sl: "Izberi paket", sv: "Välj ett paket"
   },
+  "wizard.dateInPast": {
+    en: "Please choose today or a future date",
+    tr: "Lütfen bugünü veya ileri bir tarih seçin",
+    de: "Bitte wählen Sie heute oder ein zukünftiges Datum",
+    es: "Por favor elija hoy o una fecha futura",
+    ru: "Пожалуйста, выберите сегодня или будущую дату",
+    ar: "يرجى اختيار اليوم أو تاريخ مستقبلي",
+    fa: "لطفاً امروز یا تاریخی در آینده را انتخاب کنید", fr: "Veuillez choisir aujourd'hui ou une date future", it: "Per favore scelga oggi o una data futura", zh: "请选择今天或将来的日期", id: "Silakan pilih hari ini atau tanggal mendatang", ms: "Sila pilih hari ini atau tarikh akan datang", pl: "Prosimy wybrać dzisiejszą lub przyszłą datę", bg: "Моля, изберете днес или бъдеща дата", ro: "Vă rugăm să alegeți astăzi sau o dată viitoare", uk: "Будь ласка, оберіть сьогодні або майбутню дату", ja: "本日または今後の日付をお選びください", ko: "오늘 또는 이후 날짜를 선택해 주시기 바랍니다", hi: "कृपया आज या भविष्य की तारीख चुनें", ur: "براہ کرم آج یا مستقبل کی تاریخ منتخب کریں",
+    cs: "Vyberte si dnešní nebo budoucí datum", da: "Vælg venligst i dag eller en fremtidig dato", el: "Παρακαλώ διάλεξε σήμερα ή μελλοντική ημερομηνία", fi: "Valitse tämä päivä tai tuleva päivämäärä", hu: "Kérjük, válassz mai vagy jövőbeli dátumot", lv: "Izvēlies šodienu vai nākotnes datumu", nl: "Kies vandaag of een toekomstige datum", no: "Velg i dag eller en fremtidig dato", pt: "Por favor escolha hoje ou uma data futura", sk: "Vyberte si dnešný alebo budúci dátum", sl: "Izberi današnji ali prihodnji datum", sv: "Välj idag eller ett framtida datum"
+  },
   "wizard.adultsWarning": {
     en: "Please enter at least one adult before continuing",
     tr: "Devam etmeden önce en az bir yetişkin seçin",

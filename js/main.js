@@ -1232,19 +1232,10 @@ function openMobilePanel(pkg) {
   // Set default date — after 19:30 Istanbul time, today is no longer bookable in wizard
   // (boat departs 20:30, last entry 19:30 — same-day cutoff orta yol, AI WhatsApp'ta dar pencere uyarısı verir).
   const wizDate = document.getElementById('wizDate');
-  if (wizDate && !wizDate.value) {
-    const fmt = new Intl.DateTimeFormat('en-GB', {
-      timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', hour12: false
-    }).formatToParts(new Date());
-    const istHour = Number(fmt.find((p) => p.type === 'hour')?.value);
-    const istMin = Number(fmt.find((p) => p.type === 'minute')?.value);
-    const target = new Date();
-    if (istHour >= 20 || (istHour === 19 && istMin >= 30)) target.setDate(target.getDate() + 1);
-    const yyyy = target.getFullYear();
-    const mm = String(target.getMonth() + 1).padStart(2, '0');
-    const dd = String(target.getDate()).padStart(2, '0');
-    wizDate.value = `${yyyy}-${mm}-${dd}`;
-    wizDate.min = `${yyyy}-${mm}-${dd}`;
+  if (wizDate) {
+    const minStr = wizMinDateStr();
+    wizDate.min = minStr;                 // min'i her zaman tazele — geçmiş-tarih guard'ı ile tek kaynak
+    if (!wizDate.value) wizDate.value = minStr;
   }
 
   // Sync language dropdown with current site language
@@ -2211,7 +2202,38 @@ function wizShowNextHint(text) {
   hint.classList.add('text-red-400', 'font-medium');
 }
 
+// Wizard'da seçilebilecek en erken tarih (İstanbul bugünü; saat 19:30'u geçtiyse yarın).
+// Tek kaynak: hem wizDate.min hem de geçmiş-tarih guard'ı buradan beslenir.
+function wizMinDateStr() {
+  const fmt = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', hour12: false
+  }).formatToParts(new Date());
+  const istHour = Number(fmt.find((p) => p.type === 'hour')?.value);
+  const istMin = Number(fmt.find((p) => p.type === 'minute')?.value);
+  const target = new Date();
+  if (istHour >= 20 || (istHour === 19 && istMin >= 30)) target.setDate(target.getDate() + 1);
+  const yyyy = target.getFullYear();
+  const mm = String(target.getMonth() + 1).padStart(2, '0');
+  const dd = String(target.getDate()).padStart(2, '0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+
 function wizNext() {
+  // Geçmiş tarih kesin engeli — min HTML attribute yumuşak (elle yazma / in-app
+  // tarayıcı min'i geçebiliyor). Seçili tarih en erken seçilebilir günden önceyse engelle.
+  const wd = document.getElementById('wizDate');
+  if (wd && wd.value) {
+    const minStr = wizMinDateStr();
+    if (wd.value < minStr) {
+      wd.value = minStr;
+      wd.min = minStr;
+      try { wizCalcPrice(); } catch (e) {}
+      const msg = (T['wizard.dateInPast'] && T['wizard.dateInPast'][currentLang]) || 'Please choose today or a future date.';
+      wizShowNextHint(msg);
+      wizScrollToElement('#wizDate');
+      return;
+    }
+  }
   // Step 1 → 2: package + at least one adult required
   if (wizState.step === 1) {
     if (!wizState.pkg) {
@@ -3447,6 +3469,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const wizDate = document.getElementById('wizDate');
   if (wizDate) {
     wizDate.addEventListener('change', () => {
+      // Geçmiş tarih seçilirse anında en erken seçilebilir güne çek (min yumuşak attribute)
+      const minStr = wizMinDateStr();
+      if (wizDate.value && wizDate.value < minStr) {
+        wizDate.value = minStr;
+        wizDate.min = minStr;
+        const msg = (T['wizard.dateInPast'] && T['wizard.dateInPast'][currentLang]) || 'Please choose today or a future date.';
+        wizShowNextHint(msg);
+      }
       wizCalcPrice();
       // Transfer = true seçiliyken kullanıcı tarihi bugüne çevirip 18:00'ı geçmişse,
       // sessiz uyumsuzluk yaratmamak için uyarı göster (Step 2'deyken görünür).
