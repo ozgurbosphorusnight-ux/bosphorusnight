@@ -541,6 +541,8 @@ function buildHtml(slug, lang, template) {
     html = html.replace(/href="\/blog"/g, `href="/${lang}/blog/"`);
     html = html.replace(/href="\/city-guide\//g, `href="/${lang}/city-guide/`);
     html = html.replace(/href="\/city-guide"/g, `href="/${lang}/city-guide/"`);
+    // Bare home links (header/footer logo) → language home, not EN root
+    html = html.replace(/href="\/"/g, `href="/${lang}/"`);
   }
 
   // Title + meta description + OpenGraph tags (all use localized page.meta)

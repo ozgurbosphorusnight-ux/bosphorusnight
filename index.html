@@ -350,7 +350,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16 lg:h-20">
         <!-- Logo -->
-        <a href="#" class="flex items-center overflow-visible">
+        <a href="/" class="flex items-center overflow-visible">
           <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[150px] lg:h-[180px] w-auto max-w-none -ml-2 mt-1">
         </a>
 
@@ -2098,43 +2098,29 @@
 
   <!-- ========== REVIEW TICKER (auto-scrolling strip) ========== -->
   <div class="py-4 border-y border-gold/10 overflow-hidden relative">
+    <!-- Quotes below are verbatim excerpts from real Google reviews (assets/data/google-reviews.json). Never invent quotes here. -->
     <div class="review-ticker flex gap-8 animate-ticker whitespace-nowrap">
-      <span class="text-white/50 text-sm">"Amazing night!" <span class="text-gold">★★★★★</span></span>
+      <span class="text-white/50 text-sm">"This cruise was a unique experience!" <span class="text-gold">★★★★★</span> — Viorica S.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📹 Video review — Sarah & Michael</span>
+      <span class="text-white/50 text-sm">"The food, the shows, everything was perfect." <span class="text-gold">★★★★★</span> — Deniz Ö.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"Best cruise ever" <span class="text-gold">★★★★★</span></span>
+      <span class="text-white/50 text-sm">"Great night, perfect show and amazing dinner" <span class="text-gold">★★★★★</span> — Ayşe K.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📷 Selfie — Ahmed K.</span>
+      <span class="text-white/50 text-sm">"Good value for the price, would recommend" <span class="text-gold">★★★★★</span> — Google</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"Kids loved it!" <span class="text-gold">★★★★★</span></span>
+      <span class="text-white/50 text-sm">Google · {{GREVIEW_COUNT}} {{GREVIEW_WORD}} · <span class="text-gold">★ {{GRATING}}</span></span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📹 Video review — Maria L.</span>
+      <!-- Duplicate for seamless loop — must stay identical to the set above (ticker-scroll keyframe translates -50%) -->
+      <span class="text-white/50 text-sm">"This cruise was a unique experience!" <span class="text-gold">★★★★★</span> — Viorica S.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"She said YES!" <span class="text-gold">★★★★★</span></span>
+      <span class="text-white/50 text-sm">"The food, the shows, everything was perfect." <span class="text-gold">★★★★★</span> — Deniz Ö.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📷 Selfie — Julia T.</span>
+      <span class="text-white/50 text-sm">"Great night, perfect show and amazing dinner" <span class="text-gold">★★★★★</span> — Ayşe K.</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"Perfect for couples" <span class="text-gold">★★★★★</span></span>
+      <span class="text-white/50 text-sm">"Good value for the price, would recommend" <span class="text-gold">★★★★★</span> — Google</span>
       <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📹 Video — Group of 8 friends</span>
+      <span class="text-white/50 text-sm">Google · {{GREVIEW_COUNT}} {{GREVIEW_WORD}} · <span class="text-gold">★ {{GRATING}}</span></span>
       <span class="text-gold/40">|</span>
-      <!-- Duplicate for seamless loop -->
-      <span class="text-white/50 text-sm">"Amazing night!" <span class="text-gold">★★★★★</span></span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📹 Video review — Sarah & Michael</span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"Best cruise ever" <span class="text-gold">★★★★★</span></span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📷 Selfie — Ahmed K.</span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"Kids loved it!" <span class="text-gold">★★★★★</span></span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📹 Video review — Maria L.</span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">"She said YES!" <span class="text-gold">★★★★★</span></span>
-      <span class="text-gold/40">|</span>
-      <span class="text-white/50 text-sm">📷 Selfie — Julia T.</span>
     </div>
   </div>
 
@@ -2471,7 +2457,7 @@
 
         <!-- Logo + Description + Social -->
         <div class="text-center mb-6">
-          <a href="#" class="inline-block -mb-2">
+          <a href="/" class="inline-block -mb-2">
             <img src="assets/data/bn lg.png" alt="Bosphorus Night" class="h-[200px] w-auto mx-auto">
           </a>
           <p class="text-white/40 text-sm max-w-md mx-auto mb-5" data-i18n="footer.desc">We help you find the best cruise experience on the Bosphorus.</p>
