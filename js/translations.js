@@ -110,11 +110,11 @@ const T = {
     cs: "hostů", da: "gæster", el: "επισκέπτες", fi: "vierasta", hu: "vendég", lv: "viesu", nl: "gasten", no: "gjester", pt: "hóspedes", sk: "hostí", sl: "gostov", sv: "gäster"
   },
   "hero.viewMenu": {
-    en: "Menu", tr: "Menü",
-    de: "Menü", es: "Menú",
-    ru: "Меню", ar: "القائمة",
-    fa: "منو", fr: "Menu", it: "Menù", zh: "菜单", id: "Menu", ms: "Menu", pl: "Menu", bg: "Меню", ro: "Meniu", uk: "Меню", ja: "メニュー", ko: "메뉴", hi: "मेन्यू", ur: "مینو",
-    cs: "Menu", da: "Menu", el: "Μενού", fi: "Menu", hu: "Menü", lv: "Ēdienkarte", nl: "Menu", no: "Meny", pt: "Menu", sk: "Menu", sl: "Meni", sv: "Meny"
+    en: "View Menu", tr: "Menüyü İncele",
+    de: "Menü ansehen", es: "Ver menú",
+    ru: "Смотреть меню", ar: "عرض القائمة",
+    fa: "مشاهده منو", fr: "Voir le menu", it: "Vedi il menù", zh: "查看菜单", id: "Lihat Menu", ms: "Lihat Menu", pl: "Zobacz menu", bg: "Вижте менюто", ro: "Vedeți meniul", uk: "Переглянути меню", ja: "メニューを見る", ko: "메뉴 보기", hi: "मेन्यू देखें", ur: "مینو دیکھیں",
+    cs: "Zobrazit menu", da: "Se menu", el: "Δείτε το μενού", fi: "Katso menu", hu: "Menü megtekintése", lv: "Skatīt ēdienkarti", nl: "Bekijk menu", no: "Se meny", pt: "Ver o menu", sk: "Zobraziť menu", sl: "Oglej si meni", sv: "Visa meny"
   },
   "hero.watchVideo": {
     en: "Watch video", tr: "Videoyu izle",
