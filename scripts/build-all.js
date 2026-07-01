@@ -97,10 +97,20 @@ run('node scripts/build-blog-kabatas.js');
 run('node scripts/build-tailwind.js');
 
 // 5. Root seviyesinde tek dosyalar (IndexNow key dosyası dahil)
+// llms.txt statik kopyalanınca yorum sayısı bayatlıyordu (41/5.0 kalmıştı, gerçek 52/4.9) —
+// {{GRATING}}/{{GREVIEW_COUNT}} token'ları google-reviews.json'dan build'de doldurulur.
+const GREVIEWS_SNAPSHOT = JSON.parse(fs.readFileSync(path.join(ROOT, 'assets', 'data', 'google-reviews.json'), 'utf8'));
 for (const f of ['site.webmanifest', 'llms.txt', 'privacy.html', 'terms.html', 'adres.html', 'b94dc1d001fd47909cdbe7434f1a0be6.txt']) {
   const src = path.join(ROOT, f);
   if (fs.existsSync(src)) {
-    fs.copyFileSync(src, path.join(DIST, f));
+    if (f === 'llms.txt') {
+      const txt = fs.readFileSync(src, 'utf8')
+        .replace(/\{\{GRATING\}\}/g, String(GREVIEWS_SNAPSHOT.rating))
+        .replace(/\{\{GREVIEW_COUNT\}\}/g, String(GREVIEWS_SNAPSHOT.reviewCount));
+      fs.writeFileSync(path.join(DIST, f), txt);
+    } else {
+      fs.copyFileSync(src, path.join(DIST, f));
+    }
     console.log(`  ✓ ${f}`);
   }
 }

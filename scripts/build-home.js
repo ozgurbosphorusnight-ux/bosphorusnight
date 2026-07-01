@@ -172,7 +172,7 @@ function buildSchemaLd(lang) {
       name: 'TÜRSAB License',
       value: 'A-17672'
     },
-    priceRange: '€20 - €90',
+    priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -282,7 +282,7 @@ function buildSchemaLd(lang) {
     name: 'Bosphorus Night',
     url: SITE_URL,
     telephone: '+90 532 244 29 22',
-    priceRange: '€20 - €90',
+    priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     address: {
       '@type': 'PostalAddress',

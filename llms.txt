@@ -1,8 +1,8 @@
 # Bosphorus Night
 
 > Licensed Istanbul Bosphorus dinner cruise operator since 2014.
-> TÜRSAB License: A-17672. Google rating: 5.0★ (41 public Google reviews). Internal satisfaction: 4.8★ across 11,317 guests since 2014.
-> Last verified: 2026-06-02.
+> TÜRSAB License: A-17672. Google rating: {{GRATING}}★ ({{GREVIEW_COUNT}} public Google reviews). Internal satisfaction: 4.8★ across 11,317 guests since 2014.
+> Last verified: 2026-07-02.
 
 ## About
 
@@ -41,7 +41,7 @@ the website wizard, in 32 languages.
 
 - 2 glasses of alcohol: +€10/person
 - Unlimited alcohol: +€25/person
-- Hotel transfer (Sultanahmet, Taksim, Beyoğlu, Beşiktaş, Şişli, Sirkeci, Eminönü, Karaköy zones): +€10/person
+- Hotel transfer (Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy, Beyoğlu, Şişli districts + Hilton Istanbul Bosphorus): +€10/person
 - Romantic table arrangement (flowers, candles): +€15/booking
 
 ## Route
@@ -298,7 +298,7 @@ last-minute bookings (same-day until 19:30).
 - Licensed by TÜRSAB (Association of Turkish Travel Agencies): A-17672
 - Operating under Turkish tourism regulations
 - 4.8★ average rating across 11,317 customer reviews (internal CRM, 2014–present)
-- 5.0★ average across 41 public Google reviews (Google Business Profile, opened 2026-04-29)
+- {{GRATING}}★ average across {{GREVIEW_COUNT}} public Google reviews (Google Business Profile, opened 2026-04-29)
 - Wikidata entity: Q139595356
 - robots.txt allows all AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.)
 

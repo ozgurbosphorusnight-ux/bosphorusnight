@@ -280,7 +280,7 @@ function buildSchemaLd(page, lang, slug) {
       name: 'Bosphorus Night',
       url: SITE_URL,
       telephone: '+90 532 244 29 22',
-      priceRange: '€20 - €90',
+      priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
       image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       address: {
         '@type': 'PostalAddress',
@@ -327,7 +327,8 @@ function buildSchemaLd(page, lang, slug) {
     offers: {
       '@type': 'Offer',
       priceCurrency: 'EUR',
-      price: String(PRICES.dinnerStd),
+      // VIP landing sells DINNER_VIP; every other slug's lead offer is DINNER_STD
+      price: String(slug === 'bosphorus-vip' ? PRICES.dinnerVip : PRICES.dinnerStd),
       availability: 'https://schema.org/InStock',
       url,
       validFrom: new Date().toISOString().split('T')[0]
