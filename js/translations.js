@@ -102,6 +102,13 @@ const T = {
     fa: "بدون پیش‌پرداخت — پرداخت روی کشتی", fr: "Aucun prépaiement — Paiement à bord", it: "Nessun anticipo — Pagamento a bordo", zh: "无需预付——船上付款", id: "Tanpa pembayaran di muka — Bayar di kapal", ms: "Tiada bayaran pendahuluan — Bayar di atas bot", pl: "Bez przedpłaty — płatność na pokładzie", bg: "Без предплащане — плащане на борда", ro: "Fără plată în avans — Plata pe vapor", uk: "Без передоплати — Оплата на борту", ja: "事前決済不要 — 船上でお支払い", ko: "선불 결제 없음 — 보트에서 결제하세요", hi: "कोई अग्रिम भुगतान नहीं — नाव पर भुगतान करें", ur: "پیشگی ادائیگی نہیں — کشتی پر ادائیگی کریں",
     cs: "Bez platby předem — Plaťte na palubě", da: "Ingen forudbetaling — Betal om bord", el: "Καμία προπληρωμή — Πληρώνεις στο πλοίο", fi: "Ei ennakkomaksua — maksa laivalla", hu: "Nincs előleg — A hajón fizetsz", lv: "Bez priekšapmaksas — maksā uz kuģa", nl: "Geen vooruitbetaling — Betaal aan boord", no: "Ingen forhåndsbetaling — Betal om bord", pt: "Sem pagamento antecipado — Pagamento a bordo", sk: "Bez platby vopred — Plaťte na palube", sl: "Brez predplačila — Plačaš na ladji", sv: "Ingen förskottsbetalning — Betala ombord"
   },
+  "hero.guests": {
+    en: "guests", tr: "misafir",
+    de: "Gäste", es: "huéspedes",
+    ru: "гостей", ar: "ضيف",
+    fa: "مهمان", fr: "voyageurs", it: "ospiti", zh: "位宾客", id: "tamu", ms: "tetamu", pl: "gości", bg: "гости", ro: "oaspeți", uk: "гостей", ja: "名のゲスト", ko: "명의 게스트", hi: "मेहमान", ur: "مہمان",
+    cs: "hostů", da: "gæster", el: "επισκέπτες", fi: "vierasta", hu: "vendég", lv: "viesu", nl: "gasten", no: "gjester", pt: "hóspedes", sk: "hostí", sl: "gostov", sv: "gäster"
+  },
   "hero.menuStd": {
     en: "Standard Menu", tr: "Standart Menü", de: "Standard-Menü", es: "Menú Estándar",
     ru: "Стандартное меню", ar: "قائمة عادية",
