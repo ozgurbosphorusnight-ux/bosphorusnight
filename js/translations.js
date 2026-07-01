@@ -109,6 +109,20 @@ const T = {
     fa: "مهمان", fr: "voyageurs", it: "ospiti", zh: "位宾客", id: "tamu", ms: "tetamu", pl: "gości", bg: "гости", ro: "oaspeți", uk: "гостей", ja: "名のゲスト", ko: "명의 게스트", hi: "मेहमान", ur: "مہمان",
     cs: "hostů", da: "gæster", el: "επισκέπτες", fi: "vierasta", hu: "vendég", lv: "viesu", nl: "gasten", no: "gjester", pt: "hóspedes", sk: "hostí", sl: "gostov", sv: "gäster"
   },
+  "hero.viewMenu": {
+    en: "Menu", tr: "Menü",
+    de: "Menü", es: "Menú",
+    ru: "Меню", ar: "القائمة",
+    fa: "منو", fr: "Menu", it: "Menù", zh: "菜单", id: "Menu", ms: "Menu", pl: "Menu", bg: "Меню", ro: "Meniu", uk: "Меню", ja: "メニュー", ko: "메뉴", hi: "मेन्यू", ur: "مینو",
+    cs: "Menu", da: "Menu", el: "Μενού", fi: "Menu", hu: "Menü", lv: "Ēdienkarte", nl: "Menu", no: "Meny", pt: "Menu", sk: "Menu", sl: "Meni", sv: "Meny"
+  },
+  "hero.watchVideo": {
+    en: "Watch video", tr: "Videoyu izle",
+    de: "Video ansehen", es: "Ver vídeo",
+    ru: "Смотреть видео", ar: "شاهد الفيديو",
+    fa: "تماشای ویدیو", fr: "Voir la vidéo", it: "Guarda il video", zh: "观看视频", id: "Tonton video", ms: "Tonton video", pl: "Zobacz wideo", bg: "Гледай видео", ro: "Vezi videoclipul", uk: "Дивитися відео", ja: "動画を見る", ko: "영상 보기", hi: "वीडियो देखें", ur: "ویڈیو دیکھیں",
+    cs: "Přehrát video", da: "Se video", el: "Δείτε το βίντεο", fi: "Katso video", hu: "Videó megtekintése", lv: "Skatīties video", nl: "Bekijk video", no: "Se video", pt: "Ver vídeo", sk: "Pozrieť video", sl: "Oglej si video", sv: "Se video"
+  },
   "hero.menuStd": {
     en: "Standard Menu", tr: "Standart Menü", de: "Standard-Menü", es: "Menú Estándar",
     ru: "Стандартное меню", ar: "قائمة عادية",

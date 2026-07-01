@@ -493,19 +493,25 @@
         <span class="text-gold text-base tracking-tight leading-none">★★★★★</span>
         <span class="text-white font-bold">{{GRATING}}</span>
         <span class="text-white/25">·</span>
-        <span class="text-white/70"><span class="text-white/90 font-semibold">{{GREVIEW_COUNT}}</span> Google {{GREVIEW_WORD}}</span>
+        <span class="text-white/70">Google {{GREVIEW_WORD}}</span>
         <span class="text-white/25">·</span>
         <span class="text-white/70"><span class="text-white/90 font-semibold">11,317</span> <span data-i18n="hero.guests">guests</span></span>
       </div>
 
       <p class="text-gold text-base sm:text-lg mb-4 font-semibold" data-i18n="hero.noprepay">No prepayment — Pay on the boat</p>
 
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <button onclick="openMobilePanel('standard')" class="btn-gold w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 cursor-pointer">
-          <span data-i18n="booking.bookNow">Book Now</span>
+      <!-- Secondary actions: Menu + Watch video (compact, outline, side by side) -->
+      <div class="flex flex-row items-stretch justify-center gap-3 max-w-md mx-auto">
+        <a href="#boats" class="btn-outline flex-1 text-center px-4 py-3 rounded-full text-sm font-semibold" data-i18n="hero.viewMenu">Menu</a>
+        <button type="button" onclick="openVideoLightbox('zzDJ7xoXnuc')" class="btn-outline flex-1 text-center px-4 py-3 rounded-full text-sm font-semibold inline-flex items-center justify-center gap-1.5 cursor-pointer">
+          <svg class="w-3.5 h-3.5 flex-shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <span data-i18n="hero.watchVideo">Watch video</span>
         </button>
-        <a href="#boats" class="btn-outline w-full sm:w-auto text-center px-8 py-4 rounded-full text-base font-semibold" data-i18n="hero.cta2">View Cruise</a>
       </div>
+      <!-- Primary CTA: dominant gold, full width, below -->
+      <button onclick="openMobilePanel('standard')" class="btn-gold w-full max-w-md mx-auto mt-3 text-center px-8 py-4 rounded-full text-base font-semibold flex items-center justify-center gap-2 cursor-pointer">
+        <span data-i18n="booking.bookNow">Book Now</span>
+      </button>
 
       <p class="mt-3 text-white/40 text-xs" data-i18n="hero.departure">Departure from Kabataş · 20:30 – 23:30</p>
 
