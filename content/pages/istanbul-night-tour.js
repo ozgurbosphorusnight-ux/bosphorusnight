@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       q: 'What time is best for a night tour in Istanbul?',
-      a: 'Our Bosphorus dinner cruise is 20:30-23:30 (3 hours). That\'s peak illumination time for all Istanbul landmarks — bridges fully lit, palaces glowing, moon over the water. If you want earlier (golden hour), consider the sunset cruise at 17:30 instead.'
+      a: 'Our Bosphorus dinner cruise is 20:30-23:30 (3 hours). That\'s peak illumination time for all Istanbul landmarks — bridges fully lit, palaces glowing, moon over the water. If you also want golden hour, come in summer: boarding starts 19:30, and in May–August the sun sets right around the 20:30 departure — the same cruise covers both.'
     },
     {
       q: 'How do I get to the Istanbul night tour meeting point?',

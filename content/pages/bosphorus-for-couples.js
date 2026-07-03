@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'What time is best for a couples Bosphorus cruise — sunset or night?',
-      a: 'Night (20:30 departure) is the most iconic — illuminated bridges, reflections on water, lit-up palaces. Sunset (17:30 departure) is earlier and golden-hour beautiful but the dinner cruise specifically is 20:30. If you want both, most couples book the sunset daytime and dinner night cruises on different days.'
+      a: 'The cruise departs 20:30 nightly — and in summer (May–August) that one departure covers both: boarding from 19:30 during golden hour, the sunset right around departure, then the illuminated bridges and lit-up palaces. In winter it\'s a pure night-lights cruise. Either way, one booking gives couples the most iconic version of the Bosphorus.'
     },
     {
       q: 'Is there a dance floor — can we dance?',

@@ -253,37 +253,39 @@ module.exports = {
 
   'bosphorus-sunset-cruise': {
     meta: {
-      title: 'Auringonlaskuristely Bosporinsalmella Istanbul | Illallinen',
-      description: 'Auringonlaskuristely Bosporinsalmella Istanbulissa. Näe Istanbul kauneimmillaan – kultainen tunti vedellä. Illallinen ja esitykset mukana. Varaa {p.dinnerStd} alkaen.'
+      title: 'Bosporinsalmen auringonlasku- ja illallisristeily €{p.dinnerStd} alkaen',
+      description: 'Koe auringonlasku Bosporinsalmella ja nauti illallista valaistujen siltojen alla. Laivaannousu 19:30 Kabataşissa, lähtö 20:30. 3 tuntia, täysi illallinen. Maksa laivalla.'
     },
     hero: {
-      h1: 'Auringonlaskuristely Bosporinsalmella',
-      subtitle: 'Istanbulin kauneimmat hetket – auringonlasku Bosporinsalmella illallisen kera',
-      badge: 'Lähtö 17:30 – auringonlasku vesillä'
+      h1: 'Bosporinsalmen auringonlasku- ja illallisristeily',
+      subtitle: 'Nouse laivaan 19:30, kun taivas kultaantuu minareettien yllä – ja nauti illallista vesillä, kun Dolmabahçe, Ortaköyn moskeija ja Bosporinsalmen silta syttyvät yön valoihin.',
+      badge: 'Laivaannousu 19:30 · Lähtö 20:30 · Auringonlaskusta kaupungin valoihin'
     },
     intro: [
-      'Auringonlaskuristely Bosporinsalmella alkaa 17:30 Kabataşista. Matkan varrella aurinko laskee hämärässä palatsin tornien taakse – näkymä, jota ei unohda.',
-      'Ristely kestää 3 tuntia ja sisältää täyden illallisen sekä esitysohjelman. Kauniit valokuvaushetket taattu!',
-      'Maksa vasta laivalla. Varaa paikat etukäteen – auringonlaskuristely on erittäin suosittu.'
+      'Istanbulin **auringonlaskuristeily Bosporinsalmella** on ennen kaikkea kokemus siirtymästä. Laivaannousu alkaa Kabataşin laiturista 19:30 – ja toukokuusta elokuuhun kestävinä pitkinä iltoina kultainen hetki avautuu, kun asetut paikallesi kannella. Aurinko laskee Euroopan puolen minareettien taakse juuri 20:30 lähdön aikoihin, joten näet sen vesiltä: Dolmabahçen palatsi kullan hehkussa, Ortaköyn moskeija siluettina loistavaa taivasta vasten.',
+      'Meidän **auringonlaskusta yöhön jatkuva Bosporinsalmen risteilymme** sisältää täyden turkkilaisen illallisen – 10 erilaista mezeä, lämmin alkuruoka, valittava pääruoka ja jälkiruoka – joka tarjoillaan, kun kaupunki sytyttää valonsa. Jälkiruoan saapuessa purjehdit jo valaistun Bosporinsalmen sillan alta, ja 30 miljoonaa valoa heijastuu tummasta vedestä. Muutos hämärästä täyteen yöhön yhden kolmen tunnin risteilyn aikana on koko kokemuksen ydin.',
+      'Olitpa valokuvaaja viimeisen valon perässä, pariskunta etsimässä sitä ainoaa Istanbul-muistokuvaa tai ensikertalainen, joka haluaa klassisen illan vesillä – tämä on se **Bosporinsalmen auringonlasku-illallisristeily**, jota paikalliset suosittelevat vierailijoille. Hinnat alkaen €{p.dinnerStd}/hlö, 4.8★ arvosana, TÜRSAB-lisensoitu, maksu laivalla – ei ennakkomaksua.'
     ],
     highlights: [
-      { icon: '🌅', text: 'Upea auringonlasku Bosporinsalmella – paras tunnelma' },
-      { icon: '📸', text: 'Täydelliset valokuvaushetket kullanvärisessä valossa' },
-      { icon: '🍽️', text: 'Täysi illallinen – mezot, pääruoka, jälkiruoka' },
-      { icon: '🎭', text: 'Esitysohjelma: elävää musiikkia, tanssia, DJ' },
-      { icon: '💳', text: 'Maksa laivalla – lähtö 17:30, paluu ~20:30' }
+      { title: 'Kesän auringonlaskut juuri lähdön aikaan', desc: 'Toukokuusta elokuuhun aurinko laskee Istanbulissa noin 20:15–20:45 – laivaannousu 19:30 tarjoaa kultaisen hetken kannella, ja 20:30 lähtö vie sinut vesille juuri auringonlaskun ajaksi. Pidä kamera valmiina – tämä on se kuva.' },
+      { title: 'Sinisestä hetkestä täyteen yöhön', desc: 'Ei pelkkä auringonlasku – risteily jatkuu iltahämärän läpi täysin valaistulle Bosporinsalmelle. Kultainen valo, sininen hetki ja lopuksi 30 miljoonaa sillan valoa tummalla vedellä: kolme valon vaihetta yhden illan aikana.' },
+      { title: 'Täysi illallinen risteilyn aikana', desc: '10 erilaista turkkilaista mezeä, lämmin alkuruoka, pääruoka (lohi, meriahven, kana, köfte tai kasvisvaihtoehto), jäätelökakku ja rajattomasti virvoitusjuomia – tarjoillaan kaupungin valojen syttyessä.' },
+      { title: 'Dolmabahçe, Ortaköy ja Bosporinsalmen silta – kaikki valaistuina', desc: 'Reitti kulkee Dolmabahçen palatsin, Ortaköyn moskeijan, Bosporinsalmen sillan, Rumelinlinnan ja Beylerbeyin palatsin ohi juuri, kun niiden valot syttyvät. Jokainen maamerkki parhaassa valossaan.' }
     ],
     faq: [
-      { q: 'Milloin aurinko laskee Istanbulissa?', a: 'Auringonlasku vaihtelee vuodenajan mukaan. Kesällä noin 20:00–21:00, talvella aiemmin. Lähtöaika 17:30 varmistaa, että näet auringonlaskun ristelyn aikana.' },
-      { q: 'Mistä ristely lähtee?', a: 'Kabataşin laiturista. Portti avautuu ennen lähtöä.' },
-      { q: 'Kestääkö ristely saman 3 tuntia kuin illaristely?', a: 'Kyllä, ristely kestää noin 3 tuntia.' },
-      { q: 'Onko istumapaikat taattu?', a: 'Kyllä, varaus takaa sinulle istumapaikan laivalla.' },
-      { q: 'Mikä ero on auringonlasku- ja illaristeilyllä?', a: 'Auringonlaskuristely lähtee 17:30 ja näet auringonlaskun. Illaristely lähtee 20:30 ja näet valaistujen rakennusten peilikuvan vedessä.' }
+      { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 19:30 Kabataşin laiturissa, laiva lähtee 20:30 ja palaa noin 23:30. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
+      { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 20:30, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
+      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Vakioristeily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). VIP-vaihtoehto lavan edessä olevine pöytineen ja premium-mezeineen maksaa €{p.dinnerVip}/hlö. Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-8 v puoleen hintaan.' },
+      { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 20:30 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
+      { q: 'Mitä auringonlaskuristeilylle kannattaa ottaa mukaan?', a: 'Älypuhelin tai kamera – kultainen hetki ja valaistut sillat suorastaan kutsuvat kuvaamaan. Kevyt takki: tuuli voimistuu kannella auringonlaskun jälkeen. Siisti rento pukeutuminen riittää – kyseessä on illallinen, mutta tiukkaa pukukoodia ei ole.' },
+      { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 20:30–23:30, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 23:30.' },
+      { q: 'Mihin aikaan aurinko laskee Istanbulissa?', a: 'Kesällä (kesä–heinäkuussa) aurinko laskee Istanbulissa noin 20:30–20:45, talvella noin 16:30–17:00. Auringonlasku- ja yökokemusta varten Bosphorus Nightin 20:30 lähtevä illallisristeily Kabataşista tavoittaa kesällä myöhäisen kultaisen hetken ja sinisen hetken – ja valaistut maamerkit ympäri vuoden.' },
+      { q: 'Kannattaako Bosporinsalmen auringonlaskuristeily?', a: 'Kyllä – auringonlasku Bosporinsalmen sillan yllä on yksi Istanbulin tunnusomaisimmista näkymistä. Bosphorus Nightin 20:30 lähtevä illallisristeily (€{p.dinnerStd}/hlö) tavoittaa auringonlaskun jälkeisen sinisen hetken sekä valaistut palatsit, ja kolmen tunnin iltaan sisältyvät täysi illallinen ja elävät esitykset.' }
     ],
     cta: {
-      primary: 'Varaa auringonlaskuristely',
-      secondary: 'Katso aikataulu',
-      tertiary: 'Kysy lisää WhatsAppilla'
+      primary: 'Varaa auringonlaskuristeily · Maksa laivalla',
+      secondary: 'Laivaannousu 19:30 · Lähtö 20:30 · Illallinen sisältyy · Ilmainen peruutus 2 h ennen',
+      tertiary: 'Katso illallisristeilyn kaikki tiedot'
     }
   },
 

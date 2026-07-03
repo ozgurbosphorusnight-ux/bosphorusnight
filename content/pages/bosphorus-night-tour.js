@@ -78,7 +78,7 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus night tour worth it vs a sunset cruise?',
-      a: 'Night tour = illuminated Istanbul, peak light drama, full entertainment program, most iconic photos of lit bridges. Sunset = golden hour, slower pace, ends at 20:30. If you only do one: night tour is more iconic. Many do both on different days.'
+      a: 'Night tour = illuminated Istanbul, peak light drama, full entertainment program, most iconic photos of lit bridges. And it\'s one cruise: in summer (May–August), boarding from 19:30 catches golden hour and the sun sets right around the 20:30 departure — so the same evening covers sunset and night. No need to choose or book twice.'
     },
     {
       q: 'Can I do the Bosphorus night tour on my first day in Istanbul?',
