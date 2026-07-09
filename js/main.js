@@ -57,6 +57,45 @@ function bnGetAttribution(){
 }
 window.bnGetAttribution = bnGetAttribution;
 
+// ========== AD REF ON WHATSAPP LINKS (9 Jul 2026 — Leak A fix) ==========
+// Reklamdan gelen ziyaretçide (gclid var) tıklanan wa.me linkinin prefilled mesajına
+// kısa bir [ref:type:clickid] işareti ekler → wizard'ı doldurmadan doğrudan WhatsApp'a
+// giden (floating buton / header / footer) müşterinin gclid'i de AI'a ulaşır (Leak A).
+// Organik/direct ziyaretçide (gclid yok) HİÇ dokunmaz → mesaj temiz kalır. AI inbound
+// ilk mesajda [ref:...]'i okuyup customers.gclid'e yazar ve mesajdan siler.
+// Capture-phase: mevcut gtag click listener'ından önce href güncellenir.
+(function installWaRefTagger(){
+  try {
+    document.addEventListener('click', function(e){
+      try {
+        const a = (e.target && e.target.closest)
+          ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]')
+          : null;
+        if (!a) return;
+        const attr = (typeof bnGetAttribution === 'function') ? bnGetAttribution() : null;
+        if (!attr || !attr.gclid) return; // organik/direct — dokunma, mesaj temiz kalsın
+        const href = a.getAttribute('href') || '';
+        if (/%23BN|#BN/i.test(href)) return; // zaten eklenmiş — idempotent
+        // Kısa token — uzun gclid mesajda görünmesin. Backend'de gclid'e bağlanır.
+        const token = (Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2))
+          .slice(0, 6).toUpperCase();
+        // Token -> reklam etiketi köprüsünü backend'e bırak (keepalive: WhatsApp'a giderken de gider)
+        try {
+          fetch('https://api.bosphorusnight.com/wizard/ad-ref', {
+            method: 'POST', keepalive: true,
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token: token, attribution: attr }),
+          });
+        } catch (_) { /* fire-and-forget */ }
+        const u = new URL(href, location.origin);
+        const existing = u.searchParams.get('text') || '';
+        u.searchParams.set('text', existing + '\n\n#BN' + token);
+        a.setAttribute('href', u.toString());
+      } catch (_) { /* tek link hatası sayfayı bozmasın */ }
+    }, true);
+  } catch (_) { /* DOM/storage yok — ignore */ }
+})();
+
 // ========== LANGUAGE ==========
 let currentLang = 'en';
 
