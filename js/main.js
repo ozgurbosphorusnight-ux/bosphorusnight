@@ -72,6 +72,10 @@ window.bnGetAttribution = bnGetAttribution;
           ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]')
           : null;
         if (!a) return;
+        // Wizard CTA'yı ATLA: telefonu topluyor + phone-prelead atıyor → zaten atıflı,
+        // detaylı premium mesajına #BN kodu eklenmesin. Sadece telefon toplamayan
+        // bilgi/booking butonlarına (floating/header/footer/bookWhatsApp) kod eklenir.
+        if (a.id === 'wizWhatsApp') return;
         const attr = (typeof bnGetAttribution === 'function') ? bnGetAttribution() : null;
         if (!attr || !attr.gclid) return; // organik/direct — dokunma, mesaj temiz kalsın
         const href = a.getAttribute('href') || '';
