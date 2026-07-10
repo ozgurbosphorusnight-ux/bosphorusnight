@@ -3141,6 +3141,46 @@ const T = {
     fa: "برای ادامه انتخاب کنید", fr: "Sélectionnez pour continuer", it: "Seleziona per continuare", zh: "请先选择", id: "Pilih untuk melanjutkan", ms: "Pilih untuk teruskan", pl: "Wybierz, aby kontynuować", bg: "Изберете, за да продължите", ro: "Selectați pentru a continua", uk: "Виберіть, щоб продовжити", ja: "選択して続行", ko: "선택 후 계속", hi: "जारी रखने के लिए चुनें", ur: "جاری رکھنے کے لیے منتخب کریں",
     cs: "Vyberte pro pokračování", da: "Vælg for at fortsætte", el: "Επιλέξτε για συνέχεια", fi: "Valitse jatkaaksesi", hu: "Válasszon a folytatáshoz", lv: "Izvēlieties, lai turpinātu", nl: "Maak een keuze", no: "Velg for å fortsette", pt: "Selecione para continuar", sk: "Vyberte pre pokračovanie", sl: "Izberite za nadaljevanje", sv: "Välj för att fortsätta"
   },
+  "wizard.alcoholQuestion": {
+    en: "Add an alcohol package?",
+    tr: "Alkol paketi ekleyelim mi?",
+    de: "Ein Alkoholpaket hinzufügen?",
+    es: "¿Añadir un paquete de alcohol?",
+    ru: "Добавить алкогольный пакет?",
+    ar: "هل تريد إضافة باقة مشروبات كحولية؟",
+    fa: "بسته نوشیدنی الکلی اضافه شود؟", fr: "Ajouter un forfait alcool ?", it: "Aggiungere un pacchetto alcolici?", zh: "添加酒水套餐？", id: "Tambah paket alkohol?", ms: "Tambah pakej alkohol?", pl: "Dodać pakiet alkoholowy?", bg: "Да добавим ли алкохолен пакет?", ro: "Adăugați un pachet cu alcool?", uk: "Додати алкогольний пакет?", ja: "アルコールパッケージを追加しますか？", ko: "주류 패키지를 추가하시겠어요?", hi: "शराब पैकेज जोड़ें?", ur: "شراب پیکیج شامل کریں؟",
+    cs: "Přidat alkoholový balíček?", da: "Tilføj en alkoholpakke?", el: "Προσθήκη πακέτου αλκοόλ;", fi: "Lisätäänkö alkoholipaketti?", hu: "Hozzáadunk egy alkoholcsomagot?", lv: "Pievienot alkohola paketi?", nl: "Een alcoholpakket toevoegen?", no: "Legge til en alkoholpakke?", pt: "Adicionar um pacote de bebidas alcoólicas?", sk: "Pridať alkoholový balíček?", sl: "Dodati paket alkohola?", sv: "Lägg till ett alkoholpaket?"
+  },
+  "wizard.alcoholYes": {
+    en: "Yes",
+    tr: "Evet",
+    de: "Ja",
+    es: "Sí",
+    ru: "Да",
+    ar: "نعم",
+    fa: "بله", fr: "Oui", it: "Sì", zh: "是", id: "Ya", ms: "Ya", pl: "Tak", bg: "Да", ro: "Da", uk: "Так", ja: "はい", ko: "예", hi: "हाँ", ur: "جی ہاں",
+    cs: "Ano", da: "Ja", el: "Ναι", fi: "Kyllä", hu: "Igen", lv: "Jā", nl: "Ja", no: "Ja", pt: "Sim", sk: "Áno", sl: "Da", sv: "Ja"
+  },
+  "wizard.alcoholSoftIncluded": {
+    en: "Soft drinks included free for everyone",
+    tr: "Alkolsüz içecekler herkes için ücretsiz dahil",
+    de: "Alkoholfreie Getränke für alle kostenlos inklusive",
+    es: "Refrescos incluidos gratis para todos",
+    ru: "Безалкогольные напитки бесплатно для всех",
+    ar: "المشروبات غير الكحولية مجانية للجميع",
+    fa: "نوشیدنی‌های بدون الکل برای همه رایگان است", fr: "Boissons sans alcool offertes à tous", it: "Bibite analcoliche incluse gratis per tutti", zh: "软饮料对所有人免费", id: "Minuman ringan gratis untuk semua", ms: "Minuman ringan percuma untuk semua", pl: "Napoje bezalkoholowe gratis dla wszystkich", bg: "Безалкохолните напитки са безплатни за всички", ro: "Băuturi răcoritoare incluse gratuit pentru toți", uk: "Безалкогольні напої безкоштовно для всіх", ja: "ソフトドリンクは全員無料", ko: "음료수는 모두에게 무료 제공", hi: "सभी के लिए शीतल पेय मुफ़्त शामिल", ur: "سب کے لیے سافٹ ڈرنکس مفت شامل ہیں",
+    cs: "Nealkoholické nápoje zdarma pro všechny", da: "Sodavand inkluderet gratis for alle", el: "Αναψυκτικά δωρεάν για όλους", fi: "Virvoitusjuomat maksutta kaikille", hu: "Üdítők mindenkinek ingyen", lv: "Bezalkoholiskie dzērieni bez maksas visiem", nl: "Frisdranken gratis inbegrepen voor iedereen", no: "Alkoholfrie drikker gratis for alle", pt: "Refrigerantes incluídos grátis para todos", sk: "Nealkoholické nápoje zadarmo pre všetkých", sl: "Brezalkoholne pijače brezplačno za vse", sv: "Läsk ingår gratis för alla"
+  },
+  "wizard.alcoholChoose": {
+    en: "Please choose an alcohol option",
+    tr: "Lütfen bir alkol seçeneği seçin",
+    de: "Bitte wählen Sie eine Alkoholoption",
+    es: "Por favor, elige una opción de alcohol",
+    ru: "Пожалуйста, выберите вариант с алкоголем",
+    ar: "يرجى اختيار خيار المشروبات الكحولية",
+    fa: "لطفاً یک گزینه نوشیدنی الکلی انتخاب کنید", fr: "Veuillez choisir une option d'alcool", it: "Scegli un'opzione per gli alcolici", zh: "请选择一个酒水选项", id: "Silakan pilih opsi alkohol", ms: "Sila pilih opsyen alkohol", pl: "Wybierz opcję alkoholu", bg: "Моля, изберете опция за алкохол", ro: "Vă rugăm să alegeți o opțiune cu alcool", uk: "Будь ласка, виберіть варіант алкоголю", ja: "アルコールのオプションをお選びください", ko: "주류 옵션을 선택해 주세요", hi: "कृपया एक शराब विकल्प चुनें", ur: "براہ کرم شراب کا آپشن منتخب کریں",
+    cs: "Vyberte prosím možnost alkoholu", da: "Vælg venligst en alkoholmulighed", el: "Παρακαλώ επιλέξτε μια επιλογή αλκοόλ", fi: "Valitse alkoholivaihtoehto", hu: "Kérjük, válasszon egy alkoholos lehetőséget", lv: "Lūdzu, izvēlieties alkohola opciju", nl: "Kies een alcoholoptie", no: "Velg et alkoholalternativ", pt: "Escolha uma opção de álcool", sk: "Vyberte prosím možnosť alkoholu", sl: "Izberite možnost alkohola", sv: "Välj ett alkoholalternativ"
+  },
   "wizard.softDrinks": {
     en: "Soft Drinks",
     tr: "Alkolsüz",

@@ -2940,48 +2940,48 @@
           <span data-i18n="wizard.back">Back</span>
         </button>
 
-        <!-- Drinks — per person counters -->
+        <!-- Drinks — alcohol add-on gate (soft drinks free for everyone) -->
         <label class="text-gold font-display text-base font-bold mb-1 block" data-i18n="booking.drinkLabel">Drink Selection</label>
-        <p class="text-white/50 text-xs mb-3" data-i18n="wizard.drinkNote">Choose a drink option for each adult guest</p>
-        <p id="wizDrinkWarning" class="text-red-400 text-xs font-semibold mb-2 hidden" data-i18n="wizard.drinkWarning">Please assign drinks for all adults before continuing</p>
-        <div class="space-y-2 mb-5">
-          <!-- Soft Drinks -->
-          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
-            <div>
-              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.softDrinks">Soft Drinks</p>
-              <p class="text-white/30 text-[10px]" data-i18n="wizard.softNote">Included free</p>
+        <p class="text-white/50 text-xs mb-3" data-i18n="wizard.alcoholQuestion">Add an alcohol package?</p>
+        <p id="wizAlcoholWarning" class="text-red-400 text-xs font-semibold mb-2 hidden" data-i18n="wizard.alcoholChoose">Please choose an alcohol option</p>
+        <div class="flex gap-2 mb-2">
+          <button onclick="wizToggle('wantAlcohol',false)" id="wizAlcoholNo" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.no">No</button>
+          <button onclick="wizToggle('wantAlcohol',true)" id="wizAlcoholYes" class="flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.alcoholYes">Yes</button>
+        </div>
+        <p class="text-white/40 text-[11px] mb-5" data-i18n="wizard.alcoholSoftIncluded">Soft drinks included free for everyone</p>
+
+        <!-- Alcohol allocator — revealed only when "Yes". Soft drinks fill the remainder automatically. -->
+        <div id="wizAlcoholPanel" class="hidden mb-5">
+          <p id="wizAlcoholHeading" class="text-white/70 text-xs mb-2">How many adults get alcohol?</p>
+          <div class="space-y-2">
+            <!-- 2 Glasses -->
+            <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
+              <div>
+                <p class="text-white/80 text-xs font-medium" data-i18n="wizard.glass2Label">2 Glasses of Alcohol</p>
+                <p class="text-white/30 text-[10px]" data-i18n="wizard.glass2Note">+€10/person · Wine, beer, rakı, vodka, or gin</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="wizDrinkCount('glass2',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
+                <span id="wizGlass2Count" class="text-white font-bold text-sm w-5 text-center">0</span>
+                <button onclick="wizDrinkCount('glass2',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+                <span class="text-white/40 text-xs whitespace-nowrap">/ <span class="wiz-alcohol-max">2</span></span>
+              </div>
             </div>
-            <div class="flex items-center gap-2">
-              <button onclick="wizDrinkCount('soft',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
-              <span id="wizSoftCount" class="text-white font-bold text-sm w-5 text-center">0</span>
-              <button onclick="wizDrinkCount('soft',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+            <!-- Unlimited -->
+            <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
+              <div>
+                <p class="text-white/80 text-xs font-medium" data-i18n="wizard.unlimitedLabel">Unlimited Alcohol</p>
+                <p class="text-white/30 text-[10px]" data-i18n="wizard.unlimitedNote">+€25/person · Wine, beer, rakı, vodka, gin all night</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="wizDrinkCount('unlimited',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
+                <span id="wizUnlimitedCount" class="text-white font-bold text-sm w-5 text-center">0</span>
+                <button onclick="wizDrinkCount('unlimited',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
+                <span class="text-white/40 text-xs whitespace-nowrap">/ <span class="wiz-alcohol-max">2</span></span>
+              </div>
             </div>
           </div>
-          <!-- 2 Glasses -->
-          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
-            <div>
-              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.glass2Label">2 Glasses of Alcohol</p>
-              <p class="text-white/30 text-[10px]" data-i18n="wizard.glass2Note">+€10/person · Wine, beer, rakı, vodka, or gin</p>
-            </div>
-            <div class="flex items-center gap-2">
-              <button onclick="wizDrinkCount('glass2',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
-              <span id="wizGlass2Count" class="text-white font-bold text-sm w-5 text-center">0</span>
-              <button onclick="wizDrinkCount('glass2',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
-            </div>
-          </div>
-          <!-- Unlimited -->
-          <div class="flex items-center justify-between bg-white/5 border border-white/10 rounded-lg px-3 py-2">
-            <div>
-              <p class="text-white/80 text-xs font-medium" data-i18n="wizard.unlimitedLabel">Unlimited Alcohol</p>
-              <p class="text-white/30 text-[10px]" data-i18n="wizard.unlimitedNote">+€25/person · Wine, beer, rakı, vodka, gin all night</p>
-            </div>
-            <div class="flex items-center gap-2">
-              <button onclick="wizDrinkCount('unlimited',-1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">−</button>
-              <span id="wizUnlimitedCount" class="text-white font-bold text-sm w-5 text-center">0</span>
-              <button onclick="wizDrinkCount('unlimited',1)" class="w-7 h-7 rounded-full bg-white/10 text-white/50 hover:text-white flex items-center justify-center text-sm">+</button>
-            </div>
-          </div>
-          <p id="wizDrinkTotal" class="text-xs text-red-400 text-right font-medium">0 / 2 adults assigned</p>
+          <p id="wizAlcoholSummary" class="text-xs text-gold text-right font-medium mt-2"></p>
         </div>
 
         <!-- Hotel Transfer -->

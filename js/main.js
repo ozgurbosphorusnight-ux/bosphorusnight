@@ -1252,6 +1252,7 @@ function openMobilePanel(pkg) {
   // Package selection: user must choose actively, no auto-preselection
   wizState.pkg = null;
   wizState.transfer = null;
+  wizState.wantAlcohol = null;
   const inactive = 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
   const stdBtn = document.getElementById('wizPkgStandard');
   const vipBtn = document.getElementById('wizPkgVip');
@@ -1267,7 +1268,7 @@ function openMobilePanel(pkg) {
   if (adultsEl) adultsEl.textContent = '0';
   const childrenEl = document.getElementById('wizChildren');
   if (childrenEl) childrenEl.textContent = '0';
-  ['wizPackageWarning', 'wizTransferWarning', 'wizNextHint', 'wizDrinkWarning', 'wizAdultsWarning'].forEach(id => {
+  ['wizPackageWarning', 'wizTransferWarning', 'wizNextHint', 'wizAlcoholWarning', 'wizAdultsWarning'].forEach(id => {
     const el = document.getElementById(id);
     if (el) el.classList.add('hidden');
   });
@@ -2121,6 +2122,7 @@ const wizState = {
   pkg: null,
   drink: 'soft',
   drinkCounts: { soft: 0, glass2: 0, unlimited: 0 },
+  wantAlcohol: null,
   transfer: null,
   romantic: false,
   contact: null,
@@ -2206,9 +2208,8 @@ function wizStepReady(step) {
     return true;
   }
   if (step === 2) {
-    const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 2;
-    const dc = wizState.drinkCounts || { soft: 0, glass2: 0, unlimited: 0 };
-    if (dc.soft + dc.glass2 + dc.unlimited !== adults) return false;
+    // Alcohol Yes/No must be answered; soft drinks auto-fill so no per-guest assignment gate.
+    if (wizState.wantAlcohol === null) return false;
     if (wizState.transfer === null) return false;
     return true;
   }
@@ -2361,18 +2362,14 @@ function wizNext() {
       }
     }
   }
-  // Step 2 → 3: validate drinks assigned + transfer selection made
+  // Step 2 → 3: alcohol Yes/No answered + transfer selection made
   if (wizState.step === 2) {
-    const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
-    const dc = wizState.drinkCounts;
-    const assigned = dc.soft + dc.glass2 + dc.unlimited;
-
-    if (assigned !== adults) {
-      const txt = (T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests';
+    if (wizState.wantAlcohol === null) {
+      const txt = (T['wizard.alcoholChoose'] && T['wizard.alcoholChoose'][currentLang]) || 'Please choose an alcohol option';
       wizShowNextHint(txt);
-      wizScrollToElement('#wizDrinkTotal');
-      const warn = document.getElementById('wizDrinkWarning');
+      const warn = document.getElementById('wizAlcoholWarning');
       if (warn) warn.classList.remove('hidden');
+      wizScrollToElement('#wizAlcoholWarning');
       return;
     }
     if (wizState.transfer === null) {
@@ -2714,58 +2711,69 @@ function wizSelectDrink(drink) {
   wizCalcPrice();
 }
 
+// Alcohol allocation — only glass2/unlimited counters. Soft drinks auto-fill the
+// remaining adults (free), so there is no "assign every guest" requirement.
 function wizDrinkCount(type, dir) {
-  const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
+  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
   const counts = wizState.drinkCounts;
-  const assigned = counts.soft + counts.glass2 + counts.unlimited;
-
+  const alcohol = counts.glass2 + counts.unlimited;
   if (dir === 1) {
-    if (assigned >= adults) return;
+    if (alcohol >= adults) return; // can't give alcohol to more guests than there are adults
     counts[type]++;
   } else {
     if (counts[type] <= 0) return;
     counts[type]--;
   }
-
-  // Update displays
-  document.getElementById('wizSoftCount').textContent = counts.soft;
-  document.getElementById('wizGlass2Count').textContent = counts.glass2;
-  document.getElementById('wizUnlimitedCount').textContent = counts.unlimited;
-
-  const newAssigned = counts.soft + counts.glass2 + counts.unlimited;
-  const totalEl = document.getElementById('wizDrinkTotal');
-  if (totalEl) {
-    if (newAssigned === adults) {
-      totalEl.textContent = `✓ ${(T['wizard.drinkComplete'] && T['wizard.drinkComplete'][currentLang]) || 'Drink selection complete'}`;
-      totalEl.className = 'text-xs text-green-400 text-right font-medium';
-    } else {
-      totalEl.textContent = `${newAssigned} / ${adults} — ${(T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests'}`;
-      totalEl.className = 'text-xs text-red-400 text-right font-medium';
-    }
-  }
-
-  // Show/hide warning
-  const warn = document.getElementById('wizDrinkWarning');
-  if (warn) warn.classList.toggle('hidden', newAssigned === adults);
-
+  // Soft = remaining adults (auto, free)
+  counts.soft = Math.max(0, adults - counts.glass2 - counts.unlimited);
+  const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = counts.glass2;
+  const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = counts.unlimited;
+  wizAlcoholSummaryUpdate();
   wizCalcPrice();
   wizUpdateNextBtn();
 }
 
+// Called on step-2 entry: reset alcohol gate to unselected, everyone on free soft drinks.
 function wizResetDrinkCounts() {
-  const adults = parseInt(document.getElementById('wizAdults').textContent) || 2;
-  wizState.drinkCounts = { soft: 0, glass2: 0, unlimited: 0 };
-  const softEl = document.getElementById('wizSoftCount');
-  const glass2El = document.getElementById('wizGlass2Count');
-  const unlimitedEl = document.getElementById('wizUnlimitedCount');
-  if (softEl) softEl.textContent = '0';
-  if (glass2El) glass2El.textContent = '0';
-  if (unlimitedEl) unlimitedEl.textContent = '0';
-  const totalEl = document.getElementById('wizDrinkTotal');
-  if (totalEl) {
-    totalEl.textContent = `0 / ${adults} — ${(T['wizard.drinkRemaining'] && T['wizard.drinkRemaining'][currentLang]) || 'Please select drinks for all guests'}`;
-    totalEl.className = 'text-xs text-red-400 text-right font-medium';
-  }
+  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
+  wizState.wantAlcohol = null;
+  wizState.drinkCounts = { soft: adults, glass2: 0, unlimited: 0 };
+  const inactive = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
+  const no = document.getElementById('wizAlcoholNo'); if (no) no.className = inactive;
+  const yes = document.getElementById('wizAlcoholYes'); if (yes) yes.className = inactive;
+  const panel = document.getElementById('wizAlcoholPanel'); if (panel) panel.classList.add('hidden');
+  const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = '0';
+  const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = '0';
+  document.querySelectorAll('.wiz-alcohol-max').forEach((el) => { el.textContent = adults; });
+  const warn = document.getElementById('wizAlcoholWarning'); if (warn) warn.classList.add('hidden');
+}
+
+// Panel heading — "How many adults get alcohol?" (wizard languages, English fallback).
+function wizAlcoholHeadingText() {
+  const m = { en: 'How many adults get alcohol?', tr: 'Kaç yetişkine alkol eklensin?', de: 'Wie viele Erwachsene möchten Alkohol?', es: '¿Cuántos adultos quieren alcohol?', ru: 'Скольким взрослым добавить алкоголь?', ar: 'كم بالغًا يريد الكحول؟', fa: 'برای چند بزرگسال الکل اضافه شود؟', fr: 'Combien d’adultes veulent de l’alcool ?', it: 'Quanti adulti vogliono alcol?', zh: '几位成人需要酒精？', id: 'Berapa dewasa yang ingin alkohol?', ms: 'Berapa dewasa mahu alkohol?', pl: 'Ilu dorosłych chce alkohol?', bg: 'Колко възрастни искат алкохол?', ro: 'Câți adulți doresc alcool?', uk: 'Скільком дорослим додати алкоголь?', hi: 'कितने वयस्कों को शराब चाहिए?', ur: 'کتنے بالغوں کو الکحل چاہیے؟', ja: '何名の大人にアルコールを付けますか？', ko: '몇 명의 성인에게 주류를 추가하시겠어요?' };
+  return m[currentLang] || m.en;
+}
+
+// Live plain-language summary, e.g. "1 guest unlimited alcohol · 1 guest soft drinks (free)".
+function wizAlcoholSummaryUpdate() {
+  const el = document.getElementById('wizAlcoholSummary');
+  if (!el) return;
+  const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
+  const dc = wizState.drinkCounts;
+  const soft = Math.max(0, adults - dc.glass2 - dc.unlimited);
+  const person = { en: 'guest', tr: 'kişi', de: 'Gast', es: 'huésped', ru: 'гость', ar: 'ضيف', fa: 'مهمان', fr: 'invité', it: 'ospite', zh: '位', id: 'tamu', ms: 'tetamu', pl: 'gość', bg: 'гост', ro: 'oaspete', uk: 'гість', ja: '名', ko: '명', hi: 'मेहमान', ur: 'مہمان' }[currentLang] || 'guest';
+  const free = { en: 'free', tr: 'ücretsiz', de: 'gratis', es: 'gratis', ru: 'бесплатно', ar: 'مجاناً', fa: 'رایگان', fr: 'gratuit', it: 'gratis', zh: '免费', id: 'gratis', ms: 'percuma', pl: 'gratis', bg: 'безплатно', ro: 'gratuit', uk: 'безкоштовно', ja: '無料', ko: '무료', hi: 'मुफ्त', ur: 'مفت' }[currentLang] || 'free';
+  const nm = {
+    glass2: { en: '2 glasses', tr: '2 kadeh alkol', de: '2 Gläser', es: '2 copas', ru: '2 бокала', ar: 'كأسان', fa: '۲ لیوان', fr: '2 verres', it: '2 bicchieri', zh: '2杯酒', id: '2 gelas', ms: '2 gelas', pl: '2 kieliszki', bg: '2 чаши', ro: '2 pahare', uk: '2 келихи', ja: 'グラス2杯', ko: '2잔', hi: '2 गिलास', ur: '2 گلاس' },
+    unlimited: { en: 'unlimited alcohol', tr: 'sınırsız alkol', de: 'unbegrenzt Alkohol', es: 'alcohol ilimitado', ru: 'безлимит алкоголь', ar: 'كحول غير محدود', fa: 'الکل نامحدود', fr: 'alcool illimité', it: 'alcol illimitato', zh: '无限酒精', id: 'alkohol tanpa batas', ms: 'alkohol tanpa had', pl: 'alkohol bez limitu', bg: 'неограничен алкохол', ro: 'alcool nelimitat', uk: 'безлім. алкоголь', ja: '無制限アルコール', ko: '무제한 주류', hi: 'असीमित शराब', ur: 'لامحدود الکحل' },
+    soft: { en: 'soft drinks', tr: 'alkolsüz', de: 'alkoholfrei', es: 'sin alcohol', ru: 'безалкоголь', ar: 'مشروبات غير كحولية', fa: 'نوشیدنی غیرالکلی', fr: 'sans alcool', it: 'analcolico', zh: '无酒精', id: 'minuman ringan', ms: 'minuman ringan', pl: 'bezalkoholowe', bg: 'безалкохолни', ro: 'fără alcool', uk: 'безалкогольні', ja: 'ソフトドリンク', ko: '무알콜', hi: 'सॉफ्ट ड्रिंक', ur: 'سافٹ ڈرنک' },
+  };
+  const L = (o) => (o[currentLang] || o.en);
+  const parts = [];
+  if (dc.glass2 > 0) parts.push(`${dc.glass2} ${person} ${L(nm.glass2)}`);
+  if (dc.unlimited > 0) parts.push(`${dc.unlimited} ${person} ${L(nm.unlimited)}`);
+  if (soft > 0) parts.push(`${soft} ${person} ${L(nm.soft)} (${free})`);
+  el.textContent = parts.join('  ·  ');
 }
 
 function wizToggle(type, val) {
@@ -2786,6 +2794,33 @@ function wizToggle(type, val) {
     const yes = document.getElementById('wizRomanticYes');
     if (no) no.className = val ? inactiveClass : activeClass;
     if (yes) yes.className = val ? activeClass : inactiveClass;
+  }
+  if (type === 'wantAlcohol') {
+    const no = document.getElementById('wizAlcoholNo');
+    const yes = document.getElementById('wizAlcoholYes');
+    if (no) no.className = val ? inactiveClass : activeClass;
+    if (yes) yes.className = val ? activeClass : inactiveClass;
+    const panel = document.getElementById('wizAlcoholPanel');
+    const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
+    if (val) {
+      // Yes → reveal allocator; start all-soft (0 alcohol). Soft auto-fills the remainder.
+      if (panel) panel.classList.remove('hidden');
+      document.querySelectorAll('.wiz-alcohol-max').forEach((el) => { el.textContent = adults; });
+      const heading = document.getElementById('wizAlcoholHeading');
+      if (heading) heading.textContent = wizAlcoholHeadingText();
+      wizAlcoholSummaryUpdate();
+    } else {
+      // No → hide allocator; everyone gets free soft drinks.
+      if (panel) panel.classList.add('hidden');
+      wizState.drinkCounts = { soft: adults, glass2: 0, unlimited: 0 };
+      const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = '0';
+      const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = '0';
+    }
+    const warn = document.getElementById('wizAlcoholWarning');
+    if (warn) warn.classList.add('hidden');
+    const hint = document.getElementById('wizNextHint');
+    if (hint) hint.classList.add('hidden');
+    wizUpdateNextBtn();
   }
   wizCalcPrice();
 }
@@ -3624,10 +3659,11 @@ function wizBuildSummary() {
             wizState.pkg === 'standard' ? 'DINNER_STD' :
             wizState.pkg === 'vip' ? 'DINNER_VIP' :
             wizState.pkg;
-          // wizState.drink: 'soft' (addon yok) | 'glass2' | 'unlimited'
+          // Alcohol add-ons derived from per-guest counts (drinkCounts is the source of truth).
+          const dcPayload = wizState.drinkCounts || { soft: 0, glass2: 0, unlimited: 0 };
           const addonCodes = [];
-          if (wizState.drink === 'glass2') addonCodes.push('ALCOHOL_2GLASS');
-          if (wizState.drink === 'unlimited') addonCodes.push('ALCOHOL_UNLIMITED');
+          if (dcPayload.glass2 > 0) addonCodes.push('ALCOHOL_2GLASS');
+          if (dcPayload.unlimited > 0) addonCodes.push('ALCOHOL_UNLIMITED');
           if (wizState.transfer) addonCodes.push('HOTEL_TRANSFER');
           if (wizState.romantic) addonCodes.push('ROMANTIC_TABLE');
 
