@@ -3131,6 +3131,16 @@ const T = {
     fa: "بعدی", fr: "Suivant", it: "Avanti", zh: "下一步", id: "Berikutnya", ms: "Seterusnya", pl: "Dalej", bg: "Напред", ro: "Următorul", uk: "Далі", ja: "次へ", ko: "다음", hi: "आगे", ur: "اگلا",
     cs: "Další", da: "Næste", el: "Επόμενο", fi: "Seuraava", hu: "Tovább", lv: "Tālāk", nl: "Volgende", no: "Neste", pt: "Seguinte", sk: "Ďalej", sl: "Naprej", sv: "Nästa"
   },
+  "wizard.selectToContinue": {
+    en: "Select to continue",
+    tr: "Devam için seçim yapın",
+    de: "Auswahl treffen",
+    es: "Selecciona para continuar",
+    ru: "Сделайте выбор",
+    ar: "اختر للمتابعة",
+    fa: "برای ادامه انتخاب کنید", fr: "Sélectionnez pour continuer", it: "Seleziona per continuare", zh: "请先选择", id: "Pilih untuk melanjutkan", ms: "Pilih untuk teruskan", pl: "Wybierz, aby kontynuować", bg: "Изберете, за да продължите", ro: "Selectați pentru a continua", uk: "Виберіть, щоб продовжити", ja: "選択して続行", ko: "선택 후 계속", hi: "जारी रखने के लिए चुनें", ur: "جاری رکھنے کے لیے منتخب کریں",
+    cs: "Vyberte pro pokračování", da: "Vælg for at fortsætte", el: "Επιλέξτε για συνέχεια", fi: "Valitse jatkaaksesi", hu: "Válasszon a folytatáshoz", lv: "Izvēlieties, lai turpinātu", nl: "Maak een keuze", no: "Velg for å fortsette", pt: "Selecione para continuar", sk: "Vyberte pre pokračovanie", sl: "Izberite za nadaljevanje", sv: "Välj för att fortsätta"
+  },
   "wizard.softDrinks": {
     en: "Soft Drinks",
     tr: "Alkolsüz",

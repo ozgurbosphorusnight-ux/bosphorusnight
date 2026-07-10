@@ -1295,6 +1295,8 @@ function openMobilePanel(pkg) {
   }
 
   wizCalcPrice();
+  // Reflect the fully-reset step-1 state on the Next button (idle until pkg + adults chosen)
+  wizUpdateNextBtn();
 }
 
 function closeMobilePanel() {
@@ -2187,10 +2189,58 @@ function wizGoTo(n) {
   wizUpdateNextBtn();
 }
 
+// Are the current step's required choices all made? Drives the Next button's idle look.
+// NOTE: step 3+ always returns true — those fields have many (some async) checks, so we
+// keep the button active there and rely on click-time validation instead of a reactive
+// gate that could get "stuck" false-negative and trap the user.
+function wizStepReady(step) {
+  if (step === 1) {
+    if (!wizState.pkg) return false;
+    const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
+    if (adults < 1) return false;
+    const childCount = parseInt(document.getElementById('wizChildren')?.textContent) || 0;
+    if (childCount > 0) {
+      const selects = document.querySelectorAll('#wizChildAgeInputs select');
+      if (Array.from(selects).some((s) => !s.value)) return false;
+    }
+    return true;
+  }
+  if (step === 2) {
+    const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 2;
+    const dc = wizState.drinkCounts || { soft: 0, glass2: 0, unlimited: 0 };
+    if (dc.soft + dc.glass2 + dc.unlimited !== adults) return false;
+    if (wizState.transfer === null) return false;
+    return true;
+  }
+  return true;
+}
+
 function wizUpdateNextBtn() {
   // When user picks an option, hide any lingering hint below the Next button
   const hint = document.getElementById('wizNextHint');
   if (hint) hint.classList.add('hidden');
+  // Reflect step readiness on the Next button. Idle = muted look + "Select to continue"
+  // label + hidden arrow; ready = gold + "Next" + arrow. Button stays clickable either way.
+  const btn = document.getElementById('wizNextBtn');
+  if (!btn) return;
+  const ready = wizStepReady(wizState.step);
+  const label = btn.querySelector('span[data-i18n]');
+  const arrow = btn.querySelector('svg');
+  if (ready) {
+    btn.classList.remove('wiz-next-idle');
+    if (arrow) arrow.classList.remove('hidden');
+    if (label) {
+      label.setAttribute('data-i18n', 'wizard.next');
+      label.textContent = (T['wizard.next'] && T['wizard.next'][currentLang]) || 'Next';
+    }
+  } else {
+    btn.classList.add('wiz-next-idle');
+    if (arrow) arrow.classList.add('hidden');
+    if (label) {
+      label.setAttribute('data-i18n', 'wizard.selectToContinue');
+      label.textContent = (T['wizard.selectToContinue'] && T['wizard.selectToContinue'][currentLang]) || 'Select to continue';
+    }
+  }
 }
 
 /**
@@ -2558,6 +2608,7 @@ function wizSelectPackage(pkg) {
   const hint = document.getElementById('wizNextHint');
   if (hint) hint.classList.add('hidden');
   wizCalcPrice();
+  wizUpdateNextBtn();
 }
 
 function wizGuest(id, dir) {
@@ -2592,6 +2643,7 @@ function wizGuest(id, dir) {
     wizUpdateChildAges(val);
   }
   wizCalcPrice();
+  wizUpdateNextBtn();
 }
 
 function wizUpdateChildAges(count) {
@@ -2619,6 +2671,7 @@ function wizUpdateChildAges(count) {
         if (warn) warn.classList.add('hidden');
         const hint = document.getElementById('wizNextHint');
         if (hint) hint.classList.add('hidden');
+        wizUpdateNextBtn();
       });
       inputs.appendChild(sel);
     }
@@ -2822,7 +2875,6 @@ const WIZ_COUNTRIES = [
   { iso: 'ch', dial: '+41',  name: 'Switzerland' },
   { iso: 'cn', dial: '+86',  name: 'China' },
   { iso: 'co', dial: '+57',  name: 'Colombia' },
-  { iso: 'cy', dial: '+357', name: 'Cyprus' },
   { iso: 'cz', dial: '+420', name: 'Czech Republic' },
   { iso: 'dk', dial: '+45',  name: 'Denmark' },
   { iso: 'dz', dial: '+213', name: 'Algeria' },
@@ -2836,7 +2888,6 @@ const WIZ_COUNTRIES = [
   { iso: 'hu', dial: '+36',  name: 'Hungary' },
   { iso: 'id', dial: '+62',  name: 'Indonesia' },
   { iso: 'ie', dial: '+353', name: 'Ireland' },
-  { iso: 'il', dial: '+972', name: 'Israel' },
   { iso: 'in', dial: '+91',  name: 'India' },
   { iso: 'iq', dial: '+964', name: 'Iraq' },
   { iso: 'jo', dial: '+962', name: 'Jordan' },
@@ -2876,6 +2927,172 @@ const WIZ_COUNTRIES = [
   { iso: 'vn', dial: '+84',  name: 'Vietnam' },
   { iso: 'xk', dial: '+383', name: 'Kosovo' },
   { iso: 'za', dial: '+27',  name: 'South Africa' },
+  // Full-world coverage (ISO 3166-1 / ITU-T E.164) so no visitor is ever stuck at the
+  // phone step. Dial codes adversarially verified. Names fall back to English for these
+  // (see wizGetCountryName). Displayed A-Z after the popular 10 (list re-sorts on render).
+  { iso: 'af', dial: '+93',  name: 'Afghanistan' },
+  { iso: 'ax', dial: '+358', name: 'Åland Islands' },
+  { iso: 'as', dial: '+1',   name: 'American Samoa' },
+  { iso: 'ad', dial: '+376', name: 'Andorra' },
+  { iso: 'ao', dial: '+244', name: 'Angola' },
+  { iso: 'ai', dial: '+1',   name: 'Anguilla' },
+  { iso: 'ag', dial: '+1',   name: 'Antigua and Barbuda' },
+  { iso: 'am', dial: '+374', name: 'Armenia' },
+  { iso: 'aw', dial: '+297', name: 'Aruba' },
+  { iso: 'bs', dial: '+1',   name: 'Bahamas' },
+  { iso: 'bb', dial: '+1',   name: 'Barbados' },
+  { iso: 'by', dial: '+375', name: 'Belarus' },
+  { iso: 'bz', dial: '+501', name: 'Belize' },
+  { iso: 'bj', dial: '+229', name: 'Benin' },
+  { iso: 'bm', dial: '+1',   name: 'Bermuda' },
+  { iso: 'bt', dial: '+975', name: 'Bhutan' },
+  { iso: 'bo', dial: '+591', name: 'Bolivia' },
+  { iso: 'bw', dial: '+267', name: 'Botswana' },
+  { iso: 'vg', dial: '+1',   name: 'British Virgin Islands' },
+  { iso: 'bn', dial: '+673', name: 'Brunei' },
+  { iso: 'bf', dial: '+226', name: 'Burkina Faso' },
+  { iso: 'bi', dial: '+257', name: 'Burundi' },
+  { iso: 'cv', dial: '+238', name: 'Cabo Verde' },
+  { iso: 'kh', dial: '+855', name: 'Cambodia' },
+  { iso: 'cm', dial: '+237', name: 'Cameroon' },
+  { iso: 'bq', dial: '+599', name: 'Caribbean Netherlands' },
+  { iso: 'ky', dial: '+1',   name: 'Cayman Islands' },
+  { iso: 'cf', dial: '+236', name: 'Central African Republic' },
+  { iso: 'td', dial: '+235', name: 'Chad' },
+  { iso: 'cl', dial: '+56',  name: 'Chile' },
+  { iso: 'cx', dial: '+61',  name: 'Christmas Island' },
+  { iso: 'cc', dial: '+61',  name: 'Cocos (Keeling) Islands' },
+  { iso: 'km', dial: '+269', name: 'Comoros' },
+  { iso: 'ck', dial: '+682', name: 'Cook Islands' },
+  { iso: 'cr', dial: '+506', name: 'Costa Rica' },
+  { iso: 'cu', dial: '+53',  name: 'Cuba' },
+  { iso: 'cw', dial: '+599', name: 'Curaçao' },
+  { iso: 'cd', dial: '+243', name: 'Democratic Republic of the Congo' },
+  { iso: 'dj', dial: '+253', name: 'Djibouti' },
+  { iso: 'dm', dial: '+1',   name: 'Dominica' },
+  { iso: 'do', dial: '+1',   name: 'Dominican Republic' },
+  { iso: 'ec', dial: '+593', name: 'Ecuador' },
+  { iso: 'sv', dial: '+503', name: 'El Salvador' },
+  { iso: 'gq', dial: '+240', name: 'Equatorial Guinea' },
+  { iso: 'er', dial: '+291', name: 'Eritrea' },
+  { iso: 'ee', dial: '+372', name: 'Estonia' },
+  { iso: 'sz', dial: '+268', name: 'Eswatini' },
+  { iso: 'et', dial: '+251', name: 'Ethiopia' },
+  { iso: 'fk', dial: '+500', name: 'Falkland Islands' },
+  { iso: 'fo', dial: '+298', name: 'Faroe Islands' },
+  { iso: 'fj', dial: '+679', name: 'Fiji' },
+  { iso: 'gf', dial: '+594', name: 'French Guiana' },
+  { iso: 'pf', dial: '+689', name: 'French Polynesia' },
+  { iso: 'ga', dial: '+241', name: 'Gabon' },
+  { iso: 'gm', dial: '+220', name: 'Gambia' },
+  { iso: 'gh', dial: '+233', name: 'Ghana' },
+  { iso: 'gi', dial: '+350', name: 'Gibraltar' },
+  { iso: 'gl', dial: '+299', name: 'Greenland' },
+  { iso: 'gd', dial: '+1',   name: 'Grenada' },
+  { iso: 'gp', dial: '+590', name: 'Guadeloupe' },
+  { iso: 'gu', dial: '+1',   name: 'Guam' },
+  { iso: 'gt', dial: '+502', name: 'Guatemala' },
+  { iso: 'gg', dial: '+44',  name: 'Guernsey' },
+  { iso: 'gn', dial: '+224', name: 'Guinea' },
+  { iso: 'gw', dial: '+245', name: 'Guinea-Bissau' },
+  { iso: 'gy', dial: '+592', name: 'Guyana' },
+  { iso: 'ht', dial: '+509', name: 'Haiti' },
+  { iso: 'hn', dial: '+504', name: 'Honduras' },
+  { iso: 'is', dial: '+354', name: 'Iceland' },
+  { iso: 'im', dial: '+44',  name: 'Isle of Man' },
+  { iso: 'ci', dial: '+225', name: 'Ivory Coast' },
+  { iso: 'jm', dial: '+1',   name: 'Jamaica' },
+  { iso: 'je', dial: '+44',  name: 'Jersey' },
+  { iso: 'ki', dial: '+686', name: 'Kiribati' },
+  { iso: 'kg', dial: '+996', name: 'Kyrgyzstan' },
+  { iso: 'la', dial: '+856', name: 'Laos' },
+  { iso: 'ls', dial: '+266', name: 'Lesotho' },
+  { iso: 'lr', dial: '+231', name: 'Liberia' },
+  { iso: 'ly', dial: '+218', name: 'Libya' },
+  { iso: 'li', dial: '+423', name: 'Liechtenstein' },
+  { iso: 'lt', dial: '+370', name: 'Lithuania' },
+  { iso: 'lu', dial: '+352', name: 'Luxembourg' },
+  { iso: 'mo', dial: '+853', name: 'Macau' },
+  { iso: 'mg', dial: '+261', name: 'Madagascar' },
+  { iso: 'mw', dial: '+265', name: 'Malawi' },
+  { iso: 'mv', dial: '+960', name: 'Maldives' },
+  { iso: 'ml', dial: '+223', name: 'Mali' },
+  { iso: 'mt', dial: '+356', name: 'Malta' },
+  { iso: 'mh', dial: '+692', name: 'Marshall Islands' },
+  { iso: 'mq', dial: '+596', name: 'Martinique' },
+  { iso: 'mr', dial: '+222', name: 'Mauritania' },
+  { iso: 'mu', dial: '+230', name: 'Mauritius' },
+  { iso: 'yt', dial: '+262', name: 'Mayotte' },
+  { iso: 'fm', dial: '+691', name: 'Micronesia' },
+  { iso: 'md', dial: '+373', name: 'Moldova' },
+  { iso: 'mc', dial: '+377', name: 'Monaco' },
+  { iso: 'mn', dial: '+976', name: 'Mongolia' },
+  { iso: 'me', dial: '+382', name: 'Montenegro' },
+  { iso: 'ms', dial: '+1',   name: 'Montserrat' },
+  { iso: 'mz', dial: '+258', name: 'Mozambique' },
+  { iso: 'mm', dial: '+95',  name: 'Myanmar' },
+  { iso: 'na', dial: '+264', name: 'Namibia' },
+  { iso: 'nr', dial: '+674', name: 'Nauru' },
+  { iso: 'np', dial: '+977', name: 'Nepal' },
+  { iso: 'nc', dial: '+687', name: 'New Caledonia' },
+  { iso: 'ni', dial: '+505', name: 'Nicaragua' },
+  { iso: 'ne', dial: '+227', name: 'Niger' },
+  { iso: 'nu', dial: '+683', name: 'Niue' },
+  { iso: 'nf', dial: '+672', name: 'Norfolk Island' },
+  { iso: 'kp', dial: '+850', name: 'North Korea' },
+  { iso: 'mp', dial: '+1',   name: 'Northern Mariana Islands' },
+  { iso: 'pw', dial: '+680', name: 'Palau' },
+  { iso: 'ps', dial: '+970', name: 'Palestine' },
+  { iso: 'pa', dial: '+507', name: 'Panama' },
+  { iso: 'pg', dial: '+675', name: 'Papua New Guinea' },
+  { iso: 'py', dial: '+595', name: 'Paraguay' },
+  { iso: 'pe', dial: '+51',  name: 'Peru' },
+  { iso: 'pn', dial: '+64',  name: 'Pitcairn Islands' },
+  { iso: 'pr', dial: '+1',   name: 'Puerto Rico' },
+  { iso: 'cg', dial: '+242', name: 'Republic of the Congo' },
+  { iso: 're', dial: '+262', name: 'Reunion' },
+  { iso: 'rw', dial: '+250', name: 'Rwanda' },
+  { iso: 'bl', dial: '+590', name: 'Saint Barthélemy' },
+  { iso: 'kn', dial: '+1',   name: 'Saint Kitts and Nevis' },
+  { iso: 'lc', dial: '+1',   name: 'Saint Lucia' },
+  { iso: 'mf', dial: '+590', name: 'Saint Martin' },
+  { iso: 'pm', dial: '+508', name: 'Saint Pierre and Miquelon' },
+  { iso: 'vc', dial: '+1',   name: 'Saint Vincent and the Grenadines' },
+  { iso: 'ws', dial: '+685', name: 'Samoa' },
+  { iso: 'sm', dial: '+378', name: 'San Marino' },
+  { iso: 'st', dial: '+239', name: 'Sao Tome and Principe' },
+  { iso: 'sn', dial: '+221', name: 'Senegal' },
+  { iso: 'sc', dial: '+248', name: 'Seychelles' },
+  { iso: 'sl', dial: '+232', name: 'Sierra Leone' },
+  { iso: 'sx', dial: '+1',   name: 'Sint Maarten' },
+  { iso: 'sb', dial: '+677', name: 'Solomon Islands' },
+  { iso: 'so', dial: '+252', name: 'Somalia' },
+  { iso: 'ss', dial: '+211', name: 'South Sudan' },
+  { iso: 'sd', dial: '+249', name: 'Sudan' },
+  { iso: 'sr', dial: '+597', name: 'Suriname' },
+  { iso: 'sj', dial: '+47',  name: 'Svalbard and Jan Mayen' },
+  { iso: 'sy', dial: '+963', name: 'Syria' },
+  { iso: 'tj', dial: '+992', name: 'Tajikistan' },
+  { iso: 'tz', dial: '+255', name: 'Tanzania' },
+  { iso: 'tl', dial: '+670', name: 'Timor-Leste' },
+  { iso: 'tg', dial: '+228', name: 'Togo' },
+  { iso: 'tk', dial: '+690', name: 'Tokelau' },
+  { iso: 'to', dial: '+676', name: 'Tonga' },
+  { iso: 'tt', dial: '+1',   name: 'Trinidad and Tobago' },
+  { iso: 'tm', dial: '+993', name: 'Turkmenistan' },
+  { iso: 'tc', dial: '+1',   name: 'Turks and Caicos Islands' },
+  { iso: 'tv', dial: '+688', name: 'Tuvalu' },
+  { iso: 'ug', dial: '+256', name: 'Uganda' },
+  { iso: 'vi', dial: '+1',   name: 'United States Virgin Islands' },
+  { iso: 'uy', dial: '+598', name: 'Uruguay' },
+  { iso: 'vu', dial: '+678', name: 'Vanuatu' },
+  { iso: 'va', dial: '+379', name: 'Vatican City' },
+  { iso: 've', dial: '+58',  name: 'Venezuela' },
+  { iso: 'wf', dial: '+681', name: 'Wallis and Futuna' },
+  { iso: 'eh', dial: '+212', name: 'Western Sahara' },
+  { iso: 'ye', dial: '+967', name: 'Yemen' },
+  { iso: 'zm', dial: '+260', name: 'Zambia' },
+  { iso: 'zw', dial: '+263', name: 'Zimbabwe' },
 ];
 // First 10 are popular (shown at top of list)
 const WIZ_POPULAR_COUNT = 10;
@@ -2908,7 +3125,6 @@ const WIZ_COUNTRY_NAMES = {
   ch: { en: 'Switzerland', tr: 'İsviçre', de: 'Schweiz', fr: 'Suisse', it: 'Svizzera', es: 'Suiza', ru: 'Швейцария', pl: 'Szwajcaria', bg: 'Швейцария', ro: 'Elveția', fa: 'سوئیس', ar: 'سويسرا', zh: '瑞士', id: 'Swiss', ms: 'Switzerland' },
   cn: { en: 'China', tr: 'Çin', de: 'China', fr: 'Chine', it: 'Cina', es: 'China', ru: 'Китай', pl: 'Chiny', bg: 'Китай', ro: 'China', fa: 'چین', ar: 'الصين', zh: '中国', id: 'Tiongkok', ms: 'China' },
   co: { en: 'Colombia', tr: 'Kolombiya', de: 'Kolumbien', fr: 'Colombie', it: 'Colombia', es: 'Colombia', ru: 'Колумбия', pl: 'Kolumbia', bg: 'Колумбия', ro: 'Columbia', fa: 'کلمبیا', ar: 'كولومبيا', zh: '哥伦比亚', id: 'Kolombia', ms: 'Colombia' },
-  cy: { en: 'Cyprus', tr: 'Kıbrıs', de: 'Zypern', fr: 'Chypre', it: 'Cipro', es: 'Chipre', ru: 'Кипр', pl: 'Cypr', bg: 'Кипър', ro: 'Cipru', fa: 'قبرس', ar: 'قبرص', zh: '塞浦路斯', id: 'Siprus', ms: 'Cyprus' },
   cz: { en: 'Czech Republic', tr: 'Çekya', de: 'Tschechien', fr: 'République tchèque', it: 'Repubblica Ceca', es: 'República Checa', ru: 'Чехия', pl: 'Czechy', bg: 'Чехия', ro: 'Cehia', fa: 'جمهوری چک', ar: 'التشيك', zh: '捷克', id: 'Republik Ceko', ms: 'Republik Czech' },
   dk: { en: 'Denmark', tr: 'Danimarka', de: 'Dänemark', fr: 'Danemark', it: 'Danimarca', es: 'Dinamarca', ru: 'Дания', pl: 'Dania', bg: 'Дания', ro: 'Danemarca', fa: 'دانمارک', ar: 'الدنمارك', zh: '丹麦', id: 'Denmark', ms: 'Denmark' },
   dz: { en: 'Algeria', tr: 'Cezayir', de: 'Algerien', fr: 'Algérie', it: 'Algeria', es: 'Argelia', ru: 'Алжир', pl: 'Algieria', bg: 'Алжир', ro: 'Algeria', fa: 'الجزایر', ar: 'الجزائر', zh: '阿尔及利亚', id: 'Aljazair', ms: 'Algeria' },
@@ -2922,7 +3138,6 @@ const WIZ_COUNTRY_NAMES = {
   hu: { en: 'Hungary', tr: 'Macaristan', de: 'Ungarn', fr: 'Hongrie', it: 'Ungheria', es: 'Hungría', ru: 'Венгрия', pl: 'Węgry', bg: 'Унгария', ro: 'Ungaria', fa: 'مجارستان', ar: 'المجر', zh: '匈牙利', id: 'Hungaria', ms: 'Hungary' },
   id: { en: 'Indonesia', tr: 'Endonezya', de: 'Indonesien', fr: 'Indonésie', it: 'Indonesia', es: 'Indonesia', ru: 'Индонезия', pl: 'Indonezja', bg: 'Индонезия', ro: 'Indonezia', fa: 'اندونزی', ar: 'إندونيسيا', zh: '印度尼西亚', id: 'Indonesia', ms: 'Indonesia' },
   ie: { en: 'Ireland', tr: 'İrlanda', de: 'Irland', fr: 'Irlande', it: 'Irlanda', es: 'Irlanda', ru: 'Ирландия', pl: 'Irlandia', bg: 'Ирландия', ro: 'Irlanda', fa: 'ایرلند', ar: 'أيرلندا', zh: '爱尔兰', id: 'Irlandia', ms: 'Ireland' },
-  il: { en: 'Israel', tr: 'İsrail', de: 'Israel', fr: 'Israël', it: 'Israele', es: 'Israel', ru: 'Израиль', pl: 'Izrael', bg: 'Израел', ro: 'Israel', fa: 'اسرائیل', ar: 'إسرائيل', zh: '以色列', id: 'Israel', ms: 'Israel' },
   in: { en: 'India', tr: 'Hindistan', de: 'Indien', fr: 'Inde', it: 'India', es: 'India', ru: 'Индия', pl: 'Indie', bg: 'Индия', ro: 'India', fa: 'هند', ar: 'الهند', zh: '印度', id: 'India', ms: 'India' },
   iq: { en: 'Iraq', tr: 'Irak', de: 'Irak', fr: 'Irak', it: 'Iraq', es: 'Irak', ru: 'Ирак', pl: 'Irak', bg: 'Ирак', ro: 'Irak', fa: 'عراق', ar: 'العراق', zh: '伊拉克', id: 'Irak', ms: 'Iraq' },
   jo: { en: 'Jordan', tr: 'Ürdün', de: 'Jordanien', fr: 'Jordanie', it: 'Giordania', es: 'Jordania', ru: 'Иордания', pl: 'Jordania', bg: 'Йордания', ro: 'Iordania', fa: 'اردن', ar: 'الأردن', zh: '约旦', id: 'Yordania', ms: 'Jordan' },
@@ -2961,11 +3176,16 @@ const WIZ_COUNTRY_NAMES = {
   za: { en: 'South Africa', tr: 'Güney Afrika', de: 'Südafrika', fr: 'Afrique du Sud', it: 'Sudafrica', es: 'Sudáfrica', ru: 'Южная Африка', pl: 'Afryka Południowa', bg: 'Южна Африка', ro: 'Africa de Sud', fa: 'آفریقای جنوبی', ar: 'جنوب أفريقيا', zh: '南非', id: 'Afrika Selatan', ms: 'Afrika Selatan' },
 };
 
+// English-name lookup built from WIZ_COUNTRIES — fallback for the full-world long tail
+// (countries not in the localized WIZ_COUNTRY_NAMES table). Shows "Peru", not "PE".
+const WIZ_ENGLISH_NAME = {};
+for (const _c of WIZ_COUNTRIES) WIZ_ENGLISH_NAME[_c.iso] = _c.name;
+
 // Resolve country name in current site language (falls back to English, then ISO).
 function wizGetCountryName(iso) {
   const names = WIZ_COUNTRY_NAMES[iso];
-  if (!names) return iso.toUpperCase();
-  return names[currentLang] || names.en || iso.toUpperCase();
+  if (names) return names[currentLang] || names.en || WIZ_ENGLISH_NAME[iso] || iso.toUpperCase();
+  return WIZ_ENGLISH_NAME[iso] || iso.toUpperCase();
 }
 
 // Hidden input value is just "+90" now. Old emoji format also supported for back-compat.

@@ -118,6 +118,12 @@
     }
     .wiz-shake { animation: wiz-shake-h 400ms ease-in-out; }
     @media (prefers-reduced-motion: reduce) { .wiz-shake { animation: none; } }
+    /* Next button "idle" look — shown until the current step's required choices are made.
+       Stays clickable on purpose: tapping it still runs wizNext() so the user gets the
+       exact field-level guidance (scroll + shake + message). Matches the wizard's other
+       inactive option buttons (bg-white/5 text-white/50). */
+    .wiz-next-idle { background-color: rgba(255,255,255,.06) !important; color: rgba(255,255,255,.5) !important; box-shadow: none !important; }
+    .wiz-next-idle:hover { background-color: rgba(255,255,255,.09) !important; }
   </style>
 </head>
 <body class="bg-[#0b1120] text-white font-body antialiased pl-[40px] lg:pl-[60px]">
@@ -3174,9 +3180,9 @@
         <div id="wizBottomPrice" class="leading-tight"></div>
         <span id="wizBottomTotal" class="text-2xl font-bold text-[#c9a84c] font-display">€48</span>
       </div>
-      <button id="wizNextBtn" onclick="wizNext()" class="w-full px-6 py-3.5 rounded-full text-sm font-semibold bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] transition-colors flex items-center justify-center gap-2">
-        <span data-i18n="wizard.next">Next</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      <button id="wizNextBtn" onclick="wizNext()" class="wiz-next-idle w-full px-6 py-3.5 rounded-full text-sm font-semibold bg-[#c9a84c] hover:bg-[#d4b86a] text-[#0b1120] transition-colors flex items-center justify-center gap-2">
+        <span data-i18n="wizard.selectToContinue">Select to continue</span>
+        <svg class="hidden w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
       </button>
       <p id="wizNextHint" class="hidden text-[11px] text-white/50 text-center mt-2"></p>
     </div><!-- /wizBottomBar -->
