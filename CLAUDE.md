@@ -106,6 +106,8 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 
 **Sınır:** 3 yaş dahil ücretsiz, 4'e girdiyse indirimli başlar; 8 dahil indirimli, 9'a girdiyse tam fiyat.
 
+**Transfer maliyeti (2026-07-11 netleşti — iç muhasebe):** 4-8 çocuğun transfer **SATIŞI tam €10** (koltuk = koltuk, müşteriden tam alınır) ama **MALİYETİ yetişkinin %50'si = €2.5** (firma çocuğa yarım kesiyor) → marj €7.5. AI `calculate_price` bunu otomatik hesaplar ([calculate-price.js](../../../C:/Projects/bosphorus-night-ai/src/claude/tools/calculate-price.js) transfer bloğu: satış tam, maliyet çocukta ×0.5). 0-3 bebek transferi hem satış hem maliyet €0 — wizard `wizCalcPrice()` bebekleri transfer sayımından çıkarır (2026-07-11 bug fix).
+
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 

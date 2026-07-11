@@ -3384,16 +3384,24 @@ function wizCalcPrice() {
   const dc = wizState.drinkCounts;
   const drinkCost = (dc.glass2 * DINNER_PRICES.extras.glass2) + (dc.unlimited * DINNER_PRICES.extras.unlimited);
 
-  // Transfer per person (adults + children)
-  const totalGuests = adults + children;
+  // Çocuk yaş dağılımı — transfer için bebek (0-3) sayısını çıkarmamız lazım.
+  const childAgeInputs = document.getElementById('wizChildAgeInputs');
+  let infantCount = 0;
+  if (children > 0 && childAgeInputs) {
+    childAgeInputs.querySelectorAll('select').forEach(sel => {
+      if (sel.value === '0-3') infantCount++;
+    });
+  }
+
+  // Transfer per person — 0-3 bebek ücretsiz, 4+ tam €10/kişi (bebekler sayıma girmez)
+  const transferGuests = adults + children - infantCount;
   const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
-  const transferCost = transferExtra * totalGuests;
+  const transferCost = transferExtra * transferGuests;
 
   // Base total (adults + children)
   let total = adults * basePrice;
 
-  // Children pricing
-  const childAgeInputs = document.getElementById('wizChildAgeInputs');
+  // Children pricing (paket: 0-3 ücretsiz, 4-8 %50, 9+ tam)
   if (children > 0 && childAgeInputs) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
       if (sel.value === '0-3') { /* free */ }
@@ -3527,7 +3535,15 @@ function wizBuildSummary() {
   const priceLines = document.getElementById('wizPriceLines');
   if (priceLines) {
     const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24.3;
-    const totalGuests = adults + children;
+    const childAgeInputs = document.getElementById('wizChildAgeInputs');
+    // 0-3 bebek transfere dahil değil — transfer satırından çıkar.
+    let infantCount = 0;
+    if (children > 0 && childAgeInputs) {
+      childAgeInputs.querySelectorAll('select').forEach(sel => {
+        if (sel.value === '0-3') infantCount++;
+      });
+    }
+    const transferGuests = adults + children - infantCount;
     const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
     // zoneExtra kaldırıldı 2026-04-19 — tek fiyat transfer
 
@@ -3555,21 +3571,20 @@ function wizBuildSummary() {
     // Transfer
     if (transferExtra > 0) {
       const transferLabel = (T['ticket.hotelPickup'] && T['ticket.hotelPickup'][currentLang]) || 'Hotel Transfer';
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${totalGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * totalGuests}</span></div>`;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${transferGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * transferGuests}</span></div>`;
     }
 
     // Zone extra (kaldırıldı 2026-04-19 — transfer tek fiyat €10/kişi)
 
     // Children
     const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال', fa: 'کودکان', fr: 'Enfants', it: 'Bambini', zh: '儿童', id: 'Anak-anak', ms: 'Kanak-kanak', pl: 'Dzieci', bg: 'Деца', ro: 'Copii', uk: 'Діти', hi: 'बच्चे', ur: 'بچے', ja: 'お子様', ko: '어린이들' }[currentLang] || 'Children';
-    const childAgeInputs = document.getElementById('wizChildAgeInputs');
     if (children > 0 && childAgeInputs) {
       let childTotal = 0;
       childAgeInputs.querySelectorAll('select').forEach(sel => {
-        const childBase = basePrice + transferExtra;
+        // Paket-only (0-3 ücretsiz, 4-8 %50, 9+ tam). Transfer ayrı satırda tam €10, burada YOK.
         if (sel.value === '0-3') { /* free */ }
-        else if (sel.value === '4-8') childTotal += Math.round(childBase * 0.5);
-        else childTotal += childBase;
+        else if (sel.value === '4-8') childTotal += Math.round(basePrice * 0.5);
+        else childTotal += basePrice;
       });
       if (childTotal > 0) {
         html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${childrenLabel}</p><p class="text-white/30 text-[10px]">${children} x</p></div><span class="text-white font-medium">€${childTotal}</span></div>`;
