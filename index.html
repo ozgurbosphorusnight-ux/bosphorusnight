@@ -2790,8 +2790,9 @@
   </a>
 
   <!-- ========== DESKTOP WHATSAPP QR MODAL (masaüstünde pill'e tıklayınca açılır; mobilde app'i açar) ========== -->
-  <div id="waDesktopModal" class="fixed inset-0 z-[75] hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4" onclick="if(event.target.id==='waDesktopModal')closeWaDesktopModal()">
-    <div class="relative w-full max-w-[20rem] bg-[#0a0f1e] border border-[#25D366]/40 rounded-2xl shadow-2xl px-6 py-7 text-center">
+  <div id="waDesktopModal" class="fixed inset-0 z-[75] hidden" onclick="closeWaDesktopModal()">
+    <div id="waPopoverCard" class="fixed w-[19rem] max-w-[calc(100vw-16px)] bg-[#0a0f1e] border border-[#25D366]/40 rounded-2xl shadow-2xl px-6 py-6 text-center" style="left:0;top:0" onclick="event.stopPropagation()">
+      <div id="waPopoverCaret" class="absolute w-3 h-3 bg-[#0a0f1e] border-r border-b border-[#25D366]/40" style="transform:translateX(-50%) rotate(45deg);bottom:-6px;left:50%"></div>
       <button type="button" onclick="closeWaDesktopModal()" class="absolute top-3 right-3 text-white/60 hover:text-white transition-colors" aria-label="Close">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>

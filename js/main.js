@@ -3955,25 +3955,56 @@ function initPlacesAutocomplete() {
       : null;
     if (!a) return;
     if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me
-    if (a.closest && a.closest('#waDesktopModal')) return;          // modal içi fallback linki
-    const modal = document.getElementById('waDesktopModal');
-    if (!modal) return;
-    e.preventDefault(); // masaüstü: wa.me'ye gitme, kutuyu aç (bnTrack yine inline onclick'te tetiklenir)
-    modal.classList.remove('hidden');
-    modal.classList.add('flex');
-    document.body.style.overflow = 'hidden';
+    if (a.closest && a.closest('#waDesktopModal')) return;          // popover içi fallback linki
+    if (!document.getElementById('waDesktopModal')) return;
+    e.preventDefault(); // masaüstü: wa.me'ye gitme, popover'ı aç (bnTrack yine inline onclick'te tetiklenir)
+    openWaPopover(a);
   });
 })();
+
+// Popover'ı tıklanan butona yapışık konumlandırır: tercihen ÜSTÜNDE, üstte yer
+// yoksa altına kayar; yatayda butona ortalar, ekran kenarına taşarsa kırpar; ok butona bakar.
+function openWaPopover(anchor) {
+  const modal = document.getElementById('waDesktopModal');
+  const card = document.getElementById('waPopoverCard');
+  const caret = document.getElementById('waPopoverCaret');
+  if (!modal || !card) return;
+  modal.classList.remove('hidden'); // önce görünür yap ki ölçebilelim
+  const r = anchor.getBoundingClientRect();
+  const gap = 12;
+  const cw = card.offsetWidth;
+  const ch = card.offsetHeight;
+  const vw = window.innerWidth;
+  const btnCx = r.left + r.width / 2;
+  const left = Math.max(8, Math.min(btnCx - cw / 2, vw - cw - 8));
+  let top = r.top - ch - gap;   // tercihen üstte
+  let flip = false;
+  if (top < 8) { top = r.bottom + gap; flip = true; } // üstte yer yok → altına
+  card.style.left = left + 'px';
+  card.style.top = top + 'px';
+  if (caret) {
+    caret.style.left = Math.max(16, Math.min(btnCx - left, cw - 16)) + 'px';
+    if (flip) { // popover butonun ALTINDA → ok yukarı baksın
+      caret.style.top = '-6px'; caret.style.bottom = 'auto';
+      caret.classList.remove('border-r', 'border-b'); caret.classList.add('border-l', 'border-t');
+    } else {    // popover butonun ÜSTÜNDE → ok aşağı baksın
+      caret.style.bottom = '-6px'; caret.style.top = 'auto';
+      caret.classList.remove('border-l', 'border-t'); caret.classList.add('border-r', 'border-b');
+    }
+  }
+}
 window.closeWaDesktopModal = function () {
   const modal = document.getElementById('waDesktopModal');
-  if (!modal) return;
-  modal.classList.add('hidden');
-  modal.classList.remove('flex');
-  document.body.style.overflow = '';
+  if (modal) modal.classList.add('hidden');
 };
 document.addEventListener('keydown', function (e) {
   const modal = document.getElementById('waDesktopModal');
-  if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
-    window.closeWaDesktopModal();
-  }
+  if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) window.closeWaDesktopModal();
+});
+// Konum bayatlamasın diye scroll/resize'da popover'ı kapat.
+['scroll', 'resize'].forEach(function (ev) {
+  window.addEventListener(ev, function () {
+    const modal = document.getElementById('waDesktopModal');
+    if (modal && !modal.classList.contains('hidden')) window.closeWaDesktopModal();
+  }, true);
 });
