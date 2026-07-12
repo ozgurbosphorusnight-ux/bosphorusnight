@@ -3949,17 +3949,23 @@ function initPlacesAutocomplete() {
 (function installWaDesktopModal(){
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(navigator.userAgent || '');
   if (isMobile) return; // mobil: linkler app'i açsın
+  // CAPTURE fazı + stopImmediatePropagation ŞART: index.html'deki Google Ads dönüşüm
+  // listener'ı (bubble) her wa.me tıklamasında `window.location = href` ile zorla WhatsApp'a
+  // götürüyor — bunu preventDefault durduramaz. Capture'da önce yakalayıp propagasyonu keserek
+  // o listener'ı hiç çalıştırmadan sadece popover'ı açarız. (Dönüşüm, kullanıcı popover'daki
+  // "WhatsApp Web"e basınca — o hariç, normal gider — doğru anda sayılır.)
   document.addEventListener('click', function (e) {
     const a = (e.target && e.target.closest)
       ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]')
       : null;
     if (!a) return;
-    if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me
-    if (a.closest && a.closest('#waDesktopModal')) return;          // popover içi fallback linki
+    if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me (dönüşüm+navigasyon normal)
+    if (a.closest && a.closest('#waDesktopModal')) return;          // popover içi "WhatsApp Web" → normal gitsin
     if (!document.getElementById('waDesktopModal')) return;
-    e.preventDefault(); // masaüstü: wa.me'ye gitme, popover'ı aç (bnTrack yine inline onclick'te tetiklenir)
+    e.preventDefault();
+    e.stopImmediatePropagation(); // gtag dönüşüm listener'ının window.location navigasyonunu engelle
     openWaPopover(a);
-  });
+  }, true); // ← capture: gtag bubble listener'ından ÖNCE çalışsın
 })();
 
 // Popover'ı tıklanan butona yapışık konumlandırır: tercihen ÜSTÜNDE, üstte yer
