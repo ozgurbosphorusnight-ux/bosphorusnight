@@ -3976,6 +3976,19 @@ function openWaPopover(anchor) {
   const caret = document.getElementById('waPopoverCaret');
   if (!modal || !card) return;
   modal.classList.remove('hidden'); // önce görünür yap ki ölçebilelim
+  // Dil-farkında QR + "WhatsApp Web" linki — sayfanın diline göre (mutlak /assets/ yolu:
+  // hem kök hem /de/, /tr/ ... sayfalarında doğru çözülür; eksik dilde en QR'ına fallback).
+  const waLang = (typeof currentLang === 'string' && currentLang) ? currentLang : (document.documentElement.lang || 'en');
+  const qrImg = document.getElementById('waQrImg');
+  if (qrImg) {
+    qrImg.onerror = function () { this.onerror = null; this.src = '/assets/images/wa-qr-en.svg'; };
+    qrImg.src = '/assets/images/wa-qr-' + waLang + '.svg';
+  }
+  const webLink = document.getElementById('waWebLink');
+  if (webLink && typeof T !== 'undefined' && T['floatingWa.message']) {
+    const m = T['floatingWa.message'][waLang] || T['floatingWa.message'].en;
+    webLink.href = 'https://wa.me/905322442922?text=' + encodeURIComponent(m);
+  }
   const r = anchor.getBoundingClientRect();
   const gap = 12;
   const cw = card.offsetWidth;
