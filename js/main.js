@@ -3937,3 +3937,43 @@ function initPlacesAutocomplete() {
     wizCalcPrice();
   });
 }
+
+// ===== Masaüstü WhatsApp: tüm "bize yaz" butonları → QR + numara modal'ı =====
+// Mobilde wa.me linkleri WhatsApp uygulamasını doğrudan açar (dokunma). Masaüstünde
+// wa.me → WhatsApp Web çıkmaz sokak olduğundan, genel sohbet butonlarına tıklamayı
+// yakalayıp QR + numara kutusunu açarız (floating pill, header, footer, bilgi kartları).
+// İSTİSNA — bunlara dokunmayız (ön-dolu mesaj/telefon taşırlar, generic QR onu kaybeder):
+//   #wizWhatsApp  (wizard CTA — phone-prelead + detaylı premium mesaj)
+//   #bookWhatsApp (booking panel — paket/kişi/fiyat detaylı mesaj)
+//   modal'ın kendi "WhatsApp Web" fallback linki
+(function installWaDesktopModal(){
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(navigator.userAgent || '');
+  if (isMobile) return; // mobil: linkler app'i açsın
+  document.addEventListener('click', function (e) {
+    const a = (e.target && e.target.closest)
+      ? e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]')
+      : null;
+    if (!a) return;
+    if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me
+    if (a.closest && a.closest('#waDesktopModal')) return;          // modal içi fallback linki
+    const modal = document.getElementById('waDesktopModal');
+    if (!modal) return;
+    e.preventDefault(); // masaüstü: wa.me'ye gitme, kutuyu aç (bnTrack yine inline onclick'te tetiklenir)
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  });
+})();
+window.closeWaDesktopModal = function () {
+  const modal = document.getElementById('waDesktopModal');
+  if (!modal) return;
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  document.body.style.overflow = '';
+};
+document.addEventListener('keydown', function (e) {
+  const modal = document.getElementById('waDesktopModal');
+  if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) {
+    window.closeWaDesktopModal();
+  }
+});
