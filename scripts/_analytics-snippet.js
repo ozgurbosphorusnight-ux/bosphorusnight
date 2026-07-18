@@ -17,6 +17,7 @@ const GA4_ID = 'G-P09XEBMNWE';                      // Google Analytics 4
 const GOOGLE_ADS_ID = 'AW-18073952031';              // Google Ads conversion tag
 const GOOGLE_ADS_WHATSAPP_LABEL = 'nyO1CLmfrZgcEJ--qqpD'; // WhatsApp click conversion label
 const META_PIXEL_ID = '1504423541313272';            // Bosphorus Night Web — 5 May 2026
+const CLARITY_ID = 'xo6bkdbs5s';                     // Microsoft Clarity — 1 haftalık teşhis (18 Tem 2026); kaldırmak için null yap
 
 /**
  * <head>'e enjekte edilecek tam analytics snippet.
@@ -118,12 +119,25 @@ function buildAnalyticsBodyEnd() {
 }
 
 /**
- * SADECE Meta Pixel snippet. build-home.js için (root index.html'de gtag zaten var,
- * sadece Pixel ekleniyor). buildAnalyticsHead'ten gtag kısmı çıkarılmış hali.
+ * Meta Pixel + Clarity snippet. build-home.js ve build-pages.js her sayfanın
+ * </head>'ine bunu enjekte eder (gtag sayfa şablonunda zaten var).
+ * CLARITY_ID null yapılırsa Clarity bloğu build'de kendiliğinden kalkar.
  */
 function buildMetaPixelOnly() {
-  if (!META_PIXEL_ID) return '';
-  return `
+  const parts = [];
+  if (CLARITY_ID) {
+    parts.push(`
+  <!-- Microsoft Clarity — oturum kaydı (1 haftalık teşhis, 7. gün karar) -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "${CLARITY_ID}");
+  </script>`);
+  }
+  if (!META_PIXEL_ID) return parts.join('\n');
+  parts.push(`
   <!-- Meta Pixel — auto-generated, scripts/_analytics-snippet.js -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -139,7 +153,8 @@ function buildMetaPixelOnly() {
   </script>
   <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1"
-    alt="Meta Pixel tracking"/></noscript>`;
+    alt="Meta Pixel tracking"/></noscript>`);
+  return parts.join('\n');
 }
 
 module.exports = {
