@@ -327,9 +327,11 @@
     '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}',
     // çok dar ekran: yazı gizlenir, hap yuvarlağa döner — WA hapıyla asla çakışmaz
     '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{padding:4px}}',
-    // RTL (ar/fa/ur): WA hapı build'de sağa taşınıyor — widget sola geçer
-    '[dir="rtl"] .bnwc-bubble{right:auto;left:14px}',
-    '[dir="rtl"] .bnwc-panel{right:auto;left:14px}'
+    // Ayna modu: WA hapı SAĞDAYSA (RTL landing'ler) widget sola geçer.
+    // Blanket [dir=rtl] DEĞİL — ar ana sayfada WA solda kalıyor (build farkı),
+    // o yüzden karar runtime'da WA hapının gerçek konumuna bakılarak verilir.
+    '.bnwc-mirror .bnwc-bubble{right:auto;left:14px}',
+    '.bnwc-mirror .bnwc-panel{right:auto;left:14px}'
   ].join('\n');
 
   // ---------- state ----------
@@ -845,6 +847,15 @@
       '<span class="bnwc-bico">' + SVG.bubble + '</span>' +
       '<span class="bnwc-blabel"><i class="bnwc-bdot"></i>' + escapeHtml(aiLabel) + '</span>';
     bubble.addEventListener('click', openPanel);
+
+    // WA hapı bu sayfada SAĞDAYSA (RTL landing build'i right-3 yapar) çakışmamak
+    // için widget'ı sola aynala — karar sınıftan, körlemesine dir=rtl'den değil.
+    try {
+      var waPill = document.getElementById('floatingWhatsapp');
+      if (waPill && /\bright-3\b/.test(waPill.className)) {
+        root.classList.add('bnwc-mirror');
+      }
+    } catch (e) { /* ignore */ }
 
     // panel
     var panel = document.createElement('div');
