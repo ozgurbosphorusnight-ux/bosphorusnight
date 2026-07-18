@@ -116,21 +116,32 @@
     return /^\d{2}:\d{2}:\d{2}$/.test(s) ? s.slice(0, 5) : s;
   }
 
+  function fmtTry(v) {
+    var n = Number(v);
+    try { return isFinite(n) ? n.toLocaleString('tr-TR') : String(v); } catch (e) { return String(v); }
+  }
+
   // Fill {stdPrice} {boarding} … placeholders from live config (drift rule:
   // prices/times never hardcoded in translated strings).
+  // TR sayfada sabit-TL fiyat gösterilir (mevzuat: kur/euro referanssız tek TL
+  // rakamı) — '€{x}' kalıbı bütün olarak '₺…' ile değiştirilir; TL yoksa € kalır.
   function fill(text) {
-    var p = cfg.prices, t = cfg.times;
-    return String(text)
-      .replace(/\{stdPrice\}/g, fmtPrice(p.std))
-      .replace(/\{stdOrig\}/g, fmtPrice(p.stdOrig))
-      .replace(/\{vipPrice\}/g, fmtPrice(p.vip))
-      .replace(/\{vipOrig\}/g, fmtPrice(p.vipOrig))
-      .replace(/\{alc2\}/g, fmtPrice(p.alcohol2))
-      .replace(/\{alcUnl\}/g, fmtPrice(p.alcoholUnlimited))
-      .replace(/\{transfer\}/g, fmtPrice(p.transfer))
-      .replace(/\{boarding\}/g, fmtTime(t.boarding))
-      .replace(/\{departure\}/g, fmtTime(t.departure))
-      .replace(/\{return\}/g, fmtTime(t.ret));
+    var p = cfg.prices, t = cfg.times, s = String(text);
+    var tl = (getLang() === 'tr' && cfg.prices_try && cfg.prices_try.std != null) ? cfg.prices_try : null;
+    var map = {
+      stdPrice: 'std', stdOrig: 'stdOrig', vipPrice: 'vip', vipOrig: 'vipOrig',
+      alc2: 'alcohol2', alcUnl: 'alcoholUnlimited', transfer: 'transfer'
+    };
+    Object.keys(map).forEach(function (ph) {
+      var k = map[ph];
+      var tlv = (tl && tl[k] != null) ? '₺' + fmtTry(tl[k]) : null;
+      s = s.split('€{' + ph + '}').join(tlv || ('€' + fmtPrice(p[k])));
+      s = s.split('{' + ph + '}').join(tlv || fmtPrice(p[k]));
+    });
+    return s
+      .split('{boarding}').join(fmtTime(t.boarding))
+      .split('{departure}').join(fmtTime(t.departure))
+      .split('{return}').join(fmtTime(t.ret));
   }
 
   function escapeHtml(s) {
@@ -218,7 +229,10 @@
     '.bnwc-panel.bnwc-open{display:flex;animation:bnwcUp .25s ease-out}',
     '@keyframes bnwcUp{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}',
     '.bnwc-head{display:flex;align-items:center;gap:12px;padding:14px 16px;background:linear-gradient(135deg,rgba(201,168,76,.16),rgba(201,168,76,.05));border-bottom:1px solid rgba(201,168,76,.25)}',
-    '.bnwc-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-weight:700;color:#0b1120;font-size:16px;flex-shrink:0}',
+    '.bnwc-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}',
+    '.bnwc-avatar img{width:30px;height:auto;display:block}',
+    // mobil tam ekranda üstteki kayan bar (#topBar z-60) sohbetin üstüne binmesin
+    'body.bnwc-lock #topBar{display:none}',
     '.bnwc-head-t{flex:1;min-width:0}',
     '.bnwc-head-t b{display:block;font-family:"Playfair Display",serif;font-size:15px;color:#fff;letter-spacing:.5px}',
     '.bnwc-head-t span{font-size:11px;color:rgba(232,230,223,.55);display:flex;align-items:center;gap:5px}',
@@ -256,12 +270,27 @@
     '.bnwc-send{width:42px;height:42px;border-radius:50%;border:none;background:linear-gradient(135deg,#c9a84c,#d4b86a);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:0}',
     '.bnwc-send svg{width:18px;height:18px;fill:#0b1120}',
     '.bnwc-send:disabled{opacity:.4;cursor:default}',
-    '.bnwc-note{text-align:center;font-size:10px;color:rgba(232,230,223,.3);padding:0 0 8px}',
     '.bnwc-qrcard{display:flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 12px;align-self:flex-start;max-width:85%;animation:bnwcUp .2s ease-out}',
     '.bnwc-qrcard img{width:96px;height:96px;display:block}',
     '.bnwc-qt{color:#0b1120;font-size:12px;line-height:1.55}',
     '.bnwc-qt b{font-size:13.5px;user-select:all}',
     '.bnwc-qt a{color:#128C7E;font-weight:600;text-decoration:underline}',
+    // video kartı — thumbnail + play + başlık (konum-atar-gibi görsel dil)
+    '.bnwc-vcard{position:relative;display:block;width:min(85%,300px);border-radius:12px;overflow:hidden;cursor:pointer;border:1px solid rgba(201,168,76,.3);background:#000;padding:0;text-align:left;animation:bnwcUp .2s ease-out}',
+    '.bnwc-vcard img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;opacity:.9}',
+    '.bnwc-vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}',
+    '.bnwc-vplay svg{width:44px;height:44px;fill:#fff;opacity:.95}',
+    '.bnwc-vt{position:absolute;left:0;right:0;bottom:0;padding:16px 10px 7px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:12px}',
+    // konum kartı — mesajlaşma uygulamalarındaki "konum at" görünümü (tamamı bizim CSS/SVG)
+    '.bnwc-loccard{display:block;width:min(85%,300px);border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,.3);cursor:pointer;background:#12203c;padding:0;text-align:left;text-decoration:none;animation:bnwcUp .2s ease-out}',
+    '.bnwc-locmap{position:relative;height:100px;background:linear-gradient(65deg,transparent 44%,rgba(127,178,217,.22) 47%,rgba(127,178,217,.22) 53%,transparent 56%),repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),linear-gradient(135deg,#16294a,#1b3358)}',
+    '.bnwc-locdot{position:absolute;left:50%;top:56%;width:36px;height:12px;transform:translate(-50%,0);background:radial-gradient(ellipse,rgba(201,168,76,.4),transparent 70%)}',
+    '.bnwc-locpin{position:absolute;left:50%;top:50%;transform:translate(-50%,-85%)}',
+    '.bnwc-locpin svg{width:34px;height:34px;fill:#c9a84c;filter:drop-shadow(0 3px 5px rgba(0,0,0,.5))}',
+    '.bnwc-locinfo{display:block;padding:9px 12px;font-size:12.5px;line-height:1.5;color:#e8e6df}',
+    '.bnwc-locinfo b{display:block;color:#fff}',
+    '.bnwc-locinfo span{color:#7fb2d9;font-size:11.5px}',
+    '.bnwc-qrcard.bnwc-qrtg .bnwc-qt a{color:#26A5E4}',
     '@media (min-width:1024px){',
     '.bnwc-bubble{right:calc(320px + 24px);bottom:18px}',
     '.bnwc-panel{right:calc(320px + 24px);bottom:18px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px)}',
@@ -314,6 +343,7 @@
       }
       if (d.wa_number) cfg.wa_number = d.wa_number;
       if (d.tg_bot) cfg.tg_bot = d.tg_bot;
+      if (d.prices_try && d.prices_try.std != null) cfg.prices_try = d.prices_try;
     } catch (e) { /* keep baked fallback */ }
   }
 
@@ -321,7 +351,7 @@
     if (state.cfgLoaded) return;
     state.cfgLoaded = true;
     try {
-      var raw = sessionStorage.getItem('bn_wc_config');
+      var raw = sessionStorage.getItem('bn_wc_config_v2');
       if (raw) {
         var c = JSON.parse(raw);
         if (c && c.t && (Date.now() - c.t) < 3600000 && c.data) { applyConfig(c.data); return; }
@@ -332,7 +362,7 @@
       .then(function (d) {
         if (d && d.ok) {
           applyConfig(d);
-          try { sessionStorage.setItem('bn_wc_config', JSON.stringify({ t: Date.now(), data: d })); } catch (e) { /* ignore */ }
+          try { sessionStorage.setItem('bn_wc_config_v2', JSON.stringify({ t: Date.now(), data: d })); } catch (e) { /* ignore */ }
         }
       })
       .catch(function () { /* baked fallback stays */ });
@@ -433,22 +463,71 @@
     scrollDown();
   }
 
+  // Telegram masaüstü QR kartı — WA kartıyla aynı görsel dil (18 Tem istek).
+  // QR statik bot linkini kodlar; #WC kodu ALTTAKİ linkte taşınır.
+  function showTgQrCard(tgUrl) {
+    var card = document.createElement('div');
+    card.className = 'bnwc-qrcard bnwc-qrtg';
+    var img = document.createElement('img');
+    img.alt = 'Telegram QR';
+    img.src = '/assets/images/tg-qr.svg';
+    var txt = document.createElement('div');
+    txt.className = 'bnwc-qt';
+    txt.innerHTML = tx('qr.scan') + '<br><b>@' + escapeHtml(cfg.tg_bot) + '</b>';
+    if (tgUrl) {
+      var link = document.createElement('a');
+      link.href = tgUrl;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      link.textContent = 'Telegram Web';
+      txt.appendChild(document.createElement('br'));
+      txt.appendChild(link);
+    }
+    card.appendChild(img);
+    card.appendChild(txt);
+    els.msgs.appendChild(card);
+    scrollDown();
+  }
+
+  // ---------- zengin kartlar (konum-atar-gibi görünüm; tamamı kendi CSS/SVG'miz) ----------
+  function renderVideoCard(id, title) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'bnwc-vcard';
+    b.setAttribute('aria-label', title);
+    b.innerHTML =
+      '<img alt="" loading="lazy" src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg">' +
+      '<span class="bnwc-vplay">' + SVG.play + '</span>' +
+      '<span class="bnwc-vt">' + escapeHtml(title) + '</span>';
+    b.addEventListener('click', function () { playVideo(id); });
+    els.msgs.appendChild(b);
+    scrollDown();
+  }
+
+  function renderChannelRow() {
+    renderActions([
+      { kind: 'link', cls: 'bnwc-yt', svg: SVG.play, label: '@BosphorusNightTour', sub: 'YouTube', href: 'https://www.youtube.com/@BosphorusNightTour' }
+    ]);
+  }
+
+  function renderLocationCard() {
+    var a = document.createElement('a');
+    a.className = 'bnwc-loccard';
+    a.href = MAPS_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.innerHTML =
+      '<span class="bnwc-locmap"><span class="bnwc-locdot"></span><span class="bnwc-locpin">' + SVG.map + '</span></span>' +
+      '<span class="bnwc-locinfo"><b>Kabataş İskelesi</b>Kabataş, Beyoğlu — İstanbul<br><span>' + escapeHtml(tx('btn.maps')) + '</span></span>';
+    els.msgs.appendChild(a);
+    scrollDown();
+  }
+
   // ---------- chip answers (fully client-side, zero API) ----------
   function actionsFor(key) {
     switch (key) {
       case 'time':
         return [{ kind: 'link', cls: 'bnwc-map', svg: SVG.map, label: tx('btn.mapsMeeting'), href: MAPS_URL }];
-      case 'meeting':
-        return [
-          { kind: 'yt', cls: 'bnwc-yt', svg: SVG.play, label: tx('btn.tram'), sub: tx('btn.walkSub'), yt: 'ybAIn2RhwJs' },
-          { kind: 'yt', cls: 'bnwc-yt', svg: SVG.play, label: tx('btn.dolma'), sub: tx('btn.walkSub'), yt: 'UcQ3qgyADc4' },
-          { kind: 'link', cls: 'bnwc-map', svg: SVG.map, label: tx('btn.maps'), href: MAPS_URL }
-        ];
-      case 'video':
-        return [
-          { kind: 'yt', cls: 'bnwc-yt', svg: SVG.play, label: tx('btn.boatVideo'), sub: tx('btn.playsSub'), yt: 'M1wKCgj2O_M' },
-          { kind: 'yt', cls: 'bnwc-yt', svg: SVG.play, label: tx('btn.showVideo'), sub: tx('btn.playsSub'), yt: 'zzDJ7xoXnuc' }
-        ];
       case 'transfer':
         return [
           { kind: 'wa', cls: 'bnwc-wa', svg: SVG.wa, label: tx('btn.waHotel') },
@@ -470,10 +549,43 @@
     showTyping();
     setTimeout(function () {
       hideTyping();
-      botSayHtml(fill(tx('ans.' + key)));
-      var acts = actionsFor(key);
-      if (acts) renderActions(acts);
+      var html = fill(tx('ans.' + key));
+      botSayHtml(html);
+      if (key === 'meeting') {
+        // adres + konum kartı + yürüyüş videoları (thumbnail'li)
+        renderLocationCard();
+        renderVideoCard('ybAIn2RhwJs', tx('btn.tram'));
+        renderVideoCard('UcQ3qgyADc4', tx('btn.dolma'));
+      } else if (key === 'video') {
+        renderVideoCard('M1wKCgj2O_M', tx('btn.boatVideo'));
+        renderVideoCard('zzDJ7xoXnuc', tx('btn.showVideo'));
+        renderChannelRow();
+      } else {
+        var acts = actionsFor(key);
+        if (acts) renderActions(acts);
+      }
+      logChip(key, html);
     }, 500);
+  }
+
+  // Chip tıklamasını panele logla — Özgür konuşmada "neye bastı, ne gördü" görür.
+  // Fire-and-forget; LLM'e gitmez, limit sayacına girmez.
+  function logChip(key, html) {
+    try {
+      var plain = String(html).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+      fetch(API + '/webchat/event', {
+        method: 'POST',
+        keepalive: true,
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          visitor_id: getVid(),
+          label: tx('chip.' + key),
+          shown_text: plain,
+          lang: getLang(),
+          page: location.pathname
+        })
+      }).catch(function () { /* sessiz */ });
+    } catch (e) { /* sessiz */ }
   }
 
   // ---------- video (reuse site lightbox, never our own) ----------
@@ -505,7 +617,7 @@
     var goFallback = function () {
       if (isMobile()) window.location.href = fallbackUrl;
       else if (target === 'whatsapp') showQrCard(fallbackUrl);
-      else window.open(fallbackUrl, '_blank');
+      else showTgQrCard(fallbackUrl);
     };
     fetch(API + '/webchat/handoff', {
       method: 'POST',
@@ -525,7 +637,7 @@
           else showQrCard(d.wa_url); // masaüstü: QR kartı + numara + WhatsApp Web linki
         } else {
           if (isMobile()) window.location.href = d.tg_url;
-          else window.open(d.tg_url, '_blank');
+          else showTgQrCard(d.tg_url); // masaüstü: TG QR kartı (#WC kodu linkte)
         }
       })
       .catch(goFallback);
@@ -702,7 +814,7 @@
     panel.setAttribute('aria-label', 'Bosphorus Night Assistant');
     panel.innerHTML =
       '<div class="bnwc-head">' +
-        '<div class="bnwc-avatar">BN</div>' +
+        '<div class="bnwc-avatar"><img src="/assets/data/logo%20png%20lst.png" alt="Bosphorus Night"></div>' +
         '<div class="bnwc-head-t"><b>Bosphorus Night</b>' +
           '<span><i class="bnwc-dot"></i> ' + tx('header.status') + '</span></div>' +
         '<button type="button" class="bnwc-close" aria-label="' + escapeHtml(tx('aria.close')) + '">&times;</button>' +
@@ -712,8 +824,7 @@
       '<div class="bnwc-inputrow">' +
         '<input class="bnwc-input" type="text" autocomplete="off" placeholder="' + escapeHtml(tx('placeholder')) + '" aria-label="' + escapeHtml(tx('placeholder')) + '">' +
         '<button type="button" class="bnwc-send" aria-label="' + escapeHtml(tx('aria.send')) + '">' + SVG.send + '</button>' +
-      '</div>' +
-      '<div class="bnwc-note">Bosphorus Night · TÜRSAB A-17672</div>';
+      '</div>';
 
     root.appendChild(bubble);
     root.appendChild(panel);
