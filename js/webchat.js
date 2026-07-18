@@ -36,6 +36,7 @@
     'chip.transfer': 'Transfer',
     'chip.cancel': 'Cancellation',
     'btn.channelSub': 'All our videos on our YouTube channel',
+    'pill': 'AI Assistant',
     'chip.howto': 'How to book',
     'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nNo prepayment — you pay on the boat.',
     'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
@@ -222,13 +223,14 @@
   var CSS = [
     '#bnWebchat{font-family:"Inter",sans-serif}',
     '#bnWebchat,#bnWebchat *{box-sizing:border-box}',
-    // WhatsApp hapının AYNA dengi (18 Tem v2): ince koyu-şeffaf bar + altın çerçeve,
-    // yuvarlak ikon SAĞDA (WA'da solda) — [nokta·yazı][altın yuvarlak]
-    '.bnwc-bubble{position:fixed;right:18px;bottom:84px;z-index:54;height:44px;border-radius:999px;cursor:pointer;border:1px solid rgba(201,168,76,.6);background:rgba(10,15,30,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;align-items:center;gap:9px;padding:4px 4px 4px 15px;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s,border-color .2s;animation:bnwcGlow 3s ease-in-out infinite}',
+    // WhatsApp anatomisinin AYNASI (18 Tem v3 — Özgür tarifi): İNCE boru + borudan
+    // BÜYÜK, dışa taşan altın top SAĞDA. WA solda [büyük top][ince boru], biz sağda
+    // [ince boru][büyük top] — boruların üst/alt çizgileri aynı hizada.
+    '.bnwc-bubble{position:fixed;right:18px;bottom:87px;z-index:54;height:32px;border-radius:999px;cursor:pointer;border:1px solid rgba(201,168,76,.65);background:rgba(10,15,30,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;align-items:center;padding:0 48px 0 14px;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s,border-color .2s;animation:bnwcGlow 3s ease-in-out infinite}',
     '.bnwc-bubble:hover{transform:scale(1.04);border-color:#c9a84c}',
-    '.bnwc-bico{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;flex-shrink:0}',
-    '.bnwc-bico svg{width:18px;height:18px;fill:#0b1120}',
-    '.bnwc-blabel{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.92);font-weight:600;font-size:12.5px;white-space:nowrap;letter-spacing:.2px}',
+    '.bnwc-bico{position:absolute;right:-2px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.4)}',
+    '.bnwc-bico svg{width:20px;height:20px;fill:#0b1120}',
+    '.bnwc-blabel{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.92);font-weight:600;font-size:12px;white-space:nowrap;letter-spacing:.2px}',
     '.bnwc-bdot{width:7px;height:7px;border-radius:50%;background:#22b95c;box-shadow:0 0 0 0 rgba(34,185,92,.55);animation:bnwcDotPulse 2s infinite;flex-shrink:0}',
     '@keyframes bnwcGlow{0%,100%{box-shadow:0 4px 16px rgba(0,0,0,.3)}50%{box-shadow:0 4px 20px rgba(201,168,76,.45)}}',
     '@keyframes bnwcDotPulse{0%{box-shadow:0 0 0 0 rgba(34,185,92,.55)}70%{box-shadow:0 0 0 6px rgba(34,185,92,0)}100%{box-shadow:0 0 0 0 rgba(34,185,92,0)}}',
@@ -320,10 +322,10 @@
     '.bnwc-panel{right:calc(320px + 24px);bottom:18px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px)}',
     '}',
     '@media (max-width:640px){',
-    // WhatsApp hapıyla (bottom-20=80px) aynı hiza, daha kompakt — üst üste binmesin
-    '.bnwc-bubble{height:38px;right:10px;bottom:80px;padding:3px 3px 3px 12px;gap:7px}',
-    '.bnwc-bico{width:30px;height:30px}',
-    '.bnwc-bico svg{width:16px;height:16px}',
+    // WA borusuyla (bottom-20=80px, ~30px boru) BİREBİR hiza — ince boru + taşan top
+    '.bnwc-bubble{height:30px;right:10px;bottom:81px;padding:0 44px 0 12px}',
+    '.bnwc-bico{width:40px;height:40px;right:-2px}',
+    '.bnwc-bico svg{width:18px;height:18px}',
     '.bnwc-blabel{font-size:11.5px}',
     '.bnwc-panel{right:0;bottom:0;left:0;top:0;width:100%;max-width:100%;height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;border-radius:0;border:none}',
     '.bnwc-panel.bnwc-open{animation:bnwcSheet .3s ease-out}',
@@ -336,7 +338,8 @@
     '}',
     '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}',
     // çok dar ekran: yazı gizlenir, hap yuvarlağa döner — WA hapıyla asla çakışmaz
-    '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{padding:3px}}',
+    // çok dar ekran: boru kaybolur, sadece altın top kalır
+    '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{width:44px;height:44px;padding:0;border:none;background:transparent;box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}.bnwc-bico{position:static;transform:none;width:44px;height:44px}}',
     // Ayna modu: WA hapı SAĞDAYSA (RTL landing'ler) widget sola geçer.
     // Blanket [dir=rtl] DEĞİL — ar ana sayfada WA solda kalıyor (build farkı),
     // o yüzden karar runtime'da WA hapının gerçek konumuna bakılarak verilir.
@@ -860,9 +863,8 @@
     bubble.type = 'button';
     bubble.className = 'bnwc-bubble';
     bubble.setAttribute('aria-label', tx('aria.open'));
-    // Yazı: header.status'un ilk parçası ("Yapay zekâ asistanı · anında yanıt"
-    // → "Yapay zekâ asistanı") — 32 dil bedavaya gelir, yeni çeviri gerekmez.
-    var aiLabel = String(tx('header.status')).split('·')[0].trim() || 'AI assistant';
+    // Kısa etiket — her dilde kısaltma (webchat.pill: TR "YZ Asistan", EN "AI Assistant")
+    var aiLabel = tx('pill') || 'AI Assistant';
     bubble.innerHTML =
       '<span class="bnwc-blabel"><i class="bnwc-bdot"></i>' + escapeHtml(aiLabel) + '</span>' +
       '<span class="bnwc-bico">' + SVG.bubble + '</span>';

@@ -4120,6 +4120,11 @@ const T = {
     fa: "ترانسفر", fr: "Transfert", it: "Transfer", zh: "接送", id: "Antar-jemput", ms: "Jemputan", pl: "Transfer", bg: "Трансфер", ro: "Transfer", uk: "Трансфер", ja: "送迎", ko: "픽업", hi: "ट्रांसफर", ur: "ٹرانسفر",
     cs: "Transfer", da: "Transfer", el: "Μεταφορά", fi: "Kuljetus", hu: "Transzfer", lv: "Transfērs", nl: "Transfer", no: "Transport", pt: "Transfer", sk: "Transfer", sl: "Prevoz", sv: "Transfer"
   },
+  "webchat.pill": {
+    en: "AI Assistant", tr: "YZ Asistan", de: "KI-Assistent", es: "Asistente IA", ru: "ИИ-ассистент", ar: "مساعد ذكي",
+    fa: "دستیار AI", fr: "Assistant IA", it: "Assistente IA", zh: "AI助手", id: "Asisten AI", ms: "Pembantu AI", pl: "Asystent AI", bg: "AI асистент", ro: "Asistent AI", uk: "ШІ-асистент", ja: "AIアシスタント", ko: "AI 어시스턴트", hi: "AI सहायक", ur: "AI اسسٹنٹ",
+    cs: "AI asistent", da: "AI-assistent", el: "Βοηθός AI", fi: "AI-avustaja", hu: "AI asszisztens", lv: "AI asistents", nl: "AI-assistent", no: "AI-assistent", pt: "Assistente IA", sk: "AI asistent", sl: "AI pomočnik", sv: "AI-assistent"
+  },
   "webchat.btn.channelSub": {
     en: "All our videos on our YouTube channel", tr: "Tüm videolarımız YouTube kanalımızda", de: "Alle unsere Videos auf unserem YouTube-Kanal", es: "Todos nuestros vídeos en nuestro canal de YouTube", ru: "Все наши видео на нашем YouTube-канале", ar: "جميع فيديوهاتنا على قناتنا في YouTube",
     fa: "همه ویدیوهای ما در کانال یوتیوب ما", fr: "Toutes nos vidéos sur notre chaîne YouTube", it: "Tutti i nostri video sul nostro canale YouTube", zh: "更多视频请访问我们的YouTube频道", id: "Semua video kami di kanal YouTube kami", ms: "Semua video kami di saluran YouTube kami", pl: "Wszystkie nasze filmy na naszym kanale YouTube", bg: "Всички наши видеа в нашия YouTube канал", ro: "Toate videoclipurile noastre pe canalul nostru de YouTube", uk: "Усі наші відео на нашому YouTube-каналі", ja: "すべての動画はYouTubeチャンネルで", ko: "모든 영상은 YouTube 채널에서", hi: "हमारे सभी वीडियो हमारे YouTube चैनल पर", ur: "ہماری تمام ویڈیوز ہمارے YouTube چینل پر",
