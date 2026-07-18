@@ -34,6 +34,7 @@
     'chip.meeting': 'Meeting point',
     'chip.video': 'Video',
     'chip.transfer': 'Transfer',
+    'chip.cancel': 'Cancellation',
     'chip.howto': 'How to book',
     'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nNo prepayment — you pay on the boat.',
     'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
@@ -210,10 +211,11 @@
     meeting: '<svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>',
     video: '<svg viewBox="0 0 24 24"><path d="M10 8.64v6.72L15.27 12 10 8.64zM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>',
     transfer: '<svg viewBox="0 0 24 24"><path d="M4 16c0 .9.4 1.7 1 2.2V20a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1.8c.6-.5 1-1.3 1-2.2V6c0-3.5-3.6-4-8-4s-8 .5-8 4v10zm3.5 1A1.5 1.5 0 1 1 9 15.5 1.5 1.5 0 0 1 7.5 17zm9 0a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5zM18 11H6V6h12v5z"/></svg>',
-    howto: '<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>'
+    howto: '<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>',
+    cancel: '<svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9.4-8 11-4.5-1.6-8-6-8-11V5l8-3zm-1.2 13.4l5.6-5.6-1.4-1.4-4.2 4.2-1.8-1.8-1.4 1.4 3.2 3.2z"/></svg>'
   };
 
-  var CHIP_ORDER = ['prices', 'menu', 'time', 'meeting', 'video', 'transfer', 'howto'];
+  var CHIP_ORDER = ['prices', 'menu', 'time', 'meeting', 'video', 'transfer', 'cancel', 'howto'];
 
   // ---------- scoped CSS ----------
   var CSS = [

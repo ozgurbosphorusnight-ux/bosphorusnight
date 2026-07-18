@@ -4120,6 +4120,11 @@ const T = {
     fa: "ترانسفر", fr: "Transfert", it: "Transfer", zh: "接送", id: "Antar-jemput", ms: "Jemputan", pl: "Transfer", bg: "Трансфер", ro: "Transfer", uk: "Трансфер", ja: "送迎", ko: "픽업", hi: "ट्रांसफर", ur: "ٹرانسفر",
     cs: "Transfer", da: "Transfer", el: "Μεταφορά", fi: "Kuljetus", hu: "Transzfer", lv: "Transfērs", nl: "Transfer", no: "Transport", pt: "Transfer", sk: "Transfer", sl: "Prevoz", sv: "Transfer"
   },
+  "webchat.chip.cancel": {
+    en: "Cancellation", tr: "İptal", de: "Stornierung", es: "Cancelación", ru: "Отмена", ar: "الإلغاء",
+    fa: "لغو", fr: "Annulation", it: "Cancellazione", zh: "取消", id: "Pembatalan", ms: "Pembatalan", pl: "Anulowanie", bg: "Отмяна", ro: "Anulare", uk: "Скасування", ja: "キャンセル", ko: "취소", hi: "रद्दीकरण", ur: "منسوخی",
+    cs: "Storno", da: "Afbestilling", el: "Ακύρωση", fi: "Peruutus", hu: "Lemondás", lv: "Atcelšana", nl: "Annulering", no: "Avbestilling", pt: "Cancelamento", sk: "Storno", sl: "Odpoved", sv: "Avbokning"
+  },
   "webchat.chip.howto": {
     en: "How to book", tr: "Nasıl rezerve ederim", de: "So buchen Sie", es: "Cómo reservar", ru: "Как забронировать", ar: "كيف أحجز",
     fa: "نحوه رزرو", fr: "Comment réserver", it: "Come prenotare", zh: "如何预订", id: "Cara pesan", ms: "Cara tempah", pl: "Jak zarezerwować", bg: "Как да резервирам", ro: "Cum rezerv", uk: "Як забронювати", ja: "予約方法", ko: "예약 방법", hi: "बुकिंग कैसे करें", ur: "بکنگ کیسے کریں",
