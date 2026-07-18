@@ -35,6 +35,7 @@
     'chip.video': 'Video',
     'chip.transfer': 'Transfer',
     'chip.cancel': 'Cancellation',
+    'btn.channelSub': 'All our videos on our YouTube channel',
     'chip.howto': 'How to book',
     'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nNo prepayment — you pay on the boat.',
     'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
@@ -305,6 +306,12 @@
     '.bnwc-locinfo b{display:block;color:#fff}',
     '.bnwc-locinfo span{color:#7fb2d9;font-size:11.5px}',
     '.bnwc-qrcard.bnwc-qrtg .bnwc-qt a{color:#26A5E4}',
+    // YouTube kanal kartı — koyu kart + gerçek YT ikonu (kırmızı), bolca video mesajı
+    '.bnwc-chan{display:flex;align-items:center;gap:11px;flex-shrink:0;width:min(85%,300px);background:#12203c;border:1px solid rgba(201,168,76,.3);border-radius:12px;padding:10px 12px;text-decoration:none;animation:bnwcUp .2s ease-out}',
+    '.bnwc-chico{width:34px;height:34px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    '.bnwc-chico svg{width:22px;height:22px;fill:#e62117}',
+    '.bnwc-cht{display:flex;flex-direction:column;line-height:1.35;font-size:11.5px;color:rgba(232,230,223,.65)}',
+    '.bnwc-cht b{color:#fff;font-size:13px}',
     '@media (min-width:1024px){',
     '.bnwc-bubble{right:calc(320px + 24px);bottom:18px}',
     '.bnwc-panel{right:calc(320px + 24px);bottom:18px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px)}',
@@ -529,10 +536,20 @@
     scrollDown();
   }
 
+  // Kanal kartı — YouTube kanalımız olduğu ve içinde bolca video olduğu net (18 Tem)
+  var YT_SVG = '<svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.9 4.8 12 4.8 12 4.8s-5.9 0-7.6.4a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2 12a29 29 0 0 0 .4 4.8 2.8 2.8 0 0 0 2 2c1.7.4 7.6.4 7.6.4s5.9 0 7.6-.4a2.8 2.8 0 0 0 2-2A29 29 0 0 0 22 12a29 29 0 0 0-.4-4.8zM9.8 15.3V8.7l6.2 3.3-6.2 3.3z"/></svg>';
+
   function renderChannelRow() {
-    renderActions([
-      { kind: 'link', cls: 'bnwc-yt', svg: SVG.play, label: '@BosphorusNightTour', sub: 'YouTube', href: 'https://www.youtube.com/@BosphorusNightTour' }
-    ]);
+    var a = document.createElement('a');
+    a.className = 'bnwc-chan';
+    a.href = 'https://www.youtube.com/@BosphorusNightTour';
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.innerHTML =
+      '<span class="bnwc-chico">' + YT_SVG + '</span>' +
+      '<span class="bnwc-cht"><b>@BosphorusNightTour</b>' + escapeHtml(tx('btn.channelSub')) + '</span>';
+    els.msgs.appendChild(a);
+    scrollDown();
   }
 
   function renderLocationCard() {
@@ -583,7 +600,7 @@
         renderVideoCard('ybAIn2RhwJs', tx('btn.tram'));
         renderVideoCard('UcQ3qgyADc4', tx('btn.dolma'));
       } else if (key === 'video') {
-        renderVideoCard('M1wKCgj2O_M', tx('btn.boatVideo'));
+        // Tek video yeter (18 Tem — Özgür): canlı gösteri kartı + kanal kartı
         renderVideoCard('zzDJ7xoXnuc', tx('btn.showVideo'));
         renderChannelRow();
       } else {

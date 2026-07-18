@@ -4120,6 +4120,11 @@ const T = {
     fa: "ترانسفر", fr: "Transfert", it: "Transfer", zh: "接送", id: "Antar-jemput", ms: "Jemputan", pl: "Transfer", bg: "Трансфер", ro: "Transfer", uk: "Трансфер", ja: "送迎", ko: "픽업", hi: "ट्रांसफर", ur: "ٹرانسفر",
     cs: "Transfer", da: "Transfer", el: "Μεταφορά", fi: "Kuljetus", hu: "Transzfer", lv: "Transfērs", nl: "Transfer", no: "Transport", pt: "Transfer", sk: "Transfer", sl: "Prevoz", sv: "Transfer"
   },
+  "webchat.btn.channelSub": {
+    en: "All our videos on our YouTube channel", tr: "Tüm videolarımız YouTube kanalımızda", de: "Alle unsere Videos auf unserem YouTube-Kanal", es: "Todos nuestros vídeos en nuestro canal de YouTube", ru: "Все наши видео на нашем YouTube-канале", ar: "جميع فيديوهاتنا على قناتنا في YouTube",
+    fa: "همه ویدیوهای ما در کانال یوتیوب ما", fr: "Toutes nos vidéos sur notre chaîne YouTube", it: "Tutti i nostri video sul nostro canale YouTube", zh: "更多视频请访问我们的YouTube频道", id: "Semua video kami di kanal YouTube kami", ms: "Semua video kami di saluran YouTube kami", pl: "Wszystkie nasze filmy na naszym kanale YouTube", bg: "Всички наши видеа в нашия YouTube канал", ro: "Toate videoclipurile noastre pe canalul nostru de YouTube", uk: "Усі наші відео на нашому YouTube-каналі", ja: "すべての動画はYouTubeチャンネルで", ko: "모든 영상은 YouTube 채널에서", hi: "हमारे सभी वीडियो हमारे YouTube चैनल पर", ur: "ہماری تمام ویڈیوز ہمارے YouTube چینل پر",
+    cs: "Všechna naše videa na našem kanálu YouTube", da: "Alle vores videoer på vores YouTube-kanal", el: "Όλα τα βίντεό μας στο κανάλι μας στο YouTube", fi: "Kaikki videomme YouTube-kanavallamme", hu: "Minden videónk a YouTube-csatornánkon", lv: "Visi mūsu video mūsu YouTube kanālā", nl: "Al onze video's op ons YouTube-kanaal", no: "Alle videoene våre på YouTube-kanalen vår", pt: "Todos os nossos vídeos no nosso canal do YouTube", sk: "Všetky naše videá na našom YouTube kanáli", sl: "Vsi naši videi na našem YouTube kanalu", sv: "Alla våra videor på vår YouTube-kanal"
+  },
   "webchat.chip.cancel": {
     en: "Cancellation", tr: "İptal", de: "Stornierung", es: "Cancelación", ru: "Отмена", ar: "الإلغاء",
     fa: "لغو", fr: "Annulation", it: "Cancellazione", zh: "取消", id: "Pembatalan", ms: "Pembatalan", pl: "Anulowanie", bg: "Отмяна", ro: "Anulare", uk: "Скасування", ja: "キャンセル", ko: "취소", hi: "रद्दीकरण", ur: "منسوخی",
