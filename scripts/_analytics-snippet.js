@@ -38,9 +38,14 @@ function buildAnalyticsHead() {
 
     // Reusable: Google Ads WhatsApp/Telegram click conversion
     function gtag_report_conversion(url) {
+      var called = false;
       var callback = function () {
+        if (called) return;
+        called = true;
         if (typeof(url) != 'undefined') { window.location = url; }
       };
+      // gtag engellenirse (iOS içerik engelleyici vb.) callback hiç dönmez — buton ölü kalmasın
+      setTimeout(callback, 1000);
       gtag('event', 'conversion', {
         'send_to': '${GOOGLE_ADS_ID}/${GOOGLE_ADS_WHATSAPP_LABEL}',
         'value': 1.0,

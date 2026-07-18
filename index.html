@@ -16,9 +16,14 @@
 
     // WhatsApp tıklama dönüşüm takibi
     function gtag_report_conversion(url) {
+      var called = false;
       var callback = function () {
+        if (called) return;
+        called = true;
         if (typeof(url) != 'undefined') { window.location = url; }
       };
+      // gtag engellenirse (iOS içerik engelleyici vb.) callback hiç dönmez — buton ölü kalmasın
+      setTimeout(callback, 1000);
       gtag('event', 'conversion', {
         'send_to': 'AW-18073952031/nyO1CLmfrZgcEJ--qqpD',
         'value': 1.0,
