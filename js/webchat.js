@@ -534,6 +534,7 @@
       case 'transfer':
         return [
           { kind: 'wa', cls: 'bnwc-wa', svg: SVG.wa, label: tx('btn.waHotel') },
+          { kind: 'tg', cls: 'bnwc-tg', svg: SVG.tg, label: tx('btn.tgName'), sub: tx('btn.tgSub') },
           { kind: 'book', cls: 'bnwc-gold', svg: SVG.cal, label: tx('btn.bookCheck') }
         ];
       case 'howto':
