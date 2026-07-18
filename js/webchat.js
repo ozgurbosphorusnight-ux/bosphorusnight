@@ -310,9 +310,11 @@
     '.bnwc-panel{right:calc(320px + 24px);bottom:18px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px)}',
     '}',
     '@media (max-width:640px){',
-    '.bnwc-bubble{height:44px;right:14px;bottom:84px;padding:4px 13px 4px 4px}',
-    '.bnwc-bico{width:34px;height:34px}',
-    '.bnwc-blabel{font-size:12.5px}',
+    // WhatsApp hapıyla (bottom-20=80px) aynı hiza, daha kompakt — üst üste binmesin
+    '.bnwc-bubble{height:40px;right:10px;bottom:80px;padding:4px 11px 4px 4px;gap:7px}',
+    '.bnwc-bico{width:30px;height:30px}',
+    '.bnwc-bico svg{width:16px;height:16px}',
+    '.bnwc-blabel{font-size:11.5px}',
     '.bnwc-panel{right:0;bottom:0;left:0;top:0;width:100%;max-width:100%;height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;border-radius:0;border:none}',
     '.bnwc-panel.bnwc-open{animation:bnwcSheet .3s ease-out}',
     '.bnwc-head{padding-top:calc(14px + env(safe-area-inset-top))}',
@@ -322,7 +324,12 @@
     'body.bnwc-lock{overflow:hidden;position:fixed;inset:0;width:100%}',
     '.bnwc-qrcard{display:none}', // telefon kendi ekranını okutamaz — QR sadece masaüstünde
     '}',
-    '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}'
+    '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}',
+    // çok dar ekran: yazı gizlenir, hap yuvarlağa döner — WA hapıyla asla çakışmaz
+    '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{padding:4px}}',
+    // RTL (ar/fa/ur): WA hapı build'de sağa taşınıyor — widget sola geçer
+    '[dir="rtl"] .bnwc-bubble{right:auto;left:14px}',
+    '[dir="rtl"] .bnwc-panel{right:auto;left:14px}'
   ].join('\n');
 
   // ---------- state ----------

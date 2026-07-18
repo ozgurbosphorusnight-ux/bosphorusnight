@@ -664,7 +664,7 @@ function translateFloatingWaHref(html, lang) {
 function swapFloatingWaToRtl(html) {
   return html.replace(
     /(<a\s+id="floatingWhatsapp"[^>]*\sclass=")([^"]+)(")/,
-    (_, pre, cls, post) => `${pre}${cls.replace(/\bleft-12\b/, 'right-12')}${post}`
+    (_, pre, cls, post) => `${pre}${cls.replace(/\bleft-3\b/, 'right-3')}${post}`
   ).replace(
     /(<svg\s+class=")(absolute -left-1)([^"]*")/,
     (_, pre, target, post) => `${pre}absolute -right-1${post}`
