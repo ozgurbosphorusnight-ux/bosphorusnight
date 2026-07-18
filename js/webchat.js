@@ -222,15 +222,15 @@
   var CSS = [
     '#bnWebchat{font-family:"Inter",sans-serif}',
     '#bnWebchat,#bnWebchat *{box-sizing:border-box}',
-    // altın HAP launcher — WhatsApp hapının dengi (18 Tem istek): ikon + "AI asistanı"
-    // yazısı + çevrimiçi noktası; yumuşak ışıma nabzı dikkat çeker, premium bozulmaz
-    '.bnwc-bubble{position:fixed;right:18px;bottom:84px;z-index:54;height:46px;border-radius:999px;cursor:pointer;border:none;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;gap:9px;padding:5px 16px 5px 5px;box-shadow:0 6px 24px rgba(201,168,76,.45);transition:transform .2s;animation:bnwcGlow 3s ease-in-out infinite}',
-    '.bnwc-bubble:hover{transform:scale(1.05)}',
-    '.bnwc-bico{width:36px;height:36px;border-radius:50%;background:#0d1428;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
-    '.bnwc-bico svg{width:19px;height:19px;fill:#d4b86a}',
-    '.bnwc-blabel{display:flex;align-items:center;gap:6px;color:#0b1120;font-weight:700;font-size:13px;white-space:nowrap;letter-spacing:.2px}',
+    // WhatsApp hapının AYNA dengi (18 Tem v2): ince koyu-şeffaf bar + altın çerçeve,
+    // yuvarlak ikon SAĞDA (WA'da solda) — [nokta·yazı][altın yuvarlak]
+    '.bnwc-bubble{position:fixed;right:18px;bottom:84px;z-index:54;height:44px;border-radius:999px;cursor:pointer;border:1px solid rgba(201,168,76,.6);background:rgba(10,15,30,.72);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;align-items:center;gap:9px;padding:4px 4px 4px 15px;box-shadow:0 4px 16px rgba(0,0,0,.3);transition:transform .2s,border-color .2s;animation:bnwcGlow 3s ease-in-out infinite}',
+    '.bnwc-bubble:hover{transform:scale(1.04);border-color:#c9a84c}',
+    '.bnwc-bico{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    '.bnwc-bico svg{width:18px;height:18px;fill:#0b1120}',
+    '.bnwc-blabel{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.92);font-weight:600;font-size:12.5px;white-space:nowrap;letter-spacing:.2px}',
     '.bnwc-bdot{width:7px;height:7px;border-radius:50%;background:#22b95c;box-shadow:0 0 0 0 rgba(34,185,92,.55);animation:bnwcDotPulse 2s infinite;flex-shrink:0}',
-    '@keyframes bnwcGlow{0%,100%{box-shadow:0 6px 24px rgba(201,168,76,.4)}50%{box-shadow:0 6px 32px rgba(201,168,76,.75)}}',
+    '@keyframes bnwcGlow{0%,100%{box-shadow:0 4px 16px rgba(0,0,0,.3)}50%{box-shadow:0 4px 20px rgba(201,168,76,.45)}}',
     '@keyframes bnwcDotPulse{0%{box-shadow:0 0 0 0 rgba(34,185,92,.55)}70%{box-shadow:0 0 0 6px rgba(34,185,92,0)}100%{box-shadow:0 0 0 0 rgba(34,185,92,0)}}',
     '@keyframes bnwcPulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.35);opacity:0}100%{opacity:0}}',
     '.bnwc-bubble.bnwc-hidden{display:none}',
@@ -318,7 +318,7 @@
     '}',
     '@media (max-width:640px){',
     // WhatsApp hapıyla (bottom-20=80px) aynı hiza, daha kompakt — üst üste binmesin
-    '.bnwc-bubble{height:40px;right:10px;bottom:80px;padding:4px 11px 4px 4px;gap:7px}',
+    '.bnwc-bubble{height:38px;right:10px;bottom:80px;padding:3px 3px 3px 12px;gap:7px}',
     '.bnwc-bico{width:30px;height:30px}',
     '.bnwc-bico svg{width:16px;height:16px}',
     '.bnwc-blabel{font-size:11.5px}',
@@ -333,7 +333,7 @@
     '}',
     '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}',
     // çok dar ekran: yazı gizlenir, hap yuvarlağa döner — WA hapıyla asla çakışmaz
-    '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{padding:4px}}',
+    '@media (max-width:379px){.bnwc-blabel{display:none}.bnwc-bubble{padding:3px}}',
     // Ayna modu: WA hapı SAĞDAYSA (RTL landing'ler) widget sola geçer.
     // Blanket [dir=rtl] DEĞİL — ar ana sayfada WA solda kalıyor (build farkı),
     // o yüzden karar runtime'da WA hapının gerçek konumuna bakılarak verilir.
@@ -861,8 +861,8 @@
     // → "Yapay zekâ asistanı") — 32 dil bedavaya gelir, yeni çeviri gerekmez.
     var aiLabel = String(tx('header.status')).split('·')[0].trim() || 'AI assistant';
     bubble.innerHTML =
-      '<span class="bnwc-bico">' + SVG.bubble + '</span>' +
-      '<span class="bnwc-blabel"><i class="bnwc-bdot"></i>' + escapeHtml(aiLabel) + '</span>';
+      '<span class="bnwc-blabel"><i class="bnwc-bdot"></i>' + escapeHtml(aiLabel) + '</span>' +
+      '<span class="bnwc-bico">' + SVG.bubble + '</span>';
     bubble.addEventListener('click', openPanel);
 
     // WA hapı bu sayfada SAĞDAYSA (RTL landing build'i right-3 yapar) çakışmamak
