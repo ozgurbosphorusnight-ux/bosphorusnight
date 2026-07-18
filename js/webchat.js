@@ -240,8 +240,9 @@
     '.bnwc-head-t b{display:block;font-family:"Playfair Display",serif;font-size:15px;color:#fff;letter-spacing:.5px}',
     '.bnwc-head-t span{font-size:11px;color:rgba(232,230,223,.55);display:flex;align-items:center;gap:5px}',
     '.bnwc-dot{width:7px;height:7px;border-radius:50%;background:#3ddc84;display:inline-block;flex-shrink:0}',
-    '.bnwc-close{background:none;border:none;color:rgba(232,230,223,.5);font-size:22px;cursor:pointer;padding:4px 8px;line-height:1}',
-    '.bnwc-close:hover{color:#fff}',
+    // altın yuvarlak X — koyu başlıkta belirgin kapatma hedefi (18 Tem istek)
+    '.bnwc-close{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);border:none;color:#0b1120;font-size:19px;font-weight:700;cursor:pointer;padding:0;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.35)}',
+    '.bnwc-close:hover{background:linear-gradient(135deg,#d4b86a,#e2c87e)}',
     '.bnwc-msgs{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:16px 14px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}',
     '.bnwc-m{max-width:85%;padding:10px 13px;border-radius:14px;font-size:13.5px;line-height:1.55;white-space:pre-line;animation:bnwcUp .2s ease-out}',
     '.bnwc-m.bnwc-bot{align-self:flex-start;background:rgba(21,34,64,.7);border:1px solid rgba(201,168,76,.15);border-bottom-left-radius:4px;color:#e8e6df}',
