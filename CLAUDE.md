@@ -625,13 +625,14 @@ Bu durumlarda AI cevap vermez, Özgür'e Telegram/WhatsApp bildirimi gider:
   - Bot 2 denemede anlamadıysa
   - Müşteri "insanla konuşmak istiyorum"
   - Fiyat pazarlığı
-  - Tur öncesi 2 saat kala iptal/değişiklik
+  - Tur öncesi 2 saat kala değişiklik (İPTAL DEĞİL — 2026-07-18: iptal her zaman uygulanır, "gelmeyeni zorla getiremeyiz")
 - **Bildirim gider ama AI satışa devam eder** (Özgür komut verirse müdahale):
   - €500+ rezervasyon
   - 30+ kişi grup (büyük grup, otomatik onay)
   - Blocked adres için transfer ısrarı
   - Fiyat uyuşmazlığı €10+ delta (wizard vs DB)
   - Transfer bölge dışı reddetme
+  - Geç iptal (<2 saat / tur sonrası) — AI iptali uygular, TG bildirimi düşer (2026-07-18; panel manuel iptal de her zaman direkt işler)
 
 ---
 
