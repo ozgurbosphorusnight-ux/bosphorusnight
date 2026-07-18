@@ -27,7 +27,7 @@
   var FALLBACK = {
     'greeting': 'Hi! Welcome to <b>Bosphorus Night</b>.\nAsk me anything about the cruise — or tap a topic below.',
     'placeholder': 'Ask me anything…',
-    'header.status': 'Assistant · replies instantly',
+    'header.status': 'AI assistant · replies instantly',
     'chip.prices': 'Prices',
     'chip.menu': 'Menu',
     'chip.time': 'Time',
