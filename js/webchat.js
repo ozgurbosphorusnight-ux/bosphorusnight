@@ -231,8 +231,9 @@
     '.bnwc-panel.bnwc-open{display:flex;animation:bnwcUp .25s ease-out}',
     '@keyframes bnwcUp{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}',
     '.bnwc-head{display:flex;align-items:center;gap:12px;padding:14px 16px;background:linear-gradient(135deg,rgba(201,168,76,.16),rgba(201,168,76,.05));border-bottom:1px solid rgba(201,168,76,.25)}',
-    '.bnwc-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}',
-    '.bnwc-avatar img{width:30px;height:auto;display:block}',
+    // koyu zemin + altın çerçeve — altın logo altın zeminde kayboluyordu (18 Tem)
+    '.bnwc-avatar{width:40px;height:40px;border-radius:50%;background:#0d1428;border:1.5px solid rgba(201,168,76,.7);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden}',
+    '.bnwc-avatar img{width:30px;height:auto;display:block;filter:drop-shadow(0 0 4px rgba(201,168,76,.5))}',
     // mobil tam ekranda üstteki kayan bar (#topBar z-60) sohbetin üstüne binmesin
     'body.bnwc-lock #topBar{display:none}',
     '.bnwc-head-t{flex:1;min-width:0}',
@@ -676,8 +677,18 @@
             // İnsan devralmış: cevap poll'dan gelecek — balon basma, typing sürdürme.
             return;
           }
-          // Direct reply — poll cursor'ı ileri al ki aynı cevap poll'dan tekrar düşmesin.
-          state.after = new Date().toISOString();
+          // Direct reply — poll cursor'ı ileri al ki aynı cevap poll'dan tekrar
+          // düşmesin. SUNUCU zaman damgası öncelikli (istemci saati geriyse
+          // yankı oluyordu — 18 Tem çift-mesaj bug'ı).
+          state.after = d.reply_at || new Date().toISOString();
+          // Sunucu canned kart istedi (örn. yazıyla "rezervasyon yapmak istiyorum")
+          // → pin ile birebir aynı görünüm: metin + wizard/WA/TG butonları.
+          if (d.canned === 'howto') {
+            botSayHtml(fill(tx('ans.howto')));
+            var howtoActs = actionsFor('howto');
+            if (howtoActs) renderActions(howtoActs);
+            return;
+          }
           if (d.reply) botSayText(d.reply);
           if (d.suggest === 'handoff') handoffButtons();
           return;
