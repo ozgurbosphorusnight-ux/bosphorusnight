@@ -279,7 +279,9 @@
     '.bnwc-qt b{font-size:13.5px;user-select:all}',
     '.bnwc-qt a{color:#128C7E;font-weight:600;text-decoration:underline}',
     // video kartı — thumbnail + play + başlık (konum-atar-gibi görsel dil)
-    '.bnwc-vcard{position:relative;display:block;width:min(85%,300px);border-radius:12px;overflow:hidden;cursor:pointer;border:1px solid rgba(201,168,76,.3);background:#000;padding:0;text-align:left;animation:bnwcUp .2s ease-out}',
+    // flex-shrink:0 ŞART — msgs kaydırmalı flex sütunu, taşınca kartları eziyordu
+    // (18 Tem "ince çizgi" bug'ının gerçek kökü)
+    '.bnwc-vcard{position:relative;display:block;flex-shrink:0;width:min(85%,300px);border-radius:12px;overflow:hidden;cursor:pointer;border:1px solid rgba(201,168,76,.3);background:#000;padding:0;text-align:left;animation:bnwcUp .2s ease-out}',
     // padding-top oran tekniği: thumbnail yüklenmese bile kart 16:9 formunu korur
     // (span inline çökmesi + görsel engellenmesi 18 Tem "ince çizgi" bug'ı)
     '.bnwc-vthumb{display:block;padding-top:56.25%;background-color:#0d1428;background-size:cover;background-position:center;opacity:.9}',
@@ -287,7 +289,7 @@
     '.bnwc-vplay svg{width:44px;height:44px;fill:#fff;opacity:.95}',
     '.bnwc-vt{position:absolute;left:0;right:0;bottom:0;padding:16px 10px 7px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:12px}',
     // konum kartı — mesajlaşma uygulamalarındaki "konum at" görünümü (tamamı bizim CSS/SVG)
-    '.bnwc-loccard{display:block;width:min(85%,300px);border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,.3);cursor:pointer;background:#12203c;padding:0;text-align:left;text-decoration:none;animation:bnwcUp .2s ease-out}',
+    '.bnwc-loccard{display:block;flex-shrink:0;width:min(85%,300px);border-radius:12px;overflow:hidden;border:1px solid rgba(201,168,76,.3);cursor:pointer;background:#12203c;padding:0;text-align:left;text-decoration:none;animation:bnwcUp .2s ease-out}',
     '.bnwc-locmap{position:relative;display:block;height:100px;background:linear-gradient(65deg,transparent 44%,rgba(127,178,217,.22) 47%,rgba(127,178,217,.22) 53%,transparent 56%),repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 34px),linear-gradient(135deg,#16294a,#1b3358)}',
     '.bnwc-locdot{position:absolute;left:50%;top:56%;width:36px;height:12px;transform:translate(-50%,0);background:radial-gradient(ellipse,rgba(201,168,76,.4),transparent 70%)}',
     '.bnwc-locpin{position:absolute;left:50%;top:50%;transform:translate(-50%,-85%)}',
