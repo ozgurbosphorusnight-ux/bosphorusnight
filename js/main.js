@@ -3961,6 +3961,7 @@ function initPlacesAutocomplete() {
     if (!a) return;
     if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me (dönüşüm+navigasyon normal)
     if (a.closest && a.closest('#waDesktopModal')) return;          // popover içi "WhatsApp Web" → normal gitsin
+    if (a.closest && a.closest('#bnWebchat')) return;               // webchat QR kartı "Open WhatsApp Web" → widget kendi QR'ını gösteriyor, normal gitsin
     if (!document.getElementById('waDesktopModal')) return;
     e.preventDefault();
     e.stopImmediatePropagation(); // gtag dönüşüm listener'ının window.location navigasyonunu engelle
