@@ -283,7 +283,9 @@
     '.bnwc-send:disabled{opacity:.4;cursor:default}',
     '.bnwc-qrcard{display:flex;align-items:center;gap:12px;background:#fff;border-radius:12px;padding:10px 12px;align-self:flex-start;max-width:85%;animation:bnwcUp .2s ease-out}',
     '.bnwc-qrcard img{width:96px;height:96px;display:block}',
-    '.bnwc-qt{color:#0b1120;font-size:12px;line-height:1.55}',
+    // min-width:0 — flex sütunu içerikten dar kalabilsin; overflow-wrap — 30 karakterlik
+    // bot handle'ı tek parça taşmasın (18 Tem: @BosphorusnightReservation_Bot kesiliyordu)
+    '.bnwc-qt{color:#0b1120;font-size:12px;line-height:1.55;min-width:0;overflow-wrap:anywhere}',
     '.bnwc-qt b{font-size:13.5px;user-select:all}',
     '.bnwc-qt a{color:#128C7E;font-weight:600;text-decoration:underline}',
     // video kartı — thumbnail + play + başlık (konum-atar-gibi görsel dil)
@@ -306,6 +308,7 @@
     '.bnwc-locinfo b{display:block;color:#fff}',
     '.bnwc-locinfo span{color:#7fb2d9;font-size:11.5px}',
     '.bnwc-qrcard.bnwc-qrtg .bnwc-qt a{color:#26A5E4}',
+    '.bnwc-qrcard.bnwc-qrtg .bnwc-qt b{font-size:12px}',
     // YouTube kanal kartı — koyu kart + gerçek YT ikonu (kırmızı), bolca video mesajı
     '.bnwc-chan{display:flex;align-items:center;gap:11px;flex-shrink:0;width:min(85%,300px);background:#12203c;border:1px solid rgba(201,168,76,.3);border-radius:12px;padding:10px 12px;text-decoration:none;animation:bnwcUp .2s ease-out}',
     '.bnwc-chico{width:34px;height:34px;border-radius:9px;background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
