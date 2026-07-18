@@ -38,7 +38,7 @@
     'btn.channelSub': 'All our videos on our YouTube channel',
     'pill': 'AI Assistant',
     'chip.howto': 'How to book',
-    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nNo prepayment — you pay on the boat.',
+    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nEvery group has its own private reserved table — no sharing with strangers.\nNo prepayment — you pay on the boat.',
     'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
     'ans.time': '<span class="bnwc-bt">We sail every evening from Kabataş Pier.</span>\n• Boarding: from {boarding}\n• Departure: {departure}\n• Return: around {return}\n\nAbout 3 hours on the Bosphorus.',
     'ans.meeting': '<span class="bnwc-bt">Finding us is easy</span> — we\'re right at Kabataş Pier.\nThese short videos walk you there step by step:',
@@ -232,6 +232,9 @@
     '.bnwc-bico svg{width:20px;height:20px;fill:#0b1120}',
     '.bnwc-blabel{display:flex;align-items:center;gap:7px;color:rgba(255,255,255,.92);font-weight:600;font-size:12px;white-space:nowrap;letter-spacing:.2px}',
     '.bnwc-bdot{width:7px;height:7px;border-radius:50%;background:#22b95c;box-shadow:0 0 0 0 rgba(34,185,92,.55);animation:bnwcDotPulse 2s infinite;flex-shrink:0}',
+    // Kaldırma modu: WA hapıyla YATAY çakışma runtime ölçümüyle tespit edilirse
+    // (ölçüm: 360px'te 32 dilin 27'si çakışıyor — TR/EN dahil) AI hapı bir kat yukarı.
+    '.bnwc-lift .bnwc-bubble{bottom:136px}',
     '@keyframes bnwcGlow{0%,100%{box-shadow:0 4px 16px rgba(0,0,0,.3)}50%{box-shadow:0 4px 20px rgba(201,168,76,.45)}}',
     '@keyframes bnwcDotPulse{0%{box-shadow:0 0 0 0 rgba(34,185,92,.55)}70%{box-shadow:0 0 0 6px rgba(34,185,92,0)}100%{box-shadow:0 0 0 0 rgba(34,185,92,0)}}',
     '@keyframes bnwcPulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.35);opacity:0}100%{opacity:0}}',
@@ -324,6 +327,7 @@
     '@media (max-width:640px){',
     // WA borusuyla (bottom-20=80px, ~30px boru) BİREBİR hiza — ince boru + taşan top
     '.bnwc-bubble{height:30px;right:10px;bottom:81px;padding:0 44px 0 12px}',
+    '.bnwc-lift .bnwc-bubble{bottom:130px}', // çakışınca: WA satırının bir katı üstü
     '.bnwc-bico{width:40px;height:40px;right:-2px}',
     '.bnwc-bico svg{width:18px;height:18px}',
     '.bnwc-blabel{font-size:11.5px}',
@@ -910,6 +914,30 @@
     els.input = panel.querySelector('.bnwc-input');
     els.send = panel.querySelector('.bnwc-send');
     els.typing = null;
+
+    // Çarpışma algısı (18 Tem ölçümü: 360px'te 32 dilin 27'si WA hapıyla değiyor —
+    // TR/EN dahil; dil+ekran kombinasyonuna bağlı, sabit listeyle çözülmez).
+    // WA hapıyla YATAY aralık kesişiyorsa bnwc-lift → AI hapı bir kat yukarı;
+    // yer varsa aynı hizada kalır. "Sadece üst üste gelenlerde" kuralı böylece
+    // her cihaz+dil için otomatik işler.
+    function updateLift() {
+      try {
+        var wa = document.getElementById('floatingWhatsapp');
+        if (!wa) return;
+        var w = wa.getBoundingClientRect();
+        var b = els.bubble.getBoundingClientRect();
+        if (!w.width || !b.width) return;
+        var clash = (w.right + 8 > b.left) && (b.right + 8 > w.left);
+        els.root.classList.toggle('bnwc-lift', clash);
+      } catch (e) { /* ignore */ }
+    }
+    setTimeout(updateLift, 400);   // ilk render
+    setTimeout(updateLift, 2000);  // font yüklenince genişlik değişebilir
+    var liftTimer = null;
+    window.addEventListener('resize', function () {
+      if (liftTimer) clearTimeout(liftTimer);
+      liftTimer = setTimeout(updateLift, 150);
+    });
 
     panel.querySelector('.bnwc-close').addEventListener('click', closePanel);
     els.send.addEventListener('click', sendFree);
