@@ -221,10 +221,16 @@
   var CSS = [
     '#bnWebchat{font-family:"Inter",sans-serif}',
     '#bnWebchat,#bnWebchat *{box-sizing:border-box}',
-    '.bnwc-bubble{position:fixed;right:18px;bottom:84px;z-index:54;width:58px;height:58px;border-radius:50%;cursor:pointer;border:none;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(201,168,76,.45);transition:transform .2s;padding:0}',
-    '.bnwc-bubble:hover{transform:scale(1.07)}',
-    '.bnwc-bubble svg{width:28px;height:28px;fill:#0b1120}',
-    '.bnwc-bubble::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid rgba(201,168,76,.5);animation:bnwcPulse 2.6s infinite}',
+    // altın HAP launcher — WhatsApp hapının dengi (18 Tem istek): ikon + "AI asistanı"
+    // yazısı + çevrimiçi noktası; yumuşak ışıma nabzı dikkat çeker, premium bozulmaz
+    '.bnwc-bubble{position:fixed;right:18px;bottom:84px;z-index:54;height:46px;border-radius:999px;cursor:pointer;border:none;background:linear-gradient(135deg,#c9a84c,#d4b86a);display:flex;align-items:center;gap:9px;padding:5px 16px 5px 5px;box-shadow:0 6px 24px rgba(201,168,76,.45);transition:transform .2s;animation:bnwcGlow 3s ease-in-out infinite}',
+    '.bnwc-bubble:hover{transform:scale(1.05)}',
+    '.bnwc-bico{width:36px;height:36px;border-radius:50%;background:#0d1428;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    '.bnwc-bico svg{width:19px;height:19px;fill:#d4b86a}',
+    '.bnwc-blabel{display:flex;align-items:center;gap:6px;color:#0b1120;font-weight:700;font-size:13px;white-space:nowrap;letter-spacing:.2px}',
+    '.bnwc-bdot{width:7px;height:7px;border-radius:50%;background:#22b95c;box-shadow:0 0 0 0 rgba(34,185,92,.55);animation:bnwcDotPulse 2s infinite;flex-shrink:0}',
+    '@keyframes bnwcGlow{0%,100%{box-shadow:0 6px 24px rgba(201,168,76,.4)}50%{box-shadow:0 6px 32px rgba(201,168,76,.75)}}',
+    '@keyframes bnwcDotPulse{0%{box-shadow:0 0 0 0 rgba(34,185,92,.55)}70%{box-shadow:0 0 0 6px rgba(34,185,92,0)}100%{box-shadow:0 0 0 0 rgba(34,185,92,0)}}',
     '@keyframes bnwcPulse{0%{transform:scale(1);opacity:.7}70%{transform:scale(1.35);opacity:0}100%{opacity:0}}',
     '.bnwc-bubble.bnwc-hidden{display:none}',
     '.bnwc-panel{position:fixed;right:18px;bottom:84px;z-index:58;width:380px;max-width:calc(100vw - 36px);height:560px;max-height:calc(100vh - 108px);max-height:calc(100dvh - 108px);background:linear-gradient(180deg,#0d1428 0%,#0a0f1e 100%);border:1px solid rgba(201,168,76,.35);border-radius:18px;display:none;flex-direction:column;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6);color:#e8e6df}',
@@ -304,7 +310,9 @@
     '.bnwc-panel{right:calc(320px + 24px);bottom:18px;max-height:calc(100vh - 40px);max-height:calc(100dvh - 40px)}',
     '}',
     '@media (max-width:640px){',
-    '.bnwc-bubble{width:54px;height:54px;right:14px;bottom:84px}',
+    '.bnwc-bubble{height:44px;right:14px;bottom:84px;padding:4px 13px 4px 4px}',
+    '.bnwc-bico{width:34px;height:34px}',
+    '.bnwc-blabel{font-size:12.5px}',
     '.bnwc-panel{right:0;bottom:0;left:0;top:0;width:100%;max-width:100%;height:100vh;height:100dvh;max-height:100vh;max-height:100dvh;border-radius:0;border:none}',
     '.bnwc-panel.bnwc-open{animation:bnwcSheet .3s ease-out}',
     '.bnwc-head{padding-top:calc(14px + env(safe-area-inset-top))}',
@@ -823,7 +831,12 @@
     bubble.type = 'button';
     bubble.className = 'bnwc-bubble';
     bubble.setAttribute('aria-label', tx('aria.open'));
-    bubble.innerHTML = SVG.bubble;
+    // Yazı: header.status'un ilk parçası ("Yapay zekâ asistanı · anında yanıt"
+    // → "Yapay zekâ asistanı") — 32 dil bedavaya gelir, yeni çeviri gerekmez.
+    var aiLabel = String(tx('header.status')).split('·')[0].trim() || 'AI assistant';
+    bubble.innerHTML =
+      '<span class="bnwc-bico">' + SVG.bubble + '</span>' +
+      '<span class="bnwc-blabel"><i class="bnwc-bdot"></i>' + escapeHtml(aiLabel) + '</span>';
     bubble.addEventListener('click', openPanel);
 
     // panel
