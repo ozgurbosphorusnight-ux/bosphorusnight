@@ -110,6 +110,85 @@
     return FALLBACK[key] || '';
   }
 
+  // ---------- language switch (20 Tem) ----------
+  // Kaynak: sayfadaki hreflang alternates — hangi dil sayfası gerçekten varsa o
+  // listelenir (statik URL eşleme yok, 404 riski yok). hreflang'sız sayfada
+  // (dev/preview) globe butonu ve dil önerisi kendini gizler.
+  var NATIVE_LANGS = [
+    ['en', 'English'], ['tr', 'Türkçe'], ['de', 'Deutsch'], ['es', 'Español'],
+    ['ru', 'Русский'], ['ar', 'العربية'], ['fa', 'فارسی'], ['fr', 'Français'],
+    ['it', 'Italiano'], ['zh', '中文'], ['id', 'Bahasa Indonesia'], ['ms', 'Bahasa Melayu'],
+    ['pl', 'Polski'], ['bg', 'Български'], ['ro', 'Română'], ['uk', 'Українська'],
+    ['ja', '日本語'], ['ko', '한국어'], ['hi', 'हिन्दी'], ['ur', 'اردو'],
+    ['cs', 'Čeština'], ['da', 'Dansk'], ['el', 'Ελληνικά'], ['fi', 'Suomi'],
+    ['hu', 'Magyar'], ['lv', 'Latviešu'], ['nl', 'Nederlands'], ['no', 'Norsk'],
+    ['pt', 'Português'], ['sk', 'Slovenčina'], ['sl', 'Slovenščina'], ['sv', 'Svenska']
+  ];
+  // Tarayıcı dili önerisi — hedef dilin KENDİ dilinde yazılır
+  var SUGGEST_TEXT = {
+    en: 'Continue in English?', tr: 'Türkçe devam edelim mi?', de: 'Auf Deutsch fortfahren?',
+    es: '¿Continuamos en español?', ru: 'Продолжить на русском?', ar: 'المتابعة بالعربية؟',
+    fa: 'به فارسی ادامه دهیم؟', fr: 'Continuer en français ?', it: 'Continuare in italiano?',
+    zh: '用中文继续？', id: 'Lanjutkan dalam Bahasa Indonesia?', ms: 'Teruskan dalam Bahasa Melayu?',
+    pl: 'Kontynuować po polsku?', bg: 'Да продължим на български?', ro: 'Continuăm în română?',
+    uk: 'Продовжити українською?', ja: '日本語で続けますか？', ko: '한국어로 계속할까요?',
+    hi: 'हिन्दी में जारी रखें?', ur: 'اردو میں جاری رکھیں؟', cs: 'Pokračovat česky?',
+    da: 'Fortsæt på dansk?', el: 'Συνέχεια στα ελληνικά;', fi: 'Jatketaanko suomeksi?',
+    hu: 'Folytatjuk magyarul?', lv: 'Turpināt latviski?', nl: 'Verdergaan in het Nederlands?',
+    no: 'Fortsette på norsk?', pt: 'Continuar em português?', sk: 'Pokračovať po slovensky?',
+    sl: 'Nadaljujemo v slovenščini?', sv: 'Fortsätta på svenska?'
+  };
+
+  var _alts = null;
+  function getAlternates() {
+    if (_alts) return _alts;
+    _alts = {};
+    try {
+      var links = document.querySelectorAll('link[rel="alternate"][hreflang]');
+      for (var i = 0; i < links.length; i++) {
+        var code = String(links[i].getAttribute('hreflang') || '').toLowerCase();
+        if (code && code !== 'x-default') _alts[code] = links[i].getAttribute('href');
+      }
+    } catch (e) { /* ignore */ }
+    return _alts;
+  }
+
+  function getBrowserLang() {
+    var l = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+    return String(l).slice(0, 2).toLowerCase();
+  }
+
+  // Tarayıcı dili sayfa dilinden farklıysa tek tıklık öneri kartı (karşılamadan sonra)
+  function maybeSuggestLang() {
+    if (state.langSuggested) return;
+    state.langSuggested = true;
+    try { if (localStorage.getItem('bn_wc_langsug_off') === '1') return; } catch (e) { /* ignore */ }
+    var bl = getBrowserLang();
+    var page = getLang().slice(0, 2);
+    if (!bl || bl === page) return;
+    var alts = getAlternates();
+    if (!alts[bl] || !SUGGEST_TEXT[bl]) return;
+    var wrap = document.createElement('div');
+    wrap.className = 'bnwc-langsug';
+    var a = document.createElement('a');
+    a.href = alts[bl];
+    a.innerHTML = SVG.globe + '<span>' + escapeHtml(SUGGEST_TEXT[bl]) + '</span>';
+    a.addEventListener('click', function () { track('webchat_lang_switch', { to: bl, via: 'suggest' }); });
+    var x = document.createElement('button');
+    x.type = 'button';
+    x.className = 'bnwc-lsx';
+    x.setAttribute('aria-label', 'Dismiss');
+    x.innerHTML = '&times;';
+    x.addEventListener('click', function () {
+      try { localStorage.setItem('bn_wc_langsug_off', '1'); } catch (e) { /* ignore */ }
+      if (wrap.parentNode) wrap.parentNode.removeChild(wrap);
+    });
+    wrap.appendChild(a);
+    wrap.appendChild(x);
+    els.msgs.appendChild(wrap);
+    scrollDown();
+  }
+
   function fmtPrice(v) {
     if (typeof v === 'number') return (v % 1 === 0) ? String(v) : v.toFixed(2);
     return String(v == null ? '' : v);
@@ -199,6 +278,7 @@
   var SVG = {
     bubble: '<svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.9 2 11.7c0 2.5 1.2 4.7 3.2 6.3-.1.9-.5 2.2-1.5 3.4 0 0 2.4-.2 4.4-1.7 1.2.4 2.5.6 3.9.6 5.5 0 10-3.9 10-8.7S17.5 3 12 3zm-4.5 9.9c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.5 1.2-1.2 1.2zm4.5 0c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.5 1.2-1.2 1.2zm4.5 0c-.7 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2 1.2.5 1.2 1.2-.5 1.2-1.2 1.2z"/></svg>',
     send: '<svg viewBox="0 0 24 24"><path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/></svg>',
+    globe: '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.93 9h-3.02a15.7 15.7 0 0 0-1.13-5.03A8.02 8.02 0 0 1 19.93 11zM12 4.06c.83 1.2 1.58 3.05 1.9 5.94h-3.8c.32-2.89 1.07-4.74 1.9-5.94zM8.22 5.97A15.7 15.7 0 0 0 7.09 11H4.07a8.02 8.02 0 0 1 4.15-5.03zM4.07 13h3.02c.14 1.86.53 3.57 1.13 5.03A8.02 8.02 0 0 1 4.07 13zM12 19.94c-.83-1.2-1.58-3.05-1.9-5.94h3.8c-.32 2.89-1.07 4.74-1.9 5.94zm3.78-1.91c.6-1.46.99-3.17 1.13-5.03h3.02a8.02 8.02 0 0 1-4.15 5.03z"/></svg>',
     wa: '<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.4 14.1c-.2.7-1.3 1.3-1.8 1.3-.5.1-1 .3-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2.1 1c.3.2.5.3.6.4 0 .1 0 .7-.2 1.4z"/></svg>',
     tg: '<svg viewBox="0 0 24 24"><path d="M21.9 3.2L2.7 10.6c-.9.4-.9 1.6.1 1.9l4.9 1.5 1.9 5.9c.3.9 1.4 1 1.9.3l2.7-3.5 5 3.7c.8.6 1.9.2 2.1-.8l2.6-15c.2-1-.8-1.8-2-1.4zM8.5 13.5l9.5-6.9c.2-.2.5.1.3.3l-7.7 7.5-.3 3.2-1.8-4.1z"/></svg>',
     cal: '<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V10h14v10zM5 8V6h14v2H5z"/></svg>',
@@ -256,6 +336,21 @@
     // altın yuvarlak X — koyu başlıkta belirgin kapatma hedefi (18 Tem istek)
     '.bnwc-close{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);border:none;color:#0b1120;font-size:19px;font-weight:700;cursor:pointer;padding:0;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.35)}',
     '.bnwc-close:hover{background:linear-gradient(135deg,#d4b86a,#e2c87e)}',
+    // dil butonu — hayalet daire, X'in solunda (20 Tem)
+    '.bnwc-glang{width:30px;height:30px;border-radius:50%;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.45);cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    '.bnwc-glang svg{width:16px;height:16px;fill:#d4b86a}',
+    '.bnwc-glang:hover{background:rgba(201,168,76,.28)}',
+    '.bnwc-langmenu{position:absolute;top:64px;right:12px;z-index:5;display:none;flex-direction:column;min-width:170px;max-height:min(320px,60%);overflow-y:auto;background:#0d1428;border:1px solid rgba(201,168,76,.4);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.5);padding:6px 0;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}',
+    '.bnwc-langmenu.bnwc-open{display:flex}',
+    '.bnwc-langmenu a{padding:8px 16px;font-size:13px;color:#e8e6df;text-decoration:none;white-space:nowrap}',
+    '.bnwc-langmenu a:hover{background:rgba(201,168,76,.15);color:#fff}',
+    '.bnwc-langmenu a.bnwc-lcur{color:#d4b86a;font-weight:600}',
+    // tarayıcı dili öneri kartı — karşılamanın altında tek tıklık geçiş
+    '.bnwc-langsug{display:flex;align-items:center;gap:4px;align-self:flex-start;max-width:85%;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.4);border-radius:12px;padding:4px 6px 4px 12px;animation:bnwcUp .2s ease-out;flex-shrink:0}',
+    '.bnwc-langsug a{display:flex;align-items:center;gap:8px;color:#d4b86a;font-size:13px;font-weight:600;text-decoration:none}',
+    '.bnwc-langsug a svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}',
+    '.bnwc-langsug .bnwc-lsx{width:24px;height:24px;border:none;background:transparent;color:rgba(232,230,223,.5);font-size:16px;cursor:pointer;padding:0;line-height:1}',
+    '.bnwc-langsug .bnwc-lsx:hover{color:#fff}',
     '.bnwc-msgs{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:16px 14px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}',
     '.bnwc-m{max-width:85%;padding:10px 13px;border-radius:14px;font-size:13.5px;line-height:1.55;white-space:pre-line;animation:bnwcUp .2s ease-out}',
     '.bnwc-m.bnwc-bot{align-self:flex-start;background:rgba(21,34,64,.7);border:1px solid rgba(201,168,76,.15);border-bottom-left-radius:4px;color:#e8e6df}',
@@ -340,6 +435,7 @@
     '.bnwc-input{font-size:16px}', // <16px iOS'ta odaklanınca zoom yapar
     'body.bnwc-lock{overflow:hidden;position:fixed;inset:0;width:100%}',
     '.bnwc-qrcard{display:none}', // telefon kendi ekranını okutamaz — QR sadece masaüstünde
+    '.bnwc-langmenu{top:calc(64px + env(safe-area-inset-top))}', // tam ekranda çentik payı
     '}',
     '@keyframes bnwcSheet{from{transform:translateY(100%)}to{transform:translateY(0)}}',
     // çok dar ekran: yazı gizlenir, hap yuvarlağa döner — WA hapıyla asla çakışmaz
@@ -355,6 +451,7 @@
   // ---------- state ----------
   var state = {
     greeted: false,
+    langSuggested: false, // tarayıcı dili önerisi (oturumda bir kez)
     after: null,          // poll cursor (ISO)
     seen: {},             // delivered poll message ids
     pollTimer: null,
@@ -825,6 +922,8 @@
     if (!state.greeted) {
       state.greeted = true;
       setTimeout(function () { botSayHtml(fill(tx('greeting'))); }, 350);
+      // karşılamadan hemen sonra: tarayıcı dili sayfadan farklıysa tek tıklık öneri
+      setTimeout(maybeSuggestLang, 700);
     }
     startPoll();
     els.input.focus();
@@ -896,8 +995,10 @@
         '<div class="bnwc-avatar"><img src="/assets/data/logo%20png%20lst.png" alt="Bosphorus Night"></div>' +
         '<div class="bnwc-head-t"><b>Bosphorus Night</b>' +
           '<span><i class="bnwc-dot"></i> ' + tx('header.status') + '</span></div>' +
+        '<button type="button" class="bnwc-glang" aria-label="Language / Dil">' + SVG.globe + '</button>' +
         '<button type="button" class="bnwc-close" aria-label="' + escapeHtml(tx('aria.close')) + '">&times;</button>' +
       '</div>' +
+      '<div class="bnwc-langmenu"></div>' +
       '<div class="bnwc-msgs"></div>' +
       '<div class="bnwc-chips"></div>' +
       '<div class="bnwc-inputrow">' +
@@ -943,6 +1044,37 @@
     });
 
     panel.querySelector('.bnwc-close').addEventListener('click', closePanel);
+
+    // dil menüsü — hreflang alternates'ten dolar; alternates yoksa buton gizlenir
+    var glang = panel.querySelector('.bnwc-glang');
+    var lmenu = panel.querySelector('.bnwc-langmenu');
+    var alts = getAlternates();
+    var altCount = 0;
+    for (var ak in alts) { if (alts.hasOwnProperty(ak)) altCount++; }
+    if (altCount < 2) {
+      glang.style.display = 'none';
+    } else {
+      var curLang = getLang().slice(0, 2);
+      NATIVE_LANGS.forEach(function (pair) {
+        if (!alts[pair[0]]) return;
+        var it = document.createElement('a');
+        it.href = alts[pair[0]];
+        it.textContent = pair[1];
+        if (pair[0] === curLang) it.className = 'bnwc-lcur';
+        it.addEventListener('click', function () { track('webchat_lang_switch', { to: pair[0], via: 'menu' }); });
+        lmenu.appendChild(it);
+      });
+      glang.addEventListener('click', function (e) {
+        e.stopPropagation();
+        lmenu.classList.toggle('bnwc-open');
+      });
+      panel.addEventListener('click', function (e) {
+        if (lmenu.classList.contains('bnwc-open') && !lmenu.contains(e.target) && !glang.contains(e.target)) {
+          lmenu.classList.remove('bnwc-open');
+        }
+      });
+    }
+
     els.send.addEventListener('click', sendFree);
     els.input.addEventListener('keydown', function (e) { if (e.key === 'Enter') sendFree(); });
 
