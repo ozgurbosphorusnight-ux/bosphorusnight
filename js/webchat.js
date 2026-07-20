@@ -139,6 +139,26 @@
     sl: 'Nadaljujemo v slovenščini?', sv: 'Fortsätta på svenska?'
   };
 
+  // Sitenin kendi LANGUAGES sözlüğü (bayrak kodu + etiket + sıra) — kaynak
+  // sayfada global const, build'li sayfada window.LANGUAGES (tDict paterni).
+  function siteLangs() {
+    try { if (typeof LANGUAGES !== 'undefined' && LANGUAGES) return LANGUAGES; } catch (e) { /* ignore */ }
+    return window.LANGUAGES || null;
+  }
+
+  // Ana sayfa dil menüsüyle aynı kaynak: flagcdn.com w20 PNG (main.js paritesi)
+  function flagImg(code) {
+    var L = siteLangs();
+    var meta = L && L[code];
+    if (!meta || !meta.flag) return null;
+    var img = document.createElement('img');
+    img.className = 'bnwc-lflag';
+    img.src = 'https://flagcdn.com/w20/' + meta.flag + '.png';
+    img.alt = '';
+    img.loading = 'lazy';
+    return img;
+  }
+
   var _alts = null;
   function getAlternates() {
     if (_alts) return _alts;
@@ -172,7 +192,17 @@
     wrap.className = 'bnwc-langsug';
     var a = document.createElement('a');
     a.href = alts[bl];
-    a.innerHTML = SVG.globe + '<span>' + escapeHtml(SUGGEST_TEXT[bl]) + '</span>';
+    var fi = flagImg(bl);
+    if (fi) {
+      a.appendChild(fi);
+    } else {
+      var gs = document.createElement('span');
+      gs.innerHTML = SVG.globe;
+      a.appendChild(gs);
+    }
+    var st = document.createElement('span');
+    st.textContent = SUGGEST_TEXT[bl];
+    a.appendChild(st);
     a.addEventListener('click', function () { track('webchat_lang_switch', { to: bl, via: 'suggest' }); });
     var x = document.createElement('button');
     x.type = 'button';
@@ -342,7 +372,8 @@
     '.bnwc-glang:hover{background:rgba(201,168,76,.28)}',
     '.bnwc-langmenu{position:absolute;top:64px;right:12px;z-index:5;display:none;flex-direction:column;min-width:170px;max-height:min(320px,60%);overflow-y:auto;background:#0d1428;border:1px solid rgba(201,168,76,.4);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.5);padding:6px 0;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}',
     '.bnwc-langmenu.bnwc-open{display:flex}',
-    '.bnwc-langmenu a{padding:8px 16px;font-size:13px;color:#e8e6df;text-decoration:none;white-space:nowrap}',
+    '.bnwc-langmenu a{display:flex;align-items:center;gap:9px;padding:8px 16px;font-size:13px;color:#e8e6df;text-decoration:none;white-space:nowrap}',
+    '.bnwc-lflag{width:20px;height:auto;border-radius:2px;flex-shrink:0;box-shadow:0 0 0 1px rgba(255,255,255,.08)}',
     '.bnwc-langmenu a:hover{background:rgba(201,168,76,.15);color:#fff}',
     '.bnwc-langmenu a.bnwc-lcur{color:#d4b86a;font-weight:600}',
     // tarayıcı dili öneri kartı — karşılamanın altında tek tıklık geçiş
@@ -1055,11 +1086,24 @@
       glang.style.display = 'none';
     } else {
       var curLang = getLang().slice(0, 2);
-      NATIVE_LANGS.forEach(function (pair) {
+      // Sıra + etiket + bayrak sitenin LANGUAGES sözlüğünden — ana sayfa
+      // dropdown'ıyla birebir aynı görünüm. Sözlük yoksa NATIVE_LANGS fallback.
+      var L = siteLangs();
+      var order = [];
+      if (L) {
+        for (var lk in L) { if (L.hasOwnProperty(lk)) order.push([lk, L[lk].label || lk]); }
+      } else {
+        order = NATIVE_LANGS;
+      }
+      order.forEach(function (pair) {
         if (!alts[pair[0]]) return;
         var it = document.createElement('a');
         it.href = alts[pair[0]];
-        it.textContent = pair[1];
+        var fl = flagImg(pair[0]);
+        if (fl) it.appendChild(fl);
+        var lb = document.createElement('span');
+        lb.textContent = pair[1];
+        it.appendChild(lb);
         if (pair[0] === curLang) it.className = 'bnwc-lcur';
         it.addEventListener('click', function () { track('webchat_lang_switch', { to: pair[0], via: 'menu' }); });
         lmenu.appendChild(it);
