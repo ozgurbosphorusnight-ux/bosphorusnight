@@ -366,9 +366,11 @@
     // altın yuvarlak X — koyu başlıkta belirgin kapatma hedefi (18 Tem istek)
     '.bnwc-close{width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#c9a84c,#d4b86a);border:none;color:#0b1120;font-size:19px;font-weight:700;cursor:pointer;padding:0;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 2px 8px rgba(0,0,0,.35)}',
     '.bnwc-close:hover{background:linear-gradient(135deg,#d4b86a,#e2c87e)}',
-    // dil butonu — hayalet daire, X'in solunda (20 Tem)
-    '.bnwc-glang{width:30px;height:30px;border-radius:50%;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.45);cursor:pointer;padding:0;display:flex;align-items:center;justify-content:center;flex-shrink:0}',
+    // dil butonu — mevcut dilin bayrağı + kod (ana sayfa seçicisiyle aynı dil; 20 Tem)
+    '.bnwc-glang{height:30px;min-width:30px;border-radius:999px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.45);cursor:pointer;padding:0 9px;display:flex;align-items:center;justify-content:center;gap:6px;flex-shrink:0;font-family:inherit}',
     '.bnwc-glang svg{width:16px;height:16px;fill:#d4b86a}',
+    '.bnwc-glang img{width:20px;height:auto;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.12)}',
+    '.bnwc-glang span{font-size:11px;font-weight:700;color:#d4b86a;letter-spacing:.5px}',
     '.bnwc-glang:hover{background:rgba(201,168,76,.28)}',
     '.bnwc-langmenu{position:absolute;top:64px;right:12px;z-index:5;display:none;flex-direction:column;min-width:170px;max-height:min(320px,60%);overflow-y:auto;background:#0d1428;border:1px solid rgba(201,168,76,.4);border-radius:12px;box-shadow:0 12px 32px rgba(0,0,0,.5);padding:6px 0;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}',
     '.bnwc-langmenu.bnwc-open{display:flex}',
@@ -1086,6 +1088,16 @@
       glang.style.display = 'none';
     } else {
       var curLang = getLang().slice(0, 2);
+      // Buton içeriği: globe yerine mevcut dilin bayrağı + kodu — "bu dil
+      // seçici" olduğu ilk bakışta anlaşılsın (20 Tem, Özgür isteği)
+      var curFlag = flagImg(curLang);
+      if (curFlag) {
+        glang.innerHTML = '';
+        glang.appendChild(curFlag);
+        var cc = document.createElement('span');
+        cc.textContent = curLang.toUpperCase();
+        glang.appendChild(cc);
+      }
       // Sıra + etiket + bayrak sitenin LANGUAGES sözlüğünden — ana sayfa
       // dropdown'ıyla birebir aynı görünüm. Sözlük yoksa NATIVE_LANGS fallback.
       var L = siteLangs();
