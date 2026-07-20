@@ -1216,6 +1216,11 @@ function initBookingPanel() {
       el.addEventListener('click', (e) => {
         if (!window._drinkSelected) {
           e.preventDefault();
+          // stopPropagation ŞART: index.html'deki document-bubble gtag listener'ı her
+          // wa.me tıklamasında dönüşüm sayıp event_callback ile window.location=wa.me
+          // yapıyor — preventDefault onu durduramıyordu, kapı fiilen bypass oluyordu
+          // (içeceksiz tıklama hem sahte Ads dönüşümü hem WhatsApp'a kaçış — 20 Tem fix).
+          e.stopPropagation();
           // Show warnings
           ['drinkWarning', 'drinkWarningMobile'].forEach(wId => {
             const w = document.getElementById(wId);
@@ -1230,8 +1235,38 @@ function initBookingPanel() {
           if (section) section.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
       });
+      // Masaüstü: içecek seçiliyse wa.me navigasyonu yerine kişisel QR popover
+      // (WhatsApp Web çıkmazı fix'i — wizard CTA'sıyla aynı akış). Dönüşüm burada
+      // navigasyonsuz sayılır; popover fallback'i ikinci kez saymaz (convDone guard).
+      el.addEventListener('click', (e) => {
+        if (!window._drinkSelected) return; // içecek kapısı bloklar (preventDefault+stopPropagation)
+        if (bnIsMobileUA() || !document.getElementById('waDesktopModal')) return;
+        e.preventDefault();
+        e.stopPropagation();
+        if (!window._bnCtaConvFired && typeof gtag_report_conversion === 'function') {
+          window._bnCtaConvFired = true; // sayfa-başı tek sayım: popover kapat-aç döngüsü dönüşüm şişirmesin
+          gtag_report_conversion();
+        }
+        const waHref = el.href;
+        // QR metni CANLI href'ten türetilir (dataset değil): installWaRefTagger reklam
+        // ziyaretçisinde href'e '\n\n#BN<token>' ekliyor — QR bunu düşürürse gclid atıfı
+        // kopar (Leak A regresyonu). searchParams.get %XX'i de '+' boşluğu da doğru çözer.
+        let qrMsg = el.dataset.bnRawMsg || '';
+        try {
+          const t = new URL(waHref).searchParams.get('text');
+          if (t) qrMsg = t;
+        } catch (_) { /* href bozuksa dataset fallback */ }
+        const qrText = qrMsg ? 'https://wa.me/' + WA_NUMBER + '?text=' + bnQrIriEncode(qrMsg) : waHref;
+        bnLoadQrLib().then(() => {
+          if (!openWaPopover(el, { mode: 'wa', qrText: qrText, linkHref: waHref, convDone: true })) {
+            window.location.href = waHref; // popover açılamadı → eski davranış
+          }
+        }).catch(() => { window.location.href = waHref; });
+      });
     }
   });
+  // Masaüstünde QR kütüphanesini önceden ısıt — ilk tıklamada beklemesiz açılsın.
+  if (!bnIsMobileUA()) bnLoadQrLib().catch(() => {});
 }
 
 function openMobilePanel(pkg) {
@@ -1752,7 +1787,12 @@ function updateWhatsAppLinks(total) {
 
   ['bookWhatsApp', 'bookWhatsAppMobile'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.href = url;
+    if (el) {
+      el.href = url;
+      // Ham mesaj masaüstü QR popover için saklanır: QR'da IRI-encode (non-ASCII ham
+      // UTF-8) kullanılır ki Kiril/Arap mesajlar okunabilir yoğunlukta kalsın.
+      el.dataset.bnRawMsg = msg;
+    }
   });
 }
 
@@ -3717,14 +3757,16 @@ function wizBuildSummary() {
           });
           const data = await resp.json();
           if (data?.ok && data.link) {
-            window.location.href = data.link;
+            // Masaüstü: t.me linki QR popover'da (telefonla okut → bot telefonda, wizard
+            // verisi token'la akar). Mobil veya popover açılamazsa: normal navigasyon.
+            bnTgDesktopQrOrGo(ctaLink, data.link);
           } else {
             // Fallback: direkt bot chat'i aç, müşteri manuel yazsın
-            window.location.href = `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`;
+            bnTgDesktopQrOrGo(ctaLink, `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`);
           }
         } catch (err) {
           console.warn('Telegram handoff başarısız, fallback:', err);
-          window.location.href = `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`;
+          bnTgDesktopQrOrGo(ctaLink, `https://t.me/BosphorusnightReservation_Bot?text=${encodeURIComponent(msg)}`);
         } finally {
           ctaLink.style.opacity = '1';
           ctaLink.removeAttribute('data-busy');
@@ -3732,7 +3774,7 @@ function wizBuildSummary() {
       };
     } else {
       ctaLink.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
-      ctaLink.onclick = function() {
+      ctaLink.onclick = function (e) {
         // Lead event (Meta Pixel + GA4) + Google Ads conversion (gtag_report_conversion)
         if (window.bnTrack) {
           window.bnTrack('Lead', {
@@ -3769,13 +3811,38 @@ function wizBuildSummary() {
             }).catch(function(){ /* fire-and-forget */ });
           }
         } catch (e) { /* ignore */ }
+        // Masaüstü: wa.me → WhatsApp Web çıkmaz sokak (giriş yoksa hiçbir yere gitmez).
+        // Navigasyon yerine kişisel QR popover: müşteri telefon kamerasıyla okutur,
+        // WhatsApp telefonunda dolu wizard mesajıyla açılır. Dönüşüm burada navigasyonsuz
+        // sayılır; popover'daki "WhatsApp Web" fallback'i ikinci kez saymaz (convDone guard).
+        if (!bnIsMobileUA() && document.getElementById('waDesktopModal')) {
+          if (e) { e.preventDefault(); e.stopPropagation(); }
+          if (!window._bnCtaConvFired && typeof gtag_report_conversion === 'function') {
+            window._bnCtaConvFired = true; // sayfa-başı tek sayım: popover kapat-aç döngüsü dönüşüm şişirmesin
+            gtag_report_conversion();
+          }
+          const waHref = ctaLink.href;
+          const qrText = 'https://wa.me/' + WA_NUMBER + '?text=' + bnQrIriEncode(msg);
+          bnLoadQrLib().then(function () {
+            if (!openWaPopover(ctaLink, { mode: 'wa', qrText: qrText, linkHref: waHref, convDone: true })) {
+              window.location.href = waHref; // popover açılamadı → eski davranış (WhatsApp Web)
+            }
+          }).catch(function () { window.location.href = waHref; });
+          return false;
+        }
         if (typeof gtag_report_conversion === 'function') {
+          // stopPropagation: index.html'deki document-bubble gtag listener'ı aynı tıklamayı
+          // İKİNCİ kez dönüşüm sayıyordu (mobilde çift sayım — 20 Tem review tespiti).
+          // Navigasyonu zaten buradaki çağrının event_callback'i yapıyor.
+          if (e) e.stopPropagation();
           return gtag_report_conversion(ctaLink.href);
         }
         return true;
       };
     }
   }
+  // Masaüstünde QR kütüphanesini önceden ısıt — CTA tıklamasında beklemesiz açılsın.
+  if (ctaLink && !bnIsMobileUA()) bnLoadQrLib().catch(function () {});
 }
 
 // Listen for date changes
@@ -3938,6 +4005,59 @@ function initPlacesAutocomplete() {
   });
 }
 
+// ===== Dinamik QR yardımcıları (masaüstü wizard/booking CTA → kişisel QR) =====
+// installWaDesktopModal'ın UA regex'i + iPadOS tespiti. iPadOS 13+ masaüstü UA gönderir
+// ('Macintosh', Mobile token'ı yok) ama dokunmatik Mac olmadığından maxTouchPoints>1 =
+// iPad demektir. iPad'de wa.me navigasyonu (WhatsApp uygulaması açılır) QR'dan iyidir —
+// cihaz kendi ekranındaki QR'ı okutamaz.
+function bnIsMobileUA() {
+  const ua = navigator.userAgent || '';
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(ua) ||
+    (/Macintosh/.test(ua) && (navigator.maxTouchPoints || 0) > 1);
+}
+
+// qrcode-generator kütüphanesini ihtiyaç anında yükle (self-hosted, ~20KB — sadece
+// masaüstünde ve CTA'ya yaklaşınca; mobil hiç indirmez). Memoize edilir, hata olursa
+// bir sonraki çağrıda yeniden dener.
+let _bnQrLibPromise = null;
+function bnLoadQrLib() {
+  if (window.qrcode) return Promise.resolve(window.qrcode);
+  if (_bnQrLibPromise) return _bnQrLibPromise;
+  _bnQrLibPromise = new Promise(function (resolve, reject) {
+    const s = document.createElement('script');
+    s.src = '/js/qr-encode.min.js';
+    s.async = true;
+    s.onload = function () {
+      if (window.qrcode) resolve(window.qrcode);
+      else { _bnQrLibPromise = null; reject(new Error('qrcode global yok')); }
+    };
+    s.onerror = function () { _bnQrLibPromise = null; reject(new Error('qr-encode.min.js yüklenemedi')); };
+    document.head.appendChild(s);
+  });
+  return _bnQrLibPromise;
+}
+
+// QR için IRI-encode: ASCII yapısal karakterler %XX olur, non-ASCII (Kiril/Arap/CJK)
+// ham UTF-8 kalır. encodeURIComponent tüm non-ASCII'yi %XX yapınca QR v32-33'e şişiyordu
+// (ekrandan okunamaz); ham UTF-8 ile aynı mesaj v21 (240px kutuda ~2.2px/modül — rahat).
+// Tarayıcı IRI'yi açarken kendisi percent-encode eder (WHATWG URL) — WhatsApp aynı metni alır.
+function bnQrIriEncode(s) {
+  return String(s).replace(/[\x00-\x7F]/g, function (ch) { return encodeURIComponent(ch); });
+}
+
+// Masaüstünde Telegram linki için QR popover dene; olmazsa normal navigasyon.
+// (Telegram Desktop kurulu olmayan PC kullanıcısı t.me sayfasında takılıyordu —
+// QR'ı telefonla okutunca bot telefonda açılır, wizard verisi token'la akar.)
+function bnTgDesktopQrOrGo(anchor, url) {
+  if (bnIsMobileUA() || !document.getElementById('waDesktopModal')) {
+    window.location.href = url;
+    return;
+  }
+  bnLoadQrLib().then(function () {
+    if (!openWaPopover(anchor, { mode: 'tg', qrText: url, linkHref: url })) window.location.href = url;
+  }).catch(function () { window.location.href = url; });
+}
+
 // ===== Masaüstü WhatsApp: tüm "bize yaz" butonları → QR + numara modal'ı =====
 // Mobilde wa.me linkleri WhatsApp uygulamasını doğrudan açar (dokunma). Masaüstünde
 // wa.me → WhatsApp Web çıkmaz sokak olduğundan, genel sohbet butonlarına tıklamayı
@@ -3960,7 +4080,18 @@ function initPlacesAutocomplete() {
       : null;
     if (!a) return;
     if (a.id === 'wizWhatsApp' || a.id === 'bookWhatsApp') return; // veri taşıyan CTA'lar → wa.me (dönüşüm+navigasyon normal)
-    if (a.closest && a.closest('#waDesktopModal')) return;          // popover içi "WhatsApp Web" → normal gitsin
+    if (a.closest && a.closest('#waDesktopModal')) {
+      // Popover içi "WhatsApp Web" linki. Kart'ın onclick="event.stopPropagation()"ı
+      // yüzünden index.html'deki bubble gtag listener'ı buraya hiç ulaşamıyor (20 Tem
+      // tespiti: generic popover fallback tıklamaları dönüşüm SAYILMIYORDU). Dönüşümü
+      // burada navigasyonsuz sayarız — default navigasyon (target=_blank) aynen işler.
+      // Wizard/booking modunda (convDone) dönüşüm ZATEN CTA tıklamasında sayıldı — tekrar sayma.
+      const dm = document.getElementById('waDesktopModal');
+      const already = dm && dm.dataset.convDone === '1';
+      if (!already && typeof gtag_report_conversion === 'function') gtag_report_conversion();
+      if (dm) dm.dataset.convDone = '1'; // aynı popover'da ikinci tıklama da tek sayılsın
+      return;
+    }
     if (a.closest && a.closest('#bnWebchat')) return;               // webchat QR kartı "Open WhatsApp Web" → widget kendi QR'ını gösteriyor, normal gitsin
     if (!document.getElementById('waDesktopModal')) return;
     e.preventDefault();
@@ -3971,38 +4102,113 @@ function initPlacesAutocomplete() {
 
 // Popover'ı tıklanan butona yapışık konumlandırır: tercihen ÜSTÜNDE, üstte yer
 // yoksa altına kayar; yatayda butona ortalar, ekran kenarına taşarsa kırpar; ok butona bakar.
-function openWaPopover(anchor) {
+// opts (hepsi opsiyonel — verilmezse eski "generic" davranış):
+//   mode: 'generic' (statik dil QR'ı) | 'wa' (kişisel wizard/booking mesajı QR) | 'tg' (Telegram handoff QR)
+//   qrText: dinamik modda QR'a kodlanacak URL (wa: IRI-encode edilmiş, tg: t.me linki)
+//   linkHref: alttaki butonun href'i (wa: tam encode'lu wa.me, tg: t.me linki)
+//   convDone: true ise Google Ads dönüşümü CTA tıklamasında sayıldı — popover içi
+//             "WhatsApp Web" tıklaması ikinci kez saymasın (capture guard okur).
+// Dönüş: true = popover açıldı, false = açılamadı (caller normal navigasyona düşmeli).
+function openWaPopover(anchor, opts) {
+  opts = opts || {};
+  const mode = opts.mode || 'generic';
   const modal = document.getElementById('waDesktopModal');
   const card = document.getElementById('waPopoverCard');
   const caret = document.getElementById('waPopoverCaret');
-  if (!modal || !card) return;
-  modal.classList.remove('hidden'); // önce görünür yap ki ölçebilelim
-  // Dil-farkında QR + "WhatsApp Web" linki — sayfanın diline göre (mutlak /assets/ yolu:
-  // hem kök hem /de/, /tr/ ... sayfalarında doğru çözülür; eksik dilde en QR'ına fallback).
-  const waLang = (typeof currentLang === 'string' && currentLang) ? currentLang : (document.documentElement.lang || 'en');
+  if (!modal || !card) return false;
   const qrImg = document.getElementById('waQrImg');
-  if (qrImg) {
-    qrImg.onerror = function () { this.onerror = null; this.src = '/assets/images/wa-qr-en.svg'; };
-    qrImg.src = '/assets/images/wa-qr-' + waLang + '.svg';
-  }
+  const qrBox = document.getElementById('waQrBox');
   const webLink = document.getElementById('waWebLink');
-  if (webLink && typeof T !== 'undefined' && T['floatingWa.message']) {
-    const m = T['floatingWa.message'][waLang] || T['floatingWa.message'].en;
-    webLink.href = 'https://wa.me/905322442922?text=' + encodeURIComponent(m);
+  const brandWa = document.getElementById('waPopoverBrandWa');
+  const brandTg = document.getElementById('waPopoverBrandTg');
+  const numBox = document.getElementById('waPopoverNumberBox');
+  const tgBox = document.getElementById('waPopoverTgBox');
+  const tgLink = document.getElementById('waTgOpenLink');
+
+  // Mod durumu + çift dönüşüm işareti (capture listener okur, generic'te temizlenir)
+  modal.dataset.mode = mode;
+  if (opts.convDone) modal.dataset.convDone = '1';
+  else delete modal.dataset.convDone;
+
+  // WA yeşili ↔ TG mavisi görünüm anahtarı (inline style — Tailwind purge'a takılmaz)
+  const isTg = mode === 'tg';
+  if (brandWa) brandWa.classList.toggle('hidden', isTg);
+  if (brandTg) brandTg.classList.toggle('hidden', !isTg);
+  if (numBox) numBox.classList.toggle('hidden', isTg);
+  if (tgBox) tgBox.classList.toggle('hidden', !isTg);
+  if (webLink) webLink.classList.toggle('hidden', isTg);
+  if (tgLink) tgLink.classList.toggle('hidden', !isTg);
+  card.style.borderColor = isTg ? 'rgba(38,165,228,.4)' : '';
+  if (caret) caret.style.borderColor = isTg ? 'rgba(38,165,228,.4)' : '';
+
+  const waLang = (typeof currentLang === 'string' && currentLang) ? currentLang : (document.documentElement.lang || 'en');
+  if (mode === 'generic') {
+    // Statik dil-farkında QR + genel "WhatsApp Web" mesajı (mutlak /assets/ yolu:
+    // hem kök hem /de/, /tr/ ... sayfalarında doğru çözülür; eksik dilde en QR fallback).
+    if (qrBox) { qrBox.style.width = ''; qrBox.style.height = ''; }
+    if (qrImg) {
+      qrImg.alt = 'WhatsApp QR — Bosphorus Night +90 532 244 29 22';
+      qrImg.onerror = function () { this.onerror = null; this.src = '/assets/images/wa-qr-en.svg'; };
+      qrImg.src = '/assets/images/wa-qr-' + waLang + '.svg';
+    }
+    if (webLink && typeof T !== 'undefined' && T['floatingWa.message']) {
+      const m = T['floatingWa.message'][waLang] || T['floatingWa.message'].en;
+      webLink.href = 'https://wa.me/905322442922?text=' + encodeURIComponent(m);
+    }
+  } else {
+    // Dinamik QR — kütüphane yüklü olmalı (caller bnLoadQrLib ile garanti eder).
+    if (!qrImg || !window.qrcode || !opts.qrText) return false;
+    try {
+      const qr = window.qrcode(0, 'L'); // tip otomatik, EC düşük (ekran QR'ı — küçük versiyon öncelikli)
+      qr.addData(opts.qrText, 'Byte');  // UTF-8 stringToBytes override'lı vendored build
+      qr.make();
+      // SVG data-URI: her ölçekte keskin. Kişisel mesaj yoğun QR üretir (worst case v21)
+      // → kutuyu 240px'e büyüt ki modül başına ~2.2px düşsün, telefon rahat okusun.
+      const svg = qr.createSvgTag(4, 16);
+      qrImg.onerror = null;
+      qrImg.alt = isTg ? 'Telegram QR — Bosphorus Night' : 'WhatsApp QR — Bosphorus Night';
+      qrImg.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+      if (qrBox) { qrBox.style.width = '240px'; qrBox.style.height = '240px'; }
+    } catch (err) {
+      console.warn('Dinamik QR üretilemedi:', err);
+      return false;
+    }
+    if (isTg) { if (tgLink && opts.linkHref) tgLink.href = opts.linkHref; }
+    else if (webLink && opts.linkHref) webLink.href = opts.linkHref;
   }
+
+  modal.classList.remove('hidden'); // görünür yap ki ölçebilelim
+  _bnWaPopoverAnchor = anchor;
+  bnPositionWaPopover(anchor);
+  return true;
+}
+
+// Popover'ı butona göre konumlandırır (openWaPopover + scroll/resize repozisyonu çağırır):
+// tercihen üstte, yer yoksa altta; yatay + DİKEY viewport clamp (240px QR'lı kart kısa
+// laptop ekranında alttan taşıyordu — taşan yarıdaki QR/buton erişilemez kalıyordu).
+// Dikey clamp devreye girince ok artık butona bakmaz → gizlenir.
+let _bnWaPopoverAnchor = null;
+function bnPositionWaPopover(anchor) {
+  const card = document.getElementById('waPopoverCard');
+  const caret = document.getElementById('waPopoverCaret');
+  if (!card || !anchor) return;
   const r = anchor.getBoundingClientRect();
   const gap = 12;
   const cw = card.offsetWidth;
   const ch = card.offsetHeight;
   const vw = window.innerWidth;
+  const vh = window.innerHeight;
   const btnCx = r.left + r.width / 2;
   const left = Math.max(8, Math.min(btnCx - cw / 2, vw - cw - 8));
   let top = r.top - ch - gap;   // tercihen üstte
   let flip = false;
   if (top < 8) { top = r.bottom + gap; flip = true; } // üstte yer yok → altına
+  let clamped = false;
+  if (top + ch > vh - 8) { top = Math.max(8, vh - ch - 8); clamped = true; } // alttan taşma → yukarı çek
   card.style.left = left + 'px';
   card.style.top = top + 'px';
   if (caret) {
+    caret.style.display = clamped ? 'none' : '';
     caret.style.left = Math.max(16, Math.min(btnCx - left, cw - 16)) + 'px';
     if (flip) { // popover butonun ALTINDA → ok yukarı baksın
       caret.style.top = '-6px'; caret.style.bottom = 'auto';
@@ -4021,10 +4227,18 @@ document.addEventListener('keydown', function (e) {
   const modal = document.getElementById('waDesktopModal');
   if (e.key === 'Escape' && modal && !modal.classList.contains('hidden')) window.closeWaDesktopModal();
 });
-// Konum bayatlamasın diye scroll/resize'da popover'ı kapat.
+// Scroll/resize: dinamik QR modlarında (wizard/booking/tg) kapatmak yerine yeniden
+// konumlandır — müşteri QR'ı telefonuna okuturken kazara scroll popover'ı öldürüyor,
+// tekrar tıklama döngüsü doğuruyordu. Generic modda eski davranış (kapat) kalır.
 ['scroll', 'resize'].forEach(function (ev) {
   window.addEventListener(ev, function () {
     const modal = document.getElementById('waDesktopModal');
-    if (modal && !modal.classList.contains('hidden')) window.closeWaDesktopModal();
+    if (!modal || modal.classList.contains('hidden')) return;
+    if (modal.dataset.mode && modal.dataset.mode !== 'generic' &&
+        _bnWaPopoverAnchor && _bnWaPopoverAnchor.isConnected) {
+      bnPositionWaPopover(_bnWaPopoverAnchor);
+      return;
+    }
+    window.closeWaDesktopModal();
   }, true);
 });

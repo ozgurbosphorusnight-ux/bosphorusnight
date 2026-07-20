@@ -3728,7 +3728,7 @@ const T = {
   },
   "waModal.scan": {
     en: "Scan with your phone camera to chat with us",
-    tr: "Bizimle WhatsApp'tan konuşmak için telefon kameranla okut",
+    tr: "Bizimle konuşmak için telefon kameranla okut",
     de: "Mit der Handykamera scannen, um mit uns zu chatten",
     es: "Escanea con la cámara de tu teléfono para chatear con nosotros",
     ru: "Отсканируйте камерой телефона, чтобы написать нам",
