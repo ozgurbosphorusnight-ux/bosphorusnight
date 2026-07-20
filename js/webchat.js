@@ -43,7 +43,7 @@
     'ans.time': '<span class="bnwc-bt">We sail every evening from Kabataş Pier.</span>\n• Boarding: from {boarding}\n• Departure: {departure}\n• Return: around {return}\n\nAbout 3 hours on the Bosphorus.',
     'ans.meeting': '<span class="bnwc-bt">Finding us is easy</span> — we\'re right at Kabataş Pier.\nThese short videos walk you there step by step:',
     'ans.meetingReserve': 'One friendly reminder — tables are assigned by reservation, so don\'t forget to book before you come 😊',
-    'ans.trust': '<span class="bnwc-bt">You\'re in safe hands</span>\n• Licensed tour operator — TÜRSAB A-17672\n• 5.0★ on Google (69 reviews)\n• No prepayment — you pay on the boat, so booking is completely risk-free.',
+    'ans.trust': '<span class="bnwc-bt">You\'re in safe hands</span>\n• Licensed tour operator — TÜRSAB A-17672\n• 4.9★ on Google\n• No prepayment — you pay on the boat, so booking is completely risk-free.',
     'ans.transfer': '<span class="bnwc-bt">Hotel transfer is €{transfer} per person.</span>\nIt depends on your hotel\'s location — to check if your hotel is covered, message us on WhatsApp or start a booking on the site and enter your hotel name; it checks your area instantly.\n\nIf transfer isn\'t available for your area, you can meet us directly at Kabataş Pier.',
     'ans.halal': 'Yes — our menu is Muslim-friendly.\nAll meat is halal, and alcohol is never served by default — it\'s only an optional extra for tables that request it. Unlimited soft drinks are included for everyone.',
     'ans.howto': 'Booking takes about a minute and there\'s <b>no prepayment</b> — you pay on the boat.\nTwo easy ways:',
