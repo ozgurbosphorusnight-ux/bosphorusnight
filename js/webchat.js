@@ -42,6 +42,7 @@
     'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
     'ans.time': '<span class="bnwc-bt">We sail every evening from Kabataş Pier.</span>\n• Boarding: from {boarding}\n• Departure: {departure}\n• Return: around {return}\n\nAbout 3 hours on the Bosphorus.',
     'ans.meeting': '<span class="bnwc-bt">Finding us is easy</span> — we\'re right at Kabataş Pier.\nThese short videos walk you there step by step:',
+    'ans.meetingReserve': 'One friendly reminder — tables are assigned by reservation, so don\'t forget to book before you come 😊',
     'ans.trust': '<span class="bnwc-bt">You\'re in safe hands</span>\n• Licensed tour operator — TÜRSAB A-17672\n• 5.0★ on Google (69 reviews)\n• No prepayment — you pay on the boat, so booking is completely risk-free.',
     'ans.transfer': '<span class="bnwc-bt">Hotel transfer is €{transfer} per person.</span>\nIt depends on your hotel\'s location — to check if your hotel is covered, message us on WhatsApp or start a booking on the site and enter your hotel name; it checks your area instantly.\n\nIf transfer isn\'t available for your area, you can meet us directly at Kabataş Pier.',
     'ans.halal': 'Yes — our menu is Muslim-friendly.\nAll meat is halal, and alcohol is never served by default — it\'s only an optional extra for tables that request it. Unlimited soft drinks are included for everyone.',
@@ -609,6 +610,8 @@
         renderLocationCard();
         renderVideoCard('ybAIn2RhwJs', tx('btn.tram'));
         renderVideoCard('UcQ3qgyADc4', tx('btn.dolma'));
+        // Rezervasyon hatırlatması — konum isteyen "kendim gelirim" moduna kayabilir (20 Tem)
+        botSayHtml(fill(tx('ans.meetingReserve')));
       } else if (key === 'video') {
         // Tek video yeter (18 Tem — Özgür): canlı gösteri kartı + kanal kartı
         renderVideoCard('zzDJ7xoXnuc', tx('btn.showVideo'));
