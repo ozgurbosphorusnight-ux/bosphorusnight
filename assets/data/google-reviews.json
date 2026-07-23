@@ -1,6 +1,6 @@
 {
   "_comment": "Google Business Profile yorumlarının snapshot'ı. Build script bunu OKUR (API çağrısı yok → Vercel'de çalışır). Hetzner cron'u (fetch-google-reviews) periyodik tazeler → git push → Vercel redeploy. Elle düzenleme: sadece küratörlü ek yorum eklerken.",
-  "fetchedAt": "2026-07-20",
+  "fetchedAt": "2026-07-23",
   "placeId": "ChIJx9cs1p63yhQRwd88xfTziFc",
   "rating": "4.9",
   "reviewCount": 71,
@@ -30,6 +30,14 @@
       "text": "It was great experience with the team. Very Good environment.",
       "lang": "en",
       "date": "2026-06-22"
+    },
+    {
+      "name": "Anelin Zhitov",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWJzCYmV-l80xBOKK_Bx1pHzxc11lLMN7PnbPSTwoZ4tmpHYPmM0A=s128-c0x00000000-cc-rp-mo-ba3",
+      "rating": 5,
+      "text": "Very nice experience on the ship, I recommend it 100%",
+      "lang": "en",
+      "date": "2026-07-10"
     },
     {
       "name": "Jose Angelo Pinto",
