@@ -904,8 +904,9 @@ const DINNER_PRICES = {
   extras: { glass2: 10, unlimited: 25, transfer: 10, romantic: 15 }
 };
 
-// Format a price for display: drop trailing zeros so it reads cleanly — "24.3", "55.2", "40.5", "92".
-const fmtEuro = (n) => String(Number(n));
+// Format a price for display: round to cents (float artifacts like 55.2*3=165.60000000000002)
+// and drop trailing zeros so it reads cleanly — "24.3", "55.2", "40.5", "92".
+const fmtEuro = (n) => String(Math.round(Number(n) * 100) / 100);
 
 // Fetch live prices from Supabase (via /api/public/prices) and apply to DOM + in-memory constants.
 // Runs once on page load. Falls back silently to hardcoded defaults if fetch fails.
@@ -1734,6 +1735,9 @@ function calculatePrice() {
       total += price;
     }
   });
+
+  // Float artifact guard (55.2*3=165.60000000000002) — round to cents
+  total = Math.round(total * 100) / 100;
 
   // Update displays
   const bookTotalEl = document.getElementById('bookTotal');
@@ -3466,6 +3470,10 @@ function wizCalcPrice() {
   oldTotal += drinkCost + transferCost;
   if (wizState.romantic) oldTotal += DINNER_PRICES.extras.romantic;
 
+  // Float artifact guard (55.2*3=165.60000000000002) — round to cents
+  total = Math.round(total * 100) / 100;
+  oldTotal = Math.round(oldTotal * 100) / 100;
+
   // Update bottom bar price summary
   const priceEl = document.getElementById('wizBottomPrice');
   if (priceEl) {
@@ -3591,21 +3599,21 @@ function wizBuildSummary() {
 
     // Soft drinks guests
     if (dc.soft > 0) {
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel}</p><p class="text-white/30 text-[10px]">${dc.soft} x €${basePrice}</p></div><span class="text-white font-medium">€${dc.soft * basePrice}</span></div>`;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel}</p><p class="text-white/30 text-[10px]">${dc.soft} x €${basePrice}</p></div><span class="text-white font-medium">€${fmtEuro(dc.soft * basePrice)}</span></div>`;
     }
 
     // Limited alcohol guests
     if (dc.glass2 > 0) {
       const glass2Label = drinkNames.glass2[currentLang] || 'Limited Alcohol';
       const perPerson = basePrice + DINNER_PRICES.extras.glass2;
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${glass2Label}</p><p class="text-white/30 text-[10px]">${dc.glass2} x (€${basePrice}+€${DINNER_PRICES.extras.glass2})</p></div><span class="text-white font-medium">€${dc.glass2 * perPerson}</span></div>`;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${glass2Label}</p><p class="text-white/30 text-[10px]">${dc.glass2} x (€${basePrice}+€${DINNER_PRICES.extras.glass2})</p></div><span class="text-white font-medium">€${fmtEuro(dc.glass2 * perPerson)}</span></div>`;
     }
 
     // Unlimited alcohol guests
     if (dc.unlimited > 0) {
       const unlimitedLabel = drinkNames.unlimited[currentLang] || 'Unlimited Alcohol';
       const perPerson = basePrice + DINNER_PRICES.extras.unlimited;
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${unlimitedLabel}</p><p class="text-white/30 text-[10px]">${dc.unlimited} x (€${basePrice}+€${DINNER_PRICES.extras.unlimited})</p></div><span class="text-white font-medium">€${dc.unlimited * perPerson}</span></div>`;
+      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${unlimitedLabel}</p><p class="text-white/30 text-[10px]">${dc.unlimited} x (€${basePrice}+€${DINNER_PRICES.extras.unlimited})</p></div><span class="text-white font-medium">€${fmtEuro(dc.unlimited * perPerson)}</span></div>`;
     }
 
     // Transfer
@@ -3627,7 +3635,7 @@ function wizBuildSummary() {
         else childTotal += basePrice;
       });
       if (childTotal > 0) {
-        html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${childrenLabel}</p><p class="text-white/30 text-[10px]">${children} x</p></div><span class="text-white font-medium">€${childTotal}</span></div>`;
+        html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${childrenLabel}</p><p class="text-white/30 text-[10px]">${children} x</p></div><span class="text-white font-medium">€${fmtEuro(childTotal)}</span></div>`;
       }
     }
 
