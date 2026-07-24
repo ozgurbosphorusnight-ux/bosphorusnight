@@ -2057,50 +2057,6 @@ const T = {
     ro: "Masă premium lângă scenă", uk: "Преміум столик біля сцени", ja: "ステージ近くのプレミアムテーブル", ko: "무대 근처 프리미엄 테이블", hi: "मंच के पास प्रीमियम टेबल", ur: "اسٹیج کے قریب پریمیم ٹیبل",
     cs: "Prémiový stůl u pódia", da: "Premiumbord nær scenen", el: "Premium τραπέζι κοντά στη σκηνή", fi: "Premium-pöytä lavan lähellä", hu: "Prémium asztal a színpad közelében", lv: "Premium galds pie skatuves", nl: "Premiumtafel dicht bij het podium", no: "Premiumbord nær scenen", pt: "Mesa premium perto do palco", sk: "Prémiový stôl pri pódiu", sl: "Premium miza ob odru", sv: "Premiumbord nära scenen"
   },
-  "compare.service": {
-    en: "Service style", tr: "Servis tarzı", de: "Service-Stil",
-    es: "Estilo de servicio", ru: "Стиль обслуживания", ar: "أسلوب الخدمة",
-    fa: "سبک سرویس", fr: "Style de service", it: "Stile di servizio",
-    zh: "服务方式", id: "Gaya layanan", ms: "Gaya layanan",
-    pl: "Styl obsługi", bg: "Стил на обслужване", ro: "Stil de servire", uk: "Стиль обслуговування", ja: "サービススタイル", ko: "서비스 스타일", hi: "सेवा शैली", ur: "سروس کا انداز",
-    cs: "Styl obsluhy", da: "Servicestil", el: "Στυλ εξυπηρέτησης", fi: "Palvelutyyli", hu: "Felszolgálási stílus", lv: "Apkalpošanas stils", nl: "Servicestijl", no: "Servicestil", pt: "Estilo de serviço", sk: "Štýl obsluhy", sl: "Slog postrežbe", sv: "Servicestil"
-  },
-  "compare.serviceStd": {
-    en: "Standard table service",
-    tr: "Standart masa servisi",
-    de: "Standard-Tischservice",
-    es: "Servicio de mesa estándar",
-    ru: "Стандартное обслуживание",
-    ar: "خدمة طاولة عادية",
-    fa: "سرویس میز استاندارد",
-    fr: "Service à table standard",
-    it: "Servizio al tavolo standard",
-    zh: "标准餐桌服务",
-    id: "Layanan meja standar",
-    ms: "Layanan meja standard",
-    pl: "Standardowa obsługa kelnerska",
-    bg: "Стандартно обслужване на маса",
-    ro: "Serviciu la masă standard", uk: "Стандартне обслуговування столиків", ja: "スタンダードテーブルサービス", ko: "기본 테이블 서비스", hi: "स्टैंडर्ड टेबल सेवा", ur: "معیاری میز کی خدمت",
-    cs: "Standardní obsluha u stolu", da: "Standard bordservering", el: "Standard σερβίρισμα στο τραπέζι", fi: "Vakiomuotoinen pöytätarjoilu", hu: "Standard asztalfelszolgálás", lv: "Standarta galda apkalpošana", nl: "Standaard tafelservice", no: "Standard bordservering", pt: "Serviço de mesa padrão", sk: "Štandardná obsluha pri stole", sl: "Standardna postrežba pri mizi", sv: "Standard bordsservering"
-  },
-  "compare.serviceVip": {
-    en: "Attentive VIP service",
-    tr: "Özenli VIP servis",
-    de: "Aufmerksamer VIP-Service",
-    es: "Servicio VIP atento",
-    ru: "Внимательное VIP-обслуживание",
-    ar: "خدمة VIP مميزة",
-    fa: "سرویس VIP ویژه",
-    fr: "Service VIP attentionné",
-    it: "Servizio VIP attento",
-    zh: "贴心VIP服务",
-    id: "Layanan VIP atensi tinggi",
-    ms: "Layanan VIP penuh perhatian",
-    pl: "Uważna obsługa VIP",
-    bg: "Внимателно VIP обслужване",
-    ro: "Serviciu VIP atent", uk: "Уважний VIP-сервіс", ja: "きめ細やかなVIPサービス", ko: "세심한 VIP 서비스", hi: "विशेष VIP सेवा", ur: "خصوصی VIP خدمت",
-    cs: "Pozorná VIP obsluha", da: "Opmærksom VIP-service", el: "Προσεκτική VIP εξυπηρέτηση", fi: "Tarkkaavainen VIP-palvelu", hu: "Figyelmes VIP-felszolgálás", lv: "Uzmanīga VIP apkalpošana", nl: "Aandachtige VIP-service", no: "Oppmerksom VIP-service", pt: "Serviço VIP atencioso", sk: "Pozorná VIP obsluha", sl: "Pozorna VIP postrežba", sv: "Uppmärksam VIP-service"
-  },
   "compare.show": {
     en: "Live entertainment", tr: "Canlı gösteri", de: "Live-Unterhaltung",
     es: "Espectáculo en vivo", ru: "Живое выступление", ar: "عرض حي",
