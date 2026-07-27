@@ -1,28 +1,12 @@
 {
   "_comment": "Google Business Profile yorumlarının snapshot'ı. Build script bunu OKUR (API çağrısı yok → Vercel'de çalışır). Hetzner cron'u (fetch-google-reviews) periyodik tazeler → git push → Vercel redeploy. Elle düzenleme: sadece küratörlü ek yorum eklerken.",
-  "fetchedAt": "2026-07-23",
+  "fetchedAt": "2026-07-27",
   "placeId": "ChIJx9cs1p63yhQRwd88xfTziFc",
   "rating": "4.9",
-  "reviewCount": 71,
+  "reviewCount": 74,
   "googleUrl": "https://www.google.com/maps?cid=6307559510739050433",
   "writeReviewUrl": "https://g.page/r/CcHfPMX084hXEBM/review",
   "reviews": [
-    {
-      "name": "weareaspect",
-      "photo": "https://lh3.googleusercontent.com/a/ACg8ocJiOY1hW_S0ansZjyVk2G82pm-2ltBIEzxJTRXpLIqgQ1ZzBQ=s128-c0x00000000-cc-rp-mo",
-      "rating": 5,
-      "text": "Went on an evening cruise with bn really enjoyable. amazing views smooth organization. Good value for the price, would recommend",
-      "lang": "en",
-      "date": "2026-05-15"
-    },
-    {
-      "name": "Ayşe48 Keleş 2",
-      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjWzlDQX3OpYpza_4BCgebBsip1M20qM_HH90lcCZ4dG3OsBR6U=s128-c0x00000000-cc-rp-mo",
-      "rating": 5,
-      "text": "Great night, perfect show and amazing dinner",
-      "lang": "en",
-      "date": "2026-05-20"
-    },
     {
       "name": "hassnain maqsood",
       "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVzyfpBLSS8gSTUInylqz4kEuSqzEdVpLxvpk3xuKCOSkP7TWdl=s128-c0x00000000-cc-rp-mo",
@@ -46,6 +30,14 @@
       "text": "Great Experience! Fantastic price to benefit ratio!",
       "lang": "en",
       "date": "2026-06-09"
+    },
+    {
+      "name": "Ayman Sarhan",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocLlvsSF9jUYoebWoNcsl42Vcx6chrlwsamhrZsij5O6n9Dbyg=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "More than perfect , beautiful and amazing atmosphere",
+      "lang": "en",
+      "date": "2026-07-13"
     }
   ]
 }
