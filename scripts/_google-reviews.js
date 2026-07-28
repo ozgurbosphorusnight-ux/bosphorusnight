@@ -59,7 +59,11 @@ const REVIEW_WORD = {
 
 function buildGoogleReviewsHtml(lang) {
   const fmtDate = (iso) => {
-    try { return new Intl.DateTimeFormat(lang, { month: 'short', year: 'numeric' }).format(new Date(iso)); }
+    // -u-ca-gregory: takvim ASLA locale varsayılanına bırakılmaz. Düz 'fa' → Celali
+    // ("تیر ۱۴۰۵"), 'ar' bazı ICU sürümlerinde Hicri basıyor → yorum tarihleri
+    // misafirin eşleştiremeyeceği bir takvime kayardı. (28 Tem 2026 wizard bug'ının
+    // aynı sınıfı — bkz js/main.js DATE_LOCALES.)
+    try { return new Intl.DateTimeFormat(`${lang}-u-ca-gregory`, { month: 'short', year: 'numeric' }).format(new Date(iso)); }
     catch { return ''; }
   };
   const cards = GREVIEWS.reviews.map((r) => {
