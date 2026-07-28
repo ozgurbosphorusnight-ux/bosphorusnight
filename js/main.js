@@ -2,6 +2,22 @@
 const WA_NUMBER = '905322442922';
 const BRAND_NAME = 'Bosphorus Night';
 
+// ========== TARİH LOCALE HARİTASI (tek kaynak) ==========
+// ar/fa'da takvim ve rakam sistemi AÇIKÇA sabitlenir. Aksi halde tarayıcı ICU'su
+// ar-SA → Hicri ("الثلاثاء، ١٤ صفر ١٤٤٨ هـ"), fa-IR → Celali ("۶ مرداد ۱۴۰۵") basar.
+// Wizard mesajı bu metinle AI'a gidiyor; AI çevirmeye çalışıp günü kaydırıyordu
+// (28 Tem 2026: Suudi müşteri bugünü seçti, AI "29 Temmuz Salı" dedi — 29'u Çarşamba).
+// nu-latn: ar/fa/ur/hi'de Arap-Hint rakamları (٢٨/۲۸) yerine 28 → hem parser hem
+// müşteri için tek anlamlı. ca-gregory olmadan takvim tarayıcıya göre değişir.
+const DATE_LOCALES = {
+  en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU',
+  ar: 'ar-SA-u-ca-gregory-nu-latn', fa: 'fa-IR-u-ca-gregory-nu-latn',
+  fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY',
+  pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO', uk: 'uk-UA',
+  hi: 'hi-IN-u-nu-latn', ur: 'ur-PK-u-ca-gregory-nu-latn',
+  ja: 'ja-JP', ko: 'ko-KR'
+};
+
 // ========== ENTRY LANDING + AD ATTRIBUTION TRACKER ==========
 // Captures: first landing page (this session) + ad click IDs (gclid/gbraid/wbraid)
 // + utm params. Used as GA4 Lead dimension AND carried through the wizard handoff
@@ -1767,7 +1783,7 @@ function updateWhatsAppLinks(total) {
   let dateStr = date;
   try {
     const d = new Date(date + 'T00:00:00');
-    dateStr = d.toLocaleDateString(currentLang === 'ar' ? 'ar-SA' : currentLang, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    dateStr = d.toLocaleDateString(DATE_LOCALES[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   } catch(e) {}
 
   // Extras
@@ -3527,12 +3543,13 @@ function wizBuildSummary() {
   if (dc.unlimited > 0) drinkParts.push(`${dc.unlimited} x ${(drinkNames.unlimited[currentLang] || 'Unlimited')}`);
   const drinkLabel = drinkParts.join(', ') || (drinkNames.soft[currentLang] || 'Soft Drinks');
 
-  // Format date
+  // Format date — mesajın SONUNA ISO tarih eklenir (2026-07-28). AI parser'ı
+  // (wizard-parser.js parseDate) önce ISO'yu dener; böylece ar/fa/zh/ja/ko/hi/ur
+  // gibi ay adı sözlüğünde olmayan dillerde de tarih tahmine kalmaz.
   let dateStr = date;
   try {
     const d = new Date(date + 'T00:00:00');
-    const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO', uk: 'uk-UA', hi: 'hi-IN', ur: 'ur-PK', ja: 'ja-JP', ko: 'ko-KR' };
-    dateStr = d.toLocaleDateString(locales[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    dateStr = d.toLocaleDateString(DATE_LOCALES[currentLang] || 'en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) + ` (${date})`;
   } catch(e) {}
 
   // Ticket fields
@@ -3546,8 +3563,7 @@ function wizBuildSummary() {
   if (ticketDate) {
     try {
       const d = new Date(date + 'T00:00:00');
-      const locales = { en: 'en-US', tr: 'tr-TR', de: 'de-DE', es: 'es-ES', ru: 'ru-RU', ar: 'ar-SA', fa: 'fa-IR', fr: 'fr-FR', it: 'it-IT', zh: 'zh-CN', id: 'id-ID', ms: 'ms-MY', pl: 'pl-PL', bg: 'bg-BG', ro: 'ro-RO', uk: 'uk-UA', hi: 'hi-IN', ur: 'ur-PK', ja: 'ja-JP', ko: 'ko-KR' };
-      ticketDate.textContent = d.toLocaleDateString(locales[currentLang] || 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
+      ticketDate.textContent = d.toLocaleDateString(DATE_LOCALES[currentLang] || 'en-US', { day: 'numeric', month: 'short', year: 'numeric' });
     } catch(e) { ticketDate.textContent = date; }
   }
   if (ticketGuests) {
