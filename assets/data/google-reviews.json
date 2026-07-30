@@ -1,9 +1,9 @@
 {
   "_comment": "Google Business Profile yorumlarının snapshot'ı. Build script bunu OKUR (API çağrısı yok → Vercel'de çalışır). Hetzner cron'u (fetch-google-reviews) periyodik tazeler → git push → Vercel redeploy. Elle düzenleme: sadece küratörlü ek yorum eklerken.",
-  "fetchedAt": "2026-07-27",
+  "fetchedAt": "2026-07-30",
   "placeId": "ChIJx9cs1p63yhQRwd88xfTziFc",
   "rating": "4.9",
-  "reviewCount": 74,
+  "reviewCount": 78,
   "googleUrl": "https://www.google.com/maps?cid=6307559510739050433",
   "writeReviewUrl": "https://g.page/r/CcHfPMX084hXEBM/review",
   "reviews": [
