@@ -10,7 +10,7 @@ module.exports = {
       badge: 'Maksa laivalla – ei ennakkomaksua'
     },
     intro: [
-      'Lähde 20:30 Kabataşin laiturista kolmen tunnin illallisristeilylle Bosporinsalmella. Laiva kulkee Dolmabahçen, Ortaköyn ja Beylerbeyin ohi – upeat valaisut joka puolella.',
+      'Lähde 21:00 Kabataşin laiturista kolmen tunnin illallisristeilylle Bosporinsalmella. Laiva kulkee Dolmabahçen, Ortaköyn ja Beylerbeyin ohi – upeat valaisut joka puolella.',
       'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meribassi, kana tai lihapullat) sekä jäätelöä ja kakkua. Juomat sisältyvät hintaan – alkoholiton.',
       'Illallisenaikana ohjelmassa on mevlana-esitys, kansantanssit, oryantaali sekä elävää musiikkia ja DJ. Maksa vasta laivalla – ei ennakkomaksua.'
     ],
@@ -19,12 +19,12 @@ module.exports = {
       { icon: '🎭', text: 'Canlı esitykset: mevlana, kansantanssit, oryantaali, DJ' },
       { icon: '🌉', text: 'Näkymät Bosporinsalmen silloille ja historiallisille palatseille' },
       { icon: '💳', text: 'Maksa vasta laivalla – ennakkovaraus ilman ennakkomaksua' },
-      { icon: '🚢', text: 'Lähtö 20:30 Kabataşista – paluu 23:30' }
+      { icon: '🚢', text: 'Lähtö 21:00 Kabataşista – paluu 00:00' }
     ],
     faq: [
       { q: 'Mitä illalliseen kuuluu?', a: '10 kylmää mezea, lämmin alkupala, pääruoka (lohi, meribassi, kana tai lihapullat), jälkiruoka sekä alkoholittomat juomat. Alkoholi saatavilla lisähintaan.' },
-      { q: 'Mistä laiva lähtee?', a: 'Kabataşin laiturista, Istanbulissa. Portti avautuu 19:30, lähtö 20:30.' },
-      { q: 'Kuinka kauan ristely kestää?', a: '3 tuntia – lähtö 20:30, paluu 23:30.' },
+      { q: 'Mistä laiva lähtee?', a: 'Kabataşin laiturista, Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
+      { q: 'Kuinka kauan ristely kestää?', a: '3 tuntia – lähtö 21:00, paluu 00:00.' },
       { q: 'Voiko peruuttaa?', a: 'Kyllä, 2 tuntia ennen ristelya ilmaiseksi. Koska maksat laivalla, palautus ei koske.' },
       { q: 'Pääseekö lapset mukaan?', a: 'Kyllä. 0–3-vuotiaat ilmaiseksi, 4–8-vuotiaat 50 % alennuksella, 9+ täyteen hintaan.' }
     ],
@@ -48,7 +48,7 @@ module.exports = {
     intro: [
       'Bosporinsalmen illallisristely sopii koko perheelle. Pienimmät (0–3 v.) pääsevät mukaan ilmaiseksi, ja 4–8-vuotiaat saavat puolet hinnasta alennusta.',
       'Laivalla on tilaa liikkua, avoin kansi raitista ilmaa varten sekä monipuolinen ruoka, josta löytyy jotakin kaikille. Esitysohjelma on värikästä ja viihdyttävää myös lapsille.',
-      'Lähtö 20:30 Kabataşista. Maksa vasta laivalla – varaa paikat etukäteen ilman ennakkomaksua.'
+      'Lähtö 21:00 Kabataşista. Maksa vasta laivalla – varaa paikat etukäteen ilman ennakkomaksua.'
     ],
     highlights: [
       { icon: '👶', text: '0–3-vuotiaat ilmaiseksi – ei lisähintaa pienimmille' },
@@ -62,7 +62,7 @@ module.exports = {
       { q: 'Onko laivalla lastenruokaa?', a: 'Illalliseen kuuluu useita vaihtoehtoja, myös lapsille sopivaa ruokaa kuten lihapullia ja kanaa.' },
       { q: 'Onko laivalla lastenistuimia?', a: 'Suosittelemme ottamaan oman istuimen mukaan, sillä istuimia ei ole saatavilla laivalla.' },
       { q: 'Voiko lastenvaunu ottaa mukaan?', a: 'Laivalla on tilaa, mutta suosittelemme jättämään lastenvaunu maihin. Kannettava tai taittuva vaihtoehto on kätevin.' },
-      { q: 'Kuinka myöhään ristely kestää?', a: 'Paluu on 23:30. Pienet lapset saattavat nukahtaa matkalla – se on täysin normaalia!' }
+      { q: 'Kuinka myöhään ristely kestää?', a: 'Paluu on 00:00. Pienet lapset saattavat nukahtaa matkalla – se on täysin normaalia!' }
     ],
     cta: {
       primary: 'Varaa perheristely',
@@ -84,7 +84,7 @@ module.exports = {
     intro: [
       'Romanttinen illallisristely Bosporinsalmella on täydellinen tapa viettää erityinen ilta. Laiva kulkee hämärässä historiallisten rakennusten ohi kynttilänvalon loisteessa.',
       'Hinnassa on täysi illallinen ja esitysohjelma. Romanttinen pöytäkoristelu (kukkia, kynttilöitä, erityinen koristelu) on saatavilla lisähintaan {p.romantic}.',
-      'Lähtö 20:30 Kabataşista. Maksa vasta laivalla. Kerro varauksessa erityistoiveet – vuosipäivä, syntymäpäivä tai kosintasuunnitelma.'
+      'Lähtö 21:00 Kabataşista. Maksa vasta laivalla. Kerro varauksessa erityistoiveet – vuosipäivä, syntymäpäivä tai kosintasuunnitelma.'
     ],
     highlights: [
       { icon: '💑', text: 'Täydellinen pariskunnille – romanttinen tunnelma takuulla' },
@@ -120,7 +120,7 @@ module.exports = {
     intro: [
       'Bosporinsalmen illallisristely sopii erinomaisesti muslimimatkustajille. Perusilallinen on alkoholiton – alkoholia ei tarvitse tilata lainkaan.',
       'Ruoka sisältää useita mezoja, pääruoan (lohi, meribassi, kana tai lihapullat) ja jälkiruoan. Erityisruokavalioista, kuten halal-lihatoiveista, voi kysyä etukäteen WhatsAppilla.',
-      'Istanbul on muslimimatkailijan unelmakaupunki, ja Bosporinsalmen ristely on sen hienoimmista elämyksistä. Lähtö 20:30 Kabataşista.'
+      'Istanbul on muslimimatkailijan unelmakaupunki, ja Bosporinsalmen ristely on sen hienoimmista elämyksistä. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [
       { icon: '🚫🍷', text: 'Täysin alkoholiton vaihtoehto ilman lisähintaa' },
@@ -134,7 +134,7 @@ module.exports = {
       { q: 'Tarjoillaanko alkoholia laivalla?', a: 'Kyllä, alkoholia on saatavilla muille matkustajille. Sinun ei tarvitse tilata sitä, ja alkoholittomat vaihtoehdot ovat täysin riittäviä.' },
       { q: 'Onko laivalla rukousaikoja varten tilaa?', a: 'Laivalla on rauhallisia alueita. Suosittelemme tarkistamaan lähtöajan suhteessa rukousaikoihin.' },
       { q: 'Voivatko naiset pukeutua perinteisesti?', a: 'Ehdottomasti, kaikki ovat tervetulleita pukeutumisestaan riippumatta.' },
-      { q: 'Sopiiko ristely Ramadanin aikaan?', a: 'Kyllä – lähtöaika 20:30 sopii hyvin iftarin jälkeen.' }
+      { q: 'Sopiiko ristely Ramadanin aikaan?', a: 'Kyllä – lähtöaika 21:00 sopii hyvin iftarin jälkeen.' }
     ],
     cta: {
       primary: 'Varaa halal-ristely',
@@ -156,7 +156,7 @@ module.exports = {
     intro: [
       'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte), jäätelökakku ja rajattomasti virvoitusjuomia. Koko ohjelma sisältyy myös hintaan — pyörivien dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ — kaikki hintaan €{p.dinnerStd}/henkilö.',
       'VIP-tunnelma alkaa pöydästäsi. Jos haluat istua mahdollisimman lähellä lavaa ja maisemia, lisää **yksityinen pöytä lavan lähellä** (+€{p.romantic}/pöytä), niin paikkasi varataan etukäteen — paras kulma dervisseihin, kansantansseihin ja valaistuun Bosporiin. Parien, juhlien ja valokuvaajien suosikkivalinta.',
-      'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 19:30, lähtö 20:30, paluu 23:30) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
+      'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 20:00, lähtö 21:00, paluu 00:00) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
     ],
     highlights: [
       { title: 'Yksi menu, premium-taso', desc: 'Erillistä "VIP-menua" ei ole — koska ainoa menumme on jo sillä tasolla. 10 lajia mezejä, lämmin alkuruoka, 4 pääruokavaihtoehtoa, jälkiruoka ja rajattomasti virvoitusjuomia, tarjoiltuna samalla huolella jokaiseen pöytään.' },
@@ -170,7 +170,7 @@ module.exports = {
       { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte) ja jäätelökakku jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Ohjelma sisältyy: dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei — alkoholi on erillinen lisä: 2 lasia paikallista viiniä tai olutta hintaan +€{p.alcohol2}/henkilö. Virvoitusjuomat sisältyvät rajattomasti ja maksutta. Premium-tuontijuomat laskutetaan erikseen laivalla.' },
       { q: 'Miten varmistan pöydän lavan läheltä?', a: 'Valitse varauksen yhteydessä lisä "yksityinen pöytä lavan lähellä" (+€{p.romantic}/pöytä) — pöytä varataan nimellesi. Parhaat paikat menevät ennakkovarauksille, joten kannattaa lisätä se ennen risteilypäivää.' },
-      { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 19:30, lähtö 20:30, paluu 23:30. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }
+      { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 20:00, lähtö 21:00, paluu 00:00. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }
     ],
     cta: {
       primary: 'Varaa pöytäsi · Maksu laivalla',
@@ -254,37 +254,37 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Bosporinsalmen auringonlasku- ja illallisristeily €{p.dinnerStd} alkaen',
-      description: 'Koe auringonlasku Bosporinsalmella ja nauti illallista valaistujen siltojen alla. Laivaannousu 19:30 Kabataşissa, lähtö 20:30. 3 tuntia, täysi illallinen. Maksa laivalla.'
+      description: 'Koe auringonlasku Bosporinsalmella ja nauti illallista valaistujen siltojen alla. Laivaannousu 20:00 Kabataşissa, lähtö 21:00. 3 tuntia, täysi illallinen. Maksa laivalla.'
     },
     hero: {
       h1: 'Bosporinsalmen auringonlasku- ja illallisristeily',
-      subtitle: 'Nouse laivaan 19:30, kun taivas kultaantuu minareettien yllä – ja nauti illallista vesillä, kun Dolmabahçe, Ortaköyn moskeija ja Bosporinsalmen silta syttyvät yön valoihin.',
-      badge: 'Laivaannousu 19:30 · Lähtö 20:30 · Auringonlaskusta kaupungin valoihin'
+      subtitle: 'Nouse laivaan 20:00, kun taivas kultaantuu minareettien yllä – ja nauti illallista vesillä, kun Dolmabahçe, Ortaköyn moskeija ja Bosporinsalmen silta syttyvät yön valoihin.',
+      badge: 'Laivaannousu 20:00 · Lähtö 21:00 · Auringonlaskusta kaupungin valoihin'
     },
     intro: [
-      'Istanbulin **auringonlaskuristeily Bosporinsalmella** on ennen kaikkea kokemus siirtymästä. Laivaannousu alkaa Kabataşin laiturista 19:30 – ja toukokuusta elokuuhun kestävinä pitkinä iltoina kultainen hetki avautuu, kun asetut paikallesi kannella. Aurinko laskee Euroopan puolen minareettien taakse juuri 20:30 lähdön aikoihin, joten näet sen vesiltä: Dolmabahçen palatsi kullan hehkussa, Ortaköyn moskeija siluettina loistavaa taivasta vasten.',
+      'Istanbulin **auringonlaskuristeily Bosporinsalmella** on ennen kaikkea kokemus siirtymästä. Laivaannousu alkaa Kabataşin laiturista 20:00 – ja toukokuusta elokuuhun kestävinä pitkinä iltoina kultainen hetki avautuu, kun asetut paikallesi kannella. Aurinko laskee Euroopan puolen minareettien taakse juuri 21:00 lähdön aikoihin, joten näet sen vesiltä: Dolmabahçen palatsi kullan hehkussa, Ortaköyn moskeija siluettina loistavaa taivasta vasten.',
       'Meidän **auringonlaskusta yöhön jatkuva Bosporinsalmen risteilymme** sisältää täyden turkkilaisen illallisen – 10 erilaista mezeä, lämmin alkuruoka, valittava pääruoka ja jälkiruoka – joka tarjoillaan, kun kaupunki sytyttää valonsa. Jälkiruoan saapuessa purjehdit jo valaistun Bosporinsalmen sillan alta, ja 30 miljoonaa valoa heijastuu tummasta vedestä. Muutos hämärästä täyteen yöhön yhden kolmen tunnin risteilyn aikana on koko kokemuksen ydin.',
       'Olitpa valokuvaaja viimeisen valon perässä, pariskunta etsimässä sitä ainoaa Istanbul-muistokuvaa tai ensikertalainen, joka haluaa klassisen illan vesillä – tämä on se **Bosporinsalmen auringonlasku-illallisristeily**, jota paikalliset suosittelevat vierailijoille. Hinnat alkaen €{p.dinnerStd}/hlö, 4.8★ arvosana, TÜRSAB-lisensoitu, maksu laivalla – ei ennakkomaksua.'
     ],
     highlights: [
-      { title: 'Kesän auringonlaskut juuri lähdön aikaan', desc: 'Toukokuusta elokuuhun aurinko laskee Istanbulissa noin 20:15–20:45 – laivaannousu 19:30 tarjoaa kultaisen hetken kannella, ja 20:30 lähtö vie sinut vesille juuri auringonlaskun ajaksi. Pidä kamera valmiina – tämä on se kuva.' },
+      { title: 'Kesän auringonlaskut juuri lähdön aikaan', desc: 'Toukokuusta elokuuhun aurinko laskee Istanbulissa noin 20:15–20:45 – laivaannousu 20:00 tarjoaa kultaisen hetken kannella, ja 21:00 lähtö vie sinut vesille juuri auringonlaskun ajaksi. Pidä kamera valmiina – tämä on se kuva.' },
       { title: 'Sinisestä hetkestä täyteen yöhön', desc: 'Ei pelkkä auringonlasku – risteily jatkuu iltahämärän läpi täysin valaistulle Bosporinsalmelle. Kultainen valo, sininen hetki ja lopuksi 30 miljoonaa sillan valoa tummalla vedellä: kolme valon vaihetta yhden illan aikana.' },
       { title: 'Täysi illallinen risteilyn aikana', desc: '10 erilaista turkkilaista mezeä, lämmin alkuruoka, pääruoka (lohi, meriahven, kana, köfte tai kasvisvaihtoehto), jäätelökakku ja rajattomasti virvoitusjuomia – tarjoillaan kaupungin valojen syttyessä.' },
       { title: 'Dolmabahçe, Ortaköy ja Bosporinsalmen silta – kaikki valaistuina', desc: 'Reitti kulkee Dolmabahçen palatsin, Ortaköyn moskeijan, Bosporinsalmen sillan, Rumelinlinnan ja Beylerbeyin palatsin ohi juuri, kun niiden valot syttyvät. Jokainen maamerkki parhaassa valossaan.' }
     ],
     faq: [
-      { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 19:30 Kabataşin laiturissa, laiva lähtee 20:30 ja palaa noin 23:30. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
-      { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 20:30, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
+      { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 20:00 Kabataşin laiturissa, laiva lähtee 21:00 ja palaa noin 00:00. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
+      { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 21:00, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
       { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-8 v puoleen hintaan.' },
-      { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 20:30 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
+      { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 21:00 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
       { q: 'Mitä auringonlaskuristeilylle kannattaa ottaa mukaan?', a: 'Älypuhelin tai kamera – kultainen hetki ja valaistut sillat suorastaan kutsuvat kuvaamaan. Kevyt takki: tuuli voimistuu kannella auringonlaskun jälkeen. Siisti rento pukeutuminen riittää – kyseessä on illallinen, mutta tiukkaa pukukoodia ei ole.' },
-      { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 20:30–23:30, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 23:30.' },
-      { q: 'Mihin aikaan aurinko laskee Istanbulissa?', a: 'Kesällä (kesä–heinäkuussa) aurinko laskee Istanbulissa noin 20:30–20:45, talvella noin 16:30–17:00. Auringonlasku- ja yökokemusta varten Bosphorus Nightin 20:30 lähtevä illallisristeily Kabataşista tavoittaa kesällä myöhäisen kultaisen hetken ja sinisen hetken – ja valaistut maamerkit ympäri vuoden.' },
-      { q: 'Kannattaako Bosporinsalmen auringonlaskuristeily?', a: 'Kyllä – auringonlasku Bosporinsalmen sillan yllä on yksi Istanbulin tunnusomaisimmista näkymistä. Bosphorus Nightin 20:30 lähtevä illallisristeily (€{p.dinnerStd}/hlö) tavoittaa auringonlaskun jälkeisen sinisen hetken sekä valaistut palatsit, ja kolmen tunnin iltaan sisältyvät täysi illallinen ja elävät esitykset.' }
+      { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 21:00–00:00, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 00:00.' },
+      { q: 'Mihin aikaan aurinko laskee Istanbulissa?', a: 'Kesällä (kesä–heinäkuussa) aurinko laskee Istanbulissa noin 21:00–20:45, talvella noin 16:30–17:00. Auringonlasku- ja yökokemusta varten Bosphorus Nightin 21:00 lähtevä illallisristeily Kabataşista tavoittaa kesällä myöhäisen kultaisen hetken ja sinisen hetken – ja valaistut maamerkit ympäri vuoden.' },
+      { q: 'Kannattaako Bosporinsalmen auringonlaskuristeily?', a: 'Kyllä – auringonlasku Bosporinsalmen sillan yllä on yksi Istanbulin tunnusomaisimmista näkymistä. Bosphorus Nightin 21:00 lähtevä illallisristeily (€{p.dinnerStd}/hlö) tavoittaa auringonlaskun jälkeisen sinisen hetken sekä valaistut palatsit, ja kolmen tunnin iltaan sisältyvät täysi illallinen ja elävät esitykset.' }
     ],
     cta: {
       primary: 'Varaa auringonlaskuristeily · Maksa laivalla',
-      secondary: 'Laivaannousu 19:30 · Lähtö 20:30 · Illallinen sisältyy · Ilmainen peruutus 2 h ennen',
+      secondary: 'Laivaannousu 20:00 · Lähtö 21:00 · Illallinen sisältyy · Ilmainen peruutus 2 h ennen',
       tertiary: 'Katso illallisristeilyn kaikki tiedot'
     }
   },
@@ -297,11 +297,11 @@ module.exports = {
     hero: {
       h1: 'Bosporinsalmen yöristely',
       subtitle: 'Istanbul yöllä – valaistujen palatsin ja siltojen loiste vedellä',
-      badge: 'Lähtö 20:30 – yöllinen magia'
+      badge: 'Lähtö 21:00 – yöllinen magia'
     },
     intro: [
       'Bosporinsalmen yöristely on puhtaasti erilainen kokemus kuin päiväristely. Yöllä Istanbul loistaa – Dolmabahçen palatsi, Çırağanin linna ja Bosporinsalmen sillat heijastuvat hämärässä vedessä.',
-      'Kolme tuntia illallista, musiikkia ja tanssia yöllisessä Bosporinsalmessa. Lähtö 20:30 Kabataşista, paluu 23:30.',
+      'Kolme tuntia illallista, musiikkia ja tanssia yöllisessä Bosporinsalmessa. Lähtö 21:00 Kabataşista, paluu 00:00.',
       'Maksa vasta laivalla. Varaa paikka etukäteen – yöristely on erittäin suosittu.'
     ],
     highlights: [
@@ -336,7 +336,7 @@ module.exports = {
       badge: 'Istanbulin suosituin illallisristely'
     },
     intro: [
-      'Istanbulin illallisristely Bosporinsalmella yhdistää laadukkaan ruoan, viihteen ja kaupungin kauneimmat näkymät. Kolme tuntia elämystä – lähtö 20:30 Kabataşista.',
+      'Istanbulin illallisristely Bosporinsalmella yhdistää laadukkaan ruoan, viihteen ja kaupungin kauneimmat näkymät. Kolme tuntia elämystä – lähtö 21:00 Kabataşista.',
       'Illallinen sisältää 10 kylmää mezea, lämpimän alkupalan, pääruoan ja jälkiruoan. Esitysohjelmassa on mevlana, kansantanssit, oryantaali, elävää musiikkia ja DJ.',
       'Hinta {p.dinnerStd} per henkilö (alkuperäinen {p.dinnerStdOriginal}). Maksa vasta laivalla – ei ennakkomaksua.'
     ],
@@ -348,10 +348,10 @@ module.exports = {
       { icon: '💳', text: 'Maksa laivalla – varaa paikka nyt' }
     ],
     faq: [
-      { q: 'Mistä illallisristely lähtee?', a: 'Kabataşin laiturista Istanbulissa. Portti avautuu 19:30, lähtö 20:30.' },
+      { q: 'Mistä illallisristely lähtee?', a: 'Kabataşin laiturista Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei, hintaan sisältyvät juomat ovat alkoholittomia. Alkoholia voi lisätä: 2 lasia {p.alcohol2}.' },
       { q: 'Onko laivalla kasvisruokaa?', a: 'Mezot ovat pääosin kasvispitoisia. Kysy pääruoan kasvisvaihtoehdoista etukäteen.' },
-      { q: 'Kuinka paljon etukäteen pitää saapua?', a: 'Portti avautuu 19:30. Suosittelemme saapumaan viimeistään 20:15.' },
+      { q: 'Kuinka paljon etukäteen pitää saapua?', a: 'Portti avautuu 20:00. Suosittelemme saapumaan viimeistään 20:15.' },
       { q: 'Onko lipun varaus pakollinen?', a: 'Varaus on erittäin suositeltavaa paikan varmistamiseksi, erityisesti viikonloppuisin.' }
     ],
     cta: {
@@ -373,7 +373,7 @@ module.exports = {
     },
     intro: [
       'Istanbulin yökierros alkaa siitä, missä muut loppuvat. Bosporinsalmen yöristely vie sinut kaupungin ytimeen vesiltä käsin – valaistujen palatsin ja siltojen näkymät ovat vertaansa vailla.',
-      'Kolme tuntia historiaa, kulttuuria ja kauneutta – sekä täysi illallinen ja esitykset laivalla. Lähtö 20:30 Kabataşista.',
+      'Kolme tuntia historiaa, kulttuuria ja kauneutta – sekä täysi illallinen ja esitykset laivalla. Lähtö 21:00 Kabataşista.',
       'Maksa vasta laivalla. Hinta {p.dinnerStd} per henkilö.'
     ],
     highlights: [
@@ -386,8 +386,8 @@ module.exports = {
     faq: [
       { q: 'Onko yöristely paras tapa nähdä Istanbul?', a: 'Yöristely on yksi parhaista tavoista – kaupunki loistaa vedessä ja näkymät ovat upeita. Yhdistä myös päiväretki historiallisiin nähtävyyksiin.' },
       { q: 'Onko ristely yöllä kylmä?', a: 'Voi olla viileää, erityisesti avonaisella kannella. Ota takki mukaan ja nauti sisätiloista tarvittaessa.' },
-      { q: 'Mistä lähtee?', a: 'Kabataşin laiturista. Portti avautuu 19:30, lähtö 20:30.' },
-      { q: 'Kestääkö ristely koko yön?', a: 'Ei, ristely kestää 3 tuntia. Paluu on 23:30.' },
+      { q: 'Mistä lähtee?', a: 'Kabataşin laiturista. Portti avautuu 20:00, lähtö 21:00.' },
+      { q: 'Kestääkö ristely koko yön?', a: 'Ei, ristely kestää 3 tuntia. Paluu on 00:00.' },
       { q: 'Voinko ottaa valokuvia yöllä?', a: 'Kyllä, ja ne tulevat olemaan upeat! Valaistus on täydellinen valokuvaamiseen.' }
     ],
     cta: {
@@ -410,7 +410,7 @@ module.exports = {
     intro: [
       'Istanbulin veneretki Bosporinsalmella on elämys, jota ei pidä jättää väliin. Laiva kulkee kahden mantereen välissä – Eurooppa ja Aasia molemmin puolin.',
       'Kolmen tunnin aikana näet Dolmabahçen, Çırağanin, Ortaköyn ja Beylerbeyin. Illallinen ja elävät esitykset tekevät matkasta täydellisen.',
-      'Hinta {p.dinnerStd} per henkilö. Maksa vasta laivalla. Lähtö 20:30 Kabataşista.'
+      'Hinta {p.dinnerStd} per henkilö. Maksa vasta laivalla. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [
       { icon: '⚓', text: 'Bosporinsalmi – kahden mantereen välissä' },
@@ -445,7 +445,7 @@ module.exports = {
     },
     intro: [
       'Bosporinsalmi on Istanbulin sydän – kahden mantereen ja kahden meren välinen salmi, jonka rannoilla historia näkyy joka kulmassa. Illallisristely on paras tapa kokea se.',
-      'Kolmen tunnin matka sisältää täyden illallisen, elävät esitykset ja historialliset näkymät. Lähtö 20:30 Kabataşista, paluu 23:30.',
+      'Kolmen tunnin matka sisältää täyden illallisen, elävät esitykset ja historialliset näkymät. Lähtö 21:00 Kabataşista, paluu 00:00.',
       'Maksa vasta laivalla. Hinta {p.dinnerStd} per henkilö – alkuperäinen {p.dinnerStdOriginal}.'
     ],
     highlights: [
@@ -481,21 +481,21 @@ module.exports = {
     },
     intro: [
       'Bosporinsalmen risteilylipun varaaminen on helppoa – täytä lomake, saat vahvistuksen ja maksat vasta laivalla. Ei luottokorttia ennalta, ei riskiä.',
-      'Lippu sisältää täyden illallisen, esitysohjelman ja 3 tunnin risteilyn Bosporinsalmella. Lähtö 20:30 Kabataşista.',
+      'Lippu sisältää täyden illallisen, esitysohjelman ja 3 tunnin risteilyn Bosporinsalmella. Lähtö 21:00 Kabataşista.',
       'Hinta {p.dinnerStd} per henkilö – säästät verrattuna alkuperäiseen {p.dinnerStdOriginal}. Varaa nyt!'
     ],
     highlights: [
       { icon: '🎫', text: 'Helppo varaus – vahvistus WhatsAppiin välittömästi' },
       { icon: '💳', text: 'Maksa laivalla – ei ennakkomaksua, ei riskiä' },
       { icon: '🍽️', text: 'Lippu sisältää täyden illallisen ja esitykset' },
-      { icon: '⏰', text: 'Lähtö 20:30 – saapuminen 19:30 alkaen' },
+      { icon: '⏰', text: 'Lähtö 21:00 – saapuminen 20:00 alkaen' },
       { icon: '💰', text: 'Hinta {p.dinnerStd} – parasta hinta-laatu-suhdetta' }
     ],
     faq: [
       { q: 'Miten varaus tehdään?', a: 'Täytä varauslomake sivulla – ilmoita päivämäärä, henkilömäärä ja yhteystiedot. Saat vahvistuksen WhatsAppiin.' },
       { q: 'Milloin maksetaan?', a: 'Maksat vasta laivalla lähtöpäivänä. Ei ennakkomaksua.' },
       { q: 'Minkä muotoinen lippu on?', a: 'Saat digitaalisen boarding-kortin WhatsAppiin tai sähköpostiin.' },
-      { q: 'Voinko varata samana päivänä?', a: 'Kyllä, jos varaat ennen 19:30 lähtöpäivänä. Suosittelemme varaamaan etukäteen.' },
+      { q: 'Voinko varata samana päivänä?', a: 'Kyllä, jos varaat ennen 20:00 lähtöpäivänä. Suosittelemme varaamaan etukäteen.' },
       { q: 'Voinko muuttaa tai peruuttaa varauksen?', a: 'Kyllä, ilmainen peruutus 2 tuntia ennen lähtöä. Ota yhteyttä WhatsAppilla.' }
     ],
     cta: {
@@ -517,18 +517,18 @@ module.exports = {
     },
     intro: [
       'Suunnitteletko spontaania iltaa Istanbulissa? Bosporinsalmen illallisristely on helppo varata viime hetkellä – täytä lomake ja saat vahvistuksen nopeasti.',
-      'Varaa tänään ennen kello 19:30 ja pääset mukaan illan risteilylle. Maksa vasta laivalla – ei ennakkomaksua.',
-      'Hinta {p.dinnerStd} per henkilö. Lähtö 20:30 Kabataşista.'
+      'Varaa tänään ennen kello 20:00 ja pääset mukaan illan risteilylle. Maksa vasta laivalla – ei ennakkomaksua.',
+      'Hinta {p.dinnerStd} per henkilö. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [
       { icon: '⚡', text: 'Nopea varaus – vahvistus minuuteissa WhatsAppiin' },
-      { icon: '📅', text: 'Varaa vielä tänään – saatavilla ennen klo 19:30' },
+      { icon: '📅', text: 'Varaa vielä tänään – saatavilla ennen klo 20:00' },
       { icon: '💳', text: 'Maksa laivalla – ei ennakkomaksua' },
       { icon: '🍽️', text: 'Täysi illallinen mukana – ei lisäkustannuksia' },
-      { icon: '🚢', text: 'Lähtö 20:30 Kabataşista – ota seikkailu vastaan!' }
+      { icon: '🚢', text: 'Lähtö 21:00 Kabataşista – ota seikkailu vastaan!' }
     ],
     faq: [
-      { q: 'Kuinka myöhään voin varata?', a: 'Voit varata tänään ennen kello 19:30. Sen jälkeen varaus ei onnistu enää tälle päivälle.' },
+      { q: 'Kuinka myöhään voin varata?', a: 'Voit varata tänään ennen kello 20:00. Sen jälkeen varaus ei onnistu enää tälle päivälle.' },
       { q: 'Onko paikkoja aina saatavilla?', a: 'Laivassamme on useimmiten tilaa, mutta suosittelemme varaamaan ajoissa, erityisesti viikonloppuisin.' },
       { q: 'Miten vahvistus tulee?', a: 'Saat vahvistuksen WhatsAppiin tai sähköpostiin yleensä muutamassa minuutissa.' },
       { q: 'Voinko tulla suoraan satamaan ilman varausta?', a: 'Varaus on suositeltava paikan varmistamiseksi. Walk-in ei ole taattu.' },

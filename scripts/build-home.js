@@ -140,7 +140,7 @@ function buildMeta(lang) {
   // CJK languages don't use spaces between words.
   const sep = lang === 'zh' ? '' : ' ';
   const title = `${title1}${sep}${title2} — Bosphorus Night Istanbul`;
-  const description = pick('meta.home.description', '3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.');
+  const description = pick('meta.home.description', '3-hour Bosphorus dinner cruise from €24/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.');
   return { title, description };
 }
 
@@ -239,31 +239,11 @@ function buildSchemaLd(lang) {
     }
   };
 
-  // Meeting-point walking direction videos (YouTube embeds in the page).
-  const videos = [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'VideoObject',
-      name: 'Walking directions from Dolmabahçe to Kabataş Pier',
-      description: 'Short walking route guide from Dolmabahçe Palace to the Bosphorus Night cruise meeting point at Kabataş Pier.',
-      thumbnailUrl: 'https://img.youtube.com/vi/UcQ3qgyADc4/hqdefault.jpg',
-      contentUrl: 'https://www.youtube.com/watch?v=UcQ3qgyADc4',
-      embedUrl: 'https://www.youtube.com/embed/UcQ3qgyADc4',
-      uploadDate: '2026-04-20T00:00:00+03:00',
-      inLanguage: lang
-    },
-    {
-      '@context': 'https://schema.org',
-      '@type': 'VideoObject',
-      name: 'Walking directions from the Tram Station to Kabataş Pier',
-      description: 'Short walking route guide from the Kabataş tram station to the Bosphorus Night cruise meeting point.',
-      thumbnailUrl: 'https://img.youtube.com/vi/ybAIn2RhwJs/hqdefault.jpg',
-      contentUrl: 'https://www.youtube.com/watch?v=ybAIn2RhwJs',
-      embedUrl: 'https://www.youtube.com/embed/ybAIn2RhwJs',
-      uploadDate: '2026-04-20T00:00:00+03:00',
-      inLanguage: lang
-    }
-  ];
+  // Yuruyus tarifi videolari 6 Agu 2026'da siteden kaldirildi (Ozgur karari);
+  // VideoObject schema'si da kaldirildi — yapisal veri sayfada gorunmeyen icerigi
+  // isaretlememeli (Google structured data policy). Videolar geri gelirse blok
+  // git gecmisinden alinir.
+  const videos = [];
 
   // ImageObject for the primary hero / marketing image.
   const heroImage = {
@@ -356,7 +336,7 @@ function buildSchemaLd(lang) {
       24.30,
       'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
       'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
-      '20:30',
+      '21:00',
       sPick('std', 'audience')
     ),
     offers: {
@@ -377,7 +357,7 @@ function buildSchemaLd(lang) {
   };
 
   // Dinner cruise SocialEvent with recurring daily schedule + Standard offer.
-  // startDate = tomorrow 20:30 local (Europe/Istanbul = +03:00), refreshed on every build.
+  // startDate = tomorrow 21:00 local (Europe/Istanbul = +03:00), refreshed on every build.
   // A daily auto-rebuild (GitHub Actions cron) keeps this evergreen for Google Events rich results.
   const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
   const tomorrowDate = tomorrow.toISOString().split('T')[0];
@@ -392,7 +372,7 @@ function buildSchemaLd(lang) {
   const eventName = `${pick('hero.title1', 'Luxury Bosphorus')}${sep}${pick('hero.title2', 'Dinner Cruise')} — Turkish Night Show`;
   const eventDescription = subPrices(pick(
     'meta.home.description',
-    '3-hour Bosphorus dinner cruise from €{p.dinnerStd}/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 20:30 from Kabataş. Hotel transfer available.'
+    '3-hour Bosphorus dinner cruise from €{p.dinnerStd}/person. Full dinner, Mevlana, folk dance, belly dance & DJ. Departs 21:00 from Kabataş. Hotel transfer available.'
   ));
 
   const dinnerEvent = {
@@ -402,8 +382,8 @@ function buildSchemaLd(lang) {
     description: eventDescription,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     inLanguage: lang,
-    startDate: `${tomorrowDate}T20:30:00+03:00`,
-    endDate: `${tomorrowDate}T23:30:00+03:00`,
+    startDate: `${tomorrowDate}T21:00:00+03:00`,
+    endDate: `${tomorrowDate}T00:00:00+03:00`,
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {

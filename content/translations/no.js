@@ -10,7 +10,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Middag på Bosporos fra €{p.dinnerStd} — Nattcruise Istanbul + Show',
-      description: '3-timers middagscruise på Bosporos: tyrkisk flerrettsmeny og live folkeshow. Avgang 20:30 fra Kabataş. Gratis avbestilling, betal om bord.'
+      description: '3-timers middagscruise på Bosporos: tyrkisk flerrettsmeny og live folkeshow. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord.'
     },
     hero: {
       h1: 'Middagscruise på Bosporos i Istanbul',
@@ -18,7 +18,7 @@ module.exports = {
       badge: '4,8★ · 11 317 anmeldelser'
     },
     intro: [
-      '**Middagscruiset på Bosporos** er Istanbuls mest ikoniske kveldsopplevelse. Turen starter kl. 19:30 ved Kabataş-kaia og seiler under de opplyste Bosporos- og Fatih Sultan Mehmet-broene, og byr på en tyrkisk flerrettsmiddag, live folkedans, orientalsk dans og et DJ-sett som fyller dekket til kl. 23:00.',
+      '**Middagscruiset på Bosporos** er Istanbuls mest ikoniske kveldsopplevelse. Turen starter kl. 20:00 ved Kabataş-kaia og seiler under de opplyste Bosporos- og Fatih Sultan Mehmet-broene, og byr på en tyrkisk flerrettsmiddag, live folkedans, orientalsk dans og et DJ-sett som fyller dekket til kl. 23:00.',
       'I motsetning til vanlige fartøyer som preger Istanbuls kveldsbilde er **vårt middagscruise på Bosporos** TÜRSAB-lisensiert (A-17672) og gitt 4,8★ av over 11 317 reisende. Vi holder gruppene små og servicen varm — og fordi du betaler om bord, er det ingen risiko ved å reservere på forhånd.',
       'Enten du feirer et jubileum, søker en premium kveld i Istanbul med familien, eller vil ha byens mest fotogene solnedgang-til-natt-overgang — dette er middagscruiset som Istanbuls lokale anbefaler fremst.'
     ],
@@ -29,7 +29,7 @@ module.exports = {
       { title: 'Fra €{p.dinnerStd}/person — betal om bord', desc: 'Middagscruise €{p.dinnerStd} (opprinnelig €{p.dinnerStdOriginal}). Ingen forskuddsbetaling. Gratis avbestilling inntil 2 timer før avgang.' }
     ],
     faq: [
-      { q: 'Når starter middagscruiset på Bosporos?', a: 'Ombordstigning starter kl. 19:30 ved Kabataş-kaia. Fartøyet avgår kl. 20:30 og returnerer rundt kl. 23:30. Vi anbefaler at du ankommer 15–20 minutter tidlig for å sette deg til rette og slappe av.' },
+      { q: 'Når starter middagscruiset på Bosporos?', a: 'Ombordstigning starter kl. 20:00 ved Kabataş-kaia. Fartøyet avgår kl. 21:00 og returnerer rundt kl. 00:00. Vi anbefaler at du ankommer 15–20 minutter tidlig for å sette deg til rette og slappe av.' },
       { q: 'Hva koster middagscruiset på Bosporos?', a: 'Middagscruise €{p.dinnerStd}/person (ordinær pris €{p.dinnerStdOriginal}). 0–3 år gratis, 4–8 år 50 % rabatt. Betaling skjer om bord — ingen forskuddsbetaling.' },
       { q: 'Er alkohol inkludert i middagscruiset?', a: 'Ubegrenset leskedrikk (vann, cola, juice) er inkludert i prisen. Alkoholpakken er valgfri: 2 glass (vin, øl, rakı, vodka eller gin) +€{p.alcohol2}/person. Ytterligere drikke og importsprit faktureres separat om bord.' },
       { q: 'Finnes det hotellhenting?', a: 'Ja — henting og kjøring tilbake er +€{p.transfer}/person. Betjente soner: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce og Şişli. Du kan velge dette alternativet i reservasjonsskjemaet.' },
@@ -134,13 +134,13 @@ module.exports = {
       { title: '100 % halalsertifisert meny', desc: 'Alt kjøtt (laks, havabbor, kylling, kjøttboller, okse, entrecôte) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalpreparering. Ingen svinekjøtt eller ikke-halal-tilsetningsstoffer. Vegetaralternativer alltid tilgjengelig.' },
       { title: 'Alkohol valgfritt, aldri påtvunget', desc: 'Alkoholpakker er tillegg — ikke inkludert som standard. Lesedrikker (vann, cola, juice) er ubegrenset og gratis. Bordet ditt forblir alkoholfritt hvis du ikke eksplisitt ber om det. Mannskapet respekterer valget ditt i stillhet.' },
       { title: 'Familievennlig underholdning', desc: 'Sema-forestilling, tradisjonelle tyrkiske folkedanser, live tyrkisk musikk. Ingen natteklubbstil-show, intet upassende innhold. Trygt for barn, respektfullt for familier. Orientalsk dans er en tradisjonell kunstform, fremstilt med verdighet.' },
-      { title: 'Respekt for bønnetider', desc: 'Hvis ombordstigning sammenfaller med maghrib eller isja (19:30–20:30), kan personalet vise deg til det stille bønnerommet ved Kabataş-kaia før avgang. Gi oss bare beskjed ved bestilling.' }
+      { title: 'Respekt for bønnetider', desc: 'Hvis ombordstigning sammenfaller med maghrib eller isja (20:00–21:00), kan personalet vise deg til det stille bønnerommet ved Kabataş-kaia før avgang. Gi oss bare beskjed ved bestilling.' }
     ],
     faq: [
       { q: 'Er Bosporos-cruiset 100 % halal?', a: 'Ja — hvert kjøttprodukt på menyen (fisk, kylling, kjøttboller, oksefilet, entrecôte, lam) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalprepareringsstandard. Det serveres ikke svinekjøtt noe sted om bord. Det er ikke et "halal-alternativ" — hele menyen er halal.' },
       { q: 'Drikker andre gjester om bord alkohol?', a: 'Noen gjester legger til den valgfrie 2-glass alkoholpakken (+€{p.alcohol2}/person). Bordene er naturlig separert — du kan be om en alkoholfri sone. Mannskapet bringer ikke alkohol med mindre en gjest eksplisitt bestiller det. Lesedrikker (ubegrenset) er inkludert for alle.' },
       { q: 'Er dette cruiset egnet for muslimske familier med barn?', a: 'Ja — det er ett av Istanbuls mest respekterte familiecruiser. Underholdningen er beskjeden (folkedanser, sema, tyrkisk musikk), barn under 3 år er gratis, 4–8 år får 50 % rabatt. Ingen natteklubb-atmosfære. Familier fra Gulfen, Indonesia, Malaysia, Pakistan og Marokko bestiller jevnlig dette cruiset.' },
-      { q: 'Kan jeg be om bord?', a: 'Det er ikke noe dedikert bønnerom om bord, men vi anbefaler å be før ombordstigning kl. 19:30 (maghrib-bønn faller ofte i dette intervallet). Kabataş-kaia har bønnefasiliteter. Hvis du trenger å be under seilasen 20:30–23:30 (isja), snakk med mannskapet — vi kan arrangere et stille hjørne på dekk.' },
+      { q: 'Kan jeg be om bord?', a: 'Det er ikke noe dedikert bønnerom om bord, men vi anbefaler å be før ombordstigning kl. 20:00 (maghrib-bønn faller ofte i dette intervallet). Kabataş-kaia har bønnefasiliteter. Hvis du trenger å be under seilasen 21:00–00:00 (isja), snakk med mannskapet — vi kan arrangere et stille hjørne på dekk.' },
       { q: 'Hva er prisene for en muslimsk familie på 4 (2 voksne, 2 barn)?', a: 'Middagscruise: 2 × €{p.dinnerStd} + 2 × €12.15 (halvpris 4–8 år) = €72.90. Hvis barna er under 3 år, gratis: 2 × €{p.dinnerStd} = €48.60. Legg til €5 hotelloverføring per voksen. Totalt: €48.60–€92.90 for familie på 4, ingen forskuddsbetaling, betal om bord.' },
       { q: 'Er hotelloverføringen også halal?', a: 'Hotelloverføringen er bare en biltransport — ingen mat eller drikke er involvert, så det er ingen halal-bekymring. Sjåførene våre er profesjonelle, respektfulle og punktlige. Overføringsonene dekker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli og 8 andre sentrale bydeler der muslimske reisende vanligvis bor.' }
     ],
@@ -164,7 +164,7 @@ module.exports = {
     intro: [
       'Mange båter på Bosporos deler gjestene sine inn i "Standard" og "VIP". Det gjør ikke vi. Om bord på **AMOR** finnes det én middagsmeny, tilberedt med samme omtanke for alle: 10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kylling eller köfte), iskake og ubegrenset med brus. Hele underholdningsprogrammet er også inkludert — de virvlende dervisjenes seremoni, 5 folkedanser, magedans, livemusikk og DJ — alt innenfor prisen på €{p.dinnerStd}/person.',
       'VIP-følelsen begynner ved bordet ditt. Vil du sitte nærmest mulig scenen og utsikten, legger du til **privat bord nær scenen** (+€{p.romantic}/bord), og plassen reserveres på forhånd — den beste vinkelen mot dervisjene, folkedansene og det opplyste Bosporos. Favorittvalget blant par, feiringer og fotointeresserte.',
-      'AMOR er et moderne skip: 42 meter, 3 dekk, opptil 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Den tre timer lange ruten går fra Kabataş (ombordstigning fra 19:30, avgang 20:30, retur 23:30) forbi Dolmabahçe, Ortaköy-moskeen, Rumeli-festningen og lysene på Bosporos-broen. TÜRSAB-lisens (A-17672), 4,9★ på Google. Ingen forhåndsbetaling — du betaler om bord, med gratis avbestilling frem til 2 timer før avgang.'
+      'AMOR er et moderne skip: 42 meter, 3 dekk, opptil 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Den tre timer lange ruten går fra Kabataş (ombordstigning fra 20:00, avgang 21:00, retur 00:00) forbi Dolmabahçe, Ortaköy-moskeen, Rumeli-festningen og lysene på Bosporos-broen. TÜRSAB-lisens (A-17672), 4,9★ på Google. Ingen forhåndsbetaling — du betaler om bord, med gratis avbestilling frem til 2 timer før avgang.'
     ],
     highlights: [
       { title: 'Én meny, premium standard', desc: 'Det finnes ingen egen "VIP-meny" — for vår eneste meny ligger allerede på det nivået. 10 typer meze, varm forrett, 4 hovedretter å velge mellom, dessert og ubegrenset med brus, servert med samme omtanke ved hvert bord.' },
@@ -178,7 +178,7 @@ module.exports = {
       { q: 'Hva står på menyen?', a: '10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kylling eller köfte) og iskake til dessert, med ubegrenset med brus. Programmet er inkludert: dervisjenes seremoni, 5 folkedanser, magedans, livemusikk og DJ.' },
       { q: 'Er alkohol inkludert?', a: 'Nei — alkohol er et eget tillegg: 2 glass lokal vin eller øl for +€{p.alcohol2}/person. Brus er inkludert ubegrenset og gratis. Importert premiumbrennevin faktureres separat om bord.' },
       { q: 'Hvordan sikrer jeg meg bord nær scenen?', a: 'Bare velg tillegget "privat bord nær scenen" (+€{p.romantic}/bord) når du booker — bordet reserveres i ditt navn. De beste plassene går til forhåndsbookinger, så legg det gjerne til før selve cruisedagen.' },
-      { q: 'Hva slags båt er det?', a: 'AMOR — et moderne passasjerskip på 42 meter med 3 dekk og plass til 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Avgang fra Kabataş-kaien: ombordstigning 19:30, avgang 20:30, retur 23:30. Rute: Dolmabahçe, Ortaköy, Rumeli-festningen, Beylerbeyi og lysene på Bosporos-broen.' }
+      { q: 'Hva slags båt er det?', a: 'AMOR — et moderne passasjerskip på 42 meter med 3 dekk og plass til 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Avgang fra Kabataş-kaien: ombordstigning 20:00, avgang 21:00, retur 00:00. Rute: Dolmabahçe, Ortaköy, Rumeli-festningen, Beylerbeyi og lysene på Bosporos-broen.' }
     ],
     cta: {
       primary: 'Book bordet ditt · Betal om bord',
@@ -205,7 +205,7 @@ module.exports = {
     highlights: [
       { title: 'Hele fartøyet, bare for dere', desc: 'Ingen andre gjester. Gruppen din eier hvert dekk, hvert bord. Sett din egen musikk, dresscode, program. Privatliv betyr noe — vi respekterer det.' },
       { title: 'Tilpasset meny og drikkepakke', desc: 'Samarbeid med kokken vår for å tilpasse menyen: spesifikke meze, hovedrettsvalg, retter tilpasset kultur eller diettbehov. Alkoholpakker, champagneskåler, tilpassede cocktailbarer — alt kan arrangeres.' },
-      { title: 'Fleksibel varighet og avgang', desc: 'Standard 3 timer kan utvides til 4–5 timer. Velg dagsavgang kl. 12:00, solnedgangsavgang kl. 17:30 eller kveldsavgang kl. 20:30. Ønsker du ukedag i stedet for helg? Ingen problem — vi tilpasser oss programmet ditt.' },
+      { title: 'Fleksibel varighet og avgang', desc: 'Standard 3 timer kan utvides til 4–5 timer. Velg dagsavgang kl. 12:00, solnedgangsavgang kl. 17:30 eller kveldsavgang kl. 21:00. Ønsker du ukedag i stedet for helg? Ingen problem — vi tilpasser oss programmet ditt.' },
       { title: 'Tilpasset dekor, band, program', desc: 'Tilpasset dekor (ballonger, bannere, blomsterdekor), live band i stedet for DJ, bryllupskakeskjæring, fotografkoordinering, taler — legg til hva arrangementet trenger. Vi er eventarrangører, ikke bare fartøydrivere.' }
     ],
     faq: [
@@ -249,7 +249,7 @@ module.exports = {
       { q: 'Hva koster Bosporos-cruiset for 2 personer?', a: '2 personer: 2 × €{p.dinnerStd} = €48.60. Legg til hotelloverføring for to: +€{p.transfer}×2 = €10. Legg til 2-glass alkoholpakken for to: +€{p.alcohol2}×2 = €20. Ingen forskuddsbetaling — betal om bord.' },
       { q: 'Kan par ta med sin egen vin eller champagne?', a: 'Vi tillater ikke alkohol utenfra (av lisensårsaker). Men vi har 2-glass pakken med lokal vin eller øl (+€{p.alcohol2}/person) og kan arrangere premium importviner eller champagne mot en avgift — spør ved bestilling. Prosecco, Chianti og Cabernet er populære premiumbestillinger.' },
       { q: 'Er det et problem hvis vi ikke drikker alkohol — er det uvanlig?', a: 'Ikke i det hele tatt — mange par hopper helt over alkohol, enten av halalårsaker eller preferanse. Ubegrenset lesedrikk (vann, juice, cola) er inkludert. Ingen ser dobbelt om bordet ditt er alkoholfritt. Mange muslimske par fra Saudi-Arabia, Iran og Indonesia bestiller dette cruiset.' },
-      { q: 'Når er Bosporos-cruiset best for par — solnedgang eller kveld?', a: 'Cruiset avgår kl. 20:30 hver kveld — og om sommeren (mai–august) dekker den ene avgangen begge deler: ombordstigning fra kl. 19:30 i gyldentimen, solnedgangen rett rundt avgang, og deretter de opplyste broene og palassene. Om vinteren er det et rent nattlys-cruise. Uansett gir én bestilling par den mest ikoniske versjonen av Bosporos.' },
+      { q: 'Når er Bosporos-cruiset best for par — solnedgang eller kveld?', a: 'Cruiset avgår kl. 21:00 hver kveld — og om sommeren (mai–august) dekker den ene avgangen begge deler: ombordstigning fra kl. 20:00 i gyldentimen, solnedgangen rett rundt avgang, og deretter de opplyste broene og palassene. Om vinteren er det et rent nattlys-cruise. Uansett gir én bestilling par den mest ikoniske versjonen av Bosporos.' },
       { q: 'Er det dansegulv — kan vi danse?', a: 'Ja — etter middagen (~22:30) starter DJ-en og åpent dekk blir dansesonen. Mange par danser langsomme låter under lysene med Bosporosbroen i bakgrunnen. Noen av de fineste bildene du tar i Istanbul.' }
     ],
     cta: {
@@ -262,37 +262,37 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Solnedgangs- og middagscruise på Bosporos fra €{p.dinnerStd}',
-      description: 'Opplev solnedgangen over Bosporos og spis middag under de opplyste broene. Ombordstigning 19:30 ved Kabataş, avgang 20:30. 3 timer, komplett middag. Betal om bord.'
+      description: 'Opplev solnedgangen over Bosporos og spis middag under de opplyste broene. Ombordstigning 20:00 ved Kabataş, avgang 21:00. 3 timer, komplett middag. Betal om bord.'
     },
     hero: {
       h1: 'Solnedgangs- og middagscruise på Bosporos',
-      subtitle: 'Gå om bord kl. 19:30 mens himmelen farges gyllen over minaretene — og spis middag på vannet mens Dolmabahçe, Ortaköy-moskeen og Bosporosbroen tennes for natten.',
-      badge: 'Ombordstigning 19:30 · Avgang 20:30 · Fra solnedgang til bylys'
+      subtitle: 'Gå om bord kl. 20:00 mens himmelen farges gyllen over minaretene — og spis middag på vannet mens Dolmabahçe, Ortaköy-moskeen og Bosporosbroen tennes for natten.',
+      badge: 'Ombordstigning 20:00 · Avgang 21:00 · Fra solnedgang til bylys'
     },
     intro: [
-      '**Solnedgangscruiset på Bosporos** i Istanbul handler om én ting: overgangen. Cruiset vårt har ombordstigning ved Kabataş-kaia fra kl. 19:30 — og i de lange kveldene fra mai til august utfolder gyldentime seg mens du finner deg til rette på dekk. Solen går ned over minaretene på den europeiske bredden akkurat rundt avgangen kl. 20:30, så du ser den fra vannet: Dolmabahçe-palasset badet i gull, Ortaköy-moskeen i silhuett mot den glødende himmelen.',
+      '**Solnedgangscruiset på Bosporos** i Istanbul handler om én ting: overgangen. Cruiset vårt har ombordstigning ved Kabataş-kaia fra kl. 20:00 — og i de lange kveldene fra mai til august utfolder gyldentime seg mens du finner deg til rette på dekk. Solen går ned over minaretene på den europeiske bredden akkurat rundt avgangen kl. 21:00, så du ser den fra vannet: Dolmabahçe-palasset badet i gull, Ortaköy-moskeen i silhuett mot den glødende himmelen.',
       '**Vårt solnedgang-til-natt-cruise på Bosporos** inkluderer en komplett tyrkisk middag — 10 mezesorter, varm forrett, valg av hovedrett, dessert — servert mens byen tenner lysene sine. Når desserten kommer, seiler du under den opplyste Bosporosbroen med 30 millioner lys som reflekteres i det mørke vannet. Skiftet fra skumring til full natt, alt i løpet av ett 3-timers cruise, er hele poenget.',
       'Enten du er fotograf på jakt etter det siste lyset, et par som vil ha "det minnebildet fra Istanbul", eller førstegangsbesøkende som ønsker den klassiske kvelden på vannet — dette er **solnedgangs- og middagscruiset på Bosporos** som Istanbuls lokale anbefaler besøkende. Fra €{p.dinnerStd}/person, rangert 4,8★, TÜRSAB-lisensiert, betal om bord — ingen forskuddsbetaling.'
     ],
     highlights: [
-      { title: 'Sommersolnedganger rett ved avgang', desc: 'Fra mai til august går solen i Istanbul ned mellom cirka 20:15 og 20:45 — ombordstigning kl. 19:30 gir deg gyldentime på dekk, og avgangen kl. 20:30 plasserer deg på vannet under selve solnedgangen. Kamera klart — dette er bildet.' },
+      { title: 'Sommersolnedganger rett ved avgang', desc: 'Fra mai til august går solen i Istanbul ned mellom cirka 20:15 og 20:45 — ombordstigning kl. 20:00 gir deg gyldentime på dekk, og avgangen kl. 21:00 plasserer deg på vannet under selve solnedgangen. Kamera klart — dette er bildet.' },
       { title: 'Blå time inn i full natt', desc: 'Ikke bare solnedgang — cruiset seiler gjennom skumringen og inn i det fullt opplyste Bosporos. Gyllent lys, blå time, deretter 30 millioner brolys over mørkt vann: tre lysfaser på én kveld.' },
       { title: 'Komplett middag under cruiset', desc: '10 tyrkiske mezesorter, varm forrett, hovedrett (laks, havabbor, kylling, kjøttboller, vegetar), iskakert, ubegrenset leskedrikk — servert mens bylysene tennes.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporosbroen — alle skinner', desc: 'Ruten passerer Dolmabahçe-palasset, Ortaköy-moskeen, Bosporosbroen, Rumeli Hisarı og Beylerbeyi-palasset mens lysene deres tennes. Hvert landemerke i sitt beste lys.' }
     ],
     faq: [
-      { q: 'Når avgår solnedgangscruiset på Bosporos?', a: 'Ombordstigning starter kl. 19:30 ved Kabataş-kaia, fartøyet avgår kl. 20:30 og returnerer rundt kl. 23:30. Om sommeren (mai–august) går solen ned mellom cirka 20:15 og 20:45 — gyldentime skjer mens du går om bord, og selve solnedgangen akkurat rundt avgang, sett fra vannet.' },
-      { q: 'Er solnedgangscruiset på Bosporos det samme som middagscruiset?', a: 'Ja — det er ett og samme cruise. Det er én daglig avgang kl. 20:30 med komplett middag og live show om bord. I de lange sommerkveldene fungerer det også som solnedgangscruise: du går om bord under gyldentime og seiler gjennom den blå timen inn i den opplyste natten. Om vinteren er det samme cruiset en ren nattlysopplevelse.' },
+      { q: 'Når avgår solnedgangscruiset på Bosporos?', a: 'Ombordstigning starter kl. 20:00 ved Kabataş-kaia, fartøyet avgår kl. 21:00 og returnerer rundt kl. 00:00. Om sommeren (mai–august) går solen ned mellom cirka 20:15 og 20:45 — gyldentime skjer mens du går om bord, og selve solnedgangen akkurat rundt avgang, sett fra vannet.' },
+      { q: 'Er solnedgangscruiset på Bosporos det samme som middagscruiset?', a: 'Ja — det er ett og samme cruise. Det er én daglig avgang kl. 21:00 med komplett middag og live show om bord. I de lange sommerkveldene fungerer det også som solnedgangscruise: du går om bord under gyldentime og seiler gjennom den blå timen inn i den opplyste natten. Om vinteren er det samme cruiset en ren nattlysopplevelse.' },
       { q: 'Hva koster solnedgangscruiset på Bosporos?', a: 'Fra €{p.dinnerStd}/person for cruiset (3 timer, komplett middag, live underholdning). Betal om bord — ingen forskuddsbetaling. 0–3 år gratis, 4–8 år halv pris.' },
-      { q: 'Når på året er solnedgangscruiset på Bosporos best?', a: 'Mai til august. Istanbuls sene solnedganger (20:15–20:45) faller sammen med avgangen kl. 20:30, så du får gyldentime, solnedgangen og de opplyste broene på én kveld. Om høsten og vinteren går solen ned tidligere, og det samme cruiset blir en full nattlysopplevelse — like fotogen, annen stemning.' },
+      { q: 'Når på året er solnedgangscruiset på Bosporos best?', a: 'Mai til august. Istanbuls sene solnedganger (20:15–20:45) faller sammen med avgangen kl. 21:00, så du får gyldentime, solnedgangen og de opplyste broene på én kveld. Om høsten og vinteren går solen ned tidligere, og det samme cruiset blir en full nattlysopplevelse — like fotogen, annen stemning.' },
       { q: 'Hva bør jeg ta med til et solnedgangscruise?', a: 'Smarttelefon eller kamera — gyldentime og de opplyste broene fortjener det. Lett jakke: brisen tiltar på dekk etter solnedgang. Smart casual antrekk — du spiser middag, men det er ingen streng dresscode.' },
-      { q: 'Ser jeg de opplyste broene om natten på dette cruiset?', a: 'Ja — det er andre halvdel av kvelden. Cruiset går 20:30–23:30, så etter solnedgangen og den blå timen seiler du under den fullt opplyste Bosporosbroen, forbi opplyste palasser og Jomfrutårnet, og returnerer til Kabataş rundt kl. 23:30.' },
-      { q: 'Når går solen ned i Istanbul?', a: 'Om sommeren (juni–juli) går solen i Istanbul ned rundt 20:30–20:45. Om vinteren rundt 16:30–17:00. For en solnedgangs- og nattopplevelse fanger Bosphorus Nights middagscruise kl. 20:30 fra Kabataş den sene gyldentimen og den blå timen om sommeren, og de opplyste landemerkene hele året.' },
-      { q: 'Er solnedgangscruiset på Bosporos verdt det?', a: 'Ja — solnedgangen over Bosporosbroen er en av Istanbuls signaturutsikter. Bosphorus Nights middagscruise kl. 20:30 (€{p.dinnerStd}/person) fanger den blå timen etter solnedgang pluss de opplyste palassene, med komplett middag og live show over 3 timer.' }
+      { q: 'Ser jeg de opplyste broene om natten på dette cruiset?', a: 'Ja — det er andre halvdel av kvelden. Cruiset går 21:00–00:00, så etter solnedgangen og den blå timen seiler du under den fullt opplyste Bosporosbroen, forbi opplyste palasser og Jomfrutårnet, og returnerer til Kabataş rundt kl. 00:00.' },
+      { q: 'Når går solen ned i Istanbul?', a: 'Om sommeren (juni–juli) går solen i Istanbul ned rundt 21:00–20:45. Om vinteren rundt 16:30–17:00. For en solnedgangs- og nattopplevelse fanger Bosphorus Nights middagscruise kl. 21:00 fra Kabataş den sene gyldentimen og den blå timen om sommeren, og de opplyste landemerkene hele året.' },
+      { q: 'Er solnedgangscruiset på Bosporos verdt det?', a: 'Ja — solnedgangen over Bosporosbroen er en av Istanbuls signaturutsikter. Bosphorus Nights middagscruise kl. 21:00 (€{p.dinnerStd}/person) fanger den blå timen etter solnedgang pluss de opplyste palassene, med komplett middag og live show over 3 timer.' }
     ],
     cta: {
       primary: 'Bestill solnedgangscruiset · Betal om bord',
-      secondary: 'Ombordstigning 19:30 · Avgang 20:30 · Middag inkludert · Gratis avbestilling 2 timer før',
+      secondary: 'Ombordstigning 20:00 · Avgang 21:00 · Middag inkludert · Gratis avbestilling 2 timer før',
       tertiary: 'Se alle detaljer om middagscruiset'
     }
   },
@@ -300,7 +300,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Bosporos om natten fra €{p.dinnerStd} — Middagscruise + Live show',
-      description: '3-timers natttur på Bosporos med middag og live show. Avgang 20:30 fra Kabataş, opplyste broer. Gratis avbestilling, betal om bord.'
+      description: '3-timers natttur på Bosporos med middag og live show. Avgang 21:00 fra Kabataş, opplyste broer. Gratis avbestilling, betal om bord.'
     },
     hero: {
       h1: 'Natttur på Bosporos',
@@ -309,26 +309,26 @@ module.exports = {
     },
     intro: [
       '**Nattturen på Bosporos** er Istanbuls mest anbefalte kveldsaktivitet. Her er grunnen: etter mørkets frembrudd forvandler Bosporos seg. Bosporosbroen veksler mellom blå, lilla og gull. Dolmabahçe-palasset skinner i varm gul. Ortaköy-moskeen reflekteres perfekt i det sorte vannet. Hvert Istanbul-landemerke når sitt dramatiske høydepunkt om natten.',
-      '**Vår natttur på Bosporos med middag** pakker inn den komplette ikoniske kvelden: 3 timer på vannet (20:30–23:30), tyrkisk flerrettsmiddag, live folkedanser (sema, 5 folkedanser, orientalsk), live musikk og DJ-sett som fyller dekket til slutten av natten. Hver gjest får samme program — ingen "basis"-alternativ som hopper over de beste delene.',
+      '**Vår natttur på Bosporos med middag** pakker inn den komplette ikoniske kvelden: 3 timer på vannet (21:00–00:00), tyrkisk flerrettsmiddag, live folkedanser (sema, 5 folkedanser, orientalsk), live musikk og DJ-sett som fyller dekket til slutten av natten. Hver gjest får samme program — ingen "basis"-alternativ som hopper over de beste delene.',
       'Enten det er ditt første besøk i Istanbul og du leter etter "det eneste du må gjøre om natten", eller du har vært her før og vil ha byens mest fotogene 3 timer, er dette **nattturen på Bosporos** gitt 4,8★ av over 11 317 reisende. TÜRSAB-lisensiert, betal om bord, ingen forskuddsbetaling.'
     ],
     highlights: [
-      { title: 'Bosporos opplyst på sitt dramatiske høydepunkt', desc: 'Bosporosbroen skifter farge (blå, lilla, gull), palassene skinner gult, Ortaköy-moskeen reflekteres i det sorte vannet. 20:30–23:30 maksimal belysning for alle Istanbuls landemerker.' },
+      { title: 'Bosporos opplyst på sitt dramatiske høydepunkt', desc: 'Bosporosbroen skifter farge (blå, lilla, gull), palassene skinner gult, Ortaköy-moskeen reflekteres i det sorte vannet. 21:00–00:00 maksimal belysning for alle Istanbuls landemerker.' },
       { title: 'Tradisjonell tyrkisk show om bord', desc: 'Sema-forestilling, 5 tradisjonelle folkedanser (fra ulike regioner i Tyrkia), orientalsk dans, live tyrkisk musikk, deretter DJ-sett. 40 minutters show, deretter musikk + middag fortsetter.' },
       { title: 'Komplett flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett (paçanga böreği), hovedrett (laks, havabbor, kylling, kjøttboller, vegetar — ditt valg), dessert (iskakert), ubegrenset lesedrikk. Halalsertifisert.' },
       { title: 'Komplett Bosporos-rute', desc: 'Kabataş → Dolmabahçe → Çırağan-palasset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jomfrutårnet → Kabataş.' }
     ],
     faq: [
-      { q: 'Når er nattturen på Bosporos?', a: 'Ombordstigning fra kl. 19:30 ved Kabataş-kaia. Fartøyet avgår kl. 20:30, returnerer rundt kl. 23:30. Vi anbefaler at du ankommer 20 minutter tidlig for å slå deg ned og velge plass.' },
+      { q: 'Når er nattturen på Bosporos?', a: 'Ombordstigning fra kl. 20:00 ved Kabataş-kaia. Fartøyet avgår kl. 21:00, returnerer rundt kl. 00:00. Vi anbefaler at du ankommer 20 minutter tidlig for å slå deg ned og velge plass.' },
       { q: 'Hva koster nattturen på Bosporos?', a: 'Natttur (3 timer, middag, show): €{p.dinnerStd}/person (fra €{p.dinnerStdOriginal}). 0–3 år gratis, 4–8 år halvpris. Betal om bord.' },
       { q: 'Hva er forskjellen mellom nattturen på Bosporos og middagscruiset?', a: 'Det er det samme, bare et annet søkeord. "Natttur på Bosporos" er hvordan mange reisende søker; "middagscruise" er bransjebetegnelsen. Samme fartøy, samme 3-timers program, samme meny, samme show. Velg ditt foretrukne søkeord — opplevelsen er identisk.' },
-      { q: 'Natttur på Bosporos eller solnedgangscruise — hva er mest verdt?', a: 'Natttur = opplyst Istanbul, maksimalt lysdrama, fullt underholdningsprogram, de mest ikoniske bildene av opplyste broer. Og det er ett og samme cruise: om sommeren (mai–august) fanger ombordstigningen fra kl. 19:30 gyldentimen, og solen går ned akkurat rundt avgangen kl. 20:30 — så samme kveld dekker både solnedgang og natt. Ingen grunn til å velge eller bestille to ganger.' },
+      { q: 'Natttur på Bosporos eller solnedgangscruise — hva er mest verdt?', a: 'Natttur = opplyst Istanbul, maksimalt lysdrama, fullt underholdningsprogram, de mest ikoniske bildene av opplyste broer. Og det er ett og samme cruise: om sommeren (mai–august) fanger ombordstigningen fra kl. 20:00 gyldentimen, og solen går ned akkurat rundt avgangen kl. 21:00 — så samme kveld dekker både solnedgang og natt. Ingen grunn til å velge eller bestille to ganger.' },
       { q: 'Kan jeg ta nattturen på Bosporos på min første dag i Istanbul?', a: 'Ja — vi anbefaler det. Mange reisende bestiller nattturen den første kvelden fordi den gir deg en komplett orientering: alle de viktigste landemerkene fra vannet, med god mat og underholdning. Enklere enn å slite med jet lag og prøve å gå tur på dag 1. Hotelloverføring tilgjengelig fra sentrale bydeler.' },
       { q: 'Jeg snakker ikke tyrkisk — er turen på engelsk?', a: 'Mannskapet snakker engelsk. Underholdningen (sema, folkedanser, musikk) krever ikke språk. Middagsmenyen er på engelsk. Bestilling via WhatsApp / Telegram fungerer på flere språk (engelsk, arabisk, russisk, tysk, fransk, spansk). Tyrkisk er ikke nødvendig.' }
     ],
     cta: {
       primary: 'Bestill nattturen · Betal om bord',
-      secondary: 'Avgang 20:30 · 3 timer · Middag + show inkludert · Gratis avbestilling 2 timer før',
+      secondary: 'Avgang 21:00 · 3 timer · Middag + show inkludert · Gratis avbestilling 2 timer før',
       tertiary: 'Tilgjengelighet i kveld'
     }
   },
@@ -344,8 +344,8 @@ module.exports = {
       badge: '4,8★ · 11 317 anmeldelser · TÜRSAB A-17672'
     },
     intro: [
-      'Leter du etter et **middagscruise i Istanbul**? Du har funnet det som de fleste reisende anbefaler. Vår 3-timers kveld på Bosporos kombinerer en komplett tyrkisk flerrettsmiddag, live folkedanser og byens mest fotogene utsikter — alt fra et komfortabelt fartøy som avgår kl. 20:30 fra Kabataş-kaia.',
-      'Opplevelsen av **middagscruiset i Istanbul**: gå om bord kl. 19:30, sett deg til rette, se Dolmabahçe-palasset mens vi avgår, middagen starter når vi nærmer oss Ortaköy-moskeen, showet begynner (sema, folkedanser, orientalsk), og til desserten er du under den opplyste Bosporosbroen. Til midnatt er du tilbake ved Kabataş med et ikonisk bildekollasj og full mage.',
+      'Leter du etter et **middagscruise i Istanbul**? Du har funnet det som de fleste reisende anbefaler. Vår 3-timers kveld på Bosporos kombinerer en komplett tyrkisk flerrettsmiddag, live folkedanser og byens mest fotogene utsikter — alt fra et komfortabelt fartøy som avgår kl. 21:00 fra Kabataş-kaia.',
+      'Opplevelsen av **middagscruiset i Istanbul**: gå om bord kl. 20:00, sett deg til rette, se Dolmabahçe-palasset mens vi avgår, middagen starter når vi nærmer oss Ortaköy-moskeen, showet begynner (sema, folkedanser, orientalsk), og til desserten er du under den opplyste Bosporosbroen. Til midnatt er du tilbake ved Kabataş med et ikonisk bildekollasj og full mage.',
       '€{p.dinnerStd}/person (fra €{p.dinnerStdOriginal}). Betal om bord — ingen forskuddsbetaling, ingen risiko. TÜRSAB-lisensiert A-17672, rangert 4,8★ av over 11 317 reisende.'
     ],
     highlights: [
@@ -358,7 +358,7 @@ module.exports = {
       { q: 'Hva koster middagscruiset i Istanbul?', a: 'Vårt middagscruise koster €{p.dinnerStd}/person (ordinær pris €{p.dinnerStdOriginal}). 0–3 år gratis, 4–8 år 50 % rabatt. Betal om bord — ingen forskuddsbetaling.' },
       { q: 'Hva er inkludert i prisen for middagscruiset i Istanbul?', a: '3-timers tur på Bosporos, tyrkisk flerrettsmiddag (meze, varm forrett, hovedrett, dessert), ubegrenset lesedrikk, live folkedansshow (sema, folkedanser, orientalsk), live musikk + DJ, tilgang åpent dekk, avgifter inkludert. Hotelloverføring og alkohol er valgfrie tillegg.' },
       { q: 'Hvor avgår middagscruiset i Istanbul fra?', a: 'Kabataş-kaia, Istanbul — på den europeiske bredden, nær Dolmabahçe-palasset. Nøyaktig møtepunkt kommuniseres via WhatsApp / Telegram etter bestilling. Gåvideo fra Dolmabahçe-tramvaystopp og Kabataş-tramvaystopp finnes i møtepunkt-seksjonen ovenfor.' },
-      { q: 'Hvor lenge varer middagscruiset — og når starter det?', a: 'Totalt 3 timer. Ombordstigning fra kl. 19:30, fartøyet avgår nøyaktig kl. 20:30, returnerer rundt kl. 23:30. Vi anbefaler at du ankommer 15–20 minutter tidlig for å slå deg ned og velge plass.' },
+      { q: 'Hvor lenge varer middagscruiset — og når starter det?', a: 'Totalt 3 timer. Ombordstigning fra kl. 20:00, fartøyet avgår nøyaktig kl. 21:00, returnerer rundt kl. 00:00. Vi anbefaler at du ankommer 15–20 minutter tidlig for å slå deg ned og velge plass.' },
       { q: 'Må jeg bestille på forhånd, eller kan jeg bare komme?', a: 'Bestill på forhånd — plassene fylles opp, spesielt i helger og ferier. Siste-minutt-bestillinger er ofte mulig, men ikke garantert. Skjemaet på denne siden sikrer deg en plass på under 1 minutt. Betal om bord, så det er ingen finansiell risiko ved å bestille tidlig.' },
       { q: 'Er middagscruiset i Istanbul egnet for vegetarianere / halal / kostrestriksjoner?', a: 'Ja — alt kjøtt er halalsertifisert. Vegetarisk hovedrett (falafel, stekte poteter, bulgurpilav, grønnsaksstuing, løkringer) tilgjengelig uten ekstra kostnad. Allergier kan tilrettelegges hvis beskjed gis ved bestilling. Alkohol er et valgfritt tillegg, aldri påtvunget.' }
     ],
@@ -372,7 +372,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Natttur Istanbul fra €{p.dinnerStd} — Middagscruise Bosporos + Show',
-      description: '3-timers cruise på Bosporos med middag og live show. Avgang 20:30 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser. Valgfri hotelloverføring.'
+      description: '3-timers cruise på Bosporos med middag og live show. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser. Valgfri hotelloverføring.'
     },
     hero: {
       h1: 'Istanbul om natten',
@@ -394,7 +394,7 @@ module.exports = {
       { q: 'Hva er den beste nattturen i Istanbul?', a: 'Bosporos-middagscruiset er konsekvent rangert #1. Grunner: (1) gir deg alle ikoniske nattutsikter fra vannet, (2) inkluderer middag og show i én pakke, (3) 3 timer er nok til å se mye uten trøtthet, (4) sentralt møtepunkt, (5) betal om bord reduserer bestillingsfriksjon. De fleste Istanbul-reiseguider anbefaler det som "det eneste obligatoriske om natten".' },
       { q: 'Hva koster nattturen i Istanbul?', a: 'Vår natttur med middag på Bosporos: €{p.dinnerStd}/person. Inkludert tur, middag, underholdning, lesedrikker. Valgfritt: alkohol (2 glass) +€{p.alcohol2}/person, hotelloverføring +€{p.transfer}/person. Betal om bord — ingen forskuddsbetaling.' },
       { q: 'Er nattturen i Istanbul trygg for soloreisende?', a: 'Ja — meget trygt. TÜRSAB-lisensiert fartøy, profesjonelt engelsktalende mannskap, CCTV på dekk, redningsvester tilgjengelig. Mange soloreisende bestiller denne turen. Spis ved delt eller privat bord (ditt valg) og kvelden er inkluderende — møt andre reisende om du vil, eller hold for deg selv.' },
-      { q: 'Hva er beste tidspunkt for natttur i Istanbul?', a: 'Vårt middagscruise på Bosporos er 20:30–23:30 (3 timer). Dette er topp belysningstidspunkt for alle Istanbuls landemerker — broer fullt opplyst, glødende palasser, månen over vannet. Vil du også ha gyldentimen, kom om sommeren: ombordstigningen starter kl. 19:30, og i mai–august går solen ned rett rundt avgangen kl. 20:30 — samme cruise dekker begge deler.' },
+      { q: 'Hva er beste tidspunkt for natttur i Istanbul?', a: 'Vårt middagscruise på Bosporos er 21:00–00:00 (3 timer). Dette er topp belysningstidspunkt for alle Istanbuls landemerker — broer fullt opplyst, glødende palasser, månen over vannet. Vil du også ha gyldentimen, kom om sommeren: ombordstigningen starter kl. 20:00, og i mai–august går solen ned rett rundt avgangen kl. 21:00 — samme cruise dekker begge deler.' },
       { q: 'Hvordan kommer jeg til møtestedet for nattturen i Istanbul?', a: 'Møtestedet er Kabataş-kaia (europeisk sentrum, nær Dolmabahçe-palasset). Med trikk: T1 til Kabataş-stopp (endestasjon). Med taxi: ~15 min fra Taksim. Til fots: 20 min fra Taksim via İnönü Bulvarı. Gåvideoer finnes på denne siden. Hotelloverføring tilgjengelig for +€{p.transfer}/person hvis du foretrekker det.' },
       { q: 'Kan jeg bestille nattturen i Istanbul samme dag?', a: 'Ofte ja, spesielt hverdager. Helger fylles raskere. Bestillingsskjemaet på denne siden lar deg sjekke tilgjengelighet for i kveld og bestille på under 1 minutt. For hastehenvendelser samme dag, skriv til oss på WhatsApp +90 532 244 29 22.' }
     ],
@@ -417,18 +417,18 @@ module.exports = {
     },
     intro: [
       'Når du søker etter "båttur i Istanbul", søker du etter det ene som definerer byen fra vannet: Bosporos. Vår 3-timers Bosporos-båttur tar deg forbi hvert viktig Istanbul-landemerke — Dolmabahçe-palasset, Ortaköy-moskeen, Bosporosbroen, Rumeli Hisarı, Beylerbeyi-palasset og Jomfrutårnet — med komplett tyrkisk middag og live underholdning.',
-      'I motsetning til mange turistferger på 1 time som dekker mindre av Bosporos og hopper over middag og underholdning, er **vår båttur i Istanbul** en komplett kveldsopplevelse: ombordstigning kl. 19:30 ved Kabataş-kaia, tur til midnatt, 10 meze, hovedrett, dessert, sema, folkedanser, orientalsk dans og DJ. Du får også kveldsutgangen som del av turen.',
+      'I motsetning til mange turistferger på 1 time som dekker mindre av Bosporos og hopper over middag og underholdning, er **vår båttur i Istanbul** en komplett kveldsopplevelse: ombordstigning kl. 20:00 ved Kabataş-kaia, tur til midnatt, 10 meze, hovedrett, dessert, sema, folkedanser, orientalsk dans og DJ. Du får også kveldsutgangen som del av turen.',
       'Enten du har én kveld eller en hel uke i Istanbul, gjør **denne båtturen i Istanbul** jobben. 4,8★ av over 11 317 reisende, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og betal om bord — ingen finansiell forpliktelse til du er fornøyd med opplevelsen.'
     ],
     highlights: [
       { title: 'Alle viktige Bosporos-landemerker', desc: 'Dolmabahçe, Çırağan, Ortaköy-moskeen, Bosporosbroen, Bebek, Rumeli Hisarı, FSM-broen, Beylerbeyi-palasset, Üsküdar, Jomfrutårnet. Begge bredder, europeisk og asiatisk, på én tur.' },
       { title: 'Middag + show inkludert', desc: 'Ikke bare båttur — komplett tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Det som gjør 3 timer morsomt, ikke bare sightseeing.' },
-      { title: 'Kveldsavgang (best belysning)', desc: 'Avgang kl. 20:30 fanger Bosporos opplyst i full glans — broer, palasser, moskeer alle opplyst. Mer dramatisk enn dagsturer som viser de samme landemerkene i flatt lys.' },
+      { title: 'Kveldsavgang (best belysning)', desc: 'Avgang kl. 21:00 fanger Bosporos opplyst i full glans — broer, palasser, moskeer alle opplyst. Mer dramatisk enn dagsturer som viser de samme landemerkene i flatt lys.' },
       { title: 'Enkel bestilling, enkel betaling', desc: 'Bestill med skjemaet på denne siden på under 1 minutt. Betal om bord — ingen forskuddsbetaling. Hotelloverføring tilgjengelig fra +€{p.transfer}/person. Gratis avbestilling 2 timer før avgang.' }
     ],
     faq: [
       { q: 'Hva er den beste båtturen i Istanbul?', a: 'Bosporos-middagscruiset er konsekvent rangert #1. Dekker alle viktige landemerker, inkluderer middag og underholdning og kjører om kvelden når landemerkene er opplyst. Andre alternativer (hop-on ferger, morgenturistbåter) dekker kortere ruter, hopper over middag og inkluderer ikke underholdning. For én kveld i Istanbul er dette den mest komplette båtturen.' },
-      { q: 'Hvor lenge varer båtturen i Istanbul?', a: '3 timer. Ombordstigning fra kl. 19:30 ved Kabataş-kaia, avgang 20:30, retur ~23:30. Dekker Bosporos fra Dolmabahçe til Rumeli Hisarı og tilbake. Nok tid for komplett middag + show uten trøtthet.' },
+      { q: 'Hvor lenge varer båtturen i Istanbul?', a: '3 timer. Ombordstigning fra kl. 20:00 ved Kabataş-kaia, avgang 21:00, retur ~00:00. Dekker Bosporos fra Dolmabahçe til Rumeli Hisarı og tilbake. Nok tid for komplett middag + show uten trøtthet.' },
       { q: 'Hva koster båtturen i Istanbul?', a: 'Vår båt- og middagstur: €{p.dinnerStd}/person (fra €{p.dinnerStdOriginal}). 0–3 år gratis, 4–8 år halvpris. Betal om bord. Alkohol og hotelloverføring er valgfrie tillegg.' },
       { q: 'Hvor avgår båtturene i Istanbul fra?', a: 'Fartøyet vårt avgår fra Kabataş-kaia, europeisk sentrum av Istanbul, nær Dolmabahçe-palasset. Tilgjengelig med trikk T1 (Kabataş-stopp), taxi 15 min fra Taksim eller til fots 20 min fra Taksim. Hotelloverføring tilgjengelig fra sentrale bydeler for +€{p.transfer}/person.' },
       { q: 'Er denne båtturen egnet for familier med barn?', a: 'Ja — veldig familievennlig. Barn 0–3 år er gratis, 4–8 år 50 % rabatt. Overbygget innendørs sone, barnemeny på forespørsel og underholdning (sema, folkedanser) som er fengende for barn. Mange familier fra hele verden bestiller denne turen.' },
@@ -444,7 +444,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Bosporos-tur fra €{p.dinnerStd} — Middagscruise Istanbul + Show',
-      description: '3-timers tur på Bosporos: tyrkisk middag, live folkeshow, opplyste nattutsikter. Avgang 20:30 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: '3-timers tur på Bosporos: tyrkisk middag, live folkeshow, opplyste nattutsikter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
     },
     hero: {
       h1: 'Tur på Bosporos',
@@ -464,7 +464,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Hva er de beste turene på Bosporos i Istanbul?', a: 'Kveldsturene med middag er konsekvent øverst. Dagsalternativer (1-times rundturer, 2-timers turistbåter) viser mindre og inkluderer ikke middag. For verdi er det vanskelig å slå en 3-timers tur med middag, show og sentralt møtepunkt. Kostnaden for turen vår €{p.dinnerStd} eliminerer behovet for separat kveldsmat + underholdning.' },
-      { q: 'Hvor lenge varer en Bosporos-tur?', a: 'Vår Bosporos-tur varer totalt 3 timer (avgang 20:30, retur 23:30). Det finnes kortere alternativer (1-times turistferger, 90-minutters turer), men de hopper over middag og underholdning. For den komplette kveldsopplevelsen er 3 timer ideelt — nok til å se alt uten å bli trøtt.' },
+      { q: 'Hvor lenge varer en Bosporos-tur?', a: 'Vår Bosporos-tur varer totalt 3 timer (avgang 21:00, retur 00:00). Det finnes kortere alternativer (1-times turistferger, 90-minutters turer), men de hopper over middag og underholdning. For den komplette kveldsopplevelsen er 3 timer ideelt — nok til å se alt uten å bli trøtt.' },
       { q: 'Er Bosporos-turen verdt det?', a: 'Ja — nesten alle Istanbul-reiseguider lister "Bosporos-cruise" i topp 5 must-do. Byen er bygd rundt dette sundet; hvis du ikke har sett Bosporos fra vannet, har du egentlig ikke sett Istanbul. Vår spesifikke kveldstur legger til middag og underholdning, og gjør det til en komplett kveldstur i stedet for bare sightseeing.' },
       { q: 'Hva bør jeg ta med til Bosporos-turen?', a: 'Pass eller ID (for registrering om bord), lett jakke (kveldsdekket er kjølig), smarttelefon/kamera, komfortable sko for dansegulvet. Kontanter eller kort for betaling. Alt annet er om bord. Hotelloverføring tilgjengelig for +€{p.transfer}/person hvis du ikke vil bruke kollektivtransport.' },
       { q: 'Er Bosporos-turen egnet for barn?', a: 'Ja — veldig barnefamilie-vennlig. Barn 0–3 år er gratis (transfer inkludert), 4–8 år 50 % rabatt. Overbygget innendørs sone, barnemeny på forespørsel og forsiktig, fengende underholdning. Mange familier bestiller denne turen som høydepunktet i Istanbul-turen.' },
@@ -489,13 +489,13 @@ module.exports = {
     },
     intro: [
       'Leter du etter **Bosporos-cruisebilletter**? Kjøp direkte. Billetten vår er €{p.dinnerStd}/person — 40 % rabatt på ordinær pris (€{p.dinnerStdOriginal}). Tredjeparts bestillingssider legger vanligvis til 20–40 % provisjon. Ved å bestille direkte sparer du — og betaler fortsatt om bord.',
-      'Prosessen for **Bosporos-cruisebilletter**: fyll ut skjemaet på denne siden på under 1 minutt (dato, antall gjester, kontakt), vi bekrefter umiddelbart via WhatsApp / Telegram, møt opp ved Kabataş-kaia kl. 19:30, betal om bord, nyt 3-timers middagscruise. Ingen fysisk billett å skrive ut, ingen kupong å motta på e-post — bekreftelsen er billetten din.',
+      'Prosessen for **Bosporos-cruisebilletter**: fyll ut skjemaet på denne siden på under 1 minutt (dato, antall gjester, kontakt), vi bekrefter umiddelbart via WhatsApp / Telegram, møt opp ved Kabataş-kaia kl. 20:00, betal om bord, nyt 3-timers middagscruise. Ingen fysisk billett å skrive ut, ingen kupong å motta på e-post — bekreftelsen er billetten din.',
       'Enten du bestiller kveldens middagscruise eller bestiller til en bestemt dato neste uke, er **direkte Bosporos-cruisebilletter** den raskeste måten. Rangert 4,8★, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og støtter tillegg for hotelloverføring og alkohol.'
     ],
     highlights: [
       { title: 'Direktebestilling — ingen mellomledd-avgift', desc: '€{p.dinnerStd}/person — én transparent pris. Tredjeparts sider tar €30–80+ for samme tur. Spar ved å bestille direkte fra oss. Ingen skjulte avgifter, ingen provisjonstillegg.' },
       { title: 'Betal om bord — ingen forskuddsbetaling', desc: 'Reserver plassen nå, betal når du går om bord. Kontanter eller kort akseptert. Gratis hvis du avbestiller 2+ timer før avgang. Null finansiell risiko ved å bestille tidlig.' },
-      { title: 'Bekreftelse på under 1 minutt', desc: 'Fyll ut skjema → vi bekrefter via WhatsApp / Telegram. Ingen PDF-kupong å skrive ut fra e-post. Meldingen vår er billetten din. Møt opp ved kaia kl. 19:30.' },
+      { title: 'Bekreftelse på under 1 minutt', desc: 'Fyll ut skjema → vi bekrefter via WhatsApp / Telegram. Ingen PDF-kupong å skrive ut fra e-post. Meldingen vår er billetten din. Møt opp ved kaia kl. 20:00.' },
       { title: 'Nåværende lanseringspris 40 % RABATT', desc: 'Fra €{p.dinnerStdOriginal}, nå €{p.dinnerStd}. 40 % rabatt fordi du bestiller direkte. Ikke et tidsbegrenset triks — det er vår standard direktebestillingspris.' }
     ],
     faq: [
@@ -503,7 +503,7 @@ module.exports = {
       { q: 'Hvor kan jeg kjøpe Bosporos-cruisebilletter?', a: 'Direkte fra denne siden — fyll ut bestillingsskjemaet, vi bekrefter umiddelbart via WhatsApp / Telegram. Betal om bord. Tredjepartsplattformer (Viator, GetYourGuide, Klook) selger også billetter, men tar vanligvis €30–80+ — det er mellomledd-tillegget. Direkte er billigst og raskest.' },
       { q: 'Trenger jeg å skrive ut Bosporos-cruisebilletten?', a: 'Nei — ingen fysisk billett eller kupong er nødvendig. Etter bestilling sender vi deg en bekreftelse via WhatsApp (eller Telegram) med møtepunkt, tid og reservasjonsnavn. Bare vis telefonen ved kaia. Det er alt.' },
       { q: 'Kan jeg avbestille eller returnere Bosporos-cruisebilletten?', a: 'Ja — gratis avbestilling inntil 2 timer før avgang. Bare skriv på WhatsApp. Fordi du ennå ikke har betalt (betal om bord), er ingen refusjon nødvendig — bare ikke møt opp, ingen kostnad. Mye mer fleksibelt enn forhåndsbetalte billetter fra tredjeparter.' },
-      { q: 'Er Bosporos-cruisebilletter tilgjengelig samme dag?', a: 'Ofte ja, spesielt hverdager. Helger og ferier fylles raskere. Sjekk tilgjengelighet via bestillingsskjemaet — oppdateres i sanntid. Siste-minutt-bestilling er vanligvis mulig noen timer før avgang kl. 20:30. For hastehenvendelser, WhatsApp.' },
+      { q: 'Er Bosporos-cruisebilletter tilgjengelig samme dag?', a: 'Ofte ja, spesielt hverdager. Helger og ferier fylles raskere. Sjekk tilgjengelighet via bestillingsskjemaet — oppdateres i sanntid. Siste-minutt-bestilling er vanligvis mulig noen timer før avgang kl. 21:00. For hastehenvendelser, WhatsApp.' },
       { q: 'Er barnebilletter til Bosporos-cruiset gratis?', a: 'Barn **0–3 år helt gratis** (ingen avgifter, ingen skjulte kostnader, transfer inkludert). **4–8 år 50 % rabatt** (€{p.dinnerStd}/2 = €12,15). **9+ år full voksenpris.** Transparente, tak-satte priser — ingen "babygebyr"-triks.' }
     ],
     cta: {
@@ -516,7 +516,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosporos i siste liten fra €{p.dinnerStd} — Bestill i dag, betal om bord',
-      description: 'Bestill Bosporos-cruise samme dag. WhatsApp-bekreftelse på minutter. Avgang 20:30 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: 'Bestill Bosporos-cruise samme dag. WhatsApp-bekreftelse på minutter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
     },
     hero: {
       h1: 'Bosporos-cruise i siste liten',
@@ -524,8 +524,8 @@ module.exports = {
       badge: 'Siste-minutt-bestilling · Bekreftet på minutter · Betal om bord'
     },
     intro: [
-      'Landet du i Istanbul i ettermiddag og vil ha en flott kveld i kveld? **Bosporos-cruise i siste liten** fungerer. Vi reserverer spesielt plasser for siste-minutt-bestillinger, fordi vi vet at mange reisende bestemmer seg om morgenen. Fyll ut skjemaet her, vi bekrefter via WhatsApp på minutter, møt opp ved Kabataş-kaia kl. 19:30, betal om bord, nyt.',
-      '**Vårt siste-minutt Bosporos-cruise** har samme kveldsplan som forhåndsbestillinger: 3 timer på vannet (20:30–23:30), tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Dolmabahçe-palasset opplyst, Ortaköy-moskeen, Bosporosbroen — de samme ikoniske utsiktene. Samme pris: €{p.dinnerStd}/person.',
+      'Landet du i Istanbul i ettermiddag og vil ha en flott kveld i kveld? **Bosporos-cruise i siste liten** fungerer. Vi reserverer spesielt plasser for siste-minutt-bestillinger, fordi vi vet at mange reisende bestemmer seg om morgenen. Fyll ut skjemaet her, vi bekrefter via WhatsApp på minutter, møt opp ved Kabataş-kaia kl. 20:00, betal om bord, nyt.',
+      '**Vårt siste-minutt Bosporos-cruise** har samme kveldsplan som forhåndsbestillinger: 3 timer på vannet (21:00–00:00), tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Dolmabahçe-palasset opplyst, Ortaköy-moskeen, Bosporosbroen — de samme ikoniske utsiktene. Samme pris: €{p.dinnerStd}/person.',
       'Avbestilling samme dag er gratis inntil 2 timer før avgang, fordi **betal om bord** betyr at du ennå ikke har lovet noe. Bestilte kl. 14:00 og ombestemte deg innen kl. 19:00? Bare skriv på WhatsApp — ingen refusjon, ingen problem. Dette er fleksibiliteten med **siste-minutt Istanbul-turen** som reisende setter pris på.'
     ],
     highlights: [
@@ -536,10 +536,10 @@ module.exports = {
     ],
     faq: [
       { q: 'Kan jeg virkelig bestille Bosporos-cruiset for i kveld?', a: 'Ja — ofte. Vi reserverer plasser for siste-minutt-bestillinger. Sjekk skjemaet ovenfor for tilgjengelighet i kveld. Hvis det er ledige plasser, kan du bestille inntil kl. 18:00 (3 timer før avgang). Helger er mer travel — bestill tidligere på dagen om mulig.' },
-      { q: 'Hvor siste minutt kan jeg bestille?', a: 'Bestillinger holdes åpne til kl. 18:00 for kl. 20:30-fartøyet. Etter kl. 18:00, skriv direkte til oss på WhatsApp +90 532 244 29 22 — hvis det er ledige plasser, kan vi bekrefte manuelt. Etter kl. 19:30 er det veldig travelt med mindre du allerede er ved Kabataş-kaia og kan gå om bord raskt.' },
+      { q: 'Hvor siste minutt kan jeg bestille?', a: 'Bestillinger holdes åpne til kl. 18:00 for kl. 21:00-fartøyet. Etter kl. 18:00, skriv direkte til oss på WhatsApp +90 532 244 29 22 — hvis det er ledige plasser, kan vi bekrefte manuelt. Etter kl. 20:00 er det veldig travelt med mindre du allerede er ved Kabataş-kaia og kan gå om bord raskt.' },
       { q: 'Er siste-minutt Bosporos-cruise dyrere?', a: 'Nei — samme pris som forhåndsbestilling. €{p.dinnerStd}/person. Vi har ingen "dynamisk prising" eller siste-minutt-tillegg. Samme fartøy, samme middag, samme show, samme pris.' },
       { q: 'Hva skjer hvis dagens tur er fullbooket?', a: 'Morgendagens tur er vanligvis åpen — vi opererer 365 dager i året, hver dag. Du kan bestille til i morgen og fortsatt være "siste minutt", noe som betyr at du nettopp bestemte deg. Hverdagstur har mer plass enn helgetur.' },
-      { q: 'Kan dere ordne hotelloverføring i siste liten?', a: 'Siste-minutt-overføring er mulig inntil ~kl. 18:00 for kl. 20:30-turen. Etter kl. 18:00 har vi kanskje ikke tilgjengelig sjåfør — i så fall kan du ta taxi til Kabataş-kaia (15 min fra Taksim, 10 min fra Sultanahmet, ~€10–15). Sentralt og enkelt.' },
+      { q: 'Kan dere ordne hotelloverføring i siste liten?', a: 'Siste-minutt-overføring er mulig inntil ~kl. 18:00 for kl. 21:00-turen. Etter kl. 18:00 har vi kanskje ikke tilgjengelig sjåfør — i så fall kan du ta taxi til Kabataş-kaia (15 min fra Taksim, 10 min fra Sultanahmet, ~€10–15). Sentralt og enkelt.' },
       { q: 'Hva hvis jeg allerede er ved Kabataş og vil gå om bord?', a: 'Hvis du er ved kaia og det er ledige plasser, kan du bare gå om bord. Skriv til oss på WhatsApp eller spør mannskapet — hvis det er plass, legger vi deg til. Samme pris, betal om bord. I turtermer kalles dette "walk-on" — det fungerer her.' }
     ],
     cta: {
@@ -575,7 +575,7 @@ module.exports = {
       { q: 'Er det skjulte avgifter i Istanbul-turprisen?', a: 'Nei. Prisen inkluderer: 3-timers tur, komplett middag (meze, forrett, hovedrett, dessert), ubegrenset lesedrikk, live show, avgifter. Valgfrie tillegg (alkohol, overføring, romantisk bord) er separate og transparent priset — du betaler bare for det du legger til. Ingen "servicegebyr", "havneavgift", overraskelsestillegg.' },
       { q: 'Hvorfor er Istanbul-turprisen 40 % rabatt — er det et triks?', a: 'Intet triks. Ordinær pris €{p.dinnerStdOriginal} er hva tredjepartssider (Viator, GetYourGuide, Klook) tar — med provisjonene sine. Bestill direkte og du får €{p.dinnerStd}. Det er 40 %-forskjellen. Ingen tidsbestemte eller dynamiske pristricks.' },
       { q: 'Hvordan sammenlignes Istanbul-turprisen med andre alternativer?', a: 'Rundturferger: €5–10, 1 time, ingen middag, ingen underholdning, bare sightseeing. Budsjettpakkede middagsturer: €20–30, overfylte, gjennomsnittlig mat, kort show. Vårt cruise (€{p.dinnerStd}): 3 timer, komplett middag, fullt show, privat bord, TÜRSAB-lisensiert. Resortjakter: €100–150+, overdrevent for solo/par.' },
-      { q: 'Trenger jeg å betale Istanbul-turprisen på forhånd?', a: 'Nei — **betal om bord**. Bestill nå (1-minutts skjema), vi bekrefter på WhatsApp, kom kl. 19:30 og betal om bord (kontanter eller kort). Gratis avbestilling inntil 2 timer før. Null finansiell forpliktelse til du er fornøyd.' },
+      { q: 'Trenger jeg å betale Istanbul-turprisen på forhånd?', a: 'Nei — **betal om bord**. Bestill nå (1-minutts skjema), vi bekrefter på WhatsApp, kom kl. 20:00 og betal om bord (kontanter eller kort). Gratis avbestilling inntil 2 timer før. Null finansiell forpliktelse til du er fornøyd.' },
       { q: 'Er det grupperabatter på Istanbul-turprisen?', a: 'For grupper på 10+, kan vi tilby 5–10 % rabatt — skriv på WhatsApp med gruppestørrelsen. For 25+, vurder privat tur (hele fartøyet for gruppen din, tilpasset meny). For 2–9 personer gjelder standardpriser — allerede 40 % rabatt på ordinær pris.' }
     ],
     cta: {
@@ -597,7 +597,7 @@ module.exports = {
     },
     intro: [
       '**Bosporos-sightseeing** fra vannet slår enhver busstur. Bosporos er byens mest historiske skipslei — osmanske sultaner, bysantinske keisere, greske handelsmenn og russiske krigsski har alle passert her. I dag seiler vår 3-timers tur, med kommentarer fra engelsktalende mannskap, forbi hvert viktig Istanbul-landemerke som definerer byens silhuett.',
-      'Ruten for **vår Bosporos-sightseeing-tur** (kveldsavgang, 20:30–23:30):\n\n1. **Dolmabahçe-palasset** — 19. århundrets osmanske residens, opplyst om natten\n2. **Çırağan-palasset** — nå luksushotell, kongelig historie\n3. **Ortaköy-moskeen** — en av Istanbuls mest fotograferte moskeer, ved vannet\n4. **Bosporosbroen** — veksler om natten mellom blå, lilla, gull\n5. **Bebek** — elegant bydel på europeisk bredde\n6. **Rumeli Hisarı** — bygd av Fatih Sultan Mehmet i 1452 før Konstantinopels fall\n7. **Fatih Sultan Mehmet-broen** — Bosporos\' andre bro, dramatisk bue\n8. **Beylerbeyi-palasset** — asiatisk bredde, osmansk sommerresidens\n9. **Üsküdar** — asiatisk Istanbul-kyst, tradisjonell bydel\n10. **Jomfrutårnet** — tårn på liten øy, et av Istanbuls mest romantiske symboler',
+      'Ruten for **vår Bosporos-sightseeing-tur** (kveldsavgang, 21:00–00:00):\n\n1. **Dolmabahçe-palasset** — 19. århundrets osmanske residens, opplyst om natten\n2. **Çırağan-palasset** — nå luksushotell, kongelig historie\n3. **Ortaköy-moskeen** — en av Istanbuls mest fotograferte moskeer, ved vannet\n4. **Bosporosbroen** — veksler om natten mellom blå, lilla, gull\n5. **Bebek** — elegant bydel på europeisk bredde\n6. **Rumeli Hisarı** — bygd av Fatih Sultan Mehmet i 1452 før Konstantinopels fall\n7. **Fatih Sultan Mehmet-broen** — Bosporos\' andre bro, dramatisk bue\n8. **Beylerbeyi-palasset** — asiatisk bredde, osmansk sommerresidens\n9. **Üsküdar** — asiatisk Istanbul-kyst, tradisjonell bydel\n10. **Jomfrutårnet** — tårn på liten øy, et av Istanbuls mest romantiske symboler',
       'Middag og underholdning er inkludert — ikke separat — så **Bosporos-sightseeing** blir til en komplett kveld. Tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Rangert 4,8★ av over 11 317 reisende, TÜRSAB-lisensiert A-17672.'
     ],
     highlights: [

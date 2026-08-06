@@ -43,7 +43,7 @@ Sessizleşirler. **Dario** bir sessizliği bozar:
 
 **Adanna:** Üç repo ayrımı doğru karar. AI/site/panel'i tek monorepo'ya tıkmak bir kişilik ekipte ölüm olurdu. Ama `scheduled/` altında dokuz cron var ve hiçbiri bir job runner'a değil, doğrudan node-cron'a bağlı. Hetzner restart olduğunda hepsi sessizce durur, kimse bilmez. Heartbeat-cron buna kısmen çare ama dependency loop var: heartbeat'i izleyen kim?
 
-**Mehmet:** Ben Boğaz turunu 11 yıl yaptım, yine yapıyorum. Bu sistemde gördüğüm en iyi şey: çocuk politikası. 0-3 ücretsiz, 4-8 yarım, 9+ tam — basit, satılabilir, müşterinin anladığı bir şey. En kötüsü: transfer mantığı. 17:00-19:30 "gri bölge" demişsiniz, AI eskalasyon atıyor. O saatlerde Özgür Telegram'a bakmıyorsa müşteri kayıp. Bir de Kabataş trafiği — siz "Kabataş İskelesi" dedikçe taksiciler Karaköy'e bırakıyor. Bu sitede yok.
+**Mehmet:** Ben Boğaz turunu 11 yıl yaptım, yine yapıyorum. Bu sistemde gördüğüm en iyi şey: çocuk politikası. 0-3 ücretsiz, 4-8 yarım, 9+ tam — basit, satılabilir, müşterinin anladığı bir şey. En kötüsü: transfer mantığı. 17:00-20:00 "gri bölge" demişsiniz, AI eskalasyon atıyor. O saatlerde Özgür Telegram'a bakmıyorsa müşteri kayıp. Bir de Kabataş trafiği — siz "Kabataş İskelesi" dedikçe taksiciler Karaköy'e bırakıyor. Bu sitede yok.
 
 **Lina:** Ana sayfa hero'sunda gece çekimi bir drone shot var — TOSUNPAŞA'nın tam Boğaz'a doğru gittiği an. O kare bu işin bütün ruhu. Ama wizard "Book Now" butonu o ruhu tutmuyor — generic bir mavi gradient. Wizard'ın dördüncü adımına gelene kadar müşteri marka hissini kaybediyor. Buradan başlayacağım.
 
@@ -692,7 +692,7 @@ Bir an sessizlik. Sonra sırayla konuşurlar.
 
 **Demis:** Benim için risk **search opacity**. Sistem ölçülemez şekilde çalışıyor — hangi prompt değişikliği hangi sonuca yol açtı, kim bilebilir? Observer var ama Observer'ın ölçüsü da subjective. Quantitative observability olmadan büyürken ne çalışıyor ne çalışmıyor görünmez olur.
 
-**Mehmet:** Sahadan **risk #1: no-show ve transfer**. Pre-tour reminder'lar zayıfsa boş tekne kalkar, akşam €500-1000 ciro kaybı. Transfer gri bölgesi (17:00-19:30) Özgür Telegram'a bakmazsa müşteri kayıp + olumsuz review. Bunlar günlük ekonomi.
+**Mehmet:** Sahadan **risk #1: no-show ve transfer**. Pre-tour reminder'lar zayıfsa boş tekne kalkar, akşam €500-1000 ciro kaybı. Transfer gri bölgesi (17:00-20:00) Özgür Telegram'a bakmazsa müşteri kayıp + olumsuz review. Bunlar günlük ekonomi.
 
 **Lina:** Tasarım risk'i — **brand inconsistency**. Site lüks hisseder, WhatsApp casual hisseder, bilet PNG basit hisseder. Müşteri farklı temaslarda farklı marka algısı yaşar, "amatör mü?" diye düşünür. Bir-iki review'da "site güzel ama mesajlar basit" gibi feedback geldiğinde dönüş zor.
 

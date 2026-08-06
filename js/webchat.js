@@ -18,7 +18,7 @@
       std: 24.30, stdOrig: 40.50,
       alcohol2: 10, transfer: 5
     },
-    times: { boarding: '19:30', departure: '20:30', ret: '23:30' },
+    times: { boarding: '20:00', departure: '21:00', ret: '00:00' },
     wa_number: '905322442922',
     tg_bot: 'BosphorusnightReservation_Bot'
   };

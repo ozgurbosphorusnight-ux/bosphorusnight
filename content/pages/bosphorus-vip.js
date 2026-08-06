@@ -42,7 +42,7 @@ module.exports = {
 
     'The VIP feeling starts with your table. If you want to be closest to the stage and the views, add a **stage-front private table** (+€{p.romantic}/table) and your spot is reserved in advance — the best angle for the whirling dervish, the folk dances, and the illuminated Bosphorus. It\'s the favorite choice of couples, celebrations, and photographers.',
 
-    'AMOR is a 42-meter, 3-deck, climate-controlled boat hosting up to 400 guests. The 3-hour route runs from Kabataş (boarding from 19:30, departure 20:30, return 23:30) past Dolmabahçe, Ortaköy Mosque, Rumeli Fortress and the Bosphorus Bridge lights. TÜRSAB-licensed (A-17672), rated 4.9★ on Google, 11,317+ guests hosted since 2014. No prepayment — pay on the boat, with free cancellation up to 2 hours before departure.'
+    'AMOR is a 42-meter, 3-deck, climate-controlled boat hosting up to 400 guests. The 3-hour route runs from Kabataş (boarding from 20:00, departure 21:00, return 00:00) past Dolmabahçe, Ortaköy Mosque, Rumeli Fortress and the Bosphorus Bridge lights. TÜRSAB-licensed (A-17672), rated 4.9★ on Google, 11,317+ guests hosted since 2014. No prepayment — pay on the boat, with free cancellation up to 2 hours before departure.'
   ],
 
   highlights: [
@@ -95,7 +95,7 @@ module.exports = {
     },
     {
       q: 'What kind of boat is it?',
-      a: 'AMOR — a modern 42-meter, 3-deck passenger boat with a 400-guest capacity, heated in winter and air-conditioned in summer. Departure from Kabataş Pier: boarding from 19:30, departure 20:30, return 23:30. The route covers Dolmabahçe, Ortaköy, Rumeli Fortress, Beylerbeyi and the Bosphorus Bridge lights.'
+      a: 'AMOR — a modern 42-meter, 3-deck passenger boat with a 400-guest capacity, heated in winter and air-conditioned in summer. Departure from Kabataş Pier: boarding from 20:00, departure 21:00, return 00:00. The route covers Dolmabahçe, Ortaköy, Rumeli Fortress, Beylerbeyi and the Bosphorus Bridge lights.'
     },
     {
       q: 'How do I book the Bosphorus VIP cruise experience?',

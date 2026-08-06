@@ -135,7 +135,7 @@ US (Bosphorus Night):
 - Strengths: single clear package, WhatsApp 24/7, no prepayment, free cancellation 2hrs before, pay on boat
 - Weaknesses: no real customer reviews yet, new brand, stock photos on site
 - Booking: WhatsApp only, no online payment
-- Departure: Kabatas pier, boarding 19:30, cruise 20:30-23:30
+- Departure: Kabatas pier, boarding 20:00, cruise 21:00-00:00
 
 Competitors: ${JSON.stringify(compactResults)}
 

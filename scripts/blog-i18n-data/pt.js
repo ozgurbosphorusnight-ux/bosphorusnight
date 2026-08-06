@@ -1,6 +1,6 @@
 // Portuguese (Portugal) — formal register, Portugal variant (not Brazilian).
 // LTR. "Bósforo" for Bosphorus. Brand stays Latin in URLs only.
-// Prices fixed: €24.30. Times fixed: 19:30 entry / 20:30 departure / 23:30 return.
+// Prices fixed: €24.30. Times fixed: 20:00 entry / 21:00 departure / 00:00 return.
 
 module.exports = {
   lang: 'pt',
@@ -82,7 +82,7 @@ module.exports = {
           'A forma mais simples de reservar é pelo WhatsApp. Envie uma mensagem com a data pretendida, o número de hóspedes e o pacote de interesse. A nossa equipa responde em minutos, confirma a disponibilidade e envia todos os detalhes — ponto de encontro, hora de embarque e o que esperar. Sem formulários de pagamento online, sem depósito. Paga em dinheiro ou cartão a bordo.'
         ]},
         { h2: 'Dicas para a Melhor Experiência', paragraphs: [
-          'Chegue a Kabataş pelo menos 20 minutos antes da partida para garantir uma boa mesa — o embarque começa às 19:30 e a partida é às 20:30. Leve um casaco leve ou xaile, pois o convés superior pode estar fresco mesmo nas noites de verão. E carregue o telemóvel — vai querer fotografar quando o barco passar sob as pontes iluminadas.',
+          'Chegue a Kabataş pelo menos 20 minutos antes da partida para garantir uma boa mesa — o embarque começa às 20:00 e a partida é às 21:00. Leve um casaco leve ou xaile, pois o convés superior pode estar fresco mesmo nas noites de verão. E carregue o telemóvel — vai querer fotografar quando o barco passar sob as pontes iluminadas.',
           'O cruzeiro com jantar no Bósforo é, sem exagero, a melhor forma de experienciar Istambul à noite. Se só tem uma "noite especial" em Istambul, este é o programa.'
         ]}
       ]
@@ -96,7 +96,7 @@ module.exports = {
           'Fotógrafos, casais e viajantes experientes dizem todos o mesmo: se quer ver Istambul no seu momento mais belo, observe o pôr-do-sol no Bósforo. A luz que transforma a água em ouro, que pinta os minaretes de âmbar e que transita gradualmente para o brilho noturno da cidade — é uma das experiências que ficará consigo muito depois de deixar a Turquia.'
         ]},
         { h2: 'Porque É que a Hora do Pôr-do-Sol É Mágica', paragraphs: [
-          'Istambul situa-se aproximadamente à latitude 41° Norte, o que significa que a hora do pôr-do-sol varia consideravelmente ao longo do ano. No verão o sol desce por volta das 20:30, criando uma longa hora dourada sobre a água. Na primavera e no outono é mais cedo — entre as 18:00 e as 19:00 — produzindo uma transição rápida e dramática do dia para a noite. O estreito do Bósforo funciona como um espelho natural, refletindo e amplificando as cores do céu.',
+          'Istambul situa-se aproximadamente à latitude 41° Norte, o que significa que a hora do pôr-do-sol varia consideravelmente ao longo do ano. No verão o sol desce por volta das 21:00, criando uma longa hora dourada sobre a água. Na primavera e no outono é mais cedo — entre as 18:00 e as 19:00 — produzindo uma transição rápida e dramática do dia para a noite. O estreito do Bósforo funciona como um espelho natural, refletindo e amplificando as cores do céu.',
           'O que torna o pôr-do-sol no Bósforo verdadeiramente único é a linha do horizonte. À medida que o sol desce sobre o lado europeu, as silhuetas da Mesquita de Süleymaniye, da Hagia Sophia e da Mesquita Azul recortam-se contra o céu cor-de-laranja-rosado. Do lado asiático, a última luz quente banha os palácios costeiros e as colinas verdes.'
         ]},
         { h2: 'A Experiência do Cruzeiro', paragraphs: [
@@ -110,7 +110,7 @@ module.exports = {
           'O convés superior pode ficar fresco, especialmente quando o barco está em movimento. Mesmo nas noites quentes de verão, a temperatura na água pode baixar consideravelmente após o pôr-do-sol. Um casaco leve, cardigã ou xaile são essenciais. O ideal é vestir em camadas. Prefira sapatos com aderência a saltos altos ou sandálias com sola lisa.'
         ]},
         { h2: 'Cruzeiro ao Pôr-do-Sol vs. Cruzeiro com Jantar', paragraphs: [
-          'A principal diferença é o horário e a atmosfera. O cruzeiro ao pôr-do-sol parte ao final da tarde e oferece a hora dourada e a transição para a noite. O cruzeiro com jantar padrão parte mais tarde (por volta das 20:30) e proporciona uma experiência noturna completa — luzes da cidade, pontes iluminadas, ambiente mais romântico.',
+          'A principal diferença é o horário e a atmosfera. O cruzeiro ao pôr-do-sol parte ao final da tarde e oferece a hora dourada e a transição para a noite. O cruzeiro com jantar padrão parte mais tarde (por volta das 21:00) e proporciona uma experiência noturna completa — luzes da cidade, pontes iluminadas, ambiente mais romântico.',
           'Se tiver tempo, o ideal seria fazer o cruzeiro ao pôr-do-sol numa noite e o cruzeiro com jantar noutra — são experiências verdadeiramente diferentes. Mas se tiver de escolher apenas um, o cruzeiro ao pôr-do-sol oferece algo único: a oportunidade de testemunhar Istambul a transformar-se do dourado para a prata.'
         ]}
       ]
@@ -161,12 +161,12 @@ module.exports = {
           'O Bósforo Noturno mantém a linha de WhatsApp aberta desde cedo de manhã até tarde da noite porque sabemos que muitos hóspedes decidem de última hora. A nossa equipa pode confirmar a sua reserva em minutos após receber a sua mensagem.'
         ]},
         { h2: 'Os Passeios que Decorrem Esta Noite', paragraphs: [
-          'O cruzeiro com jantar padrão parte diariamente do cais de Kabataş. O horário típico: o embarque começa às 19:30, o barco parte às 20:30 aproximadamente, o cruzeiro dura cerca de 3 horas e regressa ao cais por volta das 23:30. Alguns operadores também oferecem um cruzeiro ao pôr-do-sol que parte às 17:30 e regressa até às 20:30.',
+          'O cruzeiro com jantar padrão parte diariamente do cais de Kabataş. O horário típico: o embarque começa às 20:00, o barco parte às 21:00 aproximadamente, o cruzeiro dura cerca de 3 horas e regressa ao cais por volta das 00:00. Alguns operadores também oferecem um cruzeiro ao pôr-do-sol que parte às 17:30 e regressa até às 21:00.',
           'O pacote Standard está disponível para reserva no próprio dia. Começa em €24,30 por pessoa, incluindo jantar completo de 4 pratos, refrigerantes e programa de entretenimento.'
         ]},
         { h2: 'Como Chegar a Kabataş', paragraphs: [
           'Kabataş é um dos pontos mais acessíveis de Istambul. Se estiver hospedado em Sultanahmet (cidade velha), o elétrico T1 vai diretamente até Kabataş — é a última paragem. A viagem demora cerca de 25 minutos. De Taksim, pode apanhar o funicular (linha F1) que leva a Kabataş em menos de 3 minutos.',
-          'Recomendamos chegar à zona do cais até às 19:30. Isto dá-lhe tempo para encontrar o ponto de encontro e sentar-se antes da partida.'
+          'Recomendamos chegar à zona do cais até às 20:00. Isto dá-lhe tempo para encontrar o ponto de encontro e sentar-se antes da partida.'
         ]},
         { h2: 'O Que Levar', paragraphs: [
           'Simples. Traga o telemóvel para fotografias, um casaco leve ou cardigã para o convés superior (pode estar fresco mesmo nas noites de verão na água) e dinheiro ou cartão para o pagamento a bordo. Não existe código de vestuário obrigatório, mas o smart casual é o mais adequado.'
@@ -193,10 +193,10 @@ module.exports = {
           'O Bósforo à noite é extraordinariamente fotogénico. Os palácios iluminados, as pontes decoradas com luzes coloridas, as mesquitas vistas de baixo, o horizonte da cidade refletido nas águas escuras — há dezenas de momentos que valem uma fotografia. Certifique-se de que o telemóvel está totalmente carregado antes de embarcar.'
         ]},
         { h2: '3. Chegue Pelo Menos 20 Minutos Antes', paragraphs: [
-          'A escolha de mesa é por ordem de chegada. O embarque começa às 19:30. Chegar 20 minutos mais cedo dá-lhe a melhor hipótese de conseguir uma mesa à janela ou perto do palco.'
+          'A escolha de mesa é por ordem de chegada. O embarque começa às 20:00. Chegar 20 minutos mais cedo dá-lhe a melhor hipótese de conseguir uma mesa à janela ou perto do palco.'
         ]},
         { h2: '4. Escolha o Horário do Passeio Certo', paragraphs: [
-          'Normalmente existem duas opções de cruzeiro: o cruzeiro ao pôr-do-sol (partida por volta das 17:30) e o cruzeiro com jantar (partida por volta das 20:30). O cruzeiro ao pôr-do-sol oferece a experiência da hora dourada e a transição do dia para a noite — ideal para fotógrafos e para quem prefere uma tarde mais cedo. O cruzeiro com jantar é a experiência noturna clássica.'
+          'Normalmente existem duas opções de cruzeiro: o cruzeiro ao pôr-do-sol (partida por volta das 17:30) e o cruzeiro com jantar (partida por volta das 21:00). O cruzeiro ao pôr-do-sol oferece a experiência da hora dourada e a transição do dia para a noite — ideal para fotógrafos e para quem prefere uma tarde mais cedo. O cruzeiro com jantar é a experiência noturna clássica.'
         ]},
         { h2: '5. Reserve pelo WhatsApp para Resposta Mais Rápida', paragraphs: [
           'Pode encontrar cruzeiros no Bósforo em várias plataformas online, mas reservar diretamente pelo WhatsApp é a opção mais rápida e flexível. Obtém resposta imediata. Sem formulários para preencher.'

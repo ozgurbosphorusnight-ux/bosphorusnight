@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktiske tips',
           paragraphs: [
-            'Avgangen er fra Kabataș kl. 20:30 — vi anbefaler å komme 15-20 minutter tidlig. Porten åpner kl. 19:30.',
-            'Du kan bestille samme dag frem til kl. 19:30. Bestillingen er gratis å avbestille inntil 2 timer før avgang. Ingen kredittkort kreves på forhånd — du betaler om bord.',
+            'Avgangen er fra Kabataș kl. 21:00 — vi anbefaler å komme 15-20 minutter tidlig. Porten åpner kl. 20:00.',
+            'Du kan bestille samme dag frem til kl. 20:00. Bestillingen er gratis å avbestille inntil 2 timer før avgang. Ingen kredittkort kreves på forhånd — du betaler om bord.',
             'Ta med et lag ekstra klær — det kan bli kjølig på åpent dekk om kvelden, spesielt vår og høst.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktisk informasjon',
           paragraphs: [
-            'Solnedgangscruiset inkluderer fullt måltid og canlý underholdning, akkurat som kveldscruiset. Avgang kl. 17:30, tilbake ca. kl. 20:30.',
+            'Solnedgangscruiset inkluderer fullt måltid og canlý underholdning, akkurat som kveldscruiset. Avgang kl. 17:30, tilbake ca. kl. 21:00.',
             'Bestill på forhånd — solnedgangscruiset er svært populært, spesielt om sommeren og i helger.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Tips for familiereisen',
           paragraphs: [
-            'Cruiset varer 3 timer (20:30–23:30). Det kan bli litt sent for veldig små barn — vurder om timingen passer familien.',
+            'Cruiset varer 3 timer (21:00–00:00). Det kan bli litt sent for veldig små barn — vurder om timingen passer familien.',
             'Ta med ekstra klær til barna om det er vind på åpent dekk. Laivalla on katettuja sisätiloja lek barna er trygge inne.',
             'Bestill tidlig for å sikre at dere sitter samlet.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Slik bestiller du i siste liten',
           paragraphs: [
             'Send oss en melding på WhatsApp med dato (i dag) og antall gjester. Vi bekrefter tilgjengeligheten på sekunder.',
-            'Siste bestillingsfrist for kveldens cruise er kl. 19:30 (1 time før avgang kl. 20:30). Kom til Kabataș-kaia senest kl. 20:15.',
+            'Siste bestillingsfrist for kveldens cruise er kl. 20:00 (1 time før avgang kl. 21:00). Kom til Kabataș-kaia senest kl. 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Avgang fra Kabataș',
           paragraphs: [
-            'Alle cruiser avgår fra Kabataș-kaia. Porten åpner kl. 19:30, avgang kl. 20:30. Kom tidlig for best mulig plass.',
+            'Alle cruiser avgår fra Kabataș-kaia. Porten åpner kl. 20:00, avgang kl. 21:00. Kom tidlig for best mulig plass.',
           ],
         },
         {

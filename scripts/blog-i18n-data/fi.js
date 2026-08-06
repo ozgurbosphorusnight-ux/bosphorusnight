@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Käytännön vinkit',
           paragraphs: [
-            'Lähtö on Kabataşista klo 20:30 — suosittelemme saapumaan 15-20 minuuttia aiemmin. Portti avautuu klo 19:30.',
-            'Voit varata saman päivän risteilyn klo 19:30 asti. Varauksen voi peruuttaa ilmaiseksi 2 tuntia ennen lähtöä. Luottokorttia ei tarvita etukäteen — maksat laivalla.',
+            'Lähtö on Kabataşista klo 21:00 — suosittelemme saapumaan 15-20 minuuttia aiemmin. Portti avautuu klo 20:00.',
+            'Voit varata saman päivän risteilyn klo 20:00 asti. Varauksen voi peruuttaa ilmaiseksi 2 tuntia ennen lähtöä. Luottokorttia ei tarvita etukäteen — maksat laivalla.',
             'Ota mukaan ylimääräinen vaatekerrosta — avonaisella kannella voi olla viileää illalla, erityisesti keväällä ja syksyllä.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Käytännön tietoa',
           paragraphs: [
-            'Auringonlaskuristely sisältää täyden illallisen ja canlı esitykset, aivan kuten iltaristely. Lähtö klo 17:30, paluu n. klo 20:30.',
+            'Auringonlaskuristely sisältää täyden illallisen ja canlı esitykset, aivan kuten iltaristely. Lähtö klo 17:30, paluu n. klo 21:00.',
             'Varaa etukäteen — auringonlaskuristely on erittäin suosittu, erityisesti kesällä ja viikonloppuisin.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Vinkkejä perhematkalle',
           paragraphs: [
-            'Ristely kestää 3 tuntia (20:30–23:30). Se voi olla melko myöhään hyvin pienille lapsille — harkitse sopiiko aikataulu perheellesi.',
+            'Ristely kestää 3 tuntia (21:00–00:00). Se voi olla melko myöhään hyvin pienille lapsille — harkitse sopiiko aikataulu perheellesi.',
             'Ota lapsille ylimääräiset vaatteet jos avonaisella kannella on tuulista. Laivalla on katettuja sisätiloja jossa lapset ovat turvassa sisällä.',
             'Varaa etukäteen varmistaaksesi että istutte yhdessä.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Näin varaat viime hetkellä',
           paragraphs: [
             'Lähetä meille WhatsApp-viesti päivämäärällä (tänään) ja vierasmäärällä. Vahvistamme saatavuuden sekunneissa.',
-            'Viimeinen varausaika tämän illan risteilylle on klo 19:30 (1 tunti ennen lähtöä klo 20:30). Saavu Kabataşin laiturille viimeistään klo 20:15.',
+            'Viimeinen varausaika tämän illan risteilylle on klo 20:00 (1 tunti ennen lähtöä klo 21:00). Saavu Kabataşin laiturille viimeistään klo 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Lähtö Kabataşista',
           paragraphs: [
-            'Kaikki risteilyt lähtevät Kabataşin laiturista. Portti avautuu klo 19:30, lähtö klo 20:30. Tule ajoissa parhaita paikkoja varten.',
+            'Kaikki risteilyt lähtevät Kabataşin laiturista. Portti avautuu klo 20:00, lähtö klo 21:00. Tule ajoissa parhaita paikkoja varten.',
           ],
         },
         {

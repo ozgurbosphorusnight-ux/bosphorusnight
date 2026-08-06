@@ -29,7 +29,7 @@
 | **Alle Travel** | 52 Boğaz turu | €4'ten başlayan | Değişken |
 
 ### Rakiplerin Ortak Özellikleri
-- 3 saatlik tur süresi (20:00/20:30 - 23:00/23:30)
+- 3 saatlik tur süresi (20:00/21:00 - 23:00/00:00)
 - 3 çeşit yemek + sınırsız meşrubat
 - Türk gecesi şovu (halk dansları, oryantal, DJ)
 - 24 saat müşteri hizmeti

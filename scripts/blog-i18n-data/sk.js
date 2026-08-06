@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktické tipy',
           paragraphs: [
-            'Odchod je z Kabataşu o 20:30 — odporúčame prísť 15-20 minút skôr. Brána sa otvára o 19:30.',
-            'Rezervovať si môžete aj v ten istý deň do 19:30. Rezervácia sa dá bezplatne zrušiť do 2 hodín pred odchodom. Vopred sa nevyžaduje žiadna kreditná karta — platíte na palube.',
+            'Odchod je z Kabataşu o 21:00 — odporúčame prísť 15-20 minút skôr. Brána sa otvára o 20:00.',
+            'Rezervovať si môžete aj v ten istý deň do 20:00. Rezervácia sa dá bezplatne zrušiť do 2 hodín pred odchodom. Vopred sa nevyžaduje žiadna kreditná karta — platíte na palube.',
             'Vezmite si jednu vrstvu oblečenia navyše — na otvorenej palube môže byť večer chladno, najmä na jar a na jeseň.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktické informácie',
           paragraphs: [
-            'Plavba pri západe slnka zahŕňa plné menu a živý program, rovnako ako večerná plavba. Odchod o 17:30, návrat okolo 20:30.',
+            'Plavba pri západe slnka zahŕňa plné menu a živý program, rovnako ako večerná plavba. Odchod o 17:30, návrat okolo 21:00.',
             'Rezervujte si vopred — plavba pri západe slnka je veľmi obľúbená, najmä v lete a cez víkendy.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Tipy pre rodinnú plavbu',
           paragraphs: [
-            'Plavba trvá 3 hodiny (20:30–23:30). Pre veľmi malé deti to môže byť trochu neskoro — zvážte, či vám tento čas vyhovuje.',
+            'Plavba trvá 3 hodiny (21:00–00:00). Pre veľmi malé deti to môže byť trochu neskoro — zvážte, či vám tento čas vyhovuje.',
             'Vezmite deťom oblečenie navyše, ak na otvorenej palube fúka. Loď má kryté vnútorné priestory, kde sú deti v bezpečí.',
             'Rezervujte si vopred, aby ste si zabezpečili, že budete sedieť spolu.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Ako rezervovať na poslednú chvíľu',
           paragraphs: [
             'Pošlite nám správu na WhatsApp s dátumom (dnes) a počtom hostí. Dostupnosť potvrdíme v priebehu sekúnd.',
-            'Posledný termín na rezerváciu večernej plavby je 19:30 (1 hodina pred odchodom o 20:30). Na mólo v Kabataşi prídite najneskôr o 20:15.',
+            'Posledný termín na rezerváciu večernej plavby je 20:00 (1 hodina pred odchodom o 21:00). Na mólo v Kabataşi prídite najneskôr o 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Odchod z Kabataşu',
           paragraphs: [
-            'Všetky plavby odchádzajú z móla v Kabataşi. Brána sa otvára o 19:30, odchod o 20:30. Prídite včas pre najlepšie miesto.',
+            'Všetky plavby odchádzajú z móla v Kabataşi. Brána sa otvára o 20:00, odchod o 21:00. Prídite včas pre najlepšie miesto.',
           ],
         },
         {

@@ -10,7 +10,7 @@ module.exports = {
   'bosphorus-dinner-cruise': {
     meta: {
       title: 'Pelayaran Makan Malam Bosphorus dari €{p.dinnerStd} — Tur Malam Istanbul + Persembahan',
-      description: 'Pelayaran makan malam 3 jam di Bosphorus: menu Turki pelbagai hidangan dan persembahan folklor langsung. Bertolak 20:30 dari Kabataş.'
+      description: 'Pelayaran makan malam 3 jam di Bosphorus: menu Turki pelbagai hidangan dan persembahan folklor langsung. Bertolak 21:00 dari Kabataş.'
     },
     hero: {
       h1: 'Pelayaran Makan Malam Bosphorus di Istanbul',
@@ -18,7 +18,7 @@ module.exports = {
       badge: '4.8★ · 11,317 ulasan'
     },
     intro: [
-      '**Pelayaran makan malam Bosphorus** ialah pengalaman petang paling ikonik di Istanbul. Pelayaran kami bermula dari Jeti Kabataş pada jam 19:30, meluncur di bawah Jambatan Bosphorus dan Jambatan Fatih Sultan Mehmet yang diterangi, sambil menghidangkan jamuan Turki berbilang hidangan, tarian rakyat langsung, tarian oryantal dan set DJ yang menghidupkan dek sehingga 23:00.',
+      '**Pelayaran makan malam Bosphorus** ialah pengalaman petang paling ikonik di Istanbul. Pelayaran kami bermula dari Jeti Kabataş pada jam 20:00, meluncur di bawah Jambatan Bosphorus dan Jambatan Fatih Sultan Mehmet yang diterangi, sambil menghidangkan jamuan Turki berbilang hidangan, tarian rakyat langsung, tarian oryantal dan set DJ yang menghidupkan dek sehingga 23:00.',
       'Berbeza dengan bot pelancong biasa yang memenuhi pemandangan malam Istanbul, **pelayaran makan malam Bosphorus kami** berlesen TÜRSAB (A-17672) dan dinilai 4.8★ oleh lebih 11,317 pengembara. Kami mengekalkan kumpulan kecil dan perkhidmatan mesra — dan kerana anda membayar di atas bot, tiada sebarang risiko untuk membuat tempahan awal.',
       'Sama ada anda menyambut ulang tahun, mencari petang Istanbul premium untuk keluarga, atau menginginkan peralihan matahari terbenam ke malam yang paling fotogenik di bandar ini — inilah pelayaran makan malam yang pertama disyorkan oleh penduduk Istanbul.'
     ],
@@ -29,7 +29,7 @@ module.exports = {
       { title: 'Dari €{p.dinnerStd}/orang — bayar di atas bot', desc: 'Pelayaran makan malam €{p.dinnerStd} (asalnya €{p.dinnerStdOriginal}). Tiada bayaran pendahuluan. Pembatalan percuma sehingga 2 jam sebelum bertolak.' }
     ],
     faq: [
-      { q: 'Bilakah pelayaran makan malam Bosphorus bermula?', a: 'Pendaftaran masuk bermula di Jeti Kabataş pada jam 19:30. Bot bertolak pada jam 20:30 dan kembali sekitar 23:30. Kami cadangkan anda tiba 15-20 minit lebih awal untuk menetap di tempat duduk dan berehat.' },
+      { q: 'Bilakah pelayaran makan malam Bosphorus bermula?', a: 'Pendaftaran masuk bermula di Jeti Kabataş pada jam 20:00. Bot bertolak pada jam 21:00 dan kembali sekitar 00:00. Kami cadangkan anda tiba 15-20 minit lebih awal untuk menetap di tempat duduk dan berehat.' },
       { q: 'Berapakah kos pelayaran makan malam Bosphorus?', a: 'Pelayaran makan malam €{p.dinnerStd}/orang (harga biasa €{p.dinnerStdOriginal}). Umur 0-3 tahun percuma, 4-8 tahun diskaun 50%. Bayaran dibuat di atas bot — tiada bayaran pendahuluan.' },
       { q: 'Adakah alkohol termasuk dalam pelayaran makan malam?', a: 'Minuman ringan tanpa had (air, kola, jus buah) termasuk dalam harga. Pakej alkohol adalah pilihan: 2 gelas (wain, bir, rakı, vodka atau gin) +€{p.alcohol2}/orang. Minuman tambahan dan minuman diimport dikenakan harga berasingan di atas bot.' },
       { q: 'Adakah pemindahan hotel disediakan?', a: 'Ya — perkhidmatan ambil dan hantar +€{p.transfer}/orang. Kawasan perkhidmatan: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce dan Şişli. Anda boleh pilih dalam wizard tempahan.' },
@@ -134,13 +134,13 @@ module.exports = {
       { title: 'Menu 100% diperakui halal', desc: 'Semua daging (salmon, sea bass, ayam, köfte, daging lembu, ribeye) diperakui halal daripada pembekal yang diluluskan. Dapur mengikut penyediaan halal. Tiada produk babi atau bahan tambahan tidak halal. Pilihan vegetarian sentiasa tersedia.' },
       { title: 'Alkohol pilihan, tidak pernah dipaksa', desc: 'Pakej alkohol adalah tambahan — tidak termasuk secara lalai. Minuman ringan (air, kola, jus) tanpa had dan percuma. Meja anda kekal tanpa alkohol melainkan anda meminta secara jelas. Kakitangan menghormati pilihan anda secara diam-diam.' },
       { title: 'Hiburan mesra keluarga', desc: 'Persembahan sema, tarian rakyat Turki tradisional, muzik Turki langsung. Tiada persembahan gaya kelab malam, tiada kandungan tidak sesuai. Selamat untuk kanak-kanak, dihormati untuk keluarga. Tarian oryantal adalah bentuk seni tradisional, dipersembahkan dengan sopan.' },
-      { title: 'Hormat waktu solat', desc: 'Jika waktu Maghrib atau Isyak bertembung dengan masa pendaftaran masuk (19:30-20:30), kakitangan kami boleh menunjukkan kawasan solat yang senyap di Jeti Kabataş sebelum bertolak. Beritahu semasa tempahan sahaja.' }
+      { title: 'Hormat waktu solat', desc: 'Jika waktu Maghrib atau Isyak bertembung dengan masa pendaftaran masuk (20:00-21:00), kakitangan kami boleh menunjukkan kawasan solat yang senyap di Jeti Kabataş sebelum bertolak. Beritahu semasa tempahan sahaja.' }
     ],
     faq: [
       { q: 'Adakah pelayaran Bosphorus 100% halal?', a: 'Ya — setiap produk daging dalam menu (ikan, ayam, köfte, fillet daging lembu, ribeye, kambing) adalah diperakui halal daripada pembekal yang diluluskan. Dapur mengikut piawaian penyediaan halal. Tiada babi dihidangkan di mana-mana sahaja di atas bot. Ini bukan "pilihan halal" — keseluruhan menu adalah halal.' },
       { q: 'Adakah tetamu lain minum alkohol dalam pelayaran ini?', a: 'Sesetengah tetamu menambah pakej alkohol 2 gelas pilihan (+€{p.alcohol2}/orang). Meja secara semula jadi diasingkan — anda boleh meminta seksyen tanpa alkohol. Kakitangan tidak membawa alkohol melainkan dipesan khusus oleh seorang tetamu. Minuman ringan (tanpa had) termasuk untuk semua.' },
       { q: 'Adakah pelayaran ini sesuai untuk keluarga Muslim dengan kanak-kanak?', a: 'Ya — ia adalah salah satu pelayaran paling dihormati keluarga di Istanbul. Hiburan sopan (tarian rakyat, sema, muzik Turki), kanak-kanak di bawah 3 tahun percuma, 4-8 tahun diskaun 50%. Tiada suasana kelab malam. Keluarga dari rantau Teluk, Indonesia, Malaysia, Pakistan dan Maghribi kerap menempah pelayaran ini.' },
-      { q: 'Bolehkah saya bersolat di atas bot?', a: 'Tiada ruang solat khusus di atas bot, tetapi kami cadangkan bersolat sebelum pendaftaran masuk 19:30 (waktu Maghrib biasanya dalam tempoh ini). Jeti Kabataş mempunyai kemudahan solat. Jika anda perlu bersolat semasa pelayaran 20:30-23:30 (Isyak), bercakap dengan kakitangan — kami boleh sediakan sudut yang senyap di dek.' },
+      { q: 'Bolehkah saya bersolat di atas bot?', a: 'Tiada ruang solat khusus di atas bot, tetapi kami cadangkan bersolat sebelum pendaftaran masuk 20:00 (waktu Maghrib biasanya dalam tempoh ini). Jeti Kabataş mempunyai kemudahan solat. Jika anda perlu bersolat semasa pelayaran 21:00-00:00 (Isyak), bercakap dengan kakitangan — kami boleh sediakan sudut yang senyap di dek.' },
       { q: 'Berapakah harga untuk keluarga Muslim 4 orang (2 dewasa, 2 kanak-kanak)?', a: 'Pelayaran makan malam: 2 × €{p.dinnerStd} + 2 × €12.15 (4-8 tahun separuh harga) = €72.90. Jika kanak-kanak di bawah 3 tahun maka percuma: 2 × €{p.dinnerStd} = €48.60. Tambah €5 pemindahan hotel setiap dewasa. Jumlah: €48.60–€92.90 untuk keluarga 4 orang, tiada bayaran pendahuluan, bayar di atas bot.' },
       { q: 'Adakah pemindahan hotel juga halal?', a: 'Pemindahan hotel hanyalah perjalanan kereta — tiada makanan atau minuman terlibat, jadi tiada kebimbangan halal. Pemandu kami profesional, menghormati dan tepat pada masanya. Zon pemindahan merangkumi Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli dan 8 kawasan pusat lain yang biasa ditinggalkan oleh pengembara Muslim.' }
     ],
@@ -164,7 +164,7 @@ module.exports = {
     intro: [
       'Banyak bot di Bosphorus membahagikan tetamu kepada "Standard" dan "VIP". Kami tidak. Di atas **AMOR** hanya ada satu menu makan malam, disediakan dengan penjagaan yang sama untuk semua: 10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan anda (salmon, siakap, ayam atau köfte), kek ais krim, dan minuman ringan tanpa had. Program persembahan turut disertakan — upacara darwis berpusing, 5 tarian rakyat, tarian perut, muzik secara langsung dan DJ — semuanya dalam harga €{p.dinnerStd}/orang.',
       'Rasa VIP bermula di meja anda. Jika anda mahu sedekat mungkin dengan pentas dan pemandangan, tambah **meja peribadi dekat pentas** (+€{p.romantic}/meja) dan tempat anda ditempah lebih awal — sudut terbaik untuk menyaksikan darwis, tarian rakyat dan Bosphorus yang bercahaya. Pilihan kegemaran pasangan, sambutan istimewa dan peminat fotografi.',
-      'AMOR ialah bot moden sepanjang 42 meter, 3 dek, memuatkan sehingga 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Laluan 3 jam bertolak dari Kabataş (menaiki bot dari 19:30, bertolak 20:30, pulang 23:30) melalui Dolmabahçe, Masjid Ortaköy, Kubu Rumeli dan lampu Jambatan Bosphorus. Berlesen TÜRSAB (A-17672), 4.9★ di Google. Tiada bayaran pendahuluan — anda membayar di atas bot, dengan pembatalan percuma sehingga 2 jam sebelum bertolak.'
+      'AMOR ialah bot moden sepanjang 42 meter, 3 dek, memuatkan sehingga 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Laluan 3 jam bertolak dari Kabataş (menaiki bot dari 20:00, bertolak 21:00, pulang 00:00) melalui Dolmabahçe, Masjid Ortaköy, Kubu Rumeli dan lampu Jambatan Bosphorus. Berlesen TÜRSAB (A-17672), 4.9★ di Google. Tiada bayaran pendahuluan — anda membayar di atas bot, dengan pembatalan percuma sehingga 2 jam sebelum bertolak.'
     ],
     highlights: [
       { title: 'Satu menu, piawaian premium', desc: 'Tiada "menu VIP" berasingan — kerana satu-satunya menu kami memang sudah pada tahap itu. 10 jenis meze, pembuka selera panas, 4 pilihan hidangan utama, pencuci mulut dan minuman ringan tanpa had, dihidangkan dengan penjagaan yang sama ke setiap meja.' },
@@ -178,7 +178,7 @@ module.exports = {
       { q: 'Apa yang ada dalam menu?', a: '10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan (salmon, siakap, ayam atau köfte) dan kek ais krim sebagai pencuci mulut, dengan minuman ringan tanpa had. Program persembahan disertakan: upacara darwis, 5 tarian rakyat, tarian perut, muzik secara langsung dan DJ.' },
       { q: 'Adakah alkohol termasuk?', a: 'Tidak — alkohol ialah tambahan berasingan: 2 gelas wain atau bir tempatan pada +€{p.alcohol2}/orang. Minuman ringan tanpa had disertakan percuma. Minuman import premium dikira berasingan di atas bot.' },
       { q: 'Bagaimana memastikan meja dekat pentas?', a: 'Cukup pilih tambahan "meja peribadi dekat pentas" (+€{p.romantic}/meja) semasa menempah — meja akan ditempah atas nama anda. Kedudukan terbaik cepat penuh dengan tempahan awal, jadi sebaiknya ditambah sebelum hari pelayaran.' },
-      { q: 'Bot jenis apakah ini?', a: 'AMOR — bot penumpang moden sepanjang 42 meter, 3 dek, berkapasiti 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Bertolak dari Jeti Kabataş: menaiki bot 19:30, bertolak 20:30, pulang 23:30. Laluan: Dolmabahçe, Ortaköy, Kubu Rumeli, Beylerbeyi dan lampu Jambatan Bosphorus.' }
+      { q: 'Bot jenis apakah ini?', a: 'AMOR — bot penumpang moden sepanjang 42 meter, 3 dek, berkapasiti 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Bertolak dari Jeti Kabataş: menaiki bot 20:00, bertolak 21:00, pulang 00:00. Laluan: Dolmabahçe, Ortaköy, Kubu Rumeli, Beylerbeyi dan lampu Jambatan Bosphorus.' }
     ],
     cta: {
       primary: 'Tempah Meja Anda · Bayar di Atas Bot',
@@ -205,7 +205,7 @@ module.exports = {
     highlights: [
       { title: 'Seluruh bot, hanya untuk anda', desc: 'Tiada tetamu lain. Kumpulan anda memiliki setiap dek, setiap meja. Tetapkan muzik anda sendiri, kod pakaian, jadual. Privasi penting — kami hormatinya.' },
       { title: 'Menu dan pakej minuman tersuai', desc: 'Bekerjasama dengan cef kami untuk menyesuaikan menu: meze khusus, pilihan hidangan utama, hidangan khas untuk budaya atau keperluan diet anda. Pakej alkohol, gelas champagne, bar koktel tersuai semuanya boleh diatur.' },
-      { title: 'Tempoh dan waktu berlepas fleksibel', desc: '3 jam standard boleh dilanjutkan ke 4-5 jam. Pilih waktu siang 12:00, matahari terbenam 17:30, atau pelayaran malam 20:30. Mahu hari bekerja daripada hujung minggu? Tanya — kami akan bekerja dengan jadual anda.' },
+      { title: 'Tempoh dan waktu berlepas fleksibel', desc: '3 jam standard boleh dilanjutkan ke 4-5 jam. Pilih waktu siang 12:00, matahari terbenam 17:30, atau pelayaran malam 21:00. Mahu hari bekerja daripada hujung minggu? Tanya — kami akan bekerja dengan jadual anda.' },
       { title: 'Hiasan khas, kumpulan muzik, penjadualan', desc: 'Hiasan khas (belon, sepanduk, susunan bunga), kumpulan muzik langsung menggantikan DJ, hidangan kek perkahwinan, penyelarasan jurugambar, ucapan — tambah apa sahaja yang acara anda perlukan. Kami bukan sahaja pengendali bot, kami perancang acara.' }
     ],
     faq: [
@@ -249,7 +249,7 @@ module.exports = {
       { q: 'Berapakah kos pelayaran Bosphorus untuk 2 orang?', a: 'Pelayaran makan malam untuk 2 orang: 2 × €{p.dinnerStd} = €48.60. Tambah pemindahan hotel untuk dua orang: +€{p.transfer}×2 = €10. Tambah pakej alkohol 2 gelas untuk dua orang: +€{p.alcohol2}×2 = €20. Tiada bayaran pendahuluan — bayar di atas bot.' },
       { q: 'Bolehkah pasangan bawa wain atau champagne sendiri?', a: 'Kami tidak membenarkan alkohol luar (sebab lesen operasi). Tetapi kami ada pakej alkohol 2 gelas dengan wain tempatan (+€{p.alcohol2}/orang) dan boleh mengatur wain premium diimport atau champagne dengan bayaran — tanya semasa tempahan. Prosecco, Chianti dan Cabernet adalah permintaan premium yang popular.' },
       { q: 'Adakah tidak apa-apa jika kami tidak minum alkohol — adakah kami pelik?', a: 'Tidak sama sekali — ramai pasangan melangkau alkohol sepenuhnya, sama ada kerana sebab halal atau sekadar pilihan. Minuman ringan tanpa had (air, jus, kola) termasuk. Tiada siapa akan pandang dua kali jika meja anda tanpa alkohol. Ramai pasangan Muslim dari Arab Saudi, Iran dan Indonesia menempah pelayaran ini.' },
-      { q: 'Bilakah masa terbaik untuk pelayaran Bosphorus pasangan — matahari terbenam atau malam?', a: 'Pelayaran bertolak 20:30 setiap malam — dan pada musim panas (Mei–Ogos) satu pelayaran itu merangkumi kedua-duanya: menaiki bot dari 19:30 semasa waktu keemasan, matahari terbenam tepat sekitar waktu bertolak, kemudian jambatan yang diterangi dan istana yang bercahaya. Pada musim sejuk, ia adalah pelayaran lampu malam sepenuhnya. Apa pun, satu tempahan memberi pasangan versi Bosphorus yang paling ikonik.' },
+      { q: 'Bilakah masa terbaik untuk pelayaran Bosphorus pasangan — matahari terbenam atau malam?', a: 'Pelayaran bertolak 21:00 setiap malam — dan pada musim panas (Mei–Ogos) satu pelayaran itu merangkumi kedua-duanya: menaiki bot dari 20:00 semasa waktu keemasan, matahari terbenam tepat sekitar waktu bertolak, kemudian jambatan yang diterangi dan istana yang bercahaya. Pada musim sejuk, ia adalah pelayaran lampu malam sepenuhnya. Apa pun, satu tempahan memberi pasangan versi Bosphorus yang paling ikonik.' },
       { q: 'Adakah terdapat lantai tarian — bolehkah kami menari?', a: 'Ya — selepas hidangan makan malam (~22:30), DJ bermula dan dek terbuka menjadi kawasan tarian. Ramai pasangan menari lagu perlahan di bawah cahaya dengan Jambatan Bosphorus di latar belakang. Beberapa foto terbaik yang anda akan ambil di Istanbul.' }
     ],
     cta: {
@@ -262,37 +262,37 @@ module.exports = {
   'bosphorus-sunset-cruise': {
     meta: {
       title: 'Pelayaran Matahari Terbenam & Makan Malam Bosphorus dari €{p.dinnerStd}',
-      description: 'Saksikan matahari terbenam Bosphorus, kemudian nikmati makan malam di bawah jambatan yang diterangi. Naik 19:30 di Kabataş, bertolak 20:30. 3 jam, makan malam penuh. Bayar di atas bot.'
+      description: 'Saksikan matahari terbenam Bosphorus, kemudian nikmati makan malam di bawah jambatan yang diterangi. Naik 20:00 di Kabataş, bertolak 21:00. 3 jam, makan malam penuh. Bayar di atas bot.'
     },
     hero: {
       h1: 'Pelayaran Matahari Terbenam & Makan Malam Bosphorus',
-      subtitle: 'Naik pada 19:30 ketika langit bertukar keemasan di atas menara-menara masjid — kemudian makan malam di atas air sambil Dolmabahçe, Masjid Ortaköy dan Jambatan Bosphorus menyala untuk malam.',
-      badge: 'Naik 19:30 · Bertolak 20:30 · Matahari Terbenam hingga Lampu Bandar'
+      subtitle: 'Naik pada 20:00 ketika langit bertukar keemasan di atas menara-menara masjid — kemudian makan malam di atas air sambil Dolmabahçe, Masjid Ortaköy dan Jambatan Bosphorus menyala untuk malam.',
+      badge: 'Naik 20:00 · Bertolak 21:00 · Matahari Terbenam hingga Lampu Bandar'
     },
     intro: [
-      'Pengalaman **pelayaran matahari terbenam Bosphorus** di Istanbul adalah tentang satu perkara: peralihan. Pelayaran kami menerima tetamu di Jeti Kabataş dari jam 19:30 — dan pada petang yang panjang dari Mei hingga Ogos, waktu keemasan berlangsung sementara anda menetap di dek. Matahari terbenam di sebalik menara-menara tepi Eropah tepat sekitar waktu bertolak 20:30, jadi anda menyaksikannya dari air: Istana Dolmabahçe bermandikan cahaya emas, Masjid Ortaköy bersiluet di langit yang bercahaya.',
+      'Pengalaman **pelayaran matahari terbenam Bosphorus** di Istanbul adalah tentang satu perkara: peralihan. Pelayaran kami menerima tetamu di Jeti Kabataş dari jam 20:00 — dan pada petang yang panjang dari Mei hingga Ogos, waktu keemasan berlangsung sementara anda menetap di dek. Matahari terbenam di sebalik menara-menara tepi Eropah tepat sekitar waktu bertolak 21:00, jadi anda menyaksikannya dari air: Istana Dolmabahçe bermandikan cahaya emas, Masjid Ortaköy bersiluet di langit yang bercahaya.',
       '**Pelayaran Bosphorus dari senja ke malam** kami merangkumi makan malam Turki lengkap — 10 jenis meze, pembuka selera panas, pilihan hidangan utama, pencuci mulut — dihidangkan ketika bandar menyalakan lampunya. Menjelang pencuci mulut tiba, anda sedang belayar di bawah Jambatan Bosphorus yang diterangi, dengan 30 juta lampu terpantul di atas air gelap. Peralihan dari senja ke malam sepenuhnya, semuanya dalam satu pelayaran 3 jam — itulah intipatinya.',
       'Sama ada anda seorang jurugambar yang mengejar cahaya terakhir, pasangan yang mahukan "foto kenangan Istanbul" itu, atau pengunjung kali pertama yang inginkan petang klasik di atas air — inilah **pelayaran makan malam matahari terbenam Bosphorus** yang disyorkan penduduk tempatan kepada pelawat. Dari €{p.dinnerStd}/orang, dinilai 4.8★, berlesen TÜRSAB, bayar di atas bot — tiada bayaran pendahuluan.'
     ],
     highlights: [
-      { title: 'Matahari terbenam musim panas tepat waktu bertolak', desc: 'Dari Mei hingga Ogos, matahari Istanbul terbenam antara kira-kira 20:15 dan 20:45 — naik pada 19:30 memberi anda waktu keemasan di dek, dan waktu bertolak 20:30 meletakkan anda di atas air tepat untuk matahari terbenam itu sendiri. Kamera sedia — inilah gambarnya.' },
+      { title: 'Matahari terbenam musim panas tepat waktu bertolak', desc: 'Dari Mei hingga Ogos, matahari Istanbul terbenam antara kira-kira 20:15 dan 20:45 — naik pada 20:00 memberi anda waktu keemasan di dek, dan waktu bertolak 21:00 meletakkan anda di atas air tepat untuk matahari terbenam itu sendiri. Kamera sedia — inilah gambarnya.' },
       { title: 'Waktu biru hingga malam sepenuhnya', desc: 'Bukan sekadar matahari terbenam — pelayaran belayar melalui waktu senja hingga ke Bosphorus yang diterangi sepenuhnya. Cahaya keemasan, waktu biru, kemudian 30 juta lampu jambatan di atas air gelap: tiga fasa cahaya dalam satu petang.' },
       { title: 'Makan malam lengkap semasa pelayaran', desc: '10 jenis meze Turki, pembuka selera panas, hidangan utama (salmon, ikan siakap, ayam, köfte, vegetarian), kek aiskrim, minuman ringan tanpa had — dihidangkan ketika lampu bandar mula menyala.' },
       { title: 'Dolmabahçe, Ortaköy, Jambatan Bosphorus — semua bercahaya', desc: 'Laluan melalui Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus, Rumeli Hisarı dan Istana Beylerbeyi ketika lampu mereka mula menyala. Setiap mercu tanda dalam cahaya terbaiknya.' }
     ],
     faq: [
-      { q: 'Pukul berapakah pelayaran matahari terbenam Bosphorus bertolak?', a: 'Pendaftaran masuk bermula pada 19:30 di Jeti Kabataş, bot bertolak pada 20:30 dan kembali sekitar 23:30. Pada musim panas (Mei–Ogos) matahari terbenam antara kira-kira 20:15 dan 20:45 — waktu keemasan berlangsung semasa anda menaiki bot, dan matahari terbenam itu sendiri berlaku tepat sekitar waktu bertolak, disaksikan dari air.' },
-      { q: 'Adakah pelayaran matahari terbenam Bosphorus sama dengan pelayaran makan malam?', a: 'Ya — ia satu pelayaran yang sama. Terdapat satu pelayaran harian tunggal pada 20:30 dengan makan malam penuh dan persembahan langsung di atas bot. Pada petang musim panas yang panjang, ia turut menjadi pelayaran matahari terbenam: anda naik semasa waktu keemasan dan belayar melalui waktu biru hingga ke malam yang diterangi. Pada musim sejuk, pelayaran yang sama menjadi pengalaman lampu malam sepenuhnya.' },
+      { q: 'Pukul berapakah pelayaran matahari terbenam Bosphorus bertolak?', a: 'Pendaftaran masuk bermula pada 20:00 di Jeti Kabataş, bot bertolak pada 21:00 dan kembali sekitar 00:00. Pada musim panas (Mei–Ogos) matahari terbenam antara kira-kira 20:15 dan 20:45 — waktu keemasan berlangsung semasa anda menaiki bot, dan matahari terbenam itu sendiri berlaku tepat sekitar waktu bertolak, disaksikan dari air.' },
+      { q: 'Adakah pelayaran matahari terbenam Bosphorus sama dengan pelayaran makan malam?', a: 'Ya — ia satu pelayaran yang sama. Terdapat satu pelayaran harian tunggal pada 21:00 dengan makan malam penuh dan persembahan langsung di atas bot. Pada petang musim panas yang panjang, ia turut menjadi pelayaran matahari terbenam: anda naik semasa waktu keemasan dan belayar melalui waktu biru hingga ke malam yang diterangi. Pada musim sejuk, pelayaran yang sama menjadi pengalaman lampu malam sepenuhnya.' },
       { q: 'Berapakah harga pelayaran matahari terbenam Bosphorus?', a: 'Dari €{p.dinnerStd}/orang untuk pelayaran (3 jam, makan malam penuh, hiburan langsung). Bayar di atas bot — tiada bayaran pendahuluan. Kanak-kanak 0-3 percuma, 4-8 separuh harga.' },
-      { q: 'Bilakah waktu terbaik dalam setahun untuk pelayaran matahari terbenam Bosphorus?', a: 'Mei hingga Ogos. Matahari terbenam lewat di Istanbul (20:15–20:45) bertepatan dengan waktu bertolak 20:30, jadi anda mendapat waktu keemasan, matahari terbenam dan jambatan yang diterangi dalam satu petang. Pada musim luruh dan musim sejuk matahari terbenam lebih awal, dan pelayaran yang sama menjadi pengalaman lampu malam sepenuhnya — sama fotogenik, suasana berbeza.' },
+      { q: 'Bilakah waktu terbaik dalam setahun untuk pelayaran matahari terbenam Bosphorus?', a: 'Mei hingga Ogos. Matahari terbenam lewat di Istanbul (20:15–20:45) bertepatan dengan waktu bertolak 21:00, jadi anda mendapat waktu keemasan, matahari terbenam dan jambatan yang diterangi dalam satu petang. Pada musim luruh dan musim sejuk matahari terbenam lebih awal, dan pelayaran yang sama menjadi pengalaman lampu malam sepenuhnya — sama fotogenik, suasana berbeza.' },
       { q: 'Apa yang perlu saya bawa untuk pelayaran matahari terbenam?', a: 'Telefon pintar atau kamera — waktu keemasan dan jambatan yang bercahaya memang menuntutnya. Jaket nipis: angin bertiup lebih kencang di dek selepas matahari terbenam. Pakaian smart-casual — anda makan malam, tetapi tiada kod pakaian ketat.' },
-      { q: 'Adakah saya dapat melihat jambatan yang diterangi pada waktu malam dalam pelayaran ini?', a: 'Ya — itulah separuh kedua petang anda. Pelayaran berlangsung 20:30–23:30, jadi selepas matahari terbenam dan waktu biru anda belayar di bawah Jambatan Bosphorus yang diterangi sepenuhnya, melepasi istana-istana bercahaya dan Menara Maiden, dan kembali ke Kabataş sekitar 23:30.' },
-      { q: 'Pukul berapakah matahari terbenam di Istanbul?', a: 'Pada musim panas (Jun–Julai), matahari terbenam di Istanbul sekitar 20:30–20:45. Pada musim sejuk, sekitar 16:30–17:00. Untuk pengalaman matahari terbenam dan malam, pelayaran makan malam 20:30 Bosphorus Night dari Kabataş menangkap waktu keemasan lewat dan waktu biru pada musim panas, serta mercu tanda yang diterangi sepanjang tahun.' },
-      { q: 'Adakah pelayaran matahari terbenam Bosphorus berbaloi?', a: 'Ya — matahari terbenam di atas Jambatan Bosphorus adalah salah satu pemandangan paling ikonik Istanbul. Pelayaran makan malam 20:30 Bosphorus Night (€{p.dinnerStd}/orang) menangkap waktu biru selepas matahari terbenam serta istana-istana yang diterangi, dengan makan malam penuh dan persembahan langsung selama 3 jam.' }
+      { q: 'Adakah saya dapat melihat jambatan yang diterangi pada waktu malam dalam pelayaran ini?', a: 'Ya — itulah separuh kedua petang anda. Pelayaran berlangsung 21:00–00:00, jadi selepas matahari terbenam dan waktu biru anda belayar di bawah Jambatan Bosphorus yang diterangi sepenuhnya, melepasi istana-istana bercahaya dan Menara Maiden, dan kembali ke Kabataş sekitar 00:00.' },
+      { q: 'Pukul berapakah matahari terbenam di Istanbul?', a: 'Pada musim panas (Jun–Julai), matahari terbenam di Istanbul sekitar 21:00–20:45. Pada musim sejuk, sekitar 16:30–17:00. Untuk pengalaman matahari terbenam dan malam, pelayaran makan malam 21:00 Bosphorus Night dari Kabataş menangkap waktu keemasan lewat dan waktu biru pada musim panas, serta mercu tanda yang diterangi sepanjang tahun.' },
+      { q: 'Adakah pelayaran matahari terbenam Bosphorus berbaloi?', a: 'Ya — matahari terbenam di atas Jambatan Bosphorus adalah salah satu pemandangan paling ikonik Istanbul. Pelayaran makan malam 21:00 Bosphorus Night (€{p.dinnerStd}/orang) menangkap waktu biru selepas matahari terbenam serta istana-istana yang diterangi, dengan makan malam penuh dan persembahan langsung selama 3 jam.' }
     ],
     cta: {
       primary: 'Tempah Pelayaran Matahari Terbenam · Bayar di Atas Bot',
-      secondary: 'Naik 19:30 · Bertolak 20:30 · Makan malam termasuk · Pembatalan percuma 2 jam sebelum',
+      secondary: 'Naik 20:00 · Bertolak 21:00 · Makan malam termasuk · Pembatalan percuma 2 jam sebelum',
       tertiary: 'Lihat Butiran Penuh Pelayaran Makan Malam'
     }
   },
@@ -300,7 +300,7 @@ module.exports = {
   'bosphorus-night-tour': {
     meta: {
       title: 'Tur Malam Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Persembahan',
-      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 20:30 dari Kabataş, jambatan bercahaya. Pembatalan percuma, bayar di kapal.'
+      description: 'Tur malam 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş, jambatan bercahaya. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Malam Bosphorus',
@@ -309,26 +309,26 @@ module.exports = {
     },
     intro: [
       '**Pelayaran malam Bosphorus** ialah aktiviti petang paling disyorkan di Istanbul. Inilah sebabnya: selepas gelap, Bosphorus berubah. Jambatan Bosphorus bertukar antara biru, ungu dan emas. Istana Dolmabahçe bercahaya kuning hangat. Masjid Ortaköy dipantulkan dengan sempurna ke dalam air hitam. Setiap mercu tanda Istanbul mencapai drama puncak pada waktu malam.',
-      '**Pelayaran malam makan malam Bosphorus kami** mengemaskan petang ikonik lengkap: 3 jam di atas air (20:30-23:30), jamuan Turki berbilang hidangan, tarian rakyat langsung (sema, 5 tarian rakyat, tarian oryantal), muzik langsung, dan set DJ yang menghidupkan dek sehingga akhir malam. Setiap tetamu mendapat program yang sama — tiada pilihan "asas" yang melangkau bahagian terbaik.',
+      '**Pelayaran malam makan malam Bosphorus kami** mengemaskan petang ikonik lengkap: 3 jam di atas air (21:00-00:00), jamuan Turki berbilang hidangan, tarian rakyat langsung (sema, 5 tarian rakyat, tarian oryantal), muzik langsung, dan set DJ yang menghidupkan dek sehingga akhir malam. Setiap tetamu mendapat program yang sama — tiada pilihan "asas" yang melangkau bahagian terbaik.',
       'Sama ada ini adalah perjalanan pertama anda ke Istanbul dan anda mencari "satu perkara yang perlu dilakukan pada waktu malam", atau anda pernah ke sini sebelum ini dan anda mahukan 3 jam paling fotogenik di bandar — inilah **pelayaran malam Bosphorus** dinilai 4.8★ oleh 11,317+ pengembara. Berlesen TÜRSAB, bayar di atas bot, tiada bayaran pendahuluan.'
     ],
     highlights: [
-      { title: 'Bosphorus diterangi pada drama puncak', desc: 'Jambatan Bosphorus bertukar warna (biru, ungu, emas), istana bercahaya kuning, Masjid Ortaköy dipantulkan ke dalam air hitam. 20:30-23:30 pencahayaan puncak untuk semua mercu tanda Istanbul.' },
+      { title: 'Bosphorus diterangi pada drama puncak', desc: 'Jambatan Bosphorus bertukar warna (biru, ungu, emas), istana bercahaya kuning, Masjid Ortaköy dipantulkan ke dalam air hitam. 21:00-00:00 pencahayaan puncak untuk semua mercu tanda Istanbul.' },
       { title: 'Persembahan Turki tradisional di atas bot', desc: 'Persembahan sema, 5 tarian rakyat tradisional (dari pelbagai wilayah Turki), tarian oryantal, muzik Turki langsung, kemudian set DJ. Persembahan 40 minit, kemudian muzik + makan malam berterusan.' },
       { title: 'Hidangan lengkap berbilang hidangan', desc: '10 jenis meze Turki, pembuka selera panas (paçanga böreği), hidangan utama (salmon, sea bass, ayam, köfte, vegetarian — pilihan anda), pencuci mulut (kek aiskrim), minuman ringan tanpa had. Diperakui halal.' },
       { title: 'Laluan Bosphorus penuh', desc: 'Kabataş → Dolmabahçe → Istana Çırağan → Masjid Ortaköy → Bebek → Rumeli Hisarı → Jambatan Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Menara Maiden → Kabataş.' }
     ],
     faq: [
-      { q: 'Bilakah pelayaran malam Bosphorus?', a: 'Pendaftaran masuk dari 19:30 di Jeti Kabataş. Bot bertolak pada 20:30, kembali sekitar 23:30. Kami cadangkan tiba 20 minit awal untuk menetap dan memilih tempat duduk.' },
+      { q: 'Bilakah pelayaran malam Bosphorus?', a: 'Pendaftaran masuk dari 20:00 di Jeti Kabataş. Bot bertolak pada 21:00, kembali sekitar 00:00. Kami cadangkan tiba 20 minit awal untuk menetap dan memilih tempat duduk.' },
       { q: 'Berapakah harga pelayaran malam Bosphorus?', a: 'Pelayaran malam (3 jam, makan malam, persembahan): €{p.dinnerStd}/orang (asalnya €{p.dinnerStdOriginal}). Umur 0-3 percuma, 4-8 separuh harga. Bayar di atas bot.' },
       { q: 'Apakah perbezaan antara pelayaran malam Bosphorus dan pelayaran makan malam?', a: 'Perkara yang sama, kata kunci berbeza. "Pelayaran malam Bosphorus" adalah cara kebanyakan pengembara mencari; "pelayaran makan malam" adalah istilah industri. Bot yang sama, jadual 3 jam yang sama, menu yang sama, persembahan yang sama. Pilih istilah carian mana-mana yang anda suka — pengalamannya sama.' },
-      { q: 'Adakah pelayaran malam Bosphorus berbaloi berbanding pelayaran matahari terbenam?', a: 'Pelayaran malam = Istanbul diterangi, drama cahaya puncak, program hiburan penuh, foto paling ikonik jambatan yang diterangi. Dan ia hanya satu pelayaran: pada musim panas (Mei–Ogos), menaiki bot dari 19:30 menangkap waktu keemasan dan matahari terbenam tepat sekitar waktu bertolak 20:30 — jadi petang yang sama merangkumi matahari terbenam dan malam. Tidak perlu memilih atau menempah dua kali.' },
+      { q: 'Adakah pelayaran malam Bosphorus berbaloi berbanding pelayaran matahari terbenam?', a: 'Pelayaran malam = Istanbul diterangi, drama cahaya puncak, program hiburan penuh, foto paling ikonik jambatan yang diterangi. Dan ia hanya satu pelayaran: pada musim panas (Mei–Ogos), menaiki bot dari 20:00 menangkap waktu keemasan dan matahari terbenam tepat sekitar waktu bertolak 21:00 — jadi petang yang sama merangkumi matahari terbenam dan malam. Tidak perlu memilih atau menempah dua kali.' },
       { q: 'Bolehkah saya melakukan pelayaran malam Bosphorus pada hari pertama saya di Istanbul?', a: 'Ya — kami mencadangkannya. Ramai pengembara menempah pelayaran malam untuk petang pertama mereka kerana ia memberi anda orientasi lengkap: semua mercu tanda utama dari air, makan malam dan hiburan yang baik. Lebih mudah pada jet lag berbanding cuba bersiar-siar pada hari 1. Pemindahan hotel tersedia dari kawasan pusat.' },
       { q: 'Saya tidak tahu bahasa Turki — adakah pelayaran dalam bahasa Inggeris?', a: 'Kakitangan berbahasa Inggeris. Hiburan (sema, tarian rakyat, muzik) tidak memerlukan bahasa. Menu makan malam dalam bahasa Inggeris. Tempahan melalui WhatsApp / Telegram berfungsi dalam pelbagai bahasa (Inggeris, Arab, Rusia, Jerman, Perancis, Sepanyol). Tiada keperluan untuk bahasa Turki.' }
     ],
     cta: {
       primary: 'Tempah Pelayaran Malam · Bayar di Atas Bot',
-      secondary: 'Bertolak 20:30 · 3 jam · Makan malam + persembahan termasuk · Pembatalan percuma 2 jam sebelum',
+      secondary: 'Bertolak 21:00 · 3 jam · Makan malam + persembahan termasuk · Pembatalan percuma 2 jam sebelum',
       tertiary: 'Kekosongan Malam Ini'
     }
   },
@@ -344,8 +344,8 @@ module.exports = {
       badge: '4.8★ · 11,317 ulasan · TÜRSAB A-17672'
     },
     intro: [
-      'Mencari **pelayaran makan malam di Istanbul**? Anda menemui apa yang disyorkan oleh kebanyakan pengembara. Petang 3 jam kami di Bosphorus menggabungkan makan malam Turki berbilang hidangan penuh, tarian rakyat langsung dan pemandangan paling fotogenik bandar ini — semua dari bot yang selesa yang bertolak dari Jeti Kabataş pada 20:30.',
-      'Pengalaman **pelayaran makan malam Istanbul**: naik pada 19:30, menetap, saksikan Istana Dolmabahçe berlalu semasa kami bertolak, makan malam bermula semasa kami menghampiri Masjid Ortaköy, persembahan bermula (sema, tarian rakyat, oryantal), pencuci mulut tiba semasa anda berada di bawah Jambatan Bosphorus yang diterangi. Anda kembali ke Kabataş dengan kolaj foto ikonik dan perut yang penuh menjelang tengah malam.',
+      'Mencari **pelayaran makan malam di Istanbul**? Anda menemui apa yang disyorkan oleh kebanyakan pengembara. Petang 3 jam kami di Bosphorus menggabungkan makan malam Turki berbilang hidangan penuh, tarian rakyat langsung dan pemandangan paling fotogenik bandar ini — semua dari bot yang selesa yang bertolak dari Jeti Kabataş pada 21:00.',
+      'Pengalaman **pelayaran makan malam Istanbul**: naik pada 20:00, menetap, saksikan Istana Dolmabahçe berlalu semasa kami bertolak, makan malam bermula semasa kami menghampiri Masjid Ortaköy, persembahan bermula (sema, tarian rakyat, oryantal), pencuci mulut tiba semasa anda berada di bawah Jambatan Bosphorus yang diterangi. Anda kembali ke Kabataş dengan kolaj foto ikonik dan perut yang penuh menjelang tengah malam.',
       'Dari €{p.dinnerStd}/orang (asalnya €{p.dinnerStdOriginal}) untuk pelayaran makan malam. Bayar di atas bot — tiada bayaran pendahuluan, tiada risiko. Berlesen TÜRSAB A-17672, dinilai 4.8★ oleh 11,317+ pengembara.'
     ],
     highlights: [
@@ -358,7 +358,7 @@ module.exports = {
       { q: 'Berapakah kos pelayaran makan malam di Istanbul?', a: 'Pelayaran makan malam kami €{p.dinnerStd}/orang (harga biasa €{p.dinnerStdOriginal}). Umur 0-3 percuma, 4-8 diskaun 50%. Bayar di atas bot — tiada bayaran pendahuluan.' },
       { q: 'Apa yang termasuk dalam harga pelayaran makan malam Istanbul?', a: 'Pelayaran 3 jam di Bosphorus, makan malam Turki berbilang hidangan (meze, pembuka selera panas, hidangan utama, pencuci mulut), minuman ringan tanpa had, persembahan tarian rakyat langsung (sema, tarian rakyat, oryantal), muzik langsung + DJ, akses dek terbuka, cukai termasuk. Pemindahan hotel dan alkohol adalah tambahan pilihan.' },
       { q: 'Dari manakah pelayaran makan malam Istanbul bertolak?', a: 'Jeti Kabataş, Istanbul — di tepi Eropah, bersebelahan Istana Dolmabahçe. Lokasi pertemuan tepat dikongsi melalui WhatsApp / Telegram selepas tempahan. Video arah berjalan dari perhentian trem Dolmabahçe dan stesen trem Kabataş di bahagian titik pertemuan di atas.' },
-      { q: 'Berapa lamakah pelayaran makan malam — dan bila ia bermula?', a: '3 jam secara keseluruhan. Pendaftaran masuk dari 19:30, bot bertolak sepenuhnya pada 20:30, kembali sekitar 23:30. Kami cadangkan tiba 15-20 minit awal untuk menetap dan memilih tempat duduk.' },
+      { q: 'Berapa lamakah pelayaran makan malam — dan bila ia bermula?', a: '3 jam secara keseluruhan. Pendaftaran masuk dari 20:00, bot bertolak sepenuhnya pada 21:00, kembali sekitar 00:00. Kami cadangkan tiba 15-20 minit awal untuk menetap dan memilih tempat duduk.' },
       { q: 'Perlukah saya menempah awal, atau bolehkah saya hadir sahaja?', a: 'Tempah awal — tempat duduk terisi, terutamanya hujung minggu dan cuti. Tempahan hari yang sama selalunya boleh tetapi tidak dijamin. Wizard di halaman ini mengekalkan tempat anda dalam masa kurang 1 minit. Bayar di atas bot, jadi tiada risiko kewangan untuk menempah awal.' },
       { q: 'Adakah pelayaran makan malam Istanbul sesuai untuk vegetarian / halal / sekatan diet?', a: 'Ya — semua daging diperakui halal. Hidangan utama vegetarian (falafel, kentang panggang, pilaf bulgur, rebusan sayur, gelang bawang) tersedia tanpa bayaran tambahan. Alahan boleh diuruskan jika dimaklumkan semasa tempahan. Alkohol adalah tambahan pilihan, tidak pernah dipaksa.' }
     ],
@@ -372,7 +372,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tur Malam Istanbul dari €{p.dinnerStd} — Pelayaran Bosphorus + Persembahan',
-      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 20:30 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
+      description: 'Pelayaran 3 jam Bosphorus dengan makan malam dan persembahan langsung. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
     },
     hero: {
       h1: 'Pelayaran Malam Istanbul',
@@ -394,7 +394,7 @@ module.exports = {
       { q: 'Apakah pelayaran malam terbaik di Istanbul?', a: 'Pelayaran makan malam Bosphorus secara konsisten disenaraikan sebagai #1. Sebab: (1) ia memberi anda semua pemandangan malam ikonik dari air, (2) ia merangkumi makan malam dan persembahan dalam satu pakej, (3) 3 jam cukup untuk melihat banyak tanpa keletihan, (4) titik pertemuan pusat, (5) bayar di atas bot mengurangkan geseran tempahan. Kebanyakan panduan perjalanan Istanbul mengesyorkannya sebagai "satu perkara malam yang mesti dilakukan".' },
       { q: 'Berapakah harga pelayaran malam Istanbul?', a: 'Pelayaran malam makan malam Bosphorus kami: €{p.dinnerStd}/orang. Termasuk pelayaran, makan malam, hiburan, minuman ringan. Pilihan: 2 gelas alkohol +€{p.alcohol2}/orang, pemindahan hotel +€{p.transfer}/orang. Bayar di atas bot — tiada bayaran pendahuluan.' },
       { q: 'Adakah pelayaran malam Istanbul selamat untuk pengembara solo?', a: 'Ya — sangat selamat. Bot berlesen TÜRSAB, kakitangan profesional berbahasa Inggeris, CCTV di dek, jaket keselamatan tersedia. Ramai pengembara solo menempah pelayaran ini. Anda makan di meja dikongsi atau peribadi (pilihan anda) dan petang bersifat merangkumi — anda berkenalan dengan pengembara lain jika mahu, atau kekal sendiri.' },
-      { q: 'Bilakah masa terbaik untuk pelayaran malam di Istanbul?', a: 'Pelayaran makan malam Bosphorus kami ialah 20:30-23:30 (3 jam). Ini adalah masa pencahayaan puncak untuk semua mercu tanda Istanbul — jambatan diterangi penuh, istana bercahaya, bulan di atas air. Jika anda juga mahu waktu keemasan, datanglah pada musim panas: menaiki bot bermula 19:30, dan pada Mei–Ogos matahari terbenam tepat sekitar waktu bertolak 20:30 — pelayaran yang sama merangkumi kedua-duanya.' },
+      { q: 'Bilakah masa terbaik untuk pelayaran malam di Istanbul?', a: 'Pelayaran makan malam Bosphorus kami ialah 21:00-00:00 (3 jam). Ini adalah masa pencahayaan puncak untuk semua mercu tanda Istanbul — jambatan diterangi penuh, istana bercahaya, bulan di atas air. Jika anda juga mahu waktu keemasan, datanglah pada musim panas: menaiki bot bermula 20:00, dan pada Mei–Ogos matahari terbenam tepat sekitar waktu bertolak 21:00 — pelayaran yang sama merangkumi kedua-duanya.' },
       { q: 'Bagaimana saya sampai ke titik pertemuan pelayaran malam Istanbul?', a: 'Titik pertemuan ialah Jeti Kabataş (pusat Eropah, bersebelahan Istana Dolmabahçe). Dengan trem: T1 ke stesen Kabataş (hujung talian). Dengan teksi: ~15 min dari Taksim. Berjalan: 20 min menuruni Jalan İnönü dari Taksim. Halaman ini mempunyai video arah berjalan. Pemindahan hotel tersedia +€{p.transfer}/orang jika anda mahu.' },
       { q: 'Bolehkah saya menempah pelayaran malam Istanbul hari yang sama?', a: 'Selalunya ya, terutamanya hari bekerja. Hujung minggu penuh dengan lebih cepat. Wizard tempahan di halaman ini membolehkan anda menyemak kekosongan untuk malam ini dan menempah dalam masa kurang 1 minit. Untuk permintaan hari yang sama segera, hantar mesej WhatsApp di +90 532 244 29 22.' }
     ],
@@ -417,18 +417,18 @@ module.exports = {
     },
     intro: [
       'Apabila anda mencari "pelayaran bot Istanbul", anda mencari satu perkara yang mentakrifkan bandar dari air: Bosphorus. Pelayaran bot Bosphorus 3 jam kami membawa anda melepasi setiap mercu tanda utama Istanbul — Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus, Rumeli Hisarı, Istana Beylerbeyi dan Menara Maiden — dengan hidangan Turki lengkap dan hiburan langsung.',
-      'Berbeza dengan banyak feri bersiar-siar 1 jam yang merangkumi kurang Bosphorus dan melangkau makan malam dan hiburan, **pelayaran bot Istanbul kami** adalah pengalaman petang lengkap: pendaftaran masuk 19:30 di Jeti Kabataş, pelayaran sehingga tengah malam, 10 meze, hidangan utama, pencuci mulut, sema, tarian rakyat, tarian oryantal dan DJ. Anda mendapat pelayaran DAN keluar malam sekali gus.',
+      'Berbeza dengan banyak feri bersiar-siar 1 jam yang merangkumi kurang Bosphorus dan melangkau makan malam dan hiburan, **pelayaran bot Istanbul kami** adalah pengalaman petang lengkap: pendaftaran masuk 20:00 di Jeti Kabataş, pelayaran sehingga tengah malam, 10 meze, hidangan utama, pencuci mulut, sema, tarian rakyat, tarian oryantal dan DJ. Anda mendapat pelayaran DAN keluar malam sekali gus.',
       'Sama ada anda mempunyai satu malam di Istanbul atau seminggu penuh, **pelayaran bot Istanbul** ini menyelesaikan tugas. 4.8★ dari 11,317+ pengembara, berlesen TÜRSAB (A-17672), menu diperakui halal dan bayar di atas bot — tiada komitmen kewangan sehingga anda berpuas hati dengan pengalaman.'
     ],
     highlights: [
       { title: 'Semua mercu tanda utama Bosphorus', desc: 'Dolmabahçe, Çırağan, Masjid Ortaköy, Jambatan Bosphorus, Bebek, Rumeli Hisarı, Jambatan FSM, Istana Beylerbeyi, Üsküdar, Menara Maiden. Kedua-dua pantai Eropah dan Asia dalam satu pelayaran.' },
       { title: 'Makan malam + persembahan termasuk', desc: 'Bukan sahaja pelayaran bot — makan malam Turki berbilang hidangan penuh, persembahan tarian rakyat langsung, sema, tarian oryantal, DJ. Apa yang menjadikan 3 jam menyeronokkan, bukan sekadar bersiar-siar.' },
-      { title: 'Bertolak petang (pencahayaan terbaik)', desc: 'Bertolak 20:30 menangkap Bosphorus diterangi dalam kecemerlangan puncak — jambatan, istana, masjid semua menyala. Lebih dramatik daripada pelayaran siang yang menunjukkan mercu tanda sama dalam cahaya rata.' },
+      { title: 'Bertolak petang (pencahayaan terbaik)', desc: 'Bertolak 21:00 menangkap Bosphorus diterangi dalam kecemerlangan puncak — jambatan, istana, masjid semua menyala. Lebih dramatik daripada pelayaran siang yang menunjukkan mercu tanda sama dalam cahaya rata.' },
       { title: 'Tempahan mudah, pembayaran mudah', desc: 'Tempah dalam kurang 1 minit dengan wizard di halaman ini. Bayar di atas bot — tiada bayaran pendahuluan. Pemindahan hotel tersedia dari +€{p.transfer}/orang. Pembatalan percuma sehingga 2 jam sebelum bertolak.' }
     ],
     faq: [
       { q: 'Apakah pelayaran bot terbaik di Istanbul?', a: 'Pelayaran makan malam Bosphorus secara konsisten disenaraikan sebagai #1. Ia merangkumi semua mercu tanda utama, termasuk makan malam dan hiburan, dan beroperasi pada waktu petang apabila mercu tanda diterangi. Pilihan lain (feri hop-on, bot bersiar-siar pagi) merangkumi laluan lebih pendek, melangkau makan malam dan tidak mempunyai hiburan. Untuk satu petang Istanbul, ini adalah pelayaran bot paling lengkap.' },
-      { q: 'Berapa lamakah pelayaran bot Istanbul?', a: '3 jam. Pendaftaran masuk 19:30 di Jeti Kabataş, bertolak 20:30, kembali ~23:30. Merangkumi Bosphorus penuh dari Dolmabahçe ke Rumeli Hisarı dan kembali. Masa yang cukup untuk makan malam penuh + persembahan tanpa rasa tergesa-gesa.' },
+      { q: 'Berapa lamakah pelayaran bot Istanbul?', a: '3 jam. Pendaftaran masuk 20:00 di Jeti Kabataş, bertolak 21:00, kembali ~00:00. Merangkumi Bosphorus penuh dari Dolmabahçe ke Rumeli Hisarı dan kembali. Masa yang cukup untuk makan malam penuh + persembahan tanpa rasa tergesa-gesa.' },
       { q: 'Berapakah harga pelayaran bot Istanbul?', a: 'Pelayaran bot makan malam kami: €{p.dinnerStd}/orang (asalnya €{p.dinnerStdOriginal}). Umur 0-3 percuma, 4-8 separuh harga. Bayar di atas bot. Alkohol dan pemindahan hotel adalah tambahan pilihan.' },
       { q: 'Dari manakah pelayaran bot Istanbul bertolak?', a: 'Bot kami bertolak dari Jeti Kabataş, pusat Istanbul tepi Eropah, bersebelahan Istana Dolmabahçe. Boleh diakses melalui trem T1 (stesen Kabataş), teksi 15 min dari Taksim atau berjalan 20 min dari Taksim. Pemindahan hotel tersedia dari kawasan pusat +€{p.transfer}/orang.' },
       { q: 'Adakah pelayaran bot ini sesuai untuk keluarga berkanak-kanak?', a: 'Ya — sangat mesra keluarga. Kanak-kanak 0-3 tahun percuma, 4-8 diskaun 50%. Tempat duduk dalaman tertutup, menu kanak-kanak atas permintaan dan hiburan (sema, tarian rakyat) menarik untuk kanak-kanak. Ramai keluarga dari seluruh dunia menempah pelayaran ini.' },
@@ -444,7 +444,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Perjalanan Bosphorus dari €{p.dinnerStd} — Pelayaran Makan Malam + Persembahan',
-      description: 'Perjalanan 3 jam Bosphorus: makan malam Turki, folklor langsung, pemandangan malam bercahaya. Bertolak 20:30 dari Kabataş. Pembatalan percuma, bayar di kapal.'
+      description: 'Perjalanan 3 jam Bosphorus: makan malam Turki, folklor langsung, pemandangan malam bercahaya. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal.'
     },
     hero: {
       h1: 'Persiaran Bosphorus',
@@ -464,7 +464,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Apakah persiaran Bosphorus terbaik di Istanbul?', a: 'Pelayaran makan malam petang secara konsisten berada di kedudukan teratas. Pilihan siang (feri pengangkutan 1 jam, bot bersiar-siar 2 jam) menunjukkan kurang dan tidak termasuk makan malam. Untuk nilai, sukar untuk mengalahkan pelayaran 3 jam dengan makan malam, persembahan dan titik pergi-pulang yang pusat. Kos €{p.dinnerStd} pelayaran kami menghapuskan keperluan untuk petang makan malam + hiburan yang berasingan.' },
-      { q: 'Berapa lamakah persiaran Bosphorus?', a: 'Persiaran Bosphorus kami adalah 3 jam secara keseluruhan (bertolak 20:30, kembali 23:30). Terdapat pilihan lebih pendek (feri bersiar-siar 1 jam, pelayaran 90 minit) tetapi ia melangkau makan malam dan hiburan. Untuk pengalaman petang lengkap, 3 jam adalah ideal — cukup untuk melihat segalanya, tidak meletihkan.' },
+      { q: 'Berapa lamakah persiaran Bosphorus?', a: 'Persiaran Bosphorus kami adalah 3 jam secara keseluruhan (bertolak 21:00, kembali 00:00). Terdapat pilihan lebih pendek (feri bersiar-siar 1 jam, pelayaran 90 minit) tetapi ia melangkau makan malam dan hiburan. Untuk pengalaman petang lengkap, 3 jam adalah ideal — cukup untuk melihat segalanya, tidak meletihkan.' },
       { q: 'Adakah persiaran Bosphorus berbaloi?', a: 'Ya — hampir setiap panduan perjalanan Istanbul menyenaraikan "pelayaran Bosphorus" sebagai salah satu 5 perkara yang mesti dilakukan. Bandar dibina di sekitar selat ini; jika anda tidak melihat Bosphorus dari air, anda tidak benar-benar melihat Istanbul. Pelayaran petang khusus kami menambah makan malam dan hiburan, menjadikannya keluar petang lengkap dan bukan sekadar bersiar-siar.' },
       { q: 'Apa yang perlu saya bawa untuk persiaran Bosphorus?', a: 'Pasport atau kad pengenalan (untuk pendaftaran bot), jaket nipis (dek sejuk pada waktu petang), telefon pintar/kamera, kasut selesa untuk lantai tarian. Tunai atau kad untuk pembayaran. Segala yang lain di atas bot. Pemindahan hotel tersedia +€{p.transfer}/orang jika anda tidak mahu menggunakan pengangkutan awam.' },
       { q: 'Adakah persiaran Bosphorus sesuai untuk kanak-kanak?', a: 'Ya — sangat mesra kanak-kanak. Kanak-kanak 0-3 tahun percuma (termasuk pemindahan), 4-8 diskaun 50%. Tempat duduk dalaman tertutup, menu kanak-kanak atas permintaan dan hiburan adalah sopan dan menarik. Ramai keluarga menempah ini sebagai sorotan perjalanan Istanbul mereka.' },
@@ -489,13 +489,13 @@ module.exports = {
     },
     intro: [
       'Mencari **tiket pelayaran Bosphorus**? Beli terus. Tiket kami €{p.dinnerStd}/orang — diskaun 40% daripada harga biasa (€{p.dinnerStdOriginal}). Tapak tempahan pihak ketiga selalunya menambah komisen 20-40%. Dengan menempah terus, anda menjimatkan — dan anda masih boleh bayar di atas bot.',
-      'Proses **tiket pelayaran Bosphorus** kami: isi wizard di halaman ini dalam kurang 1 minit (tarikh, bilangan tetamu, pakej, hubungan), kami mengesahkan serta-merta melalui WhatsApp / Telegram, anda hadir di Jeti Kabataş pada 19:30, anda bayar di atas bot, anda nikmati pelayaran makan malam 3 jam. Tiada tiket fizikal untuk dicetak, tiada baucar untuk e-mel — pengesahan adalah tiket anda.',
+      'Proses **tiket pelayaran Bosphorus** kami: isi wizard di halaman ini dalam kurang 1 minit (tarikh, bilangan tetamu, pakej, hubungan), kami mengesahkan serta-merta melalui WhatsApp / Telegram, anda hadir di Jeti Kabataş pada 20:00, anda bayar di atas bot, anda nikmati pelayaran makan malam 3 jam. Tiada tiket fizikal untuk dicetak, tiada baucar untuk e-mel — pengesahan adalah tiket anda.',
       'Sama ada anda menempah pelayaran makan malam untuk malam ini atau mengamankan tarikh tertentu minggu depan, **tiket pelayaran Bosphorus terus** adalah cara paling pantas. Dinilai 4.8★, berlesen TÜRSAB (A-17672), menu diperakui halal dan menyokong tambahan alkohol serta pemindahan hotel.'
     ],
     highlights: [
       { title: 'Tempahan terus — tiada yuran perantara', desc: '€{p.dinnerStd}/orang, satu harga telus. Tapak pihak ketiga mengenakan €30-80+ untuk pelayaran yang sama. Anda menjimatkan dengan menempah terus dengan kami. Tiada caj tersembunyi, tiada markup komisen.' },
       { title: 'Bayar di atas bot — tiada bayaran pendahuluan', desc: 'Tempah tempat anda sekarang, bayar semasa anda menaiki kapal. Tunai atau kad diterima. Percuma jika anda batal 2+ jam sebelum bertolak. Sifar risiko kewangan untuk mengamankan awal.' },
-      { title: 'Pengesahan dalam kurang 1 minit', desc: 'Isi wizard → kami mengesahkan melalui WhatsApp / Telegram. Tiada PDF beremel untuk dicetak. Mesej kami adalah tiket anda. Hadir di jeti pada 19:30.' },
+      { title: 'Pengesahan dalam kurang 1 minit', desc: 'Isi wizard → kami mengesahkan melalui WhatsApp / Telegram. Tiada PDF beremel untuk dicetak. Mesej kami adalah tiket anda. Hadir di jeti pada 20:00.' },
       { title: 'DISKAUN 40% harga pelancaran semasa', desc: 'Asalnya €{p.dinnerStdOriginal}, kini €{p.dinnerStd}. Diskaun 40% kerana anda menempah terus. Bukan nombor terhad masa — harga tempahan terus standard kami.' }
     ],
     faq: [
@@ -503,7 +503,7 @@ module.exports = {
       { q: 'Di manakah boleh saya beli tiket pelayaran Bosphorus?', a: 'Terus di halaman ini — isi wizard tempahan, kami mengesahkan serta-merta melalui WhatsApp / Telegram. Bayar di atas bot. Platform pihak ketiga (Viator, GetYourGuide, Klook) juga menjual tiket tetapi selalunya mengenakan €30-80+ — ini adalah markup perantara. Terus adalah paling murah dan paling pantas.' },
       { q: 'Perlukah saya mencetak tiket pelayaran Bosphorus?', a: 'Tidak — tiada tiket fizikal atau baucar diperlukan. Selepas tempahan, kami hantar pengesahan melalui WhatsApp (atau Telegram) dengan titik pertemuan, masa dan nama tempahan anda. Cuma tunjuk telefon anda di jeti. Itu sahaja.' },
       { q: 'Bolehkah saya batal atau dapatkan bayaran balik tiket pelayaran Bosphorus saya?', a: 'Ya — pembatalan percuma sehingga 2 jam sebelum bertolak. Cuma hantar mesej WhatsApp. Kerana anda belum bayar lagi (bayar di atas bot), tiada bayaran balik diperlukan — anda hanya tidak hadir, tiada caj. Jauh lebih fleksibel daripada tiket pihak ketiga bayar pendahuluan.' },
-      { q: 'Adakah tiket pelayaran Bosphorus tersedia pada hari yang sama?', a: 'Selalunya ya, terutamanya hari bekerja. Hujung minggu dan cuti penuh dengan lebih cepat. Semak kekosongan melalui wizard tempahan — ia dikemas kini masa nyata. Tempahan hari yang sama biasanya mungkin sehingga beberapa jam sebelum bertolak 20:30. Untuk permintaan segera, WhatsApp.' },
+      { q: 'Adakah tiket pelayaran Bosphorus tersedia pada hari yang sama?', a: 'Selalunya ya, terutamanya hari bekerja. Hujung minggu dan cuti penuh dengan lebih cepat. Semak kekosongan melalui wizard tempahan — ia dikemas kini masa nyata. Tempahan hari yang sama biasanya mungkin sehingga beberapa jam sebelum bertolak 21:00. Untuk permintaan segera, WhatsApp.' },
       { q: 'Adakah tiket pelayaran Bosphorus kanak-kanak percuma?', a: 'Kanak-kanak **0-3 tahun percuma sepenuhnya** (tiada bayaran, tiada caj tersembunyi, termasuk pemindahan). **4-8 tahun diskaun 50%** (€{p.dinnerStd}/2 = €12.15). **9+ tahun harga dewasa penuh.** Harga dihadkan dan telus — tiada tipu muslihat "caj bayi".' }
     ],
     cta: {
@@ -516,7 +516,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosphorus Saat Akhir dari €{p.dinnerStd} — Tempah Malam Ini, Bayar di Kapal',
-      description: 'Tempahan pelayaran Bosphorus hari yang sama. Pengesahan WhatsApp dalam minit. Bertolak 20:30 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
+      description: 'Tempahan pelayaran Bosphorus hari yang sama. Pengesahan WhatsApp dalam minit. Bertolak 21:00 dari Kabataş. Pembatalan percuma, bayar di kapal. 11,317 ulasan.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus Saat Akhir',
@@ -524,8 +524,8 @@ module.exports = {
       badge: 'Tempahan Hari yang Sama · Disahkan dalam Minit · Bayar di Atas Bot'
     },
     intro: [
-      'Tiba di Istanbul petang ini dan mahu malam yang hebat malam ini? **Pelayaran Bosphorus saat akhir** berfungsi. Kami mengekalkan tempat duduk khusus untuk tempahan hari yang sama kerana kami tahu ramai pengembara membuat keputusan pada waktu pagi. Isi wizard di sini, kami mengesahkan melalui WhatsApp dalam minit, anda hadir di Jeti Kabataş pada 19:30, anda bayar di atas bot, anda nikmati.',
-      '**Pelayaran Bosphorus saat akhir kami** mempunyai program petang yang sama seperti tempahan awal: 3 jam di atas air (20:30-23:30), makan malam Turki berbilang hidangan, persembahan tarian rakyat langsung, sema, tarian oryantal, DJ. Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus yang diterangi — pemandangan ikonik yang sama. Harga sama: €{p.dinnerStd}/orang.',
+      'Tiba di Istanbul petang ini dan mahu malam yang hebat malam ini? **Pelayaran Bosphorus saat akhir** berfungsi. Kami mengekalkan tempat duduk khusus untuk tempahan hari yang sama kerana kami tahu ramai pengembara membuat keputusan pada waktu pagi. Isi wizard di sini, kami mengesahkan melalui WhatsApp dalam minit, anda hadir di Jeti Kabataş pada 20:00, anda bayar di atas bot, anda nikmati.',
+      '**Pelayaran Bosphorus saat akhir kami** mempunyai program petang yang sama seperti tempahan awal: 3 jam di atas air (21:00-00:00), makan malam Turki berbilang hidangan, persembahan tarian rakyat langsung, sema, tarian oryantal, DJ. Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus yang diterangi — pemandangan ikonik yang sama. Harga sama: €{p.dinnerStd}/orang.',
       'Pembatalan hari yang sama adalah percuma sehingga 2 jam sebelum bertolak, kerana **bayar di atas bot** bermakna anda belum berkomitmen kepada apa-apa. Tempah pada 14:00 dan ubah rancangan anda menjelang 19:00, cuma hantar mesej WhatsApp — tiada bayaran balik, tiada masalah. Itulah fleksibiliti **pelayaran Istanbul saat akhir** yang dihargai pengembara.'
     ],
     highlights: [
@@ -536,10 +536,10 @@ module.exports = {
     ],
     faq: [
       { q: 'Bolehkah saya benar-benar menempah pelayaran Bosphorus untuk malam ini?', a: 'Ya — selalunya. Kami mengekalkan tempat duduk untuk tempahan hari yang sama. Semak wizard di atas untuk kekosongan malam ini. Jika tempat duduk tersedia, anda boleh tempah sehingga 18:00 (3 jam sebelum bertolak). Hujung minggu lebih ketat — tempah awal hari itu jika boleh.' },
-      { q: 'Berapa lambatkah saat akhir saya boleh tempah?', a: 'Tempahan kekal terbuka sehingga 18:00 untuk bot 20:30. Selepas 18:00, hantar mesej WhatsApp terus di +90 532 244 29 22 — kami boleh sahkan secara manual jika tempat duduk terbuka. Selepas 19:30 sangat ketat melainkan anda sudah berada di Jeti Kabataş dan boleh menaiki bot dengan cepat.' },
+      { q: 'Berapa lambatkah saat akhir saya boleh tempah?', a: 'Tempahan kekal terbuka sehingga 18:00 untuk bot 21:00. Selepas 18:00, hantar mesej WhatsApp terus di +90 532 244 29 22 — kami boleh sahkan secara manual jika tempat duduk terbuka. Selepas 20:00 sangat ketat melainkan anda sudah berada di Jeti Kabataş dan boleh menaiki bot dengan cepat.' },
       { q: 'Adakah pelayaran Bosphorus saat akhir lebih mahal?', a: 'Tidak — harga sama dengan tempahan awal: €{p.dinnerStd}/orang. Kami tidak melakukan "harga surge" atau premium saat akhir. Bot yang sama, makan malam yang sama, persembahan yang sama, harga yang sama.' },
       { q: 'Bagaimana jika pelayaran malam ini penuh sepenuhnya?', a: 'Pelayaran esok biasanya terbuka — kami beroperasi setiap hari, 365 hari setahun. Anda boleh tempah untuk esok dan masih jadi "saat akhir" — maksudnya anda baru membuat keputusan. Pelayaran hari bekerja mempunyai lebih banyak ruang daripada hujung minggu.' },
-      { q: 'Bolehkah anda mengatur pemindahan hotel saat akhir?', a: 'Pemindahan hari yang sama adalah mungkin sehingga ~18:00 untuk pelayaran 20:30. Selepas 18:00, kami mungkin tidak mempunyai pemandu tersedia — dalam kes itu, anda boleh ambil teksi ke Jeti Kabataş (15 min dari Taksim, 10 min dari Sultanahmet, ~€10-15). Pusat dan mudah.' },
+      { q: 'Bolehkah anda mengatur pemindahan hotel saat akhir?', a: 'Pemindahan hari yang sama adalah mungkin sehingga ~18:00 untuk pelayaran 21:00. Selepas 18:00, kami mungkin tidak mempunyai pemandu tersedia — dalam kes itu, anda boleh ambil teksi ke Jeti Kabataş (15 min dari Taksim, 10 min dari Sultanahmet, ~€10-15). Pusat dan mudah.' },
       { q: 'Bagaimana jika saya sudah di Kabataş dan mahu naik kapal?', a: 'Jika anda di jeti dan tempat duduk terbuka, anda boleh berjalan dan naik. Hantar mesej WhatsApp atau tanya kakitangan — kami akan tambah anda jika ada ruang. Harga bayar di atas bot yang sama. Dalam terma pelayaran dipanggil "walk-on" — ia berfungsi di sini.' }
     ],
     cta: {
@@ -575,7 +575,7 @@ module.exports = {
       { q: 'Adakah terdapat caj tersembunyi dalam harga pelayaran Istanbul?', a: 'Tidak. Harga termasuk: pelayaran 3 jam, makan malam lengkap (meze, pembuka, hidangan utama, pencuci mulut), minuman ringan tanpa had, persembahan langsung, cukai. Tambahan pilihan (alkohol, pemindahan, meja romantik) diasingkan dan berharga telus — anda bayar hanya jika anda menambah. Tiada "caj perkhidmatan", "yuran pelabuhan" atau caj tambahan mengejut.' },
       { q: 'Mengapakah harga pelayaran Istanbul diskaun 40% — adakah ini tipu muslihat?', a: 'Bukan tipu muslihat. Harga biasa €{p.dinnerStdOriginal} adalah apa yang dikenakan oleh tapak tempahan pihak ketiga (Viator, GetYourGuide, Klook) — dengan komisen mereka. Tempah terus dan dapatkan €{p.dinnerStd}. Itulah perbezaan 40%. Tiada tipu muslihat harga terhad masa atau surge.' },
       { q: 'Bagaimanakah harga pelayaran Istanbul berbanding pilihan lain?', a: 'Feri pengangkutan: €5-10, 1 jam, tiada makan malam, tiada hiburan, bersiar-siar sahaja. Pelayaran makan malam bajet: €20-30, sesak, makanan sederhana, persembahan pendek. Pelayaran makan malam kami (€{p.dinnerStd}): 3 jam, makan malam lengkap, persembahan penuh, meja peribadi, berlesen TÜRSAB. Kapal layar resort: €100-150+, berlebihan untuk pengembara solo/pasangan.' },
-      { q: 'Perlukah saya bayar harga pelayaran Istanbul pendahuluan?', a: 'Tidak — **bayar di atas bot**. Anda tempah sekarang (wizard 1 minit), kami sahkan melalui WhatsApp, anda hadir pada 19:30, dan anda bayar di atas bot (tunai atau kad). Pembatalan percuma sehingga 2 jam sebelum. Sifar komitmen kewangan sehingga anda berpuas hati.' },
+      { q: 'Perlukah saya bayar harga pelayaran Istanbul pendahuluan?', a: 'Tidak — **bayar di atas bot**. Anda tempah sekarang (wizard 1 minit), kami sahkan melalui WhatsApp, anda hadir pada 20:00, dan anda bayar di atas bot (tunai atau kad). Pembatalan percuma sehingga 2 jam sebelum. Sifar komitmen kewangan sehingga anda berpuas hati.' },
       { q: 'Adakah terdapat diskaun kumpulan untuk harga pelayaran Istanbul?', a: 'Untuk kumpulan 10+, kami boleh menawarkan diskaun 5-10% — hantar mesej WhatsApp dengan saiz kumpulan anda. Untuk 25+, pertimbangkan pelayaran peribadi (seluruh bot untuk kumpulan anda, menu tersuai). Untuk 2-9 orang, harga standard terpakai — sudah diskaun 40% daripada harga biasa.' }
     ],
     cta: {
@@ -597,7 +597,7 @@ module.exports = {
     },
     intro: [
       '**Bersiar-siar Bosphorus** dari air mengalahkan mana-mana pelayaran bas. Bosphorus adalah laluan air paling bersejarah di bandar — sultan-sultan Uthmaniyah, maharaja Byzantine, pedagang Greek dan kapal perang Rusia semuanya melalui. Hari ini, pelayaran 3 jam kami, dengan ulasan daripada kakitangan berbahasa Inggeris kami, melepasi setiap mercu tanda utama Istanbul yang mentakrifkan ufuk.',
-      'Laluan **pelayaran bersiar-siar Bosphorus kami** (bertolak petang, 20:30-23:30):\n\n1. **Istana Dolmabahçe** — kediaman Uthmaniyah abad ke-19, diterangi pada waktu malam\n2. **Istana Çırağan** — kini hotel mewah, sejarah diraja\n3. **Masjid Ortaköy** — salah satu masjid paling difoto di Istanbul, di atas air\n4. **Jambatan Bosphorus** — bertukar antara biru, ungu, emas pada waktu malam\n5. **Bebek** — kawasan kejiranan tepi Eropah yang bergaya\n6. **Rumeli Hisarı** — dibina 1452 oleh Sultan Mehmed II sebelum penaklukan Constantinople\n7. **Jambatan Fatih Sultan Mehmet** — jambatan Bosphorus kedua, gerbang dramatik\n8. **Istana Beylerbeyi** — tepi Asia, kediaman musim panas Uthmaniyah\n9. **Üsküdar** — tepi Asia Istanbul, kawasan kejiranan tradisional\n10. **Menara Maiden** — menara pulau kecil, salah satu simbol paling romantik Istanbul',
+      'Laluan **pelayaran bersiar-siar Bosphorus kami** (bertolak petang, 21:00-00:00):\n\n1. **Istana Dolmabahçe** — kediaman Uthmaniyah abad ke-19, diterangi pada waktu malam\n2. **Istana Çırağan** — kini hotel mewah, sejarah diraja\n3. **Masjid Ortaköy** — salah satu masjid paling difoto di Istanbul, di atas air\n4. **Jambatan Bosphorus** — bertukar antara biru, ungu, emas pada waktu malam\n5. **Bebek** — kawasan kejiranan tepi Eropah yang bergaya\n6. **Rumeli Hisarı** — dibina 1452 oleh Sultan Mehmed II sebelum penaklukan Constantinople\n7. **Jambatan Fatih Sultan Mehmet** — jambatan Bosphorus kedua, gerbang dramatik\n8. **Istana Beylerbeyi** — tepi Asia, kediaman musim panas Uthmaniyah\n9. **Üsküdar** — tepi Asia Istanbul, kawasan kejiranan tradisional\n10. **Menara Maiden** — menara pulau kecil, salah satu simbol paling romantik Istanbul',
       'Makan malam dan hiburan termasuk — bukan berasingan — jadi **bersiar-siar Bosphorus** bertukar menjadi petang lengkap. Makan malam Turki berbilang hidangan, persembahan tarian rakyat langsung, sema, tarian oryantal, DJ. Dinilai 4.8★ oleh 11,317+ pengembara, berlesen TÜRSAB A-17672.'
     ],
     highlights: [

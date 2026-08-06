@@ -25,7 +25,7 @@ Stratejik hedef: Site Google'da görünmüyor (robots.txt yok, sitemap yok, Sear
 
 ### Hero + Nav
 8. Hero CTA: "Turları İncele" → **"Turu İncele"** (6 dil)
-9. Hero subtitle: "Kabataş & Eminönü · 20:45–23:30" → **"Kabataş · 21:00–00:00"** (6 dil + HTML fallback)
+9. Hero subtitle: "Kabataş & Eminönü · 20:45–00:00" → **"Kabataş · 21:00–00:00"** (6 dil + HTML fallback)
 10. Dinner hero büyük buton WhatsApp ikonu **silindi**
 11. "Three ways to experience" → **"Pick the experience that fits your mood"** (sayı belirtmeyen)
 
@@ -47,7 +47,7 @@ Stratejik hedef: Site Google'da görünmüyor (robots.txt yok, sitemap yok, Sear
 24. **Know Before You Go**: "Vegetarian, pescetarian and halal dietary options available" satırı **silindi** (vejetaryen pakette var, helal pill'de)
 25. **"Not Allowed"**: "Outside food & beverages" **silindi** (sadece Pets + Smoking indoors kaldı)
 26. **Drop-off** metni değişti:
-    - "approximately 23:30" → **"between 23:30 and 00:00"**
+    - "approximately 00:00" → **"between 00:00 and 00:00"**
     - Ek: "the same driver who picked you up will be waiting at the pier to take you back to your hotel"
     - dropoff.title + dropoff.desc yeni keyler (6 dil + HTML fallback)
 27. **Nasıl Çalışır** bölümü:
@@ -55,12 +55,12 @@ Stratejik hedef: Site Google'da görünmüyor (robots.txt yok, sitemap yok, Sear
     - Adım 1 başlık: "Turunu Seç" → **"Rezervasyon Detaylarını Girin"** (6 dil)
     - Adım 1 desc: "Seçilmiş koleksiyonumuzdan..." → **"Tarih, kişi sayısı ve paketi (Standard veya VIP) belirleyin"** (6 dil)
     - Adım 2 desc: "WhatsApp'tan yazın..." → **"Yazılı veya sesli — size uygun şekilde iletişime geçin"** (6 dil)
-28. **arrival.time.night**: "~23:30" → **"23:30–00:00"** (6 dil)
+28. **arrival.time.night**: "~00:00" → **"00:00–00:00"** (6 dil)
 
 ### Saat/Süre Düzeltmeleri (önceki sessionlardan)
 - 20:45 → 21:00 her yerde (boarding)
 - 3.5 saat → 3 saat her yerde
-- 23:30 (dönüş) → 00:00 (doğru hesap: 21:00 + 3 saat)
+- 00:00 (dönüş) → 00:00 (doğru hesap: 21:00 + 3 saat)
 
 ---
 
@@ -74,7 +74,7 @@ Düzeltilecek translation keyleri (6 dil her biri):
 
 - **`incl.cruise.detail`** (Boğaz Gece Turu card):
   - Mevcut: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 21:00'te kalkar, 00:00'da döner."
-  - Yeni (önerim): "Dolmabahçe Sarayı, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı, Beylerbeyi Sarayı ve Üsküdar'ın önünden geçin; Kız Kulesi uzaktan görünür. Kabataş'tan 21:00'de kalkar, 23:30–00:00 arası döner."
+  - Yeni (önerim): "Dolmabahçe Sarayı, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı, Beylerbeyi Sarayı ve Üsküdar'ın önünden geçin; Kız Kulesi uzaktan görünür. Kabataş'tan 21:00'de kalkar, 00:00–00:00 arası döner."
   - **User asked:** "ilk kartta üsküdar ekle az önceki rota düzenlemesi gibi yap yani" — Cruise Route ile aynı yapı
 
 - **`incl.entertainment.detail`**:
@@ -166,7 +166,7 @@ M js/translations.js
 1. Bu dosyayı oku (zaten okudun)
 2. Son user mesajına göre **PENDING listesinden** devam et:
    - User "hepsi whatsuptan ı kaldır" dedi — tüm incl.*.detail + why.before.desc + incl.support.desc keylerinden WhatsApp kaldır
-   - User "dönüş 23:30 / 00:00 arası" dedi — **tamam, `arrival.time.night` zaten güncellendi** ama user şimdi tekrar belirtti, **aynı değer**. Kontrol et.
+   - User "dönüş 00:00 / 00:00 arası" dedi — **tamam, `arrival.time.night` zaten güncellendi** ama user şimdi tekrar belirtti, **aynı değer**. Kontrol et.
    - User ilk cruise card (Boğaz Gece Turu) detail'ına Üsküdar ekle
    - User entertainment'ta "21:00'e kadar" → "tur sonuna kadar" değişikliği istedi
    - User transfer zones gerçek 12 semt istedi

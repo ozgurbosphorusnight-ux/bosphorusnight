@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktiska tips',
           paragraphs: [
-            'Avgången är från Kabataş kl. 20:30 — vi rekommenderar att du kommer 15–20 minuter tidigare. Porten öppnar kl. 19:30.',
-            'Du kan boka samma dag fram till kl. 19:30. Bokningen är gratis att avboka fram till 2 timmar före avgång. Inget kreditkort krävs i förväg — du betalar ombord.',
+            'Avgången är från Kabataş kl. 21:00 — vi rekommenderar att du kommer 15–20 minuter tidigare. Porten öppnar kl. 20:00.',
+            'Du kan boka samma dag fram till kl. 20:00. Bokningen är gratis att avboka fram till 2 timmar före avgång. Inget kreditkort krävs i förväg — du betalar ombord.',
             'Ta med ett extra lager kläder — det kan bli kyligt på öppet däck om kvällen, särskilt vår och höst.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktisk information',
           paragraphs: [
-            'Solnedgångskryssningen inkluderar full måltid och liveunderhållning, precis som kvällskryssningen. Avgång kl. 17:30, tillbaka ca kl. 20:30.',
+            'Solnedgångskryssningen inkluderar full måltid och liveunderhållning, precis som kvällskryssningen. Avgång kl. 17:30, tillbaka ca kl. 21:00.',
             'Boka i förväg — solnedgångskryssningen är mycket populär, särskilt på sommaren och under helger.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Tips för familjeresan',
           paragraphs: [
-            'Kryssningen varar 3 timmar (20:30–23:30). Det kan bli lite sent för väldigt små barn — överväg om tidpunkten passar familjen.',
+            'Kryssningen varar 3 timmar (21:00–00:00). Det kan bli lite sent för väldigt små barn — överväg om tidpunkten passar familjen.',
             'Ta med extra kläder till barnen om det är blåsigt på öppet däck. Båten har täckta inomhusutrymmen så att barnen är trygga inne.',
             'Boka tidigt för att säkerställa att ni sitter tillsammans.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Så bokar du i sista minuten',
           paragraphs: [
             'Skicka oss ett meddelande på WhatsApp med datum (idag) och antal gäster. Vi bekräftar tillgängligheten på sekunder.',
-            'Sista bokningstid för kvällens kryssning är kl. 19:30 (1 timme före avgång kl. 20:30). Kom till Kabataş-kajen senast kl. 20:15.',
+            'Sista bokningstid för kvällens kryssning är kl. 20:00 (1 timme före avgång kl. 21:00). Kom till Kabataş-kajen senast kl. 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Avgång från Kabataş',
           paragraphs: [
-            'Alla kryssningar avgår från Kabataş-kajen. Porten öppnar kl. 19:30, avgång kl. 20:30. Kom tidigt för bästa möjliga plats.',
+            'Alla kryssningar avgår från Kabataş-kajen. Porten öppnar kl. 20:00, avgång kl. 21:00. Kom tidigt för bästa möjliga plats.',
           ],
         },
         {

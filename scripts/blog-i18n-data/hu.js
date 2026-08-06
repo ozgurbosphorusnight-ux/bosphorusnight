@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Gyakorlati tippek',
           paragraphs: [
-            'Az indulás Kabataşból 20:30-kor — ajánljuk, hogy 15-20 perccel korábban érkezz. A beszállás 19:30-kor kezdődik.',
-            'Aznapra is foglalhatsz 19:30-ig. A foglalás ingyenesen lemondható az indulás előtt 2 órával. Nincs szükség előzetes bankkártyára — a fedélzeten fizetsz.',
+            'Az indulás Kabataşból 21:00-kor — ajánljuk, hogy 15-20 perccel korábban érkezz. A beszállás 20:00-kor kezdődik.',
+            'Aznapra is foglalhatsz 20:00-ig. A foglalás ingyenesen lemondható az indulás előtt 2 órával. Nincs szükség előzetes bankkártyára — a fedélzeten fizetsz.',
             'Hozz magaddal egy extra réteg ruhát — a nyitott fedélzeten este hűvös lehet, különösen tavasszal és ősszel.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Gyakorlati információk',
           paragraphs: [
-            'A naplementés hajókázás teljes vacsorát és élő szórakoztató műsort tartalmaz, akárcsak az esti hajókázás. Indulás 17:30-kor, visszatérés kb. 20:30-kor.',
+            'A naplementés hajókázás teljes vacsorát és élő szórakoztató műsort tartalmaz, akárcsak az esti hajókázás. Indulás 17:30-kor, visszatérés kb. 21:00-kor.',
             'Foglalj előre — a naplementés hajókázás nagyon népszerű, különösen nyáron és hétvégeken.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Tippek a családi úthoz',
           paragraphs: [
-            'A hajókázás 3 órán át tart (20:30–23:30). Nagyon kicsi gyerekeknek ez kicsit későre nyúlhat — gondold át, hogy az időpont passzol-e a családotokhoz.',
+            'A hajókázás 3 órán át tart (21:00–00:00). Nagyon kicsi gyerekeknek ez kicsit későre nyúlhat — gondold át, hogy az időpont passzol-e a családotokhoz.',
             'Hozz extra ruhát a gyerekeknek, ha szeles időjárás várható a nyitott fedélzeten. A hajón van fedett belső tér is, ahol a gyerekek biztonságban vannak.',
             'Foglalj korán, hogy biztosan együtt ülhessen a család.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Így foglalsz az utolsó pillanatban',
           paragraphs: [
             'Küldj nekünk egy üzenetet WhatsAppon a dátummal (ma) és a vendégek számával. Másodpercek alatt visszaigazoljuk a szabad helyet.',
-            'Az aznapi hajókázás utolsó foglalási határideje 19:30 (1 órával az indulás előtt 20:30-kor). Legkésőbb 20:15-re érj a Kabataş kikötőbe.',
+            'Az aznapi hajókázás utolsó foglalási határideje 20:00 (1 órával az indulás előtt 21:00-kor). Legkésőbb 20:15-re érj a Kabataş kikötőbe.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Indulás Kabataşból',
           paragraphs: [
-            'Minden hajókázás Kabataş kikötőjéből indul. A beszállás 19:30-kor kezdődik, indulás 20:30-kor. Érkezz korán a legjobb helyért.',
+            'Minden hajókázás Kabataş kikötőjéből indul. A beszállás 20:00-kor kezdődik, indulás 21:00-kor. Érkezz korán a legjobb helyért.',
           ],
         },
         {

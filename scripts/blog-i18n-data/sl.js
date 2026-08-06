@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktični nasveti',
           paragraphs: [
-            'Odhod je iz Kabataşa ob 20:30 — priporočamo, da prideš 15-20 minut prej. Vrata se odprejo ob 19:30.',
-            'Lahko rezerviraš isti dan do 19:30. Rezervacijo lahko brezplačno odpoveš do 2 uri pred odhodom. Brez kreditne kartice vnaprej — plačaš na ladji.',
+            'Odhod je iz Kabataşa ob 21:00 — priporočamo, da prideš 15-20 minut prej. Vrata se odprejo ob 20:00.',
+            'Lahko rezerviraš isti dan do 20:00. Rezervacijo lahko brezplačno odpoveš do 2 uri pred odhodom. Brez kreditne kartice vnaprej — plačaš na ladji.',
             'Prinesi dodatno plast oblačil — na odprtem krovu je lahko hladno zvečer, zlasti spomladi in jeseni.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktične informacije',
           paragraphs: [
-            'Plovba ob sončnem zahodu vključuje popoln obrok in živo zabavo, prav tako kot večerna plovba. Odhod ob 17:30, vrnitev okoli 20:30.',
+            'Plovba ob sončnem zahodu vključuje popoln obrok in živo zabavo, prav tako kot večerna plovba. Odhod ob 17:30, vrnitev okoli 21:00.',
             'Rezerviraj vnaprej — plovba ob sončnem zahodu je zelo priljubljena, zlasti poleti in ob vikendih.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Nasveti za družinsko potovanje',
           paragraphs: [
-            'Plovba traja 3 ure (20:30–23:30). Za zelo majhne otroke je lahko nekoliko pozno — premisli, ali termin ustreza družini.',
+            'Plovba traja 3 ure (21:00–00:00). Za zelo majhne otroke je lahko nekoliko pozno — premisli, ali termin ustreza družini.',
             'Prinesi dodatna oblačila za otroke, če je veter na odprtem krovu. Ladja ima pokrite notranje prostore, kjer so otroci varno znotraj.',
             'Rezerviraj zgodaj, da zagotoviš, da sedite skupaj.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Kako rezervirati v zadnjem trenutku',
           paragraphs: [
             'Pošlji nam sporočilo na WhatsApp z datumom (danes) in številom gostov. Razpoložljivost potrdimo v nekaj sekundah.',
-            'Zadnji rok za rezervacijo za nocojšnjo plovbo je 19:30 (1 uro pred odhodom ob 20:30). Pridi na pomol Kabataş najpozneje do 20:15.',
+            'Zadnji rok za rezervacijo za nocojšnjo plovbo je 20:00 (1 uro pred odhodom ob 21:00). Pridi na pomol Kabataş najpozneje do 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Odhod iz Kabataşa',
           paragraphs: [
-            'Vse plovbe odplujejo s pomola Kabataş. Vrata se odprejo ob 19:30, odhod ob 20:30. Pridi zgodaj za najboljši sedež.',
+            'Vse plovbe odplujejo s pomola Kabataş. Vrata se odprejo ob 20:00, odhod ob 21:00. Pridi zgodaj za najboljši sedež.',
           ],
         },
         {

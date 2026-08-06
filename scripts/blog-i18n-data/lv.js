@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktiski padomi',
           paragraphs: [
-            'Atiešana ir no Kabataş plkst. 20:30 — iesakām ierasties 15–20 minūtes ātrāk. Vārti atveras plkst. 19:30.',
-            'Vari rezervēt tajā pašā dienā līdz plkst. 19:30. Rezervāciju var bez maksas atcelt līdz 2 stundām pirms atiešanas. Kredītkarte iepriekš nav nepieciešama — tu maksā uz kuģa.',
+            'Atiešana ir no Kabataş plkst. 21:00 — iesakām ierasties 15–20 minūtes ātrāk. Vārti atveras plkst. 20:00.',
+            'Vari rezervēt tajā pašā dienā līdz plkst. 20:00. Rezervāciju var bez maksas atcelt līdz 2 stundām pirms atiešanas. Kredītkarte iepriekš nav nepieciešama — tu maksā uz kuģa.',
             'Paņem papildu apģērba kārtu — uz atklātā klāja vakarā var kļūt vēss, īpaši pavasarī un rudenī.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktiskā informācija',
           paragraphs: [
-            'Saulrieta kruīzs ietver pilnu maltīti un dzīvu izklaidi, tieši tāpat kā vakara kruīzs. Atiešana plkst. 17:30, atgriešanās ap plkst. 20:30.',
+            'Saulrieta kruīzs ietver pilnu maltīti un dzīvu izklaidi, tieši tāpat kā vakara kruīzs. Atiešana plkst. 17:30, atgriešanās ap plkst. 21:00.',
             'Rezervē iepriekš — saulrieta kruīzs ir ļoti populārs, īpaši vasarā un nedēļas nogalēs.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Padomi ģimenes ceļojumam',
           paragraphs: [
-            'Kruīzs ilgst 3 stundas (20:30–23:30). Tas var būt nedaudz vēlu ļoti maziem bērniem — apsver, vai laiks der ģimenei.',
+            'Kruīzs ilgst 3 stundas (21:00–00:00). Tas var būt nedaudz vēlu ļoti maziem bērniem — apsver, vai laiks der ģimenei.',
             'Paņem papildu apģērbu bērniem, ja uz atklātā klāja ir vējš. Kuģim ir pārklātas iekštelpas, kur bērni ir droši un siltumā.',
             'Rezervē agri, lai pārliecinātos, ka sēžat kopā.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Kā rezervēt pēdējā brīdī',
           paragraphs: [
             'Sūti mums ziņu pa WhatsApp ar datumu (šodien) un viesu skaitu. Apstiprināsim pieejamību sekundēs.',
-            'Pēdējais rezervācijas termiņš vakara kruīzam ir plkst. 19:30 (1 stunda pirms atiešanas plkst. 20:30). Ierodies pie Kabataş piestātnes vēlākais plkst. 20:15.',
+            'Pēdējais rezervācijas termiņš vakara kruīzam ir plkst. 20:00 (1 stunda pirms atiešanas plkst. 21:00). Ierodies pie Kabataş piestātnes vēlākais plkst. 20:15.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Atiešana no Kabataş',
           paragraphs: [
-            'Visi kruīzi atiet no Kabataş piestātnes. Vārti atveras plkst. 19:30, atiešana plkst. 20:30. Ierodies agri, lai būtu labākā vieta.',
+            'Visi kruīzi atiet no Kabataş piestātnes. Vārti atveras plkst. 20:00, atiešana plkst. 21:00. Ierodies agri, lai būtu labākā vieta.',
           ],
         },
         {

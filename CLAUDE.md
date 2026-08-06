@@ -45,7 +45,7 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 
 | Kod | Tur | Süre | Kalkış | Fiyat | Orijinal | Maliyet | Marj |
 |---|---|---|---|---|---|---|---|
-| DINNER_STD | Dinner Cruise (tek paket) | 3 saat | 20:30 | €24.30 | €40.50 | €14.70 (17 USD) | €9.60 |
+| DINNER_STD | Dinner Cruise (tek paket) | 3 saat | 21:00 | €24.30 | €40.50 | €14.70 (17 USD) | €9.60 |
 | ~~DINNER_VIP~~ | ~~VIP Dinner Cruise~~ | — | — | — | — | — | **SATIŞTAN KALKTI (6 Ağu 2026)** — `is_active=false` |
 | DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ satılmıyor | — |
 | SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ satılmıyor | — |
@@ -64,20 +64,20 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 >
 > Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker. Site build script'leri PRICES sabitinden + subPrices regex (literal "€24" yakalama) ile drift kapatılır. (VIP kalkınca "€55" regex satırı ve `dinnerVip`/`dinnerVipOriginal` PRICES anahtarları düşürüldü.)
 
-**Buluşma:** Kabataş İskelesi. Giriş 19:30'dan itibaren, kalkış 20:30, yanaşma 23:30. Ödeme: Pay on the boat (ön ödeme yok).
+**Buluşma:** Kabataş İskelesi. Giriş 20:00'dan itibaren, kalkış 21:00, yanaşma 23:45–00:00 (deniz trafiğine bağlı). Ödeme: Pay on the boat (ön ödeme yok).
 
 > ⚠️ **Saat kanonik kaynak: Supabase `packages` tablosu — 3 alan.** Saat değişirse bu 3 DB alanı + 5 kod yeri birden güncelle:
-> 1. **DB:** `packages.departure_time` (TIME kolonu) — örn `"20:30:00"`
-> 2. **DB:** `packages.inclusions->>service_starts_at` (jsonb) — örn `"19:30"` (giriş)
-> 3. **DB:** `packages.inclusions->>departure_at` (jsonb) — örn `"20:30"` (kalkış)
-> 4. **DB (opsiyonel):** `packages.inclusions->>return_at` (jsonb) — örn `"23:30"` (yanaşma)
+> 1. **DB:** `packages.departure_time` (TIME kolonu) — örn `"21:00:00"`
+> 2. **DB:** `packages.inclusions->>service_starts_at` (jsonb) — örn `"20:00"` (giriş)
+> 3. **DB:** `packages.inclusions->>departure_at` (jsonb) — örn `"21:00"` (kalkış)
+> 4. **DB (opsiyonel):** `packages.inclusions->>return_at` (jsonb) — örn `"23:45-00:00"` (yanaşma aralığı)
 > 5. AI prompt: `src/claude/system-prompt.js` (TRANSFER CUTOFF tablosu + Tur saati başlığı + transfer pencereleri + Gi vakası vs.)
 > 6. AI prompt: `src/claude/prompts/shared-rules.js`, `red-lines.md`, `intents/complaint.md`
 > 7. AI script: `src/scripts/seed-observer-context.js` + `update-observer-context-{probe,v3,v4}.js` + test fixture'lar
 > 8. Site CLAUDE.md §3 (Buluşma satırı + paket tablosu Kalkış sütunu) + Same-day Booking Cutoff bölümü
 > 9. Site UI: `cruises/`, `content/translations/`, `content/ui-translations/`, `js/translations.js`, `terms.html`, `llms.txt`, `index.html`, `blog/`, `src/city-guide-i18n/`, `panel/PackageEditor.tsx` placeholder
 >
-> **DB önceliklidir:** AI tool fallback'leri (`?? '19:30'` / `?? '20:30'`) sadece DB boşsa devreye girer. DB'de eski değer durduğu sürece AI hâlâ eski saati verir — 14 May'da bu bug bulundu, müşteri-facing site güncellenmesine rağmen AI prod'da hâlâ "21:00 kalkış" diyordu. Update sonrası `pm2 restart bosphorus-ai` yap (cache temizle).
+> **DB önceliklidir:** AI tool fallback'leri (`?? '20:00'` / `?? '21:00'`) sadece DB boşsa devreye girer. DB'de eski değer durduğu sürece AI hâlâ eski saati verir — 14 May'da bu bug bulundu, müşteri-facing site güncellenmesine rağmen AI prod'da hâlâ eski kalkış saatini diyordu. Update sonrası `pm2 restart bosphorus-ai` yap (cache temizle).
 
 **Rota:** Dolmabahçe → Çırağan → Ortaköy → Bebek → Rumeli Hisarı → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş
 
@@ -119,24 +119,24 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 
-### Transfer Kuralı (2026-05-06 güncellendi — 18:00 kesin engel)
+### Transfer Kuralı (2026-08-06 güncellendi — 18:30 kesin engel, AMOR programı)
 Aynı gün (tur tarihi = bugün) için saat dilimleri:
-- **00:00-18:00** → normal, AI kendisi alır
-- **18:00-20:30** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 20:30'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
-- **20:30+** → bugünün turu kalktı
+- **00:00-18:30** → normal, AI kendisi alır
+- **18:30-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 21:00'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
+- **21:00+** → bugünün turu kalktı
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 
-### Same-day Booking Cutoff (2026-05-14 güncellendi — orta yol)
+### Same-day Booking Cutoff (2026-08-06 güncellendi — AMOR programı, 20:00)
 Aynı gün rezervasyon kabul saatleri:
-- **00:00-19:30** → normal, AI rezerve eder
-- **19:30-20:30** → **DAR PENCERE**. AI önce uyarır: "Şu an çok dar bir pencere, transfer veremem ve Kabataş'a doğrudan gelmen lazım — 20:30'a yetişebilir misin?" Müşteri "evet" derse rezerve eder, "hayır/emin değilim" derse yarın için pitch.
-- **20:30+** → kalkış geçti, tool reddediyor + yarın pitch
+- **00:00-20:00** → normal, AI rezerve eder
+- **20:00-21:00** → **DAR PENCERE**. AI önce uyarır: "Şu an çok dar bir pencere, transfer veremem ve Kabataş'a doğrudan gelmen lazım — 21:00'a yetişebilir misin?" Müşteri "evet" derse rezerve eder, "hayır/emin değilim" derse yarın için pitch.
+- **21:00+** → kalkış geçti, tool reddediyor + yarın pitch
 
 **Tek source of truth:**
-- Site terms.html: "Same-day until 19:30 (1 hour before departure)"
-- AI prompt: `src/claude/system-prompt.js` § TRANSFER CUTOFF tablosu (19:30-20:30 satırı)
-- AI tool: `src/claude/tools/create-reservation.js:189` (20:30 hard reddet)
+- Site terms.html: "Same-day until 20:00 (1 hour before departure)"
+- AI prompt: `src/claude/system-prompt.js` § TRANSFER CUTOFF tablosu (20:00-21:00 satırı)
+- AI tool: `src/claude/tools/create-reservation.js:189` (21:00 hard reddet)
 - Wizard: `js/main.js` Step 2→3 validation (cutoff parametresi)
 
 **Tek source of truth:**
@@ -275,7 +275,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 5 | og:locale meta tag (16 dil — en_US, tr_TR vs.) | 30 dk | ⏳ |
 | 6 | Google Analytics 4 (GA4) property kurulumu + gtag G-ID | 30 dk | ⏳ |
 | 7 | Ana sayfaya Tour/TouristTrip schema × 4 paket | 45 dk | ⏳ |
-| 8 | Ana sayfaya Event schema (günlük 20:30 kalkış) | 30 dk | ✅ 2 May (5.A Madde 2'de tamamlandı, fiyat sync + evergreen + 15 dil i18n) |
+| 8 | Ana sayfaya Event schema (günlük 21:00 kalkış) | 30 dk | ✅ 2 May (5.A Madde 2'de tamamlandı, fiyat sync + evergreen + 15 dil i18n) |
 | 9 | Tailwind CDN → build-time CSS extraction | 2-3 sa | ⏳ |
 | 10 | Görsel optimize: JPG → WebP/AVIF (build pipeline) | 2-3 sa | ⏳ |
 | 11 | og:image width/height meta tag ekle (1200×630) | 10 dk | ⏳ |
@@ -321,7 +321,7 @@ Aşama 4 WhatsApp işiyle paralel yürüyecek. Her madde ayrı commit, Özgür o
 | 3 | **GetYourGuide partner başvuru** — getyourguide.com/supplier-portal/login. Avrupa pazarı #1. Onay 1-2 hafta. Komisyon %25-30 | 1 sa başvuru + bekleme | 🔴 Travel Listings carousel | ⏳ |
 | 4 | **Klook partner başvuru** — Asya odaklı (Çin, Japon, Kore turist). Komisyon %15-25 | 1 sa başvuru + bekleme | 🟡 Asya pazarı | ⏳ |
 | 5 | **Civitatis** (İspanya/Latin Amerika) başvuru | 30 dk | 🟢 Hispanic pazarı | ⏳ |
-| 6 | **GBP weekly post** otomasyonu — AI agent her Pazartesi GBP'ye post atar (örn: "Tonight 20:30 cruise, €24.30, WhatsApp +90...") | 2 sa kod | 🟡 GBP engagement signal | ⏳ |
+| 6 | **GBP weekly post** otomasyonu — AI agent her Pazartesi GBP'ye post atar (örn: "Tonight 21:00 cruise, €24.30, WhatsApp +90...") | 2 sa kod | 🟡 GBP engagement signal | ⏳ |
 | 7 | **AggregateRating schema** — Google'a 50+ yorum birikince TouristTrip schema'ya AggregateRating ekle. Search'te ★ yıldızlar çıkar | 30 dk | 🔴 SERP CTR +%30 | ⏳ |
 | 8 | **Google review toplama otomasyonu** — Tur sonrası AI agent WhatsApp/Telegram review link'i atar. Bilet PNG'sine QR | 1 sa kod | 🔴 Yorum hacmi | ⏳ |
 | 9 | **Hotel partnerlik backlinks** — Hilton/Conrad/Four Seasons konsiyerjlerine broşür + site link karşılığı | 1-2 hafta | 🔴 Yüksek otorite link | ⏳ |

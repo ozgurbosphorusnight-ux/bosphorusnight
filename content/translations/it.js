@@ -9,7 +9,7 @@ module.exports = {
   "bosphorus-dinner-cruise": {
     meta: {
       title: 'Crociera Cena Bosforo da €{p.dinnerStd} — Tour Notturno Istanbul + Show',
-      description: 'Crociera cena 3 ore sul Bosforo: menu turco multi-portate e spettacolo folkloristico dal vivo. Partenza 20:30 da Kabataş.'
+      description: 'Crociera cena 3 ore sul Bosforo: menu turco multi-portate e spettacolo folkloristico dal vivo. Partenza 21:00 da Kabataş.'
     },
     hero: {
       h1: "Crociera con Cena sul Bosforo a Istanbul",
@@ -17,7 +17,7 @@ module.exports = {
       badge: "4,8★ · 11.317 recensioni"
     },
     intro: [
-      "La **crociera con cena sul Bosforo** è l'esperienza serale più iconica di Istanbul. La nostra barca salpa alle 19:30 dal molo di Kabataş e scivola sotto le arcate illuminate dei ponti del Bosforo e di Fatih Sultan Mehmet, mentre Lei gusta un banchetto turco a più portate, spettacoli folkloristici dal vivo, danza orientale e un set DJ che anima il ponte fino alle 23:00.",
+      "La **crociera con cena sul Bosforo** è l'esperienza serale più iconica di Istanbul. La nostra barca salpa alle 20:00 dal molo di Kabataş e scivola sotto le arcate illuminate dei ponti del Bosforo e di Fatih Sultan Mehmet, mentre Lei gusta un banchetto turco a più portate, spettacoli folkloristici dal vivo, danza orientale e un set DJ che anima il ponte fino alle 23:00.",
       "A differenza delle numerose barche turistiche generiche che popolano la notte di Istanbul, la nostra **crociera con cena sul Bosforo** è autorizzata TÜRSAB (A-17672) e valutata 4,8★ da oltre 11.317 viaggiatori. Manteniamo il gruppo ristretto, il servizio caloroso — e poiché il pagamento avviene a bordo, prenotare in anticipo non comporta alcun rischio.",
       "Che stia celebrando un anniversario, cercando una serata premium a Istanbul per la Sua famiglia, o desideri semplicemente il passaggio tramonto-notte più fotogenico della città — questa è la crociera con cena che gli abitanti di Istanbul raccomandano per primi."
     ],
@@ -28,7 +28,7 @@ module.exports = {
       { title: "Da €{p.dinnerStd}/persona — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }
     ],
     faq: [
-      { q: "Quando inizia la crociera con cena sul Bosforo?", a: "L'imbarco inizia alle 19:30 al molo di Kabataş. La barca parte alle 20:30 e rientra intorno alle 23:30. Raccomandiamo di arrivare 15-20 minuti in anticipo per accomodarsi e sistemarsi." },
+      { q: "Quando inizia la crociera con cena sul Bosforo?", a: "L'imbarco inizia alle 20:00 al molo di Kabataş. La barca parte alle 21:00 e rientra intorno alle 00:00. Raccomandiamo di arrivare 15-20 minuti in anticipo per accomodarsi e sistemarsi." },
       { q: "Quanto costa la crociera con cena sul Bosforo?", a: "La crociera con cena costa €{p.dinnerStd}/persona (prezzo pieno €{p.dinnerStdOriginal}). Bambini 0-3 anni gratis, 4-8 anni al 50%. Il pagamento avviene a bordo — nessun anticipo." },
       { q: "L'alcol è incluso nella crociera con cena?", a: "Le bevande analcoliche illimitate (acqua, cola, succhi) sono incluse nel prezzo. Il pacchetto alcolico è opzionale: 2 bicchieri (vino, birra, rakı, vodka o gin) +€{p.alcohol2}/persona. Le bevande aggiuntive e i distillati d'importazione sono a prezzo separato a bordo." },
       { q: "È previsto il transfer dall'hotel?", a: "Sì — il servizio di andata e ritorno costa +€{p.transfer}/persona. Aree di servizio: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce e Şişli. Può selezionarlo nella procedura guidata di prenotazione." },
@@ -133,13 +133,13 @@ module.exports = {
       { title: "Menu 100% certificato halal", desc: "Tutta la carne (salmone, branzino, pollo, köfte, manzo, costata) è certificata halal da fornitori approvati. La cucina segue la preparazione halal. Nessun prodotto a base di maiale o additivo non halal. Opzioni vegetariane sempre disponibili." },
       { title: "Alcol opzionale, mai imposto", desc: "I pacchetti alcolici sono extra — non inclusi di default. Le bevande analcoliche (acqua, cola, succhi) sono illimitate e gratuite. Il Suo tavolo rimane senza alcol se non lo richiede esplicitamente. Lo staff rispetta la Sua scelta silenziosamente." },
       { title: "Intrattenimento a misura di famiglia", desc: "Cerimonia Sema, danze folkloristiche turche tradizionali, musica turca dal vivo. Nessuna performance in stile night club, nessun contenuto inappropriato. Sicuro per i bambini, rispettoso per le famiglie. La danza orientale è una forma d'arte tradizionale, presentata con modestia." },
-      { title: "Rispetto degli orari di preghiera", desc: "Se il maghrib o l'isha coincide con l'orario di imbarco (19:30-20:30), il nostro staff può indicarLe l'area di preghiera silenziosa al molo di Kabataş prima della partenza. Basta avvisare alla prenotazione." }
+      { title: "Rispetto degli orari di preghiera", desc: "Se il maghrib o l'isha coincide con l'orario di imbarco (20:00-21:00), il nostro staff può indicarLe l'area di preghiera silenziosa al molo di Kabataş prima della partenza. Basta avvisare alla prenotazione." }
     ],
     faq: [
       { q: "La crociera sul Bosforo è 100% halal?", a: "Sì — ogni prodotto a base di carne nel menu (pesce, pollo, köfte, filetto di manzo, costata, agnello) è certificato halal da fornitori approvati. La cucina segue gli standard di preparazione halal. Nessun maiale viene servito da nessuna parte sulla barca. Non è un'\"opzione halal\" — l'intero menu è halal." },
       { q: "Gli altri ospiti bevono alcol in questo tour?", a: "Alcuni ospiti aggiungono il pacchetto alcolico opzionale da 2 bicchieri (+€{p.alcohol2}/persona). I tavoli sono naturalmente separati — può richiedere una sezione senza alcol. Lo staff non porta alcol a meno che non sia specificamente ordinato da un ospite. Le bevande analcoliche (illimitate) sono incluse per tutti." },
       { q: "Questo tour è adatto alle famiglie musulmane con bambini?", a: "Sì — è uno dei tour più rispettosi delle famiglie di Istanbul. Intrattenimento modesto (folklore, Sema, musica turca), bambini sotto i 3 anni gratis, 4-8 anni 50% di sconto. Nessuna atmosfera da night club. Le famiglie della regione del Golfo, Indonesia, Malesia, Pakistan e Marocco prenotano regolarmente questo tour." },
-      { q: "Posso pregare a bordo?", a: "Non c'è una sala preghiera dedicata a bordo, ma raccomandiamo di pregare prima dell'imbarco alle 19:30 (il maghrib di solito cade in questa finestra). Ci sono strutture per la preghiera al molo di Kabataş. Se ha bisogno di pregare durante la navigazione 20:30-23:30 (isha), parli con l'equipaggio — possiamo organizzare un angolo tranquillo sul ponte." },
+      { q: "Posso pregare a bordo?", a: "Non c'è una sala preghiera dedicata a bordo, ma raccomandiamo di pregare prima dell'imbarco alle 20:00 (il maghrib di solito cade in questa finestra). Ci sono strutture per la preghiera al molo di Kabataş. Se ha bisogno di pregare durante la navigazione 21:00-00:00 (isha), parli con l'equipaggio — possiamo organizzare un angolo tranquillo sul ponte." },
       { q: "Quali sono i prezzi per una famiglia musulmana di 4 persone (2 adulti, 2 bambini)?", a: "Crociera con cena: 2 × €{p.dinnerStd} + 2 × €12.15 (4-8 anni metà prezzo) = €72.90. Se i bambini hanno meno di 3 anni è gratis: 2 × €{p.dinnerStd} = €48.60. Aggiunga €5 di transfer hotel per adulto. Totale: €48.60–€92.90 per una famiglia di 4, nessun anticipo, pagamento a bordo." },
       { q: "Anche il transfer hotel è halal?", a: "Il transfer hotel è solo un tragitto in auto — nessun cibo o bevanda coinvolti, quindi nessuna questione halal. I nostri autisti sono professionali, rispettosi e puntuali. Le zone di transfer coprono Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e altre 8 aree centrali dove alloggiano di solito i viaggiatori musulmani." }
     ],
@@ -163,7 +163,7 @@ module.exports = {
     intro: [
       'Molte barche sul Bosforo dividono gli ospiti in "Standard" e "VIP". Noi no. A bordo dell\'**AMOR** c\'è un unico menù, preparato con la stessa cura per tutti: 10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo o köfte), torta gelato e bevande analcoliche illimitate. È incluso anche l\'intero programma di spettacoli — cerimonia dei dervisci rotanti, 5 danze folcloristiche, danza del ventre, musica dal vivo e DJ — tutto nel prezzo di €{p.dinnerStd}/persona.',
       'La sensazione VIP inizia dal tuo tavolo. Se vuoi essere il più vicino possibile al palco e alla vista, aggiungi il **tavolo privato vicino al palco** (+€{p.romantic}/tavolo) e il tuo posto viene riservato in anticipo: la prospettiva migliore sui dervisci, sulle danze folcloristiche e sul Bosforo illuminato. La scelta preferita di coppie, celebrazioni e appassionati di fotografia.',
-      'L\'AMOR è una nave moderna di 42 metri, 3 ponti, fino a 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Il percorso di 3 ore parte da Kabataş (imbarco dalle 19:30, partenza 20:30, rientro 23:30) e passa da Dolmabahçe, la moschea di Ortaköy, la fortezza di Rumeli e le luci del ponte sul Bosforo. Licenza TÜRSAB (A-17672), 4,9★ su Google. Nessun pagamento anticipato: paghi a bordo, con cancellazione gratuita fino a 2 ore prima della partenza.'
+      'L\'AMOR è una nave moderna di 42 metri, 3 ponti, fino a 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Il percorso di 3 ore parte da Kabataş (imbarco dalle 20:00, partenza 21:00, rientro 00:00) e passa da Dolmabahçe, la moschea di Ortaköy, la fortezza di Rumeli e le luci del ponte sul Bosforo. Licenza TÜRSAB (A-17672), 4,9★ su Google. Nessun pagamento anticipato: paghi a bordo, con cancellazione gratuita fino a 2 ore prima della partenza.'
     ],
     highlights: [
       { title: 'Un solo menù, standard premium', desc: 'Non esiste un "menù VIP" separato, perché il nostro unico menù è già a quel livello. 10 varietà di meze, antipasto caldo, 4 secondi a scelta, dessert e bevande analcoliche illimitate, serviti con la stessa cura a ogni tavolo.' },
@@ -177,7 +177,7 @@ module.exports = {
       { q: 'Cosa c\'è nel menù?', a: '10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo o köfte) e torta gelato come dessert, con bevande analcoliche illimitate. Il programma è incluso: cerimonia dei dervisci, 5 danze folcloristiche, danza del ventre, musica dal vivo e DJ.' },
       { q: 'L\'alcol è incluso?', a: 'No — l\'alcol è un extra separato: 2 bicchieri di vino o birra locale a +€{p.alcohol2}/persona. Le bevande analcoliche sono incluse e illimitate. I distillati premium d\'importazione vengono conteggiati a parte a bordo.' },
       { q: 'Come garantisco un tavolo vicino al palco?', a: 'Basta selezionare l\'extra "tavolo privato vicino al palco" (+€{p.romantic}/tavolo) durante la prenotazione: il tavolo viene riservato a tuo nome. Le posizioni migliori si esauriscono con le prenotazioni anticipate, quindi consigliamo di aggiungerlo prima del giorno della crociera.' },
-      { q: 'Che tipo di imbarcazione è?', a: 'L\'AMOR — una moderna nave passeggeri di 42 metri, 3 ponti e capacità di 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Partenza dal molo di Kabataş: imbarco 19:30, partenza 20:30, rientro 23:30. Percorso: Dolmabahçe, Ortaköy, fortezza di Rumeli, Beylerbeyi e le luci del ponte sul Bosforo.' }
+      { q: 'Che tipo di imbarcazione è?', a: 'L\'AMOR — una moderna nave passeggeri di 42 metri, 3 ponti e capacità di 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Partenza dal molo di Kabataş: imbarco 20:00, partenza 21:00, rientro 00:00. Percorso: Dolmabahçe, Ortaköy, fortezza di Rumeli, Beylerbeyi e le luci del ponte sul Bosforo.' }
     ],
     cta: {
       primary: 'Prenota il tuo tavolo · Pagamento a bordo',
@@ -204,7 +204,7 @@ module.exports = {
     highlights: [
       { title: "Intera barca, solo per Lei", desc: "Nessun altro ospite. Il Suo gruppo ha ogni ponte, ogni tavolo. Scelga la Sua musica, il Suo dress code, il Suo programma. La privacy conta — la rispettiamo." },
       { title: "Menu personalizzato e pacchetto bevande", desc: "Lavori con il nostro chef per personalizzare il menu: meze specifici, scelte di secondo, piatti adatti alla Sua cultura o alle Sue esigenze alimentari. Pacchetti alcolici, flute di champagne, bar personalizzati per cocktail — tutto gestibile." },
-      { title: "Durata e partenza flessibili", desc: "Le 3 ore standard possono estendersi a 4-5 ore. Scelga partenza diurna alle 12:00, tramonto alle 17:30 o serale alle 20:30. Preferisce un giorno feriale al weekend? Nessun problema — lavoreremo con il Suo programma." },
+      { title: "Durata e partenza flessibili", desc: "Le 3 ore standard possono estendersi a 4-5 ore. Scelga partenza diurna alle 12:00, tramonto alle 17:30 o serale alle 21:00. Preferisce un giorno feriale al weekend? Nessun problema — lavoreremo con il Suo programma." },
       { title: "Decorazioni personalizzate, band, programma", desc: "Decorazioni personalizzate (palloncini, striscioni, composizioni floreali), band dal vivo invece del DJ, servizio della torta nuziale, coordinamento del fotografo, discorsi — aggiunga ciò di cui il Suo evento ha bisogno. Non siamo solo operatori di barche, siamo pianificatori di eventi." }
     ],
     faq: [
@@ -248,7 +248,7 @@ module.exports = {
       { q: "Quanto costa il tour del Bosforo per 2 persone?", a: "Crociera con cena per 2: 2 × €{p.dinnerStd} = €48.60. Aggiunga il transfer hotel per due: +€{p.transfer}×2 = €10. Aggiunga il pacchetto alcolico da 2 bicchieri per due: +€{p.alcohol2}×2 = €20. Nessun anticipo — pagamento a bordo." },
       { q: "Le coppie possono portare il proprio vino o champagne?", a: "Non permettiamo alcol esterno (per motivi di licenza). Ma abbiamo il pacchetto alcolico da 2 bicchieri con vino locale (+€{p.alcohol2}/persona) e possiamo organizzare vini premium d'importazione o champagne con un supplemento — chieda alla prenotazione. Prosecco, Chianti e Cabernet sono richieste premium popolari." },
       { q: "Va bene se non beviamo — siamo fuori posto?", a: "Niente affatto — molte coppie saltano completamente l'alcol, per ragioni halal o semplicemente per preferenza. Le bevande analcoliche illimitate (acqua, succhi, cola) sono incluse. Se il Vostro tavolo è senza alcol nessuno se ne accorge. Molte coppie musulmane dall'Arabia Saudita, Iran e Indonesia prenotano questo tour." },
-      { q: "Qual è il momento migliore per il tour del Bosforo per coppie — tramonto o notte?", a: "La crociera parte ogni sera alle 20:30 — e in estate (maggio–agosto) quell'unica partenza offre entrambe le cose: imbarco dalle 19:30 durante l'ora dorata, il tramonto proprio intorno alla partenza, poi i ponti illuminati e i palazzi risplendenti. In inverno è una pura crociera tra le luci notturne. In ogni caso, una sola prenotazione regala alle coppie la versione più iconica del Bosforo." },
+      { q: "Qual è il momento migliore per il tour del Bosforo per coppie — tramonto o notte?", a: "La crociera parte ogni sera alle 21:00 — e in estate (maggio–agosto) quell'unica partenza offre entrambe le cose: imbarco dalle 20:00 durante l'ora dorata, il tramonto proprio intorno alla partenza, poi i ponti illuminati e i palazzi risplendenti. In inverno è una pura crociera tra le luci notturne. In ogni caso, una sola prenotazione regala alle coppie la versione più iconica del Bosforo." },
       { q: "C'è una pista da ballo — possiamo ballare?", a: "Sì — dopo il servizio della cena (~22:30), il DJ parte e il ponte esterno diventa area ballo. Molte coppie ballano lentamente sotto le luci con il Ponte del Bosforo sullo sfondo. Alcune delle migliori foto che scatterete a Istanbul." }
     ],
     cta: {
@@ -261,37 +261,37 @@ module.exports = {
   "bosphorus-sunset-cruise": {
     meta: {
       title: 'Crociera Tramonto e Cena sul Bosforo da €{p.dinnerStd}',
-      description: 'Il tramonto sul Bosforo, poi cena sotto i ponti illuminati. Imbarco 19:30 a Kabataş, partenza 20:30. 3 ore, cena completa. Pagamento a bordo.'
+      description: 'Il tramonto sul Bosforo, poi cena sotto i ponti illuminati. Imbarco 20:00 a Kabataş, partenza 21:00. 3 ore, cena completa. Pagamento a bordo.'
     },
     hero: {
       h1: "Crociera Tramonto e Cena sul Bosforo",
-      subtitle: "Si imbarchi alle 19:30 mentre il cielo si tinge d'oro sopra i minareti — poi ceni sull'acqua mentre Dolmabahçe, la Moschea di Ortaköy e il Ponte del Bosforo si accendono per la notte.",
-      badge: "Imbarco 19:30 · Partenza 20:30 · Dal Tramonto alle Luci della Città"
+      subtitle: "Si imbarchi alle 20:00 mentre il cielo si tinge d'oro sopra i minareti — poi ceni sull'acqua mentre Dolmabahçe, la Moschea di Ortaköy e il Ponte del Bosforo si accendono per la notte.",
+      badge: "Imbarco 20:00 · Partenza 21:00 · Dal Tramonto alle Luci della Città"
     },
     intro: [
-      "L'esperienza della **crociera al tramonto sul Bosforo** a Istanbul ruota attorno a una cosa: la transizione. L'imbarco inizia al molo di Kabataş dalle 19:30 — e nelle lunghe serate da maggio ad agosto, l'ora dorata si dispiega mentre si accomoda sul ponte. Il sole tramonta dietro i minareti della sponda europea proprio intorno alla partenza delle 20:30, quindi lo osserva dall'acqua: il Palazzo Dolmabahçe dipinto d'oro, la Moschea di Ortaköy in silhouette contro il cielo acceso.",
+      "L'esperienza della **crociera al tramonto sul Bosforo** a Istanbul ruota attorno a una cosa: la transizione. L'imbarco inizia al molo di Kabataş dalle 20:00 — e nelle lunghe serate da maggio ad agosto, l'ora dorata si dispiega mentre si accomoda sul ponte. Il sole tramonta dietro i minareti della sponda europea proprio intorno alla partenza delle 21:00, quindi lo osserva dall'acqua: il Palazzo Dolmabahçe dipinto d'oro, la Moschea di Ortaköy in silhouette contro il cielo acceso.",
       "La nostra **crociera sul Bosforo dal tramonto alla notte** include una cena turca completa — 10 varietà di meze, antipasto caldo, secondo a scelta, dolce — servita mentre la città accende le sue luci. Quando arriva il dolce, sta navigando sotto il Ponte del Bosforo illuminato, con 30 milioni di luci riflesse sull'acqua scura. Il passaggio dal crepuscolo alla notte piena, tutto in un'unica crociera di 3 ore, è l'essenza dell'esperienza.",
       "Che sia un fotografo a caccia dell'ultima luce, una coppia in cerca di \"quella foto ricordo di Istanbul\" o un visitatore alla prima volta che desidera la classica serata sull'acqua, questa è la **crociera al tramonto con cena sul Bosforo** che gli abitanti di Istanbul raccomandano ai visitatori. Da €{p.dinnerStd}/persona, valutazione 4,8★, autorizzato TÜRSAB, pagamento a bordo — nessun anticipo."
     ],
     highlights: [
-      { title: "Tramonti estivi proprio alla partenza", desc: "Da maggio ad agosto, il sole a Istanbul tramonta all'incirca tra le 20:15 e le 20:45 — l'imbarco alle 19:30 Le regala l'ora dorata sul ponte, e la partenza delle 20:30 La porta in acqua proprio per il tramonto. Fotocamera pronta — questo è lo scatto." },
+      { title: "Tramonti estivi proprio alla partenza", desc: "Da maggio ad agosto, il sole a Istanbul tramonta all'incirca tra le 20:15 e le 20:45 — l'imbarco alle 20:00 Le regala l'ora dorata sul ponte, e la partenza delle 21:00 La porta in acqua proprio per il tramonto. Fotocamera pronta — questo è lo scatto." },
       { title: "Dall'ora blu alla notte piena", desc: "Non solo il tramonto — la crociera naviga attraverso il crepuscolo fino al Bosforo pienamente illuminato. Luce dorata, ora blu, poi 30 milioni di luci dei ponti sull'acqua scura: tre fasi di luce in una sola serata." },
       { title: "Cena completa durante la crociera", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, orata, pollo, köfte, vegetariano), dolce con bomba gelato, bevande analcoliche illimitate — il tutto servito mentre le luci della città si accendono." },
       { title: "Dolmabahçe, Ortaköy, Ponte del Bosforo — tutto brilla", desc: "L'itinerario passa per il Palazzo Dolmabahçe, la Moschea di Ortaköy, il Ponte del Bosforo, Rumeli Hisarı e il Palazzo Beylerbeyi mentre le loro luci si accendono. Ogni monumento nella sua luce migliore." }
     ],
     faq: [
-      { q: "A che ora parte la crociera al tramonto sul Bosforo?", a: "L'imbarco inizia alle 19:30 al molo di Kabataş, la barca parte alle 20:30 e rientra intorno alle 23:30. In estate (maggio–agosto) il sole tramonta all'incirca tra le 20:15 e le 20:45 — l'ora dorata avviene durante l'imbarco, e il tramonto stesso proprio intorno alla partenza, visto dall'acqua." },
-      { q: "La crociera al tramonto sul Bosforo è la stessa della crociera con cena?", a: "Sì — è un'unica crociera. C'è una sola partenza giornaliera alle 20:30 con cena completa e spettacoli dal vivo a bordo. Nelle lunghe serate estive funziona anche come crociera al tramonto: si imbarca durante l'ora dorata e naviga attraverso l'ora blu fino alla notte illuminata. In inverno, la stessa crociera diventa un'esperienza puramente notturna tra le luci." },
+      { q: "A che ora parte la crociera al tramonto sul Bosforo?", a: "L'imbarco inizia alle 20:00 al molo di Kabataş, la barca parte alle 21:00 e rientra intorno alle 00:00. In estate (maggio–agosto) il sole tramonta all'incirca tra le 20:15 e le 20:45 — l'ora dorata avviene durante l'imbarco, e il tramonto stesso proprio intorno alla partenza, visto dall'acqua." },
+      { q: "La crociera al tramonto sul Bosforo è la stessa della crociera con cena?", a: "Sì — è un'unica crociera. C'è una sola partenza giornaliera alle 21:00 con cena completa e spettacoli dal vivo a bordo. Nelle lunghe serate estive funziona anche come crociera al tramonto: si imbarca durante l'ora dorata e naviga attraverso l'ora blu fino alla notte illuminata. In inverno, la stessa crociera diventa un'esperienza puramente notturna tra le luci." },
       { q: "Qual è il prezzo della crociera al tramonto sul Bosforo?", a: "Da €{p.dinnerStd}/persona per la crociera (3 ore, cena completa, intrattenimento dal vivo). Pagamento a bordo — nessun anticipo. 0-3 anni gratis, 4-8 anni metà prezzo." },
-      { q: "Qual è il periodo migliore dell'anno per una crociera al tramonto sul Bosforo?", a: "Da maggio ad agosto. I tramonti tardivi di Istanbul (20:15–20:45) coincidono con la partenza delle 20:30, quindi ottiene l'ora dorata, il tramonto e i ponti illuminati in un'unica serata. In autunno e inverno il sole tramonta prima e la stessa crociera diventa un'esperienza interamente dedicata alle luci notturne — altrettanto fotogenica, atmosfera diversa." },
+      { q: "Qual è il periodo migliore dell'anno per una crociera al tramonto sul Bosforo?", a: "Da maggio ad agosto. I tramonti tardivi di Istanbul (20:15–20:45) coincidono con la partenza delle 21:00, quindi ottiene l'ora dorata, il tramonto e i ponti illuminati in un'unica serata. In autunno e inverno il sole tramonta prima e la stessa crociera diventa un'esperienza interamente dedicata alle luci notturne — altrettanto fotogenica, atmosfera diversa." },
       { q: "Cosa devo portare a una crociera al tramonto?", a: "Uno smartphone o una fotocamera — l'ora dorata e i ponti illuminati lo esigono. Una giacca leggera: dopo il tramonto la brezza si fa sentire sul ponte. Abbigliamento smart-casual — sta cenando, ma non c'è un dress code rigido." },
-      { q: "Vedrò i ponti illuminati di notte in questa crociera?", a: "Sì — è la seconda metà della serata. La crociera si svolge dalle 20:30–23:30, quindi dopo il tramonto e l'ora blu naviga sotto il Ponte del Bosforo pienamente illuminato, oltre i palazzi accesi e la Torre della Fanciulla, e rientra a Kabataş intorno alle 23:30." },
-      { q: "A che ora tramonta il sole a Istanbul?", a: "In estate (giugno–luglio), il tramonto a Istanbul avviene intorno alle 20:30–20:45. In inverno, intorno alle 16:30–17:00. Per un'esperienza dal tramonto alla notte, la crociera con cena delle 20:30 di Bosphorus Night da Kabataş cattura l'ora dorata tardiva e l'ora blu in estate, e i monumenti illuminati tutto l'anno." },
-      { q: "La crociera al tramonto sul Bosforo vale la pena?", a: "Sì — il tramonto sul Ponte del Bosforo è una delle vedute simbolo di Istanbul. La crociera con cena delle 20:30 di Bosphorus Night (€{p.dinnerStd}/persona) cattura l'ora blu dopo il tramonto e i palazzi illuminati, con cena completa e spettacoli dal vivo nell'arco di 3 ore." }
+      { q: "Vedrò i ponti illuminati di notte in questa crociera?", a: "Sì — è la seconda metà della serata. La crociera si svolge dalle 21:00–00:00, quindi dopo il tramonto e l'ora blu naviga sotto il Ponte del Bosforo pienamente illuminato, oltre i palazzi accesi e la Torre della Fanciulla, e rientra a Kabataş intorno alle 00:00." },
+      { q: "A che ora tramonta il sole a Istanbul?", a: "In estate (giugno–luglio), il tramonto a Istanbul avviene intorno alle 20:30–20:45. In inverno, intorno alle 16:30–17:00. Per un'esperienza dal tramonto alla notte, la crociera con cena delle 21:00 di Bosphorus Night da Kabataş cattura l'ora dorata tardiva e l'ora blu in estate, e i monumenti illuminati tutto l'anno." },
+      { q: "La crociera al tramonto sul Bosforo vale la pena?", a: "Sì — il tramonto sul Ponte del Bosforo è una delle vedute simbolo di Istanbul. La crociera con cena delle 21:00 di Bosphorus Night (€{p.dinnerStd}/persona) cattura l'ora blu dopo il tramonto e i palazzi illuminati, con cena completa e spettacoli dal vivo nell'arco di 3 ore." }
     ],
     cta: {
       primary: "Prenota la Crociera al Tramonto · Pagamento a Bordo",
-      secondary: "Imbarco 19:30 · Partenza 20:30 · Cena inclusa · Cancellazione gratuita 2 ore prima",
+      secondary: "Imbarco 20:00 · Partenza 21:00 · Cena inclusa · Cancellazione gratuita 2 ore prima",
       tertiary: "Vedi i Dettagli Completi della Crociera con Cena"
     }
   },
@@ -299,7 +299,7 @@ module.exports = {
   "bosphorus-night-tour": {
     meta: {
       title: 'Tour Notturno Bosforo da €{p.dinnerStd} — Crociera Cena + Show Live',
-      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Tour notturno 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş, ponti illuminati. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour Notturno sul Bosforo",
@@ -308,26 +308,26 @@ module.exports = {
     },
     intro: [
       "Il **tour notturno sul Bosforo** è l'attività serale più raccomandata a Istanbul. Il motivo: dopo il tramonto il Bosforo si trasforma. Il Ponte del Bosforo passa dal blu al viola all'oro. Il Palazzo Dolmabahçe brilla di giallo caldo. La Moschea di Ortaköy si riflette perfettamente nell'acqua nera. Ogni monumento di Istanbul raggiunge la sua massima spettacolarità di notte.",
-      "La nostra **crociera con cena notturna sul Bosforo** racchiude la serata iconica al completo: 3 ore sull'acqua (20:30-23:30), banchetto turco a più portate, folklore dal vivo (Sema, 5 danze folkloristiche, danza orientale), musica dal vivo e un set DJ che anima il ponte fino alla fine della serata. Ogni ospite riceve lo stesso programma — non esiste un'opzione \"base\" che salta le parti migliori.",
+      "La nostra **crociera con cena notturna sul Bosforo** racchiude la serata iconica al completo: 3 ore sull'acqua (21:00-00:00), banchetto turco a più portate, folklore dal vivo (Sema, 5 danze folkloristiche, danza orientale), musica dal vivo e un set DJ che anima il ponte fino alla fine della serata. Ogni ospite riceve lo stesso programma — non esiste un'opzione \"base\" che salta le parti migliori.",
       "Che sia il Suo primo viaggio a Istanbul e stia cercando \"l'unica cosa da fare di sera\", o sia già stato qui e voglia le 3 ore più fotogeniche in città, questo è il **tour notturno sul Bosforo** valutato 4,8★ da 11.317+ viaggiatori. Autorizzato TÜRSAB, pagamento a bordo, nessun anticipo."
     ],
     highlights: [
-      { title: "Bosforo illuminato al massimo della spettacolarità", desc: "Il Ponte del Bosforo cambia colore (blu, viola, oro), i palazzi brillano di giallo, la Moschea di Ortaköy si riflette nell'acqua nera. 20:30-23:30 è l'illuminazione di picco per tutti i monumenti di Istanbul." },
+      { title: "Bosforo illuminato al massimo della spettacolarità", desc: "Il Ponte del Bosforo cambia colore (blu, viola, oro), i palazzi brillano di giallo, la Moschea di Ortaköy si riflette nell'acqua nera. 21:00-00:00 è l'illuminazione di picco per tutti i monumenti di Istanbul." },
       { title: "Spettacolo turco tradizionale a bordo", desc: "Cerimonia Sema, 5 danze folkloristiche tradizionali (da regioni diverse della Turchia), danza orientale, musica turca dal vivo, poi set DJ. 40 minuti di esibizioni, poi musica + cena proseguono." },
       { title: "Cena completa a più portate", desc: "10 varietà di meze turchi, antipasto caldo (paçanga böreği), secondo (salmone, branzino, pollo, köfte, vegetariano — a scelta), dolce (bomba gelato), bevande analcoliche illimitate. Certificato halal." },
       { title: "Itinerario completo del Bosforo", desc: "Kabataş → Dolmabahçe → Palazzo di Çırağan → Moschea di Ortaköy → Bebek → Rumeli Hisarı → Ponte Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Torre della Fanciulla → Kabataş." }
     ],
     faq: [
-      { q: "Quando è il tour notturno sul Bosforo?", a: "Imbarco dalle 19:30 al molo di Kabataş. La barca parte alle 20:30, rientra intorno alle 23:30. Raccomandiamo di arrivare 20 minuti prima per sistemarsi e scegliere il posto." },
+      { q: "Quando è il tour notturno sul Bosforo?", a: "Imbarco dalle 20:00 al molo di Kabataş. La barca parte alle 21:00, rientra intorno alle 00:00. Raccomandiamo di arrivare 20 minuti prima per sistemarsi e scegliere il posto." },
       { q: "Quanto costa il tour notturno sul Bosforo?", a: "Tour notturno (3 ore, cena, spettacolo): €{p.dinnerStd}/persona (prima €{p.dinnerStdOriginal}). 0-3 anni gratis, 4-8 anni metà prezzo. Pagamento a bordo." },
       { q: "Qual è la differenza tra tour notturno sul Bosforo e crociera con cena?", a: "Stessa cosa, parola chiave diversa. \"Tour notturno sul Bosforo\" è come molti viaggiatori lo cercano; \"crociera con cena\" è il termine del settore. Stessa barca, stesso programma di 3 ore, stesso menu, stesso spettacolo. Scelga qualsiasi termine di ricerca preferisca — l'esperienza è la stessa." },
-      { q: "Tour notturno sul Bosforo o crociera al tramonto — quale vale di più?", a: "Non deve scegliere — è un'unica crociera, con partenza alle 20:30 ogni sera. In estate (maggio–agosto) quell'unica partenza offre entrambe le cose: imbarco dalle 19:30 durante l'ora dorata, il tramonto proprio intorno alla partenza, poi 3 ore di Istanbul illuminata con le foto più iconiche dei ponti accesi. In inverno è un puro tour tra le luci notturne. Una sola prenotazione copre la versione più completa del Bosforo." },
+      { q: "Tour notturno sul Bosforo o crociera al tramonto — quale vale di più?", a: "Non deve scegliere — è un'unica crociera, con partenza alle 21:00 ogni sera. In estate (maggio–agosto) quell'unica partenza offre entrambe le cose: imbarco dalle 20:00 durante l'ora dorata, il tramonto proprio intorno alla partenza, poi 3 ore di Istanbul illuminata con le foto più iconiche dei ponti accesi. In inverno è un puro tour tra le luci notturne. Una sola prenotazione copre la versione più completa del Bosforo." },
       { q: "Posso fare il tour notturno sul Bosforo il mio primo giorno a Istanbul?", a: "Sì — lo raccomandiamo. Molti viaggiatori prenotano il tour notturno per la loro prima serata perché offre un orientamento completo: tutti i grandi monumenti dall'acqua, con buona cena e intrattenimento. Più facile del jet lag rispetto a cercare di visitare il giorno 1. Transfer hotel disponibili dalle aree centrali." },
       { q: "Non parlo turco — il tour è in inglese?", a: "L'equipaggio parla inglese. L'intrattenimento (Sema, folklore, musica) non richiede lingua. Il menu della cena è in inglese. La prenotazione via WhatsApp / Telegram funziona in più lingue (inglese, arabo, russo, tedesco, francese, spagnolo). Non serve turco." }
     ],
     cta: {
       primary: "Prenota Tour Notturno · Pagamento a Bordo",
-      secondary: "Partenza alle 20:30 · 3 ore · Cena + spettacolo inclusi · Cancellazione gratuita 2 ore prima",
+      secondary: "Partenza alle 21:00 · 3 ore · Cena + spettacolo inclusi · Cancellazione gratuita 2 ore prima",
       tertiary: "Disponibilità Stasera"
     }
   },
@@ -343,8 +343,8 @@ module.exports = {
       badge: "4,8★ · 11.317 recensioni · TÜRSAB A-17672"
     },
     intro: [
-      "Cerca una **crociera con cena a Istanbul**? Ha trovato quella che la maggior parte dei viaggiatori raccomanda. La nostra serata di 3 ore sul Bosforo combina un sontuoso banchetto turco a più portate, folklore dal vivo e le vedute più fotogeniche della città — il tutto da una barca confortevole che parte alle 20:30 dal molo di Kabataş.",
-      "L'esperienza della **crociera con cena a Istanbul**: imbarchi alle 19:30, si accomodi, osservi il Palazzo Dolmabahçe passare mentre salpiamo, la cena inizia mentre ci avviciniamo alla Moschea di Ortaköy, lo spettacolo comincia (Sema, folklore, orientale), e quando arriva il dolce si trova sotto il Ponte del Bosforo illuminato. Torna a Kabataş entro mezzanotte con un collage fotografico iconico e lo stomaco pieno.",
+      "Cerca una **crociera con cena a Istanbul**? Ha trovato quella che la maggior parte dei viaggiatori raccomanda. La nostra serata di 3 ore sul Bosforo combina un sontuoso banchetto turco a più portate, folklore dal vivo e le vedute più fotogeniche della città — il tutto da una barca confortevole che parte alle 21:00 dal molo di Kabataş.",
+      "L'esperienza della **crociera con cena a Istanbul**: imbarchi alle 20:00, si accomodi, osservi il Palazzo Dolmabahçe passare mentre salpiamo, la cena inizia mentre ci avviciniamo alla Moschea di Ortaköy, lo spettacolo comincia (Sema, folklore, orientale), e quando arriva il dolce si trova sotto il Ponte del Bosforo illuminato. Torna a Kabataş entro mezzanotte con un collage fotografico iconico e lo stomaco pieno.",
       "€{p.dinnerStd}/persona per la crociera con cena (prima €{p.dinnerStdOriginal}). Pagamento a bordo — nessun anticipo, nessun rischio. Autorizzato TÜRSAB A-17672, valutato 4,8★ da oltre 11.317 viaggiatori."
     ],
     highlights: [
@@ -357,7 +357,7 @@ module.exports = {
       { q: "Quanto costa una crociera con cena a Istanbul?", a: "La nostra crociera con cena costa €{p.dinnerStd}/persona (prezzo pieno €{p.dinnerStdOriginal}). 0-3 anni gratis, 4-8 anni al 50%. Pagamento a bordo — nessun anticipo." },
       { q: "Cosa è incluso nel prezzo della crociera con cena a Istanbul?", a: "Tour di 3 ore sul Bosforo, cena turca a più portate (meze, antipasto caldo, secondo, dolce), bevande analcoliche illimitate, spettacolo di folklore dal vivo (Sema, folklore, orientale), musica dal vivo + DJ, accesso al ponte esterno, tasse incluse. Transfer hotel e alcol sono extra opzionali." },
       { q: "Da dove parte la crociera con cena a Istanbul?", a: "Molo di Kabataş, Istanbul — sul lato europeo, accanto al Palazzo Dolmabahçe. Il luogo esatto dell'incontro viene condiviso via WhatsApp / Telegram dopo la prenotazione. I video delle indicazioni a piedi dalla fermata del tram Dolmabahçe e dalla stazione del tram Kabataş sono nella sezione del punto d'incontro sopra." },
-      { q: "Quanto dura la crociera con cena — e quando inizia?", a: "3 ore totali. Imbarco dalle 19:30, la barca parte puntuale alle 20:30, rientra intorno alle 23:30. Raccomandiamo di arrivare 15-20 minuti prima per sistemarsi e scegliere il posto." },
+      { q: "Quanto dura la crociera con cena — e quando inizia?", a: "3 ore totali. Imbarco dalle 20:00, la barca parte puntuale alle 21:00, rientra intorno alle 00:00. Raccomandiamo di arrivare 15-20 minuti prima per sistemarsi e scegliere il posto." },
       { q: "Devo prenotare in anticipo, o posso presentarmi e basta?", a: "Prenoti in anticipo — i posti si riempiono, specialmente nei weekend e nei festivi. La prenotazione nello stesso giorno è spesso possibile ma non garantita. La procedura guidata su questa pagina Le riserva un posto in meno di 1 minuto. Pagamento a bordo, quindi prenotare in anticipo non comporta alcun rischio finanziario." },
       { q: "La crociera con cena a Istanbul è adatta a vegetariani / halal / restrizioni dietetiche?", a: "Sì — tutta la carne è certificata halal. Secondo vegetariano (falafel, patate arrosto, pilaf di bulgur, stufato di verdure, anelli di cipolla) disponibile senza supplemento. Le allergie possono essere gestite se segnalate alla prenotazione. L'alcol è un extra opzionale, mai imposto." }
     ],
@@ -371,7 +371,7 @@ module.exports = {
   "istanbul-night-tour": {
     meta: {
       title: 'Tour Notturno Istanbul da €{p.dinnerStd} — Crociera Cena Bosforo + Show',
-      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
     },
     hero: {
       h1: "Tour Notturno di Istanbul",
@@ -393,7 +393,7 @@ module.exports = {
       { q: "Qual è il miglior tour notturno a Istanbul?", a: "La crociera con cena sul Bosforo è costantemente classificata #1. Motivi: (1) offre tutte le vedute notturne iconiche dall'acqua, (2) include cena e spettacolo in un unico pacchetto, (3) 3 ore sono sufficienti per vedere molto senza stancarsi, (4) punto d'incontro centrale, (5) il pagamento a bordo riduce l'attrito della prenotazione. La maggior parte delle guide di viaggio di Istanbul la raccomanda come \"l'unica cosa da fare di sera\"." },
       { q: "Quanto costa un tour notturno di Istanbul?", a: "La nostra crociera con cena notturna sul Bosforo: €{p.dinnerStd}/persona. Include tour, cena, intrattenimento, bevande analcoliche. Opzionali: 2 bicchieri di alcol +€{p.alcohol2}/persona, transfer hotel +€{p.transfer}/persona. Pagamento a bordo — nessun anticipo." },
       { q: "Il tour notturno di Istanbul è sicuro per i viaggiatori solitari?", a: "Sì — molto sicuro. Barca autorizzata TÜRSAB, equipaggio professionale anglofono, CCTV a bordo, giubbotti di salvataggio disponibili. Molti viaggiatori solitari prenotano questo tour. Cena a un tavolo condiviso o privato (a Sua scelta), e la serata è inclusiva — può conoscere altri viaggiatori se vuole, o restare per conto Suo." },
-      { q: "Qual è il momento migliore per un tour notturno a Istanbul?", a: "La nostra crociera con cena sul Bosforo è dalle 20:30 alle 23:30 (3 ore). Questo è l'orario di illuminazione di picco per tutti i monumenti di Istanbul — ponti pienamente illuminati, palazzi brillanti, luna sull'acqua. Se desidera anche l'ora dorata, venga in estate: l'imbarco inizia alle 19:30 e da maggio ad agosto il sole tramonta proprio intorno alla partenza delle 20:30 — la stessa crociera copre entrambe le cose." },
+      { q: "Qual è il momento migliore per un tour notturno a Istanbul?", a: "La nostra crociera con cena sul Bosforo è dalle 21:00 alle 00:00 (3 ore). Questo è l'orario di illuminazione di picco per tutti i monumenti di Istanbul — ponti pienamente illuminati, palazzi brillanti, luna sull'acqua. Se desidera anche l'ora dorata, venga in estate: l'imbarco inizia alle 20:00 e da maggio ad agosto il sole tramonta proprio intorno alla partenza delle 21:00 — la stessa crociera copre entrambe le cose." },
       { q: "Come arrivo al punto d'incontro del tour notturno di Istanbul?", a: "Il punto d'incontro è il molo di Kabataş (lato europeo centrale, accanto al Palazzo Dolmabahçe). Con il tram: T1 fino alla stazione Kabataş (capolinea). In taxi: ~15 min da Taksim. A piedi: 20 min in discesa da Taksim lungo Viale İnönü. Su questa pagina ci sono video delle indicazioni a piedi. Transfer hotel disponibile a +€{p.transfer}/persona se preferisce." },
       { q: "Posso prenotare un tour notturno di Istanbul nello stesso giorno?", a: "Spesso sì, specialmente nei giorni feriali. I weekend si riempiono più rapidamente. La procedura guidata di prenotazione su questa pagina Le permette di verificare la disponibilità per stasera e prenotare in meno di 1 minuto. Per richieste urgenti nello stesso giorno, ci scriva su WhatsApp al +90 532 244 29 22." }
     ],
@@ -416,18 +416,18 @@ module.exports = {
     },
     intro: [
       "Quando cerca \"tour in barca a Istanbul\", sta cercando l'unica cosa che definisce la città dall'acqua: il Bosforo. Il nostro tour in barca di 3 ore sul Bosforo La porta oltre ogni grande monumento di Istanbul — Palazzo Dolmabahçe, Moschea di Ortaköy, Ponte del Bosforo, Rumeli Hisarı, Palazzo Beylerbeyi e Torre della Fanciulla — con una cena turca completa e intrattenimento dal vivo.",
-      "A differenza dei numerosi traghetti turistici di 1 ora che coprono meno Bosforo e saltano cena e intrattenimento, il nostro **tour in barca a Istanbul** è l'esperienza serale completa: imbarco alle 19:30 al molo di Kabataş, tour fino a mezzanotte, 10 meze, secondo, dolce, Sema, folklore, danza orientale e DJ. Riceve il tour E anche la serata fuori.",
+      "A differenza dei numerosi traghetti turistici di 1 ora che coprono meno Bosforo e saltano cena e intrattenimento, il nostro **tour in barca a Istanbul** è l'esperienza serale completa: imbarco alle 20:00 al molo di Kabataş, tour fino a mezzanotte, 10 meze, secondo, dolce, Sema, folklore, danza orientale e DJ. Riceve il tour E anche la serata fuori.",
       "Se ha una notte a Istanbul o una settimana intera, questo **tour in barca a Istanbul** fa il lavoro. 4,8★ da 11.317+ viaggiatori, autorizzato TÜRSAB (A-17672), menu certificato halal e pagamento a bordo — nessun impegno finanziario finché non è soddisfatto dell'esperienza."
     ],
     highlights: [
       { title: "Tutti i grandi monumenti del Bosforo", desc: "Dolmabahçe, Çırağan, Moschea di Ortaköy, Ponte del Bosforo, Bebek, Rumeli Hisarı, Ponte FSM, Palazzo Beylerbeyi, Üsküdar, Torre della Fanciulla. Sia sponda europea che asiatica in un solo tour." },
       { title: "Cena + spettacolo inclusi", desc: "Non solo un tour in barca — cena turca completa a più portate, esibizioni di folklore dal vivo, Sema, danza orientale, DJ. Ciò che rende le 3 ore divertenti, non solo turistiche." },
-      { title: "Partenza serale (illuminazione migliore)", desc: "La partenza delle 20:30 cattura il Bosforo illuminato al massimo splendore — ponti, palazzi, moschee tutti accesi. Più drammatico dei tour diurni che mostrano gli stessi monumenti in luce piatta." },
+      { title: "Partenza serale (illuminazione migliore)", desc: "La partenza delle 21:00 cattura il Bosforo illuminato al massimo splendore — ponti, palazzi, moschee tutti accesi. Più drammatico dei tour diurni che mostrano gli stessi monumenti in luce piatta." },
       { title: "Prenotazione facile, pagamento facile", desc: "Prenoti in meno di 1 minuto con la procedura guidata su questa pagina. Pagamento a bordo — nessun anticipo. Transfer hotel disponibile da +€{p.transfer}/persona. Cancellazione gratuita 2 ore prima della partenza." }
     ],
     faq: [
       { q: "Qual è il miglior tour in barca a Istanbul?", a: "La crociera con cena sul Bosforo è costantemente classificata #1. Copre tutti i grandi monumenti, include cena e intrattenimento, e opera in serata quando i monumenti sono illuminati. Altre opzioni (traghetti hop-on, barche turistiche mattutine) coprono itinerari più brevi, saltano la cena e non includono intrattenimento. Per una serata a Istanbul, è il tour in barca più completo." },
-      { q: "Quanto dura un tour in barca a Istanbul?", a: "3 ore. Imbarco dalle 19:30 al molo di Kabataş, partenza alle 20:30, rientro ~23:30. Copre l'intero Bosforo da Dolmabahçe a Rumeli Hisarı e ritorno. Tempo sufficiente per cena completa + spettacolo senza affaticarsi." },
+      { q: "Quanto dura un tour in barca a Istanbul?", a: "3 ore. Imbarco dalle 20:00 al molo di Kabataş, partenza alle 21:00, rientro ~00:00. Copre l'intero Bosforo da Dolmabahçe a Rumeli Hisarı e ritorno. Tempo sufficiente per cena completa + spettacolo senza affaticarsi." },
       { q: "Quanto costa un tour in barca a Istanbul?", a: "Il nostro tour in barca con cena: €{p.dinnerStd}/persona (prima €{p.dinnerStdOriginal}). 0-3 anni gratis, 4-8 anni metà prezzo. Pagamento a bordo. Alcol e transfer hotel sono extra opzionali." },
       { q: "Da dove partono i tour in barca a Istanbul?", a: "La nostra barca parte dal molo di Kabataş, lato europeo centrale di Istanbul, accanto al Palazzo Dolmabahçe. Accessibile con il tram T1 (stazione Kabataş), 15 min di taxi da Taksim o 20 min a piedi da Taksim. Transfer hotel disponibile a +€{p.transfer}/persona dalle aree centrali." },
       { q: "Questo tour in barca è adatto alle famiglie con bambini?", a: "Sì — molto a misura di famiglia. Bambini 0-3 anni gratis, 4-8 anni 50% di sconto. Area interna al coperto, menu per bambini su richiesta e intrattenimento (Sema, folklore) coinvolgente per i bambini. Molte famiglie da tutto il mondo prenotano questo tour." },
@@ -443,7 +443,7 @@ module.exports = {
   "bosphorus-trip": {
     meta: {
       title: 'Gita Bosforo da €{p.dinnerStd} — Crociera Cena Istanbul + Show',
-      description: 'Gita 3 ore sul Bosforo: cena turca, folklore dal vivo, viste notturne illuminate. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Gita 3 ore sul Bosforo: cena turca, folklore dal vivo, viste notturne illuminate. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Gita sul Bosforo",
@@ -463,7 +463,7 @@ module.exports = {
     ],
     faq: [
       { q: "Quali sono le migliori gite sul Bosforo a Istanbul?", a: "La crociera con cena serale è costantemente in cima. Le opzioni diurne (traghetti di linea di 1 ora, barche turistiche di 2 ore) mostrano meno e non includono cena. Per il valore, è difficile battere un tour di 3 ore con cena, spettacolo e punto di ritorno centrale. Il costo di €{p.dinnerStd} del nostro tour elimina la necessità di una serata separata per cena + intrattenimento." },
-      { q: "Quanto dura una gita sul Bosforo?", a: "La nostra gita sul Bosforo dura 3 ore totali (partenza alle 20:30, rientro alle 23:30). Ci sono opzioni più brevi (traghetti turistici di 1 ora, tour di 90 minuti) ma saltano cena e intrattenimento. Per l'esperienza serale completa, 3 ore sono ideali — abbastanza per vedere tutto senza stancarsi." },
+      { q: "Quanto dura una gita sul Bosforo?", a: "La nostra gita sul Bosforo dura 3 ore totali (partenza alle 21:00, rientro alle 00:00). Ci sono opzioni più brevi (traghetti turistici di 1 ora, tour di 90 minuti) ma saltano cena e intrattenimento. Per l'esperienza serale completa, 3 ore sono ideali — abbastanza per vedere tutto senza stancarsi." },
       { q: "Vale la pena fare una gita sul Bosforo?", a: "Sì — quasi ogni guida di viaggio di Istanbul elenca un \"tour sul Bosforo\" tra i primi 5 must-do. La città è stata costruita attorno a questo stretto; se non ha visto il Bosforo dall'acqua, non ha realmente visto Istanbul. Il nostro tour serale specifico aggiunge cena e intrattenimento, trasformandolo in una serata fuori completa piuttosto che solo turismo." },
       { q: "Cosa devo portare per una gita sul Bosforo?", a: "Passaporto o carta d'identità (per la registrazione a bordo), giacca leggera (le serate possono essere fresche sul ponte), smartphone/fotocamera, scarpe comode per la pista da ballo. Contanti o carta per il pagamento. Tutto il resto è a bordo. Transfer hotel disponibile a +€{p.transfer}/persona se non vuole usare i mezzi pubblici." },
       { q: "La gita sul Bosforo è adatta ai bambini?", a: "Sì — molto a misura di bambini. Bambini 0-3 anni gratis (transfer incluso), 4-8 anni 50% di sconto. Area interna al coperto, menu per bambini su richiesta e intrattenimento delicato e coinvolgente. Molte famiglie prenotano questo come momento clou del loro viaggio a Istanbul." },
@@ -488,13 +488,13 @@ module.exports = {
     },
     intro: [
       "Cerca **biglietti per la crociera sul Bosforo**? Li prenda direttamente. Il nostro biglietto costa €{p.dinnerStd}/persona — 40% di sconto sul prezzo pieno (€{p.dinnerStdOriginal}). I siti di prenotazione di terze parti tipicamente aggiungono 20-40% di commissione. Prenotando direttamente Lei risparmia — e può comunque pagare a bordo.",
-      "Il nostro processo per i **biglietti della crociera sul Bosforo**: compili la procedura guidata su questa pagina in meno di 1 minuto (data, numero di ospiti, pacchetto, contatti), confermiamo immediatamente via WhatsApp / Telegram, si presenta al molo di Kabataş alle 19:30, paga a bordo, si gode la crociera con cena di 3 ore. Nessun biglietto fisico da stampare, nessun voucher da inviare via email — la nostra conferma è il Suo biglietto.",
+      "Il nostro processo per i **biglietti della crociera sul Bosforo**: compili la procedura guidata su questa pagina in meno di 1 minuto (data, numero di ospiti, pacchetto, contatti), confermiamo immediatamente via WhatsApp / Telegram, si presenta al molo di Kabataş alle 20:00, paga a bordo, si gode la crociera con cena di 3 ore. Nessun biglietto fisico da stampare, nessun voucher da inviare via email — la nostra conferma è il Suo biglietto.",
       "Che stia prenotando la crociera con cena di stasera o riservando una data specifica per la prossima settimana, i **biglietti per la crociera sul Bosforo diretti** sono il modo più veloce. Valutazione 4,8★, autorizzato TÜRSAB (A-17672), menu certificato halal e supporto per extra transfer hotel e alcol."
     ],
     highlights: [
       { title: "Prenotazione diretta — nessuna commissione intermediaria", desc: "€{p.dinnerStd}/persona, un prezzo trasparente. I siti di terze parti addebitano €30-80+ per lo stesso tour. Risparmia prenotando direttamente con noi. Nessun costo nascosto, nessuna maggiorazione di commissione." },
       { title: "Pagamento a bordo — nessun anticipo", desc: "Riservi il Suo posto ora, paghi quando sale a bordo. Contanti o carta accettati. Gratis se cancella 2+ ore prima della partenza. Zero rischio finanziario nel riservare in anticipo." },
-      { title: "Conferma in meno di 1 minuto", desc: "Compili la procedura guidata → confermiamo via WhatsApp / Telegram. Nessun voucher PDF da aspettare via email. Il nostro messaggio è il Suo biglietto. Si presenti al molo alle 19:30." },
+      { title: "Conferma in meno di 1 minuto", desc: "Compili la procedura guidata → confermiamo via WhatsApp / Telegram. Nessun voucher PDF da aspettare via email. Il nostro messaggio è il Suo biglietto. Si presenti al molo alle 20:00." },
       { title: "40% DI SCONTO prezzo di lancio attuale", desc: "Prima €{p.dinnerStdOriginal}, ora €{p.dinnerStd}. 40% di sconto perché sta prenotando direttamente. Non è un numero a tempo — è la nostra tariffa standard per prenotazione diretta." }
     ],
     faq: [
@@ -502,7 +502,7 @@ module.exports = {
       { q: "Dove posso acquistare i biglietti per la crociera sul Bosforo?", a: "Direttamente su questa pagina — compili la procedura guidata di prenotazione, confermiamo immediatamente via WhatsApp / Telegram. Pagamento a bordo. Anche piattaforme di terze parti (Viator, GetYourGuide, Klook) vendono biglietti ma addebitano tipicamente €30-80+ — questa è la maggiorazione dell'intermediario. Diretto è il più economico e veloce." },
       { q: "Devo stampare il biglietto della crociera sul Bosforo?", a: "No — nessun biglietto fisico o voucher richiesto. Dopo la prenotazione, Le inviamo una conferma via WhatsApp (o Telegram) con punto d'incontro, orario e nome della prenotazione. Mostri semplicemente il Suo telefono al molo. Tutto qui." },
       { q: "Posso cancellare o rimborsare il biglietto della crociera sul Bosforo?", a: "Sì — cancellazione gratuita fino a 2 ore prima della partenza. Basta che ci scriva su WhatsApp. Poiché non ha ancora pagato (pagamento a bordo), nessun rimborso è necessario — semplicemente non si presenta, nessun addebito. Molto più flessibile dei biglietti prepagati di terze parti." },
-      { q: "I biglietti per la crociera sul Bosforo sono disponibili nello stesso giorno?", a: "Spesso sì, specialmente nei giorni feriali. Weekend e festivi si riempiono più rapidamente. Verifichi la disponibilità tramite la procedura guidata — si aggiorna in tempo reale. La prenotazione nello stesso giorno è di solito possibile fino a poche ore prima della partenza delle 20:30. Per richieste urgenti, WhatsApp." },
+      { q: "I biglietti per la crociera sul Bosforo sono disponibili nello stesso giorno?", a: "Spesso sì, specialmente nei giorni feriali. Weekend e festivi si riempiono più rapidamente. Verifichi la disponibilità tramite la procedura guidata — si aggiorna in tempo reale. La prenotazione nello stesso giorno è di solito possibile fino a poche ore prima della partenza delle 21:00. Per richieste urgenti, WhatsApp." },
       { q: "I biglietti per bambini della crociera sul Bosforo sono gratis?", a: "I bambini **0-3 anni sono completamente gratis** (nessun costo, nessuna tariffa nascosta, transfer incluso). **4-8 anni 50% di sconto** (€{p.dinnerStd}/2 = €12.15). **9+ anni prezzo adulto intero.** Prezzi con massimale e trasparenti — nessun trucco del \"supplemento neonato\"." }
     ],
     cta: {
@@ -515,7 +515,7 @@ module.exports = {
   "last-minute-bosphorus": {
     meta: {
       title: 'Bosforo Last Minute da €{p.dinnerStd} — Prenota Stasera, Paga a Bordo',
-      description: 'Prenotazione crociera Bosforo stesso giorno. Conferma WhatsApp in minuti. Partenza 20:30 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Prenotazione crociera Bosforo stesso giorno. Conferma WhatsApp in minuti. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Crociera sul Bosforo Last Minute",
@@ -523,8 +523,8 @@ module.exports = {
       badge: "Prenotazione Stesso Giorno · Confermata in Minuti · Pagamento a Bordo"
     },
     intro: [
-      "È atterrato a Istanbul questo pomeriggio e desidera una bella serata stasera? La **crociera sul Bosforo last minute** funziona. Sappiamo che molti viaggiatori decidono la mattina stessa, quindi riserviamo posti specificamente per le prenotazioni nello stesso giorno. Compili la procedura guidata qui, confermiamo in pochi minuti via WhatsApp, si presenta al molo di Kabataş alle 19:30, paga a bordo e si gode la serata.",
-      "La nostra **crociera sul Bosforo last minute** ha lo stesso programma serale delle prenotazioni anticipate: 3 ore sull'acqua (20:30-23:30), banchetto turco a più portate, spettacolo di folklore dal vivo, Sema, danza orientale, DJ. Palazzo Dolmabahçe illuminato, Moschea di Ortaköy, Ponte del Bosforo — le stesse vedute iconiche. Stesso prezzo: €{p.dinnerStd}/persona.",
+      "È atterrato a Istanbul questo pomeriggio e desidera una bella serata stasera? La **crociera sul Bosforo last minute** funziona. Sappiamo che molti viaggiatori decidono la mattina stessa, quindi riserviamo posti specificamente per le prenotazioni nello stesso giorno. Compili la procedura guidata qui, confermiamo in pochi minuti via WhatsApp, si presenta al molo di Kabataş alle 20:00, paga a bordo e si gode la serata.",
+      "La nostra **crociera sul Bosforo last minute** ha lo stesso programma serale delle prenotazioni anticipate: 3 ore sull'acqua (21:00-00:00), banchetto turco a più portate, spettacolo di folklore dal vivo, Sema, danza orientale, DJ. Palazzo Dolmabahçe illuminato, Moschea di Ortaköy, Ponte del Bosforo — le stesse vedute iconiche. Stesso prezzo: €{p.dinnerStd}/persona.",
       "La cancellazione nello stesso giorno è gratuita fino a 2 ore prima della partenza, perché **pagamento a bordo** significa che non si è ancora impegnato a nulla. Ha prenotato alle 14:00 e ha cambiato idea alle 19:00? Scriva semplicemente su WhatsApp — niente rimborso, nessun problema. Questa è la flessibilità del **tour last minute a Istanbul** che i viaggiatori apprezzano."
     ],
     highlights: [
@@ -535,10 +535,10 @@ module.exports = {
     ],
     faq: [
       { q: "Posso davvero prenotare la crociera sul Bosforo per stasera?", a: "Sì — spesso. Riserviamo posti per prenotazioni nello stesso giorno. Verifichi la procedura guidata sopra per la disponibilità di stasera. Se ci sono posti disponibili, può prenotare fino alle 18:00 (3 ore prima della partenza). I weekend sono più stretti — prenoti prima durante il giorno se possibile." },
-      { q: "Quanto last minute posso prenotare?", a: "Le prenotazioni restano aperte fino alle 18:00 per la barca delle 20:30. Dopo le 18:00, ci scriva direttamente su WhatsApp al +90 532 244 29 22 — possiamo confermare manualmente se ci sono posti aperti. Dopo le 19:30 è molto stretto a meno che non sia al molo di Kabataş e possa imbarcarsi rapidamente." },
+      { q: "Quanto last minute posso prenotare?", a: "Le prenotazioni restano aperte fino alle 18:00 per la barca delle 21:00. Dopo le 18:00, ci scriva direttamente su WhatsApp al +90 532 244 29 22 — possiamo confermare manualmente se ci sono posti aperti. Dopo le 20:00 è molto stretto a meno che non sia al molo di Kabataş e possa imbarcarsi rapidamente." },
       { q: "La crociera sul Bosforo last minute è più costosa?", a: "No — stesso prezzo della prenotazione anticipata: €{p.dinnerStd}/persona. Non applichiamo \"prezzi dinamici\" o sovrapprezzo last minute. Stessa barca, stessa cena, stesso spettacolo, stesso prezzo." },
       { q: "E se il tour di stasera è completamente pieno?", a: "Il tour di domani è di solito aperto — operiamo 365 giorni all'anno, ogni giorno. Può prenotare per domani e essere ancora \"last minute\" nel senso che ha appena deciso. I tour dei giorni feriali hanno più spazio dei weekend." },
-      { q: "Può organizzare il transfer hotel last minute?", a: "Il transfer nello stesso giorno è possibile fino a ~18:00 per il tour delle 20:30. Dopo le 18:00, potremmo non avere un autista disponibile — in tal caso può prendere un taxi per il molo di Kabataş (15 min da Taksim, 10 min da Sultanahmet, ~€10-15). Centrale e facile." },
+      { q: "Può organizzare il transfer hotel last minute?", a: "Il transfer nello stesso giorno è possibile fino a ~18:00 per il tour delle 21:00. Dopo le 18:00, potremmo non avere un autista disponibile — in tal caso può prendere un taxi per il molo di Kabataş (15 min da Taksim, 10 min da Sultanahmet, ~€10-15). Centrale e facile." },
       { q: "E se sono già a Kabataş e voglio imbarcarmi?", a: "Se è al molo e ci sono posti aperti, può presentarsi e imbarcarsi. Ci scriva su WhatsApp o chieda all'equipaggio — La aggiungeremo se c'è spazio. Stesso prezzo pagamento a bordo. In gergo turistico si chiama \"walk-on\" — qui funziona." }
     ],
     cta: {
@@ -574,7 +574,7 @@ module.exports = {
       { q: "Ci sono costi nascosti nel prezzo della crociera a Istanbul?", a: "No. Il prezzo include: tour di 3 ore, cena completa (meze, antipasto, secondo, dolce), bevande analcoliche illimitate, spettacolo dal vivo, tasse. Gli extra opzionali (alcol, transfer, tavolo romantico) sono separati e con prezzi trasparenti — paga solo per ciò che aggiunge. Nessun \"supplemento di servizio\", \"tassa portuale\" o spese a sorpresa." },
       { q: "Perché il prezzo della crociera a Istanbul è al 40% di sconto — è un trucco?", a: "Nessun trucco. Il prezzo pieno è €{p.dinnerStdOriginal}, che è quanto addebitano i siti di prenotazione di terze parti (Viator, GetYourGuide, Klook) — con le loro commissioni. Prenoti direttamente e paga €{p.dinnerStd}. Il 40% è la differenza. Nessun tempo limitato o trucchi di prezzi dinamici." },
       { q: "Come si confronta il prezzo della crociera a Istanbul con altre opzioni?", a: "Traghetti di linea: €5-10, 1 ora, senza cena, senza intrattenimento, solo turismo. Crociere con cena economiche: €20-30, affollate, cibo mediocre, spettacolo breve. La nostra crociera con cena (€{p.dinnerStd}): 3 ore, cena completa, spettacolo completo, tavolo privato, autorizzato TÜRSAB. Yacht resort: €100-150+, eccessivo per viaggiatori solitari/coppie." },
-      { q: "Devo pagare in anticipo il prezzo della crociera a Istanbul?", a: "No — **pagamento a bordo**. Prenoti ora (procedura guidata di 1 minuto), confermiamo via WhatsApp, si presenta alle 19:30 e paga a bordo (contanti o carta). Cancellazione gratuita fino a 2 ore prima. Zero impegno finanziario finché non è soddisfatto." },
+      { q: "Devo pagare in anticipo il prezzo della crociera a Istanbul?", a: "No — **pagamento a bordo**. Prenoti ora (procedura guidata di 1 minuto), confermiamo via WhatsApp, si presenta alle 20:00 e paga a bordo (contanti o carta). Cancellazione gratuita fino a 2 ore prima. Zero impegno finanziario finché non è soddisfatto." },
       { q: "Ci sono sconti di gruppo sul prezzo della crociera a Istanbul?", a: "Per gruppi di 10+, possiamo offrire il 5-10% di sconto — ci scriva su WhatsApp con la dimensione del Suo gruppo. Per 25+, consideri il tour privato (intera barca per il Suo gruppo, menu personalizzato). Per 2-9 persone si applicano le tariffe standard — già al 40% di sconto sul prezzo pieno." }
     ],
     cta: {
@@ -596,7 +596,7 @@ module.exports = {
     },
     intro: [
       "La **visita al Bosforo** dall'acqua batte qualsiasi tour in autobus. Il Bosforo è la via d'acqua più storica della città — sultani ottomani, imperatori bizantini, mercanti greci e navi da guerra russe sono passati tutti di qui. Oggi il nostro tour di 3 ore, con commento dell'equipaggio anglofono, passa per ogni grande monumento di Istanbul che definisce lo skyline.",
-      "Itinerario del nostro **tour di visita al Bosforo** (partenza serale, 20:30-23:30):\n\n1. **Palazzo Dolmabahçe** — residenza ottomana del XIX secolo, illuminata di notte\n2. **Palazzo di Çırağan** — ora hotel di lusso, storia reale\n3. **Moschea di Ortaköy** — una delle moschee più fotografate di Istanbul, sull'acqua\n4. **Ponte del Bosforo** — cambia tra blu, viola, oro di notte\n5. **Bebek** — quartiere elegante della sponda europea\n6. **Rumeli Hisarı** — costruito nel 1452 da Fatih Sultan Mehmet prima della conquista di Costantinopoli\n7. **Ponte Fatih Sultan Mehmet** — secondo ponte sul Bosforo, arco drammatico\n8. **Palazzo Beylerbeyi** — sponda asiatica, residenza estiva ottomana\n9. **Üsküdar** — sponda asiatica di Istanbul, quartiere tradizionale\n10. **Torre della Fanciulla** — torre su isoletta, uno dei simboli più romantici di Istanbul",
+      "Itinerario del nostro **tour di visita al Bosforo** (partenza serale, 21:00-00:00):\n\n1. **Palazzo Dolmabahçe** — residenza ottomana del XIX secolo, illuminata di notte\n2. **Palazzo di Çırağan** — ora hotel di lusso, storia reale\n3. **Moschea di Ortaköy** — una delle moschee più fotografate di Istanbul, sull'acqua\n4. **Ponte del Bosforo** — cambia tra blu, viola, oro di notte\n5. **Bebek** — quartiere elegante della sponda europea\n6. **Rumeli Hisarı** — costruito nel 1452 da Fatih Sultan Mehmet prima della conquista di Costantinopoli\n7. **Ponte Fatih Sultan Mehmet** — secondo ponte sul Bosforo, arco drammatico\n8. **Palazzo Beylerbeyi** — sponda asiatica, residenza estiva ottomana\n9. **Üsküdar** — sponda asiatica di Istanbul, quartiere tradizionale\n10. **Torre della Fanciulla** — torre su isoletta, uno dei simboli più romantici di Istanbul",
       "Cena e intrattenimento sono inclusi — non separati — quindi la **visita al Bosforo** si trasforma in una serata completa. Cena turca a più portate, spettacolo di folklore dal vivo, Sema, danza orientale, DJ. Valutazione 4,8★ da oltre 11.317 viaggiatori, autorizzato TÜRSAB A-17672."
     ],
     highlights: [

@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'What time is best for a couples Bosphorus cruise — sunset or night?',
-      a: 'The cruise departs 20:30 nightly — and in summer (May–August) that one departure covers both: boarding from 19:30 during golden hour, the sunset right around departure, then the illuminated bridges and lit-up palaces. In winter it\'s a pure night-lights cruise. Either way, one booking gives couples the most iconic version of the Bosphorus.'
+      a: 'The cruise departs 21:00 nightly — and in summer (May–August) that one departure covers both: boarding from 20:00 during golden hour, the sunset right around departure, then the illuminated bridges and lit-up palaces. In winter it\'s a pure night-lights cruise. Either way, one booking gives couples the most iconic version of the Bosphorus.'
     },
     {
       q: 'Is there a dance floor — can we dance?',
@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'What\'s the most romantic dinner cruise in Istanbul for couples?',
-      a: 'Bosphorus Night\'s Dinner Cruise (€{p.dinnerStd}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 20:30 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
+      a: 'Bosphorus Night\'s Dinner Cruise (€{p.dinnerStd}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 21:00 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
     }
   ],
 

@@ -539,10 +539,10 @@ function initSmoothScroll() {
 }
 
 // ========== LIVE BOOKING COUNT ==========
-// 24h cycle starting at 19:30 the previous day:
-//   - 19:30: count = that day's START value (never 0)
-//   - 19:30 prev day → 19:30 tour day: grows from start to max (ease-in)
-//   - At 19:30 tour day: hits max, then cycle flips to next day's start
+// 24h cycle starting at 20:00 the previous day:
+//   - 20:00: count = that day's START value (never 0)
+//   - 20:00 prev day → 20:00 tour day: grows from start to max (ease-in)
+//   - At 20:00 tour day: hits max, then cycle flips to next day's start
 function initBookingCount() {
   const el = document.getElementById('booking-count');
   if (!el) return;
@@ -577,7 +577,7 @@ function initBookingCount() {
 
   el.textContent = computeCount();
 
-  // Refresh every 60s so the 19:30 reset is caught quickly
+  // Refresh every 60s so the 20:00 reset is caught quickly
   setInterval(() => {
     el.textContent = computeCount();
   }, 150000); // 2.5 minutes
@@ -1324,8 +1324,8 @@ function openMobilePanel(pkg) {
     if (el) el.classList.add('hidden');
   });
 
-  // Set default date — after 19:30 Istanbul time, today is no longer bookable in wizard
-  // (boat departs 20:30, last entry 19:30 — same-day cutoff orta yol, AI WhatsApp'ta dar pencere uyarısı verir).
+  // Set default date — after 20:00 Istanbul time, today is no longer bookable in wizard
+  // (boat departs 21:00, last entry 20:00 — same-day cutoff orta yol, AI WhatsApp'ta dar pencere uyarısı verir).
   const wizDate = document.getElementById('wizDate');
   if (wizDate) {
     const minStr = wizMinDateStr();
@@ -2302,22 +2302,25 @@ function wizUpdateNextBtn() {
 }
 
 /**
- * Bugün için saat ≥ 18:00 (Europe/Istanbul) ise transfer rezervasyonu kapalı.
+ * Bugün için saat ≥ 18:30 (Europe/Istanbul) ise transfer rezervasyonu kapalı.
  * Yarın ve sonrası her zaman açık. CLAUDE.md §3 Transfer Kuralı.
  *
  * @param {string} dateValue YYYY-MM-DD format (wizDate.value)
- * @returns {boolean} true = transfer alınabilir, false = bugün için 18:00 geçti
+ * @returns {boolean} true = transfer alınabilir, false = bugün için 18:30 geçti
  */
 function wizIsTransferTimeAvailable(dateValue) {
   if (!dateValue) return true;
   const todayIstanbul = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Istanbul' });
   if (dateValue !== todayIstanbul) return true; // yarın+ her zaman açık
-  const hourIstanbul = Number(
-    new Intl.DateTimeFormat('en-GB', {
-      hour: '2-digit', hour12: false, timeZone: 'Europe/Istanbul',
-    }).format(new Date()),
-  );
-  return Number.isFinite(hourIstanbul) ? hourIstanbul < 18 : true;
+  // 6 Aug 2026 (AMOR schedule): cutoff 18:00 -> 18:30 because departure moved
+  // 20:30 -> 21:00. Hour granularity was no longer enough — minutes now.
+  // AI tarafi: bosphorus-night-ai/src/utils/transfer-zones.js ayni esigi kullanir.
+  const hm = new Intl.DateTimeFormat('en-GB', {
+    hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Istanbul',
+  }).format(new Date());
+  const [h, m] = hm.split(':').map(Number);
+  if (!Number.isFinite(h) || !Number.isFinite(m)) return true;
+  return h * 60 + m < 18 * 60 + 30;
 }
 
 function wizScrollToElement(selector) {
@@ -2353,7 +2356,7 @@ function wizShowNextHint(text) {
   hint.classList.add('text-red-400', 'font-medium');
 }
 
-// Wizard'da seçilebilecek en erken tarih (İstanbul bugünü; saat 19:30'u geçtiyse yarın).
+// Wizard'da seçilebilecek en erken tarih (İstanbul bugünü; saat 20:00'u geçtiyse yarın).
 // Tek kaynak: hem wizDate.min hem de geçmiş-tarih guard'ı buradan beslenir.
 function wizMinDateStr() {
   const fmt = new Intl.DateTimeFormat('en-GB', {
@@ -2437,12 +2440,12 @@ function wizNext() {
       wizScrollToElement('#wizTransferWarning');
       return;
     }
-    // 18:00 sonrası bugün için transfer kapalı — "Kabataş'a kendim gelirim" akışına yönlendir
+    // 18:30 sonrası bugün için transfer kapalı — "Kabataş'a kendim gelirim" akışına yönlendir
     if (wizState.transfer === true) {
       const dateValue = document.getElementById('wizDate')?.value;
       if (!wizIsTransferTimeAvailable(dateValue)) {
         const title = (T['wizard.transferTimeBlockedTitle'] && T['wizard.transferTimeBlockedTitle'][currentLang]) || 'Today’s transfer window closed';
-        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:00. You can still join the cruise by reaching Kabataş Pier on your own by 20:30.';
+        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:30. You can still join the cruise by reaching Kabataş Pier on your own by 21:00.';
         const btn = (T['wizard.transferTimeBlockedAction'] && T['wizard.transferTimeBlockedAction'][currentLang]) || 'I will come to Kabataş myself';
         const warn = document.getElementById('wizTransferWarning');
         if (warn) {
@@ -3901,7 +3904,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // sessiz uyumsuzluk yaratmamak için uyarı göster (Step 2'deyken görünür).
       if (wizState.transfer === true && !wizIsTransferTimeAvailable(wizDate.value) && wizState.step <= 2) {
         const title = (T['wizard.transferTimeBlockedTitle'] && T['wizard.transferTimeBlockedTitle'][currentLang]) || 'Today’s transfer window closed';
-        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:00. You can still join the cruise by reaching Kabataş Pier on your own by 20:30.';
+        const body = (T['wizard.transferTimeBlockedBody'] && T['wizard.transferTimeBlockedBody'][currentLang]) || 'Today’s hotel transfer closed at 18:30. You can still join the cruise by reaching Kabataş Pier on your own by 21:00.';
         const btn = (T['wizard.transferTimeBlockedAction'] && T['wizard.transferTimeBlockedAction'][currentLang]) || 'I will come to Kabataş myself';
         const warn = document.getElementById('wizTransferWarning');
         if (warn) {

@@ -91,8 +91,8 @@ module.exports = {
         {
           h2: 'Praktische tips',
           paragraphs: [
-            'Het vertrek is vanaf Kabataş om 20:30 — we raden aan 15-20 minuten eerder te komen. De toegang opent om 19:30.',
-            'Je kunt op dezelfde dag boeken tot 19:30. Boeking is gratis annuleerbaar tot 2 uur voor vertrek. Geen creditcard vereist vooraf — je betaalt aan boord.',
+            'Het vertrek is vanaf Kabataş om 21:00 — we raden aan 15-20 minuten eerder te komen. De toegang opent om 20:00.',
+            'Je kunt op dezelfde dag boeken tot 20:00. Boeking is gratis annuleerbaar tot 2 uur voor vertrek. Geen creditcard vereist vooraf — je betaalt aan boord.',
             'Neem een extra laag kleding mee — het kan koel worden op het open dek in de avond, vooral in voor- en najaar.',
           ],
         },
@@ -126,7 +126,7 @@ module.exports = {
         {
           h2: 'Praktische informatie',
           paragraphs: [
-            'De zonsondergangcruise bevat een volledige maaltijd en live entertainment, net als de avondcruise. Vertrek om 17:30, terug rond 20:30.',
+            'De zonsondergangcruise bevat een volledige maaltijd en live entertainment, net als de avondcruise. Vertrek om 17:30, terug rond 21:00.',
             'Boek vooraf — de zonsondergangcruise is erg populair, vooral in de zomer en in het weekend.',
           ],
         },
@@ -159,7 +159,7 @@ module.exports = {
         {
           h2: 'Tips voor de gezinsreis',
           paragraphs: [
-            'De cruise duurt 3 uur (20:30–23:30). Het kan wat laat zijn voor heel kleine kinderen — overweeg of de timing bij je gezin past.',
+            'De cruise duurt 3 uur (21:00–00:00). Het kan wat laat zijn voor heel kleine kinderen — overweeg of de timing bij je gezin past.',
             'Neem extra kleding mee voor de kinderen als het waait op het open dek. De boot heeft overdekte binnenruimtes waar kinderen veilig kunnen zijn.',
             'Boek vroeg om er zeker van te zijn dat jullie samen kunnen zitten.',
           ],
@@ -180,7 +180,7 @@ module.exports = {
           h2: 'Zo boek je last-minute',
           paragraphs: [
             'Stuur ons een bericht op WhatsApp met de datum (vandaag) en het aantal gasten. We bevestigen de beschikbaarheid binnen seconden.',
-            'De uiterste boekingstijd voor de cruise van vanavond is 19:30 (1 uur voor vertrek om 20:30). Kom uiterlijk 20:15 naar de Kabataş-kade.',
+            'De uiterste boekingstijd voor de cruise van vanavond is 20:00 (1 uur voor vertrek om 21:00). Kom uiterlijk 20:15 naar de Kabataş-kade.',
           ],
         },
         {
@@ -218,7 +218,7 @@ module.exports = {
         {
           h2: '2. Vertrek vanaf Kabataş',
           paragraphs: [
-            'Alle cruises vertrekken vanaf de Kabataş-kade. De toegang opent om 19:30, vertrek om 20:30. Kom op tijd voor de beste plek.',
+            'Alle cruises vertrekken vanaf de Kabataş-kade. De toegang opent om 20:00, vertrek om 21:00. Kom op tijd voor de beste plek.',
           ],
         },
         {
