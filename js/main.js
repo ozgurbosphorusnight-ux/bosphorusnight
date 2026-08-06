@@ -2814,6 +2814,10 @@ function wizResetDrinkCounts() {
   const no = document.getElementById('wizAlcoholNo'); if (no) no.className = inactive;
   const yes = document.getElementById('wizAlcoholYes'); if (yes) yes.className = inactive;
   const panel = document.getElementById('wizAlcoholPanel'); if (panel) panel.classList.add('hidden');
+  // Guest count may have changed on step 1 — un-hide the counter/heading so the
+  // single-adult shortcut is re-evaluated fresh when the gate is answered again.
+  const counter = document.getElementById('wizGlass2Counter'); if (counter) counter.classList.remove('hidden');
+  const heading = document.getElementById('wizAlcoholHeading'); if (heading) heading.classList.remove('hidden');
   const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = '0';
   document.querySelectorAll('.wiz-alcohol-max').forEach((el) => { el.textContent = adults; });
   const warn = document.getElementById('wizAlcoholWarning'); if (warn) warn.classList.add('hidden');
@@ -2872,11 +2876,24 @@ function wizToggle(type, val) {
     const panel = document.getElementById('wizAlcoholPanel');
     const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
     if (val) {
-      // Yes → reveal allocator; start all-soft (0 alcohol). Soft auto-fills the remainder.
+      // Yes → reveal the add-on panel. With a single adult there is nothing to
+      // allocate, so the counter is hidden and the guest is set to 1 directly;
+      // the panel itself stays visible so the "+€10/person" line remains in view.
       if (panel) panel.classList.remove('hidden');
       document.querySelectorAll('.wiz-alcohol-max').forEach((el) => { el.textContent = adults; });
+      const counter = document.getElementById('wizGlass2Counter');
       const heading = document.getElementById('wizAlcoholHeading');
-      if (heading) heading.textContent = wizAlcoholHeadingText();
+      const single = adults <= 1;
+      if (counter) counter.classList.toggle('hidden', single);
+      if (heading) {
+        heading.classList.toggle('hidden', single);
+        if (!single) heading.textContent = wizAlcoholHeadingText();
+      }
+      if (single) {
+        wizState.drinkCounts = { soft: 0, glass2: adults };
+        const g = document.getElementById('wizGlass2Count');
+        if (g) g.textContent = String(adults);
+      }
       wizAlcoholSummaryUpdate();
     } else {
       // No → hide allocator; everyone gets free soft drinks.
