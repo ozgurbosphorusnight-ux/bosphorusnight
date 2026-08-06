@@ -483,7 +483,7 @@
            Kept as a flex list so a second tour pill (e.g. Sunset) can be re-added easily. -->
       <div class="flex flex-row items-stretch justify-center gap-2 mb-5 max-w-[300px] sm:max-w-sm mx-auto">
         <a href="#card-standard" class="flex-1 rounded-lg border border-gold/30 bg-black/30 backdrop-blur-md hover:bg-gold/10 hover:border-gold/60 transition-all px-2 py-2 text-center">
-          <div class="text-gold/80 text-[9px] sm:text-[10px] font-semibold tracking-[0.12em] uppercase" data-i18n="hero.menuStd">Standard Menu</div>
+          <div class="text-gold/80 text-[9px] sm:text-[10px] font-semibold tracking-[0.12em] uppercase" data-i18n="hero.menuStd">All-In Dinner Cruise</div>
           <div class="flex items-baseline justify-center gap-1.5 mt-1">
             <span class="text-white/30 text-[10px] line-through" data-original-price="DINNER_STD">€40.5</span>
             <span class="text-gold text-base sm:text-lg font-display font-bold leading-none" data-price="DINNER_STD">€24.3</span>
@@ -2785,12 +2785,14 @@
           </div>
         </div>
 
-        <!-- Package Toggle -->
-        <label class="text-white/80 text-xs font-semibold mb-1.5 block" data-i18n="booking.package">Package</label>
-        <p id="wizPackageWarning" class="text-red-400 text-xs font-semibold mb-2 hidden" data-i18n="wizard.packageWarning">Please choose a package before continuing</p>
-        <!-- Single package for now — flex list kept so a second button (e.g. Sunset) drops back in easily -->
-        <div class="flex gap-2 mb-2">
-          <button id="wizPkgStandard" onclick="wizSelectPackage('standard')" class="wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.standard">Standard</button>
+        <!-- Package Toggle — hidden while a single package is on sale (JS: wizAutoSelectSinglePackage) -->
+        <div id="wizPackageBlock" class="hidden">
+          <label class="text-white/80 text-xs font-semibold mb-1.5 block" data-i18n="booking.package">Package</label>
+          <p id="wizPackageWarning" class="text-red-400 text-xs font-semibold mb-2 hidden" data-i18n="wizard.packageWarning">Please choose a package before continuing</p>
+          <!-- Single package for now — flex list kept so a second button (e.g. Sunset) drops back in easily -->
+          <div class="flex gap-2 mb-2">
+            <button id="wizPkgStandard" onclick="wizSelectPackage('standard')" class="wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50" data-i18n="wizard.standard">All-In Dinner Cruise</button>
+          </div>
         </div>
         <button type="button" onclick="wizViewPackages()" class="inline-flex items-center gap-1.5 text-[#c9a84c]/80 hover:text-[#c9a84c] text-xs underline underline-offset-2 mb-4 transition-colors">
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

@@ -1297,7 +1297,10 @@ function openMobilePanel(pkg) {
   // Reset wizard to step 1
   wizGoTo(1);
 
-  // Package selection: user must choose actively, no auto-preselection
+  // Package step: with a single package there is nothing to choose — it is
+  // auto-selected and the row is hidden (6 Aug 2026, VIP retired temporarily).
+  // wizAutoSelectSinglePackage() re-shows the row the moment a second package
+  // button (Sunset / VIP) exists again, restoring the "must choose" behaviour.
   wizState.pkg = null;
   wizState.transfer = null;
   wizState.wantAlcohol = null;
@@ -1305,6 +1308,7 @@ function openMobilePanel(pkg) {
   // Single package button for now — SUNSET_STD will be added here later
   const stdBtn = document.getElementById('wizPkgStandard');
   if (stdBtn) stdBtn.className = inactive;
+  wizAutoSelectSinglePackage();
   const transferInactive = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
   const tNo = document.getElementById('wizTransferNo');
   const tYes = document.getElementById('wizTransferYes');
@@ -2633,6 +2637,26 @@ function wizViewPackages() {
   setTimeout(() => {
     packagesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, 400);
+}
+
+/**
+ * Single-package shortcut: when the wizard offers only one package there is
+ * nothing meaningful to pick, so we select it and hide the whole package block
+ * (label + warning + button row). As soon as a second .wiz-pkg-btn exists the
+ * block is shown again and the user must choose actively, exactly as before.
+ */
+function wizAutoSelectSinglePackage() {
+  const btns = document.querySelectorAll('.wiz-pkg-btn');
+  const block = document.getElementById('wizPackageBlock');
+  if (btns.length === 1) {
+    if (block) block.classList.add('hidden');
+    const only = btns[0];
+    // onclick="wizSelectPackage('standard')" -> 'standard'
+    const m = (only.getAttribute('onclick') || '').match(/wizSelectPackage\('([^']+)'\)/);
+    wizSelectPackage(m ? m[1] : 'standard');
+  } else if (block) {
+    block.classList.remove('hidden');
+  }
 }
 
 function wizSelectPackage(pkg) {
