@@ -41,14 +41,20 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 
 ### Turlar
 
+> 🚢 **6 Ağu 2026 — TEKNE DEĞİŞTİ: Tosunpaşa → AMOR (kapasite 600 → 400).** Aynı tarihte VIP paket ve sınırsız alkol satıştan kalktı, maliyetler yenilendi (tekne anlaşması artık USD), transfer satışı €10 → €5 indi. Detay + deploy durumu: memory `amor_boat_switch_sprint.md`.
+
 | Kod | Tur | Süre | Kalkış | Fiyat | Orijinal | Maliyet | Marj |
 |---|---|---|---|---|---|---|---|
-| DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ bekleniyor | — |
-| SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ bekleniyor | — |
-| DINNER_STD | Standard Dinner Cruise | 3 saat | 20:30 | €24.30 | €40.50 | €18 | €6.30 |
-| DINNER_VIP | VIP Dinner Cruise | 3 saat | 20:30 | €55.20 | €92 | €40 | €15.20 |
+| DINNER_STD | Dinner Cruise (tek paket) | 3 saat | 20:30 | €24.30 | €40.50 | €14.70 (17 USD) | €9.60 |
+| ~~DINNER_VIP~~ | ~~VIP Dinner Cruise~~ | — | — | — | — | — | **SATIŞTAN KALKTI (6 Ağu 2026)** — `is_active=false` |
+| DAYTIME_STD | Daytime Cruise | 1.5 saat | 12:00 | €20 | — | ⏳ satılmıyor | — |
+| SUNSET_STD | Sunset Cruise | 3 saat | 17:30 | €35 | — | ⏳ satılmıyor | — |
 
-> ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 / €55.20 — kuruşlu). DB'de fiyat değişirse 6 yerde birden güncelle:
+> ♻️ **VIP GEÇİCİ KALKTI** (Özgür, 6 Ağu: "sonra tekrar ekleyeceğiz, şimdilik kaldırdık"). Geri açmak: `packages.is_active=true` + PRICES'a `dinnerVip`/`dinnerVipOriginal` anahtarları + wizard paket listesine ikinci kart. Eski içerik git geçmişinde. Aynı şey ALCOHOL_UNLIMITED için de geçerli.
+
+> 🔜 **Paket seçimi geleceği:** Wizard'da VIP/Standart seçimi kaldırıldı, şu an tek paket. Sıradaki adım seçimi **"Gün Batımı Turu (Sunset) / Akşam Turu (Dinner)"** olarak açmak — seçim altyapısı tek elemanlı liste olarak korundu (`js/main.js` `wizSelectPackage`, panel `SELLABLE_PACKAGE_CODES`, TG `packageLabel()`), ikinci paket eklemek tek satır.
+
+> ⚠️ **Fiyat kanonik kaynak: Supabase `packages.price_eur`.** Yukarıdaki tablo DB ile sync (€24.30 — kuruşlu). DB'de fiyat değişirse 6 yerde birden güncelle:
 > 1. AI prompt: `src/claude/system-prompt.js` 4 yer
 > 2. AI prompt: `src/claude/prompts/red-lines.md` 3 yer
 > 3. AI prompt: `shared-rules.js:96` 1 yer
@@ -56,7 +62,7 @@ Bu dosya projenin kalıcı bellek dosyasıdır. Her yeni Claude Code oturumunda 
 > 5. Site build: `scripts/build-home.js` PRICES sabiti (anasayfa schema + UI)
 > 6. Site build: `scripts/build-pages.js` PRICES sabiti (17 landing schema + UI)
 >
-> Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker. Site build script'leri PRICES sabitinden + subPrices regex (literal "€24"/"€55" yakalama) ile drift kapatılır.
+> Karma hesap için AI `calculate_price` tool'unu çağırır → DB'den canlı çeker. Site build script'leri PRICES sabitinden + subPrices regex (literal "€24" yakalama) ile drift kapatılır. (VIP kalkınca "€55" regex satırı ve `dinnerVip`/`dinnerVipOriginal` PRICES anahtarları düşürüldü.)
 
 **Buluşma:** Kabataş İskelesi. Giriş 19:30'dan itibaren, kalkış 20:30, yanaşma 23:30. Ödeme: Pay on the boat (ön ödeme yok).
 
@@ -81,12 +87,14 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 
 | Kod | İsim | Satış | Maliyet | Marj | Tip |
 |---|---|---|---|---|---|
-| ALCOHOL_2GLASS | 2 bardak alkol | €10 | €10 | €0 | per_person |
-| ALCOHOL_UNLIMITED | Sınırsız alkol | €25 | €20 | €5 | per_person |
-| HOTEL_TRANSFER | Otel transferi | €10 | €5 | €5 | per_person |
-| ROMANTIC_TABLE | Romantik masa | €15 | €10 | €5 | per_booking |
+| ALCOHOL_2GLASS | 2 bardak alkol | €10 | €8.70 (10 USD) | €1.30 | per_person |
+| HOTEL_TRANSFER | Otel transferi | **€5** | €2.60 (3 USD) | €2.40 | per_person |
+| ROMANTIC_TABLE | Romantik masa | €15 | **€0** (tekne bedava kuruyor) | €15 | per_booking |
+| ~~ALCOHOL_UNLIMITED~~ | ~~Sınırsız alkol~~ | — | — | — | **SATIŞTAN KALKTI (6 Ağu 2026)** — `is_active=false` |
 
-**Örnek:** DINNER_STD (€24.30) + ALCOHOL_UNLIMITED (€25) = **€49.30/kişi** satış.
+**Örnek:** DINNER_STD (€24.30) + ALCOHOL_2GLASS (€10) + transfer (€5) = **€39.30/kişi** satış.
+
+> 💵 **Maliyetler USD anlaşmasıdır** (tekne hakedişi): menü 17 USD, alkollü menü 27 USD (= menü + 10 USD alkol), transfer 3 USD (çocuk 4-8 yarım = 1.5 USD), romantik masa 0. Yukarıdaki € karşılıkları **1 USD = €0.8655** (5 Ağu 2026, ECB) kuruyla sabitlendi. Kur ciddi oynarsa cost_eur değerleri tazelenmeli — kanonik USD değerleri `packages.cost_usd` + `addons.cost_usd` kolonlarında. Bkz. § Mutabakat USD Sistemi.
 
 **PROPOSAL_PACKAGE kaldırıldı** — artık standart paket olarak satılmıyor. Müşteri "evlilik teklifi" talep ederse eskalasyona gider (§ 8).
 
@@ -1089,3 +1097,20 @@ Bir aşamadan diğerine geçerken bu dosyanın § 4 bölümündeki "Aşama X —
 ---
 
 **DOSYA SONU**
+
+---
+
+## 19. 🎁 LocalTurkiye SESLİ REHBER HEDİYESİ (2026-07-24 — kurulu, UYKUDA)
+
+LocalTurkiye (Özgür'ün pazaryeri projesi) Boğaz sesli rehberini BN müşterilerine
+rezervasyon hediyesi olarak verecek. **Altyapı iki tarafta da bitti, ama KAPALI —
+Özgür kuralı: içerik (sesler/mekânlar/fotoğraflar) hazır olmadan müşteriye link GİTMEZ.**
+
+- Detay + açma talimatı: **AI repo** `C:\Projects\bosphorus-night-ai\CLAUDE.md` sonundaki
+  "LocalTurkiye sesli rehber hediye linki" bölümü (util: `src/utils/gift-link.js`).
+- Kısaca: her rezervasyona imzalı link (`/g/BOSPHORUS-NIGHT?t=<rez>.<tarih>.<imza>&lang=<dil>`),
+  rehber YALNIZ tur günü 14:00→ertesi 14:00 açık, öncesi geri sayım. Müşteri rehberde
+  LocalTurkiye menüsü/satışı GÖRMEZ (kiosk modu) — sadece Boğaz durakları + BN logosu.
+- Açma anahtarı: AI repo `.env` → `LT_GIFT_LIVE=true` + restart (yalnız Özgür kararıyla).
+- Rehber tarafının sahibi LocalTurkiye oturumu (`localturkiye-home`) — imza algoritması/secret
+  iki sistemde EŞ; BN tarafında tek başına değiştirme.

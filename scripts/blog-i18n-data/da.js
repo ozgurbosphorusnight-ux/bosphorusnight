@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard eller VIP?',
+          h2: 'Standardpakken',
           paragraphs: [
             'Standardpakken (fra €24,30) er fremragende for de fleste rejsende. Du får fuld menu, god plads og alle shows.',
-            'VIP-pakken (fra €55,20) giver dig et bord tættere på scenen, en udvidet menu med 15+ mezze-sorter og eksklusiv VIP-service. Ideel for par, der vil gøre aftenen ekstra speciel, eller for dem, der sætter pris på de bedste pladser.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Sådan booker du i sidste øjeblik',
           paragraphs: [
-            'Send os en besked på WhatsApp med dato (i dag), antal gæster og om du vil have Standard- eller VIP-pakke. Vi bekræfter tilgængeligheden på sekunder.',
+            'Send os en besked på WhatsApp med dato (i dag) og antal gæster. Vi bekræfter tilgængeligheden på sekunder.',
             'Sidste bookingfrist for aftenens krydstogt er kl. 19:30 (1 time før afgang kl. 20:30). Vær på Kabataş-kajen senest kl. 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol er valgfrit',
           paragraphs: [
-            'Alle pakker inkluderer alkoholfrie drikkevarer. Du kan tilføje 2 glas alkohol (+€{p.alcohol2}) eller ubegrænset lokal alkohol (+€{p.unlimited}) ved booking.',
+            'Pakken inkluderer alkoholfrie drikkevarer. Du kan tilføje 2 glas alkohol (+€{p.alcohol2}) ved booking.',
           ],
         },
         {

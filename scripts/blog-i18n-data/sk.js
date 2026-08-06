@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Štandard alebo VIP?',
+          h2: 'Štandardný balík',
           paragraphs: [
             'Štandardný balík (od €{p.dinnerStd}) je výborný pre väčšinu cestovateľov. Dostanete plné menu, dostatok miesta a všetky vystúpenia.',
-            'VIP balík (od €{p.dinnerVip}) vám ponúka stôl bližšie k pódiu, rozšírené menu s 15+ druhmi meze a exkluzívny VIP servis. Ideálne pre páry, ktoré chcú urobiť večer výnimočným, alebo pre tých, ktorí oceňujú najlepšie miesta.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Ako rezervovať na poslednú chvíľu',
           paragraphs: [
-            'Pošlite nám správu na WhatsApp s dátumom (dnes), počtom hostí a tým, či chcete štandardný alebo VIP balík. Dostupnosť potvrdíme v priebehu sekúnd.',
+            'Pošlite nám správu na WhatsApp s dátumom (dnes) a počtom hostí. Dostupnosť potvrdíme v priebehu sekúnd.',
             'Posledný termín na rezerváciu večernej plavby je 19:30 (1 hodina pred odchodom o 20:30). Na mólo v Kabataşi prídite najneskôr o 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol je voliteľný',
           paragraphs: [
-            'Všetky balíky obsahujú nealkoholické nápoje. Pri rezervácii môžete pridať 2 poháre alkoholu (+€{p.alcohol2}) alebo neobmedzený miestny alkohol (+€{p.unlimited}).',
+            'Balík obsahuje nealkoholické nápoje. Pri rezervácii môžete pridať 2 poháre alkoholu (+€{p.alcohol2}).',
           ],
         },
         {

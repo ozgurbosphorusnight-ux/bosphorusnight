@@ -37,7 +37,7 @@ module.exports = {
 
     'The **Istanbul dinner cruise** experience: board at 19:30, settle in, watch Dolmabahçe Palace slide by as we depart, dinner begins as we approach Ortaköy Mosque, the show starts (whirling dervish, folk dances, belly dance), and by the time dessert arrives you\'re under the illuminated Bosphorus Bridge. By midnight you\'re back at Kabataş with a camera roll of iconic photos and a full stomach.',
 
-    'From €{p.dinnerStd}/person for the Standard cruise (was €{p.dinnerStdOriginal}) or €{p.dinnerVip}/person for VIP (was €{p.dinnerVipOriginal}) with stage-front seats. Pay on the boat — no prepayment, no risk. TÜRSAB A-17672 licensed, 4.8★ rated by 11,317+ travelers.'
+    'From €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}) — one package with everything included. Pay on the boat — no prepayment, no risk. TÜRSAB A-17672 licensed, 4.8★ rated by 11,317+ travelers.'
   ],
 
   highlights: [
@@ -59,14 +59,14 @@ module.exports = {
     {
       icon: 'price',
       title: 'From €{p.dinnerStd} — pay on boat',
-      desc: 'Standard: €{p.dinnerStd} (was €{p.dinnerStdOriginal}). VIP with premium menu: €{p.dinnerVip} (was €{p.dinnerVipOriginal}). No prepayment. Free cancellation up to 2 hours before departure.'
+      desc: '€{p.dinnerStd}/person (was €{p.dinnerStdOriginal}) — one transparent price. No prepayment. Free cancellation up to 2 hours before departure.'
     }
   ],
 
   faq: [
     {
       q: 'How much is a dinner cruise in Istanbul?',
-      a: 'Our Standard dinner cruise is €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). VIP with stage-front seating and premium menu is €{p.dinnerVip}/person (regular €{p.dinnerVipOriginal}). Children 0-3 free, 4-8 at 50% off. Pay on the boat — no prepayment.'
+      a: 'Our dinner cruise is €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Children 0-3 free, 4-8 at 50% off. Pay on the boat — no prepayment.'
     },
     {
       q: 'What\'s included in the Istanbul dinner cruise price?',

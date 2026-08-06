@@ -129,13 +129,13 @@ export async function generateReport(scanResults) {
   const prompt = `Competitive analysis for Bosphorus Night (Istanbul dinner cruise).
 
 US (Bosphorus Night):
-- Standard €35: 3hr cruise, open buffet, live Turkish music & DJ, dance shows, Bosphorus night views
-- Premium €50: + priority seating, welcome drink, richer menu
-- VIP €80: + private table, unlimited drinks, hotel transfer, personal host
-- Strengths: 3 clear packages, WhatsApp 24/7, no prepayment, free cancellation 6hrs before, pay on boat
+- Single package Dinner Cruise €24.30/person (list €40.50): 3hr cruise, 10 cold mezes + hot starter + main choice (salmon/sea bass/chicken/köfte) + dessert, unlimited soft drinks, live show (whirling dervish, folk dances, oriental, live music & DJ), private table per group
+- Add-ons: 2-glass alcohol €10/person, hotel transfer €5/person, romantic table €15
+- Children: 0-3 free, 4-8 half price, 9+ full price
+- Strengths: single clear package, WhatsApp 24/7, no prepayment, free cancellation 2hrs before, pay on boat
 - Weaknesses: no real customer reviews yet, new brand, stock photos on site
 - Booking: WhatsApp only, no online payment
-- Departure: Kabatas pier, 20:00-23:30
+- Departure: Kabatas pier, boarding 19:30, cruise 20:30-23:30
 
 Competitors: ${JSON.stringify(compactResults)}
 

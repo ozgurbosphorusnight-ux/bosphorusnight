@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How much does an Istanbul night tour cost?',
-      a: 'Our Bosphorus night tour with dinner: €{p.dinnerStd}/person Standard, €{p.dinnerVip}/person VIP. Includes cruise, dinner, entertainment, soft drinks. Optional: alcohol +€{p.unlimited}/person, hotel transfer +€{p.transfer}/person. Pay on boat — no prepayment.'
+      a: 'Our Bosphorus night tour with dinner: €{p.dinnerStd}/person. Includes cruise, dinner, entertainment, soft drinks. Optional: 2 glasses of alcohol +€{p.alcohol2}/person, hotel transfer +€{p.transfer}/person. Pay on boat — no prepayment.'
     },
     {
       q: 'Is an Istanbul night tour safe for solo travelers?',

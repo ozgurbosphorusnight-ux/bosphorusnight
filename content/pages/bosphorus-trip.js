@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'How much does a Bosphorus trip cost in 2026?',
-      a: 'In 2026, a Bosphorus dinner trip with Bosphorus Night starts at €{p.dinnerStd}/person Standard, €{p.dinnerVip}/person VIP. Both include a 3-hour cruise, dinner, and shows. Add-ons: alcohol €{p.alcohol2}–€{p.unlimited}, hotel transfer €{p.transfer}. Pay on boat — no prepayment.'
+      a: 'In 2026, a Bosphorus dinner trip with Bosphorus Night is €{p.dinnerStd}/person, including a 3-hour cruise, dinner, and shows. Add-ons: 2 glasses of alcohol +€{p.alcohol2}, hotel transfer €{p.transfer}. Pay on boat — no prepayment.'
     },
     {
       q: 'What\'s the difference between a Bosphorus trip and a regular ferry ride?',

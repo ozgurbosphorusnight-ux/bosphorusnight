@@ -7,7 +7,7 @@
 ## About
 
 Bosphorus Night operates evening dinner cruises on the Bosphorus strait
-in Istanbul, Turkey. We offer two cruise tiers, both departing daily at
+in Istanbul, Turkey. We offer a single dinner cruise, departing daily at
 20:30 from Kabataş Pier. Payment is made on the boat — no prepayment
 or deposit required. Available for booking via WhatsApp, Telegram, or
 the website wizard, in 32 languages.
@@ -30,18 +30,10 @@ the website wizard, in 32 languages.
 - Unlimited soft drinks
 - Live music, DJ, traditional Turkish folk dances (5 regions), Mevlana whirling dervish, belly dance show
 
-### VIP Dinner Cruise — €55.20/person
-- Duration: 3 hours (boarding 19:30, departure 20:30, return 23:30)
-- 15+ premium mezes, all Standard inclusions
-- Premium main course upgrade (rib-eye, beef tenderloin)
-- VIP seating near stage, dedicated VIP service
-- All entertainment included
-
 ## Add-ons (delta pricing on top of base tour)
 
 - 2 glasses of alcohol: +€10/person
-- Unlimited alcohol: +€25/person
-- Hotel transfer (Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy, Beyoğlu, Şişli districts + Hilton Istanbul Bosphorus): +€10/person
+- Hotel transfer (Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy, Beyoğlu, Şişli districts + Hilton Istanbul Bosphorus): +€5/person
 - Romantic table arrangement (flowers, candles): +€15/booking
 
 ## Route
@@ -54,11 +46,11 @@ Kuzguncuk → Üsküdar → return to Kabataş
 Route is illustrative; exact path may vary by sea/weather. Both
 continents (Europe + Asia) are crossed during the cruise.
 
-## Boat Specifications — Tosunpaşa
+## Boat Specifications — AMOR
 
-- Boat name: Tosunpaşa
+- Boat name: AMOR
 - Length: 42 meters
-- Capacity: 600 guests
+- Capacity: 400 guests
 - Decks: 3 (2 enclosed climate-controlled salons + 1 open upper terrace)
 - Restrooms: 6 (3 men + 3 women, step-free access in lower salon)
 - Climate control: year-round (heated in winter, air-conditioned in summer)
@@ -72,7 +64,7 @@ continents (Europe + Asia) are crossed during the cruise.
 
 ## Our Boat — Dedicated Information Page (32 languages)
 
-A dedicated page introducing Tosunpaşa is available in all 32 supported languages,
+A dedicated page introducing AMOR is available in all 32 supported languages,
 each with localized URL slug:
 
 - English: https://www.bosphorusnight.com/our-boat
@@ -108,7 +100,7 @@ each with localized URL slug:
 - Slovenščina: https://www.bosphorusnight.com/sl/nasa-ladja
 - Latviešu: https://www.bosphorusnight.com/lv/musu-laiva
 
-Page contains: boat structure (3 decks), comparison table (Tosunpaşa vs Bosphorus
+Page contains: boat structure (3 decks), comparison table (AMOR vs Bosphorus
 average — 6 rows), accessibility details (strollers, wheelchairs, elderly, mobility),
 maintenance practices, photo gallery, and location/departure info.
 
@@ -205,7 +197,7 @@ City guide index: https://www.bosphorusnight.com/city-guide/
 ## Children Policy
 
 - Ages 0–3 (inclusive): free of charge, free transfer
-- Ages 4–8 (inclusive): 50% discount on tour price, standard transfer (€10)
+- Ages 4–8 (inclusive): 50% discount on tour price, standard transfer (€5)
 - Ages 9 and above: full price, standard transfer
 
 ## Payment & Cancellation

@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standaard of VIP?',
+          h2: 'Het standaardpakket',
           paragraphs: [
             'Het standaardpakket (vanaf €{p.dinnerStd}) is uitstekend voor de meeste reizigers. Je krijgt een volledige maaltijd, ruim zit en alle shows.',
-            'Het VIP-pakket (vanaf €{p.dinnerVip}) biedt je een tafel dichter bij het podium, een uitgebreid menu met 15+ soorten meze en exclusieve VIP-service. Ideaal voor stellen die de avond extra speciaal willen maken, of voor wie de beste plaatsen waardeert.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Zo boek je last-minute',
           paragraphs: [
-            'Stuur ons een bericht op WhatsApp met de datum (vandaag), het aantal gasten en of je het Standaard- of VIP-pakket wilt. We bevestigen de beschikbaarheid binnen seconden.',
+            'Stuur ons een bericht op WhatsApp met de datum (vandaag) en het aantal gasten. We bevestigen de beschikbaarheid binnen seconden.',
             'De uiterste boekingstijd voor de cruise van vanavond is 19:30 (1 uur voor vertrek om 20:30). Kom uiterlijk 20:15 naar de Kabataş-kade.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alcohol is optioneel',
           paragraphs: [
-            'Alle pakketten bevatten alcoholvrije drankjes. Je kunt 2 glazen alcohol toevoegen (+€{p.alcohol2}) of onbeperkt lokale alcohol (+€{p.unlimited}) bij het boeken.',
+            'Het pakket bevat alcoholvrije drankjes. Je kunt 2 glazen alcohol toevoegen (+€{p.alcohol2}) bij het boeken.',
           ],
         },
         {

@@ -2,7 +2,14 @@
  * One-time script: add 2 AI-citable FAQ entries per landing page.
  * AI Search Sprint Madde 4.
  * Run: node scripts/one-time-add-faqs.js
+ *
+ * DEPRECATED (Aug 2026): already applied; FAQ texts below still reference the
+ * OLD lineup (VIP package / dinnerVip, unlimited-drinks add-on). Current lineup:
+ * single DINNER_STD, 2-glass alcohol add-on €10, transfer €5. Do NOT re-run —
+ * it would re-inject stale VIP copy into content/pages/*.js.
  */
+console.error('DEPRECATED (Aug 2026): eski VIP/fiyat metinleri icerir, zaten uygulanmis. Calistirma.');
+process.exit(1);
 
 const fs = require('fs');
 const path = require('path');

@@ -144,11 +144,9 @@ function substitutePricePlaceholders(text) {
   const packages = d.packages || {};
   const map = {
     'p.alcohol2':    addons.ALCOHOL_2GLASS?.price     ?? 10,
-    'p.unlimited':   addons.ALCOHOL_UNLIMITED?.price  ?? 25,
-    'p.transfer':    addons.HOTEL_TRANSFER?.price     ?? 10,
+    'p.transfer':    addons.HOTEL_TRANSFER?.price     ?? 5,
     'p.romantic':    addons.ROMANTIC_TABLE?.price     ?? 15,
     'p.dinnerStd':   packages.DINNER_STD?.price       ?? 24.3,
-    'p.dinnerVip':   packages.DINNER_VIP?.price       ?? 55.2,
     'p.daytimeStd':  packages.DAYTIME_STD?.price      ?? 20,
   };
   return text.replace(/\{(p\.[a-zA-Z0-9]+)\}/g, (_, k) => map[k] ?? '');
@@ -861,7 +859,7 @@ function setTourType(tourType) {
     }
   });
 
-  // Update package options (dinner has only standard/vip, others have standard/premium/vip)
+  // Update package options (dinner has only standard, others have standard/premium)
   ['bookPackage', 'bookPackageMobile'].forEach(id => {
     const sel = document.getElementById(id);
     if (!sel) return;
@@ -907,21 +905,21 @@ function setTourType(tourType) {
 
 // ========== BOOKING PANEL ==========
 const PRICES = {
-  classic:  { standard: 24.3, vip: 55.2 },
-  premium:  { standard: 24.3, vip: 55.2 },
-  luxury:   { standard: 24.3, vip: 55.2 }
+  classic:  { standard: 24.3 },
+  premium:  { standard: 24.3 },
+  luxury:   { standard: 24.3 }
 };
 
 // Dinner cruise pricing: base + extras
 // Values are defaults; overridden at runtime by fetchDynamicPrices() from Supabase via /api/public/prices
+// Single package: DINNER_STD only (SUNSET_STD will be added here later)
 const DINNER_PRICES = {
   standard: { base: 24.3, oldPrice: 40.5 },
-  vip:      { base: 55.2, oldPrice: 92 },
-  extras: { glass2: 10, unlimited: 25, transfer: 10, romantic: 15 }
+  extras: { glass2: 10, transfer: 5, romantic: 15 }
 };
 
-// Format a price for display: round to cents (float artifacts like 55.2*3=165.60000000000002)
-// and drop trailing zeros so it reads cleanly — "24.3", "55.2", "40.5", "92".
+// Format a price for display: round to cents (float artifacts like 24.3*3=72.89999999999999)
+// and drop trailing zeros so it reads cleanly — "24.3", "40.5".
 const fmtEuro = (n) => String(Math.round(Number(n) * 100) / 100);
 
 // Fetch live prices from Supabase (via /api/public/prices) and apply to DOM + in-memory constants.
@@ -934,13 +932,11 @@ async function fetchDynamicPrices() {
     const pkg = data.packages || {};
     const addon = data.addons || {};
 
-    // Update dinner package bases
+    // Update dinner package bases (DINNER_STD only — SUNSET_STD will be added here later)
     if (pkg.DINNER_STD?.price) DINNER_PRICES.standard.base = pkg.DINNER_STD.price;
-    if (pkg.DINNER_VIP?.price) DINNER_PRICES.vip.base = pkg.DINNER_VIP.price;
 
     // Update addons
     if (addon.ALCOHOL_2GLASS?.price) DINNER_PRICES.extras.glass2 = addon.ALCOHOL_2GLASS.price;
-    if (addon.ALCOHOL_UNLIMITED?.price) DINNER_PRICES.extras.unlimited = addon.ALCOHOL_UNLIMITED.price;
     if (addon.HOTEL_TRANSFER?.price) DINNER_PRICES.extras.transfer = addon.HOTEL_TRANSFER.price;
     if (addon.ROMANTIC_TABLE?.price) DINNER_PRICES.extras.romantic = addon.ROMANTIC_TABLE.price;
 
@@ -1306,10 +1302,9 @@ function openMobilePanel(pkg) {
   wizState.transfer = null;
   wizState.wantAlcohol = null;
   const inactive = 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
+  // Single package button for now — SUNSET_STD will be added here later
   const stdBtn = document.getElementById('wizPkgStandard');
-  const vipBtn = document.getElementById('wizPkgVip');
   if (stdBtn) stdBtn.className = inactive;
-  if (vipBtn) vipBtn.className = inactive;
   const transferInactive = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
   const tNo = document.getElementById('wizTransferNo');
   const tYes = document.getElementById('wizTransferYes');
@@ -1690,12 +1685,10 @@ function calculatePrice() {
     const basePrice = DINNER_PRICES[pkg].base;
     const transferExtra = DINNER_PRICES.extras.transfer;
 
-    // Determine alcohol extra per person
+    // Determine alcohol extra per person — only the 2-glass package is sold
     let alcoholExtra = 0;
-    if (window._drinkSelected === 'alcohol') {
-      alcoholExtra = DINNER_PRICES.extras.unlimited; // €30/person
-    } else if (window._drinkSelected === 'glass2') {
-      alcoholExtra = DINNER_PRICES.extras.glass2; // €15/person
+    if (window._drinkSelected === 'alcohol' || window._drinkSelected === 'glass2') {
+      alcoholExtra = DINNER_PRICES.extras.glass2; // €10/person (2 glasses)
     }
 
     // Adults
@@ -1752,7 +1745,7 @@ function calculatePrice() {
     }
   });
 
-  // Float artifact guard (55.2*3=165.60000000000002) — round to cents
+  // Float artifact guard (24.3*3=72.89999999999999) — round to cents
   total = Math.round(total * 100) / 100;
 
   // Update displays
@@ -1819,12 +1812,12 @@ function updateWhatsAppLinks(total) {
 // ========== EXTRA BADGE TOOLTIPS ==========
 const EXTRA_TIPS = {
   alcohol: {
-    en: 'Unlimited beer, wine & spirits throughout the cruise',
-    tr: 'Tur boyunca sınırsız bira, şarap ve alkollü içecekler',
-    de: 'Unbegrenzt Bier, Wein & Spirituosen während der Kreuzfahrt',
-    es: 'Cerveza, vino y licores ilimitados durante el crucero',
-    ru: 'Безлимитное пиво, вино и крепкие напитки на протяжении круиза',
-    ar: 'بيرة ونبيذ ومشروبات روحية غير محدودة طوال الرحلة'
+    en: '2 glasses of wine, beer or raki per person during the cruise',
+    tr: 'Tur boyunca kişi başı 2 kadeh şarap, bira veya rakı',
+    de: '2 Gläser Wein, Bier oder Raki pro Person während der Kreuzfahrt',
+    es: '2 copas de vino, cerveza o raki por persona durante el crucero',
+    ru: '2 бокала вина, пива или ракы на человека во время круиза',
+    ar: 'كأسان من النبيذ أو البيرة أو الراكي لكل شخص خلال الرحلة'
   },
   transfer: {
     en: 'Round-trip pickup & drop-off from your hotel in Istanbul',
@@ -1912,12 +1905,12 @@ function initIncludedAccordion() {
 // ========== EXTRA TOOLTIPS ==========
 const EXTRA_TOOLTIPS = {
   alcohol: {
-    en: 'Unlimited beer, wine & raki during the cruise',
-    tr: 'Cruise boyunca sınırsız bira, şarap ve rakı',
-    de: 'Unbegrenztes Bier, Wein & Raki während der Kreuzfahrt',
-    es: 'Cerveza, vino y raki ilimitados durante el crucero',
-    ru: 'Безлимитное пиво, вино и ракы во время круиза',
-    ar: 'بيرة ونبيذ وراكي غير محدود خلال الرحلة'
+    en: '2 glasses of wine, beer or raki during the cruise',
+    tr: 'Cruise boyunca 2 kadeh şarap, bira veya rakı',
+    de: '2 Gläser Wein, Bier oder Raki während der Kreuzfahrt',
+    es: '2 copas de vino, cerveza o raki durante el crucero',
+    ru: '2 бокала вина, пива или ракы во время круиза',
+    ar: 'كأسان من النبيذ أو البيرة أو الراكي خلال الرحلة'
   },
   transfer: {
     en: 'Round-trip pickup from Sultanahmet, Taksim or Beyoğlu',
@@ -2181,7 +2174,7 @@ const wizState = {
   step: 1,
   pkg: null,
   drink: 'soft',
-  drinkCounts: { soft: 0, glass2: 0, unlimited: 0 },
+  drinkCounts: { soft: 0, glass2: 0 },
   wantAlcohol: null,
   transfer: null,
   romantic: false,
@@ -2580,7 +2573,7 @@ function wizContinueWithoutTransfer() {
   if (mapDiv) mapDiv.classList.add('hidden');
   const hint = document.getElementById('wizNextHint');
   if (hint) hint.classList.add('hidden');
-  // Recalculate price (transfer -€10 removed)
+  // Recalculate price (transfer -€5 removed)
   wizCalcPrice();
   // Re-run validation — catches missing contact preference etc. before advancing
   wizNext();
@@ -2644,18 +2637,16 @@ function wizViewPackages() {
 
 function wizSelectPackage(pkg) {
   wizState.pkg = pkg;
-  const stdBtn = document.getElementById('wizPkgStandard');
-  const vipBtn = document.getElementById('wizPkgVip');
-  if (stdBtn) {
-    stdBtn.className = pkg === 'standard'
-      ? 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]'
-      : 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
-  }
-  if (vipBtn) {
-    vipBtn.className = pkg === 'vip'
-      ? 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]'
-      : 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
-  }
+  // Single-package list for now — SUNSET_STD will be added here later
+  const pkgBtns = { standard: 'wizPkgStandard' };
+  Object.entries(pkgBtns).forEach(([key, id]) => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.className = pkg === key
+        ? 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]'
+        : 'wiz-pkg-btn flex-1 py-2.5 rounded-lg text-sm font-semibold border-2 transition-all border-white/20 bg-white/5 text-white/50';
+    }
+  });
   // Also sync to desktop sidebar for price calc compatibility
   const desktopPkg = document.getElementById('bookPackage');
   if (desktopPkg) desktopPkg.value = pkg;
@@ -2741,7 +2732,7 @@ function wizUpdateChildAges(count) {
 
 function wizSelectDrink(drink) {
   wizState.drink = drink;
-  const btns = { soft: 'wizDrinkSoft', glass2: 'wizDrinkGlass2', unlimited: 'wizDrinkUnlimited' };
+  const btns = { soft: 'wizDrinkSoft', glass2: 'wizDrinkGlass2' };
   const activeClass = 'wiz-drink-btn flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-[#c9a84c] bg-[#c9a84c]/10 text-[#c9a84c]';
   const inactiveClass = 'wiz-drink-btn flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
   Object.entries(btns).forEach(([key, id]) => {
@@ -2754,29 +2745,27 @@ function wizSelectDrink(drink) {
   if (desc) {
     const descKeys = {
       soft: 'wizard.softDesc',
-      glass2: 'wizard.glass2Desc',
-      unlimited: 'wizard.unlimitedDesc'
+      glass2: 'wizard.glass2Desc'
     };
     const descTexts = {
       soft: 'Unlimited tea, coffee, water, cola & juice',
-      glass2: 'Choose from local wine, beer, raki, vodka, or gin',
-      unlimited: 'Unlimited local wine, beer, raki, vodka, gin all night'
+      glass2: 'Choose from local wine, beer, raki, vodka, or gin'
     };
     desc.setAttribute('data-i18n', descKeys[drink]);
     desc.textContent = (T[descKeys[drink]] && T[descKeys[drink]][currentLang]) || descTexts[drink];
   }
 
   // Sync to legacy drink state
-  window._drinkSelected = drink === 'unlimited' ? 'alcohol' : drink;
+  window._drinkSelected = drink;
   wizCalcPrice();
 }
 
-// Alcohol allocation — only glass2/unlimited counters. Soft drinks auto-fill the
-// remaining adults (free), so there is no "assign every guest" requirement.
+// Alcohol allocation — only the glass2 counter (2-glass package). Soft drinks auto-fill
+// the remaining adults (free), so there is no "assign every guest" requirement.
 function wizDrinkCount(type, dir) {
   const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
   const counts = wizState.drinkCounts;
-  const alcohol = counts.glass2 + counts.unlimited;
+  const alcohol = counts.glass2;
   if (dir === 1) {
     if (alcohol >= adults) return; // can't give alcohol to more guests than there are adults
     counts[type]++;
@@ -2785,9 +2774,8 @@ function wizDrinkCount(type, dir) {
     counts[type]--;
   }
   // Soft = remaining adults (auto, free)
-  counts.soft = Math.max(0, adults - counts.glass2 - counts.unlimited);
+  counts.soft = Math.max(0, adults - counts.glass2);
   const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = counts.glass2;
-  const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = counts.unlimited;
   wizAlcoholSummaryUpdate();
   wizCalcPrice();
   wizUpdateNextBtn();
@@ -2797,13 +2785,12 @@ function wizDrinkCount(type, dir) {
 function wizResetDrinkCounts() {
   const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
   wizState.wantAlcohol = null;
-  wizState.drinkCounts = { soft: adults, glass2: 0, unlimited: 0 };
+  wizState.drinkCounts = { soft: adults, glass2: 0 };
   const inactive = 'flex-1 text-xs py-2.5 rounded-lg border-2 font-medium transition-all border-white/20 bg-white/5 text-white/50';
   const no = document.getElementById('wizAlcoholNo'); if (no) no.className = inactive;
   const yes = document.getElementById('wizAlcoholYes'); if (yes) yes.className = inactive;
   const panel = document.getElementById('wizAlcoholPanel'); if (panel) panel.classList.add('hidden');
   const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = '0';
-  const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = '0';
   document.querySelectorAll('.wiz-alcohol-max').forEach((el) => { el.textContent = adults; });
   const warn = document.getElementById('wizAlcoholWarning'); if (warn) warn.classList.add('hidden');
 }
@@ -2814,24 +2801,22 @@ function wizAlcoholHeadingText() {
   return m[currentLang] || m.en;
 }
 
-// Live plain-language summary, e.g. "1 guest unlimited alcohol · 1 guest soft drinks (free)".
+// Live plain-language summary, e.g. "1 guest 2 glasses · 1 guest soft drinks (free)".
 function wizAlcoholSummaryUpdate() {
   const el = document.getElementById('wizAlcoholSummary');
   if (!el) return;
   const adults = parseInt(document.getElementById('wizAdults')?.textContent) || 0;
   const dc = wizState.drinkCounts;
-  const soft = Math.max(0, adults - dc.glass2 - dc.unlimited);
+  const soft = Math.max(0, adults - dc.glass2);
   const person = { en: 'guest', tr: 'kişi', de: 'Gast', es: 'huésped', ru: 'гость', ar: 'ضيف', fa: 'مهمان', fr: 'invité', it: 'ospite', zh: '位', id: 'tamu', ms: 'tetamu', pl: 'gość', bg: 'гост', ro: 'oaspete', uk: 'гість', ja: '名', ko: '명', hi: 'मेहमान', ur: 'مہمان' }[currentLang] || 'guest';
   const free = { en: 'free', tr: 'ücretsiz', de: 'gratis', es: 'gratis', ru: 'бесплатно', ar: 'مجاناً', fa: 'رایگان', fr: 'gratuit', it: 'gratis', zh: '免费', id: 'gratis', ms: 'percuma', pl: 'gratis', bg: 'безплатно', ro: 'gratuit', uk: 'безкоштовно', ja: '無料', ko: '무료', hi: 'मुफ्त', ur: 'مفت' }[currentLang] || 'free';
   const nm = {
     glass2: { en: '2 glasses', tr: '2 kadeh alkol', de: '2 Gläser', es: '2 copas', ru: '2 бокала', ar: 'كأسان', fa: '۲ لیوان', fr: '2 verres', it: '2 bicchieri', zh: '2杯酒', id: '2 gelas', ms: '2 gelas', pl: '2 kieliszki', bg: '2 чаши', ro: '2 pahare', uk: '2 келихи', ja: 'グラス2杯', ko: '2잔', hi: '2 गिलास', ur: '2 گلاس' },
-    unlimited: { en: 'unlimited alcohol', tr: 'sınırsız alkol', de: 'unbegrenzt Alkohol', es: 'alcohol ilimitado', ru: 'безлимит алкоголь', ar: 'كحول غير محدود', fa: 'الکل نامحدود', fr: 'alcool illimité', it: 'alcol illimitato', zh: '无限酒精', id: 'alkohol tanpa batas', ms: 'alkohol tanpa had', pl: 'alkohol bez limitu', bg: 'неограничен алкохол', ro: 'alcool nelimitat', uk: 'безлім. алкоголь', ja: '無制限アルコール', ko: '무제한 주류', hi: 'असीमित शराब', ur: 'لامحدود الکحل' },
     soft: { en: 'soft drinks', tr: 'alkolsüz', de: 'alkoholfrei', es: 'sin alcohol', ru: 'безалкоголь', ar: 'مشروبات غير كحولية', fa: 'نوشیدنی غیرالکلی', fr: 'sans alcool', it: 'analcolico', zh: '无酒精', id: 'minuman ringan', ms: 'minuman ringan', pl: 'bezalkoholowe', bg: 'безалкохолни', ro: 'fără alcool', uk: 'безалкогольні', ja: 'ソフトドリンク', ko: '무알콜', hi: 'सॉफ्ट ड्रिंक', ur: 'سافٹ ڈرنک' },
   };
   const L = (o) => (o[currentLang] || o.en);
   const parts = [];
   if (dc.glass2 > 0) parts.push(`${dc.glass2} ${person} ${L(nm.glass2)}`);
-  if (dc.unlimited > 0) parts.push(`${dc.unlimited} ${person} ${L(nm.unlimited)}`);
   if (soft > 0) parts.push(`${soft} ${person} ${L(nm.soft)} (${free})`);
   el.textContent = parts.join('  ·  ');
 }
@@ -2872,9 +2857,8 @@ function wizToggle(type, val) {
     } else {
       // No → hide allocator; everyone gets free soft drinks.
       if (panel) panel.classList.add('hidden');
-      wizState.drinkCounts = { soft: adults, glass2: 0, unlimited: 0 };
+      wizState.drinkCounts = { soft: adults, glass2: 0 };
       const g = document.getElementById('wizGlass2Count'); if (g) g.textContent = '0';
-      const u = document.getElementById('wizUnlimitedCount'); if (u) u.textContent = '0';
     }
     const warn = document.getElementById('wizAlcoholWarning');
     if (warn) warn.classList.add('hidden');
@@ -3440,9 +3424,9 @@ function wizCalcPrice() {
   const basePrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].base : 24.3;
   const oldPrice = DINNER_PRICES[pkg] ? DINNER_PRICES[pkg].oldPrice : 40.5;
 
-  // Drink extras — per person counts
+  // Drink extras — per person counts (2-glass package only)
   const dc = wizState.drinkCounts;
-  const drinkCost = (dc.glass2 * DINNER_PRICES.extras.glass2) + (dc.unlimited * DINNER_PRICES.extras.unlimited);
+  const drinkCost = dc.glass2 * DINNER_PRICES.extras.glass2;
 
   // Çocuk yaş dağılımı — transfer için bebek (0-3) sayısını çıkarmamız lazım.
   const childAgeInputs = document.getElementById('wizChildAgeInputs');
@@ -3453,7 +3437,7 @@ function wizCalcPrice() {
     });
   }
 
-  // Transfer per person — 0-3 bebek ücretsiz, 4+ tam €10/kişi (bebekler sayıma girmez)
+  // Transfer per person — 0-3 bebek ücretsiz, 4+ tam €5/kişi (bebekler sayıma girmez)
   const transferGuests = adults + children - infantCount;
   const transferExtra = wizState.transfer ? DINNER_PRICES.extras.transfer : 0;
   const transferCost = transferExtra * transferGuests;
@@ -3470,7 +3454,7 @@ function wizCalcPrice() {
     });
   }
 
-  // Transfer tek fiyat €10/kişi (izinli bölgelerde), zone surcharge kaldırıldı 2026-04-19
+  // Transfer tek fiyat €5/kişi (izinli bölgelerde), zone surcharge kaldırıldı 2026-04-19
   total += drinkCost + transferCost;
   if (wizState.romantic) total += DINNER_PRICES.extras.romantic;
 
@@ -3486,7 +3470,7 @@ function wizCalcPrice() {
   oldTotal += drinkCost + transferCost;
   if (wizState.romantic) oldTotal += DINNER_PRICES.extras.romantic;
 
-  // Float artifact guard (55.2*3=165.60000000000002) — round to cents
+  // Float artifact guard (24.3*3=72.89999999999999) — round to cents
   total = Math.round(total * 100) / 100;
   oldTotal = Math.round(oldTotal * 100) / 100;
 
@@ -3525,22 +3509,20 @@ function wizBuildSummary() {
   const lang = document.getElementById('wizLang')?.value || 'English';
   const pkg = wizState.pkg;
 
+  // Single package label for now — SUNSET_STD will be added here later
   const pkgLabels = {
-    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية', fa: 'تور دینر استاندارد', fr: 'Croisière Dîner Standard', it: 'Crociera Cena Standard', zh: '标准晚餐游船', id: 'Pelayaran Makan Malam Standar', ms: 'Pelayaran Makan Malam Standard', pl: 'Standardowy rejs z kolacją', bg: 'Стандартен круиз с вечеря', ro: 'Croazieră cu Cină Standard', uk: 'Стандартний круїз з вечерею', hi: 'स्टैंडर्ड डिनर क्रूज़', ur: 'اسٹینڈرڈ ڈنر کروز', ja: 'スタンダード ディナークルーズ', ko: '스탠다드 디너 크루즈' },
-    vip: { en: 'VIP Dinner Cruise', tr: 'VIP Akşam Turu', de: 'VIP Dinner-Kreuzfahrt', es: 'Crucero Cena VIP', ru: 'VIP ужин-круиз', ar: 'رحلة عشاء VIP', fa: 'تور دینر VIP', fr: 'Croisière Dîner VIP', it: 'Crociera Cena VIP', zh: 'VIP晚餐游船', id: 'Pelayaran Makan Malam VIP', ms: 'Pelayaran Makan Malam VIP', pl: 'Rejs VIP z kolacją', bg: 'VIP круиз с вечеря', ro: 'Croazieră VIP cu Cină', uk: 'VIP круїз з вечерею', hi: 'VIP डिनर क्रूज़', ur: 'VIP ڈنر کروز', ja: 'VIP ディナークルーズ', ko: 'VIP 디너 크루즈' }
+    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية', fa: 'تور دینر استاندارد', fr: 'Croisière Dîner Standard', it: 'Crociera Cena Standard', zh: '标准晚餐游船', id: 'Pelayaran Makan Malam Standar', ms: 'Pelayaran Makan Malam Standard', pl: 'Standardowy rejs z kolacją', bg: 'Стандартен круиз с вечеря', ro: 'Croazieră cu Cină Standard', uk: 'Стандартний круїз з вечерею', hi: 'स्टैंडर्ड डिनर क्रूज़', ur: 'اسٹینڈرڈ ڈنر کروز', ja: 'スタンダード ディナークルーズ', ko: '스탠다드 디너 크루즈' }
   };
-  const pkgLabel = (pkgLabels[pkg] && pkgLabels[pkg][currentLang]) || pkgLabels[pkg].en;
+  const pkgLabel = (pkgLabels[pkg] && pkgLabels[pkg][currentLang]) || pkgLabels.standard.en;
 
   const drinkNames = {
     soft: { en: 'Soft Drinks', tr: 'Alkolsüz İçecek', de: 'Alkoholfreie Getränke', es: 'Bebidas Sin Alcohol', ru: 'Безалкогольные напитки', ar: 'مشروبات غير كحولية', fa: 'نوشیدنی غیرالکلی', fr: 'Boissons non-alcoolisées', it: 'Bevande analcoliche', zh: '无酒精饮料', id: 'Minuman ringan', ms: 'Minuman ringan', pl: 'Napoje bezalkoholowe', bg: 'Безалкохолни напитки', ro: 'Băuturi non-alcoolice', uk: 'Безалкогольні напої', hi: 'सॉफ्ट ड्रिंक्स', ur: 'سافٹ ڈرنکس', ja: 'ソフトドリンク', ko: '무알콜 음료' },
-    glass2: { en: 'Limited Alcohol (2 Glasses)', tr: 'Sınırlı Alkol (2 Kadeh)', de: 'Begrenzter Alkohol (2 Gläser)', es: 'Alcohol Limitado (2 Copas)', ru: 'Ограниченный алкоголь (2 бокала)', ar: 'كحول محدود (كأسان)', fa: 'الکل محدود (۲ گیلاس)', fr: 'Alcool limité (2 verres)', it: 'Alcool limitato (2 bicchieri)', zh: '限量酒精 (2杯)', id: 'Alkohol terbatas (2 gelas)', ms: 'Alkohol terhad (2 gelas)', pl: 'Ograniczony alkohol (2 kieliszki)', bg: 'Ограничен алкохол (2 чаши)', ro: 'Alcool limitat (2 pahare)', uk: 'Лімітований алкоголь (2 келихи)', hi: 'सीमित शराब (2 गिलास)', ur: 'محدود الکحل (2 گلاس)', ja: '制限付きアルコール (2杯)', ko: '제한 알코올 (2잔)' },
-    unlimited: { en: 'Unlimited Alcohol', tr: 'Sınırsız Alkol', de: 'Unbegrenzter Alkohol', es: 'Alcohol Ilimitado', ru: 'Безлимитный алкоголь', ar: 'كحول غير محدود', fa: 'الکل نامحدود', fr: 'Alcool illimité', it: 'Alcool illimitato', zh: '无限酒精', id: 'Alkohol tanpa batas', ms: 'Alkohol tanpa had', pl: 'Alkohol bez ograniczeń', bg: 'Неограничен алкохол', ro: 'Alcool nelimitat', uk: 'Безлімітний алкоголь', hi: 'असीमित शराब', ur: 'لامحدود الکحل', ja: '無制限アルコール', ko: '무제한 알코올' }
+    glass2: { en: 'Limited Alcohol (2 Glasses)', tr: 'Sınırlı Alkol (2 Kadeh)', de: 'Begrenzter Alkohol (2 Gläser)', es: 'Alcohol Limitado (2 Copas)', ru: 'Ограниченный алкоголь (2 бокала)', ar: 'كحول محدود (كأسان)', fa: 'الکل محدود (۲ گیلاس)', fr: 'Alcool limité (2 verres)', it: 'Alcool limitato (2 bicchieri)', zh: '限量酒精 (2杯)', id: 'Alkohol terbatas (2 gelas)', ms: 'Alkohol terhad (2 gelas)', pl: 'Ograniczony alkohol (2 kieliszki)', bg: 'Ограничен алкохол (2 чаши)', ro: 'Alcool limitat (2 pahare)', uk: 'Лімітований алкоголь (2 келихи)', hi: 'सीमित शराब (2 गिलास)', ur: 'محدود الکحل (2 گلاس)', ja: '制限付きアルコール (2杯)', ko: '제한 알코올 (2잔)' }
   };
   const dc = wizState.drinkCounts;
   const drinkParts = [];
   if (dc.soft > 0) drinkParts.push(`${dc.soft} ${(drinkNames.soft[currentLang] || 'Soft Drinks')}`);
   if (dc.glass2 > 0) drinkParts.push(`${dc.glass2} x ${(drinkNames.glass2[currentLang] || '2 Glasses')}`);
-  if (dc.unlimited > 0) drinkParts.push(`${dc.unlimited} x ${(drinkNames.unlimited[currentLang] || 'Unlimited')}`);
   const drinkLabel = drinkParts.join(', ') || (drinkNames.soft[currentLang] || 'Soft Drinks');
 
   // Format date — mesajın SONUNA ISO tarih eklenir (2026-07-28). AI parser'ı
@@ -3625,27 +3607,20 @@ function wizBuildSummary() {
       html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${glass2Label}</p><p class="text-white/30 text-[10px]">${dc.glass2} x (€${basePrice}+€${DINNER_PRICES.extras.glass2})</p></div><span class="text-white font-medium">€${fmtEuro(dc.glass2 * perPerson)}</span></div>`;
     }
 
-    // Unlimited alcohol guests
-    if (dc.unlimited > 0) {
-      const unlimitedLabel = drinkNames.unlimited[currentLang] || 'Unlimited Alcohol';
-      const perPerson = basePrice + DINNER_PRICES.extras.unlimited;
-      html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${pkgLabel} + ${unlimitedLabel}</p><p class="text-white/30 text-[10px]">${dc.unlimited} x (€${basePrice}+€${DINNER_PRICES.extras.unlimited})</p></div><span class="text-white font-medium">€${fmtEuro(dc.unlimited * perPerson)}</span></div>`;
-    }
-
     // Transfer
     if (transferExtra > 0) {
       const transferLabel = (T['ticket.hotelPickup'] && T['ticket.hotelPickup'][currentLang]) || 'Hotel Transfer';
       html += `<div class="flex justify-between text-sm"><div><p class="text-white/70">${transferLabel}</p><p class="text-white/30 text-[10px]">${transferGuests} x €${DINNER_PRICES.extras.transfer}</p></div><span class="text-white font-medium">€${transferExtra * transferGuests}</span></div>`;
     }
 
-    // Zone extra (kaldırıldı 2026-04-19 — transfer tek fiyat €10/kişi)
+    // Zone extra (kaldırıldı 2026-04-19 — transfer tek fiyat €5/kişi)
 
     // Children
     const childrenLabel = { en: 'Children', tr: 'Çocuklar', de: 'Kinder', es: 'Niños', ru: 'Дети', ar: 'أطفال', fa: 'کودکان', fr: 'Enfants', it: 'Bambini', zh: '儿童', id: 'Anak-anak', ms: 'Kanak-kanak', pl: 'Dzieci', bg: 'Деца', ro: 'Copii', uk: 'Діти', hi: 'बच्चे', ur: 'بچے', ja: 'お子様', ko: '어린이들' }[currentLang] || 'Children';
     if (children > 0 && childAgeInputs) {
       let childTotal = 0;
       childAgeInputs.querySelectorAll('select').forEach(sel => {
-        // Paket-only (0-3 ücretsiz, 4-8 %50, 9+ tam). Transfer ayrı satırda tam €10, burada YOK.
+        // Paket-only (0-3 ücretsiz, 4-8 %50, 9+ tam). Transfer ayrı satırda tam €5, burada YOK.
         if (sel.value === '0-3') { /* free */ }
         else if (sel.value === '4-8') childTotal += Math.round(basePrice * 0.5);
         else childTotal += basePrice;
@@ -3733,16 +3708,14 @@ function wizBuildSummary() {
           ctaLink.setAttribute('data-busy', '1');
           // Wizard data topla — wizState'te olmayan field'lar DOM'dan okunur
           const wizDateValue = document.getElementById('wizDate')?.value || null;
-          // wizState.pkg: 'standard' | 'vip' → AI kod: DINNER_STD | DINNER_VIP
+          // wizState.pkg: 'standard' → AI kod: DINNER_STD (SUNSET_STD will be added here later)
           const packageCode =
             wizState.pkg === 'standard' ? 'DINNER_STD' :
-            wizState.pkg === 'vip' ? 'DINNER_VIP' :
             wizState.pkg;
           // Alcohol add-ons derived from per-guest counts (drinkCounts is the source of truth).
-          const dcPayload = wizState.drinkCounts || { soft: 0, glass2: 0, unlimited: 0 };
+          const dcPayload = wizState.drinkCounts || { soft: 0, glass2: 0 };
           const addonCodes = [];
           if (dcPayload.glass2 > 0) addonCodes.push('ALCOHOL_2GLASS');
-          if (dcPayload.unlimited > 0) addonCodes.push('ALCOHOL_UNLIMITED');
           if (wizState.transfer) addonCodes.push('HOTEL_TRANSFER');
           if (wizState.romantic) addonCodes.push('ROMANTIC_TABLE');
 
@@ -3756,8 +3729,8 @@ function wizBuildSummary() {
             name: guestName,
             phone: guestPhone,
             date: wizDateValue,
-            package: wizState.pkg,          // site-internal 'standard' | 'vip'
-            package_code: packageCode,       // AI enum 'DINNER_STD' | 'DINNER_VIP'
+            package: wizState.pkg,          // site-internal 'standard'
+            package_code: packageCode,       // AI enum 'DINNER_STD'
             adults: adults,                   // wizCalcPrice scope
             children: children,               // wizCalcPrice scope
             child_ages: childAges,
@@ -3828,7 +3801,7 @@ function wizBuildSummary() {
                 name: guestName,
                 channel: 'whatsapp',
                 language: currentLang,
-                package_code: (wizState.pkg === 'standard' ? 'DINNER_STD' : wizState.pkg === 'vip' ? 'DINNER_VIP' : wizState.pkg),
+                package_code: (wizState.pkg === 'standard' ? 'DINNER_STD' : wizState.pkg),
                 total_eur: total,
                 attribution: attribution,
               }),
@@ -3909,7 +3882,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ========== GOOGLE PLACES AUTOCOMPLETE ==========
-// Transfer hizmet alanı — tek liste, €10/kişi (HOTEL_TRANSFER addon)
+// Transfer hizmet alanı — tek liste, €5/kişi (HOTEL_TRANSFER addon)
 // Özgür kararı 2026-04-19 — eski 2-tier "dahil/+€10" kaldırıldı
 // AI tarafı (bosphorus-night-ai/src/config.js) aynı listeyi kullanır
 const TRANSFER_ALLOWED = [

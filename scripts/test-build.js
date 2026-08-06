@@ -13,14 +13,14 @@ const ROOT = path.join(__dirname, '..');
 const OUT = path.join(ROOT, 'dist', 'test');
 const SLUGS = ['bosphorus-dinner-cruise', 'bosphorus-with-kids'];
 
+// Mirror of scripts/build-pages.js PRICES (Aug 2026 lineup: single DINNER_STD,
+// VIP retired — dinnerVip keys removed; transfer €5; 2-glass alcohol €10).
 const PRICES = {
-  dinnerStd: 24,
-  dinnerStdOriginal: 40,
-  dinnerVip: 55,
-  dinnerVipOriginal: 90,
-  alcohol2: 15,
-  unlimited: 30,
-  transfer: 10,
+  dinnerStd: '24.3',
+  dinnerStdOriginal: 40.5,
+  alcohol2: 10,
+  unlimited: 25,
+  transfer: 5,
   romantic: 15
 };
 

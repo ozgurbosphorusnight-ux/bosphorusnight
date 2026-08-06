@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'The **romantic Bosphorus cruise** is Istanbul\'s most iconic evening for couples. As the sun sets over Dolmabahçe Palace and the Bosphorus Bridge lights up in shifting colors, you and your partner share a multi-course Turkish feast at a private table — with candles, fresh flowers, and a live violin drifting across the deck.',
 
-    'Our **romantic table setup** (+€{p.romantic}/table) transforms any seat into an occasion: red roses, glowing candles, a handwritten welcome note. Add the unlimited alcohol package (+€{p.unlimited}/person) for wine under the stars, or keep it simple with the included soft drinks. Either way, the crew quietly takes care of the rest.',
+    'Our **romantic table setup** (+€{p.romantic}/table) transforms any seat into an occasion: red roses, glowing candles, a handwritten welcome note. Add the 2-glass alcohol package (+€{p.alcohol2}/person) for wine under the stars, or keep it simple with the included soft drinks. Either way, the crew quietly takes care of the rest.',
 
     'Whether you\'re celebrating an anniversary, planning a surprise for your partner, or just in the most romantic city in Europe and want to live a memorable night, this is the **romantic dinner cruise Istanbul couples book first**. 4.8★ rating, TÜRSAB-licensed, and — most importantly — pay on the boat, so you\'re committing to nothing but the evening itself.'
   ],
@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'wine',
       title: 'Wine, champagne, premium pairings',
-      desc: 'Add 2 glasses of alcohol (+€{p.alcohol2}/person) or unlimited local wine, beer, rakı (+€{p.unlimited}/person). Imported champagne and premium pairings available on request — ask when booking.'
+      desc: 'Add 2 glasses of alcohol — local wine, beer, rakı (+€{p.alcohol2}/person). Imported champagne and premium pairings available on request — ask when booking.'
     }
   ],
 
@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       q: 'How much does the romantic cruise cost for 2 people?',
-      a: 'Standard for 2: 2 × €{p.dinnerStd} = €48. Add romantic setup +€{p.romantic} = €63. VIP for 2: 2 × €{p.dinnerVip} = €110 + romantic €{p.romantic} = €125. No prepayment — pay on boat. For unlimited alcohol add 2 × €{p.unlimited} = €60 more.'
+      a: 'Dinner cruise for 2: 2 × €{p.dinnerStd} = €48.60. Add romantic setup +€{p.romantic} = €63.60. No prepayment — pay on boat. For the 2-glass alcohol package add 2 × €{p.alcohol2} = €20 more.'
     },
     {
       q: 'Is the romantic Bosphorus cruise private — just for us?',
@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'Where is the best place to propose on a Bosphorus boat?',
-      a: 'The Bosphorus Bridge (15 July Martyrs Bridge) crossing around 22:00 is the most popular proposal moment — illuminated city skyline, the bridge above, calm waters below. Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table (+€{p.romantic}) is a typical proposal setup.'
+      a: 'The Bosphorus Bridge (15 July Martyrs Bridge) crossing around 22:00 is the most popular proposal moment — illuminated city skyline, the bridge above, calm waters below. Bosphorus Night\'s Dinner Cruise (€{p.dinnerStd}/person) with the Romantic Table (+€{p.romantic}) is a typical proposal setup.'
     }
   ],
 

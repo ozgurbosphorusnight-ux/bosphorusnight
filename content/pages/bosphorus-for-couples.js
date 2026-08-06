@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'optional',
       title: 'Add-ons for special nights',
-      desc: 'Romantic table setup (candles, roses): +€{p.romantic}. Unlimited local alcohol (wine, rakı): +€{p.unlimited}/person. Hotel transfer (round-trip): +€{p.transfer}/person. Pick what fits your evening.'
+      desc: 'Romantic table setup (candles, roses): +€{p.romantic}. 2-glass alcohol package (wine, rakı): +€{p.alcohol2}/person. Hotel transfer (round-trip): +€{p.transfer}/person. Pick what fits your evening.'
     }
   ],
 
@@ -70,11 +70,11 @@ module.exports = {
     },
     {
       q: 'How much does the Bosphorus cruise cost for 2 people?',
-      a: 'Standard for 2: 2 × €{p.dinnerStd} = €48. VIP for 2: 2 × €{p.dinnerVip} = €110. Add hotel transfer for both: +€{p.transfer}×2 = €20. Add unlimited alcohol for both: +€{p.unlimited}×2 = €60. No prepayment — pay on boat.'
+      a: 'Dinner cruise for 2: 2 × €{p.dinnerStd} = €48.60. Add hotel transfer for both: +€{p.transfer}×2 = €10. Add the 2-glass alcohol package for both: +€{p.alcohol2}×2 = €20. No prepayment — pay on boat.'
     },
     {
       q: 'Can couples bring their own wine or champagne?',
-      a: 'We don\'t allow outside alcohol onboard (operating license reason). But we have unlimited local wine (+€{p.unlimited}/person) and can arrange premium imported wines or champagne for a fee — ask when booking. Prosecco, Chianti, and Cabernet are popular premium requests.'
+      a: 'We don\'t allow outside alcohol onboard (operating license reason). But we have a 2-glass alcohol package with local wine (+€{p.alcohol2}/person) and can arrange premium imported wines or champagne for a fee — ask when booking. Prosecco, Chianti, and Cabernet are popular premium requests.'
     },
     {
       q: 'Is it okay if we don\'t drink alcohol — are we odd out?',
@@ -90,11 +90,11 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus cruise good for a first date?',
-      a: 'Yes — the relaxed 3-hour format suits a first date. Standard tables seat 4–6 (mixed) or VIP seating at €{p.dinnerVip}/person offers more privacy near the stage. Add the Romantic Table package (+€{p.romantic}/booking) for flowers, candles, and a private corner.'
+      a: 'Yes — the relaxed 3-hour format suits a first date. Tables seat 4–6 (mixed). Add the Romantic Table package (+€{p.romantic}/booking) for flowers, candles, and a private corner.'
     },
     {
       q: 'What\'s the most romantic dinner cruise in Istanbul for couples?',
-      a: 'Bosphorus Night\'s VIP Dinner Cruise (€{p.dinnerVip}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 20:30 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
+      a: 'Bosphorus Night\'s Dinner Cruise (€{p.dinnerStd}/person) with the Romantic Table add-on (+€{p.romantic}) is a popular choice. The 20:30 departure passes the illuminated Bosphorus Bridge and waterfront palaces. Pay on boat, no prepayment, free cancellation up to 2 hours.'
     }
   ],
 

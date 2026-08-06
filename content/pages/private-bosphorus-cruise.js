@@ -66,11 +66,11 @@ module.exports = {
   faq: [
     {
       q: 'How much does a private Bosphorus cruise cost?',
-      a: 'For groups of 25+, it\'s typically €{p.dinnerStd}-€{p.dinnerVip}/person + a boat charter fee that depends on group size, date, and duration. WhatsApp us with your group size, date, and requirements — we\'ll quote within 1 hour. Most events land in the €2,000-€6,000 total range.'
+      a: 'For groups of 25+, it\'s typically €{p.dinnerStd}/person + a boat charter fee that depends on group size, date, and duration. WhatsApp us with your group size, date, and requirements — we\'ll quote within 1 hour. Most events land in the €2,000-€6,000 total range.'
     },
     {
       q: 'What\'s the minimum group size for a private Bosphorus cruise?',
-      a: 'Technically 25 guests makes a private cruise economically viable. Smaller groups (10-24) can still charter privately but pay a minimum fee equivalent to ~25 people. For really small groups (2-10), consider the regular Standard or VIP cruise — your table is already private, just the boat is shared.'
+      a: 'Technically 25 guests makes a private cruise economically viable. Smaller groups (10-24) can still charter privately but pay a minimum fee equivalent to ~25 people. For really small groups (2-10), consider the regular dinner cruise — your table is already private, just the boat is shared.'
     },
     {
       q: 'Can I host a wedding on the Bosphorus cruise?',

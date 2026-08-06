@@ -7,7 +7,7 @@
 module.exports = {
   slug: 'bosphorus-dinner-cruise',
   keyword: 'bosphorus dinner cruise',
-  tourType: 'dinner', // links to packages.DINNER_STD / DINNER_VIP in Supabase
+  tourType: 'dinner', // links to packages.DINNER_STD in Supabase
 
   images: {
     hero: '/assets/tours/dinner/boat-night-bridge.jpg',
@@ -60,7 +60,7 @@ module.exports = {
     {
       icon: 'price',
       title: 'From €{p.dinnerStd}/person — pay on boat',
-      desc: 'Standard dinner cruise €{p.dinnerStd} (was €{p.dinnerStdOriginal}). VIP cruise with stage-front seating and premium menu €{p.dinnerVip}. No prepayment. Free cancellation up to 2 hours before departure.'
+      desc: 'Dinner cruise €{p.dinnerStd} (was €{p.dinnerStdOriginal}). No prepayment. Free cancellation up to 2 hours before departure.'
     }
   ],
 
@@ -71,11 +71,11 @@ module.exports = {
     },
     {
       q: 'How much does the Bosphorus dinner cruise cost?',
-      a: 'Our Standard Dinner Cruise is €{p.dinnerStd}/person (regular price €{p.dinnerStdOriginal}). VIP Dinner Cruise with stage-front seating and premium menu is €{p.dinnerVip}/person. Children 0-3 free, ages 4-8 at 50% off. Payment is made on the boat — no prepayment required.'
+      a: 'Our Dinner Cruise is €{p.dinnerStd}/person (regular price €{p.dinnerStdOriginal}). Children 0-3 free, ages 4-8 at 50% off. Payment is made on the boat — no prepayment required.'
     },
     {
       q: 'Is alcohol included in the dinner cruise?',
-      a: 'Unlimited soft drinks (water, cola, juice) are included in the base price. Alcohol packages are optional add-ons: 2 glasses for +€{p.alcohol2}/person or unlimited local alcohol (wine, beer, rakı, vodka, gin) for +€{p.unlimited}/person. Imported spirits are billed separately on board.'
+      a: 'Unlimited soft drinks (water, cola, juice) are included in the base price. An alcohol package is an optional add-on: 2 glasses (wine, beer, rakı, vodka or gin) for +€{p.alcohol2}/person. Additional drinks and imported spirits are billed separately on board.'
     },
     {
       q: 'Do you offer hotel transfer for the Bosphorus dinner cruise?',
@@ -95,7 +95,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best Bosphorus dinner cruise in Istanbul?',
-      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 20:30 departure from Kabataş Pier, 3 hours, €{p.dinnerStd} Standard or €{p.dinnerVip} VIP. Pay on boat — no prepayment needed.'
+      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 20:30 departure from Kabataş Pier, 3 hours, €{p.dinnerStd}/person. Pay on boat — no prepayment needed.'
     }
   ],
 

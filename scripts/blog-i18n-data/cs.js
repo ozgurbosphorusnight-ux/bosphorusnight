@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard nebo VIP?',
+          h2: 'Standardní balíček',
           paragraphs: [
             'Standardní balíček (od €24,30) je vynikající pro většinu cestujících. Dostanete kompletní menu, dostatek místa a všechny show.',
-            'VIP balíček (od €55,20) vám nabízí stůl blíže k jevišti, rozšířené menu s více než 15 druhy mezze a exkluzivní VIP servis. Ideální pro páry, které chtějí udělat večer výjimečným, nebo pro ty, kteří oceňují nejlepší místa.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Jak rezervovat na poslední chvíli',
           paragraphs: [
-            'Napište nám zprávu na WhatsApp s datem (dnes), počtem hostů a zda chcete balíček Standard nebo VIP. Dostupnost potvrdíme během sekund.',
+            'Napište nám zprávu na WhatsApp s datem (dnes) a počtem hostů. Dostupnost potvrdíme během sekund.',
             'Poslední termín rezervace pro dnešní plavbu je v 19:30 (1 hodinu před odjezdem ve 20:30). Na molo Kabataş přijďte nejpozději ve 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol je volitelný',
           paragraphs: [
-            'Všechny balíčky obsahují nealkoholické nápoje. Při rezervaci si můžete přidat 2 sklenice alkoholu (+€{p.alcohol2}) nebo neomezený místní alkohol (+€{p.unlimited}).',
+            'Balíček obsahuje nealkoholické nápoje. Při rezervaci si můžete přidat 2 sklenice alkoholu (+€{p.alcohol2}).',
           ],
         },
         {

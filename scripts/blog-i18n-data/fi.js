@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Perus vai VIP?',
+          h2: 'Peruspaketti',
           paragraphs: [
             'Peruspaketti (alkaen €24.30) on erinomainen useimmille matkustajille. Saat täyden illallisen, hyvän paikan ja kaikki showt.',
-            'VIP-paketti (alkaen €55.20) antaa sinulle pöydän lähempänä lavaa, laajennetun menun 15+ mezela ja eksklusiivisen VIP-palvelun. Ihanteellinen pariskunnille jotka haluavat tehdä illasta erityisen, tai niille jotka arvostavat parhaita paikkoja.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Näin varaat viime hetkellä',
           paragraphs: [
-            'Lähetä meille WhatsApp-viesti päivämäärällä (tänään), vierasmäärällä ja haluatko Perus- vai VIP-paketin. Vahvistamme saatavuuden sekunneissa.',
+            'Lähetä meille WhatsApp-viesti päivämäärällä (tänään) ja vierasmäärällä. Vahvistamme saatavuuden sekunneissa.',
             'Viimeinen varausaika tämän illan risteilylle on klo 19:30 (1 tunti ennen lähtöä klo 20:30). Saavu Kabataşin laiturille viimeistään klo 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkoholi on valinnainen',
           paragraphs: [
-            'Kaikki paketit sisältävät alkoholittomat juomat. Voit lisätä 2 lasia alkoholia (+€{p.alcohol2}) tai rajattoman paikallisen alkoholin (+€{p.unlimited}) varauksen yhteydessä.',
+            'Paketti sisältää alkoholittomat juomat. Voit lisätä 2 lasia alkoholia (+€{p.alcohol2}) varauksen yhteydessä.',
           ],
         },
         {

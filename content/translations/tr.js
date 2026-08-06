@@ -25,12 +25,12 @@ module.exports = {
       { title: 'Çok çeşitli Türk ziyafeti', desc: '10 çeşit meze, sıcak başlangıç (paçanga böreği), ana yemek seçimi (somon / çipura / tavuk / köfte / vejetaryen), dondurmalı pasta tatlı, sınırsız meşrubat.' },
       { title: 'Canlı halk oyunları, oryantal dans ve DJ', desc: 'Mevlana sema gösterisi, 5 geleneksel Türk halk oyunu, klasik oryantal dans, canlı Türk müzisyenleri, ardından tur boyunca DJ seti.' },
       { title: 'Tam Boğaz gece rotası', desc: 'Kabataş → Dolmabahçe → Çırağan Sarayı → Ortaköy Camii → Bebek → Rumeli Hisarı → FSM Köprüsü → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
-      { title: '€{p.dinnerStd}/kişi\'den — teknede ödeme', desc: 'Standart yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). VIP tur sahne önü ve premium menü ile €{p.dinnerVip}. Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
+      { title: '€{p.dinnerStd}/kişi\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
     ],
     faq: [
       { q: 'Boğaz yemekli turu ne zaman başlıyor?', a: 'Biniş Kabataş İskelesi\'nde 19:30\'de başlıyor. Tekne 20:30\'de hareket ediyor ve yaklaşık 23:30\'de dönüyor. Yerinize oturmak ve rahat etmek için 15-20 dakika erken gelmenizi öneririz.' },
-      { q: 'Boğaz yemekli turu ne kadar?', a: 'Standart tur €{p.dinnerStd}/kişi (normal fiyat €{p.dinnerStdOriginal}). VIP tur sahne önü ve premium menü ile €{p.dinnerVip}/kişi. 0-3 yaş ücretsiz, 4-8 yaş %50 indirimli. Ödeme teknede yapılır — ön ödeme yoktur.' },
-      { q: 'Alkol yemekli tura dahil mi?', a: 'Sınırsız meşrubat (su, kola, meyve suyu) fiyata dahildir. Alkol paketleri opsiyoneldir: 2 bardak +€{p.alcohol2}/kişi veya sınırsız yerli alkol (şarap, bira, rakı, vodka, cin) +€{p.unlimited}/kişi. İthal içkiler teknede ayrı fiyatlandırılır.' },
+      { q: 'Boğaz yemekli turu ne kadar?', a: 'Yemekli tur €{p.dinnerStd}/kişi (normal fiyat €{p.dinnerStdOriginal}). 0-3 yaş ücretsiz, 4-8 yaş %50 indirimli. Ödeme teknede yapılır — ön ödeme yoktur.' },
+      { q: 'Alkol yemekli tura dahil mi?', a: 'Sınırsız meşrubat (su, kola, meyve suyu) fiyata dahildir. Alkol paketi opsiyoneldir: 2 bardak (şarap, bira, rakı, vodka veya cin) +€{p.alcohol2}/kişi. Ek içecekler ve ithal içkiler teknede ayrı fiyatlandırılır.' },
       { q: 'Otel transferi var mı?', a: 'Evet — alma ve bırakma hizmeti +€{p.transfer}/kişi\'dir. Hizmet bölgeleri: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce ve Şişli. Rezervasyon sihirbazında seçebilirsiniz.' },
       { q: 'Boğaz yemekli turu helal mi?', a: 'Kesinlikle. Teknedeki tüm et ürünleri helal sertifikalıdır. Alkol opsiyonel bir eklentidir (misafirlere dayatılmaz) ve alkolsüz masa tercih edenler için oturma düzeni doğal olarak ayrılır. Ekstra ücret olmadan vejetaryen alternatifler de sunuyoruz.' },
       { q: 'Ne giymeliyim?', a: 'Smart casual. İstanbul\'un akşamları yaz bile olsa rüzgarlı olabilir — ince bir ceket veya şal öneririz. Kıyafet kuralı zorunlu değil, ama mayo, parmak arası veya spor giysi yemek ortamına uygun değil.' }
@@ -90,19 +90,19 @@ module.exports = {
     },
     intro: [
       '**Romantik Boğaz turu**, İstanbul\'un çiftler için en ikonik akşamıdır. Güneş Dolmabahçe Sarayı\'nın üzerinden batar ve Boğaz Köprüsü renkleriyle aydınlanırken, siz ve partneriniz özel bir masada çok çeşitli Türk ziyafetini paylaşıyorsunuz — mumlar, taze çiçekler ve güvertede süzülen canlı keman ile.',
-      'Romantik masa düzenimiz (+€{p.romantic}/masa) herhangi bir yeri özel bir ana dönüştürür: kırmızı güller, parlayan mumlar, el yazısı bir hoşgeldiniz notu. Yıldızlar altında şarap için sınırsız alkol paketi ekleyin (+€{p.unlimited}/kişi) veya dahil olan meşrubatlarla sade tutun. Her iki durumda da ekip sessizce gerisini halleder.',
+      'Romantik masa düzenimiz (+€{p.romantic}/masa) herhangi bir yeri özel bir ana dönüştürür: kırmızı güller, parlayan mumlar, el yazısı bir hoşgeldiniz notu. Yıldızlar altında şarap için 2 kadehlik alkol paketini ekleyin (+€{p.alcohol2}/kişi) veya dahil olan meşrubatlarla sade tutun. Her iki durumda da ekip sessizce gerisini halleder.',
       'Yıldönümü kutluyor olun, partnerinize sürpriz planlıyor veya sadece Avrupa\'nın en romantik şehrinde unutulmaz bir gece yaşamak istiyorsanız — İstanbul çiftlerinin ilk tercih ettiği tur budur. 4.8★ puan, TÜRSAB lisanslı ve — en önemlisi — teknede ödeme, yani sadece akşamın kendisine söz veriyorsunuz.'
     ],
     highlights: [
       { title: 'Mumlu romantik masa', desc: 'Romantik masa düzenini +€{p.romantic}/masa ile ekleyin: taze kırmızı güller, parlayan mumlar, masa örtüsünde gül yaprakları ve el yazısı kart. Fotoğraflar dahil.' },
       { title: 'En iyi gün batımı-gece geçişi masaları', desc: 'Pencere kenarı masaları çiftlere ayrılır. Boğaz Köprüsü\'nün aydınlanışını, Kız Kulesi\'nin ışıltısını ve Ortaköy Camii\'nin aydınlanmasını özel masanızdan izleyin.' },
       { title: 'Canlı keman ve samimi atmosfer', desc: 'Yemek sırasında canlı keman ve akustik Türk müziği yavaş, romantik bir atmosfer yaratır. Sonrasında DJ devreye girer ve çiftler açık güvertedeki ışıklar altında dans eder.' },
-      { title: 'Şarap, şampanya, premium eşleştirmeler', desc: '2 kadeh alkol (+€{p.alcohol2}/kişi) veya sınırsız yerli şarap, bira, rakı (+€{p.unlimited}/kişi) ekleyin. İthal şampanya ve premium eşleştirmeler talep üzerine — rezervasyonda sorun.' }
+      { title: 'Şarap, şampanya, premium eşleştirmeler', desc: '2 kadeh alkol ekleyin — yerli şarap, bira, rakı (+€{p.alcohol2}/kişi). İthal şampanya ve premium eşleştirmeler talep üzerine — rezervasyonda sorun.' }
     ],
     faq: [
       { q: 'Bu turu romantik yapan ne?', a: 'Özel masa, mumlu düzen (opsiyonel +€{p.romantic}), çok çeşitli Türk yemeği, canlı keman ve akustik müzik, başınızın üzerinden geçen aydınlatılmış Boğaz köprülerinin kombinasyonu. Deneyimi çiftler için tasarlıyoruz — erken sessiz atmosfer, sonra enerjik DJ ve dans. Ritmi siz seçiyorsunuz.' },
       { q: 'Partnerim için sürpriz düzenleyebilir misiniz — doğum günü, yıldönümü, evlilik teklifi?', a: 'Evet — rezervasyonda bildirin. Doğum günü pastası (ücretsiz), özel masa düzenlemesi, sizin dilinizde el yazısı kart veya doğru anda masaya bir şey getirmek için personelimizle koordine edebiliriz. Evlilik teklifleri için gizlice planlayabilmemiz için WhatsApp\'tan direkt yazmanızı öneririz.' },
-      { q: '2 kişi için romantik tur ne kadar?', a: '2 kişi Standart: 2 × €{p.dinnerStd} = €48. Romantik düzen ekleyin +€{p.romantic} = €63. 2 kişi VIP: 2 × €{p.dinnerVip} = €110 + romantik €{p.romantic} = €125. Ön ödeme yok — teknede ödeme. Sınırsız alkol için 2 × €{p.unlimited} = €60 daha.' },
+      { q: '2 kişi için romantik tur ne kadar?', a: '2 kişi için yemekli tur: 2 × €{p.dinnerStd} = €48.60. Romantik düzen ekleyin +€{p.romantic} = €63.60. Ön ödeme yok — teknede ödeme. 2 kadehlik alkol paketi için 2 × €{p.alcohol2} = €20 daha.' },
       { q: 'Romantik Boğaz turu özel mi — sadece bize mi?', a: 'Hayır — diğer çiftler ve misafirlerle paylaşılan bir tur (toplam 60-80\'e kadar). **Masanız** özel (sadece sizin grubunuz için), ama teknede başka misafirler de var. 2 kişi için tamamen özel tekne istiyorsanız, bu ayrı bir **Özel Boğaz Turu** (talep üzerine düzenleyebiliriz — yazın).' },
       { q: 'Kendi çiçeklerimizi, pastamızı veya hediyemizi getirebilir miyiz?', a: 'Elbette. İstediğinizi getirin — personelimiz gizlice sürpriz hediyeyi yerleştirmeye, tatlıda yüzük kutusu gizlemeye veya kendinizin getirdiği çiçekleri sergilemeye yardım eder. Mantarlama ücreti gibi ekstralar yok. Sadece zamanlamayı koordine edebilmemiz için bildirin.' },
       { q: 'Romantik bir Boğaz turu için ne giymeliyiz?', a: 'Smart casual\'dan şık\'a — birçok çift şık giyinir (elbiseler, ceketler). Kesin bir kıyafet kuralı yok, ama atmosfer rahat turizmden daha özel. İnce bir ceket veya şal getirin — yaz bile olsa güverte serin olabilir. Yemekten sonra dans planlıyorsanız rahat ayakkabı.' }
@@ -126,7 +126,7 @@ module.exports = {
     },
     intro: [
       '**Helal Boğaz turu**, İstanbul\'un Müslüman gezginler için en saygın yemekli turudur. Teknemizde servis edilen her et — somon, çipura, tavuk, kuzu köfte, dana bonfile, antrikot — onaylı tedarikçilerden **helal sertifikalıdır**. Aynı menüyü her misafire servis ediyoruz; ayrı "helal bölümü" yok çünkü tüm tekne varsayılan olarak helal.',
-      'Alkol **opsiyonel bir eklentidir** — misafirlere asla dayatılmaz ve oturma düzeni alkolsüz masa tercih edenleri doğal olarak ayırır. Sınırsız alkol paketi (+€{p.unlimited}/kişi) isteyen misafirler için orada, ama dahil olan sınırsız meşrubatlar (su, kola, meyve suyu) çoğu Müslüman aile için yeterli. Ekibimiz tercihlerinizi varsayım yapmadan saygılı olacak şekilde eğitilmiştir.',
+      'Alkol **opsiyonel bir eklentidir** — misafirlere asla dayatılmaz ve oturma düzeni alkolsüz masa tercih edenleri doğal olarak ayırır. 2 bardaklık alkol paketi (+€{p.alcohol2}/kişi) isteyen misafirler için orada, ama dahil olan sınırsız meşrubatlar (su, kola, meyve suyu) çoğu Müslüman aile için yeterli. Ekibimiz tercihlerinizi varsayım yapmadan saygılı olacak şekilde eğitilmiştir.',
       'İstanbul\'un en ikonik akşamını ödün vermeden isteyen Suudi Arabistan, BAE, Kuveyt, Katar, İran, Malezya, Endonezya, Pakistan ve Fas\'tan gelen gezginler için **helal dostu Boğaz turu** önemlidir. TÜRSAB lisanslı, 4.8★ ve teknede ödeme — deneyimin standartlarınızı karşıladığından emin olana kadar hiçbir şeye söz vermezsiniz.'
     ],
     highlights: [
@@ -137,10 +137,10 @@ module.exports = {
     ],
     faq: [
       { q: 'Boğaz turu %100 helal mi?', a: 'Evet — menüdeki her et ürünü (balık, tavuk, köfte, dana bonfile, antrikot, kuzu) onaylı tedarikçilerden helal sertifikalıdır. Mutfak helal hazırlama standartlarını takip eder. Teknede hiçbir yerde domuz servis edilmez. Bu bir "helal seçeneği" değil — menünün tamamı helal.' },
-      { q: 'Bu turda diğer misafirler alkol içiyor mu?', a: 'Bazı misafirler opsiyonel alkol paketi ekliyor (+€{p.unlimited}/kişi). Masalar doğal olarak ayrıdır — alkolsüz bir bölüm talep edebilirsiniz. Bir misafir tarafından özel olarak sipariş edilmedikçe ekip alkol getirmez. Meşrubatlar (sınırsız) herkes için dahildir.' },
+      { q: 'Bu turda diğer misafirler alkol içiyor mu?', a: 'Bazı misafirler opsiyonel 2 bardaklık alkol paketini ekliyor (+€{p.alcohol2}/kişi). Masalar doğal olarak ayrıdır — alkolsüz bir bölüm talep edebilirsiniz. Bir misafir tarafından özel olarak sipariş edilmedikçe ekip alkol getirmez. Meşrubatlar (sınırsız) herkes için dahildir.' },
       { q: 'Bu tur çocuklu Müslüman aileler için uygun mu?', a: 'Evet — İstanbul\'un en aile saygın turlarından biridir. Eğlence mütevazı (halk oyunları, sema, Türk müziği), 3 yaş altı çocuklar ücretsiz, 4-8 yaş %50 indirim. Gece kulübü atmosferi yok. Körfez bölgesi, Endonezya, Malezya, Pakistan ve Fas\'tan aileler düzenli olarak bu turu rezerve eder.' },
       { q: 'Teknede namaz kılabilir miyim?', a: 'Teknede özel bir namaz odası yok, ama 19:30 binişten önce namaz kılmanızı öneririz (akşam namazı genellikle bu pencereye denk gelir). Kabataş İskelesi\'nde namaz olanakları var. 20:30-23:30 seyir sırasında namaz kılmanız gerekirse (yatsı), ekiple konuşun — güvertede sessiz bir köşe ayarlayabiliriz.' },
-      { q: '4 kişilik bir Müslüman aile (2 yetişkin, 2 çocuk) için fiyatlar nedir?', a: 'Standart tur: 2 × €{p.dinnerStd} + 2 × €12 (4-8 yaş yarı fiyat) = €72. Çocuklar 3 yaş altıysa ücretsiz: 2 × €{p.dinnerStd} = €48. Yetişkin başına €10 otel transferi ekleyin. Toplam: 4 kişilik aile için €48-92, ön ödeme yok, teknede ödeme.' },
+      { q: '4 kişilik bir Müslüman aile (2 yetişkin, 2 çocuk) için fiyatlar nedir?', a: 'Yemekli tur: 2 × €{p.dinnerStd} + 2 × €12.15 (4-8 yaş yarı fiyat) = €72.90. Çocuklar 3 yaş altıysa ücretsiz: 2 × €{p.dinnerStd} = €48.60. Yetişkin başına €5 otel transferi ekleyin. Toplam: 4 kişilik aile için €48.60–€92.90, ön ödeme yok, teknede ödeme.' },
       { q: 'Otel transferi de helal mi?', a: 'Otel transferi sadece bir araba yolculuğu — yemek veya içecek söz konusu değil, bu yüzden helal endişesi yok. Şoförlerimiz profesyonel, saygılı ve dakiktir. Transfer alanları Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli ve Müslüman gezginlerin genellikle konakladığı diğer 8 merkezi bölgeyi kapsar.' }
     ],
     cta: {
@@ -152,37 +152,37 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'Boğaz VIP Turu €{p.dinnerVip}\'den — Premium Yemek, Sahne Önü Masa',
-      description: 'Boğaz VIP yemekli turu: premium mezeler, dana eti seçenekleri, sahne önü masa, öncelikli servis. Eski €{p.dinnerVipOriginal}, şimdi €{p.dinnerVip}.'
+      title: 'Boğaz VIP Deneyimi €{p.dinnerStd}\'den — Boğaz\'da Premium Akşam Yemeği',
+      description: 'VIP seviyesinde Boğaz yemekli turu: eksiksiz Türk menüsü, canlı gösteriler, sahne yakını masa seçeneği, özenli servis. €{p.dinnerStdOriginal} → €{p.dinnerStd}. Teknede ödeme, ücretsiz iptal.'
     },
     hero: {
-      h1: 'Boğaz VIP Turu',
-      subtitle: 'Sahne önü oturma, biftek seçenekli premium Türk menüsü ve öncelikli hizmet — teknedeki en iyi masayı isteyen gezginler için yükseltilmiş Boğaz akşamı.',
-      badge: 'En Popüler · %40 İNDİRİM · Sahne Önü Koltuklar'
+      h1: 'Boğaz\'da VIP Deneyim — Akşam Yemekli Tur',
+      subtitle: 'Tek menü, tek standart: herkese premium. AMOR teknesinde 3 saatlik Boğaz akşamı — zengin Türk menüsü, canlı sahne gösterileri ve isteyene sahne yakını özel masa. Ayrı bir "VIP sınıfı" satmıyoruz; en iyi halini her misafire sunuyoruz.',
+      badge: '%40 İNDİRİM · Tek Menü, Premium Standart · Teknede Ödeme'
     },
     intro: [
-      '**Boğaz VIP turu** sizi teknedeki en iyi yerlere yerleştirir: sema gösterisi, halk oyunları, oryantal dans ve canlı müziğin doğrudan görüldüğü sahne önü masalar. Premium menü ana yemek seçeneklerine dana bonfile ve antrikot ekler (Standart\'ın tavuk/somon\'una karşı), ayrıca 15+ çeşit geleneksel Türk mezesi cömert bir serpme olarak servis edilir.',
-      '**VIP Boğaz yemekli turumuz** misafirlerimiz tarafından En Popüler olarak derecelendirilmiştir — çünkü €{p.dinnerVip}/kişi\'de (eski €{p.dinnerVipOriginal}, %40 indirim), deneyim bir turist turundan çok ince yemek restoranına yakındır. Özel masa, özenli garson hizmeti ve Dolmabahçe, Ortaköy Camii ve aydınlatılmış Boğaz Köprüsü\'nün aynı muhteşem manzaraları.',
-      'İş gezgini olun, bir dönüm noktası kutluyor veya sadece "İstanbul\'dayız bir kez — düzgün yapalım" diye düşünüyor olun, bu tekrarlayan ziyaretçilerin rezerve ettiği **Boğaz VIP turu**\'dur. TÜRSAB lisanslı, 11.317+ yorumla 4.8★, teknede ödeme, kalkıştan 2 saat öncesine kadar ücretsiz iptal.'
+      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk veya köfte), dondurmalı pasta ve sınırsız meşrubat. Eğlence programı da dahil — sema gösterisi, 5 halk oyunu, oryantal, canlı müzik ve DJ — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
+      'VIP hissi masanızla başlar. Sahneye ve manzaraya en yakın masalardan birini isterseniz **sahne yakını özel masa** eklentisiyle (+€{p.romantic}/masa) yeriniz önceden ayrılır — semazeni, halk oyunlarını ve aydınlatılmış Boğaz\'ı en iyi açıdan izlersiniz. Çiftlerin, kutlamaların ve fotoğraf sevenlerin favorisi.',
+      'AMOR 42 metrelik, 3 katlı, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir tekne. 3 saatlik rota Kabataş\'tan başlar (giriş 19:30\'dan itibaren, kalkış 20:30, dönüş 23:30): Dolmabahçe, Ortaköy Camii, Rumeli Hisarı ve Boğaz Köprüsü ışıkları. TÜRSAB lisanslı (A-17672), Google\'da 4.9★. Ön ödeme yok — teknede ödersiniz, kalkışa 2 saat kalaya kadar ücretsiz iptal.'
     ],
     highlights: [
-      { title: 'Sahne önü özel masa', desc: 'Performans sahnesinin doğrudan önünde rezerve oturma — sema gösterisi, halk oyunları ve oryantal dansın en iyi görünümü. Masanız, paylaşılmıyor. Fotoğrafçılar bu koltukları seviyor.' },
-      { title: '15+ meze + premium ana yemekler', desc: '15+ çeşit Türk mezesi geleneksel serpme olarak servis edilir. Ana yemek seçenekleri arasında dana bonfile ve antrikot (Standart\'ta sadece tavuk/somon). Aynı tatlı ve sınırsız meşrubat.' },
-      { title: 'Öncelikli garson hizmeti', desc: 'Özel garson önce masanıza hizmet eder — yenileme, menü rehberliği, alkol eklentilerini koordine etme, özel istekler. Kalabalık bir odada dikkat için mücadele etmiyorsunuz.' },
-      { title: '%40 İNDİRİM — eski €{p.dinnerVipOriginal}, şimdi €{p.dinnerVip}', desc: 'Normal fiyat €{p.dinnerVipOriginal}/kişi. Şu anki lansman fiyatı €{p.dinnerVip}/kişi — %40 indirim. Teknede ödeme, ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
+      { title: 'Tek menü, premium standart', desc: 'Ayrı bir "VIP menü" yok — çünkü tek menümüz zaten o seviyede. 10 çeşit meze, sıcak başlangıç, 4 seçenekli ana yemek, tatlı ve sınırsız meşrubat her masaya aynı özenle servis edilir.' },
+      { title: 'Sahne yakını özel masa (+€{p.romantic}/masa)', desc: 'Semazen, halk oyunları ve oryantal gösteriye en yakın masalar önceden rezerve edilir. Sahneye ve Boğaz\'a hâkim konum. Masanız size özeldir, paylaşımlı değildir.' },
+      { title: 'Özenli masa servisi', desc: 'Garson ekibimiz masanıza servis yapar: ikramlar, menü yönlendirmesi, içecek eklentileri, özel istekler. Kalabalıkta sıra beklemezsiniz.' },
+      { title: '%40 İNDİRİM — eski €{p.dinnerStdOriginal}, şimdi €{p.dinnerStd}', desc: 'Doğrudan rezervasyon fiyatı: €{p.dinnerStd}/kişi (liste fiyatı €{p.dinnerStdOriginal}). Teknede ödeme, ön ödeme yok. Kalkışa 2 saat kalaya kadar ücretsiz iptal.' }
     ],
     faq: [
-      { q: 'VIP ile Standart Boğaz turu arasındaki fark nedir?', a: 'VIP şunları alır: (1) en iyi manzaralı sahne önü oturma, (2) Standart\'ın 10\'una karşı 15+ meze, (3) ana yemek seçeneklerine dana bonfile + antrikot eklenir, (4) öncelikli garson hizmeti. Aynı 3 saatlik tur, aynı eğlence, aynı rota. €{p.dinnerVip} vs €{p.dinnerStd}.' },
-      { q: 'VIP fiyatı €{p.dinnerVip} gerçekten %40 indirim mi?', a: 'Evet — normal fiyat €{p.dinnerVipOriginal}/kişi (herhangi bir rezervasyon sitesinde kontrol edin). €{p.dinnerVip}\'i direkt rezervasyon fiyatı olarak uyguluyoruz, aracı ücretlerini kesiyoruz. Çoğu yerin Standart için aldığı fiyattan daha az VIP alıyorsunuz.' },
-      { q: 'Alkol VIP tura dahil mi?', a: 'Hayır — alkol ayrı bir eklentidir (Standart ile aynı). 2 kadeh: +€{p.alcohol2}/kişi. Sınırsız yerli alkol (şarap, bira, rakı, vodka, cin): +€{p.unlimited}/kişi. Premium ithal içkiler ayrı fiyatlandırılır. Sınırsız meşrubat dahil ve ücretsizdir.' },
-      { q: 'Standart\'a bindikten sonra VIP\'e yükseltebilir miyim?', a: 'Müsaitliğe bağlı — VIP masalar açıksa, evet. Farkı (€{p.dinnerVip} - €{p.dinnerStd} = €31) teknede ödersiniz. Ama VIP\'i önceden rezerve etmenizi öneririz: en iyi sahne önü koltuklar ön rezervasyonlara gider.' },
-      { q: 'Boğaz VIP turu nasıl rezerve edilir?', a: 'Bu sayfadaki rezervasyon sihirbazını kullanın — Adım 1\'de "VIP" seçin, tarihinizi belirleyin, misafir sayısını girin, sonra iletişim bilgileri. Talebiniz WhatsApp / Telegram üzerinden gider ve anında onaylarız. Şimdi değil, teknede ödeme.' },
-      { q: 'VIP turu müşterilerle iş yemeği için uygun mu?', a: 'Evet — VIP, İstanbul\'daki iş yemekleri için en yaygın tercihtir. Özel masa, konuşma için yeterince sessiz, etkileyici menü ve manzara. Birçok misafir müşterileri ağırlamak için VIP + sınırsız alkol rezerve eder. Helal sertifikalı (Körfez iş gezginleri için iyi). Rezervasyonda bildirin, daha sessiz bir arka-VIP masası ayıralım.' }
+      { q: '"VIP paketi" mi satıyorsunuz? Standart ile farkı ne?', a: 'Ayrı bir VIP paketi satmıyoruz — tek menümüz var ve herkese aynı premium standartta servis ediliyor. "VIP deneyim" dediğimiz şey akşamınızı kişiselleştirmek: sahne yakını özel masa eklentisi (+€{p.romantic}/masa), özenli masa servisi ve isteğe bağlı içecek eklentileri. Tur 3 saat, fiyat €{p.dinnerStd}/kişi.' },
+      { q: '€{p.dinnerStd} gerçekten %40 indirim mi?', a: 'Evet — liste fiyatımız €{p.dinnerStdOriginal}/kişi. €{p.dinnerStd}, aracı komisyonlarını devre dışı bırakan doğrudan rezervasyon fiyatıdır. Ödemeyi teknede yaparsınız, ön ödeme yoktur.' },
+      { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk veya köfte), dondurmalı pasta ve sınırsız meşrubat. Eğlence programı dahil: sema gösterisi, 5 halk oyunu, oryantal, canlı müzik ve DJ.' },
+      { q: 'Alkol dahil mi?', a: 'Hayır — alkol ayrı eklentidir: kişi başı 2 kadeh yerli şarap veya bira +€{p.alcohol2}. Sınırsız meşrubat ücretsiz dahildir. Premium ithal içkiler teknede ayrıca fiyatlandırılır.' },
+      { q: 'Sahne yakını masayı nasıl garantilerim?', a: 'Rezervasyon sırasında "sahne yakını özel masa" eklentisini (+€{p.romantic}/masa) seçmeniz yeterli — masanız isminize ayrılır. En iyi konumlar ön rezervasyonlarla dolduğu için tur gününden önce eklemenizi öneririz.' },
+      { q: 'Tekne nasıl bir tekne?', a: 'AMOR — 42 metre, 3 kat, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir yolcu teknesi. Kalkış Kabataş İskelesi\'nden: giriş 19:30, kalkış 20:30, dönüş 23:30. Rota: Dolmabahçe, Ortaköy, Rumeli Hisarı, Beylerbeyi ve Boğaz Köprüsü ışıkları.' }
     ],
     cta: {
-      primary: 'VIP Rezerve Et · Teknede Ödeme',
-      secondary: 'Eski €{p.dinnerVipOriginal}, şimdi €{p.dinnerVip} · 2 saat öncesine ücretsiz iptal',
-      tertiary: 'Standart Seçeneği Görün (€{p.dinnerStd})'
+      primary: 'Yerinizi Ayırtın · Teknede Ödeme',
+      secondary: 'Eski €{p.dinnerStdOriginal}, şimdi €{p.dinnerStd} · 2 saat öncesine kadar ücretsiz iptal',
+      tertiary: 'Sahne yakını özel masa ekleyin (+€{p.romantic})'
     }
   },
 
@@ -208,8 +208,8 @@ module.exports = {
       { title: 'Özel dekor, grup, program', desc: 'Özel dekorasyonlar (balonlar, pankartlar, çiçek düzeni), DJ yerine canlı grup, düğün pastası servisi, fotoğrafçı koordinasyonu, konuşmalar — etkinliğinizin ihtiyacı her neyse ekleyin. Biz sadece tekne işletmecileri değil, etkinlik planlayıcılarız.' }
     ],
     faq: [
-      { q: 'Özel Boğaz turu ne kadar?', a: '25+ grup için, genellikle €{p.dinnerStd}-€{p.dinnerVip}/kişi + grup büyüklüğüne, tarihe ve süreye bağlı tekne kiralama ücreti. Grup büyüklüğünüz, tarihiniz ve gereksinimleriniz ile WhatsApp\'tan yazın — 1 saat içinde fiyat veririz. Çoğu etkinlik €2.000-€6.000 toplam aralığa girer.' },
-      { q: 'Özel Boğaz turu için minimum grup büyüklüğü nedir?', a: 'Teknik olarak 25 misafir özel turu ekonomik olarak uygulanabilir kılar. Daha küçük gruplar (10-24) yine de özel kiralayabilir ama ~25 kişiye eşdeğer bir minimum ücret öderler. Gerçekten küçük gruplar için (2-10), normal Standart veya VIP turu düşünün — masanız zaten özel, sadece tekne paylaşılıyor.' },
+      { q: 'Özel Boğaz turu ne kadar?', a: '25+ grup için, genellikle €{p.dinnerStd}/kişi + grup büyüklüğüne, tarihe ve süreye bağlı tekne kiralama ücreti. Grup büyüklüğünüz, tarihiniz ve gereksinimleriniz ile WhatsApp\'tan yazın — 1 saat içinde fiyat veririz. Çoğu etkinlik €2.000-€6.000 toplam aralığa girer.' },
+      { q: 'Özel Boğaz turu için minimum grup büyüklüğü nedir?', a: 'Teknik olarak 25 misafir özel turu ekonomik olarak uygulanabilir kılar. Daha küçük gruplar (10-24) yine de özel kiralayabilir ama ~25 kişiye eşdeğer bir minimum ücret öderler. Gerçekten küçük gruplar için (2-10), normal yemekli turu düşünün — masanız zaten özel, sadece tekne paylaşılıyor.' },
       { q: 'Boğaz turunda düğün yapabilir miyim?', a: 'Evet — yılda 10-15 düğün resepsiyonu düzenliyoruz. Oturarak yemek için 80\'e kadar, kokteyl tarzı için 100\'e kadar kapasite. Fotoğrafçınız, düğün planlayıcınız, grubunuz veya şefiniz ile koordine ederiz. Özel pasta servisi, ilk dans pisti, şampanya kadehi düzenlenebilir. Düğün fiyatı için WhatsApp\'tan yazın.' },
       { q: 'Kurumsal etkinlikler ve ekip yemekleri için ne olacak?', a: 'Kurumsal özel turlar en yaygın rezervasyonlarımız. Şirket yemeği, müşteri ağırlama, ürün lansmanı, ekip kutlaması — hepsi işe yarar. KDV dökümü ile fatura sağlayabilir, ekibiniz için otel transferleri düzenleyebilir ve talep üzerine markalı malzemeleri (masa aksesuarları, tabela) koordine edebiliriz.' },
       { q: 'Eğlenceniz yerine canlı grup veya DJ getirebilir miyim?', a: 'Evet — kendi canlı grubunuzu, DJ\'inizi, fotoğrafçınızı getirebilirsiniz. Veya standart olanımızı (sema, halk oyuncular, oryantal, DJ) koruyun ve üstüne kendinizinkini ekleyin. Tekne PA sistemine ve dans pistine sahiptir. Ses kontrollerini koordine edebilmemiz için önceden bildirin.' },
@@ -218,7 +218,7 @@ module.exports = {
     cta: {
       primary: 'Özel Fiyat İçin WhatsApp',
       secondary: 'Özel menü, grup 25-80, esnek süre · 1 saat altında yanıt',
-      tertiary: 'Standart Tur Seçeneği (€{p.dinnerStd})'
+      tertiary: 'Yemekli Tur Seçeneği (€{p.dinnerStd})'
     }
   },
 
@@ -241,12 +241,12 @@ module.exports = {
       { title: 'İki kişilik özel masa', desc: 'Özel 2 kişilik masa, paylaşılmıyor. Çiftlere pencere kenarı oturma önceliği. Pencerenizin hemen dışında gün batımı ve gece Boğaz fotoğrafları.' },
       { title: 'Yavaş tempolu çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, çipura, tavuk, köfte veya vejetaryen), dondurmalı pasta tatlı. 3 saat boyunca yavaşça servis edilir — acele ettirilmiyorsunuz.' },
       { title: 'Canlı keman ve hafif müzik', desc: 'Yemek sırasında canlı keman ve akustik Türk müziği sohbete uygun samimi bir atmosfer yaratır. Sonra, dans etmek isteyen çiftler için DJ devreye girer.' },
-      { title: 'Özel geceler için eklentiler', desc: 'Romantik masa düzeni (mumlar, güller): +€{p.romantic}. Sınırsız yerli alkol (şarap, rakı): +€{p.unlimited}/kişi. Otel transferi (gidiş-dönüş): +€{p.transfer}/kişi. Akşamınıza uyanı seçin.' }
+      { title: 'Özel geceler için eklentiler', desc: 'Romantik masa düzeni (mumlar, güller): +€{p.romantic}. 2 kadehlik alkol paketi (şarap, rakı): +€{p.alcohol2}/kişi. Otel transferi (gidiş-dönüş): +€{p.transfer}/kişi. Akşamınıza uyanı seçin.' }
     ],
     faq: [
       { q: 'Bu Boğaz turu özel bir durum değil, sıradan bir randevu gecesi için uygun mu?', a: 'Evet — çiftlerimizin çoğu belirli bir şey kutlamıyor, sadece harika bir randevu gecesi geçiriyor. Atmosfer aşırı olmadan sıcak ve hoş. Ekstra istiyorsanız romantik masa düzeni (+€{p.romantic}) ekleyebilir veya sadece standart akşamın tadını çıkarabilirsiniz.' },
-      { q: '2 kişi için Boğaz turu ne kadar?', a: '2 kişi Standart: 2 × €{p.dinnerStd} = €48. 2 kişi VIP: 2 × €{p.dinnerVip} = €110. İkisi için otel transferi ekleyin: +€{p.transfer}×2 = €20. İkisi için sınırsız alkol ekleyin: +€{p.unlimited}×2 = €60. Ön ödeme yok — teknede ödeme.' },
-      { q: 'Çiftler kendi şarap veya şampanyalarını getirebilir mi?', a: 'Dışarıdan alkole izin vermiyoruz (işletme lisans sebebi). Ama sınırsız yerli şarabımız (+€{p.unlimited}/kişi) var ve ücret karşılığında premium ithal şaraplar veya şampanya ayarlayabiliriz — rezervasyonda sorun. Prosecco, Chianti ve Cabernet popüler premium istekler.' },
+      { q: '2 kişi için Boğaz turu ne kadar?', a: '2 kişi için yemekli tur: 2 × €{p.dinnerStd} = €48.60. İkisi için otel transferi ekleyin: +€{p.transfer}×2 = €10. İkisi için 2 kadehlik alkol paketi ekleyin: +€{p.alcohol2}×2 = €20. Ön ödeme yok — teknede ödeme.' },
+      { q: 'Çiftler kendi şarap veya şampanyalarını getirebilir mi?', a: 'Dışarıdan alkole izin vermiyoruz (işletme lisans sebebi). Ama yerli şaraplı 2 kadehlik alkol paketimiz (+€{p.alcohol2}/kişi) var ve ücret karşılığında premium ithal şaraplar veya şampanya ayarlayabiliriz — rezervasyonda sorun. Prosecco, Chianti ve Cabernet popüler premium istekler.' },
       { q: 'Alkol içmiyorsak sorun olur mu — sıra dışı mıyız?', a: 'Hiç değil — birçok çift alkolü tamamen atlıyor, ya helal sebeplerden ya da sadece tercihen. Sınırsız meşrubatlar (su, meyve suyu, kola) dahil. Masanız alkolsüzse kimse iki kere bakmaz. Suudi Arabistan, İran ve Endonezya\'dan birçok Müslüman çift bu turu rezerve eder.' },
       { q: 'Çiftler için Boğaz turu en iyi ne zaman — gün batımı mı gece mi?', a: 'Tur her akşam 20:30\'da kalkar — ve yazın (Mayıs-Ağustos) bu tek kalkış ikisini de kapsar: 19:30\'dan itibaren altın saatte biniş, tam kalkış civarında gün batımı, ardından aydınlatılmış köprüler ve ışıl ışıl saraylar. Kışın ise saf bir gece ışıkları turudur. Her iki durumda da tek rezervasyonla çiftler Boğaz\'ın en ikonik halini yaşar.' },
       { q: 'Dans pisti var mı — dans edebilir miyiz?', a: 'Evet — yemek servisinden sonra (~22:30), DJ başlar ve açık güverte dans alanı olur. Birçok çift arka planda Boğaz Köprüsü ile ışıklar altında yavaş şarkılar eşliğinde dans eder. İstanbul\'da çekeceğiniz en iyi fotoğraflardan bazıları.' }
@@ -282,7 +282,7 @@ module.exports = {
     faq: [
       { q: 'Boğaz gün batımı turu saat kaçta kalkıyor?', a: 'Biniş Kabataş İskelesi\'nde 19:30\'da başlar, tekne 20:30\'da kalkar ve yaklaşık 23:30\'da döner. Yazın (Mayıs–Ağustos) güneş yaklaşık 20:15–20:45 arasında batar — altın saat siz binerken yaşanır, gün batımının kendisi ise tam kalkış civarında sudan izlenir.' },
       { q: 'Boğaz gün batımı turu yemekli turla aynı mı?', a: 'Evet — tek bir tur var. Her gün 20:30\'da tek kalkış yapılır; teknede tam akşam yemeği ve canlı şovlar vardır. Uzun yaz akşamlarında bu tur aynı zamanda bir gün batımı turudur: altın saatte biner, mavi saatten geçerek aydınlatılmış geceye açılırsınız. Kışın ise aynı tur saf bir gece ışıkları deneyimine dönüşür.' },
-      { q: 'Boğaz gün batımı turunun fiyatı nedir?', a: 'Standart tur €{p.dinnerStd}/kişi\'den başlar (3 saat, tam yemek, canlı eğlence). Sahne önü oturma ve premium mezeler içeren VIP seçenek €{p.dinnerVip}/kişi. Teknede ödeme — ön ödeme yok. 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat.' },
+      { q: 'Boğaz gün batımı turunun fiyatı nedir?', a: 'Tur €{p.dinnerStd}/kişi\'den başlar (3 saat, tam yemek, canlı eğlence). Teknede ödeme — ön ödeme yok. 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat.' },
       { q: 'Boğaz gün batımı turu için yılın en iyi zamanı ne zaman?', a: 'Mayıs\'tan Ağustos\'a. İstanbul\'un geç gün batımları (20:15–20:45) 20:30 kalkışıyla örtüşür; böylece altın saati, gün batımını ve aydınlatılmış köprüleri tek akşamda yaşarsınız. Sonbahar ve kışta güneş daha erken batar ve aynı tur tam bir gece ışıkları deneyimine dönüşür — aynı derecede fotojenik, farklı bir atmosfer.' },
       { q: 'Gün batımı turuna ne getirmeliyim?', a: 'Akıllı telefon veya kamera — altın saat ve aydınlatılmış köprüler adeta fotoğraf ister. İnce bir ceket: gün batımından sonra güvertede rüzgar artar. Smart-casual kıyafet — yemek yiyorsunuz ama katı bir kıyafet kuralı yok.' },
       { q: 'Bu turda aydınlatılmış köprüleri gece görüyor muyum?', a: 'Evet — akşamın ikinci yarısı tam da bu. Tur 20:30–23:30 arasında sürer; gün batımı ve mavi saatten sonra tamamen aydınlatılmış Boğaz Köprüsü\'nün altından geçer, ışıklı sarayların ve Kız Kulesi\'nin önünden süzülür ve 23:30 civarında Kabataş\'a dönersiniz.' },
@@ -319,7 +319,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Boğaz gece turu ne zaman?', a: 'Kabataş İskelesi\'nde 19:30\'den biniş. Tekne 20:30\'de hareket, yaklaşık 23:30 dönüyor. Yerleşmek ve koltuk seçmek için 20 dakika önce gelmenizi öneririz.' },
-      { q: 'Boğaz gece turu ne kadar?', a: 'Standart gece turu (3 saat, yemek, şov): €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). Sahne önü koltuk ve premium menü ile VIP: €{p.dinnerVip}/kişi (eski €{p.dinnerVipOriginal}). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme.' },
+      { q: 'Boğaz gece turu ne kadar?', a: 'Gece turu (3 saat, yemek, şov): €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme.' },
       { q: 'Boğaz gece turu ile yemekli tur arasındaki fark nedir?', a: 'Aynı şey, farklı anahtar kelime. "Boğaz gece turu" birçok gezginin aradığı şekildir; "yemekli tur" endüstri terimidir. Aynı tekne, aynı 3 saatlik program, aynı menü, aynı şov. Hangi arama terimini tercih ederseniz seçin — deneyim aynı.' },
       { q: 'Boğaz gece turu gün batımı turuna karşı değerlilik mi?', a: 'Gece turu = aydınlatılmış İstanbul, tepe ışık draması, tam eğlence programı, aydınlatılmış köprülerin en ikonik fotoğrafları. Üstelik tek bir tur: yazın (Mayıs-Ağustos) 19:30\'dan itibaren biniş altın saati yakalar ve güneş tam 20:30 kalkışı civarında batar — yani aynı akşam hem gün batımını hem geceyi kapsar. Seçim yapmaya veya iki kez rezervasyon yapmaya gerek yok.' },
       { q: 'İstanbul\'daki ilk günümde Boğaz gece turu yapabilir miyim?', a: 'Evet — öneriyoruz. Birçok gezgin ilk akşamları için gece turunu rezerve ediyor çünkü size tam bir oryantasyon veriyor: tüm büyük dönüm noktaları sudan, iyi yemek ve eğlence ile. Jet lag 1. günde gezmeye çalışmaktan daha kolay. Merkezi bölgelerden otel transferi mevcut.' },
@@ -345,16 +345,16 @@ module.exports = {
     intro: [
       '**İstanbul\'da yemekli tur** mu arıyorsunuz? Çoğu gezginin önerdiğini buldunuz. Boğaz\'da 3 saatlik akşamımız tam bir çok çeşitli Türk yemeğini, canlı halk oyunlarını ve şehrin en fotojenik manzaralarını birleştiriyor — hepsi 20:30\'de Kabataş İskelesi\'nden kalkan rahat bir tekneden.',
       '**İstanbul yemekli tur** deneyimi: 19:30\'de binin, yerleşin, kalkarken Dolmabahçe Sarayı\'nın yanından geçişini izleyin, Ortaköy Camii\'ne yaklaşırken yemek başlar, şov başlar (sema, halk oyunları, oryantal), tatlı geldiğinde aydınlatılmış Boğaz Köprüsü\'nün altındasınız. Gece yarısına kadar ikonik fotoğraf kolajı ve dolu bir mideyle Kabataş\'a geri dönüyorsunuz.',
-      'Standart tur için €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}) veya sahne önü koltuklarla VIP için €{p.dinnerVip}/kişi (eski €{p.dinnerVipOriginal}). Teknede ödeme — ön ödeme yok, risk yok. TÜRSAB A-17672 lisanslı, 11.317+ gezgin tarafından 4.8★ puanlı.'
+      'Yemekli tur €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). Teknede ödeme — ön ödeme yok, risk yok. TÜRSAB A-17672 lisanslı, 11.317+ gezgin tarafından 4.8★ puanlı.'
     ],
     highlights: [
       { title: 'Tam çok çeşitli Türk yemeği', desc: '10 çeşit meze, sıcak başlangıç, ana yemek (somon/çipura/tavuk/köfte/vejetaryen), dondurmalı pasta. Helal sertifikalı. Sınırsız meşrubat dahil.' },
       { title: 'Canlı Türk halk oyunları şovu', desc: 'Sema gösterisi, 5 geleneksel halk oyunu, oryantal dans, canlı Türk müziği, DJ. 40 dakika performans, ortam müziği devam eder.' },
       { title: 'Tam Boğaz gece rotası', desc: '3 saatlik tur: Dolmabahçe, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Bebek, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi, Üsküdar, Kız Kulesi. Hem Avrupa hem Asya yakası.' },
-      { title: '€{p.dinnerStd}\'den — teknede ödeme', desc: 'Standart: €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Premium menülü VIP: €{p.dinnerVip} (eski €{p.dinnerVipOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
+      { title: '€{p.dinnerStd}\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
     ],
     faq: [
-      { q: 'İstanbul\'da yemekli tur ne kadar?', a: 'Standart yemekli turumuz €{p.dinnerStd}/kişi (normal fiyat €{p.dinnerStdOriginal}). Sahne önü oturma ve premium menü ile VIP €{p.dinnerVip}/kişi (normal fiyat €{p.dinnerVipOriginal}). 0-3 yaş ücretsiz, 4-8 yaş %50 indirimli. Teknede ödeme — ön ödeme yok.' },
+      { q: 'İstanbul\'da yemekli tur ne kadar?', a: 'Yemekli turumuz €{p.dinnerStd}/kişi (normal fiyat €{p.dinnerStdOriginal}). 0-3 yaş ücretsiz, 4-8 yaş %50 indirimli. Teknede ödeme — ön ödeme yok.' },
       { q: 'İstanbul yemekli tur fiyatına ne dahil?', a: 'Boğaz\'da 3 saatlik tur, çok çeşitli Türk yemeği (meze, sıcak başlangıç, ana yemek, tatlı), sınırsız meşrubat, canlı halk oyunları şovu (sema, halk oyunları, oryantal), canlı müzik + DJ, açık güverte erişimi, vergiler dahil. Otel transferi ve alkol opsiyonel eklentilerdir.' },
       { q: 'İstanbul yemekli turu nereden kalkıyor?', a: 'Kabataş İskelesi, İstanbul — Avrupa yakasında, Dolmabahçe Sarayı\'nın yanında. Rezervasyondan sonra WhatsApp / Telegram aracılığıyla tam buluşma yeri paylaşılır. Dolmabahçe tramvay durağı ve Kabataş tramvay istasyonundan yürüyüş videoları yukarıdaki buluşma noktası bölümünde.' },
       { q: 'Yemekli tur ne kadar sürer — ve ne zaman başlar?', a: 'Toplam 3 saat. 19:30\'den biniş, tekne 20:30\'de tam hareket ediyor, yaklaşık 23:30 dönüyor. Yerleşmek ve koltuğunuzu seçmek için 15-20 dakika önce gelmenizi öneririz.' },
@@ -391,7 +391,7 @@ module.exports = {
     ],
     faq: [
       { q: 'İstanbul\'daki en iyi gece turu nedir?', a: 'Boğaz yemekli turu sürekli #1 olarak sıralanır. Nedenleri: (1) size tüm ikonik gece manzaralarını sudan verir, (2) yemek ve şovu tek bir pakette içerir, (3) 3 saat yorulmadan çok şey görmeye yeterli, (4) merkezi buluşma noktası, (5) teknede ödeme rezervasyon sürtünmesini azaltır. Çoğu İstanbul seyahat rehberi bunu "yapılacak tek mecburi gece şeyi" olarak önerir.' },
-      { q: 'İstanbul gece turu ne kadar?', a: 'Yemekli Boğaz gece turumuz: Standart €{p.dinnerStd}/kişi, VIP €{p.dinnerVip}/kişi. Tur, yemek, eğlence, meşrubat dahil. Opsiyonel: alkol +€{p.unlimited}/kişi, otel transferi +€{p.transfer}/kişi. Teknede ödeme — ön ödeme yok.' },
+      { q: 'İstanbul gece turu ne kadar?', a: 'Yemekli Boğaz gece turumuz €{p.dinnerStd}/kişi. Tur, yemek, eğlence, meşrubat dahil. Opsiyonel: 2 kadeh alkol +€{p.alcohol2}/kişi, otel transferi +€{p.transfer}/kişi. Teknede ödeme — ön ödeme yok.' },
       { q: 'İstanbul gece turu solo gezginler için güvenli mi?', a: 'Evet — çok güvenli. TÜRSAB lisanslı tekne, profesyonel İngilizce konuşan ekip, güvertede CCTV, can yelekleri mevcut. Birçok solo gezgin bu turu rezerve eder. Paylaşılan veya özel bir masada yemek yersiniz (seçiminiz) ve akşam kapsayıcıdır — isterseniz diğer gezginlerle tanışırsınız veya kendinize kalırsınız.' },
       { q: 'İstanbul\'daki gece turu için en iyi zaman nedir?', a: 'Boğaz yemekli turumuz 20:30-23:30 (3 saat). Bu tüm İstanbul dönüm noktaları için tepe aydınlatma zamanı — köprüler tam aydınlatılmış, saraylar parlıyor, su üzerinde ay. Altın saati de isterseniz yazın gelin: biniş 19:30\'da başlar ve Mayıs-Ağustos arasında güneş tam 20:30 kalkışı civarında batar — aynı tur ikisini de kapsar.' },
       { q: 'İstanbul gece turu buluşma noktasına nasıl giderim?', a: 'Buluşma noktası Kabataş İskelesi (merkezi Avrupa yakası, Dolmabahçe Sarayı\'nın yanında). Tramvay ile: T1 Kabataş istasyonuna (hat sonu). Taksi ile: Taksim\'den ~15 dk. Yürüyerek: Taksim\'den İnönü Caddesi aşağı 20 dk. Bu sayfada yürüyüş-yönergesi videoları var. Tercih ederseniz +€{p.transfer}/kişi ile otel transferi mevcut.' },
@@ -428,7 +428,7 @@ module.exports = {
     faq: [
       { q: 'İstanbul\'daki en iyi tekne turu nedir?', a: 'Boğaz yemekli turu sürekli #1 olarak sıralanır. Tüm büyük dönüm noktalarını kapsar, yemek ve eğlenceyi içerir ve dönüm noktalarının aydınlatıldığı akşam çalışır. Diğer seçenekler (hop-on feribotlar, sabah sightseeing tekneleri) daha kısa rotaları kapsar, yemeği atlar ve eğlence içermez. Bir İstanbul akşamı için bu en tam tekne turu.' },
       { q: 'İstanbul tekne turu ne kadar sürer?', a: '3 saat. Kabataş İskelesi\'nde 19:30\'den biniş, 20:30 kalkış, ~23:30 dönüş. Dolmabahçe\'den Rumeli Hisarı\'na ve geri tam Boğaz\'ı kapsar. Yorulmadan tam yemek + şov için yeterli zaman.' },
-      { q: 'İstanbul tekne turu ne kadar?', a: 'Yemekli tekne turumuz: Standart €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}), premium menülü VIP €{p.dinnerVip}/kişi (eski €{p.dinnerVipOriginal}). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme. Alkol ve otel transferi opsiyonel eklentilerdir.' },
+      { q: 'İstanbul tekne turu ne kadar?', a: 'Yemekli tekne turumuz €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme. Alkol ve otel transferi opsiyonel eklentilerdir.' },
       { q: 'İstanbul tekne turları nereden kalkıyor?', a: 'Teknemiz Kabataş İskelesi\'nden, merkezi Avrupa yakası İstanbul, Dolmabahçe Sarayı\'nın yanından kalkıyor. T1 tramvay (Kabataş istasyonu), Taksim\'den 15 dk taksi veya Taksim\'den 20 dk yürüyüş ile erişilebilir. Merkezi bölgelerden +€{p.transfer}/kişi ile otel transferi mevcut.' },
       { q: 'Bu tekne turu çocuklu aileler için uygun mu?', a: 'Evet — çok aile dostu. 0-3 yaş çocuklar ücretsiz, 4-8 yaş %50 indirim. Kapalı iç oturma, talep üzerine çocuk menüsü ve eğlence (sema, halk oyunları) çocuklar için ilgi çekici. Dünyanın her yerinden birçok aile bu turu rezerve eder.' },
       { q: 'Tekne turuna bir şey getirmem gerekiyor mu?', a: 'Pasaport veya kimlik kartı (tekne kaydı için), ince ceket (güverte serin olabilir), dans planlıyorsanız rahat ayakkabılar. Fotoğraflar için akıllı telefon. Teknede ödeme için nakit veya kart (ikisi de kabul edilir). Diğer her şey — yemek, içecek, eğlence — teknede.' }
@@ -479,7 +479,7 @@ module.exports = {
   'bosphorus-cruise-tickets': {
     meta: {
       title: 'Boğaz Turu Biletleri €{p.dinnerStd}\'den — Teknede Ödeme, Ön Ödeme Yok',
-      description: 'Direkt Boğaz turu biletleri. Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. Ön ödeme yok, teknede ödeme. Tur öncesi 2 saate kadar ücretsiz iptal.'
+      description: 'Direkt Boğaz turu biletleri — €{p.dinnerStd}/kişi. Ön ödeme yok, teknede ödeme. Tur öncesi 2 saate kadar ücretsiz iptal.'
     },
     hero: {
       h1: 'Boğaz Turu Biletleri',
@@ -487,23 +487,23 @@ module.exports = {
       badge: 'Direkt Rezervasyon · Ön Ödeme Yok · %40 İNDİRİM'
     },
     intro: [
-      '**Boğaz turu biletleri** arıyor musunuz? Direkt alın. Biletlerimiz €{p.dinnerStd} (Standart) veya €{p.dinnerVip} (VIP) — normal fiyattan %40 indirim (€{p.dinnerStdOriginal} ve €{p.dinnerVipOriginal}). Üçüncü taraf rezervasyon siteleri genellikle %20-40 komisyon ekler. Direkt rezervasyon yaparak tasarruf edersiniz — ve yine teknede ödeyebilirsiniz.',
+      '**Boğaz turu biletleri** arıyor musunuz? Direkt alın. Biletimiz €{p.dinnerStd}/kişi — normal fiyattan %40 indirim (€{p.dinnerStdOriginal}). Üçüncü taraf rezervasyon siteleri genellikle %20-40 komisyon ekler. Direkt rezervasyon yaparak tasarruf edersiniz — ve yine teknede ödeyebilirsiniz.',
       '**Boğaz turu bilet** süreçimiz: bu sayfadaki sihirbazı 1 dakikadan az sürede doldurun (tarih, misafir sayısı, paket, iletişim), WhatsApp / Telegram aracılığıyla anında onaylarız, 19:30\'de Kabataş İskelesi\'nde görünürsünüz, teknede ödersiniz, 3 saatlik yemekli turun keyfini çıkarırsınız. Yazdırılacak fiziksel bilet yok, e-postalanacak kupon yok — onay biletiniz.',
       'Ister bu geceki yemekli turu rezerve ediyor olun veya gelecek hafta belirli bir tarih için ayırıyor olun, **Boğaz turu biletleri direkt** en hızlı yoldur. 4.8★ puan, TÜRSAB lisanslı (A-17672), helal sertifikalı menü ve otel transferi ile alkol eklentilerini destekler.'
     ],
     highlights: [
-      { title: 'Direkt rezervasyon — aracı ücreti yok', desc: '€{p.dinnerStd} Standart, €{p.dinnerVip} VIP. Üçüncü taraf siteler aynı tur için €30-80+ alır. Bize direkt rezervasyon yaparak tasarruf edersiniz. Gizli ücret yok, komisyon markup\'ı yok.' },
+      { title: 'Direkt rezervasyon — aracı ücreti yok', desc: '€{p.dinnerStd}/kişi, tek şeffaf fiyat. Üçüncü taraf siteler aynı tur için €30-80+ alır. Bize direkt rezervasyon yaparak tasarruf edersiniz. Gizli ücret yok, komisyon markup\'ı yok.' },
       { title: 'Teknede ödeme — ön ödeme yok', desc: 'Şimdi yerinizi ayırın, gemiye bindiğinizde ödeyin. Nakit veya kart kabul edilir. Kalkıştan 2+ saat önce iptal ederseniz ücretsiz. Erken ayırmanın finansal riski sıfır.' },
       { title: '1 dakikadan az sürede onay', desc: 'Sihirbazı doldurun → WhatsApp / Telegram aracılığıyla onaylarız. Yazdırılacak e-postalı PDF kuponu yok. Mesajımız biletinizdir. 19:30\'de iskeleye gelin.' },
-      { title: '%40 İNDİRİM şu anki lansman fiyatı', desc: 'Standart eski €{p.dinnerStdOriginal}, şimdi €{p.dinnerStd}. VIP eski €{p.dinnerVipOriginal}, şimdi €{p.dinnerVip}. %40 indirim çünkü direkt rezervasyon yapıyorsunuz. Süreli bir numara değil — standart direkt-rezervasyon fiyatımız.' }
+      { title: '%40 İNDİRİM şu anki lansman fiyatı', desc: 'Eski fiyat €{p.dinnerStdOriginal}, şimdi €{p.dinnerStd}. %40 indirim çünkü direkt rezervasyon yapıyorsunuz. Süreli bir numara değil — standart direkt-rezervasyon fiyatımız.' }
     ],
     faq: [
-      { q: 'Boğaz turu biletleri ne kadar?', a: 'Standart: €{p.dinnerStd}/kişi (normal €{p.dinnerStdOriginal}). VIP: €{p.dinnerVip}/kişi (normal €{p.dinnerVipOriginal}). 3 saatlik tur, çok çeşitli Türk yemeği, canlı halk oyunları şovu, sınırsız meşrubat dahil. 0-3 yaş ücretsiz, 4-8 yaş %50 indirim. Teknede ödeme — ön ödeme yok.' },
+      { q: 'Boğaz turu biletleri ne kadar?', a: 'Bilet €{p.dinnerStd}/kişi (normal €{p.dinnerStdOriginal}). 3 saatlik tur, çok çeşitli Türk yemeği, canlı halk oyunları şovu, sınırsız meşrubat dahil. 0-3 yaş ücretsiz, 4-8 yaş %50 indirim. Teknede ödeme — ön ödeme yok.' },
       { q: 'Boğaz turu biletlerini nereden satın alabilirim?', a: 'Bu sayfada direkt — rezervasyon sihirbazını doldurun, WhatsApp / Telegram aracılığıyla anında onaylarız. Teknede ödeme. Üçüncü taraf platformlar (Viator, GetYourGuide, Klook) da bilet satar ama genellikle €30-80+ alır — bu aracı markup\'ıdır. Direkt en ucuz ve en hızlı.' },
       { q: 'Boğaz turu biletini yazdırmam gerekiyor mu?', a: 'Hayır — fiziksel bilet veya kupon gerekmez. Rezervasyondan sonra, buluşma noktası, zaman ve rezervasyon adınızla WhatsApp (veya Telegram) aracılığıyla size bir onay gönderiyoruz. Sadece iskelede telefonunuzu gösterin. Bu kadar.' },
       { q: 'Boğaz turu biletimi iptal veya iade edebilir miyim?', a: 'Evet — kalkıştan 2 saat öncesine kadar ücretsiz iptal. Sadece WhatsApp\'tan yazın. Henüz ödemediğiniz için (teknede ödeme), iade gerekmiyor — sadece gelmezsiniz, ücret yok. Ön ödemeli üçüncü taraf biletlerinden çok daha esnek.' },
       { q: 'Boğaz turu biletleri aynı gün mevcut mu?', a: 'Sık sık evet, özellikle hafta içi. Hafta sonları ve tatiller daha hızlı dolar. Rezervasyon sihirbazı aracılığıyla müsaitliği kontrol edin — gerçek zamanlı güncelleniyor. Aynı gün rezervasyon genellikle 20:30 kalkıştan birkaç saat öncesine kadar mümkün. Acil istekler için WhatsApp.' },
-      { q: 'Çocuk Boğaz turu biletleri ücretsiz mi?', a: 'Çocuklar **0-3 yaş tamamen ücretsiz** (ücret yok, gizli ücret yok, transfer dahil). **4-8 yaş %50 indirimli** (Standart\'ta €{p.dinnerStd}/2 = €12). **9+ yaş tam yetişkin fiyatı.** Fiyatlar üst sınırlı ve şeffaf — "bebek ek ücreti" hileleri yok.' }
+      { q: 'Çocuk Boğaz turu biletleri ücretsiz mi?', a: 'Çocuklar **0-3 yaş tamamen ücretsiz** (ücret yok, gizli ücret yok, transfer dahil). **4-8 yaş %50 indirimli** (€{p.dinnerStd}/2 = €12.15). **9+ yaş tam yetişkin fiyatı.** Fiyatlar üst sınırlı ve şeffaf — "bebek ek ücreti" hileleri yok.' }
     ],
     cta: {
       primary: 'Bilet Al · Teknede Ödeme',
@@ -524,7 +524,7 @@ module.exports = {
     },
     intro: [
       'Bu öğleden sonra İstanbul\'a indi mi ve bu akşam harika bir gece mi istiyorsunuz? **Son dakika Boğaz turu** işe yarar. Sabah karar veren birçok gezgin olduğunu bildiğimiz için aynı gün rezervasyonları için özellikle koltuk ayırıyoruz. Buradaki sihirbazı doldurun, dakikalar içinde WhatsApp üzerinden onaylarız, 19:30\'de Kabataş İskelesi\'nde görünürsünüz, teknede ödersiniz, keyfini çıkarırsınız.',
-      '**Son dakika Boğaz turumuz** ön rezervasyonlarla aynı akşam programına sahiptir: su üstünde 3 saat (20:30-23:30), çok çeşitli Türk yemeği, canlı halk oyunları şovu, sema, oryantal dans, DJ. Aydınlatılmış Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü — aynı ikonik manzaralar. Aynı €{p.dinnerStd} Standart veya €{p.dinnerVip} VIP fiyatı.',
+      '**Son dakika Boğaz turumuz** ön rezervasyonlarla aynı akşam programına sahiptir: su üstünde 3 saat (20:30-23:30), çok çeşitli Türk yemeği, canlı halk oyunları şovu, sema, oryantal dans, DJ. Aydınlatılmış Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü — aynı ikonik manzaralar. Aynı €{p.dinnerStd} fiyatı.',
       'Aynı gün iptal kalkıştan 2 saat öncesine kadar ücretsizdir, çünkü **teknede ödeme** henüz hiçbir şeye söz vermediğiniz anlamına gelir. 14:00\'te rezerve ettiniz ve 19:00\'a kadar planlarınızı değiştirdiniz ise sadece WhatsApp\'tan yazın — iade yok, sorun yok. Gezginlerin takdir ettiği **son dakika İstanbul turu** esnekliği bu.'
     ],
     highlights: [
@@ -536,7 +536,7 @@ module.exports = {
     faq: [
       { q: 'Gerçekten bu gece için Boğaz turu rezerve edebilir miyim?', a: 'Evet — sıklıkla. Aynı gün rezervasyonları için koltuk ayırıyoruz. Bu geceki müsaitlik için yukarıdaki sihirbazı kontrol edin. Koltuklar mevcutsa, 18:00\'e kadar (kalkıştan 3 saat önce) rezerve edebilirsiniz. Hafta sonları daha sıkışık — mümkünse günün daha erken saatinde rezerve edin.' },
       { q: 'Ne kadar son dakika rezerve edebilirim?', a: '20:30 teknesi için 18:00\'e kadar rezervasyon açık kalır. 18:00\'den sonra, +90 532 244 29 22\'den WhatsApp\'tan bize direkt yazın — koltuklar açıksa manuel onaylayabiliriz. 19:30\'dan sonra Kabataş İskelesi\'nde değilseniz ve hızlıca binebilmedikçe çok sıkışık.' },
-      { q: 'Son dakika Boğaz turu daha pahalı mı?', a: 'Hayır — ön rezervasyonla aynı fiyat. €{p.dinnerStd} Standart, €{p.dinnerVip} VIP. "Dalgalı fiyatlandırma" veya son dakika primi yapmıyoruz. Aynı tekne, aynı yemek, aynı şov, aynı fiyat.' },
+      { q: 'Son dakika Boğaz turu daha pahalı mı?', a: 'Hayır — ön rezervasyonla aynı fiyat: €{p.dinnerStd}/kişi. "Dalgalı fiyatlandırma" veya son dakika primi yapmıyoruz. Aynı tekne, aynı yemek, aynı şov, aynı fiyat.' },
       { q: 'Bu gecenin turu tamamen doluysa ne olur?', a: 'Yarınki tur genellikle açık — yılda 365 gün, günlük çalışıyoruz. Yarın için rezerve edebilir ve yine de "son dakika" olabilirsiniz, yani yeni karar verdiniz. Hafta içi turlar hafta sonlarından daha fazla alana sahip.' },
       { q: 'Son dakika otel transferi ayarlayabilir misiniz?', a: 'Aynı gün transferi 20:30 turu için ~18:00\'e kadar mümkündür. 18:00\'den sonra, müsait bir şoförümüz olmayabilir — bu durumda Kabataş İskelesi\'ne taksi alabilirsiniz (Taksim\'den 15 dk, Sultanahmet\'ten 10 dk, ~€10-15). Merkezi ve kolay.' },
       { q: 'Zaten Kabataş\'ta isem ve binmek istersem ne olur?', a: 'İskeledeyseniz ve açık koltuklar varsa, yürüyüp binebilirsiniz. Bize WhatsApp\'tan yazın veya ekibe sorun — yer varsa sizi ekleyeceğiz. Aynı teknede ödeme fiyatı. Tur terimleriyle "walk-on" denir — burada çalışır.' }
@@ -551,29 +551,29 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'İstanbul Tur Fiyatı €{p.dinnerStd}\'den — Şeffaf Oranlar, Gizli Ücret Yok',
-      description: 'İstanbul Boğaz turu fiyatları: Standart €{p.dinnerStd}, VIP €{p.dinnerVip}. 0-3 yaş ücretsiz, 4-8 yarı fiyat. Eklentiler şeffaf. Ücretsiz iptal, teknede ödeme.'
+      description: 'İstanbul Boğaz turu fiyatları: yemekli tur €{p.dinnerStd}/kişi. 0-3 yaş ücretsiz, 4-8 yarı fiyat. Eklentiler şeffaf. Ücretsiz iptal, teknede ödeme.'
     },
     hero: {
       h1: 'İstanbul Tur Fiyatı',
-      subtitle: 'Şeffaf fiyatlandırma, gizli ücret yok. Standart €{p.dinnerStd}/kişi, VIP €{p.dinnerVip}/kişi — ve şimdi değil, teknede ödüyorsunuz.',
+      subtitle: 'Şeffaf fiyatlandırma, gizli ücret yok. Tek paket, €{p.dinnerStd}/kişi — ve şimdi değil, teknede ödüyorsunuz.',
       badge: 'Şeffaf · %40 İNDİRİM Direkt · 0-3 Yaş Ücretsiz'
     },
     intro: [
-      '**İstanbul tur fiyatları** çok değişir — yemeği atlayan €15 bütçe feribotlarından €150+ resort tarzı yatlara kadar. Fiyatlandırmamız ortada ve en iyi değeri verir: Standart için 3 saatlik şovlu tam yemekli tur için €{p.dinnerStd}, sahne önü premium deneyim için VIP için €{p.dinnerVip}. Gizli ücret yok, sürpriz ek ücret yok.',
-      'Detaylı bir **İstanbul tur fiyatı** dökümü, çünkü şeffaflık önemli:\n\n- **Standart Yemekli Tur**: €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}, %40 indirim). 3 saatlik tur, 10 meze, ana yemek, tatlı, sınırsız meşrubat, canlı şov dahil.\n- **VIP Yemekli Tur**: €{p.dinnerVip}/kişi (eski €{p.dinnerVipOriginal}). Sahne önü koltuklar, 15+ meze, dana bonfile/antrikot seçenekleri, öncelikli hizmet ekler.\n- **0-3 Yaş**: Ücretsiz. 4-8 yaş: %50 indirim. 9+ yaş: tam fiyat.\n\nEklentiler (opsiyonel):\n- 2 kadeh alkol: +€{p.alcohol2}/kişi\n- Sınırsız yerli alkol: +€{p.unlimited}/kişi\n- Otel transferi gidiş-dönüş: +€{p.transfer}/kişi\n- Romantik masa düzeni: +€{p.romantic}/masa',
+      '**İstanbul tur fiyatları** çok değişir — yemeği atlayan €15 bütçe feribotlarından €150+ resort tarzı yatlara kadar. Fiyatlandırmamız ortada ve en iyi değeri verir: 3 saatlik şovlu tam yemekli tur için tek paket €{p.dinnerStd}/kişi. Gizli ücret yok, sürpriz ek ücret yok.',
+      'Detaylı bir **İstanbul tur fiyatı** dökümü, çünkü şeffaflık önemli:\n\n- **Yemekli Tur**: €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}, %40 indirim). 3 saatlik tur, 10 meze, ana yemek, tatlı, sınırsız meşrubat, canlı şov dahil.\n- **0-3 Yaş**: Ücretsiz. 4-8 yaş: %50 indirim. 9+ yaş: tam fiyat.\n\nEklentiler (opsiyonel):\n- 2 kadeh alkol: +€{p.alcohol2}/kişi\n- Otel transferi gidiş-dönüş: +€{p.transfer}/kişi\n- Romantik masa düzeni: +€{p.romantic}/masa',
       'Ve önemlisi: **teknede ödeme**. Teknede olana kadar bir sent bile söz vermezsiniz. Kalkıştan 2 saat öncesine kadar ücretsiz iptal. Taahhüt yok, risk yok — bulacağınız en tüketici dostu **İstanbul tur fiyatlandırması**.'
     ],
     highlights: [
-      { title: 'Standart: €{p.dinnerStd} (eski €{p.dinnerStdOriginal})', desc: 'Normal fiyattan %40 indirim. 3 saatlik tur, tam Türk yemeği, canlı şov, sınırsız meşrubat. En popüler paket — harika bir akşam için ihtiyacınız olan her şeyi kapsar.' },
-      { title: 'VIP: €{p.dinnerVip} (eski €{p.dinnerVipOriginal})', desc: 'Normal fiyattan %40 indirim. Sahne önü koltuklar, 15+ meze, premium ana yemek (dana bonfile, antrikot), öncelikli garson hizmeti ekler. Özel günler veya premium gezginler için.' },
+      { title: 'Yemekli Tur: €{p.dinnerStd} (eski €{p.dinnerStdOriginal})', desc: 'Normal fiyattan %40 indirim. 3 saatlik tur, tam Türk yemeği, canlı şov, sınırsız meşrubat. Tek paket — harika bir akşam için ihtiyacınız olan her şeyi kapsar.' },
+      { title: 'Teknede ödeme — €0 peşin', desc: 'Şimdi rezerve edin, binişte ödeyin (nakit veya kart). Kalkıştan 2 saat öncesine kadar ücretsiz iptal. Erken rezervasyonda sıfır finansal risk.' },
       { title: 'Çocuk fiyatı: 0-3 ücretsiz, 4-8 yarı fiyat', desc: '0-3 tamamen ücretsiz (ücret yok). 4-8 yetişkin fiyatından %50 indirim. 9+ tam yetişkin fiyatı. Şeffaf, aile fiyatlandırma hileleri yok. Transfer de 0-3 için ücretsiz.' },
-      { title: 'Eklentiler — sadece istediğinizde', desc: 'Alkol: €{p.alcohol2} veya €{p.unlimited}/kişi. Transfer: €{p.transfer}/kişi. Romantik masa: €{p.romantic}/masa. Hepsi opsiyonel, paketlenmemiş. Sadece ihtiyacınız olanı seçin.' }
+      { title: 'Eklentiler — sadece istediğinizde', desc: 'Alkol (2 kadeh): +€{p.alcohol2}/kişi. Transfer: €{p.transfer}/kişi. Romantik masa: €{p.romantic}/masa. Hepsi opsiyonel, paketlenmemiş. Sadece ihtiyacınız olanı seçin.' }
     ],
     faq: [
-      { q: 'İstanbul turu ne kadar?', a: 'Standart Yemekli Tur: €{p.dinnerStd}/kişi (normal €{p.dinnerStdOriginal}, %40 indirim). VIP: €{p.dinnerVip}/kişi (normal €{p.dinnerVipOriginal}, %40 indirim). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme — ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' },
+      { q: 'İstanbul turu ne kadar?', a: 'Yemekli Tur: €{p.dinnerStd}/kişi (normal €{p.dinnerStdOriginal}, %40 indirim). 0-3 yaş ücretsiz, 4-8 yaş yarı fiyat. Teknede ödeme — ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' },
       { q: 'İstanbul tur fiyatında gizli ücret var mı?', a: 'Hayır. Fiyat şunları içerir: 3 saatlik tur, tam yemek (meze, başlangıç, ana yemek, tatlı), sınırsız meşrubat, canlı şov, vergiler. Opsiyonel eklentiler (alkol, transfer, romantik masa) ayrı ve şeffaf fiyatlandırılmıştır — sadece eklediğiniz için ödersiniz. "Servis ücreti", "liman ücreti", sürpriz ek ücret yok.' },
-      { q: 'İstanbul tur fiyatı neden %40 indirim — bu bir hile mi?', a: 'Hile yok. Normal fiyat €{p.dinnerStdOriginal}/€{p.dinnerVipOriginal}, üçüncü taraf rezervasyon sitelerinin (Viator, GetYourGuide, Klook) aldığı fiyattır — komisyonlarıyla. Direkt rezerve edin ve €{p.dinnerStd}/€{p.dinnerVip} alın. %40 fark bu. Zaman sınırlı veya dalgalı fiyatlandırma numaraları yok.' },
-      { q: 'İstanbul tur fiyatı diğer seçeneklerle nasıl karşılaştırılır?', a: 'Halka feribotları: €5-10, 1 saat, yemek yok, eğlence yok, sadece sightseeing. Bütçe yemekli turlar: €20-30, kalabalık, ortalama yemek, kısa şov. Bizim Standart (€{p.dinnerStd}): 3 saat, tam yemek, tam şov, özel masa, TÜRSAB lisanslı. VIP (€{p.dinnerVip}): sahne önü, premium menü. Resort yatlar: €100-150+, solo gezginler/çiftler için aşırı.' },
+      { q: 'İstanbul tur fiyatı neden %40 indirim — bu bir hile mi?', a: 'Hile yok. Normal fiyat €{p.dinnerStdOriginal}, üçüncü taraf rezervasyon sitelerinin (Viator, GetYourGuide, Klook) aldığı fiyattır — komisyonlarıyla. Direkt rezerve edin ve €{p.dinnerStd} alın. %40 fark bu. Zaman sınırlı veya dalgalı fiyatlandırma numaraları yok.' },
+      { q: 'İstanbul tur fiyatı diğer seçeneklerle nasıl karşılaştırılır?', a: 'Halka feribotları: €5-10, 1 saat, yemek yok, eğlence yok, sadece sightseeing. Bütçe yemekli turlar: €20-30, kalabalık, ortalama yemek, kısa şov. Bizim yemekli turumuz (€{p.dinnerStd}): 3 saat, tam yemek, tam şov, özel masa, TÜRSAB lisanslı. Resort yatlar: €100-150+, solo gezginler/çiftler için aşırı.' },
       { q: 'İstanbul tur fiyatını ön ödemem gerekli mi?', a: 'Hayır — **teknede ödeme**. Şimdi rezerve edersiniz (1 dakikalık sihirbaz), WhatsApp\'tan onaylarız, 19:30\'de gelirsiniz ve teknede ödersiniz (nakit veya kart). 2 saat öncesine kadar ücretsiz iptal. Memnun olana kadar sıfır finansal taahhüt.' },
       { q: 'İstanbul tur fiyatında grup indirimi var mı?', a: '10+ gruplar için %5-10 indirim sunabiliriz — grup büyüklüğünüzle WhatsApp\'tan yazın. 25+ için özel tur (grubunuz için tüm tekne, özel menü) düşünün. 2-9 kişi için standart fiyatlar geçerli — zaten normal fiyattan %40 indirim.' }
     ],

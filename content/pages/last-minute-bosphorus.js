@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'Landed in Istanbul this afternoon and want a great evening tonight? The **last-minute Bosphorus cruise** works. We hold back seats for same-day bookings specifically because we know many travelers decide the morning-of. Fill the wizard here, we confirm via WhatsApp in minutes, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy.',
 
-    'Our **last-minute Bosphorus cruise** has the same evening itinerary as advance bookings: 3 hours on the water (20:30-23:30), multi-course Turkish dinner, live folklore show, whirling dervish, belly dance, DJ. Illuminated Dolmabahçe Palace, Ortaköy Mosque, Bosphorus Bridge — same iconic views. Same €{p.dinnerStd} Standard or €{p.dinnerVip} VIP price.',
+    'Our **last-minute Bosphorus cruise** has the same evening itinerary as advance bookings: 3 hours on the water (20:30-23:30), multi-course Turkish dinner, live folklore show, whirling dervish, belly dance, DJ. Illuminated Dolmabahçe Palace, Ortaköy Mosque, Bosphorus Bridge — same iconic views. Same €{p.dinnerStd}/person price.',
 
     'Same-day cancellation is free up to 2 hours before departure, since **pay-on-boat** means you\'ve committed nothing yet. If you booked at 14:00 and change plans by 19:00, just message us — no refund, no issue. This is the **last-minute Istanbul cruise** flexibility travelers appreciate.'
   ],
@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       q: 'Is last-minute Bosphorus cruise more expensive?',
-      a: 'No — same price as advance booking. €{p.dinnerStd} Standard, €{p.dinnerVip} VIP. We don\'t do "surge pricing" or last-minute premium. Same boat, same dinner, same show, same price.'
+      a: 'No — same price as advance booking: €{p.dinnerStd}/person. We don\'t do "surge pricing" or last-minute premium. Same boat, same dinner, same show, same price.'
     },
     {
       q: 'What if tonight\'s cruise is fully booked?',

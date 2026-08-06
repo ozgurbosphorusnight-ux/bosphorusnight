@@ -6,8 +6,8 @@
  * ALIGNED 2026-07-02: there is ONE daily cruise (DINNER — boarding 19:30,
  * departs 20:30, returns 23:30). This page sells that cruise through the
  * sunset/blue-hour angle. Do NOT re-add a separate 17:30 "€35 sunset product";
- * it does not exist (CLAUDE.md §3 — only DINNER_STD and DINNER_VIP are sold).
- * Prices must stay as €{p.dinnerStd}/€{p.dinnerVip} placeholders.
+ * it does not exist (CLAUDE.md §3 — only DINNER_STD is sold).
+ * Prices must stay as €{p.dinnerStd} placeholders.
  */
 module.exports = {
   slug: 'bosphorus-sunset-cruise',
@@ -80,7 +80,7 @@ module.exports = {
     },
     {
       q: 'What\'s the price of the Bosphorus sunset cruise?',
-      a: 'From €{p.dinnerStd}/person for the standard cruise (3 hours, full dinner, live entertainment). The VIP option with stage-front seating and premium mezes is €{p.dinnerVip}/person. Pay on the boat — no prepayment. Children 0-3 free, 4-8 half price.'
+      a: 'From €{p.dinnerStd}/person for the cruise (3 hours, full dinner, live entertainment). Pay on the boat — no prepayment. Children 0-3 free, 4-8 half price.'
     },
     {
       q: 'When is the best time of year for a Bosphorus sunset cruise?',

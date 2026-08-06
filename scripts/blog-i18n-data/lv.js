@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standarta vai VIP?',
+          h2: 'Standarta pakete',
           paragraphs: [
             'Standarta pakete (no €24,30) ir lieliska lielākajai daļai ceļotāju. Saņem pilnu maltīti, labu vietu un visus šovus.',
-            'VIP pakete (no €55,20) dod tev galdu tuvāk skatuvei, paplašinātu ēdienkarti ar 15+ meze veidiem un ekskluzīvu VIP servisu. Ideāli pāriem, kas vēlas padarīt vakaru īpaši īpašu, vai tiem, kas novērtē labākās vietas.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Kā rezervēt pēdējā brīdī',
           paragraphs: [
-            'Sūti mums ziņu pa WhatsApp ar datumu (šodien), viesu skaitu un to, vai vēlies Standarta vai VIP paketi. Apstiprināsim pieejamību sekundēs.',
+            'Sūti mums ziņu pa WhatsApp ar datumu (šodien) un viesu skaitu. Apstiprināsim pieejamību sekundēs.',
             'Pēdējais rezervācijas termiņš vakara kruīzam ir plkst. 19:30 (1 stunda pirms atiešanas plkst. 20:30). Ierodies pie Kabataş piestātnes vēlākais plkst. 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohols ir brīvprātīgs',
           paragraphs: [
-            'Visas paketes ietver bezalkoholiskos dzērienus. Vari pievienot 2 glāzes alkohola (+€{p.alcohol2}) vai neierobežotu vietējo alkoholu (+€{p.unlimited}) rezervējot.',
+            'Pakete ietver bezalkoholiskos dzērienus. Vari pievienot 2 glāzes alkohola (+€{p.alcohol2}) rezervējot.',
           ],
         },
         {

@@ -28,23 +28,24 @@ const SCHEMA_I18N = require('./schema-i18n.js');
 // Keep in sync with build-pages.js PRICES.
 // Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
 // Bug #1 sync: schema + UI placeholders use these literals → drift olmasın diye DB ile aynı.
-// dinner fiyatları STRING. Özgür kararı 31 May: trailing zero YOK → "24.3"/"55.2" göster (CLAUDE.md §3 notu güncellenecek).
+// dinner fiyatı STRING. Özgür kararı 31 May: trailing zero YOK → "24.3" göster.
+// VIP (dinnerVip 55.2 / dinnerVipOriginal 92) + unlimited alcohol (25) retired 2026-08-06 —
+// single-menu lineup. Temporary: Ozgur will bring VIP back later; re-add the keys then.
 const PRICES = {
-  dinnerStd: '24.3', dinnerStdOriginal: 40.5, dinnerVip: '55.2', dinnerVipOriginal: 92,
-  alcohol2: 10, unlimited: 25, transfer: 10, romantic: 15
+  dinnerStd: '24.3', dinnerStdOriginal: 40.5,
+  alcohol2: 10, transfer: 5, romantic: 15
 };
 // Google Business Profile yorumları — ortak modül (build-pages.js ile paylaşımlı tek kaynak).
 // Veri: assets/data/google-reviews.json. Hetzner cron'u dosyayı tazeler.
 const { GREVIEWS, injectGoogleReviews } = require('./_google-reviews.js');
 const RATING = { value: String(GREVIEWS.rating), count: GREVIEWS.reviewCount };
-// Replaces {p.key} placeholders + literal €24/€55 mentions left in legacy translations.
-// Bug #1 sync — drift kapatma: T sözlüğündeki çevirilerde "€24"/"€55" literal yazılmış olabilir,
+// Replaces {p.key} placeholders + literal €24 mentions left in legacy translations.
+// Bug #1 sync — drift kapatma: T sözlüğündeki çevirilerde "€24" literal yazılmış olabilir,
 // bunları PRICES'tan canlı değere çek. (?!\.\d|\d) lookahead — sadece "€24.30" / "€243"
 // devam eden literal sayıları reject eder, cümle sonu noktası ("€24.") yine match eder.
 const subPrices = (s) => s
   .replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??')
-  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`)
-  .replace(/€55(?!\.\d|\d)/g, `€${PRICES.dinnerVip}`);
+  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`);
 
 function translateHardcoded(html, lang) {
   if (lang === 'en') return html;
@@ -172,7 +173,7 @@ function buildSchemaLd(lang) {
       name: 'TÜRSAB License',
       value: 'A-17672'
     },
-    priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
+    priceRange: `€${PRICES.dinnerStd}`,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     aggregateRating: {
       '@type': 'AggregateRating',
@@ -282,7 +283,7 @@ function buildSchemaLd(lang) {
     name: 'Bosphorus Night',
     url: SITE_URL,
     telephone: '+90 532 244 29 22',
-    priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
+    priceRange: `€${PRICES.dinnerStd}`,
     image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
     address: {
       '@type': 'PostalAddress',
@@ -375,17 +376,7 @@ function buildSchemaLd(lang) {
     }
   };
 
-  const tourDinnerVip = tourBase(
-    sPick('vip', 'name'),
-    sPick('vip', 'description'),
-    55.20,
-    'https://www.bosphorusnight.com/bosphorus-vip',
-    'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg',
-    '20:30',
-    sPick('vip', 'audience')
-  );
-
-  // Dinner cruise SocialEvent with recurring daily schedule + 2 offers (Std + VIP).
+  // Dinner cruise SocialEvent with recurring daily schedule + Standard offer.
   // startDate = tomorrow 20:30 local (Europe/Istanbul = +03:00), refreshed on every build.
   // A daily auto-rebuild (GitHub Actions cron) keeps this evergreen for Google Events rich results.
   const tomorrow = new Date(Date.now() + 24 * 60 * 60 * 1000);
@@ -448,15 +439,6 @@ function buildSchemaLd(lang) {
         url: 'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
         availability: 'https://schema.org/InStock',
         validFrom: '2026-01-01'
-      },
-      {
-        '@type': 'Offer',
-        name: 'VIP Package',
-        price: '55.2',
-        priceCurrency: 'EUR',
-        url: 'https://www.bosphorusnight.com/bosphorus-vip',
-        availability: 'https://schema.org/InStock',
-        validFrom: '2026-01-01'
       }
     ],
     // Evergreen schedule: bugünden 1 yıl ileri. Build her gün yenilenir
@@ -488,7 +470,7 @@ function buildSchemaLd(lang) {
     ? { '@context': 'https://schema.org', '@type': 'FAQPage', inLanguage: lang, mainEntity: faqMainEntity }
     : null;
 
-  return [business, organization, website, ...videos, heroImage, tourDinnerStd, tourDinnerVip, dinnerEvent, faqSchema]
+  return [business, organization, website, ...videos, heroImage, tourDinnerStd, dinnerEvent, faqSchema]
     .filter(Boolean)
     .map((b) => `<script type="application/ld+json">\n${JSON.stringify(b, null, 2)}\n</script>`)
     .join('\n');
@@ -626,7 +608,7 @@ function buildForLang(lang, template) {
 
   // Replace external <script src="/js/translations.js"></script> (671 KB) with
   // an inline bootstrap that exposes only this page's language + EN fallback.
-  // subPrices is passed so T values with {p.dinnerStd}/€24/€55 placeholders are
+  // subPrices is passed so T values with {p.dinnerStd}/€24 placeholders are
   // resolved at build time, not left for runtime.
   const inlineT = buildInlineTScript(T, LANGUAGES, lang, subPrices);
   html = replaceTranslationsScriptTag(html, inlineT);
@@ -647,7 +629,7 @@ function main() {
       const dir = path.join(OUT, lang);
       fs.mkdirSync(dir, { recursive: true });
       const html = buildForLang(lang, template);
-      // Final pass: subPrices regex tüm HTML'i tarayıp literal "€24"/"€55" geçen yerleri
+      // Final pass: subPrices regex tüm HTML'i tarayıp literal "€24" geçen yerleri
       // (kaynak index.html'de span içinde hardcoded olan price etiketleri) PRICES'tan replace eder.
       // Analytics inject: Meta Pixel head'e + bnTrack body sonuna. GA4/Ads zaten root'ta hardcoded.
       const withAnalytics = subPrices(html)

@@ -36,7 +36,7 @@ module.exports = {
   intro: [
     'The **halal Bosphorus cruise** is Istanbul\'s most respected dinner tour for Muslim travelers. Every piece of meat served on our boat — salmon, sea bream, chicken, lamb köfte, beef tenderloin, rib-eye — is **halal-certified** from approved suppliers. We serve the same menu to every guest; there\'s no separate "halal section" because the entire boat is halal by default.',
 
-    'Alcohol is an **optional add-on** — it\'s never pushed on guests, and seating naturally separates those who prefer a dry table. The unlimited alcohol package (+€{p.unlimited}/person) is there for guests who want it, but the included unlimited soft drinks (water, cola, fruit juice) are enough for most Muslim families. Our crew is trained to respect your preferences without making assumptions.',
+    'Alcohol is an **optional add-on** — it\'s never pushed on guests, and seating naturally separates those who prefer a dry table. A modest 2-glass alcohol package (+€{p.alcohol2}/person) is there for guests who want it, but the included unlimited soft drinks (water, cola, fruit juice) are enough for most Muslim families. Our crew is trained to respect your preferences without making assumptions.',
 
     'The **Bosphorus cruise halal-friendly** experience matters for travelers from Saudi Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan, and Morocco who want Istanbul\'s most iconic evening without compromise. TÜRSAB-licensed, 4.8★ rating, and pay-on-boat — you commit to nothing until you\'re satisfied the experience meets your standards.'
   ],
@@ -71,7 +71,7 @@ module.exports = {
     },
     {
       q: 'Do other guests drink alcohol on this cruise?',
-      a: 'Some guests add the optional alcohol package (+€{p.unlimited}/person). Tables are naturally separated — you can request a no-alcohol section. The crew does not bring alcohol unless specifically ordered by a guest. Soft drinks (unlimited) are included for everyone.'
+      a: 'Some guests add the optional 2-glass alcohol package (+€{p.alcohol2}/person). Tables are naturally separated — you can request a no-alcohol section. The crew does not bring alcohol unless specifically ordered by a guest. Soft drinks (unlimited) are included for everyone.'
     },
     {
       q: 'Is this cruise suitable for Muslim families with children?',
@@ -83,7 +83,7 @@ module.exports = {
     },
     {
       q: 'What are the prices for a Muslim family of 4 (2 adults, 2 kids)?',
-      a: 'Standard cruise: 2 × €{p.dinnerStd} + 2 × €12 (kids half price if ages 4-8) = €72. If children are under 3, they\'re free: 2 × €{p.dinnerStd} = €48. Add hotel transfer for €10/adult. Total: €48-92 for a family of 4, no prepayment, pay on boat.'
+      a: 'Dinner cruise: 2 × €{p.dinnerStd} + 2 × €12.15 (kids half price if ages 4-8) = €72.90. If children are under 3, they\'re free: 2 × €{p.dinnerStd} = €48.60. Add hotel transfer for €{p.transfer}/person (free under 3). Total: €48.60–€92.90 for a family of 4, no prepayment, pay on boat.'
     },
     {
       q: 'Does the Bosphorus cruise halal apply to hotel transfer too?',
@@ -91,7 +91,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best halal cruise in Istanbul?',
-      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person Standard, €{p.dinnerVip} VIP, daily 20:30 from Kabataş. Vegetarian options available.'
+      a: 'Bosphorus Night offers a halal-friendly cruise (TÜRSAB A-17672 licensed): all meat is halal-certified, alcohol is optional and never pushed, and Muslim families can be seated together. €{p.dinnerStd}/person, daily 20:30 from Kabataş. Vegetarian options available.'
     },
     {
       q: 'Is there a separate halal-only Bosphorus cruise?',

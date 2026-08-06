@@ -7,6 +7,8 @@
  */
 
 const STD_DESC_EN = '3-hour dinner cruise with 10 meze dishes, hot appetizer, main course (salmon / sea bass / chicken / meatballs), dessert, unlimited soft drinks, live Turkish entertainment (folk dance, belly dance, live music, DJ). Departs 20:30 from Kabataş Pier. Pay on the boat.';
+// DEPRECATED (Aug 2026): VIP package retired 2026-08-06 — single-menu lineup (DINNER_STD only).
+// Constant kept only because the deprecated VIP_I18N_DEPRECATED block below references it.
 const VIP_DESC_EN = '3-hour premium dinner cruise with 15+ premium meze, rib-eye / fillet steak main, VIP stage-side table, premium service. All entertainment included. Departs 20:30 from Kabataş Pier.';
 
 module.exports = {
@@ -115,8 +117,12 @@ module.exports = {
       lv: 'Starptautiskie tūristi, pāri, ģimenes, grupas',
     },
   },
-  // ──────────── VIP DINNER CRUISE ────────────
-  vip: {
+};
+
+// ──────────── VIP DINNER CRUISE — DEPRECATED (Aug 2026) ────────────
+// VIP package retired 2026-08-06 (single-menu lineup). Not exported, not used
+// by build-home.js. Kept temporarily for reference only.
+const VIP_I18N_DEPRECATED = {
     name: {
       en: 'VIP Bosphorus Dinner Cruise',
       tr: 'VIP Boğaz Yemekli Turu',
@@ -219,5 +225,5 @@ module.exports = {
       sl: 'Premium popotniki, posebne priložnosti, VIP gostje',
       lv: 'Premium ceļotāji, īpaši notikumi, VIP viesi',
     },
-  },
 };
+void VIP_I18N_DEPRECATED; // reference to satisfy linters; block is intentionally unused

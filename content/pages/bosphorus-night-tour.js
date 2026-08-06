@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How much is the Bosphorus night tour?',
-      a: 'Standard night tour (3 hours, dinner, show): €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). VIP with stage-front seats and premium menu: €{p.dinnerVip}/person (was €{p.dinnerVipOriginal}). Kids 0-3 free, 4-8 half price. Pay on boat.'
+      a: 'The night tour (3 hours, dinner, show): €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). Kids 0-3 free, 4-8 half price. Pay on boat.'
     },
     {
       q: 'What\'s the difference between Bosphorus night tour and dinner cruise?',

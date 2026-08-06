@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard eller VIP?',
+          h2: 'Standardpakken',
           paragraphs: [
             'Standardpakken (fra €24.30) er utmerket for de fleste reisende. Du får fullt måltid, god plass og alle showene.',
-            'VIP-pakken (fra €55.20) gir deg bord nærmere scenen, utvidet meny med 15+ mezze-sorter og eksklusiv VIP-service. Ideell for par som vil gjøre kvelden ekstra spesiell, eller for dem som setter pris på de beste plassene.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Slik bestiller du i siste liten',
           paragraphs: [
-            'Send oss en melding på WhatsApp med dato (i dag), antall gjester og om du vil ha Standard eller VIP-pakke. Vi bekrefter tilgjengeligheten på sekunder.',
+            'Send oss en melding på WhatsApp med dato (i dag) og antall gjester. Vi bekrefter tilgjengeligheten på sekunder.',
             'Siste bestillingsfrist for kveldens cruise er kl. 19:30 (1 time før avgang kl. 20:30). Kom til Kabataș-kaia senest kl. 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol er valgfritt',
           paragraphs: [
-            'Alle pakker inkluderer alkoholfri drikke. Du kan legge til 2 glass alkohol (+€{p.alcohol2}) eller ubegrenset lokalt alkohol (+€{p.unlimited}) ved bestilling.',
+            'Pakken inkluderer alkoholfri drikke. Du kan legge til 2 glass alkohol (+€{p.alcohol2}) ved bestilling.',
           ],
         },
         {

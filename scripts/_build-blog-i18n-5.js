@@ -3,7 +3,15 @@
  * Blog i18n generator — id, ms, pl, bg, ro (Sprint L1 PROMPT 5).
  * Reads EN blog/*.html as template (boilerplate) and injects translated strings.
  * Output: src/blog-i18n/{lang}/*.html (6 files × 5 langs = 30 files).
+ *
+ * DEPRECATED (Aug 2026): body texts below still describe the OLD product lineup
+ * (VIP package €55, unlimited drinks €30, hotel transfer €10). Current lineup:
+ * single DINNER_STD package, 2-glass alcohol add-on €10, hotel transfer €5.
+ * The committed src/blog-i18n/{lang}/*.html files are canonical — do NOT re-run
+ * this script; it would overwrite the corrected pages with stale content.
  */
+console.error('DEPRECATED (Aug 2026): bu script eski VIP/fiyat metinleri uretir. Calistirma — src/blog-i18n/*.html kanonik.');
+process.exit(1);
 
 const fs = require('fs');
 const path = require('path');

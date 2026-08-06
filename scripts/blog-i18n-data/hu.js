@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard vagy VIP?',
+          h2: 'A standard csomag',
           paragraphs: [
             'A standard csomag ({p.dinnerStd}-tól) kiválóan megfelel a legtöbb utazónak. Megkapod a teljes vacsorát, kényelmes helyet és minden műsort.',
-            'A VIP-csomag ({p.dinnerVip}-tól) asztalt biztosít a színpadhoz közelebb, bővített étlapot 15+ mezével és exkluzív VIP-kiszolgálást. Pároknak ideális, akik még különlegesebbé szeretnék tenni az estét, vagy azoknak, akik értékelik a legjobb helyeket.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Így foglalsz az utolsó pillanatban',
           paragraphs: [
-            'Küldj nekünk egy üzenetet WhatsAppon a dátummal (ma), a vendégek számával és azzal, hogy Standard vagy VIP csomagot szeretnél. Másodpercek alatt visszaigazoljuk a szabad helyet.',
+            'Küldj nekünk egy üzenetet WhatsAppon a dátummal (ma) és a vendégek számával. Másodpercek alatt visszaigazoljuk a szabad helyet.',
             'Az aznapi hajókázás utolsó foglalási határideje 19:30 (1 órával az indulás előtt 20:30-kor). Legkésőbb 20:15-re érj a Kabataş kikötőbe.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Az alkohol opcionális',
           paragraphs: [
-            'Minden csomag tartalmaz alkoholmentes italokat. Foglaláskor hozzáadhatsz 2 pohár alkoholt (+{p.alcohol2}) vagy korlátlan helyi alkoholt (+{p.unlimited}).',
+            'A csomag tartalmaz alkoholmentes italokat. Foglaláskor hozzáadhatsz 2 pohár alkoholt (+{p.alcohol2}).',
           ],
         },
         {

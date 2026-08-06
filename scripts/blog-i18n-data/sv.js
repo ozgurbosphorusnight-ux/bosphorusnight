@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard eller VIP?',
+          h2: 'Standardpaketet',
           paragraphs: [
             'Standardpaketet (från €{p.dinnerStd}) är utmärkt för de flesta resenärer. Du får full måltid, gott om plats och alla shower.',
-            'VIP-paketet (från €{p.dinnerVip}) ger dig bord närmare scenen, utökad meny med 15+ mezze-sorter och exklusiv VIP-service. Idealiskt för par som vill göra kvällen extra speciell, eller för dem som uppskattar de bästa platserna.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Så bokar du i sista minuten',
           paragraphs: [
-            'Skicka oss ett meddelande på WhatsApp med datum (idag), antal gäster och om du vill ha Standard- eller VIP-paketet. Vi bekräftar tillgängligheten på sekunder.',
+            'Skicka oss ett meddelande på WhatsApp med datum (idag) och antal gäster. Vi bekräftar tillgängligheten på sekunder.',
             'Sista bokningstid för kvällens kryssning är kl. 19:30 (1 timme före avgång kl. 20:30). Kom till Kabataş-kajen senast kl. 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol är valfritt',
           paragraphs: [
-            'Alla paket inkluderar alkoholfria drycker. Du kan lägga till 2 glas alkohol (+€{p.alcohol2}) eller obegränsat lokalt alkohol (+€{p.unlimited}) vid bokningen.',
+            'Paketet inkluderar alkoholfria drycker. Du kan lägga till 2 glas alkohol (+€{p.alcohol2}) vid bokningen.',
           ],
         },
         {

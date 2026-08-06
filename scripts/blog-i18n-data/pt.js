@@ -1,6 +1,6 @@
 // Portuguese (Portugal) — formal register, Portugal variant (not Brazilian).
 // LTR. "Bósforo" for Bosphorus. Brand stays Latin in URLs only.
-// Prices fixed: €24.30 / €55.20. Times fixed: 19:30 entry / 20:30 departure / 23:30 return.
+// Prices fixed: €24.30. Times fixed: 19:30 entry / 20:30 departure / 23:30 return.
 
 module.exports = {
   lang: 'pt',
@@ -67,15 +67,15 @@ module.exports = {
           'O cruzeiro parte do cais de Kabataş e navega para norte em direção ao Palácio de Dolmabahçe. O barco avança pela costa europeia, passando pelos yalı (mansões junto à costa), pelo Palácio Çırağan e pela Fortaleza de Rumeli Hisarı. Depois vira para a costa asiática, regressando com vista para o Palácio de Beylerbeyi e a frente marítima de Üsküdar.'
         ]},
         { h2: 'A Experiência do Jantar', paragraphs: [
-          'O jantar é servido como um menu de pratos turcos e internacionais. Uma selecção de entradas frias e quentes — mezze, folhas de uva recheadas, saladas da época — seguida de carne grelhada ou peixe acompanhados de arroz e legumes. A sobremesa inclui doçaria turca tradicional como baklava ou kadayıf, servida com chá ou café turco. Os refrigerantes e a água estão incluídos em todos os pacotes; as bebidas alcoólicas estão disponíveis nas opções Premium e VIP.'
+          'O jantar é servido como um menu de pratos turcos e internacionais. Uma selecção de entradas frias e quentes — mezze, folhas de uva recheadas, saladas da época — seguida de carne grelhada ou peixe acompanhados de arroz e legumes. A sobremesa inclui doçaria turca tradicional como baklava ou kadayıf, servida com chá ou café turco. Os refrigerantes e a água estão incluídos no preço; as bebidas alcoólicas estão disponíveis como suplemento opcional.'
         ]},
         { h2: 'Entretenimento ao Vivo', paragraphs: [
           'O programa de entretenimento é um dos pontos altos. Danças folclóricas turcas em trajes tradicionais coloridos, um energético espetáculo de dança oriental, música turca ao vivo por uma banda, seguida de um set de DJ que anima a noite. Alguns cruzeiros incluem também a dança Mevlevi sema (dervixe giratório) — uma tradição sufista com séculos de história. O espetáculo dura aproximadamente 90 minutos.'
         ]},
         { h2: 'Pacotes e Preços', paragraphs: [
-          'O Bósforo Noturno oferece dois pacotes principais, com bebidas, transfer do hotel e extras para ocasiões especiais:',
-          '<ul class="list-disc list-inside space-y-2 text-white/60"><li><strong class="text-white/80">Cruzeiro com Jantar Standard (a partir de €24.30)</strong> — Jantar completo de 4 pratos, refrigerantes, entretenimento ao vivo, danças folclóricas e espetáculo de dança oriental, DJ no convés superior.</li><li><strong class="text-white/80">Cruzeiro com Jantar VIP (a partir de €55.20)</strong> — Menu alargado com carnes premium como entrecosto e lombo de vaca, 15+ mezze turcos, lugares perto do palco e serviço de elevada qualidade.</li></ul>',
-          '<p class="text-white/60 text-sm">Suplementos: bebidas ilimitadas (€30/pessoa), transfer do hotel (€10/pessoa), decoração de mesa romântica (€15/reserva). Pagamento a bordo — sem pagamento antecipado.</p>',
+          'O Bósforo Noturno oferece um pacote principal, com bebidas, transfer do hotel e extras para ocasiões especiais:',
+          '<ul class="list-disc list-inside space-y-2 text-white/60"><li><strong class="text-white/80">Cruzeiro com Jantar Standard (a partir de €24.30)</strong> — Jantar completo de 4 pratos, refrigerantes, entretenimento ao vivo, danças folclóricas e espetáculo de dança oriental, DJ no convés superior.</li></ul>',
+          '<p class="text-white/60 text-sm">Suplementos: 2 copos de bebida alcoólica (€10/pessoa), transfer do hotel (€5/pessoa), decoração de mesa romântica (€15/reserva). Pagamento a bordo — sem pagamento antecipado.</p>',
           'Crianças dos 0 aos 3 anos são grátis, dos 4 aos 8 anos pagam metade do preço. Não é necessário pagamento antecipado — paga a bordo, pelo que reservar com antecedência não implica qualquer risco.'
         ]},
         { h2: 'Como Reservar', paragraphs: [
@@ -101,7 +101,7 @@ module.exports = {
         ]},
         { h2: 'A Experiência do Cruzeiro', paragraphs: [
           'O cruzeiro com jantar ao pôr-do-sol parte do cais de Kabataş aproximadamente às 17:30, com a hora ajustada sazonalmente para capturar a hora dourada no seu pico. O barco navega o estreito para norte, mostrando o Palácio de Dolmabahçe, o Palácio Çırağan, a Mesquita de Ortaköy e a Ponte do Bósforo — tudo banhado na luz quente.',
-          'À medida que o sol começa a descer serve-se o jantar. O menu é uma seleção de cozinha turca e internacional. O pacote Standard (€24.30) inclui refrigerantes; as opções Premium e VIP acrescentam bebidas alcoólicas. Quando escurece, começa o programa de entretenimento com danças folclóricas turcas, dança oriental e música ao vivo.'
+          'À medida que o sol começa a descer serve-se o jantar. O menu é uma seleção de cozinha turca e internacional. O pacote Standard (€24.30) inclui refrigerantes; as bebidas alcoólicas podem ser adicionadas como opção. Quando escurece, começa o programa de entretenimento com danças folclóricas turcas, dança oriental e música ao vivo.'
         ]},
         { h2: 'Dicas de Fotografia', paragraphs: [
           'O cruzeiro ao pôr-do-sol é um sonho para fotógrafos. Suba ao convés superior 30 minutos antes do pôr-do-sol — é quando a luz está mais quente e as cores mais vivas. Para a clássica silhueta do pôr-do-sol com minaretes, aponte para oeste (lado europeu). No telemóvel, ative o modo HDR e evite o flash.'
@@ -124,7 +124,7 @@ module.exports = {
           'Uma das perguntas mais frequentes das famílias que planeiam visitar Istambul é: "O cruzeiro com jantar no Bósforo é adequado para crianças?" A resposta é um sim convicto. De facto, muitas famílias contam-nos que o cruzeiro foi o ponto alto de toda a viagem — não apenas para os pais, mas também para as crianças.'
         ]},
         { h2: 'Política de Idades e Preços', paragraphs: [
-          'A estrutura de preços para crianças é simples e amiga das famílias. Crianças dos 0 aos 3 anos são completamente grátis — sem bilhete, sem custos. Crianças dos 4 aos 8 anos pagam metade do preço de adulto. Crianças com 9 ou mais anos pagam o mesmo que um adulto. Aplica-se tanto ao pacote Standard como ao VIP.',
+          'A estrutura de preços para crianças é simples e amiga das famílias. Crianças dos 0 aos 3 anos são completamente grátis — sem bilhete, sem custos. Crianças dos 4 aos 8 anos pagam metade do preço de adulto. Crianças com 9 ou mais anos pagam o mesmo que um adulto.',
           'Para uma família de 4 pessoas com 2 crianças entre os 4 e os 8 anos, o total do cruzeiro com jantar no Bósforo no pacote Standard é €72,90 — 2 adultos (€24,30 cada) mais 2 crianças (€12,15 cada). Um ótimo valor para uma noite memorável na água com toda a família.'
         ]},
         { h2: 'É Seguro para Crianças?', paragraphs: [
@@ -162,7 +162,7 @@ module.exports = {
         ]},
         { h2: 'Os Passeios que Decorrem Esta Noite', paragraphs: [
           'O cruzeiro com jantar padrão parte diariamente do cais de Kabataş. O horário típico: o embarque começa às 19:30, o barco parte às 20:30 aproximadamente, o cruzeiro dura cerca de 3 horas e regressa ao cais por volta das 23:30. Alguns operadores também oferecem um cruzeiro ao pôr-do-sol que parte às 17:30 e regressa até às 20:30.',
-          'Tanto o pacote Standard como o VIP estão disponíveis para reserva no próprio dia. O pacote Standard começa em €24,30 por pessoa, incluindo jantar completo de 4 pratos, refrigerantes e programa de entretenimento.'
+          'O pacote Standard está disponível para reserva no próprio dia. Começa em €24,30 por pessoa, incluindo jantar completo de 4 pratos, refrigerantes e programa de entretenimento.'
         ]},
         { h2: 'Como Chegar a Kabataş', paragraphs: [
           'Kabataş é um dos pontos mais acessíveis de Istambul. Se estiver hospedado em Sultanahmet (cidade velha), o elétrico T1 vai diretamente até Kabataş — é a última paragem. A viagem demora cerca de 25 minutos. De Taksim, pode apanhar o funicular (linha F1) que leva a Kabataş em menos de 3 minutos.',
@@ -193,7 +193,7 @@ module.exports = {
           'O Bósforo à noite é extraordinariamente fotogénico. Os palácios iluminados, as pontes decoradas com luzes coloridas, as mesquitas vistas de baixo, o horizonte da cidade refletido nas águas escuras — há dezenas de momentos que valem uma fotografia. Certifique-se de que o telemóvel está totalmente carregado antes de embarcar.'
         ]},
         { h2: '3. Chegue Pelo Menos 20 Minutos Antes', paragraphs: [
-          'A escolha de mesa é por ordem de chegada (salvo se reservou o pacote VIP com mesa à janela garantida). O embarque começa às 19:30. Chegar 20 minutos mais cedo dá-lhe a melhor hipótese de conseguir uma mesa à janela ou perto do palco.'
+          'A escolha de mesa é por ordem de chegada. O embarque começa às 19:30. Chegar 20 minutos mais cedo dá-lhe a melhor hipótese de conseguir uma mesa à janela ou perto do palco.'
         ]},
         { h2: '4. Escolha o Horário do Passeio Certo', paragraphs: [
           'Normalmente existem duas opções de cruzeiro: o cruzeiro ao pôr-do-sol (partida por volta das 17:30) e o cruzeiro com jantar (partida por volta das 20:30). O cruzeiro ao pôr-do-sol oferece a experiência da hora dourada e a transição do dia para a noite — ideal para fotógrafos e para quem prefere uma tarde mais cedo. O cruzeiro com jantar é a experiência noturna clássica.'

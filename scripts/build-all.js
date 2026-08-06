@@ -44,7 +44,7 @@ run('node scripts/build-images.js');
 // 3. HTML üretimi
 run('node scripts/build-home.js');
 run('node scripts/build-pages.js');
-run('node scripts/build-fleet.js'); // "Our Boat" / "Teknemiz" — 32 dilde Tosunpaşa sayfası
+run('node scripts/build-fleet.js'); // "Our Boat" / "Teknemiz" — 32 dilde AMOR sayfası
 run('node scripts/build-guide.js'); // "Booking Guide" / "Rehber" — 32 dilde 5-soru rehberi
 // build-blog-kabatas runs AFTER blog/ copy below (otherwise blog/ copy overwrites generated files)
 // build-seo.js DELIBERATELY moved below — it scans dist/ via existsSync, so it

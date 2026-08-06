@@ -15,8 +15,8 @@
   // Baked fallback config — used until /webchat/config answers (or if it never does).
   var cfg = {
     prices: {
-      std: 24.30, stdOrig: 40.50, vip: 55.20, vipOrig: 92,
-      alcohol2: 10, alcoholUnlimited: 25, transfer: 10
+      std: 24.30, stdOrig: 40.50,
+      alcohol2: 10, transfer: 5
     },
     times: { boarding: '19:30', departure: '20:30', ret: '23:30' },
     wa_number: '905322442922',
@@ -38,8 +38,8 @@
     'btn.channelSub': 'All our videos on our YouTube channel',
     'pill': 'AI Assistant',
     'chip.howto': 'How to book',
-    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n• VIP Dinner Cruise — <b>€{vipPrice}</b> per person (normally €{vipOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nEvery group has its own private reserved table — no sharing with strangers.\nNo prepayment — you pay on the boat.',
-    'ans.menu': '<span class="bnwc-bt">Standard menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\n<span class="bnwc-bt">VIP menu:</span> 15+ premium mezes, rib-eye & beef tenderloin mains, stage-front table, VIP service.\n\nBoth include the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
+    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nEvery group has its own private reserved table — no sharing with strangers.\nNo prepayment — you pay on the boat.',
+    'ans.menu': '<span class="bnwc-bt">Dinner menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\nIncludes the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
     'ans.time': '<span class="bnwc-bt">We sail every evening from Kabataş Pier.</span>\n• Boarding: from {boarding}\n• Departure: {departure}\n• Return: around {return}\n\nAbout 3 hours on the Bosphorus.',
     'ans.meeting': '<span class="bnwc-bt">Finding us is easy</span> — we\'re right at Kabataş Pier.\nThese short videos walk you there step by step:',
     'ans.meetingReserve': 'One friendly reminder — tables are assigned by reservation, so don\'t forget to book before you come 😊',
@@ -47,7 +47,7 @@
     'ans.transfer': '<span class="bnwc-bt">Hotel transfer is €{transfer} per person.</span>\nIt depends on your hotel\'s location — to check if your hotel is covered, message us on WhatsApp or start a booking on the site and enter your hotel name; it checks your area instantly.\n\nIf transfer isn\'t available for your area, you can meet us directly at Kabataş Pier.',
     'ans.halal': 'Yes — our menu is Muslim-friendly.\nAll meat is halal, and alcohol is never served by default — it\'s only an optional extra for tables that request it. Unlimited soft drinks are included for everyone.',
     'ans.howto': 'Booking takes about a minute and there\'s <b>no prepayment</b> — you pay on the boat.\nTwo easy ways:',
-    'ans.alcohol': 'Unlimited <b>soft drinks</b> are already included.\nAlcohol is an optional add-on:\n• 2 glasses — €{alc2} per person\n• Unlimited package — €{alcUnl} per person',
+    'ans.alcohol': 'Unlimited <b>soft drinks</b> are already included.\nAlcohol is an optional add-on:\n• 2 glasses — €{alc2} per person',
     'ans.kids': '<span class="bnwc-bt">Children pricing:</span>\n• 0–3 years — free\n• 4–8 years — 50% off\n• 9+ — full price',
     'ans.cancel': 'Plans change — no problem.\nCancellation is <b>free up to 2 hours before departure</b>, and since there\'s no prepayment, there\'s nothing to refund.',
     'ans.payment': 'There\'s <b>no prepayment and no deposit</b>.\nYou simply pay on the boat on the evening of your cruise.',
@@ -242,8 +242,8 @@
     var p = cfg.prices, t = cfg.times, s = String(text);
     var tl = (getLang() === 'tr' && cfg.prices_try && cfg.prices_try.std != null) ? cfg.prices_try : null;
     var map = {
-      stdPrice: 'std', stdOrig: 'stdOrig', vipPrice: 'vip', vipOrig: 'vipOrig',
-      alc2: 'alcohol2', alcUnl: 'alcoholUnlimited', transfer: 'transfer'
+      stdPrice: 'std', stdOrig: 'stdOrig',
+      alc2: 'alcohol2', transfer: 'transfer'
     };
     Object.keys(map).forEach(function (ph) {
       var k = map[ph];
@@ -503,10 +503,7 @@
         var p = d.prices;
         if (p.std != null) cfg.prices.std = p.std;
         if (p.stdOrig != null) cfg.prices.stdOrig = p.stdOrig;
-        if (p.vip != null) cfg.prices.vip = p.vip;
-        if (p.vipOrig != null) cfg.prices.vipOrig = p.vipOrig;
         if (p.alcohol2 != null) cfg.prices.alcohol2 = p.alcohol2;
-        if (p.alcoholUnlimited != null) cfg.prices.alcoholUnlimited = p.alcoholUnlimited;
         if (p.transfer != null) cfg.prices.transfer = p.transfer;
       }
       if (d.times) {

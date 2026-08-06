@@ -95,7 +95,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Kuinka romanttinen pöytäkoristelu varataan?', a: 'Ilmoita varauksessasi tai WhatsApp-viestissä, että haluat romanttisen koristelun ({p.romantic} lisä). Järjestämme kynttilät, kukat ja erityisen koristelun.' },
-      { q: 'Voimmeko varata yksityisen pöydän?', a: 'Varaamme teille pöydän ikkunan vierestä tai kannen reunalta parhaalla mahdollisella näkymällä. Yksityinen tila on mahdollista VIP-paketilla.' },
+      { q: 'Voimmeko varata yksityisen pöydän?', a: 'Varaamme teille pöydän ikkunan vierestä tai kannen reunalta parhaalla mahdollisella näkymällä. Romanttinen pöytäkoristelu (+{p.romantic}) tekee pöydästänne erityisen.' },
       { q: 'Sopiiko ristely kosintaan?', a: 'Ehdottomasti! Ilmoita etukäteen ja autamme tekemään hetkestä unohtumattoman. Tämä on eskalatioasia – järjestämme erityisen avun.' },
       { q: 'Voidaanko ottaa omaa viiniä mukaan?', a: 'Laivassamme on juomia saatavilla, ja voit lisätä alkoholipaketteja varaukseen.' },
       { q: 'Onko laivassa tanssilattia?', a: 'Kyllä, laivalla on tanssilattia ja elävää musiikkia illan aikana.' }
@@ -145,37 +145,37 @@ module.exports = {
 
   'bosphorus-vip': {
     meta: {
-      title: 'VIP Bosporinsalmen ristely Istanbul | Premium {p.dinnerVip}',
-      description: 'VIP-illallisristely Bosporinsalmella Istanbulissa. Premium-ruoka, parempi sijainti lavalle, VIP-palvelu. Unohtumaton luksuskokemus. Varaa {p.dinnerVip} alkaen.'
+      title: 'Bosporin VIP-kokemus alkaen €{p.dinnerStd} — premium-illallinen Bosporilla',
+      description: 'Bosporin illallisristeily VIP-tasolla: täysi turkkilainen menu, live-esitykset, pöytä lavan lähellä lisävalintana, huomaavainen palvelu. €{p.dinnerStdOriginal} → €{p.dinnerStd}. Maksu laivalla, ilmainen peruutus.'
     },
     hero: {
-      h1: 'VIP Bosporinsalmen illallisristely',
-      subtitle: 'Luksusristely parhaalla paikalla – premium-ruoka, VIP-palvelu ja ensiluokkainen näkymä',
-      badge: 'VIP-paikka lavan läheisyydessä'
+      h1: 'Bosporin VIP-kokemus — illallisristeily',
+      subtitle: 'Yksi menu, yksi taso: premium kaikille. Kolmen tunnin ilta Bosporilla AMORin kyydissä — runsas turkkilainen illallinen, live-esitykset lavalla ja halutessasi yksityinen pöytä lavan lähellä. Emme myy erillistä "VIP-luokkaa" — tarjoamme parhaamme jokaiselle vieraalle.',
+      badge: '40% ALENNUS · Yksi menu, premium-taso · Maksu laivalla'
     },
     intro: [
-      'VIP-illallisristely Bosporinsalmella on ulottuvuus ylellisyyteen. VIP-paketissa saat paremman pöydän lähempänä lavaa sekä laajemman ja laadukkaamman ruokavalikoiman.',
-      'VIP-menu sisältää 15+ premium-mezoa, pääruoan lisänä rib-eye tai naudan filee sekä VIP-palvelun. Kaikki muut paketit sisältyvät hintaan.',
-      'Hinta on {p.dinnerVip} per henkilö, alkuperäinen hinta {p.dinnerVipOriginal}. Maksa vasta laivalla.'
+      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte), jäätelökakku ja rajattomasti virvoitusjuomia. Koko ohjelma sisältyy myös hintaan — pyörivien dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ — kaikki hintaan €{p.dinnerStd}/henkilö.',
+      'VIP-tunnelma alkaa pöydästäsi. Jos haluat istua mahdollisimman lähellä lavaa ja maisemia, lisää **yksityinen pöytä lavan lähellä** (+€{p.romantic}/pöytä), niin paikkasi varataan etukäteen — paras kulma dervisseihin, kansantansseihin ja valaistuun Bosporiin. Parien, juhlien ja valokuvaajien suosikkivalinta.',
+      'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 19:30, lähtö 20:30, paluu 23:30) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
     ],
     highlights: [
-      { icon: '⭐', text: 'VIP-pöytä lähinnä lavaa – paras näkymä esityksille' },
-      { icon: '🥩', text: '15+ premium-mezoa + rib-eye tai naudan filee lisänä' },
-      { icon: '🍾', text: 'VIP-palvelu koko illan ajan' },
-      { icon: '🌉', text: 'Upea näkymä Bosporinsalmelle koko matkan ajan' },
-      { icon: '💳', text: 'Maksa laivalla – hinta {p.dinnerVip} (säästät {p.dinnerVipOriginal} sijaan)' }
+      { title: 'Yksi menu, premium-taso', desc: 'Erillistä "VIP-menua" ei ole — koska ainoa menumme on jo sillä tasolla. 10 lajia mezejä, lämmin alkuruoka, 4 pääruokavaihtoehtoa, jälkiruoka ja rajattomasti virvoitusjuomia, tarjoiltuna samalla huolella jokaiseen pöytään.' },
+      { title: 'Yksityinen pöytä lavan lähellä (+€{p.romantic}/pöytä)', desc: 'Dervisseille, kansantansseille ja vatsatanssille lähimmät pöydät varataan etukäteen. Erinomainen näkymä lavalle ja Bosporille. Pöytäsi on yksityinen, ei jaettu.' },
+      { title: 'Huomaavainen pöytäpalvelu', desc: 'Tiimimme palvelee sinua pöydässä: ruokalajit, menuvinkit, lisäjuomat, erityistoiveet. Ei jonottamista ruuhkassa.' },
+      { title: '40% ALENNUS — ennen €{p.dinnerStdOriginal}, nyt €{p.dinnerStd}', desc: 'Suoravarauksen hinta: €{p.dinnerStd}/henkilö (listahinta €{p.dinnerStdOriginal}). Maksu laivalla, ei ennakkomaksua. Ilmainen peruutus 2 tuntia ennen lähtöä asti.' }
     ],
     faq: [
-      { q: 'Mitä VIP-menu sisältää verrattuna perusmenuun?', a: 'VIP-menu sisältää 15+ premium-mezoa (perusmenussa 10), pääruoan lisänä rib-eye tai naudan filee, sekä VIP-palvelun koko illan ajan.' },
-      { q: 'Mikä on VIP-pöydän sijainti?', a: 'VIP-pöydät sijaitsevat lähinnä lavaa, joten esitykset näkyvät parhaiten. Myös ikkunapaikat ovat VIP-matkustajien käytettävissä.' },
-      { q: 'Onko VIP-paketissa rajaton alkoholi?', a: 'Alkoholia voi lisätä erikseen: 2 lasia {p.alcohol2} tai rajaton {p.unlimited} per henkilö.' },
-      { q: 'Miten VIP poikkeaa peruspaketista?', a: 'Parempi pöydän sijainti, laajempi ruokavalikoima, VIP-palvelu ja premium-tunnelma koko illan.' },
-      { q: 'Voiko VIP-paketin yhdistää hotellisiirtoon?', a: 'Kyllä, hotellikuljetus on saatavilla lisähintaan {p.transfer} per henkilö.' }
+      { q: 'Myyttekö "VIP-pakettia"? Mikä ero on perusvaihtoehtoon?', a: 'Emme myy erillistä VIP-pakettia — meillä on yksi menu, joka tarjoillaan kaikille samalla premium-tasolla. Se, mitä kutsumme "VIP-kokemukseksi", on illan räätälöiminen sinulle: yksityinen pöytä lavan lähellä (+€{p.romantic}/pöytä), huomaavainen pöytäpalvelu ja valinnaiset juomalisät. Risteily kestää 3 tuntia, €{p.dinnerStd}/henkilö.' },
+      { q: 'Onko €{p.dinnerStd} todella 40% alennus?', a: 'Kyllä — listahintamme on €{p.dinnerStdOriginal}/henkilö. €{p.dinnerStd} on suoravarauksen hinta ilman välikäsien komissioita. Maksat laivalla, eikä ennakkomaksua peritä.' },
+      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte) ja jäätelökakku jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Ohjelma sisältyy: dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ.' },
+      { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei — alkoholi on erillinen lisä: 2 lasia paikallista viiniä tai olutta hintaan +€{p.alcohol2}/henkilö. Virvoitusjuomat sisältyvät rajattomasti ja maksutta. Premium-tuontijuomat laskutetaan erikseen laivalla.' },
+      { q: 'Miten varmistan pöydän lavan läheltä?', a: 'Valitse varauksen yhteydessä lisä "yksityinen pöytä lavan lähellä" (+€{p.romantic}/pöytä) — pöytä varataan nimellesi. Parhaat paikat menevät ennakkovarauksille, joten kannattaa lisätä se ennen risteilypäivää.' },
+      { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 19:30, lähtö 20:30, paluu 23:30. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }
     ],
     cta: {
-      primary: 'Varaa VIP-paikka',
-      secondary: 'Vertaa VIP ja perus',
-      tertiary: 'Kysy lisää WhatsAppilla'
+      primary: 'Varaa pöytäsi · Maksu laivalla',
+      secondary: 'Ennen €{p.dinnerStdOriginal}, nyt €{p.dinnerStd} · Ilmainen peruutus 2 tuntia ennen',
+      tertiary: 'Lisää yksityinen pöytä lavan lähellä (+€{p.romantic})'
     }
   },
 
@@ -192,13 +192,13 @@ module.exports = {
     intro: [
       'Yksityinen ristely Bosporinsalmella on täydellinen ratkaisu häihin, yritysjuhliin, syntymäpäiville tai muihin erityistilaisuuksiin. Voit varata koko aluksen tai oman osion.',
       'Yli 30 hengen ryhmät vaativat eskaloimisen – otamme yhteyttä ja sovitaan yksityiskohdista. Pienemmat yksityiset kokoonpanot voidaan järjestää suoraan.',
-      'Laivalla on kapasiteettia jopa 600 matkustajalle. Ota yhteyttä WhatsAppilla tai sähköpostilla tarjouspyyntöä varten.'
+      'Laivalla on kapasiteettia jopa 400 matkustajalle. Ota yhteyttä WhatsAppilla tai sähköpostilla tarjouspyyntöä varten.'
     ],
     highlights: [
       { icon: '🚢', text: 'Koko alus tai oma osio – räätälöity sinun tilaisuudellesi' },
       { icon: '💍', text: 'Häät, kihlajaiset, syntymäpäivät ja yritysjuhlat' },
       { icon: '🎊', text: 'Oma menuvalikoima, koristelu ja ohjelma' },
-      { icon: '👥', text: 'Sopii pienistä ryhmistä 600 henkilöön' },
+      { icon: '👥', text: 'Sopii pienistä ryhmistä 400 henkilöön' },
       { icon: '📞', text: 'Ota yhteyttä – räätälöidään yhdessä täydellinen ilta' }
     ],
     faq: [
@@ -242,7 +242,7 @@ module.exports = {
       { q: 'Voiko järjestää yllätyksen kumppanille?', a: 'Kyllä, ilmoita etukäteen WhatsAppilla ja autamme tekemään hetkestä erityisen.' },
       { q: 'Onko romanttinen koristelu pakollinen?', a: 'Ei, se on lisävaihtoehto {p.romantic}. Perusristely on jo itsessään romanttinen.' },
       { q: 'Voiko ottaa mukaan oman samppanjan?', a: 'Laivalla on juomat saatavilla. Ulkopuolisia juomia ei voi tuoda mukaan.' },
-      { q: 'Onko laivassa yksityistä paikkaa pariskunnille?', a: 'Laivalla on eriryhmiä, mutta tunnelma on romanttinen kaikille. VIP-paketti tarjoaa paremman sijainnin.' }
+      { q: 'Onko laivassa yksityistä paikkaa pariskunnille?', a: 'Laivalla on eriryhmiä, mutta tunnelma on romanttinen kaikille. Romanttinen pöytäkoristelu (+{p.romantic}) tuo lisää yksityisyyttä.' }
     ],
     cta: {
       primary: 'Varaa pariskuntaristely',
@@ -275,7 +275,7 @@ module.exports = {
     faq: [
       { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 19:30 Kabataşin laiturissa, laiva lähtee 20:30 ja palaa noin 23:30. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
       { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 20:30, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
-      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Vakioristeily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). VIP-vaihtoehto lavan edessä olevine pöytineen ja premium-mezeineen maksaa €{p.dinnerVip}/hlö. Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-8 v puoleen hintaan.' },
+      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-8 v puoleen hintaan.' },
       { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 20:30 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
       { q: 'Mitä auringonlaskuristeilylle kannattaa ottaa mukaan?', a: 'Älypuhelin tai kamera – kultainen hetki ja valaistut sillat suorastaan kutsuvat kuvaamaan. Kevyt takki: tuuli voimistuu kannella auringonlaskun jälkeen. Siisti rento pukeutuminen riittää – kyseessä on illallinen, mutta tiukkaa pukukoodia ei ole.' },
       { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 20:30–23:30, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 23:30.' },
@@ -349,7 +349,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Mistä illallisristely lähtee?', a: 'Kabataşin laiturista Istanbulissa. Portti avautuu 19:30, lähtö 20:30.' },
-      { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei, peruspaketissa juomat ovat alkoholittomia. Alkoholia voi lisätä: 2 lasia {p.alcohol2} tai rajaton {p.unlimited}.' },
+      { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei, hintaan sisältyvät juomat ovat alkoholittomia. Alkoholia voi lisätä: 2 lasia {p.alcohol2}.' },
       { q: 'Onko laivalla kasvisruokaa?', a: 'Mezot ovat pääosin kasvispitoisia. Kysy pääruoan kasvisvaihtoehdoista etukäteen.' },
       { q: 'Kuinka paljon etukäteen pitää saapua?', a: 'Portti avautuu 19:30. Suosittelemme saapumaan viimeistään 20:15.' },
       { q: 'Onko lipun varaus pakollinen?', a: 'Varaus on erittäin suositeltavaa paikan varmistamiseksi, erityisesti viikonloppuisin.' }
@@ -552,27 +552,27 @@ module.exports = {
       badge: 'Hinta {p.dinnerStd} – illallinen mukana'
     },
     intro: [
-      'Bosporinsalmen illallisristelyn hinta Istanbulissa on {p.dinnerStd} per henkilö (perus) tai {p.dinnerVip} per henkilö (VIP). Hintaan sisältyy täysi illallinen, esitykset ja ristely.',
+      'Bosporinsalmen illallisristelyn hinta Istanbulissa on {p.dinnerStd} per henkilö. Hintaan sisältyy täysi illallinen, esitykset ja ristely.',
       'Ei piilomaksuja – maksat laivalla juuri sen hinnan, jonka näet. Alkoholi on lisävaihtoehto.',
-      'Lisäpalvelut: hotellikuljetus {p.transfer}, romanttinen pöytäkoristelu {p.romantic}, 2 lasia alkoholia {p.alcohol2}, rajaton alkoholi {p.unlimited}.'
+      'Lisäpalvelut: hotellikuljetus {p.transfer}, romanttinen pöytäkoristelu {p.romantic}, 2 lasia alkoholia {p.alcohol2}.'
     ],
     highlights: [
-      { icon: '💰', text: 'Perus {p.dinnerStd} – VIP {p.dinnerVip} per henkilö' },
+      { icon: '💰', text: '{p.dinnerStd} per henkilö – yksi selkeä hinta' },
       { icon: '✅', text: 'Hintaan sisältyy täysi illallinen ja esitykset' },
       { icon: '🚫', text: 'Ei piilomaksuja – maksa laivalla' },
       { icon: '🏨', text: 'Hotellikuljetus saatavilla +{p.transfer} per henkilö' },
-      { icon: '🍾', text: 'Alkoholi lisänä: 2 lasia {p.alcohol2} tai rajaton {p.unlimited}' }
+      { icon: '🍾', text: 'Alkoholi lisänä: 2 lasia {p.alcohol2}' }
     ],
     faq: [
-      { q: 'Mitä peruspaketissa on?', a: 'Illallinen (10 mezoa, pääruoka, jälkiruoka), alkoholittomat juomat, esitysohjelma ja 3 tunnin ristely.' },
-      { q: 'Mitä VIP-paketissa on lisää?', a: 'Parempi pöydän sijainti lavan lähellä, laajempi menu (15+ mezoa + rib-eye tai naudan filee), VIP-palvelu.' },
+      { q: 'Mitä hintaan sisältyy?', a: 'Illallinen (10 mezoa, pääruoka, jälkiruoka), alkoholittomat juomat, esitysohjelma ja 3 tunnin ristely.' },
+      { q: 'Pitääkö maksaa etukäteen?', a: 'Ei — varaus vahvistetaan ilman ennakkomaksua ja maksat vasta laivalla. Ilmainen peruutus 2 tuntiin asti ennen lähtöä.' },
       { q: 'Onko hotellikuljetus pakollinen?', a: 'Ei, hotellikuljetus on valinnainen lisä {p.transfer} per henkilö. Voit myös tulla itse Kabataşiin.' },
       { q: 'Onko lapsille alennus?', a: 'Kyllä: 0–3-vuotiaat ilmaiseksi, 4–8-vuotiaat 50 % alennuksella.' },
       { q: 'Hyväksytäänkö kaikki maksutavat laivalla?', a: 'Laivalla hyväksytään käteinen ja pankkikortit. Kysy tarkemmin varauksen yhteydessä.' }
     ],
     cta: {
-      primary: 'Varaa perusristely {p.dinnerStd}',
-      secondary: 'Varaa VIP-ristely {p.dinnerVip}',
+      primary: 'Varaa ristely {p.dinnerStd}',
+      secondary: 'Maksa laivalla – ei ennakkomaksua',
       tertiary: 'Kysy hinnoista WhatsAppilla'
     }
   },

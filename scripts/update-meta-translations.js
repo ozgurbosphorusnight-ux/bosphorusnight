@@ -14,7 +14,14 @@
  *   - Vague claims like "best", "top-rated"
  *
  * Run: node scripts/update-meta-translations.js
+ *
+ * DEPRECATED (Aug 2026): already applied; meta texts below still reference the
+ * OLD lineup (VIP €{p.dinnerVip}, dinnerVipOriginal). Current lineup: single
+ * DINNER_STD, transfer €5. Do NOT re-run — it would overwrite corrected
+ * translation metas with stale VIP copy.
  */
+console.error('DEPRECATED (Aug 2026): eski VIP/fiyat metinleri icerir, zaten uygulanmis. Calistirma.');
+process.exit(1);
 
 const fs = require('fs');
 const path = require('path');

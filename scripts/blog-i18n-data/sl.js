@@ -83,10 +83,9 @@ module.exports = {
           ],
         },
         {
-          h2: 'Standard ali VIP?',
+          h2: 'Standardni paket',
           paragraphs: [
             'Standardni paket (od €24.30) je odličen za večino popotnikov. Dobiš popoln obrok, dovolj prostora in vse predstave.',
-            'VIP paket (od €55.20) ti da mizo bližje odru, razširjen meni s 15+ vrstami meze in ekskluzivno VIP postrežbo. Idealno za pare, ki želijo večer narediti še posebnejši, ali za tiste, ki cenijo najboljše sedeže.',
           ],
         },
         {
@@ -180,7 +179,7 @@ module.exports = {
         {
           h2: 'Kako rezervirati v zadnjem trenutku',
           paragraphs: [
-            'Pošlji nam sporočilo na WhatsApp z datumom (danes), številom gostov in tem, ali želiš Standard ali VIP paket. Razpoložljivost potrdimo v nekaj sekundah.',
+            'Pošlji nam sporočilo na WhatsApp z datumom (danes) in številom gostov. Razpoložljivost potrdimo v nekaj sekundah.',
             'Zadnji rok za rezervacijo za nocojšnjo plovbo je 19:30 (1 uro pred odhodom ob 20:30). Pridi na pomol Kabataş najpozneje do 20:15.',
           ],
         },
@@ -237,7 +236,7 @@ module.exports = {
         {
           h2: '5. Alkohol je izbiren',
           paragraphs: [
-            'Vsi paketi vključujejo brezalkoholne pijače. Pri rezervaciji lahko dodaš 2 kozarca alkohola (+€{p.alcohol2}) ali neomejen lokalni alkohol (+€{p.unlimited}).',
+            'Paket vključuje brezalkoholne pijače. Pri rezervaciji lahko dodaš 2 kozarca alkohola (+€{p.alcohol2}).',
           ],
         },
         {

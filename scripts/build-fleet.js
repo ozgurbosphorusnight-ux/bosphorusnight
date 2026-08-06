@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Build "Our Boat" (Tosunpaşa) page in all available languages.
+ * Build "Our Boat" (AMOR) page in all available languages.
  * Reads: templates/fleet.html + data/fleet-i18n.json
  * Writes: dist/{url_prefix}{slug}.html for each lang where content is non-null.
  * Skips languages with content: null.

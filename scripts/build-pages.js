@@ -86,16 +86,15 @@ const SLUGS = [
 // Price placeholders. Runtime site also fetches from Supabase via fetchDynamicPrices().
 // Values here are the build-time fallbacks (also used for meta tags / SSR snapshot).
 // Canonical source: Supabase packages.price_eur (CLAUDE.md §3 — kanonik kaynak DB).
-// Dinner fiyatları STRING. Özgür kararı 31 May: trailing zero YOK → "24.3"/"55.2".
+// Dinner fiyatı STRING. Özgür kararı 31 May: trailing zero YOK → "24.3".
+// VIP (dinnerVip 55.2 / dinnerVipOriginal 92) + unlimited alcohol (25) retired 2026-08-06 —
+// single-menu lineup. Temporary: Ozgur will bring VIP back later; re-add the keys then.
 // Keep in sync with build-home.js PRICES.
 const PRICES = {
   dinnerStd: '24.3',
   dinnerStdOriginal: 40.5,
-  dinnerVip: '55.2',
-  dinnerVipOriginal: 92,
   alcohol2: 10,
-  unlimited: 25,
-  transfer: 10,
+  transfer: 5,
   romantic: 15
 };
 
@@ -175,12 +174,11 @@ function injectOgLocale(html, lang) {
   );
 }
 
-// Bug #1 sync: T çevirilerinde literal "€24"/"€55" kalmış olabilir → PRICES'tan canlı çek.
+// Bug #1 sync: T çevirilerinde literal "€24" kalmış olabilir → PRICES'tan canlı çek.
 // (?!\.\d|\d) cümle sonu noktasını match eder ("€24."), "€24.30" / "€243" reject.
 const subPrices = (s) => s
   .replace(/\{p\.(\w+)\}/g, (_, k) => PRICES[k] ?? '??')
-  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`)
-  .replace(/€55(?!\.\d|\d)/g, `€${PRICES.dinnerVip}`);
+  .replace(/€24(?!\.\d|\d)/g, `€${PRICES.dinnerStd}`);
 const md = (s) => s.replace(/\*\*(.+?)\*\*/g, '<strong class="text-gold">$1</strong>');
 const fix = (s) => md(subPrices(s));
 
@@ -280,7 +278,7 @@ function buildSchemaLd(page, lang, slug) {
       name: 'Bosphorus Night',
       url: SITE_URL,
       telephone: '+90 532 244 29 22',
-      priceRange: `€${PRICES.dinnerStd} - €${PRICES.dinnerVip}`,
+      priceRange: `€${PRICES.dinnerStd}`,
       image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
       address: {
         '@type': 'PostalAddress',
@@ -327,8 +325,8 @@ function buildSchemaLd(page, lang, slug) {
     offers: {
       '@type': 'Offer',
       priceCurrency: 'EUR',
-      // VIP landing sells DINNER_VIP; every other slug's lead offer is DINNER_STD
-      price: String(slug === 'bosphorus-vip' ? PRICES.dinnerVip : PRICES.dinnerStd),
+      // Single-menu lineup (VIP retired 2026-08-06): every slug's lead offer is DINNER_STD
+      price: String(PRICES.dinnerStd),
       availability: 'https://schema.org/InStock',
       url,
       validFrom: new Date().toISOString().split('T')[0]
@@ -638,7 +636,7 @@ function buildHtml(slug, lang, template) {
 
   // Replace external <script src="/js/translations.js"></script> (671 KB) with
   // an inline bootstrap that exposes only this page's language + EN fallback.
-  // subPrices is passed so T values with {p.dinnerStd}/€24/€55 placeholders are
+  // subPrices is passed so T values with {p.dinnerStd}/€24 placeholders are
   // resolved at build time, not left for runtime.
   const inlineT = buildInlineTScript(UI_T, LANGUAGES, lang, subPrices);
   html = replaceTranslationsScriptTag(html, inlineT);
@@ -768,7 +766,7 @@ function main() {
     for (const slug of SLUGS) {
       try {
         const html = buildHtml(slug, lang, template);
-        // Final pass: subPrices tüm HTML'i tarar, kaynak index.html'deki literal "€24"/"€55"
+        // Final pass: subPrices tüm HTML'i tarar, kaynak index.html'deki literal "€24"
         // span'larını PRICES'tan canlı değere çevirir (Bug #1 sync).
         // Analytics inject: Meta Pixel head'e + bnTrack body sonuna. GA4/Ads zaten root template'de.
         const withAnalytics = subPrices(html)

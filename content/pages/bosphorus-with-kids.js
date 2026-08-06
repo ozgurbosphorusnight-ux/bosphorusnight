@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'What\'s the kids pricing for the Bosphorus cruise?',
-      a: 'Children **0-3 years: FREE** (no charge, no fee). **4-8 years: 50% off** the adult price — so €{p.dinnerStd}/2 = €12 per child on the Standard cruise. **9+ years: full adult price.** Hotel transfer is free for ages 0-3 and standard (€{p.transfer}/person) for 4+.'
+      a: 'Children **0-3 years: FREE** (no charge, no fee). **4-8 years: 50% off** the adult price — so €{p.dinnerStd}/2 = €12.15 per child. **9+ years: full adult price.** Hotel transfer is free for ages 0-3 and standard (€{p.transfer}/person) for 4+.'
     },
     {
       q: 'Is there a kids menu on the cruise?',

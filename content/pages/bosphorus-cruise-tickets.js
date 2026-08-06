@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise Tickets from €{p.dinnerStd} — Pay on Boat, No Prepayment',
-    description: 'Direct Bosphorus cruise tickets. Standard €{p.dinnerStd}, VIP €{p.dinnerVip}. No prepayment, pay on boat. Free cancellation. 11,317 reviews.\'s seats often sell out — book before 18:00.'
+    description: 'Direct Bosphorus cruise tickets from €{p.dinnerStd}/person. No prepayment, pay on boat. Free cancellation. 11,317 reviews. Tonight\'s seats often sell out — book before 18:00.'
   },
 
   hero: {
@@ -33,9 +33,9 @@ module.exports = {
   },
 
   intro: [
-    'Looking for **Bosphorus cruise tickets**? Buy direct. Our tickets are €{p.dinnerStd} (Standard) or €{p.dinnerVip} (VIP) — 40% off the regular rate (€{p.dinnerStdOriginal} and €{p.dinnerVipOriginal}). Third-party booking sites typically add 20-40% commission. By booking direct, you save — and you can still pay on the boat.',
+    'Looking for **Bosphorus cruise tickets**? Buy direct. Our ticket is €{p.dinnerStd}/person — 40% off the regular rate (€{p.dinnerStdOriginal}). Third-party booking sites typically add 20-40% commission. By booking direct, you save — and you can still pay on the boat.',
 
-    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, package, contact), we confirm via WhatsApp / Telegram instantly, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
+    'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, contact), we confirm via WhatsApp / Telegram instantly, you show up at Kabataş Pier at 19:30, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
 
     'Whether you\'re booking tonight\'s dinner cruise or reserving for a specific date next week, **Bosphorus cruise tickets direct** is the fastest way. 4.8★ rated, TÜRSAB-licensed (A-17672), halal-certified menu, and supports hotel transfer and alcohol add-ons.'
   ],
@@ -44,7 +44,7 @@ module.exports = {
     {
       icon: 'direct',
       title: 'Direct booking — no middleman fees',
-      desc: '€{p.dinnerStd} Standard, €{p.dinnerVip} VIP. Third-party sites charge €30-80+ for the same cruise. You save by booking directly with us. No hidden fees, no commission markup.'
+      desc: '€{p.dinnerStd}/person, one transparent price. Third-party sites charge €30-80+ for the same cruise. You save by booking directly with us. No hidden fees, no commission markup.'
     },
     {
       icon: 'pay',
@@ -59,14 +59,14 @@ module.exports = {
     {
       icon: 'discount',
       title: '40% OFF current launch price',
-      desc: 'Standard was €{p.dinnerStdOriginal}, now €{p.dinnerStd}. VIP was €{p.dinnerVipOriginal}, now €{p.dinnerVip}. 40% off because you\'re booking direct. Not a time-limited gimmick — our standing direct-booking rate.'
+      desc: 'Was €{p.dinnerStdOriginal}, now €{p.dinnerStd}. 40% off because you\'re booking direct. Not a time-limited gimmick — our standing direct-booking rate.'
     }
   ],
 
   faq: [
     {
       q: 'How much do Bosphorus cruise tickets cost?',
-      a: 'Standard: €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). VIP: €{p.dinnerVip}/person (regular €{p.dinnerVipOriginal}). Includes 3-hour cruise, multi-course Turkish dinner, live folklore show, unlimited soft drinks. Kids 0-3 free, 4-8 at 50% off. Pay on boat — no prepayment.'
+      a: '€{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Includes 3-hour cruise, multi-course Turkish dinner, live folklore show, unlimited soft drinks. Kids 0-3 free, 4-8 at 50% off. Pay on boat — no prepayment.'
     },
     {
       q: 'Where can I buy Bosphorus cruise tickets?',
@@ -86,7 +86,7 @@ module.exports = {
     },
     {
       q: 'Are kids\' Bosphorus cruise tickets free?',
-      a: 'Children **0-3 sail completely free** (no charge, no fee, including transfer). Ages **4-8 at 50% off** (€{p.dinnerStd}/2 = €12 on Standard). Ages **9+ full adult price**. Prices capped and transparent — no "infant surcharge" tricks.'
+      a: 'Children **0-3 sail completely free** (no charge, no fee, including transfer). Ages **4-8 at 50% off** (€{p.dinnerStd}/2 = €12.15). Ages **9+ full adult price**. Prices capped and transparent — no "infant surcharge" tricks.'
     },
     {
       q: 'Are Bosphorus cruise tickets cheaper online or at the dock?',
