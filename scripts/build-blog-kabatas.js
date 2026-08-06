@@ -140,7 +140,7 @@ function main() {
   let skipped = 0;
 
   for (const [postKey, post] of Object.entries(posts)) {
-    const heroImage = heroImages[postKey] || 'exterior-pier-sunset.webp';
+    const heroImage = heroImages[postKey] || 'amor-bosphorus-cruise-boat-kabatas-pier-istanbul.webp';
     const hreflangBlock = buildHreflangBlock(post);
 
     for (const [code, data] of Object.entries(post.languages)) {

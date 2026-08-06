@@ -3,8 +3,8 @@
     "description": "Kabataş blog posts (2 posts × 32 languages). Used by scripts/build-blog-kabatas.js. Each post has its own canonical key with localized slug + content per language. Languages with content: TR, EN. Others have skeleton — add content via batch translation.",
     "lastUpdated": "2026-05-26",
     "hero_images": {
-      "how-to-reach": "exterior-pier-sunset.webp",
-      "what-to-do-near": "exterior-tosunpasa-wide.webp"
+      "how-to-reach": "amor-bosphorus-cruise-boat-kabatas-pier-istanbul.webp",
+      "what-to-do-near": "amor-bosphorus-dinner-cruise-boat-wide-istanbul.webp"
     }
   },
   "posts": {

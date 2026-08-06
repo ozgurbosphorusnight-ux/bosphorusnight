@@ -30,8 +30,8 @@ const LANGS = [
 ];
 
 const IMG = {
-  'how-to-reach': '/assets/images/tosunpasa/exterior-pier-sunset.webp',
-  'what-to-do-near': '/assets/images/tosunpasa/exterior-tosunpasa-wide.webp',
+  'how-to-reach': '/assets/images/amor/amor-bosphorus-cruise-boat-kabatas-pier-istanbul.webp',
+  'what-to-do-near': '/assets/images/amor/amor-bosphorus-dinner-cruise-boat-wide-istanbul.webp',
 };
 
 // Display order in the grid (matches EN): how-to-reach first, then what-to-do-near.

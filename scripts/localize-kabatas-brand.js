@@ -99,7 +99,7 @@ if (missing.length) {
 }
 
 // ---------- 2. Index card alt (Kabataş img tags only — footer/og NOT touched) ----------
-const IMG_RE = /(<img src="\/assets\/images\/tosunpasa\/exterior-(?:pier-sunset|tosunpasa-wide)\.webp" alt=")([^"]*)(")/g;
+const IMG_RE = /(<img src="\/assets\/images\/amor\/amor-bosphorus-(?:cruise-boat-kabatas-pier|dinner-cruise-boat-wide)-istanbul\.webp" alt=")([^"]*)(")/g;
 let idxFixed = 0;
 // All langs that have a Kabataş card: my 30 + tr (added earlier). EN card stays Latin.
 const INDEX_LANGS = Object.keys(BRAND); // excludes en
