@@ -38,7 +38,7 @@
     'btn.channelSub': 'All our videos on our YouTube channel',
     'pill': 'AI Assistant',
     'chip.howto': 'How to book',
-    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• Standard Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nEvery group has its own private reserved table — no sharing with strangers.\nNo prepayment — you pay on the boat.',
+    'ans.prices': '<span class="bnwc-bt">Our current prices</span>\n• All-In Dinner Cruise — <b>€{stdPrice}</b> per person (normally €{stdOrig})\n\nChildren: 0–3 free · 4–8 half price · 9+ full price.\nEvery group has its own private reserved table — no sharing with strangers.\nNo prepayment — you pay on the boat.',
     'ans.menu': '<span class="bnwc-bt">Dinner menu:</span> 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream — unlimited soft drinks included.\n\nIncludes the full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ.',
     'ans.time': '<span class="bnwc-bt">We sail every evening from Kabataş Pier.</span>\n• Boarding: from {boarding}\n• Departure: {departure}\n• Return: around {return}\n\nAbout 3 hours on the Bosphorus.',
     'ans.meeting': '<span class="bnwc-bt">Finding us is easy</span> — we\'re right at Kabataş Pier.\nThese short videos walk you there step by step:',

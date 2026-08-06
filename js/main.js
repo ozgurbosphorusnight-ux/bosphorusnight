@@ -3535,7 +3535,7 @@ function wizBuildSummary() {
 
   // Single package label for now — SUNSET_STD will be added here later
   const pkgLabels = {
-    standard: { en: 'Standard Dinner Cruise', tr: 'Standard Akşam Turu', de: 'Standard Dinner-Kreuzfahrt', es: 'Crucero Cena Estándar', ru: 'Стандартный ужин-круиз', ar: 'رحلة عشاء قياسية', fa: 'تور دینر استاندارد', fr: 'Croisière Dîner Standard', it: 'Crociera Cena Standard', zh: '标准晚餐游船', id: 'Pelayaran Makan Malam Standar', ms: 'Pelayaran Makan Malam Standard', pl: 'Standardowy rejs z kolacją', bg: 'Стандартен круиз с вечеря', ro: 'Croazieră cu Cină Standard', uk: 'Стандартний круїз з вечерею', hi: 'स्टैंडर्ड डिनर क्रूज़', ur: 'اسٹینڈرڈ ڈنر کروز', ja: 'スタンダード ディナークルーズ', ko: '스탠다드 디너 크루즈' }
+    standard: { en: 'All-In Dinner Cruise', tr: 'Her Şey Dahil Akşam Turu', de: 'All-In Dinner-Bootstour', es: 'Crucero con Cena Todo Incluido', ru: 'Ужин-круиз «всё включено»', ar: 'رحلة عشاء شاملة', fa: 'تور شام همه‌چیز شامل', fr: 'Croisière Dîner Tout Compris', it: 'Crociera con Cena Tutto Incluso', zh: '全包晚宴游船', id: 'Pelayaran Makan Malam All-In', ms: 'Pelayaran Makan Malam All-In', pl: 'Rejs z Kolacją All Inclusive', bg: 'Круиз с вечеря „всичко включено“', ro: 'Croazieră cu Cină All Inclusive', uk: 'Вечеря-круїз «все включено»', hi: 'ऑल-इन डिनर क्रूज़', ur: 'آل اِن ڈنر کروز', ja: 'オールインクルーシブ・ディナークルーズ', ko: '올인클루시브 디너 크루즈' }
   };
   const pkgLabel = (pkgLabels[pkg] && pkgLabels[pkg][currentLang]) || pkgLabels.standard.en;
 
