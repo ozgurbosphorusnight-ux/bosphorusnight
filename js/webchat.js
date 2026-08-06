@@ -10,7 +10,7 @@
   window.__bnwcLoaded = true;
 
   var API = 'https://api.bosphorusnight.com';
-  var MAPS_URL = 'https://maps.app.goo.gl/JB7cp4ZrV5Rh9a9L9';
+  var MAPS_URL = 'https://maps.app.goo.gl/QwLWXD8Zikgoiwgp6';
 
   // Baked fallback config — used until /webchat/config answers (or if it never does).
   var cfg = {
