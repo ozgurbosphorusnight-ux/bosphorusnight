@@ -733,10 +733,8 @@
       var html = fill(tx('ans.' + key));
       botSayHtml(html);
       if (key === 'meeting') {
-        // adres + konum kartı + yürüyüş videoları (thumbnail'li)
+        // adres + konum kartı (yürüyüş tarifi videoları 6 Ağu 2026'da kaldırıldı)
         renderLocationCard();
-        renderVideoCard('ybAIn2RhwJs', tx('btn.tram'));
-        renderVideoCard('UcQ3qgyADc4', tx('btn.dolma'));
         // Rezervasyon hatırlatması — konum isteyen "kendim gelirim" moduna kayabilir (20 Tem)
         botSayHtml(fill(tx('ans.meetingReserve')));
       } else if (key === 'video') {
