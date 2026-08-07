@@ -279,7 +279,7 @@ function buildSchemaLd(page, lang, slug) {
       url: SITE_URL,
       telephone: '+90 532 244 29 22',
       priceRange: `€${PRICES.dinnerStd}`,
-      image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+      image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
       address: {
         '@type': 'PostalAddress',
         streetAddress: 'Ömer Avni, Meclis-i Mebusan Cd. Kabataş Vapur İskelesi',
@@ -451,7 +451,7 @@ function buildSchemaLd(page, lang, slug) {
   // ImageObject for the landing page OG image.
   const ogImage = page.images && page.images.og
     ? `${SITE_URL}${page.images.og}`
-    : 'https://www.bosphorusnight.com/assets/tours/dinner/dining-romantic.jpg';
+    : 'https://www.bosphorusnight.com/assets/data/og-image.jpg';
   const heroImage = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',

@@ -174,7 +174,7 @@ function buildSchemaLd(lang) {
       value: 'A-17672'
     },
     priceRange: `€${PRICES.dinnerStd}`,
-    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: RATING.value,
@@ -249,7 +249,7 @@ function buildSchemaLd(lang) {
   const heroImage = {
     '@context': 'https://schema.org',
     '@type': 'ImageObject',
-    contentUrl: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    contentUrl: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
     caption: 'Bosphorus Night dinner cruise boat under illuminated bridge',
     inLanguage: lang
   };
@@ -264,7 +264,7 @@ function buildSchemaLd(lang) {
     url: SITE_URL,
     telephone: '+90 532 244 29 22',
     priceRange: `€${PRICES.dinnerStd}`,
-    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Ömer Avni, Meclis-i Mebusan Cd. Kabataş Vapur İskelesi',
@@ -335,7 +335,7 @@ function buildSchemaLd(lang) {
       sPick('std', 'description'),
       24.30,
       'https://www.bosphorusnight.com/bosphorus-dinner-cruise',
-      'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+      'https://www.bosphorusnight.com/assets/data/og-image.jpg',
       '21:00',
       sPick('std', 'audience')
     ),
@@ -380,7 +380,7 @@ function buildSchemaLd(lang) {
     '@type': 'SocialEvent',
     name: eventName,
     description: eventDescription,
-    image: 'https://www.bosphorusnight.com/assets/tours/dinner/boat-night-bridge.jpg',
+    image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
     inLanguage: lang,
     startDate: `${tomorrowDate}T21:00:00+03:00`,
     endDate: `${tomorrowDate}T00:00:00+03:00`,
@@ -408,7 +408,7 @@ function buildSchemaLd(lang) {
     performer: {
       '@type': 'PerformingGroup',
       name: 'Bosphorus Night Entertainment',
-      description: 'Traditional Mevlana whirling dervish, 5 Turkish folk dances, belly dance show, live music, and DJ set'
+      description: 'Eight-act live programme: Oba Dombra, Mevlana whirling dervish, Sarı Gelin, Azerbaijani medley, belly dance, Anatolian medley, Georgian-Caucasian knife dance, then live saxophone and DJ set'
     },
     offers: [
       {
