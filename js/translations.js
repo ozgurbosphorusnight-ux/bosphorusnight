@@ -519,7 +519,7 @@ const T = {
   },
   "incl.cruise.detail": {
     en: "Sail past the Maiden's Tower, Dolmabahçe Palace, Bosphorus Bridge, Beylerbeyi Palace, Ortaköy Mosque, and Rumeli Fortress. Departs from Kabataş at 21:00, returns around 00:00.",
-    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 21:00'te kalkar, 00:00 arası döner.",
+    tr: "Kız Kulesi, Dolmabahçe Sarayı, Boğaz Köprüsü, Beylerbeyi Sarayı, Ortaköy Camii ve Rumeli Hisarı'nın önünden geçin. Kabataş'tan 21:00'de kalkar, 00:00 arası döner.",
     de: "Vorbei am Leanderturm, Dolmabahçe-Palast, Bosporus-Brücke, Beylerbeyi-Palast, Ortaköy-Moschee und Rumeli-Festung. Abfahrt 21:00, Rückkehr gegen 00:00.",
     es: "Navegue junto a la Torre de la Doncella, el Palacio de Dolmabahçe, el Puente del Bósforo, el Palacio de Beylerbeyi, la Mezquita de Ortaköy y la Fortaleza de Rumeli. Sale a las 21:00, regresa alrededor de las 00:00.",
     ru: "Проплывите мимо Девичьей башни, дворца Долмабахче, Босфорского моста, дворца Бейлербейи, мечети Ортакёй и крепости Румели. Отправление в 21:00, возвращение около 00:00.",
@@ -1198,7 +1198,7 @@ const T = {
   "faq.q3": { en: "Where does the cruise depart and return?", tr: "Tur nereden kalkıp nereye dönüyor?", de: "Wo ist Abfahrt und Rückkehr?", es: "¿De dónde sale y regresa el crucero?", ru: "Откуда отправляется и возвращается круиз?", ar: "من أين تغادر وتعود الرحلة؟", fa: "کشتی از کجا حرکت می‌کند و کجا بازمی‌گردد؟", fr: "D'où part et où revient la croisière ?", it: "Da dove parte e dove rientra la crociera?", zh: "游船从哪里启航与返航?", id: "Di mana pelayaran berangkat dan kembali?", ms: "Di manakah pelayaran bertolak dan kembali?", pl: "Skąd wypływa rejs i gdzie wraca?", bg: "Откъде тръгва и връща ли се круизът?", ro: "De unde pleacă și unde se întoarce croaziera?", cs: "Odkud plavba odjíždí a kam se vrací?", da: "Hvor afgår og returnerer cruiset?", el: "Από πού αναχωρεί η κρουαζιέρα και πού επιστρέφει;", fi: "Mistä ristely lähtee ja minne se palaa?", hu: "Honnan indul és hová tér vissza a hajóút?", lv: "No kurienes atiet kruīzs un kur atgriežas?", nl: "Waar vertrekt en eindigt de cruise?", no: "Hvor går cruiset fra og hvor returnerer det?", pt: "De onde parte e onde regressa o cruzeiro?", sk: "Odkiaľ plavba odchádza a kam sa vracia?", sl: "Od kod plovba odhaja in kam se vrne?", sv: "Var avgår och återkommer kryssningen?", ja: "クルーズはどこから出航し、どこに戻りますか？", ko: "크루즈는 어디에서 출발하고 돌아오나요?", uk: "Звідки круїз відправляється та куди повертається?", hi: "क्रूज़ कहाँ से प्रस्थान करता है और कहाँ लौटता है?", ur: "کروز کہاں سے روانہ ہوتا ہے اور کہاں واپس آتا ہے؟" },
   "faq.a3": {
     en: "Cruises depart from Kabataş pier at 21:00 and return to the same location between 23:00 and 00:00 (3-hour cruise). The exact meeting point will be shared via WhatsApp / Telegram after booking.",
-    tr: "Turlar Kabataş iskelesinden saat 21:00'te kalkar ve aynı noktaya 23:00 civarında döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp / Telegram ile paylaşılır.",
+    tr: "Turlar Kabataş iskelesinden saat 21:00'de kalkar ve aynı noktaya 23:00 civarında döner (3 saatlik tur). Tam buluşma noktası rezervasyon sonrası WhatsApp / Telegram ile paylaşılır.",
     de: "Abfahrt ab Kabataş-Pier um 21:00, Rückkehr zwischen 23:00 und 00:00 (3 Stunden). Den genauen Treffpunkt erhalten Sie nach Buchung per WhatsApp / Telegram.",
     es: "Los cruceros salen del muelle de Kabataş a las 21:00 y regresan al mismo lugar entre las 23:00 y las 00:00 (crucero de 3 horas). El punto de encuentro exacto se compartirá por WhatsApp / Telegram tras la reserva.",
     ru: "Круизы отправляются от причала Кабаташ в 21:00 и возвращаются между 23:00 и 00:00 (3 часа). Точное место встречи будет отправлено в WhatsApp / Telegram после бронирования.",
@@ -2565,7 +2565,7 @@ const T = {
     es: "Crucero al Atardecer: Regreso ~20:00",
     ru: "Круиз на закате: Возвращение ~20:00",
     ar: "رحلة غروب الشمس: العودة ~20:00",
-    fa: "تور غروب: بازگشت حدود ۲۰:۰۰", fr: "Croisière coucher de soleil : retour ~20h00", it: "Crociera al Tramonto: Ritorno ~20:00", zh: "日落游船:约20:00返航", id: "Pelayaran Matahari Terbenam: Kembali ~20:00", ms: "Pelayaran Matahari Terbenam: Kembali ~20:00", pl: "Rejs o zachodzie słońca: powrót ~20:00", bg: "Залезен круиз: завръщане ~20:00", ro: "Croazieră la Apus: Întoarcere ~20:00", uk: "Круїз на заході сонця: Повернення ~20:00", ja: "サンセットクルーズ：帰港 ~20:00", ko: "선셋 크루즈: 복귀 ~20:00", hi: "सूर्यास्त क्रूज़: वापसी ~20:00", ur: "سن سیٹ کروز: واپسی ~20:00",
+    fa: "تور غروب: بازگشت حدود ۲۰:۰۰", fr: "Croisière coucher de soleil : retour ~20h00", it: "Crociera al Tramonto: Ritorno ~20:00返航", id: "Pelayaran Matahari Terbenam: Kembali ~20:00", ms: "Pelayaran Matahari Terbenam: Kembali ~20:00", pl: "Rejs o zachodzie słońca: powrót ~20:00", bg: "Залезен круиз: завръщане ~20:00", ro: "Croazieră la Apus: Întoarcere ~20:00", uk: "Круїз на заході сонця: Повернення ~20:00", ja: "サンセットクルーズ：帰港 ~20:00", ko: "선셋 크루즈: 복귀 ~20:00", hi: "सूर्यास्त क्रूज़: वापसी ~20:00", ur: "سن سیٹ کروز: واپسی ~20:00",
     cs: "Plavba při západu slunce: Návrat ~20:00", da: "Solnedgangscruise: Tilbage ~20:00", el: "Κρουαζιέρα ηλιοβασιλέματος: Επιστροφή ~20:00", fi: "Auringonlaskuristely: Paluu ~20:00", hu: "Naplemente hajóút: Visszatérés ~20:00", lv: "Saulrieta kruīzs: atgriešanās ~20:00", nl: "Zonsondergangcruise: Terug ~20:00", no: "Solnedgangscruise: Tilbake ~20:00", pt: "Cruzeiro ao Pôr-do-Sol: Regresso ~20:00", sk: "Plavba pri západe slnka: Návrat ~20:00", sl: "Plovba ob sončnem zahodu: vrnitev ~20:00", sv: "Solnedgångskryssning: Åter ~20:00"
   },
   "arrival.time.night": {
@@ -3413,7 +3413,7 @@ const T = {
   },
   "wizard.transferTimeBlockedBody": {
     en: "Today's hotel transfer closed at 18:30. You can still join the cruise — reach Kabataş Pier on your own by 21:00.",
-    tr: "Bugün için otel transferimiz saat 18:30'da kapandı. Kabataş İskelesi'ne 21:00'a kadar kendi ulaşımınızla gelirseniz tura yetişirsiniz.",
+    tr: "Bugün için otel transferimiz saat 18:30'da kapandı. Kabataş İskelesi'ne 21:00'e kadar kendi ulaşımınızla gelirseniz tura yetişirsiniz.",
     de: "Der Hoteltransfer für heute hat um 18:30 Uhr geschlossen. Sie können der Bootsfahrt trotzdem beitreten – kommen Sie bis 21:00 Uhr selbst zum Kabataş-Anleger.",
     es: "El traslado al hotel de hoy cerró a las 18:30. Aún puede unirse al crucero — llegue al muelle de Kabataş por su cuenta antes de las 21:00.",
     ru: "Сегодняшний трансфер из отеля закрылся в 18:30. Вы всё ещё можете присоединиться к круизу — доберитесь до причала Кабаташ самостоятельно до 21:00.",

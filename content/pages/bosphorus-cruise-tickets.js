@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise Tickets from €{p.dinnerStd} — Pay on Boat, No Prepayment',
-    description: 'Direct Bosphorus cruise tickets from €{p.dinnerStd}/person. No prepayment, pay on boat. Free cancellation. 11,317 reviews. Tonight\'s seats often sell out — book before 18:00.'
+    description: 'Direct Bosphorus cruise tickets from €{p.dinnerStd}/person. No prepayment, pay on boat. Free cancellation. 11,317 reviews. Tonight\'s seats often sell out — book before 20:00.'
   },
 
   hero: {

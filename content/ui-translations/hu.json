@@ -453,6 +453,6 @@
   "floatingWa.label": "Online vagyunk · Írj most",
   "floatingWa.message": "Szia! Szeretnék érdeklődni a Boszporusz Éjszaka hajózásról.",
   "wizard.transferTimeBlockedTitle": "A mai transzferablak zárva",
-  "wizard.transferTimeBlockedBody": "A mai hoteltranszfer 18:00-kor lezárult. Még csatlakozhatsz a hajózáshoz — gyere ki saját magad a Kabataş kikötőbe 21:00-ig.",
+  "wizard.transferTimeBlockedBody": "A mai hoteltranszfer 18:30-kor lezárult. Még csatlakozhatsz a hajózáshoz — gyere ki saját magad a Kabataş kikötőbe 21:00-ig.",
   "wizard.transferTimeBlockedAction": "Magam megyek Kabataş-ra"
 }

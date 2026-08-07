@@ -59,18 +59,18 @@ module.exports = {
     {
       icon: 'transfer',
       title: 'Same-day hotel transfer often available',
-      desc: 'Hotel transfer normally needs 24h notice, but for same-day bookings between 14:00-18:00 we can often arrange pickup for +€{p.transfer}/person. WhatsApp us for urgent transfer requests.'
+      desc: 'Hotel transfer normally needs 24h notice, but for same-day bookings between 14:00-18:30 we can often arrange pickup for +€{p.transfer}/person. WhatsApp us for urgent transfer requests.'
     }
   ],
 
   faq: [
     {
       q: 'Can I really book a Bosphorus cruise for tonight?',
-      a: 'Yes — often. We hold back seats for same-day bookings. Check the wizard above for tonight\'s availability. If seats are available, you can book until 18:00 (3 hours before departure). Weekends are tighter — book earlier in the day if possible.'
+      a: 'Yes — often. We hold back seats for same-day bookings. Check the wizard above for tonight\'s availability. If seats are available, you can book until 20:00. Weekends are tighter — book earlier in the day if possible.'
     },
     {
       q: 'How last-minute can I book?',
-      a: 'Booking stays open until 18:00 for the 21:00 boat. After 18:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually. After 20:00 it\'s too tight unless you\'re already at Kabataş Pier and can board fast.'
+      a: 'Booking stays open until 20:00 for the 21:00 boat. After 20:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually.'
     },
     {
       q: 'Is last-minute Bosphorus cruise more expensive?',
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Can you arrange last-minute hotel transfer?',
-      a: 'Same-day transfer is possible until ~18:00 for 21:00 cruise. After 18:00, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
+      a: 'Same-day transfer is possible until ~18:30 for 21:00 cruise. After 18:30, we may not have a driver free — in that case, you can take a taxi to Kabataş Pier (15 min from Taksim, 10 min from Sultanahmet, ~€10-15). Central and easy.'
     },
     {
       q: 'What if I\'m already at Kabataş and want to board?',

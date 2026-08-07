@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'What\'s the cheapest dinner cruise in Istanbul?',
-      a: 'Bosphorus Night offers a Standard Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. The 3-hour format includes full dinner (10 mezes, main course, dessert), soft drinks, live music, DJ, folk dances, and the Mevlana whirling dervish. Pay on boat, no prepayment required.'
+      a: 'Bosphorus Night offers an All-In Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. The 3-hour format includes full dinner (10 mezes, main course, dessert), soft drinks, live music, DJ, folk dances, and the Mevlana whirling dervish. Pay on boat, no prepayment required.'
     }
   ],
 
