@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Vad kan du förvänta dig?',
           paragraphs: [
             'Samma upplevelse som alla andra — full måltid, liveshow och 3 timmar på Bosporen. Sista minuten-bokningar ger inte färre förmåner.',
-            'Det enda undantaget: Hotelltransfer (€{p.transfer}/person) är endast tillgänglig om du bokar före kl. 18:00 på kryssningsdagen. Efter kl. 18:00 kan du komma direkt till Kabataş.',
+            'Det enda undantaget: Hotelltransfer (€{p.transfer}/person) är endast tillgänglig om du bokar före kl. 18:30 på kryssningsdagen. Efter kl. 18:30 kan du komma direkt till Kabataş.',
           ],
         },
         {

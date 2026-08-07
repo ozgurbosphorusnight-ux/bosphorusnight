@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Wat kun je verwachten?',
           paragraphs: [
             'Dezelfde ervaring als ieder ander — volledige maaltijd, live show en 3 uur op de Bosporus. Last-minute boeken geeft je geen mindere voordelen.',
-            'De enige uitzondering: hoteltransfer is alleen beschikbaar als je vóór 18:00 op de dag van de cruise boekt. Na 18:00 kun je rechtstreeks naar Kabataş komen.',
+            'De enige uitzondering: hoteltransfer is alleen beschikbaar als je vóór 18:30 op de dag van de cruise boekt. Na 18:30 kun je rechtstreeks naar Kabataş komen.',
           ],
         },
         {

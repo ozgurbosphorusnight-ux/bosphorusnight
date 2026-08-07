@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Čo môžete očakávať?',
           paragraphs: [
             'Rovnaký zážitok ako ktokoľvek iný — plné menu, živý program a 3 hodiny na Bospore. Rezervácia na poslednú chvíľu vás o nič neukráti.',
-            'Jediná výnimka: hotelový transfer je k dispozícii iba vtedy, ak si rezervujete pred 18:00 v deň plavby. Po 18:00 môžete prísť priamo do Kabataşu.',
+            'Jediná výnimka: hotelový transfer je k dispozícii iba vtedy, ak si rezervujete pred 18:30 v deň plavby. Po 18:30 môžete prísť priamo do Kabataşu.',
           ],
         },
         {

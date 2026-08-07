@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Hva kan du forvente?',
           paragraphs: [
             'Samme opplevelse som alle andre — fullt måltid, canlý show og 3 timer på Bosporos. Siste liten-bestilling gir ikke færre fordeler.',
-            'Det eneste unntaket: Hotellransfer er kun tilgjengelig dersom du bestiller før kl. 18:00 på dagen for cruiset. Etter kl. 18:00 kan du komme direkte til Kabataș.',
+            'Det eneste unntaket: Hoteltransfer er kun tilgjengelig dersom du bestiller før kl. 18:30 på dagen for cruiset. Etter kl. 18:30 kan du komme direkte til Kabataș.',
           ],
         },
         {

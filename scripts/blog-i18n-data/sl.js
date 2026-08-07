@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Kaj lahko pričakuješ?',
           paragraphs: [
             'Ista izkušnja kot vsi drugi — popoln obrok, predstava v živo in 3 ure na Bosporju. Rezervacija v zadnjem trenutku ne ponuja manj ugodnosti.',
-            'Edina izjema: Hotelski prevoz je na voljo le, če rezerviraš pred 18:00 na dan plovbe. Po 18:00 lahko prideš neposredno v Kabataş.',
+            'Edina izjema: Hotelski prevoz je na voljo le, če rezerviraš pred 18:30 na dan plovbe. Po 18:30 lahko prideš neposredno v Kabataş.',
           ],
         },
         {

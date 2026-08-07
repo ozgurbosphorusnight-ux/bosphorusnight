@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Ko vari sagaidīt?',
           paragraphs: [
             'Tā pati pieredze kā visiem pārējiem — pilna maltīte, dzīvs šovs un 3 stundas pa Bosforu. Pēdējā brīža rezervācija nedod mazāk priekšrocību.',
-            'Vienīgais izņēmums: viesnīcas transfērs ir pieejams tikai tad, ja rezervē pirms plkst. 18:00 kruīza dienā. Pēc plkst. 18:00 vari ierasties tieši Kabataş.',
+            'Vienīgais izņēmums: viesnīcas transfērs ir pieejams tikai tad, ja rezervē pirms plkst. 18:30 kruīza dienā. Pēc plkst. 18:30 vari ierasties tieši Kabataş.',
           ],
         },
         {

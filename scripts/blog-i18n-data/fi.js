@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Mitä odottaa?',
           paragraphs: [
             'Sama kokemus kuin muillakin — täysi illallinen, canlı show ja 3 tuntia Bosporinsalmella. Viime hetken varaus ei anna sinulle vähemmän etuja.',
-            'Ainoa poikkeus: Hotellikuljetus on saatavilla vain jos varaat ennen klo 18:00 risteilypäivänä. Sen jälkeen klo 18:00 voit tulla suoraan Kabataşiin.',
+            'Ainoa poikkeus: Hotellikuljetus on saatavilla vain jos varaat ennen klo 18:30 risteilypäivänä. Sen jälkeen klo 18:30 voit tulla suoraan Kabataşiin.',
           ],
         },
         {

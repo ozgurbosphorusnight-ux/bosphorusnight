@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Hvad kan du forvente?',
           paragraphs: [
             'Samme oplevelse som alle andre — fuld menu, live show og 3 timer på Bosporus. Sidste øjebliks-booking giver ikke færre fordele.',
-            'Den eneste undtagelse: hoteltransfer er kun tilgængelig, hvis du booker før kl. 18:00 på krydstogtdagen. Efter kl. 18:00 kan du komme direkte til Kabataş.',
+            'Den eneste undtagelse: hoteltransfer er kun tilgængelig, hvis du booker før kl. 18:30 på krydstogtdagen. Efter kl. 18:30 kan du komme direkte til Kabataş.',
           ],
         },
         {

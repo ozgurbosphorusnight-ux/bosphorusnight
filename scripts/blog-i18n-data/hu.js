@@ -187,7 +187,7 @@ module.exports = {
           h2: 'Mire számíthatsz?',
           paragraphs: [
             'Ugyanaz az élmény, mint mindenki másnak — teljes vacsora, élő műsor és 3 óra a Boszporuszon. Az utolsó pillanatos foglalás nem jelent kevesebb előnyt.',
-            'Egyetlen kivétel: a szállodai transzfer csak akkor érhető el, ha a hajózás napján 18:00 előtt foglalsz. 18:00 után közvetlenül Kabataşra tudsz jönni.',
+            'Egyetlen kivétel: a szállodai transzfer csak akkor érhető el, ha a hajózás napján 18:30 előtt foglalsz. 18:30 után közvetlenül Kabataşra tudsz jönni.',
           ],
         },
         {
