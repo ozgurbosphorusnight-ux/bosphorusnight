@@ -66,11 +66,11 @@ module.exports = {
   faq: [
     {
       q: 'Can I really book a Bosphorus cruise for tonight?',
-      a: 'Yes — often. We hold back seats for same-day bookings. Check the wizard above for tonight\'s availability. If seats are available, you can book until 20:00. Weekends are tighter — book earlier in the day if possible.'
+      a: 'Yes — often. We hold back seats for same-day bookings. Check the wizard above for tonight\'s availability. If seats are available, you can book until 21:00. Weekends are tighter — book earlier in the day if possible.'
     },
     {
       q: 'How last-minute can I book?',
-      a: 'Booking stays open until 20:00 for the 21:00 boat. After 20:00, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually.'
+      a: 'Booking stays open until 21:00 — right up to departure. If it is very close to departure, WhatsApp us directly at +90 532 244 29 22 — if seats are open, we can confirm manually.'
     },
     {
       q: 'Is last-minute Bosphorus cruise more expensive?',

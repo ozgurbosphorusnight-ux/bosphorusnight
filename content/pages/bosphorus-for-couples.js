@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'food',
       title: 'Slow-paced multi-course dinner',
-      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bream, chicken, köfte, or vegetarian), ice-cream cake dessert. Served in slow succession over 3 hours — you\'re not rushed.'
+      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken, köfte, or vegetarian), ice-cream cake dessert. Served in slow succession over 3 hours — you\'re not rushed.'
     },
     {
       icon: 'music',
@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       q: 'Can couples bring their own wine or champagne?',
-      a: 'We don\'t allow outside alcohol onboard (operating license reason). But we have a 2-glass alcohol package with local wine (+€{p.alcohol2}/person) and can arrange premium imported wines or champagne for a fee — ask when booking. Prosecco, Chianti, and Cabernet are popular premium requests.'
+      a: 'We don\'t allow outside alcohol onboard (operating license reason). But we have a 2-glass alcohol package — wine, beer, rakı, vodka, whisky, gin and more (+€{p.alcohol2}/person) and can arrange premium imported wines or champagne for a fee — ask when booking. Prosecco, Chianti, and Cabernet are popular premium requests.'
     },
     {
       q: 'Is it okay if we don\'t drink alcohol — are we odd out?',

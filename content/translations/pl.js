@@ -22,7 +22,7 @@ module.exports = {
       'Czy świętują Państwo rocznicę, szukają premium stambulskiego wieczoru dla rodziny, czy pragną najbardziej fotogenicznego przejścia z zachodu słońca w noc — to jest rejs z kolacją, który mieszkańcy Stambułu polecają w pierwszej kolejności.'
     ],
     highlights: [
-      { title: 'Bogata turecka uczta', desc: '10 rodzajów mezze, ciepła przystawka (paçanga böreği), danie główne do wyboru (łosoś / dorada / kurczak / kotlety / wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe.' },
+      { title: 'Bogata turecka uczta', desc: '10 rodzajów mezze, ciepła przystawka (paçanga böreği), danie główne do wyboru (łosoś / labraks / kurczak / kotlety / wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe.' },
       { title: 'Tańce ludowe, taniec brzucha i DJ na żywo', desc: 'Osiem numerów: Oba Dombra, pokaz sema Mewlana, Sarı Gelin, popurri azerbejdżańskie, klasyczny taniec brzucha, popurri anatolijskie i gruzińsko-kaukaski taniec z nożami — następnie saksofon na żywo i set DJ-a przez cały rejs.' },
       { title: 'Pełna nocna trasa po Bosforze', desc: 'Kabataş → Dolmabahçe → Pałac Çırağan → Meczet Ortaköy → Bebek → Rumeli Hisarı → Most FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Od €{p.dinnerStd}/osobę — płatność na pokładzie', desc: 'Rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
@@ -125,12 +125,12 @@ module.exports = {
       badge: '100% Halal · Przyjazny Rodzinom · Muzułmański Właściciel'
     },
     intro: [
-      '**Halal rejs po Bosforze** to najbardziej szanowany rejs z kolacją w Stambule dla muzułmańskich podróżnych. Każde mięso serwowane na naszej łodzi — łosoś, dorada, kurczak, kotlety jagnięce, polędwica wołowa, antrykot — posiada **certyfikat halal** od zatwierdzonych dostawców. Serwujemy to samo menu każdemu gościowi; nie ma oddzielnej "sekcji halal", ponieważ cała łódź jest halal domyślnie.',
+      '**Halal rejs po Bosforze** to najbardziej szanowany rejs z kolacją w Stambule dla muzułmańskich podróżnych. Każde mięso serwowane na naszej łodzi — łosoś, labraks, kurczak, kotlety jagnięce, polędwica wołowa, antrykot — posiada **certyfikat halal** od zatwierdzonych dostawców. Serwujemy to samo menu każdemu gościowi; nie ma oddzielnej "sekcji halal", ponieważ cała łódź jest halal domyślnie.',
       'Alkohol jest **dodatkiem opcjonalnym** — nigdy nie jest narzucany gościom, a układ miejsc naturalnie oddziela stoły preferujące bezalkoholową atmosferę. Dla gości, którzy chcą pakietu alkoholowego 2 kieliszków (+€{p.alcohol2}/osobę), jest on dostępny, ale wliczone nieograniczone napoje bezalkoholowe (woda, cola, sok) wystarczą większości muzułmańskich rodzin. Nasza załoga jest przeszkolona w zachowywaniu szacunku bez przyjmowania założeń o Państwa preferencjach.',
       '**Halal-przyjazny rejs po Bosforze** ma znaczenie dla podróżnych z Arabii Saudyjskiej, ZEA, Kuwejtu, Kataru, Iranu, Malezji, Indonezji, Pakistanu i Maroka, którzy chcą najbardziej kultowego wieczoru w Stambule bez kompromisów. Licencja TÜRSAB, 4,8★ i płatność na pokładzie — nie zobowiązują się Państwo do niczego, dopóki nie upewnią się, że doświadczenie spełnia Państwa standardy.'
     ],
     highlights: [
-      { title: 'Menu z certyfikatem 100% halal', desc: 'Całe mięso (łosoś, dorada, kurczak, kotlety, wołowina, antrykot) posiada certyfikat halal od zatwierdzonych dostawców. Kuchnia przestrzega zasad przygotowania halal. Bez produktów wieprzowych i dodatków niehalal. Opcje wegetariańskie zawsze dostępne.' },
+      { title: 'Menu z certyfikatem 100% halal', desc: 'Całe mięso (łosoś, labraks, kurczak, kotlety, wołowina, antrykot) posiada certyfikat halal od zatwierdzonych dostawców. Kuchnia przestrzega zasad przygotowania halal. Bez produktów wieprzowych i dodatków niehalal. Opcje wegetariańskie zawsze dostępne.' },
       { title: 'Alkohol opcjonalny, nigdy narzucany', desc: 'Pakiety alkoholowe to dodatek — nie są domyślnie wliczone. Napoje bezalkoholowe (woda, cola, sok) są nieograniczone i bezpłatne. Stół pozostaje bezalkoholowy, chyba że wyraźnie Państwo poproszą. Załoga dyskretnie szanuje Państwa wybór.' },
       { title: 'Rozrywka przyjazna rodzinom', desc: 'Pokaz sema, tradycyjne tureckie tańce ludowe, turecka muzyka na żywo. Bez klubowych występów, bez nieodpowiednich treści. Bezpieczne dla dzieci, pełne szacunku dla rodzin. Taniec brzucha to tradycyjna forma sztuki, prezentowana skromnie.' },
       { title: 'Szacunek dla czasu modlitwy', desc: 'Jeśli czas wejścia na pokład przypada na Maghrib lub Iszę (20:00-21:00), nasza załoga może przed odpłynięciem skierować Państwa do cichej strefy modlitewnej na przystani Kabataş. Wystarczy poinformować przy rezerwacji.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Prywatny stół dla dwojga', desc: 'Dedykowany stolik 2-osobowy, nie współdzielony. Pary mają priorytet na miejsca przy oknie. Zdjęcia zachodu słońca i nocnego Bosforu tuż za oknem.' },
-      { title: 'Powolna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, dorada, kurczak, kotlety lub wegetariańskie), ciasto deserowe z lodami. Serwowane powoli przez 3 godziny — nie są Państwo pospieszani.' },
+      { title: 'Powolna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, kurczak, kotlety lub wegetariańskie), ciasto deserowe z lodami. Serwowane powoli przez 3 godziny — nie są Państwo pospieszani.' },
       { title: 'Skrzypce na żywo i delikatna muzyka', desc: 'Podczas kolacji skrzypce na żywo i akustyczna muzyka turecka tworzą kameralną atmosferę sprzyjającą rozmowie. Później pojawia się DJ dla par, które chcą tańczyć.' },
       { title: 'Dodatki na wyjątkowy wieczór', desc: 'Aranżacja stolika romantycznego (świece, róże): +€{p.romantic}. Pakiet 2 kieliszków alkoholu (wino, rakı): +€{p.alcohol2}/osobę. Transfer hotelowy (tam i z powrotem): +€{p.transfer}/osobę. Wybierają Państwo, co pasuje do wieczoru.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Letnie zachody słońca dokładnie przy wypłynięciu', desc: 'Od maja do sierpnia słońce w Stambule zachodzi mniej więcej między 20:15–20:45 — wejście na pokład o 20:00 daje Państwu złotą godzinę na pokładzie, a wypłynięcie o 21:00 stawia Państwa na wodzie dokładnie w porze samego zachodu. Aparat w pogotowiu — to jest to ujęcie.' },
       { title: 'Niebieska godzina przechodząca w pełną noc', desc: 'Nie tylko zachód słońca — rejs płynie przez zmierzch aż do w pełni podświetlonego Bosforu. Złote światło, niebieska godzina, a potem 30 milionów świateł mostu na ciemnej wodzie: trzy fazy światła w jeden wieczór.' },
-      { title: 'Pełna kolacja podczas rejsu', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, dorada, kurczak, kotlety, wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe — serwowane, gdy zapalają się światła miasta.' },
+      { title: 'Pełna kolacja podczas rejsu', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, kurczak, kotlety, wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe — serwowane, gdy zapalają się światła miasta.' },
       { title: 'Dolmabahçe, Ortaköy, Most Bosforski — wszystko świeci', desc: 'Trasa przechodzi obok Pałacu Dolmabahçe, Meczetu Ortaköy, Mostu Bosforskiego, Rumeli Hisarı i Pałacu Beylerbeyi w chwili, gdy zapalają się ich światła. Każdy punkt orientacyjny w swoim najlepszym świetle.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Podświetlony Bosfor w szczycie dramatyzmu', desc: 'Most Bosforski zmienia kolory (niebieski, fioletowy, złoty), pałace świecą żółto, Meczet Ortaköy odbija się w czarnej wodzie. 21:00-00:00 to szczytowe oświetlenie dla wszystkich stambulskich punktów orientacyjnych.' },
       { title: 'Tradycyjny turecki pokaz na pokładzie', desc: 'Osiem numerów: Oba Dombra, pokaz sema, Sarı Gelin, popurri azerbejdżańskie, taniec brzucha, popurri anatolijskie i gruzińsko-kaukaski taniec z nożami, potem saksofon na żywo i set DJ-a. 40 minut występu, potem muzyka + kolacja kontynuują.' },
-      { title: 'Pełna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka (paçanga böreği), danie główne (łosoś, dorada, kurczak, kotlety, wegetariańskie — Państwa wybór), deser (ciasto z lodami), nieograniczone napoje bezalkoholowe. Certyfikat halal.' },
+      { title: 'Pełna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka (paçanga böreği), danie główne (łosoś, labraks, kurczak, kotlety, wegetariańskie — Państwa wybór), deser (ciasto z lodami), nieograniczone napoje bezalkoholowe. Certyfikat halal.' },
       { title: 'Pełna trasa Bosforu', desc: 'Kabataş → Dolmabahçe → Pałac Çırağan → Meczet Ortaköy → Bebek → Rumeli Hisarı → Most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Wieża Panny → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}) za rejs z kolacją. Płatność na pokładzie — bez przedpłaty, bez ryzyka. Licencja TÜRSAB A-17672, oceniony na 4,8★ przez ponad 11 317 podróżnych.'
     ],
     highlights: [
-      { title: 'Pełna bogata turecka kolacja', desc: '10 rodzajów mezze, ciepła przystawka, danie główne (łosoś/dorada/kurczak/kotlety/wegetariańskie), ciasto z lodami. Certyfikat halal. Nieograniczone napoje bezalkoholowe wliczone.' },
+      { title: 'Pełna bogata turecka kolacja', desc: '10 rodzajów mezze, ciepła przystawka, danie główne (łosoś/labraks/kurczak/kotlety/wegetariańskie), ciasto z lodami. Certyfikat halal. Nieograniczone napoje bezalkoholowe wliczone.' },
       { title: 'Pokaz tureckich tańców ludowych na żywo', desc: 'Osiem numerów: Oba Dombra, pokaz sema, Sarı Gelin, popurri azerbejdżańskie, taniec brzucha, popurri anatolijskie, gruzińsko-kaukaski taniec z nożami, potem saksofon na żywo i DJ. 40 minut występu, muzyka ambient kontynuuje.' },
       { title: 'Pełna nocna trasa po Bosforze', desc: '3-godzinny rejs: Dolmabahçe, Çırağan, Meczet Ortaköy, Most Bosforski, Bebek, Rumeli Hisarı, Most FSM, Beylerbeyi, Üsküdar, Wieża Panny. Zarówno strona europejska jak i azjatycka.' },
       { title: 'Od €{p.dinnerStd} — płatność na pokładzie', desc: 'Rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Wszystkie kultowe nocne widoki Stambułu', desc: 'Pałac Dolmabahçe, Meczet Ortaköy, podświetlony Most Bosforski, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, Wieża Panny. Każdy wielki zabytek w szczytowym nocnym oświetleniu.' },
-      { title: 'Pełna turecka kolacja wliczona', desc: '10 mezze, ciepła przystawka, danie główne (łosoś/dorada/kurczak/kotlety/wegetariańskie), deser, nieograniczone napoje bezalkoholowe. Certyfikat halal. W cenie €{p.dinnerStd}/osobę — wszystko wliczone.' },
+      { title: 'Pełna turecka kolacja wliczona', desc: '10 mezze, ciepła przystawka, danie główne (łosoś/labraks/kurczak/kotlety/wegetariańskie), deser, nieograniczone napoje bezalkoholowe. Certyfikat halal. W cenie €{p.dinnerStd}/osobę — wszystko wliczone.' },
       { title: 'Tańce ludowe na żywo + sema + taniec brzucha', desc: 'Ośmioczęściowy program na żywo: Oba Dombra, pokaz sema Mewlana, Sarı Gelin, popurri azerbejdżańskie, taniec brzucha, popurri anatolijskie, gruzińsko-kaukaski taniec z nożami, potem saksofon na żywo i DJ. 40 minut występu, muzyka ambient przez cały wieczór.' },
       { title: 'Łatwe dla osób pierwszy raz w Stambule', desc: 'Centralny punkt zbiórki (przystań Kabataş), transfer hotelowy (+€{p.transfer}/osobę), anglojęzyczna załoga, płatność na pokładzie. Zero stresu logistycznego. Przyjść, cieszyć się, wyjść.' }
     ],

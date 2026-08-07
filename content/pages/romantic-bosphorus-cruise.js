@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'wine',
       title: 'Wine, champagne, premium pairings',
-      desc: 'Add 2 glasses of alcohol — local wine, beer, rakı (+€{p.alcohol2}/person). Imported champagne and premium pairings available on request — ask when booking.'
+      desc: 'Add 2 glasses of alcohol — wine, beer, rakı, vodka, whisky, gin and more (+€{p.alcohol2}/person). Imported champagne and premium pairings available on request — ask when booking.'
     }
   ],
 

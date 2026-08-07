@@ -83,7 +83,7 @@ module.exports = {
     },
     {
       q: 'Is alcohol included?',
-      a: 'No — alcohol is a separate add-on: 2 glasses of local wine or beer for +€{p.alcohol2}/person. Unlimited soft drinks are included free. Premium imported spirits are billed separately on board.'
+      a: 'No — alcohol is a separate add-on: 2 glasses from the bar — wine, beer, rakı, vodka, whisky, gin and more for +€{p.alcohol2}/person. Unlimited soft drinks are included free. Premium imported spirits are billed separately on board.'
     },
     {
       q: 'How do I guarantee a stage-front table?',

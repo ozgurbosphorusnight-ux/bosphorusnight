@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full Turkish dinner included',
-      desc: '10 mezes, warm appetizer, main course (salmon/sea bream/chicken/köfte/vegetarian), dessert, unlimited soft drinks. Halal-certified. Priced at €{p.dinnerStd}/person — includes everything.'
+      desc: '10 mezes, warm appetizer, main course (salmon/sea bass/chicken/köfte/vegetarian), dessert, unlimited soft drinks. Halal-certified. Priced at €{p.dinnerStd}/person — includes everything.'
     },
     {
       icon: 'show',

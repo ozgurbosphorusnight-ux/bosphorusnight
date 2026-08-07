@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'Are there activities for kids on the Bosphorus cruise?',
-      a: 'The cruise includes traditional folk dances (5 regions), the Mevlana whirling dervish, a belly dance show, and live music — visually engaging for kids. There is no dedicated kids\' play area or animator, but entertainment runs continuously through the 3-hour cruise.'
+      a: 'The cruise includes traditional folk dances from Anatolia, Azerbaijan and the Caucasus, the Mevlana whirling dervish, a belly dance show, and live music — visually engaging for kids. There is no dedicated kids\' play area or animator, but entertainment runs continuously through the 3-hour cruise.'
     }
   ],
 

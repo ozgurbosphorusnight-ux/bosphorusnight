@@ -22,7 +22,7 @@ module.exports = {
       "Que vous fêtiez un anniversaire, cherchiez une soirée istanbouliote premium en famille, ou souhaitiez la plus belle transition coucher de soleil-nuit de la ville — c'est la croisière dîner que les Istanbouliotes recommandent en premier."
     ],
     highlights: [
-      { title: "Festin turc varié", desc: "10 mezzés, une entrée chaude (paçanga böreği), un plat principal au choix (saumon / dorade / poulet / köfte / végétarien), un gâteau glacé en dessert, boissons non alcoolisées à volonté." },
+      { title: "Festin turc varié", desc: "10 mezzés, une entrée chaude (paçanga böreği), un plat principal au choix (saumon / bar / poulet / köfte / végétarien), un gâteau glacé en dessert, boissons non alcoolisées à volonté." },
       { title: "Danses folkloriques, danse orientale et DJ en direct", desc: "Huit numéros : Oba Dombra, cérémonie des derviches tourneurs Mevlana, Sarı Gelin, pot-pourri azerbaïdjanais, danse orientale classique, pot-pourri anatolien et la danse des couteaux géorgienne et caucasienne — puis saxophone live et set DJ pendant toute la croisière." },
       { title: "Parcours nocturne complet du Bosphore", desc: "Kabataş → Dolmabahçe → Palais Çırağan → Mosquée d'Ortaköy → Bebek → Rumeli Hisarı → Pont FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş." },
       { title: "Dès €{p.dinnerStd}/pers. — paiement à bord", desc: "Croisière dîner €{p.dinnerStd} (ancien €{p.dinnerStdOriginal}). Aucun prépaiement. Annulation gratuite jusqu'à 2 heures avant le départ." }
@@ -125,12 +125,12 @@ module.exports = {
       badge: "100 % halal · Familiale · Propriétaire musulman"
     },
     intro: [
-      "La **croisière halal sur le Bosphore** est la croisière dîner la plus respectueuse d'Istanbul pour les voyageurs musulmans. Toute viande servie à bord — saumon, dorade, poulet, köfte d'agneau, filet de bœuf, entrecôte — est **certifiée halal** par des fournisseurs approuvés. Nous servons le même menu à tous les convives ; il n'y a pas de « section halal » séparée car tout le bateau est halal par défaut.",
+      "La **croisière halal sur le Bosphore** est la croisière dîner la plus respectueuse d'Istanbul pour les voyageurs musulmans. Toute viande servie à bord — saumon, bar, poulet, köfte d'agneau, filet de bœuf, entrecôte — est **certifiée halal** par des fournisseurs approuvés. Nous servons le même menu à tous les convives ; il n'y a pas de « section halal » séparée car tout le bateau est halal par défaut.",
       "L'alcool est un **supplément optionnel** — il n'est jamais imposé aux convives et le plan de table sépare naturellement ceux qui préfèrent une table sans alcool. Il est disponible pour les convives qui souhaitent le forfait alcool de 2 verres (+€{p.alcohol2}/pers.), mais les boissons non alcoolisées illimitées incluses (eau, cola, jus) suffisent pour la plupart des familles musulmanes. Notre équipage est formé pour être respectueux de vos préférences sans présumer.",
       "La **croisière sur le Bosphore halal-friendly** est importante pour les voyageurs d'Arabie saoudite, des EAU, du Koweït, du Qatar, d'Iran, de Malaisie, d'Indonésie, du Pakistan et du Maroc qui souhaitent la soirée la plus emblématique d'Istanbul sans compromis. Agréée TÜRSAB, 4,8★ et paiement à bord — vous ne vous engagez à rien tant que vous n'êtes pas certain que l'expérience répond à vos standards."
     ],
     highlights: [
-      { title: "Menu 100 % halal certifié", desc: "Toute viande (saumon, dorade, poulet, köfte, bœuf, entrecôte) est certifiée halal par des fournisseurs approuvés. La cuisine suit la préparation halal. Aucun produit porcin ni additif non halal. Options végétariennes toujours disponibles." },
+      { title: "Menu 100 % halal certifié", desc: "Toute viande (saumon, bar, poulet, köfte, bœuf, entrecôte) est certifiée halal par des fournisseurs approuvés. La cuisine suit la préparation halal. Aucun produit porcin ni additif non halal. Options végétariennes toujours disponibles." },
       { title: "Alcool optionnel, jamais imposé", desc: "Les forfaits alcool sont un supplément — non inclus par défaut. Les boissons non alcoolisées (eau, cola, jus) sont illimitées et gratuites. Votre table reste sans alcool sauf demande explicite. L'équipage respecte discrètement votre choix." },
       { title: "Divertissement familial", desc: "Cérémonie des derviches, danses folkloriques turques traditionnelles, musique turque en direct. Aucune performance de type boîte de nuit, aucun contenu inapproprié. Sûr pour les enfants, respectueux pour les familles. La danse orientale est une forme d'art traditionnelle, présentée avec pudeur." },
       { title: "Respect des horaires de prière", desc: "Si l'embarquement coïncide avec la prière du maghrib ou de l'isha (20h00-21h00), notre personnel peut vous indiquer un espace de prière calme à l'embarcadère de Kabataş avant le départ. Signalez-le simplement à la réservation." }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: "Table privée pour deux", desc: "Table privée dédiée pour 2, non partagée. Priorité aux couples pour les places près des fenêtres. Photos du Bosphore au coucher du soleil et de nuit juste derrière votre fenêtre." },
-      { title: "Dîner varié servi lentement", desc: "10 mezzés turcs, entrée chaude, plat principal (saumon, dorade, poulet, köfte ou végétarien), gâteau glacé en dessert. Servi lentement sur 3 heures — vous n'êtes pas pressés." },
+      { title: "Dîner varié servi lentement", desc: "10 mezzés turcs, entrée chaude, plat principal (saumon, bar, poulet, köfte ou végétarien), gâteau glacé en dessert. Servi lentement sur 3 heures — vous n'êtes pas pressés." },
       { title: "Violon en direct et musique douce", desc: "Violon en direct et musique turque acoustique pendant le dîner créent une ambiance intime propice à la conversation. Ensuite, le DJ prend le relais pour les couples qui veulent danser." },
       { title: "Suppléments pour soirées spéciales", desc: "Arrangement de table romantique (bougies, roses) : +€{p.romantic}. Forfait alcool de 2 verres (vin, rakı) : +€{p.alcohol2}/pers. Transfert hôtel (aller-retour) : +€{p.transfer}/pers. Choisissez ce qui correspond à votre soirée." }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Couchers de soleil d\'été pile au départ', desc: 'De mai à août, le soleil se couche à Istanbul entre environ 20:15 et 20:45 — l\'embarquement à 20:00 vous offre l\'heure dorée sur le pont, et le départ de 21:00 vous place sur l\'eau pour le coucher de soleil lui-même. Caméra prête — c\'est la photo.' },
       { title: 'De l\'heure bleue à la nuit complète', desc: 'Pas seulement le coucher de soleil — la croisière traverse le crépuscule jusqu\'au Bosphore entièrement illuminé. Lumière dorée, heure bleue, puis 30 millions de lumières de pont sur l\'eau sombre : trois phases de lumière en une seule soirée.' },
-      { title: 'Dîner complet pendant la croisière', desc: '10 variétés de mezzés turcs, entrée chaude, plat principal (saumon, dorade, poulet, köfte, végétarien), gâteau glacé, boissons non alcoolisées à volonté — servis tandis que les lumières de la ville s\'allument.' },
+      { title: 'Dîner complet pendant la croisière', desc: '10 variétés de mezzés turcs, entrée chaude, plat principal (saumon, bar, poulet, köfte, végétarien), gâteau glacé, boissons non alcoolisées à volonté — servis tandis que les lumières de la ville s\'allument.' },
       { title: 'Dolmabahçe, Ortaköy, pont du Bosphore — tous illuminés', desc: 'Le parcours passe devant le palais de Dolmabahçe, la mosquée d\'Ortaköy, le pont du Bosphore, Rumeli Hisarı et le palais de Beylerbeyi au moment où leurs lumières s\'allument. Chaque monument dans sa plus belle lumière.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: "Bosphore illuminé à son apogée", desc: "Le pont du Bosphore change de couleur (bleu, violet, or), les palais brillent en jaune, la mosquée d'Ortaköy se reflète dans l'eau noire. 21h00-00h00, éclairage maximal de tous les monuments d'Istanbul." },
       { title: "Spectacle turc traditionnel à bord", desc: "Huit numéros : Oba Dombra, cérémonie des derviches, Sarı Gelin, pot-pourri azerbaïdjanais, danse orientale, pot-pourri anatolien et la danse des couteaux géorgienne et caucasienne, puis saxophone live et set DJ. 40 minutes de performance, puis musique + dîner continuent." },
-      { title: "Dîner varié complet", desc: "10 mezzés turcs, entrée chaude (paçanga böreği), plat principal (saumon, dorade, poulet, köfte, végétarien — votre choix), dessert (gâteau glacé), boissons non alcoolisées à volonté. Certifié halal." },
+      { title: "Dîner varié complet", desc: "10 mezzés turcs, entrée chaude (paçanga böreği), plat principal (saumon, bar, poulet, köfte, végétarien — votre choix), dessert (gâteau glacé), boissons non alcoolisées à volonté. Certifié halal." },
       { title: "Parcours complet du Bosphore", desc: "Kabataş → Dolmabahçe → Palais Çırağan → Mosquée d'Ortaköy → Bebek → Rumeli Hisarı → Pont Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Tour de Léandre → Kabataş." }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       "À €{p.dinnerStd}/pers. (ancien €{p.dinnerStdOriginal}) pour le dîner-croisière. Paiement à bord — aucun prépaiement, aucun risque. Agréée TÜRSAB A-17672, notée 4,8★ par 11 317+ voyageurs."
     ],
     highlights: [
-      { title: "Dîner turc varié complet", desc: "10 mezzés, entrée chaude, plat principal (saumon/dorade/poulet/köfte/végétarien), gâteau glacé. Certifié halal. Boissons non alcoolisées à volonté incluses." },
+      { title: "Dîner turc varié complet", desc: "10 mezzés, entrée chaude, plat principal (saumon/bar/poulet/köfte/végétarien), gâteau glacé. Certifié halal. Boissons non alcoolisées à volonté incluses." },
       { title: "Spectacle de danses folkloriques turques live", desc: "Huit numéros : Oba Dombra, cérémonie des derviches, Sarı Gelin, pot-pourri azerbaïdjanais, danse orientale, pot-pourri anatolien, danse des couteaux géorgienne et caucasienne, puis saxophone live et DJ. 40 minutes de performance, musique d'ambiance continue." },
       { title: "Parcours nocturne complet du Bosphore", desc: "Croisière de 3 heures : Dolmabahçe, Çırağan, mosquée d'Ortaköy, pont du Bosphore, Bebek, Rumeli Hisarı, pont FSM, Beylerbeyi, Üsküdar, Tour de Léandre. Rives européenne et asiatique." },
       { title: "Dès €{p.dinnerStd} — paiement à bord", desc: "Dîner-croisière €{p.dinnerStd} (ancien €{p.dinnerStdOriginal}). Aucun prépaiement. Annulation gratuite jusqu'à 2h avant le départ." }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: "Toutes les vues nocturnes emblématiques d'Istanbul", desc: "Palais de Dolmabahçe, mosquée d'Ortaköy, pont du Bosphore illuminé, Rumeli Hisarı, pont FSM, palais de Beylerbeyi, Tour de Léandre. Chaque monument majeur dans son éclairage nocturne maximal." },
-      { title: "Dîner turc complet inclus", desc: "10 mezzés, entrée chaude, plat principal (saumon/dorade/poulet/köfte/végétarien), dessert, boissons non alcoolisées à volonté. Certifié halal. Tarifé à €{p.dinnerStd}/pers. — tout inclus." },
+      { title: "Dîner turc complet inclus", desc: "10 mezzés, entrée chaude, plat principal (saumon/bar/poulet/köfte/végétarien), dessert, boissons non alcoolisées à volonté. Certifié halal. Tarifé à €{p.dinnerStd}/pers. — tout inclus." },
       { title: "Danses folkloriques live + derviches + orientale", desc: "Programme live en huit numéros : Oba Dombra, cérémonie des derviches Mevlana, Sarı Gelin, pot-pourri azerbaïdjanais, danse orientale, pot-pourri anatolien, danse des couteaux géorgienne et caucasienne, puis saxophone live et DJ. 40 minutes de performance, musique d'ambiance toute la soirée." },
       { title: "Facile pour les premières visites à Istanbul", desc: "Point de rencontre central (embarcadère de Kabataş), transfert hôtel (+€{p.transfer}/pers.), équipage anglophone, paiement à bord. Aucun stress logistique. Venez, profitez, partez." }
     ],

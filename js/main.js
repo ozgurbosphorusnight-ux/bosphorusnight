@@ -2795,7 +2795,7 @@ function wizSelectDrink(drink) {
     };
     const descTexts = {
       soft: 'Unlimited tea, coffee, water, cola & juice',
-      glass2: 'Choose from local wine, beer, raki, vodka, or gin'
+      glass2: 'Wine, beer, rakı, vodka, whisky, gin, tequila, rum, cognac or champagne'
     };
     desc.setAttribute('data-i18n', descKeys[drink]);
     desc.textContent = (T[descKeys[drink]] && T[descKeys[drink]][currentLang]) || descTexts[drink];
