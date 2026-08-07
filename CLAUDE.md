@@ -178,14 +178,20 @@ Aynı gün (tur tarihi = bugün) için saat dilimleri:
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 
-### Same-day Booking Cutoff (2026-08-06 güncellendi — AMOR programı, 20:00)
+### Same-day Booking Cutoff (2026-08-07 güncellendi — site metni 21:00, AI davranışı aynı)
 Aynı gün rezervasyon kabul saatleri:
 - **00:00-20:00** → normal, AI rezerve eder
 - **20:00-21:00** → **DAR PENCERE**. AI önce uyarır: "Şu an çok dar bir pencere, transfer veremem ve Kabataş'a doğrudan gelmen lazım — 21:00'a yetişebilir misin?" Müşteri "evet" derse rezerve eder, "hayır/emin değilim" derse yarın için pitch.
 - **21:00+** → kalkış geçti, tool reddediyor + yarın pitch
 
+> ⚠️ **7 Ağu 2026 — SİTE METNİ 21:00'A ÇEKİLDİ (Özgür).** Müşteri yüzeyi artık dış sınırı
+> duyuruyor: *"Same-day bookings are accepted until 21:00 (right up to departure)"*. Yukarıdaki
+> 3 satırlık AI davranışı **DEĞİŞMEDİ** — 20:00-21:00 arası hâlâ dar pencere uyarısı verilir,
+> 21:00'da tool reddeder. Yani site "21:00'a kadar alıyoruz" der, AI son saatte uyarıp yine de alır.
+> Değişen yerler: `terms.html`, `content/pages/last-minute-bosphorus.js`, `content/ui-translations/*.json`.
+
 **Tek source of truth:**
-- Site terms.html: "Same-day until 20:00 (1 hour before departure)"
+- Site terms.html: "Same-day bookings are accepted until 21:00 (right up to departure)"
 - AI prompt: `src/claude/system-prompt.js` § TRANSFER CUTOFF tablosu (20:00-21:00 satırı)
 - AI tool: `src/claude/tools/create-reservation.js:189` (21:00 hard reddet)
 - Wizard: `js/main.js` Step 2→3 validation (cutoff parametresi)
