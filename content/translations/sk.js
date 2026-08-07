@@ -22,7 +22,7 @@ module.exports = {
       'Či už oslavujete narodeniny, hľadáte prémiový večer v Istanbule pre svoju rodinu, alebo chcete najfotogenickejší prechod zo západu slnka do noci v meste — toto je plavba s večerou, ktorú v prvom rade odporúčajú miestni obyvatelia Istanbulu.'
     ],
     highlights: [
-      { title: 'Turecká viacchodová večera', desc: '10 variantov studených mezze, teplý predjedlo (paçanga böreği), hlavný chod na výber (losos / morský okún / kura / mäsové guľôčky / vegetariánske), zmrzlinová torta ako dezert, neobmedzené nealkoholické nápoje.' },
+      { title: 'Turecká viacchodová večera', desc: '10 variantov studených mezze, teplý predjedlo (paçanga böreği), hlavný chod na výber (losos / morský vlk / kura / mäsové guľôčky / vegetariánske), zmrzlinová torta ako dezert, neobmedzené nealkoholické nápoje.' },
       { title: 'Živé ľudové tance, orientálny tanec a DJ', desc: 'Osem čísel: Oba Dombra, predstavenie Mevlana sema, Sarı Gelin, azerbajdžanské potpourri, klasický orientálny tanec, anatolské potpourri a gruzínsko-kaukazský tanec s nožmi — potom živý saxofón a DJ set počas celej plavby.' },
       { title: 'Kompletná nočná trasa po Bospore', desc: 'Kabataş → Dolmabahçe → Palác Çırağan → Mešita Ortaköy → Bebek → Rumeli Hisarı → Most FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Od €{p.dinnerStd}/osoba — platba na palube', desc: 'Plavba s večerou €{p.dinnerStd} (predtým €{p.dinnerStdOriginal}). Bez platby vopred. Bezplatné storno až 2 hodiny pred odchodom.' }
@@ -125,12 +125,12 @@ module.exports = {
       badge: '100% Halal · Rodinne Priateľské · Moslimský Vlastník'
     },
     intro: [
-      '**Halal plavba po Bospore** je najúctivejšia plavba s večerou v Istanbule pre moslimských cestovateľov. Všetko mäso podávané na našej lodi — losos, morský okún, kura, jahňacie mäsové guľôčky, hovädzia sviečková, rib eye — je **halal certifikované** od schválených dodávateľov. Servírujeme rovnaké menu každému hosťovi; žiadna samostatná "halal sekcia", pretože celá loď je štandardne halal.',
+      '**Halal plavba po Bospore** je najúctivejšia plavba s večerou v Istanbule pre moslimských cestovateľov. Všetko mäso podávané na našej lodi — losos, morský vlk, kura, jahňacie mäsové guľôčky, hovädzia sviečková, rib eye — je **halal certifikované** od schválených dodávateľov. Servírujeme rovnaké menu každému hosťovi; žiadna samostatná "halal sekcia", pretože celá loď je štandardne halal.',
       'Alkohol je **voliteľný doplnok** — nikdy nevnucovaný hosťom a usporiadanie stolov prirodzene oddeľuje hostí, ktorí preferujú jedlo bez alkoholu. Pre hostí, ktorí chcú balíček 2 pohárov alkoholu (+€{p.alcohol2}/osoba), je k dispozícii, ale zahrnuté neobmedzené nealkoholické nápoje (voda, kola, džús) sú pre väčšinu moslimských rodín postačujúce. Naša posádka je vyškolená rešpektovať vaše preferencie bez predpokladov.',
       '**Halal priateľská plavba po Bospore** záleží pre cestovateľov zo Saudskej Arábie, SAE, Kuvajtu, Kataru, Iránu, Malajzie, Indonézie, Pakistanu a Maroka, ktorí chcú najikonickejší večer Istanbulu bez kompromisov. Licencované TÜRSAB, 4,8★ a platba na palube — nesľubujte nič, kým si nie ste istí, že zážitok spĺňa vaše štandardy.'
     ],
     highlights: [
-      { title: '100% halal certifikované menu', desc: 'Všetko mäso (losos, morský okún, kura, mäsové guľôčky, hovädzie, rib eye) je halal certifikované od schválených dodávateľov. Kuchyňa dodržiava halal prípravu. Žiadne bravčové produkty ani neHalal prísady. Vegetariánske možnosti sú vždy k dispozícii.' },
+      { title: '100% halal certifikované menu', desc: 'Všetko mäso (losos, morský vlk, kura, mäsové guľôčky, hovädzie, rib eye) je halal certifikované od schválených dodávateľov. Kuchyňa dodržiava halal prípravu. Žiadne bravčové produkty ani neHalal prísady. Vegetariánske možnosti sú vždy k dispozícii.' },
       { title: 'Alkohol voliteľný, nikdy nevnucovaný', desc: 'Alkoholové balíčky sú doplnok — nie sú v predvolenom nastavení zahrnuté. Nealkoholické nápoje (voda, kola, džús) sú neobmedzené a zadarmo. Váš stôl zostáva bez alkoholu, pokiaľ výslovne nepožiadate. Posádka ticho rešpektuje vašu voľbu.' },
       { title: 'Rodinne priateľská zábava', desc: 'Predstavenie sema, tradičné turecké ľudové tance, živá turecká hudba. Žiadne šou v štýle nočného klubu, žiadny nevhodný obsah. Bezpečné pre deti, úctivé pre rodiny. Orientálny tanec je tradičná umelecká forma, prezentovaná so skromnosťou.' },
       { title: 'Rešpekt k modlitebným hodinám', desc: 'Ak nalodenie pripadne na maghrib alebo isha (20:00-21:00), naša posádka vás môže nasmerovať do tichej modlitebnej zóny na prístavisku Kabataş pred odchodom. Stačí nám dať vedieť pri rezervácii.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Súkromný stôl pre dvoch', desc: 'Súkromný stôl pre 2 osoby, nezdieľaný. Priorita stolov pri okne pre páry. Fotografie západu slnka a nočného Bosporu priamo pri vašom okne.' },
-      { title: 'Pomalá viacchodová večera', desc: '10 variantov tureckých mezze, teplý predjedlo, hlavný chod (losos, morský okún, kura, mäsové guľôčky alebo vegetariánske), zmrzlinová torta ako dezert. Podávaná pomaly počas 3 hodín — neponáhľate sa.' },
+      { title: 'Pomalá viacchodová večera', desc: '10 variantov tureckých mezze, teplý predjedlo, hlavný chod (losos, morský vlk, kura, mäsové guľôčky alebo vegetariánske), zmrzlinová torta ako dezert. Podávaná pomaly počas 3 hodín — neponáhľate sa.' },
       { title: 'Živé husle a tichá hudba', desc: 'Živé husle a akustická turecká hudba počas večere vytvárajú intímnu atmosféru vhodnú pre konverzáciu. Potom nastupuje DJ pre páry, ktoré chcú tancovať.' },
       { title: 'Doplnky pre zvláštne večery', desc: 'Romantické usporiadanie stola (sviečky, ruže): +€{p.romantic}. 2 poháre alkoholu (víno, pivo alebo rakı): +€{p.alcohol2}/osoba. Transfer z hotela (tam a späť): +€{p.transfer}/osoba. Vyberte si, čo sa hodí k vášmu večeru.' }
     ],
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Osvetlený Bospor v dramatickom vrchole', desc: 'Most Bospor mení farbu (modrá, fialová, zlatá), paláce žiaria žlto, mešita Ortaköy sa odráža v tmavej vode. 21:00-00:00 maximálne osvetlenie pre všetky pamätníky Istanbulu.' },
       { title: 'Tradičná turecká šou na palube', desc: 'Osem čísel: Oba Dombra, predstavenie sema, Sarı Gelin, azerbajdžanské potpourri, orientálny tanec, anatolské potpourri a gruzínsko-kaukazský tanec s nožmi, potom živý saxofón a DJ set. 40 minút šou, potom pokračuje hudba + večera.' },
-      { title: 'Plná viacchodová večera', desc: '10 variantov tureckých mezze, teplý predjedlo (paçanga böreği), hlavný chod (losos, morský okún, kura, mäsové guľôčky, vegetariánske — vaša voľba), dezert (zmrzlinová torta), neobmedzené nealkoholické nápoje. Halal certifikované.' },
+      { title: 'Plná viacchodová večera', desc: '10 variantov tureckých mezze, teplý predjedlo (paçanga böreği), hlavný chod (losos, morský vlk, kura, mäsové guľôčky, vegetariánske — vaša voľba), dezert (zmrzlinová torta), neobmedzené nealkoholické nápoje. Halal certifikované.' },
       { title: 'Kompletná trasa po Bospore', desc: 'Kabataş → Dolmabahçe → Palác Çırağan → Mešita Ortaköy → Bebek → Rumeli Hisarı → Most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Dievčia veža → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/osoba (predtým €{p.dinnerStdOriginal}). Platba na palube — bez platby vopred, bez rizika. Licencované TÜRSAB A-17672, hodnotené 4,8★ viac ako 11.317 cestovateľmi.'
     ],
     highlights: [
-      { title: 'Plná turecká viacchodová večera', desc: '10 variantov mezze, teplý predjedlo, hlavný chod (losos/morský okún/kura/mäsové guľôčky/vegetariánske), zmrzlinová torta. Halal certifikované. Neobmedzené nealkoholické nápoje zahrnuté.' },
+      { title: 'Plná turecká viacchodová večera', desc: '10 variantov mezze, teplý predjedlo, hlavný chod (losos/morský vlk/kura/mäsové guľôčky/vegetariánske), zmrzlinová torta. Halal certifikované. Neobmedzené nealkoholické nápoje zahrnuté.' },
       { title: 'Živá šou tureckých ľudových tancov', desc: 'Osem čísel: Oba Dombra, predstavenie sema, Sarı Gelin, azerbajdžanské potpourri, orientálny tanec, anatolské potpourri, gruzínsko-kaukazský tanec s nožmi, potom živý saxofón a DJ. 40 minút šou, kontinuálna hudba v pozadí.' },
       { title: 'Kompletná nočná trasa po Bospore', desc: '3-hodinová túra: Dolmabahçe, Çırağan, mešita Ortaköy, most Bospor, Bebek, Rumeli Hisarı, most FSM, Beylerbeyi, Üsküdar, Dievčia veža. Oba brehy, európsky a ázijský.' },
       { title: 'Od €{p.dinnerStd} — platba na palube', desc: 'Plavba s večerou: €{p.dinnerStd} (predtým €{p.dinnerStdOriginal}). Bez platby vopred. Bezplatné storno až 2 hodiny pred odchodom.' }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Všetky ikonické nočné výhľady Istanbulu', desc: 'Palác Dolmabahçe, mešita Ortaköy, osvetlený most Bospor, Rumeli Hisarı, most FSM, Palác Beylerbeyi, Dievčia veža. Každý hlavný pamätník pri vrchole nočného osvetlenia.' },
-      { title: 'Plná turecká večera zahrnutá', desc: '10 mezze, teplý predjedlo, hlavný chod (losos/morský okún/kura/mäsové guľôčky/vegetariánske), dezert, neobmedzené nealkoholické nápoje. Halal certifikované. Cena €{p.dinnerStd}/osoba — všetko zahrnuté.' },
+      { title: 'Plná turecká večera zahrnutá', desc: '10 mezze, teplý predjedlo, hlavný chod (losos/morský vlk/kura/mäsové guľôčky/vegetariánske), dezert, neobmedzené nealkoholické nápoje. Halal certifikované. Cena €{p.dinnerStd}/osoba — všetko zahrnuté.' },
       { title: 'Živé ľudové tance + sema + orientálny', desc: 'Osemdielny živý program: Oba Dombra, Mevlana sema predstavenie, Sarı Gelin, azerbajdžanské potpourri, orientálny tanec, anatolské potpourri, gruzínsko-kaukazský tanec s nožmi, potom živý saxofón a DJ. 40 minút šou, hudba v pozadí celý večer.' },
       { title: 'Ľahké pre prvú návštevu Istanbulu', desc: 'Centrálne miesto stretnutia (prístavisko Kabataş), transfer z hotela (+€{p.transfer}/osoba), anglicky hovoriaca posádka, platba na palube. Nulový logistický stres. Príďte, užite si, choďte.' }
     ],
@@ -538,8 +538,8 @@ module.exports = {
       { title: 'Transfer z hotela v rovnaký deň často k dispozícii', desc: 'Transfer z hotela zvyčajne vyžaduje 24-hodinové oznámenie, ale pre rezervácie v rovnaký deň medzi 14:00-18:30 môžeme často zariadiť vyzdvihnutie s +€{p.transfer}/osoba. Pre naliehavé požiadavky na transfer, WhatsApp.' }
     ],
     faq: [
-      { q: 'Môžem skutočne rezervovať plavbu po Bospore na dnes večer?', a: 'Áno — často. Rezervujeme miesta pre rezervácie v rovnaký deň. Skontrolujte formulár vyššie pre dostupnosť dnes večer. Ak sú miesta k dispozícii, môžete rezervovať do 20:00. Víkendy sú rušnejšie — rezervujte skôr v deň, ak je to možné.' },
-      { q: 'Ako last minute môžem rezervovať?', a: 'Rezervácie zostávajú otvorené do 20:00 pre loď o 21:00. Po 20:00 nám napíšte priamo cez WhatsApp na +90 532 244 29 22 — ak sú voľné miesta, môžeme potvrdiť manuálne.' },
+      { q: 'Môžem skutočne rezervovať plavbu po Bospore na dnes večer?', a: 'Áno — často. Rezervujeme miesta pre rezervácie v rovnaký deň. Skontrolujte formulár vyššie pre dostupnosť dnes večer. Ak sú miesta k dispozícii, môžete rezervovať do 21:00. Víkendy sú rušnejšie — rezervujte skôr v deň, ak je to možné.' },
+      { q: 'Ako last minute môžem rezervovať?', a: 'Rezervácie zostávajú otvorené do 21:00 — až do samotného odchodu. Ak je to naozaj tesne pred odchodom, napíšte nám priamo na WhatsApp +90 532 244 29 22 — ak sú miesta voľné, potvrdíme ručne.' },
       { q: 'Je plavba po Bospore v poslednej chvíli drahšia?', a: 'Nie — rovnaká cena ako predbežná rezervácia. €{p.dinnerStd}/osoba. Nerobíme "dynamické ceny" ani príplatky za poslednú chvíľu. Rovnaká loď, rovnaká večera, rovnaká šou, rovnaká cena.' },
       { q: 'Čo sa stane, ak je dnešná túra plná?', a: 'Zajtrajšia túra je zvyčajne otvorená — prevádzkujeme 365 dní v roku, každý deň. Môžete rezervovať na zajtra a stále byť "last minute", čo znamená, že ste sa práve rozhodli. Túry v pracovných dňoch majú viac priestoru ako víkendy.' },
       { q: 'Môžete zariadiť transfer z hotela v poslednej chvíli?', a: 'Transfer v rovnaký deň je možný do ~18:30 pre túru o 21:00. Po 18:30 nemusíme mať k dispozícii vodiča — v tomto prípade si môžete vziať taxík na prístavisko Kabataş (15 min z Taksimu, 10 min zo Sultanahmetu, ~€10-15). Centrálne a ľahké.' },

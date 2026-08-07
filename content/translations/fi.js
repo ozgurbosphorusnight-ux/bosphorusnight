@@ -521,18 +521,18 @@ module.exports = {
     },
     intro: [
       'Suunnitteletko spontaania iltaa Istanbulissa? Bosporinsalmen illallisristely on helppo varata viime hetkellä – täytä lomake ja saat vahvistuksen nopeasti.',
-      'Varaa tänään ennen kello 20:00 ja pääset mukaan illan risteilylle. Maksa vasta laivalla – ei ennakkomaksua.',
+      'Varaa tänään ennen kello 21:00 ja pääset mukaan illan risteilylle. Maksa vasta laivalla – ei ennakkomaksua.',
       'Hinta {p.dinnerStd} per henkilö. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [
       { icon: '⚡', text: 'Nopea varaus – vahvistus minuuteissa WhatsAppiin' },
-      { icon: '📅', text: 'Varaa vielä tänään – saatavilla ennen klo 20:00' },
+      { icon: '📅', text: 'Varaa vielä tänään – saatavilla ennen klo 21:00' },
       { icon: '💳', text: 'Maksa laivalla – ei ennakkomaksua' },
       { icon: '🍽️', text: 'Täysi illallinen mukana – ei lisäkustannuksia' },
       { icon: '🚢', text: 'Lähtö 21:00 Kabataşista – ota seikkailu vastaan!' }
     ],
     faq: [
-      { q: 'Kuinka myöhään voin varata?', a: 'Voit varata tänään ennen kello 20:00. Sen jälkeen varaus ei onnistu enää tälle päivälle.' },
+      { q: 'Kuinka myöhään voin varata?', a: 'Voit varata tänään ennen kello 21:00. Sen jälkeen varaus ei onnistu enää tälle päivälle.' },
       { q: 'Onko paikkoja aina saatavilla?', a: 'Laivassamme on useimmiten tilaa, mutta suosittelemme varaamaan ajoissa, erityisesti viikonloppuisin.' },
       { q: 'Miten vahvistus tulee?', a: 'Saat vahvistuksen WhatsAppiin tai sähköpostiin yleensä muutamassa minuutissa.' },
       { q: 'Voinko tulla suoraan satamaan ilman varausta?', a: 'Varaus on suositeltava paikan varmistamiseksi. Walk-in ei ole taattu.' },

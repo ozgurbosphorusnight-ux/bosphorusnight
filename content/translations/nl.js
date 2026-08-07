@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Zomerse zonsondergangen precies bij vertrek', desc: 'Van mei tot augustus gaat de zon in Istanbul onder tussen ongeveer 20:15 en 20:45 — inschepen om 20:00 geeft u het gulden uur op het dek, en het vertrek om 21:00 brengt u op het water voor de zonsondergang zelf. Camera klaar — dit is de foto.' },
       { title: 'Van blauw uur naar volle nacht', desc: 'Niet alleen de zonsondergang — de cruise vaart door de schemering de volledig verlichte Bosporus in. Gulden licht, blauw uur, dan 30 miljoen bruglichten op donker water: drie lichtfasen in één avond.' },
-      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebrasem, kip, köfte, vegetarisch), ijstaart, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
+      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kip, köfte, vegetarisch), ijstaart, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporusbrug — alles schittert', desc: 'De route passeert het Dolmabahçe-paleis, de Ortaköy-moskee, de Bosporusbrug, Rumeli Hisarı en het Beylerbeyi-paleis terwijl hun lichten aangaan. Elke bezienswaardigheid in haar beste licht.' }
     ],
     faq: [
@@ -538,8 +538,8 @@ module.exports = {
       { title: 'Hoteltransfer op dezelfde dag vaak beschikbaar', desc: 'De hoteltransfer vereist normaal 24 uur kennisgeving, maar voor reserveringen op dezelfde dag tussen 14:00-18:30 kunnen wij vaak ophalen regelen met +€{p.transfer}/persoon. Voor dringende transferverzoeken, WhatsApp.' }
     ],
     faq: [
-      { q: 'Kan ik echt de Bosporuscruise voor vanavond reserveren?', a: 'Ja — vaak. Wij reserveren plaatsen voor reserveringen op dezelfde dag. Controleer het formulier hierboven voor beschikbaarheid van vanavond. Als er plaatsen beschikbaar zijn, kunt u reserveren tot 20:00. Weekenden zijn drukker — reserveer indien mogelijk vroeger op de dag.' },
-      { q: 'Hoe last-minute kan ik reserveren?', a: 'De reserveringen blijven open tot 20:00 voor de boot van 21:00. Na 20:00, schrijf ons rechtstreeks via WhatsApp op +90 532 244 29 22 — als er vrije plaatsen zijn, kunnen wij handmatig bevestigen.' },
+      { q: 'Kan ik echt de Bosporuscruise voor vanavond reserveren?', a: 'Ja — vaak. Wij reserveren plaatsen voor reserveringen op dezelfde dag. Controleer het formulier hierboven voor beschikbaarheid van vanavond. Als er plaatsen beschikbaar zijn, kunt u reserveren tot 21:00. Weekenden zijn drukker — reserveer indien mogelijk vroeger op de dag.' },
+      { q: 'Hoe last-minute kan ik reserveren?', a: 'Boeken kan tot 21:00 — tot vlak voor vertrek. Is het heel kort dag, stuur ons dan direct een bericht op WhatsApp +90 532 244 29 22 — als er plaatsen vrij zijn, bevestigen we handmatig.' },
       { q: 'Is de Bosporuscruise op het laatste moment duurder?', a: 'Nee — dezelfde prijs als vooruitboeking. €{p.dinnerStd}/persoon. Wij doen geen "dynamische prijzen" of toeslagen voor het laatste moment. Dezelfde boot, hetzelfde diner, dezelfde show, dezelfde prijs.' },
       { q: 'Wat gebeurt er als de tour van vanavond vol is?', a: 'De tour van morgen is meestal open — wij opereren 365 dagen per jaar, elke dag. U kunt voor morgen reserveren en nog steeds "last minute" zijn, wat betekent dat u net heeft beslist. Werkdag-tours hebben meer ruimte dan weekenden.' },
       { q: 'Kunt u de hoteltransfer op het laatste moment regelen?', a: 'Transfer op dezelfde dag is mogelijk tot ~18:30 voor de tour van 21:00. Na 18:30 hebben wij mogelijk geen chauffeur beschikbaar — in dat geval kunt u een taxi naar de aanlegplaats Kabataş nemen (15 min vanaf Taksim, 10 min vanaf Sultanahmet, ~€10-15). Centraal en gemakkelijk.' },

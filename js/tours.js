@@ -183,7 +183,9 @@ const TOURS = {
       ],
       bottom: [
         '/assets/tours/dinner/folk-dance.jpg',
-        '/assets/tours/dinner/steak-wine.jpg',
+        // was steak-wine.jpg — black-backdrop studio shot that clashed with the
+        // warm night imagery around it, and the plate is a chicken skewer, not steak.
+        '/assets/tours/dinner/couple-cheers-bridge.jpg',
         '/assets/tours/dinner/cocktails.jpg'
       ],
       side: [
