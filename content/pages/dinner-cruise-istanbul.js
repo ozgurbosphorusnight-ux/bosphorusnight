@@ -65,6 +65,10 @@ module.exports = {
 
   faq: [
     {
+      q: 'What shows are in the dinner cruise programme?',
+      a: 'Eight acts: Oba Dombra (Central Asian shaman rhythm), the Mevlana whirling dervish ceremony, Sarı Gelin, an Azerbaijani medley, the oriental (belly dance) show, a Turkish / Anatolian medley, the Georgian Gandagan and Caucasian medley with its traditional knife dance, and an after-party with live saxophone and DJ. The programme runs across the cruise; the order can shift from night to night.'
+    },
+    {
       q: 'How much is a dinner cruise in Istanbul?',
       a: 'Our dinner cruise is €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Children 0-3 free, 4-8 at 50% off. Pay on the boat — no prepayment.'
     },

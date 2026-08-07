@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Vanaf €{p.dinnerStd} — betaling aan boord', desc: 'Dinercruise: €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal}). Geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' }
     ],
     faq: [
+    {
+      q: "Welke shows zitten in het programma van de dinercruise?",
+      a: "Acht acts: Oba Dombra (Centraal-Aziatisch sjamanenritme), de Mevlana-ceremonie van de draaiende derwisjen, Sarı Gelin, een Azerbeidzjaanse medley, de oosterse show (buikdans), een Turks-Anatolische medley, de Georgische Gandagan en een Kaukasische medley met de traditionele messendans, en als afsluiter live saxofoon en DJ. Het programma loopt door de hele cruise; de volgorde kan verschillen."
+    },
       { q: 'Hoeveel kost de dinercruise in Istanbul?', a: 'Onze dinercruise is €{p.dinnerStd}/persoon (normale prijs €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-8 jaar 50% korting. Betaling aan boord — geen vooruitbetaling.' },
       { q: 'Wat is inbegrepen in de prijs van de Istanbul dinercruise?', a: 'Tour van 3 uur op de Bosporus, Turks meergangendiner (mezze, warme voorgerecht, hoofdgerecht, dessert), onbeperkt frisdrank, live volksdans-show (sema, volksdansen, oriëntaalse), live muziek + dj, toegang tot open dek, belastingen inbegrepen. Hoteltransfer en alcohol zijn optionele supplementen.' },
       { q: 'Vanwaar vertrekt de Istanbul dinercruise?', a: 'Aanlegplaats Kabataş, Istanbul — aan de Europese kust, dichtbij het Dolmabahçe-paleis. De exacte ontmoetingsplaats wordt na de reservering meegedeeld via WhatsApp / Telegram. De wandelvideo\'s van de tramhalte Dolmabahçe en de tramhalte Kabataş bevinden zich in de ontmoetingsplaatssectie hierboven.' },

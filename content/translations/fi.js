@@ -348,6 +348,10 @@ module.exports = {
       { icon: '💳', text: 'Maksa laivalla – varaa paikka nyt' }
     ],
     faq: [
+    {
+      q: "Mitä esityksiä illallisristeilyn ohjelmaan kuuluu?",
+      a: "Kahdeksan numeroa: Oba Dombra (Keski-Aasian šamaanirytmi), Mevlanan pyörivien dervissien seremonia, Sarı Gelin, azerbaidžanilainen medley, orientaalinen show (vatsatanssi), turkkilais-anatolialainen medley, georgialainen Gandagan ja kaukasialainen medley perinteisine veitsitansseineen sekä lopuksi live-saksofoni ja DJ. Ohjelma kulkee koko risteilyn ajan, ja järjestys voi vaihdella."
+    },
       { q: 'Mistä illallisristely lähtee?', a: 'Kabataşin laiturista Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei, hintaan sisältyvät juomat ovat alkoholittomia. Alkoholia voi lisätä: 2 lasia {p.alcohol2}.' },
       { q: 'Onko laivalla kasvisruokaa?', a: 'Mezot ovat pääosin kasvispitoisia. Kysy pääruoan kasvisvaihtoehdoista etukäteen.' },

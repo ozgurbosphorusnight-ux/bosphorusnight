@@ -354,6 +354,10 @@ module.exports = {
       { title: "Da €{p.dinnerStd} — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }
     ],
     faq: [
+    {
+      q: "Quali spettacoli compongono il programma della crociera con cena?",
+      a: "Otto numeri: Oba Dombra (ritmo sciamanico dell'Asia centrale), la cerimonia dei dervisci rotanti di Mevlana, Sarı Gelin, un medley azerbaigiano, lo spettacolo orientale (danza del ventre), un medley turco e anatolico, il Gandagan georgiano e un medley caucasico con la tradizionale danza dei coltelli, e in chiusura sassofono dal vivo e DJ. Il programma si svolge lungo tutta la crociera; l'ordine può cambiare."
+    },
       { q: "Quanto costa una crociera con cena a Istanbul?", a: "La nostra crociera con cena costa €{p.dinnerStd}/persona (prezzo pieno €{p.dinnerStdOriginal}). 0-3 anni gratis, 4-8 anni al 50%. Pagamento a bordo — nessun anticipo." },
       { q: "Cosa è incluso nel prezzo della crociera con cena a Istanbul?", a: "Tour di 3 ore sul Bosforo, cena turca a più portate (meze, antipasto caldo, secondo, dolce), bevande analcoliche illimitate, spettacolo di folklore dal vivo (Sema, folklore, orientale), musica dal vivo + DJ, accesso al ponte esterno, tasse incluse. Transfer hotel e alcol sono extra opzionali." },
       { q: "Da dove parte la crociera con cena a Istanbul?", a: "Molo di Kabataş, Istanbul — sul lato europeo, accanto al Palazzo Dolmabahçe. Il luogo esatto dell'incontro viene condiviso via WhatsApp / Telegram dopo la prenotazione. I video delle indicazioni a piedi dalla fermata del tram Dolmabahçe e dalla stazione del tram Kabataş sono nella sezione del punto d'incontro sopra." },

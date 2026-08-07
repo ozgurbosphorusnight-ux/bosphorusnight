@@ -355,6 +355,10 @@ module.exports = {
       { title: 'Fra €{p.dinnerStd} — betal om bord', desc: 'Middagscruise: €{p.dinnerStd} (fra €{p.dinnerStdOriginal}). Ingen forskuddsbetaling. Gratis avbestilling inntil 2 timer før avgang.' }
     ],
     faq: [
+    {
+      q: "Hvilke show er med i programmet på middagscruiset?",
+      a: "Åtte innslag: Oba Dombra (sentralasiatisk sjamanrytme), Mevlanas seremoni med virvlende dervisjer, Sarı Gelin, et aserbajdsjansk medley, det orientalske showet (magedans), et tyrkisk-anatolsk medley, georgisk Gandagan og et kaukasisk medley med tradisjonell knivdans, og til slutt live saksofon og DJ. Programmet går gjennom hele cruiset, og rekkefølgen kan variere."
+    },
       { q: 'Hva koster middagscruiset i Istanbul?', a: 'Vårt middagscruise koster €{p.dinnerStd}/person (ordinær pris €{p.dinnerStdOriginal}). 0–3 år gratis, 4–8 år 50 % rabatt. Betal om bord — ingen forskuddsbetaling.' },
       { q: 'Hva er inkludert i prisen for middagscruiset i Istanbul?', a: '3-timers tur på Bosporos, tyrkisk flerrettsmiddag (meze, varm forrett, hovedrett, dessert), ubegrenset lesedrikk, live folkedansshow (sema, folkedanser, orientalsk), live musikk + DJ, tilgang åpent dekk, avgifter inkludert. Hotelloverføring og alkohol er valgfrie tillegg.' },
       { q: 'Hvor avgår middagscruiset i Istanbul fra?', a: 'Kabataş-kaia, Istanbul — på den europeiske bredden, nær Dolmabahçe-palasset. Nøyaktig møtepunkt kommuniseres via WhatsApp / Telegram etter bestilling. Gåvideo fra Dolmabahçe-tramvaystopp og Kabataş-tramvaystopp finnes i møtepunkt-seksjonen ovenfor.' },

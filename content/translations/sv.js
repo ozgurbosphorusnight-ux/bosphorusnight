@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Från €{p.dinnerStd} — betalning ombord', desc: 'Middagskryssning: €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal}). Ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' }
     ],
     faq: [
+    {
+      q: "Vilka shower ingår i middagskryssningens program?",
+      a: "Åtta nummer: Oba Dombra (centralasiatisk shamanrytm), Mevlanas ceremoni med virvlande dervischer, Sarı Gelin, ett azerbajdzjanskt medley, den orientaliska showen (magdans), ett turkiskt-anatoliskt medley, georgisk Gandagan och ett kaukasiskt medley med traditionell knivdans, och som avslutning livesaxofon och DJ. Programmet pågår under hela kryssningen och ordningen kan variera."
+    },
       { q: 'Vad kostar middagskryssningen i Istanbul?', a: 'Vår middagskryssning kostar €{p.dinnerStd}/person (normalt pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år 50% rabatt. Betalning ombord — ingen förskottsbetalning.' },
       { q: 'Vad ingår i priset för Istanbul middagskryssningen?', a: '3-timmars tur på Bosporen, turkisk flerrättersmiddag (mezzer, varm förrätt, huvudrätt, dessert), obegränsade läsk, live folkdans-show (sema, folkdanser, orientalisk), livemusik + DJ, tillgång till öppet däck, skatter inkluderade. Hotelltransfer och alkohol är valfria tillägg.' },
       { q: 'Var avgår Istanbul middagskryssningen från?', a: 'Kabataş-bryggan, Istanbul — på den europeiska kusten, nära Dolmabahçe-palatset. Den exakta mötesplatsen meddelas efter bokning via WhatsApp / Telegram. Promenadvideorna från Dolmabahçe spårvagnshållplats och Kabataş spårvagnshållplats finns i mötesplatssektionen ovan.' },

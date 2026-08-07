@@ -356,6 +356,10 @@ module.exports = {
       { title: 'Mulai €{p.dinnerStd} — bayar di kapal', desc: 'Pelayaran makan malam €{p.dinnerStd} (sebelumnya €{p.dinnerStdOriginal}). Tanpa pembayaran di muka. Pembatalan gratis hingga 2 jam sebelum keberangkatan.' }
     ],
     faq: [
+    {
+      q: "Pertunjukan apa saja yang ada dalam program dinner cruise?",
+      a: "Delapan penampilan: Oba Dombra (irama shaman Asia Tengah), upacara darwis berputar Mevlana, Sarı Gelin, medley Azerbaijan, pertunjukan oriental (tari perut), medley Turki dan Anatolia, Gandagan Georgia serta medley Kaukasus dengan tarian pisau tradisionalnya, dan penutup berupa saksofon langsung dan DJ. Program berjalan sepanjang pelayaran; urutannya bisa berubah."
+    },
       { q: 'Berapa harga pelayaran makan malam di Istanbul?', a: 'Pelayaran makan malam kami €{p.dinnerStd}/orang (harga normal €{p.dinnerStdOriginal}). Usia 0-3 gratis, usia 4-8 diskon 50%. Bayar di kapal — tanpa pembayaran di muka.' },
       { q: 'Apa saja yang termasuk dalam harga pelayaran makan malam Istanbul?', a: 'Tur 3 jam di Bosphorus, makan malam Turki berlimpah (meze, hidangan pembuka hangat, menu utama, makanan penutup — semua halal), minuman ringan tanpa batas, pertunjukan tarian rakyat langsung (sema, tarian rakyat, oriental), musik langsung + DJ, akses dek terbuka, pajak termasuk. Antar-jemput hotel dan alkohol adalah tambahan opsional.' },
       { q: 'Dari mana pelayaran makan malam Istanbul berangkat?', a: 'Dermaga Kabataş, Istanbul — sisi Eropa, di sebelah Istana Dolmabahçe. Titik pertemuan lengkap dibagikan via WhatsApp / Telegram setelah pemesanan. Video berjalan dari halte trem Dolmabahçe dan stasiun trem Kabataş ada di bagian titik pertemuan di atas.' },

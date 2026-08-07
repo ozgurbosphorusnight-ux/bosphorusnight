@@ -355,6 +355,10 @@ module.exports = {
       { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
     ],
     faq: [
+    {
+      q: "Kādi šovi ir vakariņu kruīza programmā?",
+      a: "Astoņi priekšnesumi: Oba Dombra (Vidusāzijas šamaņu ritms), Mevlanas griežošos dervišu ceremonija, Sarı Gelin, azerbaidžāņu popurijs, austrumnieciskais šovs (vēderdeja), turku un Anatolijas popurijs, gruzīnu Gandagan un Kaukāza popurijs ar tradicionālo nažu deju, kā arī noslēgumā dzīvs saksofons un DJ. Programma norisinās visa kruīza laikā, un secība var mainīties."
+    },
       { q: 'Cik maksā vakariņu kruīzs Stambulā?', a: 'Mūsu vakariņu kruīzs €{p.dinnerStd}/personai (parastā cena €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–8 gadi 50% atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
       { q: 'Kas ir iekļauts vakariņu kruīza Stambulā cenā?', a: '3 stundu tūre pa Bosforu, turku vairāku ēdienu vakariņas (meze, silta uzkoda, galvenais ēdiens, deserts), neierobežoti bezalkoholiskie dzērieni, dzīvs tautas deju šovs (sema, tautas dejas, austrumu), dzīvā mūzika + DJ, pieeja atklātajam klājam, nodokļi iekļauti. Viesnīcas transfērs un alkohols ir brīvprātīgi papildinājumi.' },
       { q: 'No kurienes atiet vakariņu kruīzs Stambulā?', a: 'Kabataş piestātne, Stambula — Eiropas krastā, netālu no Dolmabahçe pils. Precīzais tikšanās punkts tiek paziņots pa WhatsApp / Telegram pēc rezervācijas. Gājēju video no Dolmabahçe tramvaja pieturas un Kabataş tramvaja pieturas atrodami tikšanās vietas sadaļā augstāk.' },

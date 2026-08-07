@@ -355,6 +355,10 @@ module.exports = {
       { title: 'De la €{p.dinnerStd} — plata pe vapor', desc: 'Croaziera cu cină: €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
     ],
     faq: [
+    {
+      q: "Ce spectacole sunt în programul croazierei cu cină?",
+      a: "Opt numere: Oba Dombra (ritm șamanic din Asia Centrală), ceremonia dervișilor rotitori Mevlana, Sarı Gelin, un potpuriu azer, spectacolul oriental (dans din buric), un potpuriu turcesc și anatolian, Gandagan georgian și un potpuriu caucazian cu tradiționalul dans al cuțitelor, iar în final saxofon live și DJ. Programul se desfășoară pe tot parcursul croazierei; ordinea poate varia."
+    },
       { q: 'Cât costă croaziera cu cină în Istanbul?', a: 'Croaziera noastră cu cină este €{p.dinnerStd}/persoană (preț normal €{p.dinnerStdOriginal}). 0-3 ani gratuit, 4-8 ani cu 50% reducere. Plata pe vapor — fără plată în avans.' },
       { q: 'Ce este inclus în prețul croazierei cu cină Istanbul?', a: 'Tur de 3 ore pe Bosfor, cină turcească cu multiple feluri (mezeluri, aperitiv cald, fel principal, desert), băuturi răcoritoare nelimitate, spectacol de dansuri populare live (sema, dansuri populare, oriental), muzică live + DJ, acces punte deschisă, taxe incluse. Transferul de la hotel și alcoolul sunt suplimente opționale.' },
       { q: 'De unde pleacă croaziera cu cină Istanbul?', a: 'Debarcaderul Kabataș, Istanbul — pe malul european, lângă Palatul Dolmabahçe. Locul exact de întâlnire se comunică prin WhatsApp / Telegram după rezervare. Videoclipurile de drum pe jos de la stația de tramvai Dolmabahçe și stația de tramvai Kabataș se află în secțiunea punctului de întâlnire de mai sus.' },

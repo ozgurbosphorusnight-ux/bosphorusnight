@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Od €{p.dinnerStd} — płatność na pokładzie', desc: 'Rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
     ],
     faq: [
+    {
+      q: "Jakie pokazy znajdują się w programie rejsu z kolacją?",
+      a: "Osiem występów: Oba Dombra (szamański rytm Azji Środkowej), ceremonia wirujących derwiszów Mevlana, Sarı Gelin, składanka azerska, pokaz orientalny (taniec brzucha), składanka turecko-anatolijska, gruziński Gandagan i składanka kaukaska z tradycyjnym tańcem z nożami oraz finał z saksofonem na żywo i DJ-em. Program trwa przez cały rejs, a kolejność może się zmieniać."
+    },
       { q: 'Ile kosztuje rejs z kolacją w Stambule?', a: 'Nasz rejs z kolacją €{p.dinnerStd}/osobę (cena regularna €{p.dinnerStdOriginal}). Dzieci 0-3 lata bezpłatnie, 4-8 lat 50% zniżki. Płatność na pokładzie — bez przedpłaty.' },
       { q: 'Co jest wliczone w cenę rejsu z kolacją w Stambule?', a: '3-godzinny rejs po Bosforze, bogata turecka kolacja (mezze, ciepła przystawka, danie główne, deser), nieograniczone napoje bezalkoholowe, pokaz tańców ludowych na żywo (sema, tańce ludowe, taniec brzucha), muzyka na żywo + DJ, dostęp do otwartego pokładu, podatki wliczone. Transfer hotelowy i alkohol są opcjonalnymi dodatkami.' },
       { q: 'Skąd wypływa rejs z kolacją w Stambule?', a: 'Przystań Kabataş, Stambuł — strona europejska, obok Pałacu Dolmabahçe. Dokładny punkt zbiórki udostępniany po rezerwacji przez WhatsApp / Telegram. Filmy trasy pieszo z przystanku tramwajowego Dolmabahçe i stacji tramwajowej Kabataş w sekcji punktu zbiórki powyżej.' },

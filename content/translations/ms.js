@@ -355,6 +355,10 @@ module.exports = {
       { title: 'Dari €{p.dinnerStd} — bayar di atas bot', desc: 'Pelayaran makan malam €{p.dinnerStd} (asalnya €{p.dinnerStdOriginal}). Tiada bayaran pendahuluan. Pembatalan percuma sehingga 2 jam sebelum bertolak.' }
     ],
     faq: [
+    {
+      q: "Persembahan apa yang ada dalam program pelayaran makan malam?",
+      a: "Lapan persembahan: Oba Dombra (irama shaman Asia Tengah), upacara darwis berpusing Mevlana, Sarı Gelin, medley Azerbaijan, persembahan oryantal (tarian perut), medley Turki dan Anatolia, Gandagan Georgia serta medley Caucasus dengan tarian pisau tradisionalnya, dan penutup saksofon langsung dan DJ. Program berjalan sepanjang pelayaran; urutannya boleh berubah."
+    },
       { q: 'Berapakah kos pelayaran makan malam di Istanbul?', a: 'Pelayaran makan malam kami €{p.dinnerStd}/orang (harga biasa €{p.dinnerStdOriginal}). Umur 0-3 percuma, 4-8 diskaun 50%. Bayar di atas bot — tiada bayaran pendahuluan.' },
       { q: 'Apa yang termasuk dalam harga pelayaran makan malam Istanbul?', a: 'Pelayaran 3 jam di Bosphorus, makan malam Turki berbilang hidangan (meze, pembuka selera panas, hidangan utama, pencuci mulut), minuman ringan tanpa had, persembahan tarian rakyat langsung (sema, tarian rakyat, oryantal), muzik langsung + DJ, akses dek terbuka, cukai termasuk. Pemindahan hotel dan alkohol adalah tambahan pilihan.' },
       { q: 'Dari manakah pelayaran makan malam Istanbul bertolak?', a: 'Jeti Kabataş, Istanbul — di tepi Eropah, bersebelahan Istana Dolmabahçe. Lokasi pertemuan tepat dikongsi melalui WhatsApp / Telegram selepas tempahan. Video arah berjalan dari perhentian trem Dolmabahçe dan stesen trem Kabataş di bahagian titik pertemuan di atas.' },

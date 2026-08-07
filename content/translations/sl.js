@@ -355,6 +355,10 @@ module.exports = {
       { title: 'Od €{p.dinnerStd} — plačaš na ladji', desc: '€{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}) — en meni za vse goste. Brez predplačila. Brezplačna odpoved do 2 uri pred odhodom.' }
     ],
     faq: [
+    {
+      q: "Katere predstave so v programu križarjenja z večerjo?",
+      a: "Osem nastopov: Oba Dombra (srednjeazijski šamanski ritem), Mevlanov obred vrtečih se dervišev, Sarı Gelin, azerbajdžanski venček, orientalski šov (trebušni ples), turško-anatolski venček, gruzijski Gandagan in kavkaški venček s tradicionalnim plesom z noži ter za zaključek saksofon v živo in DJ. Program poteka med celotnim križarjenjem, vrstni red se lahko spremeni."
+    },
       { q: 'Koliko stane večerna plovba v Istanbulu?', a: 'Naša večerna plovba €{p.dinnerStd}/osebo (redna cena €{p.dinnerStdOriginal}) — en meni za vse goste. 0–3 let brezplačno, 4–8 let 50 % popust. Plačaš na ladji — brez predplačila.' },
       { q: 'Kaj je vključeno v ceno večerne plovbe v Istanbulu?', a: '3-urna plovba po Bosporju, turška večerja z več hodi (meze, topla predjed, glavna jed, sladica), neomejene brezalkoholne pijače, ljudska predstava v živo (sema, ljudski plesi, trebušni), glasba v živo + DJ, dostop do odprtega krova, davki vključeni. Hotelski prevoz in alkohol sta izbirna dodatka.' },
       { q: 'Od kod odpluje večerna plovba v Istanbulu?', a: 'Pomol Kabataş, Istanbul — na evropski obali, blizu palače Dolmabahçe. Točno mesto srečanja je sporočeno prek WhatsAppa / Telegrama po rezervaciji. Video poti peš od tramvajske postaje Dolmabahçe in tramvajske postaje Kabataş sta v zgornjem razdelku mesta srečanja.' },

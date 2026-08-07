@@ -354,6 +354,10 @@ module.exports = {
       { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Vacsorás hajóút: €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
     ],
     faq: [
+    {
+      q: "Milyen műsorszámok vannak a vacsorás hajóút programjában?",
+      a: "Nyolc produkció: Oba Dombra (közép-ázsiai sámánritmus), a kerengő dervisek Mevlana-szertartása, Sarı Gelin, azeri egyveleg, orientális show (hastánc), török-anatóliai egyveleg, a grúz Gandagan és egy kaukázusi egyveleg a hagyományos késtánccal, végül élő szaxofon és DJ. A program az egész hajóút alatt zajlik, a sorrend változhat."
+    },
       { q: 'Mennyibe kerül a vacsorás hajóút Isztambulban?', a: 'Vacsorás hajóútunk €{p.dinnerStd}/fő (normál ár €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-8 év 50% kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
       { q: 'Mi tartozik bele az isztambuli vacsorás hajóút árába?', a: '3 órás túra a Boszporuszon, török többfogásos vacsora (mezze, meleg előétel, főétel, desszert), korlátlan üdítők, élő népi tánc show (sema, népi táncok, keleti), élő zene + DJ, hozzáférés a nyitott fedélzethez, adók beleértve. A szállodai transzfer és az alkohol opcionális kiegészítők.' },
       { q: 'Honnan indul az isztambuli vacsorás hajóút?', a: 'Kabataş kikötő, Isztambul — az európai parton, a Dolmabahçe-palota közelében. A pontos találkozási helyet foglalás után WhatsApp / Telegram-en közöljük. A Dolmabahçe villamosmegállóból és a Kabataş villamosmegállóból induló gyalogos videók a fenti találkozási hely szakaszban találhatók.' },

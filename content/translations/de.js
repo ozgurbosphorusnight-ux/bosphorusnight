@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Ab €{p.dinnerStd} — Zahlung an Bord', desc: 'Dinner-Cruise €{p.dinnerStd} (vorher €{p.dinnerStdOriginal}). Keine Vorauszahlung. Kostenlose Stornierung bis 2 Stunden vor Abfahrt.' }
     ],
     faq: [
+    {
+      q: "Welche Shows gehören zum Programm der Dinner-Cruise?",
+      a: "Acht Auftritte: Oba Dombra (zentralasiatischer Schamanenrhythmus), die Mevlana-Zeremonie der tanzenden Derwische, Sarı Gelin, ein aserbaidschanisches Medley, die orientalische Show (Bauchtanz), ein türkisch-anatolisches Medley, der georgische Gandagan und ein kaukasisches Medley mit traditionellem Messertanz sowie zum Abschluss Live-Saxophon und DJ. Das Programm läuft über den ganzen Abend; die Reihenfolge kann variieren."
+    },
       { q: 'Wie viel kostet eine Dinner-Cruise in Istanbul?', a: 'Unsere Dinner-Cruise kostet €{p.dinnerStd}/Person (regulärer Preis €{p.dinnerStdOriginal}). 0–3 Jahre gratis, 4–8 Jahre 50 % Ermäßigung. Zahlung an Bord — keine Vorauszahlung.' },
       { q: 'Was ist im Preis einer Dinner-Cruise Istanbul enthalten?', a: '3-stündige Bosporus-Tour, mehrgängiges türkisches Dinner (Mezze, warme Vorspeise, Hauptgang, Dessert), unbegrenzte alkoholfreie Getränke, Live-Folkloreshow (Sema, Volkstänze, orientalisch), Livemusik + DJ, Zugang zum Oberdeck, Steuern inklusive. Hoteltransfer und Alkohol sind optionale Extras.' },
       { q: 'Wo startet die Dinner-Cruise Istanbul?', a: 'Kabataş-Pier, Istanbul — auf der europäischen Seite, neben dem Dolmabahçe-Palast. Der genaue Treffpunkt wird nach der Buchung per WhatsApp / Telegram geteilt. Gehvideos von der Dolmabahçe-Straßenbahnhaltestelle und dem Kabataş-Tram-Bahnhof finden Sie im Abschnitt Treffpunkt oben.' },

@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Fra €{p.dinnerStd} — betaling om bord', desc: 'Middagskrydstogt: €{p.dinnerStd} (tidligere €{p.dinnerStdOriginal}). Ingen forudbetaling. Gratis afbestilling indtil 2 timer før afgang.' }
     ],
     faq: [
+    {
+      q: "Hvilke shows er med i middagscruisets program?",
+      a: "Otte numre: Oba Dombra (centralasiatisk shamanrytme), Mevlanas ceremoni med hvirvlende dervisher, Sarı Gelin, et aserbajdsjansk medley, det orientalske show (mavedans), et tyrkisk-anatolsk medley, georgisk Gandagan og et kaukasisk medley med traditionel knivdans samt en afslutning med live saxofon og DJ. Programmet løber gennem hele sejladsen, og rækkefølgen kan variere."
+    },
       { q: 'Hvad koster middagskrydstogtet i Istanbul?', a: 'Vores middagskrydstogt koster €{p.dinnerStd}/person (normal pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år 50% rabat. Betaling om bord — ingen forudbetaling.' },
       { q: 'Hvad er inkluderet i prisen for Istanbul middagskrydstogtet?', a: 'Tur på 3 timer på Bosporus, tyrkisk flerretters middag (mezze, varm forret, hovedret, dessert), ubegrænsede sodavand, live folkedans-show (sema, folkedanse, orientalsk), live musik + DJ, adgang til åbent dæk, skatter inkluderet. Hoteltransfer og alkohol er valgfri tillæg.' },
       { q: 'Hvorfra afgår Istanbul middagskrydstogtet?', a: 'Kabataş-anløbsbroen, Istanbul — på den europæiske kyst, tæt på Dolmabahçe-paladset. Det nøjagtige mødested meddeles efter reservation via WhatsApp / Telegram. Gangvideoerne fra Dolmabahçe sporvognsstation og Kabataş sporvognsstation findes i mødestedssektionen ovenfor.' },

@@ -354,6 +354,10 @@ module.exports = {
       { title: "Dès €{p.dinnerStd} — paiement à bord", desc: "Dîner-croisière €{p.dinnerStd} (ancien €{p.dinnerStdOriginal}). Aucun prépaiement. Annulation gratuite jusqu'à 2h avant le départ." }
     ],
     faq: [
+    {
+      q: "Quels spectacles composent le programme de la croisière-dîner ?",
+      a: "Huit numéros : Oba Dombra (rythme chamanique d'Asie centrale), la cérémonie des derviches tourneurs Mevlana, Sarı Gelin, un pot-pourri azerbaïdjanais, le spectacle oriental (danse du ventre), un pot-pourri turc et anatolien, le Gandagan géorgien et un pot-pourri caucasien avec sa danse des couteaux traditionnelle, puis un final au saxophone live et DJ. Le programme se déroule tout au long de la croisière ; l'ordre peut varier."
+    },
       { q: "Combien coûte un dîner-croisière à Istanbul ?", a: "Notre dîner-croisière est à €{p.dinnerStd}/pers. (tarif habituel €{p.dinnerStdOriginal}). 0-3 ans gratuit, 4-8 ans 50 %. Paiement à bord — aucun prépaiement." },
       { q: "Qu'inclut le prix du dîner-croisière Istanbul ?", a: "Croisière de 3 heures sur le Bosphore, dîner turc varié (mezzés, entrée chaude, plat principal, dessert), boissons non alcoolisées à volonté, spectacle de danses folkloriques live (derviches, danses folkloriques, orientale), musique live + DJ, accès pont extérieur, taxes incluses. Le transfert hôtel et l'alcool sont des suppléments optionnels." },
       { q: "D'où part le dîner-croisière Istanbul ?", a: "Embarcadère de Kabataş, Istanbul — rive européenne, à côté du palais de Dolmabahçe. Le point de rencontre exact est partagé via WhatsApp / Telegram après réservation. Vidéos de marche depuis l'arrêt de tramway Dolmabahçe et la station de tramway Kabataş dans la section point de rencontre ci-dessus." },

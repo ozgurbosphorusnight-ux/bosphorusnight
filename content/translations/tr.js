@@ -354,6 +354,10 @@ module.exports = {
       { title: '€{p.dinnerStd}\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
     ],
     faq: [
+    {
+      q: "Şov programında hangi gösteriler var?",
+      a: "Sekiz gösteri: Oba Dombra (Orta Asya şaman ritmi), Mevlana semazen gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal şov, Türk / Anadolu potpurisi, geleneksel bıçak şovunun yer aldığı Gürcü Gandagan ve Kafkas potpurisi, kapanışta canlı saksafon ve DJ. Program tur boyunca akar; sıra akşamdan akşama değişebilir."
+    },
       { q: 'İstanbul\'da yemekli tur ne kadar?', a: 'Yemekli turumuz €{p.dinnerStd}/kişi (normal fiyat €{p.dinnerStdOriginal}). 0-3 yaş ücretsiz, 4-8 yaş %50 indirimli. Teknede ödeme — ön ödeme yok.' },
       { q: 'İstanbul yemekli tur fiyatına ne dahil?', a: 'Boğaz\'da 3 saatlik tur, çok çeşitli Türk yemeği (meze, sıcak başlangıç, ana yemek, tatlı), sınırsız meşrubat, canlı halk oyunları şovu (sema, halk oyunları, oryantal), canlı müzik + DJ, açık güverte erişimi, vergiler dahil. Otel transferi ve alkol opsiyonel eklentilerdir.' },
       { q: 'İstanbul yemekli turu nereden kalkıyor?', a: 'Kabataş İskelesi, İstanbul — Avrupa yakasında, Dolmabahçe Sarayı\'nın yanında. Rezervasyondan sonra WhatsApp / Telegram aracılığıyla tam buluşma yeri paylaşılır. Dolmabahçe tramvay durağı ve Kabataş tramvay istasyonundan yürüyüş videoları yukarıdaki buluşma noktası bölümünde.' },

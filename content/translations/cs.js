@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Od €{p.dinnerStd} — platba na palubě', desc: 'Plavba s večeří: €{p.dinnerStd} (dříve €{p.dinnerStdOriginal}). Bez platby předem. Bezplatné storno až 2 hodiny před odjezdem.' }
     ],
     faq: [
+    {
+      q: "Jaké show jsou v programu večerní plavby?",
+      a: "Osm vystoupení: Oba Dombra (středoasijský šamanský rytmus), obřad vířících dervišů Mevlana, Sarı Gelin, ázerbájdžánské medley, orientální show (břišní tanec), turecko-anatolské medley, gruzínský Gandagan a kavkazské medley s tradičním tancem s noži a na závěr živý saxofon a DJ. Program běží po celou plavbu, pořadí se může měnit."
+    },
       { q: 'Kolik stojí plavba s večeří v Istanbulu?', a: 'Naše plavba s večeří stojí €{p.dinnerStd}/osoba (běžná cena €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-8 let 50% sleva. Platba na palubě — bez platby předem.' },
       { q: 'Co je zahrnuto v ceně plavby s večeří v Istanbulu?', a: '3hodinová túra po Bosporu, turecká vícechodová večeře (mezze, teplý předkrm, hlavní chod, dezert), neomezené nealkoholické nápoje, živá show lidových tanců (sema, lidové tance, orientální), živá hudba + DJ, přístup na otevřenou palubu, daně zahrnuty. Transfer z hotelu a alkohol jsou volitelné doplňky.' },
       { q: 'Odkud odjíždí plavba s večeří v Istanbulu?', a: 'Přístaviště Kabataş, Istanbul — na evropském břehu, blízko Paláce Dolmabahçe. Přesné místo setkání je sděleno po rezervaci přes WhatsApp / Telegram. Pěší videa ze zastávky tramvaje Dolmabahçe a zastávky tramvaje Kabataş se nacházejí v sekci místa setkání výše.' },

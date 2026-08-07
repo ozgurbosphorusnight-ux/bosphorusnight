@@ -354,6 +354,10 @@ module.exports = {
       { title: 'Desde €{p.dinnerStd} — pago a bordo', desc: 'Crucero con cena €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sin prepago. Cancelación gratuita hasta 2 horas antes de la salida.' }
     ],
     faq: [
+    {
+      q: "¿Qué espectáculos incluye el programa del crucero con cena?",
+      a: "Ocho actuaciones: Oba Dombra (ritmo chamánico de Asia Central), la ceremonia de los derviches giróvagos de Mevlana, Sarı Gelin, un popurrí azerbaiyano, el espectáculo oriental (danza del vientre), un popurrí turco y anatolio, el Gandagan georgiano y un popurrí caucásico con su tradicional danza de los cuchillos, y un cierre con saxofón en vivo y DJ. El programa se desarrolla durante todo el crucero; el orden puede variar."
+    },
       { q: '¿Cuánto cuesta un crucero con cena en Estambul?', a: 'Nuestro crucero con cena es €{p.dinnerStd}/persona (precio normal €{p.dinnerStdOriginal}). 0-3 años gratis, 4-8 años con 50% de descuento. Pago a bordo — sin prepago.' },
       { q: '¿Qué incluye el precio del crucero con cena Estambul?', a: 'Tour de 3 horas por el Bósforo, cena turca generosa (mezze, entrante caliente, plato principal, postre), refrescos ilimitados, espectáculo de danzas folclóricas en vivo (sema, danzas folclóricas, oriental), música en vivo + DJ, acceso a cubierta exterior, impuestos incluidos. Traslado al hotel y alcohol son complementos opcionales.' },
       { q: '¿Desde dónde sale el crucero con cena Estambul?', a: 'Muelle de Kabataş, Estambul — en la orilla europea, junto al Palacio de Dolmabahçe. Compartimos el lugar exacto de encuentro por WhatsApp / Telegram tras la reserva. Los vídeos a pie desde la parada de tranvía Dolmabahçe y la estación de tranvía Kabataş están en la sección de punto de encuentro arriba.' },

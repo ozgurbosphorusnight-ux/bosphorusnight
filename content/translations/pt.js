@@ -357,6 +357,10 @@ module.exports = {
       { title: 'Desde €{p.dinnerStd} — pagamento a bordo', desc: 'Cruzeiro com jantar: €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' }
     ],
     faq: [
+    {
+      q: "Que espetáculos fazem parte do programa do cruzeiro com jantar?",
+      a: "Oito números: Oba Dombra (ritmo xamânico da Ásia Central), a cerimónia dos dervixes rodopiantes de Mevlana, Sarı Gelin, um potpourri azeri, o espetáculo oriental (dança do ventre), um potpourri turco e anatólio, o Gandagan georgiano e um potpourri caucasiano com a tradicional dança das facas, e no final saxofone ao vivo e DJ. O programa decorre ao longo de todo o cruzeiro; a ordem pode variar."
+    },
       { q: 'Quanto custa o cruzeiro com jantar em Istambul?', a: 'O nosso cruzeiro com jantar é €{p.dinnerStd}/pessoa (preço normal €{p.dinnerStdOriginal}). 0-3 anos grátis, 4-8 anos com 50% de desconto. Pagamento a bordo — sem pagamento antecipado.' },
       { q: 'O que está incluído no preço do cruzeiro com jantar em Istambul?', a: 'Passeio de 3 horas no Bósforo, jantar turco de vários pratos (mezze, entrada quente, prato principal, sobremesa), refrigerantes ilimitados, show de danças folclóricas ao vivo (sema, danças folclóricas, oriental), música ao vivo + DJ, acesso ao convés aberto, taxas incluídas. O transfer do hotel e o álcool são suplementos opcionais.' },
       { q: 'De onde parte o cruzeiro com jantar em Istambul?', a: 'Cais de Kabataş, Istambul — na costa europeia, perto do Palácio de Dolmabahçe. O local exato de encontro é comunicado via WhatsApp / Telegram após a reserva. Os vídeos de caminhada da estação de elétrico de Dolmabahçe e da estação de elétrico de Kabataş encontram-se na secção do ponto de encontro acima.' },

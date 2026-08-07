@@ -101,6 +101,40 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 ### Standart Dinner Menüsü
 10 çeşit meze, sıcak başlangıç, ana yemek (salmon/levrek/tavuk/köfte), dondurmalı pasta, sınırsız meşrubat, Mevlana + 5 halk oyunu + oryantal + canlı müzik + DJ.
 
+### Şov Programı — 8 madde (7 Ağu 2026'da yüzeylere işlendi)
+
+| # | Gösteri |
+|---|---|
+| 1 | Oba Dombra — Orta Asya şaman ritmi |
+| 2 | Mevlana — semazen |
+| 3 | Sarı Gelin — Anadolu halk dansı |
+| 4 | Azerbaycan potpurisi |
+| 5 | Oryantal şov |
+| 6 | Türk / Anadolu potpurisi |
+| 7 | Gürcü Gandagan ve Kafkas potpurisi — **bıçak şovu** |
+| 8 | After: canlı saksafon + DJ |
+
+> ⚠️ **Değişirse 5 yer birden:** ① AI `src/claude/system-prompt.js` § ŞOV PROGRAMI ② AI `prompts/intents/price.md` ③ AI `src/agents/webchat.js` SABİT BİLGİLER ④ Site `js/translations.js` → `incl.entertainment.detail` (**32 dil**) + `index.html` EN default ⑤ `llms.txt` § Evening show programme.
+> **Saat sözü verilmez** — program sırası akşama göre değişebilir, AI'a "saat verme" kuralı yazıldı.
+
+### Alkol Markaları (ALCOHOL_2GLASS kapsamı — **yalnız AI bilir, sitede YAZMAZ**)
+
+| Tür | Marka | | Tür | Marka |
+|---|---|---|---|---|
+| Votka | Smirnoff | | Şampanya | Morengo |
+| Tekila | Olmeca | | Rom | Malibu |
+| Viski | Red Label, Ballantine's | | Şarap | Sulva, Mayadağ, Cümbüş |
+| Gin | Gordon's | | Konyak | Duguladze |
+| Bira | Efes, Bremen | | Rakı | Beylerbeyi, Yeni Rakı, İzmir |
+
+> **Karar (7 Ağu 2026, Özgür):** Marka listesi müşteri yüzeyine (site/landing/SSS) **yazılmaz** — marka değişince 32 dil güncellemek zorunda kalmamak için. AI sorulduğunda tek tek sayar.
+> Değişirse 3 yer: ① `system-prompt.js` § ALKOL MARKALARI ② `prompts/intents/price.md` § ALKOL SUNUMU ③ `src/agents/webchat.js`. Marka adları **çevrilmez**, kategori adları çevrilir.
+
+### "All-In" Kapsam Kuralı (7 Ağu 2026)
+
+"All-In Dinner Cruise" adı **alkol ve transferin dahil olduğu izlenimi veriyordu** — paket kartına net kapsam satırı eklendi (`dinner.std.scope`, 32 dil): *"Yemek, canlı şov ve sınırsız meşrubat dahil — alkol ve otel transferi isteğe bağlı ek ücretlidir."*
+Ayrıca `dinner.halalTax` çipi "Şarap ve kokteyl" → **"Teknede bar (ek ücretli)"** olarak düzeltildi (32 dil) — eski hali dahil gibi okunuyordu.
+
 ### VIP Dinner Menüsü
 15+ premium meze, ana yemek eki (rib-eye, dana bonfile), sahneye yakın masa, VIP servis.
 
