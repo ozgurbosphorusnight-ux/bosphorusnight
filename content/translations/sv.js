@@ -23,13 +23,13 @@ module.exports = {
     ],
     highlights: [
       { title: 'Turkisk flerrättersmiddag', desc: '10 varianter kalla mezzer, varm förrätt (paçanga böreği), val av huvudrätt (lax / havsabborre / kyckling / köttbullar / vegetariskt), glasstårta som dessert, obegränsade läsk.' },
-      { title: 'Livefolkdans, orientalisk dans och DJ', desc: 'Mevlana sema-föreställning, 5 traditionella turkiska folkdanser, klassisk orientalisk dans, live turkiska musiker, följt av ett DJ-set under hela kryssningen.' },
+      { title: 'Livefolkdans, orientalisk dans och DJ', desc: 'Åtta nummer: Oba Dombra, Mevlana sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, klassisk orientalisk dans, anatoliskt potpurri och den georgisk-kaukasiska knivdansen — sedan live saxofon och ett DJ-set under hela kryssningen.' },
       { title: 'Komplett nattrutt på Bosporen', desc: 'Kabataş → Dolmabahçe → Çırağan-palatset → Ortaköy-moskén → Bebek → Rumeli Hisarı → FSM-bron → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Från €{p.dinnerStd}/person — betalning ombord', desc: 'Middagskryssning €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal}). Ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' }
     ],
     faq: [
       { q: 'När börjar middagskryssningen på Bosporen?', a: 'Ombordstigning börjar 20:00 vid Kabataş-bryggan. Båten avgår 21:00 och återvänder runt 00:00. Vi rekommenderar att komma 15-20 minuter tidigare för att installera dig och slappna av.' },
-      { q: 'Vad kostar middagskryssningen på Bosporen?', a: 'Middagskryssning €{p.dinnerStd}/person (normalt pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år 50% rabatt. Betalning ombord — ingen förskottsbetalning.' },
+      { q: 'Vad kostar middagskryssningen på Bosporen?', a: 'Middagskryssning €{p.dinnerStd}/person (normalt pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-9 år €5 rabatt. Betalning ombord — ingen förskottsbetalning.' },
       { q: 'Är alkohol inkluderad i middagskryssningen?', a: 'Obegränsade läsk (vatten, cola, juice) ingår i priset. Alkoholpaketet är valfritt: 2 glas (vin, öl, rakı, vodka eller gin) +€{p.alcohol2}/person. Ytterligare och importerade drycker faktureras separat ombord.' },
       { q: 'Finns hotelltransfer?', a: 'Ja — hämtnings- och återlämningstjänst är +€{p.transfer}/person. Betjänade zoner: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce och Şişli. Du kan välja detta alternativ i bokningsformuläret.' },
       { q: 'Är middagskryssningen på Bosporen halal?', a: 'Absolut. Allt kött som serveras ombord är halal-certifierat. Alkohol är ett valfritt tillägg (aldrig påtvingat gäster), och bordsuppställningen separerar naturligt gäster som föredrar en alkoholfri måltid. Vi erbjuder också vegetariska alternativ utan extra kostnad.' },
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporen med Barn — Familjekryssning från €{p.dinnerStd}/vuxen',
-      description: 'Middagskryssning på Bosporen familjevänlig. Barn 0-3 gratis, 4-8 halva priset. Säkert inomhusområde, barnmeny.'
+      description: 'Middagskryssning på Bosporen familjevänlig. Barn 0-3 gratis, 4-9 halva priset. Säkert inomhusområde, barnmeny.'
     },
     hero: {
       h1: 'Bosporenkryssning med Barn',
@@ -54,18 +54,18 @@ module.exports = {
     },
     intro: [
       '**Bosporenkryssningen med barn** är det mest familjevänliga kvällsalternativet i Istanbul. Vi tar emot dussintals familjer varje kväll — vi har designat varje detalj så att de minsta känner sig bekväma: täckt inomhusområde för att hålla värmen, en lättillgänglig barnmeny (enkel grillad kyckling, pasta, obegränsade läsk) och tidig ombordstigning för att undvika utbrott sent på kvällen.',
-      'Till skillnad från båtar enbart för vuxna förblir **vår middagskryssning på Bosporen för familjer** varm och inkluderande. **Barn 0-3 år är gratis** (transfer ingår), 4-8 år får **50% rabatt**, 9+ år betalar fullt pris — inga dolda kostnader. Livefolkdansen, orientalisk dans och sema-föreställningen är delikat familjeunderhållning, ingen nattklubb.',
+      'Till skillnad från båtar enbart för vuxna förblir **vår middagskryssning på Bosporen för familjer** varm och inkluderande. **Barn 0-3 år är gratis** (transfer ingår), 4-9 år får **€5 rabatt**, 10+ år betalar fullt pris — inga dolda kostnader. Livefolkdansen, orientalisk dans och sema-föreställningen är delikat familjeunderhållning, ingen nattklubb.',
       'Oavsett om du kommer till Istanbul för en förlängd helg med ditt småbarn eller tar med tonåringar på deras första europeiska resa — detta är turen som rekommenderas av familjer i Istanbul. Säker, halal-certifierad, licensierad av TÜRSAB och betygsatt 4,8★ av över 11.317 resenärer.'
     ],
     highlights: [
-      { title: '0-3 år helt gratis', desc: 'Inga avgifter för bebisar och småbarn. 4-8 år betalar 50% av vuxenpriset. Från 9 år gäst med fullt pris. Transparent, inga överraskningar.' },
+      { title: '0-3 år helt gratis', desc: 'Inga avgifter för bebisar och småbarn. 4-9 år betalar €5 av vuxenpriset. Från 9 år gäst med fullt pris. Transparent, inga överraskningar.' },
       { title: 'Täckt inomhusområde', desc: 'Helt täckt och uppvärmt under kalla månader. Barnen håller sig varma, skyddade från vinden. Det öppna däcket är också tillgängligt när vädret är fint — valet är ditt.' },
       { title: 'Barnmeny på begäran', desc: 'Enkel grillad kyckling, pasta, bröd och grönsaker — utan extra kostnad. Obegränsade läsk (cola, juice, vatten). Meddela oss i förväg — inga överraskningar med kryddiga mezzer för de minsta.' },
-      { title: 'Säker familjeunderhållning', desc: 'Sema-föreställning (fascinerande för barn), 5 traditionella folkdanser, live turkisk musik och DJ-set. Allt är familjevänligt — inget vuxeninnehåll. Barnen ansluter sig ofta till dansen.' }
+      { title: 'Säker familjeunderhållning', desc: 'Sema-föreställning (fascinerande för barn), Oba Dombra och folkdanser från Anatolien, Azerbajdzjan och Kaukasus — inklusive den spektakulära knivdansen — plus live turkisk musik och ett saxofon-och-DJ-set. Allt är familjevänligt — inget vuxeninnehåll. Barnen ansluter sig ofta till dansen.' }
     ],
     faq: [
       { q: 'Är Bosporenkryssningen säker för små barn?', a: 'Ja — vår båt är licensierad av TÜRSAB, har ett täckt inomhusområde med säkra fönster, flytvästar i alla storlekar tillgängliga och en professionell besättning med familjeerfarenhet. Vi rekommenderar inomhusdäcket för små barn och det öppna däcket för 6+ år.' },
-      { q: 'Vad är priset för barn på Bosporenkryssningen?', a: 'Barn **0-3 år: GRATIS** (inga avgifter, inga dolda kostnader). **4-8 år: 50% rabatt** på vuxenpriset — det vill säga €12/barn på Standard (€{p.dinnerStd}/2). **9+ år: fullt vuxenpris.** Hotelltransfer är gratis för 0-3 år, standard för 4+ (€{p.transfer}/person).' },
+      { q: 'Vad är priset för barn på Bosporenkryssningen?', a: 'Barn **0-3 år: GRATIS** (inga avgifter, inga dolda kostnader). **4-9 år: €5 rabatt** på vuxenpriset — det vill säga €12/barn på Standard (€{p.dinnerStd}/2). **10+ år: fullt vuxenpris.** Hotelltransfer är gratis för 0-3 år, standard för 4+ (€{p.transfer}/person).' },
       { q: 'Finns det en barnmeny ombord?', a: 'Ja — enkel grillad kyckling, pasta, bröd, säsongsgrönsaker och obegränsade läsk. Berätta för oss om allergier eller kostpreferenser vid bokning och vi förbereder något ditt barn äter med glädje.' },
       { q: 'Är musiken eller showen för hög för barn?', a: 'Live-showerna äger rum i ett område av scenen — om dina barn är ljudkänsliga sätter vi er vid ett tystare bord längst bak. Showen varar totalt 40 minuter, resten av kvällen är turkisk bakgrundsmusik och DJ på måttlig volym.' },
       { q: 'Vad händer om bebisen somnar under kryssningen?', a: 'Inget problem — många somnar. Inomhusområdet har soffor där en bebis eller liten barn kan sova bekvämt. Be besättningen om en varm filt vid behov. Inga extra kostnader.' },
@@ -138,9 +138,9 @@ module.exports = {
     faq: [
       { q: 'Är Bosporenkryssningen 100% halal?', a: 'Ja — varje köttprodukt i menyn (fisk, kyckling, köttbullar, oxfilé, ribeye, lamm) är halal-certifierad från godkända leverantörer. Köket följer halal-beredningsstandarder. Fläsk serveras ingenstans ombord. Det är inte ett "halal-alternativ" — hela menyn är halal.' },
       { q: 'Dricker andra gäster ombord alkohol?', a: 'Vissa gäster lägger till det valfria 2-glas alkoholpaketet (+€{p.alcohol2}/person). Borden är naturligt separerade — du kan be om en alkoholfri zon. Besättningen tar inte med alkohol om det inte är specifikt beställt av en gäst. Läsk (obegränsat) är inkluderade för alla.' },
-      { q: 'Är denna kryssning lämplig för muslimska familjer med barn?', a: 'Ja — det är en av de mest respekterade kryssningarna för familjer i Istanbul. Underhållningen är blygsam (folkdanser, sema, turkisk musik), barn under 3 år är gratis, 4-8 år får 50% rabatt. Ingen nattklubbsatmosfär. Familjer från Gulfen, Indonesien, Malaysia, Pakistan och Marocko bokar regelbundet denna kryssning.' },
+      { q: 'Är denna kryssning lämplig för muslimska familjer med barn?', a: 'Ja — det är en av de mest respekterade kryssningarna för familjer i Istanbul. Underhållningen är blygsam (folkdanser, sema, turkisk musik), barn under 3 år är gratis, 4-9 år får €5 rabatt. Ingen nattklubbsatmosfär. Familjer från Gulfen, Indonesien, Malaysia, Pakistan och Marocko bokar regelbundet denna kryssning.' },
       { q: 'Kan jag be ombord?', a: 'Det finns inget dedikerat bönerum ombord, men vi rekommenderar att be före ombordstigning 20:00 (maghrib-bönen sammanfaller ofta med detta tidsintervall). Kabataş-bryggan har bönefaciliteter. Om du behöver be under seglingen 21:00-00:00 (isha), prata med besättningen — vi kan arrangera ett tyst hörn på däcket.' },
-      { q: 'Vad är priserna för en muslimsk familj på 4 personer (2 vuxna, 2 barn)?', a: 'Middagskryssning: 2 × €{p.dinnerStd} + 2 × €12.15 (halva priset 4-8 år) = €72.90. Om barnen är under 3 år, gratis: 2 × €{p.dinnerStd} = €48.60. Lägg till €{p.transfer} hotelltransfer per vuxen. Totalt: €48.60–€92.90 för familjen på 4, ingen förskottsbetalning, betalning ombord.' },
+      { q: 'Vad är priserna för en muslimsk familj på 4 personer (2 vuxna, 2 barn)?', a: 'Middagskryssning: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 rabatt 4-9 år) = €87.20. Om barnen är under 3 år, gratis: 2 × €{p.dinnerStd} = €48.60. Lägg till €{p.transfer} hotelltransfer per vuxen. Totalt: €48.60–€92.90 för familjen på 4, ingen förskottsbetalning, betalning ombord.' },
       { q: 'Är hotelltransfern också halal?', a: 'Hotelltransfern är bara en bilfärd — ingen mat eller dryck inblandad, så ingen halal-oro. Våra chaufförer är professionella, respektfulla och punktliga. Transferzonerna täcker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli och 8 andra centrala stadsdelar där muslimska resenärer vanligtvis bor.' }
     ],
     cta: {
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABATT · En meny, premiumstandard · Betala ombord'
     },
     intro: [
-      'Många båtar på Bosporen delar in sina gäster i "Standard" och "VIP". Det gör inte vi. Ombord på **AMOR** finns en enda middagsmeny, tillagad med samma omsorg för alla: 10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kyckling eller köfte), glasstårta och obegränsat med läsk. Hela underhållningsprogrammet ingår också — de virvlande dervischernas ceremoni, 5 folkdanser, magdans, livemusik och DJ — allt inom priset på €{p.dinnerStd}/person.',
+      'Många båtar på Bosporen delar in sina gäster i "Standard" och "VIP". Det gör inte vi. Ombord på **AMOR** finns en enda middagsmeny, tillagad med samma omsorg för alla: 10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kyckling eller köfte), glasstårta och obegränsat med läsk. Hela underhållningsprogrammet på åtta nummer ingår också — Oba Dombra, de virvlande dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final — allt inom priset på €{p.dinnerStd}/person.',
       'VIP-känslan börjar vid ditt bord. Vill du sitta så nära scenen och utsikten som möjligt lägger du till **privat bord nära scenen** (+€{p.romantic}/bord), så reserveras platsen i förväg — bästa vinkeln mot dervischerna, folkdanserna och det upplysta Bosporen. Det populäraste valet bland par, firanden och fotointresserade.',
       'AMOR är ett modernt fartyg: 42 meter, 3 däck, upp till 400 gäster, uppvärmt på vintern och luftkonditionerat på sommaren. Den tre timmar långa rutten avgår från Kabataş (ombordstigning från 20:00, avgång 21:00, åter 00:00) förbi Dolmabahçe, Ortaköymoskén, Rumelifästningen och Bosporenbrons ljus. TÜRSAB-licens (A-17672), 4,9★ på Google. Ingen förskottsbetalning — du betalar ombord, med fri avbokning fram till 2 timmar före avgång.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Säljer ni ett "VIP-paket"? Vad skiljer det från Standard?', a: 'Vi säljer inget separat VIP-paket — det finns en meny som serveras alla med samma premiumstandard. Det vi kallar "VIP-upplevelse" är att göra kvällen till din: privat bord nära scenen (+€{p.romantic}/bord), uppmärksam bordsservering och valfria dryckestillägg. Kryssningen är 3 timmar, €{p.dinnerStd}/person.' },
       { q: 'Är €{p.dinnerStd} verkligen 40% rabatt?', a: 'Ja — vårt ordinarie pris är €{p.dinnerStdOriginal}/person. €{p.dinnerStd} är priset vid direktbokning, utan mellanhänders provisioner. Du betalar ombord och ingen förskottsbetalning krävs.' },
-      { q: 'Vad ingår i menyn?', a: '10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kyckling eller köfte) och glasstårta till dessert, med obegränsat med läsk. Programmet ingår: dervischernas ceremoni, 5 folkdanser, magdans, livemusik och DJ.' },
+      { q: 'Vad ingår i menyn?', a: '10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kyckling eller köfte) och glasstårta till dessert, med obegränsat med läsk. Programmet på åtta nummer ingår: Oba Dombra, dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final.' },
       { q: 'Ingår alkohol?', a: 'Nej — alkohol är ett separat tillägg: 2 glas lokalt vin eller öl för +€{p.alcohol2}/person. Läsk ingår obegränsat och kostnadsfritt. Importerad premiumsprit debiteras separat ombord.' },
       { q: 'Hur garanterar jag ett bord nära scenen?', a: 'Välj bara tillägget "privat bord nära scenen" (+€{p.romantic}/bord) vid bokningen — bordet reserveras i ditt namn. De bästa platserna går åt via förhandsbokningar, så lägg gärna till det före kryssningsdagen.' },
       { q: 'Vad är det för fartyg?', a: 'AMOR — ett modernt passagerarfartyg på 42 meter med 3 däck och plats för 400 gäster, uppvärmt på vintern och luftkonditionerat på sommaren. Avgång från Kabataş kaj: ombordstigning 20:00, avgång 21:00, åter 00:00. Rutt: Dolmabahçe, Ortaköy, Rumelifästningen, Beylerbeyi och Bosporenbrons ljus.' }
@@ -282,7 +282,7 @@ module.exports = {
     faq: [
       { q: 'När avgår Bosporen solnedgångskryssning?', a: 'Ombordstigning börjar 20:00 vid Kabataş-bryggan, båten avgår 21:00 och återvänder runt 00:00. På sommaren (maj–augusti) går solen ner mellan ungefär 20:15 och 20:45 — den gyllene timmen infaller medan du går ombord, och själva solnedgången precis runt avgången, sedd från vattnet.' },
       { q: 'Är Bosporen solnedgångskryssning samma som middagskryssningen?', a: 'Ja — det är en och samma kryssning. Det finns en enda daglig avgång 21:00 med full middag och live shower ombord. Under de långa sommarkvällarna fungerar den samtidigt som solnedgångskryssning: du går ombord under den gyllene timmen och seglar genom den blå timmen in i den upplysta natten. På vintern är samma kryssning en ren nattljusupplevelse.' },
-      { q: 'Vad kostar Bosporen solnedgångskryssning?', a: 'Från €{p.dinnerStd}/person för kryssningen (3 timmar, full middag, live underhållning). Betalning ombord — ingen förskottsbetalning. Barn 0-3 år gratis, 4-8 år halva priset.' },
+      { q: 'Vad kostar Bosporen solnedgångskryssning?', a: 'Från €{p.dinnerStd}/person för kryssningen (3 timmar, full middag, live underhållning). Betalning ombord — ingen förskottsbetalning. Barn 0-3 år gratis, 4-9 år halva priset.' },
       { q: 'När på året är det bäst att göra en solnedgångskryssning på Bosporen?', a: 'Maj till augusti. Istanbuls sena solnedgångar (20:15–20:45) sammanfaller med avgången 21:00, så du får den gyllene timmen, solnedgången och de upplysta broarna på en och samma kväll. På hösten och vintern går solen ner tidigare och samma kryssning blir en fullständig nattljusupplevelse — lika fotogenisk, men med annan stämning.' },
       { q: 'Vad ska jag ta med till en solnedgångskryssning?', a: 'Smartphone eller kamera — den gyllene timmen och de upplysta broarna kräver det nästan. En lätt jacka: brisen tilltar på däck efter solnedgången. Smart-casual klädsel — du äter middag, men det finns ingen sträng klädkod.' },
       { q: 'Ser jag de upplysta broarna på natten under denna kryssning?', a: 'Ja — det är kvällens andra halva. Kryssningen pågår 21:00–00:00, så efter solnedgången och den blå timmen seglar du under den helt upplysta Bosporenbron, förbi upplysta palats och Jungfrutornet, och återvänder till Kabataş runt 00:00.' },
@@ -308,18 +308,18 @@ module.exports = {
     },
     intro: [
       '**Bosporen natturen** är den mest rekommenderade kvällsaktiviteten i Istanbul. Här är varför: efter mörkrets inbrott förvandlas Bosporen. Bosporenbron växlar mellan blå, lila och guld. Dolmabahçe-palatset lyser varmt gult. Ortaköy-moskén reflekteras perfekt i det svarta vattnet. Varje landmärke i Istanbul når sin dramatiska topp på natten.',
-      '**Vår Bosporen nattur med middag** paketerar den kompletta ikoniska kvällen: 3 timmar på vattnet (21:00-00:00), turkisk flerrättersmiddag, livefolkdans (sema, 5 folkdanser, orientalisk dans), livemusik och DJ-set som håller däcket levande till slutet av natten. Varje gäst får samma program — inget "bas"-alternativ som hoppar över de bästa delarna.',
+      '**Vår Bosporen nattur med middag** paketerar den kompletta ikoniska kvällen: 3 timmar på vattnet (21:00-00:00), turkisk flerrättersmiddag, ett livefolkloreprogram på åtta nummer (Oba Dombra, sema, anatoliska och azerbajdzjanska folkdanser, orientalisk dans, kaukasisk knivdans), livemusik och ett saxofon-och-DJ-set som håller däcket levande till slutet av natten. Varje gäst får samma program — inget "bas"-alternativ som hoppar över de bästa delarna.',
       'Oavsett om det är ditt första besök i Istanbul och du letar efter "den enda saken du måste göra på natten", eller om du har varit här tidigare och vill ha stadens mest fotogeniska 3 timmar, är detta **Bosporen natturen** betygsatt 4,8★ av över 11.317 resenärer. Licensierad av TÜRSAB, betalning ombord, ingen förskottsbetalning.'
     ],
     highlights: [
       { title: 'Den upplysta Bosporen på dramatisk topp', desc: 'Bosporenbron ändrar färg (blå, lila, guld), palatsen lyser gula, Ortaköy-moskén reflekteras i det mörka vattnet. 21:00-00:00 maximal belysning för alla Istanbuls landmärken.' },
-      { title: 'Traditionell turkisk show ombord', desc: 'Sema-föreställning, 5 traditionella folkdanser (från olika regioner i Turkiet), orientalisk dans, live turkisk musik, sedan DJ-set. 40 minuter show, sedan fortsätter musiken + middagen.' },
+      { title: 'Traditionell turkisk show ombord', desc: 'Åtta nummer: Oba Dombra, sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri och den georgisk-kaukasiska knivdansen, sedan live saxofon och DJ-set. 40 minuter show, sedan fortsätter musiken + middagen.' },
       { title: 'Full flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt (paçanga böreği), huvudrätt (lax, havsabborre, kyckling, köttbullar, vegetariskt — ditt val), dessert (glasstårta), obegränsade läsk. Halal-certifierad.' },
       { title: 'Komplett Bosporenrutt', desc: 'Kabataş → Dolmabahçe → Çırağan-palatset → Ortaköy-moskén → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-bron → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jungfrutornet → Kabataş.' }
     ],
     faq: [
       { q: 'När är Bosporen natturen?', a: 'Ombordstigning från 20:00 vid Kabataş-bryggan. Båten avgår 21:00, återvänder runt 00:00. Vi rekommenderar att komma 20 minuter tidigare för att installera dig och välja plats.' },
-      { q: 'Vad kostar Bosporen natturen?', a: 'Nattur (3 timmar, middag, show): €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år halva priset. Betalning ombord.' },
+      { q: 'Vad kostar Bosporen natturen?', a: 'Nattur (3 timmar, middag, show): €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). 0-3 år gratis, 4-9 år halva priset. Betalning ombord.' },
       { q: 'Vad är skillnaden mellan Bosporen natturen och middagskryssningen?', a: 'Samma sak, annat nyckelord. "Bosporen nattur" är hur många resenärer söker; "middagskryssning" är branschtermen. Samma båt, samma 3-timmars program, samma meny, samma show. Välj den söktermen du föredrar — upplevelsen är densamma.' },
       { q: 'Bosporen nattur eller solnedgångskryssning — vilken är värd mer?', a: 'Nattur = upplyst Istanbul, maximalt ljusdrama, fullständigt underhållningsprogram, de mest ikoniska fotona av upplysta broar. Och det är en och samma kryssning: på sommaren (maj–augusti) fångar ombordstigningen från 20:00 den gyllene timmen och solen går ner precis runt avgången 21:00 — så samma kväll täcker både solnedgången och natten. Ingen anledning att välja eller boka två gånger.' },
       { q: 'Kan jag göra Bosporen natturen på min första dag i Istanbul?', a: 'Ja — vi rekommenderar det. Många resenärer bokar natturen för sin första kväll eftersom den ger dig en komplett orientering: alla huvudlandmärken från vattnet, med bra mat och underhållning. Lättare än att kämpa mot jetlag medan du försöker göra promenadturism på Dag 1. Hotelltransfer tillgänglig från centrala stadsdelar.' },
@@ -349,7 +349,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Full turkisk flerrättersmiddag', desc: '10 varianter mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/köttbullar/vegetariskt), glasstårta. Halal-certifierad. Obegränsade läsk inkluderade.' },
-      { title: 'Live turkisk folkdans-show', desc: 'Sema-föreställning, 5 traditionella folkdanser, orientalisk dans, live turkisk musik, DJ. 40 minuter show, kontinuerlig bakgrundsmusik.' },
+      { title: 'Live turkisk folkdans-show', desc: 'Åtta nummer: Oba Dombra, sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri, georgisk-kaukasisk knivdans, sedan live saxofon och DJ. 40 minuter show, kontinuerlig bakgrundsmusik.' },
       { title: 'Komplett nattrutt på Bosporen', desc: '3-timmars tur: Dolmabahçe, Çırağan, Ortaköy-moskén, Bosporenbron, Bebek, Rumeli Hisarı, FSM-bron, Beylerbeyi, Üsküdar, Jungfrutornet. Båda kusterna, europeisk och asiatisk.' },
       { title: 'Från €{p.dinnerStd} — betalning ombord', desc: 'Middagskryssning: €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal}). Ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' }
     ],
@@ -358,7 +358,7 @@ module.exports = {
       q: "Vilka shower ingår i middagskryssningens program?",
       a: "Åtta nummer: Oba Dombra (centralasiatisk shamanrytm), Mevlanas ceremoni med virvlande dervischer, Sarı Gelin, ett azerbajdzjanskt medley, den orientaliska showen (magdans), ett turkiskt-anatoliskt medley, georgisk Gandagan och ett kaukasiskt medley med traditionell knivdans, och som avslutning livesaxofon och DJ. Programmet pågår under hela kryssningen och ordningen kan variera."
     },
-      { q: 'Vad kostar middagskryssningen i Istanbul?', a: 'Vår middagskryssning kostar €{p.dinnerStd}/person (normalt pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år 50% rabatt. Betalning ombord — ingen förskottsbetalning.' },
+      { q: 'Vad kostar middagskryssningen i Istanbul?', a: 'Vår middagskryssning kostar €{p.dinnerStd}/person (normalt pris €{p.dinnerStdOriginal}). 0-3 år gratis, 4-9 år €5 rabatt. Betalning ombord — ingen förskottsbetalning.' },
       { q: 'Vad ingår i priset för Istanbul middagskryssningen?', a: '3-timmars tur på Bosporen, turkisk flerrättersmiddag (mezzer, varm förrätt, huvudrätt, dessert), obegränsade läsk, live folkdans-show (sema, folkdanser, orientalisk), livemusik + DJ, tillgång till öppet däck, skatter inkluderade. Hotelltransfer och alkohol är valfria tillägg.' },
       { q: 'Var avgår Istanbul middagskryssningen från?', a: 'Kabataş-bryggan, Istanbul — på den europeiska kusten, nära Dolmabahçe-palatset. Den exakta mötesplatsen meddelas efter bokning via WhatsApp / Telegram. Promenadvideorna från Dolmabahçe spårvagnshållplats och Kabataş spårvagnshållplats finns i mötesplatssektionen ovan.' },
       { q: 'Hur lång är middagskryssningen — och när börjar den?', a: 'Totalt 3 timmar. Ombordstigning från 20:00, båten avgår exakt 21:00, återvänder runt 00:00. Vi rekommenderar att komma 15-20 minuter tidigare för att installera dig och välja plats.' },
@@ -390,7 +390,7 @@ module.exports = {
     highlights: [
       { title: 'Alla Istanbuls ikoniska nattvyer', desc: 'Dolmabahçe-palatset, Ortaköy-moskén, upplyst Bosporenbron, Rumeli Hisarı, FSM-bron, Beylerbeyi-palatset, Jungfrutornet. Varje huvudlandmärke vid toppnattbelysning.' },
       { title: 'Full turkisk middag inkluderad', desc: '10 mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/köttbullar/vegetariskt), dessert, obegränsade läsk. Halal-certifierad. Prissatt till €{p.dinnerStd}/person — allt inkluderat.' },
-      { title: 'Livefolkdanser + sema + orientalisk', desc: 'Traditionell turkisk underhållning: Mevlana sema-föreställning, 5 regionala folkdanser, orientalisk dans, livemusik, DJ. 40 minuter show, bakgrundsmusik hela kvällen.' },
+      { title: 'Livefolkdanser + sema + orientalisk', desc: 'Liveprogram på åtta nummer: Oba Dombra, Mevlana sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri, georgisk-kaukasisk knivdans, sedan live saxofon och DJ. 40 minuter show, bakgrundsmusik hela kvällen.' },
       { title: 'Lätt för första gången i Istanbul', desc: 'Central mötesplats (Kabataş-bryggan), hotelltransfer (+€{p.transfer}/person), engelsktalande besättning, betalning ombord. Noll logistisk stress. Kom, njut, gå.' }
     ],
     faq: [
@@ -432,9 +432,9 @@ module.exports = {
     faq: [
       { q: 'Vad är den bästa båtturen i Istanbul?', a: 'Bosporen middagskryssning rankas konsekvent på #1. Den täcker alla huvudlandmärken, inkluderar middagen och underhållningen och kör på kvällen när landmärkena är upplysta. Andra alternativ (hop-on färjor, morgon-turistbåtar) täcker kortare rutter, hoppar över middagen och inkluderar inte underhållning. För en kväll i Istanbul är detta den mest kompletta båtturen.' },
       { q: 'Hur lång är båtturen i Istanbul?', a: '3 timmar. Ombordstigning från 20:00 vid Kabataş-bryggan, avgång 21:00, retur ~00:00. Täcker hela Bosporen från Dolmabahçe till Rumeli Hisarı och tillbaka. Tillräckligt med tid för full middag + show utan trötthet.' },
-      { q: 'Vad kostar båtturen i Istanbul?', a: 'Vår båttur med middag: €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). 0-3 år gratis, 4-8 år halva priset. Betalning ombord. Alkohol och hotelltransfer är valfria tillägg.' },
+      { q: 'Vad kostar båtturen i Istanbul?', a: 'Vår båttur med middag: €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). 0-3 år gratis, 4-9 år halva priset. Betalning ombord. Alkohol och hotelltransfer är valfria tillägg.' },
       { q: 'Var avgår båttur i Istanbul från?', a: 'Vår båt avgår från Kabataş-bryggan, central europeisk kust av Istanbul, nära Dolmabahçe-palatset. Tillgänglig med spårvagn T1 (Kabataş station), taxi 15 min från Taksim eller till fots 20 min från Taksim. Hotelltransfer tillgänglig från centrala stadsdelar med +€{p.transfer}/person.' },
-      { q: 'Är denna båttur lämplig för familjer med barn?', a: 'Ja — mycket familjevänlig. Barn 0-3 år gratis, 4-8 år 50% rabatt. Täckt inomhusområde, barnmeny på begäran och underhållning (sema, folkdanser) fängslande för barn. Många familjer från hela världen bokar denna tur.' },
+      { q: 'Är denna båttur lämplig för familjer med barn?', a: 'Ja — mycket familjevänlig. Barn 0-3 år gratis, 4-9 år €5 rabatt. Täckt inomhusområde, barnmeny på begäran och underhållning (sema, folkdanser) fängslande för barn. Många familjer från hela världen bokar denna tur.' },
       { q: 'Måste jag ta med något till båtturen?', a: 'Pass eller ID-kort (för registrering ombord), lätt jacka (däcket kan vara svalt), bekväma skor om du planerar att dansa. Smartphone för foton. Kontanter eller kort för betalning ombord (båda accepteras). Allt annat — mat, dryck, underhållning — är ombord.' }
     ],
     cta: {
@@ -463,14 +463,14 @@ module.exports = {
       { title: 'Hela Bosporen i ett enda svep', desc: 'Europeisk kust (Dolmabahçe, Ortaköy, Rumeli Hisarı), asiatisk kust (Beylerbeyi, Üsküdar), båda Bosporenbroar, Jungfrutornet. Varje huvudlandmärke synligt på 3 timmar.' },
       { title: 'Middag + underhållning inkluderade', desc: 'Inte bara turistfärja — full turkisk middag med mezzer, huvudrätt, dessert. Livefolkdansshow, sema, orientalisk, DJ. Underhållningsvärde bortom bara landskap.' },
       { title: 'Kväll = bästa belysning', desc: 'Dagsresor på Bosporen visar dig landmärkena i platt ljus. Kvällsresor fångar allt upplyst: strålande palats, färgade broar, moskéer reflekterade i mörkt vatten. Bättre foton, mer dramatiska.' },
-      { title: 'Från €{p.dinnerStd} — betalning ombord', desc: 'Ingen förskottsbetalning krävs. Betalning ombord (kontanter eller kort). Gratis avbokning fram till 2 timmar före avgång. 0-3 år gratis, 4-8 år halva priset. Transparenta priser.' }
+      { title: 'Från €{p.dinnerStd} — betalning ombord', desc: 'Ingen förskottsbetalning krävs. Betalning ombord (kontanter eller kort). Gratis avbokning fram till 2 timmar före avgång. 0-3 år gratis, 4-9 år halva priset. Transparenta priser.' }
     ],
     faq: [
       { q: 'Vilka är de bästa Bosporenresorna i Istanbul?', a: 'Kvällsmiddagsturen rankas konsekvent på toppen. Dagsalternativen (1-timmars loop-färjor, 2-timmars turistbåtar) visar mindre och inkluderar inte middag. För värde är det svårt att slå en 3-timmars tur med middag, show och central mötesplats. Kostnaden för vår tur €{p.dinnerStd} eliminerar behovet av en separat kväll med middag + underhållning.' },
       { q: 'Hur lång är en Bosporenresa?', a: 'Vår Bosporenresa varar totalt 3 timmar (avgång 21:00, retur 00:00). Det finns kortare alternativ (1-timmars turistfärjor, 90-minuters turer), men de hoppar över middagen och underhållningen. För den kompletta kvällsupplevelsen är 3 timmar idealiskt — tillräckligt för att se allt utan att bli trött.' },
       { q: 'Är Bosporenresan värt det?', a: 'Ja — nästan varje Istanbul-reseguide listar "Bosporenkryssning" i top 5 obligatoriska saker. Staden byggdes runt detta sund; om du inte har sett Bosporen från vattnet har du inte riktigt sett Istanbul. Vår specifika kvällstur lägger till middag och underhållning, vilket gör det till en komplett kvällsutflykt istället för bara turism.' },
       { q: 'Vad ska jag ta med på Bosporenresan?', a: 'Pass eller ID-kort (för registrering ombord), lätt jacka (på kvällen är däcket svalt), smartphone/kamera, bekväma skor för dansgolvet. Kontanter eller kort för betalning. Allt annat är ombord. Hotelltransfer tillgänglig med +€{p.transfer}/person om du inte vill använda kollektivtrafik.' },
-      { q: 'Är Bosporenresan lämplig för barn?', a: 'Ja — mycket barnvänlig. Barn 0-3 år gratis (transfer inkluderad), 4-8 år 50% rabatt. Täckt inomhusområde, barnmeny på begäran och delikat och fängslande underhållning. Många familjer bokar denna resa som höjdpunkten på sin resa till Istanbul.' },
+      { q: 'Är Bosporenresan lämplig för barn?', a: 'Ja — mycket barnvänlig. Barn 0-3 år gratis (transfer inkluderad), 4-9 år €5 rabatt. Täckt inomhusområde, barnmeny på begäran och delikat och fängslande underhållning. Många familjer bokar denna resa som höjdpunkten på sin resa till Istanbul.' },
       { q: 'Vilka är stoppen för Bosporenresan?', a: 'Det är en kontinuerlig tur — inga stopp (ingen avstigning). Båten passerar varje landmärke, besättningen förklarar vad du ser, du slappnar av vid bordet eller går ut på det öppna däcket för foton. Inga köer, ingen promenad — bara 3 problemfria timmar på vattnet.' }
     ],
     cta: {
@@ -502,12 +502,12 @@ module.exports = {
       { title: 'Nuvarande lanseringspris 40% RABATT', desc: 'Tidigare €{p.dinnerStdOriginal}, nu €{p.dinnerStd}. 40% rabatt eftersom du bokar direkt. Inget trick med tidsgräns — det är vårt standard direktbokningspris.' }
     ],
     faq: [
-      { q: 'Vad kostar Bosporenkryssning biljetter?', a: '€{p.dinnerStd}/person (normalt €{p.dinnerStdOriginal}). Inkluderar 3-timmars turen, turkisk flerrättersmiddag, live folkdans-show, obegränsade läsk. 0-3 år gratis, 4-8 år 50% rabatt. Betalning ombord — ingen förskottsbetalning.' },
+      { q: 'Vad kostar Bosporenkryssning biljetter?', a: '€{p.dinnerStd}/person (normalt €{p.dinnerStdOriginal}). Inkluderar 3-timmars turen, turkisk flerrättersmiddag, live folkdans-show, obegränsade läsk. 0-3 år gratis, 4-9 år €5 rabatt. Betalning ombord — ingen förskottsbetalning.' },
       { q: 'Var kan jag köpa Bosporenkryssning biljetter?', a: 'Direkt från denna sida — fyll i bokningsformuläret, vi bekräftar direkt via WhatsApp / Telegram. Betalning ombord. Tredjepartsplattformar (Viator, GetYourGuide, Klook) säljer också biljetter, men tar vanligtvis ut €30-80+ — detta är mellanhandstillägget. Direkt är billigast och snabbast.' },
       { q: 'Måste jag skriva ut Bosporenkryssning biljetten?', a: 'Nej — ingen fysisk biljett eller kupong behövs. Efter bokning skickar vi dig en bekräftelse via WhatsApp (eller Telegram) med mötesplats, tid och bokningsnamn. Visa bara din telefon vid bryggan. Klart.' },
       { q: 'Kan jag avboka eller returnera Bosporenkryssning biljetten?', a: 'Ja — gratis avbokning fram till 2 timmar före avgång. Skriv bara via WhatsApp. Eftersom du ännu inte har betalat (betalning ombord) krävs ingen återbetalning — kom bara inte, utan kostnader. Mycket mer flexibelt än förskottsbetalda biljetter från tredje parter.' },
       { q: 'Är Bosporenkryssning biljetter tillgängliga samma dag?', a: 'Ofta ja, särskilt på vardagar. Helger och helgdagar fylls snabbare. Kontrollera tillgänglighet via bokningsformuläret — det uppdateras i realtid. Bokning samma dag är vanligtvis möjlig med några timmar före avgången 21:00. För brådskande förfrågningar, WhatsApp.' },
-      { q: 'Är Bosporenkryssning biljetter för barn gratis?', a: 'Barn **0-3 år helt gratis** (inga avgifter, inga dolda kostnader, transfer inkluderad). **4-8 år 50% rabatt** (€{p.dinnerStd}/2 = €12,15). **9+ år fullt vuxenpris.** Fasta och transparenta priser — inga "babytilläggs"-trick.' }
+      { q: 'Är Bosporenkryssning biljetter för barn gratis?', a: 'Barn **0-3 år helt gratis** (inga avgifter, inga dolda kostnader, transfer inkluderad). **4-9 år €5 rabatt** (€{p.dinnerStd}/2 = €12,15). **10+ år fullt vuxenpris.** Fasta och transparenta priser — inga "babytilläggs"-trick.' }
     ],
     cta: {
       primary: 'Köp Biljetter · Betalning Ombord',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Istanbul Kryssningspris från €{p.dinnerStd} — Transparenta Tariffer',
-      description: 'Bosporenkryssning priser Istanbul: €{p.dinnerStd}/person. Barn 0-3 gratis, 4-8 halva priset. Transparenta tillägg.'
+      description: 'Bosporenkryssning priser Istanbul: €{p.dinnerStd}/person. Barn 0-3 gratis, 4-9 halva priset. Transparenta tillägg.'
     },
     hero: {
       h1: 'Istanbul Kryssningspris',
@@ -564,17 +564,17 @@ module.exports = {
     },
     intro: [
       '**Istanbul kryssningspriser** varierar mycket — från budgetfärjor på €15 som hoppar över middagen till resortyachter på €150+. Vårt pris är i mitten och erbjuder bäst värde: €{p.dinnerStd}/person för full 3-timmars middagskryssning med show. Inga dolda avgifter, inga överraskningstillägg.',
-      'En detaljerad uppdelning av **Istanbul kryssningspriset**, eftersom transparens är viktigt:\n\n- **Middagskryssning**: €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}, 40% rabatt). Inkluderar 3-timmars tur, 10 mezzer, huvudrätt, dessert, obegränsade läsk, live show.\n- **0-3 år**: Gratis. 4-8 år: 50% rabatt. 9+ år: fullt pris.\n\nTillägg (valfria):\n- 2 glas alkohol: +€{p.alcohol2}/person\n- Hotelltransfer tur och retur: +€{p.transfer}/person\n- Romantisk borduppställning: +€{p.romantic}/bord',
+      'En detaljerad uppdelning av **Istanbul kryssningspriset**, eftersom transparens är viktigt:\n\n- **Middagskryssning**: €{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}, 40% rabatt). Inkluderar 3-timmars tur, 10 mezzer, huvudrätt, dessert, obegränsade läsk, live show.\n- **0-3 år**: Gratis. 4-9 år: €5 rabatt. 10+ år: fullt pris.\n\nTillägg (valfria):\n- 2 glas alkohol: +€{p.alcohol2}/person\n- Hotelltransfer tur och retur: +€{p.transfer}/person\n- Romantisk borduppställning: +€{p.romantic}/bord',
       'Och viktigt: **betalning ombord**. Du lovar inte ett öre förrän du är på båten. Gratis avbokning fram till 2 timmar före avgång. Ingen förpliktelse, ingen risk — det mest **konsumentvänliga priset för Istanbul-kryssningen** du kommer att hitta.'
     ],
     highlights: [
       { title: 'Middagskryssning: €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal})', desc: '40% rabatt på normalt pris. 3-timmars tur, full turkisk middag, live show, obegränsade läsk. Ett transparent pris — täcker allt du behöver för en härlig kväll.' },
       { title: 'Allt ingår i priset', desc: '3-timmars tur, 10 mezzer, varm förrätt, huvudrätt, dessert, obegränsade läsk, live show och alla skatter. Inga dolda avgifter eller överraskningar ombord.' },
-      { title: 'Pris för barn: 0-3 gratis, 4-8 halva priset', desc: '0-3 helt gratis (inga avgifter). 4-8 med 50% rabatt på vuxenpriset. 9+ fullt vuxenpris. Transparent, inga familjepris-trick. Transfern är också gratis för 0-3.' },
+      { title: 'Pris för barn: 0-3 gratis, 4-9 halva priset', desc: '0-3 helt gratis (inga avgifter). 4-9 med €5 rabatt på vuxenpriset. 10+ fullt vuxenpris. Transparent, inga familjepris-trick. Transfern är också gratis för 0-3.' },
       { title: 'Tillägg — bara när du vill ha dem', desc: 'Alkohol (2 glas): +€{p.alcohol2}/person. Transfer: €{p.transfer}/person. Romantiskt bord: €{p.romantic}/bord. Allt valfritt, inte paketerat. Välj bara vad du behöver.' }
     ],
     faq: [
-      { q: 'Vad kostar en tur i Istanbul?', a: 'Middagskryssning: €{p.dinnerStd}/person (normalt €{p.dinnerStdOriginal}, 40% rabatt). 0-3 år gratis, 4-8 år halva priset. Betalning ombord — ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' },
+      { q: 'Vad kostar en tur i Istanbul?', a: 'Middagskryssning: €{p.dinnerStd}/person (normalt €{p.dinnerStdOriginal}, 40% rabatt). 0-3 år gratis, 4-9 år halva priset. Betalning ombord — ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' },
       { q: 'Finns det dolda avgifter i Istanbul-turpriset?', a: 'Nej. Priset inkluderar: 3-timmars tur, full middag (mezzer, förrätt, huvudrätt, dessert), obegränsade läsk, live show, skatter. De valfria tilläggen (alkohol, transfer, romantiskt bord) är separata och med transparent pris — du betalar bara för det du lägger till. Ingen "serviceavgift", "hamnavgift", överraskningstillägg.' },
       { q: 'Varför är Istanbul-turpriset 40% rabatt — är det ett trick?', a: 'Inget trick. Det normala priset €{p.dinnerStdOriginal} är vad tredjepartsbokningssajter (Viator, GetYourGuide, Klook) tar ut — med sina kommissioner. Boka direkt och få €{p.dinnerStd}. Detta är skillnaden på 40%. Inga trick med begränsat eller dynamiskt pris.' },
       { q: 'Hur jämför Istanbul-turpriset med andra alternativ?', a: 'Loop-färjor: €5-10, 1 timme, ingen middag, ingen underhållning, bara turism. Budgetturer med middag: €20-30, fulla, genomsnittlig mat, kort show. Vår kryssning (€{p.dinnerStd}): 3 timmar, full middag, full show, privat bord, TÜRSAB-licensierad. Resortyachter: €100-150+, överdrivet för solo-resenärer/par.' },

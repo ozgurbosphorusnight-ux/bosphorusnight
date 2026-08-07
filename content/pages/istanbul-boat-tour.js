@@ -74,7 +74,7 @@ module.exports = {
     },
     {
       q: 'How much is an Istanbul boat tour?',
-      a: 'Our boat tour with dinner: €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). Kids 0-3 free, 4-8 half price. Pay on boat. Alcohol (2 glasses) and hotel transfer are optional add-ons.'
+      a: 'Our boat tour with dinner: €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). Kids 0-3 free, 4-9 €5 off. Pay on boat. Alcohol (2 glasses) and hotel transfer are optional add-ons.'
     },
     {
       q: 'Where do Istanbul boat tours depart from?',
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Is this boat tour suitable for families with children?',
-      a: 'Yes — very family-friendly. Children 0-3 sail free, 4-8 get 50% off. Covered indoor seating, kid-friendly menu on request, and the entertainment (whirling dervish, folk dances) is engaging for children. Many families from all over the world book this cruise.'
+      a: 'Yes — very family-friendly. Children 0-3 sail free, 4-9 get €5 off. Covered indoor seating, kid-friendly menu on request, and the entertainment (whirling dervish, folk dances) is engaging for children. Many families from all over the world book this cruise.'
     },
     {
       q: 'Do I need to bring anything to the boat tour?',

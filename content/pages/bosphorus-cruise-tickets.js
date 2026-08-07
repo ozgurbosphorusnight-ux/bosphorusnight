@@ -66,7 +66,7 @@ module.exports = {
   faq: [
     {
       q: 'How much do Bosphorus cruise tickets cost?',
-      a: '€{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Includes 3-hour cruise, multi-course Turkish dinner, live folklore show, unlimited soft drinks. Kids 0-3 free, 4-8 at 50% off. Pay on boat — no prepayment.'
+      a: '€{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Includes 3-hour cruise, multi-course Turkish dinner, live folklore show, unlimited soft drinks. Kids 0-3 free, 4-9 at €5 off. Pay on boat — no prepayment.'
     },
     {
       q: 'Where can I buy Bosphorus cruise tickets?',
@@ -86,7 +86,7 @@ module.exports = {
     },
     {
       q: 'Are kids\' Bosphorus cruise tickets free?',
-      a: 'Children **0-3 sail completely free** (no charge, no fee, including transfer). Ages **4-8 at 50% off** (€{p.dinnerStd}/2 = €12.15). Ages **9+ full adult price**. Prices capped and transparent — no "infant surcharge" tricks.'
+      a: 'Children **0-3 sail completely free** (no charge, no fee, including transfer). Ages **4-9 at €5 off** (€{p.dinnerStd} − €5 = €19.30). Ages **10+ full adult price**. Prices capped and transparent — no "infant surcharge" tricks.'
     },
     {
       q: 'Are Bosphorus cruise tickets cheaper online or at the dock?',

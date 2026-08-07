@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'price',
       title: 'From €{p.dinnerStd} — pay on boat',
-      desc: 'No prepayment needed. Pay on the boat (cash or card). Free cancellation up to 2 hours before departure. Kids 0-3 free, 4-8 at half price. Transparent pricing.'
+      desc: 'No prepayment needed. Pay on the boat (cash or card). Free cancellation up to 2 hours before departure. Kids 0-3 free, 4-9 at €5 off. Transparent pricing.'
     }
   ],
 
@@ -82,7 +82,7 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus trip suitable for kids?',
-      a: 'Yes — very child-friendly. Kids 0-3 sail free (including transfer), 4-8 at 50% off. Covered indoor seating, kid-friendly menu on request, and the entertainment is gentle and engaging. Many families book this as a highlight of their Istanbul trip.'
+      a: 'Yes — very child-friendly. Kids 0-3 sail free (including transfer), 4-9 at €5 off. Covered indoor seating, kid-friendly menu on request, and the entertainment is gentle and engaging. Many families book this as a highlight of their Istanbul trip.'
     },
     {
       q: 'What are the Bosphorus trip stops?',

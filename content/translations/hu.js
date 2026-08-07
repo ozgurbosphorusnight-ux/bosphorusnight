@@ -23,13 +23,13 @@ module.exports = {
     ],
     highlights: [
       { title: 'Török többfogásos vacsora', desc: '10 fajta hideg mezze, meleg előétel (paçanga böreği), főétel választás (lazac / tengeri sügér / csirke / húsgombóc / vegetáriánus), fagylalttorta desszertként, korlátlan üdítők.' },
-      { title: 'Élő népi táncok, keleti tánc és DJ', desc: 'Mevlana sema előadás, 5 hagyományos török népi tánc, klasszikus keleti tánc, élő török zenészek, ezt követi egy DJ szett az egész hajóút alatt.' },
+      { title: 'Élő népi táncok, keleti tánc és DJ', desc: 'Nyolc produkció: Oba Dombra, Mevlana sema előadás, Sarı Gelin, azeri egyveleg, klasszikus keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc — ezt követi élő szaxofon és egy DJ szett az egész hajóút alatt.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → FSM-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: '€{p.dinnerStd}-tól/fő — fizetés a fedélzeten', desc: 'Vacsorás hajóút €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
     ],
     faq: [
       { q: 'Mikor kezdődik a Boszporusz vacsorás hajóút?', a: 'A beszállás 20:00-kor kezdődik a Kabataş kikötőnél. A hajó 21:00-kor indul és körülbelül 00:00-kor tér vissza. Ajánljuk, hogy 15-20 perccel korábban érkezzen, hogy elhelyezkedjen és pihenjen.' },
-      { q: 'Mennyibe kerül a Boszporusz vacsorás hajóút?', a: 'Vacsorás hajóút €{p.dinnerStd}/fő (normál ár €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-8 év 50% kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
+      { q: 'Mennyibe kerül a Boszporusz vacsorás hajóút?', a: 'Vacsorás hajóút €{p.dinnerStd}/fő (normál ár €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-9 év €5 kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
       { q: 'Az alkohol benne van a vacsorás hajóútban?', a: 'A korlátlan üdítők (víz, kóla, gyümölcslé) benne vannak az árban. Az alkoholcsomag opcionális: 2 pohár (bor, sör, rakı, vodka vagy gin) +€{p.alcohol2}/fő. A további és importált italokat külön számoljuk a fedélzeten.' },
       { q: 'Van szállodai transzfer?', a: 'Igen — a felvétel és visszaszállítás szolgáltatás +€{p.transfer}/fő. Kiszolgált zónák: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce és Şişli. Ezt az opciót a foglalási űrlapon választhatja ki.' },
       { q: 'A Boszporusz vacsorás hajóút halal?', a: 'Abszolút. A fedélzeten felszolgált összes hús halal tanúsítvánnyal rendelkezik. Az alkohol opcionális kiegészítő (soha nem kényszerítjük a vendégekre), és az asztalelrendezés természetesen elkülöníti azokat a vendégeket, akik alkoholmentes étkezést részesítenek előnyben. Felárfizetés nélkül vegetáriánus alternatívákat is kínálunk.' },
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Boszporusz Gyerekekkel — Családi Hajóút €{p.dinnerStd}/felnőttől',
-      description: 'Boszporusz vacsorás hajóút családbarát. Gyerekek 0-3 ingyenes, 4-8 fél áron. Biztonságos belső tér, gyerekmenü.'
+      description: 'Boszporusz vacsorás hajóút családbarát. Gyerekek 0-3 ingyenes, 4-9 fél áron. Biztonságos belső tér, gyerekmenü.'
     },
     hero: {
       h1: 'Boszporusz Hajóút Gyerekekkel',
@@ -54,18 +54,18 @@ module.exports = {
     },
     intro: [
       '**A Boszporusz hajóút gyerekekkel** Isztambul legcsaládbarátabb esti opciója. Minden este több tucat családot fogadunk — minden részletet úgy terveztünk, hogy a legkisebbek kényelmesen érezzék magukat: fedett belső tér a meleg megőrzéséhez, hozzáférhető gyerekmenü (egyszerű grillezett csirke, tészta, korlátlan üdítők) és korai beszállás, hogy elkerüljük a kései órák hisztijeit.',
-      'A csak felnőtteknek szóló hajókkal ellentétben **a Boszporusz vacsorás hajóutunk családoknak** meleg és befogadó marad. **A 0-3 éves gyerekek ingyen** (transzfer beleértve), 4-8 év **50% kedvezményt** kap, 9+ év teljes árat fizet — nincs rejtett költség. Az élő népi táncok, a keleti tánc és a sema előadás finom családi szórakozás, nem éjszakai klub.',
+      'A csak felnőtteknek szóló hajókkal ellentétben **a Boszporusz vacsorás hajóutunk családoknak** meleg és befogadó marad. **A 0-3 éves gyerekek ingyen** (transzfer beleértve), 4-9 év **€5 kedvezményt** kap, 10+ év teljes árat fizet — nincs rejtett költség. Az élő népi táncok, a keleti tánc és a sema előadás finom családi szórakozás, nem éjszakai klub.',
       'Akár hosszú hétvégére érkezik Isztambulba a kisgyermekével, akár a tinédzsereit hozza az első európai utazásukra — ez a túra, amelyet Isztambul családjai ajánlanak. Biztonságos, halal tanúsítvánnyal rendelkezik, TÜRSAB engedéllyel és 4,8★ értékeléssel rendelkezik több mint 11.317 utazótól.'
     ],
     highlights: [
-      { title: '0-3 év teljesen ingyenes', desc: 'Nincs díj a csecsemőkért és kisgyermekekért. 4-8 év 50%-ot fizet a felnőtt árból. 9 éves kortól vendég teljes árral. Átlátható, meglepetés nélkül.' },
+      { title: '0-3 év teljesen ingyenes', desc: 'Nincs díj a csecsemőkért és kisgyermekekért. 4-9 év €5-ot fizet a felnőtt árból. 9 éves kortól vendég teljes árral. Átlátható, meglepetés nélkül.' },
       { title: 'Fedett belső tér', desc: 'A hideg hónapokban teljesen fedett és fűtött. A gyerekek melegben maradnak, védve a széltől. A nyitott fedélzet is elérhető, amikor szép az idő — a választás az Öné.' },
       { title: 'Gyerekmenü kérésre', desc: 'Egyszerű grillezett csirke, tészta, kenyér és zöldségek — felárfizetés nélkül. Korlátlan üdítők (kóla, gyümölcslé, víz). Tájékoztasson minket előre — nincs meglepetés fűszeres mezzével a legkisebbeknek.' },
-      { title: 'Biztonságos családi szórakozás', desc: 'Sema előadás (lenyűgöző a gyerekeknek), 5 hagyományos népi tánc, élő török zene és DJ szett. Minden családbarát — nincs felnőtt tartalom. A gyerekek gyakran csatlakoznak a tánchoz.' }
+      { title: 'Biztonságos családi szórakozás', desc: 'Sema előadás (lenyűgöző a gyerekeknek), Oba Dombra, valamint anatóliai, azeri és kaukázusi néptáncok — köztük a látványos késtánc — élő török zene és szaxofonos DJ szett. Minden családbarát — nincs felnőtt tartalom. A gyerekek gyakran csatlakoznak a tánchoz.' }
     ],
     faq: [
       { q: 'Biztonságos a Boszporusz hajóút kisgyermekeknek?', a: 'Igen — a hajónk TÜRSAB engedéllyel rendelkezik, fedett belső térrel biztonságos ablakokkal, minden méretű mentőmellénnyel és családi tapasztalattal rendelkező professzionális személyzettel rendelkezik. A belső fedélzetet ajánljuk kisgyermekeknek és a nyitott fedélzetet 6+ éveseknek.' },
-      { q: 'Mi az ár a gyerekeknek a Boszporusz hajóútra?', a: 'Gyerekek **0-3 év: INGYENES** (nincs díj, nincs rejtett költség). **4-8 év: 50% kedvezmény** a felnőtt árból — vagyis €12/gyerek Standardon (€{p.dinnerStd}/2). **9+ év: teljes felnőtt ár.** A szállodai transzfer ingyenes 0-3 évig, standard 4+ esetén (€{p.transfer}/fő).' },
+      { q: 'Mi az ár a gyerekeknek a Boszporusz hajóútra?', a: 'Gyerekek **0-3 év: INGYENES** (nincs díj, nincs rejtett költség). **4-9 év: €5 kedvezmény** a felnőtt árból — vagyis €12/gyerek Standardon (€{p.dinnerStd}/2). **10+ év: teljes felnőtt ár.** A szállodai transzfer ingyenes 0-3 évig, standard 4+ esetén (€{p.transfer}/fő).' },
       { q: 'Van gyerekmenü a fedélzeten?', a: 'Igen — egyszerű grillezett csirke, tészta, kenyér, szezonális zöldségek és korlátlan üdítők. Tájékoztasson minket az allergiákról vagy étrendi preferenciákról a foglaláskor, és olyat készítünk, amit a gyermeke örömmel fog enni.' },
       { q: 'Túl hangos a zene vagy a show a gyerekeknek?', a: 'Az élő show-k a színpad egyik területén zajlanak — ha a gyerekei zajérzékenyek, csendesebb asztalhoz ültetjük Önöket hátul. A show összesen 40 percig tart, az este többi része háttér török zene és DJ közepes hangerőn.' },
       { q: 'Mi történik, ha a baba elalszik a hajóút alatt?', a: 'Nem probléma — sokan elalszanak. A belső térben kanapépadok vannak, ahol egy baba vagy kisgyermek kényelmesen aludhat. Kérjen a személyzettől meleg takarót, ha szükséges. Nincs felár.' },
@@ -138,9 +138,9 @@ module.exports = {
     faq: [
       { q: 'A Boszporusz hajóút 100% halal?', a: 'Igen — minden hústermék a menüben (hal, csirke, húsgombóc, marhabélszín, ribeye, bárány) halal tanúsítvánnyal rendelkezik jóváhagyott beszállítóktól. A konyha követi a halal elkészítési szabványokat. Sehol nem szolgálnak fel sertéshúst a fedélzeten. Ez nem egy "halal opció" — az egész menü halal.' },
       { q: 'Más vendégek alkoholt isznak a fedélzeten?', a: 'Néhány vendég hozzáadja az opcionális 2 poharas alkoholcsomagot (+€{p.alcohol2}/fő). Az asztalok természetesen el vannak választva — kérhet alkoholmentes zónát. A személyzet nem hoz alkoholt, hacsak egy vendég kifejezetten meg nem rendeli. Az üdítők (korlátlanok) mindenki számára benne vannak.' },
-      { q: 'Ez a hajóút alkalmas muszlim családoknak gyerekekkel?', a: 'Igen — ez Isztambul egyik legtiszteltebb hajóútja a családok számára. A szórakozás szerény (népi táncok, sema, török zene), a 3 év alatti gyerekek ingyenesek, 4-8 év 50% kedvezményt kap. Nincs éjszakai klub légkör. Az Öbölből, Indonéziából, Malajziából, Pakisztánból és Marokkóból származó családok rendszeresen foglalják ezt a hajóutat.' },
+      { q: 'Ez a hajóút alkalmas muszlim családoknak gyerekekkel?', a: 'Igen — ez Isztambul egyik legtiszteltebb hajóútja a családok számára. A szórakozás szerény (népi táncok, sema, török zene), a 3 év alatti gyerekek ingyenesek, 4-9 év €5 kedvezményt kap. Nincs éjszakai klub légkör. Az Öbölből, Indonéziából, Malajziából, Pakisztánból és Marokkóból származó családok rendszeresen foglalják ezt a hajóutat.' },
       { q: 'Imádkozhatok a fedélzeten?', a: 'A fedélzeten nincs dedikált imahelyiség, de javasoljuk, hogy a 20:00-as beszállás előtt imádkozzon (a maghrib ima gyakran egybeesik ezzel az időtartammal). A Kabataş kikötőben vannak imaeszközök. Ha a 21:00-00:00 közötti vitorlázás során kell imádkoznia (isha), beszéljen a személyzettel — el tudunk rendezni egy csendes sarkot a fedélzeten.' },
-      { q: 'Mennyibe kerül egy 4 fős muszlim családnak (2 felnőtt, 2 gyerek)?', a: 'Vacsorás hajóút: 2 × €{p.dinnerStd} + 2 × €12.15 (fél ár 4-8 év) = €72.90. Ha a gyerekek 3 év alattiak, ingyenes: 2 × €{p.dinnerStd} = €48.60. Adjon hozzá €{p.transfer} szállodai transzfert felnőttenként. Összesen: €48.60–€92.90 a 4 fős családnak, nincs előzetes fizetés, fizetés a fedélzeten.' },
+      { q: 'Mennyibe kerül egy 4 fős muszlim családnak (2 felnőtt, 2 gyerek)?', a: 'Vacsorás hajóút: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 kedvezmény 4-9 év) = €87.20. Ha a gyerekek 3 év alattiak, ingyenes: 2 × €{p.dinnerStd} = €48.60. Adjon hozzá €{p.transfer} szállodai transzfert felnőttenként. Összesen: €48.60–€92.90 a 4 fős családnak, nincs előzetes fizetés, fizetés a fedélzeten.' },
       { q: 'A szállodai transzfer is halal?', a: 'A szállodai transzfer csak egy autóút — nincs étel vagy ital, tehát nincs halal aggodalom. Sofőrjeink professzionálisak, tisztelettudóak és pontosak. A transzferzónák lefedik a Sultanahmetet, Taksimot, Beşiktaşt, Lalelit, Fatihot, Şişlit és 8 másik központi negyedet, ahol a muszlim utazók általában megszállnak.' }
     ],
     cta: {
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% KEDVEZMÉNY · Egy menü, prémium színvonal · Fizetés a hajón'
     },
     intro: [
-      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte), fagylalttorta és korlátlan üdítő. A teljes műsor is benne van — kerengő dervisek szertartása, 5 néptánc, hastánc, élő zene és DJ — mindez a €{p.dinnerStd}/fő árban.',
+      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte), fagylalttorta és korlátlan üdítő. A teljes, nyolc produkcióból álló műsor is benne van — Oba Dombra, kerengő dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé — mindez a €{p.dinnerStd}/fő árban.',
       'A VIP érzés az asztalnál kezdődik. Ha a színpadhoz és a látványhoz szeretne a legközelebb ülni, kérje a **privát asztalt a színpad mellett** (+€{p.romantic}/asztal), és a helyét előre lefoglaljuk — a legjobb szög a dervisekhez, a néptáncokhoz és a kivilágított Boszporuszhoz. Párok, ünneplések és fotózni szeretők kedvence.',
       'Az AMOR modern hajó: 42 méter hosszú, 3 fedélzetes, akár 400 vendéget fogad, télen fűtött, nyáron légkondicionált. A háromórás útvonal Kabataşból indul (beszállás 20:00-tól, indulás 21:00, visszaérkezés 00:00), elhalad a Dolmabahçe, az Ortaköy mecset, a Rumeli erőd és a Boszporusz híd fényei mellett. TÜRSAB engedéllyel (A-17672), 4,9★ a Google-on. Nincs előre fizetés — a hajón fizet, és az indulás előtt 2 órával még ingyenesen lemondhat.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Árulnak „VIP csomagot“? Miben más, mint a standard?', a: 'Nem árulunk külön VIP csomagot — egyetlen menü van, amelyet mindenki ugyanazon a prémium színvonalon kap. Amit „VIP élménynek“ nevezünk, az az este személyre szabása: privát asztal a színpad mellett (+€{p.romantic}/asztal), figyelmes asztali kiszolgálás és választható italkiegészítők. A hajóút 3 órás, €{p.dinnerStd}/fő.' },
       { q: 'Tényleg 40% kedvezmény a €{p.dinnerStd}?', a: 'Igen — a listaárunk €{p.dinnerStdOriginal}/fő. A €{p.dinnerStd} a közvetlen foglalási ár, közvetítői jutalék nélkül. A hajón fizet, előleget nem kérünk.' },
-      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte) és fagylalttorta desszertnek, korlátlan üdítővel. A műsor benne van: dervisek szertartása, 5 néptánc, hastánc, élő zene és DJ.' },
+      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte) és fagylalttorta desszertnek, korlátlan üdítővel. A nyolc produkcióból álló műsor benne van: Oba Dombra, dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé.' },
       { q: 'Az alkohol benne van az árban?', a: 'Nem — az alkohol külön kiegészítő: 2 pohár helyi bor vagy sör +€{p.alcohol2}/fő áron. Az üdítők korlátlanul és ingyenesen benne vannak. A prémium importitalokat a hajón külön számoljuk el.' },
       { q: 'Hogyan biztosíthatok színpad melletti asztalt?', a: 'Elég a foglaláskor kiválasztani a „privát asztal a színpad mellett“ kiegészítőt (+€{p.romantic}/asztal) — az asztalt az Ön nevére foglaljuk. A legjobb helyek az előfoglalásokkal telnek be, ezért érdemes a hajóút napja előtt hozzáadni.' },
       { q: 'Milyen hajó ez?', a: 'AMOR — modern személyszállító hajó, 42 méter hosszú, 3 fedélzetes, 400 fő befogadóképességgel, télen fűtött, nyáron légkondicionált. Indulás a kabataşi kikötőből: beszállás 20:00, indulás 21:00, visszaérkezés 00:00. Útvonal: Dolmabahçe, Ortaköy, Rumeli erőd, Beylerbeyi és a Boszporusz híd fényei.' }
@@ -282,7 +282,7 @@ module.exports = {
     faq: [
       { q: 'Mikor indul a Boszporusz naplemente hajóút?', a: 'A beszállás 20:00-kor kezdődik a Kabataş kikötőben, a hajó 21:00-kor indul és körülbelül 00:00-kor tér vissza. Nyáron (május–augusztus) a nap nagyjából 20:15–20:45 között nyugszik le — az aranyóra a beszállás alatt zajlik, maga a naplemente pedig épp az indulás körül, a vízről nézve.' },
       { q: 'A Boszporusz naplemente hajóút ugyanaz, mint a vacsorás hajóút?', a: 'Igen — ez egyetlen hajóút. Naponta egyetlen indulás van 21:00-kor, teljes vacsorával és élő show-kkal a fedélzeten. A hosszú nyári estéken egyben naplemente hajóút is: az aranyóra alatt száll fel, majd a kék órán át hajózik a kivilágított éjszakába. Télen ugyanez a hajóút tiszta éjszakai fényélmény.' },
-      { q: 'Mennyibe kerül a Boszporusz naplemente hajóút?', a: '€{p.dinnerStd}/főtől a hajóútnál (3 óra, teljes vacsora, élő szórakozás). Fizetés a fedélzeten — nincs előzetes fizetés. 0-3 év ingyenes, 4-8 év fél áron.' },
+      { q: 'Mennyibe kerül a Boszporusz naplemente hajóút?', a: '€{p.dinnerStd}/főtől a hajóútnál (3 óra, teljes vacsora, élő szórakozás). Fizetés a fedélzeten — nincs előzetes fizetés. 0-3 év ingyenes, 4-9 év fél áron.' },
       { q: 'Mikor a legjobb az év során a Boszporusz naplemente hajóút?', a: 'Májustól augusztusig. Isztambul kései naplementéi (20:15–20:45) egybeesnek a 21:00-as indulással, így egy estén megkapja az aranyórát, a naplementét és a kivilágított hidakat. Ősszel és télen a nap korábban nyugszik le, és ugyanez a hajóút teljes éjszakai fényélménnyé válik — ugyanolyan fotogén, más hangulattal.' },
       { q: 'Mit vigyek magammal a naplemente hajóútra?', a: 'Okostelefont vagy kamerát — az aranyóra és a kivilágított hidak szinte követelik. Egy könnyű kabátot: a szél felerősödik a fedélzeten a naplemente után. Smart-casual öltözet — vacsorázik, de nincs szigorú öltözködési kód.' },
       { q: 'Látom a kivilágított hidakat éjjel ezen a hajóúton?', a: 'Igen — ez az este második fele. A hajóút 21:00–00:00 között tart, így a naplemente és a kék óra után a teljesen kivilágított Boszporusz-híd alatt hajózik, elhalad a kivilágított paloták és a Leánytorony mellett, majd 00:00 körül visszatér Kabataşhoz.' },
@@ -308,18 +308,18 @@ module.exports = {
     },
     intro: [
       '**A Boszporusz éjszakai túra** a legjobban ajánlott esti tevékenység Isztambulban. Itt van, miért: sötétedés után a Boszporusz átalakul. A Boszporusz-híd váltakozik a kék, lila és arany között. A Dolmabahçe-palota meleg sárgán ragyog. Az Ortaköy-mecset tökéletesen tükröződik a fekete vízben. Isztambul minden nevezetessége éjjel éri el drámai csúcsát.',
-      '**A Boszporusz éjszakai túránk vacsorával** csomagolja a teljes ikonikus estét: 3 óra a vízen (21:00-00:00), török többfogásos vacsora, élő népi táncok (sema, 5 népi tánc, keleti tánc), élő zene és DJ szett, amely az éjszaka végéig életben tartja a fedélzetet. Minden vendég ugyanazt a programot kapja — nincs "alap" opció, amely kihagyja a legjobb részeket.',
+      '**A Boszporusz éjszakai túránk vacsorával** csomagolja a teljes ikonikus estét: 3 óra a vízen (21:00-00:00), török többfogásos vacsora, nyolc produkcióból álló élő folklórműsor (Oba Dombra, sema, anatóliai és azeri néptáncok, keleti tánc, kaukázusi késtánc), élő zene és szaxofonos DJ szett, amely az éjszaka végéig életben tartja a fedélzetet. Minden vendég ugyanazt a programot kapja — nincs "alap" opció, amely kihagyja a legjobb részeket.',
       'Akár az első isztambuli látogatása és "az egyetlen dolgot keresi, amit éjjel kell csinálnia", akár már járt itt és a város legfotogénebb 3 óráját szeretné, ez **a Boszporusz éjszakai túra** 4,8★ értékeléssel rendelkezik több mint 11.317 utazótól. TÜRSAB engedéllyel, fizetés a fedélzeten, nincs előzetes fizetés.'
     ],
     highlights: [
       { title: 'A kivilágított Boszporusz drámai csúcson', desc: 'A Boszporusz-híd színt változtat (kék, lila, arany), a paloták sárgán ragyognak, az Ortaköy-mecset tükröződik a sötét vízben. 21:00-00:00 maximális megvilágítás az összes isztambuli nevezetességhez.' },
-      { title: 'Hagyományos török show a fedélzeten', desc: 'Sema előadás, 5 hagyományos népi tánc (Törökország különböző régióiból), keleti tánc, élő török zene, majd DJ szett. 40 perc show, majd folytatódik a zene + vacsora.' },
+      { title: 'Hagyományos török show a fedélzeten', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc, majd élő szaxofon és DJ szett. 40 perc show, majd folytatódik a zene + vacsora.' },
       { title: 'Teljes többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel (paçanga böreği), főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus — az Ön választása), desszert (fagylalttorta), korlátlan üdítők. Halal tanúsítvánnyal.' },
       { title: 'Teljes Boszporusz útvonal', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Leánytorony → Kabataş.' }
     ],
     faq: [
       { q: 'Mikor van a Boszporusz éjszakai túra?', a: 'Beszállás 20:00-tól a Kabataş kikötőben. A hajó 21:00-kor indul, körülbelül 00:00-kor tér vissza. Ajánljuk, hogy 20 perccel korábban érkezzen, hogy elhelyezkedjen és helyet válasszon.' },
-      { q: 'Mennyibe kerül a Boszporusz éjszakai túra?', a: 'Éjszakai túra (3 óra, vacsora, show): €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-8 év fél áron. Fizetés a fedélzeten.' },
+      { q: 'Mennyibe kerül a Boszporusz éjszakai túra?', a: 'Éjszakai túra (3 óra, vacsora, show): €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-9 év fél áron. Fizetés a fedélzeten.' },
       { q: 'Mi a különbség a Boszporusz éjszakai túra és a vacsorás hajóút között?', a: 'Ugyanaz, más kulcsszó. A "Boszporusz éjszakai túra" az, ahogyan sok utazó keres; a "vacsorás hajóút" az iparági kifejezés. Ugyanaz a hajó, ugyanaz a 3 órás program, ugyanaz a menü, ugyanaz a show. Válassza a preferált keresési kifejezést — az élmény ugyanaz.' },
       { q: 'Boszporusz éjszakai túra vagy naplemente hajóút — melyik ér többet?', a: 'Éjszakai túra = kivilágított Isztambul, maximális fénydráma, teljes szórakozási program, a legikonikusabb fotók a kivilágított hidakról. És ez egyetlen hajóút: nyáron (május–augusztus) a 20:00-tól kezdődő beszállás elkapja az aranyórát, a nap pedig épp a 21:00-as indulás körül nyugszik le — így ugyanaz az este lefedi a naplementét és az éjszakát is. Nem kell választania vagy kétszer foglalnia.' },
       { q: 'Megcsinálhatom a Boszporusz éjszakai túrát az első isztambuli napon?', a: 'Igen — ajánljuk. Sok utazó az első estéjére foglalja az éjszakai túrát, mert teljes tájékozódást nyújt: az összes fő nevezetesség a vízről, jó étellel és szórakozással. Könnyebb, mint a jetlag elleni harc, miközben próbál gyalogos turizmust csinálni az 1. napon. Szállodai transzfer elérhető központi negyedekből.' },
@@ -349,7 +349,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Teljes török többfogásos vacsora', desc: '10 fajta mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), fagylalttorta. Halal tanúsítvánnyal. Korlátlan üdítők beleértve.' },
-      { title: 'Élő török népi tánc show', desc: 'Sema előadás, 5 hagyományos népi tánc, keleti tánc, élő török zene, DJ. 40 perc show, folyamatos háttérzene.' },
+      { title: 'Élő török népi tánc show', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg, grúz-kaukázusi késtánc, majd élő szaxofon és DJ. 40 perc show, folyamatos háttérzene.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: '3 órás túra: Dolmabahçe, Çırağan, Ortaköy-mecset, Boszporusz-híd, Bebek, Rumeli Hisarı, FSM-híd, Beylerbeyi, Üsküdar, Leánytorony. Mindkét part, európai és ázsiai.' },
       { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Vacsorás hajóút: €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
     ],
@@ -358,7 +358,7 @@ module.exports = {
       q: "Milyen műsorszámok vannak a vacsorás hajóút programjában?",
       a: "Nyolc produkció: Oba Dombra (közép-ázsiai sámánritmus), a kerengő dervisek Mevlana-szertartása, Sarı Gelin, azeri egyveleg, orientális show (hastánc), török-anatóliai egyveleg, a grúz Gandagan és egy kaukázusi egyveleg a hagyományos késtánccal, végül élő szaxofon és DJ. A program az egész hajóút alatt zajlik, a sorrend változhat."
     },
-      { q: 'Mennyibe kerül a vacsorás hajóút Isztambulban?', a: 'Vacsorás hajóútunk €{p.dinnerStd}/fő (normál ár €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-8 év 50% kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
+      { q: 'Mennyibe kerül a vacsorás hajóút Isztambulban?', a: 'Vacsorás hajóútunk €{p.dinnerStd}/fő (normál ár €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-9 év €5 kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
       { q: 'Mi tartozik bele az isztambuli vacsorás hajóút árába?', a: '3 órás túra a Boszporuszon, török többfogásos vacsora (mezze, meleg előétel, főétel, desszert), korlátlan üdítők, élő népi tánc show (sema, népi táncok, keleti), élő zene + DJ, hozzáférés a nyitott fedélzethez, adók beleértve. A szállodai transzfer és az alkohol opcionális kiegészítők.' },
       { q: 'Honnan indul az isztambuli vacsorás hajóút?', a: 'Kabataş kikötő, Isztambul — az európai parton, a Dolmabahçe-palota közelében. A pontos találkozási helyet foglalás után WhatsApp / Telegram-en közöljük. A Dolmabahçe villamosmegállóból és a Kabataş villamosmegállóból induló gyalogos videók a fenti találkozási hely szakaszban találhatók.' },
       { q: 'Meddig tart a vacsorás hajóút — és mikor kezdődik?', a: 'Összesen 3 óra. Beszállás 20:00-tól, a hajó pontosan 21:00-kor indul, körülbelül 00:00-kor tér vissza. Ajánljuk, hogy 15-20 perccel korábban érkezzen, hogy elhelyezkedjen és helyet válasszon.' },
@@ -390,7 +390,7 @@ module.exports = {
     highlights: [
       { title: 'Isztambul összes ikonikus éjszakai kilátása', desc: 'Dolmabahçe-palota, Ortaköy-mecset, kivilágított Boszporusz-híd, Rumeli Hisarı, FSM-híd, Beylerbeyi-palota, Leánytorony. Minden fő nevezetesség a csúcs éjszakai megvilágításnál.' },
       { title: 'Teljes török vacsora beleértve', desc: '10 mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), desszert, korlátlan üdítők. Halal tanúsítvánnyal. €{p.dinnerStd}/fő áron — minden benne.' },
-      { title: 'Élő népi táncok + sema + keleti', desc: 'Hagyományos török szórakozás: Mevlana sema előadás, 5 regionális népi tánc, keleti tánc, élő zene, DJ. 40 perc show, háttérzene egész este.' },
+      { title: 'Élő népi táncok + sema + keleti', desc: 'Nyolc produkcióból álló élő műsor: Oba Dombra, Mevlana sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg, grúz-kaukázusi késtánc, majd élő szaxofon és DJ. 40 perc show, háttérzene egész este.' },
       { title: 'Könnyű az első isztambuli alkalomra', desc: 'Központi találkozási hely (Kabataş kikötő), szállodai transzfer (+€{p.transfer}/fő), angolul beszélő személyzet, fizetés a fedélzeten. Nulla logisztikai stressz. Jöjjön, élvezze, menjen.' }
     ],
     faq: [
@@ -432,9 +432,9 @@ module.exports = {
     faq: [
       { q: 'Mi a legjobb hajós túra Isztambulban?', a: 'A Boszporusz vacsorás hajóút következetesen #1 helyen áll. Lefedi az összes fő nevezetességet, tartalmazza a vacsorát és a szórakozást és este fut, amikor a nevezetességek kivilágítva vannak. Más opciók (hop-on kompok, reggeli turisztikai hajók) rövidebb útvonalakat fednek le, kihagyják a vacsorát és nem tartalmaznak szórakozást. Egy isztambuli estére ez a legteljesebb hajós túra.' },
       { q: 'Meddig tart a hajós túra Isztambulban?', a: '3 óra. Beszállás 20:00-tól a Kabataş kikötőnél, indulás 21:00, visszatérés ~00:00. Lefedi a teljes Boszporuszt Dolmabahçe-tól Rumeli Hisarı-ig és vissza. Elég idő a teljes vacsorához + show-hoz fáradtság nélkül.' },
-      { q: 'Mennyibe kerül a hajós túra Isztambulban?', a: 'Hajós túránk vacsorával: €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-8 év fél áron. Fizetés a fedélzeten. Az alkohol és a szállodai transzfer opcionális kiegészítők.' },
+      { q: 'Mennyibe kerül a hajós túra Isztambulban?', a: 'Hajós túránk vacsorával: €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). 0-3 év ingyenes, 4-9 év fél áron. Fizetés a fedélzeten. Az alkohol és a szállodai transzfer opcionális kiegészítők.' },
       { q: 'Honnan indulnak a hajós túrák Isztambulban?', a: 'A hajónk a Kabataş kikötőből indul, Isztambul központi európai partjáról, a Dolmabahçe-palota közelében. Elérhető T1 villamossal (Kabataş állomás), taxival 15 perc Taksimból vagy gyalog 20 perc Taksimból. Szállodai transzfer elérhető központi negyedekből +€{p.transfer}/fővel.' },
-      { q: 'Ez a hajós túra alkalmas családoknak gyerekekkel?', a: 'Igen — nagyon családbarát. Gyerekek 0-3 év ingyenes, 4-8 év 50% kedvezmény. Fedett belső tér, gyerekmenü kérésre és szórakozás (sema, népi táncok), amely lebilincselő a gyerekeknek. Sok család a világ minden tájáról foglalja ezt a túrát.' },
+      { q: 'Ez a hajós túra alkalmas családoknak gyerekekkel?', a: 'Igen — nagyon családbarát. Gyerekek 0-3 év ingyenes, 4-9 év €5 kedvezmény. Fedett belső tér, gyerekmenü kérésre és szórakozás (sema, népi táncok), amely lebilincselő a gyerekeknek. Sok család a világ minden tájáról foglalja ezt a túrát.' },
       { q: 'Vinnem kell valamit a hajós túrára?', a: 'Útlevél vagy személyi igazolvány (a fedélzeten való regisztrációhoz), könnyű kabát (a fedélzet hűvös lehet), kényelmes cipő, ha táncolni szeretne. Okostelefon a fotókhoz. Készpénz vagy kártya a fedélzeti fizetéshez (mindkettő elfogadott). Minden más — étel, ital, szórakozás — a fedélzeten van.' }
     ],
     cta: {
@@ -463,14 +463,14 @@ module.exports = {
       { title: 'A teljes Boszporusz egyetlen csapásra', desc: 'Európai part (Dolmabahçe, Ortaköy, Rumeli Hisarı), ázsiai part (Beylerbeyi, Üsküdar), mindkét Boszporusz-híd, Leánytorony. Minden fő nevezetesség látható 3 órán belül.' },
       { title: 'Vacsora + szórakozás beleértve', desc: 'Nem csak turisztikai komp — teljes török vacsora mezzével, főétellel, desszerttel. Élő népi tánc show, sema, keleti, DJ. Szórakoztatási érték a táj mellett.' },
       { title: 'Este = legjobb megvilágítás', desc: 'A nappali Boszporusz kirándulások sík fényben mutatják a nevezetességeket. Az esti kirándulások mindent kivilágítva fognak meg: ragyogó paloták, színes hidak, sötét vízben tükröződő mecsetek. Jobb fotók, drámaibbak.' },
-      { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Nincs szükség előzetes fizetésre. Fizetés a fedélzeten (készpénz vagy kártya). Ingyenes lemondás indulás előtt 2 óráig. 0-3 év ingyenes, 4-8 év fél áron. Átlátható árak.' }
+      { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Nincs szükség előzetes fizetésre. Fizetés a fedélzeten (készpénz vagy kártya). Ingyenes lemondás indulás előtt 2 óráig. 0-3 év ingyenes, 4-9 év fél áron. Átlátható árak.' }
     ],
     faq: [
       { q: 'Mik a legjobb Boszporusz kirándulások Isztambulban?', a: 'Az esti vacsorás túra következetesen az első helyeken áll. A nappali opciók (1 órás hurok kompok, 2 órás turisztikai hajók) kevesebbet mutatnak és nem tartalmaznak vacsorát. Az érték szempontjából nehéz felülmúlni egy 3 órás túrát vacsorával, show-val és központi találkozási hellyel. A túránk €{p.dinnerStd} ára kiküszöböli egy külön vacsorás + szórakozós este szükségességét.' },
       { q: 'Meddig tart egy Boszporusz kirándulás?', a: 'A Boszporusz kirándulásunk összesen 3 órás (indulás 21:00, visszatérés 00:00). Vannak rövidebb opciók (1 órás turisztikai kompok, 90 perces túrák), de kihagyják a vacsorát és a szórakozást. A teljes esti élményhez 3 óra ideális — elég ahhoz, hogy mindent lássunk anélkül, hogy elfáradnánk.' },
       { q: 'Megéri a Boszporusz kirándulás?', a: 'Igen — szinte minden isztambuli útikönyv a top 5 kötelező dolog között sorolja fel a "Boszporusz hajóutat". A város e szoros köré épült; ha nem látta a Boszporuszt a vízről, nem igazán látta Isztambult. A specifikus esti túránk vacsorát és szórakozást ad hozzá, így teljes esti kirándulás lesz belőle, nem csak turizmus.' },
       { q: 'Mit vigyek a Boszporusz kirándulásra?', a: 'Útlevél vagy személyi igazolvány (a fedélzeten való regisztrációhoz), könnyű kabát (este a fedélzet hűvös), okostelefon/kamera, kényelmes cipő a táncparkettre. Készpénz vagy kártya a fizetéshez. Minden más a fedélzeten van. Szállodai transzfer elérhető +€{p.transfer}/fővel, ha nem szeretne tömegközlekedést használni.' },
-      { q: 'A Boszporusz kirándulás alkalmas gyerekeknek?', a: 'Igen — nagyon gyerekbarát. Gyerekek 0-3 év ingyenes (transzfer beleértve), 4-8 év 50% kedvezmény. Fedett belső tér, gyerekmenü kérésre és finom és lebilincselő szórakozás. Sok család foglalja ezt a kirándulást az isztambuli utazásuk csúcspontjaként.' },
+      { q: 'A Boszporusz kirándulás alkalmas gyerekeknek?', a: 'Igen — nagyon gyerekbarát. Gyerekek 0-3 év ingyenes (transzfer beleértve), 4-9 év €5 kedvezmény. Fedett belső tér, gyerekmenü kérésre és finom és lebilincselő szórakozás. Sok család foglalja ezt a kirándulást az isztambuli utazásuk csúcspontjaként.' },
       { q: 'Mik a Boszporusz kirándulás megállói?', a: 'Folyamatos túra — nincsenek megállók (nincs leszállás). A hajó elhalad minden nevezetesség mellett, a személyzet elmagyarázza, mit lát, kikapcsolódik az asztalnál vagy kimegy a nyitott fedélzetre fotózni. Nincsenek sorok, nincs séta — csak 3 zökkenőmentes óra a vízen.' }
     ],
     cta: {
@@ -502,12 +502,12 @@ module.exports = {
       { title: 'Jelenlegi bevezető ár 40% KEDVEZMÉNY', desc: 'Korábban €{p.dinnerStdOriginal}, most €{p.dinnerStd}. 40% kedvezmény, mert közvetlenül foglal. Nem időkorlátos trükk — ez a standard közvetlen foglalási árunk.' }
     ],
     faq: [
-      { q: 'Mennyibe kerülnek a Boszporusz hajóút jegyek?', a: '€{p.dinnerStd}/fő (normál €{p.dinnerStdOriginal}). Tartalmazza a 3 órás túrát, török többfogásos vacsorát, élő népi tánc show-t, korlátlan üdítőket. 0-3 év ingyenes, 4-8 év 50% kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
+      { q: 'Mennyibe kerülnek a Boszporusz hajóút jegyek?', a: '€{p.dinnerStd}/fő (normál €{p.dinnerStdOriginal}). Tartalmazza a 3 órás túrát, török többfogásos vacsorát, élő népi tánc show-t, korlátlan üdítőket. 0-3 év ingyenes, 4-9 év €5 kedvezmény. Fizetés a fedélzeten — nincs előzetes fizetés.' },
       { q: 'Hol vásárolhatok Boszporusz hajóút jegyeket?', a: 'Közvetlenül ezen az oldalon — töltse ki a foglalási űrlapot, azonnal megerősítjük WhatsApp / Telegram-en. Fizetés a fedélzeten. A harmadik fél platformok (Viator, GetYourGuide, Klook) is árulnak jegyeket, de általában €30-80+-t kérnek — ez a közvetítői felár. A közvetlen a legolcsóbb és a leggyorsabb.' },
       { q: 'Nyomtatnom kell a Boszporusz hajóút jegyet?', a: 'Nem — nincs szükség fizikai jegyre vagy kuponra. Foglalás után megerősítést küldünk WhatsApp-on (vagy Telegram-en) a találkozási hellyel, idővel és a foglalás nevével. Csak mutassa a telefonját a kikötőnél. Kész.' },
       { q: 'Le tudom mondani vagy visszaadni a Boszporusz hajóút jegyet?', a: 'Igen — ingyenes lemondás indulás előtt 2 óráig. Csak írjon WhatsApp-on. Mivel még nem fizetett (fizetés a fedélzeten), nincs szükség visszatérítésre — egyszerűen ne jöjjön, költségek nélkül. Sokkal rugalmasabb, mint a harmadik felek előre fizetett jegyei.' },
       { q: 'Elérhetők a Boszporusz hajóút jegyek aznapra?', a: 'Gyakran igen, különösen hétköznapokon. A hétvégék és ünnepek gyorsabban megtelnek. Ellenőrizze az elérhetőséget a foglalási űrlapon — valós időben frissül. Az aznapi foglalás általában néhány órával a 21:00-as indulás előtt lehetséges. Sürgős kérésekért WhatsApp.' },
-      { q: 'A Boszporusz hajóút jegyek gyerekeknek ingyenesek?', a: 'Gyerekek **0-3 év teljesen ingyenes** (nincs díj, nincs rejtett költség, transzfer beleértve). **4-8 év 50% kedvezmény** (€{p.dinnerStd}/2 = €12,15). **9+ év teljes felnőtt ár.** Fix és átlátható árak — nincsenek "baba felár" trükkök.' }
+      { q: 'A Boszporusz hajóút jegyek gyerekeknek ingyenesek?', a: 'Gyerekek **0-3 év teljesen ingyenes** (nincs díj, nincs rejtett költség, transzfer beleértve). **4-9 év €5 kedvezmény** (€{p.dinnerStd}/2 = €12,15). **10+ év teljes felnőtt ár.** Fix és átlátható árak — nincsenek "baba felár" trükkök.' }
     ],
     cta: {
       primary: 'Jegyek Vásárlása · Fizetés a Fedélzeten',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Isztambul Hajóút Ár €{p.dinnerStd}-tól — Átlátható Tarifák',
-      description: 'Boszporusz hajóút árak Isztambul: €{p.dinnerStd}/fő. Gyerekek 0-3 ingyenes, 4-8 fél áron. Átlátható kiegészítők.'
+      description: 'Boszporusz hajóút árak Isztambul: €{p.dinnerStd}/fő. Gyerekek 0-3 ingyenes, 4-9 fél áron. Átlátható kiegészítők.'
     },
     hero: {
       h1: 'Isztambul Hajóút Ár',
@@ -564,17 +564,17 @@ module.exports = {
     },
     intro: [
       '**Az isztambuli hajóút árak** nagyon változatosak — a vacsorát kihagyó €15-os költségvetésű kompoktól az €150+-os üdülő jachtokig. A mi árunk középen van és a legjobb értéket kínálja: €{p.dinnerStd}/fő a teljes 3 órás vacsorás hajóútért show-val. Nincsenek rejtett díjak, nincsenek meglepetés felárak.',
-      'Az **isztambuli hajóút ár** részletes bontása, mert az átláthatóság számít:\n\n- **Vacsorás Hajóút**: €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}, 40% kedvezmény). Tartalmazza a 3 órás túrát, 10 mezzét, főételt, desszertet, korlátlan üdítőket, élő show-t.\n- **0-3 év**: Ingyenes. 4-8 év: 50% kedvezmény. 9+ év: teljes ár.\n\nKiegészítők (opcionálisak):\n- 2 pohár alkohol: +€{p.alcohol2}/fő\n- Szállodai transzfer oda-vissza: +€{p.transfer}/fő\n- Romantikus asztali elrendezés: +€{p.romantic}/asztal',
+      'Az **isztambuli hajóút ár** részletes bontása, mert az átláthatóság számít:\n\n- **Vacsorás Hajóút**: €{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}, 40% kedvezmény). Tartalmazza a 3 órás túrát, 10 mezzét, főételt, desszertet, korlátlan üdítőket, élő show-t.\n- **0-3 év**: Ingyenes. 4-9 év: €5 kedvezmény. 10+ év: teljes ár.\n\nKiegészítők (opcionálisak):\n- 2 pohár alkohol: +€{p.alcohol2}/fő\n- Szállodai transzfer oda-vissza: +€{p.transfer}/fő\n- Romantikus asztali elrendezés: +€{p.romantic}/asztal',
       'És fontos: **fizetés a fedélzeten**. Egy fillért sem ígér, amíg nincs a hajón. Ingyenes lemondás indulás előtt 2 óráig. Nincs elkötelezettség, nincs kockázat — a legtöbb **fogyasztóbarát ár az isztambuli hajóútra**, amit talál.'
     ],
     highlights: [
       { title: 'Vacsorás hajóút: €{p.dinnerStd} (korábban €{p.dinnerStdOriginal})', desc: '40% kedvezmény a normál árhoz képest. 3 órás túra, teljes török vacsora, élő show, korlátlan üdítők. Egyetlen átlátható ár — mindent fedez, ami egy szép estéhez kell.' },
       { title: 'Minden benne van az árban', desc: '3 órás túra, 10 mezze, meleg előétel, főétel, desszert, korlátlan üdítők, élő show és minden adó. Nincsenek rejtett díjak vagy meglepetések a fedélzeten.' },
-      { title: 'Ár gyerekeknek: 0-3 ingyenes, 4-8 fél áron', desc: '0-3 teljesen ingyenes (nincs díj). 4-8 50% kedvezménnyel a felnőtt árból. 9+ teljes felnőtt ár. Átlátható, nincsenek családi ártrükkök. A transzfer is ingyenes 0-3-nak.' },
+      { title: 'Ár gyerekeknek: 0-3 ingyenes, 4-9 fél áron', desc: '0-3 teljesen ingyenes (nincs díj). 4-9 €5 kedvezménnyel a felnőtt árból. 10+ teljes felnőtt ár. Átlátható, nincsenek családi ártrükkök. A transzfer is ingyenes 0-3-nak.' },
       { title: 'Kiegészítők — csak amikor szeretné', desc: 'Alkohol (2 pohár): +€{p.alcohol2}/fő. Transzfer: €{p.transfer}/fő. Romantikus asztal: €{p.romantic}/asztal. Minden opcionális, nem csomagolt. Csak azt válassza, amire szüksége van.' }
     ],
     faq: [
-      { q: 'Mennyibe kerül egy túra Isztambulban?', a: 'Vacsorás hajóút: €{p.dinnerStd}/fő (normál €{p.dinnerStdOriginal}, 40% kedvezmény). 0-3 év ingyenes, 4-8 év fél áron. Fizetés a fedélzeten — nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' },
+      { q: 'Mennyibe kerül egy túra Isztambulban?', a: 'Vacsorás hajóút: €{p.dinnerStd}/fő (normál €{p.dinnerStdOriginal}, 40% kedvezmény). 0-3 év ingyenes, 4-9 év fél áron. Fizetés a fedélzeten — nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' },
       { q: 'Vannak rejtett díjak az isztambuli túra árában?', a: 'Nem. Az ár tartalmazza: 3 órás túra, teljes vacsora (mezze, előétel, főétel, desszert), korlátlan üdítők, élő show, adók. Az opcionális kiegészítők (alkohol, transzfer, romantikus asztal) külön és átlátható árral szerepelnek — csak azt fizeti, amit hozzáad. Nincs "szolgáltatási díj", "kikötői díj", meglepetés felár.' },
       { q: 'Miért 40% kedvezmény az isztambuli túra ára — trükk?', a: 'Nincs trükk. A normál ár €{p.dinnerStdOriginal} az, amit a harmadik fél foglalási oldalak (Viator, GetYourGuide, Klook) kérnek — a jutalékaikkal. Foglaljon közvetlenül és kapja meg €{p.dinnerStd}-ért. Ez a 40%-os különbség. Nincsenek időkorlátos vagy dinamikus ár trükkök.' },
       { q: 'Hogyan hasonlítható össze az isztambuli túra ára más opciókkal?', a: 'Hurok kompok: €5-10, 1 óra, nincs vacsora, nincs szórakozás, csak turizmus. Költségvetésű túrák vacsorával: €20-30, zsúfoltak, átlagos étel, rövid show. A mi hajóutunk (€{p.dinnerStd}): 3 óra, teljes vacsora, teljes show, privát asztal, TÜRSAB engedéllyel. Üdülő jachtok: €100-150+, túlzott egyedülálló utazóknak/pároknak.' },

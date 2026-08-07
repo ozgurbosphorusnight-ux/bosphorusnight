@@ -24,13 +24,13 @@ module.exports = {
     ],
     highlights: [
       { title: 'Turška večerja z več hodi', desc: '10 vrst meze, topla predjed (paçanga böreği), izbira glavne jedi (losos / orada / piščanec / mesne kroglice / vegetarijansko), sladoledna torta za sladico, neomejene brezalkoholne pijače.' },
-      { title: 'Živi ljudski plesi, trebušni ples in DJ', desc: 'Predstava Mevlana sema, 5 tradicionalnih turških ljudskih plesov, trebušni ples, turški glasbeniki v živo, sledi DJ-set skozi celotno plovbo.' },
+      { title: 'Živi ljudski plesi, trebušni ples in DJ', desc: 'Osem točk: Oba Dombra, predstava Mevlana sema, Sarı Gelin, azerbajdžanski potpuri, trebušni ples, anatolski potpuri in gruzijsko-kavkaški ples z noži — nato živi saksofon in DJ-set skozi celotno plovbo.' },
       { title: 'Popolna nočna pot ob Bosporju', desc: 'Kabataş → Dolmabahçe → palača Çırağan → mošeja Ortaköy → Bebek → Rumeli Hisarı → most FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Od €{p.dinnerStd}/oseba — plačaš na ladji', desc: 'Večerna plovba €{p.dinnerStd} (prvotno €{p.dinnerStdOriginal}). Brez predplačila. Brezplačna odpoved do 2 uri pred odhodom.' }
     ],
     faq: [
       { q: 'Kdaj se začne večerna plovba po Bosporju?', a: 'Vkrcanje se začne ob 20:00 na pomolu Kabataş. Plovilo izpluje ob 21:00 in se vrne okoli 00:00. Priporočamo, da prideš 15–20 minut prej, da se namestiš in sprostiš.' },
-      { q: 'Koliko stane večerna plovba po Bosporju?', a: 'Večerna plovba €{p.dinnerStd}/osebo (redna cena €{p.dinnerStdOriginal}). 0–3 leta brezplačno, 4–8 let 50 % popust. Plačilo poteka na ladji — brez predplačila.' },
+      { q: 'Koliko stane večerna plovba po Bosporju?', a: 'Večerna plovba €{p.dinnerStd}/osebo (redna cena €{p.dinnerStdOriginal}). 0–3 leta brezplačno, 4–9 let €5 popust. Plačilo poteka na ladji — brez predplačila.' },
       { q: 'Ali je alkohol vključen v večerno plovbo?', a: 'Neomejene brezalkoholne pijače (voda, kola, sok) so vključene v ceno. Paket alkohola je izbiren: 2 kozarca (vino, pivo, rakija, vodka ali gin) +€{p.alcohol2}/osebo. Dodatne in uvožene pijače se zaračunajo posebej na ladji.' },
       { q: 'Ali obstaja prevzem iz hotela?', a: 'Da — prevoz v obe smeri stane +€{p.transfer}/osebo. Področja: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce in Şişli. To možnost lahko izbereš v obrazcu za rezervacijo.' },
       { q: 'Ali je večerna plovba po Bosporju halal?', a: 'Vsekakor. Vse meso na krovu je halal certificirano. Alkohol je izbirni dodatek (nikoli vsiljen gostom), in razporeditev miz naravno loči goste, ki imajo raje mizo brez alkohola. Brez doplačila ponujamo tudi vegetarijanske možnosti.' },
@@ -46,7 +46,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bospor z otroki — družinska plovba od €{p.dinnerStd}/odrasli',
-      description: 'Družinam prijazna večerna plovba po Bosporju. Otroci 0–3 brezplačno, 4–8 polovična cena. Varen pokrit prostor, otroški meni.'
+      description: 'Družinam prijazna večerna plovba po Bosporju. Otroci 0–3 brezplačno, 4–9 polovična cena. Varen pokrit prostor, otroški meni.'
     },
     hero: {
       h1: 'Plovba po Bosporju z otroki',
@@ -55,18 +55,18 @@ module.exports = {
     },
     intro: [
       '**Plovba po Bosporju z otroki** je najbolj družinam prijazna večerna možnost v Istanbulu. Vsak večer sprejmemo na desetine družin — premislili smo o vseh podrobnostih, da so najmlajši udobni: pokrit notranji prostor za toploto, dostopen otroški meni (preprosta piščančja pečenka, testenine, neomejene brezalkoholne pijače) in zgodnejše vkrcanje, da se izognemo pozni utrujenosti.',
-      'V nasprotju z ladjami samo za odrasle je **naša družinska večerna plovba po Bosporju** topla in vključujoča. **Otroci 0–3 leta so brezplačno** (prevoz vključen), 4–8 let imajo **50 % popust**, 9+ let plača polno ceno — brez skritih stroškov. Živi ljudski plesi, trebušni ples in predstava sema so družinam prijazna zabava, ne nočni klub.',
+      'V nasprotju z ladjami samo za odrasle je **naša družinska večerna plovba po Bosporju** topla in vključujoča. **Otroci 0–3 leta so brezplačno** (prevoz vključen), 4–9 let imajo **€5 popust**, 10+ let plača polno ceno — brez skritih stroškov. Živi ljudski plesi, trebušni ples in predstava sema so družinam prijazna zabava, ne nočni klub.',
       'Ne glede na to, ali si v Istanbulu za podaljšan vikend z majhnimi otroki ali pelješ najstnike na njihovo prvo evropsko potovanje — to je plovba, ki jo priporočajo istanbulske družine. Varno, halal certificirano, licencirano pri TÜRSAB in ocenjeno z 4,8★ s strani več kot 11 317 popotnikov.'
     ],
     highlights: [
-      { title: '0–3 leta povsem brezplačno', desc: 'Brez stroškov za dojenčke in malčke. 4–8 let plača 50 % cene odraslega. Od 9 let polna cena odraslega. Pregledno, brez presenečenj.' },
+      { title: '0–3 leta povsem brezplačno', desc: 'Brez stroškov za dojenčke in malčke. 4–9 let plača €5 cene odraslega. Od 9 let polna cena odraslega. Pregledno, brez presenečenj.' },
       { title: 'Pokrit notranji prostor', desc: 'Popolnoma pokrit in ogrevan v hladnih mesecih. Otroci ostanejo topli in zaščiteni pred vetrom. Odprt krov je na voljo, kadar je vreme lepo — izbira je tvoja.' },
       { title: 'Otroški meni na zahtevo', desc: 'Preprosta piščančja pečenka, testenine, kruh in zelenjava — brez doplačila. Neomejene brezalkoholne pijače (kola, sok, voda). Sporoči nam vnaprej — brez začinjenih meze odkritij za najmlajše.' },
-      { title: 'Varna družinska zabava', desc: 'Predstava sema (otroke očara), 5 tradicionalnih ljudskih plesov, glasba v živo in DJ-set. Vse je družinam prijazno — brez vsebine za odrasle. Otroci se pogosto pridružijo plesu.' }
+      { title: 'Varna družinska zabava', desc: 'Predstava sema (otroke očara), Oba Dombra in ljudski plesi iz Anatolije, Azerbajdžana in Kavkaza — vključno z veličastnim plesom z noži — ter glasba v živo in saksofonski DJ-set. Vse je družinam prijazno — brez vsebine za odrasle. Otroci se pogosto pridružijo plesu.' }
     ],
     faq: [
       { q: 'Ali je plovba po Bosporju varna za majhne otroke?', a: 'Da — naše plovilo je licencirano pri TÜRSAB, ima pokrit notranji prostor z varnimi okni, rešilne jopiče vseh velikosti in profesionalno posadko z izkušnjami z družinami. Za malčke priporočamo notranji krov in odprt krov za otroke od 6 let.' },
-      { q: 'Kakšne so cene za otroke na plovbi po Bosporju?', a: 'Otroci **0–3 leta: BREZPLAČNO** (brez stroškov, brez skritih dajatev). **4–8 let: 50 % popust** na ceno odraslega — torej €12/otrok pri Standardu (€{p.dinnerStd}/2). **9+ let: polna cena odraslega.** Hotelski prevoz je brezplačen za 0–3 leta, standarden za 4+ (€{p.transfer}/osebo).' },
+      { q: 'Kakšne so cene za otroke na plovbi po Bosporju?', a: 'Otroci **0–3 leta: BREZPLAČNO** (brez stroškov, brez skritih dajatev). **4–9 let: €5 popust** na ceno odraslega — torej €12/otrok pri Standardu (€{p.dinnerStd}/2). **10+ let: polna cena odraslega.** Hotelski prevoz je brezplačen za 0–3 leta, standarden za 4+ (€{p.transfer}/osebo).' },
       { q: 'Ali je na krovu otroški meni?', a: 'Da — preprosta piščančja pečenka, testenine, kruh, sezonska zelenjava in neomejene brezalkoholne pijače. Sporoči nam alergije ali prehranske preference pri rezervaciji, in pripravili bomo nekaj, kar bo tvojemu otroku všeč.' },
       { q: 'Ali sta glasba ali predstava preglasni za otroke?', a: 'Predstave v živo potekajo v enem območju odra — če so tvoji otroci občutljivi na zvok, te bomo posadili k mirnejši mizi dlje zadaj. Predstava traja skupaj 40 minut, preostali del večera je zmerna glasnost turške glasbe v ozadju in DJ.' },
       { q: 'Kaj se zgodi, če dojenček zaspi med plovbo?', a: 'Nič hudega — mnogi to počnejo. Notranji prostor ima klopne sedeže, kjer lahko dojenček ali majhen otrok udobno spi. Posadko prosi za toplo odejo, če jo potrebuješ. Brez doplačila.' },
@@ -139,9 +139,9 @@ module.exports = {
     faq: [
       { q: 'Ali je plovba po Bosporju 100 % halal?', a: 'Da — vsak mesni izdelek na meniju (riba, piščanec, mesne kroglice, goveji file, rib-eye, jagnjetina) je halal certificiran od odobrenih dobaviteljev. Kuhinja sledi standardom halal priprave. Nikjer na krovu se ne streže svinjina. Ni "halal opcija" — celoten meni je halal.' },
       { q: 'Ali drugi gostje na krovu pijejo alkohol?', a: 'Nekateri gostje dodajo izbirni paket 2 kozarcev (+€{p.alcohol2}/osebo). Mize so naravno ločene — lahko zahtevaš območje brez alkohola. Posadka ne prinaša alkohola, razen če ga gost izrecno naroči. Brezalkoholne pijače (neomejeno) so vključene za vse.' },
-      { q: 'Ali je ta plovba primerna za muslimanske družine z otroki?', a: 'Da — je ena najbolj spoštovanih družinskih plovb v Istanbulu. Zabava je skromna (ljudski plesi, sema, turška glasba), otroci pod 3 leta brezplačno, 4–8 let 50 % popust. Brez vzdušja nočnega kluba. Družine iz Zaliva, Indonezije, Malezije, Pakistana in Maroka redno rezervirajo to plovbo.' },
+      { q: 'Ali je ta plovba primerna za muslimanske družine z otroki?', a: 'Da — je ena najbolj spoštovanih družinskih plovb v Istanbulu. Zabava je skromna (ljudski plesi, sema, turška glasba), otroci pod 3 leta brezplačno, 4–9 let €5 popust. Brez vzdušja nočnega kluba. Družine iz Zaliva, Indonezije, Malezije, Pakistana in Maroka redno rezervirajo to plovbo.' },
       { q: 'Ali lahko molim na krovu?', a: 'Ni namenske molilnice na krovu, vendar priporočamo, da pred vkrcanjem ob 20:00 opraviš molitev (molitev magrib pogosto pade v ta interval). Pomol Kabataş ima molilne prostore. Če moraš moliti med plovbo 21:00–00:00 (iša), se posvetuj s posadko — uredimo lahko tih kotiček na krovu.' },
-      { q: 'Kakšne so cene za muslimansko družino 4 oseb (2 odrasla, 2 otroka)?', a: 'Večerna plovba: 2 × €{p.dinnerStd} + 2 × €12.15 (polovična cena 4–8 let) = €72.90. Če sta otroka pod 3 leta, brezplačno: 2 × €{p.dinnerStd} = €48.60. Dodaj €5 hotelskega prevoza na odraslega. Skupaj: €48.60–€92.90 za družino 4 oseb, brez predplačila, plačaš na ladji.' },
+      { q: 'Kakšne so cene za muslimansko družino 4 oseb (2 odrasla, 2 otroka)?', a: 'Večerna plovba: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 popusta, 4–9 let) = €87.20. Če sta otroka pod 3 leta, brezplačno: 2 × €{p.dinnerStd} = €48.60. Dodaj €5 hotelskega prevoza na odraslega. Skupaj: €48.60–€92.90 za družino 4 oseb, brez predplačila, plačaš na ladji.' },
       { q: 'Ali je tudi hotelski prevoz halal?', a: 'Hotelski prevoz je le prevoz z avtom — vključenih ni hrane ali pijače, zato ni halal pomislekov. Naši vozniki so profesionalni, spoštljivi in točni. Območja prevoza pokrivajo Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli in 8 drugih osrednjih sosesk, kjer muslimanski popotniki običajno bivajo.' }
     ],
     cta: {
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% POPUST · En meni, vrhunski standard · Plačilo na ladji'
     },
     intro: [
-      'Marsikatera ladja na Bosporju goste deli na „standardne“ in „VIP“. Mi ne. Na krovu ladje **AMOR** je en sam meni za večerjo, pripravljen z enako skrbjo za vse: 10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščanec ali köfte), sladoledna torta in neomejene brezalkoholne pijače. Vključen je tudi celoten program — obred vrtečih se dervišev, 5 ljudskih plesov, trebušni ples, živa glasba in DJ — vse v ceni €{p.dinnerStd}/osebo.',
+      'Marsikatera ladja na Bosporju goste deli na „standardne“ in „VIP“. Mi ne. Na krovu ladje **AMOR** je en sam meni za večerjo, pripravljen z enako skrbjo za vse: 10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščanec ali köfte), sladoledna torta in neomejene brezalkoholne pijače. Vključen je tudi celoten osemdelni program — Oba Dombra, obred vrtečih se dervišev, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži, živa glasba in finale s saksofonom in DJ — vse v ceni €{p.dinnerStd}/osebo.',
       'Občutek VIP se začne pri vaši mizi. Če želite biti čim bližje odru in razgledom, dodajte **zasebno mizo ob odru** (+€{p.romantic}/miza) in mesto vam rezerviramo vnaprej — najboljši kot na derviše, ljudske plese in osvetljeni Bospor. Priljubljena izbira parov, praznovanj in ljubiteljev fotografije.',
       'AMOR je sodobna ladja: 42 metrov, 3 krovi, do 400 gostov, pozimi ogrevana in poleti klimatizirana. Trije uri dolga pot se začne v Kabatașu (vkrcanje od 20:00, odhod 21:00, vrnitev 00:00) mimo Dolmabahçeja, mošeje Ortaköy, trdnjave Rumeli in luči mostu čez Bospor. Licenca TÜRSAB (A-17672), 4,9★ na Googlu. Brez predplačila — plačate na ladji, odpoved pa je brezplačna do 2 uri pred odhodom.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Ali prodajate „VIP paket“? V čem se razlikuje od standardnega?', a: 'Ne prodajamo ločenega VIP paketa — obstaja en meni, ki ga vsi dobijo v enakem vrhunskem standardu. To, čemur pravimo „VIP doživetje“, je prilagoditev vašega večera: zasebna miza ob odru (+€{p.romantic}/miza), pozorna postrežba pri mizi in izbirne dodatne pijače. Plovba traja 3 ure, €{p.dinnerStd}/osebo.' },
       { q: 'Ali je €{p.dinnerStd} res 40% popust?', a: 'Da — naša cenikova cena je €{p.dinnerStdOriginal}/osebo. €{p.dinnerStd} je cena neposredne rezervacije brez provizij posrednikov. Plačate na ladji, predplačila ni.' },
-      { q: 'Kaj je na meniju?', a: '10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščanec ali köfte) in sladoledna torta za sladico, z neomejenimi brezalkoholnimi pijačami. Program je vključen: obred dervišev, 5 ljudskih plesov, trebušni ples, živa glasba in DJ.' },
+      { q: 'Kaj je na meniju?', a: '10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščanec ali köfte) in sladoledna torta za sladico, z neomejenimi brezalkoholnimi pijačami. Osemdelni program je vključen: Oba Dombra, obred dervišev, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži, živa glasba in finale s saksofonom in DJ.' },
       { q: 'Ali je alkohol vključen?', a: 'Ne — alkohol je ločen dodatek: 2 kozarca lokalnega vina ali piva za +€{p.alcohol2}/osebo. Brezalkoholne pijače so vključene neomejeno in brezplačno. Vrhunske uvožene pijače se obračunajo posebej na ladji.' },
       { q: 'Kako si zagotovim mizo ob odru?', a: 'Ob rezervaciji preprosto izberite dodatek „zasebna miza ob odru“ (+€{p.romantic}/miza) — miza bo rezervirana na vaše ime. Najboljša mesta zasedejo zgodnje rezervacije, zato priporočamo, da dodatek izberete pred dnevom plovbe.' },
       { q: 'Kakšna ladja je to?', a: 'AMOR — sodobna potniška ladja, dolga 42 metrov, s 3 krovi in zmogljivostjo 400 gostov, pozimi ogrevana in poleti klimatizirana. Odhod s pomola Kabataş: vkrcanje 20:00, odhod 21:00, vrnitev 00:00. Pot: Dolmabahçe, Ortaköy, trdnjava Rumeli, Beylerbeyi in luči mostu čez Bospor.' }
@@ -283,7 +283,7 @@ module.exports = {
     faq: [
       { q: 'Kdaj odpluje plovba po Bosporju ob sončnem zahodu?', a: 'Vkrcanje se začne ob 20:00 na pomolu Kabataş, plovilo izpluje ob 21:00 in se vrne okoli 00:00. Poleti (maj–avgust) sonce zaide približno med 20:15 in 20:45 — zlata ura se zgodi med vkrcanjem, sam sončni zahod pa prav okoli odhoda, gledan z vode.' },
       { q: 'Ali je plovba ob sončnem zahodu ista kot večerna plovba?', a: 'Da — gre za eno samo plovbo. Vsak dan je en odhod ob 21:00 s popolno večerjo in predstavami v živo na krovu. V dolgih poletnih večerih je hkrati plovba ob sončnem zahodu: vkrcaš se med zlato uro in pluješ skozi modro uro v osvetljeno noč. Pozimi je ista plovba čista izkušnja nočnih luči.' },
-      { q: 'Koliko stane plovba po Bosporju ob sončnem zahodu?', a: 'Od €{p.dinnerStd}/osebo za plovbo (3 ure, popolna večerja, zabava v živo). Plačaš na ladji — brez predplačila. Otroci 0–3 let brezplačno, 4–8 let polovična cena.' },
+      { q: 'Koliko stane plovba po Bosporju ob sončnem zahodu?', a: 'Od €{p.dinnerStd}/osebo za plovbo (3 ure, popolna večerja, zabava v živo). Plačaš na ladji — brez predplačila. Otroci 0–3 let brezplačno, 4–9 let polovična cena.' },
       { q: 'Kdaj v letu je plovba po Bosporju ob sončnem zahodu najlepša?', a: 'Od maja do avgusta. Pozni istanbulski sončni zahodi (20:15–20:45) se ujamejo z odhodom ob 21:00, zato v enem večeru dobiš zlato uro, sončni zahod in osvetljene mostove. Jeseni in pozimi sonce zaide prej in ista plovba postane popolna izkušnja nočnih luči — enako fotogenična, drugačno vzdušje.' },
       { q: 'Kaj naj vzamem s seboj na plovbo ob sončnem zahodu?', a: 'Pametni telefon ali kamero — zlata ura in osvetljeni mostovi kar kličejo po fotografijah. Lahek suknjič: po sončnem zahodu se na krovu okrepi veter. Urejeno sproščena oblačila — večerjaš, vendar strogega kodeksa oblačenja ni.' },
       { q: 'Ali na tej plovbi ponoči vidim osvetljene mostove?', a: 'Da — to je druga polovica večera. Plovba traja 21:00–00:00, tako da po sončnem zahodu in modri uri pluješ pod popolnoma osvetljenim mostom čez Bospor, mimo osvetljenih palač in Dekliškega stolpa, ter se okoli 00:00 vrneš na pomol Kabataş.' },
@@ -309,18 +309,18 @@ module.exports = {
     },
     intro: [
       '**Nočna pot po Bosporju** je najbolj priporočena večerna dejavnost v Istanbulu. Tukaj je razlog: po mraku se Bospor preobrazi. Most čez Bospor se menja med modro, vijolično in zlato. Palača Dolmabahçe sije v topli rumeni. Mošeja Ortaköy se popolno odseva v črni vodi. Vsaka istanbulska znamenitost doseže svoj dramatični vrhunec ponoči.',
-      '**Naša nočna pot po Bosporju z večerjo** zavije celoten ikonični večer: 3 ure na vodi (21:00–00:00), turška večerja z več hodi, živi ljudski plesi (sema, 5 ljudskih plesov, trebušni), glasba v živo in DJ-set, ki napolni krov do konca noči. Vsak gost dobi isti program — brez "osnovne" možnosti, ki preskoči najboljše dele.',
+      '**Naša nočna pot po Bosporju z večerjo** zavije celoten ikonični večer: 3 ure na vodi (21:00–00:00), turška večerja z več hodi, osemdelni živi folklorni program (Oba Dombra, sema, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži), glasba v živo in saksofonski DJ-set, ki napolni krov do konca noči. Vsak gost dobi isti program — brez "osnovne" možnosti, ki preskoči najboljše dele.',
       'Ne glede na to, ali je tvoj prvi obisk Istanbula in iščeš "edino stvar, ki jo moraš narediti ponoči", ali si bil že tu in želiš najbolj fotogenih 3 ur mesta, je to **nočna pot po Bosporju**, ki jo je z oceno 4,8★ ocenilo več kot 11 317 popotnikov. Licencirano pri TÜRSAB, plačaš na ladji, brez predplačila.'
     ],
     highlights: [
       { title: 'Bospor osvetljen na dramatičnem vrhuncu', desc: 'Most čez Bospor menja barvo (modra, vijolična, zlata), palače sijejo rumeno, mošeja Ortaköy se odseva v črni vodi. 21:00–00:00 maksimalna osvetlitev za vse istanbulske znamenitosti.' },
-      { title: 'Tradicionalna turška predstava na krovu', desc: 'Predstava sema, 5 tradicionalnih ljudskih plesov (iz različnih turških regij), trebušni ples, turška glasba v živo, nato DJ-set. 40-minutna predstava, nato glasba + večerja se nadaljuje.' },
+      { title: 'Tradicionalna turška predstava na krovu', desc: 'Osem točk: Oba Dombra, predstava sema, Sarı Gelin, azerbajdžanski potpuri, trebušni ples, anatolski potpuri in gruzijsko-kavkaški ples z noži, nato živi saksofon in DJ-set. 40-minutna predstava, nato glasba + večerja se nadaljuje.' },
       { title: 'Popolna večerja z več hodi', desc: '10 vrst turških meze, topla predjed (paçanga böreği), glavna jed (losos, orada, piščanec, mesne kroglice, vegetarijansko — tvoja izbira), sladica (sladoledna torta), neomejene brezalkoholne pijače. Halal certificirano.' },
       { title: 'Popolna pot po Bosporju', desc: 'Kabataş → Dolmabahçe → palača Çırağan → mošeja Ortaköy → Bebek → Rumeli Hisarı → most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Dekliški stolp → Kabataş.' }
     ],
     faq: [
       { q: 'Kdaj je nočna pot po Bosporju?', a: 'Vkrcanje od 20:00 na pomolu Kabataş. Plovilo izpluje ob 21:00, vrne se okoli 00:00. Priporočamo, da prideš 20 minut prej, da se namestiš in izbereš sedež.' },
-      { q: 'Koliko stane nočna pot po Bosporju?', a: 'Nočna pot (3 ure, večerja, predstava): €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}). 0–3 let brezplačno, 4–8 let polovična cena. Plačaš na ladji.' },
+      { q: 'Koliko stane nočna pot po Bosporju?', a: 'Nočna pot (3 ure, večerja, predstava): €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}). 0–3 let brezplačno, 4–9 let polovična cena. Plačaš na ladji.' },
       { q: 'Kakšna je razlika med nočno potjo po Bosporju in večerno plovbo?', a: 'Je ista stvar, le druga ključna beseda. "Nočna pot po Bosporju" je, kako mnogi popotniki iščejo; "večerna plovba" je strokovno ime. Isto plovilo, isti 3-urni program, isti meni, ista predstava. Izberi svojo zaželeno ključno besedo — izkušnja je enaka.' },
       { q: 'Nočna pot po Bosporju ali plovba ob sončnem zahodu — kaj je bolj vredno?', a: 'Nočna pot = osvetljen Istanbul, največja svetlobna drama, popoln program zabave, najbolj ikonične fotografije osvetljenih mostov. In gre za eno samo plovbo: poleti (maj–avgust) vkrcanje od 20:00 ujame zlato uro, sonce pa zaide prav okoli odhoda ob 21:00 — isti večer torej zajame sončni zahod in noč. Ni treba izbirati ali rezervirati dvakrat.' },
       { q: 'Ali lahko grem na nočno pot po Bosporju prvi dan v Istanbulu?', a: 'Da — priporočamo. Veliko popotnikov rezervira nočno pot prvi večer, ker ti daje popolno orientacijo: vse glavne znamenitosti z vode, z dobro hrano in zabavo. Lažje kot bori s časovnim zamikom in poskuša hoditi 1. dan. Hotelski prevoz na voljo iz osrednjih sosesk.' },
@@ -350,7 +350,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Popolna turška večerja z več hodi', desc: '10 vrst meze, topla predjed, glavna jed (losos/orada/piščanec/mesne kroglice/vegetarijansko), sladoledna torta. Halal certificirano. Neomejene brezalkoholne pijače vključene.' },
-      { title: 'Predstava turških ljudskih plesov v živo', desc: 'Predstava sema, 5 tradicionalnih ljudskih plesov, trebušni ples, turška glasba v živo, DJ. 40-minutna predstava, glasba v ozadju se nadaljuje.' },
+      { title: 'Predstava turških ljudskih plesov v živo', desc: 'Osem točk: Oba Dombra, predstava sema, Sarı Gelin, azerbajdžanski potpuri, trebušni ples, anatolski potpuri, gruzijsko-kavkaški ples z noži, nato živi saksofon in DJ. 40-minutna predstava, glasba v ozadju se nadaljuje.' },
       { title: 'Popolna nočna pot po Bosporju', desc: '3-urna plovba: Dolmabahçe, Çırağan, mošeja Ortaköy, most čez Bospor, Bebek, Rumeli Hisarı, most FSM, Beylerbeyi, Üsküdar, Dekliški stolp. Obe obali, evropska in azijska.' },
       { title: 'Od €{p.dinnerStd} — plačaš na ladji', desc: '€{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}) — en meni za vse goste. Brez predplačila. Brezplačna odpoved do 2 uri pred odhodom.' }
     ],
@@ -359,7 +359,7 @@ module.exports = {
       q: "Katere predstave so v programu križarjenja z večerjo?",
       a: "Osem nastopov: Oba Dombra (srednjeazijski šamanski ritem), Mevlanov obred vrtečih se dervišev, Sarı Gelin, azerbajdžanski venček, orientalski šov (trebušni ples), turško-anatolski venček, gruzijski Gandagan in kavkaški venček s tradicionalnim plesom z noži ter za zaključek saksofon v živo in DJ. Program poteka med celotnim križarjenjem, vrstni red se lahko spremeni."
     },
-      { q: 'Koliko stane večerna plovba v Istanbulu?', a: 'Naša večerna plovba €{p.dinnerStd}/osebo (redna cena €{p.dinnerStdOriginal}) — en meni za vse goste. 0–3 let brezplačno, 4–8 let 50 % popust. Plačaš na ladji — brez predplačila.' },
+      { q: 'Koliko stane večerna plovba v Istanbulu?', a: 'Naša večerna plovba €{p.dinnerStd}/osebo (redna cena €{p.dinnerStdOriginal}) — en meni za vse goste. 0–3 let brezplačno, 4–9 let €5 popust. Plačaš na ladji — brez predplačila.' },
       { q: 'Kaj je vključeno v ceno večerne plovbe v Istanbulu?', a: '3-urna plovba po Bosporju, turška večerja z več hodi (meze, topla predjed, glavna jed, sladica), neomejene brezalkoholne pijače, ljudska predstava v živo (sema, ljudski plesi, trebušni), glasba v živo + DJ, dostop do odprtega krova, davki vključeni. Hotelski prevoz in alkohol sta izbirna dodatka.' },
       { q: 'Od kod odpluje večerna plovba v Istanbulu?', a: 'Pomol Kabataş, Istanbul — na evropski obali, blizu palače Dolmabahçe. Točno mesto srečanja je sporočeno prek WhatsAppa / Telegrama po rezervaciji. Video poti peš od tramvajske postaje Dolmabahçe in tramvajske postaje Kabataş sta v zgornjem razdelku mesta srečanja.' },
       { q: 'Kako dolgo traja večerna plovba — in kdaj se začne?', a: 'Skupaj 3 ure. Vkrcanje od 20:00, plovilo odpluje točno ob 21:00, vrne se okoli 00:00. Priporočamo, da prideš 15–20 minut prej, da se namestiš in izbereš sedež.' },
@@ -391,7 +391,7 @@ module.exports = {
     highlights: [
       { title: 'Vse ikonične nočne poglede Istanbula', desc: 'Palača Dolmabahçe, mošeja Ortaköy, osvetljen most čez Bospor, Rumeli Hisarı, most FSM, palača Beylerbeyi, Dekliški stolp. Vsaka glavna znamenitost ob vrhuncu nočne osvetlitve.' },
       { title: 'Popolna turška večerja vključena', desc: '10 meze, topla predjed, glavna jed (losos/orada/piščanec/mesne kroglice/vegetarijansko), sladica, neomejene brezalkoholne pijače. Halal certificirano. Cena €{p.dinnerStd}/osebo — vse vključeno.' },
-      { title: 'Živi ljudski plesi + sema + trebušni', desc: 'Tradicionalna turška zabava: predstava Mevlana sema, 5 regionalnih ljudskih plesov, trebušni ples, glasba v živo, DJ. 40-minutna predstava, glasba v ozadju ves večer.' },
+      { title: 'Živi ljudski plesi + sema + trebušni', desc: 'Osemdelni živi program: Oba Dombra, predstava Mevlana sema, Sarı Gelin, azerbajdžanski potpuri, trebušni ples, anatolski potpuri, gruzijsko-kavkaški ples z noži, nato živi saksofon in DJ. 40-minutna predstava, glasba v ozadju ves večer.' },
       { title: 'Enostavno za prvi obisk Istanbula', desc: 'Osrednje mesto srečanja (pomol Kabataş), hotelski prevoz (+€{p.transfer}/osebo), angleško govoreča posadka, plačaš na ladji. Nič logistike, nič stresa. Pridi, uživaj, odidi.' }
     ],
     faq: [
@@ -433,9 +433,9 @@ module.exports = {
     faq: [
       { q: 'Katera je najboljša plovba z ladjo v Istanbulu?', a: 'Večerna plovba po Bosporju je dosledno uvrščena #1. Pokriva vse glavne znamenitosti, vključuje večerjo in zabavo ter pluje zvečer, ko so znamenitosti osvetljene. Druge možnosti (hop-on trajekti, jutranji turistični čolni) pokrivajo krajše poti, preskočijo večerjo in ne vključujejo zabave. Za en večer v Istanbulu je to najbolj popolna plovba z ladjo.' },
       { q: 'Kako dolgo traja plovba z ladjo v Istanbulu?', a: '3 ure. Vkrcanje od 20:00 na pomolu Kabataş, odhod 21:00, vrnitev ~00:00. Pokriva Bospor od Dolmabahçeja do Rumeli Hisarı in nazaj. Dovolj časa za popolno večerjo + predstavo brez utrujenosti.' },
-      { q: 'Koliko stane plovba z ladjo v Istanbulu?', a: 'Naša plovba z ladjo in večerja: €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}) — en meni za vse goste. 0–3 let brezplačno, 4–8 let polovična cena. Plačaš na ladji. Alkohol in hotelski prevoz sta izbirna dodatka.' },
+      { q: 'Koliko stane plovba z ladjo v Istanbulu?', a: 'Naša plovba z ladjo in večerja: €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}) — en meni za vse goste. 0–3 let brezplačno, 4–9 let polovična cena. Plačaš na ladji. Alkohol in hotelski prevoz sta izbirna dodatka.' },
       { q: 'Od kod odplujejo plovbe z ladjo v Istanbulu?', a: 'Naše plovilo odpluje s pomola Kabataş, evropskega centra Istanbula, blizu palače Dolmabahçe. Dostopno s tramvajem T1 (postaja Kabataş), taksijem 15 min iz Taksima ali peš 20 min iz Taksima. Hotelski prevoz na voljo iz osrednjih sosesk za +€{p.transfer}/osebo.' },
-      { q: 'Ali je ta plovba primerna za družine z otroki?', a: 'Da — zelo družinam prijazno. Otroci 0–3 let brezplačno, 4–8 let 50 % popust. Pokrit notranji prostor, otroški meni na zahtevo in zabava (sema, ljudski plesi), ki je očarljiva za otroke. Veliko družin z vsega sveta rezervira to plovbo.' },
+      { q: 'Ali je ta plovba primerna za družine z otroki?', a: 'Da — zelo družinam prijazno. Otroci 0–3 let brezplačno, 4–9 let €5 popust. Pokrit notranji prostor, otroški meni na zahtevo in zabava (sema, ljudski plesi), ki je očarljiva za otroke. Veliko družin z vsega sveta rezervira to plovbo.' },
       { q: 'Ali moram kaj prinesti na plovbo z ladjo?', a: 'Potni list ali osebno (za registracijo na krovu), lahek suknjič (krov se lahko ohladi), udobne čevlje, če nameravaš plesati. Pametni telefon za fotografije. Gotovino ali kartico za plačilo na ladji (oba sprejeta). Vse drugo — hrana, pijača, zabava — je na krovu.' }
     ],
     cta: {
@@ -464,14 +464,14 @@ module.exports = {
       { title: 'Cel Bospor v enem', desc: 'Evropska obala (Dolmabahçe, Ortaköy, Rumeli Hisarı), azijska obala (Beylerbeyi, Üsküdar), oba mostova čez Bospor, Dekliški stolp. Vsaka glavna znamenitost vidna v 3 urah.' },
       { title: 'Večerja + zabava vključeno', desc: 'Ne le turistični trajekt — popolna turška večerja z meze, glavno jedjo, sladico. Predstava ljudskih plesov v živo, sema, trebušni ples, DJ. Zabavna vrednost onkraj le razgleda.' },
       { title: 'Večer = najboljša osvetlitev', desc: 'Dnevne plovbe po Bosporju ti kažejo znamenitosti v ravni svetlobi. Večerne plovbe jih ujamejo na dramatičnem vrhuncu: sijoče palače, obarvani mostovi, mošeje, odsevane v temni vodi. Boljše fotografije, bolj dramatično.' },
-      { title: 'Od €{p.dinnerStd} — plačaš na ladji', desc: 'Predplačilo ni potrebno. Plačaš na ladji (gotovina ali kartica). Brezplačna odpoved do 2 uri pred odhodom. 0–3 let brezplačno, 4–8 let polovična cena. Pregledne cene.' }
+      { title: 'Od €{p.dinnerStd} — plačaš na ladji', desc: 'Predplačilo ni potrebno. Plačaš na ladji (gotovina ali kartica). Brezplačna odpoved do 2 uri pred odhodom. 0–3 let brezplačno, 4–9 let polovična cena. Pregledne cene.' }
     ],
     faq: [
       { q: 'Katere so najboljše poti po Bosporju v Istanbulu?', a: 'Večerne plovbe z večerjo so dosledno na vrhu. Dnevne možnosti (1-urne krožne plovbe, 2-urne turistne ladje) kažejo manj in ne vključujejo večerje. Glede vrednosti je težko premagati 3-urno plovbo z večerjo, predstavo in osrednjim mestom srečanja. Cena naše plovbe €{p.dinnerStd} odpravi potrebo po ločeni večerji + zabavi.' },
       { q: 'Kako dolgo traja pot po Bosporju?', a: 'Naša pot po Bosporju traja skupaj 3 ure (odhod 21:00, vrnitev 00:00). Obstajajo krajše možnosti (1-urne turistne trajeke, 90-minutne plovbe), vendar preskočijo večerjo in zabavo. Za popolno večerno izkušnjo je 3 ure idealno — dovolj, da vidiš vse brez utrujenosti.' },
       { q: 'Ali je pot po Bosporju vredna?', a: 'Da — skoraj vsi istanbulski potovalni vodniki uvrščajo "plovbo po Bosporju" v top 5 obveznih stvari. Mesto je zgrajeno okoli te ožine; če nisi videl Bosporja z vode, pravzaprav nisi videl Istanbula. Naša specifična večerna plovba doda večerjo in zabavo, tako da postane popoln večer namesto le ogleda.' },
       { q: 'Kaj naj vzamem na pot po Bosporju?', a: 'Potni list ali osebno (za registracijo na krovu), lahek suknjič (večerni krov je hladen), pametni telefon/kamero, udobne čevlje za plesišče. Gotovino ali kartico za plačilo. Vse drugo je na krovu. Hotelski prevoz na voljo za +€{p.transfer}/osebo, če ne želiš uporabiti javnega prevoza.' },
-      { q: 'Ali je pot po Bosporju primerna za otroke?', a: 'Da — zelo družinam prijazno. Otroci 0–3 let brezplačno (prevoz vključen), 4–8 let 50 % popust. Pokrit notranji prostor, otroški meni na zahtevo in nežna, očarljiva zabava. Veliko družin rezervira to plovbo kot vrhunec turneje po Istanbulu.' },
+      { q: 'Ali je pot po Bosporju primerna za otroke?', a: 'Da — zelo družinam prijazno. Otroci 0–3 let brezplačno (prevoz vključen), 4–9 let €5 popust. Pokrit notranji prostor, otroški meni na zahtevo in nežna, očarljiva zabava. Veliko družin rezervira to plovbo kot vrhunec turneje po Istanbulu.' },
       { q: 'Kakšni so postanki na poti po Bosporju?', a: 'Je neprekinjena plovba — ne ustavljamo se ob znamenitostih (brez izkrcavanja). Plovilo pluje mimo vsake znamenitosti, posadka pojasni, kaj vidiš, ti se sprostiš pri mizi ali greš ven na odprt krov za fotografije. Brez vrst, brez hoje, brez stresnega načrtovanja — le 3 mirne ure na vodi.' }
     ],
     cta: {
@@ -503,12 +503,12 @@ module.exports = {
       { title: 'Trenutna lansirna cena 40 % POPUST', desc: 'Od €{p.dinnerStdOriginal}, zdaj €{p.dinnerStd}. 40 % popust, ker rezerviraš neposredno. Ni časovno omejen trik — to je naša standardna cena neposredne rezervacije.' }
     ],
     faq: [
-      { q: 'Koliko stanejo vstopnice za plovbo po Bosporju?', a: '€{p.dinnerStd}/osebo (redna €{p.dinnerStdOriginal}). Vključuje 3-urno plovbo, turško večerjo z več hodi, ljudsko predstavo v živo, neomejene brezalkoholne pijače. 0–3 let brezplačno, 4–8 let 50 % popust. Plačaš na ladji — brez predplačila.' },
+      { q: 'Koliko stanejo vstopnice za plovbo po Bosporju?', a: '€{p.dinnerStd}/osebo (redna €{p.dinnerStdOriginal}). Vključuje 3-urno plovbo, turško večerjo z več hodi, ljudsko predstavo v živo, neomejene brezalkoholne pijače. 0–3 let brezplačno, 4–9 let €5 popust. Plačaš na ladji — brez predplačila.' },
       { q: 'Kje lahko kupim vstopnice za plovbo po Bosporju?', a: 'Neposredno s te strani — izpolni obrazec za rezervacijo, takoj potrdimo prek WhatsAppa / Telegrama. Plačaš na ladji. Tretje platforme (Viator, GetYourGuide, Klook) prav tako prodajajo vstopnice, vendar običajno zaračunajo €30–80+ — to je doplačilo posrednikov. Neposredno je najceneje in najhitreje.' },
       { q: 'Ali moram natisniti vstopnico za plovbo po Bosporju?', a: 'Ne — fizična vstopnica ali kupon ni potreben. Po rezervaciji ti pošljemo potrditev prek WhatsAppa (ali Telegrama) z mestom srečanja, časom in imenom rezervacije. Le pokaži telefon na pomolu. To je vse.' },
       { q: 'Ali lahko odpovem ali vrnem vstopnico za plovbo po Bosporju?', a: 'Da — brezplačna odpoved do 2 uri pred odhodom. Le piši na WhatsApp. Ker še nisi plačal (plačaš na ladji), vračilo denarja ni potrebno — le ne pridi, brez stroškov. Veliko bolj prilagodljivo kot vnaprej plačane vstopnice tretjih strani.' },
       { q: 'Ali so vstopnice za plovbo po Bosporju na voljo isti dan?', a: 'Pogosto da, zlasti med tednom. Vikendi in prazniki se zapolnijo hitreje. Preveri razpoložljivost prek obrazca za rezervacijo — posodablja se v realnem času. Rezervacija v zadnjem trenutku je običajno možna nekaj ur pred odhodom ob 21:00. Za nujne zadeve WhatsApp.' },
-      { q: 'Ali so otroške vstopnice za plovbo po Bosporju brezplačne?', a: 'Otroci **0–3 leta povsem brezplačno** (brez stroškov, brez skritih dajatev, prevoz vključen). **4–8 let 50 % popust** (€{p.dinnerStd}/2 = €12 pri Standardu). **9+ let polna cena odraslega.** Pregledno določene cene — brez "trika za dojenčke".' }
+      { q: 'Ali so otroške vstopnice za plovbo po Bosporju brezplačne?', a: 'Otroci **0–3 leta povsem brezplačno** (brez stroškov, brez skritih dajatev, prevoz vključen). **4–9 let €5 popust** (€{p.dinnerStd}/2 = €12 pri Standardu). **10+ let polna cena odraslega.** Pregledno določene cene — brez "trika za dojenčke".' }
     ],
     cta: {
       primary: 'Kupi vstopnice · Plačaš na ladji',
@@ -556,7 +556,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Cena plovbe Istanbul od €{p.dinnerStd} — pregledne cene',
-      description: 'Cene plovbe po Bosporju Istanbul: €{p.dinnerStd}/osebo, en meni. Otroci 0–3 brezplačno, 4–8 polovična cena. Pregledni dodatki.'
+      description: 'Cene plovbe po Bosporju Istanbul: €{p.dinnerStd}/osebo, en meni. Otroci 0–3 brezplačno, 4–9 polovična cena. Pregledni dodatki.'
     },
     hero: {
       h1: 'Cena plovbe Istanbul',
@@ -565,17 +565,17 @@ module.exports = {
     },
     intro: [
       '**Cene plovbe v Istanbulu** se zelo razlikujejo — od €15 proračunskih trajektov, ki preskočijo večerjo, do €150+ resortskih jaht. Naša cena je v sredini in ponuja najboljšo vrednost: €{p.dinnerStd} za popolno 3-urno večerno plovbo s predstavo v živo. Brez skritih dajatev, brez presenečenj.',
-      'Podroben pregled **cene plovbe v Istanbulu**, ker je preglednost pomembna:\n\n- **Večerna plovba**: €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}, 40 % popust). Vključuje 3-urno plovbo, 10 meze, glavno jed, sladico, neomejene brezalkoholne pijače, predstavo v živo.\n- **0–3 let**: brezplačno. 4–8 let: 50 % popust. 9+ let: polna cena.\n\nDodatki (izbirni):\n- 2 kozarca alkohola: +€{p.alcohol2}/osebo\n- Hotelski prevoz v obe smeri: +€{p.transfer}/osebo\n- Romantična postavitev mize: +€{p.romantic}/miza',
+      'Podroben pregled **cene plovbe v Istanbulu**, ker je preglednost pomembna:\n\n- **Večerna plovba**: €{p.dinnerStd}/osebo (od €{p.dinnerStdOriginal}, 40 % popust). Vključuje 3-urno plovbo, 10 meze, glavno jed, sladico, neomejene brezalkoholne pijače, predstavo v živo.\n- **0–3 let**: brezplačno. 4–9 let: €5 popust. 10+ let: polna cena.\n\nDodatki (izbirni):\n- 2 kozarca alkohola: +€{p.alcohol2}/osebo\n- Hotelski prevoz v obe smeri: +€{p.transfer}/osebo\n- Romantična postavitev mize: +€{p.romantic}/miza',
       'In pomembno: **plačaš na ladji**. Ne obljubiš niti centa, dokler nisi na krovu. Brezplačna odpoved do 2 uri pred odhodom. Brez obveze, brez tveganja — najbolj **uporabniku prijazna cena plovbe v Istanbulu**, kar jih boš našel.'
     ],
     highlights: [
       { title: 'Standard: €{p.dinnerStd} (od €{p.dinnerStdOriginal})', desc: '40 % popust na redno ceno. 3-urna plovba, popolna turška večerja, predstava v živo, neomejene brezalkoholne pijače. Najbolj priljubljen paket — pokriva vse, kar potrebuješ za lep večer.' },
       { title: 'Plačaš na ladji — €0 vnaprej', desc: 'Rezervacija je brezplačna in brez podatkov o kartici. Plačaš med plovbo na ladji. Brezplačna odpoved do 2 uri pred odhodom.' },
-      { title: 'Cene za otroke: 0–3 brezplačno, 4–8 polovična cena', desc: '0–3 povsem brezplačno (brez stroškov). 4–8 s 50 % popustom na ceno odraslega. 9+ polna cena odraslega. Pregledno, brez trikov z družinskimi cenami. Prevoz je tudi brezplačen za 0–3.' },
+      { title: 'Cene za otroke: 0–3 brezplačno, 4–9 polovična cena', desc: '0–3 povsem brezplačno (brez stroškov). 4–9 s €5 popustom na ceno odraslega. 10+ polna cena odraslega. Pregledno, brez trikov z družinskimi cenami. Prevoz je tudi brezplačen za 0–3.' },
       { title: 'Dodatki — samo, ko jih želiš', desc: 'Alkohol (2 kozarca): €{p.alcohol2}/osebo. Prevoz: €{p.transfer}/osebo. Romantična miza: €{p.romantic}/miza. Vse izbirno, ne v paketu. Izberi le, kar potrebuješ.' }
     ],
     faq: [
-      { q: 'Koliko stane plovba v Istanbulu?', a: 'Večerna plovba: €{p.dinnerStd}/osebo (redna €{p.dinnerStdOriginal}, 40 % popust). 0–3 let brezplačno, 4–8 let polovična cena. Plačaš na ladji — brez predplačila. Brezplačna odpoved do 2 uri pred odhodom.' },
+      { q: 'Koliko stane plovba v Istanbulu?', a: 'Večerna plovba: €{p.dinnerStd}/osebo (redna €{p.dinnerStdOriginal}, 40 % popust). 0–3 let brezplačno, 4–9 let polovična cena. Plačaš na ladji — brez predplačila. Brezplačna odpoved do 2 uri pred odhodom.' },
       { q: 'Ali so v ceni plovbe v Istanbulu skrite dajatve?', a: 'Ne. Cena vključuje: 3-urno plovbo, popolno večerjo (meze, predjed, glavno jed, sladico), neomejene brezalkoholne pijače, predstavo v živo, davke. Izbirni dodatki (alkohol, prevoz, romantična miza) so ločeni in pregledno ovrednoteni — plačaš le za to, kar dodaš. Brez "servisne dajatve", "pristaniške dajatve", nepričakovanih doplačil.' },
       { q: 'Zakaj je cena plovbe v Istanbulu 40 % popust — je to trik?', a: 'Brez trika. Redna cena €{p.dinnerStdOriginal} je tisto, kar zaračunajo strani tretjih oseb (Viator, GetYourGuide, Klook) — s svojimi provizijami. Rezerviraj neposredno in dobiš €{p.dinnerStd}. To je 40 % razlika. Brez časovno omejenih ali dinamičnih cenovnih trikov.' },
       { q: 'Kako se cena plovbe v Istanbulu primerja z drugimi možnostmi?', a: 'Krožni trajekti: €5–10, 1 ura, brez večerje, brez zabave, le ogled. Proračunsko zapakirane večerne plovbe: €20–30, prenatrpane, povprečna hrana, kratka predstava. Naša plovba (€{p.dinnerStd}): 3 ure, popolna večerja, popolna predstava, zasebna miza, licencirano pri TÜRSAB. Resortske jahte: €100–150+, pretirano za solo/pare.' },

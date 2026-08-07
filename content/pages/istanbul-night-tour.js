@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'show',
       title: 'Live folklore + whirling dervish + belly dance',
-      desc: 'Traditional Turkish entertainment: Mevlana whirling dervish ceremony, 5 regional folk dances, belly dance, live music, DJ. 40-minute performance, ambient music all evening.'
+      desc: 'Eight-act live programme: Oba Dombra, Mevlana whirling dervish ceremony, Sarı Gelin, an Azerbaijani suite, belly dance, an Anatolian suite, the Georgian-Caucasian knife dance, then live saxophone and DJ. 40-minute performance, ambient music all evening.'
     },
     {
       icon: 'easy',

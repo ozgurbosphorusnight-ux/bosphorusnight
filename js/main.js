@@ -591,17 +591,29 @@ function initCountdown() {
   const activeEl = document.getElementById('countdown-active');
   const expiredEl = document.getElementById('countdown-expired');
 
-  if (!hoursEl || !minutesEl || !secondsEl) return;
+  if (!hoursEl || !minutesEl || !secondsEl || !activeEl || !expiredEl) return;
+
+  // Same-day booking closes at 21:00 Istanbul — the moment the boat departs.
+  // Must be Istanbul time, not the visitor's browser clock: a guest in Berlin used to
+  // see the window shut an hour early, one in Shanghai five hours early.
+  // Backend twin: bosphorus-night-ai/src/claude/tools/create-reservation.js (21:00 hard reject).
+  const CLOSING_HOUR = 21;
 
   function update() {
-    const now = new Date();
-    const deadline = new Date();
-    deadline.setHours(19, 0, 0, 0); // 19:00 tonight
+    // hourCycle h23 (not hour12:false) — some engines report midnight as "24" and that
+    // would flip the counter to "expired" at 00:00, when 21 hours actually remain.
+    const parts = new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Europe/Istanbul', hourCycle: 'h23',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+    }).formatToParts(new Date());
+    const part = (type) => Number(parts.find((p) => p.type === type)?.value);
+    const istHour = part('hour'), istMin = part('minute'), istSec = part('second');
+    if (![istHour, istMin, istSec].every(Number.isFinite)) return;
 
-    let diff = deadline - now;
+    const diff = CLOSING_HOUR * 3600 - (istHour * 3600 + istMin * 60 + istSec);
 
     if (diff <= 0) {
-      // Past 19:00 — show "tomorrow" message
+      // Boat has left — point at tomorrow's cruise
       activeEl.classList.add('hidden');
       expiredEl.classList.remove('hidden');
       return;
@@ -610,13 +622,9 @@ function initCountdown() {
     activeEl.classList.remove('hidden');
     expiredEl.classList.add('hidden');
 
-    const hours = Math.floor(diff / (1000 * 60 * 60));
-    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-    hoursEl.textContent = String(hours).padStart(2, '0');
-    minutesEl.textContent = String(minutes).padStart(2, '0');
-    secondsEl.textContent = String(seconds).padStart(2, '0');
+    hoursEl.textContent = String(Math.floor(diff / 3600)).padStart(2, '0');
+    minutesEl.textContent = String(Math.floor((diff % 3600) / 60)).padStart(2, '0');
+    secondsEl.textContent = String(diff % 60).padStart(2, '0');
   }
 
   update();
@@ -913,6 +921,15 @@ const PRICES = {
 // Dinner cruise pricing: base + extras
 // Values are defaults; overridden at runtime by fetchDynamicPrices() from Supabase via /api/public/prices
 // Single package: DINNER_STD only (SUNSET_STD will be added here later)
+// Cocuk (4-9 yas) fiyati: SABIT indirim, yuzde DEGIL (Ozgur karari 7 Agu 2026).
+// Tekne bize toplam ucretten 5$ indirim veriyor; biz musteriye 5 EUR indirim veriyoruz.
+// AI tarafinda ayni deger: calculate-price.js CHILD_DISCOUNT_EUR_DEFAULT.
+// Bu ikisi AYRISIRSA rezervasyonda "fiyat uyusmazligi" eskalasyonu tetiklenir.
+const CHILD_DISCOUNT_EUR = 5;
+function childPriceWithDiscount(fullPrice) {
+  return Math.max(0, fullPrice - CHILD_DISCOUNT_EUR);
+}
+
 const DINNER_PRICES = {
   standard: { base: 24.3, oldPrice: 40.5 },
   extras: { glass2: 10, transfer: 5, romantic: 15 }
@@ -1324,8 +1341,8 @@ function openMobilePanel(pkg) {
     if (el) el.classList.add('hidden');
   });
 
-  // Set default date — after 20:00 Istanbul time, today is no longer bookable in wizard
-  // (boat departs 21:00, last entry 20:00 — same-day cutoff orta yol, AI WhatsApp'ta dar pencere uyarısı verir).
+  // Set default date — after 21:00 Istanbul time, today is no longer bookable in wizard
+  // (boat departs 21:00; bookings stay open right up to departure — see wizMinDateStr).
   const wizDate = document.getElementById('wizDate');
   if (wizDate) {
     const minStr = wizMinDateStr();
@@ -1630,8 +1647,8 @@ function updateChildAgeInputs() {
       select.dataset.childIndex = i;
       select.innerHTML = `
         <option value="0-3">0-3</option>
-        <option value="4-8">4-8</option>
-        <option value="9+" selected>9+</option>
+        <option value="4-9">4-9</option>
+        <option value="10+" selected>10+</option>
       `;
       select.addEventListener('change', () => {
         syncChildAges(suffix);
@@ -1703,7 +1720,7 @@ function calculatePrice() {
       ageInputs.querySelectorAll('select').forEach(sel => {
         let childPrice = basePrice + (hasTransfer ? transferExtra : 0);
         if (sel.value === '0-3') total += 0;
-        else if (sel.value === '4-8') total += Math.round(childPrice * 0.5);
+        else if (sel.value === '4-9') total += childPriceWithDiscount(childPrice);
         else total += childPrice;
       });
     }
@@ -1718,7 +1735,7 @@ function calculatePrice() {
     if (childCount > 0 && ageInputs) {
       ageInputs.querySelectorAll('select').forEach(sel => {
         if (sel.value === '0-3') total += 0;
-        else if (sel.value === '4-8') total += Math.round(basePrice * 0.5);
+        else if (sel.value === '4-9') total += childPriceWithDiscount(basePrice);
         else total += basePrice;
       });
     }
@@ -1740,7 +1757,7 @@ function calculatePrice() {
       total += price * adults;
       if (childCount > 0 && ageInputs) {
         ageInputs.querySelectorAll('select').forEach(sel => {
-          if (sel.value === '4-8') total += Math.round(price * 0.5);
+          if (sel.value === '4-9') total += childPriceWithDiscount(price);
           else if (sel.value !== '0-3') total += price;
         });
       }
@@ -2356,16 +2373,18 @@ function wizShowNextHint(text) {
   hint.classList.add('text-red-400', 'font-medium');
 }
 
-// Wizard'da seçilebilecek en erken tarih (İstanbul bugünü; saat 20:00'u geçtiyse yarın).
+// Wizard'da seçilebilecek en erken tarih (İstanbul bugünü; saat 21:00'ı geçtiyse yarın).
 // Tek kaynak: hem wizDate.min hem de geçmiş-tarih guard'ı buradan beslenir.
+// 7 Ağu 2026: eşik 19:30 -> 21:00. Tekne 21:00'da kalkıyor, o ana kadar rezervasyon
+// alınabilir (Özgür kararı). Eski 19:30 her akşam 1.5 saatlik satışı sessizce kapatıyordu.
+// Eşler: initCountdown() CLOSING_HOUR + AI create-reservation.js 21:00 hard reddet.
 function wizMinDateStr() {
   const fmt = new Intl.DateTimeFormat('en-GB', {
-    timeZone: 'Europe/Istanbul', hour: '2-digit', minute: '2-digit', hour12: false
+    timeZone: 'Europe/Istanbul', hourCycle: 'h23', hour: '2-digit', minute: '2-digit'
   }).formatToParts(new Date());
   const istHour = Number(fmt.find((p) => p.type === 'hour')?.value);
-  const istMin = Number(fmt.find((p) => p.type === 'minute')?.value);
   const target = new Date();
-  if (istHour >= 20 || (istHour === 19 && istMin >= 30)) target.setDate(target.getDate() + 1);
+  if (istHour >= 21) target.setDate(target.getDate() + 1);
   const yyyy = target.getFullYear();
   const mm = String(target.getMonth() + 1).padStart(2, '0');
   const dd = String(target.getDate()).padStart(2, '0');
@@ -2739,7 +2758,7 @@ function wizUpdateChildAges(count) {
       sel.className = 'bg-white/5 border border-white/10 rounded-lg px-3 py-1.5 text-xs text-white focus:border-[#c9a84c]/50 focus:outline-none appearance-none pr-7';
       sel.style.cssText = "background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22none%22 stroke=%22%23c9a84c%22 stroke-width=%222%22%3E%3Cpath stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M19 9l-7 7-7-7%22/%3E%3C/svg%3E'); background-repeat: no-repeat; background-position: right 6px center; background-size: 14px;";
       const placeholder = (T['wizard.selectAge'] && T['wizard.selectAge'][currentLang]) || 'Select age';
-      sel.innerHTML = `<option value="" disabled selected>${placeholder}</option><option value="0-3">0-3</option><option value="4-8">4-8</option><option value="9+">9+</option>`;
+      sel.innerHTML = `<option value="" disabled selected>${placeholder}</option><option value="0-3">0-3</option><option value="4-9">4-9</option><option value="10+">10+</option>`;
       sel.addEventListener('change', () => {
         wizCalcPrice();
         const warn = document.getElementById('wizChildAgeWarning');
@@ -3489,11 +3508,11 @@ function wizCalcPrice() {
   // Base total (adults + children)
   let total = adults * basePrice;
 
-  // Children pricing (paket: 0-3 ücretsiz, 4-8 %50, 9+ tam)
+  // Children pricing (paket: 0-3 ücretsiz, 4-9 €5 indirim, 10+ tam)
   if (children > 0 && childAgeInputs) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
       if (sel.value === '0-3') { /* free */ }
-      else if (sel.value === '4-8') total += Math.round(basePrice * 0.5);
+      else if (sel.value === '4-9') total += childPriceWithDiscount(basePrice);
       else total += basePrice;
     });
   }
@@ -3507,7 +3526,7 @@ function wizCalcPrice() {
   if (children > 0 && childAgeInputs) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
       if (sel.value === '0-3') { /* free */ }
-      else if (sel.value === '4-8') oldTotal += Math.round(oldPrice * 0.5);
+      else if (sel.value === '4-9') oldTotal += childPriceWithDiscount(oldPrice);
       else oldTotal += oldPrice;
     });
   }
@@ -3664,9 +3683,9 @@ function wizBuildSummary() {
     if (children > 0 && childAgeInputs) {
       let childTotal = 0;
       childAgeInputs.querySelectorAll('select').forEach(sel => {
-        // Paket-only (0-3 ücretsiz, 4-8 %50, 9+ tam). Transfer ayrı satırda tam €5, burada YOK.
+        // Paket-only (0-3 ücretsiz, 4-9 €5 indirim, 10+ tam). Transfer ayrı satırda tam €5, burada YOK.
         if (sel.value === '0-3') { /* free */ }
-        else if (sel.value === '4-8') childTotal += Math.round(basePrice * 0.5);
+        else if (sel.value === '4-9') childTotal += childPriceWithDiscount(basePrice);
         else childTotal += basePrice;
       });
       if (childTotal > 0) {
@@ -3692,7 +3711,7 @@ function wizBuildSummary() {
   const childAgeInputs = document.getElementById('wizChildAgeInputs');
   if (childAgeInputs && children > 0) {
     childAgeInputs.querySelectorAll('select').forEach(sel => {
-      childAges.push(sel.value); // "0-3", "4-8", "9+"
+      childAges.push(sel.value); // "0-3", "4-9", "10+"
     });
   }
   const agePart = childAges.length ? ` (${childAges.join(', ')})` : '';
@@ -3763,7 +3782,7 @@ function wizBuildSummary() {
           if (wizState.transfer) addonCodes.push('HOTEL_TRANSFER');
           if (wizState.romantic) addonCodes.push('ROMANTIC_TABLE');
 
-          // Child ages from wizard (0-3 free, 4-8 half, 9+ full)
+          // Child ages from wizard (0-3 free, 4-9 €5 off, 10+ full)
           const childAges = [];
           document.querySelectorAll('#wizChildAgeInputs select').forEach(sel => {
             if (sel.value) childAges.push(sel.value);

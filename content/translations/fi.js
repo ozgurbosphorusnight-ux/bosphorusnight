@@ -26,7 +26,7 @@ module.exports = {
       { q: 'Mistä laiva lähtee?', a: 'Kabataşin laiturista, Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
       { q: 'Kuinka kauan ristely kestää?', a: '3 tuntia – lähtö 21:00, paluu 00:00.' },
       { q: 'Voiko peruuttaa?', a: 'Kyllä, 2 tuntia ennen ristelya ilmaiseksi. Koska maksat laivalla, palautus ei koske.' },
-      { q: 'Pääseekö lapset mukaan?', a: 'Kyllä. 0–3-vuotiaat ilmaiseksi, 4–8-vuotiaat 50 % alennuksella, 9+ täyteen hintaan.' }
+      { q: 'Pääseekö lapset mukaan?', a: 'Kyllä. 0–3-vuotiaat ilmaiseksi, 4–9-vuotiaat €5 alennuksella, 10+ täyteen hintaan.' }
     ],
     cta: {
       primary: 'Varaa paikka nyt',
@@ -38,7 +38,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporinsalmen ristely lasten kanssa Istanbul | Perheystävällinen',
-      description: 'Perheystävällinen ristely Bosporinsalmella Istanbulissa. 0–3-vuotiaat ilmaiseksi, 4–8-vuotiaat 50 % alennuksella. Turvallinen ja hauska koko perheelle. Varaa {p.dinnerStd} alkaen.'
+      description: 'Perheystävällinen ristely Bosporinsalmella Istanbulissa. 0–3-vuotiaat ilmaiseksi, 4–9-vuotiaat €5 alennuksella. Turvallinen ja hauska koko perheelle. Varaa {p.dinnerStd} alkaen.'
     },
     hero: {
       h1: 'Bosporinsalmen ristely lasten kanssa',
@@ -46,13 +46,13 @@ module.exports = {
       badge: '0–3-vuotiaat ilmaiseksi mukaan'
     },
     intro: [
-      'Bosporinsalmen illallisristely sopii koko perheelle. Pienimmät (0–3 v.) pääsevät mukaan ilmaiseksi, ja 4–8-vuotiaat saavat puolet hinnasta alennusta.',
+      'Bosporinsalmen illallisristely sopii koko perheelle. Pienimmät (0–3 v.) pääsevät mukaan ilmaiseksi, ja 4–9-vuotiaat saavat puolet hinnasta alennusta.',
       'Laivalla on tilaa liikkua, avoin kansi raitista ilmaa varten sekä monipuolinen ruoka, josta löytyy jotakin kaikille. Esitysohjelma on värikästä ja viihdyttävää myös lapsille.',
       'Lähtö 21:00 Kabataşista. Maksa vasta laivalla – varaa paikat etukäteen ilman ennakkomaksua.'
     ],
     highlights: [
       { icon: '👶', text: '0–3-vuotiaat ilmaiseksi – ei lisähintaa pienimmille' },
-      { icon: '🧒', text: '4–8-vuotiaat 50 % alennuksella perheen budjetiksi' },
+      { icon: '🧒', text: '4–9-vuotiaat €5 alennuksella perheen budjetiksi' },
       { icon: '🍽️', text: 'Lapsille sopiva ruoka – illallinen sisältää useita vaihtoehtoja' },
       { icon: '🎭', text: 'Värikäs esitysohjelma – elävää musiikkia ja tansseja' },
       { icon: '🛡️', text: 'Turvallinen laiva – ammattimiehistö, pelastusliivit saatavilla' }
@@ -154,7 +154,7 @@ module.exports = {
       badge: '40% ALENNUS · Yksi menu, premium-taso · Maksu laivalla'
     },
     intro: [
-      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte), jäätelökakku ja rajattomasti virvoitusjuomia. Koko ohjelma sisältyy myös hintaan — pyörivien dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ — kaikki hintaan €{p.dinnerStd}/henkilö.',
+      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte), jäätelökakku ja rajattomasti virvoitusjuomia. Koko kahdeksan numeron ohjelma sisältyy myös hintaan — Oba Dombra, pyörivien dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali — kaikki hintaan €{p.dinnerStd}/henkilö.',
       'VIP-tunnelma alkaa pöydästäsi. Jos haluat istua mahdollisimman lähellä lavaa ja maisemia, lisää **yksityinen pöytä lavan lähellä** (+€{p.romantic}/pöytä), niin paikkasi varataan etukäteen — paras kulma dervisseihin, kansantansseihin ja valaistuun Bosporiin. Parien, juhlien ja valokuvaajien suosikkivalinta.',
       'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 20:00, lähtö 21:00, paluu 00:00) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
     ],
@@ -167,7 +167,7 @@ module.exports = {
     faq: [
       { q: 'Myyttekö "VIP-pakettia"? Mikä ero on perusvaihtoehtoon?', a: 'Emme myy erillistä VIP-pakettia — meillä on yksi menu, joka tarjoillaan kaikille samalla premium-tasolla. Se, mitä kutsumme "VIP-kokemukseksi", on illan räätälöiminen sinulle: yksityinen pöytä lavan lähellä (+€{p.romantic}/pöytä), huomaavainen pöytäpalvelu ja valinnaiset juomalisät. Risteily kestää 3 tuntia, €{p.dinnerStd}/henkilö.' },
       { q: 'Onko €{p.dinnerStd} todella 40% alennus?', a: 'Kyllä — listahintamme on €{p.dinnerStdOriginal}/henkilö. €{p.dinnerStd} on suoravarauksen hinta ilman välikäsien komissioita. Maksat laivalla, eikä ennakkomaksua peritä.' },
-      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte) ja jäätelökakku jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Ohjelma sisältyy: dervissien seremonia, 5 kansantanssia, vatsatanssi, elävää musiikkia ja DJ.' },
+      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kana tai köfte) ja jäätelökakku jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Kahdeksan numeron ohjelma sisältyy: Oba Dombra, dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei — alkoholi on erillinen lisä: 2 lasia paikallista viiniä tai olutta hintaan +€{p.alcohol2}/henkilö. Virvoitusjuomat sisältyvät rajattomasti ja maksutta. Premium-tuontijuomat laskutetaan erikseen laivalla.' },
       { q: 'Miten varmistan pöydän lavan läheltä?', a: 'Valitse varauksen yhteydessä lisä "yksityinen pöytä lavan lähellä" (+€{p.romantic}/pöytä) — pöytä varataan nimellesi. Parhaat paikat menevät ennakkovarauksille, joten kannattaa lisätä se ennen risteilypäivää.' },
       { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 20:00, lähtö 21:00, paluu 00:00. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }
@@ -275,7 +275,7 @@ module.exports = {
     faq: [
       { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 20:00 Kabataşin laiturissa, laiva lähtee 21:00 ja palaa noin 00:00. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
       { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 21:00, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
-      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-8 v puoleen hintaan.' },
+      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-9 v puoleen hintaan.' },
       { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 21:00 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
       { q: 'Mitä auringonlaskuristeilylle kannattaa ottaa mukaan?', a: 'Älypuhelin tai kamera – kultainen hetki ja valaistut sillat suorastaan kutsuvat kuvaamaan. Kevyt takki: tuuli voimistuu kannella auringonlaskun jälkeen. Siisti rento pukeutuminen riittää – kyseessä on illallinen, mutta tiukkaa pukukoodia ei ole.' },
       { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 21:00–00:00, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 00:00.' },
@@ -571,7 +571,7 @@ module.exports = {
       { q: 'Mitä hintaan sisältyy?', a: 'Illallinen (10 mezoa, pääruoka, jälkiruoka), alkoholittomat juomat, esitysohjelma ja 3 tunnin ristely.' },
       { q: 'Pitääkö maksaa etukäteen?', a: 'Ei — varaus vahvistetaan ilman ennakkomaksua ja maksat vasta laivalla. Ilmainen peruutus 2 tuntiin asti ennen lähtöä.' },
       { q: 'Onko hotellikuljetus pakollinen?', a: 'Ei, hotellikuljetus on valinnainen lisä {p.transfer} per henkilö. Voit myös tulla itse Kabataşiin.' },
-      { q: 'Onko lapsille alennus?', a: 'Kyllä: 0–3-vuotiaat ilmaiseksi, 4–8-vuotiaat 50 % alennuksella.' },
+      { q: 'Onko lapsille alennus?', a: 'Kyllä: 0–3-vuotiaat ilmaiseksi, 4–9-vuotiaat €5 alennuksella.' },
       { q: 'Hyväksytäänkö kaikki maksutavat laivalla?', a: 'Laivalla hyväksytään käteinen ja pankkikortit. Kysy tarkemmin varauksen yhteydessä.' }
     ],
     cta: {

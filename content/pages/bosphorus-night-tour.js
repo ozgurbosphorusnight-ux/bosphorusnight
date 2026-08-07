@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'The **Bosphorus night tour** is the single most recommended evening activity in Istanbul. There\'s a reason: after dark, the Bosphorus transforms. The Bosphorus Bridge shifts between blue, purple, and gold. Dolmabahçe Palace glows warm yellow. Ortaköy Mosque mirrors perfectly on the black water. Every Istanbul landmark hits peak drama at night.',
 
-    'Our **Bosphorus night tour with dinner** packages the full iconic evening: 3 hours on the water (21:00-00:00), a multi-course Turkish feast, live folklore performances (whirling dervish, 5 folk dances, belly dance), live music, and a DJ set that keeps the deck alive until the end. Every guest gets the same itinerary — there\'s no "basic" option that skips the best parts.',
+    'Our **Bosphorus night tour with dinner** packages the full iconic evening: 3 hours on the water (21:00-00:00), a multi-course Turkish feast, an eight-act live folklore programme (Oba Dombra, whirling dervish, Anatolian and Azerbaijani suites, belly dance, the Caucasian knife dance), live music, and a saxophone-and-DJ set that keeps the deck alive until the end. Every guest gets the same itinerary — there\'s no "basic" option that skips the best parts.',
 
     'Whether it\'s your first Istanbul trip and you\'re looking for "the one thing you must do at night", or you\'ve been here before and want the most photogenic 3 hours in the city, this is the **Bosphorus night tour** with 4.8★ from 11,317+ travelers. TÜRSAB-licensed, pay-on-boat, no prepayment.'
   ],
@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'show',
       title: 'Traditional Turkish show onboard',
-      desc: 'Whirling Dervish opening ceremony, 5 traditional folk dances (different regions of Turkey), belly dance, live Turkish music, then DJ set. 40 minutes of performance, then music + dining continues.'
+      desc: 'Eight acts: Oba Dombra, Whirling Dervish ceremony, Sarı Gelin, an Azerbaijani suite, belly dance, an Anatolian suite and the Georgian-Caucasian knife dance, then live saxophone and DJ set. 40 minutes of performance, then music + dining continues.'
     },
     {
       icon: 'dinner',
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How much is the Bosphorus night tour?',
-      a: 'The night tour (3 hours, dinner, show): €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). Kids 0-3 free, 4-8 half price. Pay on boat.'
+      a: 'The night tour (3 hours, dinner, show): €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}). Kids 0-3 free, 4-9 €5 off. Pay on boat.'
     },
     {
       q: 'What\'s the difference between Bosphorus night tour and dinner cruise?',

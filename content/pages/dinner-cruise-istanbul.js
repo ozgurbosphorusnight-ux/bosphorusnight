@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'show',
       title: 'Live Turkish folklore show',
-      desc: 'Whirling Dervish ceremony, 5 traditional folk dances, belly dance, live Turkish music, DJ. 40 minutes of performance, ambient music continues.'
+      desc: 'Eight acts: Oba Dombra, Whirling Dervish ceremony, Sarı Gelin, an Azerbaijani suite, belly dance, an Anatolian suite, the Georgian-Caucasian knife dance, then live saxophone and DJ. 40 minutes of performance, ambient music continues.'
     },
     {
       icon: 'route',
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'How much is a dinner cruise in Istanbul?',
-      a: 'Our dinner cruise is €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Children 0-3 free, 4-8 at 50% off. Pay on the boat — no prepayment.'
+      a: 'Our dinner cruise is €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}). Children 0-3 free, 4-9 at €5 off. Pay on the boat — no prepayment.'
     },
     {
       q: 'What\'s included in the Istanbul dinner cruise price?',

@@ -138,17 +138,34 @@ Ayrıca `dinner.halalTax` çipi "Şarap ve kokteyl" → **"Teknede bar (ek ücre
 ### VIP Dinner Menüsü
 15+ premium meze, ana yemek eki (rib-eye, dana bonfile), sahneye yakın masa, VIP servis.
 
-### Çocuk Politikası (2026-04-20 netleştirildi)
+### Çocuk Politikası (2026-08-07 DEĞİŞTİ — yüzde değil SABİT indirim)
 
-| Yaş | Paket fiyatı | Transfer |
-|---|---|---|
-| 0-3 (dahil) | Ücretsiz | Ücretsiz |
-| 4-8 (dahil) | %50 indirimli | Normal (€10) |
-| 9+ | Tam fiyat | Normal (€10) |
+| Yaş | Paket satış | Paket maliyet (tekne) | Transfer satış | Transfer maliyet |
+|---|---|---|---|---|
+| 0-3 (dahil) | Ücretsiz | $0 | Ücretsiz | $0 |
+| **4-9 (dahil)** | **€19.30** (€24.30 − €5) | **$12** (17 − 5) | Normal €5 | **Tam $3** |
+| **10+** | Tam €24.30 | $17 | Normal €5 | Tam $3 |
 
-**Sınır:** 3 yaş dahil ücretsiz, 4'e girdiyse indirimli başlar; 8 dahil indirimli, 9'a girdiyse tam fiyat.
+**Sınır:** 3 yaş dahil ücretsiz, 4'e girdiyse indirimli başlar; **9 dahil indirimli, 10'a girdiyse tam fiyat.**
 
-**Transfer maliyeti (2026-07-11 netleşti — iç muhasebe):** 4-8 çocuğun transfer **SATIŞI tam €10** (koltuk = koltuk, müşteriden tam alınır) ama **MALİYETİ yetişkinin %50'si = €2.5** (firma çocuğa yarım kesiyor) → marj €7.5. AI `calculate_price` bunu otomatik hesaplar ([calculate-price.js](../../../C:/Projects/bosphorus-night-ai/src/claude/tools/calculate-price.js) transfer bloğu: satış tam, maliyet çocukta ×0.5). 0-3 bebek transferi hem satış hem maliyet €0 — wizard `wizCalcPrice()` bebekleri transfer sayımından çıkarır (2026-07-11 bug fix).
+> ⚠️ **7 Ağu 2026 öncesi sistem YANLIŞTI** (Özgür'ün açıklamasıyla ortaya çıktı): kod çocuğu **%50** sayıyordu →
+> müşteriye €12.15'e satıyor (doğrusu €19.30 → **çocuk başına €7.15 eksik tahsilat**), tekneye $8.50 maliyet
+> yazıyordu (doğrusu $12 → **$3.50 eksik**), transfer maliyetini de yarım sayıyordu ($1.50, doğrusu $3).
+> Çocuk başı gerçek marj: **€8.92** (eski hatalı hesapta €4.80 görünüyordu).
+
+**Kanonik kaynak:** `packages.child_discount_eur` + `child_discount_usd` (migration 043, ikisi de 5.00).
+Kolonlar NULL ise kod `CHILD_DISCOUNT_EUR/USD_DEFAULT = 5` ile aynı sonucu üretir (fail-soft).
+
+> 🔁 **Çocuk politikası değişirse 7 yer birden:** ① DB `packages.child_discount_*` ② AI `calculate-price.js`
+> (`childUnitRates` + `computeBoatDueUsd` + tool açıklamaları) ③ AI prompt (`shared-rules.js`, `price.md`,
+> `red-lines.md`, `system-prompt.js`, `webchat.js`) ④ AI `telegram.js` (`age_assumed_10plus`, 14 dil)
+> ⑤ Site `js/main.js` (`CHILD_DISCOUNT_EUR`, yaş option değerleri "4-9"/"10+") ⑥ Site içerik
+> (`js/translations.js` 4 anahtar × 32 dil, `content/pages`, `content/translations`, `content/ui-translations`,
+> `llms.txt`, `blog/`) ⑦ Panel (`finance/route.ts`, `CalculatePriceModal.tsx`).
+
+**Transfer (2026-08-07 güncellendi):** Çocuk transferinde **indirim YOK** — satış tam €5, maliyet tam $3
+(Özgür: *"transfer ücreti herkes için 3 dolar ödüyoruz, bebek için yine free"*). 0-3 bebek transferi hem satış
+hem maliyet €0 — wizard `wizCalcPrice()` bebekleri transfer sayımından çıkarır (2026-07-11 bug fix).
 
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.

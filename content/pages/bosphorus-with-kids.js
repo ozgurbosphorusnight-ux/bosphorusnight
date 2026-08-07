@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise with Kids — Family Dinner Tour from €{p.dinnerStd}/adult',
-    description: 'Family-friendly Bosphorus dinner cruise. Kids 0-3 free, 4-8 half price. Indoor seating, child-friendly menu. From €{p.dinnerStd}/adult. Pay on boat.'
+    description: 'Family-friendly Bosphorus dinner cruise. Kids 0-3 free, 4-9 €5 off. Indoor seating, child-friendly menu. From €{p.dinnerStd}/adult. Pay on boat.'
   },
 
   hero: {
@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     'The **Bosphorus cruise with kids** is Istanbul\'s most family-welcoming evening on the water. We carry dozens of families every night — and we\'ve designed every detail around making children comfortable: covered indoor seating so little ones stay warm, an accessible kids-friendly menu (plain grilled chicken, pasta, and unlimited soft drinks), and early boarding so you avoid late-night meltdowns.',
 
-    'Unlike adult-only party boats, our **Bosphorus dinner cruise for families** keeps the atmosphere warm and inclusive. Children ages **0-3 sail free** (including the transfer), ages 4-8 get **50% off** the adult price, and 9+ are full-price but count as guests — no hidden fees. The live folklore show, belly dance, and whirling dervish are gentle family entertainment, not a nightclub.',
+    'Unlike adult-only party boats, our **Bosphorus dinner cruise for families** keeps the atmosphere warm and inclusive. Children ages **0-3 sail free** (including the transfer), ages 4-9 get **€5 off** the adult price, and 10+ are full-price but count as guests — no hidden fees. The live folklore show, belly dance, and whirling dervish are gentle family entertainment, not a nightclub.',
 
     'Whether you\'re visiting Istanbul for a long weekend with a toddler, or bringing teens on their first European trip, this is the cruise Istanbul families recommend. Safe, halal-certified, TÜRSAB-licensed, and rated 4.8★ by more than 11,317 travelers.'
   ],
@@ -44,7 +44,7 @@ module.exports = {
     {
       icon: 'kids',
       title: 'Kids 0-3 sail completely free',
-      desc: 'No charge for infants or toddlers. Ages 4-8 get 50% off adult price. Full-size guests only from age 9. Transparent, no surprises.'
+      desc: 'No charge for infants or toddlers. Ages 4-9 get €5 off adult price. Full-size guests only from age 10. Transparent, no surprises.'
     },
     {
       icon: 'safety',
@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'entertainment',
       title: 'Family-safe entertainment',
-      desc: 'Whirling Dervish (mesmerizing for kids), 5 traditional folk dances, live Turkish music, and a DJ set. All family-friendly — no adult-content performances. Children often join the dancing.'
+      desc: 'Whirling Dervish (mesmerizing for kids), Oba Dombra, and folk dances from Anatolia, Azerbaijan and the Caucasus — including the spectacular knife dance — plus live Turkish music and a saxophone-and-DJ set. All family-friendly — no adult-content performances. Children often join the dancing.'
     }
   ],
 
@@ -70,7 +70,7 @@ module.exports = {
     },
     {
       q: 'What\'s the kids pricing for the Bosphorus cruise?',
-      a: 'Children **0-3 years: FREE** (no charge, no fee). **4-8 years: 50% off** the adult price — so €{p.dinnerStd}/2 = €12.15 per child. **9+ years: full adult price.** Hotel transfer is free for ages 0-3 and standard (€{p.transfer}/person) for 4+.'
+      a: 'Children **0-3 years: FREE** (no charge, no fee). **4-9 years: €5 off** the adult price — so €{p.dinnerStd} − €5 = €19.30 per child. **10+ years: full adult price.** Hotel transfer is free for ages 0-3 and standard (€{p.transfer}/person) for 4+.'
     },
     {
       q: 'Is there a kids menu on the cruise?',
@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'What\'s the best Bosphorus cruise for families with children?',
-      a: 'Bosphorus Night\'s All-In Dinner Cruise suits families: ages 0–3 free, 4–8 at 50% discount, 9+ full price (€{p.dinnerStd}). The 3-hour 21:00 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
+      a: 'Bosphorus Night\'s All-In Dinner Cruise suits families: ages 0–3 free, 4–9 at €5 discount, 10+ full price (€{p.dinnerStd}). The 3-hour 21:00 cruise has live music and shows kids enjoy. Hotel transfer (+€{p.transfer}/person) avoids public transport with strollers.'
     },
     {
       q: 'Are there activities for kids on the Bosphorus cruise?',

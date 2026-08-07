@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Istanbul Cruise Price from €{p.dinnerStd} — Transparent Rates, No Hidden Fees',
-    description: 'Istanbul Bosphorus cruise prices: dinner cruise €{p.dinnerStd}/person. Kids 0-3 free, 4-8 half. Transparent add-ons. Pay on boat.'
+    description: 'Istanbul Bosphorus cruise prices: dinner cruise €{p.dinnerStd}/person. Kids 0-3 free, 4-9 €5 off. Transparent add-ons. Pay on boat.'
   },
 
   hero: {
@@ -35,7 +35,7 @@ module.exports = {
   intro: [
     '**Istanbul cruise prices** vary wildly — from €15 budget ferries that skip food, to €150+ resort-style yachts. Our pricing sits in the middle and gives the best value: one package at €{p.dinnerStd}/person for the full 3-hour dinner cruise with show. No hidden fees, no surprise surcharges.',
 
-    'A detailed **Istanbul cruise price** breakdown, because transparency matters:\n\n- **Dinner Cruise**: €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}, 40% off). Includes 3hr cruise, 10 mezes, main course, dessert, unlimited soft drinks, live show.\n- **Kids 0-3**: Free. Kids 4-8: 50% off. Kids 9+: full price.\n\nAdd-ons (optional):\n- 2 glasses of alcohol: +€{p.alcohol2}/person\n- Hotel transfer round-trip: +€{p.transfer}/person\n- Romantic table setup: +€{p.romantic}/table',
+    'A detailed **Istanbul cruise price** breakdown, because transparency matters:\n\n- **Dinner Cruise**: €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}, 40% off). Includes 3hr cruise, 10 mezes, main course, dessert, unlimited soft drinks, live show.\n- **Kids 0-3**: Free. Kids 4-9: €5 off. Kids 10+: full price.\n\nAdd-ons (optional):\n- 2 glasses of alcohol: +€{p.alcohol2}/person\n- Hotel transfer round-trip: +€{p.transfer}/person\n- Romantic table setup: +€{p.romantic}/table',
 
     'And importantly: **pay on the boat**. You don\'t commit a cent until you\'re on the boat. Free cancellation up to 2 hours before departure. No commitment, no risk — the most consumer-friendly **Istanbul cruise pricing** you\'ll find.'
   ],
@@ -53,8 +53,8 @@ module.exports = {
     },
     {
       icon: 'kids',
-      title: 'Kids pricing: 0-3 free, 4-8 half price',
-      desc: '0-3 completely free (no charge). 4-8 at 50% off adult price. 9+ full adult price. Transparent, no family-pricing tricks. Transfer also free for 0-3.'
+      title: 'Kids pricing: 0-3 free, 4-9 €5 off',
+      desc: '0-3 completely free (no charge). 4-9 at €5 off adult price. 10+ full adult price. Transparent, no family-pricing tricks. Transfer also free for 0-3.'
     },
     {
       icon: 'addons',
@@ -66,7 +66,7 @@ module.exports = {
   faq: [
     {
       q: 'How much is the Istanbul cruise?',
-      a: 'Dinner Cruise: €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}, 40% off). Kids 0-3 free, 4-8 half price. Pay on the boat — no prepayment. Free cancellation up to 2 hours before departure.'
+      a: 'Dinner Cruise: €{p.dinnerStd}/person (regular €{p.dinnerStdOriginal}, 40% off). Kids 0-3 free, 4-9 €5 off. Pay on the boat — no prepayment. Free cancellation up to 2 hours before departure.'
     },
     {
       q: 'Are there hidden fees in the Istanbul cruise price?',

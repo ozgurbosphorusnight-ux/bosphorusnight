@@ -75,7 +75,7 @@ module.exports = {
     },
     {
       q: 'Is this cruise suitable for Muslim families with children?',
-      a: 'Yes — this is one of the most family-respectful cruises in Istanbul. Entertainment is modest (folk dances, whirling dervish, Turkish music), children under 3 sail free, 4-8 get 50% off. No nightclub atmosphere. Families from the Gulf region, Indonesia, Malaysia, Pakistan, and Morocco book this cruise regularly.'
+      a: 'Yes — this is one of the most family-respectful cruises in Istanbul. Entertainment is modest (folk dances, whirling dervish, Turkish music), children under 3 sail free, 4-9 get €5 off. No nightclub atmosphere. Families from the Gulf region, Indonesia, Malaysia, Pakistan, and Morocco book this cruise regularly.'
     },
     {
       q: 'Can I pray on the boat?',
@@ -83,7 +83,7 @@ module.exports = {
     },
     {
       q: 'What are the prices for a Muslim family of 4 (2 adults, 2 kids)?',
-      a: 'Dinner cruise: 2 × €{p.dinnerStd} + 2 × €12.15 (kids half price if ages 4-8) = €72.90. If children are under 3, they\'re free: 2 × €{p.dinnerStd} = €48.60. Add hotel transfer for €{p.transfer}/person (free under 3). Total: €48.60–€92.90 for a family of 4, no prepayment, pay on boat.'
+      a: 'Dinner cruise: 2 × €{p.dinnerStd} + 2 × €19.30 (kids €5 off if ages 4-9) = €87.20. If children are under 3, they\'re free: 2 × €{p.dinnerStd} = €48.60. Add hotel transfer for €{p.transfer}/person (free under 3). Total: €48.60–€92.90 for a family of 4, no prepayment, pay on boat.'
     },
     {
       q: 'Does the Bosphorus cruise halal apply to hotel transfer too?',

@@ -50,7 +50,7 @@ module.exports = {
     {
       icon: 'show',
       title: 'Live folklore, belly dance & DJ',
-      desc: 'Mevlana whirling dervish opening, 5 traditional Turkish folk dances, classical belly-dance performance, live Turkish musicians, then a full DJ set for the remainder of the cruise.'
+      desc: 'Eight acts: Oba Dombra opening, Mevlana whirling dervish, Sarı Gelin, an Azerbaijani suite, classical belly dance, an Anatolian suite and the Georgian-Caucasian knife dance — then live saxophone and a full DJ set for the remainder of the cruise.'
     },
     {
       icon: 'route',
@@ -71,7 +71,7 @@ module.exports = {
     },
     {
       q: 'How much does the Bosphorus dinner cruise cost?',
-      a: 'Our Dinner Cruise is €{p.dinnerStd}/person (regular price €{p.dinnerStdOriginal}). Children 0-3 free, ages 4-8 at 50% off. Payment is made on the boat — no prepayment required.'
+      a: 'Our Dinner Cruise is €{p.dinnerStd}/person (regular price €{p.dinnerStdOriginal}). Children 0-3 free, ages 4-9 at €5 off. Payment is made on the boat — no prepayment required.'
     },
     {
       q: 'Is alcohol included in the dinner cruise?',

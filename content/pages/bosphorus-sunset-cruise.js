@@ -80,7 +80,7 @@ module.exports = {
     },
     {
       q: 'What\'s the price of the Bosphorus sunset cruise?',
-      a: 'From €{p.dinnerStd}/person for the cruise (3 hours, full dinner, live entertainment). Pay on the boat — no prepayment. Children 0-3 free, 4-8 half price.'
+      a: 'From €{p.dinnerStd}/person for the cruise (3 hours, full dinner, live entertainment). Pay on the boat — no prepayment. Children 0-3 free, 4-9 €5 off.'
     },
     {
       q: 'When is the best time of year for a Bosphorus sunset cruise?',
@@ -92,7 +92,7 @@ module.exports = {
     },
     {
       q: 'Do I see the illuminated bridges at night on this cruise?',
-      a: 'Yes — that\'s the second half of the evening. The cruise runs 21:00–00:00, so after the sunset and blue hour you sail under the fully lit Bosphorus Bridge, past illuminated palaces and Maiden\'s Tower, and return to Kabataş around 00:00.'
+      a: 'Yes — that\'s the second €5 off of the evening. The cruise runs 21:00–00:00, so after the sunset and blue hour you sail under the fully lit Bosphorus Bridge, past illuminated palaces and Maiden\'s Tower, and return to Kabataş around 00:00.'
     },
     {
       q: 'What time does the sun set in Istanbul?',

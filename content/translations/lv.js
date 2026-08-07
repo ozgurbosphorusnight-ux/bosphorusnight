@@ -24,13 +24,13 @@ module.exports = {
     ],
     highlights: [
       { title: 'Turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda (paçanga böreği), galvenā ēdiena izvēle (lasis / jūras karūsa / vista / frikadeles / veģetārais), saldējuma kūka desertā, neierobežoti bezalkoholiskie dzērieni.' },
-      { title: 'Dzīvas tautas dejas, austrumu deja un DJ', desc: 'Mevlana sema priekšnesums, 5 tradicionālās turku tautas dejas, austrumu deja, dzīvi turku mūziķi, kam seko DJ programma visa kruīza laikā.' },
+      { title: 'Dzīvas tautas dejas, austrumu deja un DJ', desc: 'Astoņi priekšnesumi: Oba Dombra, Mevlana sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem — kam seko dzīvs saksofons un DJ programma visa kruīza laikā.' },
       { title: 'Pilns nakts maršruts pa Bosforu', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → FSM tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'No €{p.dinnerStd}/personai — maksā uz kuģa', desc: 'Vakariņu kruīzs €{p.dinnerStd} (sākotnēji €{p.dinnerStdOriginal}). Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
     ],
     faq: [
       { q: 'Kad sākas vakariņu kruīzs pa Bosforu?', a: 'Iekāpšana sākas plkst. 20:00 pie Kabataş piestātnes. Kuģis atiet plkst. 21:00 un atgriežas ap plkst. 00:00. Iesakām ierasties 15–20 minūtes ātrāk, lai apsēstos un atpūstos.' },
-      { q: 'Cik maksā vakariņu kruīzs pa Bosforu?', a: 'Vakariņu kruīzs €{p.dinnerStd}/personai (parastā cena €{p.dinnerStdOriginal}). 0–3 gadi bez maksas, 4–8 gadi 50% atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
+      { q: 'Cik maksā vakariņu kruīzs pa Bosforu?', a: 'Vakariņu kruīzs €{p.dinnerStd}/personai (parastā cena €{p.dinnerStdOriginal}). 0–3 gadi bez maksas, 4–9 gadi €5 atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
       { q: 'Vai vakariņu kruīzā ir iekļauts alkohols?', a: 'Neierobežoti bezalkoholiskie dzērieni (ūdens, kola, sula) ir iekļauti cenā. Alkohola pakete ir brīvprātīga: 2 glāzes (vīns, alus, rakı, degvīns vai džins) +€{p.alcohol2}/personai. Papildu un importētie dzērieni tiek rēķināti atsevišķi uz kuģa.' },
       { q: 'Vai ir pieejama paņemšana no viesnīcas?', a: 'Jā — paņemšana un nogādāšana atpakaļ ir +€{p.transfer}/personai. Apkalpotās zonas: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce un Şişli. Šo iespēju vari izvēlēties rezervācijas veidlapā.' },
       { q: 'Vai vakariņu kruīzs pa Bosforu ir halal?', a: 'Pilnīgi. Visa gaļa uz kuģa ir halal sertificēta. Alkohols ir brīvprātīgs papildinājums (nekad netiek uzspiests viesiem), un galdu izkārtojums dabiski nodala viesus, kas dod priekšroku bezalkohola galdam. Bez papildu maksas piedāvājam arī veģetāros variantus.' },
@@ -46,7 +46,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosfors ar bērniem — ģimenes kruīzs no €{p.dinnerStd}/pieaugušajam',
-      description: 'Ģimenei draudzīgs vakariņu kruīzs pa Bosforu. Bērni 0–3 bez maksas, 4–8 puscena. Droša iekštelpu zona, bērnu ēdienkarte.'
+      description: 'Ģimenei draudzīgs vakariņu kruīzs pa Bosforu. Bērni 0–3 bez maksas, 4–9 puscena. Droša iekštelpu zona, bērnu ēdienkarte.'
     },
     hero: {
       h1: 'Kruīzs pa Bosforu ar bērniem',
@@ -55,18 +55,18 @@ module.exports = {
     },
     intro: [
       '**Kruīzs pa Bosforu ar bērniem** ir Stambulas ģimenēm draudzīgākais vakara variants. Mēs uzņemam desmitiem ģimeņu katru vakaru — esam padomājuši par katru detaļu, lai mazākajiem būtu ērti: pārklāta iekštelpu zona siltuma saglabāšanai, pieejama bērnu ēdienkarte (vienkārša grilēta vista, makaroni, neierobežoti bezalkoholiskie dzērieni) un agrā iekāpšana, lai izvairītos no novēlotas noguruma.',
-      'Atšķirībā no tikai pieaugušo kuģiem, **mūsu Bosfora ģimenes vakariņu kruīzs** paliek silts un iekļaujošs. **Bērni 0–3 gadi bez maksas** (transfērs iekļauts), 4–8 gadi saņem **50% atlaidi**, 9+ gadi maksā pilnu cenu — bez slēptām izmaksām. Dzīvās tautas dejas, austrumu deja un sema priekšnesums ir ģimenei draudzīga izklaide, nevis naktsklubs.',
+      'Atšķirībā no tikai pieaugušo kuģiem, **mūsu Bosfora ģimenes vakariņu kruīzs** paliek silts un iekļaujošs. **Bērni 0–3 gadi bez maksas** (transfērs iekļauts), 4–9 gadi saņem **€5 atlaidi**, 10+ gadi maksā pilnu cenu — bez slēptām izmaksām. Dzīvās tautas dejas, austrumu deja un sema priekšnesums ir ģimenei draudzīga izklaide, nevis naktsklubs.',
       'Vienalga, vai esi Stambulā garajā nedēļas nogalē ar mazuļiem vai ved pusaudžus pirmajā Eiropas braucienā — šī ir tūre, ko iesaka Stambulas ģimenes. Droša, halal sertificēta, TÜRSAB licencēta un saņēmusi 4,8★ no vairāk nekā 11 317 ceļotājiem.'
     ],
     highlights: [
-      { title: '0–3 gadi pilnīgi bez maksas', desc: 'Mazuļiem un maziem bērniem nekādas maksas. 4–8 gadi maksā 50% no pieaugušā cenas. No 9 gadiem pilna pieaugušā cena. Caurspīdīgi, bez pārsteigumiem.' },
+      { title: '0–3 gadi pilnīgi bez maksas', desc: 'Mazuļiem un maziem bērniem nekādas maksas. 4–9 gadi maksā €5 no pieaugušā cenas. No 9 gadiem pilna pieaugušā cena. Caurspīdīgi, bez pārsteigumiem.' },
       { title: 'Pārklāta iekštelpu zona', desc: 'Pilnībā pārklāta un apsildīta vēsajos mēnešos. Bērni paliek silti un pasargāti no vēja. Atklātais klājs pieejams, kad laikapstākļi ir labi — izvēle ir tava.' },
       { title: 'Bērnu ēdienkarte pēc pieprasījuma', desc: 'Vienkārša grilēta vista, makaroni, maize un dārzeņi — bez papildu maksas. Neierobežoti bezalkoholiskie dzērieni (kola, sula, ūdens). Paziņo iepriekš — bez pikantajiem meze atklājumiem mazākajiem.' },
-      { title: 'Droša ģimenes izklaide', desc: 'Sema priekšnesums (saistošs bērniem), 5 tradicionālās tautas dejas, dzīva turku mūzika un DJ programma. Viss ģimenei draudzīgs — bez pieaugušo satura. Bērni bieži dejo līdzi.' }
+      { title: 'Droša ģimenes izklaide', desc: 'Sema priekšnesums (saistošs bērniem), Oba Dombra un tautas dejas no Anatolijas, Azerbaidžānas un Kaukāza — tostarp iespaidīgā deja ar nažiem — kā arī dzīva turku mūzika un saksofona un DJ programma. Viss ģimenei draudzīgs — bez pieaugušo satura. Bērni bieži dejo līdzi.' }
     ],
     faq: [
       { q: 'Vai Bosfora kruīzs ir drošs maziem bērniem?', a: 'Jā — mūsu kuģis ir TÜRSAB licencēts, tam ir pārklāta iekštelpu zona ar drošiem logiem, pieejamas glābšanas vestes visos izmēros un profesionāla komanda ar pieredzi ģimenēs. Iesakām iekštelpu klāju mazuļiem un atklāto klāju bērniem no 6 gadiem.' },
-      { q: 'Kādas ir bērnu cenas Bosfora kruīzā?', a: 'Bērni **0–3 gadi: BEZ MAKSAS** (nekādas maksas, nekādas slēptas izmaksas). **4–8 gadi: 50% atlaide** no pieaugušā cenas — t.i., €12/bērnam Standarta paketē (€{p.dinnerStd}/2). **9+ gadi: pilna pieaugušā cena.** Viesnīcas transfērs ir bez maksas 0–3 gadiem, standarta 4+ (€{p.transfer}/personai).' },
+      { q: 'Kādas ir bērnu cenas Bosfora kruīzā?', a: 'Bērni **0–3 gadi: BEZ MAKSAS** (nekādas maksas, nekādas slēptas izmaksas). **4–9 gadi: €5 atlaide** no pieaugušā cenas — t.i., €12/bērnam Standarta paketē (€{p.dinnerStd}/2). **10+ gadi: pilna pieaugušā cena.** Viesnīcas transfērs ir bez maksas 0–3 gadiem, standarta 4+ (€{p.transfer}/personai).' },
       { q: 'Vai uz kuģa ir bērnu ēdienkarte?', a: 'Jā — vienkārša grilēta vista, makaroni, maize, sezonas dārzeņi un neierobežoti bezalkoholiskie dzērieni. Paziņo par alerģijām vai ēšanas vēlmēm rezervējot, un mēs pagatavosim ko tādu, kas tavam bērnam patiks.' },
       { q: 'Vai mūzika vai priekšnesums ir pārāk skaļš bērniem?', a: 'Dzīvie priekšnesumi notiek vienā skatuves zonā — ja tavi bērni ir jutīgi pret skaņu, ievietosim tevi pie klusāka galda tālāk aizmugurē. Priekšnesums kopā ilgst 40 minūtes, atlikušajā vakara daļā ir vidēja skaļuma turku fona mūzika un DJ.' },
       { q: 'Kas notiek, ja mazulis kruīza laikā aizmieg?', a: 'Nekādu problēmu — daudzi to dara. Iekštelpu zonā ir solu sēdvietas, kur mazulis vai mazs bērns var ērti gulēt. Pajautā komandai siltu segu, ja vajag. Bez papildu maksas.' },
@@ -139,9 +139,9 @@ module.exports = {
     faq: [
       { q: 'Vai Bosfora kruīzs ir 100% halal?', a: 'Jā — katrs gaļas produkts ēdienkartē (zivs, vista, frikadeles, liellopa fileja, ribu steiks, jērs) ir halal sertificēts no apstiprinātiem piegādātājiem. Virtuve ievēro halal sagatavošanas standartu. Cūkgaļa nekur uz kuģa netiek pasniegta. Tā nav "halal iespēja" — visa ēdienkarte ir halal.' },
       { q: 'Vai citi viesi uz kuģa lieto alkoholu?', a: 'Daži viesi pievieno brīvprātīgo 2 glāžu alkohola paketi (+€{p.alcohol2}/personai). Galdi ir dabiski nodalīti — vari lūgt bezalkohola zonu. Komanda nenes alkoholu, ja vien viesis to skaidri nepasūta. Bezalkoholiskie dzērieni (neierobežoti) ir iekļauti visiem.' },
-      { q: 'Vai šis kruīzs ir piemērots musulmaņu ģimenēm ar bērniem?', a: 'Jā — tas ir viens no Stambulas cieņpilnākajiem ģimenes kruīziem. Izklaide ir pieticīga (tautas dejas, sema, turku mūzika), bērni līdz 3 gadiem ir bez maksas, 4–8 gadi saņem 50% atlaidi. Bez naktsklubu atmosfēras. Ģimenes no Persijas līča, Indonēzijas, Malaizijas, Pakistānas un Marokas regulāri rezervē šo kruīzu.' },
+      { q: 'Vai šis kruīzs ir piemērots musulmaņu ģimenēm ar bērniem?', a: 'Jā — tas ir viens no Stambulas cieņpilnākajiem ģimenes kruīziem. Izklaide ir pieticīga (tautas dejas, sema, turku mūzika), bērni līdz 3 gadiem ir bez maksas, 4–9 gadi saņem €5 atlaidi. Bez naktsklubu atmosfēras. Ģimenes no Persijas līča, Indonēzijas, Malaizijas, Pakistānas un Marokas regulāri rezervē šo kruīzu.' },
       { q: 'Vai es varu lūgties uz kuģa?', a: 'Uz kuģa nav atvēlētas lūgšanu telpas, bet iesakām lūgties pirms iekāpšanas plkst. 20:00 (maghrib lūgšana bieži iekrīt šajā intervālā). Kabataş piestātnē ir lūgšanu telpas. Ja kuģošanas laikā 21:00–00:00 (isha) tev jālūdzas, runā ar komandu — varam sarunāt klusu stūri uz klāja.' },
-      { q: 'Kādas ir cenas musulmaņu ģimenei no 4 (2 pieaugušie, 2 bērni)?', a: 'Vakariņu kruīzs: 2 × €{p.dinnerStd} + 2 × €12.15 (puscena 4–8 gadi) = €72.90. Ja bērni ir līdz 3 gadiem, bez maksas: 2 × €{p.dinnerStd} = €48.60. Pievieno €5 viesnīcas transfēru katram pieaugušajam. Kopā: €48.60–€92.90 ģimenei no 4, bez priekšapmaksas, maksā uz kuģa.' },
+      { q: 'Kādas ir cenas musulmaņu ģimenei no 4 (2 pieaugušie, 2 bērni)?', a: 'Vakariņu kruīzs: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 atlaide 4–9 gadi) = €87.20. Ja bērni ir līdz 3 gadiem, bez maksas: 2 × €{p.dinnerStd} = €48.60. Pievieno €5 viesnīcas transfēru katram pieaugušajam. Kopā: €48.60–€92.90 ģimenei no 4, bez priekšapmaksas, maksā uz kuģa.' },
       { q: 'Vai viesnīcas transfērs arī ir halal?', a: 'Viesnīcas transfērs ir tikai automašīnas transports — nav iesaistīta nedz ēdiens, nedz dzērieni, tāpēc nav halal raizes. Mūsu šoferi ir profesionāli, cieņpilni un punktuāli. Transfēra zonas aptver Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli un 8 citus centrālos rajonus, kur musulmaņu ceļotāji parasti uzturas.' }
     ],
     cta: {
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% ATLAIDE · Viena ēdienkarte, premium standarts · Maksā uz kuģa'
     },
     intro: [
-      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vista vai köfte), saldējuma torte un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa izklaides programma — virpuļojošo dervišu ceremonija, 5 tautas dejas, austrumu deja, dzīvā mūzika un DJ — viss par €{p.dinnerStd}/personai.',
+      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vista vai köfte), saldējuma torte un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa astoņu priekšnesumu izklaides programma — Oba Dombra, virpuļojošo dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ — viss par €{p.dinnerStd}/personai.',
       'VIP sajūta sākas pie tava galda. Ja vēlies būt pēc iespējas tuvāk skatuvei un skatiem, pievieno **privāto galdu pie skatuves** (+€{p.romantic}/galdam), un vieta tiek rezervēta iepriekš — labākais rakurss uz dervišiem, tautas dejām un izgaismoto Bosforu. Iemīļotākā izvēle pāriem, svinībām un fotografēšanas cienītājiem.',
       'AMOR ir moderns kuģis: 42 metri, 3 klāji, līdz 400 viesiem, ziemā apsildāms un vasarā ar gaisa kondicionieri. Trīs stundu maršruts sākas Kabatašā (iekāpšana no 20:00, izbraukšana 21:00, atgriešanās 00:00) garām Dolmabahčei, Ortakojas mošejai, Rumeli cietoksnim un Bosfora tilta gaismām. TÜRSAB licence (A-17672), 4,9★ Google. Bez priekšapmaksas — maksā uz kuģa, un atcelšana ir bez maksas līdz 2 stundām pirms izbraukšanas.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Vai jūs pārdodat „VIP paketi“? Ar ko tā atšķiras no standarta?', a: 'Mēs nepārdodam atsevišķu VIP paketi — ir viena ēdienkarte, ko visiem pasniedz vienā un tajā pašā premium standartā. Tas, ko saucam par „VIP pieredzi“, ir tava vakara pielāgošana: privāts galds pie skatuves (+€{p.romantic}/galdam), uzmanīga apkalpošana pie galda un neobligāti dzērienu papildinājumi. Kruīzs ilgst 3 stundas, €{p.dinnerStd}/personai.' },
       { q: 'Vai €{p.dinnerStd} tiešām ir 40% atlaide?', a: 'Jā — mūsu cenrāža cena ir €{p.dinnerStdOriginal}/personai. €{p.dinnerStd} ir tiešās rezervācijas cena bez starpnieku komisijām. Tu maksā uz kuģa, un priekšapmaksas nav.' },
-      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vista vai köfte) un saldējuma torte desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Programma ir iekļauta: dervišu ceremonija, 5 tautas dejas, austrumu deja, dzīvā mūzika un DJ.' },
+      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vista vai köfte) un saldējuma torte desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Astoņu priekšnesumu programma ir iekļauta: Oba Dombra, dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ.' },
       { q: 'Vai alkohols ir iekļauts?', a: 'Nē — alkohols ir atsevišķs papildinājums: 2 glāzes vietējā vīna vai alus par +€{p.alcohol2}/personai. Bezalkoholiskie dzērieni ir iekļauti neierobežoti un bez maksas. Premium importētie dzērieni tiek rēķināti atsevišķi uz kuģa.' },
       { q: 'Kā nodrošināt galdu pie skatuves?', a: 'Rezervējot vienkārši izvēlies papildinājumu „privāts galds pie skatuves“ (+€{p.romantic}/galdam) — galds tiks rezervēts uz tavu vārdu. Labākās vietas aizņem iepriekšējas rezervācijas, tāpēc iesakām pievienot to pirms kruīza dienas.' },
       { q: 'Kāds ir kuģis?', a: 'AMOR — moderns pasažieru kuģis 42 metru garumā ar 3 klājiem un 400 viesu ietilpību, ziemā apsildāms un vasarā ar gaisa kondicionieri. Izbraukšana no Kabatašas piestātnes: iekāpšana 20:00, izbraukšana 21:00, atgriešanās 00:00. Maršruts: Dolmabahče, Ortakoja, Rumeli cietoksnis, Beilerbeji un Bosfora tilta gaismas.' }
@@ -283,7 +283,7 @@ module.exports = {
     faq: [
       { q: 'Kad atiet saulrieta kruīzs pa Bosforu?', a: 'Iekāpšana sākas plkst. 20:00 pie Kabataş piestātnes, kuģis atiet plkst. 21:00 un atgriežas ap plkst. 00:00. Vasarā (maijs–augusts) saule riet aptuveni starp 20:15 un 20:45 — zelta stunda notiek iekāpšanas laikā, un pats saulriets tieši ap atiešanu, vērojams no ūdens.' },
       { q: 'Vai saulrieta kruīzs pa Bosforu ir tas pats, kas vakariņu kruīzs?', a: 'Jā — tas ir viens kruīzs. Ir viena ikdienas atiešana plkst. 21:00 ar pilnām vakariņām un dzīviem šoviem uz kuģa. Garajos vasaras vakaros tas vienlaikus ir arī saulrieta kruīzs: iekāp zelta stundas laikā un kuģo cauri zilajai stundai līdz izgaismotajai naktij. Ziemā tas pats kruīzs ir tīra nakts gaismu pieredze.' },
-      { q: 'Cik maksā saulrieta kruīzs pa Bosforu?', a: 'No €{p.dinnerStd}/personai kruīzam (3 stundas, pilnas vakariņas, dzīva izklaide). Maksā uz kuģa — bez priekšapmaksas. Bērni 0–3 gadi bez maksas, 4–8 gadi puscena.' },
+      { q: 'Cik maksā saulrieta kruīzs pa Bosforu?', a: 'No €{p.dinnerStd}/personai kruīzam (3 stundas, pilnas vakariņas, dzīva izklaide). Maksā uz kuģa — bez priekšapmaksas. Bērni 0–3 gadi bez maksas, 4–9 gadi puscena.' },
       { q: 'Kurš gadalaiks ir labākais saulrieta kruīzam pa Bosforu?', a: 'No maija līdz augustam. Stambulas vēlie saulrieti (20:15–20:45) sakrīt ar atiešanu plkst. 21:00, tāpēc vienā vakarā iegūsti zelta stundu, saulrietu un izgaismotos tiltus. Rudenī un ziemā saule riet agrāk, un tas pats kruīzs kļūst par pilnu nakts gaismu pieredzi — tikpat fotogēnisku, tikai citā noskaņā.' },
       { q: 'Ko ņemt līdzi saulrieta kruīzam?', a: 'Viedtālruni vai kameru — zelta stunda un izgaismotie tilti to prasa. Vieglu jaku: pēc saulrieta vējš uz klāja pastiprinās. Smart casual apģērbu — tu ēd vakariņas, bet stingra apģērba koda nav.' },
       { q: 'Vai šajā kruīzā redzēšu izgaismotos tiltus naktī?', a: 'Jā — tā ir vakara otrā puse. Kruīzs notiek 21:00–00:00, tāpēc pēc saulrieta un zilās stundas tu kuģo zem pilnībā izgaismotā Bosfora tilta, garām izgaismotajām pilīm un Jaunavas tornim, un atgriezies Kabataş ap plkst. 00:00.' },
@@ -309,18 +309,18 @@ module.exports = {
     },
     intro: [
       '**Nakts tūre pa Bosforu** ir Stambulas ieteicamākā vakara aktivitāte. Lūk, kāpēc: pēc tumsas iestāšanās Bosfors transformējas. Bosfora tilts mainās starp zilu, violetu un zeltu. Dolmabahçe pils mirdz siltā dzeltenā krāsā. Ortaköy mošeja perfekti atspoguļojas melnajā ūdenī. Katrs Stambulas orientieris naktī sasniedz savu dramatisko virsotni.',
-      '**Mūsu nakts tūre pa Bosforu ar vakariņām** iepako pilno ikonisko vakaru: 3 stundas uz ūdens (21:00–00:00), turku vairāku ēdienu vakariņas, dzīvas tautas dejas (sema, 5 tautas dejas, austrumu), dzīvā mūzika un DJ programma, kas piepilda klāju līdz nakts beigām. Katrs viesis saņem to pašu programmu — bez "pamata" iespējas, kas izlaiž labākās daļas.',
+      '**Mūsu nakts tūre pa Bosforu ar vakariņām** iepako pilno ikonisko vakaru: 3 stundas uz ūdens (21:00–00:00), turku vairāku ēdienu vakariņas, astoņu priekšnesumu dzīvā folkloras programma (Oba Dombra, sema, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem), dzīvā mūzika un saksofona un DJ programma, kas piepilda klāju līdz nakts beigām. Katrs viesis saņem to pašu programmu — bez "pamata" iespējas, kas izlaiž labākās daļas.',
       'Vienalga, vai šī ir tava pirmā vizīte Stambulā un meklē "vienīgo, kas jādara naktī", vai esi bijis te iepriekš un vēlies pilsētas fotogēnākās 3 stundas, šī ir **nakts tūre pa Bosforu**, kas saņēmusi 4,8★ no vairāk nekā 11 317 ceļotājiem. TÜRSAB licencēta, maksā uz kuģa, bez priekšapmaksas.'
     ],
     highlights: [
       { title: 'Bosfors izgaismots savā dramatiskajā virsotnē', desc: 'Bosfora tilts maina krāsas (zila, violeta, zelts), pilis mirdz dzelteni, Ortaköy mošeja atspoguļojas melnajā ūdenī. 21:00–00:00 maksimālais izgaismojums visiem Stambulas orientieriem.' },
-      { title: 'Tradicionāls turku šovs uz kuģa', desc: 'Sema priekšnesums, 5 tradicionālās tautas dejas (no dažādiem Turcijas reģioniem), austrumu deja, dzīvā turku mūzika, pēc tam DJ programma. 40 minūšu šovs, pēc tam mūzika + vakariņas turpinās.' },
+      { title: 'Tradicionāls turku šovs uz kuģa', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ programma. 40 minūšu šovs, pēc tam mūzika + vakariņas turpinās.' },
       { title: 'Pilnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda (paçanga böreği), galvenais ēdiens (lasis, jūras karūsa, vista, frikadeles, veģetārais — tava izvēle), deserts (saldējuma kūka), neierobežoti bezalkoholiskie dzērieni. Halal sertificēts.' },
       { title: 'Pilns Bosfora maršruts', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jaunavas tornis → Kabataş.' }
     ],
     faq: [
       { q: 'Kad ir nakts tūre pa Bosforu?', a: 'Iekāpšana no plkst. 20:00 pie Kabataş piestātnes. Kuģis atiet plkst. 21:00, atgriežas ap plkst. 00:00. Iesakām ierasties 20 minūtes ātrāk, lai apsēstos un izvēlētos vietu.' },
-      { q: 'Cik maksā nakts tūre pa Bosforu?', a: 'Mūsu nakts tūre (3 stundas, vakariņas, šovs): €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–8 gadi puscena. Maksā uz kuģa.' },
+      { q: 'Cik maksā nakts tūre pa Bosforu?', a: 'Mūsu nakts tūre (3 stundas, vakariņas, šovs): €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–9 gadi puscena. Maksā uz kuģa.' },
       { q: 'Kāda ir atšķirība starp nakts tūri pa Bosforu un vakariņu kruīzu?', a: 'Tas ir tas pats, tikai cits meklēšanas vārds. "Nakts tūre pa Bosforu" ir tas, kā daudzi ceļotāji meklē; "vakariņu kruīzs" ir nozares termins. Tas pats kuģis, tā pati 3 stundu programma, tā pati ēdienkarte, tas pats šovs. Izvēlies savu vēlamo meklēšanas vārdu — pieredze ir identiska.' },
       { q: 'Nakts tūre pa Bosforu vai saulrieta kruīzs — kas ir vērtīgāks?', a: 'Nakts tūre = izgaismota Stambula, maksimāla gaismas drāma, pilna izklaides programma, ikoniskākās bildes izgaismotajiem tiltiem. Un tas ir viens kruīzs: vasarā (no maija līdz augustam) iekāpšana no plkst. 20:00 noķer zelta stundu, un saule riet tieši ap atiešanu plkst. 21:00 — tāpēc viens un tas pats vakars aptver gan saulrietu, gan nakti. Nav jāizvēlas un nav jārezervē divreiz.' },
       { q: 'Vai varu doties nakts tūrē pa Bosforu savā pirmajā dienā Stambulā?', a: 'Jā — iesakām. Daudzi ceļotāji rezervē nakts tūri pirmajā vakarā, jo tā sniedz pilnu orientēšanos: visi galvenie orientieri no ūdens, ar labu ēdienu un izklaidi. Vienkāršāk nekā cīnīties ar laika starpību un mēģināt staigāt 1. dienā. Viesnīcas transfērs pieejams no centrālajiem rajoniem.' },
@@ -350,7 +350,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Pilnas turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda, galvenais ēdiens (lasis/jūras karūsa/vista/frikadeles/veģetārais), saldējuma kūka. Halal sertificēts. Neierobežoti bezalkoholiskie dzērieni iekļauti.' },
-      { title: 'Dzīvs turku tautas deju šovs', desc: 'Sema priekšnesums, 5 tradicionālās tautas dejas, austrumu deja, dzīvā turku mūzika, DJ. 40 minūšu šovs, fona mūzika turpinās.' },
+      { title: 'Dzīvs turku tautas deju šovs', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs, gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ. 40 minūšu šovs, fona mūzika turpinās.' },
       { title: 'Pilns Bosfora nakts maršruts', desc: '3 stundu tūre: Dolmabahçe, Çırağan, Ortaköy mošeja, Bosfora tilts, Bebek, Rumeli Hisarı, FSM tilts, Beylerbeyi, Üsküdar, Jaunavas tornis. Abi krasti, eiropas un āzijas.' },
       { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
     ],
@@ -359,7 +359,7 @@ module.exports = {
       q: "Kādi šovi ir vakariņu kruīza programmā?",
       a: "Astoņi priekšnesumi: Oba Dombra (Vidusāzijas šamaņu ritms), Mevlanas griežošos dervišu ceremonija, Sarı Gelin, azerbaidžāņu popurijs, austrumnieciskais šovs (vēderdeja), turku un Anatolijas popurijs, gruzīnu Gandagan un Kaukāza popurijs ar tradicionālo nažu deju, kā arī noslēgumā dzīvs saksofons un DJ. Programma norisinās visa kruīza laikā, un secība var mainīties."
     },
-      { q: 'Cik maksā vakariņu kruīzs Stambulā?', a: 'Mūsu vakariņu kruīzs €{p.dinnerStd}/personai (parastā cena €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–8 gadi 50% atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
+      { q: 'Cik maksā vakariņu kruīzs Stambulā?', a: 'Mūsu vakariņu kruīzs €{p.dinnerStd}/personai (parastā cena €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–9 gadi €5 atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
       { q: 'Kas ir iekļauts vakariņu kruīza Stambulā cenā?', a: '3 stundu tūre pa Bosforu, turku vairāku ēdienu vakariņas (meze, silta uzkoda, galvenais ēdiens, deserts), neierobežoti bezalkoholiskie dzērieni, dzīvs tautas deju šovs (sema, tautas dejas, austrumu), dzīvā mūzika + DJ, pieeja atklātajam klājam, nodokļi iekļauti. Viesnīcas transfērs un alkohols ir brīvprātīgi papildinājumi.' },
       { q: 'No kurienes atiet vakariņu kruīzs Stambulā?', a: 'Kabataş piestātne, Stambula — Eiropas krastā, netālu no Dolmabahçe pils. Precīzais tikšanās punkts tiek paziņots pa WhatsApp / Telegram pēc rezervācijas. Gājēju video no Dolmabahçe tramvaja pieturas un Kabataş tramvaja pieturas atrodami tikšanās vietas sadaļā augstāk.' },
       { q: 'Cik ilgs ir vakariņu kruīzs — un kad tas sākas?', a: 'Kopā 3 stundas. Iekāpšana no plkst. 20:00, kuģis atiet precīzi plkst. 21:00, atgriežas ap plkst. 00:00. Iesakām ierasties 15–20 minūtes ātrāk, lai apsēstos un izvēlētos vietu.' },
@@ -391,7 +391,7 @@ module.exports = {
     highlights: [
       { title: 'Visi Stambulas ikoniskie nakts skati', desc: 'Dolmabahçe pils, Ortaköy mošeja, izgaismotais Bosfora tilts, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Jaunavas tornis. Katrs svarīgais orientieris savā maksimālajā nakts izgaismojumā.' },
       { title: 'Pilnas turku vakariņas iekļautas', desc: '10 meze, silta uzkoda, galvenais ēdiens (lasis/jūras karūsa/vista/frikadeles/veģetārais), deserts, neierobežoti bezalkoholiskie dzērieni. Halal sertificēts. Cena €{p.dinnerStd}/personai — viss iekļauts.' },
-      { title: 'Dzīvas tautas dejas + sema + austrumu', desc: 'Tradicionāla turku izklaide: Mevlana sema priekšnesums, 5 reģionālās tautas dejas, austrumu deja, dzīvā mūzika, DJ. 40 minūšu šovs, fona mūzika visu vakaru.' },
+      { title: 'Dzīvas tautas dejas + sema + austrumu', desc: 'Astoņu priekšnesumu dzīvā programma: Oba Dombra, Mevlana sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs, gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ. 40 minūšu šovs, fona mūzika visu vakaru.' },
       { title: 'Viegli pirmajiem apmeklētājiem Stambulā', desc: 'Centrāls tikšanās punkts (Kabataş piestātne), viesnīcas transfērs (+€{p.transfer}/personai), angliski runājoša komanda, maksā uz kuģa. Nulle loģistikas stresa. Atnāc, izbaudi, dodies.' }
     ],
     faq: [
@@ -433,9 +433,9 @@ module.exports = {
     faq: [
       { q: 'Kāda ir labākā kuģa tūre Stambulā?', a: 'Bosfora vakariņu kruīzs konsekventi ierindojas #1. Aptver visus svarīgos orientierus, ietver vakariņas un izklaidi un kursē vakarā, kad orientieri ir izgaismoti. Citas iespējas (hop-on prāmji, rīta tūristu kuģi) aptver īsākus maršrutus, izlaiž vakariņas un nepiedāvā izklaidi. Vienam vakaram Stambulā šī ir vispilnīgākā kuģa tūre.' },
       { q: 'Cik ilgi turpinās kuģa tūre Stambulā?', a: '3 stundas. Iekāpšana no plkst. 20:00 pie Kabataş piestātnes, atiešana 21:00, atgriešanās ~00:00. Aptver Bosforu no Dolmabahçe līdz Rumeli Hisarı un atpakaļ. Pietiekami laika pilnām vakariņām + šovam bez noguruma.' },
-      { q: 'Cik maksā kuģa tūre Stambulā?', a: 'Mūsu kuģa un vakariņu tūre: €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–8 gadi puscena. Maksā uz kuģa. Alkohols un viesnīcas transfērs ir brīvprātīgi papildinājumi.' },
+      { q: 'Cik maksā kuģa tūre Stambulā?', a: 'Mūsu kuģa un vakariņu tūre: €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. 0–3 gadi bez maksas, 4–9 gadi puscena. Maksā uz kuģa. Alkohols un viesnīcas transfērs ir brīvprātīgi papildinājumi.' },
       { q: 'No kurienes atiet kuģa tūres Stambulā?', a: 'Mūsu kuģis atiet no Kabataş piestātnes, Eiropas Stambulas centra, netālu no Dolmabahçe pils. Pieejams ar tramvaju T1 (Kabataş pietura), taksi 15 min no Taksim vai kājām 20 min no Taksim. Viesnīcas transfērs pieejams no centrālajiem rajoniem par +€{p.transfer}/personai.' },
-      { q: 'Vai šī kuģa tūre ir piemērota ģimenēm ar bērniem?', a: 'Jā — ļoti ģimenei draudzīga. Bērni 0–3 gadi bez maksas, 4–8 gadi 50% atlaide. Pārklāta iekštelpu zona, bērnu ēdienkarte pēc pieprasījuma un izklaide (sema, tautas dejas), kas saista bērnus. Daudzas ģimenes no visas pasaules rezervē šo tūri.' },
+      { q: 'Vai šī kuģa tūre ir piemērota ģimenēm ar bērniem?', a: 'Jā — ļoti ģimenei draudzīga. Bērni 0–3 gadi bez maksas, 4–9 gadi €5 atlaide. Pārklāta iekštelpu zona, bērnu ēdienkarte pēc pieprasījuma un izklaide (sema, tautas dejas), kas saista bērnus. Daudzas ģimenes no visas pasaules rezervē šo tūri.' },
       { q: 'Vai man jāņem kas līdzi kuģa tūrei?', a: 'Pase vai ID (reģistrācijai uz kuģa), viegla jaka (klājs var kļūt vēss), ērti apavi, ja plāno dejot. Viedtālrunis bildēm. Skaidra nauda vai karte samaksai uz kuģa (abas pieņemtas). Viss pārējais — ēdiens, dzērieni, izklaide — ir uz kuģa.' }
     ],
     cta: {
@@ -464,14 +464,14 @@ module.exports = {
       { title: 'Viss Bosfors vienā', desc: 'Eiropas krasts (Dolmabahçe, Ortaköy, Rumeli Hisarı), Āzijas krasts (Beylerbeyi, Üsküdar), abi Bosfora tilti, Jaunavas tornis. Katrs svarīgais orientieris redzams 3 stundu laikā.' },
       { title: 'Vakariņas + izklaide iekļautas', desc: 'Ne tikai tūristu prāmis — pilnas turku vakariņas ar meze, galveno ēdienu, desertu. Dzīvs tautas deju šovs, sema, austrumu deja, DJ. Izklaides vērtība pāri vienkāršam skatam.' },
       { title: 'Vakars = labākais izgaismojums', desc: 'Dienas tūres pa Bosforu rāda orientierus plakanā gaismā. Vakara tūres iemūžina visu izgaismotu: mirdzošas pilis, krāsainie tilti, mošejas atspoguļotas tumšajā ūdenī. Labākas bildes, dramatiskāk.' },
-      { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: 'Bez priekšapmaksas. Maksā uz kuģa (skaidrā vai ar karti). Bezmaksas atcelšana līdz 2 stundām pirms atiešanas. 0–3 gadi bez maksas, 4–8 gadi puscena. Caurspīdīgas cenas.' }
+      { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: 'Bez priekšapmaksas. Maksā uz kuģa (skaidrā vai ar karti). Bezmaksas atcelšana līdz 2 stundām pirms atiešanas. 0–3 gadi bez maksas, 4–9 gadi puscena. Caurspīdīgas cenas.' }
     ],
     faq: [
       { q: 'Kādas ir labākās ekskursijas pa Bosforu Stambulā?', a: 'Vakara tūres ar vakariņām konsekventi ir augšgalā. Dienas iespējas (1 stundas apļa tūres, 2 stundu tūristu kuģi) rāda mazāk un neietver vakariņas. Vērtības ziņā grūti pārspēt 3 stundu tūri ar vakariņām, šovu un centrālo tikšanās punktu. Mūsu tūres izmaksas €{p.dinnerStd} novērš atsevišķas vakara maltītes + izklaides nepieciešamību.' },
       { q: 'Cik ilgs ir Bosfora tūres ilgums?', a: 'Mūsu Bosfora ekskursija ilgst kopā 3 stundas (atiešana 21:00, atgriešanās 00:00). Ir īsākas iespējas (1 stundas tūristu prāmji, 90 minūšu tūres), bet tās izlaiž vakariņas un izklaidi. Pilnai vakara pieredzei 3 stundas ir ideāli — pietiekami, lai redzētu visu bez noguruma.' },
       { q: 'Vai Bosfora ekskursija ir vērts?', a: 'Jā — gandrīz visi Stambulas ceļvedi iekļauj "Bosfora kruīzu" 5 galvenajās obligātajās lietās. Pilsēta uzbūvēta ap šo jūras šaurumu; ja neesi redzējis Bosforu no ūdens, tad īsti neesi redzējis Stambulu. Mūsu konkrētā vakara tūre pievieno vakariņas un izklaidi, padarot to par pilnu vakara ekskursiju, nevis tikai apskati.' },
       { q: 'Ko vajadzētu ņemt līdzi Bosfora ekskursijai?', a: 'Pase vai ID (reģistrācijai uz kuģa), viegla jaka (vakara klājs ir vēss), viedtālrunis/kamera, ērti apavi deju grīdai. Skaidra nauda vai karte samaksai. Viss pārējais ir uz kuģa. Viesnīcas transfērs pieejams par +€{p.transfer}/personai, ja nevēlies izmantot sabiedrisko transportu.' },
-      { q: 'Vai Bosfora ekskursija ir piemērota bērniem?', a: 'Jā — ļoti ģimenei draudzīga. Bērni 0–3 gadi bez maksas (transfērs iekļauts), 4–8 gadi 50% atlaide. Pārklāta iekštelpu zona, bērnu ēdienkarte pēc pieprasījuma un maiga, saistoša izklaide. Daudzas ģimenes rezervē šo tūri kā Stambulas brauciena augstāko punktu.' },
+      { q: 'Vai Bosfora ekskursija ir piemērota bērniem?', a: 'Jā — ļoti ģimenei draudzīga. Bērni 0–3 gadi bez maksas (transfērs iekļauts), 4–9 gadi €5 atlaide. Pārklāta iekštelpu zona, bērnu ēdienkarte pēc pieprasījuma un maiga, saistoša izklaide. Daudzas ģimenes rezervē šo tūri kā Stambulas brauciena augstāko punktu.' },
       { q: 'Kādi ir Bosfora ekskursijas pieturpunkti?', a: 'Tā ir nepārtraukta tūre — mēs nepieturam pie orientieriem (bez izkāpšanas). Kuģis kuģo garām katram orientierim, komanda paskaidro, ko redzi, atpūties pie galda vai izej uz atklātā klāja bildēm. Bez rindām, bez staigāšanas, bez plānošanas stresa — tikai 3 mierīgas stundas uz ūdens.' }
     ],
     cta: {
@@ -503,12 +503,12 @@ module.exports = {
       { title: 'Pašreizējā uzsākšanas cena 40% ATLAIDE', desc: 'No €{p.dinnerStdOriginal}, tagad €{p.dinnerStd}. 40% atlaide, jo rezervē tieši. Nav laika ierobežots triks — tā ir mūsu standarta tiešās rezervācijas cena.' }
     ],
     faq: [
-      { q: 'Cik maksā Bosfora kruīza biļetes?', a: '€{p.dinnerStd}/personai (parastā €{p.dinnerStdOriginal}). Ietver 3 stundu tūri, turku vairāku ēdienu vakariņas, dzīvu tautas deju šovu, neierobežotus bezalkoholiskos dzērienus. 0–3 gadi bez maksas, 4–8 gadi 50% atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
+      { q: 'Cik maksā Bosfora kruīza biļetes?', a: '€{p.dinnerStd}/personai (parastā €{p.dinnerStdOriginal}). Ietver 3 stundu tūri, turku vairāku ēdienu vakariņas, dzīvu tautas deju šovu, neierobežotus bezalkoholiskos dzērienus. 0–3 gadi bez maksas, 4–9 gadi €5 atlaide. Maksā uz kuģa — bez priekšapmaksas.' },
       { q: 'Kur varu nopirkt Bosfora kruīza biļetes?', a: 'Tieši no šīs lapas — aizpildi rezervācijas veidlapu, mēs apstiprināsim nekavējoties pa WhatsApp / Telegram. Maksā uz kuģa. Trešo pušu platformas (Viator, GetYourGuide, Klook) arī pārdod biļetes, bet parasti ņem €30–80+ — tas ir starpnieku pievienojums. Tiešais ir lētāks un ātrāks.' },
       { q: 'Vai man jāizdrukā Bosfora kruīza biļete?', a: 'Nē — nav nepieciešama fiziska biļete vai kupons. Pēc rezervācijas nosūtīsim apstiprinājumu pa WhatsApp (vai Telegram) ar tikšanās vietu, laiku un rezervācijas vārdu. Vienkārši parādi telefonu pie piestātnes. Tas ir viss.' },
       { q: 'Vai varu atcelt vai atgriezt Bosfora kruīza biļeti?', a: 'Jā — bezmaksas atcelšana līdz 2 stundām pirms atiešanas. Vienkārši raksti pa WhatsApp. Tā kā vēl neesi samaksājis (maksā uz kuģa), atmaksa nav nepieciešama — vienkārši neieradīsies, bez maksas. Daudz elastīgāk nekā iepriekš apmaksātas biļetes no trešajām pusēm.' },
       { q: 'Vai Bosfora kruīza biļetes ir pieejamas tajā pašā dienā?', a: 'Bieži jā, īpaši darba dienās. Nedēļas nogales un brīvdienas piepildās ātrāk. Pārbaudi pieejamību ar rezervācijas veidlapu — atjaunina reālā laikā. Pēdējās minūtes rezervācija parasti iespējama dažas stundas pirms atiešanas plkst. 21:00. Steidzamiem pieprasījumiem — WhatsApp.' },
-      { q: 'Vai bērnu biļetes Bosfora kruīzam ir bez maksas?', a: 'Bērni **0–3 gadi pilnīgi bez maksas** (nekādas maksas, nekādas slēptas izmaksas, transfērs iekļauts). **4–8 gadi 50% atlaide** (€{p.dinnerStd}/2 = €12 Standartā). **9+ gadi pilna pieaugušā cena.** Caurspīdīgas, fiksētas cenas — bez "mazuļa maksas" trikiem.' }
+      { q: 'Vai bērnu biļetes Bosfora kruīzam ir bez maksas?', a: 'Bērni **0–3 gadi pilnīgi bez maksas** (nekādas maksas, nekādas slēptas izmaksas, transfērs iekļauts). **4–9 gadi €5 atlaide** (€{p.dinnerStd}/2 = €12 Standartā). **10+ gadi pilna pieaugušā cena.** Caurspīdīgas, fiksētas cenas — bez "mazuļa maksas" trikiem.' }
     ],
     cta: {
       primary: 'Pirkt biļetes · Maksā uz kuģa',
@@ -556,7 +556,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Kruīza cena Stambulā no €{p.dinnerStd} — caurspīdīgas cenas',
-      description: 'Bosfora kruīza cenas Stambulā: €{p.dinnerStd}/personai, viena ēdienkarte. Bērni 0–3 bez maksas, 4–8 puscena. Caurspīdīgi papildinājumi.'
+      description: 'Bosfora kruīza cenas Stambulā: €{p.dinnerStd}/personai, viena ēdienkarte. Bērni 0–3 bez maksas, 4–9 puscena. Caurspīdīgi papildinājumi.'
     },
     hero: {
       h1: 'Kruīza cena Stambulā',
@@ -565,17 +565,17 @@ module.exports = {
     },
     intro: [
       '**Kruīzu cenas Stambulā** ļoti atšķiras — no €15 budžeta prāmjiem, kas izlaiž vakariņas, līdz €150+ kūrorta jahtām. Mūsu cena ir vidū un dod labāko vērtību: €{p.dinnerStd} ar pilnu 3 stundu vakariņu kruīzu un dzīvu šovu. Bez slēptām maksām, bez pārsteiguma pievienojumiem.',
-      'Detalizēts pārskats par **Stambulas kruīza cenu**, jo caurspīdīgums ir svarīgs:\n\n- **Vakariņu kruīzs**: €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}, 40% atlaide). Ietver 3 stundu tūri, 10 meze, galveno ēdienu, desertu, neierobežotus bezalkoholiskos dzērienus, dzīvu šovu.\n- **0–3 gadi**: Bez maksas. 4–8 gadi: 50% atlaide. 9+ gadi: pilna cena.\n\nPapildinājumi (brīvprātīgi):\n- 2 glāzes alkohola: +€{p.alcohol2}/personai\n- Viesnīcas transfērs turp un atpakaļ: +€{p.transfer}/personai\n- Romantiskais galda klājums: +€{p.romantic}/galdam',
+      'Detalizēts pārskats par **Stambulas kruīza cenu**, jo caurspīdīgums ir svarīgs:\n\n- **Vakariņu kruīzs**: €{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}, 40% atlaide). Ietver 3 stundu tūri, 10 meze, galveno ēdienu, desertu, neierobežotus bezalkoholiskos dzērienus, dzīvu šovu.\n- **0–3 gadi**: Bez maksas. 4–9 gadi: €5 atlaide. 10+ gadi: pilna cena.\n\nPapildinājumi (brīvprātīgi):\n- 2 glāzes alkohola: +€{p.alcohol2}/personai\n- Viesnīcas transfērs turp un atpakaļ: +€{p.transfer}/personai\n- Romantiskais galda klājums: +€{p.romantic}/galdam',
       'Un svarīgi: **maksā uz kuģa**. Tu neapsoli ne centu, līdz esi uz kuģa. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas. Bez saistībām, bez riska — patērētājam draudzīgākā **Stambulas kruīza cena**, ko atradīsi.'
     ],
     highlights: [
       { title: 'Standarta: €{p.dinnerStd} (no €{p.dinnerStdOriginal})', desc: '40% atlaide no parastās cenas. 3 stundu tūre, pilnas turku vakariņas, dzīvs šovs, neierobežoti bezalkoholiskie dzērieni. Vispopulārākā pakete — sedz visu, kas vajadzīgs labam vakaram.' },
       { title: 'Maksā uz kuģa — €0 priekšapmaksa', desc: 'Rezervācija ir bez maksas un bez kartes datiem. Samaksā uz kuģa vakariņu kruīza laikā. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' },
-      { title: 'Bērnu cena: 0–3 bez maksas, 4–8 puscena', desc: '0–3 pilnīgi bez maksas (nekādu maksu). 4–8 ar 50% atlaidi no pieaugušā cenas. 9+ pilna pieaugušā cena. Caurspīdīgs, bez ģimenes cenu trikiem. Transfērs arī bez maksas 0–3.' },
+      { title: 'Bērnu cena: 0–3 bez maksas, 4–9 puscena', desc: '0–3 pilnīgi bez maksas (nekādu maksu). 4–9 ar €5 atlaidi no pieaugušā cenas. 10+ pilna pieaugušā cena. Caurspīdīgs, bez ģimenes cenu trikiem. Transfērs arī bez maksas 0–3.' },
       { title: 'Papildinājumi — tikai kad gribi', desc: 'Alkohols (2 glāzes): €{p.alcohol2}/personai. Transfērs: €{p.transfer}/personai. Romantiskais galds: €{p.romantic}/galdam. Visi brīvprātīgi, nav iesaiņoti. Izvēlies tikai to, kas vajadzīgs.' }
     ],
     faq: [
-      { q: 'Cik maksā ekskursija Stambulā?', a: 'Vakariņu kruīzs: €{p.dinnerStd}/personai (parastā €{p.dinnerStdOriginal}, 40% atlaide). 0–3 gadi bez maksas, 4–8 gadi puscena. Maksā uz kuģa — bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' },
+      { q: 'Cik maksā ekskursija Stambulā?', a: 'Vakariņu kruīzs: €{p.dinnerStd}/personai (parastā €{p.dinnerStdOriginal}, 40% atlaide). 0–3 gadi bez maksas, 4–9 gadi puscena. Maksā uz kuģa — bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' },
       { q: 'Vai Stambulas ekskursijas cenā ir slēptas maksas?', a: 'Nē. Cena ietver: 3 stundu tūri, pilnas vakariņas (meze, uzkoda, galveno ēdienu, desertu), neierobežotus bezalkoholiskos dzērienus, dzīvu šovu, nodokļus. Brīvprātīgie papildinājumi (alkohols, transfērs, romantiskais galds) ir atsevišķi un caurspīdīgi cenoti — tu maksā tikai par to, ko pievieno. Bez "servisa maksas", "ostas nodevas", pārsteiguma pievienojumiem.' },
       { q: 'Kāpēc Stambulas ekskursijas cenai ir 40% atlaide — vai tas ir triks?', a: 'Bez trika. Parastā cena €{p.dinnerStdOriginal} ir tā, ko ņem trešo pušu vietnes (Viator, GetYourGuide, Klook) — ar savām komisijām. Rezervē tieši un saņem €{p.dinnerStd}. Tā ir 40% atšķirība. Bez laika ierobežotām vai dinamiskām cenu trikiem.' },
       { q: 'Kā Stambulas ekskursijas cena salīdzinās ar citām iespējām?', a: 'Apļa prāmji: €5–10, 1 stunda, bez vakariņām, bez izklaides, tikai apskate. Budžeta paku vakara tūres: €20–30, pārpildītas, vidējs ēdiens, īss šovs. Mūsu kruīzs (€{p.dinnerStd}): 3 stundas, pilnas vakariņas, pilns šovs, privāts galds, TÜRSAB licencēts. Kūrorta jahtas: €100–150+, pārmērīgi vieniem/pāriem.' },
