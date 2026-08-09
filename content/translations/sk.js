@@ -30,7 +30,7 @@ module.exports = {
     faq: [
       { q: 'Kedy začína plavba s večerou po Bospore?', a: 'Nalodenie začína o 20:00 na prístavisku Kabataş. Loď odchádza o 21:00 a vracia sa okolo 00:00. Odporúčame prísť 15-20 minút skôr, aby ste sa usadili a uvoľnili.' },
       { q: 'Koľko stojí plavba s večerou po Bospore?', a: 'Plavba s večerou €{p.dinnerStd}/osoba (bežná cena €{p.dinnerStdOriginal}). 0-3 roky zadarmo, 4-9 rokov €5 zľava. Platba na palube — bez platby vopred.' },
-      { q: 'Je alkohol zahrnutý v plavbe s večerou?', a: 'Neobmedzené nealkoholické nápoje (voda, kola, džús) sú zahrnuté v cene. Alkoholový balíček je voliteľný: 2 poháre (víno, pivo, rakı, vodka alebo gin) +€{p.alcohol2}/osoba. Ďalšie a dovážané nápoje sa účtujú zvlášť na palube.' },
+      { q: 'Je alkohol zahrnutý v plavbe s večerou?', a: 'Neobmedzené nealkoholické nápoje (voda, kola, džús) sú zahrnuté v cene. Alkoholový balíček je voliteľný: 2 poháre (víno, pivo, rakı, vodka, whisky, gin a ďalšie) +€{p.alcohol2}/osoba. Ďalšie a dovážané nápoje sa účtujú zvlášť na palube.' },
       { q: 'Existuje transfer z hotela?', a: 'Áno — služba vyzdvihnutia a odvozu späť je +€{p.transfer}/osoba. Obsluhované zóny: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce a Şişli. Túto možnosť si môžete vybrať v rezervačnom formulári.' },
       { q: 'Je plavba s večerou po Bospore halal?', a: 'Absolútne. Všetko mäso podávané na palube je halal certifikované. Alkohol je voliteľný doplnok (nikdy nevnucovaný hosťom) a usporiadanie stolov prirodzene oddeľuje hostí, ktorí preferujú jedlo bez alkoholu. Ponúkame aj vegetariánske alternatívy bez ďalších nákladov.' },
       { q: 'Ako sa mám obliecť?', a: 'Smart casual oblečenie. Večery v Istanbule môžu byť chladné aj v lete — odporúčame ľahkú bundu alebo šál. Nie je povinný odevný predpis, ale plavky, žabky alebo športové oblečenie nie sú vhodné pre atmosféru večere.' }
@@ -97,7 +97,7 @@ module.exports = {
       { title: 'Romantický stôl pri sviečkach', desc: 'Pridajte romantické usporiadanie stola s +€{p.romantic}/stôl: čerstvé červené ruže, žiariace sviečky, lupienky ruží na obruse a ručne písaná karta. Fotografie zahrnuté.' },
       { title: 'Najlepšie stoly pre prechod zo západu slnka do noci', desc: 'Stoly pri okne sú vyhradené pre páry. Sledujte rozsvietenie mostu Bospor, žiaru Dievčej veže a osvetlenie mešity Ortaköy zo svojho súkromného stola.' },
       { title: 'Živé husle a intímna atmosféra', desc: 'Živé husle a akustická turecká hudba počas večere vytvárajú pomalú, romantickú atmosféru. Potom nastupuje DJ a páry tancujú na otvorenej palube pod svetlami.' },
-      { title: 'Víno, šampanské, prémiové páry', desc: 'Pridajte balíček 2 pohárov alkoholu (+€{p.alcohol2}/osoba) — miestne víno, pivo alebo rakı. Dovážané šampanské a prémiové páry na požiadanie — opýtajte sa pri rezervácii.' }
+      { title: 'Víno, šampanské, prémiové páry', desc: 'Pridajte balíček 2 pohárov alkoholu (+€{p.alcohol2}/osoba) — víno, pivo, rakı, vodka, whisky, gin a ďalšie. Dovážané šampanské a prémiové páry na požiadanie — opýtajte sa pri rezervácii.' }
     ],
     faq: [
       { q: 'Čo robí túto plavbu romantickou?', a: 'Kombinácia súkromného stola, usporiadania so sviečkami (voliteľné +€{p.romantic}), turecká viacchodová večera, živé husle a akustická hudba a osvetlené mosty Bosporu prechádzajúce nad vami. Zážitok navrhujeme pre páry — pokojná atmosféra na začiatku, potom energický DJ a tanec. Tempo si vyberáte vy.' },
@@ -241,7 +241,7 @@ module.exports = {
       { title: 'Súkromný stôl pre dvoch', desc: 'Súkromný stôl pre 2 osoby, nezdieľaný. Priorita stolov pri okne pre páry. Fotografie západu slnka a nočného Bosporu priamo pri vašom okne.' },
       { title: 'Pomalá viacchodová večera', desc: '10 variantov tureckých mezze, teplý predjedlo, hlavný chod (losos, morský vlk, kura, mäsové guľôčky alebo vegetariánske), zmrzlinová torta ako dezert. Podávaná pomaly počas 3 hodín — neponáhľate sa.' },
       { title: 'Živé husle a tichá hudba', desc: 'Živé husle a akustická turecká hudba počas večere vytvárajú intímnu atmosféru vhodnú pre konverzáciu. Potom nastupuje DJ pre páry, ktoré chcú tancovať.' },
-      { title: 'Doplnky pre zvláštne večery', desc: 'Romantické usporiadanie stola (sviečky, ruže): +€{p.romantic}. 2 poháre alkoholu (víno, pivo alebo rakı): +€{p.alcohol2}/osoba. Transfer z hotela (tam a späť): +€{p.transfer}/osoba. Vyberte si, čo sa hodí k vášmu večeru.' }
+      { title: 'Doplnky pre zvláštne večery', desc: 'Romantické usporiadanie stola (sviečky, ruže): +€{p.romantic}. 2 poháre alkoholu (víno, pivo, rakı, vodka, whisky, gin a ďalšie): +€{p.alcohol2}/osoba. Transfer z hotela (tam a späť): +€{p.transfer}/osoba. Vyberte si, čo sa hodí k vášmu večeru.' }
     ],
     faq: [
       { q: 'Je táto plavba po Bospore vhodná pre obyčajný večer, nie pre zvláštnu príležitosť?', a: 'Áno — väčšina našich párov neoslavuje nič zvláštne, len majú krásny večer spolu. Atmosféra je vrelá a príjemná bez toho, aby bola prehnaná. Môžete pridať romantické usporiadanie stola (+€{p.romantic}), ak chcete extra, alebo si jednoducho užiť štandardný večer.' },
