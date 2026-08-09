@@ -59,7 +59,7 @@ module.exports = {
     {
       icon: 'optional',
       title: 'Add-ons for special nights',
-      desc: 'Romantic table setup (candles, roses): +€{p.romantic}. 2-glass alcohol package (wine, rakı): +€{p.alcohol2}/person. Hotel transfer (round-trip): +€{p.transfer}/person. Pick what fits your evening.'
+      desc: 'Romantic table setup (candles, roses): +€{p.romantic}. 2-glass alcohol package (wine, beer, rakı, vodka, whisky, gin and more): +€{p.alcohol2}/person. Hotel transfer (round-trip): +€{p.transfer}/person. Pick what fits your evening.'
     }
   ],
 

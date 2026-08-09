@@ -44,8 +44,8 @@ the website wizard, in 32 languages.
 
 ## Add-ons (delta pricing on top of base tour)
 
-- 2 glasses of alcohol: +€10/person
-- Hotel transfer (Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy, Beyoğlu, Şişli districts + Hilton Istanbul Bosphorus): +€5/person
+- 2 glasses of alcohol: +€10/person (wine, beer, rakı, vodka, whisky, gin, tequila, rum, cognac or champagne — choose any two)
+- Hotel transfer (Beşiktaş, Sütlüce, Sirkeci, Topkapı, Taksim, Eminönü, Kağıthane, Fatih, Laleli, Sultanahmet, Ortaköy, Beyoğlu, Yenikapı, Şişli districts + Hilton Istanbul Bosphorus): +€5/person
 - Romantic table arrangement (flowers, candles): +€15/booking
 
 ## Route

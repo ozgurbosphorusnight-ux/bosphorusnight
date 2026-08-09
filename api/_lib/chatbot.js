@@ -20,7 +20,7 @@ DINNER CRUISE — €24.30/person (normally €40.50)
 - Every group has its own private reserved table — no sharing with strangers
 
 OPTIONAL ADD-ONS:
-- Alcohol: 2 glasses — €10/person (soft drinks are always unlimited and included)
+- Alcohol: 2 glasses — €10/person. Choose from wine, beer, rakı, vodka, whisky, gin, tequila, rum, cognac or champagne. (Soft drinks are always unlimited and included.)
 - Hotel transfer: €5/person — availability depends on your hotel's area; the team confirms coverage. If not covered, meet us at Kabataş Pier.
 - Romantic table setup: €15 per booking
 

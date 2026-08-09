@@ -31,7 +31,7 @@ module.exports = {
       { q: 'Hoe laat begint de Bosporus dinercruise?', a: 'Inschepen begint om 20:00 bij de aanlegplaats Kabataş. De boot vertrekt om 21:00 en keert rond 00:00 terug. Wij raden aan 15-20 minuten eerder aan te komen om u te installeren en te ontspannen.' },
       { q: 'Hoeveel kost de Bosporus dinercruise?', a: 'Dinercruise €{p.dinnerStd}/persoon (normale prijs €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-9 jaar €5 korting. Betaling aan boord — geen vooruitbetaling.' },
       { q: 'Is alcohol inbegrepen in de dinercruise?', a: 'Onbeperkt frisdrank (water, cola, sap) is inbegrepen in de prijs. Het alcoholpakket is optioneel: 2 glazen (wijn, bier, rakı, wodka of gin) +€{p.alcohol2}/persoon. Extra en geïmporteerde dranken worden apart in rekening gebracht aan boord.' },
-      { q: 'Is er hoteltransfer?', a: 'Ja — de ophaal- en terugbrengservice is +€{p.transfer}/persoon. Bediende zones: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce en Şişli. U kunt deze optie selecteren in het reserveringsformulier.' },
+      { q: 'Is er hoteltransfer?', a: 'Ja — de ophaal- en terugbrengservice is +€{p.transfer}/persoon. Bediende zones: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce en Şişli. U kunt deze optie selecteren in het reserveringsformulier.' },
       { q: 'Is de Bosporus dinercruise halal?', a: 'Absoluut. Al het vlees dat aan boord wordt geserveerd is halal-gecertificeerd. Alcohol is een optioneel supplement (nooit opgelegd aan gasten), en de tafelopstelling scheidt natuurlijk gasten die de voorkeur geven aan een alcoholvrije maaltijd. Wij bieden ook vegetarische alternatieven zonder extra kosten.' },
       { q: 'Hoe moet ik mij kleden?', a: 'Smart casual kleding. Avonden in Istanbul kunnen zelfs in de zomer fris zijn — wij raden een lichte jas of een sjaal aan. Er is geen verplichte kledingvoorschrift, maar zwemkleding, slippers of sportkleding zijn niet geschikt voor de dineratmosfeer.' }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporus met Kinderen — Familiecruise vanaf €{p.dinnerStd}/volwassene',
-      description: 'Bosporus dinercruise gezinsvriendelijk. Kinderen 0-3 gratis, 4-9 halve prijs. Veilige binnenruimte, kindermenu.'
+      description: 'Bosporus dinercruise gezinsvriendelijk. Kinderen 0-3 gratis, 4-9 €5 korting. Veilige binnenruimte, kindermenu.'
     },
     hero: {
       h1: 'Bosporuscruise met Kinderen',
@@ -58,14 +58,14 @@ module.exports = {
       'Of u nu naar Istanbul komt voor een verlengd weekend met uw peuter, of de tieners meebrengt op hun eerste Europese reis — dit is de tour die wordt aanbevolen door de gezinnen van Istanbul. Veilig, halal-gecertificeerd, gelicentieerd door TÜRSAB en beoordeeld met 4,8★ door meer dan 11.317 reizigers.'
     ],
     highlights: [
-      { title: '0-3 jaar volledig gratis', desc: 'Geen kosten voor baby\'s en peuters. 4-9 jaar betalen €5 van het volwassenentarief. Vanaf 9 jaar gast met volledige prijs. Transparant, geen verrassingen.' },
+      { title: '0-3 jaar volledig gratis', desc: 'Geen kosten voor baby\'s en peuters. 4-9 jaar betalen €5 van het volwassenentarief. Vanaf 10 jaar gast met volledige prijs. Transparant, geen verrassingen.' },
       { title: 'Overdekte binnenruimte', desc: 'Volledig overdekt en verwarmd in de koude maanden. Kinderen blijven warm, beschermd tegen de wind. Het open dek is ook beschikbaar wanneer het weer mooi is — de keuze is aan u.' },
       { title: 'Kindermenu op verzoek', desc: 'Eenvoudige gegrilde kip, pasta, brood en groenten — zonder extra kosten. Onbeperkt frisdrank (cola, sap, water). Laat het ons van tevoren weten — geen verrassingen van pittige mezze voor de kleintjes.' },
       { title: 'Veilig familievermaak', desc: 'Sema-voorstelling (fascinerend voor kinderen), Oba Dombra en volksdansen uit Anatolië, Azerbeidzjan en de Kaukasus — inclusief de spectaculaire messendans — plus live Turkse muziek en een saxofoon-en-dj-set. Alles is gezinsvriendelijk — geen volwasseneninhoud. De kinderen sluiten zich vaak aan bij de dans.' }
     ],
     faq: [
       { q: 'Is de Bosporuscruise veilig voor jonge kinderen?', a: 'Ja — onze boot is gelicentieerd door TÜRSAB, heeft een overdekte binnenruimte met veilige ramen, reddingsvesten van alle maten beschikbaar en een professionele bemanning met gezinservaring. Wij raden het binnendek aan voor jonge kinderen en het open dek voor 6+ jaar.' },
-      { q: 'Wat is de prijs voor kinderen op de Bosporuscruise?', a: 'Kinderen **0-3 jaar: GRATIS** (geen kosten, geen verborgen kosten). **4-9 jaar: €5 korting** op het volwassenentarief — dat is €12/kind bij Standaard (€{p.dinnerStd}/2). **10+ jaar: volledige volwassenenprijs.** De hoteltransfer is gratis voor 0-3 jaar, standaard voor 4+ (€{p.transfer}/persoon).' },
+      { q: 'Wat is de prijs voor kinderen op de Bosporuscruise?', a: 'Kinderen **0-3 jaar: GRATIS** (geen kosten, geen verborgen kosten). **4-9 jaar: €5 korting** op het volwassenentarief — dat is €19.30/kind bij Standaard (€{p.dinnerStd} − €5). **10+ jaar: volledige volwassenenprijs.** De hoteltransfer is gratis voor 0-3 jaar, standaard voor 4+ (€{p.transfer}/persoon).' },
       { q: 'Is er een kindermenu aan boord?', a: 'Ja — eenvoudige gegrilde kip, pasta, brood, seizoensgroenten en onbeperkt frisdrank. Laat ons allergieën of voedingsvoorkeuren weten bij de reservering en wij bereiden iets voor dat uw kind met plezier zal eten.' },
       { q: 'Is de muziek of de show te luid voor kinderen?', a: 'De live shows vinden plaats in één deel van het podium — als uw kinderen geluidsgevoelig zijn, zetten wij u aan een rustigere tafel achterin. De show duurt in totaal 40 minuten, de rest van de avond is achtergrond-Turkse muziek en dj op gematigd volume.' },
       { q: 'Wat gebeurt er als de baby in slaap valt tijdens de cruise?', a: 'Geen probleem — veel vallen in slaap. De binnenruimte heeft banken waarop een baby of klein kind comfortabel kan slapen. Vraag de bemanning indien nodig om een warme deken. Geen extra kosten.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Is deze cruise geschikt voor moslimgezinnen met kinderen?', a: 'Ja — het is een van de meest gerespecteerde cruises voor gezinnen in Istanbul. Het entertainment is bescheiden (volksdansen, sema, Turkse muziek), kinderen onder 3 jaar zijn gratis, 4-9 jaar krijgen €5 korting. Geen nachtclubsfeer. Gezinnen uit de Golf, Indonesië, Maleisië, Pakistan en Marokko reserveren regelmatig deze cruise.' },
       { q: 'Kan ik aan boord bidden?', a: 'Er is geen toegewijde gebedsruimte aan boord, maar wij raden aan vóór het inschepen om 20:00 te bidden (de maghrib-gebed valt vaak samen met deze tijd). De aanlegplaats Kabataş heeft gebedsfaciliteiten. Als u tijdens het varen 21:00-00:00 (isha) moet bidden, praat met de bemanning — wij kunnen een stille hoek op het dek regelen.' },
       { q: 'Wat zijn de prijzen voor een moslimgezin van 4 personen (2 volwassenen, 2 kinderen)?', a: 'Dinercruise: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 korting 4-9 jaar) = €87.20. Als de kinderen jonger zijn dan 3, gratis: 2 × €{p.dinnerStd} = €48.60. Voeg €{p.transfer} hoteltransfer per volwassene toe. Totaal: €48.60–€92.90 voor het gezin van 4, geen vooruitbetaling, betaling aan boord.' },
-      { q: 'Is de hoteltransfer ook halal?', a: 'De hoteltransfer is gewoon een autorit — geen eten of drinken bij betrokken, dus geen halalzorg. Onze chauffeurs zijn professioneel, respectvol en stipt. De transferzones bestrijken Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli en 8 andere centrale wijken waar moslimreizigers gewoonlijk verblijven.' }
+      { q: 'Is de hoteltransfer ook halal?', a: 'De hoteltransfer is gewoon een autorit — geen eten of drinken bij betrokken, dus geen halalzorg. Onze chauffeurs zijn professioneel, respectvol en stipt. De transferzones bestrijken Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli en 9 andere centrale wijken waar moslimreizigers gewoonlijk verblijven.' }
     ],
     cta: {
       primary: 'Boek de Halal Cruise · Betaling aan Boord',
@@ -282,7 +282,7 @@ module.exports = {
     faq: [
       { q: 'Hoe laat vertrekt de Bosporus zonsondergangcruise?', a: 'Inschepen begint om 20:00 bij de aanlegplaats Kabataş, de boot vertrekt om 21:00 en keert rond 00:00 terug. In de zomer (mei–augustus) gaat de zon onder tussen ongeveer 20:15 en 20:45 — het gulden uur vindt plaats terwijl u inscheept, en de zonsondergang zelf precies rond het vertrek, gezien vanaf het water.' },
       { q: 'Is de Bosporus zonsondergangcruise hetzelfde als de dinercruise?', a: 'Ja — het is één cruise. Er is één dagelijks vertrek om 21:00 met volledig diner en live shows aan boord. In de lange zomeravonden is het tegelijk een zonsondergangcruise: u scheept in tijdens het gulden uur en vaart door het blauwe uur de verlichte nacht in. In de winter is dezelfde cruise een pure nachtlichten-ervaring.' },
-      { q: 'Wat kost de Bosporus zonsondergangcruise?', a: 'Vanaf €{p.dinnerStd}/persoon voor de cruise (3 uur, volledig diner, live entertainment). Betaling aan boord — geen vooruitbetaling. Kinderen 0-3 gratis, 4-9 halve prijs.' },
+      { q: 'Wat kost de Bosporus zonsondergangcruise?', a: 'Vanaf €{p.dinnerStd}/persoon voor de cruise (3 uur, volledig diner, live entertainment). Betaling aan boord — geen vooruitbetaling. Kinderen 0-3 gratis, 4-9 €5 korting.' },
       { q: 'Wat is de beste tijd van het jaar voor een Bosporus zonsondergangcruise?', a: 'Mei tot en met augustus. De late zonsondergangen van Istanbul (20:15–20:45) vallen samen met het vertrek van 21:00, dus u krijgt het gulden uur, de zonsondergang en de verlichte bruggen in één avond. In de herfst en winter gaat de zon eerder onder en wordt dezelfde cruise een volledige nachtlichten-ervaring — even fotogeniek, andere sfeer.' },
       { q: 'Wat moet ik meenemen naar een zonsondergangcruise?', a: 'Een smartphone of camera — het gulden uur en de verlichte bruggen vragen erom. Een lichte jas: de bries steekt op op het dek na zonsondergang. Smart-casual kleding — u dineert, maar er is geen strikt kledingvoorschrift.' },
       { q: 'Zie ik de verlichte bruggen \'s nachts op deze cruise?', a: 'Ja — dat is de tweede helft van de avond. De cruise vaart van 21:00–00:00, dus na de zonsondergang en het blauwe uur vaart u onder de volledig verlichte Bosporusbrug, langs verlichte paleizen en de Maagdentoren, en keert u rond 00:00 terug naar Kabataş.' },
@@ -319,7 +319,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Wanneer is de Bosporus nachttour?', a: 'Inschepen vanaf 20:00 bij de aanlegplaats Kabataş. De boot vertrekt om 21:00, keert terug rond 00:00. Wij raden aan 20 minuten eerder aan te komen om te installeren en plaats te kiezen.' },
-      { q: 'Hoeveel kost de Bosporus nachttour?', a: 'Nachttour (3 uur, diner, show): €{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-9 jaar halve prijs. Betaling aan boord.' },
+      { q: 'Hoeveel kost de Bosporus nachttour?', a: 'Nachttour (3 uur, diner, show): €{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-9 jaar €5 korting. Betaling aan boord.' },
       { q: 'Wat is het verschil tussen de Bosporus nachttour en de dinercruise?', a: 'Hetzelfde, ander trefwoord. "Bosporus nachttour" is hoe veel reizigers zoeken; "dinercruise" is de branchterm. Dezelfde boot, hetzelfde programma van 3 uur, hetzelfde menu, dezelfde show. Kies de zoekterm die u prefereert — de ervaring is hetzelfde.' },
       { q: 'Bosporus nachttour of zonsondergangcruise — welke is meer waard?', a: 'Nachttour = verlicht Istanbul, maximaal lichtdrama, volledig entertainmentprogramma, de meest iconische foto\'s van verlichte bruggen. En het is één cruise: in de zomer (mei–augustus) vangt het inschepen vanaf 20:00 het gulden uur en gaat de zon precies rond het vertrek van 21:00 onder — dezelfde avond dekt dus zonsondergang én nacht. Geen keuze nodig, geen tweede boeking.' },
       { q: 'Kan ik de Bosporus nachttour doen op mijn eerste dag in Istanbul?', a: 'Ja — wij raden aan. Veel reizigers reserveren de nachttour voor hun eerste avond omdat het u een complete oriëntatie biedt: alle belangrijke bezienswaardigheden vanaf het water, met goed eten en entertainment. Gemakkelijker dan vechten tegen jet lag terwijl u probeert wandeltoerisme te doen op Dag 1. Hoteltransfer beschikbaar vanuit centrale wijken.' },
@@ -432,7 +432,7 @@ module.exports = {
     faq: [
       { q: 'Wat is de beste boottour in Istanbul?', a: 'De Bosporus dinercruise wordt consequent op #1 gerangschikt. Het bestrijkt alle belangrijke bezienswaardigheden, bevat het diner en entertainment en draait \'s avonds wanneer de bezienswaardigheden verlicht zijn. Andere opties (hop-on-veerboten, ochtendtoeristenboten) bestrijken kortere routes, slaan het diner over en bevatten geen entertainment. Voor een avond in Istanbul is dit de meest complete boottour.' },
       { q: 'Hoe lang duurt de boottour in Istanbul?', a: '3 uur. Inschepen vanaf 20:00 bij de aanlegplaats Kabataş, vertrek 21:00, terugkeer ~00:00. Bestrijkt de volledige Bosporus van Dolmabahçe tot Rumeli Hisarı en terug. Genoeg tijd voor volledig diner + show zonder vermoeidheid.' },
-      { q: 'Hoeveel kost de boottour in Istanbul?', a: 'Onze boottour met diner: €{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-9 jaar halve prijs. Betaling aan boord. Alcohol en hoteltransfer zijn optionele supplementen.' },
+      { q: 'Hoeveel kost de boottour in Istanbul?', a: 'Onze boottour met diner: €{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). 0-3 jaar gratis, 4-9 jaar €5 korting. Betaling aan boord. Alcohol en hoteltransfer zijn optionele supplementen.' },
       { q: 'Vanwaar vertrekken boottours in Istanbul?', a: 'Onze boot vertrekt vanaf de aanlegplaats Kabataş, centrale Europese kust van Istanbul, dichtbij het Dolmabahçe-paleis. Toegankelijk per tram T1 (station Kabataş), taxi 15 min vanaf Taksim of te voet 20 min vanaf Taksim. Hoteltransfer beschikbaar vanuit centrale wijken met +€{p.transfer}/persoon.' },
       { q: 'Is deze boottour geschikt voor gezinnen met kinderen?', a: 'Ja — zeer gezinsvriendelijk. Kinderen 0-3 jaar gratis, 4-9 jaar €5 korting. Overdekte binnenruimte, kindermenu op verzoek en entertainment (sema, volksdansen) boeiend voor kinderen. Veel gezinnen van over de hele wereld reserveren deze tour.' },
       { q: 'Moet ik iets meebrengen voor de boottour?', a: 'Paspoort of identiteitsbewijs (voor registratie aan boord), lichte jas (het dek kan fris zijn), comfortabele schoenen als u van plan bent te dansen. Smartphone voor foto\'s. Contant of kaart voor betaling aan boord (beide geaccepteerd). Al het andere — eten, drinken, entertainment — is aan boord.' }
@@ -463,7 +463,7 @@ module.exports = {
       { title: 'De volledige Bosporus in één klap', desc: 'Europese kust (Dolmabahçe, Ortaköy, Rumeli Hisarı), Aziatische kust (Beylerbeyi, Üsküdar), beide Bosporusbruggen, Maagdentoren. Elke belangrijke bezienswaardigheid zichtbaar in 3 uur.' },
       { title: 'Diner + entertainment inbegrepen', desc: 'Niet alleen toeristische veerboot — volledig Turks diner met mezze, hoofdgerecht, dessert. Live volksdans-show, sema, oriëntaalse, dj. Entertainmentwaarde buiten alleen landschap.' },
       { title: 'Avond = beste verlichting', desc: 'Dagtrips op de Bosporus tonen u de bezienswaardigheden in vlak licht. Avondtrips vangen alles verlicht: stralende paleizen, gekleurde bruggen, moskeeën gereflecteerd in donker water. Betere foto\'s, dramatischer.' },
-      { title: 'Vanaf €{p.dinnerStd} — betaling aan boord', desc: 'Geen vooruitbetaling vereist. Betaling aan boord (contant of kaart). Gratis annulering tot 2 uur voor vertrek. 0-3 jaar gratis, 4-9 jaar halve prijs. Transparante prijzen.' }
+      { title: 'Vanaf €{p.dinnerStd} — betaling aan boord', desc: 'Geen vooruitbetaling vereist. Betaling aan boord (contant of kaart). Gratis annulering tot 2 uur voor vertrek. 0-3 jaar gratis, 4-9 jaar €5 korting. Transparante prijzen.' }
     ],
     faq: [
       { q: 'Wat zijn de beste Bosporustrips in Istanbul?', a: 'De avond dinertour staat consequent op de eerste plaatsen. De dagopties (loop-veerboten van 1 uur, toeristenboten van 2 uur) tonen minder en bevatten geen diner. Voor waarde is het moeilijk een tour van 3 uur met diner, show en centraal ontmoetingspunt te verslaan. De kosten van onze tour €{p.dinnerStd} elimineren de noodzaak van een aparte avond met diner + entertainment.' },
@@ -507,7 +507,7 @@ module.exports = {
       { q: 'Moet ik het Bosporuscruise ticket afdrukken?', a: 'Nee — geen fysiek ticket of voucher nodig. Na de reservering sturen wij u een bevestiging via WhatsApp (of Telegram) met het ontmoetingspunt, de tijd en de naam van de reservering. Toon gewoon uw telefoon bij de aanlegplaats. Klaar.' },
       { q: 'Kan ik het Bosporuscruise ticket annuleren of teruggeven?', a: 'Ja — gratis annulering tot 2 uur voor vertrek. Schrijf gewoon via WhatsApp. Omdat u nog niet heeft betaald (betaling aan boord), is geen restitutie nodig — kom gewoon niet, zonder kosten. Veel flexibeler dan vooruit betaalde tickets van derden.' },
       { q: 'Zijn Bosporuscruise tickets beschikbaar op dezelfde dag?', a: 'Vaak ja, vooral op werkdagen. Weekenden en vakanties raken sneller vol. Controleer beschikbaarheid via het reserveringsformulier — het wordt in realtime bijgewerkt. Reservering op dezelfde dag is meestal mogelijk met enkele uren voor het vertrek van 21:00. Voor dringende verzoeken, WhatsApp.' },
-      { q: 'Zijn Bosporuscruise tickets voor kinderen gratis?', a: 'Kinderen **0-3 jaar volledig gratis** (geen kosten, geen verborgen kosten, transfer inbegrepen). **4-9 jaar €5 korting** (€{p.dinnerStd}/2 = €12,15). **10+ jaar volledige volwassenenprijs.** Vaste en transparante prijzen — geen "babytoeslag"-trucs.' }
+      { q: 'Zijn Bosporuscruise tickets voor kinderen gratis?', a: 'Kinderen **0-3 jaar volledig gratis** (geen kosten, geen verborgen kosten, transfer inbegrepen). **4-9 jaar €5 korting** (€{p.dinnerStd} − €5 = €19.30). **10+ jaar volledige volwassenenprijs.** Vaste en transparante prijzen — geen "babytoeslag"-trucs.' }
     ],
     cta: {
       primary: 'Tickets Kopen · Betaling aan Boord',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Istanbul Cruise Prijs vanaf €{p.dinnerStd} — Transparante Tarieven',
-      description: 'Bosporuscruise prijzen Istanbul: €{p.dinnerStd}/persoon. Kinderen 0-3 gratis, 4-9 halve prijs. Transparante supplementen.'
+      description: 'Bosporuscruise prijzen Istanbul: €{p.dinnerStd}/persoon. Kinderen 0-3 gratis, 4-9 €5 korting. Transparante supplementen.'
     },
     hero: {
       h1: 'Istanbul Cruise Prijs',
@@ -570,11 +570,11 @@ module.exports = {
     highlights: [
       { title: 'Dinercruise: €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal})', desc: '40% korting op de normale prijs. Tour van 3 uur, volledig Turks diner, live show, onbeperkt frisdrank. Eén transparante prijs — dekt alles wat u nodig heeft voor een mooie avond.' },
       { title: 'Alles inbegrepen in de prijs', desc: 'Tour van 3 uur, 10 mezze, warm voorgerecht, hoofdgerecht, dessert, onbeperkt frisdrank, live show en alle belastingen. Geen verborgen kosten of verrassingen aan boord.' },
-      { title: 'Prijs voor kinderen: 0-3 gratis, 4-9 halve prijs', desc: '0-3 volledig gratis (geen kosten). 4-9 met €5 korting op het volwassenentarief. 10+ volledige volwassenenprijs. Transparant, geen familieprijs-trucs. De transfer is ook gratis voor 0-3.' },
+      { title: 'Prijs voor kinderen: 0-3 gratis, 4-9 €5 korting', desc: '0-3 volledig gratis (geen kosten). 4-9 met €5 korting op het volwassenentarief. 10+ volledige volwassenenprijs. Transparant, geen familieprijs-trucs. De transfer is ook gratis voor 0-3.' },
       { title: 'Supplementen — alleen wanneer u ze wilt', desc: 'Alcohol (2 glazen): +€{p.alcohol2}/persoon. Transfer: €{p.transfer}/persoon. Romantische tafel: €{p.romantic}/tafel. Alles optioneel, niet verpakt. Kies alleen wat u nodig heeft.' }
     ],
     faq: [
-      { q: 'Hoeveel kost een tour in Istanbul?', a: 'Dinercruise: €{p.dinnerStd}/persoon (normaal €{p.dinnerStdOriginal}, 40% korting). 0-3 jaar gratis, 4-9 jaar halve prijs. Betaling aan boord — geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' },
+      { q: 'Hoeveel kost een tour in Istanbul?', a: 'Dinercruise: €{p.dinnerStd}/persoon (normaal €{p.dinnerStdOriginal}, 40% korting). 0-3 jaar gratis, 4-9 jaar €5 korting. Betaling aan boord — geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' },
       { q: 'Zijn er verborgen kosten in de Istanbul-tourprijs?', a: 'Nee. De prijs omvat: tour van 3 uur, volledig diner (mezze, voorgerecht, hoofdgerecht, dessert), onbeperkt frisdrank, live show, belastingen. De optionele supplementen (alcohol, transfer, romantische tafel) zijn apart en met transparante prijzen — u betaalt alleen voor wat u toevoegt. Geen "servicekosten", "havenkosten", verrassingstoeslag.' },
       { q: 'Waarom is de Istanbul-tourprijs 40% korting — is het een truc?', a: 'Geen truc. De normale prijs €{p.dinnerStdOriginal} is wat derde-partij-boekingssites (Viator, GetYourGuide, Klook) rekenen — met hun commissies. Reserveer direct en krijg €{p.dinnerStd}. Dit is het verschil van 40%. Geen trucs van beperkte of dynamische prijs.' },
       { q: 'Hoe vergelijkt de Istanbul-tourprijs met andere opties?', a: 'Loop-veerboten: €5-10, 1 uur, geen diner, geen entertainment, alleen toerisme. Budget-tours met diner: €20-30, druk, gemiddeld eten, korte show. Onze cruise (€{p.dinnerStd}): 3 uur, volledig diner, volledige show, privétafel, TÜRSAB-gelicentieerd. Resortjachten: €100-150+, overdreven voor solo-reizigers/koppels.' },

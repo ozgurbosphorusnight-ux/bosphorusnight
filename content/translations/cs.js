@@ -31,7 +31,7 @@ module.exports = {
       { q: 'Kdy začíná plavba s večeří po Bosporu?', a: 'Nalodění začíná v 20:00 na přístavišti Kabataş. Loď odjíždí ve 21:00 a vrací se kolem 00:00. Doporučujeme přijet 15-20 minut dříve, abyste se usadili a uvolnili.' },
       { q: 'Kolik stojí plavba s večeří po Bosporu?', a: 'Plavba s večeří €{p.dinnerStd}/osoba (běžná cena €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-9 let €5 sleva. Platba na palubě — bez platby předem.' },
       { q: 'Je alkohol zahrnut v plavbě s večeří?', a: 'Neomezené nealkoholické nápoje (voda, kola, džus) jsou zahrnuty v ceně. Alkoholový balíček je volitelný: 2 sklenice (víno, pivo, rakı, vodka nebo gin) +€{p.alcohol2}/osoba. Další a dovážené nápoje se účtují zvlášť na palubě.' },
-      { q: 'Existuje transfer z hotelu?', a: 'Ano — služba vyzvednutí a odvozu zpět je +€{p.transfer}/osoba. Obsluhované zóny: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce a Şişli. Tuto možnost si můžete vybrat v rezervačním formuláři.' },
+      { q: 'Existuje transfer z hotelu?', a: 'Ano — služba vyzvednutí a odvozu zpět je +€{p.transfer}/osoba. Obsluhované zóny: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce a Şişli. Tuto možnost si můžete vybrat v rezervačním formuláři.' },
       { q: 'Je plavba s večeří po Bosporu halal?', a: 'Absolutně. Veškeré maso podávané na palubě je halal certifikované. Alkohol je volitelný doplněk (nikdy nevnucovaný hostům) a uspořádání stolů přirozeně odděluje hosty, kteří preferují jídlo bez alkoholu. Nabízíme také vegetariánské alternativy bez dalších nákladů.' },
       { q: 'Jak se mám obléknout?', a: 'Smart casual oblečení. Večery v Istanbulu mohou být chladné i v létě — doporučujeme lehkou bundu nebo šál. Není povinný oděvový předpis, ale plavky, žabky nebo sportovní oblečení nejsou vhodné pro atmosféru večeře.' }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bospor s Dětmi — Rodinná Plavba od €{p.dinnerStd}/dospělý',
-      description: 'Plavba s večeří po Bosporu rodinně přátelská. Děti 0-3 zdarma, 4-9 poloviční cena. Bezpečný vnitřní prostor, dětské menu.'
+      description: 'Plavba s večeří po Bosporu rodinně přátelská. Děti 0-3 zdarma, 4-9 €5 sleva. Bezpečný vnitřní prostor, dětské menu.'
     },
     hero: {
       h1: 'Plavba po Bosporu s Dětmi',
@@ -58,14 +58,14 @@ module.exports = {
       'Ať už přijíždíte do Istanbulu na prodloužený víkend s batoletem, nebo vezete teenagery na jejich první evropskou cestu — toto je túra doporučená rodinami v Istanbulu. Bezpečná, halal certifikovaná, licencovaná TÜRSAB a hodnocená 4,8★ více než 11.317 cestovateli.'
     ],
     highlights: [
-      { title: '0-3 roky zcela zdarma', desc: 'Žádné poplatky za miminka a batolata. 4-9 let platí €5 z ceny pro dospělé. Od 9 let host s plnou cenou. Transparentní, bez překvapení.' },
+      { title: '0-3 roky zcela zdarma', desc: 'Žádné poplatky za miminka a batolata. 4-9 let platí €5 z ceny pro dospělé. Od 10 let host s plnou cenou. Transparentní, bez překvapení.' },
       { title: 'Zastřešený vnitřní prostor', desc: 'Plně zastřešený a vytápěný v chladných měsících. Děti zůstanou v teple, chráněné před větrem. Otevřená paluba je také k dispozici, když je hezké počasí — volba je na vás.' },
       { title: 'Dětské menu na vyžádání', desc: 'Jednoduché grilované kuře, těstoviny, chléb a zelenina — bez dalších nákladů. Neomezené nealkoholické nápoje (kola, džus, voda). Dejte nám vědět předem — žádná překvapení s pikantním mezze pro nejmenší.' },
       { title: 'Bezpečná rodinná zábava', desc: 'Vystoupení sema (fascinující pro děti), Oba Dombra a lidové tance z Anatolie, Ázerbájdžánu a Kavkazu — včetně velkolepého tance s noži — a k tomu živá turecká hudba a saxofonový DJ set. Vše je rodinně přátelské — žádný obsah pro dospělé. Děti se často připojují k tanci.' }
     ],
     faq: [
       { q: 'Je plavba po Bosporu bezpečná pro malé děti?', a: 'Ano — naše loď je licencovaná TÜRSAB, má zastřešený vnitřní prostor s bezpečnými okny, záchranné vesty všech velikostí k dispozici a profesionální posádku se zkušenostmi s rodinami. Doporučujeme vnitřní palubu pro malé děti a otevřenou palubu pro 6+ let.' },
-      { q: 'Jaká je cena pro děti na plavbě po Bosporu?', a: 'Děti **0-3 roky: ZDARMA** (žádné poplatky, žádné skryté náklady). **4-9 let: €5 sleva** z ceny pro dospělé — tedy €12/dítě na Standardu (€{p.dinnerStd}/2). **10+ let: plná cena pro dospělé.** Transfer z hotelu je zdarma pro 0-3 roky, standardní pro 4+ (€{p.transfer}/osoba).' },
+      { q: 'Jaká je cena pro děti na plavbě po Bosporu?', a: 'Děti **0-3 roky: ZDARMA** (žádné poplatky, žádné skryté náklady). **4-9 let: €5 sleva** z ceny pro dospělé — tedy €19.30/dítě na Standardu (€{p.dinnerStd} − €5). **10+ let: plná cena pro dospělé.** Transfer z hotelu je zdarma pro 0-3 roky, standardní pro 4+ (€{p.transfer}/osoba).' },
       { q: 'Existuje dětské menu na palubě?', a: 'Ano — jednoduché grilované kuře, těstoviny, chléb, sezónní zelenina a neomezené nealkoholické nápoje. Dejte nám vědět o alergiích nebo dietních preferencích při rezervaci a připravíme něco, co bude vaše dítě jíst s radostí.' },
       { q: 'Je hudba nebo show pro děti příliš hlasitá?', a: 'Živé show probíhají v jedné oblasti pódia — pokud jsou vaše děti citlivé na hluk, posadíme vás k tiššímu stolu vzadu. Show trvá celkem 40 minut, zbytek večera je tureckou hudbou v pozadí a DJ na střední hlasitosti.' },
       { q: 'Co se stane, když dítě usne během plavby?', a: 'Žádný problém — mnoho jich usne. Vnitřní prostor má pohovky typu lavice, kde může miminko nebo malé dítě pohodlně spát. V případě potřeby požádejte posádku o teplou deku. Žádné další náklady.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Je tato plavba vhodná pro muslimské rodiny s dětmi?', a: 'Ano — je to jedna z nejuctívanějších plaveb pro rodiny v Istanbulu. Zábava je skromná (lidové tance, sema, turecká hudba), děti do 3 let zdarma, 4-9 let mají €5 slevu. Žádná atmosféra nočního klubu. Rodiny ze Zálivu, Indonésie, Malajsie, Pákistánu a Maroka pravidelně rezervují tuto plavbu.' },
       { q: 'Mohu se modlit na palubě?', a: 'Na palubě není vyhrazená modlitební místnost, ale doporučujeme modlit se před naloděním v 20:00 (maghribská modlitba často spadá do tohoto intervalu). Přístaviště Kabataş má modlitební zařízení. Pokud se potřebujete modlit během plavby 21:00-00:00 (isha), promluvte s posádkou — můžeme zařídit tiché místo na palubě.' },
       { q: 'Jaké jsou ceny pro muslimskou rodinu 4 osob (2 dospělí, 2 děti)?', a: 'Plavba s večeří: 2 × €{p.dinnerStd} + 2 × €19.30 (sleva €5, 4-9 let) = €87.20. Pokud jsou děti mladší 3 let, zdarma: 2 × €{p.dinnerStd} = €48.60. Přidejte €{p.transfer} transfer z hotelu na dospělého. Celkem: €48.60–€92.90 pro rodinu 4, bez platby předem, platba na palubě.' },
-      { q: 'Je transfer z hotelu také halal?', a: 'Transfer z hotelu je jen jízda autem — bez jídla nebo pití, takže žádné halal obavy. Naši řidiči jsou profesionální, uctiví a přesní. Transferové zóny pokrývají Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli a 8 dalších centrálních čtvrtí, kde se muslimští cestovatelé obvykle ubytovávají.' }
+      { q: 'Je transfer z hotelu také halal?', a: 'Transfer z hotelu je jen jízda autem — bez jídla nebo pití, takže žádné halal obavy. Naši řidiči jsou profesionální, uctiví a přesní. Transferové zóny pokrývají Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli a 9 dalších centrálních čtvrtí, kde se muslimští cestovatelé obvykle ubytovávají.' }
     ],
     cta: {
       primary: 'Rezervovat Halal Plavbu · Platba na Palubě',
@@ -282,7 +282,7 @@ module.exports = {
     faq: [
       { q: 'Kdy odjíždí plavba při západu slunce po Bosporu?', a: 'Nalodění začíná v 20:00 na přístavišti Kabataş, loď odjíždí ve 21:00 a vrací se kolem 00:00. V létě (květen–srpen) zapadá slunce zhruba mezi 20:15–20:45 — zlatá hodina probíhá během nalodění a samotný západ slunce přesně kolem odjezdu, viděný z vody.' },
       { q: 'Je plavba při západu slunce po Bosporu stejná jako plavba s večeří?', a: 'Ano — je to jedna a tatáž plavba. Denně je jediný odjezd ve 21:00 s plnou večeří a živými show na palubě. Během dlouhých letních večerů funguje zároveň jako plavba při západu slunce: nastupujete během zlaté hodiny a proplouváte modrou hodinou do osvětlené noci. V zimě je stejná plavba čistě zážitkem nočních světel.' },
-      { q: 'Kolik stojí plavba při západu slunce po Bosporu?', a: 'Od €{p.dinnerStd}/osoba za plavbu (3 hodiny, plná večeře, živá zábava). Platba na palubě — bez platby předem. Děti 0-3 roky zdarma, 4-9 let poloviční cena.' },
+      { q: 'Kolik stojí plavba při západu slunce po Bosporu?', a: 'Od €{p.dinnerStd}/osoba za plavbu (3 hodiny, plná večeře, živá zábava). Platba na palubě — bez platby předem. Děti 0-3 roky zdarma, 4-9 let €5 sleva.' },
       { q: 'Kdy je nejlepší období roku pro plavbu při západu slunce po Bosporu?', a: 'Od května do srpna. Pozdní istanbulské západy slunce (20:15–20:45) se přesně kryjí s odjezdem ve 21:00, takže v jednom večeru zažijete zlatou hodinu, západ slunce i osvětlené mosty. Na podzim a v zimě zapadá slunce dříve a stejná plavba se stává plným zážitkem nočních světel — stejně fotogenickým, jen v jiné náladě.' },
       { q: 'Co si vzít na plavbu při západu slunce?', a: 'Smartphone nebo fotoaparát — zlatá hodina a osvětlené mosty si o to říkají. Lehkou bundu: po západu slunce se na palubě zvedá vánek. Smart-casual oblečení — večeříte, ale přísný oděvový předpis neexistuje.' },
       { q: 'Uvidím na této plavbě osvětlené mosty v noci?', a: 'Ano — to je druhá polovina večera. Plavba probíhá 21:00–00:00, takže po západu slunce a modré hodině proplujete pod plně osvětleným mostem Bospor, kolem rozsvícených paláců a Dívčí věže, a kolem 00:00 se vrátíte na Kabataş.' },
@@ -319,7 +319,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Kdy je noční túra po Bosporu?', a: 'Nalodění od 20:00 na přístavišti Kabataş. Loď odjíždí ve 21:00, vrací se kolem 00:00. Doporučujeme přijet 20 minut dříve, abyste se usadili a vybrali si místo.' },
-      { q: 'Kolik stojí noční túra po Bosporu?', a: 'Noční túra (3 hodiny, večeře, show): €{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-9 let poloviční cena. Platba na palubě.' },
+      { q: 'Kolik stojí noční túra po Bosporu?', a: 'Noční túra (3 hodiny, večeře, show): €{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-9 let €5 sleva. Platba na palubě.' },
       { q: 'Jaký je rozdíl mezi noční túrou po Bosporu a plavbou s večeří?', a: 'Stejná věc, jiné klíčové slovo. "Noční túra po Bosporu" je, jak hledá mnoho cestovatelů; "plavba s večeří" je oborový termín. Stejná loď, stejný 3hodinový program, stejné menu, stejná show. Vyberte si preferovaný vyhledávací termín — zážitek je stejný.' },
       { q: 'Noční túra po Bosporu nebo plavba při západu slunce — co stojí za více?', a: 'Noční túra = osvětlený Istanbul, maximální světelné drama, kompletní program zábavy, nejikoničtější fotografie osvětlených mostů. A je to jediná plavba: v létě (květen–srpen) zachytí nalodění od 20:00 zlatou hodinu a slunce zapadá přesně kolem odjezdu ve 21:00 — tentýž večer tedy pokrývá západ slunce i noc. Není třeba si vybírat ani rezervovat dvakrát.' },
       { q: 'Mohu absolvovat noční túru po Bosporu první den v Istanbulu?', a: 'Ano — doporučujeme. Mnoho cestovatelů si rezervuje noční túru na svůj první večer, protože vám nabízí kompletní orientaci: všechny hlavní památníky z vody, s dobrým jídlem a zábavou. Snazší než bojovat s jet lagem při pokusu o pěší turistiku v Den 1. Transfer z hotelu k dispozici z centrálních čtvrtí.' },
@@ -432,7 +432,7 @@ module.exports = {
     faq: [
       { q: 'Jaká je nejlepší lodní túra v Istanbulu?', a: 'Plavba s večeří po Bosporu je trvale řazena na #1. Pokrývá všechny hlavní památníky, zahrnuje večeři a zábavu a běží večer, když jsou památníky osvětlené. Jiné možnosti (hop-on trajekty, ranní turistické lodě) pokrývají kratší trasy, vynechávají večeři a nezahrnují zábavu. Pro večer v Istanbulu je toto nejkompletnější lodní túra.' },
       { q: 'Jak dlouho trvá lodní túra v Istanbulu?', a: '3 hodiny. Nalodění od 20:00 na přístavišti Kabataş, odjezd 21:00, návrat ~00:00. Pokrývá celý Bospor od Dolmabahçe k Rumeli Hisarı a zpět. Dostatek času na plnou večeři + show bez únavy.' },
-      { q: 'Kolik stojí lodní túra v Istanbulu?', a: 'Naše lodní túra s večeří: €{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-9 let poloviční cena. Platba na palubě. Alkohol a transfer z hotelu jsou volitelné doplňky.' },
+      { q: 'Kolik stojí lodní túra v Istanbulu?', a: 'Naše lodní túra s večeří: €{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). 0-3 roky zdarma, 4-9 let €5 sleva. Platba na palubě. Alkohol a transfer z hotelu jsou volitelné doplňky.' },
       { q: 'Odkud odjíždí lodní túry v Istanbulu?', a: 'Naše loď odjíždí z přístaviště Kabataş, centrálního evropského pobřeží Istanbulu, blízko Paláce Dolmabahçe. Dostupné tramvají T1 (stanice Kabataş), taxíkem 15 min z Taksimu nebo pěšky 20 min z Taksimu. Transfer z hotelu k dispozici z centrálních čtvrtí s +€{p.transfer}/osoba.' },
       { q: 'Je tato lodní túra vhodná pro rodiny s dětmi?', a: 'Ano — velmi rodinně přátelská. Děti 0-3 roky zdarma, 4-9 let €5 sleva. Zastřešený vnitřní prostor, dětské menu na vyžádání a zábava (sema, lidové tance) poutavé pro děti. Mnoho rodin z celého světa rezervuje tuto túru.' },
       { q: 'Musím něco přivézt na lodní túru?', a: 'Pas nebo občanský průkaz (pro registraci na palubě), lehká bunda (paluba může být chladná), pohodlné boty, pokud plánujete tančit. Smartphone na fotografie. Hotovost nebo karta pro platbu na palubě (obojí přijímáno). Vše ostatní — jídlo, nápoje, zábava — je na palubě.' }
@@ -463,7 +463,7 @@ module.exports = {
       { title: 'Celý Bospor jedním tahem', desc: 'Evropské pobřeží (Dolmabahçe, Ortaköy, Rumeli Hisarı), asijské pobřeží (Beylerbeyi, Üsküdar), oba mosty Bosporu, Dívčí věž. Každý hlavní památník viditelný za 3 hodiny.' },
       { title: 'Večeře + zábava zahrnuty', desc: 'Ne jen turistický trajekt — plná turecká večeře s mezze, hlavním chodem, dezertem. Živá show lidových tanců, sema, orientální, DJ. Hodnota zábavy nad pouhou krajinu.' },
       { title: 'Večer = nejlepší osvětlení', desc: 'Denní výlety po Bosporu vám ukazují památníky v plochém světle. Večerní výlety zachycují vše osvětlené: zářící paláce, barevné mosty, mešity odrážející se v tmavé vodě. Lepší fotografie, dramatičtější.' },
-      { title: 'Od €{p.dinnerStd} — platba na palubě', desc: 'Není vyžadována platba předem. Platba na palubě (hotovost nebo karta). Bezplatné storno až 2 hodiny před odjezdem. 0-3 roky zdarma, 4-9 let poloviční cena. Transparentní ceny.' }
+      { title: 'Od €{p.dinnerStd} — platba na palubě', desc: 'Není vyžadována platba předem. Platba na palubě (hotovost nebo karta). Bezplatné storno až 2 hodiny před odjezdem. 0-3 roky zdarma, 4-9 let €5 sleva. Transparentní ceny.' }
     ],
     faq: [
       { q: 'Jaké jsou nejlepší výlety po Bosporu v Istanbulu?', a: 'Večerní túra s večeří je trvale na nejvyšších místech. Denní možnosti (1hodinové smyčkové trajekty, 2hodinové turistické lodě) ukazují méně a nezahrnují večeři. Pro hodnotu je těžké překonat 3hodinovou túru s večeří, show a centrálním místem setkání. Náklady na naši túru €{p.dinnerStd} eliminují potřebu samostatného večera s večeří + zábavou.' },
@@ -507,7 +507,7 @@ module.exports = {
       { q: 'Musím si vstupenku na plavbu po Bosporu vytisknout?', a: 'Ne — není potřeba fyzická vstupenka nebo kupón. Po rezervaci vám pošleme potvrzení přes WhatsApp (nebo Telegram) s místem setkání, časem a jménem rezervace. Stačí ukázat telefon na přístavišti. Hotovo.' },
       { q: 'Mohu zrušit nebo vrátit vstupenku na plavbu po Bosporu?', a: 'Ano — bezplatné storno až 2 hodiny před odjezdem. Stačí napsat přes WhatsApp. Protože jste ještě nezaplatili (platba na palubě), není potřeba vrácení peněz — prostě nepřijďte, bez nákladů. Mnohem flexibilnější než předem placené vstupenky od třetích stran.' },
       { q: 'Jsou vstupenky na plavbu po Bosporu k dispozici ve stejný den?', a: 'Často ano, zejména v pracovních dnech. Víkendy a svátky se plní rychleji. Zkontrolujte dostupnost přes rezervační formulář — aktualizuje se v reálném čase. Rezervace ve stejný den je obvykle možná s několika hodinami před odjezdem ve 21:00. Pro naléhavé požadavky, WhatsApp.' },
-      { q: 'Jsou vstupenky pro děti na plavbu po Bosporu zdarma?', a: 'Děti **0-3 roky zcela zdarma** (žádné poplatky, žádné skryté náklady, transfer zahrnut). **4-9 let €5 sleva** (€{p.dinnerStd}/2 = €12,15). **10+ let plná cena pro dospělé.** Pevné a transparentní ceny — žádné triky "příplatku pro miminko".' }
+      { q: 'Jsou vstupenky pro děti na plavbu po Bosporu zdarma?', a: 'Děti **0-3 roky zcela zdarma** (žádné poplatky, žádné skryté náklady, transfer zahrnut). **4-9 let €5 sleva** (€{p.dinnerStd} − €5 = €19.30). **10+ let plná cena pro dospělé.** Pevné a transparentní ceny — žádné triky "příplatku pro miminko".' }
     ],
     cta: {
       primary: 'Koupit Vstupenky · Platba na Palubě',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Cena Plavba Istanbul od €{p.dinnerStd} — Transparentní Tarify',
-      description: 'Ceny plavby po Bosporu Istanbul: €{p.dinnerStd}/osoba. Děti 0-3 zdarma, 4-9 poloviční cena. Transparentní doplňky.'
+      description: 'Ceny plavby po Bosporu Istanbul: €{p.dinnerStd}/osoba. Děti 0-3 zdarma, 4-9 €5 sleva. Transparentní doplňky.'
     },
     hero: {
       h1: 'Cena Plavba Istanbul',
@@ -570,11 +570,11 @@ module.exports = {
     highlights: [
       { title: 'Plavba s večeří: €{p.dinnerStd} (dříve €{p.dinnerStdOriginal})', desc: '40% sleva oproti běžné ceně. 3hodinová túra, plná turecká večeře, živá show, neomezené nealkoholické nápoje. Jedna transparentní cena — pokrývá vše, co potřebujete pro krásný večer.' },
       { title: 'Vše zahrnuto v ceně', desc: '3hodinová túra, 10 mezze, teplý předkrm, hlavní chod, dezert, neomezené nealkoholické nápoje, živá show a všechny daně. Žádné skryté poplatky ani překvapení na palubě.' },
-      { title: 'Cena pro děti: 0-3 zdarma, 4-9 poloviční cena', desc: '0-3 zcela zdarma (žádné poplatky). 4-9 s €5 slevou z ceny pro dospělé. 10+ plná cena pro dospělé. Transparentní, bez triků rodinných cen. Transfer je také zdarma pro 0-3.' },
+      { title: 'Cena pro děti: 0-3 zdarma, 4-9 €5 sleva', desc: '0-3 zcela zdarma (žádné poplatky). 4-9 s €5 slevou z ceny pro dospělé. 10+ plná cena pro dospělé. Transparentní, bez triků rodinných cen. Transfer je také zdarma pro 0-3.' },
       { title: 'Doplňky — jen když je chcete', desc: 'Alkohol (2 sklenice): +€{p.alcohol2}/osoba. Transfer: €{p.transfer}/osoba. Romantický stůl: €{p.romantic}/stůl. Vše volitelné, nezabaleno. Vyberte si jen to, co potřebujete.' }
     ],
     faq: [
-      { q: 'Kolik stojí túra v Istanbulu?', a: 'Plavba s večeří: €{p.dinnerStd}/osoba (běžně €{p.dinnerStdOriginal}, 40% sleva). 0-3 roky zdarma, 4-9 let poloviční cena. Platba na palubě — bez platby předem. Bezplatné storno až 2 hodiny před odjezdem.' },
+      { q: 'Kolik stojí túra v Istanbulu?', a: 'Plavba s večeří: €{p.dinnerStd}/osoba (běžně €{p.dinnerStdOriginal}, 40% sleva). 0-3 roky zdarma, 4-9 let €5 sleva. Platba na palubě — bez platby předem. Bezplatné storno až 2 hodiny před odjezdem.' },
       { q: 'Jsou v ceně túry v Istanbulu skryté poplatky?', a: 'Ne. Cena zahrnuje: 3hodinovou túru, plnou večeři (mezze, předkrm, hlavní chod, dezert), neomezené nealkoholické nápoje, živou show, daně. Volitelné doplňky (alkohol, transfer, romantický stůl) jsou samostatné a s transparentní cenou — platíte pouze za to, co přidáte. Žádný "servisní poplatek", "přístavní poplatek", překvapivý příplatek.' },
       { q: 'Proč je cena túry v Istanbulu 40% sleva — je to trik?', a: 'Bez triku. Běžná cena €{p.dinnerStdOriginal} je to, co účtují stránky třetích stran (Viator, GetYourGuide, Klook) — s jejich provizemi. Rezervujte přímo a získejte €{p.dinnerStd}. Toto je rozdíl 40%. Žádné triky s limitovanou nebo dynamickou cenou.' },
       { q: 'Jak se srovnává cena túry v Istanbulu s ostatními možnostmi?', a: 'Smyčkové trajekty: €5-10, 1 hodina, bez večeře, bez zábavy, jen turistika. Rozpočtové túry s večeří: €20-30, přeplněné, průměrné jídlo, krátká show. Naše plavba (€{p.dinnerStd}): 3 hodiny, plná večeře, plná show, soukromý stůl, licencováno TÜRSAB. Resortní jachty: €100-150+, přehnané pro sólo cestovatele/páry.' },

@@ -33,7 +33,7 @@ module.exports = {
       { q: 'Kapan pelayaran makan malam Bosphorus dimulai?', a: 'Naik kapal dimulai pukul 20:00 di Dermaga Kabataş. Kapal berangkat pukul 21:00 dan kembali sekitar pukul 00:00. Kami sarankan datang 15-20 menit lebih awal untuk duduk dan bersantai.' },
       { q: 'Berapa harga pelayaran makan malam Bosphorus?', a: 'Pelayaran makan malam €{p.dinnerStd}/orang (harga normal €{p.dinnerStdOriginal}). Usia 0-3 tahun gratis, usia 4-9 tahun diskon €5. Pembayaran dilakukan di kapal — tanpa pembayaran di muka.' },
       { q: 'Apakah alkohol termasuk dalam pelayaran makan malam?', a: 'Minuman ringan tanpa batas (air, cola, jus buah) termasuk dalam harga. Paket alkohol bersifat opsional: 2 gelas (anggur, bir, rakı, vodka, atau gin) +€{p.alcohol2}/orang. Minuman tambahan dan minuman impor dikenakan harga terpisah di kapal.' },
-      { q: 'Apakah tersedia antar-jemput hotel?', a: 'Ya — layanan antar-jemput +€{p.transfer}/orang. Area layanan: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce, dan Şişli. Anda dapat memilihnya di wizard pemesanan.' },
+      { q: 'Apakah tersedia antar-jemput hotel?', a: 'Ya — layanan antar-jemput +€{p.transfer}/orang. Area layanan: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce, Yenikapı, dan Şişli. Anda dapat memilihnya di wizard pemesanan.' },
       { q: 'Apakah pelayaran makan malam Bosphorus halal?', a: 'Tentu saja. Semua produk daging di kapal **bersertifikat halal**. Alkohol adalah tambahan opsional (tidak pernah dipaksakan kepada tamu) dan pengaturan tempat duduk secara alami memisahkan bagi mereka yang memilih meja bebas alkohol. Kami juga menyediakan alternatif vegetarian tanpa biaya tambahan.' },
       { q: 'Apa yang sebaiknya saya kenakan?', a: 'Smart casual. Malam hari di Istanbul bisa berangin meski di musim panas — kami sarankan membawa jaket tipis atau syal. Tidak ada aturan berpakaian ketat, tetapi baju renang, sandal jepit, atau pakaian olahraga tidak sesuai untuk suasana makan malam.' }
     ],
@@ -47,7 +47,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosphorus dengan Anak — Pelayaran Keluarga dari €{p.dinnerStd}/dewasa',
-      description: 'Pelayaran makan malam Bosphorus ramah keluarga. Anak 0-3 gratis, 4-9 setengah harga. Ruang dalam aman, menu anak. Pembatalan gratis, bayar di kapal.'
+      description: 'Pelayaran makan malam Bosphorus ramah keluarga. Anak 0-3 gratis, 4-9 diskon €5. Ruang dalam aman, menu anak. Pembatalan gratis, bayar di kapal.'
     },
     hero: {
       h1: 'Pelayaran Bosphorus Bersama Anak',
@@ -60,14 +60,14 @@ module.exports = {
       'Entah Anda datang ke Istanbul untuk akhir pekan panjang bersama balita, atau membawa remaja dalam perjalanan pertama mereka ke Eropa — inilah tur yang direkomendasikan keluarga Istanbul. Aman, bersertifikat halal, berlisensi TÜRSAB, dan mendapat peringkat 4,8★ dari 11.317+ wisatawan.'
     ],
     highlights: [
-      { title: 'Usia 0-3 tahun sepenuhnya gratis', desc: 'Tanpa biaya untuk bayi dan balita. Usia 4-9 tahun €5 dari harga dewasa. Mulai usia 9 tahun sebagai tamu penuh. Transparan, tanpa kejutan.' },
+      { title: 'Usia 0-3 tahun sepenuhnya gratis', desc: 'Tanpa biaya untuk bayi dan balita. Usia 4-9 tahun €5 dari harga dewasa. Mulai usia 10 tahun sebagai tamu penuh. Transparan, tanpa kejutan.' },
       { title: 'Area duduk dalam ruangan', desc: 'Tertutup penuh dan berpemanas di bulan-bulan dingin. Anak-anak tetap hangat, terlindung dari angin. Dek terbuka juga tersedia saat cuaca bagus — pilihan ada di Anda.' },
       { title: 'Menu anak sesuai permintaan', desc: 'Ayam panggang sederhana, pasta, roti, dan sayuran — tanpa biaya tambahan. Minuman ringan tanpa batas (cola, jus, air). Semua halal. Beritahukan sebelumnya — tidak ada kejutan meze pedas untuk si kecil.' },
       { title: 'Hiburan aman untuk keluarga', desc: 'Pertunjukan sema (memukau bagi anak-anak), Oba Dombra, serta tarian rakyat dari Anatolia, Azerbaijan, dan Kaukasus — termasuk tarian pisau yang spektakuler — ditambah musik Turki langsung dan set saksofon dan DJ. Semua ramah keluarga — tanpa konten dewasa. Anak-anak sering ikut menari.' }
     ],
     faq: [
       { q: 'Apakah pelayaran Bosphorus aman untuk anak kecil?', a: 'Ya — kapal kami berlisensi TÜRSAB, memiliki area duduk dalam ruangan dengan jendela pengaman, pelampung tersedia dalam semua ukuran, dan kru profesional berpengalaman dengan keluarga. Kami sarankan dek dalam untuk balita, dek terbuka untuk usia 6+.' },
-      { q: 'Berapa harga anak untuk pelayaran Bosphorus?', a: 'Anak **usia 0-3 tahun: GRATIS** (tanpa biaya, tanpa biaya tersembunyi). **Usia 4-9 tahun: diskon €5** dari harga dewasa — yaitu pada tur Standar €{p.dinnerStd}/2 = €12 per anak. **Usia 10+ tahun: harga dewasa penuh.** Antar-jemput hotel gratis untuk usia 0-3, standar untuk usia 4+ (€{p.transfer}/orang).' },
+      { q: 'Berapa harga anak untuk pelayaran Bosphorus?', a: 'Anak **usia 0-3 tahun: GRATIS** (tanpa biaya, tanpa biaya tersembunyi). **Usia 4-9 tahun: diskon €5** dari harga dewasa — yaitu pada tur Standar €{p.dinnerStd} − €5 = €19.30 per anak. **Usia 10+ tahun: harga dewasa penuh.** Antar-jemput hotel gratis untuk usia 0-3, standar untuk usia 4+ (€{p.transfer}/orang).' },
       { q: 'Apakah ada menu anak di kapal?', a: 'Ya — ayam panggang sederhana, pasta, roti, sayuran musiman, dan minuman ringan tanpa batas. Semua halal. Beritahukan alergi atau pemakan pilih-pilih saat pemesanan, kami akan menyiapkan sesuatu yang akan dimakan anak Anda dengan senang hati.' },
       { q: 'Apakah musik atau pertunjukan terlalu keras untuk anak?', a: 'Pertunjukan langsung diadakan di satu area panggung yang ditentukan — jika anak Anda sensitif terhadap suara, kami akan mendudukkan Anda di meja belakang yang lebih tenang. Pertunjukan total 40 menit, sisa malam berupa musik Turki latar dan DJ dengan volume sedang.' },
       { q: 'Bagaimana jika bayi saya tertidur selama pelayaran?', a: 'Tidak masalah — banyak yang tertidur. Area duduk dalam memiliki sofa gaya banquette tempat bayi atau balita dapat tidur dengan nyaman. Minta selimut hangat dari kru kami jika perlu. Tanpa biaya tambahan.' },
@@ -143,7 +143,7 @@ module.exports = {
       { q: 'Apakah tur ini cocok untuk keluarga Muslim dengan anak-anak?', a: 'Ya — ini salah satu tur yang paling dihormati keluarga di Istanbul. Hiburan sopan (tarian rakyat, sema, musik Turki), anak usia di bawah 3 tahun gratis, usia 4-9 diskon €5. Tanpa suasana kelab malam. Keluarga dari kawasan Teluk, Indonesia, Malaysia, Pakistan, dan Maroko rutin memesan tur ini.' },
       { q: 'Bisakah saya sholat di kapal?', a: 'Tidak ada ruang sholat khusus di kapal, tetapi kami sarankan sholat sebelum naik kapal pukul 20:00 (sholat Maghrib biasanya jatuh dalam jendela ini). Ada fasilitas sholat di Dermaga Kabataş. Jika Anda perlu sholat selama pelayaran pukul 21:00-00:00 (Isya), bicarakan dengan kru — kami dapat mengatur sudut tenang di dek.' },
       { q: 'Berapa harga untuk keluarga Muslim 4 orang (2 dewasa, 2 anak)?', a: 'Pelayaran makan malam: 2 × €{p.dinnerStd} + 2 × €19.30 (usia 4-9 diskon €5) = €87.20. Jika anak di bawah 3 tahun, mereka gratis: 2 × €{p.dinnerStd} = €48.60. Tambah antar-jemput hotel €5 per dewasa. Total: €48.60–€92.90 untuk keluarga 4 orang, tanpa pembayaran di muka, bayar di kapal.' },
-      { q: 'Apakah antar-jemput hotel juga halal?', a: 'Antar-jemput hotel hanyalah perjalanan mobil — tidak melibatkan makanan atau minuman, jadi tidak ada masalah halal. Sopir kami profesional, penuh hormat, dan tepat waktu. Area antar-jemput mencakup Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli, dan 8 kawasan pusat lainnya tempat wisatawan Muslim biasanya menginap.' }
+      { q: 'Apakah antar-jemput hotel juga halal?', a: 'Antar-jemput hotel hanyalah perjalanan mobil — tidak melibatkan makanan atau minuman, jadi tidak ada masalah halal. Sopir kami profesional, penuh hormat, dan tepat waktu. Area antar-jemput mencakup Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli, dan 9 kawasan pusat lainnya tempat wisatawan Muslim biasanya menginap.' }
     ],
     cta: {
       primary: 'Pesan Pelayaran Halal · Bayar di Kapal',
@@ -557,7 +557,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Harga Pelayaran Istanbul dari €{p.dinnerStd} — Tarif Transparan',
-      description: 'Harga pelayaran Bosphorus Istanbul: pelayaran makan malam €{p.dinnerStd}/orang. Anak 0-3 gratis, 4-9 setengah harga. Add-on transparan. Pembatalan gratis.'
+      description: 'Harga pelayaran Bosphorus Istanbul: pelayaran makan malam €{p.dinnerStd}/orang. Anak 0-3 gratis, 4-9 diskon €5. Add-on transparan. Pembatalan gratis.'
     },
     hero: {
       h1: 'Harga Pelayaran Istanbul',
@@ -572,7 +572,7 @@ module.exports = {
     highlights: [
       { title: 'Pelayaran Makan Malam: €{p.dinnerStd} (sebelumnya €{p.dinnerStdOriginal})', desc: 'Diskon 40% dari harga normal. Pelayaran 3 jam, makan malam Turki lengkap (semua halal), pertunjukan langsung, minuman ringan tanpa batas. Satu paket — mencakup semua yang Anda butuhkan untuk malam yang hebat.' },
       { title: 'Bayar di kapal — €0 di muka', desc: 'Pesan sekarang, bayar saat naik kapal (tunai atau kartu). Pembatalan gratis hingga 2 jam sebelum keberangkatan. Nol risiko finansial saat memesan lebih awal.' },
-      { title: 'Harga anak: 0-3 gratis, 4-9 setengah harga', desc: '0-3 sepenuhnya gratis (tanpa biaya). 4-9 diskon €5 dari harga dewasa. 10+ harga dewasa penuh. Transparan, tanpa trik harga keluarga. Antar-jemput juga gratis untuk 0-3.' },
+      { title: 'Harga anak: 0-3 gratis, 4-9 diskon €5', desc: '0-3 sepenuhnya gratis (tanpa biaya). 4-9 diskon €5 dari harga dewasa. 10+ harga dewasa penuh. Transparan, tanpa trik harga keluarga. Antar-jemput juga gratis untuk 0-3.' },
       { title: 'Tambahan — hanya saat Anda inginkan', desc: 'Alkohol (2 gelas): +€{p.alcohol2}/orang. Antar-jemput: €{p.transfer}/orang. Meja romantis: €{p.romantic}/meja. Semua opsional, tidak dibundel. Pilih hanya yang Anda butuhkan.' }
     ],
     faq: [

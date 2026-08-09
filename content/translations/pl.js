@@ -31,7 +31,7 @@ module.exports = {
       { q: 'O której zaczyna się rejs z kolacją po Bosforze?', a: 'Wejście na pokład przy przystani Kabataş rozpoczyna się o 20:00. Łódź wypływa o 21:00 i wraca około 00:00. Zalecamy przybycie 15-20 minut wcześniej, aby zająć miejsce i się rozgościć.' },
       { q: 'Ile kosztuje rejs z kolacją po Bosforze?', a: 'Rejs z kolacją €{p.dinnerStd}/osobę (cena regularna €{p.dinnerStdOriginal}). Dzieci 0-3 lata bezpłatnie, 4-9 lat €5 zniżki. Płatność odbywa się na pokładzie — bez przedpłaty.' },
       { q: 'Czy alkohol jest wliczony w cenę rejsu z kolacją?', a: 'Nieograniczone napoje bezalkoholowe (woda, cola, soki) są wliczone w cenę. Pakiet alkoholowy jest opcjonalny: 2 kieliszki (wino, piwo, rakı, wódka lub gin) +€{p.alcohol2}/osobę. Dodatkowe napoje i alkohole importowane wyceniane są osobno na pokładzie.' },
-      { q: 'Czy oferują Państwo transfer z hotelu?', a: 'Tak — odbiór i odwiezienie kosztują +€{p.transfer}/osobę. Strefy obsługi: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce i Şişli. Mogą Państwo wybrać w kreatorze rezerwacji.' },
+      { q: 'Czy oferują Państwo transfer z hotelu?', a: 'Tak — odbiór i odwiezienie kosztują +€{p.transfer}/osobę. Strefy obsługi: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce i Şişli. Mogą Państwo wybrać w kreatorze rezerwacji.' },
       { q: 'Czy rejs z kolacją po Bosforze jest halal?', a: 'Zdecydowanie. Wszystkie produkty mięsne na pokładzie posiadają certyfikat halal. Alkohol jest opcjonalnym dodatkiem (nie jest narzucany gościom), a układ miejsc naturalnie oddziela stoły preferujące bezalkoholową atmosferę. Bez dodatkowych opłat oferujemy również opcje wegetariańskie.' },
       { q: 'W co powinienem się ubrać?', a: 'Smart casual. Wieczory w Stambule mogą być wietrzne nawet latem — zalecamy cienką marynarkę lub szal. Nie ma obowiązkowego dress code\'u, ale strój kąpielowy, klapki czy odzież sportowa nie pasują do atmosfery kolacji.' }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosfor z Dziećmi — Rejs Rodzinny od €{p.dinnerStd}/dorosły',
-      description: 'Rodzinny rejs z kolacją po Bosforze. Dzieci 0-3 gratis, 4-9 połowa ceny. Bezpieczna sala, menu dla dzieci. Bezpłatne anulowanie, płatność na pokładzie.'
+      description: 'Rodzinny rejs z kolacją po Bosforze. Dzieci 0-3 gratis, 4-9 €5 zniżki. Bezpieczna sala, menu dla dzieci. Bezpłatne anulowanie, płatność na pokładzie.'
     },
     hero: {
       h1: 'Rejs po Bosforze z Dziećmi',
@@ -54,18 +54,18 @@ module.exports = {
     },
     intro: [
       '**Rejs po Bosforze z dziećmi** to najbardziej przyjazna rodzinom wieczorna opcja w Stambule. Każdej nocy witamy dziesiątki rodzin — każdy szczegół zaprojektowaliśmy z myślą o komforcie dzieci: zadaszone miejsca siedzące, aby najmłodsi byli w cieple, dostępne menu przyjazne dzieciom (proste grillowane kurczaki, makaron, nieograniczone napoje bezalkoholowe) oraz wczesne wejście na pokład, aby uniknąć późnych wieczornych marudzeń.',
-      'W przeciwieństwie do łodzi wyłącznie dla dorosłych, nasz **rejs z kolacją po Bosforze dla rodzin** pozostaje ciepły i inkluzywny. **Dzieci 0-3 lata bezpłatnie** (transfer wliczony), 4-9 lat **€5 zniżki**, od 9 lat cena pełna — żadnych ukrytych opłat. Tańce ludowe, taniec brzucha i pokaz sema to delikatna rodzinna rozrywka, a nie klub nocny.',
+      'W przeciwieństwie do łodzi wyłącznie dla dorosłych, nasz **rejs z kolacją po Bosforze dla rodzin** pozostaje ciepły i inkluzywny. **Dzieci 0-3 lata bezpłatnie** (transfer wliczony), 4-9 lat **€5 zniżki**, od 10 lat cena pełna — żadnych ukrytych opłat. Tańce ludowe, taniec brzucha i pokaz sema to delikatna rodzinna rozrywka, a nie klub nocny.',
       'Niezależnie od tego, czy przyjeżdżają Państwo do Stambułu na długi weekend z maluchem, czy przywożą nastolatki na ich pierwszą podróż po Europie — to jest rejs, który polecają stambulskie rodziny. Bezpieczny, z certyfikatem halal, z licencją TÜRSAB i oceną 4,8★ od ponad 11 317 podróżnych.'
     ],
     highlights: [
-      { title: 'Dzieci 0-3 lata całkowicie bezpłatnie', desc: 'Bez opłat za niemowlęta i maluchy. 4-9 lat €5 ceny dorosłego. Od 9 lat pełny gość. Przejrzyście, bez niespodzianek.' },
+      { title: 'Dzieci 0-3 lata całkowicie bezpłatnie', desc: 'Bez opłat za niemowlęta i maluchy. 4-9 lat €5 ceny dorosłego. Od 10 lat pełny gość. Przejrzyście, bez niespodzianek.' },
       { title: 'Zadaszona strefa wewnętrzna', desc: 'W chłodniejszych miesiącach w pełni zadaszona i ogrzewana. Dzieci pozostają w cieple, chronione przed wiatrem. Przy dobrej pogodzie dostępny również otwarty pokład — wybór należy do Państwa.' },
       { title: 'Menu dla dzieci na życzenie', desc: 'Proste grillowane kurczaki, makaron, chleb i warzywa — bez dodatkowych opłat. Nieograniczone napoje bezalkoholowe (cola, sok, woda). Prosimy o wcześniejszą informację — żadnych zaskakujących pikantnych mezze dla maluchów.' },
       { title: 'Rozrywka bezpieczna dla rodzin', desc: 'Pokaz sema (fascynujący dla dzieci), Oba Dombra oraz tańce ludowe z Anatolii, Azerbejdżanu i Kaukazu — w tym spektakularny taniec z nożami — a także turecka muzyka na żywo i set saksofonu i DJ-a. Wszystko przyjazne rodzinom — bez treści dla dorosłych. Dzieci często dołączają do tańca.' }
     ],
     faq: [
       { q: 'Czy rejs po Bosforze jest bezpieczny dla małych dzieci?', a: 'Tak — nasza łódź posiada licencję TÜRSAB, zadaszoną strefę wewnętrzną z bezpiecznymi oknami, kamizelki ratunkowe w każdym rozmiarze i profesjonalną załogę doświadczoną z rodzinami. Zalecamy wewnętrzny pokład dla maluchów, otwarty pokład dla dzieci od 6 lat.' },
-      { q: 'Ile kosztuje rejs po Bosforze dla dzieci?', a: 'Dzieci **0-3 lata: BEZPŁATNIE** (bez opłat, bez ukrytych kosztów). **4-9 lat: €5 zniżki** od ceny dorosłego — czyli w rejsie Standard €{p.dinnerStd}/2 = €12 za dziecko. **Od 9 lat: pełna cena dorosłego.** Transfer hotelowy bezpłatny dla 0-3 lat, standardowy od 4 lat (€{p.transfer}/osobę).' },
+      { q: 'Ile kosztuje rejs po Bosforze dla dzieci?', a: 'Dzieci **0-3 lata: BEZPŁATNIE** (bez opłat, bez ukrytych kosztów). **4-9 lat: €5 zniżki** od ceny dorosłego — czyli w rejsie Standard €{p.dinnerStd} − €5 = €19.30 za dziecko. **Od 10 lat: pełna cena dorosłego.** Transfer hotelowy bezpłatny dla 0-3 lat, standardowy od 4 lat (€{p.transfer}/osobę).' },
       { q: 'Czy na pokładzie jest menu dla dzieci?', a: 'Tak — proste grillowane kurczaki, makaron, chleb, sezonowe warzywa i nieograniczone napoje bezalkoholowe. Prosimy poinformować przy rezerwacji o alergiach lub wybrednych zjadaczach, a przygotujemy coś, co Państwa dziecko z radością zje.' },
       { q: 'Czy muzyka lub pokaz nie są za głośne dla dzieci?', a: 'Występy na żywo odbywają się w jednej wyznaczonej strefie sceny — jeśli dziecko jest wrażliwe na dźwięki, posadzimy Państwa przy tylnym, cichszym stole. Pokaz trwa łącznie 40 minut, a resztę wieczoru wypełnia muzyka ambient po turecku i DJ na umiarkowanej głośności.' },
       { q: 'Co jeśli moje dziecko zaśnie podczas rejsu?', a: 'Nie ma problemu — wielu zasypia. W strefie wewnętrznej mamy kanapy bankietowe, na których niemowlę lub maluch może wygodnie się zdrzemnąć. Poproszą Państwo załogę o ciepły koc, jeśli będzie potrzebny. Bez dodatkowych opłat.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Czy ten rejs jest odpowiedni dla muzułmańskich rodzin z dziećmi?', a: 'Tak — to jeden z najbardziej szanowanych dla rodzin rejsów w Stambule. Rozrywka jest skromna (tańce ludowe, sema, muzyka turecka), dzieci poniżej 3 lat bezpłatnie, 4-9 lat €5 zniżki. Bez klubowej atmosfery. Rodziny z regionu Zatoki, Indonezji, Malezji, Pakistanu i Maroka regularnie rezerwują ten rejs.' },
       { q: 'Czy mogę modlić się na pokładzie?', a: 'Na łodzi nie ma dedykowanego pomieszczenia modlitewnego, ale zalecamy modlitwę przed wejściem na pokład o 20:00 (Maghrib zwykle mieści się w tym oknie). Na przystani Kabataş dostępne są udogodnienia modlitewne. Jeśli muszą Państwo modlić się podczas rejsu 21:00-00:00 (Isza), proszę porozmawiać z załogą — możemy zorganizować cichy kąt na pokładzie.' },
       { q: 'Jakie są ceny dla muzułmańskiej rodziny 4-osobowej (2 dorosłych, 2 dzieci)?', a: 'Rejs z kolacją: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 lat €5 zniżki) = €87.20. Jeśli dzieci poniżej 3 lat są bezpłatne: 2 × €{p.dinnerStd} = €48.60. Dodaj €5 transfer hotelowy na dorosłego. Suma: €48.60–€92.90 dla rodziny 4-osobowej, bez przedpłaty, płatność na pokładzie.' },
-      { q: 'Czy transfer hotelowy jest również halal?', a: 'Transfer hotelowy to tylko przejazd samochodem — nie dotyczy jedzenia ani napojów, więc kwestia halal nie ma zastosowania. Nasi kierowcy są profesjonalni, szanujący i punktualni. Strefy transferu obejmują Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli i 8 innych centralnych dzielnic, gdzie muzułmańscy podróżni zazwyczaj się zatrzymują.' }
+      { q: 'Czy transfer hotelowy jest również halal?', a: 'Transfer hotelowy to tylko przejazd samochodem — nie dotyczy jedzenia ani napojów, więc kwestia halal nie ma zastosowania. Nasi kierowcy są profesjonalni, szanujący i punktualni. Strefy transferu obejmują Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli i 9 innych centralnych dzielnic, gdzie muzułmańscy podróżni zazwyczaj się zatrzymują.' }
     ],
     cta: {
       primary: 'Zarezerwuj Halal Rejs · Płatność na Pokładzie',
@@ -507,7 +507,7 @@ module.exports = {
       { q: 'Czy muszę wydrukować bilet na rejs po Bosforze?', a: 'Nie — fizyczny bilet lub kupon nie jest wymagany. Po rezerwacji wysyłamy Państwu potwierdzenie przez WhatsApp (lub Telegram) z punktem zbiórki, czasem i nazwiskiem na rezerwacji. Po prostu pokazać telefon przy przystani. To wszystko.' },
       { q: 'Czy mogę anulować lub zwrócić bilet na rejs po Bosforze?', a: 'Tak — bezpłatna anulacja do 2 godzin przed odpłynięciem. Po prostu napisać na WhatsApp. Ponieważ nie zapłacili Państwo jeszcze (płatność na pokładzie), zwrot nie jest potrzebny — po prostu nie zjawiają się, bez opłaty. Znacznie bardziej elastyczne niż opłacone z góry bilety osób trzecich.' },
       { q: 'Czy bilety na rejs po Bosforze są dostępne tego samego dnia?', a: 'Często tak, szczególnie w dni powszednie. Weekendy i święta zapełniają się szybciej. Sprawdź dostępność przez kreatora rezerwacji — aktualizuje się w czasie rzeczywistym. Rezerwacja tego samego dnia zazwyczaj możliwa do kilku godzin przed wypłynięciem 21:00. WhatsApp na pilne prośby.' },
-      { q: 'Czy bilety dziecięce na rejs po Bosforze są bezpłatne?', a: 'Dzieci **0-3 lata całkowicie bezpłatnie** (bez opłat, bez ukrytych kosztów, transfer wliczony). **4-9 lat €5 zniżki** (€{p.dinnerStd} − €5 = €19.30). **Od 9 lat pełna cena dorosłego.** Ceny pułapowe i przejrzyste — bez sztuczek "opłata za niemowlęta".' }
+      { q: 'Czy bilety dziecięce na rejs po Bosforze są bezpłatne?', a: 'Dzieci **0-3 lata całkowicie bezpłatnie** (bez opłat, bez ukrytych kosztów, transfer wliczony). **4-9 lat €5 zniżki** (€{p.dinnerStd} − €5 = €19.30). **Od 10 lat pełna cena dorosłego.** Ceny pułapowe i przejrzyste — bez sztuczek "opłata za niemowlęta".' }
     ],
     cta: {
       primary: 'Kup Bilety · Płatność na Pokładzie',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Cena Rejsu Stambuł od €{p.dinnerStd} — Przejrzyste Stawki',
-      description: 'Ceny rejsów Bosfor Stambuł: rejs z kolacją €{p.dinnerStd}/osobę. Dzieci 0-3 gratis, 4-9 połowa ceny. Dodatki przejrzyste. Bezpłatne anulowanie.'
+      description: 'Ceny rejsów Bosfor Stambuł: rejs z kolacją €{p.dinnerStd}/osobę. Dzieci 0-3 gratis, 4-9 €5 zniżki. Dodatki przejrzyste. Bezpłatne anulowanie.'
     },
     hero: {
       h1: 'Cena Rejsu po Stambule',
@@ -564,13 +564,13 @@ module.exports = {
     },
     intro: [
       '**Ceny rejsów po Stambule** mocno się różnią — od €15 promów budżetowych pomijających kolację po €150+ jachty w stylu resort. Nasze ceny są pośrodku i dają najlepszą wartość: jeden pakiet za €{p.dinnerStd}/osobę na 3-godzinny rejs z pełną kolacją i pokazem. Bez ukrytych opłat, bez zaskakujących dopłat.',
-      'Szczegółowe rozbicie **cen rejsów po Stambule**, ponieważ przejrzystość ma znaczenie:\n\n- **Rejs z Kolacją**: €{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}, 40% zniżki). 3-godzinny rejs, 10 mezze, danie główne, deser, nieograniczone napoje bezalkoholowe, pokaz na żywo wliczone.\n- **Dzieci 0-3 lata**: Bezpłatnie. 4-9 lat: €5 zniżki. Od 9 lat: pełna cena.\n\nDodatki (opcjonalne):\n- 2 kieliszki alkoholu: +€{p.alcohol2}/osobę\n- Transfer hotelowy tam i z powrotem: +€{p.transfer}/osobę\n- Aranżacja stolika romantycznego: +€{p.romantic}/stół',
+      'Szczegółowe rozbicie **cen rejsów po Stambule**, ponieważ przejrzystość ma znaczenie:\n\n- **Rejs z Kolacją**: €{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}, 40% zniżki). 3-godzinny rejs, 10 mezze, danie główne, deser, nieograniczone napoje bezalkoholowe, pokaz na żywo wliczone.\n- **Dzieci 0-3 lata**: Bezpłatnie. 4-9 lat: €5 zniżki. Od 10 lat: pełna cena.\n\nDodatki (opcjonalne):\n- 2 kieliszki alkoholu: +€{p.alcohol2}/osobę\n- Transfer hotelowy tam i z powrotem: +€{p.transfer}/osobę\n- Aranżacja stolika romantycznego: +€{p.romantic}/stół',
       'I co ważne: **płatność na pokładzie**. Nie zobowiązują się Państwo ani do centa, dopóki nie znajdą się na łodzi. Bezpłatna anulacja do 2 godzin przed odpłynięciem. Bez zobowiązania, bez ryzyka — najbardziej przyjazne konsumentowi **cennik rejsów po Stambule**, jaki znajdą Państwo.'
     ],
     highlights: [
       { title: 'Rejs z Kolacją: €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal})', desc: '40% zniżki od ceny regularnej. 3-godzinny rejs, pełna turecka kolacja, pokaz na żywo, nieograniczone napoje bezalkoholowe. Jeden pakiet — obejmuje wszystko, co potrzebne do wspaniałego wieczoru.' },
       { title: 'Płatność na pokładzie — €0 z góry', desc: 'Proszę zarezerwować teraz i zapłacić przy wejściu na pokład (gotówka lub karta). Bezpłatna anulacja do 2 godzin przed odpłynięciem. Zero ryzyka finansowego przy wczesnej rezerwacji.' },
-      { title: 'Cena dziecka: 0-3 bezpłatnie, 4-9 pół ceny', desc: '0-3 lata całkowicie bezpłatnie (bez opłat). 4-9 lat €5 zniżki od ceny dorosłego. Od 9 lat pełna cena dorosłego. Przejrzyste, bez sztuczek cenowych rodzinnych. Transfer również bezpłatny dla 0-3.' },
+      { title: 'Cena dziecka: 0-3 bezpłatnie, 4-9 pół ceny', desc: '0-3 lata całkowicie bezpłatnie (bez opłat). 4-9 lat €5 zniżki od ceny dorosłego. Od 10 lat pełna cena dorosłego. Przejrzyste, bez sztuczek cenowych rodzinnych. Transfer również bezpłatny dla 0-3.' },
       { title: 'Dodatki — tylko gdy ich Państwo chcą', desc: 'Alkohol (2 kieliszki): +€{p.alcohol2}/osobę. Transfer: €{p.transfer}/osobę. Stół romantyczny: €{p.romantic}/stół. Wszystkie opcjonalne, niepakietowe. Wybierają Państwo tylko to, czego potrzebują.' }
     ],
     faq: [

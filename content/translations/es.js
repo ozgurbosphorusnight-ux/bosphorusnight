@@ -31,7 +31,7 @@ module.exports = {
       { q: '¿A qué hora comienza el crucero con cena por el Bósforo?', a: 'El embarque comienza a las 20:00 en el muelle de Kabataş. El barco zarpa a las 21:00 y regresa aproximadamente a las 00:00. Recomendamos llegar 15-20 minutos antes para acomodarse.' },
       { q: '¿Cuánto cuesta el crucero con cena por el Bósforo?', a: 'El crucero con cena cuesta €{p.dinnerStd}/persona (precio normal €{p.dinnerStdOriginal}). Niños de 0-3 años gratis, 4-9 años con €5 de descuento. El pago se realiza a bordo — sin prepago.' },
       { q: '¿El alcohol está incluido en el crucero con cena?', a: 'Los refrescos ilimitados (agua, cola, zumo) están incluidos en el precio. El paquete de alcohol es opcional: 2 copas (vino, cerveza, rakı, vodka o ginebra) +€{p.alcohol2}/persona. Las bebidas adicionales e importadas se tarifan aparte a bordo.' },
-      { q: '¿Hay traslado desde el hotel?', a: 'Sí — el servicio de recogida y regreso cuesta +€{p.transfer}/persona. Zonas de servicio: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce y Şişli. Puede seleccionarlo en el asistente de reservas.' },
+      { q: '¿Hay traslado desde el hotel?', a: 'Sí — el servicio de recogida y regreso cuesta +€{p.transfer}/persona. Zonas de servicio: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce y Şişli. Puede seleccionarlo en el asistente de reservas.' },
       { q: '¿El crucero con cena por el Bósforo es halal?', a: 'Absolutamente. Todos los productos cárnicos a bordo tienen certificación halal. El alcohol es un complemento opcional (nunca se impone a los huéspedes) y la distribución de mesas separa de forma natural a quienes prefieren una mesa sin alcohol. También ofrecemos alternativas vegetarianas sin coste adicional.' },
       { q: '¿Qué debo llevar?', a: 'Smart casual. Las noches de Estambul pueden ser ventosas incluso en verano — recomendamos una chaqueta ligera o un chal. No hay código de vestimenta obligatorio, pero los bañadores, las chanclas o la ropa deportiva no son apropiados para un ambiente de cena.' }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Crucero Bósforo con Niños — Tour Familiar desde €{p.dinnerStd}/adulto',
-      description: 'Crucero con cena por el Bósforo apto para familias. Niños 0-3 gratis, 4-9 mitad de precio. Salón interior seguro, menú infantil.'
+      description: 'Crucero con cena por el Bósforo apto para familias. Niños 0-3 gratis, 4-9 €5 de descuento. Salón interior seguro, menú infantil.'
     },
     hero: {
       h1: 'Crucero por el Bósforo con Niños',
@@ -54,18 +54,18 @@ module.exports = {
     },
     intro: [
       'El **crucero por el Bósforo con niños** es la opción nocturna más familiar de Estambul. Recibimos a docenas de familias cada noche — hemos diseñado cada detalle para que los niños se sientan cómodos: asientos cubiertos para que los más pequeños se mantengan calientes, un menú infantil accesible (pollo a la plancha sencillo, pasta, refrescos ilimitados) y embarque temprano para evitar las rabietas de última hora.',
-      'A diferencia de los barcos solo para adultos, nuestro **crucero con cena por el Bósforo para familias** mantiene un ambiente cálido e inclusivo. **Los niños de 0-3 años viajan gratis** (traslado incluido), los de 4-9 años con **€5 de descuento** y los de 9 años o más pagan precio completo — sin cargos ocultos. Las danzas folclóricas en vivo, la danza oriental y la ceremonia sema son entretenimiento familiar amable, no de discoteca.',
+      'A diferencia de los barcos solo para adultos, nuestro **crucero con cena por el Bósforo para familias** mantiene un ambiente cálido e inclusivo. **Los niños de 0-3 años viajan gratis** (traslado incluido), los de 4-9 años con **€5 de descuento** y los de 10 años o más pagan precio completo — sin cargos ocultos. Las danzas folclóricas en vivo, la danza oriental y la ceremonia sema son entretenimiento familiar amable, no de discoteca.',
       '¿Viene a Estambul con su niño pequeño para un fin de semana largo o trae a los adolescentes en su primer viaje por Europa? Este es el tour que recomiendan las familias de Estambul. Seguro, con certificación halal, licencia TÜRSAB y 4,8★ por más de 11.317 viajeros.'
     ],
     highlights: [
-      { title: '0-3 años completamente gratis', desc: 'Sin cargo para bebés y niños pequeños. 4-9 años al €5 del precio del adulto. Desde los 9 años, huésped completo. Transparente, sin sorpresas.' },
+      { title: '0-3 años completamente gratis', desc: 'Sin cargo para bebés y niños pequeños. 4-9 años al €5 del precio del adulto. Desde los 10 años, huésped completo. Transparente, sin sorpresas.' },
       { title: 'Zona interior cubierta', desc: 'Completamente cerrada y climatizada en los meses fríos. Los niños se mantienen calientes, protegidos del viento. La cubierta exterior también está disponible cuando hace buen tiempo — usted elige.' },
       { title: 'Menú infantil bajo petición', desc: 'Pollo a la plancha sencillo, pasta, pan y verduras — sin cargo adicional. Refrescos ilimitados (cola, zumo, agua). Avise con antelación — nada de mezze picantes sorpresa para los pequeños.' },
       { title: 'Entretenimiento seguro para familias', desc: 'Ceremonia sema (fascinante para los niños), Oba Dombra y danzas folclóricas de Anatolia, Azerbaiyán y el Cáucaso — incluida la espectacular danza de los cuchillos — además de música turca en vivo y set de saxofón y DJ. Todo apto para familias — sin contenido adulto. Los niños a menudo se unen a la pista.' }
     ],
     faq: [
       { q: '¿El crucero por el Bósforo es seguro para niños pequeños?', a: 'Sí — nuestro barco tiene licencia TÜRSAB, cuenta con zona interior cubierta con ventanas seguras, chalecos salvavidas de todas las tallas y tripulación profesional con experiencia en familias. Recomendamos la cubierta interior para niños pequeños y la exterior para mayores de 6 años.' },
-      { q: '¿Cuál es el precio infantil en el crucero por el Bósforo?', a: 'Los niños de **0-3 años: GRATIS** (sin cargos, sin costes ocultos). **4-9 años: €5 de descuento** sobre el precio del adulto — es decir, en el tour Estándar €{p.dinnerStd}/2 = €12 por niño. **10+ años: precio completo de adulto.** El traslado desde el hotel es gratis para 0-3 años y estándar para mayores de 4 (€{p.transfer}/persona).' },
+      { q: '¿Cuál es el precio infantil en el crucero por el Bósforo?', a: 'Los niños de **0-3 años: GRATIS** (sin cargos, sin costes ocultos). **4-9 años: €5 de descuento** sobre el precio del adulto — es decir, en el tour Estándar €{p.dinnerStd} − €5 = €19.30 por niño. **10+ años: precio completo de adulto.** El traslado desde el hotel es gratis para 0-3 años y estándar para mayores de 4 (€{p.transfer}/persona).' },
       { q: '¿Hay menú infantil a bordo?', a: 'Sí — pollo a la plancha sencillo, pasta, pan, verduras de temporada y refrescos ilimitados. Avise en la reserva sobre alergias o comensales exigentes y prepararemos algo que su hijo comerá con gusto.' },
       { q: '¿La música o el espectáculo son demasiado ruidosos para los niños?', a: 'Las actuaciones en vivo se realizan en una sola zona designada — si sus hijos son sensibles al sonido, los sentaremos en una mesa trasera más tranquila. El espectáculo dura 40 minutos en total; el resto de la velada es música turca ambiental y DJ a volumen moderado.' },
       { q: '¿Qué pasa si mi bebé se duerme durante el tour?', a: 'No hay problema — muchos se duermen. La zona interior tiene sofás tipo banqueta donde un bebé o niño pequeño puede dormir cómodamente. Pida a nuestra tripulación una manta caliente si la necesita. Sin cargo adicional.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: '¿Este tour es adecuado para familias musulmanas con niños?', a: 'Sí — es uno de los tours más respetuosos con las familias en Estambul. El entretenimiento es modesto (danzas folclóricas, sema, música turca), los niños menores de 3 años gratis, 4-9 años con €5 de descuento. Sin ambiente de discoteca. Familias del Golfo, Indonesia, Malasia, Pakistán y Marruecos reservan este tour regularmente.' },
       { q: '¿Puedo rezar a bordo?', a: 'No hay una sala de oración específica a bordo, pero recomendamos rezar antes del embarque a las 20:00 (la oración del maghrib suele caer en esta ventana). El muelle de Kabataş tiene instalaciones de oración. Si necesita rezar durante la navegación de 21:00-00:00 (isha), hable con la tripulación — podemos organizar un rincón tranquilo en cubierta.' },
       { q: '¿Cuáles son los precios para una familia musulmana de 4 (2 adultos, 2 niños)?', a: 'Crucero con cena: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 años con €5 de descuento) = €87.20. Si los niños tienen menos de 3 años, gratis: 2 × €{p.dinnerStd} = €48.60. Añada €5 por adulto de traslado al hotel. Total: €48.60–€92.90 para una familia de 4, sin prepago, pago a bordo.' },
-      { q: '¿El traslado al hotel también es halal?', a: 'El traslado al hotel es solo un viaje en coche — no hay comida ni bebida, por lo que no hay preocupación halal. Nuestros conductores son profesionales, respetuosos y puntuales. Las zonas de traslado cubren Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli y otros 8 barrios céntricos donde suelen alojarse los viajeros musulmanes.' }
+      { q: '¿El traslado al hotel también es halal?', a: 'El traslado al hotel es solo un viaje en coche — no hay comida ni bebida, por lo que no hay preocupación halal. Nuestros conductores son profesionales, respetuosos y puntuales. Las zonas de traslado cubren Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli y otros 9 barrios céntricos donde suelen alojarse los viajeros musulmanes.' }
     ],
     cta: {
       primary: 'Reservar Tour Halal · Pago a Bordo',
@@ -570,7 +570,7 @@ module.exports = {
     highlights: [
       { title: 'Crucero con Cena: €{p.dinnerStd} (antes €{p.dinnerStdOriginal})', desc: '40% de descuento sobre el precio normal. Tour de 3 horas, cena turca completa, espectáculo en vivo, refrescos ilimitados. Un solo paquete — cubre todo lo que necesita para una gran velada.' },
       { title: 'Pago a bordo — €0 por adelantado', desc: 'Reserve ahora y pague al embarcar (efectivo o tarjeta). Cancelación gratuita hasta 2 horas antes de la salida. Cero riesgo financiero al reservar con antelación.' },
-      { title: 'Precio infantil: 0-3 gratis, 4-9 a mitad de precio', desc: '0-3 totalmente gratis (sin cargos). 4-9 al €5 del precio del adulto. 10+ precio completo de adulto. Transparente, sin trucos de precios familiares. Traslado también gratis para 0-3.' },
+      { title: 'Precio infantil: 0-3 gratis, 4-9 con €5 de descuento', desc: '0-3 totalmente gratis (sin cargos). 4-9 al €5 del precio del adulto. 10+ precio completo de adulto. Transparente, sin trucos de precios familiares. Traslado también gratis para 0-3.' },
       { title: 'Complementos — solo cuando los quiera', desc: 'Alcohol (2 copas): +€{p.alcohol2}/persona. Traslado: €{p.transfer}/persona. Mesa romántica: €{p.romantic}/mesa. Todos opcionales, no empaquetados. Elija solo lo que necesite.' }
     ],
     faq: [

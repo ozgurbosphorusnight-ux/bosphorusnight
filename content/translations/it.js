@@ -31,7 +31,7 @@ module.exports = {
       { q: "Quando inizia la crociera con cena sul Bosforo?", a: "L'imbarco inizia alle 20:00 al molo di Kabataş. La barca parte alle 21:00 e rientra intorno alle 00:00. Raccomandiamo di arrivare 15-20 minuti in anticipo per accomodarsi e sistemarsi." },
       { q: "Quanto costa la crociera con cena sul Bosforo?", a: "La crociera con cena costa €{p.dinnerStd}/persona (prezzo pieno €{p.dinnerStdOriginal}). Bambini 0-3 anni gratis, 4-9 anni al €5. Il pagamento avviene a bordo — nessun anticipo." },
       { q: "L'alcol è incluso nella crociera con cena?", a: "Le bevande analcoliche illimitate (acqua, cola, succhi) sono incluse nel prezzo. Il pacchetto alcolico è opzionale: 2 bicchieri (vino, birra, rakı, vodka o gin) +€{p.alcohol2}/persona. Le bevande aggiuntive e i distillati d'importazione sono a prezzo separato a bordo." },
-      { q: "È previsto il transfer dall'hotel?", a: "Sì — il servizio di andata e ritorno costa +€{p.transfer}/persona. Aree di servizio: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce e Şişli. Può selezionarlo nella procedura guidata di prenotazione." },
+      { q: "È previsto il transfer dall'hotel?", a: "Sì — il servizio di andata e ritorno costa +€{p.transfer}/persona. Aree di servizio: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce e Şişli. Può selezionarlo nella procedura guidata di prenotazione." },
       { q: "La crociera con cena sul Bosforo è halal?", a: "Assolutamente sì. Tutti i prodotti a base di carne a bordo sono certificati halal. L'alcol è un extra opzionale (mai imposto agli ospiti) e la disposizione dei tavoli separa naturalmente chi preferisce un tavolo senza alcol. Offriamo anche alternative vegetariane senza supplemento." },
       { q: "Come devo vestirmi?", a: "Smart casual. Le serate di Istanbul possono essere ventose anche in estate — raccomandiamo una giacca leggera o uno scialle. Non c'è un dress code obbligatorio, ma costumi da bagno, infradito o abbigliamento sportivo non si addicono all'atmosfera della cena." }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   "bosphorus-with-kids": {
     meta: {
       title: 'Bosforo con Bambini — Crociera Famiglia da €{p.dinnerStd}/adulto',
-      description: 'Crociera cena Bosforo per famiglie. Bambini 0-3 gratis, 4-9 metà prezzo. Sala interna sicura, menu bambini. Cancellazione gratuita, pagamento a bordo.'
+      description: 'Crociera cena Bosforo per famiglie. Bambini 0-3 gratis, 4-9 €5 di sconto. Sala interna sicura, menu bambini. Cancellazione gratuita, pagamento a bordo.'
     },
     hero: {
       h1: "Tour del Bosforo con Bambini",
@@ -58,14 +58,14 @@ module.exports = {
       "Che stia venendo a Istanbul per un lungo weekend con il Suo bambino piccolo, o portando gli adolescenti al loro primo viaggio europeo — questo è il tour che le famiglie di Istanbul raccomandano. Sicuro, certificato halal, autorizzato TÜRSAB e valutato 4,8★ da oltre 11.317 viaggiatori."
     ],
     highlights: [
-      { title: "0-3 anni completamente gratis", desc: "Nessun costo per neonati e bambini piccoli. 4-9 anni al €5 del prezzo adulto. Dai 9 anni ospite a pieno titolo. Trasparente, senza sorprese." },
+      { title: "0-3 anni completamente gratis", desc: "Nessun costo per neonati e bambini piccoli. 4-9 anni al €5 del prezzo adulto. Dai 10 anni ospite a pieno titolo. Trasparente, senza sorprese." },
       { title: "Area interna al coperto", desc: "Completamente al coperto e riscaldata nei mesi freddi. I bambini restano al caldo, al riparo dal vento. Ponte esterno disponibile anche con bel tempo — la scelta è Sua." },
       { title: "Menu per bambini su richiesta", desc: "Pollo alla griglia semplice, pasta, pane e verdure — senza supplemento. Bevande analcoliche illimitate (cola, succhi, acqua). Ci avvisi in anticipo — niente meze piccanti a sorpresa per i più piccoli." },
       { title: "Intrattenimento sicuro per famiglie", desc: "Cerimonia Sema (affascinante per i bambini), Oba Dombra e danze popolari anatoliche, azere e caucasiche — inclusa la spettacolare danza dei coltelli — oltre a musica turca dal vivo e set sassofono e DJ. Tutto a misura di famiglia — nessun contenuto per adulti. I bambini spesso si uniscono ai balli." }
     ],
     faq: [
       { q: "Il tour del Bosforo è sicuro per i bambini piccoli?", a: "Sì — la nostra barca è autorizzata TÜRSAB, dispone di un'area interna coperta con finestre di sicurezza, giubbotti di salvataggio di ogni taglia disponibili, e l'equipaggio è esperto con le famiglie. Raccomandiamo il ponte interno per i più piccoli e il ponte esterno per i bambini dai 6 anni in su." },
-      { q: "Qual è il prezzo per bambini del tour del Bosforo?", a: "I bambini **0-3 anni: GRATIS** (nessun costo, nessuna tariffa nascosta). **4-9 anni: €5 di sconto** sul prezzo adulto — quindi sul tour Standard €{p.dinnerStd}/2 = €12 per bambino. **10+ anni: prezzo adulto intero.** Il transfer hotel è gratis per i 0-3 anni, standard (€{p.transfer}/persona) per i 4+." },
+      { q: "Qual è il prezzo per bambini del tour del Bosforo?", a: "I bambini **0-3 anni: GRATIS** (nessun costo, nessuna tariffa nascosta). **4-9 anni: €5 di sconto** sul prezzo adulto — quindi sul tour Standard €{p.dinnerStd} − €5 = €19.30 per bambino. **10+ anni: prezzo adulto intero.** Il transfer hotel è gratis per i 0-3 anni, standard (€{p.transfer}/persona) per i 4+." },
       { q: "C'è un menu per bambini a bordo?", a: "Sì — pollo alla griglia semplice, pasta, pane, verdure di stagione e bevande analcoliche illimitate. Ci informi di allergie o di bambini schizzinosi alla prenotazione, e prepareremo qualcosa che Suo figlio mangerà con piacere." },
       { q: "La musica o lo spettacolo sono troppo forti per i bambini?", a: "Le esibizioni dal vivo si svolgono in un'unica area palco designata — se i Suoi bambini sono sensibili ai suoni, Le daremo un tavolo più tranquillo nella parte posteriore. Lo spettacolo dura in totale 40 minuti, e il resto della serata è musica turca d'atmosfera e DJ a volume moderato." },
       { q: "Cosa succede se il mio bambino si addormenta durante il tour?", a: "Nessun problema — molti lo fanno. L'area interna ha divani stile banchetto dove un neonato o un bambino piccolo può appisolarsi comodamente. Chieda al nostro equipaggio una coperta calda se necessario. Nessun supplemento." },
@@ -141,7 +141,7 @@ module.exports = {
       { q: "Questo tour è adatto alle famiglie musulmane con bambini?", a: "Sì — è uno dei tour più rispettosi delle famiglie di Istanbul. Intrattenimento modesto (folklore, Sema, musica turca), bambini sotto i 3 anni gratis, 4-9 anni €5 di sconto. Nessuna atmosfera da night club. Le famiglie della regione del Golfo, Indonesia, Malesia, Pakistan e Marocco prenotano regolarmente questo tour." },
       { q: "Posso pregare a bordo?", a: "Non c'è una sala preghiera dedicata a bordo, ma raccomandiamo di pregare prima dell'imbarco alle 20:00 (il maghrib di solito cade in questa finestra). Ci sono strutture per la preghiera al molo di Kabataş. Se ha bisogno di pregare durante la navigazione 21:00-00:00 (isha), parli con l'equipaggio — possiamo organizzare un angolo tranquillo sul ponte." },
       { q: "Quali sono i prezzi per una famiglia musulmana di 4 persone (2 adulti, 2 bambini)?", a: "Crociera con cena: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 anni €5 di sconto) = €87.20. Se i bambini hanno meno di 3 anni è gratis: 2 × €{p.dinnerStd} = €48.60. Aggiunga €5 di transfer hotel per adulto. Totale: €48.60–€92.90 per una famiglia di 4, nessun anticipo, pagamento a bordo." },
-      { q: "Anche il transfer hotel è halal?", a: "Il transfer hotel è solo un tragitto in auto — nessun cibo o bevanda coinvolti, quindi nessuna questione halal. I nostri autisti sono professionali, rispettosi e puntuali. Le zone di transfer coprono Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e altre 8 aree centrali dove alloggiano di solito i viaggiatori musulmani." }
+      { q: "Anche il transfer hotel è halal?", a: "Il transfer hotel è solo un tragitto in auto — nessun cibo o bevanda coinvolti, quindi nessuna questione halal. I nostri autisti sono professionali, rispettosi e puntuali. Le zone di transfer coprono Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e altre 9 aree centrali dove alloggiano di solito i viaggiatori musulmani." }
     ],
     cta: {
       primary: "Prenota Tour Halal · Pagamento a Bordo",
@@ -555,7 +555,7 @@ module.exports = {
   "istanbul-cruise-price": {
     meta: {
       title: 'Prezzo Crociera Istanbul da €{p.dinnerStd} — Tariffe Trasparenti',
-      description: 'Prezzi crociera Bosforo Istanbul: crociera con cena €{p.dinnerStd}/persona. Bambini 0-3 gratis, 4-9 metà prezzo. Add-on trasparenti. Cancellazione gratuita.'
+      description: 'Prezzi crociera Bosforo Istanbul: crociera con cena €{p.dinnerStd}/persona. Bambini 0-3 gratis, 4-9 €5 di sconto. Add-on trasparenti. Cancellazione gratuita.'
     },
     hero: {
       h1: "Prezzo Crociera Istanbul",
@@ -570,7 +570,7 @@ module.exports = {
     highlights: [
       { title: "Crociera con Cena: €{p.dinnerStd} (prima €{p.dinnerStdOriginal})", desc: "40% di sconto sul prezzo pieno. Tour di 3 ore, cena turca completa, spettacolo dal vivo, bevande analcoliche illimitate. Un solo pacchetto — copre tutto ciò che serve per una bella serata." },
       { title: "Pagamento a bordo — €0 di anticipo", desc: "Prenoti ora e paghi all'imbarco (contanti o carta). Cancellazione gratuita fino a 2 ore prima della partenza. Zero rischio finanziario prenotando in anticipo." },
-      { title: "Prezzi bambini: 0-3 gratis, 4-9 metà prezzo", desc: "0-3 completamente gratis (nessun costo). 4-9 €5 di sconto sul prezzo adulto. 10+ prezzo adulto intero. Trasparente, nessun trucco sui prezzi familiari. Transfer anche gratis per 0-3 anni." },
+      { title: "Prezzi bambini: 0-3 gratis, 4-9 €5 di sconto", desc: "0-3 completamente gratis (nessun costo). 4-9 €5 di sconto sul prezzo adulto. 10+ prezzo adulto intero. Trasparente, nessun trucco sui prezzi familiari. Transfer anche gratis per 0-3 anni." },
       { title: "Extra — solo se li vuole", desc: "Alcol (2 bicchieri): +€{p.alcohol2}/persona. Transfer: €{p.transfer}/persona. Tavolo romantico: €{p.romantic}/tavolo. Tutto opzionale, non in pacchetto. Scelga solo ciò di cui ha bisogno." }
     ],
     faq: [

@@ -31,7 +31,7 @@ module.exports = {
       { q: 'Wann beginnt die Bosporus-Dinner-Cruise?', a: 'Das Einsteigen beginnt um 20:00 Uhr am Kabataş-Pier. Das Schiff legt um 21:00 Uhr ab und kehrt gegen 00:00 Uhr zurück. Wir empfehlen, 15–20 Minuten früher einzutreffen, um Ihren Platz einzunehmen und sich einzurichten.' },
       { q: 'Wie viel kostet die Bosporus-Dinner-Cruise?', a: 'Die Dinner-Cruise kostet €{p.dinnerStd}/Person (regulärer Preis €{p.dinnerStdOriginal}). Kinder 0–3 Jahre gratis, 4–9 Jahre €5 Ermäßigung. Die Zahlung erfolgt an Bord — keine Vorauszahlung.' },
       { q: 'Ist Alkohol in der Dinner-Cruise enthalten?', a: 'Unbegrenzte alkoholfreie Getränke (Wasser, Cola, Säfte) sind im Preis inbegriffen. Das Alkoholpaket ist optional: 2 Gläser (Wein, Bier, Raki, Wodka oder Gin) +€{p.alcohol2}/Person. Weitere Getränke und importierte Spirituosen werden an Bord separat berechnet.' },
-      { q: 'Gibt es einen Hoteltransfer?', a: 'Ja — Abhol- und Bringservice kostet +€{p.transfer}/Person. Servicegebiete: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce und Şişli. Sie können dies im Buchungsassistenten auswählen.' },
+      { q: 'Gibt es einen Hoteltransfer?', a: 'Ja — Abhol- und Bringservice kostet +€{p.transfer}/Person. Servicegebiete: Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Yenikapı, Sütlüce und Şişli. Sie können dies im Buchungsassistenten auswählen.' },
       { q: 'Ist die Bosporus-Dinner-Cruise halal?', a: 'Absolut. Alle Fleischprodukte an Bord sind halal-zertifiziert. Alkohol ist ein optionales Extra (wird Gästen nicht aufgedrängt), und die Sitzordnung trennt natürlich diejenigen, die einen alkoholfreien Tisch bevorzugen. Wir bieten auch vegetarische Alternativen ohne Aufpreis.' },
       { q: 'Was soll ich anziehen?', a: 'Smart Casual. Istanbuler Abende können auch im Sommer windig sein — wir empfehlen eine leichte Jacke oder einen Schal. Es gibt keine obligatorische Kleiderordnung, aber Badekleidung, Flip-Flops oder Sportkleidung passen nicht zum Dinner-Ambiente.' }
     ],
@@ -45,7 +45,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporus mit Kindern — Familien-Dinner-Kreuzfahrt ab €{p.dinnerStd}/Erw.',
-      description: 'Familienfreundliche Bosporus Dinner-Kreuzfahrt. Kinder 0-3 frei, 4-9 halber Preis. Sicherer Innenbereich, kinderfreundliches Menü.'
+      description: 'Familienfreundliche Bosporus Dinner-Kreuzfahrt. Kinder 0-3 frei, 4-9 €5 Ermäßigung. Sicherer Innenbereich, kinderfreundliches Menü.'
     },
     hero: {
       h1: 'Bosporus-Tour mit Kindern',
@@ -54,18 +54,18 @@ module.exports = {
     },
     intro: [
       'Die **Bosporus-Tour mit Kindern** ist Istanbuls familienfreundlichste Abendoption. Wir empfangen jeden Abend Dutzende Familien — jedes Detail ist darauf ausgerichtet, Kindern den Aufenthalt angenehm zu gestalten: geschützte Innenplätze, damit die Kleinen warm bleiben, ein zugängliches kinderfreundliches Menü (einfach gegrilltes Hähnchen, Nudeln, unbegrenzte alkoholfreie Getränke) und frühes Einsteigen, um Überreizung zu vermeiden.',
-      'Im Gegensatz zu reinen Erwachsenen-Partybooten bleibt unsere **Bosporus-Dinner-Cruise für Familien** herzlich und einladend. **Kinder 0–3 Jahre sind gratis** (inklusive Transfer), 4–9 Jahre erhalten **€5 Ermäßigung**, ab 9 Jahren voller Preis — keine versteckten Gebühren. Die Live-Folklore, der orientalische Tanz und die Sema-Vorführung sind sanfte Familienunterhaltung, kein Nachtclub.',
+      'Im Gegensatz zu reinen Erwachsenen-Partybooten bleibt unsere **Bosporus-Dinner-Cruise für Familien** herzlich und einladend. **Kinder 0–3 Jahre sind gratis** (inklusive Transfer), 4–9 Jahre erhalten **€5 Ermäßigung**, ab 10 Jahren voller Preis — keine versteckten Gebühren. Die Live-Folklore, der orientalische Tanz und die Sema-Vorführung sind sanfte Familienunterhaltung, kein Nachtclub.',
       'Ob Sie für ein langes Wochenende mit Ihrem Kleinkind nach Istanbul kommen oder Ihre Teenager auf ihre erste Europareise mitnehmen — dies ist die Tour, die Istanbuler Familien empfehlen. Sicher, halal-zertifiziert, TÜRSAB-lizenziert und 4,8★ von über 11.317 Reisenden.'
     ],
     highlights: [
-      { title: '0–3 Jahre komplett gratis', desc: 'Keine Gebühr für Babys und Kleinkinder. 4–9 Jahre zahlen €5 des Erwachsenenpreises. Ab 9 Jahren voller Gast. Transparent, keine Überraschungen.' },
+      { title: '0–3 Jahre komplett gratis', desc: 'Keine Gebühr für Babys und Kleinkinder. 4–9 Jahre zahlen €5 des Erwachsenenpreises. Ab 10 Jahren voller Gast. Transparent, keine Überraschungen.' },
       { title: 'Geschützter Innenbereich', desc: 'In den kalten Monaten vollständig geschlossen und beheizt. Kinder bleiben warm, geschützt vor Wind. Bei schönem Wetter ist auch das Oberdeck verfügbar — die Wahl liegt bei Ihnen.' },
       { title: 'Kindermenü auf Anfrage', desc: 'Einfach gegrilltes Hähnchen, Nudeln, Brot und Gemüse — ohne Aufpreis. Unbegrenzte alkoholfreie Getränke (Cola, Säfte, Wasser). Bitte vorher Bescheid geben — keine unerwartet scharfen Mezze für die Kleinen.' },
       { title: 'Familiensichere Unterhaltung', desc: 'Sema-Vorführung (für Kinder faszinierend), Oba Dombra und Volkstänze aus Anatolien, Aserbaidschan und dem Kaukasus — inklusive des spektakulären Messertanzes — dazu türkische Livemusik und ein Saxofon-und-DJ-Set. Alles familienfreundlich — keine Erwachseneninhalte. Kinder tanzen oft mit.' }
     ],
     faq: [
       { q: 'Ist die Bosporus-Tour sicher für kleine Kinder?', a: 'Ja — unser Schiff ist TÜRSAB-lizenziert, hat einen geschlossenen Innenbereich mit sicheren Fenstern, Rettungswesten in allen Größen und eine professionelle, familienerfahrene Crew. Wir empfehlen das Innendeck für Kleinkinder und das Oberdeck ab 6 Jahren.' },
-      { q: 'Wie viel kosten Kinder auf der Bosporus-Tour?', a: 'Kinder **0–3 Jahre: GRATIS** (keine Gebühr, keine versteckten Kosten). **4–9 Jahre: €5 Ermäßigung** auf den Erwachsenenpreis — also auf der Standardtour €{p.dinnerStd}/2 = €12 pro Kind. **Ab 9 Jahren: voller Erwachsenenpreis.** Hoteltransfer ist für 0–3 Jahre gratis, ab 4 Jahren regulär (€{p.transfer}/Person).' },
+      { q: 'Wie viel kosten Kinder auf der Bosporus-Tour?', a: 'Kinder **0–3 Jahre: GRATIS** (keine Gebühr, keine versteckten Kosten). **4–9 Jahre: €5 Ermäßigung** auf den Erwachsenenpreis — also auf der Standardtour €{p.dinnerStd} − €5 = €19.30 pro Kind. **Ab 10 Jahren: voller Erwachsenenpreis.** Hoteltransfer ist für 0–3 Jahre gratis, ab 4 Jahren regulär (€{p.transfer}/Person).' },
       { q: 'Gibt es ein Kindermenü an Bord?', a: 'Ja — einfach gegrilltes Hähnchen, Nudeln, Brot, saisonales Gemüse und unbegrenzte alkoholfreie Getränke. Teilen Sie Allergien oder wählerische Esser bei der Buchung mit, und wir bereiten etwas zu, das Ihr Kind gerne isst.' },
       { q: 'Ist die Musik oder Show zu laut für Kinder?', a: 'Live-Aufführungen finden in einem einzigen ausgewiesenen Bühnenbereich statt — wenn Ihre Kinder geräuschempfindlich sind, setzen wir Sie an einen ruhigeren Tisch weiter hinten. Die Show dauert insgesamt 40 Minuten, der Rest des Abends ist entspannte türkische Musik und ein DJ in gemäßigter Lautstärke.' },
       { q: 'Was passiert, wenn mein Baby während der Tour einschläft?', a: 'Kein Problem — viele tun das. Der Innenbereich hat bankähnliche Sofas, auf denen ein Baby oder Kleinkind bequem schlummern kann. Bitten Sie unsere Crew bei Bedarf um eine warme Decke. Kein Aufpreis.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Ist diese Tour für muslimische Familien mit Kindern geeignet?', a: 'Ja — es ist eine der familienfreundlichsten Touren Istanbuls. Die Unterhaltung ist bescheiden (Volkstänze, Sema, türkische Musik), Kinder unter 3 Jahren sind gratis, 4–9 Jahre erhalten €5 Ermäßigung. Keine Nachtclub-Atmosphäre. Familien aus der Golfregion, Indonesien, Malaysia, Pakistan und Marokko buchen diese Tour regelmäßig.' },
       { q: 'Kann ich an Bord beten?', a: 'Es gibt keinen speziellen Gebetsraum an Bord, aber wir empfehlen, vor dem Einsteigen um 20:00 Uhr zu beten (das Maghrib-Gebet fällt oft in dieses Fenster). Am Kabataş-Pier gibt es Gebetsmöglichkeiten. Wenn Sie während der Fahrt von 21:00 bis 00:00 Uhr beten müssen (Isha), sprechen Sie mit der Crew — wir können eine ruhige Ecke auf dem Deck einrichten.' },
       { q: 'Wie hoch sind die Preise für eine muslimische Familie mit 4 Personen (2 Erwachsene, 2 Kinder)?', a: 'Dinner-Cruise: 2 × €{p.dinnerStd} + 2 × €19.30 (4–9 Jahre €5 Rabatt) = €87.20. Wenn die Kinder unter 3 Jahre alt sind, gratis: 2 × €{p.dinnerStd} = €48.60. Fügen Sie €5 Hoteltransfer pro Erwachsenem hinzu. Gesamt: €48.60–€92.90 für eine 4-köpfige Familie, keine Vorauszahlung, Zahlung an Bord.' },
-      { q: 'Ist der Hoteltransfer auch halal?', a: 'Der Hoteltransfer ist nur eine Autofahrt — es geht nicht um Essen oder Getränke, also gibt es keine Halal-Bedenken. Unsere Fahrer sind professionell, respektvoll und pünktlich. Die Transferbereiche umfassen Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli und 8 weitere zentrale Gebiete, in denen muslimische Reisende typischerweise unterkommen.' }
+      { q: 'Ist der Hoteltransfer auch halal?', a: 'Der Hoteltransfer ist nur eine Autofahrt — es geht nicht um Essen oder Getränke, also gibt es keine Halal-Bedenken. Unsere Fahrer sind professionell, respektvoll und pünktlich. Die Transferbereiche umfassen Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli und 9 weitere zentrale Gebiete, in denen muslimische Reisende typischerweise unterkommen.' }
     ],
     cta: {
       primary: 'Halal-Tour buchen · Zahlung an Bord',
@@ -507,7 +507,7 @@ module.exports = {
       { q: 'Muss ich das Bosporus-Cruise-Ticket ausdrucken?', a: 'Nein — kein physisches Ticket oder Gutschein erforderlich. Nach der Buchung senden wir Ihnen eine Bestätigung per WhatsApp (oder Telegram) mit Treffpunkt, Uhrzeit und Buchungsname. Zeigen Sie einfach Ihr Handy am Pier. Das war\'s.' },
       { q: 'Kann ich mein Bosporus-Cruise-Ticket stornieren oder zurückerstatten?', a: 'Ja — kostenlose Stornierung bis 2 Stunden vor Abfahrt. Schreiben Sie uns einfach auf WhatsApp. Da Sie noch nicht bezahlt haben (Zahlung an Bord), ist keine Rückerstattung erforderlich — Sie erscheinen einfach nicht, keine Gebühr. Viel flexibler als vorausbezahlte Drittanbieter-Tickets.' },
       { q: 'Sind Bosporus-Cruise-Tickets am selben Tag verfügbar?', a: 'Oft ja, besonders an Wochentagen. Wochenenden und Feiertage füllen sich schneller. Überprüfen Sie die Verfügbarkeit über den Buchungsassistenten — er wird in Echtzeit aktualisiert. Gleichtagsbuchungen sind typischerweise bis ein paar Stunden vor der 21:00-Abfahrt möglich. WhatsApp für dringende Anfragen.' },
-      { q: 'Sind Kinder-Bosporus-Cruise-Tickets gratis?', a: 'Kinder **0–3 Jahre komplett gratis** (keine Gebühr, keine versteckten Kosten, Transfer inklusive). **4–9 Jahre €5 Ermäßigung** (€{p.dinnerStd} − €5 = €19.30). **Ab 9 Jahren voller Erwachsenenpreis.** Preise sind nach oben begrenzt und transparent — keine „Säuglingsaufschlag“-Tricks.' }
+      { q: 'Sind Kinder-Bosporus-Cruise-Tickets gratis?', a: 'Kinder **0–3 Jahre komplett gratis** (keine Gebühr, keine versteckten Kosten, Transfer inklusive). **4–9 Jahre €5 Ermäßigung** (€{p.dinnerStd} − €5 = €19.30). **Ab 10 Jahren voller Erwachsenenpreis.** Preise sind nach oben begrenzt und transparent — keine „Säuglingsaufschlag“-Tricks.' }
     ],
     cta: {
       primary: 'Tickets kaufen · Zahlung an Bord',
@@ -555,7 +555,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Istanbul Kreuzfahrt-Preise ab €{p.dinnerStd} — Transparent, keine versteckten Kosten',
-      description: 'Istanbul Bosporus-Kreuzfahrt-Preise: Dinner-Cruise €{p.dinnerStd}/Person. Kinder 0-3 frei, 4-9 halber Preis. Add-ons transparent.'
+      description: 'Istanbul Bosporus-Kreuzfahrt-Preise: Dinner-Cruise €{p.dinnerStd}/Person. Kinder 0-3 frei, 4-9 €5 Ermäßigung. Add-ons transparent.'
     },
     hero: {
       h1: 'Istanbul-Cruise-Preis',
@@ -564,13 +564,13 @@ module.exports = {
     },
     intro: [
       '**Istanbul-Cruise-Preise** variieren stark — von €15-Budget-Fähren, die Dinner auslassen, bis zu €150+ Resort-Yachten. Unsere Preise liegen in der Mitte und bieten das beste Preis-Leistungs-Verhältnis: ein Paket für €{p.dinnerStd}/Person für die 3-stündige komplette Dinner-Cruise mit Show. Keine versteckten Gebühren, keine Überraschungsaufschläge.',
-      'Eine detaillierte **Istanbul-Cruise-Preis**-Aufschlüsselung, weil Transparenz wichtig ist:\n\n- **Dinner-Cruise**: €{p.dinnerStd}/Person (vorher €{p.dinnerStdOriginal}, 40 % Rabatt). 3-stündige Tour, 10 Mezze, Hauptgang, Dessert, unbegrenzte alkoholfreie Getränke, Live-Show inklusive.\n- **0–3 Jahre**: gratis. 4–9 Jahre: €5 Ermäßigung. Ab 9 Jahren: voller Preis.\n\nExtras (optional):\n- 2 Gläser Alkohol: +€{p.alcohol2}/Person\n- Hoteltransfer hin und zurück: +€{p.transfer}/Person\n- Romantisches Tischarrangement: +€{p.romantic}/Tisch',
+      'Eine detaillierte **Istanbul-Cruise-Preis**-Aufschlüsselung, weil Transparenz wichtig ist:\n\n- **Dinner-Cruise**: €{p.dinnerStd}/Person (vorher €{p.dinnerStdOriginal}, 40 % Rabatt). 3-stündige Tour, 10 Mezze, Hauptgang, Dessert, unbegrenzte alkoholfreie Getränke, Live-Show inklusive.\n- **0–3 Jahre**: gratis. 4–9 Jahre: €5 Ermäßigung. Ab 10 Jahren: voller Preis.\n\nExtras (optional):\n- 2 Gläser Alkohol: +€{p.alcohol2}/Person\n- Hoteltransfer hin und zurück: +€{p.transfer}/Person\n- Romantisches Tischarrangement: +€{p.romantic}/Tisch',
       'Und wichtig: **Zahlung an Bord**. Sie verpflichten sich zu keinem Cent, bis Sie an Bord sind. Kostenlose Stornierung bis 2 Stunden vor Abfahrt. Keine Verpflichtung, kein Risiko — die verbraucherfreundlichste **Istanbul-Cruise-Preisgestaltung**, die Sie finden werden.'
     ],
     highlights: [
       { title: 'Dinner-Cruise: €{p.dinnerStd} (vorher €{p.dinnerStdOriginal})', desc: '40 % Rabatt auf den regulären Preis. 3-stündige Tour, komplettes türkisches Dinner, Live-Show, unbegrenzte alkoholfreie Getränke. Ein Paket — deckt alles ab, was Sie für einen tollen Abend brauchen.' },
       { title: 'Zahlung an Bord — €0 im Voraus', desc: 'Jetzt reservieren, beim Einsteigen zahlen (bar oder Karte). Kostenlose Stornierung bis 2 Stunden vor Abfahrt. Null finanzielles Risiko bei früher Buchung.' },
-      { title: 'Kinderpreis: 0–3 gratis, 4–9 halber Preis', desc: '0–3 komplett gratis (keine Gebühr). 4–9 erhalten €5 Rabatt vom Erwachsenenpreis. Ab 9 Jahren voller Erwachsenenpreis. Transparent, keine Familienpreis-Tricks. Transfer ist auch für 0–3 gratis.' },
+      { title: 'Kinderpreis: 0–3 gratis, 4–9 €5 Ermäßigung', desc: '0–3 komplett gratis (keine Gebühr). 4–9 erhalten €5 Rabatt vom Erwachsenenpreis. Ab 10 Jahren voller Erwachsenenpreis. Transparent, keine Familienpreis-Tricks. Transfer ist auch für 0–3 gratis.' },
       { title: 'Extras — nur wenn Sie sie möchten', desc: 'Alkohol (2 Gläser): +€{p.alcohol2}/Person. Transfer: €{p.transfer}/Person. Romantischer Tisch: €{p.romantic}/Tisch. Alles optional, nicht gebündelt. Wählen Sie nur, was Sie brauchen.' }
     ],
     faq: [

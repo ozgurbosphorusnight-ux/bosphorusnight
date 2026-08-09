@@ -170,13 +170,22 @@ hem maliyet €0 — wizard `wizCalcPrice()` bebekleri transfer sayımından ç�
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 
-### Transfer Kuralı (2026-08-06 güncellendi — 18:30 kesin engel, AMOR programı)
+### Transfer Kuralı (2026-08-08 güncellendi — 18:30-19:00 GRİ PENCERE eklendi, Özgür)
 Aynı gün (tur tarihi = bugün) için saat dilimleri:
 - **00:00-18:30** → normal, AI kendisi alır
-- **18:30-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 21:00'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
+- **18:30-19:00** → **ÖZGÜR'E SORULUR (gri pencere).** AI transferi VAAT ETMEZ; tool `transfer_needs_owner_approval` döner, Özgür'e Telegram bildirimi gider (müşteri, telefon, tarih, kişi, adres). AI müşteriye sadece "aracın müsaitliğini kontrol ediyorum, birkaç dakika içinde dönüyorum" der ve bekler. **Rezervasyonu Özgür panelden manuel kurar** — panel akışı `skip_time_guard: true` ile bu engeli aşar.
+- **19:00-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 21:00'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
 - **21:00+** → bugünün turu kalktı
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
+
+> ⚠️ **Kanonik kaynak:** `src/utils/transfer-zones.js` → `getTransferTimeState(tourDate)` → `open | ask_owner | closed`
+> (eski `isTransferTimeWindowOpen` artık yalnız `open` için true döner). Değişirse: bu bölüm +
+> `create-reservation.js` Adım 0.1 + `system-prompt.js` TRANSFER CUTOFF tablosu + `red-lines.md` +
+> site wizard `js/main.js` `wizIsTransferTimeAvailable`.
+>
+> ⚠️ **Site wizard hâlâ 18:30'da kapatıyor** (gri pencere yalnız WhatsApp/Telegram sohbetinde işliyor) —
+> bilinçli bırakıldı: wizard'da transferli fiyat gösterip sonra iptal etmek hayal kırıklığı yaratır.
 
 ### Same-day Booking Cutoff (2026-08-07 güncellendi — site metni 21:00, AI davranışı aynı)
 Aynı gün rezervasyon kabul saatleri:
@@ -198,11 +207,15 @@ Aynı gün rezervasyon kabul saatleri:
 
 **Tek source of truth:**
 - Frontend (wizard): `js/main.js` → `wizIsTransferTimeAvailable(date)` + Step 2→3 validation
-- Backend (AI): `src/utils/transfer-zones.js` → `isTransferTimeWindowOpen(tourDate)` + create-reservation tool
+- Backend (AI): `src/utils/transfer-zones.js` → `getTransferTimeState(tourDate)` + create-reservation tool
 - 15 dilde mesaj: `js/translations.js` (`wizard.transferTimeBlocked*`)
 
 ### Transfer İzinli Semt Listesi (district whitelist — kanonik kaynak + drift footprint)
-> ⚠️ Saat-cutoff'tan AYRI. Yeni semt eklenir/çıkarılırsa (örn. 2026-06-22 **Şişli** eklendi → 13 semt + Hilton) bu yerlerin HEPSİ birden güncellenir, yoksa drift olur:
+> ⚠️ Saat-cutoff'tan AYRI. Yeni semt eklenir/çıkarılırsa (son: 2026-08-08 **Yenikapı** eklendi → **14 semt** + Hilton; öncesi 2026-06-22 Şişli) bu yerlerin HEPSİ birden güncellenir, yoksa drift olur:
+>
+> 🔴 **Yenikapı 8 Ağu 2026 — DAVRANIŞ CANLI, İÇERİK YARIM:** ①-② (AI config + site `js/main.js`) ve
+> ③-④ (AI promptları) yapıldı; **⑥-⑨ i18n metinleri (32 dil semt listeleri, landing FAQ, ui-translations,
+> llms.txt) HÂLÂ ŞİŞLİ'DE BİTİYOR** — Yenikapı yazmıyor. Sıradaki iş.
 >
 > **Davranış (kanonik, kod):**
 > 1. AI: `src/config.js` → `TRANSFER_ALLOWED` (küçük harf) — TÜM consumer'lar buradan okur (transfer-zones.js, create/update-reservation, lookup-hotel-address, address-confirm). `pm2 restart bosphorus-ai`.

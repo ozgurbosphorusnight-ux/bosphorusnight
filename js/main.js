@@ -1833,12 +1833,12 @@ function updateWhatsAppLinks(total) {
 // ========== EXTRA BADGE TOOLTIPS ==========
 const EXTRA_TIPS = {
   alcohol: {
-    en: '2 glasses of wine, beer or raki per person during the cruise',
-    tr: 'Tur boyunca kişi başı 2 kadeh şarap, bira veya rakı',
-    de: '2 Gläser Wein, Bier oder Raki pro Person während der Kreuzfahrt',
-    es: '2 copas de vino, cerveza o raki por persona durante el crucero',
-    ru: '2 бокала вина, пива или ракы на человека во время круиза',
-    ar: 'كأسان من النبيذ أو البيرة أو الراكي لكل شخص خلال الرحلة'
+    en: '2 glasses per person during the cruise — wine, beer, rakı, vodka, whisky, gin and more',
+    tr: 'Tur boyunca kişi başı 2 kadeh — şarap, bira, rakı, votka, viski, cin ve daha fazlası',
+    de: '2 Gläser pro Person während der Fahrt — Wein, Bier, Rakı, Wodka, Whisky, Gin und mehr',
+    es: '2 copas por persona durante el crucero — vino, cerveza, rakı, vodka, whisky, ginebra y más',
+    ru: '2 бокала на человека во время круиза — вино, пиво, ракы, водка, виски, джин и другое',
+    ar: 'كأسان لكل شخص خلال الرحلة — نبيذ، بيرة، راكي، فودكا، ويسكي، جن وغيرها'
   },
   transfer: {
     en: 'Round-trip pickup & drop-off from your hotel in Istanbul',
@@ -1926,12 +1926,12 @@ function initIncludedAccordion() {
 // ========== EXTRA TOOLTIPS ==========
 const EXTRA_TOOLTIPS = {
   alcohol: {
-    en: '2 glasses of wine, beer or raki during the cruise',
-    tr: 'Cruise boyunca 2 kadeh şarap, bira veya rakı',
-    de: '2 Gläser Wein, Bier oder Raki während der Kreuzfahrt',
-    es: '2 copas de vino, cerveza o raki durante el crucero',
-    ru: '2 бокала вина, пива или ракы во время круиза',
-    ar: 'كأسان من النبيذ أو البيرة أو الراكي خلال الرحلة'
+    en: '2 glasses during the cruise — wine, beer, rakı, vodka, whisky, gin and more',
+    tr: 'Tur boyunca 2 kadeh — şarap, bira, rakı, votka, viski, cin ve daha fazlası',
+    de: '2 Gläser während der Fahrt — Wein, Bier, Rakı, Wodka, Whisky, Gin und mehr',
+    es: '2 copas durante el crucero — vino, cerveza, rakı, vodka, whisky, ginebra y más',
+    ru: '2 бокала во время круиза — вино, пиво, ракы, водка, виски, джин и другое',
+    ar: 'كأسان خلال الرحلة — نبيذ، بيرة، راكي، فودكا، ويسكي، جن وغيرها'
   },
   transfer: {
     en: 'Round-trip pickup from Sultanahmet, Taksim or Beyoğlu',

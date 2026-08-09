@@ -75,11 +75,11 @@ module.exports = {
     },
     {
       q: 'Is alcohol included in the dinner cruise?',
-      a: 'Unlimited soft drinks (water, cola, juice) are included in the base price. An alcohol package is an optional add-on: 2 glasses (wine, beer, rakı, vodka or gin) for +€{p.alcohol2}/person. Additional drinks and imported spirits are billed separately on board.'
+      a: 'Unlimited soft drinks (water, cola, juice) are included in the base price. An alcohol package is an optional add-on: 2 glasses (wine, beer, rakı, vodka, whisky, gin, tequila, rum, cognac or champagne) for +€{p.alcohol2}/person. Additional drinks and imported spirits are billed separately on board.'
     },
     {
       q: 'Do you offer hotel transfer for the Bosphorus dinner cruise?',
-      a: 'Yes — hotel pickup and drop-off is available for +€{p.transfer}/person. Service zones cover Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce, and Şişli. Book transfer in the wizard below.'
+      a: 'Yes — hotel pickup and drop-off is available for +€{p.transfer}/person. Service zones cover Beşiktaş, Taksim, Sultanahmet, Sirkeci, Eminönü, Ortaköy, Beyoğlu, Fatih, Laleli, Topkapı, Kağıthane, Sütlüce, Yenikapı, and Şişli. Book transfer in the wizard below.'
     },
     {
       q: 'Is the Bosphorus dinner cruise halal-friendly?',
