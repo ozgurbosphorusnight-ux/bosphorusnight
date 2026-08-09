@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Hvad er inkluderet i et middagskrydstogt?',
           paragraphs: [
             'Et godt middagskrydstogt på Bosporus inkluderer typisk: fuld menu (forret, hovedret, dessert), live underholdning (dans, livemusik), 3 timers krydstogt og drikkevarer. Betal om bord — ingen forudbetaling.',
-            'Standardpakken hos Bosporus om natten starter fra €24,30 pr. person og inkluderer 10 slags mezze, din valgte hovedret (laks, havaborre, kylling eller kødboller), dessert og alkoholfrie drikkevarer. Underholdningen omfatter snurrende dervisher, folkedans, orientalsk dans og DJ.',
+            'Standardpakken hos Bosporus om natten starter fra €24,30 pr. person og inkluderer 10 slags mezze, din valgte hovedret (laks, havbars, kyllingespyd eller oksespyd), dessert og alkoholfrie drikkevarer. Underholdningen omfatter snurrende dervisher, folkedans, orientalsk dans og DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Hvad er der på menuen for børn?',
           paragraphs: [
-            'Middagsmenuen inkluderer muligheder som kylling og kødboller, som de fleste børn kan lide. Mezze-udvalget er varieret med masser af grøntsager og dip. Dessert med is er inkluderet for alle.',
+            'Middagsmenuen inkluderer muligheder som kyllinge- og oksespyd, som de fleste børn kan lide. Mezze-udvalget er varieret med masser af grøntsager og dip. Semulje-halva til dessert er inkluderet for alle.',
             'Har dit barn brug for specialkost? Spørg os på forhånd på WhatsApp — vi gør vores bedste for at hjælpe.',
           ],
         },

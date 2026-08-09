@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Vad ingår i en middagskryssning?',
           paragraphs: [
             'En bra middagskryssning på Bosporen inkluderar vanligtvis: full måltid (förrätt, varmrätt, dessert), liveunderhållning (dans, livemusik), 3 timmars kryssning och drycker. Betala ombord — ingen förskottsbetalning.',
-            'Standardpaketet hos Bosporen om natten börjar från €{p.dinnerStd} per person och inkluderar 10 sorters mezze, din valda varmrätt (lax, havsabborre, kyckling eller köttbullar), dessert och alkoholfria drycker. Underhållningen inkluderar virvlande dervischer, folkdans, orientalisk dans och DJ.',
+            'Standardpaketet hos Bosporen om natten börjar från €{p.dinnerStd} per person och inkluderar 10 sorters mezze, din valda varmrätt (lax, havsabborre, kycklingspett eller oxspett), dessert och alkoholfria drycker. Underhållningen inkluderar virvlande dervischer, folkdans, orientalisk dans och DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Vad finns på menyn för barn?',
           paragraphs: [
-            'Middagsmenyn innehåller alternativ som kyckling och köttbullar som de flesta barn gillar. Mezze-urvalet är varierat med mycket grönsaker och dipsås. Glassdessert ingår för alla.',
+            'Middagsmenyn innehåller alternativ som kyckling- och oxspett som de flesta barn gillar. Mezze-urvalet är varierat med mycket grönsaker och dipsås. Mannagrynshalva till dessert ingår för alla.',
             'Behöver ditt barn specialkost? Fråga oss i förväg på WhatsApp — vi gör vårt bästa för att hjälpa till.',
           ],
         },

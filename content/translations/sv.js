@@ -125,18 +125,18 @@ module.exports = {
       badge: '100% Halal · Familjevänligt · Muslimsk Ägare'
     },
     intro: [
-      '**Halal Bosporenkryssningen** är den mest respektfulla middagskryssningen i Istanbul för muslimska resenärer. Allt kött som serveras på vår båt — lax, havsabborre, kyckling, lammköttbullar, oxfilé, ribeye — är **halal-certifierat** från godkända leverantörer. Vi serverar samma meny till varje gäst; ingen separat "halal-sektion", eftersom hela båten är halal som standard.',
+      '**Halal Bosporenkryssningen** är den mest respektfulla middagskryssningen i Istanbul för muslimska resenärer. Allt kött som serveras på vår båt — lax, havsabborre, kycklingspett, oxspett — är **halal-certifierat** från godkända leverantörer. Vi serverar samma meny till varje gäst; ingen separat "halal-sektion", eftersom hela båten är halal som standard.',
       'Alkohol är **ett valfritt tillägg** — aldrig påtvingat gäster, och bordsuppställningen separerar naturligt gäster som föredrar en alkoholfri måltid. För gäster som vill ha 2-glas alkoholpaketet (+€{p.alcohol2}/person) finns det där, men de inkluderade obegränsade läsken (vatten, cola, juice) räcker för de flesta muslimska familjer. Vår besättning är utbildad att respektera dina preferenser utan antaganden.',
       '**Den halal-vänliga Bosporenkryssningen** är viktig för resenärer från Saudiarabien, FAE, Kuwait, Qatar, Iran, Malaysia, Indonesien, Pakistan och Marocko som vill ha Istanbuls mest ikoniska kväll utan kompromisser. Licensierad av TÜRSAB, 4,8★ och betalning ombord — lova inget förrän du är säker på att upplevelsen uppfyller dina standarder.'
     ],
     highlights: [
-      { title: '100% halal-certifierad meny', desc: 'Allt kött (lax, havsabborre, kyckling, köttbullar, nötkött, ribeye) är halal-certifierat från godkända leverantörer. Köket följer halal-beredning. Inga fläskprodukter eller icke-halal-tillsatser. Vegetariska alternativ är alltid tillgängliga.' },
+      { title: '100% halal-certifierad meny', desc: 'Allt kött (lax, havsabborre, kycklingspett, oxspett) är halal-certifierat från godkända leverantörer. Köket följer halal-beredning. Inga fläskprodukter eller icke-halal-tillsatser. Vegetariska alternativ är alltid tillgängliga.' },
       { title: 'Alkohol valfri, aldrig påtvingad', desc: 'Alkoholpaket är tillägg — inte inkluderade som standard. Läsk (vatten, cola, juice) är obegränsade och gratis. Ditt bord förblir alkoholfritt om du inte uttryckligen ber om det. Besättningen respekterar tyst ditt val.' },
       { title: 'Familjevänlig underhållning', desc: 'Sema-föreställning, traditionella turkiska folkdanser, live turkisk musik. Inga nattklubbsliknande shower, inget olämpligt innehåll. Säker för barn, respektfull för familjer. Orientalisk dans är en traditionell konstform, presenterad med blygsamhet.' },
       { title: 'Respekt för bönetider', desc: 'Om ombordstigning sammanfaller med maghrib eller isha (20:00-21:00) kan vår personal vägleda dig till den tysta bönezonen vid Kabataş-bryggan före avgång. Berätta bara för oss vid bokning.' }
     ],
     faq: [
-      { q: 'Är Bosporenkryssningen 100% halal?', a: 'Ja — varje köttprodukt i menyn (fisk, kyckling, köttbullar, oxfilé, ribeye, lamm) är halal-certifierad från godkända leverantörer. Köket följer halal-beredningsstandarder. Fläsk serveras ingenstans ombord. Det är inte ett "halal-alternativ" — hela menyn är halal.' },
+      { q: 'Är Bosporenkryssningen 100% halal?', a: 'Ja — varje köttprodukt i menyn (lax, havsabborre, kycklingspett, oxspett) är halal-certifierad från godkända leverantörer. Köket följer halal-beredningsstandarder. Fläsk serveras ingenstans ombord. Det är inte ett "halal-alternativ" — hela menyn är halal.' },
       { q: 'Dricker andra gäster ombord alkohol?', a: 'Vissa gäster lägger till det valfria 2-glas alkoholpaketet (+€{p.alcohol2}/person). Borden är naturligt separerade — du kan be om en alkoholfri zon. Besättningen tar inte med alkohol om det inte är specifikt beställt av en gäst. Läsk (obegränsat) är inkluderade för alla.' },
       { q: 'Är denna kryssning lämplig för muslimska familjer med barn?', a: 'Ja — det är en av de mest respekterade kryssningarna för familjer i Istanbul. Underhållningen är blygsam (folkdanser, sema, turkisk musik), barn under 3 år är gratis, 4-9 år får €5 rabatt. Ingen nattklubbsatmosfär. Familjer från Gulfen, Indonesien, Malaysia, Pakistan och Marocko bokar regelbundet denna kryssning.' },
       { q: 'Kan jag be ombord?', a: 'Det finns inget dedikerat bönerum ombord, men vi rekommenderar att be före ombordstigning 20:00 (maghrib-bönen sammanfaller ofta med detta tidsintervall). Kabataş-bryggan har bönefaciliteter. Om du behöver be under seglingen 21:00-00:00 (isha), prata med besättningen — vi kan arrangera ett tyst hörn på däcket.' },
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privat bord för två', desc: 'Privat bord för 2 personer, inte delat. Prioritet till fönsterborden för par. Foton av solnedgång och nattlig Bosporen precis vid ditt fönster.' },
-      { title: 'Långsam flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kyckling, köttbullar eller vegetariskt), mannagrynshalva som dessert. Serveras långsamt över 3 timmar — du har ingen brådska.' },
+      { title: 'Långsam flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett eller vegetariskt), mannagrynshalva som dessert. Serveras långsamt över 3 timmar — du har ingen brådska.' },
       { title: 'Liveviolin och mjuk musik', desc: 'Liveviolin och akustisk turkisk musik under middagen skapar en intim atmosfär lämpad för samtal. Sedan kommer DJ:n för par som vill dansa.' },
       { title: 'Tillägg för speciella kvällar', desc: 'Romantisk borduppställning (ljus, rosor): +€{p.romantic}. 2 glas alkohol (vin, öl, rakı, vodka, whisky, gin och mer): +€{p.alcohol2}/person. Hotelltransfer (tur och retur): +€{p.transfer}/person. Välj vad som passar din kväll.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Sommarsolnedgångar precis vid avgången', desc: 'Från maj till augusti går solen ner i Istanbul mellan ungefär 20:15 och 20:45 — ombordstigning 20:00 ger dig den gyllene timmen på däck, och avgången 21:00 placerar dig på vattnet för själva solnedgången. Kamera redo — detta är fotot.' },
       { title: 'Blå timme som övergår i full natt', desc: 'Inte bara solnedgång — kryssningen seglar genom skymningen in i den helt upplysta Bosporen. Gyllene ljus, blå timme, sedan 30 miljoner broljus på mörkt vatten: tre ljusfaser på en enda kväll.' },
-      { title: 'Full middag under kryssningen', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kyckling, köttbullar, vegetariskt), mannagrynshalva, obegränsade läsk — serveras medan stadens ljus tänds.' },
+      { title: 'Full middag under kryssningen', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt), mannagrynshalva, obegränsade läsk — serveras medan stadens ljus tänds.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporenbron — allt lyser', desc: 'Rutten passerar Dolmabahçe-palatset, Ortaköy-moskén, Bosporenbron, Rumeli Hisarı och Beylerbeyi-palatset medan deras ljus tänds. Varje landmärke i sitt bästa ljus.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Den upplysta Bosporen på dramatisk topp', desc: 'Bosporenbron ändrar färg (blå, lila, guld), palatsen lyser gula, Ortaköy-moskén reflekteras i det mörka vattnet. 21:00-00:00 maximal belysning för alla Istanbuls landmärken.' },
       { title: 'Traditionell turkisk show ombord', desc: 'Åtta nummer: Oba Dombra, sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri och den georgisk-kaukasiska knivdansen, sedan live saxofon och DJ-set. 40 minuter show, sedan fortsätter musiken + middagen.' },
-      { title: 'Full flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt (börek), huvudrätt (lax, havsabborre, kyckling, köttbullar, vegetariskt — ditt val), dessert (mannagrynshalva), obegränsade läsk. Halal-certifierad.' },
+      { title: 'Full flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt (börek), huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt — ditt val), dessert (mannagrynshalva), obegränsade läsk. Halal-certifierad.' },
       { title: 'Komplett Bosporenrutt', desc: 'Kabataş → Dolmabahçe → Çırağan-palatset → Ortaköy-moskén → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-bron → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jungfrutornet → Kabataş.' }
     ],
     faq: [

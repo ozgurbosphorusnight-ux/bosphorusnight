@@ -34,7 +34,7 @@ module.exports = {
   },
 
   intro: [
-    'The **halal Bosphorus cruise** is Istanbul\'s most respected dinner tour for Muslim travelers. Every piece of meat served on our boat — salmon, sea bass, chicken skewer, beef skewer, beef tenderloin, rib-eye — is **halal-certified** from approved suppliers. We serve the same menu to every guest; there\'s no separate "halal section" because the entire boat is halal by default.',
+    'The **halal Bosphorus cruise** is Istanbul\'s most respected dinner tour for Muslim travelers. Every piece of meat served on our boat — salmon, sea bass, chicken skewer, beef skewer — is **halal-certified** from approved suppliers. We serve the same menu to every guest; there\'s no separate "halal section" because the entire boat is halal by default.',
 
     'Alcohol is an **optional add-on** — it\'s never pushed on guests, and seating naturally separates those who prefer a dry table. A modest 2-glass alcohol package (+€{p.alcohol2}/person) is there for guests who want it, but the included unlimited soft drinks (water, cola, fruit juice) are enough for most Muslim families. Our crew is trained to respect your preferences without making assumptions.',
 
@@ -45,7 +45,7 @@ module.exports = {
     {
       icon: 'halal',
       title: '100% halal-certified menu',
-      desc: 'All meat (salmon, sea bass, chicken skewer, beef skewer, beef, rib-eye) is halal-certified from approved suppliers. Kitchen follows halal preparation. No pork, no non-halal additives. Vegetarian options always available.'
+      desc: 'All meat (salmon, sea bass, chicken skewer, beef skewer) is halal-certified from approved suppliers. Kitchen follows halal preparation. No pork, no non-halal additives. Vegetarian options always available.'
     },
     {
       icon: 'respect',
@@ -67,7 +67,7 @@ module.exports = {
   faq: [
     {
       q: 'Is the Bosphorus cruise 100% halal?',
-      a: 'Yes — every meat item on the menu (fish, chicken skewer, dana şiş, lamb) is halal-certified from approved suppliers. The kitchen follows halal preparation standards. No pork is served anywhere on the boat. This is not a "halal option" — the entire menu is halal.'
+      a: 'Yes — every meat item on the menu (salmon, sea bass, chicken skewer, beef skewer) is halal-certified from approved suppliers. The kitchen follows halal preparation standards. No pork is served anywhere on the boat. This is not a "halal option" — the entire menu is halal.'
     },
     {
       q: 'Do other guests drink alcohol on this cruise?',

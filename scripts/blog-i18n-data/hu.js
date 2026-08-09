@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Mit tartalmaz egy vacsorás hajókázás?',
           paragraphs: [
             'Egy jó boszporuszi vacsorás hajókázás jellemzően magában foglalja: teljes vacsorát (előétel, főétel, desszert), élő szórakoztató műsort (tánc, élőzene), 3 órás hajóutat és italokat. Fizetés a fedélzeten — előleg nélkül.',
-            'A Boszporusz Éjszaka standard csomagja {p.dinnerStd}-tól indul fejenként, és tartalmaz 10-féle mezét, általad választott főételt (lazac, tengeri sügér, csirke vagy húsgombóc), desszertet és alkoholmentes italokat. A szórakoztató műsorban kerengő dervisek, néptáncosok, keleti tánc és DJ szerepel.',
+            'A Boszporusz Éjszaka standard csomagja {p.dinnerStd}-tól indul fejenként, és tartalmaz 10-féle mezét, általad választott főételt (lazac, tengeri sügér, csirkenyárs vagy marhanyárs), desszertet és alkoholmentes italokat. A szórakoztató műsorban kerengő dervisek, néptáncosok, keleti tánc és DJ szerepel.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Mi van a gyerekek menüjén?',
           paragraphs: [
-            'A vacsora menüben szerepel olyan opció, mint a csirke és a húsgombóc, amit a legtöbb gyerek szeret. A meze választék változatos, sok zöldséggel és mártogatóssal. A fagylaltos desszert mindenkinek jár.',
+            'A vacsora menüben szerepel olyan opció, mint a csirkenyárs és a marhanyárs, amit a legtöbb gyerek szeret. A meze választék változatos, sok zöldséggel és mártogatóssal. A búzadara-halva desszert mindenkinek jár.',
             'Speciális étrendet igényel a gyereked? Kérdezz előre WhatsAppon — mindent megteszünk, hogy segítsünk.',
           ],
         },

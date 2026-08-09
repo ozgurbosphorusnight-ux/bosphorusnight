@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Kas ir iekļauts vakariņu kruīzā?',
           paragraphs: [
             'Labs vakariņu kruīzs pa Bosforu parasti ietver: pilnu maltīti (uzkoda, galvenais ēdiens, deserts), dzīvu izklaidi (deja, dzīvā mūzika), 3 stundu kruīzu un dzērienus. Maksā uz kuģa — bez priekšapmaksas.',
-            'Standarta pakete Bosforā naktī sākas no €24,30 personai un ietver 10 meze veidus, tavu izvēlēto galveno ēdienu (lasis, jūras karūsa, vista vai frikadeles), desertu un bezalkoholiskos dzērienus. Izklaide ietver griežošos dervišus, tautas dejas, austrumu deju un DJ.',
+            'Standarta pakete Bosforā naktī sākas no €24,30 personai un ietver 10 meze veidus, tavu izvēlēto galveno ēdienu (lasis, jūras asaris, vistas šašliks vai liellopu šašliks), desertu un bezalkoholiskos dzērienus. Izklaide ietver griežošos dervišus, tautas dejas, austrumu deju un DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Kas ir bērnu ēdienkartē?',
           paragraphs: [
-            'Vakariņu ēdienkarte ietver tādas iespējas kā vista un frikadeles, kas patīk lielākajai daļai bērnu. Meze klāsts ir daudzveidīgs ar daudz dārzeņiem un mērcēm. Deserts ar saldējumu ir iekļauts visiem.',
+            'Vakariņu ēdienkarte ietver tādas iespējas kā vistas un liellopu šašliks, kas patīk lielākajai daļai bērnu. Meze klāsts ir daudzveidīgs ar daudz dārzeņiem un mērcēm. Mannas halva desertā ir iekļauta visiem.',
             'Vajadzīga īpaša diēta tavam bērnam? Paziņo mums iepriekš pa WhatsApp — darīsim visu iespējamo, lai palīdzētu.',
           ],
         },

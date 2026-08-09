@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Čo je zahrnuté vo večernej plavbe?',
           paragraphs: [
             'Dobrá večerná plavba po Bospore zvyčajne zahŕňa: plné menu (predjedlo, hlavné jedlo, dezert), živý program (tanec, živá hudba), 3-hodinovú plavbu a nápoje. Platíte na palube — žiadna platba vopred.',
-            'Štandardný balík v Bospor v noci začína od €{p.dinnerStd} na osobu a obsahuje 10 druhov meze, vami vybrané hlavné jedlo (losos, morský vlk, kura alebo mäsové guľky), dezert a nealkoholické nápoje. Program zahŕňa tancujúcich dervišov, ľudové tance, orientálny tanec a DJ.',
+            'Štandardný balík v Bospor v noci začína od €{p.dinnerStd} na osobu a obsahuje 10 druhov meze, vami vybrané hlavné jedlo (losos, morský vlk, kurací špíz alebo hovädzí špíz), dezert a nealkoholické nápoje. Program zahŕňa tancujúcich dervišov, ľudové tance, orientálny tanec a DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Čo je v menu pre deti?',
           paragraphs: [
-            'Večerné menu obsahuje možnosti ako kura a mäsové guľky, ktoré má väčšina detí rada. Výber meze je rozmanitý, s množstvom zeleniny a dipov. Dezert so zmrzlinou je zahrnutý pre každého.',
+            'Večerné menu obsahuje možnosti ako kurací a hovädzí špíz, ktoré má väčšina detí rada. Výber meze je rozmanitý, s množstvom zeleniny a dipov. Krupicová halva ako dezert je zahrnutá pre každého.',
             'Potrebuje vaše dieťa špeciálnu stravu? Opýtajte sa nás vopred cez WhatsApp — urobíme všetko pre to, aby sme pomohli.',
           ],
         },

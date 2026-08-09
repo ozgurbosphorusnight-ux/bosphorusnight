@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Co je zahrnuto ve večerní plavbě?',
           paragraphs: [
             'Kvalitní večerní plavba po Bosporu obvykle zahrnuje: kompletní menu (předkrm, hlavní chod, dezert), živou zábavu (tanec, živou hudbu), 3hodinovou plavbu a nápoje. Platíte na palubě — žádná platba předem.',
-            'Standardní balíček u Bosporu v noci začíná na €24,30 za osobu a zahrnuje 10 druhů mezze, váš zvolený hlavní chod (losos, mořský okoun, kuře nebo masové kuličky), dezert a nealkoholické nápoje. Zábava zahrnuje tančící derviše, lidové tance, orientální tanec a DJ.',
+            'Standardní balíček u Bosporu v noci začíná na €24,30 za osobu a zahrnuje 10 druhů mezze, váš zvolený hlavní chod (losos, mořský vlk, kuřecí špíz nebo hovězí špíz), dezert a nealkoholické nápoje. Zábava zahrnuje tančící derviše, lidové tance, orientální tanec a DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Co je v menu pro děti?',
           paragraphs: [
-            'Večerní menu nabízí možnosti jako kuře a masové kuličky, které většina dětí má ráda. Výběr mezze je pestrý, s velkým množstvím zeleniny a dipů. Dezert se zmrzlinou je v ceně pro všechny.',
+            'Večerní menu nabízí možnosti jako kuřecí a hovězí špíz, které většina dětí má ráda. Výběr mezze je pestrý, s velkým množstvím zeleniny a dipů. Krupicová halva jako dezert je v ceně pro všechny.',
             'Potřebuje vaše dítě speciální stravu? Zeptejte se nás předem na WhatsAppu — uděláme maximum, abychom pomohli.',
           ],
         },

@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Kaj je vključeno v večerno plovbo?',
           paragraphs: [
             'Dobra večerna plovba po Bosporju običajno vključuje: popoln obrok (predjed, glavna jed, sladica), živo zabavo (ples, glasba v živo), 3-urno plovbo in pijače. Plačaš na ladji — brez predplačila.',
-            'Standardni paket pri Bospor ponoči se začne od €24.30 na osebo in vključuje 10 vrst meze, izbrano glavno jed (losos, orada, piščanec ali mesne kroglice), sladico in brezalkoholne pijače. Zabava vključuje vrteče derviševe, ljudske plese, trebušni ples in DJ-ja.',
+            'Standardni paket pri Bospor ponoči se začne od €24.30 na osebo in vključuje 10 vrst meze, izbrano glavno jed (losos, brancin, piščančji ražnjič ali goveji ražnjič), sladico in brezalkoholne pijače. Zabava vključuje vrteče derviševe, ljudske plese, trebušni ples in DJ-ja.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Kaj je na meniju za otroke?',
           paragraphs: [
-            'Večerni meni vključuje možnosti, kot sta piščanec in mesne kroglice, ki jih večina otrok obožuje. Izbor meze je raznolik z veliko zelenjave in namazov. Sladica s sladoledom je vključena za vse.',
+            'Večerni meni vključuje možnosti, kot sta piščančji in goveji ražnjič, ki jih večina otrok obožuje. Izbor meze je raznolik z veliko zelenjave in namazov. Zdrobova halva za sladico je vključena za vse.',
             'Otrok potrebuje posebno dieto? Vprašaj nas vnaprej na WhatsAppu — naredimo vse, kar je v naših močeh, da pomagamo.',
           ],
         },

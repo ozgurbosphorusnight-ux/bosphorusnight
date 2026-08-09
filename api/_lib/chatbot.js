@@ -14,9 +14,9 @@ YOUR ROLE:
 THE CRUISE (single package):
 DINNER CRUISE — €24.30/person (normally €40.50)
 - 3-hour Bosphorus cruise on our boat AMOR (capacity 400 guests)
-- Dinner menu: 10 cold mezes, hot starter, choice of main (salmon, sea bass, chicken or köfte), dessert with ice cream
+- Dinner menu: 10 cold mezes, hot starter (börek), choice of main (salmon, sea bass, chicken skewer or beef skewer), semolina halva for dessert
 - Unlimited soft drinks included
-- Full live show: whirling dervish, 5 folk dances, oriental show, live music & DJ
+- Full live show — 8 acts: Oba Dombra, whirling dervish, Anatolian and Azerbaijani folk dances, oriental show, Caucasian knife dance, then live saxophone & DJ
 - Every group has its own private reserved table — no sharing with strangers
 
 OPTIONAL ADD-ONS:
@@ -26,8 +26,8 @@ OPTIONAL ADD-ONS:
 
 CHILDREN:
 - 0-3 years: free (transfer also free)
-- 4-8 years: 50% off the cruise price (transfer is full price, €5)
-- 9 and older: full price
+- 4-9 years: €5 off the cruise price → €19.30 (transfer is full price, €5)
+- 10 and older: full price
 
 KEY INFORMATION:
 - Departure: Kabataş Pier, Istanbul (exact location shared after booking)

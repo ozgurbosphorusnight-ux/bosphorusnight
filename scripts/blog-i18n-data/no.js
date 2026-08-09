@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Hva er inkludert i et middagscruise?',
           paragraphs: [
             'Et godt middagscruise på Bosporos inkluderer typisk: fullt måltid (forrett, varmrett, dessert), canlý underholdning (dans, livemusikk), 3 timers cruise og drikkevarer. Betal om bord — ingen forhåndsbetaling.',
-            'Standardpakken hos Bosporos om kvelden starter fra €24.30 per person og inkluderer 10 sorter mezze, din valgte varmrett (laks, havabbor, kylling eller kjøttboller), dessert og alkoholfri drikke. Underholdningen inkluderer snurrende dervisher, folkedanser, orientalsk dans og DJ.',
+            'Standardpakken hos Bosporos om kvelden starter fra €24.30 per person og inkluderer 10 sorter mezze, din valgte varmrett (laks, havabbor, kyllingespyd eller oksespyd), dessert og alkoholfri drikke. Underholdningen inkluderer snurrende dervisher, folkedanser, orientalsk dans og DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Hva er på menyen for barn?',
           paragraphs: [
-            'Middagsmenyen inkluderer alternativer som kylling og kjøttboller som de fleste barn liker. Mezze-utvalget er variert med mye grønnsaker og dip. Dessert med is er inkludert for alle.',
+            'Middagsmenyen inkluderer alternativer som kyllinge- og oksespyd som de fleste barn liker. Mezze-utvalget er variert med mye grønnsaker og dip. Semulje-halva til dessert er inkludert for alle.',
             'Trenger barnet ditt spesialkost? Spør oss på forhånd på WhatsApp — vi gjør vårt beste for å hjelpe.',
           ],
         },

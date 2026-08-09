@@ -23,7 +23,7 @@ module.exports = {
       'Enten du feirer et jubileum, søker en premium kveld i Istanbul med familien, eller vil ha byens mest fotogene solnedgang-til-natt-overgang — dette er middagscruiset som Istanbuls lokale anbefaler fremst.'
     ],
     highlights: [
-      { title: 'Tyrkisk middag med flere retter', desc: '10 mezesorter, varm forrett (börek), valg av hovedrett (laks / havabbor / kyllingspyd / oksespyd / vegetar), iskakert til dessert, ubegrenset leskedrikk.' },
+      { title: 'Tyrkisk middag med flere retter', desc: '10 mezesorter, varm forrett (börek), valg av hovedrett (laks / havabbor / kyllingspyd / oksespyd / vegetar), semulje-halva til dessert, ubegrenset leskedrikk.' },
       { title: 'Live folkedans, orientalsk dans og DJ', desc: 'Åtte numre: Oba Dombra, Mevlana sema-forestilling, Sarı Gelin, aserbajdsjansk potpurri, orientalsk dans, anatolsk potpurri og den georgisk-kaukasiske knivdansen — deretter live saksofon og DJ-sett gjennom hele cruiset.' },
       { title: 'Komplett natterute langs Bosporos', desc: 'Kabataş → Dolmabahçe → Çırağan-palasset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → FSM-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Fra €{p.dinnerStd}/person — betal om bord', desc: 'Middagscruise €{p.dinnerStd} (opprinnelig €{p.dinnerStdOriginal}). Ingen forskuddsbetaling. Gratis avbestilling inntil 2 timer før avgang.' }
@@ -131,13 +131,13 @@ module.exports = {
       '**Det halal-vennlige Bosporos-cruiset** betyr noe for reisende fra Saudi-Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan og Marokko som ønsker Istanbuls mest ikoniske kveld uten kompromisser. TÜRSAB-lisensiert, 4,8★ og betal om bord — du lover ingenting før du er sikker på at opplevelsen oppfyller dine standarder.'
     ],
     highlights: [
-      { title: '100 % halalsertifisert meny', desc: 'Alt kjøtt (laks, havabbor, kyllingspyd, oksespyd, okse, entrecôte) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalpreparering. Ingen svinekjøtt eller ikke-halal-tilsetningsstoffer. Vegetaralternativer alltid tilgjengelig.' },
+      { title: '100 % halalsertifisert meny', desc: 'Alt kjøtt (laks, havabbor, kyllingespyd, oksespyd) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalpreparering. Ingen svinekjøtt eller ikke-halal-tilsetningsstoffer. Vegetaralternativer alltid tilgjengelig.' },
       { title: 'Alkohol valgfritt, aldri påtvunget', desc: 'Alkoholpakker er tillegg — ikke inkludert som standard. Lesedrikker (vann, cola, juice) er ubegrenset og gratis. Bordet ditt forblir alkoholfritt hvis du ikke eksplisitt ber om det. Mannskapet respekterer valget ditt i stillhet.' },
       { title: 'Familievennlig underholdning', desc: 'Sema-forestilling, tradisjonelle tyrkiske folkedanser, live tyrkisk musikk. Ingen natteklubbstil-show, intet upassende innhold. Trygt for barn, respektfullt for familier. Orientalsk dans er en tradisjonell kunstform, fremstilt med verdighet.' },
       { title: 'Respekt for bønnetider', desc: 'Hvis ombordstigning sammenfaller med maghrib eller isja (20:00–21:00), kan personalet vise deg til det stille bønnerommet ved Kabataş-kaia før avgang. Gi oss bare beskjed ved bestilling.' }
     ],
     faq: [
-      { q: 'Er Bosporos-cruiset 100 % halal?', a: 'Ja — hvert kjøttprodukt på menyen (fisk, kyllingespyd, oksespyd, lam) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalprepareringsstandard. Det serveres ikke svinekjøtt noe sted om bord. Det er ikke et "halal-alternativ" — hele menyen er halal.' },
+      { q: 'Er Bosporos-cruiset 100 % halal?', a: 'Ja — hvert kjøttprodukt på menyen (laks, havabbor, kyllingespyd, oksespyd) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalprepareringsstandard. Det serveres ikke svinekjøtt noe sted om bord. Det er ikke et "halal-alternativ" — hele menyen er halal.' },
       { q: 'Drikker andre gjester om bord alkohol?', a: 'Noen gjester legger til den valgfrie 2-glass alkoholpakken (+€{p.alcohol2}/person). Bordene er naturlig separert — du kan be om en alkoholfri sone. Mannskapet bringer ikke alkohol med mindre en gjest eksplisitt bestiller det. Lesedrikker (ubegrenset) er inkludert for alle.' },
       { q: 'Er dette cruiset egnet for muslimske familier med barn?', a: 'Ja — det er ett av Istanbuls mest respekterte familiecruiser. Underholdningen er beskjeden (folkedanser, sema, tyrkisk musikk), barn under 3 år er gratis, 4–9 år får €5 rabatt. Ingen natteklubb-atmosfære. Familier fra Gulfen, Indonesia, Malaysia, Pakistan og Marokko bestiller jevnlig dette cruiset.' },
       { q: 'Kan jeg be om bord?', a: 'Det er ikke noe dedikert bønnerom om bord, men vi anbefaler å be før ombordstigning kl. 20:00 (maghrib-bønn faller ofte i dette intervallet). Kabataş-kaia har bønnefasiliteter. Hvis du trenger å be under seilasen 21:00–00:00 (isja), snakk med mannskapet — vi kan arrangere et stille hjørne på dekk.' },
@@ -240,7 +240,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privat bord for to', desc: 'Privat bord for 2, ikke delt. Prioritet til vindusbordet for par. Solnedgangs- og Bosporos-nattfotografering rett utenfor vinduet ditt.' },
-      { title: 'Langsom flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd eller vegetar), iskakert til dessert. Servert langsomt over 3 timer — du har ikke hastverk.' },
+      { title: 'Langsom flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd eller vegetar), semulje-halva til dessert. Servert langsomt over 3 timer — du har ikke hastverk.' },
       { title: 'Live fiolin og lett musikk', desc: 'Live fiolin og akustisk tyrkisk musikk under middagen skaper en intim atmosfære som egner seg for samtale. Deretter kommer DJ-en for par som vil danse.' },
       { title: 'Tillegg for spesielle kvelder', desc: 'Romantisk bordoppsett (levende lys, roser): +€{p.romantic}. 2 glass alkohol (vin, øl, rakı, vodka, whisky, gin og mer): +€{p.alcohol2}/person. Hotelloverføring (tur-retur): +€{p.transfer}/person. Velg hva som passer kvelden din.' }
     ],

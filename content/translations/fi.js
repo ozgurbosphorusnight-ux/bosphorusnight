@@ -11,7 +11,7 @@ module.exports = {
     },
     intro: [
       'Lähde 21:00 Kabataşin laiturista kolmen tunnin illallisristeilylle Bosporinsalmella. Laiva kulkee Dolmabahçen, Ortaköyn ja Beylerbeyin ohi – upeat valaisut joka puolella.',
-      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meribassi, kanavarras tai naudanlihavarras) sekä mannasuurimohalvaa. Juomat sisältyvät hintaan – alkoholiton.',
+      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meriahven, kanavarras tai naudanlihavarras) sekä mannasuurimohalvaa. Juomat sisältyvät hintaan – alkoholiton.',
       'Illallisenaikana ohjelmassa on mevlana-esitys, kansantanssit, oryantaali sekä elävää musiikkia ja DJ. Maksa vasta laivalla – ei ennakkomaksua.'
     ],
     highlights: [
@@ -22,7 +22,7 @@ module.exports = {
       { icon: '🚢', text: 'Lähtö 21:00 Kabataşista – paluu 00:00' }
     ],
     faq: [
-      { q: 'Mitä illalliseen kuuluu?', a: '10 kylmää mezea, lämmin alkupala, pääruoka (lohi, meribassi, kanavarras tai naudanlihavarras), jälkiruoka sekä alkoholittomat juomat. Alkoholi saatavilla lisähintaan.' },
+      { q: 'Mitä illalliseen kuuluu?', a: '10 kylmää mezea, lämmin alkupala, pääruoka (lohi, meriahven, kanavarras tai naudanlihavarras), jälkiruoka sekä alkoholittomat juomat. Alkoholi saatavilla lisähintaan.' },
       { q: 'Mistä laiva lähtee?', a: 'Kabataşin laiturista, Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
       { q: 'Kuinka kauan ristely kestää?', a: '3 tuntia – lähtö 21:00, paluu 00:00.' },
       { q: 'Voiko peruuttaa?', a: 'Kyllä, 2 tuntia ennen ristelya ilmaiseksi. Koska maksat laivalla, palautus ei koske.' },
@@ -119,7 +119,7 @@ module.exports = {
     },
     intro: [
       'Bosporinsalmen illallisristely sopii erinomaisesti muslimimatkustajille. Perusilallinen on alkoholiton – alkoholia ei tarvitse tilata lainkaan.',
-      'Ruoka sisältää useita mezoja, pääruoan (lohi, meribassi, kanavarras tai naudanlihavarras) ja jälkiruoan. Erityisruokavalioista, kuten halal-lihatoiveista, voi kysyä etukäteen WhatsAppilla.',
+      'Ruoka sisältää useita mezoja, pääruoan (lohi, meriahven, kanavarras tai naudanlihavarras) ja jälkiruoan. Erityisruokavalioista, kuten halal-lihatoiveista, voi kysyä etukäteen WhatsAppilla.',
       'Istanbul on muslimimatkailijan unelmakaupunki, ja Bosporinsalmen ristely on sen hienoimmista elämyksistä. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [
@@ -154,7 +154,7 @@ module.exports = {
       badge: '40% ALENNUS · Yksi menu, premium-taso · Maksu laivalla'
     },
     intro: [
-      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kanavarras tai naudanlihavarras), mannasuurimohalva ja rajattomasti virvoitusjuomia. Koko kahdeksan numeron ohjelma sisältyy myös hintaan — Oba Dombra, pyörivien dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali — kaikki hintaan €{p.dinnerStd}/henkilö.',
+      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras), mannasuurimohalva ja rajattomasti virvoitusjuomia. Koko kahdeksan numeron ohjelma sisältyy myös hintaan — Oba Dombra, pyörivien dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali — kaikki hintaan €{p.dinnerStd}/henkilö.',
       'VIP-tunnelma alkaa pöydästäsi. Jos haluat istua mahdollisimman lähellä lavaa ja maisemia, lisää **yksityinen pöytä lavan lähellä** (+€{p.romantic}/pöytä), niin paikkasi varataan etukäteen — paras kulma dervisseihin, kansantansseihin ja valaistuun Bosporiin. Parien, juhlien ja valokuvaajien suosikkivalinta.',
       'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 20:00, lähtö 21:00, paluu 00:00) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
     ],
@@ -167,7 +167,7 @@ module.exports = {
     faq: [
       { q: 'Myyttekö "VIP-pakettia"? Mikä ero on perusvaihtoehtoon?', a: 'Emme myy erillistä VIP-pakettia — meillä on yksi menu, joka tarjoillaan kaikille samalla premium-tasolla. Se, mitä kutsumme "VIP-kokemukseksi", on illan räätälöiminen sinulle: yksityinen pöytä lavan lähellä (+€{p.romantic}/pöytä), huomaavainen pöytäpalvelu ja valinnaiset juomalisät. Risteily kestää 3 tuntia, €{p.dinnerStd}/henkilö.' },
       { q: 'Onko €{p.dinnerStd} todella 40% alennus?', a: 'Kyllä — listahintamme on €{p.dinnerStdOriginal}/henkilö. €{p.dinnerStd} on suoravarauksen hinta ilman välikäsien komissioita. Maksat laivalla, eikä ennakkomaksua peritä.' },
-      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meribassi, kanavarras tai naudanlihavarras) ja mannasuurimohalva jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Kahdeksan numeron ohjelma sisältyy: Oba Dombra, dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali.' },
+      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras) ja mannasuurimohalva jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Kahdeksan numeron ohjelma sisältyy: Oba Dombra, dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei — alkoholi on erillinen lisä: 2 lasia valittavana viini, olut, rakı, vodka, viski, gin ja muuta hintaan +€{p.alcohol2}/henkilö. Virvoitusjuomat sisältyvät rajattomasti ja maksutta. Premium-tuontijuomat laskutetaan erikseen laivalla.' },
       { q: 'Miten varmistan pöydän lavan läheltä?', a: 'Valitse varauksen yhteydessä lisä "yksityinen pöytä lavan lähellä" (+€{p.romantic}/pöytä) — pöytä varataan nimellesi. Parhaat paikat menevät ennakkovarauksille, joten kannattaa lisätä se ennen risteilypäivää.' },
       { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 20:00, lähtö 21:00, paluu 00:00. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }

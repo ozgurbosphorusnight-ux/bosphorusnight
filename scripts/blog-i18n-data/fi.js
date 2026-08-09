@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Mitä illallisristeilyyn sisältyy?',
           paragraphs: [
             'Hyvä illallisristely Bosporinsalmella sisältää tyypillisesti: täyden illallisen (alkupala, pääruoka, jälkiruoka), canlı esitykset (tanssia, livemusiikkia), 3 tunnin ristelyn ja juomat. Maksa laivalla — ei ennakkomaksua.',
-            'Perusvaketti Bosporinsalmi yöllä -risteilyllä alkaa €24.30 per henkilö ja sisältää 10 mezea, valitsemasi pääruoan (lohi, meribassi, kana tai lihapullat), jälkiruoan ja alkoholittomat juomat. Viihde sisältää pyörivät dervishit, kansantanssit, orientaalisen tanssin ja DJ:n.',
+            'Perusvaketti Bosporinsalmi yöllä -risteilyllä alkaa €24.30 per henkilö ja sisältää 10 mezea, valitsemasi pääruoan (lohi, meriahven, kanavarras tai naudanlihavarras), jälkiruoan ja alkoholittomat juomat. Viihde sisältää pyörivät dervishit, kansantanssit, orientaalisen tanssin ja DJ:n.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Mitä menussa on lapsille?',
           paragraphs: [
-            'Illallismenu sisältää vaihtoehtoja kuten kana ja lihapullat joista useimmat lapset pitävät. Meze-valikoima on monipuolinen vihanneksilla ja dipillä. Jäätelökakku jälkiruoaksi sisältyy kaikille.',
+            'Illallismenu sisältää vaihtoehtoja kuten kana- ja naudanlihavartaat joista useimmat lapset pitävät. Meze-valikoima on monipuolinen vihanneksilla ja dipillä. Mannasuurimohalva jälkiruoaksi sisältyy kaikille.',
             'Tarvitseeko lapsesi erityisruokavaliota? Kysy meiltä etukäteen WhatsAppissa — teemme parhaamme auttaaksemme.',
           ],
         },

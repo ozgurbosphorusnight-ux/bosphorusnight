@@ -125,18 +125,18 @@ module.exports = {
       badge: '100% Halal · Familievenligt · Muslimsk Ejer'
     },
     intro: [
-      '**Halal Bosporuskrydstogtet** er det mest respektfulde middagskrydstogt i Istanbul for muslimske rejsende. Alt kød serveret på vores båd — laks, havbars, kylling, lammekødboller, oksefilet, ribeye — er **halal-certificeret** fra godkendte leverandører. Vi serverer den samme menu til hver gæst; ingen separat "halal-sektion", fordi hele båden er halal som standard.',
+      '**Halal Bosporuskrydstogtet** er det mest respektfulde middagskrydstogt i Istanbul for muslimske rejsende. Alt kød serveret på vores båd — laks, havbars, kyllingespyd, oksespyd — er **halal-certificeret** fra godkendte leverandører. Vi serverer den samme menu til hver gæst; ingen separat "halal-sektion", fordi hele båden er halal som standard.',
       'Alkohol er **et valgfrit tillæg** — aldrig pålagt gæsterne, og bordopsætningen adskiller naturligt gæster, der foretrækker et alkoholfrit måltid. For gæster, der ønsker 2-glas alkoholpakken (+€{p.alcohol2}/person), er den der, men de inkluderede ubegrænsede sodavand (vand, cola, juice) er nok for de fleste muslimske familier. Vores mandskab er trænet til at respektere dine præferencer uden antagelser.',
       '**Det halal-venlige Bosporuskrydstogt** betyder noget for rejsende fra Saudi-Arabien, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesien, Pakistan og Marokko, der ønsker Istanbuls mest ikoniske aften uden kompromiser. Licenseret af TÜRSAB, 4,8★ og betaling om bord — lov ikke noget, før du er sikker på, at oplevelsen opfylder dine standarder.'
     ],
     highlights: [
-      { title: '100% halal-certificeret menu', desc: 'Alt kød (laks, havbars, kylling, kødboller, oksekød, ribeye) er halal-certificeret fra godkendte leverandører. Køkkenet følger halal-tilberedning. Ingen svinekødsprodukter eller ikke-halal-tilsætningsstoffer. Vegetariske muligheder er altid tilgængelige.' },
+      { title: '100% halal-certificeret menu', desc: 'Alt kød (laks, havbars, kyllingespyd, oksespyd) er halal-certificeret fra godkendte leverandører. Køkkenet følger halal-tilberedning. Ingen svinekødsprodukter eller ikke-halal-tilsætningsstoffer. Vegetariske muligheder er altid tilgængelige.' },
       { title: 'Alkohol valgfri, aldrig pålagt', desc: 'Alkoholpakker er tillæg — ikke inkluderet som standard. Sodavand (vand, cola, juice) er ubegrænsede og gratis. Dit bord forbliver alkoholfrit, medmindre du eksplicit beder om det. Mandskabet respekterer stiltiende dit valg.' },
       { title: 'Familievenlig underholdning', desc: 'Sema-forestilling, traditionelle tyrkiske folkedanse, live tyrkisk musik. Ingen natklub-style shows, intet upassende indhold. Sikker for børn, respektfuld for familier. Orientalsk dans er en traditionel kunstform, præsenteret med beskedenhed.' },
       { title: 'Respekt for bønnetider', desc: 'Hvis ombordstigning falder sammen med maghrib eller isha (20:00-21:00), kan vores personale guide dig til den stille bønnezone ved Kabataş-anløbsbroen før afgang. Bare fortæl os det ved reservation.' }
     ],
     faq: [
-      { q: 'Er Bosporuskrydstogtet 100% halal?', a: 'Ja — hvert kødprodukt på menuen (fisk, kylling, kødboller, oksefilet, ribeye, lam) er halal-certificeret fra godkendte leverandører. Køkkenet følger halal-tilberedningsstandarder. Svinekød serveres ingen steder om bord. Det er ikke en "halal-mulighed" — hele menuen er halal.' },
+      { q: 'Er Bosporuskrydstogtet 100% halal?', a: 'Ja — hvert kødprodukt på menuen (laks, havbars, kyllingespyd, oksespyd) er halal-certificeret fra godkendte leverandører. Køkkenet følger halal-tilberedningsstandarder. Svinekød serveres ingen steder om bord. Det er ikke en "halal-mulighed" — hele menuen er halal.' },
       { q: 'Drikker andre gæster om bord alkohol?', a: 'Nogle gæster tilføjer den valgfri 2-glas alkoholpakke (+€{p.alcohol2}/person). Bordene er naturligt adskilt — du kan bede om en alkoholfri zone. Mandskabet bringer ikke alkohol, medmindre det er specifikt bestilt af en gæst. Sodavand (ubegrænset) er inkluderet for alle.' },
       { q: 'Er dette krydstogt passende for muslimske familier med børn?', a: 'Ja — det er et af de mest respekterede krydstogter for familier i Istanbul. Underholdningen er beskeden (folkedanse, sema, tyrkisk musik), børn under 3 år er gratis, 4-9 år får €5 rabat. Ingen natklub-atmosfære. Familier fra Golfen, Indonesien, Malaysia, Pakistan og Marokko booker regelmæssigt dette krydstogt.' },
       { q: 'Kan jeg bede om bord?', a: 'Der er ikke et dedikeret bønnerum om bord, men vi anbefaler at bede før ombordstigning kl. 20:00 (maghrib-bønnen falder ofte sammen med dette tidsinterval). Kabataş-anløbsbroen har bønnefaciliteter. Hvis du skal bede under sejladsen 21:00-00:00 (isha), tal med mandskabet — vi kan arrangere et stille hjørne på dækket.' },
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privat bord til to', desc: 'Privat bord til 2 personer, ikke delt. Prioritet til vinduebordene for par. Fotos af solnedgang og natlig Bosporus lige uden for dit vindue.' },
-      { title: 'Langsom flerretters middag', desc: '10 varianter af tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller eller vegetarisk), semulje-halva til dessert. Serveret langsomt over 3 timer — du har ikke travlt.' },
+      { title: 'Langsom flerretters middag', desc: '10 varianter af tyrkiske mezze, varm forret, hovedret (laks, havbars, kyllingespyd, oksespyd eller vegetarisk), semulje-halva til dessert. Serveret langsomt over 3 timer — du har ikke travlt.' },
       { title: 'Live violin og blød musik', desc: 'Live violin og akustisk tyrkisk musik under middagen skaber en intim atmosfære, passende til samtale. Derefter kommer DJ\'en for par, der vil danse.' },
       { title: 'Tillæg til specielle aftener', desc: 'Romantisk bordopsætning (stearinlys, roser): +€{p.romantic}. 2 glas alkohol (vin, øl, rakı, vodka, whisky, gin og mere): +€{p.alcohol2}/person. Hoteltransfer (tur-retur): +€{p.transfer}/person. Vælg, hvad der passer til din aften.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Sommersolnedgange lige ved afgang', desc: 'Fra maj til august går solen i Istanbul ned mellem cirka 20:15–20:45 — ombordstigning kl. 20:00 giver dig den gyldne time på dækket, og afgangen kl. 21:00 sætter dig på vandet til selve solnedgangen. Kamera klar — dette er fotoet.' },
       { title: 'Blå time og videre ind i natten', desc: 'Ikke kun solnedgang — krydstogtet sejler gennem tusmørket og ind i den fuldt oplyste Bosporus. Gyldent lys, blå time og derefter 30 millioner brolys på mørkt vand: tre lysfaser på én aften.' },
-      { title: 'Fuld middag under krydstogtet', desc: '10 varianter tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller, vegetarisk), semulje-halva, ubegrænsede sodavand — serveret, mens byens lys tændes.' },
+      { title: 'Fuld middag under krydstogtet', desc: '10 varianter tyrkiske mezze, varm forret, hovedret (laks, havbars, kyllingespyd, oksespyd, vegetarisk), semulje-halva, ubegrænsede sodavand — serveret, mens byens lys tændes.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporus-broen — alt skinner', desc: 'Ruten passerer Dolmabahçe-paladset, Ortaköy-moskeen, Bosporus-broen, Rumeli Hisarı og Beylerbeyi-paladset, netop som deres lys tændes. Hvert vartegn i sit bedste lys.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Den oplyste Bosporus på dramatisk top', desc: 'Bosporus-broen skifter farve (blå, lilla, gylden), paladserne stråler gule, Ortaköy-moskeen reflekteres i det mørke vand. 21:00-00:00 maksimal belysning for alle Istanbuls vartegn.' },
       { title: 'Traditionelt tyrkisk show om bord', desc: 'Otte numre: Oba Dombra, sema-forestilling, Sarı Gelin, aserbajdsjansk potpourri, orientalsk dans, anatolsk potpourri og den georgisk-kaukasiske knivdans, derefter live saxofon og DJ-sæt. 40 minutter show, derefter fortsætter musikken + middagen.' },
-      { title: 'Fuld flerretters middag', desc: '10 varianter tyrkiske mezze, varm forret (börek), hovedret (laks, havbars, kylling, kødboller, vegetarisk — dit valg), dessert (semulje-halva), ubegrænsede sodavand. Halal-certificeret.' },
+      { title: 'Fuld flerretters middag', desc: '10 varianter tyrkiske mezze, varm forret (börek), hovedret (laks, havbars, kyllingespyd, oksespyd, vegetarisk — dit valg), dessert (semulje-halva), ubegrænsede sodavand. Halal-certificeret.' },
       { title: 'Komplet Bosporus-rute', desc: 'Kabataş → Dolmabahçe → Çırağan-paladset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jomfrutårnet → Kabataş.' }
     ],
     faq: [

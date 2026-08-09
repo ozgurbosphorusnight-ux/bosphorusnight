@@ -79,7 +79,7 @@ module.exports = {
           h2: 'Wat is inbegrepen bij een dinercruise?',
           paragraphs: [
             'Een goede dinercruise op de Bosporus omvat doorgaans: volledige maaltijd (voorgerecht, hoofdgerecht, dessert), live entertainment (dans, livemuziek), 3 uur cruise en drankjes. Je betaalt aan boord — geen vooruitbetaling.',
-            'Het standaardpakket bij Bosporus bij Nacht begint vanaf €{p.dinnerStd} per persoon en bevat 10 soorten meze, je gekozen hoofdgerecht (zalm, zeebaars, kip of gehaktballen), dessert en alcoholvrije drankjes. Het entertainment omvat draaiende derwisjen, volksdansen, oosterse dans en DJ.',
+            'Het standaardpakket bij Bosporus bij Nacht begint vanaf €{p.dinnerStd} per persoon en bevat 10 soorten meze, je gekozen hoofdgerecht (zalm, zeebaars, kipspies of runderspies), dessert en alcoholvrije drankjes. Het entertainment omvat draaiende derwisjen, volksdansen, oosterse dans en DJ.',
           ],
         },
         {
@@ -152,7 +152,7 @@ module.exports = {
         {
           h2: 'Wat staat er op het menu voor kinderen?',
           paragraphs: [
-            'Het dinermenu bevat opties zoals kip en gehaktballen die de meeste kinderen lekker vinden. Het meze-aanbod is gevarieerd met veel groenten en dips. Dessert met ijs is inbegrepen voor iedereen.',
+            'Het dinermenu bevat opties zoals kipspies en runderspies die de meeste kinderen lekker vinden. Het meze-aanbod is gevarieerd met veel groenten en dips. Griesmeelhalva als dessert is voor iedereen inbegrepen.',
             'Heeft je kind een speciaal dieet nodig? Vraag het ons vooraf via WhatsApp — we doen ons uiterste best om te helpen.',
           ],
         },
