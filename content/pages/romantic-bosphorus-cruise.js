@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **romantic table setup** (+€{p.romantic}/table) transforms any seat into an occasion: red roses, glowing candles, a handwritten welcome note. Add the 2-glass alcohol package (+€{p.alcohol2}/person) for wine under the stars, or keep it simple with the included soft drinks. Either way, the crew quietly takes care of the rest.',
 
-    'Whether you\'re celebrating an anniversary, planning a surprise for your partner, or just in the most romantic city in Europe and want to live a memorable night, this is the **romantic dinner cruise Istanbul couples book first**. 4.8★ rating, TÜRSAB-licensed, and — most importantly — pay on the boat, so you\'re committing to nothing but the evening itself.'
+    'Whether you\'re celebrating an anniversary, planning a surprise for your partner, or just in the most romantic city in Europe and want to live a memorable night, this is the **romantic dinner cruise Istanbul couples book first**. 4.9★ rating, TÜRSAB-licensed, and — most importantly — pay on the boat, so you\'re committing to nothing but the evening itself.'
   ],
 
   highlights: [

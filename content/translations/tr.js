@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'İstanbul Boğazı\'nda Yemekli Boğaz Turu',
       subtitle: 'Üç saatlik canlı eğlence, çok çeşitli Türk ziyafeti ve Boğaz\'ın gece en etkileyici manzarası.',
-      badge: '4.8★ · 11.317 yorum'
+      badge: '4.9★ · 11.317+ misafir'
     },
     intro: [
-      '**Boğaz yemekli turu**, İstanbul\'un en ikonik akşam deneyimidir. 20:00\'de Kabataş İskelesi\'nden başlayan turumuz, aydınlatılmış Boğaz ve Fatih Sultan Mehmet köprülerinin altından süzülürken çok çeşitli Türk yemekleri, canlı halk oyunları, oryantal dans ve 23:00\'e kadar güverteyi canlı tutan DJ seti sunar.',
-      'İstanbul\'un gece manzarasını dolduran sıradan tur teknelerinin aksine, **Boğaz yemekli turumuz** TÜRSAB lisanslıdır (A-17672) ve 11.317\'den fazla gezgin tarafından 4.8★ olarak değerlendirilmiştir. Grubu küçük, hizmeti sıcak tutarız — ve teknede ödediğiniz için önceden rezervasyon yapmanın hiçbir riski yoktur.',
+      '**Boğaz yemekli turu**, İstanbul\'un en ikonik akşam deneyimidir. 20:00\'de Kabataş İskelesi\'nden başlayan turumuz, aydınlatılmış Boğaz ve Fatih Sultan Mehmet köprülerinin altından süzülürken çok çeşitli Türk yemekleri, canlı halk oyunları, oryantal dans ve 23:45\'e kadar güverteyi canlı tutan DJ seti sunar.',
+      'İstanbul\'un gece manzarasını dolduran sıradan tur teknelerinin aksine, **Boğaz yemekli turumuz** TÜRSAB lisanslıdır (A-17672) ve 11.317\'den fazla gezgin tarafından 4.9★ olarak değerlendirilmiştir. Grubu küçük, hizmeti sıcak tutarız — ve teknede ödediğiniz için önceden rezervasyon yapmanın hiçbir riski yoktur.',
       'Yıldönümü mü kutluyorsunuz, aileniz için premium bir İstanbul akşamı mı arıyorsunuz, yoksa şehrin en fotojenik gün batımı-gece geçişini mi istiyorsunuz — İstanbul sakinlerinin ilk önerdiği yemekli tur bu.'
     ],
     highlights: [
-      { title: 'Çok çeşitli Türk ziyafeti', desc: '10 çeşit meze, sıcak başlangıç (börek), ana yemek seçimi (somon / levrek / tavuk şiş / dana şiş / vejetaryen), irmik helvası tatlı, sınırsız meşrubat.' },
+      { title: 'Çok çeşitli Türk ziyafeti', desc: '10 çeşit meze, sıcak başlangıç (börek), ana yemek seçimi (somon / levrek / tavuk şiş / dana şiş / vejetaryen), özel irmik tatlısı tatlı, sınırsız meşrubat.' },
       { title: 'Canlı halk oyunları, oryantal dans ve DJ', desc: 'Sekiz gösteri: Oba Dombra, Mevlana sema, Sarı Gelin, Azerbaycan potpurisi, klasik oryantal dans, Anadolu potpurisi ve Gürcü-Kafkas bıçak dansı — ardından canlı saksafon ve tur boyunca DJ seti.' },
       { title: 'Tam Boğaz gece rotası', desc: 'Kabataş → Dolmabahçe → Çırağan Sarayı → Ortaköy Camii → Bebek → Rumeli Hisarı → FSM Köprüsü → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: '€{p.dinnerStd}/kişi\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**Çocuklu Boğaz turu**, İstanbul\'un en aile dostu akşam seçeneğidir. Her gece düzinelerce aileyi ağırlıyoruz — her detayı çocukları rahat ettirmek için tasarladık: küçüklerin sıcak kalması için kapalı oturma, erişilebilir çocuk dostu menü (sade ızgara tavuk, makarna, sınırsız meşrubat) ve geç saat huysuzluklarından kaçınmak için erken biniş.',
       'Sadece yetişkin partisi olan teknelerin aksine, **aileler için Boğaz yemekli turumuz** sıcak ve kapsayıcı kalır. **0-3 yaş çocuklar ücretsiz** (transfer dahil), 4-9 yaş **€5 indirimli**, 10+ yaş tam fiyat — gizli ücret yok. Canlı halk oyunları, oryantal dans ve sema gösterisi nazik aile eğlencesidir, gece kulübü değil.',
-      'İstanbul\'a yeni yürümeye başlayan çocuğunuzla uzun bir hafta sonu için mi geliyorsunuz, yoksa gençleri ilk Avrupa gezisine mi getiriyorsunuz — bu, İstanbul ailelerinin önerdiği turdur. Güvenli, helal sertifikalı, TÜRSAB lisanslı ve 11.317+ gezgin tarafından 4.8★.'
+      'İstanbul\'a yeni yürümeye başlayan çocuğunuzla uzun bir hafta sonu için mi geliyorsunuz, yoksa gençleri ilk Avrupa gezisine mi getiriyorsunuz — bu, İstanbul ailelerinin önerdiği turdur. Güvenli, helal sertifikalı, TÜRSAB lisanslı ve 11.317+ gezgin tarafından 4.9★.'
     ],
     highlights: [
       { title: '0-3 yaş tamamen ücretsiz', desc: 'Bebek ve yürümeye başlayanlara ücret yok. 4-9 yaş yetişkin fiyatından €5 indirimli. 10 yaştan itibaren tam misafir. Şeffaf, sürpriz yok.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**Romantik Boğaz turu**, İstanbul\'un çiftler için en ikonik akşamıdır. Güneş Dolmabahçe Sarayı\'nın üzerinden batar ve Boğaz Köprüsü renkleriyle aydınlanırken, siz ve partneriniz özel bir masada çok çeşitli Türk ziyafetini paylaşıyorsunuz — mumlar, taze çiçekler ve güvertede süzülen canlı keman ile.',
       'Romantik masa düzenimiz (+€{p.romantic}/masa) herhangi bir yeri özel bir ana dönüştürür: kırmızı güller, parlayan mumlar, el yazısı bir hoşgeldiniz notu. Yıldızlar altında şarap için 2 kadehlik alkol paketini ekleyin (+€{p.alcohol2}/kişi) veya dahil olan meşrubatlarla sade tutun. Her iki durumda da ekip sessizce gerisini halleder.',
-      'Yıldönümü kutluyor olun, partnerinize sürpriz planlıyor veya sadece Avrupa\'nın en romantik şehrinde unutulmaz bir gece yaşamak istiyorsanız — İstanbul çiftlerinin ilk tercih ettiği tur budur. 4.8★ puan, TÜRSAB lisanslı ve — en önemlisi — teknede ödeme, yani sadece akşamın kendisine söz veriyorsunuz.'
+      'Yıldönümü kutluyor olun, partnerinize sürpriz planlıyor veya sadece Avrupa\'nın en romantik şehrinde unutulmaz bir gece yaşamak istiyorsanız — İstanbul çiftlerinin ilk tercih ettiği tur budur. 4.9★ puan, TÜRSAB lisanslı ve — en önemlisi — teknede ödeme, yani sadece akşamın kendisine söz veriyorsunuz.'
     ],
     highlights: [
       { title: 'Mumlu romantik masa', desc: 'Romantik masa düzenini +€{p.romantic}/masa ile ekleyin: taze kırmızı güller, parlayan mumlar, masa örtüsünde gül yaprakları ve el yazısı kart. Fotoğraflar dahil.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**Helal Boğaz turu**, İstanbul\'un Müslüman gezginler için en saygın yemekli turudur. Teknemizde servis edilen her et — somon, levrek, tavuk şiş, dana şiş — onaylı tedarikçilerden **helal sertifikalıdır**. Aynı menüyü her misafire servis ediyoruz; ayrı "helal bölümü" yok çünkü tüm tekne varsayılan olarak helal.',
       'Alkol **opsiyonel bir eklentidir** — misafirlere asla dayatılmaz ve oturma düzeni alkolsüz masa tercih edenleri doğal olarak ayırır. 2 bardaklık alkol paketi (+€{p.alcohol2}/kişi) isteyen misafirler için orada, ama dahil olan sınırsız meşrubatlar (su, kola, meyve suyu) çoğu Müslüman aile için yeterli. Ekibimiz tercihlerinizi varsayım yapmadan saygılı olacak şekilde eğitilmiştir.',
-      'İstanbul\'un en ikonik akşamını ödün vermeden isteyen Suudi Arabistan, BAE, Kuveyt, Katar, İran, Malezya, Endonezya, Pakistan ve Fas\'tan gelen gezginler için **helal dostu Boğaz turu** önemlidir. TÜRSAB lisanslı, 4.8★ ve teknede ödeme — deneyimin standartlarınızı karşıladığından emin olana kadar hiçbir şeye söz vermezsiniz.'
+      'İstanbul\'un en ikonik akşamını ödün vermeden isteyen Suudi Arabistan, BAE, Kuveyt, Katar, İran, Malezya, Endonezya, Pakistan ve Fas\'tan gelen gezginler için **helal dostu Boğaz turu** önemlidir. TÜRSAB lisanslı, 4.9★ ve teknede ödeme — deneyimin standartlarınızı karşıladığından emin olana kadar hiçbir şeye söz vermezsiniz.'
     ],
     highlights: [
       { title: '%100 helal sertifikalı menü', desc: 'Tüm et (somon, levrek, tavuk şiş, dana şiş) onaylı tedarikçilerden helal sertifikalıdır. Mutfak helal hazırlığı takip eder. Domuz ürünü veya helal olmayan katkı yok. Vejetaryen seçenekleri her zaman mevcut.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Bu tur çocuklu Müslüman aileler için uygun mu?', a: 'Evet — İstanbul\'un en aile saygın turlarından biridir. Eğlence mütevazı (halk oyunları, sema, Türk müziği), 3 yaş altı çocuklar ücretsiz, 4-9 yaş €5 indirim. Gece kulübü atmosferi yok. Körfez bölgesi, Endonezya, Malezya, Pakistan ve Fas\'tan aileler düzenli olarak bu turu rezerve eder.' },
       { q: 'Teknede namaz kılabilir miyim?', a: 'Teknede özel bir namaz odası yok, ama 20:00 binişten önce namaz kılmanızı öneririz (akşam namazı genellikle bu pencereye denk gelir). Kabataş İskelesi\'nde namaz olanakları var. 21:00-00:00 seyir sırasında namaz kılmanız gerekirse (yatsı), ekiple konuşun — güvertede sessiz bir köşe ayarlayabiliriz.' },
       { q: '4 kişilik bir Müslüman aile (2 yetişkin, 2 çocuk) için fiyatlar nedir?', a: 'Yemekli tur: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 yaş €5 indirim) = €87.20. Çocuklar 3 yaş altıysa ücretsiz: 2 × €{p.dinnerStd} = €48.60. Yetişkin başına €5 otel transferi ekleyin. Toplam: 4 kişilik aile için €48.60–€92.90, ön ödeme yok, teknede ödeme.' },
-      { q: 'Otel transferi de helal mi?', a: 'Otel transferi sadece bir araba yolculuğu — yemek veya içecek söz konusu değil, bu yüzden helal endişesi yok. Şoförlerimiz profesyonel, saygılı ve dakiktir. Transfer alanları Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli ve Müslüman gezginlerin genellikle konakladığı diğer 9 merkezi bölgeyi kapsar.' }
+      { q: 'Otel transferi de helal mi?', a: 'Otel transferi sadece bir araba yolculuğu — yemek veya içecek söz konusu değil, bu yüzden helal endişesi yok. Şoförlerimiz profesyonel, saygılı ve dakiktir. Transfer alanları Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli ve Müslüman gezginlerin genellikle konakladığı diğer 8 merkezi bölgeyi kapsar.' }
     ],
     cta: {
       primary: 'Helal Tur Rezerve Et · Teknede Ödeme',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '%40 İNDİRİM · Tek Menü, Premium Standart · Teknede Ödeme'
     },
     intro: [
-      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), irmik helvası ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
+      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), özel irmik tatlısı ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
       'VIP hissi masanızla başlar. Sahneye ve manzaraya en yakın masalardan birini isterseniz **sahne yakını özel masa** eklentisiyle (+€{p.romantic}/masa) yeriniz önceden ayrılır — semazeni, halk oyunlarını ve aydınlatılmış Boğaz\'ı en iyi açıdan izlersiniz. Çiftlerin, kutlamaların ve fotoğraf sevenlerin favorisi.',
       'AMOR 42 metrelik, 3 katlı, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir tekne. 3 saatlik rota Kabataş\'tan başlar (giriş 20:00\'den itibaren, kalkış 21:00, dönüş 00:00): Dolmabahçe, Ortaköy Camii, Rumeli Hisarı ve Boğaz Köprüsü ışıkları. TÜRSAB lisanslı (A-17672), Google\'da 4.9★. Ön ödeme yok — teknede ödersiniz, kalkışa 2 saat kalaya kadar ücretsiz iptal.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: '"VIP paketi" mi satıyorsunuz? Standart ile farkı ne?', a: 'Ayrı bir VIP paketi satmıyoruz — tek menümüz var ve herkese aynı premium standartta servis ediliyor. "VIP deneyim" dediğimiz şey akşamınızı kişiselleştirmek: sahne yakını özel masa eklentisi (+€{p.romantic}/masa), özenli masa servisi ve isteğe bağlı içecek eklentileri. Tur 3 saat, fiyat €{p.dinnerStd}/kişi.' },
       { q: '€{p.dinnerStd} gerçekten %40 indirim mi?', a: 'Evet — liste fiyatımız €{p.dinnerStdOriginal}/kişi. €{p.dinnerStd}, aracı komisyonlarını devre dışı bırakan doğrudan rezervasyon fiyatıdır. Ödemeyi teknede yaparsınız, ön ödeme yoktur.' },
-      { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), irmik helvası ve sınırsız meşrubat. Sekiz bölümlük eğlence programı dahil: Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali.' },
+      { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), özel irmik tatlısı ve sınırsız meşrubat. Sekiz bölümlük eğlence programı dahil: Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali.' },
       { q: 'Alkol dahil mi?', a: 'Hayır — alkol ayrı eklentidir: kişi başı 2 kadeh şarap, bira, rakı, votka, viski, cin ve daha fazlası +€{p.alcohol2}. Sınırsız meşrubat ücretsiz dahildir. Premium ithal içkiler teknede ayrıca fiyatlandırılır.' },
       { q: 'Sahne yakını masayı nasıl garantilerim?', a: 'Rezervasyon sırasında "sahne yakını özel masa" eklentisini (+€{p.romantic}/masa) seçmeniz yeterli — masanız isminize ayrılır. En iyi konumlar ön rezervasyonlarla dolduğu için tur gününden önce eklemenizi öneririz.' },
       { q: 'Tekne nasıl bir tekne?', a: 'AMOR — 42 metre, 3 kat, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir yolcu teknesi. Kalkış Kabataş İskelesi\'nden: giriş 20:00, kalkış 21:00, dönüş 00:00. Rota: Dolmabahçe, Ortaköy, Rumeli Hisarı, Beylerbeyi ve Boğaz Köprüsü ışıkları.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**Özel Boğaz turu**, tüm teknenin sizin olması demektir — başka misafir yok, paylaşılan masa yok, paylaşılan dans pisti yok. Aile buluşmaları, kurumsal yemekler, doğum günü partileri, bekarlığa veda geceleri veya düğün resepsiyonları için mükemmel. Tekne, ekip, menü, eğlence ve zamanlama grubunuza uyum sağlar.',
       '**Özel Boğaz turu kiralamamız** **25\'ten 80 misafire** kadar grupları destekler. Daha küçük gruplar yine de özel deneyim talep edebilir — teknenin operasyon maliyetini karşılayan minimum ücretle fiyat veririz. Daha büyük gruplar (düğün boyutu) özel fiyatlandırma alır ve genellikle özel dekorasyon, canlı grup, pasta servisi ve uzatılmış süre (standart 3 yerine 4-5 saat) içerir.',
-      'Müşteriler için kurumsal etkinlik, 50. doğum günü partisi veya İstanbul\'un en ikonik köprülerinin altında düğün resepsiyonu düzenliyor olsanız bile, bu **İstanbul etkinlik planlayıcılarının güvendiği özel tur**\'dur. 4.8★ puan, TÜRSAB lisanslı, tam İngilizce konuşan ekip ve her konuda esnek — rota, menü, müzik, zamanlama.'
+      'Müşteriler için kurumsal etkinlik, 50. doğum günü partisi veya İstanbul\'un en ikonik köprülerinin altında düğün resepsiyonu düzenliyor olsanız bile, bu **İstanbul etkinlik planlayıcılarının güvendiği özel tur**\'dur. 4.9★ puan, TÜRSAB lisanslı, tam İngilizce konuşan ekip ve her konuda esnek — rota, menü, müzik, zamanlama.'
     ],
     highlights: [
       { title: 'Tüm tekne, sadece sizin için', desc: 'Başka misafir yok. Grubunuz her güverteye, her masaya sahip. Kendi müziğinizi, kıyafet kodunuzu, programınızı belirleyin. Gizlilik önemlidir — buna saygı gösteriyoruz.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**Çiftler için Boğaz turu**, İstanbul\'un favori randevu gecesidir. Her çift yıldönümü kutlamıyor — bazen dünyanın en romantik şehrindesiniz ve birlikte harika bir akşam istiyorsunuz. Bu tur sunar: iki kişilik özel masa, yavaş bir çok çeşitli Türk akşam yemeği, yemek sırasında canlı keman ve akustik müzik ve yavaşça geçen aydınlatılmış Boğaz Köprüsü.',
       'Atmosfer **sıcak ama aşırı romantik değil** — zorunlu evlilik teklifi müziği yok, rahatsız edici "yeni evli" koordineli alkışlar yok. Yersiniz, içersiniz, konuşursunuz, İstanbul\'un ışıklarını izlersiniz. Romantik masa düzeni eklemek isterseniz (mumlar, güller, +€{p.romantic}), harika — yoksa sadece yemek bile zaten özel.',
-      'İstanbul\'da partnerinizle 3 gün için misiniz, mütevazı bir dönüm noktasını kutluyor veya gelecekteki bir evlilik teklifi keşif gezisi mi planlıyorsunuz — **çiftler için Boğaz turu** dünyanın en çok fotoğraflanan şehirlerinden birinde birlikte olmak için size 3 saatlik bir akşam verir. 4.8★, teknede ödeme, ücretsiz iptal.'
+      'İstanbul\'da partnerinizle 3 gün için misiniz, mütevazı bir dönüm noktasını kutluyor veya gelecekteki bir evlilik teklifi keşif gezisi mi planlıyorsunuz — **çiftler için Boğaz turu** dünyanın en çok fotoğraflanan şehirlerinden birinde birlikte olmak için size 3 saatlik bir akşam verir. 4.9★, teknede ödeme, ücretsiz iptal.'
     ],
     highlights: [
       { title: 'İki kişilik özel masa', desc: 'Özel 2 kişilik masa, paylaşılmıyor. Çiftlere pencere kenarı oturma önceliği. Pencerenizin hemen dışında gün batımı ve gece Boğaz fotoğrafları.' },
-      { title: 'Yavaş tempolu çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş veya vejetaryen), irmik helvası tatlı. 3 saat boyunca yavaşça servis edilir — acele ettirilmiyorsunuz.' },
+      { title: 'Yavaş tempolu çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş veya vejetaryen), özel irmik tatlısı tatlı. 3 saat boyunca yavaşça servis edilir — acele ettirilmiyorsunuz.' },
       { title: 'Canlı keman ve hafif müzik', desc: 'Yemek sırasında canlı keman ve akustik Türk müziği sohbete uygun samimi bir atmosfer yaratır. Sonra, dans etmek isteyen çiftler için DJ devreye girer.' },
       { title: 'Özel geceler için eklentiler', desc: 'Romantik masa düzeni (mumlar, güller): +€{p.romantic}. 2 kadehlik alkol paketi (şarap, bira, rakı, votka, viski, cin ve daha fazlası): +€{p.alcohol2}/kişi. Otel transferi (gidiş-dönüş): +€{p.transfer}/kişi. Akşamınıza uyanı seçin.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       'İstanbul\'da **Boğaz gün batımı turu** deneyiminin özü tek bir şeydir: geçiş anı. Turumuz Kabataş İskelesi\'nde 20:00\'den itibaren biniş alır — Mayıs\'tan Ağustos\'a uzanan uzun akşamlarda, siz güvertede yerinizi alırken altın saat gözlerinizin önünde açılır. Güneş, Avrupa yakası minarelerinin üzerinde tam 21:00 kalkışı civarında batar; yani onu sudan izlersiniz: altına boyanmış Dolmabahçe Sarayı, parlayan gökyüzüne siluet olmuş Ortaköy Camii.',
       '**Gün batımından geceye Boğaz turumuz** tam bir Türk akşam yemeği içerir — 10 çeşit meze, sıcak başlangıç, ana yemek seçimi, tatlı — şehir ışıklarını yakarken servis edilir. Tatlı geldiğinde, karanlık suya yansıyan 30 milyon ışığıyla aydınlatılmış Boğaz Köprüsü\'nün altından geçiyor olursunuz. Alacakaranlıktan tam geceye geçiş, hepsi tek bir 3 saatlik turun içinde — bütün mesele bu.',
-      'Son ışığı kovalayan bir fotoğrafçı, o "İstanbul anı fotoğrafı"nın peşindeki bir çift veya su üstünde klasik bir akşam isteyen ilk kez gelen bir gezgin olun — bu, yerlilerin ziyaretçilere önerdiği **Boğaz gün batımı yemekli turu**\'dur. €{p.dinnerStd}/kişi\'den, 4.8★ puan, TÜRSAB lisanslı, teknede ödeme — ön ödeme yok.'
+      'Son ışığı kovalayan bir fotoğrafçı, o "İstanbul anı fotoğrafı"nın peşindeki bir çift veya su üstünde klasik bir akşam isteyen ilk kez gelen bir gezgin olun — bu, yerlilerin ziyaretçilere önerdiği **Boğaz gün batımı yemekli turu**\'dur. €{p.dinnerStd}/kişi\'den, 4.9★ puan, TÜRSAB lisanslı, teknede ödeme — ön ödeme yok.'
     ],
     highlights: [
       { title: 'Yaz gün batımları tam kalkış saatinde', desc: 'Mayıs\'tan Ağustos\'a İstanbul\'da güneş yaklaşık 20:15–20:45 arasında batar — 20:00 biniş size güvertede altın saati verir, 21:00 kalkış ise sizi gün batımının tam ortasında suya çıkarır. Kamera hazır olsun — o kare bu.' },
       { title: 'Mavi saatten tam geceye', desc: 'Sadece gün batımı değil — tur alacakaranlıktan geçip tamamen aydınlatılmış Boğaz\'a açılır. Altın ışık, mavi saat, sonra karanlık suda 30 milyon köprü ışığı: tek akşamda üç ışık evresi.' },
-      { title: 'Tur boyunca tam akşam yemeği', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen), irmik helvası, sınırsız meşrubat — şehir ışıkları yanarken servis edilir.' },
+      { title: 'Tur boyunca tam akşam yemeği', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen), özel irmik tatlısı, sınırsız meşrubat — şehir ışıkları yanarken servis edilir.' },
       { title: 'Dolmabahçe, Ortaköy, Boğaz Köprüsü — hepsi parlıyor', desc: 'Rota, ışıkları yanarken Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı ve Beylerbeyi Sarayı\'nın önünden geçer. Her simge yapı en iyi ışığında.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**Boğaz gece turu** İstanbul\'da en çok önerilen akşam aktivitesidir. Nedeni şudur: karanlıktan sonra Boğaz dönüşür. Boğaz Köprüsü mavi, mor ve altın arasında geçer. Dolmabahçe Sarayı sıcak sarıya parlar. Ortaköy Camii siyah suya mükemmel yansır. Her İstanbul dönüm noktası geceleri tepe dramaya ulaşır.',
       '**Yemekli Boğaz gece turumuz** tam ikonik akşamı paketler: 3 saat su üstünde (21:00-00:00), çok çeşitli Türk ziyafeti, sekiz bölümlük canlı halk oyunları programı (Oba Dombra, sema, Anadolu ve Azerbaycan halk oyunları, oryantal dans, Kafkas bıçak dansı), canlı müzik ve gecenin sonuna kadar güverteyi canlı tutan saksafonlu DJ seti. Her misafir aynı programı alır — en iyi bölümleri atlayan "temel" bir seçenek yok.',
-      'İlk İstanbul geziniz olsa ve "geceleyin yapmanız gereken tek şey" arıyor olsanız bile, daha önce burada olduysanız ve şehirdeki en fotojenik 3 saati istiyorsanız bile, bu 11.317+ gezginden 4.8★ puanlı **Boğaz gece turu**\'dur. TÜRSAB lisanslı, teknede ödeme, ön ödeme yok.'
+      'İlk İstanbul geziniz olsa ve "geceleyin yapmanız gereken tek şey" arıyor olsanız bile, daha önce burada olduysanız ve şehirdeki en fotojenik 3 saati istiyorsanız bile, bu 11.317+ gezginden 4.9★ puanlı **Boğaz gece turu**\'dur. TÜRSAB lisanslı, teknede ödeme, ön ödeme yok.'
     ],
     highlights: [
       { title: 'Tepe dramada aydınlatılmış Boğaz', desc: 'Boğaz Köprüsü renk değiştirir (mavi, mor, altın), saraylar sarı parlar, Ortaköy Camii siyah suya yansır. 21:00-00:00 tüm İstanbul dönüm noktaları için tepe aydınlatma.' },
       { title: 'Teknede geleneksel Türk şov', desc: 'Sekiz gösteri: Oba Dombra, sema gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal dans, Anadolu potpurisi ve Gürcü-Kafkas bıçak dansı, sonra canlı saksafon ve DJ seti. 40 dakika performans, sonra müzik + yemek devam eder.' },
-      { title: 'Tam çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç (börek), ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen — seçiminiz), tatlı (irmik helvası), sınırsız meşrubat. Helal sertifikalı.' },
+      { title: 'Tam çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç (börek), ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen — seçiminiz), tatlı (özel irmik tatlısı), sınırsız meşrubat. Helal sertifikalı.' },
       { title: 'Tam Boğaz rotası', desc: 'Kabataş → Dolmabahçe → Çırağan Sarayı → Ortaköy Camii → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet Köprüsü → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kız Kulesi → Kabataş.' }
     ],
     faq: [
@@ -340,15 +340,15 @@ module.exports = {
     hero: {
       h1: 'İstanbul Yemekli Tur',
       subtitle: 'İstanbul\'daki en iyi yemekli tur — Boğaz\'da 3 saat, çok çeşitli Türk ziyafeti, canlı eğlence ve şehrin en ikonik dönüm noktalarının gece manzaraları.',
-      badge: '4.8★ · 11.317 yorum · TÜRSAB A-17672'
+      badge: '4.9★ · 11.317+ misafir · TÜRSAB A-17672'
     },
     intro: [
       '**İstanbul\'da yemekli tur** mu arıyorsunuz? Çoğu gezginin önerdiğini buldunuz. Boğaz\'da 3 saatlik akşamımız tam bir çok çeşitli Türk yemeğini, canlı halk oyunlarını ve şehrin en fotojenik manzaralarını birleştiriyor — hepsi 21:00\'de Kabataş İskelesi\'nden kalkan rahat bir tekneden.',
       '**İstanbul yemekli tur** deneyimi: 20:00\'de binin, yerleşin, kalkarken Dolmabahçe Sarayı\'nın yanından geçişini izleyin, Ortaköy Camii\'ne yaklaşırken yemek başlar, şov başlar (sema, halk oyunları, oryantal), tatlı geldiğinde aydınlatılmış Boğaz Köprüsü\'nün altındasınız. Gece yarısına kadar ikonik fotoğraf kolajı ve dolu bir mideyle Kabataş\'a geri dönüyorsunuz.',
-      'Yemekli tur €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). Teknede ödeme — ön ödeme yok, risk yok. TÜRSAB A-17672 lisanslı, 11.317+ gezgin tarafından 4.8★ puanlı.'
+      'Yemekli tur €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). Teknede ödeme — ön ödeme yok, risk yok. TÜRSAB A-17672 lisanslı, 11.317+ gezgin tarafından 4.9★ puanlı.'
     ],
     highlights: [
-      { title: 'Tam çok çeşitli Türk yemeği', desc: '10 çeşit meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk şiş/dana şiş/vejetaryen), irmik helvası. Helal sertifikalı. Sınırsız meşrubat dahil.' },
+      { title: 'Tam çok çeşitli Türk yemeği', desc: '10 çeşit meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk şiş/dana şiş/vejetaryen), özel irmik tatlısı. Helal sertifikalı. Sınırsız meşrubat dahil.' },
       { title: 'Canlı Türk halk oyunları şovu', desc: 'Sekiz gösteri: Oba Dombra, sema gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal dans, Anadolu potpurisi, Gürcü-Kafkas bıçak dansı, sonra canlı saksafon ve DJ. 40 dakika performans, ortam müziği devam eder.' },
       { title: 'Tam Boğaz gece rotası', desc: '3 saatlik tur: Dolmabahçe, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Bebek, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi, Üsküdar, Kız Kulesi. Hem Avrupa hem Asya yakası.' },
       { title: '€{p.dinnerStd}\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Yemekli Tur Rezerve Et · Teknede Ödeme',
-      secondary: '4.8★ · TÜRSAB lisanslı · 2 saat öncesine ücretsiz iptal',
+      secondary: '4.9★ · TÜRSAB lisanslı · 2 saat öncesine ücretsiz iptal',
       tertiary: 'Bu Gece Müsaitlik'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'İstanbul Gece Turu €{p.dinnerStd}\'den — Boğaz Yemekli Tur + Şov',
-      description: '3 saatlik Boğaz turu, akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu. Otel transfer opsiyonel.'
+      description: '3 saatlik Boğaz turu, akşam yemeği ve canlı şov. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317+ misafir. Otel transfer opsiyonel.'
     },
     hero: {
       h1: 'İstanbul Gece Turu',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       'Bir **İstanbul gece turu** üç şey yapmalı: size şehrin ikonik manzaralarını vermeli, sizi iyi beslemeli ve sizi eğlendirmeli. Boğaz yemekli turumuz üçünü de tek bir 3 saatlik akşamda yapıyor — ve çoğu İstanbul rehberinin bunu #1 gece turu deneyimi olarak önermesinin nedeni bu.',
       '**İstanbul gece turu** rotası aydınlatılmış en iyi dönüm noktalarını kapsar: Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü (renk geçer), Bebek mahallesi, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi Sarayı, Üsküdar\'ın Asya kıyısı ve uzaktaki Kız Kulesi. Çoğu şehir turu bunları otobüsten gösterir — biz sudan gösteriyoruz, en dramatik oldukları yerden.',
-      'Yemek dahil (çok çeşitli Türk menüsü), canlı Türk halk oyunları şovu, sema, oryantal dans ve DJ seti. İstanbul\'da 2-3 günseniz, bu en büyük yumruğu atan tek akşam. 11.317+ gezginden 4.8★, teknede ödeme, ön ödeme yok.'
+      'Yemek dahil (çok çeşitli Türk menüsü), canlı Türk halk oyunları şovu, sema, oryantal dans ve DJ seti. İstanbul\'da 2-3 günseniz, bu en büyük yumruğu atan tek akşam. 11.317+ gezginden 4.9★, teknede ödeme, ön ödeme yok.'
     ],
     highlights: [
       { title: 'Tüm ikonik İstanbul gece manzaraları', desc: 'Dolmabahçe Sarayı, Ortaköy Camii, aydınlatılmış Boğaz Köprüsü, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi Sarayı, Kız Kulesi. Her büyük dönüm noktası tepe gece aydınlatmasında.' },
@@ -416,12 +416,12 @@ module.exports = {
     hero: {
       h1: 'İstanbul Tekne Turu',
       subtitle: 'Gezginlerin en çok rezerve ettiği İstanbul tekne turu — Türk yemeği, canlı eğlence ve şehrin sudan ikonik manzaralarıyla Boğaz turu.',
-      badge: '4.8★ · TÜRSAB A-17672 · Teknede Ödeme'
+      badge: '4.9★ · TÜRSAB A-17672 · Teknede Ödeme'
     },
     intro: [
       '"İstanbul tekne turu" aradığınızda, şehri sudan tanımlayan tek şeyi arıyorsunuz: Boğaz. 3 saatlik Boğaz tekne turumuz sizi her büyük İstanbul dönüm noktasının — Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı, Beylerbeyi Sarayı ve Kız Kulesi — yanından tam Türk yemeği ve canlı eğlence ile götürür.',
       'Daha az Boğaz kapsayan ve yemek ile eğlenceyi atlayan 1 saatlik birçok sightseeing feribotundan farklı olarak, **İstanbul tekne turumuz** tam akşam deneyimidir: 20:00\'de Kabataş İskelesi\'nden biniş, gece yarısına kadar tur, 10 meze, ana yemek, tatlı, sema, halk oyunları, oryantal dans ve DJ. Turu ALDIĞINIZ gibi gece dışarı çıkışını da alıyorsunuz.',
-      'İstanbul\'da bir geceniz varsa veya tam bir haftanız varsa, bu **İstanbul tekne turu** işi yapar. 11.317+ gezginden 4.8★, TÜRSAB lisanslı (A-17672), helal sertifikalı menü ve teknede ödeme — deneyimden memnun kalana kadar finansal taahhüt yok.'
+      'İstanbul\'da bir geceniz varsa veya tam bir haftanız varsa, bu **İstanbul tekne turu** işi yapar. 11.317+ gezginden 4.9★, TÜRSAB lisanslı (A-17672), helal sertifikalı menü ve teknede ödeme — deneyimden memnun kalana kadar finansal taahhüt yok.'
     ],
     highlights: [
       { title: 'Tüm büyük Boğaz dönüm noktaları', desc: 'Dolmabahçe, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Bebek, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi Sarayı, Üsküdar, Kız Kulesi. Bir turda hem Avrupa hem Asya kıyıları.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       'Bir **Boğaz gezisi** 1 saatlik sightseeing feribotu veya yemekli tam bir akşam turu anlamına gelebilir — biz ikincisini yapıyoruz ve çoğu gezgin bunu daha iyi değerli deneyim buluyor. 3 saat, €{p.dinnerStd}/kişi, yemek ve eğlence dahil. Sadece dönüm noktalarından geçmiyorsunuz — yiyorsunuz, şov izliyorsunuz ve akşamın keyfini çıkarıyorsunuz.',
       '**Boğaz gezimiz** rotası görmeye değer her şeyi kapsar: Dolmabahçe Sarayı (Osmanlı Sultanı\'nın 19. yüzyıl konutu), Ortaköy Camii (İstanbul\'un en çok fotoğraflanan camilerinden biri), Boğaz Köprüsü (geceleri renk değiştirir), Rumeli Hisarı (Fatih Sultan Mehmet tarafından 1452\'de inşa edildi), Beylerbeyi Sarayı (Asya yakası) ve küçük bir adada Kız Kulesi. Hepsi İngilizce konuşan ekip tarafından açıklanır.',
-      'İstanbul\'da 24 saat veya bir haftaseniz, bu size bir akşamda en çoğunu veren **Boğaz gezisi**\'dir. 11.317+ gezginden 4.8★ puan, TÜRSAB A-17672 lisanslı, helal dostu menü, teknede ödeme — ön ödeme riski yok.'
+      'İstanbul\'da 24 saat veya bir haftaseniz, bu size bir akşamda en çoğunu veren **Boğaz gezisi**\'dir. 11.317+ gezginden 4.9★ puan, TÜRSAB A-17672 lisanslı, helal dostu menü, teknede ödeme — ön ödeme riski yok.'
     ],
     highlights: [
       { title: 'Tek seferde tam Boğaz', desc: 'Avrupa kıyısı (Dolmabahçe, Ortaköy, Rumeli Hisarı), Asya kıyısı (Beylerbeyi, Üsküdar), her iki Boğaz köprüsü, Kız Kulesi. Her büyük dönüm noktası 3 saatte görünür.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       '**Boğaz turu biletleri** arıyor musunuz? Direkt alın. Biletimiz €{p.dinnerStd}/kişi — normal fiyattan %40 indirim (€{p.dinnerStdOriginal}). Üçüncü taraf rezervasyon siteleri genellikle %20-40 komisyon ekler. Direkt rezervasyon yaparak tasarruf edersiniz — ve yine teknede ödeyebilirsiniz.',
       '**Boğaz turu bilet** süreçimiz: bu sayfadaki sihirbazı 1 dakikadan az sürede doldurun (tarih, misafir sayısı, paket, iletişim), WhatsApp / Telegram aracılığıyla anında onaylarız, 20:00\'de Kabataş İskelesi\'nde görünürsünüz, teknede ödersiniz, 3 saatlik yemekli turun keyfini çıkarırsınız. Yazdırılacak fiziksel bilet yok, e-postalanacak kupon yok — onay biletiniz.',
-      'Ister bu geceki yemekli turu rezerve ediyor olun veya gelecek hafta belirli bir tarih için ayırıyor olun, **Boğaz turu biletleri direkt** en hızlı yoldur. 4.8★ puan, TÜRSAB lisanslı (A-17672), helal sertifikalı menü ve otel transferi ile alkol eklentilerini destekler.'
+      'Ister bu geceki yemekli turu rezerve ediyor olun veya gelecek hafta belirli bir tarih için ayırıyor olun, **Boğaz turu biletleri direkt** en hızlı yoldur. 4.9★ puan, TÜRSAB lisanslı (A-17672), helal sertifikalı menü ve otel transferi ile alkol eklentilerini destekler.'
     ],
     highlights: [
       { title: 'Direkt rezervasyon — aracı ücreti yok', desc: '€{p.dinnerStd}/kişi, tek şeffaf fiyat. Üçüncü taraf siteler aynı tur için €30-80+ alır. Bize direkt rezervasyon yaparak tasarruf edersiniz. Gizli ücret yok, komisyon markup\'ı yok.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Son Dakika Boğaz Turu €{p.dinnerStd}\'den — Bugün Rezervasyon, Teknede Ödeme',
-      description: 'Aynı gün Boğaz turu rezervasyonu. WhatsApp ile dakikalar içinde onay. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317 gezgin yorumu.'
+      description: 'Aynı gün Boğaz turu rezervasyonu. WhatsApp ile dakikalar içinde onay. 21:00\'de Kabataş\'tan kalkış. Ücretsiz iptal, teknede ödeme. 11.317+ misafir.'
     },
     hero: {
       h1: 'Son Dakika Boğaz Turu',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Boğaz sightseeing** sudan herhangi bir otobüs turunu yener. Boğaz, şehrin en tarihi su yoludur — Osmanlı sultanları, Bizans imparatorları, Yunan tüccarları ve Rus savaş gemileri hepsi geçti. Bugün 3 saatlik turumuz, İngilizce konuşan ekibimizin yorumlarıyla, ufuk çizgisini tanımlayan her büyük İstanbul dönüm noktasından geçer.',
       '**Boğaz sightseeing turumuz** rotası (akşam kalkış, 21:00-00:00):\n\n1. **Dolmabahçe Sarayı** — 19. yüzyıl Osmanlı konutu, geceleri aydınlatılır\n2. **Çırağan Sarayı** — şimdi lüks otel, kraliyet tarihi\n3. **Ortaköy Camii** — İstanbul\'un en çok fotoğraflanan camilerinden biri, suda\n4. **Boğaz Köprüsü** — geceleri mavi, mor, altın arasında geçer\n5. **Bebek** — şık Avrupa yakası mahalle\n6. **Rumeli Hisarı** — 1452\'de Fatih Sultan Mehmet tarafından Konstantinopolis fethinden önce inşa edildi\n7. **Fatih Sultan Mehmet Köprüsü** — ikinci Boğaz köprüsü, dramatik kemer\n8. **Beylerbeyi Sarayı** — Asya yakası, Osmanlı yazlık konutu\n9. **Üsküdar** — İstanbul\'un Asya yakası, geleneksel mahalle\n10. **Kız Kulesi** — küçük ada kulesi, İstanbul\'un en romantik sembollerinden biri',
-      'Yemek ve eğlence dahildir — ayrı değil — yani **Boğaz sightseeing** tam bir akşama dönüşür. Çok çeşitli Türk yemeği, canlı halk oyunları şovu, sema, oryantal dans, DJ. 11.317+ gezginden 4.8★ puan, TÜRSAB A-17672 lisanslı.'
+      'Yemek ve eğlence dahildir — ayrı değil — yani **Boğaz sightseeing** tam bir akşama dönüşür. Çok çeşitli Türk yemeği, canlı halk oyunları şovu, sema, oryantal dans, DJ. 11.317+ gezginden 4.9★ puan, TÜRSAB A-17672 lisanslı.'
     ],
     highlights: [
       { title: '10+ büyük İstanbul dönüm noktası', desc: 'Dolmabahçe Sarayı, Çırağan Sarayı, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi Sarayı, Üsküdar, Kız Kulesi. Tek bir turda her temel İstanbul dönüm noktası.' },

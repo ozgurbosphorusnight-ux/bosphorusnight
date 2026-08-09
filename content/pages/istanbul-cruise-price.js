@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'Why is the Istanbul cruise so affordable?',
-      a: 'Istanbul\'s lower operating costs (fuel, crew, food) keep dinner cruises at accessible price points. Bosphorus Night offers a 3-hour cruise with full dinner and entertainment from €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), with quality reflected by 4.8★ from 11,317 reviews.'
+      a: 'Istanbul\'s lower operating costs (fuel, crew, food) keep dinner cruises at accessible price points. Bosphorus Night offers a 3-hour cruise with full dinner and entertainment from €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), with quality reflected by 4.9★ from 11,317+ guests.'
     }
   ],
 

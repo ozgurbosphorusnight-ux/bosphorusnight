@@ -15,15 +15,15 @@ module.exports = {
     hero: {
       h1: 'Middagscruise på Bosporos i Istanbul',
       subtitle: 'Tre timer med live underholdning, en raus tyrkisk middag med flere retter og de mest imponerende natteutsiktene over Bosporos.',
-      badge: '4,8★ · 11 317 anmeldelser'
+      badge: '4,9★ · 11 317+ gjester'
     },
     intro: [
-      '**Middagscruiset på Bosporos** er Istanbuls mest ikoniske kveldsopplevelse. Turen starter kl. 20:00 ved Kabataş-kaia og seiler under de opplyste Bosporos- og Fatih Sultan Mehmet-broene, og byr på en tyrkisk flerrettsmiddag, live folkedans, orientalsk dans og et DJ-sett som fyller dekket til kl. 23:00.',
-      'I motsetning til vanlige fartøyer som preger Istanbuls kveldsbilde er **vårt middagscruise på Bosporos** TÜRSAB-lisensiert (A-17672) og gitt 4,8★ av over 11 317 reisende. Vi holder gruppene små og servicen varm — og fordi du betaler om bord, er det ingen risiko ved å reservere på forhånd.',
+      '**Middagscruiset på Bosporos** er Istanbuls mest ikoniske kveldsopplevelse. Turen starter kl. 20:00 ved Kabataş-kaia og seiler under de opplyste Bosporos- og Fatih Sultan Mehmet-broene, og byr på en tyrkisk flerrettsmiddag, live folkedans, orientalsk dans og et DJ-sett som fyller dekket til kl. 23:45.',
+      'I motsetning til vanlige fartøyer som preger Istanbuls kveldsbilde er **vårt middagscruise på Bosporos** TÜRSAB-lisensiert (A-17672) og gitt 4,9★ av over 11 317 reisende. Vi holder gruppene små og servicen varm — og fordi du betaler om bord, er det ingen risiko ved å reservere på forhånd.',
       'Enten du feirer et jubileum, søker en premium kveld i Istanbul med familien, eller vil ha byens mest fotogene solnedgang-til-natt-overgang — dette er middagscruiset som Istanbuls lokale anbefaler fremst.'
     ],
     highlights: [
-      { title: 'Tyrkisk middag med flere retter', desc: '10 mezesorter, varm forrett (börek), valg av hovedrett (laks / havabbor / kyllingspyd / oksespyd / vegetar), semulje-halva til dessert, ubegrenset leskedrikk.' },
+      { title: 'Tyrkisk middag med flere retter', desc: '10 mezesorter, varm forrett (börek), valg av hovedrett (laks / havabbor / kyllingspyd / oksespyd / vegetar), spesiell semuledessert til dessert, ubegrenset leskedrikk.' },
       { title: 'Live folkedans, orientalsk dans og DJ', desc: 'Åtte numre: Oba Dombra, Mevlana sema-forestilling, Sarı Gelin, aserbajdsjansk potpurri, orientalsk dans, anatolsk potpurri og den georgisk-kaukasiske knivdansen — deretter live saksofon og DJ-sett gjennom hele cruiset.' },
       { title: 'Komplett natterute langs Bosporos', desc: 'Kabataş → Dolmabahçe → Çırağan-palasset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → FSM-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Fra €{p.dinnerStd}/person — betal om bord', desc: 'Middagscruise €{p.dinnerStd} (opprinnelig €{p.dinnerStdOriginal}). Ingen forskuddsbetaling. Gratis avbestilling inntil 2 timer før avgang.' }
@@ -46,7 +46,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bosporos med barn — Familiecruise fra €{p.dinnerStd}/voksen',
-      description: 'Familievennlig middagscruise på Bosporos. Barn 0–3 gratis, 4–9 halv pris. Trygt innendørs område, barnemeny.'
+      description: 'Familievennlig middagscruise på Bosporos. Barn 0–3 gratis, 4–9 med €5 rabatt. Trygt innendørs område, barnemeny.'
     },
     hero: {
       h1: 'Cruise på Bosporos med barn',
@@ -56,7 +56,7 @@ module.exports = {
     intro: [
       '**Bosporos-cruiset med barn** er Istanbuls mest familievennlige kveldsalternativ. Vi tar imot dusinvis av familier hver kveld — vi har tenkt på hvert eneste detalj slik at de minste har det komfortabelt: overbygget innendørs sone for å holde varmen, en tilgjengelig barnemeny (enkel grillet kylling, pasta, ubegrenset leskedrikk) og tidlig ombordstigning for å unngå senkveldstrøtt.',
       'I motsetning til kun-voksen-skip forblir **vårt familiemiddagscruise på Bosporos** varmt og inkluderende. **Barn 0–3 år er gratis** (transfer inkludert), 4–9 år får **€5 rabatt**, 10+ år betaler full pris — ingen skjulte kostnader. Live folkedans, orientalsk dans og sema-forestillingen er familievennlig underholdning, ikke en nattklubb.',
-      'Enten du er i Istanbul i en langhelg med småbarn, eller tar tenåringene med på sin første europareise — dette er turen som Istanbuls familier anbefaler. Trygg, halalsertifisert, TÜRSAB-lisensiert og gitt 4,8★ av over 11 317 reisende.'
+      'Enten du er i Istanbul i en langhelg med småbarn, eller tar tenåringene med på sin første europareise — dette er turen som Istanbuls familier anbefaler. Trygg, halalsertifisert, TÜRSAB-lisensiert og gitt 4,9★ av over 11 317 reisende.'
     ],
     highlights: [
       { title: '0–3 år helt gratis', desc: 'Ingen avgifter for babyer og småbarn. 4–9 år betaler €5 av voksenpris. Fra 10 år er det full voksengjestepris. Transparent, ingen overraskelser.' },
@@ -92,7 +92,7 @@ module.exports = {
     intro: [
       '**Det romantiske Bosporos-cruiset** er Istanbuls mest ikoniske parkveld. Mens solen går ned bak Dolmabahçe-palasset og Bosporosbroen tennes i farger, deler du og partneren din en tyrkisk flerrettsmiddag ved et privat bord — med levende lys, friske blomster og fiolin som svever på dekket.',
       'Vår romantiske bordoppsett (+€{p.romantic}/bord) gjør ethvert sete til et spesielt øyeblikk: røde roser, glødende stearinlys, et håndskrevet velkomstbrev. Legg til 2-glass alkoholpakken for vin under stjernene (+€{p.alcohol2}/person) eller hold det enkelt med de inkluderte lesedrikker. Uansett valg tar mannskapet diskret hånd om resten.',
-      'Enten du feirer et jubileum, planlegger en overraskelse for partneren eller bare vil ha en uforglemmelig kveld i Europas mest romantiske by — dette er turen som Istanbuls par elsker. Rangert 4,8★, TÜRSAB-lisensiert og — viktigst av alt — betal om bord, så lover du bare selve kvelden.'
+      'Enten du feirer et jubileum, planlegger en overraskelse for partneren eller bare vil ha en uforglemmelig kveld i Europas mest romantiske by — dette er turen som Istanbuls par elsker. Rangert 4,9★, TÜRSAB-lisensiert og — viktigst av alt — betal om bord, så lover du bare selve kvelden.'
     ],
     highlights: [
       { title: 'Romantisk bord ved levende lys', desc: 'Legg til romantisk bordoppsett for +€{p.romantic}/bord: friske røde roser, glødende stearinlys, rosenblader på duken og håndskrevet hilsenkort. Fotografering inkludert.' },
@@ -128,7 +128,7 @@ module.exports = {
     intro: [
       '**Halal-cruiset på Bosporos** er Istanbuls mest respektfulle middagscruise for muslimske reisende. Hvert kjøttstykke som serveres om bord — laks, havabbor, kyllingspyd, oksespyd — er **halalsertifisert** fra godkjente leverandører. Vi serverer samme meny til alle gjester; ingen separat "halal-seksjon", fordi hele fartøyet er halal som standard.',
       'Alkohol er **et valgfritt tillegg** — aldri påtvunget gjester, og bordordningen skiller naturlig gjester som foretrekker et alkoholfritt bord. For gjester som ønsker 2-glass alkoholpakken (+€{p.alcohol2}/person), er det tilgjengelig, men den ubegrensede lesedrikken inkludert (vann, cola, juice) er tilstrekkelig for de fleste muslimske familier. Mannskapet er opplært til å respektere dine preferanser uten forutsetninger.',
-      '**Det halal-vennlige Bosporos-cruiset** betyr noe for reisende fra Saudi-Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan og Marokko som ønsker Istanbuls mest ikoniske kveld uten kompromisser. TÜRSAB-lisensiert, 4,8★ og betal om bord — du lover ingenting før du er sikker på at opplevelsen oppfyller dine standarder.'
+      '**Det halal-vennlige Bosporos-cruiset** betyr noe for reisende fra Saudi-Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan og Marokko som ønsker Istanbuls mest ikoniske kveld uten kompromisser. TÜRSAB-lisensiert, 4,9★ og betal om bord — du lover ingenting før du er sikker på at opplevelsen oppfyller dine standarder.'
     ],
     highlights: [
       { title: '100 % halalsertifisert meny', desc: 'Alt kjøtt (laks, havabbor, kyllingespyd, oksespyd) er halalsertifisert fra godkjente leverandører. Kjøkkenet følger halalpreparering. Ingen svinekjøtt eller ikke-halal-tilsetningsstoffer. Vegetaralternativer alltid tilgjengelig.' },
@@ -142,7 +142,7 @@ module.exports = {
       { q: 'Er dette cruiset egnet for muslimske familier med barn?', a: 'Ja — det er ett av Istanbuls mest respekterte familiecruiser. Underholdningen er beskjeden (folkedanser, sema, tyrkisk musikk), barn under 3 år er gratis, 4–9 år får €5 rabatt. Ingen natteklubb-atmosfære. Familier fra Gulfen, Indonesia, Malaysia, Pakistan og Marokko bestiller jevnlig dette cruiset.' },
       { q: 'Kan jeg be om bord?', a: 'Det er ikke noe dedikert bønnerom om bord, men vi anbefaler å be før ombordstigning kl. 20:00 (maghrib-bønn faller ofte i dette intervallet). Kabataş-kaia har bønnefasiliteter. Hvis du trenger å be under seilasen 21:00–00:00 (isja), snakk med mannskapet — vi kan arrangere et stille hjørne på dekk.' },
       { q: 'Hva er prisene for en muslimsk familie på 4 (2 voksne, 2 barn)?', a: 'Middagscruise: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 rabatt 4–9 år) = €87.20. Hvis barna er under 3 år, gratis: 2 × €{p.dinnerStd} = €48.60. Legg til €5 hotelloverføring per voksen. Totalt: €48.60–€92.90 for familie på 4, ingen forskuddsbetaling, betal om bord.' },
-      { q: 'Er hotelloverføringen også halal?', a: 'Hotelloverføringen er bare en biltransport — ingen mat eller drikke er involvert, så det er ingen halal-bekymring. Sjåførene våre er profesjonelle, respektfulle og punktlige. Overføringsonene dekker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli og 9 andre sentrale bydeler der muslimske reisende vanligvis bor.' }
+      { q: 'Er hotelloverføringen også halal?', a: 'Hotelloverføringen er bare en biltransport — ingen mat eller drikke er involvert, så det er ingen halal-bekymring. Sjåførene våre er profesjonelle, respektfulle og punktlige. Overføringsonene dekker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli og 8 andre sentrale bydeler der muslimske reisende vanligvis bor.' }
     ],
     cta: {
       primary: 'Bestill halal-cruiset · Betal om bord',
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% RABATT · Én meny, premium standard · Betal om bord'
     },
     intro: [
-      'Mange båter på Bosporos deler gjestene sine inn i "Standard" og "VIP". Det gjør ikke vi. Om bord på **AMOR** finnes det én middagsmeny, tilberedt med samme omtanke for alle: 10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kyllingspyd eller oksespyd), iskake og ubegrenset med brus. Hele underholdningsprogrammet på åtte numre er også inkludert — Oba Dombra, de virvlende dervisjenes seremoni, anatolske og aserbajdsjanske folkedanser, magedans, kaukasisk knivdans, livemusikk og en saksofon-og-DJ-finale — alt innenfor prisen på €{p.dinnerStd}/person.',
+      'Mange båter på Bosporos deler gjestene sine inn i "Standard" og "VIP". Det gjør ikke vi. Om bord på **AMOR** finnes det én middagsmeny, tilberedt med samme omtanke for alle: 10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kyllingspyd eller oksespyd), spesiell semuledessert og ubegrenset med brus. Hele underholdningsprogrammet på åtte numre er også inkludert — Oba Dombra, de virvlende dervisjenes seremoni, anatolske og aserbajdsjanske folkedanser, magedans, kaukasisk knivdans, livemusikk og en saksofon-og-DJ-finale — alt innenfor prisen på €{p.dinnerStd}/person.',
       'VIP-følelsen begynner ved bordet ditt. Vil du sitte nærmest mulig scenen og utsikten, legger du til **privat bord nær scenen** (+€{p.romantic}/bord), og plassen reserveres på forhånd — den beste vinkelen mot dervisjene, folkedansene og det opplyste Bosporos. Favorittvalget blant par, feiringer og fotointeresserte.',
       'AMOR er et moderne skip: 42 meter, 3 dekk, opptil 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Den tre timer lange ruten går fra Kabataş (ombordstigning fra 20:00, avgang 21:00, retur 00:00) forbi Dolmabahçe, Ortaköy-moskeen, Rumeli-festningen og lysene på Bosporos-broen. TÜRSAB-lisens (A-17672), 4,9★ på Google. Ingen forhåndsbetaling — du betaler om bord, med gratis avbestilling frem til 2 timer før avgang.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Selger dere en "VIP-pakke"? Hva er forskjellen fra Standard?', a: 'Vi selger ingen egen VIP-pakke — det finnes én meny som serveres alle med samme premium standard. Det vi kaller "VIP-opplevelsen" er å gjøre kvelden til din: privat bord nær scenen (+€{p.romantic}/bord), oppmerksom bordservering og valgfrie drikketillegg. Cruiset varer 3 timer, €{p.dinnerStd}/person.' },
       { q: 'Er €{p.dinnerStd} virkelig 40% rabatt?', a: 'Ja — vår veiledende pris er €{p.dinnerStdOriginal}/person. €{p.dinnerStd} er prisen ved direkte booking, uten mellomleddprovisjoner. Du betaler om bord, og det er ingen forhåndsbetaling.' },
-      { q: 'Hva står på menyen?', a: '10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kyllingspyd eller oksespyd) og iskake til dessert, med ubegrenset med brus. Programmet på åtte numre er inkludert: Oba Dombra, dervisjenes seremoni, anatolske og aserbajdsjanske folkedanser, magedans, kaukasisk knivdans, livemusikk og en saksofon-og-DJ-finale.' },
+      { q: 'Hva står på menyen?', a: '10 typer tyrkiske meze, en varm forrett, hovedrett etter eget valg (laks, havabbor, kyllingspyd eller oksespyd) og spesiell semuledessert til dessert, med ubegrenset med brus. Programmet på åtte numre er inkludert: Oba Dombra, dervisjenes seremoni, anatolske og aserbajdsjanske folkedanser, magedans, kaukasisk knivdans, livemusikk og en saksofon-og-DJ-finale.' },
       { q: 'Er alkohol inkludert?', a: 'Nei — alkohol er et eget tillegg: 2 glass vin, øl, rakı, vodka, whisky, gin og mer for +€{p.alcohol2}/person. Brus er inkludert ubegrenset og gratis. Importert premiumbrennevin faktureres separat om bord.' },
       { q: 'Hvordan sikrer jeg meg bord nær scenen?', a: 'Bare velg tillegget "privat bord nær scenen" (+€{p.romantic}/bord) når du booker — bordet reserveres i ditt navn. De beste plassene går til forhåndsbookinger, så legg det gjerne til før selve cruisedagen.' },
       { q: 'Hva slags båt er det?', a: 'AMOR — et moderne passasjerskip på 42 meter med 3 dekk og plass til 400 gjester, oppvarmet om vinteren og med klimaanlegg om sommeren. Avgang fra Kabataş-kaien: ombordstigning 20:00, avgang 21:00, retur 00:00. Rute: Dolmabahçe, Ortaköy, Rumeli-festningen, Beylerbeyi og lysene på Bosporos-broen.' }
@@ -200,7 +200,7 @@ module.exports = {
     intro: [
       '**Det private Bosporos-cruiset** betyr at hele fartøyet er ditt — ingen andre gjester, ingen delte bord, ingen felles dansegulv. Perfekt for familiegjenforeninger, bedriftsmiddager, bursdagsfester, utdrikkingslag eller bryllupsseremonier. Fartøyet, mannskapet, menyen, underholdningen og programmet tilpasses gruppen din.',
       '**Vår private Bosporos-leie** tar **fra 25 til 80 gjester**. Mindre grupper kan fortsatt be om den private opplevelsen — vi tilbyr en minstepris som dekker driftskostnaden. Større grupper (bryllupsformat) får tilpassede priser og inkluderer vanligvis spesiell dekor, live band, kakeskjæring og utvidet varighet (4–5 timer i stedet for standard 3).',
-      'Enten du arrangerer et bedriftsarrangement for kunder, en 50-årsfeiring eller en bryllupsreepsjon under Istanbuls mest ikoniske broer, er dette **det pålitelige private cruiset for Istanbuls eventarrangører**. Rangert 4,8★, TÜRSAB-lisensiert, fullt engelsktalende mannskap og total fleksibilitet — rute, meny, musikk, program.'
+      'Enten du arrangerer et bedriftsarrangement for kunder, en 50-årsfeiring eller en bryllupsreepsjon under Istanbuls mest ikoniske broer, er dette **det pålitelige private cruiset for Istanbuls eventarrangører**. Rangert 4,9★, TÜRSAB-lisensiert, fullt engelsktalende mannskap og total fleksibilitet — rute, meny, musikk, program.'
     ],
     highlights: [
       { title: 'Hele fartøyet, bare for dere', desc: 'Ingen andre gjester. Gruppen din eier hvert dekk, hvert bord. Sett din egen musikk, dresscode, program. Privatliv betyr noe — vi respekterer det.' },
@@ -236,11 +236,11 @@ module.exports = {
     intro: [
       '**Bosporos-cruiset for par** er Istanbuls favorittkveld. Ikke alle par feirer et jubileum — noen ganger er dere bare i verdens mest romantiske by og vil ha en fantastisk kveld sammen. Dette cruiset tilbyr: privat bord for to, langsom tyrkisk flerrettsmiddag, live fiolin og akustisk musikk under middagen og den opplyste Bosporosbroen som glir forbi.',
       'Atmosfæren er **varm, men ikke overdrevent romantisk** — ingen obligatorisk ekteskapstilbud-musikk, ingen pinlige koordinerte applaus for "de nygift". Spis, drikk, snakk, se lyset av Istanbul. Vil du legge til romantisk bordoppsett (levende lys, roser, +€{p.romantic})? Utmerket — ellers er selve middagen allerede spesiell.',
-      'Enten du er i Istanbul i 3 dager med partneren, feirer noe rolig eller planlegger en utforskningsreise for et fremtidig frieri — **Bosporos-cruiset for par** gir deg 3 timer kveldstur i en av verdens mest fotograferte byer. 4,8★, betal om bord, gratis avbestilling.'
+      'Enten du er i Istanbul i 3 dager med partneren, feirer noe rolig eller planlegger en utforskningsreise for et fremtidig frieri — **Bosporos-cruiset for par** gir deg 3 timer kveldstur i en av verdens mest fotograferte byer. 4,9★, betal om bord, gratis avbestilling.'
     ],
     highlights: [
       { title: 'Privat bord for to', desc: 'Privat bord for 2, ikke delt. Prioritet til vindusbordet for par. Solnedgangs- og Bosporos-nattfotografering rett utenfor vinduet ditt.' },
-      { title: 'Langsom flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd eller vegetar), semulje-halva til dessert. Servert langsomt over 3 timer — du har ikke hastverk.' },
+      { title: 'Langsom flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd eller vegetar), spesiell semuledessert til dessert. Servert langsomt over 3 timer — du har ikke hastverk.' },
       { title: 'Live fiolin og lett musikk', desc: 'Live fiolin og akustisk tyrkisk musikk under middagen skaper en intim atmosfære som egner seg for samtale. Deretter kommer DJ-en for par som vil danse.' },
       { title: 'Tillegg for spesielle kvelder', desc: 'Romantisk bordoppsett (levende lys, roser): +€{p.romantic}. 2 glass alkohol (vin, øl, rakı, vodka, whisky, gin og mer): +€{p.alcohol2}/person. Hotelloverføring (tur-retur): +€{p.transfer}/person. Velg hva som passer kvelden din.' }
     ],
@@ -272,18 +272,18 @@ module.exports = {
     intro: [
       '**Solnedgangscruiset på Bosporos** i Istanbul handler om én ting: overgangen. Cruiset vårt har ombordstigning ved Kabataş-kaia fra kl. 20:00 — og i de lange kveldene fra mai til august utfolder gyldentime seg mens du finner deg til rette på dekk. Solen går ned over minaretene på den europeiske bredden akkurat rundt avgangen kl. 21:00, så du ser den fra vannet: Dolmabahçe-palasset badet i gull, Ortaköy-moskeen i silhuett mot den glødende himmelen.',
       '**Vårt solnedgang-til-natt-cruise på Bosporos** inkluderer en komplett tyrkisk middag — 10 mezesorter, varm forrett, valg av hovedrett, dessert — servert mens byen tenner lysene sine. Når desserten kommer, seiler du under den opplyste Bosporosbroen med 30 millioner lys som reflekteres i det mørke vannet. Skiftet fra skumring til full natt, alt i løpet av ett 3-timers cruise, er hele poenget.',
-      'Enten du er fotograf på jakt etter det siste lyset, et par som vil ha "det minnebildet fra Istanbul", eller førstegangsbesøkende som ønsker den klassiske kvelden på vannet — dette er **solnedgangs- og middagscruiset på Bosporos** som Istanbuls lokale anbefaler besøkende. Fra €{p.dinnerStd}/person, rangert 4,8★, TÜRSAB-lisensiert, betal om bord — ingen forskuddsbetaling.'
+      'Enten du er fotograf på jakt etter det siste lyset, et par som vil ha "det minnebildet fra Istanbul", eller førstegangsbesøkende som ønsker den klassiske kvelden på vannet — dette er **solnedgangs- og middagscruiset på Bosporos** som Istanbuls lokale anbefaler besøkende. Fra €{p.dinnerStd}/person, rangert 4,9★, TÜRSAB-lisensiert, betal om bord — ingen forskuddsbetaling.'
     ],
     highlights: [
       { title: 'Sommersolnedganger rett ved avgang', desc: 'Fra mai til august går solen i Istanbul ned mellom cirka 20:15 og 20:45 — ombordstigning kl. 20:00 gir deg gyldentime på dekk, og avgangen kl. 21:00 plasserer deg på vannet under selve solnedgangen. Kamera klart — dette er bildet.' },
       { title: 'Blå time inn i full natt', desc: 'Ikke bare solnedgang — cruiset seiler gjennom skumringen og inn i det fullt opplyste Bosporos. Gyllent lys, blå time, deretter 30 millioner brolys over mørkt vann: tre lysfaser på én kveld.' },
-      { title: 'Komplett middag under cruiset', desc: '10 tyrkiske mezesorter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd, vegetar), iskakert, ubegrenset leskedrikk — servert mens bylysene tennes.' },
+      { title: 'Komplett middag under cruiset', desc: '10 tyrkiske mezesorter, varm forrett, hovedrett (laks, havabbor, kyllingspyd, oksespyd, vegetar), spesiell semuledessert, ubegrenset leskedrikk — servert mens bylysene tennes.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporosbroen — alle skinner', desc: 'Ruten passerer Dolmabahçe-palasset, Ortaköy-moskeen, Bosporosbroen, Rumeli Hisarı og Beylerbeyi-palasset mens lysene deres tennes. Hvert landemerke i sitt beste lys.' }
     ],
     faq: [
       { q: 'Når avgår solnedgangscruiset på Bosporos?', a: 'Ombordstigning starter kl. 20:00 ved Kabataş-kaia, fartøyet avgår kl. 21:00 og returnerer rundt kl. 00:00. Om sommeren (mai–august) går solen ned mellom cirka 20:15 og 20:45 — gyldentime skjer mens du går om bord, og selve solnedgangen akkurat rundt avgang, sett fra vannet.' },
       { q: 'Er solnedgangscruiset på Bosporos det samme som middagscruiset?', a: 'Ja — det er ett og samme cruise. Det er én daglig avgang kl. 21:00 med komplett middag og live show om bord. I de lange sommerkveldene fungerer det også som solnedgangscruise: du går om bord under gyldentime og seiler gjennom den blå timen inn i den opplyste natten. Om vinteren er det samme cruiset en ren nattlysopplevelse.' },
-      { q: 'Hva koster solnedgangscruiset på Bosporos?', a: 'Fra €{p.dinnerStd}/person for cruiset (3 timer, komplett middag, live underholdning). Betal om bord — ingen forskuddsbetaling. 0–3 år gratis, 4–9 år halv pris.' },
+      { q: 'Hva koster solnedgangscruiset på Bosporos?', a: 'Fra €{p.dinnerStd}/person for cruiset (3 timer, komplett middag, live underholdning). Betal om bord — ingen forskuddsbetaling. 0–3 år gratis, 4–9 år med €5 rabatt.' },
       { q: 'Når på året er solnedgangscruiset på Bosporos best?', a: 'Mai til august. Istanbuls sene solnedganger (20:15–20:45) faller sammen med avgangen kl. 21:00, så du får gyldentime, solnedgangen og de opplyste broene på én kveld. Om høsten og vinteren går solen ned tidligere, og det samme cruiset blir en full nattlysopplevelse — like fotogen, annen stemning.' },
       { q: 'Hva bør jeg ta med til et solnedgangscruise?', a: 'Smarttelefon eller kamera — gyldentime og de opplyste broene fortjener det. Lett jakke: brisen tiltar på dekk etter solnedgang. Smart casual antrekk — du spiser middag, men det er ingen streng dresscode.' },
       { q: 'Ser jeg de opplyste broene om natten på dette cruiset?', a: 'Ja — det er andre halvdel av kvelden. Cruiset går 21:00–00:00, så etter solnedgangen og den blå timen seiler du under den fullt opplyste Bosporosbroen, forbi opplyste palasser og Jomfrutårnet, og returnerer til Kabataş rundt kl. 00:00.' },
@@ -310,12 +310,12 @@ module.exports = {
     intro: [
       '**Nattturen på Bosporos** er Istanbuls mest anbefalte kveldsaktivitet. Her er grunnen: etter mørkets frembrudd forvandler Bosporos seg. Bosporosbroen veksler mellom blå, lilla og gull. Dolmabahçe-palasset skinner i varm gul. Ortaköy-moskeen reflekteres perfekt i det sorte vannet. Hvert Istanbul-landemerke når sitt dramatiske høydepunkt om natten.',
       '**Vår natttur på Bosporos med middag** pakker inn den komplette ikoniske kvelden: 3 timer på vannet (21:00–00:00), tyrkisk flerrettsmiddag, et live folkloreprogram på åtte numre (Oba Dombra, sema, anatolske og aserbajdsjanske folkedanser, orientalsk dans, kaukasisk knivdans), live musikk og et saksofon-og-DJ-sett som fyller dekket til slutten av natten. Hver gjest får samme program — ingen "basis"-alternativ som hopper over de beste delene.',
-      'Enten det er ditt første besøk i Istanbul og du leter etter "det eneste du må gjøre om natten", eller du har vært her før og vil ha byens mest fotogene 3 timer, er dette **nattturen på Bosporos** gitt 4,8★ av over 11 317 reisende. TÜRSAB-lisensiert, betal om bord, ingen forskuddsbetaling.'
+      'Enten det er ditt første besøk i Istanbul og du leter etter "det eneste du må gjøre om natten", eller du har vært her før og vil ha byens mest fotogene 3 timer, er dette **nattturen på Bosporos** gitt 4,9★ av over 11 317 reisende. TÜRSAB-lisensiert, betal om bord, ingen forskuddsbetaling.'
     ],
     highlights: [
       { title: 'Bosporos opplyst på sitt dramatiske høydepunkt', desc: 'Bosporosbroen skifter farge (blå, lilla, gull), palassene skinner gult, Ortaköy-moskeen reflekteres i det sorte vannet. 21:00–00:00 maksimal belysning for alle Istanbuls landemerker.' },
       { title: 'Tradisjonell tyrkisk show om bord', desc: 'Åtte numre: Oba Dombra, sema-forestilling, Sarı Gelin, aserbajdsjansk potpurri, orientalsk dans, anatolsk potpurri og den georgisk-kaukasiske knivdansen, deretter live saksofon og DJ-sett. 40 minutters show, deretter musikk + middag fortsetter.' },
-      { title: 'Komplett flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett (börek), hovedrett (laks, havabbor, kyllingspyd, oksespyd, vegetar — ditt valg), dessert (iskakert), ubegrenset lesedrikk. Halalsertifisert.' },
+      { title: 'Komplett flerrettsmiddag', desc: '10 tyrkiske mezevarianter, varm forrett (börek), hovedrett (laks, havabbor, kyllingspyd, oksespyd, vegetar — ditt valg), dessert (spesiell semuledessert), ubegrenset lesedrikk. Halalsertifisert.' },
       { title: 'Komplett Bosporos-rute', desc: 'Kabataş → Dolmabahçe → Çırağan-palasset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jomfrutårnet → Kabataş.' }
     ],
     faq: [
@@ -336,20 +336,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Middagscruise Istanbul fra €{p.dinnerStd} — Natttur Bosporos',
-      description: '3-timers middagscruise i Istanbul på Bosporos. Tyrkisk flerrettsmeny, live folkeshow, opplyste broer. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: '3-timers middagscruise i Istanbul på Bosporos. Tyrkisk flerrettsmeny, live folkeshow, opplyste broer. Gratis avbestilling, betal om bord. 11 317+ gjester.'
     },
     hero: {
       h1: 'Middagscruise Istanbul',
       subtitle: 'Istanbuls beste middagscruise — 3 timer på Bosporos, tyrkisk flerrettsmiddag, live underholdning og nattutsikter over byens mest ikoniske landemerker.',
-      badge: '4,8★ · 11 317 anmeldelser · TÜRSAB A-17672'
+      badge: '4,9★ · 11 317+ gjester · TÜRSAB A-17672'
     },
     intro: [
       'Leter du etter et **middagscruise i Istanbul**? Du har funnet det som de fleste reisende anbefaler. Vår 3-timers kveld på Bosporos kombinerer en komplett tyrkisk flerrettsmiddag, live folkedanser og byens mest fotogene utsikter — alt fra et komfortabelt fartøy som avgår kl. 21:00 fra Kabataş-kaia.',
       'Opplevelsen av **middagscruiset i Istanbul**: gå om bord kl. 20:00, sett deg til rette, se Dolmabahçe-palasset mens vi avgår, middagen starter når vi nærmer oss Ortaköy-moskeen, showet begynner (sema, folkedanser, orientalsk), og til desserten er du under den opplyste Bosporosbroen. Til midnatt er du tilbake ved Kabataş med et ikonisk bildekollasj og full mage.',
-      '€{p.dinnerStd}/person (fra €{p.dinnerStdOriginal}). Betal om bord — ingen forskuddsbetaling, ingen risiko. TÜRSAB-lisensiert A-17672, rangert 4,8★ av over 11 317 reisende.'
+      '€{p.dinnerStd}/person (fra €{p.dinnerStdOriginal}). Betal om bord — ingen forskuddsbetaling, ingen risiko. TÜRSAB-lisensiert A-17672, rangert 4,9★ av over 11 317 reisende.'
     ],
     highlights: [
-      { title: 'Komplett tyrkisk flerrettsmiddag', desc: '10 mezevarianter, varm forrett, hovedrett (laks/havabbor/kyllingspyd/oksespyd/vegetar), iskakert. Halalsertifisert. Ubegrenset lesedrikk inkludert.' },
+      { title: 'Komplett tyrkisk flerrettsmiddag', desc: '10 mezevarianter, varm forrett, hovedrett (laks/havabbor/kyllingspyd/oksespyd/vegetar), spesiell semuledessert. Halalsertifisert. Ubegrenset lesedrikk inkludert.' },
       { title: 'Live tyrkisk folkedansshow', desc: 'Åtte numre: Oba Dombra, sema-forestilling, Sarı Gelin, aserbajdsjansk potpurri, orientalsk dans, anatolsk potpurri, georgisk-kaukasisk knivdans, deretter live saksofon og DJ. 40 minutters show, bakgrunnsmusikk fortsetter.' },
       { title: 'Komplett Bosporos-nattrute', desc: '3-timers tur: Dolmabahçe, Çırağan, Ortaköy-moskeen, Bosporosbroen, Bebek, Rumeli Hisarı, FSM-broen, Beylerbeyi, Üsküdar, Jomfrutårnet. Begge bredder, europeisk og asiatisk.' },
       { title: 'Fra €{p.dinnerStd} — betal om bord', desc: 'Middagscruise: €{p.dinnerStd} (fra €{p.dinnerStdOriginal}). Ingen forskuddsbetaling. Gratis avbestilling inntil 2 timer før avgang.' }
@@ -368,7 +368,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Bestill middagscruiset · Betal om bord',
-      secondary: '4,8★ · TÜRSAB-lisensiert · Gratis avbestilling 2 timer før',
+      secondary: '4,9★ · TÜRSAB-lisensiert · Gratis avbestilling 2 timer før',
       tertiary: 'Tilgjengelighet i kveld'
     }
   },
@@ -376,7 +376,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Natttur Istanbul fra €{p.dinnerStd} — Middagscruise Bosporos + Show',
-      description: '3-timers cruise på Bosporos med middag og live show. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser. Valgfri hotelloverføring.'
+      description: '3-timers cruise på Bosporos med middag og live show. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317+ gjester. Valgfri hotelloverføring.'
     },
     hero: {
       h1: 'Istanbul om natten',
@@ -386,7 +386,7 @@ module.exports = {
     intro: [
       'En **natttur i Istanbul** må gjøre tre ting: vise deg byens ikoniske landemerker, gi deg god mat og underholde deg. Vårt Bosporos-middagscruise gjør alle tre på én 3-timers kveld — og det er derfor de fleste Istanbul-guider anbefaler det som #1 natttur-opplevelse.',
       'Ruten for **nattturen i Istanbul** dekker de beste opplyste landemerkene: Dolmabahçe-palasset, Ortaköy-moskeen, Bosporosbroen (skifter farge), Bebek-bydelen, Rumeli Hisarı, FSM-broen, Beylerbeyi-palasset, asiatisk kyst Üsküdar og Jomfrutårnet i det fjerne. De fleste bybusser viser deg dem fra buss — vi viser deg dem fra vannet, der de er mest dramatiske.',
-      'Middag er inkludert (tyrkisk flerrettsmeny), live tyrkisk folkedansshow, sema, orientalsk dans og DJ-sett. Er du i Istanbul i 2–3 dager, er dette den ene kvelden som gir sterkest inntrykk. 4,8★ av over 11 317 reisende, betal om bord, ingen forskuddsbetaling.'
+      'Middag er inkludert (tyrkisk flerrettsmeny), live tyrkisk folkedansshow, sema, orientalsk dans og DJ-sett. Er du i Istanbul i 2–3 dager, er dette den ene kvelden som gir sterkest inntrykk. 4,9★ av over 11 317 reisende, betal om bord, ingen forskuddsbetaling.'
     ],
     highlights: [
       { title: 'Alle Istanbuls ikoniske nattutsikter', desc: 'Dolmabahçe-palasset, Ortaköy-moskeen, opplyst Bosporosbro, Rumeli Hisarı, FSM-broen, Beylerbeyi-palasset, Jomfrutårnet. Hvert viktig landemerke ved topp nattbelysning.' },
@@ -412,17 +412,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Båttur Istanbul fra €{p.dinnerStd} — Bosporos + Middag + Show',
-      description: '3-timers båttur: Bosporos-cruise, komplett tyrkisk middag, live folkeshow, opplyste nattutsikter. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: '3-timers båttur: Bosporos-cruise, komplett tyrkisk middag, live folkeshow, opplyste nattutsikter. Gratis avbestilling, betal om bord. 11 317+ gjester.'
     },
     hero: {
       h1: 'Båttur i Istanbul',
       subtitle: 'Istanbuls mest bestilte båttur av reisende — Bosporos-cruise med tyrkisk mat, live underholdning og byens ikoniske utsikter fra vannet.',
-      badge: '4,8★ · TÜRSAB A-17672 · Betal om bord'
+      badge: '4,9★ · TÜRSAB A-17672 · Betal om bord'
     },
     intro: [
       'Når du søker etter "båttur i Istanbul", søker du etter det ene som definerer byen fra vannet: Bosporos. Vår 3-timers Bosporos-båttur tar deg forbi hvert viktig Istanbul-landemerke — Dolmabahçe-palasset, Ortaköy-moskeen, Bosporosbroen, Rumeli Hisarı, Beylerbeyi-palasset og Jomfrutårnet — med komplett tyrkisk middag og live underholdning.',
       'I motsetning til mange turistferger på 1 time som dekker mindre av Bosporos og hopper over middag og underholdning, er **vår båttur i Istanbul** en komplett kveldsopplevelse: ombordstigning kl. 20:00 ved Kabataş-kaia, tur til midnatt, 10 meze, hovedrett, dessert, sema, folkedanser, orientalsk dans og DJ. Du får også kveldsutgangen som del av turen.',
-      'Enten du har én kveld eller en hel uke i Istanbul, gjør **denne båtturen i Istanbul** jobben. 4,8★ av over 11 317 reisende, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og betal om bord — ingen finansiell forpliktelse til du er fornøyd med opplevelsen.'
+      'Enten du har én kveld eller en hel uke i Istanbul, gjør **denne båtturen i Istanbul** jobben. 4,9★ av over 11 317 reisende, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og betal om bord — ingen finansiell forpliktelse til du er fornøyd med opplevelsen.'
     ],
     highlights: [
       { title: 'Alle viktige Bosporos-landemerker', desc: 'Dolmabahçe, Çırağan, Ortaköy-moskeen, Bosporosbroen, Bebek, Rumeli Hisarı, FSM-broen, Beylerbeyi-palasset, Üsküdar, Jomfrutårnet. Begge bredder, europeisk og asiatisk, på én tur.' },
@@ -448,7 +448,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Bosporos-tur fra €{p.dinnerStd} — Middagscruise Istanbul + Show',
-      description: '3-timers tur på Bosporos: tyrkisk middag, live folkeshow, opplyste nattutsikter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: '3-timers tur på Bosporos: tyrkisk middag, live folkeshow, opplyste nattutsikter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317+ gjester.'
     },
     hero: {
       h1: 'Tur på Bosporos',
@@ -458,7 +458,7 @@ module.exports = {
     intro: [
       'En **tur på Bosporos** kan bety en 1-times turistferge eller en komplett middagskveldstur — vi gjør det siste og de fleste reisende finner det mer verdt. 3 timer, €{p.dinnerStd}/person, middag og underholdning inkludert. Du seiler ikke bare forbi landemerker — du spiser, ser showet og nyter kvelden.',
       'Ruten for **vår Bosporos-tur** dekker alt som er verdt å se: Dolmabahçe-palasset (19. århundrets osmanske sultansresidens), Ortaköy-moskeen (en av Istanbuls mest fotograferte moskeer), Bosporosbroen (skifter farge om natten), Rumeli Hisarı (bygd av Fatih Sultan Mehmet i 1452), Beylerbeyi-palasset (asiatisk bredde) og Jomfrutårnet på en liten øy. Alt forklart av engelsktalende mannskap.',
-      'Enten du er i Istanbul i 24 timer eller en uke, er dette **Bosporos-turen** som gir deg mest på én kveld. Rangert 4,8★ av over 11 317 reisende, TÜRSAB-lisensiert A-17672, halal-vennlig meny, betal om bord — ingen risiko for forskuddsbetaling.'
+      'Enten du er i Istanbul i 24 timer eller en uke, er dette **Bosporos-turen** som gir deg mest på én kveld. Rangert 4,9★ av over 11 317 reisende, TÜRSAB-lisensiert A-17672, halal-vennlig meny, betal om bord — ingen risiko for forskuddsbetaling.'
     ],
     highlights: [
       { title: 'Hele Bosporos i ett', desc: 'Europeisk bredde (Dolmabahçe, Ortaköy, Rumeli Hisarı), asiatisk bredde (Beylerbeyi, Üsküdar), begge Bosporos-broer, Jomfrutårnet. Hvert viktig landemerke synlig på 3 timer.' },
@@ -494,7 +494,7 @@ module.exports = {
     intro: [
       'Leter du etter **Bosporos-cruisebilletter**? Kjøp direkte. Billetten vår er €{p.dinnerStd}/person — 40 % rabatt på ordinær pris (€{p.dinnerStdOriginal}). Tredjeparts bestillingssider legger vanligvis til 20–40 % provisjon. Ved å bestille direkte sparer du — og betaler fortsatt om bord.',
       'Prosessen for **Bosporos-cruisebilletter**: fyll ut skjemaet på denne siden på under 1 minutt (dato, antall gjester, kontakt), vi bekrefter umiddelbart via WhatsApp / Telegram, møt opp ved Kabataş-kaia kl. 20:00, betal om bord, nyt 3-timers middagscruise. Ingen fysisk billett å skrive ut, ingen kupong å motta på e-post — bekreftelsen er billetten din.',
-      'Enten du bestiller kveldens middagscruise eller bestiller til en bestemt dato neste uke, er **direkte Bosporos-cruisebilletter** den raskeste måten. Rangert 4,8★, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og støtter tillegg for hotelloverføring og alkohol.'
+      'Enten du bestiller kveldens middagscruise eller bestiller til en bestemt dato neste uke, er **direkte Bosporos-cruisebilletter** den raskeste måten. Rangert 4,9★, TÜRSAB-lisensiert (A-17672), halalsertifisert meny og støtter tillegg for hotelloverføring og alkohol.'
     ],
     highlights: [
       { title: 'Direktebestilling — ingen mellomledd-avgift', desc: '€{p.dinnerStd}/person — én transparent pris. Tredjeparts sider tar €30–80+ for samme tur. Spar ved å bestille direkte fra oss. Ingen skjulte avgifter, ingen provisjonstillegg.' },
@@ -520,7 +520,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosporos i siste liten fra €{p.dinnerStd} — Bestill i dag, betal om bord',
-      description: 'Bestill Bosporos-cruise samme dag. WhatsApp-bekreftelse på minutter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317 anmeldelser.'
+      description: 'Bestill Bosporos-cruise samme dag. WhatsApp-bekreftelse på minutter. Avgang 21:00 fra Kabataş. Gratis avbestilling, betal om bord. 11 317+ gjester.'
     },
     hero: {
       h1: 'Bosporos-cruise i siste liten',
@@ -602,7 +602,7 @@ module.exports = {
     intro: [
       '**Bosporos-sightseeing** fra vannet slår enhver busstur. Bosporos er byens mest historiske skipslei — osmanske sultaner, bysantinske keisere, greske handelsmenn og russiske krigsski har alle passert her. I dag seiler vår 3-timers tur, med kommentarer fra engelsktalende mannskap, forbi hvert viktig Istanbul-landemerke som definerer byens silhuett.',
       'Ruten for **vår Bosporos-sightseeing-tur** (kveldsavgang, 21:00–00:00):\n\n1. **Dolmabahçe-palasset** — 19. århundrets osmanske residens, opplyst om natten\n2. **Çırağan-palasset** — nå luksushotell, kongelig historie\n3. **Ortaköy-moskeen** — en av Istanbuls mest fotograferte moskeer, ved vannet\n4. **Bosporosbroen** — veksler om natten mellom blå, lilla, gull\n5. **Bebek** — elegant bydel på europeisk bredde\n6. **Rumeli Hisarı** — bygd av Fatih Sultan Mehmet i 1452 før Konstantinopels fall\n7. **Fatih Sultan Mehmet-broen** — Bosporos\' andre bro, dramatisk bue\n8. **Beylerbeyi-palasset** — asiatisk bredde, osmansk sommerresidens\n9. **Üsküdar** — asiatisk Istanbul-kyst, tradisjonell bydel\n10. **Jomfrutårnet** — tårn på liten øy, et av Istanbuls mest romantiske symboler',
-      'Middag og underholdning er inkludert — ikke separat — så **Bosporos-sightseeing** blir til en komplett kveld. Tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Rangert 4,8★ av over 11 317 reisende, TÜRSAB-lisensiert A-17672.'
+      'Middag og underholdning er inkludert — ikke separat — så **Bosporos-sightseeing** blir til en komplett kveld. Tyrkisk flerrettsmiddag, live folkedansshow, sema, orientalsk dans, DJ. Rangert 4,9★ av over 11 317 reisende, TÜRSAB-lisensiert A-17672.'
     ],
     highlights: [
       { title: '10+ viktige Istanbul-landemerker', desc: 'Dolmabahçe-palasset, Çırağan-palasset, Ortaköy-moskeen, Bosporosbroen, Rumeli Hisarı, FSM-broen, Beylerbeyi-palasset, Üsküdar, Jomfrutårnet. Hvert viktig Istanbul-landemerke på én tur.' },

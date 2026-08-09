@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Ceny pro děti',
           paragraphs: [
-            'Děti 0–3 roky (včetně): zdarma. Děti 4–8 let (včetně): sleva 50 %. Děti od 9 let a starší: plná cena.',
+            'Děti 0–3 roky (včetně): zdarma. Děti 4–9 let (včetně): sleva €5. Děti od 9 let a starší: plná cena.',
             'Pozn.: 3leté dítě má zdarma, 4leté platí poloviční cenu. 8leté je stále za poloviční cenu, 9leté platí plnou cenu.',
           ],
         },
         {
           h2: 'Co je v menu pro děti?',
           paragraphs: [
-            'Večerní menu nabízí možnosti jako kuřecí a hovězí špíz, které většina dětí má ráda. Výběr mezze je pestrý, s velkým množstvím zeleniny a dipů. Krupicová halva jako dezert je v ceně pro všechny.',
+            'Večerní menu nabízí možnosti jako kuřecí a hovězí špíz, které většina dětí má ráda. Výběr mezze je pestrý, s velkým množstvím zeleniny a dipů. Speciální krupicový dezert jako dezert je v ceně pro všechny.',
             'Potřebuje vaše dítě speciální stravu? Zeptejte se nás předem na WhatsAppu — uděláme maximum, abychom pomohli.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Děti jsou srdečně vítány',
           paragraphs: [
-            'Děti 0–3 roky: zdarma. 4–8 let: sleva 50 %. 9 let a více: plná cena.',
+            'Děti 0–3 roky: zdarma. 4–9 let: sleva €5. 9 let a více: plná cena.',
           ],
         },
         {

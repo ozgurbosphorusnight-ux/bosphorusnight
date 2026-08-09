@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: "Crociera con Cena sul Bosforo a Istanbul",
       subtitle: "Tre ore di intrattenimento dal vivo, un sontuoso banchetto turco a più portate e le vedute notturne più celebri del Bosforo.",
-      badge: "4,8★ · 11.317 recensioni"
+      badge: "4,9★ · 11.317+ ospiti"
     },
     intro: [
-      "La **crociera con cena sul Bosforo** è l'esperienza serale più iconica di Istanbul. La nostra barca salpa alle 20:00 dal molo di Kabataş e scivola sotto le arcate illuminate dei ponti del Bosforo e di Fatih Sultan Mehmet, mentre Lei gusta un banchetto turco a più portate, spettacoli folkloristici dal vivo, danza orientale e un set DJ che anima il ponte fino alle 23:00.",
-      "A differenza delle numerose barche turistiche generiche che popolano la notte di Istanbul, la nostra **crociera con cena sul Bosforo** è autorizzata TÜRSAB (A-17672) e valutata 4,8★ da oltre 11.317 viaggiatori. Manteniamo il gruppo ristretto, il servizio caloroso — e poiché il pagamento avviene a bordo, prenotare in anticipo non comporta alcun rischio.",
+      "La **crociera con cena sul Bosforo** è l'esperienza serale più iconica di Istanbul. La nostra barca salpa alle 20:00 dal molo di Kabataş e scivola sotto le arcate illuminate dei ponti del Bosforo e di Fatih Sultan Mehmet, mentre Lei gusta un banchetto turco a più portate, spettacoli folkloristici dal vivo, danza orientale e un set DJ che anima il ponte fino alle 23:45.",
+      "A differenza delle numerose barche turistiche generiche che popolano la notte di Istanbul, la nostra **crociera con cena sul Bosforo** è autorizzata TÜRSAB (A-17672) e valutata 4,9★ da oltre 11.317 viaggiatori. Manteniamo il gruppo ristretto, il servizio caloroso — e poiché il pagamento avviene a bordo, prenotare in anticipo non comporta alcun rischio.",
       "Che stia celebrando un anniversario, cercando una serata premium a Istanbul per la Sua famiglia, o desideri semplicemente il passaggio tramonto-notte più fotogenico della città — questa è la crociera con cena che gli abitanti di Istanbul raccomandano per primi."
     ],
     highlights: [
-      { title: "Banchetto turco a più portate", desc: "10 varietà di meze, antipasto caldo (börek), secondo a scelta (salmone / branzino / pollo allo spiedo / spiedino di manzo / vegetariano), halva di semolino, bevande analcoliche illimitate." },
+      { title: "Banchetto turco a più portate", desc: "10 varietà di meze, antipasto caldo (börek), secondo a scelta (salmone / branzino / pollo allo spiedo / spiedino di manzo / vegetariano), dolce speciale di semola di semolino, bevande analcoliche illimitate." },
       { title: "Folklore dal vivo, danza orientale e DJ", desc: "Otto numeri: Oba Dombra, cerimonia Sema dei Mevlana, Sarı Gelin, potpourri azero, danza orientale classica, potpourri anatolico e la danza dei coltelli georgiana e caucasica — poi sassofono dal vivo e un set DJ per tutta la crociera." },
       { title: "Itinerario notturno completo del Bosforo", desc: "Kabataş → Dolmabahçe → Palazzo di Çırağan → Moschea di Ortaköy → Bebek → Rumeli Hisarı → Ponte FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş." },
       { title: "Da €{p.dinnerStd}/persona — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       "Il **tour del Bosforo con bambini** è l'opzione serale più a misura di famiglia di Istanbul. Accogliamo decine di famiglie ogni sera — abbiamo progettato ogni dettaglio per il comfort dei più piccoli: posti a sedere interni coperti per tenerli al caldo, un menu per bambini accessibile (pollo alla griglia semplice, pasta, bevande analcoliche illimitate) e imbarco anticipato per evitare i capricci da stanchezza.",
       "A differenza delle barche solo per adulti, la nostra **crociera con cena sul Bosforo per famiglie** rimane calorosa e inclusiva. **I bambini 0-3 anni sono gratis** (transfer incluso), 4-9 anni **€5 di sconto**, 10+ prezzo pieno — senza costi nascosti. Folklore dal vivo, danza orientale e cerimonia Sema sono intrattenimenti delicati, adatti alle famiglie, non da night club.",
-      "Che stia venendo a Istanbul per un lungo weekend con il Suo bambino piccolo, o portando gli adolescenti al loro primo viaggio europeo — questo è il tour che le famiglie di Istanbul raccomandano. Sicuro, certificato halal, autorizzato TÜRSAB e valutato 4,8★ da oltre 11.317 viaggiatori."
+      "Che stia venendo a Istanbul per un lungo weekend con il Suo bambino piccolo, o portando gli adolescenti al loro primo viaggio europeo — questo è il tour che le famiglie di Istanbul raccomandano. Sicuro, certificato halal, autorizzato TÜRSAB e valutato 4,9★ da oltre 11.317 viaggiatori."
     ],
     highlights: [
       { title: "0-3 anni completamente gratis", desc: "Nessun costo per neonati e bambini piccoli. 4-9 anni al €5 del prezzo adulto. Dai 10 anni ospite a pieno titolo. Trasparente, senza sorprese." },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       "La **crociera romantica sul Bosforo** è la serata più iconica di Istanbul per le coppie. Mentre il sole tramonta dietro il Palazzo Dolmabahçe e il Ponte del Bosforo si accende di colori, Lei e il Suo partner condividete un sontuoso banchetto turco a più portate a un tavolo privato — con candele, fiori freschi e violino dal vivo che scivola sul ponte.",
       "Il nostro allestimento romantico (+€{p.romantic}/tavolo) trasforma qualsiasi posto in un momento speciale: rose rosse, candele scintillanti, un biglietto di benvenuto scritto a mano. Aggiunga il pacchetto alcolico da 2 bicchieri per brindare sotto le stelle (+€{p.alcohol2}/persona) o mantenga tutto semplice con le bevande analcoliche incluse. In entrambi i casi, l'equipaggio si occupa del resto in silenzio.",
-      "Che stia festeggiando un anniversario, preparando una sorpresa per il Suo partner o desiderando semplicemente una serata indimenticabile nella città più romantica d'Europa — questo è il tour che le coppie di Istanbul scelgono per prime. Valutazione 4,8★, autorizzato TÜRSAB, e — cosa più importante — pagamento a bordo, quindi Lei si impegna solo per la serata stessa."
+      "Che stia festeggiando un anniversario, preparando una sorpresa per il Suo partner o desiderando semplicemente una serata indimenticabile nella città più romantica d'Europa — questo è il tour che le coppie di Istanbul scelgono per prime. Valutazione 4,9★, autorizzato TÜRSAB, e — cosa più importante — pagamento a bordo, quindi Lei si impegna solo per la serata stessa."
     ],
     highlights: [
       { title: "Tavolo romantico a lume di candela", desc: "Aggiunga l'allestimento romantico a +€{p.romantic}/tavolo: rose rosse fresche, candele scintillanti, petali di rosa sulla tovaglia e biglietto scritto a mano. Foto incluse." },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       "La **crociera halal sul Bosforo** è la crociera con cena più rispettata di Istanbul per i viaggiatori musulmani. Ogni carne servita sulla nostra barca — salmone, branzino, pollo allo spiedo, spiedino di manzo — è **certificata halal** da fornitori approvati. Serviamo lo stesso menu a ogni ospite; nessuna \"sezione halal\" separata perché l'intera barca è halal di default.",
       "L'alcol è un **extra opzionale** — mai imposto agli ospiti, e la disposizione dei tavoli separa naturalmente chi preferisce un tavolo senza alcol. Per gli ospiti che desiderano il pacchetto alcolico da 2 bicchieri (+€{p.alcohol2}/persona) è disponibile, ma le bevande analcoliche illimitate incluse (acqua, cola, succhi) sono sufficienti per la maggior parte delle famiglie musulmane. Il nostro staff è formato per rispettare le Sue preferenze senza dare nulla per scontato.",
-      "La **crociera del Bosforo halal-friendly** è importante per i viaggiatori provenienti da Arabia Saudita, Emirati Arabi Uniti, Kuwait, Qatar, Iran, Malesia, Indonesia, Pakistan e Marocco che desiderano l'esperienza serale più iconica di Istanbul senza compromessi. Autorizzato TÜRSAB, 4,8★ e pagamento a bordo — Lei non si impegna a nulla finché non è sicuro che l'esperienza soddisfi i Suoi standard."
+      "La **crociera del Bosforo halal-friendly** è importante per i viaggiatori provenienti da Arabia Saudita, Emirati Arabi Uniti, Kuwait, Qatar, Iran, Malesia, Indonesia, Pakistan e Marocco che desiderano l'esperienza serale più iconica di Istanbul senza compromessi. Autorizzato TÜRSAB, 4,9★ e pagamento a bordo — Lei non si impegna a nulla finché non è sicuro che l'esperienza soddisfi i Suoi standard."
     ],
     highlights: [
       { title: "Menu 100% certificato halal", desc: "Tutta la carne (salmone, branzino, pollo allo spiedo, spiedino di manzo) è certificata halal da fornitori approvati. La cucina segue la preparazione halal. Nessun prodotto a base di maiale o additivo non halal. Opzioni vegetariane sempre disponibili." },
@@ -141,7 +141,7 @@ module.exports = {
       { q: "Questo tour è adatto alle famiglie musulmane con bambini?", a: "Sì — è uno dei tour più rispettosi delle famiglie di Istanbul. Intrattenimento modesto (folklore, Sema, musica turca), bambini sotto i 3 anni gratis, 4-9 anni €5 di sconto. Nessuna atmosfera da night club. Le famiglie della regione del Golfo, Indonesia, Malesia, Pakistan e Marocco prenotano regolarmente questo tour." },
       { q: "Posso pregare a bordo?", a: "Non c'è una sala preghiera dedicata a bordo, ma raccomandiamo di pregare prima dell'imbarco alle 20:00 (il maghrib di solito cade in questa finestra). Ci sono strutture per la preghiera al molo di Kabataş. Se ha bisogno di pregare durante la navigazione 21:00-00:00 (isha), parli con l'equipaggio — possiamo organizzare un angolo tranquillo sul ponte." },
       { q: "Quali sono i prezzi per una famiglia musulmana di 4 persone (2 adulti, 2 bambini)?", a: "Crociera con cena: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 anni €5 di sconto) = €87.20. Se i bambini hanno meno di 3 anni è gratis: 2 × €{p.dinnerStd} = €48.60. Aggiunga €5 di transfer hotel per adulto. Totale: €48.60–€92.90 per una famiglia di 4, nessun anticipo, pagamento a bordo." },
-      { q: "Anche il transfer hotel è halal?", a: "Il transfer hotel è solo un tragitto in auto — nessun cibo o bevanda coinvolti, quindi nessuna questione halal. I nostri autisti sono professionali, rispettosi e puntuali. Le zone di transfer coprono Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e altre 9 aree centrali dove alloggiano di solito i viaggiatori musulmani." }
+      { q: "Anche il transfer hotel è halal?", a: "Il transfer hotel è solo un tragitto in auto — nessun cibo o bevanda coinvolti, quindi nessuna questione halal. I nostri autisti sono professionali, rispettosi e puntuali. Le zone di transfer coprono Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e altre 8 aree centrali dove alloggiano di solito i viaggiatori musulmani." }
     ],
     cta: {
       primary: "Prenota Tour Halal · Pagamento a Bordo",
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% DI SCONTO · Un Menù, Standard Premium · Pagamento a Bordo'
     },
     intro: [
-      'Molte barche sul Bosforo dividono gli ospiti in "Standard" e "VIP". Noi no. A bordo dell\'**AMOR** c\'è un unico menù, preparato con la stessa cura per tutti: 10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo allo spiedo o spiedino di manzo), halva di semolino e bevande analcoliche illimitate. È incluso anche l\'intero programma di spettacoli in otto numeri — Oba Dombra, cerimonia dei dervisci rotanti, danze popolari anatoliche e azere, danza del ventre, danza dei coltelli caucasica, musica dal vivo e un finale con sassofono e DJ — tutto nel prezzo di €{p.dinnerStd}/persona.',
+      'Molte barche sul Bosforo dividono gli ospiti in "Standard" e "VIP". Noi no. A bordo dell\'**AMOR** c\'è un unico menù, preparato con la stessa cura per tutti: 10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo allo spiedo o spiedino di manzo), dolce speciale di semola di semolino e bevande analcoliche illimitate. È incluso anche l\'intero programma di spettacoli in otto numeri — Oba Dombra, cerimonia dei dervisci rotanti, danze popolari anatoliche e azere, danza del ventre, danza dei coltelli caucasica, musica dal vivo e un finale con sassofono e DJ — tutto nel prezzo di €{p.dinnerStd}/persona.',
       'La sensazione VIP inizia dal tuo tavolo. Se vuoi essere il più vicino possibile al palco e alla vista, aggiungi il **tavolo privato vicino al palco** (+€{p.romantic}/tavolo) e il tuo posto viene riservato in anticipo: la prospettiva migliore sui dervisci, sulle danze folcloristiche e sul Bosforo illuminato. La scelta preferita di coppie, celebrazioni e appassionati di fotografia.',
       'L\'AMOR è una nave moderna di 42 metri, 3 ponti, fino a 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Il percorso di 3 ore parte da Kabataş (imbarco dalle 20:00, partenza 21:00, rientro 00:00) e passa da Dolmabahçe, la moschea di Ortaköy, la fortezza di Rumeli e le luci del ponte sul Bosforo. Licenza TÜRSAB (A-17672), 4,9★ su Google. Nessun pagamento anticipato: paghi a bordo, con cancellazione gratuita fino a 2 ore prima della partenza.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Vendete un "pacchetto VIP"? Qual è la differenza con lo Standard?', a: 'Non vendiamo un pacchetto VIP separato: c\'è un unico menù, servito a tutti con lo stesso standard premium. Quella che chiamiamo "esperienza VIP" è la personalizzazione della serata: tavolo privato vicino al palco (+€{p.romantic}/tavolo), servizio al tavolo attento e bevande aggiuntive facoltative. La crociera dura 3 ore, €{p.dinnerStd}/persona.' },
       { q: '€{p.dinnerStd} è davvero uno sconto del 40%?', a: 'Sì — il nostro prezzo di listino è €{p.dinnerStdOriginal}/persona. €{p.dinnerStd} è la tariffa di prenotazione diretta, senza commissioni di intermediari. Paghi a bordo e non c\'è alcun anticipo.' },
-      { q: 'Cosa c\'è nel menù?', a: '10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo allo spiedo o spiedino di manzo) e halva di semolino come dessert, con bevande analcoliche illimitate. Il programma in otto numeri è incluso: Oba Dombra, cerimonia dei dervisci, danze popolari anatoliche e azere, danza del ventre, danza dei coltelli caucasica, musica dal vivo e un finale con sassofono e DJ.' },
+      { q: 'Cosa c\'è nel menù?', a: '10 varietà di meze turchi, un antipasto caldo, un secondo a scelta (salmone, branzino, pollo allo spiedo o spiedino di manzo) e dolce speciale di semola di semolino come dessert, con bevande analcoliche illimitate. Il programma in otto numeri è incluso: Oba Dombra, cerimonia dei dervisci, danze popolari anatoliche e azere, danza del ventre, danza dei coltelli caucasica, musica dal vivo e un finale con sassofono e DJ.' },
       { q: 'L\'alcol è incluso?', a: 'No — l\'alcol è un extra separato: 2 bicchieri di vino, birra, rakı, vodka, whisky, gin e altro locale a +€{p.alcohol2}/persona. Le bevande analcoliche sono incluse e illimitate. I distillati premium d\'importazione vengono conteggiati a parte a bordo.' },
       { q: 'Come garantisco un tavolo vicino al palco?', a: 'Basta selezionare l\'extra "tavolo privato vicino al palco" (+€{p.romantic}/tavolo) durante la prenotazione: il tavolo viene riservato a tuo nome. Le posizioni migliori si esauriscono con le prenotazioni anticipate, quindi consigliamo di aggiungerlo prima del giorno della crociera.' },
       { q: 'Che tipo di imbarcazione è?', a: 'L\'AMOR — una moderna nave passeggeri di 42 metri, 3 ponti e capacità di 400 ospiti, riscaldata d\'inverno e climatizzata d\'estate. Partenza dal molo di Kabataş: imbarco 20:00, partenza 21:00, rientro 00:00. Percorso: Dolmabahçe, Ortaköy, fortezza di Rumeli, Beylerbeyi e le luci del ponte sul Bosforo.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       "Una **crociera privata sul Bosforo** significa che l'intera barca è Sua — nessun altro ospite, nessun tavolo condiviso, nessuna pista da ballo condivisa. Perfetto per riunioni familiari, cene aziendali, feste di compleanno, addii al celibato/nubilato o ricevimenti di matrimonio. Barca, equipaggio, menu, intrattenimento e tempistica si adattano al Suo gruppo.",
       "Il nostro **noleggio di crociera privata sul Bosforo** supporta gruppi da **25 a 80 ospiti**. Gruppi più piccoli possono comunque richiedere un'esperienza privata — forniamo un preventivo con una tariffa minima che copre i costi operativi della barca. Gruppi più grandi (dimensione matrimonio) ricevono prezzi dedicati e spesso includono decorazioni personalizzate, band dal vivo, servizio della torta e durata estesa (4-5 ore invece delle 3 standard).",
-      "Che stia organizzando un evento aziendale per clienti, una festa per il 50° compleanno o un ricevimento di matrimonio sotto i ponti più iconici di Istanbul, questo è il **tour privato di cui si fidano i pianificatori di eventi di Istanbul**. Valutazione 4,8★, autorizzato TÜRSAB, equipaggio completamente anglofono e flessibile su tutto — itinerario, menu, musica, orari."
+      "Che stia organizzando un evento aziendale per clienti, una festa per il 50° compleanno o un ricevimento di matrimonio sotto i ponti più iconici di Istanbul, questo è il **tour privato di cui si fidano i pianificatori di eventi di Istanbul**. Valutazione 4,9★, autorizzato TÜRSAB, equipaggio completamente anglofono e flessibile su tutto — itinerario, menu, musica, orari."
     ],
     highlights: [
       { title: "Intera barca, solo per Lei", desc: "Nessun altro ospite. Il Suo gruppo ha ogni ponte, ogni tavolo. Scelga la Sua musica, il Suo dress code, il Suo programma. La privacy conta — la rispettiamo." },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       "Il **tour del Bosforo per coppie** è la serata romantica preferita di Istanbul. Non tutte le coppie festeggiano un anniversario — a volte siete semplicemente nella città più romantica del mondo e volete una bella serata insieme. Questo tour offre: tavolo privato per due, cena turca lenta e a più portate, violino dal vivo e musica acustica durante la cena, e il Ponte del Bosforo illuminato che passa lentamente sopra di Voi.",
       "L'atmosfera è **calorosa ma non esageratamente romantica** — nessuna musica forzata da proposta di matrimonio, nessun imbarazzante applauso coordinato per \"sposini\". Mangiate, bevete, parlate, osservate le luci di Istanbul. Se desidera aggiungere un allestimento romantico al tavolo (candele, rose, +€{p.romantic}), bene — altrimenti anche solo la cena è già speciale.",
-      "Che stia a Istanbul per 3 giorni con il Suo partner, stia celebrando un traguardo modesto o stia pianificando una ricognizione per una futura proposta di matrimonio — il **tour del Bosforo per coppie** Le regala 3 ore di serata insieme in una delle città più fotografate del mondo. 4,8★, pagamento a bordo, cancellazione gratuita."
+      "Che stia a Istanbul per 3 giorni con il Suo partner, stia celebrando un traguardo modesto o stia pianificando una ricognizione per una futura proposta di matrimonio — il **tour del Bosforo per coppie** Le regala 3 ore di serata insieme in una delle città più fotografate del mondo. 4,9★, pagamento a bordo, cancellazione gratuita."
     ],
     highlights: [
       { title: "Tavolo privato per due", desc: "Tavolo dedicato da 2 posti, non condiviso. Priorità ai posti vicino alla finestra per le coppie. Foto al tramonto e notturne del Bosforo appena fuori dal Vostro vetro." },
-      { title: "Cena lenta a più portate", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo o vegetariano), halva di semolino. Servito lentamente nell'arco di 3 ore — non Vi vengono messi fretta." },
+      { title: "Cena lenta a più portate", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo o vegetariano), dolce speciale di semola di semolino. Servito lentamente nell'arco di 3 ore — non Vi vengono messi fretta." },
       { title: "Violino dal vivo e musica leggera", desc: "Violino dal vivo e musica turca acustica durante la cena creano un'atmosfera intima adatta alla conversazione. Poi, il DJ prende il sopravvento per le coppie che vogliono ballare." },
       { title: "Extra per serate speciali", desc: "Allestimento romantico (candele, rose): +€{p.romantic}. Pacchetto alcolico da 2 bicchieri (vino, birra, rakı, vodka, whisky, gin e altro): +€{p.alcohol2}/persona. Transfer hotel (andata-ritorno): +€{p.transfer}/persona. Scelga ciò che si addice alla Vostra serata." }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       "L'esperienza della **crociera al tramonto sul Bosforo** a Istanbul ruota attorno a una cosa: la transizione. L'imbarco inizia al molo di Kabataş dalle 20:00 — e nelle lunghe serate da maggio ad agosto, l'ora dorata si dispiega mentre si accomoda sul ponte. Il sole tramonta dietro i minareti della sponda europea proprio intorno alla partenza delle 21:00, quindi lo osserva dall'acqua: il Palazzo Dolmabahçe dipinto d'oro, la Moschea di Ortaköy in silhouette contro il cielo acceso.",
       "La nostra **crociera sul Bosforo dal tramonto alla notte** include una cena turca completa — 10 varietà di meze, antipasto caldo, secondo a scelta, dolce — servita mentre la città accende le sue luci. Quando arriva il dolce, sta navigando sotto il Ponte del Bosforo illuminato, con 30 milioni di luci riflesse sull'acqua scura. Il passaggio dal crepuscolo alla notte piena, tutto in un'unica crociera di 3 ore, è l'essenza dell'esperienza.",
-      "Che sia un fotografo a caccia dell'ultima luce, una coppia in cerca di \"quella foto ricordo di Istanbul\" o un visitatore alla prima volta che desidera la classica serata sull'acqua, questa è la **crociera al tramonto con cena sul Bosforo** che gli abitanti di Istanbul raccomandano ai visitatori. Da €{p.dinnerStd}/persona, valutazione 4,8★, autorizzato TÜRSAB, pagamento a bordo — nessun anticipo."
+      "Che sia un fotografo a caccia dell'ultima luce, una coppia in cerca di \"quella foto ricordo di Istanbul\" o un visitatore alla prima volta che desidera la classica serata sull'acqua, questa è la **crociera al tramonto con cena sul Bosforo** che gli abitanti di Istanbul raccomandano ai visitatori. Da €{p.dinnerStd}/persona, valutazione 4,9★, autorizzato TÜRSAB, pagamento a bordo — nessun anticipo."
     ],
     highlights: [
       { title: "Tramonti estivi proprio alla partenza", desc: "Da maggio ad agosto, il sole a Istanbul tramonta all'incirca tra le 20:15 e le 20:45 — l'imbarco alle 20:00 Le regala l'ora dorata sul ponte, e la partenza delle 21:00 La porta in acqua proprio per il tramonto. Fotocamera pronta — questo è lo scatto." },
       { title: "Dall'ora blu alla notte piena", desc: "Non solo il tramonto — la crociera naviga attraverso il crepuscolo fino al Bosforo pienamente illuminato. Luce dorata, ora blu, poi 30 milioni di luci dei ponti sull'acqua scura: tre fasi di luce in una sola serata." },
-      { title: "Cena completa durante la crociera", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano), halva di semolino, bevande analcoliche illimitate — il tutto servito mentre le luci della città si accendono." },
+      { title: "Cena completa durante la crociera", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano), dolce speciale di semola di semolino, bevande analcoliche illimitate — il tutto servito mentre le luci della città si accendono." },
       { title: "Dolmabahçe, Ortaköy, Ponte del Bosforo — tutto brilla", desc: "L'itinerario passa per il Palazzo Dolmabahçe, la Moschea di Ortaköy, il Ponte del Bosforo, Rumeli Hisarı e il Palazzo Beylerbeyi mentre le loro luci si accendono. Ogni monumento nella sua luce migliore." }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       "Il **tour notturno sul Bosforo** è l'attività serale più raccomandata a Istanbul. Il motivo: dopo il tramonto il Bosforo si trasforma. Il Ponte del Bosforo passa dal blu al viola all'oro. Il Palazzo Dolmabahçe brilla di giallo caldo. La Moschea di Ortaköy si riflette perfettamente nell'acqua nera. Ogni monumento di Istanbul raggiunge la sua massima spettacolarità di notte.",
       "La nostra **crociera con cena notturna sul Bosforo** racchiude la serata iconica al completo: 3 ore sull'acqua (21:00-00:00), banchetto turco a più portate, un programma folkloristico dal vivo in otto numeri (Oba Dombra, Sema, danze popolari anatoliche e azere, danza orientale, danza dei coltelli caucasica), musica dal vivo e un set sassofono e DJ che anima il ponte fino alla fine della serata. Ogni ospite riceve lo stesso programma — non esiste un'opzione \"base\" che salta le parti migliori.",
-      "Che sia il Suo primo viaggio a Istanbul e stia cercando \"l'unica cosa da fare di sera\", o sia già stato qui e voglia le 3 ore più fotogeniche in città, questo è il **tour notturno sul Bosforo** valutato 4,8★ da 11.317+ viaggiatori. Autorizzato TÜRSAB, pagamento a bordo, nessun anticipo."
+      "Che sia il Suo primo viaggio a Istanbul e stia cercando \"l'unica cosa da fare di sera\", o sia già stato qui e voglia le 3 ore più fotogeniche in città, questo è il **tour notturno sul Bosforo** valutato 4,9★ da 11.317+ viaggiatori. Autorizzato TÜRSAB, pagamento a bordo, nessun anticipo."
     ],
     highlights: [
       { title: "Bosforo illuminato al massimo della spettacolarità", desc: "Il Ponte del Bosforo cambia colore (blu, viola, oro), i palazzi brillano di giallo, la Moschea di Ortaköy si riflette nell'acqua nera. 21:00-00:00 è l'illuminazione di picco per tutti i monumenti di Istanbul." },
       { title: "Spettacolo turco tradizionale a bordo", desc: "Otto numeri: Oba Dombra, cerimonia Sema, Sarı Gelin, potpourri azero, danza orientale, potpourri anatolico e la danza dei coltelli georgiana e caucasica, poi sassofono dal vivo e set DJ. 40 minuti di esibizioni, poi musica + cena proseguono." },
-      { title: "Cena completa a più portate", desc: "10 varietà di meze turchi, antipasto caldo (börek), secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano — a scelta), dolce (halva di semolino), bevande analcoliche illimitate. Certificato halal." },
+      { title: "Cena completa a più portate", desc: "10 varietà di meze turchi, antipasto caldo (börek), secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano — a scelta), dolce (dolce speciale di semola di semolino), bevande analcoliche illimitate. Certificato halal." },
       { title: "Itinerario completo del Bosforo", desc: "Kabataş → Dolmabahçe → Palazzo di Çırağan → Moschea di Ortaköy → Bebek → Rumeli Hisarı → Ponte Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Torre della Fanciulla → Kabataş." }
     ],
     faq: [
@@ -340,15 +340,15 @@ module.exports = {
     hero: {
       h1: "Crociera con Cena Istanbul",
       subtitle: "La migliore crociera con cena di Istanbul — 3 ore sul Bosforo, sontuoso banchetto turco a più portate, intrattenimento dal vivo e vedute notturne dei monumenti più iconici della città.",
-      badge: "4,8★ · 11.317 recensioni · TÜRSAB A-17672"
+      badge: "4,9★ · 11.317+ ospiti · TÜRSAB A-17672"
     },
     intro: [
       "Cerca una **crociera con cena a Istanbul**? Ha trovato quella che la maggior parte dei viaggiatori raccomanda. La nostra serata di 3 ore sul Bosforo combina un sontuoso banchetto turco a più portate, folklore dal vivo e le vedute più fotogeniche della città — il tutto da una barca confortevole che parte alle 21:00 dal molo di Kabataş.",
       "L'esperienza della **crociera con cena a Istanbul**: imbarchi alle 20:00, si accomodi, osservi il Palazzo Dolmabahçe passare mentre salpiamo, la cena inizia mentre ci avviciniamo alla Moschea di Ortaköy, lo spettacolo comincia (Sema, folklore, orientale), e quando arriva il dolce si trova sotto il Ponte del Bosforo illuminato. Torna a Kabataş entro mezzanotte con un collage fotografico iconico e lo stomaco pieno.",
-      "€{p.dinnerStd}/persona per la crociera con cena (prima €{p.dinnerStdOriginal}). Pagamento a bordo — nessun anticipo, nessun rischio. Autorizzato TÜRSAB A-17672, valutato 4,8★ da oltre 11.317 viaggiatori."
+      "€{p.dinnerStd}/persona per la crociera con cena (prima €{p.dinnerStdOriginal}). Pagamento a bordo — nessun anticipo, nessun rischio. Autorizzato TÜRSAB A-17672, valutato 4,9★ da oltre 11.317 viaggiatori."
     ],
     highlights: [
-      { title: "Cena turca completa a più portate", desc: "10 varietà di meze, antipasto caldo, secondo (salmone/branzino/pollo allo spiedo/spiedino di manzo/vegetariano), halva di semolino. Certificato halal. Bevande analcoliche illimitate incluse." },
+      { title: "Cena turca completa a più portate", desc: "10 varietà di meze, antipasto caldo, secondo (salmone/branzino/pollo allo spiedo/spiedino di manzo/vegetariano), dolce speciale di semola di semolino. Certificato halal. Bevande analcoliche illimitate incluse." },
       { title: "Spettacolo di folklore turco dal vivo", desc: "Otto numeri: Oba Dombra, cerimonia Sema, Sarı Gelin, potpourri azero, danza orientale, potpourri anatolico, danza dei coltelli georgiana e caucasica, poi sassofono dal vivo e DJ. 40 minuti di esibizioni, la musica d'atmosfera prosegue." },
       { title: "Itinerario notturno completo del Bosforo", desc: "Tour di 3 ore: Dolmabahçe, Çırağan, Moschea di Ortaköy, Ponte del Bosforo, Bebek, Rumeli Hisarı, Ponte FSM, Beylerbeyi, Üsküdar, Torre della Fanciulla. Sia sponda europea che asiatica." },
       { title: "Da €{p.dinnerStd} — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: "Prenota Crociera con Cena · Pagamento a Bordo",
-      secondary: "4,8★ · Autorizzato TÜRSAB · Cancellazione gratuita 2 ore prima",
+      secondary: "4,9★ · Autorizzato TÜRSAB · Cancellazione gratuita 2 ore prima",
       tertiary: "Disponibilità Stasera"
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   "istanbul-night-tour": {
     meta: {
       title: 'Tour Notturno Istanbul da €{p.dinnerStd} — Crociera Cena Bosforo + Show',
-      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317 recensioni.'
+      description: 'Crociera 3 ore sul Bosforo con cena e spettacolo dal vivo. Partenza 21:00 da Kabataş. Cancellazione gratuita, pagamento a bordo. 11.317+ ospiti.'
     },
     hero: {
       h1: "Tour Notturno di Istanbul",
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       "Un **tour notturno di Istanbul** deve fare tre cose: mostrarLe le viste iconiche della città, nutrirLa bene e intrattenerLa. La nostra crociera con cena sul Bosforo fa tutte e tre in un'unica serata di 3 ore — ed è il motivo per cui la maggior parte delle guide di Istanbul la raccomanda come esperienza di tour notturno #1.",
       "L'itinerario del **tour notturno di Istanbul** copre i monumenti illuminati migliori: Palazzo Dolmabahçe, Moschea di Ortaköy, Ponte del Bosforo (cambia colore), quartiere di Bebek, Rumeli Hisarı, Ponte FSM, Palazzo Beylerbeyi, la costa asiatica di Üsküdar e la Torre della Fanciulla in lontananza. La maggior parte dei city tour li mostra dall'autobus — noi li mostriamo dall'acqua, da dove sono più drammatici.",
-      "Cena inclusa (menu turco a più portate), spettacolo di folklore turco dal vivo, Sema, danza orientale e set DJ. Se è a Istanbul per 2-3 giorni, questa è l'unica serata che offre di più. 4,8★ da 11.317+ viaggiatori, pagamento a bordo, nessun anticipo."
+      "Cena inclusa (menu turco a più portate), spettacolo di folklore turco dal vivo, Sema, danza orientale e set DJ. Se è a Istanbul per 2-3 giorni, questa è l'unica serata che offre di più. 4,9★ da 11.317+ viaggiatori, pagamento a bordo, nessun anticipo."
     ],
     highlights: [
       { title: "Tutte le viste notturne iconiche di Istanbul", desc: "Palazzo Dolmabahçe, Moschea di Ortaköy, Ponte del Bosforo illuminato, Rumeli Hisarı, Ponte FSM, Palazzo Beylerbeyi, Torre della Fanciulla. Ogni grande monumento nella sua massima illuminazione notturna." },
@@ -416,12 +416,12 @@ module.exports = {
     hero: {
       h1: "Tour in Barca a Istanbul",
       subtitle: "Il tour in barca di Istanbul più prenotato dai viaggiatori — un tour sul Bosforo con cena turca, intrattenimento dal vivo e le viste iconiche della città dall'acqua.",
-      badge: "4,8★ · TÜRSAB A-17672 · Pagamento a Bordo"
+      badge: "4,9★ · TÜRSAB A-17672 · Pagamento a Bordo"
     },
     intro: [
       "Quando cerca \"tour in barca a Istanbul\", sta cercando l'unica cosa che definisce la città dall'acqua: il Bosforo. Il nostro tour in barca di 3 ore sul Bosforo La porta oltre ogni grande monumento di Istanbul — Palazzo Dolmabahçe, Moschea di Ortaköy, Ponte del Bosforo, Rumeli Hisarı, Palazzo Beylerbeyi e Torre della Fanciulla — con una cena turca completa e intrattenimento dal vivo.",
       "A differenza dei numerosi traghetti turistici di 1 ora che coprono meno Bosforo e saltano cena e intrattenimento, il nostro **tour in barca a Istanbul** è l'esperienza serale completa: imbarco alle 20:00 al molo di Kabataş, tour fino a mezzanotte, 10 meze, secondo, dolce, Sema, folklore, danza orientale e DJ. Riceve il tour E anche la serata fuori.",
-      "Se ha una notte a Istanbul o una settimana intera, questo **tour in barca a Istanbul** fa il lavoro. 4,8★ da 11.317+ viaggiatori, autorizzato TÜRSAB (A-17672), menu certificato halal e pagamento a bordo — nessun impegno finanziario finché non è soddisfatto dell'esperienza."
+      "Se ha una notte a Istanbul o una settimana intera, questo **tour in barca a Istanbul** fa il lavoro. 4,9★ da 11.317+ viaggiatori, autorizzato TÜRSAB (A-17672), menu certificato halal e pagamento a bordo — nessun impegno finanziario finché non è soddisfatto dell'esperienza."
     ],
     highlights: [
       { title: "Tutti i grandi monumenti del Bosforo", desc: "Dolmabahçe, Çırağan, Moschea di Ortaköy, Ponte del Bosforo, Bebek, Rumeli Hisarı, Ponte FSM, Palazzo Beylerbeyi, Üsküdar, Torre della Fanciulla. Sia sponda europea che asiatica in un solo tour." },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       "Una **gita sul Bosforo** può significare un traghetto turistico di 1 ora o un'intera serata con cena — noi facciamo la seconda, e la maggior parte dei viaggiatori la trova di miglior valore. 3 ore, €{p.dinnerStd}/persona, cena e intrattenimento inclusi. Non passa solo oltre i monumenti — mangia, guarda uno spettacolo e si gode la serata.",
       "L'itinerario della nostra **gita sul Bosforo** copre tutto ciò che vale la pena vedere: Palazzo Dolmabahçe (residenza del Sultano ottomano del XIX secolo), Moschea di Ortaköy (una delle moschee più fotografate di Istanbul), Ponte del Bosforo (cambia colore di notte), Rumeli Hisarı (costruito nel 1452 da Fatih Sultan Mehmet), Palazzo Beylerbeyi (lato asiatico) e la Torre della Fanciulla su un'isoletta. Tutto spiegato dall'equipaggio anglofono.",
-      "Se è a Istanbul per 24 ore o una settimana, questa è la **gita sul Bosforo** che Le offre il massimo in una serata. Valutazione 4,8★ da oltre 11.317 viaggiatori, autorizzato TÜRSAB A-17672, menu halal-friendly, pagamento a bordo — nessun rischio di anticipo."
+      "Se è a Istanbul per 24 ore o una settimana, questa è la **gita sul Bosforo** che Le offre il massimo in una serata. Valutazione 4,9★ da oltre 11.317 viaggiatori, autorizzato TÜRSAB A-17672, menu halal-friendly, pagamento a bordo — nessun rischio di anticipo."
     ],
     highlights: [
       { title: "Bosforo completo in un'unica gita", desc: "Sponda europea (Dolmabahçe, Ortaköy, Rumeli Hisarı), sponda asiatica (Beylerbeyi, Üsküdar), entrambi i ponti del Bosforo, Torre della Fanciulla. Ogni grande monumento visibile in 3 ore." },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       "Cerca **biglietti per la crociera sul Bosforo**? Li prenda direttamente. Il nostro biglietto costa €{p.dinnerStd}/persona — 40% di sconto sul prezzo pieno (€{p.dinnerStdOriginal}). I siti di prenotazione di terze parti tipicamente aggiungono 20-40% di commissione. Prenotando direttamente Lei risparmia — e può comunque pagare a bordo.",
       "Il nostro processo per i **biglietti della crociera sul Bosforo**: compili la procedura guidata su questa pagina in meno di 1 minuto (data, numero di ospiti, pacchetto, contatti), confermiamo immediatamente via WhatsApp / Telegram, si presenta al molo di Kabataş alle 20:00, paga a bordo, si gode la crociera con cena di 3 ore. Nessun biglietto fisico da stampare, nessun voucher da inviare via email — la nostra conferma è il Suo biglietto.",
-      "Che stia prenotando la crociera con cena di stasera o riservando una data specifica per la prossima settimana, i **biglietti per la crociera sul Bosforo diretti** sono il modo più veloce. Valutazione 4,8★, autorizzato TÜRSAB (A-17672), menu certificato halal e supporto per extra transfer hotel e alcol."
+      "Che stia prenotando la crociera con cena di stasera o riservando una data specifica per la prossima settimana, i **biglietti per la crociera sul Bosforo diretti** sono il modo più veloce. Valutazione 4,9★, autorizzato TÜRSAB (A-17672), menu certificato halal e supporto per extra transfer hotel e alcol."
     ],
     highlights: [
       { title: "Prenotazione diretta — nessuna commissione intermediaria", desc: "€{p.dinnerStd}/persona, un prezzo trasparente. I siti di terze parti addebitano €30-80+ per lo stesso tour. Risparmia prenotando direttamente con noi. Nessun costo nascosto, nessuna maggiorazione di commissione." },
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       "La **visita al Bosforo** dall'acqua batte qualsiasi tour in autobus. Il Bosforo è la via d'acqua più storica della città — sultani ottomani, imperatori bizantini, mercanti greci e navi da guerra russe sono passati tutti di qui. Oggi il nostro tour di 3 ore, con commento dell'equipaggio anglofono, passa per ogni grande monumento di Istanbul che definisce lo skyline.",
       "Itinerario del nostro **tour di visita al Bosforo** (partenza serale, 21:00-00:00):\n\n1. **Palazzo Dolmabahçe** — residenza ottomana del XIX secolo, illuminata di notte\n2. **Palazzo di Çırağan** — ora hotel di lusso, storia reale\n3. **Moschea di Ortaköy** — una delle moschee più fotografate di Istanbul, sull'acqua\n4. **Ponte del Bosforo** — cambia tra blu, viola, oro di notte\n5. **Bebek** — quartiere elegante della sponda europea\n6. **Rumeli Hisarı** — costruito nel 1452 da Fatih Sultan Mehmet prima della conquista di Costantinopoli\n7. **Ponte Fatih Sultan Mehmet** — secondo ponte sul Bosforo, arco drammatico\n8. **Palazzo Beylerbeyi** — sponda asiatica, residenza estiva ottomana\n9. **Üsküdar** — sponda asiatica di Istanbul, quartiere tradizionale\n10. **Torre della Fanciulla** — torre su isoletta, uno dei simboli più romantici di Istanbul",
-      "Cena e intrattenimento sono inclusi — non separati — quindi la **visita al Bosforo** si trasforma in una serata completa. Cena turca a più portate, spettacolo di folklore dal vivo, Sema, danza orientale, DJ. Valutazione 4,8★ da oltre 11.317 viaggiatori, autorizzato TÜRSAB A-17672."
+      "Cena e intrattenimento sono inclusi — non separati — quindi la **visita al Bosforo** si trasforma in una serata completa. Cena turca a più portate, spettacolo di folklore dal vivo, Sema, danza orientale, DJ. Valutazione 4,9★ da oltre 11.317 viaggiatori, autorizzato TÜRSAB A-17672."
     ],
     highlights: [
       { title: "10+ grandi monumenti di Istanbul", desc: "Palazzo Dolmabahçe, Palazzo di Çırağan, Moschea di Ortaköy, Ponte del Bosforo, Rumeli Hisarı, Ponte FSM, Palazzo Beylerbeyi, Üsküdar, Torre della Fanciulla. Ogni monumento essenziale di Istanbul in un unico tour." },

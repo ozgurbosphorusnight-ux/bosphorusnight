@@ -23,13 +23,13 @@ module.exports = {
 
   meta: {
     title: 'Istanbul Boat Tour from €{p.dinnerStd} — Bosphorus Cruise + Dinner + Show',
-    description: '3-hour Istanbul boat tour: Bosphorus cruise, Turkish dinner, live folklore, illuminated night. Pay on boat. 11,317 reviews.'
+    description: '3-hour Istanbul boat tour: Bosphorus cruise, Turkish dinner, live folklore, illuminated night. Pay on boat. 11,317+ guests.'
   },
 
   hero: {
     h1: 'Istanbul Boat Tour',
     subtitle: 'The Istanbul boat tour travelers book most — Bosphorus cruise with Turkish dinner, live entertainment, and iconic views of the city from the water.',
-    badge: '4.8★ · TÜRSAB A-17672 · Pay on Boat'
+    badge: '4.9★ · TÜRSAB A-17672 · Pay on Boat'
   },
 
   intro: [
@@ -37,7 +37,7 @@ module.exports = {
 
     'Unlike the many 1-hour sightseeing ferries that cover less of the Bosphorus and skip food and entertainment, our **Istanbul boat tour** is the full evening experience: boarding at Kabataş Pier at 20:00, cruising until midnight, with 10 mezes, a main course, dessert, whirling dervish, folk dances, belly dance, and DJ. You get the tour AND the night out.',
 
-    'Whether you have one evening in Istanbul or a full week, this is the **boat tour Istanbul** delivers on. 4.8★ rated by 11,317+ travelers, TÜRSAB-licensed (A-17672), halal-certified menu, and pay-on-boat — no financial commitment until you\'re satisfied with the experience.'
+    'Whether you have one evening in Istanbul or a full week, this is the **boat tour Istanbul** delivers on. 4.9★ rated by 11,317+ travelers, TÜRSAB-licensed (A-17672), halal-certified menu, and pay-on-boat — no financial commitment until you\'re satisfied with the experience.'
   ],
 
   highlights: [
@@ -90,7 +90,7 @@ module.exports = {
     },
     {
       q: 'Is the Istanbul boat tour worth it for tourists?',
-      a: 'A boat tour on the Bosphorus is one of Istanbul\'s signature experiences — you see palaces, fortresses, and bridges from both Asia and Europe in 3 hours. Bosphorus Night\'s evening tour (€{p.dinnerStd}/person) adds full dinner and entertainment, ranking 4.8★ from 11,317 reviews.'
+      a: 'A boat tour on the Bosphorus is one of Istanbul\'s signature experiences — you see palaces, fortresses, and bridges from both Asia and Europe in 3 hours. Bosphorus Night\'s evening tour (€{p.dinnerStd}/person) adds full dinner and entertainment, ranking 4.9★ from 11,317+ guests.'
     },
     {
       q: 'What\'s the difference between a Bosphorus boat tour and Golden Horn?',

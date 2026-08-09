@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Cenas bērniem',
           paragraphs: [
-            'Bērni 0–3 gadi (ieskaitot): bez maksas. Bērni 4–8 gadi (ieskaitot): 50% atlaide. Bērni 9 gadi un vecāki: pilna cena.',
+            'Bērni 0–3 gadi (ieskaitot): bez maksas. Bērni 4–9 gadi (ieskaitot): 50% atlaide. Bērni 9 gadi un vecāki: pilna cena.',
             'Piezīme: 3 gadus vecais ir bez maksas, 4 gadus vecais maksā puscenu. 8 gadus vecais joprojām ir uz puscenas, 9 gadus vecais maksā pilnu cenu.',
           ],
         },
         {
           h2: 'Kas ir bērnu ēdienkartē?',
           paragraphs: [
-            'Vakariņu ēdienkarte ietver tādas iespējas kā vistas un liellopu šašliks, kas patīk lielākajai daļai bērnu. Meze klāsts ir daudzveidīgs ar daudz dārzeņiem un mērcēm. Mannas halva desertā ir iekļauta visiem.',
+            'Vakariņu ēdienkarte ietver tādas iespējas kā vistas un liellopu šašliks, kas patīk lielākajai daļai bērnu. Meze klāsts ir daudzveidīgs ar daudz dārzeņiem un mērcēm. Īpašs mannas deserts desertā ir iekļauta visiem.',
             'Vajadzīga īpaša diēta tavam bērnam? Paziņo mums iepriekš pa WhatsApp — darīsim visu iespējamo, lai palīdzētu.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Bērni ir laipni gaidīti',
           paragraphs: [
-            'Bērni 0–3 gadi: bez maksas. 4–8 gadi: 50% atlaide. 9+: pilna cena.',
+            'Bērni 0–3 gadi: bez maksas. 4–9 gadi: 50% atlaide. 9+: pilna cena.',
           ],
         },
         {

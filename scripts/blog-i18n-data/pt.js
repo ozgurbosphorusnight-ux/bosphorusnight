@@ -40,7 +40,7 @@ module.exports = {
     'bosphorus-cruise-with-kids-family': {
       date: '8 de abril de 2026',
       title: 'Cruzeiro no Bósforo com Crianças — Guia para Famílias',
-      blurb: '0-3 anos grátis, 4-8 anos meio preço. Guia completo de planeamento para famílias.'
+      blurb: '0-3 anos grátis, 4-9 anos €5 de desconto. Guia completo de planeamento para famílias.'
     },
     'istanbul-cruise-tonight-last-minute': {
       date: '11 de abril de 2026',
@@ -67,7 +67,7 @@ module.exports = {
           'O cruzeiro parte do cais de Kabataş e navega para norte em direção ao Palácio de Dolmabahçe. O barco avança pela costa europeia, passando pelos yalı (mansões junto à costa), pelo Palácio Çırağan e pela Fortaleza de Rumeli Hisarı. Depois vira para a costa asiática, regressando com vista para o Palácio de Beylerbeyi e a frente marítima de Üsküdar.'
         ]},
         { h2: 'A Experiência do Jantar', paragraphs: [
-          'O jantar é servido como um menu de pratos turcos e internacionais. Uma selecção de entradas frias e quentes — mezze, folhas de uva recheadas, saladas da época — seguida de um prato principal à escolha — salmão, robalo, frango em espetada ou espetada de vaca — com salada da época e acompanhamento. A sobremesa é halva de sêmola, um doce turco clássico, servida com chá ou café turco. Os refrigerantes e a água estão incluídos no preço; as bebidas alcoólicas estão disponíveis como suplemento opcional.'
+          'O jantar é servido como um menu de pratos turcos e internacionais. Uma selecção de entradas frias e quentes — mezze, folhas de uva recheadas, saladas da época — seguida de um prato principal à escolha — salmão, robalo, frango em espetada ou espetada de vaca — com salada da época e acompanhamento. A sobremesa é doce especial de sêmola, um doce turco clássico, servida com chá ou café turco. Os refrigerantes e a água estão incluídos no preço; as bebidas alcoólicas estão disponíveis como suplemento opcional.'
         ]},
         { h2: 'Entretenimento ao Vivo', paragraphs: [
           'O programa de entretenimento é um dos pontos altos. Danças folclóricas turcas em trajes tradicionais coloridos, um energético espetáculo de dança oriental, música turca ao vivo por uma banda, seguida de um set de DJ que anima a noite. Alguns cruzeiros incluem também a dança Mevlevi sema (dervixe giratório) — uma tradição sufista com séculos de história. O espetáculo dura aproximadamente 90 minutos.'
@@ -76,7 +76,7 @@ module.exports = {
           'O Bósforo Noturno oferece um pacote principal, com bebidas, transfer do hotel e extras para ocasiões especiais:',
           '<ul class="list-disc list-inside space-y-2 text-white/60"><li><strong class="text-white/80">Cruzeiro com Jantar Standard (a partir de €24.30)</strong> — Jantar completo de 4 pratos, refrigerantes, entretenimento ao vivo, danças folclóricas e espetáculo de dança oriental, DJ no convés superior.</li></ul>',
           '<p class="text-white/60 text-sm">Suplementos: 2 copos de bebida alcoólica (€10/pessoa), transfer do hotel (€5/pessoa), decoração de mesa romântica (€15/reserva). Pagamento a bordo — sem pagamento antecipado.</p>',
-          'Crianças dos 0 aos 3 anos são grátis, dos 4 aos 8 anos pagam metade do preço. Não é necessário pagamento antecipado — paga a bordo, pelo que reservar com antecedência não implica qualquer risco.'
+          'Crianças dos 0 aos 3 anos são grátis, dos 4 aos 9 anos pagam metade do preço. Não é necessário pagamento antecipado — paga a bordo, pelo que reservar com antecedência não implica qualquer risco.'
         ]},
         { h2: 'Como Reservar', paragraphs: [
           'A forma mais simples de reservar é pelo WhatsApp. Envie uma mensagem com a data pretendida, o número de hóspedes e o pacote de interesse. A nossa equipa responde em minutos, confirma a disponibilidade e envia todos os detalhes — ponto de encontro, hora de embarque e o que esperar. Sem formulários de pagamento online, sem depósito. Paga em dinheiro ou cartão a bordo.'
@@ -117,15 +117,15 @@ module.exports = {
     },
     'bosphorus-cruise-with-kids-family': {
       pageTitle: 'Cruzeiro no Bósforo com Crianças — Guia para Famílias',
-      pageDescription: 'O cruzeiro com jantar é adequado para crianças? Sim. 0-3 anos grátis, 4-8 anos meio preço. Guia completo de planeamento para famílias.',
+      pageDescription: 'O cruzeiro com jantar é adequado para crianças? Sim. 0-3 anos grátis, 4-9 anos €5 de desconto. Guia completo de planeamento para famílias.',
       h1: 'Cruzeiro no Bósforo com Crianças — Guia para Famílias',
       sections: [
         { paragraphs: [
           'Uma das perguntas mais frequentes das famílias que planeiam visitar Istambul é: "O cruzeiro com jantar no Bósforo é adequado para crianças?" A resposta é um sim convicto. De facto, muitas famílias contam-nos que o cruzeiro foi o ponto alto de toda a viagem — não apenas para os pais, mas também para as crianças.'
         ]},
         { h2: 'Política de Idades e Preços', paragraphs: [
-          'A estrutura de preços para crianças é simples e amiga das famílias. Crianças dos 0 aos 3 anos são completamente grátis — sem bilhete, sem custos. Crianças dos 4 aos 8 anos pagam metade do preço de adulto. Crianças com 9 ou mais anos pagam o mesmo que um adulto.',
-          'Para uma família de 4 pessoas com 2 crianças entre os 4 e os 8 anos, o total do cruzeiro com jantar no Bósforo no pacote Standard é €72,90 — 2 adultos (€24,30 cada) mais 2 crianças (€12,15 cada). Um ótimo valor para uma noite memorável na água com toda a família.'
+          'A estrutura de preços para crianças é simples e amiga das famílias. Crianças dos 0 aos 3 anos são completamente grátis — sem bilhete, sem custos. Crianças dos 4 aos 9 anos pagam metade do preço de adulto. Crianças com 9 ou mais anos pagam o mesmo que um adulto.',
+          'Para uma família de 4 pessoas com 2 crianças entre os 4 e os 9 anos, o total do cruzeiro com jantar no Bósforo no pacote Standard é €87,20 — 2 adultos (€24,30 cada) mais 2 crianças (€19,30 cada). Um ótimo valor para uma noite memorável na água com toda a família.'
         ]},
         { h2: 'É Seguro para Crianças?', paragraphs: [
           'Os barcos utilizados para as excursões de jantar no Bósforo são embarcações comerciais grandes e estáveis, não pequenos barcos particulares. O convés inferior tem uma zona de jantar fechada; o convés superior tem corrimões e barreiras de segurança adequados. O Bósforo é um estreito com águas relativamente calmas e a viagem é suave e estável.',
@@ -136,13 +136,13 @@ module.exports = {
           'O simples facto de estar num barco é emocionante para as crianças. Ver as pontes iluminadas a passar por cima, avistar a Torre da Donzela, contemplar as luzes da cidade a partir da água — são experiências verdadeiramente emocionantes para olhos jovens.'
         ]},
         { h2: 'O Menu para Crianças', paragraphs: [
-          'O menu do jantar é um conjunto de pratos turcos e internacionais. Não existe um menu infantil dedicado, mas as opções são suficientemente variadas para que a maioria das crianças encontre algo que goste. Pão, arroz, frango grelhado, saladas — tudo com sabores suaves e familiares. Os mezze frios incluem homus e queijo, e a sobremesa (halva de sêmola) é popular entre os hóspedes mais jovens.'
+          'O menu do jantar é um conjunto de pratos turcos e internacionais. Não existe um menu infantil dedicado, mas as opções são suficientemente variadas para que a maioria das crianças encontre algo que goste. Pão, arroz, frango grelhado, saladas — tudo com sabores suaves e familiares. Os mezze frios incluem homus e queijo, e a sobremesa (doce especial de sêmola) é popular entre os hóspedes mais jovens.'
         ]},
         { h2: 'Dicas para Famílias', paragraphs: [
           '<ul class="list-disc list-inside space-y-2 text-white/60"><li><strong class="text-white/80">Leve um casaco leve para cada criança</strong> — o convés superior pode ficar fresco.</li><li><strong class="text-white/80">Chegue cedo para uma boa mesa</strong> — chegar 20 minutos mais cedo ajuda no Standard.</li><li><strong class="text-white/80">Leve pequenas distracções</strong> — um livro para colorir ou tablet pode ajudar para crianças muito pequenas.</li><li><strong class="text-white/80">Use as instalações sanitárias antes de embarcar</strong> — o barco tem casa de banho mas pode estar lotada nas horas de pico.</li></ul>'
         ]},
         { h2: 'Como Reservar como Família', paragraphs: [
-          'A reserva é simples. Envie uma mensagem pelo WhatsApp com o número de adultos, o número e as idades das crianças, a data pretendida e o pacote de interesse. A nossa equipa calculará o total (lembre-se: 0-3 anos grátis, 4-8 anos meio preço) e confirmará a disponibilidade instantaneamente. Sem pagamento antecipado — paga a bordo.',
+          'A reserva é simples. Envie uma mensagem pelo WhatsApp com o número de adultos, o número e as idades das crianças, a data pretendida e o pacote de interesse. A nossa equipa calculará o total (lembre-se: 0-3 anos grátis, 4-9 anos €5 de desconto) e confirmará a disponibilidade instantaneamente. Sem pagamento antecipado — paga a bordo.',
           'O cruzeiro no Bósforo é uma das poucas experiências de Istambul que realmente funciona para todas as idades. As suas crianças vão adorar as luzes, a música e a aventura de estar na água à noite.'
         ]}
       ]
@@ -211,7 +211,7 @@ module.exports = {
           'Os três momentos mais fotografados no cruzeiro: a passagem sob a Ponte do Bósforo (com a luz diretamente acima a refletir-se na água), a vista da Torre da Donzela isolada no meio do estreito, e a vista panorâmica do horizonte da cidade velha com mesquitas e minaretes alinhados. O convés superior oferece as melhores vistas sem obstáculos para fotografar.'
         ]},
         { h2: '9. As Crianças São Bem-vindas', paragraphs: [
-          'O cruzeiro com jantar no Bósforo é adequado para famílias. Crianças dos 0 aos 3 anos são grátis, crianças dos 4 aos 8 anos pagam meio preço. O programa de entretenimento — especialmente as danças folclóricas e a música — tende a cativar as crianças.'
+          'O cruzeiro com jantar no Bósforo é adequado para famílias. Crianças dos 0 aos 3 anos são grátis, crianças dos 4 aos 9 anos têm €5 de desconto. O programa de entretenimento — especialmente as danças folclóricas e a música — tende a cativar as crianças.'
         ]},
         { h2: '10. Cancelamento Gratuito — Sempre', paragraphs: [
           'A vida traz surpresas. O tempo muda, a energia baixa, os planos alteram-se. O Bósforo Noturno oferece sempre cancelamento gratuito. Quer cancele com uma semana de antecedência ou poucas horas antes da partida, não há qualquer custo.',

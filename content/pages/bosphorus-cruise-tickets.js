@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Cruise Tickets from €{p.dinnerStd} — Pay on Boat, No Prepayment',
-    description: 'Direct Bosphorus cruise tickets from €{p.dinnerStd}/person. No prepayment, pay on boat. Free cancellation. 11,317 reviews. Tonight\'s seats often sell out — book before 20:00.'
+    description: 'Direct Bosphorus cruise tickets from €{p.dinnerStd}/person. No prepayment, pay on boat. Free cancellation. 11,317+ guests. Tonight\'s seats often sell out — book before 20:00.'
   },
 
   hero: {
@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **Bosphorus cruise ticket** process: fill the wizard on this page in under 1 minute (date, guest count, contact), we confirm via WhatsApp / Telegram instantly, you show up at Kabataş Pier at 20:00, pay on the boat, enjoy the 3-hour dinner cruise. No physical ticket to print, no voucher to email — the confirmation is your ticket.',
 
-    'Whether you\'re booking tonight\'s dinner cruise or reserving for a specific date next week, **Bosphorus cruise tickets direct** is the fastest way. 4.8★ rated, TÜRSAB-licensed (A-17672), halal-certified menu, and supports hotel transfer and alcohol add-ons.'
+    'Whether you\'re booking tonight\'s dinner cruise or reserving for a specific date next week, **Bosphorus cruise tickets direct** is the fastest way. 4.9★ rated, TÜRSAB-licensed (A-17672), halal-certified menu, and supports hotel transfer and alcohol add-ons.'
   ],
 
   highlights: [

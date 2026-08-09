@@ -15,15 +15,15 @@ module.exports = {
     hero: {
       h1: 'Croazieră cu Cină pe Bosfor în Istanbul',
       subtitle: 'Trei ore de divertisment live, o cină turcească generoasă cu multiple feluri și cele mai impresionante priveliști nocturne ale Bosforului.',
-      badge: '4,8★ · 11.317 recenzii'
+      badge: '4,9★ · 11.317+ oaspeți'
     },
     intro: [
-      '**Croaziera cu cină pe Bosfor** este cea mai iconică experiență de seară din Istanbul. Turul nostru pleacă la ora 20:00 de la debarcaderul Kabataș și navighează pe sub podurile Bosfor și Fatih Sultan Mehmet iluminate, oferindu-vă o cină turcească cu multiple feluri, dansuri populare live, dans oriental și un set DJ care animă puntea până la 23:00.',
-      'Spre deosebire de vapoarele obișnuite care populează peisajul nocturn al Istanbulului, **croaziera noastră cu cină pe Bosfor** este licențiată TÜRSAB (A-17672) și evaluată cu 4,8★ de peste 11.317 călători. Menținem grupurile mici și serviciul călduros — și, pentru că plătiți pe vapor, nu există niciun risc în a face rezervarea în avans.',
+      '**Croaziera cu cină pe Bosfor** este cea mai iconică experiență de seară din Istanbul. Turul nostru pleacă la ora 20:00 de la debarcaderul Kabataș și navighează pe sub podurile Bosfor și Fatih Sultan Mehmet iluminate, oferindu-vă o cină turcească cu multiple feluri, dansuri populare live, dans oriental și un set DJ care animă puntea până la 23:45.',
+      'Spre deosebire de vapoarele obișnuite care populează peisajul nocturn al Istanbulului, **croaziera noastră cu cină pe Bosfor** este licențiată TÜRSAB (A-17672) și evaluată cu 4,9★ de peste 11.317 călători. Menținem grupurile mici și serviciul călduros — și, pentru că plătiți pe vapor, nu există niciun risc în a face rezervarea în avans.',
       'Fie că sărbătoriți o aniversare, căutați o seară premium în Istanbul pentru familia dumneavoastră, fie că doriți cea mai fotogenică tranziție apus-noapte a orașului — aceasta este croaziera cu cină recomandată în primul rând de localnicii din Istanbul.'
     ],
     highlights: [
-      { title: 'Cină turcească cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald (börek), alegere de fel principal (somon / biban de mare / pui la frigărui / frigărui de vită / vegetarian), halva de gris la desert, băuturi răcoritoare nelimitate.' },
+      { title: 'Cină turcească cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald (börek), alegere de fel principal (somon / biban de mare / pui la frigărui / frigărui de vită / vegetarian), desert special din griș de gris la desert, băuturi răcoritoare nelimitate.' },
       { title: 'Dansuri populare live, dans oriental și DJ', desc: 'Opt numere: Oba Dombra, spectacol Mevlana sema, Sarı Gelin, potpuriu azer, dans oriental clasic, potpuriu anatolian și dansul cu cuțite georgiano-caucazian — apoi saxofon live și un set DJ pe durata întregii croaziere.' },
       { title: 'Traseul complet nocturn al Bosforului', desc: 'Kabataș → Dolmabahçe → Palatul Çırağan → Moscheea Ortaköy → Bebek → Rumeli Hisarı → Podul FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataș.' },
       { title: 'De la €{p.dinnerStd}/persoană — plata pe vapor', desc: 'Croazieră cu cină €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
@@ -56,7 +56,7 @@ module.exports = {
     intro: [
       '**Croaziera pe Bosfor cu copii** este cea mai familiaristă opțiune de seară din Istanbul. Găzduim zeci de familii în fiecare seară — am conceput fiecare detaliu pentru ca cei mici să se simtă confortabil: zonă interioară acoperită ca să stea la căldură, un meniu accesibil pentru copii (pui simplu la grătar, paste, băuturi răcoritoare nelimitate) și îmbarcare devreme pentru a evita crizele de nervi de la ore târzii.',
       'Spre deosebire de vapoarele doar pentru adulți, **croaziera noastră cu cină pe Bosfor pentru familii** rămâne caldă și incluzivă. **Copiii 0-3 ani sunt gratuit** (transfer inclus), 4-9 ani beneficiază de **€5 reducere**, 10+ ani plătesc preț întreg — fără costuri ascunse. Dansurile populare live, dansul oriental și spectacolul sema sunt un divertisment delicat pentru familie, nu un club de noapte.',
-      'Fie că veniți la Istanbul pentru un weekend prelungit cu copilul mic, fie că aduceți adolescenții în prima lor călătorie europeană — acesta este turul recomandat de familiile din Istanbul. Sigur, certificat halal, licențiat TÜRSAB și evaluat cu 4,8★ de peste 11.317 călători.'
+      'Fie că veniți la Istanbul pentru un weekend prelungit cu copilul mic, fie că aduceți adolescenții în prima lor călătorie europeană — acesta este turul recomandat de familiile din Istanbul. Sigur, certificat halal, licențiat TÜRSAB și evaluat cu 4,9★ de peste 11.317 călători.'
     ],
     highlights: [
       { title: '0-3 ani complet gratuit', desc: 'Fără taxe pentru bebeluși și copii mici. 4-9 ani plătesc €5 din tariful pentru adulți. De la 9 ani în sus, oaspete cu preț întreg. Transparent, fără surprize.' },
@@ -92,7 +92,7 @@ module.exports = {
     intro: [
       '**Croaziera romantică pe Bosfor** este cea mai iconică seară pentru cupluri din Istanbul. În timp ce soarele apune deasupra Palatului Dolmabahçe și Podul Bosfor se aprinde în culori, dumneavoastră și partenerul împărțiți o cină turcească cu multiple feluri la o masă privată — cu lumânări, flori proaspete și vioară live plutind pe punte.',
       'Aranjamentul nostru pentru masă romantică (+€{p.romantic}/masă) transformă orice loc într-un moment special: trandafiri roșii, lumânări strălucitoare, un bilețel de bun venit scris de mână. Adăugați pachetul de 2 pahare de alcool pentru vin sub stele (+€{p.alcohol2}/persoană) sau păstrați-l simplu cu băuturile răcoritoare incluse. Indiferent de alegere, echipajul se ocupă discret de restul.',
-      'Fie că sărbătoriți o aniversare, planificați o surpriză pentru partener sau pur și simplu doriți o seară de neuitat în cel mai romantic oraș al Europei — acesta este turul preferat de cuplurile din Istanbul. Evaluare 4,8★, licențiat TÜRSAB și — cel mai important — plata pe vapor, deci promiteți doar seara în sine.'
+      'Fie că sărbătoriți o aniversare, planificați o surpriză pentru partener sau pur și simplu doriți o seară de neuitat în cel mai romantic oraș al Europei — acesta este turul preferat de cuplurile din Istanbul. Evaluare 4,9★, licențiat TÜRSAB și — cel mai important — plata pe vapor, deci promiteți doar seara în sine.'
     ],
     highlights: [
       { title: 'Masă romantică la lumina lumânărilor', desc: 'Adăugați aranjamentul pentru masă romantică cu +€{p.romantic}/masă: trandafiri roșii proaspeți, lumânări strălucitoare, petale de trandafir pe față de masă și felicitare scrisă de mână. Fotografii incluse.' },
@@ -128,7 +128,7 @@ module.exports = {
     intro: [
       '**Croaziera halal pe Bosfor** este cea mai respectuoasă croazieră cu cină din Istanbul pentru călătorii musulmani. Fiecare carne servită pe vaporul nostru — somon, biban de mare, pui la frigărui, frigărui de vită — este **certificată halal** de la furnizori aprobați. Servim același meniu fiecărui oaspete; fără „secțiune halal" separată, pentru că întregul vapor este halal în mod implicit.',
       'Alcoolul este **un supliment opțional** — niciodată impus oaspeților, iar aranjamentul meselor separă în mod natural oaspeții care preferă o masă fără alcool. Pentru oaspeții care doresc pachetul de alcool de 2 pahare (+€{p.alcohol2}/persoană), este acolo, dar băuturile răcoritoare nelimitate incluse (apă, cola, suc) sunt suficiente pentru majoritatea familiilor musulmane. Echipajul nostru este instruit să respecte preferințele dumneavoastră fără presupuneri.',
-      '**Croaziera prietenoasă halal pe Bosfor** contează pentru călătorii din Arabia Saudită, EAU, Kuweit, Qatar, Iran, Malaezia, Indonezia, Pakistan și Maroc care doresc cea mai iconică seară din Istanbul fără compromisuri. Licențiat TÜRSAB, 4,8★ și plata pe vapor — nu promiteți nimic până nu sunteți sigur că experiența vă îndeplinește standardele.'
+      '**Croaziera prietenoasă halal pe Bosfor** contează pentru călătorii din Arabia Saudită, EAU, Kuweit, Qatar, Iran, Malaezia, Indonezia, Pakistan și Maroc care doresc cea mai iconică seară din Istanbul fără compromisuri. Licențiat TÜRSAB, 4,9★ și plata pe vapor — nu promiteți nimic până nu sunteți sigur că experiența vă îndeplinește standardele.'
     ],
     highlights: [
       { title: 'Meniu 100% certificat halal', desc: 'Toată carnea (somon, biban de mare, pui la frigărui, frigărui de vită) este certificată halal de la furnizori aprobați. Bucătăria urmează pregătirea halal. Fără produse din porc sau aditivi non-halal. Opțiunile vegetariene sunt întotdeauna disponibile.' },
@@ -142,7 +142,7 @@ module.exports = {
       { q: 'Această croazieră este potrivită pentru familii musulmane cu copii?', a: 'Da — este una dintre cele mai respectate croaziere pentru familii din Istanbul. Divertismentul este modest (dansuri populare, sema, muzică turcească), copiii sub 3 ani sunt gratuit, 4-9 ani beneficiază de €5 reducere. Fără atmosferă de club de noapte. Familiile din Golf, Indonezia, Malaezia, Pakistan și Maroc rezervă regulat această croazieră.' },
       { q: 'Pot să mă rog pe vapor?', a: 'Nu există o sală de rugăciune dedicată pe vapor, dar vă recomandăm să vă rugați înainte de îmbarcarea de la 20:00 (rugăciunea maghrib coincide adesea cu acest interval). Debarcaderul Kabataș are facilități de rugăciune. Dacă trebuie să vă rugați în timpul navigației 21:00-00:00 (ișa), vorbiți cu echipajul — putem aranja un colț liniștit pe punte.' },
       { q: 'Care sunt prețurile pentru o familie musulmană de 4 persoane (2 adulți, 2 copii)?', a: 'Croazieră cu cină: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 reducere 4-9 ani) = €87.20. Dacă copiii sunt sub 3 ani, gratuit: 2 × €{p.dinnerStd} = €48.60. Adăugați €5 transfer de la hotel per adult. Total: €48.60–€92.90 pentru familia de 4 persoane, fără plată în avans, plata pe vapor.' },
-      { q: 'Transferul de la hotel este și el halal?', a: 'Transferul de la hotel este doar o călătorie cu mașina — nu este implicată mâncare sau băutură, deci nu există preocupare halal. Șoferii noștri sunt profesioniști, respectuoși și punctuali. Zonele de transfer acoperă Sultanahmet, Taksim, Beșiktaș, Laleli, Fatih, Şişli și alte 9 cartiere centrale în care călătorii musulmani cazează de obicei.' }
+      { q: 'Transferul de la hotel este și el halal?', a: 'Transferul de la hotel este doar o călătorie cu mașina — nu este implicată mâncare sau băutură, deci nu există preocupare halal. Șoferii noștri sunt profesioniști, respectuoși și punctuali. Zonele de transfer acoperă Sultanahmet, Taksim, Beșiktaș, Laleli, Fatih, Şişli și alte 8 cartiere centrale în care călătorii musulmani cazează de obicei.' }
     ],
     cta: {
       primary: 'Rezervați Croaziera Halal · Plata pe Vapor',
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% REDUCERE · Un meniu, standard premium · Plata pe vas'
     },
     intro: [
-      'Multe vase de pe Bosfor își împart oaspeții în „Standard“ și „VIP“. Noi nu. La bordul navei **AMOR** există un singur meniu de cină, pregătit cu aceeași grijă pentru toți: 10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită), halva de gris și băuturi răcoritoare nelimitate. Întregul program de spectacole în opt numere este de asemenea inclus — Oba Dombra, ceremonia dervișilor rotitori, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ — totul în prețul de €{p.dinnerStd}/persoană.',
+      'Multe vase de pe Bosfor își împart oaspeții în „Standard“ și „VIP“. Noi nu. La bordul navei **AMOR** există un singur meniu de cină, pregătit cu aceeași grijă pentru toți: 10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită), desert special din griș de gris și băuturi răcoritoare nelimitate. Întregul program de spectacole în opt numere este de asemenea inclus — Oba Dombra, ceremonia dervișilor rotitori, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ — totul în prețul de €{p.dinnerStd}/persoană.',
       'Senzația VIP începe de la masa ta. Dacă vrei să fii cât mai aproape de scenă și de priveliști, adaugă **masa privată lângă scenă** (+€{p.romantic}/masă), iar locul îți este rezervat din timp — cel mai bun unghi pentru derviși, dansurile populare și Bosforul luminat. Alegerea preferată a cuplurilor, a aniversărilor și a pasionaților de fotografie.',
       'AMOR este o navă modernă: 42 de metri, 3 punți, până la 400 de oaspeți, încălzită iarna și climatizată vara. Traseul de 3 ore pleacă din Kabataş (îmbarcare de la 20:00, plecare 21:00, întoarcere 00:00) și trece pe lângă Dolmabahçe, moscheea Ortaköy, fortăreața Rumeli și luminile podului peste Bosfor. Licență TÜRSAB (A-17672), 4,9★ pe Google. Fără plată în avans — plătești pe vas, cu anulare gratuită până cu 2 ore înainte de plecare.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Vindeți un „pachet VIP“? Care e diferența față de Standard?', a: 'Nu vindem un pachet VIP separat — există un singur meniu, servit tuturor la același standard premium. Ceea ce numim „experiență VIP“ înseamnă personalizarea serii tale: masă privată lângă scenă (+€{p.romantic}/masă), servire atentă la masă și băuturi opționale. Croaziera durează 3 ore, €{p.dinnerStd}/persoană.' },
       { q: '€{p.dinnerStd} este într-adevăr o reducere de 40%?', a: 'Da — prețul nostru de listă este €{p.dinnerStdOriginal}/persoană. €{p.dinnerStd} este tariful pentru rezervare directă, fără comisioane de intermediari. Plătești pe vas și nu există nicio plată în avans.' },
-      { q: 'Ce conține meniul?', a: '10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită) și halva de gris la desert, cu băuturi răcoritoare nelimitate. Programul în opt numere este inclus: Oba Dombra, ceremonia dervișilor, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ.' },
+      { q: 'Ce conține meniul?', a: '10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită) și desert special din griș de gris la desert, cu băuturi răcoritoare nelimitate. Programul în opt numere este inclus: Oba Dombra, ceremonia dervișilor, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ.' },
       { q: 'Alcoolul este inclus?', a: 'Nu — alcoolul este un supliment separat: 2 pahare de vin, bere, rachiu, vodcă, whisky, gin și altele locală la +€{p.alcohol2}/persoană. Băuturile răcoritoare sunt incluse nelimitat și gratuit. Băuturile premium din import se facturează separat pe vas.' },
       { q: 'Cum îmi garantez o masă lângă scenă?', a: 'Este suficient să selectezi suplimentul „masă privată lângă scenă“ (+€{p.romantic}/masă) la rezervare — masa este rezervată pe numele tău. Cele mai bune poziții se ocupă prin rezervări din timp, așa că îți recomandăm să o adaugi înainte de ziua croazierei.' },
       { q: 'Ce fel de vas este?', a: 'AMOR — o navă de pasageri modernă de 42 de metri, cu 3 punți și o capacitate de 400 de oaspeți, încălzită iarna și climatizată vara. Plecare din portul Kabataş: îmbarcare 20:00, plecare 21:00, întoarcere 00:00. Traseu: Dolmabahçe, Ortaköy, fortăreața Rumeli, Beylerbeyi și luminile podului peste Bosfor.' }
@@ -200,7 +200,7 @@ module.exports = {
     intro: [
       '**Croaziera privată pe Bosfor** înseamnă că întregul vapor este al dumneavoastră — fără alți oaspeți, fără mese partajate, fără ring de dans comun. Perfect pentru reuniuni de familie, cine corporate, petreceri aniversare, burlăcițe sau recepții de nuntă. Vaporul, echipajul, meniul, divertismentul și programul se adaptează grupului dumneavoastră.',
       '**Închirierea noastră privată pe Bosfor** susține grupuri **de la 25 la 80 de oaspeți**. Grupurile mai mici pot încă solicita experiența privată — oferim un preț minim care acoperă costul de operare al vaporului. Grupurile mai mari (dimensiune nuntă) primesc prețuri personalizate și includ de obicei decor special, formație live, servirea tortului și durată extinsă (4-5 ore în loc de 3 standard).',
-      'Fie că organizați un eveniment corporate pentru clienți, o petrecere aniversară de 50 de ani sau o recepție de nuntă sub cele mai iconice poduri ale Istanbulului, aceasta este **croaziera privată de încredere a organizatorilor de evenimente din Istanbul**. Evaluare 4,8★, licențiat TÜRSAB, echipaj complet vorbitor de engleză și flexibilitate totală — rută, meniu, muzică, program.'
+      'Fie că organizați un eveniment corporate pentru clienți, o petrecere aniversară de 50 de ani sau o recepție de nuntă sub cele mai iconice poduri ale Istanbulului, aceasta este **croaziera privată de încredere a organizatorilor de evenimente din Istanbul**. Evaluare 4,9★, licențiat TÜRSAB, echipaj complet vorbitor de engleză și flexibilitate totală — rută, meniu, muzică, program.'
     ],
     highlights: [
       { title: 'Întregul vapor, doar pentru dumneavoastră', desc: 'Fără alți oaspeți. Grupul dumneavoastră deține fiecare punte, fiecare masă. Stabiliți propria muzică, cod vestimentar, program. Intimitatea contează — o respectăm.' },
@@ -236,11 +236,11 @@ module.exports = {
     intro: [
       '**Croaziera pe Bosfor pentru cupluri** este seara preferată din Istanbul. Nu fiecare cuplu sărbătorește o aniversare — uneori sunteți doar în cel mai romantic oraș al lumii și vreți o seară minunată împreună. Această croazieră oferă: masă privată pentru doi, cină turcească lentă cu multiple feluri, vioară live și muzică acustică în timpul cinei și Podul Bosfor iluminat trecând încet.',
       'Atmosfera este **caldă, dar nu excesiv romantică** — fără muzică de cerere în căsătorie obligatorie, fără aplauze coordonate stânjenitoare pentru „proaspătul căsătorit". Mâncați, beți, vorbiți, priviți luminile Istanbulului. Dacă doriți să adăugați aranjamentul pentru masă romantică (lumânări, trandafiri, +€{p.romantic}), excelent — altfel, doar cina în sine este deja specială.',
-      'Fie că sunteți în Istanbul 3 zile cu partenerul, sărbătoriți un eveniment modest sau planificați o călătorie exploratorie pentru o viitoare cerere în căsătorie — **croaziera pe Bosfor pentru cupluri** vă oferă 3 ore de seară împreună în unul dintre cele mai fotografiate orașe ale lumii. 4,8★, plata pe vapor, anulare gratuită.'
+      'Fie că sunteți în Istanbul 3 zile cu partenerul, sărbătoriți un eveniment modest sau planificați o călătorie exploratorie pentru o viitoare cerere în căsătorie — **croaziera pe Bosfor pentru cupluri** vă oferă 3 ore de seară împreună în unul dintre cele mai fotografiate orașe ale lumii. 4,9★, plata pe vapor, anulare gratuită.'
     ],
     highlights: [
       { title: 'Masă privată pentru doi', desc: 'Masă privată pentru 2 persoane, nu partajată. Prioritate la mesele de la fereastră pentru cupluri. Fotografii la apus și pe Bosforul nocturn chiar în afara ferestrei dumneavoastră.' },
-      { title: 'Cină lentă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, biban de mare, pui la frigărui, frigărui de vită sau vegetarian), halva de gris la desert. Servit lent pe parcursul a 3 ore — nu sunteți grăbiți.' },
+      { title: 'Cină lentă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, biban de mare, pui la frigărui, frigărui de vită sau vegetarian), desert special din griș de gris la desert. Servit lent pe parcursul a 3 ore — nu sunteți grăbiți.' },
       { title: 'Vioară live și muzică ușoară', desc: 'Vioara live și muzica turcească acustică în timpul cinei creează o atmosferă intimă, potrivită conversației. Apoi intervine DJ-ul pentru cuplurile care vor să danseze.' },
       { title: 'Suplimente pentru seri speciale', desc: 'Aranjament pentru masă romantică (lumânări, trandafiri): +€{p.romantic}. 2 pahare de alcool (vin, bere, rachiu, vodcă, whisky, gin și altele): +€{p.alcohol2}/persoană. Transfer de la hotel (dus-întors): +€{p.transfer}/persoană. Alegeți ce se potrivește serii dumneavoastră.' }
     ],
@@ -272,12 +272,12 @@ module.exports = {
     intro: [
       'Experiența **croazierei la apus pe Bosfor** în Istanbul se rezumă la un singur lucru: tranziția. Îmbarcarea începe la debarcaderul Kabataş de la 20:00 — iar în serile lungi din mai până în august, ora de aur se desfășoară în timp ce vă instalați pe punte. Soarele apune deasupra minaretelor malului european chiar în jurul plecării de la 21:00, așa că îl priviți de pe apă: Palatul Dolmabahçe scăldat în auriu, Moscheea Ortaköy ca o siluetă pe cerul strălucitor.',
       '**Croaziera noastră pe Bosfor de la apus la noapte** include o cină turcească completă — 10 sortimente de mezeluri, aperitiv cald, fel principal la alegere, desert — servită în timp ce orașul își aprinde luminile. Când sosește desertul, navigați deja sub Podul Bosfor iluminat, cu 30 de milioane de lumini reflectate în apa întunecată. Trecerea de la amurg la noapte deplină, totul într-o singură croazieră de 3 ore, este esența întregii experiențe.',
-      'Fie că sunteți fotograf în căutarea ultimei lumini, un cuplu care vrea acea „fotografie-amintire din Istanbul" sau la prima vizită și doriți seara clasică pe apă, aceasta este **croaziera cu cină la apus pe Bosfor** pe care localnicii o recomandă vizitatorilor. De la €{p.dinnerStd}/persoană, evaluare 4,8★, licențiat TÜRSAB, plata pe vapor — fără plată în avans.'
+      'Fie că sunteți fotograf în căutarea ultimei lumini, un cuplu care vrea acea „fotografie-amintire din Istanbul" sau la prima vizită și doriți seara clasică pe apă, aceasta este **croaziera cu cină la apus pe Bosfor** pe care localnicii o recomandă vizitatorilor. De la €{p.dinnerStd}/persoană, evaluare 4,9★, licențiat TÜRSAB, plata pe vapor — fără plată în avans.'
     ],
     highlights: [
       { title: 'Apusuri de vară chiar la plecare', desc: 'Din mai până în august, soarele apune la Istanbul între aproximativ 20:15 și 20:45 — îmbarcarea la 20:00 vă oferă ora de aur pe punte, iar plecarea de la 21:00 vă prinde pe apă chiar în momentul apusului. Camera pregătită — aceasta este fotografia.' },
       { title: 'Ora albastră până în noapte deplină', desc: 'Nu doar apus — croaziera navighează prin amurg până în Bosforul complet iluminat. Lumină aurie, ora albastră, apoi 30 de milioane de lumini ale podurilor pe apa întunecată: trei faze de lumină într-o singură seară.' },
-      { title: 'Cină completă în timpul croazierei', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, doradă, pui la frigărui, frigărui de vită, vegetarian), halva de gris, băuturi răcoritoare nelimitate — servite în timp ce se aprind luminile orașului.' },
+      { title: 'Cină completă în timpul croazierei', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, doradă, pui la frigărui, frigărui de vită, vegetarian), desert special din griș de gris, băuturi răcoritoare nelimitate — servite în timp ce se aprind luminile orașului.' },
       { title: 'Dolmabahçe, Ortaköy, Podul Bosfor — toate strălucesc', desc: 'Traseul trece pe lângă Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı și Palatul Beylerbeyi exact când li se aprind luminile. Fiecare reper în cea mai bună lumină.' }
     ],
     faq: [
@@ -310,12 +310,12 @@ module.exports = {
     intro: [
       '**Turul nocturn pe Bosfor** este cea mai recomandată activitate de seară din Istanbul. Iată de ce: după întuneric, Bosforul se transformă. Podul Bosfor alternează între albastru, violet și auriu. Palatul Dolmabahçe strălucește în galben cald. Moscheea Ortaköy se reflectă perfect în apa neagră. Fiecare reper al Istanbulului atinge punctul culminant de dramatism noaptea.',
       '**Turul nostru nocturn pe Bosfor cu cină** ambalează seara iconică completă: 3 ore pe apă (21:00-00:00), cină turcească cu multiple feluri, un program folcloric live în opt numere (Oba Dombra, sema, dansuri populare anatoliene și azere, dans oriental, dans cu cuțite caucazian), muzică live și set de saxofon și DJ care animă puntea până la sfârșitul nopții. Fiecare oaspete primește același program — fără opțiune „de bază" care sare cele mai bune părți.',
-      'Fie că este prima dumneavoastră vizită la Istanbul și căutați „singurul lucru pe care trebuie să-l faceți noaptea", fie că ați mai fost aici și doriți cele mai fotogenice 3 ore din oraș, acesta este **turul nocturn pe Bosfor** evaluat cu 4,8★ de peste 11.317 călători. Licențiat TÜRSAB, plata pe vapor, fără plată în avans.'
+      'Fie că este prima dumneavoastră vizită la Istanbul și căutați „singurul lucru pe care trebuie să-l faceți noaptea", fie că ați mai fost aici și doriți cele mai fotogenice 3 ore din oraș, acesta este **turul nocturn pe Bosfor** evaluat cu 4,9★ de peste 11.317 călători. Licențiat TÜRSAB, plata pe vapor, fără plată în avans.'
     ],
     highlights: [
       { title: 'Bosforul iluminat la punctul culminant de dramatism', desc: 'Podul Bosfor își schimbă culoarea (albastru, violet, auriu), palatele strălucesc galben, Moscheea Ortaköy se reflectă în apa neagră. 21:00-00:00 iluminare maximă pentru toate reperele Istanbulului.' },
       { title: 'Spectacol turcesc tradițional pe vapor', desc: 'Opt numere: Oba Dombra, spectacol sema, Sarı Gelin, potpuriu azer, dans oriental, potpuriu anatolian și dansul cu cuțite georgiano-caucazian, apoi saxofon live și set DJ. 40 de minute de spectacol, apoi muzica + cina continuă.' },
-      { title: 'Cină completă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald (börek), fel principal (somon, biban de mare, pui la frigărui, frigărui de vită, vegetarian — alegerea dumneavoastră), desert (halva de gris), băuturi răcoritoare nelimitate. Certificat halal.' },
+      { title: 'Cină completă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald (börek), fel principal (somon, biban de mare, pui la frigărui, frigărui de vită, vegetarian — alegerea dumneavoastră), desert (desert special din griș de gris), băuturi răcoritoare nelimitate. Certificat halal.' },
       { title: 'Traseu complet pe Bosfor', desc: 'Kabataș → Dolmabahçe → Palatul Çırağan → Moscheea Ortaköy → Bebek → Rumeli Hisarı → Podul Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Turnul Fecioarei → Kabataș.' }
     ],
     faq: [
@@ -336,20 +336,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Croazieră Cină Istanbul de la €{p.dinnerStd} — Tur Nocturn Bosfor',
-      description: 'Croazieră cu cină 3 ore în Istanbul pe Bosfor. Meniu turcesc multifel, folclor live, poduri iluminate. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Croazieră cu cină 3 ore în Istanbul pe Bosfor. Meniu turcesc multifel, folclor live, poduri iluminate. Anulare gratuită, plată la bord. 11.317+ oaspeți.'
     },
     hero: {
       h1: 'Croazieră cu Cină Istanbul',
       subtitle: 'Cea mai bună croazieră cu cină din Istanbul — 3 ore pe Bosfor, cină turcească cu multiple feluri, divertisment live și priveliștile nocturne ale celor mai iconice repere ale orașului.',
-      badge: '4,8★ · 11.317 recenzii · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ oaspeți · TÜRSAB A-17672'
     },
     intro: [
       'Căutați o **croazieră cu cină în Istanbul**? Ați găsit ce recomandă majoritatea călătorilor. Seara noastră de 3 ore pe Bosfor combină o cină turcească completă cu multiple feluri, dansuri populare live și cele mai fotogenice priveliști ale orașului — totul de pe un vapor confortabil care pleacă la ora 21:00 de la debarcaderul Kabataș.',
       'Experiența **croazierei cu cină Istanbul**: urcați la 20:00, vă așezați, priviți Palatul Dolmabahçe în timp ce plecăm, cina începe când ne apropiem de Moscheea Ortaköy, spectacolul începe (sema, dansuri populare, oriental), iar până la desert sunteți sub Podul Bosfor iluminat. Până la miezul nopții vă întoarceți la Kabataș cu un colaj iconic de fotografii și stomacul plin.',
-      '€{p.dinnerStd}/persoană (fost €{p.dinnerStdOriginal}). Plata pe vapor — fără plată în avans, fără risc. Licențiat TÜRSAB A-17672, evaluat cu 4,8★ de peste 11.317 călători.'
+      '€{p.dinnerStd}/persoană (fost €{p.dinnerStdOriginal}). Plata pe vapor — fără plată în avans, fără risc. Licențiat TÜRSAB A-17672, evaluat cu 4,9★ de peste 11.317 călători.'
     ],
     highlights: [
-      { title: 'Cină turcească completă cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui la frigărui/frigărui de vită/vegetarian), halva de gris. Certificat halal. Băuturi răcoritoare nelimitate incluse.' },
+      { title: 'Cină turcească completă cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui la frigărui/frigărui de vită/vegetarian), desert special din griș de gris. Certificat halal. Băuturi răcoritoare nelimitate incluse.' },
       { title: 'Spectacol de dansuri populare turcești live', desc: 'Opt numere: Oba Dombra, spectacol sema, Sarı Gelin, potpuriu azer, dans oriental, potpuriu anatolian, dans cu cuțite georgiano-caucazian, apoi saxofon live și DJ. 40 de minute de spectacol, muzica de fundal continuă.' },
       { title: 'Traseul complet nocturn pe Bosfor', desc: 'Tur de 3 ore: Dolmabahçe, Çırağan, Moscheea Ortaköy, Podul Bosfor, Bebek, Rumeli Hisarı, Podul FSM, Beylerbeyi, Üsküdar, Turnul Fecioarei. Ambele maluri, european și asiatic.' },
       { title: 'De la €{p.dinnerStd} — plata pe vapor', desc: 'Croaziera cu cină: €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
@@ -368,7 +368,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Rezervați Croaziera cu Cină · Plata pe Vapor',
-      secondary: '4,8★ · Licențiat TÜRSAB · Anulare gratuită cu 2 ore înainte',
+      secondary: '4,9★ · Licențiat TÜRSAB · Anulare gratuită cu 2 ore înainte',
       tertiary: 'Disponibilitate în Seara Aceasta'
     }
   },
@@ -376,7 +376,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tur Nocturn Istanbul de la €{p.dinnerStd} — Croazieră Cină Bosfor + Spectacol',
-      description: 'Croazieră 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii. Transfer hotel opțional.'
+      description: 'Croazieră 3 ore pe Bosfor cu cină și spectacol live. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317+ oaspeți. Transfer hotel opțional.'
     },
     hero: {
       h1: 'Tur de Istanbul Noaptea',
@@ -386,7 +386,7 @@ module.exports = {
     intro: [
       'Un **tur de Istanbul noaptea** trebuie să facă trei lucruri: să vă arate reperele iconice ale orașului, să vă hrănească bine și să vă distreze. Croaziera noastră cu cină pe Bosfor le face pe toate trei într-o singură seară de 3 ore — și de aceea majoritatea ghidurilor din Istanbul o recomandă ca experiența #1 de tur nocturn.',
       'Traseul **turului de Istanbul noaptea** acoperă cele mai bune repere iluminate: Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor (își schimbă culorile), cartierul Bebek, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, malul asiatic Üsküdar și Turnul Fecioarei în depărtare. Majoritatea tururilor orașului vi le arată din autobuz — noi vi le arătăm de pe apă, de unde sunt cele mai dramatice.',
-      'Cina este inclusă (meniu turcesc cu multiple feluri), spectacol de dansuri populare turcești live, sema, dans oriental și set DJ. Dacă sunteți în Istanbul 2-3 zile, aceasta este singura seară care dă cel mai puternic pumn. 4,8★ de la peste 11.317 călători, plata pe vapor, fără plată în avans.'
+      'Cina este inclusă (meniu turcesc cu multiple feluri), spectacol de dansuri populare turcești live, sema, dans oriental și set DJ. Dacă sunteți în Istanbul 2-3 zile, aceasta este singura seară care dă cel mai puternic pumn. 4,9★ de la peste 11.317 călători, plata pe vapor, fără plată în avans.'
     ],
     highlights: [
       { title: 'Toate priveliștile nocturne iconice din Istanbul', desc: 'Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor iluminat, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, Turnul Fecioarei. Fiecare reper major la iluminarea nocturnă de vârf.' },
@@ -412,17 +412,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Tur cu Barca Istanbul de la €{p.dinnerStd} — Bosfor + Cină + Spectacol',
-      description: 'Tur cu barca 3 ore: croazieră Bosfor, cină turcească completă, folclor live, peisaje nocturne iluminate. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Tur cu barca 3 ore: croazieră Bosfor, cină turcească completă, folclor live, peisaje nocturne iluminate. Anulare gratuită, plată la bord. 11.317+ oaspeți.'
     },
     hero: {
       h1: 'Tur cu Vaporul în Istanbul',
       subtitle: 'Cel mai rezervat tur cu vaporul din Istanbul de către călători — croazieră pe Bosfor cu mâncare turcească, divertisment live și priveliștile iconice ale orașului de pe apă.',
-      badge: '4,8★ · TÜRSAB A-17672 · Plata pe Vapor'
+      badge: '4,9★ · TÜRSAB A-17672 · Plata pe Vapor'
     },
     intro: [
       'Când căutați „tur cu vaporul în Istanbul", căutați singurul lucru care definește orașul de pe apă: Bosforul. Turul nostru cu vaporul pe Bosfor de 3 ore vă trece pe lângă fiecare reper major din Istanbul — Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı, Palatul Beylerbeyi și Turnul Fecioarei — cu cină turcească completă și divertisment live.',
       'Spre deosebire de multele feriboturi turistice de 1 oră care acoperă mai puțin din Bosfor și sar peste cină și divertisment, **turul nostru cu vaporul în Istanbul** este o experiență completă de seară: îmbarcare la 20:00 la debarcaderul Kabataș, tur până la miezul nopții, 10 mezeluri, fel principal, desert, sema, dansuri populare, dans oriental și DJ. Obțineți și ieșirea de seară ca parte a turului.',
-      'Fie că aveți o seară sau o săptămână întreagă la Istanbul, acest **tur cu vaporul în Istanbul** face treaba. 4,8★ de la peste 11.317 călători, licențiat TÜRSAB (A-17672), meniu certificat halal și plata pe vapor — fără angajament financiar până nu sunteți mulțumit de experiență.'
+      'Fie că aveți o seară sau o săptămână întreagă la Istanbul, acest **tur cu vaporul în Istanbul** face treaba. 4,9★ de la peste 11.317 călători, licențiat TÜRSAB (A-17672), meniu certificat halal și plata pe vapor — fără angajament financiar până nu sunteți mulțumit de experiență.'
     ],
     highlights: [
       { title: 'Toate reperele majore ale Bosforului', desc: 'Dolmabahçe, Çırağan, Moscheea Ortaköy, Podul Bosfor, Bebek, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, Üsküdar, Turnul Fecioarei. Ambele maluri, european și asiatic, într-un singur tur.' },
@@ -448,7 +448,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Excursie Bosfor de la €{p.dinnerStd} — Croazieră Cină Istanbul + Spectacol',
-      description: 'Excursie 3 ore pe Bosfor: cină turcească, folclor live, peisaje nocturne iluminate. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Excursie 3 ore pe Bosfor: cină turcească, folclor live, peisaje nocturne iluminate. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317+ oaspeți.'
     },
     hero: {
       h1: 'Excursie pe Bosfor',
@@ -458,7 +458,7 @@ module.exports = {
     intro: [
       'O **excursie pe Bosfor** poate însemna un feribot turistic de 1 oră sau o seară completă de tur cu cină — noi facem aceasta a doua și majoritatea călătorilor consideră că este experiența de valoare mai bună. 3 ore, €{p.dinnerStd}/persoană, cină și divertisment incluse. Nu treceți doar pe lângă repere — mâncați, priviți spectacolul și vă bucurați de seară.',
       'Traseul **excursiei noastre pe Bosfor** acoperă tot ce merită văzut: Palatul Dolmabahçe (reședința sultanului otoman din secolul al XIX-lea), Moscheea Ortaköy (una dintre cele mai fotografiate moschei din Istanbul), Podul Bosfor (își schimbă culoarea noaptea), Rumeli Hisarı (construit de Fatih Sultan Mehmet în 1452), Palatul Beylerbeyi (malul asiatic) și Turnul Fecioarei pe o insulă mică. Toate explicate de echipaj vorbitor de engleză.',
-      'Fie că sunteți în Istanbul 24 de ore sau o săptămână, aceasta este **excursia pe Bosfor** care vă oferă cel mai mult într-o singură seară. Evaluare 4,8★ de la peste 11.317 călători, licențiat TÜRSAB A-17672, meniu prietenos halal, plata pe vapor — fără risc de plată în avans.'
+      'Fie că sunteți în Istanbul 24 de ore sau o săptămână, aceasta este **excursia pe Bosfor** care vă oferă cel mai mult într-o singură seară. Evaluare 4,9★ de la peste 11.317 călători, licențiat TÜRSAB A-17672, meniu prietenos halal, plata pe vapor — fără risc de plată în avans.'
     ],
     highlights: [
       { title: 'Bosforul complet dintr-o singură lovitură', desc: 'Malul european (Dolmabahçe, Ortaköy, Rumeli Hisarı), malul asiatic (Beylerbeyi, Üsküdar), ambele poduri ale Bosforului, Turnul Fecioarei. Fiecare reper major vizibil în 3 ore.' },
@@ -494,7 +494,7 @@ module.exports = {
     intro: [
       'Căutați **bilete pentru croaziera pe Bosfor**? Cumpărați direct. Biletul nostru este €{p.dinnerStd}/persoană — 40% reducere față de prețul normal (€{p.dinnerStdOriginal}). Site-urile de rezervări terți adaugă de obicei 20-40% comision. Rezervând direct, economisiți — și tot plătiți pe vapor.',
       'Procesul nostru de **bilete pentru croaziera pe Bosfor**: completați formularul de pe această pagină în mai puțin de 1 minut (data, număr de oaspeți, contact), confirmăm instant prin WhatsApp / Telegram, apăreți la debarcaderul Kabataș la 20:00, plătiți pe vapor, vă bucurați de croaziera cu cină de 3 ore. Fără bilet fizic de imprimat, fără cupon de primit pe email — confirmarea este biletul dumneavoastră.',
-      'Fie că rezervați croaziera cu cină pentru diseară sau o rezervați pentru o dată specifică săptămâna viitoare, **biletele pentru croaziera pe Bosfor direct** sunt cel mai rapid mod. Evaluare 4,8★, licențiat TÜRSAB (A-17672), meniu certificat halal și suportă suplimente de transfer de la hotel și alcool.'
+      'Fie că rezervați croaziera cu cină pentru diseară sau o rezervați pentru o dată specifică săptămâna viitoare, **biletele pentru croaziera pe Bosfor direct** sunt cel mai rapid mod. Evaluare 4,9★, licențiat TÜRSAB (A-17672), meniu certificat halal și suportă suplimente de transfer de la hotel și alcool.'
     ],
     highlights: [
       { title: 'Rezervare directă — fără taxe de intermediar', desc: '€{p.dinnerStd}/persoană — un singur preț transparent. Site-urile terți percep €30-80+ pentru același tur. Economisiți rezervând direct de la noi. Fără taxe ascunse, fără adaos de comision.' },
@@ -520,7 +520,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosfor Last Minute de la €{p.dinnerStd} — Rezervă Astăzi, Plătește la Bord',
-      description: 'Rezervare croazieră Bosfor în aceeași zi. Confirmare WhatsApp în minute. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317 recenzii.'
+      description: 'Rezervare croazieră Bosfor în aceeași zi. Confirmare WhatsApp în minute. Plecare 21:00 din Kabataş. Anulare gratuită, plată la bord. 11.317+ oaspeți.'
     },
     hero: {
       h1: 'Croazieră pe Bosfor în Ultimul Moment',
@@ -602,7 +602,7 @@ module.exports = {
     intro: [
       '**Turismul pe Bosfor** de pe apă bate orice tur cu autobuzul. Bosforul este cea mai istorică cale navigabilă a orașului — sultani otomani, împărați bizantini, negustori greci și nave de război ruse au trecut cu toții pe aici. Astăzi turul nostru de 3 ore, cu comentarii de la echipajul vorbitor de engleză, trece pe lângă fiecare reper major al Istanbulului care definește zarea.',
       'Traseul **turului nostru turistic pe Bosfor** (plecare de seară, 21:00-00:00):\n\n1. **Palatul Dolmabahçe** — reședința otomană din secolul al XIX-lea, iluminată noaptea\n2. **Palatul Çırağan** — acum hotel de lux, istorie regală\n3. **Moscheea Ortaköy** — una dintre cele mai fotografiate moschei din Istanbul, pe apă\n4. **Podul Bosfor** — alternează noaptea între albastru, violet, auriu\n5. **Bebek** — cartier elegant de pe malul european\n6. **Rumeli Hisarı** — construit de Fatih Sultan Mehmet în 1452 înainte de cucerirea Constantinopolului\n7. **Podul Fatih Sultan Mehmet** — al doilea pod al Bosforului, arc dramatic\n8. **Palatul Beylerbeyi** — malul asiatic, reședință de vară otomană\n9. **Üsküdar** — malul asiatic al Istanbulului, cartier tradițional\n10. **Turnul Fecioarei** — turn pe mica insulă, unul dintre cele mai romantice simboluri ale Istanbulului',
-      'Cina și divertismentul sunt incluse — nu separat — astfel **turismul pe Bosfor** se transformă într-o seară completă. Cină turcească cu multiple feluri, spectacol de dansuri populare live, sema, dans oriental, DJ. Evaluare 4,8★ de la peste 11.317 călători, licențiat TÜRSAB A-17672.'
+      'Cina și divertismentul sunt incluse — nu separat — astfel **turismul pe Bosfor** se transformă într-o seară completă. Cină turcească cu multiple feluri, spectacol de dansuri populare live, sema, dans oriental, DJ. Evaluare 4,9★ de la peste 11.317 călători, licențiat TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ repere majore ale Istanbulului', desc: 'Palatul Dolmabahçe, Palatul Çırağan, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, Üsküdar, Turnul Fecioarei. Fiecare reper esențial din Istanbul într-un singur tur.' },

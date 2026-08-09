@@ -885,23 +885,22 @@ function setTourType(tourType) {
   // Update PRICES reference for calculation
   window._activePrices = tour.prices;
 
-  // Auto-set date based on tour type
-  const now = new Date();
-  const hour = now.getHours();
-  let targetDate = new Date(now);
+  // Auto-set date based on tour type — Istanbul clock, not the visitor's
+  const { hour: istHour, minute: istMinute } = istanbulNowParts();
+  let addDays = 0;
 
-  if (tourType === 'daytime' && hour >= 7) {
+  if (tourType === 'daytime' && istHour >= 7) {
     // Gündüz turu: 07:00'den sonra → ertesi gün
-    targetDate.setDate(targetDate.getDate() + 1);
-  } else if (tourType === 'sunset' && hour >= 16) {
+    addDays = 1;
+  } else if (tourType === 'sunset' && istHour >= 16) {
     // Sunset turu: 16:00'dan sonra → ertesi gün
-    targetDate.setDate(targetDate.getDate() + 1);
-  } else if (tourType === 'dinner' && (hour >= 18 && now.getMinutes() >= 30 || hour >= 19)) {
+    addDays = 1;
+  } else if (tourType === 'dinner' && (istHour > 18 || (istHour === 18 && istMinute >= 30))) {
     // Akşam turu: 18:30'dan sonra → ertesi gün
-    targetDate.setDate(targetDate.getDate() + 1);
+    addDays = 1;
   }
 
-  const dateStr = targetDate.toISOString().split('T')[0];
+  const dateStr = istanbulDateStr(addDays);
   ['bookDate', 'bookDateMobile'].forEach(id => {
     const input = document.getElementById(id);
     if (input) input.value = dateStr;
@@ -1049,9 +1048,34 @@ const WA_MESSAGES = {
     `مرحبًا! أرغب بالحجز:\n🚢 ${boat} — باقة ${pkg}\n📅 ${date}\n👥 ${adults} بالغ${children ? `، ${children} طفل/أطفال` : ''}\n${extras.length ? '✨ ' + extras.join(', ') + '\n' : ''}💰 الإجمالي: €${total}\n\nيرجى تأكيد التوفر.`
 };
 
+// Istanbul clock helpers — booking dates must follow Europe/Istanbul, not the
+// visitor's browser clock (same rule as initCountdown; UTC/local drift pre-filled
+// yesterday's or tomorrow's date for guests outside Turkey).
+function istanbulNowParts() {
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Istanbul', hourCycle: 'h23',
+    year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit',
+  }).formatToParts(new Date());
+  const get = (t) => parts.find((p) => p.type === t)?.value;
+  return {
+    dateStr: `${get('year')}-${get('month')}-${get('day')}`,
+    hour: Number(get('hour')),
+    minute: Number(get('minute')),
+  };
+}
+
+function istanbulDateStr(offsetDays = 0) {
+  const { dateStr } = istanbulNowParts();
+  if (!offsetDays) return dateStr;
+  const d = new Date(dateStr + 'T12:00:00Z'); // noon UTC avoids DST edge shifts
+  d.setUTCDate(d.getUTCDate() + offsetDays);
+  return d.toISOString().split('T')[0];
+}
+
 function initBookingPanel() {
-  // Set today's date as default
-  const today = new Date().toISOString().split('T')[0];
+  // Set today's date as default (Istanbul day)
+  const today = istanbulDateStr();
   const dateInputs = [document.getElementById('bookDate'), document.getElementById('bookDateMobile')];
   dateInputs.forEach(input => { if (input) { input.value = today; input.min = today; } });
 
@@ -1612,7 +1636,7 @@ function syncDate(source) {
 
 function checkTonight() {
   const dateInput = document.getElementById('bookDate');
-  const today = new Date().toISOString().split('T')[0];
+  const today = istanbulDateStr();
   const isTonight = dateInput && dateInput.value === today;
 
   ['tonightBlock', 'tonightBlockMobile'].forEach(id => {

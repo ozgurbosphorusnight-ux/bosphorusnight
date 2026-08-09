@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Plavba s Večeří po Bosporu v Istanbulu',
       subtitle: 'Tři hodiny živé zábavy, štědrá turecká vícechodová večeře a nejúchvatnější noční výhledy na Bospor.',
-      badge: '4,8★ · 11.317 recenzí'
+      badge: '4,9★ · 11.317+ hostů'
     },
     intro: [
-      '**Plavba s večeří po Bosporu** je nejikoničtějším večerním zážitkem Istanbulu. Naše túra odjíždí v 20:00 z přístaviště Kabataş a pluje pod osvětlenými mosty Bospor a Fatih Sultan Mehmet, nabízí vám tureckou vícechodovou večeři, živé lidové tance, orientální tanec a DJ set, který udržuje palubu živou až do 23:00.',
-      'Na rozdíl od běžných turistických lodí, které zaplňují noční krajinu Istanbulu, je **naše plavba s večeří po Bosporu** licencována TÜRSAB (A-17672) a hodnocena 4,8★ více než 11.317 cestovateli. Skupiny udržujeme malé a obsluhu vřelou — a protože platíte na palubě, není žádné riziko v rezervaci předem.',
+      '**Plavba s večeří po Bosporu** je nejikoničtějším večerním zážitkem Istanbulu. Naše túra odjíždí v 20:00 z přístaviště Kabataş a pluje pod osvětlenými mosty Bospor a Fatih Sultan Mehmet, nabízí vám tureckou vícechodovou večeři, živé lidové tance, orientální tanec a DJ set, který udržuje palubu živou až do 23:45.',
+      'Na rozdíl od běžných turistických lodí, které zaplňují noční krajinu Istanbulu, je **naše plavba s večeří po Bosporu** licencována TÜRSAB (A-17672) a hodnocena 4,9★ více než 11.317 cestovateli. Skupiny udržujeme malé a obsluhu vřelou — a protože platíte na palubě, není žádné riziko v rezervaci předem.',
       'Ať už slavíte narozeniny, hledáte prémiový večer v Istanbulu pro svou rodinu, nebo chcete nejfotogeničtější přechod ze západu slunce do noci ve městě — toto je plavba s večeří, kterou v první řadě doporučují místní obyvatelé Istanbulu.'
     ],
     highlights: [
-      { title: 'Turecká vícechodová večeře', desc: '10 variant studených mezze, teplý předkrm (börek), hlavní chod na výběr (losos / mořský vlk / kuřecí špíz / hovězí špíz / vegetariánské), krupicová halva jako dezert, neomezené nealkoholické nápoje.' },
+      { title: 'Turecká vícechodová večeře', desc: '10 variant studených mezze, teplý předkrm (börek), hlavní chod na výběr (losos / mořský vlk / kuřecí špíz / hovězí špíz / vegetariánské), speciální krupicový dezert jako dezert, neomezené nealkoholické nápoje.' },
       { title: 'Živé lidové tance, orientální tanec a DJ', desc: 'Osm čísel: Oba Dombra, vystoupení Mevlana sema, Sarı Gelin, ázerbájdžánské potpourri, klasický orientální tanec, anatolské potpourri a gruzínsko-kavkazský tanec s noži — poté živý saxofon a DJ set po celou dobu plavby.' },
       { title: 'Kompletní noční trasa po Bosporu', desc: 'Kabataş → Dolmabahçe → Palác Çırağan → Mešita Ortaköy → Bebek → Rumeli Hisarı → Most FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Od €{p.dinnerStd}/osoba — platba na palubě', desc: 'Plavba s večeří €{p.dinnerStd} (dříve €{p.dinnerStdOriginal}). Bez platby předem. Bezplatné storno až 2 hodiny před odjezdem.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**Plavba po Bosporu s dětmi** je nejvíce rodinně přátelská večerní možnost v Istanbulu. Každý večer hostíme desítky rodin — navrhli jsme každý detail tak, aby se nejmenší cítili pohodlně: zastřešený vnitřní prostor pro udržení tepla, dostupné dětské menu (jednoduché grilované kuře, těstoviny, neomezené nealkoholické nápoje) a brzké nalodění, aby se předešlo záchvatům v pozdních hodinách.',
       'Na rozdíl od lodí pouze pro dospělé zůstává **naše plavba s večeří po Bosporu pro rodiny** vřelá a inkluzivní. **Děti 0-3 roky jsou zdarma** (transfer zahrnut), 4-9 let mají **€5 slevu**, 10+ let platí plnou cenu — bez skrytých nákladů. Živé lidové tance, orientální tanec a vystoupení sema jsou jemná rodinná zábava, ne noční klub.',
-      'Ať už přijíždíte do Istanbulu na prodloužený víkend s batoletem, nebo vezete teenagery na jejich první evropskou cestu — toto je túra doporučená rodinami v Istanbulu. Bezpečná, halal certifikovaná, licencovaná TÜRSAB a hodnocená 4,8★ více než 11.317 cestovateli.'
+      'Ať už přijíždíte do Istanbulu na prodloužený víkend s batoletem, nebo vezete teenagery na jejich první evropskou cestu — toto je túra doporučená rodinami v Istanbulu. Bezpečná, halal certifikovaná, licencovaná TÜRSAB a hodnocená 4,9★ více než 11.317 cestovateli.'
     ],
     highlights: [
       { title: '0-3 roky zcela zdarma', desc: 'Žádné poplatky za miminka a batolata. 4-9 let platí €5 z ceny pro dospělé. Od 10 let host s plnou cenou. Transparentní, bez překvapení.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**Romantická plavba po Bosporu** je nejikoničtějším večerem pro páry v Istanbulu. Zatímco slunce zapadá nad Palácem Dolmabahçe a most Bospor se rozzáří barvami, vy a váš partner sdílíte tureckou vícechodovou večeři u soukromého stolu — se svíčkami, čerstvými květinami a živými houslemi vznášejícími se po palubě.',
       'Naše romantické uspořádání stolu (+€{p.romantic}/stůl) promění každé místo ve zvláštní okamžik: červené růže, zářící svíčky, ručně psaný uvítací lístek. Přidejte balíček 2 sklenic alkoholu pro víno pod hvězdami (+€{p.alcohol2}/osoba) nebo to udržujte jednoduché s nápoji zahrnutými. Ať si vyberete cokoli, posádka se diskrétně postará o zbytek.',
-      'Ať už slavíte výročí, plánujete překvapení pro svého partnera nebo prostě chcete nezapomenutelný večer v nejromantičtějším městě Evropy — toto je túra, kterou preferují páry v Istanbulu. Hodnocení 4,8★, licencováno TÜRSAB a — nejdůležitější — platba na palubě, takže slibujete pouze samotný večer.'
+      'Ať už slavíte výročí, plánujete překvapení pro svého partnera nebo prostě chcete nezapomenutelný večer v nejromantičtějším městě Evropy — toto je túra, kterou preferují páry v Istanbulu. Hodnocení 4,9★, licencováno TÜRSAB a — nejdůležitější — platba na palubě, takže slibujete pouze samotný večer.'
     ],
     highlights: [
       { title: 'Romantický stůl při svíčkách', desc: 'Přidejte romantické uspořádání stolu s +€{p.romantic}/stůl: čerstvé červené růže, zářící svíčky, okvětní lístky růží na ubrusu a ručně psaná karta. Fotografie zahrnuty.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**Halal plavba po Bosporu** je nejuctivější plavba s večeří v Istanbulu pro muslimské cestovatele. Veškeré maso podávané na naší lodi — losos, mořský vlk, kuřecí špíz, hovězí špíz — je **halal certifikované** od schválených dodavatelů. Servírujeme stejné menu každému hostovi; žádná samostatná "halal sekce", protože celá loď je standardně halal.',
       'Alkohol je **volitelný doplněk** — nikdy nevnucovaný hostům a uspořádání stolů přirozeně odděluje hosty, kteří preferují jídlo bez alkoholu. Pro hosty, kteří chtějí balíček 2 sklenic alkoholu (+€{p.alcohol2}/osoba), je k dispozici, ale zahrnuté neomezené nealkoholické nápoje (voda, kola, džus) jsou pro většinu muslimských rodin dostačující. Naše posádka je vyškolena respektovat vaše preference bez předpokladů.',
-      '**Halal přátelská plavba po Bosporu** záleží pro cestovatele ze Saúdské Arábie, SAE, Kuvajtu, Kataru, Íránu, Malajsie, Indonésie, Pákistánu a Maroka, kteří chtějí nejikoničtější večer Istanbulu bez kompromisů. Licencováno TÜRSAB, 4,8★ a platba na palubě — neslibujte nic, dokud si nejste jisti, že zážitek splňuje vaše standardy.'
+      '**Halal přátelská plavba po Bosporu** záleží pro cestovatele ze Saúdské Arábie, SAE, Kuvajtu, Kataru, Íránu, Malajsie, Indonésie, Pákistánu a Maroka, kteří chtějí nejikoničtější večer Istanbulu bez kompromisů. Licencováno TÜRSAB, 4,9★ a platba na palubě — neslibujte nic, dokud si nejste jisti, že zážitek splňuje vaše standardy.'
     ],
     highlights: [
       { title: '100% halal certifikované menu', desc: 'Veškeré maso (losos, mořský vlk, kuřecí špíz, hovězí špíz) je halal certifikované od schválených dodavatelů. Kuchyně dodržuje halal přípravu. Žádné vepřové produkty ani neHalal přísady. Vegetariánské možnosti jsou vždy k dispozici.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Je tato plavba vhodná pro muslimské rodiny s dětmi?', a: 'Ano — je to jedna z nejuctívanějších plaveb pro rodiny v Istanbulu. Zábava je skromná (lidové tance, sema, turecká hudba), děti do 3 let zdarma, 4-9 let mají €5 slevu. Žádná atmosféra nočního klubu. Rodiny ze Zálivu, Indonésie, Malajsie, Pákistánu a Maroka pravidelně rezervují tuto plavbu.' },
       { q: 'Mohu se modlit na palubě?', a: 'Na palubě není vyhrazená modlitební místnost, ale doporučujeme modlit se před naloděním v 20:00 (maghribská modlitba často spadá do tohoto intervalu). Přístaviště Kabataş má modlitební zařízení. Pokud se potřebujete modlit během plavby 21:00-00:00 (isha), promluvte s posádkou — můžeme zařídit tiché místo na palubě.' },
       { q: 'Jaké jsou ceny pro muslimskou rodinu 4 osob (2 dospělí, 2 děti)?', a: 'Plavba s večeří: 2 × €{p.dinnerStd} + 2 × €19.30 (sleva €5, 4-9 let) = €87.20. Pokud jsou děti mladší 3 let, zdarma: 2 × €{p.dinnerStd} = €48.60. Přidejte €{p.transfer} transfer z hotelu na dospělého. Celkem: €48.60–€92.90 pro rodinu 4, bez platby předem, platba na palubě.' },
-      { q: 'Je transfer z hotelu také halal?', a: 'Transfer z hotelu je jen jízda autem — bez jídla nebo pití, takže žádné halal obavy. Naši řidiči jsou profesionální, uctiví a přesní. Transferové zóny pokrývají Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli a 9 dalších centrálních čtvrtí, kde se muslimští cestovatelé obvykle ubytovávají.' }
+      { q: 'Je transfer z hotelu také halal?', a: 'Transfer z hotelu je jen jízda autem — bez jídla nebo pití, takže žádné halal obavy. Naši řidiči jsou profesionální, uctiví a přesní. Transferové zóny pokrývají Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli a 8 dalších centrálních čtvrtí, kde se muslimští cestovatelé obvykle ubytovávají.' }
     ],
     cta: {
       primary: 'Rezervovat Halal Plavbu · Platba na Palubě',
@@ -161,7 +161,7 @@ module.exports = {
       badge: 'SLEVA 40% · Jedno menu, prémiový standard · Platba na lodi'
     },
     intro: [
-      'Mnoho lodí na Bosporu dělí hosty na „standardní“ a „VIP“. My ne. Na palubě lodi **AMOR** je jediné večeřové menu, připravené se stejnou péčí pro všechny: 10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz), krupicová halva a neomezené nealkoholické nápoje. Celý osmidílný zábavní program je rovněž v ceně — Oba Dombra, obřad vířících dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ — vše v ceně €{p.dinnerStd}/osobu.',
+      'Mnoho lodí na Bosporu dělí hosty na „standardní“ a „VIP“. My ne. Na palubě lodi **AMOR** je jediné večeřové menu, připravené se stejnou péčí pro všechny: 10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz), speciální krupicový dezert a neomezené nealkoholické nápoje. Celý osmidílný zábavní program je rovněž v ceně — Oba Dombra, obřad vířících dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ — vše v ceně €{p.dinnerStd}/osobu.',
       'Pocit VIP začíná u vašeho stolu. Chcete-li být co nejblíže pódiu a výhledům, přidejte si **soukromý stůl u pódia** (+€{p.romantic}/stůl) a místo vám rezervujeme předem — nejlepší úhel na derviše, lidové tance i osvětlený Bospor. Oblíbená volba párů, oslav a milovníků fotografie.',
       'AMOR je moderní loď: 42 metrů, 3 paluby, až 400 hostů, v zimě vytápěná a v létě klimatizovaná. Tříhodinová trasa vyplouvá z Kabataşe (nástup od 20:00, odjezd 21:00, návrat 00:00) kolem Dolmabahçe, mešity Ortaköy, pevnosti Rumeli a světel mostu přes Bospor. Licence TÜRSAB (A-17672), 4,9★ na Google. Bez platby předem — platíte na lodi a storno je zdarma až do 2 hodin před odplutím.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Prodáváte „VIP balíček“? Jaký je rozdíl oproti standardu?', a: 'Neprodáváme oddělený VIP balíček — je jedno menu, které dostávají všichni ve stejném prémiovém standardu. To, čemu říkáme „VIP zážitek“, je přizpůsobení vašeho večera: soukromý stůl u pódia (+€{p.romantic}/stůl), pozorná obsluha u stolu a volitelné nápoje navíc. Plavba trvá 3 hodiny, €{p.dinnerStd}/osobu.' },
       { q: 'Je €{p.dinnerStd} opravdu sleva 40%?', a: 'Ano — naše ceníková cena je €{p.dinnerStdOriginal}/osobu. €{p.dinnerStd} je sazba při přímé rezervaci, bez provizí zprostředkovatelů. Platíte na lodi a žádná záloha se neplatí.' },
-      { q: 'Co je v menu?', a: '10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz) a krupicová halva jako dezert, k tomu neomezené nealkoholické nápoje. Osmidílný program je v ceně: Oba Dombra, obřad dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ.' },
+      { q: 'Co je v menu?', a: '10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz) a speciální krupicový dezert jako dezert, k tomu neomezené nealkoholické nápoje. Osmidílný program je v ceně: Oba Dombra, obřad dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ.' },
       { q: 'Je alkohol v ceně?', a: 'Ne — alkohol je samostatný doplněk: 2 sklenice místního vína nebo piva za +€{p.alcohol2}/osobu. Nealkoholické nápoje jsou neomezeně a zdarma v ceně. Prémiové dovážené destiláty se účtují zvlášť na lodi.' },
       { q: 'Jak si zajistím stůl u pódia?', a: 'Stačí při rezervaci zvolit doplněk „soukromý stůl u pódia“ (+€{p.romantic}/stůl) — stůl bude rezervován na vaše jméno. Nejlepší místa se obsazují předem, proto doporučujeme přidat jej ještě před dnem plavby.' },
       { q: 'Jaká je to loď?', a: 'AMOR — moderní osobní loď dlouhá 42 metrů se 3 palubami a kapacitou 400 hostů, v zimě vytápěná a v létě klimatizovaná. Odplutí z mola Kabataş: nástup 20:00, odplutí 21:00, návrat 00:00. Trasa: Dolmabahçe, Ortaköy, pevnost Rumeli, Beylerbeyi a světla mostu přes Bospor.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**Soukromá plavba po Bosporu** znamená, že celá loď je vaše — žádní další hosté, žádné sdílené stoly, žádný společný taneční parket. Ideální pro rodinná setkání, firemní večeře, narozeninové oslavy, rozlučky se svobodou nebo svatební hostiny. Loď, posádka, menu, zábava a program se přizpůsobí vaší skupině.',
       '**Náš soukromý pronájem po Bosporu** podporuje skupiny **od 25 do 80 hostů**. Menší skupiny mohou stále požádat o soukromý zážitek — nabízíme minimální cenu, která pokrývá provozní náklady lodi. Větší skupiny (svatební velikost) získávají přizpůsobené ceny a obvykle zahrnují speciální dekoraci, živou kapelu, podávání dortu a prodlouženou dobu (4-5 hodin místo 3 standardních).',
-      'Ať už organizujete firemní akci pro klienty, oslavu 50. narozenin nebo svatební hostinu pod nejikoničtějšími mosty Istanbulu, toto je **soukromá plavba, kterou důvěřují organizátoři akcí v Istanbulu**. Hodnocení 4,8★, licencováno TÜRSAB, plně anglicky mluvící posádka a plná flexibilita — trasa, menu, hudba, program.'
+      'Ať už organizujete firemní akci pro klienty, oslavu 50. narozenin nebo svatební hostinu pod nejikoničtějšími mosty Istanbulu, toto je **soukromá plavba, kterou důvěřují organizátoři akcí v Istanbulu**. Hodnocení 4,9★, licencováno TÜRSAB, plně anglicky mluvící posádka a plná flexibilita — trasa, menu, hudba, program.'
     ],
     highlights: [
       { title: 'Celá loď, jen pro vás', desc: 'Žádní další hosté. Vaše skupina vlastní každou palubu, každý stůl. Nastavte si vlastní hudbu, oděvový předpis, program. Soukromí je důležité — respektujeme ho.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**Plavba po Bosporu pro páry** je oblíbený večer v Istanbulu. Ne každý pár slaví výročí — někdy jste prostě v nejromantičtějším městě světa a chcete úžasný večer společně. Tato plavba nabízí: soukromý stůl pro dva, pomalou tureckou vícechodovou večeři, živé housle a akustickou hudbu během večeře a osvětlený most Bospor pomalu procházející.',
       'Atmosféra je **vřelá, ale ne přehnaně romantická** — žádná povinná hudba k žádosti o ruku, žádný trapný koordinovaný potlesk pro "novomanžele". Jezte, pijte, povídejte si, sledujte světla Istanbulu. Pokud chcete přidat romantické uspořádání stolu (svíčky, růže, +€{p.romantic}), výborně — jinak je samotná večeře již zvláštní.',
-      'Ať už jste v Istanbulu 3 dny se svým partnerem, slavíte skromnou událost nebo plánujete průzkumnou cestu pro budoucí žádost o ruku — **plavba po Bosporu pro páry** vám nabízí 3 hodiny večera společně v jednom z nejfotografovanějších měst světa. 4,8★, platba na palubě, bezplatné storno.'
+      'Ať už jste v Istanbulu 3 dny se svým partnerem, slavíte skromnou událost nebo plánujete průzkumnou cestu pro budoucí žádost o ruku — **plavba po Bosporu pro páry** vám nabízí 3 hodiny večera společně v jednom z nejfotografovanějších měst světa. 4,9★, platba na palubě, bezplatné storno.'
     ],
     highlights: [
       { title: 'Soukromý stůl pro dva', desc: 'Soukromý stůl pro 2 osoby, nesdílený. Priorita stolů u okna pro páry. Fotografie západu slunce a nočního Bosporu přímo u vašeho okna.' },
-      { title: 'Pomalá vícechodová večeře', desc: '10 variant tureckých mezze, teplý předkrm, hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz nebo vegetariánské), krupicová halva jako dezert. Podáváno pomalu po dobu 3 hodin — nespěcháte.' },
+      { title: 'Pomalá vícechodová večeře', desc: '10 variant tureckých mezze, teplý předkrm, hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz nebo vegetariánské), speciální krupicový dezert jako dezert. Podáváno pomalu po dobu 3 hodin — nespěcháte.' },
       { title: 'Živé housle a tichá hudba', desc: 'Živé housle a akustická turecká hudba během večeře vytvářejí intimní atmosféru vhodnou pro konverzaci. Pak nastupuje DJ pro páry, které chtějí tančit.' },
       { title: 'Doplňky pro zvláštní večery', desc: 'Romantické uspořádání stolu (svíčky, růže): +€{p.romantic}. 2 sklenice alkoholu (víno, pivo, rakı, vodka, whisky, gin a další): +€{p.alcohol2}/osoba. Transfer z hotelu (tam a zpět): +€{p.transfer}/osoba. Vyberte si, co se hodí k vašemu večeru.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       '**Plavba při západu slunce po Bosporu** je v Istanbulu především o jednom: o přechodu. Naše plavba nalodí hosty na přístavišti Kabataş od 20:00 — a během dlouhých večerů od května do srpna se zlatá hodina odehrává, zatímco se usazujete na palubě. Slunce zapadá za minarety evropského břehu přesně kolem odjezdu ve 21:00, takže ho sledujete z vody: Palác Dolmabahçe zalitý zlatem, mešita Ortaköy jako silueta proti zářícímu nebi.',
       'Naše **plavba po Bosporu od západu slunce do noci** zahrnuje plnou tureckou večeři — 10 variant mezze, teplý předkrm, hlavní chod dle výběru, dezert — servírovanou ve chvíli, kdy město rozsvěcuje svá světla. Než přijde dezert, plujete pod osvětleným mostem Bospor s 30 miliony světel odrážejícími se v tmavé vodě. Proměna ze soumraku do plné noci, celá v rámci jedné 3hodinové plavby, je přesně to, o co tu jde.',
-      'Ať už jste fotograf honící poslední světlo, pár toužící po "istanbulské vzpomínkové fotografii", nebo návštěvník, který chce klasický večer na vodě — toto je **plavba s večeří při západu slunce po Bosporu**, kterou místní doporučují návštěvníkům. Od €{p.dinnerStd}/osoba, hodnocení 4,8★, licencováno TÜRSAB, platba na palubě — bez platby předem.'
+      'Ať už jste fotograf honící poslední světlo, pár toužící po "istanbulské vzpomínkové fotografii", nebo návštěvník, který chce klasický večer na vodě — toto je **plavba s večeří při západu slunce po Bosporu**, kterou místní doporučují návštěvníkům. Od €{p.dinnerStd}/osoba, hodnocení 4,9★, licencováno TÜRSAB, platba na palubě — bez platby předem.'
     ],
     highlights: [
       { title: 'Letní západy slunce přesně při odjezdu', desc: 'Od května do srpna zapadá slunce v Istanbulu zhruba mezi 20:15–20:45 — nalodění v 20:00 vám dopřeje zlatou hodinu na palubě a odjezd ve 21:00 vás dostane na vodu přesně na samotný západ slunce. Fotoaparát připravený — tohle je ta fotografie.' },
       { title: 'Modrá hodina přecházející do plné noci', desc: 'Nejen západ slunce — plavba proplouvá soumrakem až do plně osvětleného Bosporu. Zlaté světlo, modrá hodina a pak 30 milionů světel mostu na tmavé vodě: tři fáze světla v jediném večeru.' },
-      { title: 'Plná večeře během plavby', desc: '10 variant tureckých mezze, teplý předkrm, hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz, vegetariánské), krupicová halva, neomezené nealkoholické nápoje — servírováno, zatímco se rozsvěcují světla města.' },
+      { title: 'Plná večeře během plavby', desc: '10 variant tureckých mezze, teplý předkrm, hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz, vegetariánské), speciální krupicový dezert, neomezené nealkoholické nápoje — servírováno, zatímco se rozsvěcují světla města.' },
       { title: 'Dolmabahçe, Ortaköy, most Bospor — vše září', desc: 'Trasa prochází kolem Paláce Dolmabahçe, mešity Ortaköy, mostu Bospor, Rumeli Hisarı a Paláce Beylerbeyi právě ve chvíli, kdy se rozsvěcují jejich světla. Každý památník ve svém nejlepším světle.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**Noční túra po Bosporu** je nejdoporučovanější večerní aktivita v Istanbulu. Zde je proč: po setmění se Bospor transformuje. Most Bospor střídá modrou, fialovou a zlatou. Palác Dolmabahçe září teple žlutě. Mešita Ortaköy se dokonale odráží v černé vodě. Každý památník Istanbulu dosahuje své dramatické vrchol v noci.',
       '**Naše noční túra po Bosporu s večeří** zabaluje kompletní ikonický večer: 3 hodiny na vodě (21:00-00:00), turecká vícechodová večeře, osmidílný živý folklorní program (Oba Dombra, sema, anatolské a ázerbájdžánské lidové tance, orientální tanec, kavkazský tanec s noži), živá hudba a saxofonový DJ set, který udržuje palubu živou až do konce noci. Každý host dostane stejný program — žádná "základní" možnost, která vynechává nejlepší části.',
-      'Ať už je to vaše první návštěva Istanbulu a hledáte "jedinou věc, kterou musíte v noci dělat", nebo jste tu byli dříve a chcete nejfotogeničtějších 3 hodin města, toto je **noční túra po Bosporu** hodnocená 4,8★ více než 11.317 cestovateli. Licencováno TÜRSAB, platba na palubě, bez platby předem.'
+      'Ať už je to vaše první návštěva Istanbulu a hledáte "jedinou věc, kterou musíte v noci dělat", nebo jste tu byli dříve a chcete nejfotogeničtějších 3 hodin města, toto je **noční túra po Bosporu** hodnocená 4,9★ více než 11.317 cestovateli. Licencováno TÜRSAB, platba na palubě, bez platby předem.'
     ],
     highlights: [
       { title: 'Osvětlený Bospor v dramatickém vrcholu', desc: 'Most Bospor mění barvu (modrá, fialová, zlatá), paláce září žlutě, mešita Ortaköy se odráží v tmavé vodě. 21:00-00:00 maximální osvětlení pro všechny památníky Istanbulu.' },
       { title: 'Tradiční turecká show na palubě', desc: 'Osm čísel: Oba Dombra, vystoupení sema, Sarı Gelin, ázerbájdžánské potpourri, orientální tanec, anatolské potpourri a gruzínsko-kavkazský tanec s noži, pak živý saxofon a DJ set. 40 minut show, pak pokračuje hudba + večeře.' },
-      { title: 'Plná vícechodová večeře', desc: '10 variant tureckých mezze, teplý předkrm (börek), hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz, vegetariánské — vaše volba), dezert (krupicová halva), neomezené nealkoholické nápoje. Halal certifikováno.' },
+      { title: 'Plná vícechodová večeře', desc: '10 variant tureckých mezze, teplý předkrm (börek), hlavní chod (losos, mořský vlk, kuřecí špíz, hovězí špíz, vegetariánské — vaše volba), dezert (speciální krupicový dezert), neomezené nealkoholické nápoje. Halal certifikováno.' },
       { title: 'Kompletní trasa po Bosporu', desc: 'Kabataş → Dolmabahçe → Palác Çırağan → Mešita Ortaköy → Bebek → Rumeli Hisarı → Most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Dívčí věž → Kabataş.' }
     ],
     faq: [
@@ -335,20 +335,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Plavba s Večeří v Istanbulu od €{p.dinnerStd} — Noční Túra po Bosporu',
-      description: 'Plavba s večeří 3 hodiny v Istanbulu po Bosporu. Turecké vícechodové menu, živý folklór, osvětlené mosty. Bezplatné storno, platba na palubě. 11.317 recenzí.'
+      description: 'Plavba s večeří 3 hodiny v Istanbulu po Bosporu. Turecké vícechodové menu, živý folklór, osvětlené mosty. Bezplatné storno, platba na palubě. 11.317+ hostů.'
     },
     hero: {
       h1: 'Plavba s Večeří v Istanbulu',
       subtitle: 'Nejlepší plavba s večeří v Istanbulu — 3 hodiny po Bosporu, turecká vícechodová večeře, živá zábava a noční výhledy na nejikoničtější památníky města.',
-      badge: '4,8★ · 11.317 recenzí · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ hostů · TÜRSAB A-17672'
     },
     intro: [
       'Hledáte **plavbu s večeří v Istanbulu**? Našli jste to, co většina cestovatelů doporučuje. Náš 3hodinový večer po Bosporu kombinuje plnou tureckou vícechodovou večeři, živé lidové tance a nejfotogeničtější výhledy města — vše z pohodlné lodi, která odjíždí ve 21:00 z přístaviště Kabataş.',
       'Zážitek **plavby s večeří v Istanbulu**: nastupte v 20:00, posaďte se, sledujte Palác Dolmabahçe, zatímco odjíždíme, večeře začíná, když se přibližujeme k mešitě Ortaköy, show začíná (sema, lidové tance, orientální), a do dezertu jste pod osvětleným mostem Bospor. O půlnoci se vracíte do Kabataşe s ikonickou kolážou fotografií a plným žaludkem.',
-      '€{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). Platba na palubě — bez platby předem, bez rizika. Licencováno TÜRSAB A-17672, hodnoceno 4,8★ více než 11.317 cestovateli.'
+      '€{p.dinnerStd}/osoba (dříve €{p.dinnerStdOriginal}). Platba na palubě — bez platby předem, bez rizika. Licencováno TÜRSAB A-17672, hodnoceno 4,9★ více než 11.317 cestovateli.'
     ],
     highlights: [
-      { title: 'Plná turecká vícechodová večeře', desc: '10 variant mezze, teplý předkrm, hlavní chod (losos/mořský vlk/kuřecí špíz/hovězí špíz/vegetariánské), krupicová halva. Halal certifikováno. Neomezené nealkoholické nápoje zahrnuty.' },
+      { title: 'Plná turecká vícechodová večeře', desc: '10 variant mezze, teplý předkrm, hlavní chod (losos/mořský vlk/kuřecí špíz/hovězí špíz/vegetariánské), speciální krupicový dezert. Halal certifikováno. Neomezené nealkoholické nápoje zahrnuty.' },
       { title: 'Živá show tureckých lidových tanců', desc: 'Osm čísel: Oba Dombra, vystoupení sema, Sarı Gelin, ázerbájdžánské potpourri, orientální tanec, anatolské potpourri, gruzínsko-kavkazský tanec s noži, pak živý saxofon a DJ. 40 minut show, kontinuální hudba na pozadí.' },
       { title: 'Kompletní noční trasa po Bosporu', desc: '3hodinová túra: Dolmabahçe, Çırağan, mešita Ortaköy, most Bospor, Bebek, Rumeli Hisarı, most FSM, Beylerbeyi, Üsküdar, Dívčí věž. Oba břehy, evropský a asijský.' },
       { title: 'Od €{p.dinnerStd} — platba na palubě', desc: 'Plavba s večeří: €{p.dinnerStd} (dříve €{p.dinnerStdOriginal}). Bez platby předem. Bezplatné storno až 2 hodiny před odjezdem.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Rezervovat Plavbu s Večeří · Platba na Palubě',
-      secondary: '4,8★ · Licencováno TÜRSAB · Bezplatné storno 2 hodiny předem',
+      secondary: '4,9★ · Licencováno TÜRSAB · Bezplatné storno 2 hodiny předem',
       tertiary: 'Dostupnost Dnes Večer'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Noční Túra v Istanbulu od €{p.dinnerStd} — Plavba s Večeří po Bosporu + Show',
-      description: 'Plavba 3 hodiny po Bosporu s večeří a živou show. Odjezd 21:00 z Kabataşe. Bezplatné storno, platba na palubě. 11.317 recenzí. Transfer z hotelu volitelný.'
+      description: 'Plavba 3 hodiny po Bosporu s večeří a živou show. Odjezd 21:00 z Kabataşe. Bezplatné storno, platba na palubě. 11.317+ hostů. Transfer z hotelu volitelný.'
     },
     hero: {
       h1: 'Túra po Istanbulu v Noci',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       '**Túra po Istanbulu v noci** musí dělat tři věci: ukázat vám ikonické památníky města, dobře vás nakrmit a pobavit. Naše plavba s večeří po Bosporu dělá všechny tři za jeden 3hodinový večer — a proto ji většina průvodců Istanbulu doporučuje jako #1 zážitek noční túry.',
       'Trasa **túry po Istanbulu v noci** pokrývá nejlepší osvětlené památníky: Palác Dolmabahçe, Mešita Ortaköy, Most Bospor (mění barvy), čtvrť Bebek, Rumeli Hisarı, Most FSM, Palác Beylerbeyi, asijské pobřeží Üsküdar a Dívčí věž v dálce. Většina městských túr vám je ukáže z autobusu — my vám je ukážeme z vody, kde jsou nejdramatičtější.',
-      'Večeře je zahrnuta (turecké vícechodové menu), živá show tureckých lidových tanců, sema, orientální tanec a DJ set. Pokud jste v Istanbulu 2-3 dny, je to jediný večer, který dává nejsilnější úder. 4,8★ z více než 11.317 cestovatelů, platba na palubě, bez platby předem.'
+      'Večeře je zahrnuta (turecké vícechodové menu), živá show tureckých lidových tanců, sema, orientální tanec a DJ set. Pokud jste v Istanbulu 2-3 dny, je to jediný večer, který dává nejsilnější úder. 4,9★ z více než 11.317 cestovatelů, platba na palubě, bez platby předem.'
     ],
     highlights: [
       { title: 'Všechny ikonické noční výhledy Istanbulu', desc: 'Palác Dolmabahçe, mešita Ortaköy, osvětlený most Bospor, Rumeli Hisarı, most FSM, Palác Beylerbeyi, Dívčí věž. Každý hlavní památník ve vrcholu nočního osvětlení.' },
@@ -411,17 +411,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Lodní Túra Istanbul od €{p.dinnerStd} — Bospor + Večeře + Show',
-      description: 'Lodní túra 3 hodiny: plavba po Bosporu, plná turecká večeře, živý folklór, osvětlené noční krajiny. Bezplatné storno, platba na palubě. 11.317 recenzí.'
+      description: 'Lodní túra 3 hodiny: plavba po Bosporu, plná turecká večeře, živý folklór, osvětlené noční krajiny. Bezplatné storno, platba na palubě. 11.317+ hostů.'
     },
     hero: {
       h1: 'Lodní Túra v Istanbulu',
       subtitle: 'Nejrezervovanější lodní túra v Istanbulu cestovateli — plavba po Bosporu s tureckým jídlem, živou zábavou a ikonickými výhledy města z vody.',
-      badge: '4,8★ · TÜRSAB A-17672 · Platba na Palubě'
+      badge: '4,9★ · TÜRSAB A-17672 · Platba na Palubě'
     },
     intro: [
       'Když hledáte "lodní túra v Istanbulu", hledáte jedinou věc, která definuje město z vody: Bospor. Naše 3hodinová lodní túra po Bosporu vás vede kolem každého hlavního památníku Istanbulu — Palác Dolmabahçe, mešita Ortaköy, most Bospor, Rumeli Hisarı, Palác Beylerbeyi a Dívčí věž — s plnou tureckou večeří a živou zábavou.',
       'Na rozdíl od mnoha 1hodinových turistických trajektů, které pokrývají méně z Bosporu a vynechávají večeři a zábavu, je **naše lodní túra v Istanbulu** kompletní večerní zážitek: nalodění v 20:00 na přístavišti Kabataş, túra do půlnoci, 10 mezze, hlavní chod, dezert, sema, lidové tance, orientální tanec a DJ. Dostanete také večerní výlet jako součást túry.',
-      'Ať už máte večer nebo celý týden v Istanbulu, tato **lodní túra v Istanbulu** dělá svou práci. 4,8★ z více než 11.317 cestovatelů, licencováno TÜRSAB (A-17672), halal certifikované menu a platba na palubě — žádný finanční závazek, dokud nejste spokojeni se zážitkem.'
+      'Ať už máte večer nebo celý týden v Istanbulu, tato **lodní túra v Istanbulu** dělá svou práci. 4,9★ z více než 11.317 cestovatelů, licencováno TÜRSAB (A-17672), halal certifikované menu a platba na palubě — žádný finanční závazek, dokud nejste spokojeni se zážitkem.'
     ],
     highlights: [
       { title: 'Všechny hlavní památníky Bosporu', desc: 'Dolmabahçe, Çırağan, mešita Ortaköy, most Bospor, Bebek, Rumeli Hisarı, most FSM, Palác Beylerbeyi, Üsküdar, Dívčí věž. Oba břehy, evropský a asijský, v jedné túře.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       '**Výlet po Bosporu** může znamenat 1hodinový turistický trajekt nebo kompletní večer túry s večeří — my děláme to druhé a většina cestovatelů to považuje za zážitek lepší hodnoty. 3 hodiny, €{p.dinnerStd}/osoba, večeře a zábava zahrnuty. Nejen procházíte kolem památníků — jíte, sledujete show a užíváte si večer.',
       'Trasa **našeho výletu po Bosporu** pokrývá vše, co stojí za to vidět: Palác Dolmabahçe (osmanská rezidence sultána z 19. století), mešita Ortaköy (jedna z nejfotografovanějších mešit Istanbulu), most Bospor (mění barvy v noci), Rumeli Hisarı (postavený Fatihem Sultanem Mehmetem v roce 1452), Palác Beylerbeyi (asijské pobřeží) a Dívčí věž na malém ostrově. Vše vysvětlené anglicky mluvící posádkou.',
-      'Ať už jste v Istanbulu 24 hodin nebo týden, toto je **výlet po Bosporu**, který vám dává nejvíce za jeden večer. Hodnocení 4,8★ z více než 11.317 cestovatelů, licencováno TÜRSAB A-17672, halal přátelské menu, platba na palubě — žádné riziko platby předem.'
+      'Ať už jste v Istanbulu 24 hodin nebo týden, toto je **výlet po Bosporu**, který vám dává nejvíce za jeden večer. Hodnocení 4,9★ z více než 11.317 cestovatelů, licencováno TÜRSAB A-17672, halal přátelské menu, platba na palubě — žádné riziko platby předem.'
     ],
     highlights: [
       { title: 'Celý Bospor jedním tahem', desc: 'Evropské pobřeží (Dolmabahçe, Ortaköy, Rumeli Hisarı), asijské pobřeží (Beylerbeyi, Üsküdar), oba mosty Bosporu, Dívčí věž. Každý hlavní památník viditelný za 3 hodiny.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Hledáte **vstupenky na plavbu po Bosporu**? Kupte přímo. Naše vstupenka stojí €{p.dinnerStd}/osoba — 40% sleva oproti běžné ceně (€{p.dinnerStdOriginal}). Třetí strany rezervačních stránek obvykle přidávají 20-40% provize. Rezervací přímo ušetříte — a stále platíte na palubě.',
       'Náš proces **vstupenek na plavbu po Bosporu**: vyplňte formulář na této stránce za méně než 1 minutu (datum, počet hostů, kontakt), okamžitě potvrdíme přes WhatsApp / Telegram, dostavíte se na přístaviště Kabataş v 20:00, platíte na palubě, užíváte si 3hodinovou plavbu s večeří. Žádná fyzická vstupenka k tisku, žádný kupón k přijetí e-mailem — potvrzení je vaše vstupenka.',
-      'Ať už rezervujete plavbu s večeří na dnes večer nebo rezervujete na konkrétní datum příští týden, **přímé vstupenky na plavbu po Bosporu** jsou nejrychlejším způsobem. Hodnocení 4,8★, licencováno TÜRSAB (A-17672), halal certifikované menu a podporuje doplňky transfer z hotelu a alkohol.'
+      'Ať už rezervujete plavbu s večeří na dnes večer nebo rezervujete na konkrétní datum příští týden, **přímé vstupenky na plavbu po Bosporu** jsou nejrychlejším způsobem. Hodnocení 4,9★, licencováno TÜRSAB (A-17672), halal certifikované menu a podporuje doplňky transfer z hotelu a alkohol.'
     ],
     highlights: [
       { title: 'Přímá rezervace — bez poplatků zprostředkovatelů', desc: '€{p.dinnerStd}/osoba — jedna transparentní cena. Stránky třetích stran účtují €30-80+ za stejnou túru. Ušetřete rezervací přímo u nás. Žádné skryté poplatky, žádný příplatek provize.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bospor Last Minute od €{p.dinnerStd} — Rezervujte Dnes, Plaťte na Palubě',
-      description: 'Rezervace plavby po Bosporu ve stejný den. Potvrzení WhatsApp za minuty. Odjezd 21:00 z Kabataşe. Bezplatné storno, platba na palubě. 11.317 recenzí.'
+      description: 'Rezervace plavby po Bosporu ve stejný den. Potvrzení WhatsApp za minuty. Odjezd 21:00 z Kabataşe. Bezplatné storno, platba na palubě. 11.317+ hostů.'
     },
     hero: {
       h1: 'Plavba po Bosporu na Poslední Chvíli',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Turistika na Bosporu** z vody překonává každou autobusovou túru. Bospor je nejhistoričtější vodní cesta města — osmanští sultáni, byzantští císaři, řečtí obchodníci a ruské válečné lodě zde všichni prošli. Dnes naše 3hodinová túra, s komentářem od anglicky mluvící posádky, prochází kolem každého hlavního památníku Istanbulu, který definuje panorama.',
       'Trasa **naší turistické túry po Bosporu** (večerní odjezd, 21:00-00:00):\n\n1. **Palác Dolmabahçe** — osmanská rezidence z 19. století, osvětlená v noci\n2. **Palác Çırağan** — nyní luxusní hotel, královská historie\n3. **Mešita Ortaköy** — jedna z nejfotografovanějších mešit Istanbulu, na vodě\n4. **Most Bospor** — v noci střídá modrou, fialovou, zlatou\n5. **Bebek** — elegantní čtvrť na evropském pobřeží\n6. **Rumeli Hisarı** — postaven Fatihem Sultanem Mehmetem v roce 1452 před dobytím Konstantinopole\n7. **Most Fatih Sultan Mehmet** — druhý most Bosporu, dramatický oblouk\n8. **Palác Beylerbeyi** — asijské pobřeží, osmanská letní rezidence\n9. **Üsküdar** — asijské pobřeží Istanbulu, tradiční čtvrť\n10. **Dívčí věž** — věž na malém ostrově, jeden z nejromantičtějších symbolů Istanbulu',
-      'Večeře a zábava jsou zahrnuty — ne samostatně — takže **turistika na Bosporu** se mění v kompletní večer. Turecká vícechodová večeře, živá show lidových tanců, sema, orientální tanec, DJ. Hodnocení 4,8★ z více než 11.317 cestovatelů, licencováno TÜRSAB A-17672.'
+      'Večeře a zábava jsou zahrnuty — ne samostatně — takže **turistika na Bosporu** se mění v kompletní večer. Turecká vícechodová večeře, živá show lidových tanců, sema, orientální tanec, DJ. Hodnocení 4,9★ z více než 11.317 cestovatelů, licencováno TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ hlavních památek Istanbulu', desc: 'Palác Dolmabahçe, Palác Çırağan, mešita Ortaköy, most Bospor, Rumeli Hisarı, most FSM, Palác Beylerbeyi, Üsküdar, Dívčí věž. Každý zásadní památník Istanbulu v jedné túře.' },

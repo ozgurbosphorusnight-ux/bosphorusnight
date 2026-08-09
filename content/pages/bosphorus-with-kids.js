@@ -37,7 +37,7 @@ module.exports = {
 
     'Unlike adult-only party boats, our **Bosphorus dinner cruise for families** keeps the atmosphere warm and inclusive. Children ages **0-3 sail free** (including the transfer), ages 4-9 get **€5 off** the adult price, and 10+ are full-price but count as guests — no hidden fees. The live folklore show, belly dance, and whirling dervish are gentle family entertainment, not a nightclub.',
 
-    'Whether you\'re visiting Istanbul for a long weekend with a toddler, or bringing teens on their first European trip, this is the cruise Istanbul families recommend. Safe, halal-certified, TÜRSAB-licensed, and rated 4.8★ by more than 11,317 travelers.'
+    'Whether you\'re visiting Istanbul for a long weekend with a toddler, or bringing teens on their first European trip, this is the cruise Istanbul families recommend. Safe, halal-certified, TÜRSAB-licensed, and rated 4.9★ by more than 11,317 travelers.'
   ],
 
   highlights: [

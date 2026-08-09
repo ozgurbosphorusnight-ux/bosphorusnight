@@ -38,7 +38,7 @@ module.exports = {
   },
 
   intro: [
-    'Many Bosphorus boats split their guests into "Standard" and "VIP". We don\'t. Aboard **AMOR** there is one dinner menu, prepared with the same care for everyone: 10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), semolina halva, and unlimited soft drinks. The full eight-act entertainment program is included too — Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale — all within the €{p.dinnerStd}/person price.',
+    'Many Bosphorus boats split their guests into "Standard" and "VIP". We don\'t. Aboard **AMOR** there is one dinner menu, prepared with the same care for everyone: 10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), special semolina dessert, and unlimited soft drinks. The full eight-act entertainment program is included too — Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale — all within the €{p.dinnerStd}/person price.',
 
     'The VIP feeling starts with your table. If you want to be closest to the stage and the views, add a **stage-front private table** (+€{p.romantic}/table) and your spot is reserved in advance — the best angle for the whirling dervish, the folk dances, and the illuminated Bosphorus. It\'s the favorite choice of couples, celebrations, and photographers.',
 
@@ -79,7 +79,7 @@ module.exports = {
     },
     {
       q: 'What\'s on the menu?',
-      a: '10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), and semolina halva for dessert, with unlimited soft drinks. The eight-act entertainment program is included: Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale.'
+      a: '10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), and special semolina dessert for dessert, with unlimited soft drinks. The eight-act entertainment program is included: Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale.'
     },
     {
       q: 'Is alcohol included?',

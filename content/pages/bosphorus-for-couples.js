@@ -37,7 +37,7 @@ module.exports = {
 
     'The atmosphere is **warm but not over-the-top romantic** — no forced proposal music, no uncomfortable "just married" coordinated cheers. You eat, you drink, you talk, you watch Istanbul glow by. If you want to add a romantic table setup (candles, roses, +€{p.romantic}), great — if not, the dinner alone is already special.',
 
-    'Whether you\'re in Istanbul for 3 days with your partner, celebrating a modest milestone, or planning a future proposal scouting trip, the **Bosphorus cruise for couples** gives you a 3-hour evening to be together in one of the world\'s most photographed cities. 4.8★ rated, pay-on-boat, free cancellation.'
+    'Whether you\'re in Istanbul for 3 days with your partner, celebrating a modest milestone, or planning a future proposal scouting trip, the **Bosphorus cruise for couples** gives you a 3-hour evening to be together in one of the world\'s most photographed cities. 4.9★ rated, pay-on-boat, free cancellation.'
   ],
 
   highlights: [
@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'food',
       title: 'Slow-paced multi-course dinner',
-      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, or vegetarian), semolina halva dessert. Served in slow succession over 3 hours — you\'re not rushed.'
+      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, or vegetarian), special semolina dessert dessert. Served in slow succession over 3 hours — you\'re not rushed.'
     },
     {
       icon: 'music',

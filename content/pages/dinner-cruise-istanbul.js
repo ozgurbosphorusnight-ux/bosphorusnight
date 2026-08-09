@@ -23,13 +23,13 @@ module.exports = {
 
   meta: {
     title: 'Dinner Cruise Istanbul from €{p.dinnerStd} — Bosphorus Night Tour',
-    description: '3-hour Istanbul dinner cruise on the Bosphorus: Turkish menu, live folklore, illuminated bridges. Pay on boat. 11,317 reviews.'
+    description: '3-hour Istanbul dinner cruise on the Bosphorus: Turkish menu, live folklore, illuminated bridges. Pay on boat. 11,317+ guests.'
   },
 
   hero: {
     h1: 'Dinner Cruise Istanbul',
     subtitle: 'The best dinner cruise in Istanbul — 3 hours on the Bosphorus, multi-course Turkish feast, live entertainment, and night views of the city\'s most iconic landmarks.',
-    badge: '4.8★ · 11,317 reviews · TÜRSAB A-17672'
+    badge: '4.9★ · 11,317+ guests · TÜRSAB A-17672'
   },
 
   intro: [
@@ -37,14 +37,14 @@ module.exports = {
 
     'The **Istanbul dinner cruise** experience: board at 20:00, settle in, watch Dolmabahçe Palace slide by as we depart, dinner begins as we approach Ortaköy Mosque, the show starts (whirling dervish, folk dances, belly dance), and by the time dessert arrives you\'re under the illuminated Bosphorus Bridge. By midnight you\'re back at Kabataş with a camera roll of iconic photos and a full stomach.',
 
-    'From €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}) — one package with everything included. Pay on the boat — no prepayment, no risk. TÜRSAB A-17672 licensed, 4.8★ rated by 11,317+ travelers.'
+    'From €{p.dinnerStd}/person (was €{p.dinnerStdOriginal}) — one package with everything included. Pay on the boat — no prepayment, no risk. TÜRSAB A-17672 licensed, 4.9★ rated by 11,317+ travelers.'
   ],
 
   highlights: [
     {
       icon: 'dinner',
       title: 'Full multi-course Turkish dinner',
-      desc: '10 varieties of mezes, warm appetizer, main course (salmon/sea bass/chicken skewer/beef skewer/vegetarian), semolina halva. Halal-certified. Unlimited soft drinks included.'
+      desc: '10 varieties of mezes, warm appetizer, main course (salmon/sea bass/chicken skewer/beef skewer/vegetarian), special semolina dessert. Halal-certified. Unlimited soft drinks included.'
     },
     {
       icon: 'show',
@@ -94,17 +94,17 @@ module.exports = {
     },
     {
       q: 'Is a dinner cruise in Istanbul worth it?',
-      a: 'For first-time Istanbul visitors, yes — it combines sightseeing, dinner, and entertainment in 3 hours. Bosphorus Night charges €{p.dinnerStd}/person Standard, including 10 mezes, main course, soft drinks, live music, DJ, and traditional shows. 4.8★ from 11,317 reviews suggests reliability.'
+      a: 'For first-time Istanbul visitors, yes — it combines sightseeing, dinner, and entertainment in 3 hours. Bosphorus Night charges €{p.dinnerStd}/person Standard, including 10 mezes, main course, soft drinks, live music, DJ, and traditional shows. 4.9★ from 11,317+ guests suggests reliability.'
     },
     {
       q: 'What\'s the cheapest dinner cruise in Istanbul?',
-      a: 'Bosphorus Night offers an All-In Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. The 3-hour format includes full dinner (10 mezes, main course, dessert), soft drinks, live music, DJ, folk dances, and the Mevlana whirling dervish. Pay on boat, no prepayment required.'
+      a: 'Bosphorus Night offers an All-In Dinner Cruise at €{p.dinnerStd}/person — TÜRSAB-licensed (A-17672), 4.9★ from 11,317+ guests. The 3-hour format includes full dinner (10 mezes, main course, dessert), soft drinks, live music, DJ, folk dances, and the Mevlana whirling dervish. Pay on boat, no prepayment required.'
     }
   ],
 
   cta: {
     primary: 'Book Dinner Cruise · Pay on Boat',
-    secondary: '4.8★ rated · TÜRSAB licensed · Free cancellation 2hrs before',
+    secondary: '4.9★ rated · TÜRSAB licensed · Free cancellation 2hrs before',
     tertiary: 'Check Tonight\'s Availability'
   },
 

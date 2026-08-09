@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Priser for børn',
           paragraphs: [
-            'Børn 0–3 år (inklusive): gratis. Børn 4–8 år (inklusive): 50 % rabat. Børn 9 år og ældre: fuld pris.',
-            'Bemærk: 3-årige er gratis, 4-årige betaler halv pris. 8-årige er stadig på halv pris, 9-årige betaler fuld pris.',
+            'Børn 0–3 år (inklusive): gratis. Børn 4–9 år (inklusive): 50 % rabat. Børn 9 år og ældre: fuld pris.',
+            'Bemærk: 3-årige er gratis, 4-årige får €5 rabat. 9-årige får stadig €5 rabat, 10-årige betaler fuld pris.',
           ],
         },
         {
           h2: 'Hvad er der på menuen for børn?',
           paragraphs: [
-            'Middagsmenuen inkluderer muligheder som kyllinge- og oksespyd, som de fleste børn kan lide. Mezze-udvalget er varieret med masser af grøntsager og dip. Semulje-halva til dessert er inkluderet for alle.',
+            'Middagsmenuen inkluderer muligheder som kyllinge- og oksespyd, som de fleste børn kan lide. Mezze-udvalget er varieret med masser af grøntsager og dip. Speciel semuljedessert til dessert er inkluderet for alle.',
             'Har dit barn brug for specialkost? Spørg os på forhånd på WhatsApp — vi gør vores bedste for at hjælpe.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Børn er hjerteligt velkomne',
           paragraphs: [
-            'Børn 0–3 år: gratis. 4–8 år: 50 % rabat. 9+: fuld pris.',
+            'Børn 0–3 år: gratis. 4–9 år: 50 % rabat. 9+: fuld pris.',
           ],
         },
         {

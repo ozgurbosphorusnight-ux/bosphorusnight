@@ -24,19 +24,19 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Dinner Cruise from €{p.dinnerStd} — Istanbul Night Tour + Show',
-    description: '3-hour Bosphorus dinner cruise: multi-course Turkish menu, live folklore show. 21:00 from Kabataş. Pay on boat. 11,317 reviews.'
+    description: '3-hour Bosphorus dinner cruise: multi-course Turkish menu, live folklore show. 21:00 from Kabataş. Pay on boat. 11,317+ guests.'
   },
 
   hero: {
     h1: 'Bosphorus Dinner Cruise in Istanbul',
     subtitle: 'Three hours of live entertainment, a multi-course Turkish feast, and the most celebrated night views of the Bosphorus.',
-    badge: '4.8★ · 11,317 reviews'
+    badge: '4.9★ · 11,317+ guests'
   },
 
   intro: [
-    'The **Bosphorus dinner cruise** is Istanbul\'s most iconic evening experience. Boarding at Kabataş Pier at 20:00, our vessel glides beneath the illuminated spans of the Bosphorus and Fatih Sultan Mehmet bridges while you enjoy a multi-course Turkish feast, live folklore performances, belly dancing, and a DJ set that keeps the deck alive until 23:00.',
+    'The **Bosphorus dinner cruise** is Istanbul\'s most iconic evening experience. Boarding at Kabataş Pier at 20:00, our vessel glides beneath the illuminated spans of the Bosphorus and Fatih Sultan Mehmet bridges while you enjoy a multi-course Turkish feast, live folklore performances, belly dancing, and a DJ set that keeps the deck alive until 23:45.',
 
-    'Unlike the many generic tour boats crowding the Istanbul nightscape, our **Bosphorus dinner cruise** is TÜRSAB-licensed (A-17672) and rated 4.8★ by more than 11,317 travelers. We keep the group small, the service warm, and — because you pay on the boat — you risk nothing by booking in advance.',
+    'Unlike the many generic tour boats crowding the Istanbul nightscape, our **Bosphorus dinner cruise** is TÜRSAB-licensed (A-17672) and rated 4.9★ by more than 11,317 travelers. We keep the group small, the service warm, and — because you pay on the boat — you risk nothing by booking in advance.',
 
     'Whether you\'re celebrating an anniversary, treating your family to a premium Istanbul evening, or simply craving the city\'s most photogenic sunset-to-night transition, this is the dinner cruise Istanbul regulars recommend first.'
   ],
@@ -45,7 +45,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Multi-course Turkish feast',
-      desc: '10 mezze selections, hot starter (börek), your choice of salmon / sea bass / chicken skewer / beef skewer / vegetarian plate, dessert with semolina halva, and unlimited soft drinks.'
+      desc: '10 mezze selections, hot starter (börek), your choice of salmon / sea bass / chicken skewer / beef skewer / vegetarian plate, dessert with special semolina dessert, and unlimited soft drinks.'
     },
     {
       icon: 'show',
@@ -91,11 +91,11 @@ module.exports = {
     },
     {
       q: 'Is the Bosphorus dinner cruise worth it?',
-      a: 'For most travelers, yes. €{p.dinnerStd}/person includes a 3-hour cruise, full dinner (10 mezes, main course, dessert), unlimited soft drinks, live music, DJ, traditional folk dances, and belly dance show. With 4.8★ from 11,317 reviews and pay-on-boat policy, the risk is minimal.'
+      a: 'For most travelers, yes. €{p.dinnerStd}/person includes a 3-hour cruise, full dinner (10 mezes, main course, dessert), unlimited soft drinks, live music, DJ, traditional folk dances, and belly dance show. With 4.9★ from 11,317+ guests and pay-on-boat policy, the risk is minimal.'
     },
     {
       q: 'What\'s the best Bosphorus dinner cruise in Istanbul?',
-      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.8★ from 11,317 reviews. Daily 21:00 departure from Kabataş Pier, 3 hours, €{p.dinnerStd}/person. Pay on boat — no prepayment needed.'
+      a: 'Bosphorus Night is among the top-rated licensed dinner cruise operators (TÜRSAB A-17672) with 4.9★ from 11,317+ guests. Daily 21:00 departure from Kabataş Pier, 3 hours, €{p.dinnerStd}/person. Pay on boat — no prepayment needed.'
     }
   ],
 

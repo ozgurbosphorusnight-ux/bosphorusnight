@@ -15,15 +15,15 @@ module.exports = {
     hero: {
       h1: 'Vakariņu kruīzs pa Bosforu Stambulā',
       subtitle: 'Trīs stundas ar dzīvu izklaidi, dāsnas turku vairāku ēdienu vakariņas un visiespaidīgākie nakts skati pa Bosforu.',
-      badge: '4,8★ · 11 317 atsauksmes'
+      badge: '4,9★ · 11 317+ viesi'
     },
     intro: [
-      '**Vakariņu kruīzs pa Bosforu** ir Stambulas ikoniskākā vakara pieredze. Tūre sākas plkst. 20:00 pie Kabataş piestātnes un kuģo zem izgaismotā Bosfora un Fatih Sultan Mehmet tilta, piedāvājot turku vairāku ēdienu vakariņas, dzīvas tautas dejas, austrumu deju un DJ programmu, kas piepilda klāju līdz plkst. 23:00.',
-      'Atšķirībā no parastajiem kuģiem, kas iezīmē Stambulas vakara ainavu, **mūsu Bosfora vakariņu kruīzs** ir TÜRSAB licencēts (A-17672) un saņēmis 4,8★ no vairāk nekā 11 317 ceļotājiem. Grupas turam nelielas, servisu siltu — un, tā kā maksā uz kuģa, iepriekš rezervēt nav nekāda riska.',
+      '**Vakariņu kruīzs pa Bosforu** ir Stambulas ikoniskākā vakara pieredze. Tūre sākas plkst. 20:00 pie Kabataş piestātnes un kuģo zem izgaismotā Bosfora un Fatih Sultan Mehmet tilta, piedāvājot turku vairāku ēdienu vakariņas, dzīvas tautas dejas, austrumu deju un DJ programmu, kas piepilda klāju līdz plkst. 23:45.',
+      'Atšķirībā no parastajiem kuģiem, kas iezīmē Stambulas vakara ainavu, **mūsu Bosfora vakariņu kruīzs** ir TÜRSAB licencēts (A-17672) un saņēmis 4,9★ no vairāk nekā 11 317 ceļotājiem. Grupas turam nelielas, servisu siltu — un, tā kā maksā uz kuģa, iepriekš rezervēt nav nekāda riska.',
       'Vienalga, vai svini jubileju, meklē premium vakaru Stambulā ar ģimeni vai vēlies pilsētas fotogēnāko saulrieta-uz-nakti pāreju — šis ir vakariņu kruīzs, ko Stambulas vietējie iesaka pirmajā vietā.'
     ],
     highlights: [
-      { title: 'Turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda (börek), galvenā ēdiena izvēle (lasis / jūras asaris / vistas šašliks / liellopu šašliks / veģetārais), mannas halva desertā, neierobežoti bezalkoholiskie dzērieni.' },
+      { title: 'Turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda (börek), galvenā ēdiena izvēle (lasis / jūras asaris / vistas šašliks / liellopu šašliks / veģetārais), īpašs mannas deserts desertā, neierobežoti bezalkoholiskie dzērieni.' },
       { title: 'Dzīvas tautas dejas, austrumu deja un DJ', desc: 'Astoņi priekšnesumi: Oba Dombra, Mevlana sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem — kam seko dzīvs saksofons un DJ programma visa kruīza laikā.' },
       { title: 'Pilns nakts maršruts pa Bosforu', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → FSM tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'No €{p.dinnerStd}/personai — maksā uz kuģa', desc: 'Vakariņu kruīzs €{p.dinnerStd} (sākotnēji €{p.dinnerStdOriginal}). Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
@@ -56,7 +56,7 @@ module.exports = {
     intro: [
       '**Kruīzs pa Bosforu ar bērniem** ir Stambulas ģimenēm draudzīgākais vakara variants. Mēs uzņemam desmitiem ģimeņu katru vakaru — esam padomājuši par katru detaļu, lai mazākajiem būtu ērti: pārklāta iekštelpu zona siltuma saglabāšanai, pieejama bērnu ēdienkarte (vienkārša grilēta vista, makaroni, neierobežoti bezalkoholiskie dzērieni) un agrā iekāpšana, lai izvairītos no novēlotas noguruma.',
       'Atšķirībā no tikai pieaugušo kuģiem, **mūsu Bosfora ģimenes vakariņu kruīzs** paliek silts un iekļaujošs. **Bērni 0–3 gadi bez maksas** (transfērs iekļauts), 4–9 gadi saņem **€5 atlaidi**, 10+ gadi maksā pilnu cenu — bez slēptām izmaksām. Dzīvās tautas dejas, austrumu deja un sema priekšnesums ir ģimenei draudzīga izklaide, nevis naktsklubs.',
-      'Vienalga, vai esi Stambulā garajā nedēļas nogalē ar mazuļiem vai ved pusaudžus pirmajā Eiropas braucienā — šī ir tūre, ko iesaka Stambulas ģimenes. Droša, halal sertificēta, TÜRSAB licencēta un saņēmusi 4,8★ no vairāk nekā 11 317 ceļotājiem.'
+      'Vienalga, vai esi Stambulā garajā nedēļas nogalē ar mazuļiem vai ved pusaudžus pirmajā Eiropas braucienā — šī ir tūre, ko iesaka Stambulas ģimenes. Droša, halal sertificēta, TÜRSAB licencēta un saņēmusi 4,9★ no vairāk nekā 11 317 ceļotājiem.'
     ],
     highlights: [
       { title: '0–3 gadi pilnīgi bez maksas', desc: 'Mazuļiem un maziem bērniem nekādas maksas. 4–9 gadi maksā €5 no pieaugušā cenas. No 10 gadiem pilna pieaugušā cena. Caurspīdīgi, bez pārsteigumiem.' },
@@ -92,7 +92,7 @@ module.exports = {
     intro: [
       '**Romantiskais Bosfora kruīzs** ir Stambulas ikoniskākais pāru vakars. Kamēr saule riet aiz Dolmabahçe pils un Bosfora tilts iedegas krāsās, tu un tavs partneris dalāties ar turku vairāku ēdienu vakariņām pie privāta galda — ar svecēm, svaigiem ziediem un vijoles skaņām, kas vijas pa klāju.',
       'Mūsu romantiskā galda klājums (+€{p.romantic}/galdam) padara jebkuru vietu par īpašu mirkli: sarkanas rozes, mirdzošas sveces, ar roku rakstīta sveiciena vēstule. Pievieno 2 glāzes alkohola vīnam zem zvaigznēm (+€{p.alcohol2}/personai) vai paturi vienkāršu ar iekļautajiem bezalkoholiskajiem dzērieniem. Lai kā tu izvēlies, komanda neuzkrītoši parūpēsies par pārējo.',
-      'Vienalga, vai svini jubileju, plāno pārsteigumu partnerim vai vienkārši vēlies neaizmirstamu vakaru Eiropas romantiskākajā pilsētā — šī ir tūre, ko Stambulas pāri mīl. Novērtēta ar 4,8★, TÜRSAB licencēta un — vissvarīgāk — maksā uz kuģa, tāpēc tu apsoli tikai pašu vakaru.'
+      'Vienalga, vai svini jubileju, plāno pārsteigumu partnerim vai vienkārši vēlies neaizmirstamu vakaru Eiropas romantiskākajā pilsētā — šī ir tūre, ko Stambulas pāri mīl. Novērtēta ar 4,9★, TÜRSAB licencēta un — vissvarīgāk — maksā uz kuģa, tāpēc tu apsoli tikai pašu vakaru.'
     ],
     highlights: [
       { title: 'Romantisks galds sveču gaismā', desc: 'Pievieno romantisko galda klājumu par +€{p.romantic}/galdam: svaigas sarkanas rozes, mirdzošas sveces, rožu ziedlapas uz galdauta un ar roku rakstīta apsveikuma kartīte. Fotografēšana iekļauta.' },
@@ -128,7 +128,7 @@ module.exports = {
     intro: [
       '**Halal Bosfora kruīzs** ir Stambulas cieņpilnākais vakariņu kruīzs musulmaņu ceļotājiem. Katrs gaļas gabals, kas tiek pasniegts uz kuģa — lasis, jūras asaris, vistas šašliks, liellopu šašliks — ir **halal sertificēts** no apstiprinātiem piegādātājiem. Mēs pasniedzam vienu un to pašu ēdienkarti visiem viesiem; nav atsevišķas "halal sekcijas", jo viss kuģis ir halal pēc noklusējuma.',
       'Alkohols ir **brīvprātīgs papildinājums** — nekad netiek uzspiests viesiem, un galdu izkārtojums dabiski nodala viesus, kas dod priekšroku bezalkohola galdam. Viesiem, kas vēlas 2 glāžu alkohola paketi (+€{p.alcohol2}/personai), tā ir pieejama, bet iekļautie neierobežotie bezalkoholiskie dzērieni (ūdens, kola, sula) ir pietiekami lielākajai daļai musulmaņu ģimeņu. Komanda ir apmācīta cienīt tavas preferences bez pieņēmumiem.',
-      '**Halal-draudzīgais Bosfora kruīzs** ir nozīmīgs ceļotājiem no Saūda Arābijas, AAE, Kuveitas, Kataras, Irānas, Malaizijas, Indonēzijas, Pakistānas un Marokas, kas vēlas Stambulas ikoniskāko vakaru bez kompromisiem. TÜRSAB licencēts, 4,8★ un maksā uz kuģa — tu neapsoli neko, pirms neesi pārliecināts, ka pieredze atbilst taviem standartiem.'
+      '**Halal-draudzīgais Bosfora kruīzs** ir nozīmīgs ceļotājiem no Saūda Arābijas, AAE, Kuveitas, Kataras, Irānas, Malaizijas, Indonēzijas, Pakistānas un Marokas, kas vēlas Stambulas ikoniskāko vakaru bez kompromisiem. TÜRSAB licencēts, 4,9★ un maksā uz kuģa — tu neapsoli neko, pirms neesi pārliecināts, ka pieredze atbilst taviem standartiem.'
     ],
     highlights: [
       { title: '100% halal sertificēta ēdienkarte', desc: 'Visa gaļa (lasis, jūras asaris, vistas šašliks, liellopu šašliks) ir halal sertificēta no apstiprinātiem piegādātājiem. Virtuve ievēro halal sagatavošanu. Bez cūkgaļas vai ne-halal piedevām. Veģetārās iespējas vienmēr pieejamas.' },
@@ -142,7 +142,7 @@ module.exports = {
       { q: 'Vai šis kruīzs ir piemērots musulmaņu ģimenēm ar bērniem?', a: 'Jā — tas ir viens no Stambulas cieņpilnākajiem ģimenes kruīziem. Izklaide ir pieticīga (tautas dejas, sema, turku mūzika), bērni līdz 3 gadiem ir bez maksas, 4–9 gadi saņem €5 atlaidi. Bez naktsklubu atmosfēras. Ģimenes no Persijas līča, Indonēzijas, Malaizijas, Pakistānas un Marokas regulāri rezervē šo kruīzu.' },
       { q: 'Vai es varu lūgties uz kuģa?', a: 'Uz kuģa nav atvēlētas lūgšanu telpas, bet iesakām lūgties pirms iekāpšanas plkst. 20:00 (maghrib lūgšana bieži iekrīt šajā intervālā). Kabataş piestātnē ir lūgšanu telpas. Ja kuģošanas laikā 21:00–00:00 (isha) tev jālūdzas, runā ar komandu — varam sarunāt klusu stūri uz klāja.' },
       { q: 'Kādas ir cenas musulmaņu ģimenei no 4 (2 pieaugušie, 2 bērni)?', a: 'Vakariņu kruīzs: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 atlaide 4–9 gadi) = €87.20. Ja bērni ir līdz 3 gadiem, bez maksas: 2 × €{p.dinnerStd} = €48.60. Pievieno €5 viesnīcas transfēru katram pieaugušajam. Kopā: €48.60–€92.90 ģimenei no 4, bez priekšapmaksas, maksā uz kuģa.' },
-      { q: 'Vai viesnīcas transfērs arī ir halal?', a: 'Viesnīcas transfērs ir tikai automašīnas transports — nav iesaistīta nedz ēdiens, nedz dzērieni, tāpēc nav halal raizes. Mūsu šoferi ir profesionāli, cieņpilni un punktuāli. Transfēra zonas aptver Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli un 9 citus centrālos rajonus, kur musulmaņu ceļotāji parasti uzturas.' }
+      { q: 'Vai viesnīcas transfērs arī ir halal?', a: 'Viesnīcas transfērs ir tikai automašīnas transports — nav iesaistīta nedz ēdiens, nedz dzērieni, tāpēc nav halal raizes. Mūsu šoferi ir profesionāli, cieņpilni un punktuāli. Transfēra zonas aptver Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli un 8 citus centrālos rajonus, kur musulmaņu ceļotāji parasti uzturas.' }
     ],
     cta: {
       primary: 'Rezervē halal kruīzu · Maksā uz kuģa',
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% ATLAIDE · Viena ēdienkarte, premium standarts · Maksā uz kuģa'
     },
     intro: [
-      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks), mannas halva un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa astoņu priekšnesumu izklaides programma — Oba Dombra, virpuļojošo dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ — viss par €{p.dinnerStd}/personai.',
+      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks), īpašs mannas deserts un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa astoņu priekšnesumu izklaides programma — Oba Dombra, virpuļojošo dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ — viss par €{p.dinnerStd}/personai.',
       'VIP sajūta sākas pie tava galda. Ja vēlies būt pēc iespējas tuvāk skatuvei un skatiem, pievieno **privāto galdu pie skatuves** (+€{p.romantic}/galdam), un vieta tiek rezervēta iepriekš — labākais rakurss uz dervišiem, tautas dejām un izgaismoto Bosforu. Iemīļotākā izvēle pāriem, svinībām un fotografēšanas cienītājiem.',
       'AMOR ir moderns kuģis: 42 metri, 3 klāji, līdz 400 viesiem, ziemā apsildāms un vasarā ar gaisa kondicionieri. Trīs stundu maršruts sākas Kabatašā (iekāpšana no 20:00, izbraukšana 21:00, atgriešanās 00:00) garām Dolmabahčei, Ortakojas mošejai, Rumeli cietoksnim un Bosfora tilta gaismām. TÜRSAB licence (A-17672), 4,9★ Google. Bez priekšapmaksas — maksā uz kuģa, un atcelšana ir bez maksas līdz 2 stundām pirms izbraukšanas.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Vai jūs pārdodat „VIP paketi“? Ar ko tā atšķiras no standarta?', a: 'Mēs nepārdodam atsevišķu VIP paketi — ir viena ēdienkarte, ko visiem pasniedz vienā un tajā pašā premium standartā. Tas, ko saucam par „VIP pieredzi“, ir tava vakara pielāgošana: privāts galds pie skatuves (+€{p.romantic}/galdam), uzmanīga apkalpošana pie galda un neobligāti dzērienu papildinājumi. Kruīzs ilgst 3 stundas, €{p.dinnerStd}/personai.' },
       { q: 'Vai €{p.dinnerStd} tiešām ir 40% atlaide?', a: 'Jā — mūsu cenrāža cena ir €{p.dinnerStdOriginal}/personai. €{p.dinnerStd} ir tiešās rezervācijas cena bez starpnieku komisijām. Tu maksā uz kuģa, un priekšapmaksas nav.' },
-      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks) un mannas halva desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Astoņu priekšnesumu programma ir iekļauta: Oba Dombra, dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ.' },
+      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks) un īpašs mannas deserts desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Astoņu priekšnesumu programma ir iekļauta: Oba Dombra, dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ.' },
       { q: 'Vai alkohols ir iekļauts?', a: 'Nē — alkohols ir atsevišķs papildinājums: 2 glāzes — vīns, alus, rakı, degvīns, viskijs, džins un citi — par +€{p.alcohol2}/personai. Bezalkoholiskie dzērieni ir iekļauti neierobežoti un bez maksas. Premium importētie dzērieni tiek rēķināti atsevišķi uz kuģa.' },
       { q: 'Kā nodrošināt galdu pie skatuves?', a: 'Rezervējot vienkārši izvēlies papildinājumu „privāts galds pie skatuves“ (+€{p.romantic}/galdam) — galds tiks rezervēts uz tavu vārdu. Labākās vietas aizņem iepriekšējas rezervācijas, tāpēc iesakām pievienot to pirms kruīza dienas.' },
       { q: 'Kāds ir kuģis?', a: 'AMOR — moderns pasažieru kuģis 42 metru garumā ar 3 klājiem un 400 viesu ietilpību, ziemā apsildāms un vasarā ar gaisa kondicionieri. Izbraukšana no Kabatašas piestātnes: iekāpšana 20:00, izbraukšana 21:00, atgriešanās 00:00. Maršruts: Dolmabahče, Ortakoja, Rumeli cietoksnis, Beilerbeji un Bosfora tilta gaismas.' }
@@ -200,7 +200,7 @@ module.exports = {
     intro: [
       '**Privāts Bosfora kruīzs** nozīmē, ka viss kuģis ir tavs — nav citu viesu, nav koplietojamu galdu, nav kopīgas deju grīdas. Ideāli ģimenes saietiem, korporatīvajām vakariņām, dzimšanas dienu ballītēm, vecpuišu vakariem vai kāzu ceremonijām. Kuģis, komanda, ēdienkarte, izklaide un programma tiek pielāgota tavai grupai.',
       '**Mūsu privātā Bosfora noma** uzņem **no 25 līdz 80 viesiem**. Mazākas grupas joprojām var pieprasīt privātu pieredzi — piedāvājam minimālo cenu, kas sedz darbības izmaksas. Lielākas grupas (kāzu formāts) saņem pielāgotas cenas un parasti ietver īpašu dekoru, dzīvu grupu, kūkas griešanu un pagarinātu ilgumu (4–5 stundas standarta 3 vietā).',
-      'Vienalga, vai organizē korporatīvo pasākumu klientiem, 50. dzimšanas dienas svinības vai kāzu uzņemšanu zem Stambulas ikoniskākajiem tiltiem, šis ir **uzticamais privātais kruīzs Stambulas pasākumu organizatoriem**. Novērtēts ar 4,8★, TÜRSAB licencēts, pilnībā angliski runājoša komanda un pilnīga elastība — maršruts, ēdienkarte, mūzika, programma.'
+      'Vienalga, vai organizē korporatīvo pasākumu klientiem, 50. dzimšanas dienas svinības vai kāzu uzņemšanu zem Stambulas ikoniskākajiem tiltiem, šis ir **uzticamais privātais kruīzs Stambulas pasākumu organizatoriem**. Novērtēts ar 4,9★, TÜRSAB licencēts, pilnībā angliski runājoša komanda un pilnīga elastība — maršruts, ēdienkarte, mūzika, programma.'
     ],
     highlights: [
       { title: 'Viss kuģis, tikai jums', desc: 'Bez citiem viesiem. Tava grupa pārvalda katru klāju, katru galdu. Iestati savu mūziku, apģērba kodu, programmu. Privātums ir svarīgs — mēs to cienām.' },
@@ -236,11 +236,11 @@ module.exports = {
     intro: [
       '**Bosfora kruīzs pāriem** ir Stambulas iemīļotais vakars. Ne visi pāri svin jubileju — dažreiz jūs vienkārši esat pasaules romantiskākajā pilsētā un vēlaties brīnišķīgu vakaru kopā. Šis kruīzs piedāvā: privātu galdu diviem, lēnas turku vairāku ēdienu vakariņas, dzīvo vijoli un akustisko mūziku vakariņu laikā un izgaismoto Bosfora tiltu, kas slīd garām.',
       'Atmosfēra ir **silta, bet ne pārmēru romantiska** — bez obligātas laulību piedāvājuma mūzikas, bez neērtām koordinētām aplausiem "tikko apprecējušajiem". Ēd, dzer, runā, skaties Stambulas gaismās. Vēlies pievienot romantisko galda klājumu (sveces, rozes, +€{p.romantic})? Lieliski — citādi pašas vakariņas jau ir īpašas.',
-      'Vienalga, vai esi Stambulā 3 dienas ar partneri, svini ko mierīgi vai plāno izpētes braucienu nākotnes bildinājumam — **Bosfora kruīzs pāriem** dod tev 3 stundu vakara tūri vienā no pasaules fotografētākajām pilsētām. 4,8★, maksā uz kuģa, bezmaksas atcelšana.'
+      'Vienalga, vai esi Stambulā 3 dienas ar partneri, svini ko mierīgi vai plāno izpētes braucienu nākotnes bildinājumam — **Bosfora kruīzs pāriem** dod tev 3 stundu vakara tūri vienā no pasaules fotografētākajām pilsētām. 4,9★, maksā uz kuģa, bezmaksas atcelšana.'
     ],
     highlights: [
       { title: 'Privāts galds diviem', desc: 'Privāts galds 2 personām, nav koplietojams. Prioritāte galdam pie loga pāriem. Saulrieta un Bosfora nakts fotografēšana tieši aiz tava loga.' },
-      { title: 'Lēnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks vai veģetārais), mannas halva desertā. Pasniegti lēni 3 stundu laikā — tev nav steigas.' },
+      { title: 'Lēnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks vai veģetārais), īpašs mannas deserts desertā. Pasniegti lēni 3 stundu laikā — tev nav steigas.' },
       { title: 'Dzīvā vijole un viegla mūzika', desc: 'Dzīvā vijole un akustiska turku mūzika vakariņu laikā rada intīmu atmosfēru, kas piemērota sarunai. Pēc tam parādās DJ pāriem, kas vēlas dejot.' },
       { title: 'Papildinājumi īpašiem vakariem', desc: 'Romantiskais galda klājums (sveces, rozes): +€{p.romantic}. 2 glāzes alkohola (vīns, alus, rakı, degvīns, viskijs, džins un citi): +€{p.alcohol2}/personai. Viesnīcas transfērs (turp un atpakaļ): +€{p.transfer}/personai. Izvēlies to, kas der tavam vakaram.' }
     ],
@@ -272,12 +272,12 @@ module.exports = {
     intro: [
       '**Saulrieta kruīzs pa Bosforu** Stambulā ir par vienu lietu: pāreju. Mūsu kruīza iekāpšana pie Kabataş piestātnes sākas plkst. 20:00 — un garajos vakaros no maija līdz augustam zelta stunda risinās, kamēr tu iekārtojies uz klāja. Saule riet aiz Eiropas krasta minaretiem tieši ap atiešanu plkst. 21:00, tāpēc to vēro no ūdens: Dolmabahçe pils zeltā, Ortaköy mošeja kā siluets pret mirdzošajām debesīm.',
       'Mūsu **kruīzs pa Bosforu no saulrieta līdz naktij** ietver pilnas turku vakariņas — 10 meze veidi, silta uzkoda, galvenais ēdiens pēc izvēles, deserts — kas tiek pasniegtas, kamēr pilsēta ieslēdz savas gaismas. Līdz desertam tu kuģo zem izgaismotā Bosfora tilta ar 30 miljoniem gaismu, kas atspoguļojas tumšajā ūdenī. Pāreja no krēslas uz pilnu nakti — viss vienā 3 stundu kruīzā — ir šī vakara būtība.',
-      'Vienalga, vai esi fotogrāfs, kas medī pēdējo gaismu, pāris, kas meklē "to Stambulas momentbildi", vai pirmreizējs apmeklētājs, kas vēlas klasisko vakaru uz ūdens — šis ir **saulrieta vakariņu kruīzs pa Bosforu**, ko vietējie iesaka viesiem. No €{p.dinnerStd}/personai, novērtēts ar 4,8★, TÜRSAB licencēts, maksā uz kuģa — bez priekšapmaksas.'
+      'Vienalga, vai esi fotogrāfs, kas medī pēdējo gaismu, pāris, kas meklē "to Stambulas momentbildi", vai pirmreizējs apmeklētājs, kas vēlas klasisko vakaru uz ūdens — šis ir **saulrieta vakariņu kruīzs pa Bosforu**, ko vietējie iesaka viesiem. No €{p.dinnerStd}/personai, novērtēts ar 4,9★, TÜRSAB licencēts, maksā uz kuģa — bez priekšapmaksas.'
     ],
     highlights: [
       { title: 'Vasaras saulrieti tieši pie atiešanas', desc: 'No maija līdz augustam saule Stambulā riet aptuveni starp 20:15 un 20:45 — iekāpšana plkst. 20:00 dāvā zelta stundu uz klāja, un atiešana plkst. 21:00 nozīmē, ka pašu saulrietu redzi jau no ūdens. Kamera gatava — šī ir bilde.' },
       { title: 'No zilās stundas līdz pilnai naktij', desc: 'Ne tikai saulriets — kruīzs iet cauri krēslai līdz pilnībā izgaismotajam Bosforam. Zelta gaisma, zilā stunda, tad 30 miljoni tilta gaismu tumšajā ūdenī: trīs gaismas fāzes vienā vakarā.' },
-      { title: 'Pilnas vakariņas kruīza laikā', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais), mannas halva, neierobežoti bezalkoholiskie dzērieni — pasniegts, kamēr iedegas pilsētas gaismas.' },
+      { title: 'Pilnas vakariņas kruīza laikā', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais), īpašs mannas deserts, neierobežoti bezalkoholiskie dzērieni — pasniegts, kamēr iedegas pilsētas gaismas.' },
       { title: 'Dolmabahçe, Ortaköy, Bosfora tilts — visi mirdz', desc: 'Maršruts iet garām Dolmabahçe pilij, Ortaköy mošejai, Bosfora tiltam, Rumeli Hisarı un Beylerbeyi pilij tieši tad, kad iedegas to gaismas. Katrs orientieris savā labākajā gaismā.' }
     ],
     faq: [
@@ -310,12 +310,12 @@ module.exports = {
     intro: [
       '**Nakts tūre pa Bosforu** ir Stambulas ieteicamākā vakara aktivitāte. Lūk, kāpēc: pēc tumsas iestāšanās Bosfors transformējas. Bosfora tilts mainās starp zilu, violetu un zeltu. Dolmabahçe pils mirdz siltā dzeltenā krāsā. Ortaköy mošeja perfekti atspoguļojas melnajā ūdenī. Katrs Stambulas orientieris naktī sasniedz savu dramatisko virsotni.',
       '**Mūsu nakts tūre pa Bosforu ar vakariņām** iepako pilno ikonisko vakaru: 3 stundas uz ūdens (21:00–00:00), turku vairāku ēdienu vakariņas, astoņu priekšnesumu dzīvā folkloras programma (Oba Dombra, sema, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem), dzīvā mūzika un saksofona un DJ programma, kas piepilda klāju līdz nakts beigām. Katrs viesis saņem to pašu programmu — bez "pamata" iespējas, kas izlaiž labākās daļas.',
-      'Vienalga, vai šī ir tava pirmā vizīte Stambulā un meklē "vienīgo, kas jādara naktī", vai esi bijis te iepriekš un vēlies pilsētas fotogēnākās 3 stundas, šī ir **nakts tūre pa Bosforu**, kas saņēmusi 4,8★ no vairāk nekā 11 317 ceļotājiem. TÜRSAB licencēta, maksā uz kuģa, bez priekšapmaksas.'
+      'Vienalga, vai šī ir tava pirmā vizīte Stambulā un meklē "vienīgo, kas jādara naktī", vai esi bijis te iepriekš un vēlies pilsētas fotogēnākās 3 stundas, šī ir **nakts tūre pa Bosforu**, kas saņēmusi 4,9★ no vairāk nekā 11 317 ceļotājiem. TÜRSAB licencēta, maksā uz kuģa, bez priekšapmaksas.'
     ],
     highlights: [
       { title: 'Bosfors izgaismots savā dramatiskajā virsotnē', desc: 'Bosfora tilts maina krāsas (zila, violeta, zelts), pilis mirdz dzelteni, Ortaköy mošeja atspoguļojas melnajā ūdenī. 21:00–00:00 maksimālais izgaismojums visiem Stambulas orientieriem.' },
       { title: 'Tradicionāls turku šovs uz kuģa', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ programma. 40 minūšu šovs, pēc tam mūzika + vakariņas turpinās.' },
-      { title: 'Pilnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda (börek), galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais — tava izvēle), deserts (mannas halva), neierobežoti bezalkoholiskie dzērieni. Halal sertificēts.' },
+      { title: 'Pilnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda (börek), galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais — tava izvēle), deserts (īpašs mannas deserts), neierobežoti bezalkoholiskie dzērieni. Halal sertificēts.' },
       { title: 'Pilns Bosfora maršruts', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jaunavas tornis → Kabataş.' }
     ],
     faq: [
@@ -336,20 +336,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Vakariņu kruīzs Stambulā no €{p.dinnerStd} — nakts tūre pa Bosforu',
-      description: '3 stundu vakariņu kruīzs Stambulā pa Bosforu. Turku vairāku ēdienu ēdienkarte, dzīvs tautas šovs, izgaismotie tilti. Bezmaksas atcelšana, maksā uz kuģa. 11 317 atsauksmes.'
+      description: '3 stundu vakariņu kruīzs Stambulā pa Bosforu. Turku vairāku ēdienu ēdienkarte, dzīvs tautas šovs, izgaismotie tilti. Bezmaksas atcelšana, maksā uz kuģa. 11 317+ viesi.'
     },
     hero: {
       h1: 'Vakariņu kruīzs Stambulā',
       subtitle: 'Stambulas labākais vakariņu kruīzs — 3 stundas pa Bosforu, turku vairāku ēdienu vakariņas, dzīva izklaide un nakts skati uz pilsētas ikoniskākajiem orientieriem.',
-      badge: '4,8★ · 11 317 atsauksmes · TÜRSAB A-17672'
+      badge: '4,9★ · 11 317+ viesi · TÜRSAB A-17672'
     },
     intro: [
       'Meklē **vakariņu kruīzu Stambulā**? Tu esi atradis to, ko iesaka vairums ceļotāju. Mūsu 3 stundu vakars pa Bosforu apvieno pilnas turku vairāku ēdienu vakariņas, dzīvas tautas dejas un pilsētas fotogēnākos skatus — visu no ērta kuģa, kas atiet plkst. 21:00 no Kabataş piestātnes.',
       'Pieredze **vakariņu kruīzā Stambulā**: iekāp plkst. 20:00, apsēdies, skaties Dolmabahçe pili, kamēr atejam, vakariņas sākas, kad tuvojamies Ortaköy mošejai, šovs sākas (sema, tautas dejas, austrumu), un līdz desertam tu būsi zem izgaismotā Bosfora tilta. Līdz pusnaktij tu būsi atpakaļ Kabataş ar ikoniskām bildēm un pilnu vēderu.',
-      '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Maksā uz kuģa — bez priekšapmaksas, bez riska. TÜRSAB licencēts A-17672, novērtēts ar 4,8★ no vairāk nekā 11 317 ceļotājiem.'
+      '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Maksā uz kuģa — bez priekšapmaksas, bez riska. TÜRSAB licencēts A-17672, novērtēts ar 4,9★ no vairāk nekā 11 317 ceļotājiem.'
     ],
     highlights: [
-      { title: 'Pilnas turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vistas šašliks/liellopu šašliks/veģetārais), mannas halva. Halal sertificēts. Neierobežoti bezalkoholiskie dzērieni iekļauti.' },
+      { title: 'Pilnas turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vistas šašliks/liellopu šašliks/veģetārais), īpašs mannas deserts. Halal sertificēts. Neierobežoti bezalkoholiskie dzērieni iekļauti.' },
       { title: 'Dzīvs turku tautas deju šovs', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs, gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ. 40 minūšu šovs, fona mūzika turpinās.' },
       { title: 'Pilns Bosfora nakts maršruts', desc: '3 stundu tūre: Dolmabahçe, Çırağan, Ortaköy mošeja, Bosfora tilts, Bebek, Rumeli Hisarı, FSM tilts, Beylerbeyi, Üsküdar, Jaunavas tornis. Abi krasti, eiropas un āzijas.' },
       { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
@@ -368,7 +368,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Rezervē vakariņu kruīzu · Maksā uz kuģa',
-      secondary: '4,8★ · TÜRSAB licencēts · Bezmaksas atcelšana 2 stundas iepriekš',
+      secondary: '4,9★ · TÜRSAB licencēts · Bezmaksas atcelšana 2 stundas iepriekš',
       tertiary: 'Pieejamība šovakar'
     }
   },
@@ -376,7 +376,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Nakts tūre Stambulā no €{p.dinnerStd} — vakariņu kruīzs pa Bosforu + šovs',
-      description: '3 stundu kruīzs pa Bosforu ar vakariņām un dzīvu šovu. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317 atsauksmes. Brīvprātīgs viesnīcas transfērs.'
+      description: '3 stundu kruīzs pa Bosforu ar vakariņām un dzīvu šovu. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317+ viesi. Brīvprātīgs viesnīcas transfērs.'
     },
     hero: {
       h1: 'Stambula naktī',
@@ -386,7 +386,7 @@ module.exports = {
     intro: [
       '**Nakts tūrei Stambulā** jādara trīs lietas: parādīt tev pilsētas ikoniskos orientierus, dot tev labu ēdienu un tevi izklaidēt. Mūsu Bosfora vakariņu kruīzs dara visus trīs vienā 3 stundu vakarā — un tāpēc vairums Stambulas ceļvežu to iesaka kā #1 nakts tūres pieredzi.',
       '**Nakts tūres Stambulā** maršruts aptver labākos izgaismotos orientierus: Dolmabahçe pils, Ortaköy mošeja, Bosfora tilts (maina krāsas), Bebek rajons, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Āzijas krasta Üsküdar un tālumā Jaunavas tornis. Vairums pilsētas autobusu rāda tev šos no autobusa — mēs rādām tos no ūdens, kur tie ir visdramatiskākie.',
-      'Vakariņas ir iekļautas (turku vairāku ēdienu ēdienkarte), dzīvs turku tautas deju šovs, sema, austrumu deja un DJ programma. Ja esi Stambulā 2–3 dienas, šis ir tas viens vakars, kas atstāj spēcīgāko iespaidu. 4,8★ no vairāk nekā 11 317 ceļotājiem, maksā uz kuģa, bez priekšapmaksas.'
+      'Vakariņas ir iekļautas (turku vairāku ēdienu ēdienkarte), dzīvs turku tautas deju šovs, sema, austrumu deja un DJ programma. Ja esi Stambulā 2–3 dienas, šis ir tas viens vakars, kas atstāj spēcīgāko iespaidu. 4,9★ no vairāk nekā 11 317 ceļotājiem, maksā uz kuģa, bez priekšapmaksas.'
     ],
     highlights: [
       { title: 'Visi Stambulas ikoniskie nakts skati', desc: 'Dolmabahçe pils, Ortaköy mošeja, izgaismotais Bosfora tilts, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Jaunavas tornis. Katrs svarīgais orientieris savā maksimālajā nakts izgaismojumā.' },
@@ -412,17 +412,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Kuģa tūre Stambulā no €{p.dinnerStd} — Bosfors + vakariņas + šovs',
-      description: '3 stundu kuģa tūre: Bosfora kruīzs, pilnas turku vakariņas, dzīvs tautas šovs, izgaismotie nakts skati. Bezmaksas atcelšana, maksā uz kuģa. 11 317 atsauksmes.'
+      description: '3 stundu kuģa tūre: Bosfora kruīzs, pilnas turku vakariņas, dzīvs tautas šovs, izgaismotie nakts skati. Bezmaksas atcelšana, maksā uz kuģa. 11 317+ viesi.'
     },
     hero: {
       h1: 'Kuģa tūre Stambulā',
       subtitle: 'Stambulas visvairāk rezervētā kuģa tūre — Bosfora kruīzs ar turku ēdienu, dzīvu izklaidi un pilsētas ikoniskajiem skatiem no ūdens.',
-      badge: '4,8★ · TÜRSAB A-17672 · Maksā uz kuģa'
+      badge: '4,9★ · TÜRSAB A-17672 · Maksā uz kuģa'
     },
     intro: [
       'Kad meklē "kuģa tūri Stambulā", tu meklē to vienu, kas definē pilsētu no ūdens: Bosforu. Mūsu 3 stundu Bosfora kuģa tūre ved tevi garām katram svarīgam Stambulas orientierim — Dolmabahçe pilij, Ortaköy mošejai, Bosfora tiltam, Rumeli Hisarı, Beylerbeyi pilij un Jaunavas tornim — ar pilnām turku vakariņām un dzīvu izklaidi.',
       'Atšķirībā no daudzajiem 1 stundas tūristu prāmjiem, kas aptver mazāk Bosfora un izlaiž vakariņas un izklaidi, **mūsu kuģa tūre Stambulā** ir pilna vakara pieredze: iekāpšana plkst. 20:00 pie Kabataş piestātnes, tūre līdz pusnaktij, 10 meze, galvenais ēdiens, deserts, sema, tautas dejas, austrumu deja un DJ. Saņem arī vakara izeju kā tūres daļu.',
-      'Vienalga, vai tev ir viens vakars vai vesela nedēļa Stambulā, **šī kuģa tūre Stambulā** dara darbu. 4,8★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēta (A-17672), halal sertificēta ēdienkarte un maksā uz kuģa — bez finansiālas saistības līdz brīdim, kad esi apmierināts ar pieredzi.'
+      'Vienalga, vai tev ir viens vakars vai vesela nedēļa Stambulā, **šī kuģa tūre Stambulā** dara darbu. 4,9★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēta (A-17672), halal sertificēta ēdienkarte un maksā uz kuģa — bez finansiālas saistības līdz brīdim, kad esi apmierināts ar pieredzi.'
     ],
     highlights: [
       { title: 'Visi svarīgie Bosfora orientieri', desc: 'Dolmabahçe, Çırağan, Ortaköy mošeja, Bosfora tilts, Bebek, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Üsküdar, Jaunavas tornis. Abi krasti, eiropas un āzijas, vienā tūrē.' },
@@ -448,7 +448,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Bosfora ekskursija no €{p.dinnerStd} — vakariņu kruīzs Stambulā + šovs',
-      description: '3 stundu ekskursija pa Bosforu: turku vakariņas, dzīvs tautas šovs, izgaismotie nakts skati. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317 atsauksmes.'
+      description: '3 stundu ekskursija pa Bosforu: turku vakariņas, dzīvs tautas šovs, izgaismotie nakts skati. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317+ viesi.'
     },
     hero: {
       h1: 'Ekskursija pa Bosforu',
@@ -458,7 +458,7 @@ module.exports = {
     intro: [
       '**Ekskursija pa Bosforu** var nozīmēt 1 stundas tūristu prāmi vai pilnu vakariņu vakara tūri — mēs darām pēdējo un vairums ceļotāju to atrod vērtīgāku. 3 stundas, €{p.dinnerStd}/personai, vakariņas un izklaide iekļauta. Tu nekuģojies tikai garām orientieriem — tu ēd, skaties šovu un baudi vakaru.',
       'Maršruts **mūsu Bosfora ekskursijai** aptver visu, ko vērts redzēt: Dolmabahçe pils (19. gadsimta osmaņu sultānu rezidence), Ortaköy mošeja (viena no Stambulas fotografētākajām mošejām), Bosfora tilts (maina krāsas naktī), Rumeli Hisarı (Fatih Sultan Mehmet uzcelta 1452. gadā), Beylerbeyi pils (Āzijas krasts) un Jaunavas tornis uz nelielas saliņas. Visu paskaidro angliski runājoša komanda.',
-      'Vienalga, vai esi Stambulā 24 stundas vai nedēļu, šī ir **Bosfora ekskursija**, kas dod tev visvairāk vienā vakarā. Novērtēta ar 4,8★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēta A-17672, halal draudzīga ēdienkarte, maksā uz kuģa — bez priekšapmaksas riska.'
+      'Vienalga, vai esi Stambulā 24 stundas vai nedēļu, šī ir **Bosfora ekskursija**, kas dod tev visvairāk vienā vakarā. Novērtēta ar 4,9★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēta A-17672, halal draudzīga ēdienkarte, maksā uz kuģa — bez priekšapmaksas riska.'
     ],
     highlights: [
       { title: 'Viss Bosfors vienā', desc: 'Eiropas krasts (Dolmabahçe, Ortaköy, Rumeli Hisarı), Āzijas krasts (Beylerbeyi, Üsküdar), abi Bosfora tilti, Jaunavas tornis. Katrs svarīgais orientieris redzams 3 stundu laikā.' },
@@ -494,7 +494,7 @@ module.exports = {
     intro: [
       'Meklē **Bosfora kruīza biļetes**? Pērc tieši. Mūsu biļetes ir €{p.dinnerStd} — 40% atlaide no parastās cenas (€{p.dinnerStdOriginal}). Trešo pušu rezervācijas vietnes parasti pievieno 20–40% komisiju. Rezervējot tieši, tu ietaupi — un joprojām maksā uz kuģa.',
       'Process **Bosfora kruīza biļetēm**: aizpildi veidlapu šajā lapā mazāk nekā 1 minūtes laikā (datums, viesu skaits, pakete, kontakti), mēs apstiprināsim nekavējoties pa WhatsApp / Telegram, ierodies pie Kabataş piestātnes plkst. 20:00, maksā uz kuģa, baudi 3 stundu vakariņu kruīzu. Nav fiziskas biļetes, ko izdrukāt, nav kupona, kas jāsaņem e-pastā — apstiprinājums ir tava biļete.',
-      'Vienalga, vai rezervē šī vakara vakariņu kruīzu vai rezervē uz konkrētu datumu nākamajā nedēļā, **tiešās Bosfora kruīza biļetes** ir ātrākais veids. Novērtētas ar 4,8★, TÜRSAB licencētas (A-17672), halal sertificēta ēdienkarte un atbalsta papildinājumus viesnīcas transfēram un alkoholam.'
+      'Vienalga, vai rezervē šī vakara vakariņu kruīzu vai rezervē uz konkrētu datumu nākamajā nedēļā, **tiešās Bosfora kruīza biļetes** ir ātrākais veids. Novērtētas ar 4,9★, TÜRSAB licencētas (A-17672), halal sertificēta ēdienkarte un atbalsta papildinājumus viesnīcas transfēram un alkoholam.'
     ],
     highlights: [
       { title: 'Tiešā rezervācija — bez starpnieku maksas', desc: '€{p.dinnerStd}/personai. Trešo pušu vietnes ņem €30–80+ par to pašu tūri. Ietaupi, rezervējot tieši no mums. Bez slēptām maksām, bez komisijas pievienojuma.' },
@@ -520,7 +520,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosfors pēdējā brīdī no €{p.dinnerStd} — rezervē šodien, maksā uz kuģa',
-      description: 'Rezervē Bosfora kruīzu tajā pašā dienā. WhatsApp apstiprinājums minūtēs. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317 atsauksmes.'
+      description: 'Rezervē Bosfora kruīzu tajā pašā dienā. WhatsApp apstiprinājums minūtēs. Atiešana 21:00 no Kabataş. Bezmaksas atcelšana, maksā uz kuģa. 11 317+ viesi.'
     },
     hero: {
       h1: 'Bosfora kruīzs pēdējā brīdī',
@@ -602,7 +602,7 @@ module.exports = {
     intro: [
       '**Bosfora apskate** no ūdens pārspēj jebkuru autobusa tūri. Bosfors ir pilsētas vēsturiskākais kuģu ceļš — osmaņu sultāni, bizantiešu imperatori, grieķu tirgotāji un krievu karakuģi visi te ir gājuši garām. Šodien mūsu 3 stundu tūre, ar komentāriem no angliski runājošas komandas, kuģo garām katram svarīgam Stambulas orientierim, kas definē pilsētas siluetu.',
       'Maršruts **mūsu Bosfora apskates tūrei** (vakara atiešana, 21:00–00:00):\n\n1. **Dolmabahçe pils** — 19. gadsimta osmaņu rezidence, izgaismota naktī\n2. **Çırağan pils** — tagad luksusa viesnīca, karaliska vēsture\n3. **Ortaköy mošeja** — viena no Stambulas fotografētākajām mošejām, pie ūdens\n4. **Bosfora tilts** — mainās naktī starp zilu, violetu, zeltu\n5. **Bebek** — elegants rajons Eiropas krastā\n6. **Rumeli Hisarı** — Fatih Sultan Mehmet uzcelts 1452. gadā pirms Konstantinopoles krišanas\n7. **Fatih Sultan Mehmet tilts** — Bosfora otrais tilts, dramatisks loks\n8. **Beylerbeyi pils** — Āzijas krasts, osmaņu vasaras rezidence\n9. **Üsküdar** — Āzijas Stambulas piekraste, tradicionāls rajons\n10. **Jaunavas tornis** — tornis uz nelielas saliņas, viens no Stambulas romantiskākajiem simboliem',
-      'Vakariņas un izklaide ir iekļautas — ne atsevišķi — tāpēc **Bosfora apskate** kļūst par pilnu vakaru. Turku vairāku ēdienu vakariņas, dzīvs tautas deju šovs, sema, austrumu deja, DJ. Novērtēts ar 4,8★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēts A-17672.'
+      'Vakariņas un izklaide ir iekļautas — ne atsevišķi — tāpēc **Bosfora apskate** kļūst par pilnu vakaru. Turku vairāku ēdienu vakariņas, dzīvs tautas deju šovs, sema, austrumu deja, DJ. Novērtēts ar 4,9★ no vairāk nekā 11 317 ceļotājiem, TÜRSAB licencēts A-17672.'
     ],
     highlights: [
       { title: '10+ svarīgi Stambulas orientieri', desc: 'Dolmabahçe pils, Çırağan pils, Ortaköy mošeja, Bosfora tilts, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Üsküdar, Jaunavas tornis. Katrs svarīgais Stambulas orientieris vienā tūrē.' },

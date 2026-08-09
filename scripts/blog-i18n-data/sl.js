@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Cene za otroke',
           paragraphs: [
-            'Otroci 0–3 let (vključno): brezplačno. Otroci 4–8 let (vključno): 50 % popust. Otroci 9 let in starejši: polna cena.',
+            'Otroci 0–3 let (vključno): brezplačno. Otroci 4–9 let (vključno): 50 % popust. Otroci 9 let in starejši: polna cena.',
             'Opomba: 3-letnik je brezplačno, 4-letnik plača polovično ceno. 8-letnik je še vedno na polovični ceni, 9-letnik plača polno ceno.',
           ],
         },
         {
           h2: 'Kaj je na meniju za otroke?',
           paragraphs: [
-            'Večerni meni vključuje možnosti, kot sta piščančji in goveji ražnjič, ki jih večina otrok obožuje. Izbor meze je raznolik z veliko zelenjave in namazov. Zdrobova halva za sladico je vključena za vse.',
+            'Večerni meni vključuje možnosti, kot sta piščančji in goveji ražnjič, ki jih večina otrok obožuje. Izbor meze je raznolik z veliko zelenjave in namazov. Poseben zdrobov desert za sladico je vključena za vse.',
             'Otrok potrebuje posebno dieto? Vprašaj nas vnaprej na WhatsAppu — naredimo vse, kar je v naših močeh, da pomagamo.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Otroci so prisrčno dobrodošli',
           paragraphs: [
-            'Otroci 0–3 let: brezplačno. 4–8 let: 50 % popust. 9+: polna cena.',
+            'Otroci 0–3 let: brezplačno. 4–9 let: 50 % popust. 9+: polna cena.',
           ],
         },
         {

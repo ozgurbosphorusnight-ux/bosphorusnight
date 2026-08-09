@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Prijzen voor kinderen',
           paragraphs: [
-            'Kinderen 0–3 jaar (inclusief): Gratis. Kinderen 4–8 jaar (inclusief): 50% korting. Kinderen 9 jaar en ouder: volledige prijs.',
-            'Let op: een kind van 3 jaar is gratis, een kind van 4 betaalt de halve prijs. Een kind van 8 zit nog op halve prijs, een kind van 9 betaalt de volledige prijs.',
+            'Kinderen 0–3 jaar (inclusief): Gratis. Kinderen 4–9 jaar (inclusief): 50% korting. Kinderen 9 jaar en ouder: volledige prijs.',
+            'Let op: een kind van 3 jaar is gratis, een kind van 4 krijgt €5 korting. Een kind van 9 krijgt nog €5 korting, een kind van 10 betaalt de volledige prijs.',
           ],
         },
         {
           h2: 'Wat staat er op het menu voor kinderen?',
           paragraphs: [
-            'Het dinermenu bevat opties zoals kipspies en runderspies die de meeste kinderen lekker vinden. Het meze-aanbod is gevarieerd met veel groenten en dips. Griesmeelhalva als dessert is voor iedereen inbegrepen.',
+            'Het dinermenu bevat opties zoals kipspies en runderspies die de meeste kinderen lekker vinden. Het meze-aanbod is gevarieerd met veel groenten en dips. Speciaal griesmeeldessert als dessert is voor iedereen inbegrepen.',
             'Heeft je kind een speciaal dieet nodig? Vraag het ons vooraf via WhatsApp — we doen ons uiterste best om te helpen.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Kinderen zijn van harte welkom',
           paragraphs: [
-            'Kinderen 0–3 jaar: gratis. 4–8 jaar: 50% korting. 9+: volledige prijs.',
+            'Kinderen 0–3 jaar: gratis. 4–9 jaar: 50% korting. 9+: volledige prijs.',
           ],
         },
         {

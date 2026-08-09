@@ -43,7 +43,7 @@ module.exports = {
 
     'Our **sunset-to-night Bosphorus cruise** includes a full Turkish dinner — 10 varieties of meze, warm appetizer, choice of main course, dessert — served as the city switches its lights on. By the time dessert arrives, you\'re sailing under the illuminated Bosphorus Bridge with 30 million lights reflecting on dark water. The change from dusk to full night, all inside one 3-hour cruise, is the whole point.',
 
-    'Whether you\'re a photographer chasing the last light, a couple after that "Istanbul memory shot", or a first-timer who wants the classic evening on the water, this is the **Bosphorus sunset dinner cruise** locals recommend to visitors. From €{p.dinnerStd}/person, 4.8★ rating, TÜRSAB-licensed, pay on boat — no prepayment.'
+    'Whether you\'re a photographer chasing the last light, a couple after that "Istanbul memory shot", or a first-timer who wants the classic evening on the water, this is the **Bosphorus sunset dinner cruise** locals recommend to visitors. From €{p.dinnerStd}/person, 4.9★ rating, TÜRSAB-licensed, pay on boat — no prepayment.'
   ],
 
   highlights: [
@@ -60,7 +60,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full dinner during the cruise',
-      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian), semolina halva, unlimited soft drinks — served as the city lights come on.'
+      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian), special semolina dessert, unlimited soft drinks — served as the city lights come on.'
     },
     {
       icon: 'landmarks',

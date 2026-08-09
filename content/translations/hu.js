@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Boszporusz Vacsorás Hajóút Isztambulban',
       subtitle: 'Három óra élő szórakozás, bőséges török többfogásos vacsora és a Boszporusz leglenyűgözőbb éjszakai panorámái.',
-      badge: '4,8★ · 11.317 értékelés'
+      badge: '4,9★ · 11.317+ vendég'
     },
     intro: [
-      '**A Boszporusz vacsorás hajóút** Isztambul legikonikusabb esti élménye. Túránk 20:00-kor indul a Kabataş kikötőből és a kivilágított Boszporusz és Fatih Sultan Mehmet hidak alatt hajózik, török többfogásos vacsorát, élő népi táncokat, keleti táncot és DJ szettet kínálva, amely 23:00-ig életben tartja a fedélzetet.',
-      'Az Isztambul éjszakai tájképét megtöltő szokásos turistahajókkal ellentétben **a mi Boszporusz vacsorás hajóutunk** TÜRSAB (A-17672) engedéllyel rendelkezik és 4,8★ értékelést kapott több mint 11.317 utazótól. A csoportokat kicsinek tartjuk és a kiszolgálást meleg — és mivel a fedélzeten fizet, nincs kockázat az előzetes foglalásban.',
+      '**A Boszporusz vacsorás hajóút** Isztambul legikonikusabb esti élménye. Túránk 20:00-kor indul a Kabataş kikötőből és a kivilágított Boszporusz és Fatih Sultan Mehmet hidak alatt hajózik, török többfogásos vacsorát, élő népi táncokat, keleti táncot és DJ szettet kínálva, amely 23:45-ig életben tartja a fedélzetet.',
+      'Az Isztambul éjszakai tájképét megtöltő szokásos turistahajókkal ellentétben **a mi Boszporusz vacsorás hajóutunk** TÜRSAB (A-17672) engedéllyel rendelkezik és 4,9★ értékelést kapott több mint 11.317 utazótól. A csoportokat kicsinek tartjuk és a kiszolgálást meleg — és mivel a fedélzeten fizet, nincs kockázat az előzetes foglalásban.',
       'Akár születésnapot ünnepel, prémium isztambuli estét keres a családjának, vagy a város legfotogénebb naplemente-éjszaka átmenetét szeretné — ez az a vacsorás hajóút, amelyet Isztambul lakói elsősorban ajánlanak.'
     ],
     highlights: [
-      { title: 'Török többfogásos vacsora', desc: '10 fajta hideg mezze, meleg előétel (börek), főétel választás (lazac / tengeri sügér / csirke / húsgombóc / vegetáriánus), búzadara-halva desszertként, korlátlan üdítők.' },
+      { title: 'Török többfogásos vacsora', desc: '10 fajta hideg mezze, meleg előétel (börek), főétel választás (lazac / tengeri sügér / csirke / húsgombóc / vegetáriánus), különleges búzadara-desszert desszertként, korlátlan üdítők.' },
       { title: 'Élő népi táncok, keleti tánc és DJ', desc: 'Nyolc produkció: Oba Dombra, Mevlana sema előadás, Sarı Gelin, azeri egyveleg, klasszikus keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc — ezt követi élő szaxofon és egy DJ szett az egész hajóút alatt.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → FSM-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: '€{p.dinnerStd}-tól/fő — fizetés a fedélzeten', desc: 'Vacsorás hajóút €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**A Boszporusz hajóút gyerekekkel** Isztambul legcsaládbarátabb esti opciója. Minden este több tucat családot fogadunk — minden részletet úgy terveztünk, hogy a legkisebbek kényelmesen érezzék magukat: fedett belső tér a meleg megőrzéséhez, hozzáférhető gyerekmenü (egyszerű grillezett csirke, tészta, korlátlan üdítők) és korai beszállás, hogy elkerüljük a kései órák hisztijeit.',
       'A csak felnőtteknek szóló hajókkal ellentétben **a Boszporusz vacsorás hajóutunk családoknak** meleg és befogadó marad. **A 0-3 éves gyerekek ingyen** (transzfer beleértve), 4-9 év **€5 kedvezményt** kap, 10+ év teljes árat fizet — nincs rejtett költség. Az élő népi táncok, a keleti tánc és a sema előadás finom családi szórakozás, nem éjszakai klub.',
-      'Akár hosszú hétvégére érkezik Isztambulba a kisgyermekével, akár a tinédzsereit hozza az első európai utazásukra — ez a túra, amelyet Isztambul családjai ajánlanak. Biztonságos, halal tanúsítvánnyal rendelkezik, TÜRSAB engedéllyel és 4,8★ értékeléssel rendelkezik több mint 11.317 utazótól.'
+      'Akár hosszú hétvégére érkezik Isztambulba a kisgyermekével, akár a tinédzsereit hozza az első európai utazásukra — ez a túra, amelyet Isztambul családjai ajánlanak. Biztonságos, halal tanúsítvánnyal rendelkezik, TÜRSAB engedéllyel és 4,9★ értékeléssel rendelkezik több mint 11.317 utazótól.'
     ],
     highlights: [
       { title: '0-3 év teljesen ingyenes', desc: 'Nincs díj a csecsemőkért és kisgyermekekért. 4-9 év €5-ot fizet a felnőtt árból. 10 éves kortól vendég teljes árral. Átlátható, meglepetés nélkül.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**A romantikus Boszporusz hajóút** Isztambul legikonikusabb estéje pároknak. Miközben a nap lemegy a Dolmabahçe-palota fölött és a Boszporusz-híd színekben gyúl ki, Ön és partnere török többfogásos vacsorát osztanak meg egy privát asztalnál — gyertyákkal, friss virágokkal és élő hegedűvel a fedélzeten lebegve.',
       'Romantikus asztali elrendezésünk (+€{p.romantic}/asztal) minden helyet különleges pillanattá változtat: vörös rózsák, ragyogó gyertyák, kézzel írt üdvözlőlap. Adja hozzá a 2 pohár alkohol csomagot borhoz a csillagok alatt (+€{p.alcohol2}/fő) vagy tartsa egyszerűen a benne foglalt üdítőkkel. Bármit is választ, a személyzet diszkréten gondoskodik a többiről.',
-      'Akár évfordulót ünnepel, akár meglepetést tervez a partnerének, akár csak felejthetetlen estét szeretne Európa legromantikusabb városában — ez a túra, amelyet Isztambul párjai részesítenek előnyben. 4,8★ értékelés, TÜRSAB engedéllyel és — ami a legfontosabb — fizetés a fedélzeten, így csak magát az estét ígéri.'
+      'Akár évfordulót ünnepel, akár meglepetést tervez a partnerének, akár csak felejthetetlen estét szeretne Európa legromantikusabb városában — ez a túra, amelyet Isztambul párjai részesítenek előnyben. 4,9★ értékelés, TÜRSAB engedéllyel és — ami a legfontosabb — fizetés a fedélzeten, így csak magát az estét ígéri.'
     ],
     highlights: [
       { title: 'Romantikus gyertyafényes asztal', desc: 'Adja hozzá a romantikus asztali elrendezést +€{p.romantic}/asztalért: friss vörös rózsák, ragyogó gyertyák, rózsaszirmok az abroszon és kézzel írt kártya. Fotók beleértve.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**A halal Boszporusz hajóút** a legtiszteletteljesebb vacsorás hajóút Isztambulban a muszlim utazók számára. A hajónkon felszolgált összes hús — lazac, tengeri sügér, csirkenyárs, marhanyárs — **halal tanúsítvánnyal rendelkezik** jóváhagyott beszállítóktól. Minden vendégnek ugyanazt a menüt szolgáljuk fel; nincs külön "halal szekció", mert az egész hajó alapértelmezetten halal.',
       'Az alkohol **opcionális kiegészítő** — soha nem kényszerítjük a vendégekre, és az asztalelrendezés természetesen elkülöníti azokat a vendégeket, akik alkoholmentes étkezést részesítenek előnyben. Azoknak a vendégeknek, akik a 2 poharas alkoholcsomagot szeretnék (+€{p.alcohol2}/fő), elérhető, de a benne foglalt korlátlan üdítők (víz, kóla, gyümölcslé) elegendőek a legtöbb muszlim család számára. Személyzetünket arra képezték, hogy tiszteletben tartsa az Ön preferenciáit feltételezések nélkül.',
-      '**A halal-barát Boszporusz hajóút** fontos a Szaúd-Arábiából, EAE-ből, Kuvaitból, Katarból, Iránból, Malajziából, Indonéziából, Pakisztánból és Marokkóból érkező utazók számára, akik Isztambul legikonikusabb estéjét szeretnék kompromisszumok nélkül. TÜRSAB engedéllyel, 4,8★ és fizetés a fedélzeten — ne ígérjen semmit, amíg nem biztos, hogy az élmény megfelel az Ön elvárásainak.'
+      '**A halal-barát Boszporusz hajóút** fontos a Szaúd-Arábiából, EAE-ből, Kuvaitból, Katarból, Iránból, Malajziából, Indonéziából, Pakisztánból és Marokkóból érkező utazók számára, akik Isztambul legikonikusabb estéjét szeretnék kompromisszumok nélkül. TÜRSAB engedéllyel, 4,9★ és fizetés a fedélzeten — ne ígérjen semmit, amíg nem biztos, hogy az élmény megfelel az Ön elvárásainak.'
     ],
     highlights: [
       { title: '100% halal tanúsítvánnyal rendelkező menü', desc: 'Az összes hús (lazac, tengeri sügér, csirkenyárs, marhanyárs) halal tanúsítvánnyal rendelkezik jóváhagyott beszállítóktól. A konyha követi a halal elkészítést. Nincsenek sertéshústermékek vagy nem halal adalékanyagok. A vegetáriánus opciók mindig elérhetők.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Ez a hajóút alkalmas muszlim családoknak gyerekekkel?', a: 'Igen — ez Isztambul egyik legtiszteltebb hajóútja a családok számára. A szórakozás szerény (népi táncok, sema, török zene), a 3 év alatti gyerekek ingyenesek, 4-9 év €5 kedvezményt kap. Nincs éjszakai klub légkör. Az Öbölből, Indonéziából, Malajziából, Pakisztánból és Marokkóból származó családok rendszeresen foglalják ezt a hajóutat.' },
       { q: 'Imádkozhatok a fedélzeten?', a: 'A fedélzeten nincs dedikált imahelyiség, de javasoljuk, hogy a 20:00-as beszállás előtt imádkozzon (a maghrib ima gyakran egybeesik ezzel az időtartammal). A Kabataş kikötőben vannak imaeszközök. Ha a 21:00-00:00 közötti vitorlázás során kell imádkoznia (isha), beszéljen a személyzettel — el tudunk rendezni egy csendes sarkot a fedélzeten.' },
       { q: 'Mennyibe kerül egy 4 fős muszlim családnak (2 felnőtt, 2 gyerek)?', a: 'Vacsorás hajóút: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 kedvezmény 4-9 év) = €87.20. Ha a gyerekek 3 év alattiak, ingyenes: 2 × €{p.dinnerStd} = €48.60. Adjon hozzá €{p.transfer} szállodai transzfert felnőttenként. Összesen: €48.60–€92.90 a 4 fős családnak, nincs előzetes fizetés, fizetés a fedélzeten.' },
-      { q: 'A szállodai transzfer is halal?', a: 'A szállodai transzfer csak egy autóút — nincs étel vagy ital, tehát nincs halal aggodalom. Sofőrjeink professzionálisak, tisztelettudóak és pontosak. A transzferzónák lefedik a Sultanahmetet, Taksimot, Beşiktaşt, Lalelit, Fatihot, Şişlit és 9 másik központi negyedet, ahol a muszlim utazók általában megszállnak.' }
+      { q: 'A szállodai transzfer is halal?', a: 'A szállodai transzfer csak egy autóút — nincs étel vagy ital, tehát nincs halal aggodalom. Sofőrjeink professzionálisak, tisztelettudóak és pontosak. A transzferzónák lefedik a Sultanahmetet, Taksimot, Beşiktaşt, Lalelit, Fatihot, Şişlit és 8 másik központi negyedet, ahol a muszlim utazók általában megszállnak.' }
     ],
     cta: {
       primary: 'Foglalja a Halal Hajóutat · Fizetés a Fedélzeten',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% KEDVEZMÉNY · Egy menü, prémium színvonal · Fizetés a hajón'
     },
     intro: [
-      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs), búzadara-halva és korlátlan üdítő. A teljes, nyolc produkcióból álló műsor is benne van — Oba Dombra, kerengő dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé — mindez a €{p.dinnerStd}/fő árban.',
+      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs), különleges búzadara-desszert és korlátlan üdítő. A teljes, nyolc produkcióból álló műsor is benne van — Oba Dombra, kerengő dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé — mindez a €{p.dinnerStd}/fő árban.',
       'A VIP érzés az asztalnál kezdődik. Ha a színpadhoz és a látványhoz szeretne a legközelebb ülni, kérje a **privát asztalt a színpad mellett** (+€{p.romantic}/asztal), és a helyét előre lefoglaljuk — a legjobb szög a dervisekhez, a néptáncokhoz és a kivilágított Boszporuszhoz. Párok, ünneplések és fotózni szeretők kedvence.',
       'Az AMOR modern hajó: 42 méter hosszú, 3 fedélzetes, akár 400 vendéget fogad, télen fűtött, nyáron légkondicionált. A háromórás útvonal Kabataşból indul (beszállás 20:00-tól, indulás 21:00, visszaérkezés 00:00), elhalad a Dolmabahçe, az Ortaköy mecset, a Rumeli erőd és a Boszporusz híd fényei mellett. TÜRSAB engedéllyel (A-17672), 4,9★ a Google-on. Nincs előre fizetés — a hajón fizet, és az indulás előtt 2 órával még ingyenesen lemondhat.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Árulnak „VIP csomagot“? Miben más, mint a standard?', a: 'Nem árulunk külön VIP csomagot — egyetlen menü van, amelyet mindenki ugyanazon a prémium színvonalon kap. Amit „VIP élménynek“ nevezünk, az az este személyre szabása: privát asztal a színpad mellett (+€{p.romantic}/asztal), figyelmes asztali kiszolgálás és választható italkiegészítők. A hajóút 3 órás, €{p.dinnerStd}/fő.' },
       { q: 'Tényleg 40% kedvezmény a €{p.dinnerStd}?', a: 'Igen — a listaárunk €{p.dinnerStdOriginal}/fő. A €{p.dinnerStd} a közvetlen foglalási ár, közvetítői jutalék nélkül. A hajón fizet, előleget nem kérünk.' },
-      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs) és búzadara-halva desszertnek, korlátlan üdítővel. A nyolc produkcióból álló műsor benne van: Oba Dombra, dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé.' },
+      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs) és különleges búzadara-desszert desszertnek, korlátlan üdítővel. A nyolc produkcióból álló műsor benne van: Oba Dombra, dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé.' },
       { q: 'Az alkohol benne van az árban?', a: 'Nem — az alkohol külön kiegészítő: 2 pohár bor, sör, rakı, vodka, whisky, gin és más +€{p.alcohol2}/fő áron. Az üdítők korlátlanul és ingyenesen benne vannak. A prémium importitalokat a hajón külön számoljuk el.' },
       { q: 'Hogyan biztosíthatok színpad melletti asztalt?', a: 'Elég a foglaláskor kiválasztani a „privát asztal a színpad mellett“ kiegészítőt (+€{p.romantic}/asztal) — az asztalt az Ön nevére foglaljuk. A legjobb helyek az előfoglalásokkal telnek be, ezért érdemes a hajóút napja előtt hozzáadni.' },
       { q: 'Milyen hajó ez?', a: 'AMOR — modern személyszállító hajó, 42 méter hosszú, 3 fedélzetes, 400 fő befogadóképességgel, télen fűtött, nyáron légkondicionált. Indulás a kabataşi kikötőből: beszállás 20:00, indulás 21:00, visszaérkezés 00:00. Útvonal: Dolmabahçe, Ortaköy, Rumeli erőd, Beylerbeyi és a Boszporusz híd fényei.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**A privát Boszporusz hajóút** azt jelenti, hogy az egész hajó az Öné — nincsenek más vendégek, nincsenek megosztott asztalok, nincs közös táncparkett. Tökéletes családi találkozókhoz, vállalati vacsorákhoz, születésnapi bulikhoz, lánybúcsúkhoz vagy esküvői fogadásokhoz. A hajó, a személyzet, a menü, a szórakozás és a program alkalmazkodik az Ön csoportjához.',
       '**A privát Boszporusz bérlésünk** **25-80 vendég** csoportjait támogatja. A kisebb csoportok még mindig kérhetik a privát élményt — minimális árat kínálunk, amely fedezi a hajó üzemeltetési költségeit. A nagyobb csoportok (esküvői méret) testreszabott árakat kapnak, és általában tartalmaznak különleges dekorációt, élő zenekart, tortakiszolgálást és meghosszabbított időtartamot (4-5 óra a 3 standard helyett).',
-      'Akár vállalati eseményt szervez ügyfeleknek, akár 50. születésnapi bulit, akár esküvői fogadást Isztambul legikonikusabb hídjai alatt, ez **a privát hajóút, amelyben Isztambul eseményszervezői megbíznak**. 4,8★ értékelés, TÜRSAB engedéllyel, teljes mértékben angolul beszélő személyzet és teljes rugalmasság — útvonal, menü, zene, program.'
+      'Akár vállalati eseményt szervez ügyfeleknek, akár 50. születésnapi bulit, akár esküvői fogadást Isztambul legikonikusabb hídjai alatt, ez **a privát hajóút, amelyben Isztambul eseményszervezői megbíznak**. 4,9★ értékelés, TÜRSAB engedéllyel, teljes mértékben angolul beszélő személyzet és teljes rugalmasság — útvonal, menü, zene, program.'
     ],
     highlights: [
       { title: 'Az egész hajó, csak Önnek', desc: 'Nincsenek más vendégek. Az Ön csoportja birtokolja az összes fedélzetet, az összes asztalt. Állítsa be saját zenét, öltözködési kódot, programot. A magánélet fontos — tiszteletben tartjuk.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**A Boszporusz hajóút pároknak** Isztambul kedvenc estéje. Nem minden pár ünnepel évfordulót — néha csak a világ legromantikusabb városában van és egy csodálatos estét szeretne együtt. Ez a hajóút a következőket kínálja: privát asztal kettőnek, lassú török többfogásos vacsora, élő hegedű és akusztikus zene a vacsora alatt és a kivilágított Boszporusz-híd, amely lassan elhalad.',
       'A légkör **meleg, de nem túlságosan romantikus** — nincs kötelező lánykérési zene, nincs kínos koordinált taps "az újházasoknak". Egyen, igyon, beszélgessen, nézze Isztambul fényeit. Ha hozzá akarja adni a romantikus asztali elrendezést (gyertyák, rózsák, +€{p.romantic}), kiváló — különben maga a vacsora már különleges.',
-      'Akár 3 napig Isztambulban van a partnerével, akár szerény eseményt ünnepel, akár felfedező utazást tervez egy jövőbeli lánykéréshez — **a Boszporusz hajóút pároknak** 3 órás estét kínál együtt a világ egyik legtöbbet fotózott városában. 4,8★, fizetés a fedélzeten, ingyenes lemondás.'
+      'Akár 3 napig Isztambulban van a partnerével, akár szerény eseményt ünnepel, akár felfedező utazást tervez egy jövőbeli lánykéréshez — **a Boszporusz hajóút pároknak** 3 órás estét kínál együtt a világ egyik legtöbbet fotózott városában. 4,9★, fizetés a fedélzeten, ingyenes lemondás.'
     ],
     highlights: [
       { title: 'Privát asztal kettőnek', desc: 'Privát asztal 2 főre, nem megosztva. Prioritás az ablak melletti asztaloknak pároknak. Naplemente és éjszakai Boszporusz fotók közvetlenül az ablaknál.' },
-      { title: 'Lassú többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc vagy vegetáriánus), búzadara-halva desszertként. 3 órán keresztül lassan szolgálják fel — nincs siet.' },
+      { title: 'Lassú többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc vagy vegetáriánus), különleges búzadara-desszert desszertként. 3 órán keresztül lassan szolgálják fel — nincs siet.' },
       { title: 'Élő hegedű és lágy zene', desc: 'Az élő hegedű és az akusztikus török zene a vacsora alatt intim légkört teremt, alkalmas a beszélgetéshez. Aztán jön a DJ a pároknak, akik táncolni szeretnének.' },
       { title: 'Kiegészítők különleges estékhez', desc: 'Romantikus asztali elrendezés (gyertyák, rózsák): +€{p.romantic}. 2 pohár alkohol (bor, sör, rakı, vodka, whisky, gin és más): +€{p.alcohol2}/fő. Szállodai transzfer (oda-vissza): +€{p.transfer}/fő. Válassza, ami illik az estéjéhez.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       '**A Boszporusz naplemente hajóút** élménye Isztambulban egyetlen dologról szól: az átmenetről. Hajóutunkra a beszállás a Kabataş kikötőben 20:00-tól kezdődik — és a májustól augusztusig tartó hosszú estéken az aranyóra épp akkor bontakozik ki, amíg Ön elhelyezkedik a fedélzeten. A nap nagyjából a 21:00-as indulás idején nyugszik le az európai part minaretei mögött, így a vízről nézheti végig: a Dolmabahçe-palota aranyban fürdik, az Ortaköy-mecset sziluettként rajzolódik ki a ragyogó ég előtt.',
       '**A naplementétől éjszakáig tartó Boszporusz hajóutunk** teljes török vacsorát tartalmaz — 10 fajta mezze, meleg előétel, választható főétel, desszert — amelyet akkor szolgálnak fel, amikor a város felkapcsolja fényeit. Mire a desszert megérkezik, Ön már a kivilágított Boszporusz-híd alatt hajózik, 30 millió fény tükröződik a sötét vízen. Az alkonyattól a teljes éjszakáig tartó átváltozás, egyetlen 3 órás hajóútba sűrítve — pontosan ez a lényeg.',
-      'Akár az utolsó fényt üldöző fotós, akár "az isztambuli emlékfotóra" vágyó pár, akár először itt járó utazó, aki a klasszikus estét szeretné a vízen — ez **az a Boszporusz naplemente vacsorás hajóút**, amelyet a helyiek ajánlanak a látogatóknak. €{p.dinnerStd}/főtől, 4,8★ értékelés, TÜRSAB engedéllyel, fizetés a fedélzeten — nincs előzetes fizetés.'
+      'Akár az utolsó fényt üldöző fotós, akár "az isztambuli emlékfotóra" vágyó pár, akár először itt járó utazó, aki a klasszikus estét szeretné a vízen — ez **az a Boszporusz naplemente vacsorás hajóút**, amelyet a helyiek ajánlanak a látogatóknak. €{p.dinnerStd}/főtől, 4,9★ értékelés, TÜRSAB engedéllyel, fizetés a fedélzeten — nincs előzetes fizetés.'
     ],
     highlights: [
       { title: 'Nyári naplementék pont az induláskor', desc: 'Májustól augusztusig a nap Isztambulban nagyjából 20:15–20:45 között nyugszik le — a 20:00-as beszállás aranyórát ad a fedélzeten, a 21:00-as indulással pedig magát a naplementét a vízről nézi végig. Kamera készenlétben — ez az a fotó.' },
       { title: 'Kék órától a teljes éjszakáig', desc: 'Nem csak naplemente — a hajóút az alkonyaton át a teljesen kivilágított Boszporuszig hajózik. Arany fény, kék óra, majd 30 millió hídfény a sötét vízen: három fényfázis egyetlen estén.' },
-      { title: 'Teljes vacsora a hajóút alatt', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus), búzadara-halva, korlátlan üdítők — akkor szolgálják fel, amikor a városi fények kigyúlnak.' },
+      { title: 'Teljes vacsora a hajóút alatt', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus), különleges búzadara-desszert, korlátlan üdítők — akkor szolgálják fel, amikor a városi fények kigyúlnak.' },
       { title: 'Dolmabahçe, Ortaköy, Boszporusz-híd — minden ragyog', desc: 'Az útvonal elhalad a Dolmabahçe-palota, az Ortaköy-mecset, a Boszporusz-híd, a Rumeli Hisarı és a Beylerbeyi-palota mellett, épp amikor fényeik kigyúlnak. Minden nevezetesség a legjobb fényben.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**A Boszporusz éjszakai túra** a legjobban ajánlott esti tevékenység Isztambulban. Itt van, miért: sötétedés után a Boszporusz átalakul. A Boszporusz-híd váltakozik a kék, lila és arany között. A Dolmabahçe-palota meleg sárgán ragyog. Az Ortaköy-mecset tökéletesen tükröződik a fekete vízben. Isztambul minden nevezetessége éjjel éri el drámai csúcsát.',
       '**A Boszporusz éjszakai túránk vacsorával** csomagolja a teljes ikonikus estét: 3 óra a vízen (21:00-00:00), török többfogásos vacsora, nyolc produkcióból álló élő folklórműsor (Oba Dombra, sema, anatóliai és azeri néptáncok, keleti tánc, kaukázusi késtánc), élő zene és szaxofonos DJ szett, amely az éjszaka végéig életben tartja a fedélzetet. Minden vendég ugyanazt a programot kapja — nincs "alap" opció, amely kihagyja a legjobb részeket.',
-      'Akár az első isztambuli látogatása és "az egyetlen dolgot keresi, amit éjjel kell csinálnia", akár már járt itt és a város legfotogénebb 3 óráját szeretné, ez **a Boszporusz éjszakai túra** 4,8★ értékeléssel rendelkezik több mint 11.317 utazótól. TÜRSAB engedéllyel, fizetés a fedélzeten, nincs előzetes fizetés.'
+      'Akár az első isztambuli látogatása és "az egyetlen dolgot keresi, amit éjjel kell csinálnia", akár már járt itt és a város legfotogénebb 3 óráját szeretné, ez **a Boszporusz éjszakai túra** 4,9★ értékeléssel rendelkezik több mint 11.317 utazótól. TÜRSAB engedéllyel, fizetés a fedélzeten, nincs előzetes fizetés.'
     ],
     highlights: [
       { title: 'A kivilágított Boszporusz drámai csúcson', desc: 'A Boszporusz-híd színt változtat (kék, lila, arany), a paloták sárgán ragyognak, az Ortaköy-mecset tükröződik a sötét vízben. 21:00-00:00 maximális megvilágítás az összes isztambuli nevezetességhez.' },
       { title: 'Hagyományos török show a fedélzeten', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc, majd élő szaxofon és DJ szett. 40 perc show, majd folytatódik a zene + vacsora.' },
-      { title: 'Teljes többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel (börek), főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus — az Ön választása), desszert (búzadara-halva), korlátlan üdítők. Halal tanúsítvánnyal.' },
+      { title: 'Teljes többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel (börek), főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus — az Ön választása), desszert (különleges búzadara-desszert), korlátlan üdítők. Halal tanúsítvánnyal.' },
       { title: 'Teljes Boszporusz útvonal', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Leánytorony → Kabataş.' }
     ],
     faq: [
@@ -335,20 +335,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Vacsorás Hajóút Isztambulban €{p.dinnerStd}-tól — Boszporusz Éjszakai Túra',
-      description: 'Vacsorás hajóút 3 órán át Isztambulban a Boszporuszon. Török többfogásos menü, élő folklór, kivilágított hidak. Ingyenes lemondás, fizetés a fedélzeten. 11.317 értékelés.'
+      description: 'Vacsorás hajóút 3 órán át Isztambulban a Boszporuszon. Török többfogásos menü, élő folklór, kivilágított hidak. Ingyenes lemondás, fizetés a fedélzeten. 11.317+ vendég.'
     },
     hero: {
       h1: 'Vacsorás Hajóút Isztambulban',
       subtitle: 'A legjobb vacsorás hajóút Isztambulban — 3 óra a Boszporuszon, török többfogásos vacsora, élő szórakozás és a város legikonikusabb nevezetességeinek éjszakai kilátásai.',
-      badge: '4,8★ · 11.317 értékelés · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ vendég · TÜRSAB A-17672'
     },
     intro: [
       'Keres egy **vacsorás hajóutat Isztambulban**? Megtalálta, amit a legtöbb utazó ajánl. A 3 órás esténk a Boszporuszon teljes török többfogásos vacsorát, élő népi táncokat és a város legfotogénebb kilátásait egyesíti — mindezt egy kényelmes hajóról, amely 21:00-kor indul a Kabataş kikötőből.',
       'A **vacsorás hajóút Isztambulban** élménye: szálljon fel 20:00-kor, üljön le, nézze a Dolmabahçe-palotát, miközben indulunk, a vacsora elkezdődik, amikor megközelítjük az Ortaköy-mecsetet, a show elkezdődik (sema, népi táncok, keleti), és a desszertre a kivilágított Boszporusz-híd alatt van. Éjfélkor visszatér Kabataşba egy ikonikus fotókollázzsal és tele hassal.',
-      '€{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). Fizetés a fedélzeten — nincs előzetes fizetés, nincs kockázat. TÜRSAB A-17672 engedéllyel, 4,8★ értékeléssel több mint 11.317 utazótól.'
+      '€{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). Fizetés a fedélzeten — nincs előzetes fizetés, nincs kockázat. TÜRSAB A-17672 engedéllyel, 4,9★ értékeléssel több mint 11.317 utazótól.'
     ],
     highlights: [
-      { title: 'Teljes török többfogásos vacsora', desc: '10 fajta mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), búzadara-halva. Halal tanúsítvánnyal. Korlátlan üdítők beleértve.' },
+      { title: 'Teljes török többfogásos vacsora', desc: '10 fajta mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), különleges búzadara-desszert. Halal tanúsítvánnyal. Korlátlan üdítők beleértve.' },
       { title: 'Élő török népi tánc show', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg, grúz-kaukázusi késtánc, majd élő szaxofon és DJ. 40 perc show, folyamatos háttérzene.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: '3 órás túra: Dolmabahçe, Çırağan, Ortaköy-mecset, Boszporusz-híd, Bebek, Rumeli Hisarı, FSM-híd, Beylerbeyi, Üsküdar, Leánytorony. Mindkét part, európai és ázsiai.' },
       { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Vacsorás hajóút: €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Foglalja a Vacsorás Hajóutat · Fizetés a Fedélzeten',
-      secondary: '4,8★ · TÜRSAB engedéllyel · Ingyenes lemondás 2 órával előtte',
+      secondary: '4,9★ · TÜRSAB engedéllyel · Ingyenes lemondás 2 órával előtte',
       tertiary: 'Elérhetőség Ma Este'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Isztambul Éjszakai Túra €{p.dinnerStd}-tól — Boszporusz Vacsorás Hajóút + Show',
-      description: 'Hajóút 3 órán át a Boszporuszon vacsorával és élő show-val. Indulás 21:00 Kabataşból. Ingyenes lemondás, fizetés a fedélzeten. 11.317 értékelés. Szállodai transzfer opcionális.'
+      description: 'Hajóút 3 órán át a Boszporuszon vacsorával és élő show-val. Indulás 21:00 Kabataşból. Ingyenes lemondás, fizetés a fedélzeten. 11.317+ vendég. Szállodai transzfer opcionális.'
     },
     hero: {
       h1: 'Túra Isztambulban Éjjel',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       'Egy **isztambuli éjszakai túrának** három dolgot kell tennie: meg kell mutatnia a város ikonikus nevezetességeit, jól meg kell etetnie és szórakoztatnia. A mi Boszporusz vacsorás hajóutunk mindhármat egyetlen 3 órás estén belül elvégzi — és ezért az isztambuli útikönyvek többsége az #1 éjszakai túra élménynek ajánlja.',
       'Az **isztambuli éjszakai túra** útvonala lefedi a legjobb kivilágított nevezetességeket: Dolmabahçe-palota, Ortaköy-mecset, Boszporusz-híd (színt változtat), Bebek negyed, Rumeli Hisarı, FSM-híd, Beylerbeyi-palota, ázsiai part Üsküdar és a Leánytorony a távolban. A városi túrák többsége a buszról mutatja meg őket — mi a vízről mutatjuk meg, ahol a legdrámaibbak.',
-      'A vacsora benne van (török többfogásos menü), élő török népi tánc show, sema, keleti tánc és DJ szett. Ha 2-3 napig Isztambulban van, ez az egyetlen este, amely a legerősebb ütést adja. 4,8★ több mint 11.317 utazótól, fizetés a fedélzeten, nincs előzetes fizetés.'
+      'A vacsora benne van (török többfogásos menü), élő török népi tánc show, sema, keleti tánc és DJ szett. Ha 2-3 napig Isztambulban van, ez az egyetlen este, amely a legerősebb ütést adja. 4,9★ több mint 11.317 utazótól, fizetés a fedélzeten, nincs előzetes fizetés.'
     ],
     highlights: [
       { title: 'Isztambul összes ikonikus éjszakai kilátása', desc: 'Dolmabahçe-palota, Ortaköy-mecset, kivilágított Boszporusz-híd, Rumeli Hisarı, FSM-híd, Beylerbeyi-palota, Leánytorony. Minden fő nevezetesség a csúcs éjszakai megvilágításnál.' },
@@ -411,17 +411,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Hajós Túra Isztambul €{p.dinnerStd}-tól — Boszporusz + Vacsora + Show',
-      description: 'Hajós túra 3 órán át: Boszporusz hajóút, teljes török vacsora, élő folklór, kivilágított éjszakai tájak. Ingyenes lemondás, fizetés a fedélzeten. 11.317 értékelés.'
+      description: 'Hajós túra 3 órán át: Boszporusz hajóút, teljes török vacsora, élő folklór, kivilágított éjszakai tájak. Ingyenes lemondás, fizetés a fedélzeten. 11.317+ vendég.'
     },
     hero: {
       h1: 'Hajós Túra Isztambulban',
       subtitle: 'A legtöbbet foglalt hajós túra Isztambulban az utazók által — Boszporusz hajóút török étellel, élő szórakozással és a város ikonikus kilátásaival a vízről.',
-      badge: '4,8★ · TÜRSAB A-17672 · Fizetés a Fedélzeten'
+      badge: '4,9★ · TÜRSAB A-17672 · Fizetés a Fedélzeten'
     },
     intro: [
       'Amikor a "hajós túra Isztambulban" kifejezést keresi, azt az egy dolgot keresi, amely a vízről meghatározza a várost: a Boszporuszt. A 3 órás Boszporusz hajós túránk elviszi Önt Isztambul minden fő nevezetessége mellett — Dolmabahçe-palota, Ortaköy-mecset, Boszporusz-híd, Rumeli Hisarı, Beylerbeyi-palota és Leánytorony — teljes török vacsorával és élő szórakozással.',
       'A sok 1 órás turisztikai komppal ellentétben, amelyek kevesebb Boszporuszt fednek le és kihagyják a vacsorát és a szórakozást, **a hajós túránk Isztambulban** teljes esti élmény: beszállás 20:00-kor a Kabataş kikötőnél, túra éjfélig, 10 mezze, főétel, desszert, sema, népi táncok, keleti tánc és DJ. Az esti kimenőt is megkapja a túra részeként.',
-      'Akár egy estéje van Isztambulban, akár egy egész hete, ez a **hajós túra Isztambulban** elvégzi a munkát. 4,8★ több mint 11.317 utazótól, TÜRSAB engedéllyel (A-17672), halal tanúsítvánnyal rendelkező menü és fizetés a fedélzeten — nincs anyagi kötelezettség, amíg elégedett az élménnyel.'
+      'Akár egy estéje van Isztambulban, akár egy egész hete, ez a **hajós túra Isztambulban** elvégzi a munkát. 4,9★ több mint 11.317 utazótól, TÜRSAB engedéllyel (A-17672), halal tanúsítvánnyal rendelkező menü és fizetés a fedélzeten — nincs anyagi kötelezettség, amíg elégedett az élménnyel.'
     ],
     highlights: [
       { title: 'Az összes fő Boszporusz nevezetesség', desc: 'Dolmabahçe, Çırağan, Ortaköy-mecset, Boszporusz-híd, Bebek, Rumeli Hisarı, FSM-híd, Beylerbeyi-palota, Üsküdar, Leánytorony. Mindkét part, európai és ázsiai, egy túrában.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       'Egy **Boszporusz kirándulás** jelenthet 1 órás turisztikai kompot vagy teljes esti túrát vacsorával — mi a másodikat csináljuk és az utazók többsége jobb értékű élménynek tartja. 3 óra, €{p.dinnerStd}/fő, vacsora és szórakozás beleértve. Nem csak elhalad a nevezetességek mellett — eszik, nézi a show-t és élvezi az estét.',
       'A **Boszporusz kirándulásunk** útvonala lefed mindent, amit érdemes látni: Dolmabahçe-palota (19. századi oszmán szultáni rezidencia), Ortaköy-mecset (Isztambul egyik legfotózottabb mecsete), Boszporusz-híd (éjjel színt változtat), Rumeli Hisarı (Fatih Sultan Mehmet építette 1452-ben), Beylerbeyi-palota (ázsiai part) és Leánytorony egy kis szigeten. Minden megmagyarázva angolul beszélő személyzet által.',
-      'Akár 24 órája van Isztambulban, akár egy hete, ez **a Boszporusz kirándulás**, amely a legtöbbet adja egy estén. 4,8★ értékelés több mint 11.317 utazótól, TÜRSAB A-17672 engedéllyel, halal-barát menü, fizetés a fedélzeten — nincs előzetes fizetési kockázat.'
+      'Akár 24 órája van Isztambulban, akár egy hete, ez **a Boszporusz kirándulás**, amely a legtöbbet adja egy estén. 4,9★ értékelés több mint 11.317 utazótól, TÜRSAB A-17672 engedéllyel, halal-barát menü, fizetés a fedélzeten — nincs előzetes fizetési kockázat.'
     ],
     highlights: [
       { title: 'A teljes Boszporusz egyetlen csapásra', desc: 'Európai part (Dolmabahçe, Ortaköy, Rumeli Hisarı), ázsiai part (Beylerbeyi, Üsküdar), mindkét Boszporusz-híd, Leánytorony. Minden fő nevezetesség látható 3 órán belül.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Keres **Boszporusz hajóút jegyeket**? Vásároljon közvetlenül. A jegyünk €{p.dinnerStd}/fő — 40% kedvezmény a normál árhoz képest (€{p.dinnerStdOriginal}). A harmadik fél foglalási oldalak általában 20-40% jutalékot adnak hozzá. Közvetlen foglalással spórol — és még mindig a fedélzeten fizet.',
       'A **Boszporusz hajóút jegyek** folyamatunk: töltse ki az űrlapot ezen az oldalon kevesebb mint 1 perc alatt (dátum, vendégek száma, kapcsolat), azonnal megerősítjük WhatsApp / Telegram-en, megjelenik a Kabataş kikötőnél 20:00-kor, fizet a fedélzeten, élvezi a 3 órás vacsorás hajóutat. Nincs nyomtatandó fizikai jegy, nincs e-mailben kapott kupon — a megerősítés az Ön jegye.',
-      'Akár ma estére foglalja a vacsorás hajóutat, akár egy specifikus jövő heti dátumra, **a közvetlen Boszporusz hajóút jegyek** a leggyorsabb módja. 4,8★ értékelés, TÜRSAB engedéllyel (A-17672), halal tanúsítvánnyal rendelkező menü és támogatja a szállodai transzfer és alkohol kiegészítőket.'
+      'Akár ma estére foglalja a vacsorás hajóutat, akár egy specifikus jövő heti dátumra, **a közvetlen Boszporusz hajóút jegyek** a leggyorsabb módja. 4,9★ értékelés, TÜRSAB engedéllyel (A-17672), halal tanúsítvánnyal rendelkező menü és támogatja a szállodai transzfer és alkohol kiegészítőket.'
     ],
     highlights: [
       { title: 'Közvetlen foglalás — nincs közvetítői díj', desc: '€{p.dinnerStd}/fő — egyetlen átlátható ár. A harmadik fél oldalak €30-80+-t kérnek ugyanazért a túráért. Spóroljon közvetlen foglalással. Nincsenek rejtett díjak, nincs jutalékfelár.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Boszporusz Last Minute €{p.dinnerStd}-tól — Foglaljon Ma, Fizessen a Fedélzeten',
-      description: 'Boszporusz hajóút foglalás aznap. WhatsApp megerősítés percek alatt. Indulás 21:00 Kabataşból. Ingyenes lemondás, fizetés a fedélzeten. 11.317 értékelés.'
+      description: 'Boszporusz hajóút foglalás aznap. WhatsApp megerősítés percek alatt. Indulás 21:00 Kabataşból. Ingyenes lemondás, fizetés a fedélzeten. 11.317+ vendég.'
     },
     hero: {
       h1: 'Boszporusz Hajóút Last Minute',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**A turizmus a Boszporuszon** a vízről felülmúlja bármilyen busztúrát. A Boszporusz a város legtörténelmibb vízi útja — oszmán szultánok, bizánci császárok, görög kereskedők és orosz hadihajók mind áthaladtak itt. Ma a 3 órás túránk az angolul beszélő személyzet kommentárjával elhalad Isztambul minden fő nevezetessége mellett, amely meghatározza a sziluettet.',
       'A **turisztikai túránk** útvonala a Boszporuszon (esti indulás, 21:00-00:00):\n\n1. **Dolmabahçe-palota** — 19. századi oszmán rezidencia, éjjel kivilágítva\n2. **Çırağan-palota** — most luxushotel, királyi történelem\n3. **Ortaköy-mecset** — Isztambul egyik legfotózottabb mecsete, a vízen\n4. **Boszporusz-híd** — éjjel váltakozik kék, lila, arany között\n5. **Bebek** — elegáns negyed az európai parton\n6. **Rumeli Hisarı** — Fatih Sultan Mehmet építette 1452-ben Konstantinápoly elfoglalása előtt\n7. **Fatih Sultan Mehmet-híd** — második Boszporusz-híd, drámai ív\n8. **Beylerbeyi-palota** — ázsiai part, oszmán nyári rezidencia\n9. **Üsküdar** — Isztambul ázsiai partja, hagyományos negyed\n10. **Leánytorony** — torony egy kis szigeten, Isztambul egyik legromantikusabb szimbóluma',
-      'A vacsora és a szórakozás benne van — nem külön — tehát **a turizmus a Boszporuszon** teljes estévé válik. Török többfogásos vacsora, élő népi tánc show, sema, keleti tánc, DJ. 4,8★ értékelés több mint 11.317 utazótól, TÜRSAB A-17672 engedéllyel.'
+      'A vacsora és a szórakozás benne van — nem külön — tehát **a turizmus a Boszporuszon** teljes estévé válik. Török többfogásos vacsora, élő népi tánc show, sema, keleti tánc, DJ. 4,9★ értékelés több mint 11.317 utazótól, TÜRSAB A-17672 engedéllyel.'
     ],
     highlights: [
       { title: '10+ fő nevezetesség Isztambulban', desc: 'Dolmabahçe-palota, Çırağan-palota, Ortaköy-mecset, Boszporusz-híd, Rumeli Hisarı, FSM-híd, Beylerbeyi-palota, Üsküdar, Leánytorony. Isztambul minden lényeges nevezetessége egy túrában.' },

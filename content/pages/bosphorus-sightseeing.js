@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **Bosphorus sightseeing cruise** route (evening departure, 21:00-00:00):\n\n1. **Dolmabahçe Palace** — 19th-century Ottoman residence, illuminated at night\n2. **Çırağan Palace** — now a luxury hotel, royal history\n3. **Ortaköy Mosque** — one of Istanbul\'s most photographed mosques, right on the water\n4. **Bosphorus Bridge** — shifts between blue, purple, gold at night\n5. **Bebek** — chic European neighborhood\n6. **Rumeli Fortress** — built by Fatih Sultan Mehmet in 1452 before conquest of Constantinople\n7. **Fatih Sultan Mehmet Bridge** — second Bosphorus bridge, dramatic arch\n8. **Beylerbeyi Palace** — Asian shore, Ottoman summer residence\n9. **Üsküdar** — Istanbul\'s Asian side, traditional neighborhood\n10. **Maiden\'s Tower** — small island tower, one of Istanbul\'s most romantic symbols',
 
-    'Dinner and entertainment are included — not separate — so **Bosphorus sightseeing** becomes a complete evening. Multi-course Turkish meal, live folklore show, whirling dervish, belly dance, DJ. 4.8★ rated by 11,317+ travelers, TÜRSAB A-17672 licensed.'
+    'Dinner and entertainment are included — not separate — so **Bosphorus sightseeing** becomes a complete evening. Multi-course Turkish meal, live folklore show, whirling dervish, belly dance, DJ. 4.9★ rated by 11,317+ travelers, TÜRSAB A-17672 licensed.'
   ],
 
   highlights: [

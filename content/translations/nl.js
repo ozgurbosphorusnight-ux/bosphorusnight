@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Bosporus Dinercruise in Istanbul',
       subtitle: 'Drie uur live entertainment, een royaal Turks meergangendiner en de meest indrukwekkende nachtelijke uitzichten over de Bosporus.',
-      badge: '4,8★ · 11.317 beoordelingen'
+      badge: '4,9★ · 11.317+ gasten'
     },
     intro: [
-      '**De Bosporus dinercruise** is de meest iconische avondervaring van Istanbul. Het inschepen begint om 20:00 bij de aanlegplaats Kabataş; om 21:00 vertrekt onze boot en vaart onder de verlichte Bosporus- en Fatih Sultan Mehmet-bruggen, met een Turks meergangendiner, live volksdansen, oriëntaalse dans en een dj-set die het dek tot 23:00 levendig houdt.',
-      'In tegenstelling tot de gewone toeristenboten die het nachtelijke landschap van Istanbul vullen, is **onze Bosporus dinercruise** gelicentieerd door TÜRSAB (A-17672) en beoordeeld met 4,8★ door meer dan 11.317 reizigers. Wij houden de groepen klein en de service warm — en omdat u aan boord betaalt, is er geen enkel risico om vooraf te reserveren.',
+      '**De Bosporus dinercruise** is de meest iconische avondervaring van Istanbul. Het inschepen begint om 20:00 bij de aanlegplaats Kabataş; om 21:00 vertrekt onze boot en vaart onder de verlichte Bosporus- en Fatih Sultan Mehmet-bruggen, met een Turks meergangendiner, live volksdansen, oriëntaalse dans en een dj-set die het dek tot 23:45 levendig houdt.',
+      'In tegenstelling tot de gewone toeristenboten die het nachtelijke landschap van Istanbul vullen, is **onze Bosporus dinercruise** gelicentieerd door TÜRSAB (A-17672) en beoordeeld met 4,9★ door meer dan 11.317 reizigers. Wij houden de groepen klein en de service warm — en omdat u aan boord betaalt, is er geen enkel risico om vooraf te reserveren.',
       'Of u nu een verjaardag viert, een premium avond in Istanbul zoekt voor uw familie, of de meest fotogenieke zonsondergang-naar-nacht-overgang van de stad wilt — dit is de dinercruise die in de eerste plaats wordt aanbevolen door de inwoners van Istanbul.'
     ],
     highlights: [
-      { title: 'Turks meergangendiner', desc: '10 koude mezzevarianten, warme voorgerecht (börek), keuze uit hoofdgerecht (zalm / zeebaars / kipspies / runderspies / vegetarisch), griesmeelhalva als dessert, onbeperkt frisdrank.' },
+      { title: 'Turks meergangendiner', desc: '10 koude mezzevarianten, warme voorgerecht (börek), keuze uit hoofdgerecht (zalm / zeebaars / kipspies / runderspies / vegetarisch), speciaal griesmeeldessert als dessert, onbeperkt frisdrank.' },
       { title: 'Live volksdans, oriëntaalse dans en dj', desc: 'Acht acts: Oba Dombra, Mevlana sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, klassieke oriëntaalse dans, Anatolische potpourri en de Georgisch-Kaukasische messendans — daarna live saxofoon en een dj-set gedurende de hele cruise.' },
       { title: 'Volledige nachtroute over de Bosporus', desc: 'Kabataş → Dolmabahçe → Çırağan-paleis → Ortaköy-moskee → Bebek → Rumeli Hisarı → FSM-brug → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Vanaf €{p.dinnerStd}/persoon — betaling aan boord', desc: 'Dinercruise €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal}). Geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**De Bosporuscruise met kinderen** is de meest gezinsvriendelijke avondoptie in Istanbul. Wij ontvangen elke avond tientallen gezinnen — wij hebben elk detail ontworpen zodat de kleintjes zich comfortabel voelen: overdekte binnenruimte om warm te blijven, een toegankelijk kindermenu (eenvoudige gegrilde kip, pasta, onbeperkt frisdrank) en vroeg inschepen om driftbuien op late uren te vermijden.',
       'In tegenstelling tot boten alleen voor volwassenen blijft **onze Bosporus dinercruise voor gezinnen** warm en inclusief. **Kinderen 0-3 jaar zijn gratis** (transfer inbegrepen), 4-9 jaar krijgen **€5 korting**, 10+ jaar betalen volledige prijs — geen verborgen kosten. De live volksdansen, oriëntaalse dans en de sema-voorstelling zijn delicaat familievermaak, geen nachtclub.',
-      'Of u nu naar Istanbul komt voor een verlengd weekend met uw peuter, of de tieners meebrengt op hun eerste Europese reis — dit is de tour die wordt aanbevolen door de gezinnen van Istanbul. Veilig, halal-gecertificeerd, gelicentieerd door TÜRSAB en beoordeeld met 4,8★ door meer dan 11.317 reizigers.'
+      'Of u nu naar Istanbul komt voor een verlengd weekend met uw peuter, of de tieners meebrengt op hun eerste Europese reis — dit is de tour die wordt aanbevolen door de gezinnen van Istanbul. Veilig, halal-gecertificeerd, gelicentieerd door TÜRSAB en beoordeeld met 4,9★ door meer dan 11.317 reizigers.'
     ],
     highlights: [
       { title: '0-3 jaar volledig gratis', desc: 'Geen kosten voor baby\'s en peuters. 4-9 jaar betalen €5 van het volwassenentarief. Vanaf 10 jaar gast met volledige prijs. Transparant, geen verrassingen.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**De romantische Bosporuscruise** is de meest iconische avond voor koppels in Istanbul. Terwijl de zon ondergaat boven het Dolmabahçe-paleis en de Bosporusbrug oplicht in kleuren, delen u en uw partner een Turks meergangendiner aan een privétafel — met kaarsen, verse bloemen en live viool die over het dek zweeft.',
       'Onze romantische tafelopstelling (+€{p.romantic}/tafel) maakt elke plek een speciaal moment: rode rozen, glanzende kaarsen, een handgeschreven welkomstbriefje. Voeg het 2-glazen-alcoholpakket toe voor wijn onder de sterren (+€{p.alcohol2}/persoon) of houd het eenvoudig met de inbegrepen frisdrank. Wat u ook kiest, de bemanning zorgt discreet voor de rest.',
-      'Of u nu een verjaardag viert, een verrassing voor uw partner plant of gewoon een onvergetelijke avond wilt in de meest romantische stad van Europa — dit is de tour die wordt geprefereerd door koppels in Istanbul. Beoordeling 4,8★, gelicentieerd door TÜRSAB en — het belangrijkste — betaling aan boord, dus u belooft alleen de avond zelf.'
+      'Of u nu een verjaardag viert, een verrassing voor uw partner plant of gewoon een onvergetelijke avond wilt in de meest romantische stad van Europa — dit is de tour die wordt geprefereerd door koppels in Istanbul. Beoordeling 4,9★, gelicentieerd door TÜRSAB en — het belangrijkste — betaling aan boord, dus u belooft alleen de avond zelf.'
     ],
     highlights: [
       { title: 'Romantische tafel bij kaarslicht', desc: 'Voeg de romantische tafelopstelling toe met +€{p.romantic}/tafel: verse rode rozen, glanzende kaarsen, rozenblaadjes op het tafellaken en handgeschreven kaart. Foto\'s inbegrepen.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**De halal Bosporuscruise** is de meest respectvolle dinercruise in Istanbul voor moslimreizigers. Elk vlees dat op onze boot wordt geserveerd — zalm, zeebaars, kipspies, runderspies — is **halal-gecertificeerd** van goedgekeurde leveranciers. Wij serveren elke gast hetzelfde menu; geen aparte "halal-sectie", omdat de hele boot standaard halal is.',
       'Alcohol is **een optioneel supplement** — nooit opgelegd aan gasten, en de tafelopstelling scheidt natuurlijk gasten die de voorkeur geven aan een alcoholvrije maaltijd. Voor gasten die het 2-glazen alcoholpakket willen (+€{p.alcohol2}/persoon), is het er, maar de inbegrepen onbeperkte frisdrank (water, cola, sap) is voldoende voor de meeste moslimgezinnen. Onze bemanning is getraind om uw voorkeuren te respecteren zonder veronderstellingen.',
-      '**De halalvriendelijke Bosporuscruise** is belangrijk voor reizigers uit Saoedi-Arabië, VAE, Koeweit, Qatar, Iran, Maleisië, Indonesië, Pakistan en Marokko die de meest iconische avond van Istanbul willen zonder compromissen. Gelicentieerd door TÜRSAB, 4,8★ en betaling aan boord — beloof niets totdat u zeker weet dat de ervaring aan uw normen voldoet.'
+      '**De halalvriendelijke Bosporuscruise** is belangrijk voor reizigers uit Saoedi-Arabië, VAE, Koeweit, Qatar, Iran, Maleisië, Indonesië, Pakistan en Marokko die de meest iconische avond van Istanbul willen zonder compromissen. Gelicentieerd door TÜRSAB, 4,9★ en betaling aan boord — beloof niets totdat u zeker weet dat de ervaring aan uw normen voldoet.'
     ],
     highlights: [
       { title: '100% halal-gecertificeerd menu', desc: 'Al het vlees (zalm, zeebaars, kipspies, runderspies) is halal-gecertificeerd van goedgekeurde leveranciers. De keuken volgt halal-bereiding. Geen varkensvleesproducten of niet-halal additieven. Vegetarische opties zijn altijd beschikbaar.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Is deze cruise geschikt voor moslimgezinnen met kinderen?', a: 'Ja — het is een van de meest gerespecteerde cruises voor gezinnen in Istanbul. Het entertainment is bescheiden (volksdansen, sema, Turkse muziek), kinderen onder 3 jaar zijn gratis, 4-9 jaar krijgen €5 korting. Geen nachtclubsfeer. Gezinnen uit de Golf, Indonesië, Maleisië, Pakistan en Marokko reserveren regelmatig deze cruise.' },
       { q: 'Kan ik aan boord bidden?', a: 'Er is geen toegewijde gebedsruimte aan boord, maar wij raden aan vóór het inschepen om 20:00 te bidden (de maghrib-gebed valt vaak samen met deze tijd). De aanlegplaats Kabataş heeft gebedsfaciliteiten. Als u tijdens het varen 21:00-00:00 (isha) moet bidden, praat met de bemanning — wij kunnen een stille hoek op het dek regelen.' },
       { q: 'Wat zijn de prijzen voor een moslimgezin van 4 personen (2 volwassenen, 2 kinderen)?', a: 'Dinercruise: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 korting 4-9 jaar) = €87.20. Als de kinderen jonger zijn dan 3, gratis: 2 × €{p.dinnerStd} = €48.60. Voeg €{p.transfer} hoteltransfer per volwassene toe. Totaal: €48.60–€92.90 voor het gezin van 4, geen vooruitbetaling, betaling aan boord.' },
-      { q: 'Is de hoteltransfer ook halal?', a: 'De hoteltransfer is gewoon een autorit — geen eten of drinken bij betrokken, dus geen halalzorg. Onze chauffeurs zijn professioneel, respectvol en stipt. De transferzones bestrijken Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli en 9 andere centrale wijken waar moslimreizigers gewoonlijk verblijven.' }
+      { q: 'Is de hoteltransfer ook halal?', a: 'De hoteltransfer is gewoon een autorit — geen eten of drinken bij betrokken, dus geen halalzorg. Onze chauffeurs zijn professioneel, respectvol en stipt. De transferzones bestrijken Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli en 8 andere centrale wijken waar moslimreizigers gewoonlijk verblijven.' }
     ],
     cta: {
       primary: 'Boek de Halal Cruise · Betaling aan Boord',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% KORTING · Één menu, premium standaard · Betalen aan boord'
     },
     intro: [
-      'Veel boten op de Bosporus verdelen hun gasten in "Standaard" en "VIP". Wij niet. Aan boord van de **AMOR** is er één dinermenu, met dezelfde zorg bereid voor iedereen: 10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies), griesmeelhalva en onbeperkt frisdrank. Het volledige entertainmentprogramma van acht acts is ook inbegrepen — Oba Dombra, de ceremonie van de draaiende derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale — allemaal binnen de prijs van €{p.dinnerStd}/persoon.',
+      'Veel boten op de Bosporus verdelen hun gasten in "Standaard" en "VIP". Wij niet. Aan boord van de **AMOR** is er één dinermenu, met dezelfde zorg bereid voor iedereen: 10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies), speciaal griesmeeldessert en onbeperkt frisdrank. Het volledige entertainmentprogramma van acht acts is ook inbegrepen — Oba Dombra, de ceremonie van de draaiende derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale — allemaal binnen de prijs van €{p.dinnerStd}/persoon.',
       'Het VIP-gevoel begint bij uw tafel. Wilt u zo dicht mogelijk bij het podium en het uitzicht zitten, voeg dan de **privétafel bij het podium** toe (+€{p.romantic}/tafel): uw plek wordt vooraf gereserveerd, met de beste hoek op de derwisjen, de volksdansen en de verlichte Bosporus. De favoriete keuze van stellen, vieringen en fotografieliefhebbers.',
       'De AMOR is een modern schip: 42 meter, 3 dekken, tot 400 gasten, verwarmd in de winter en geklimatiseerd in de zomer. De route van 3 uur vertrekt vanaf Kabataş (inschepen vanaf 20:00, vertrek 21:00, terugkomst 00:00) langs Dolmabahçe, de Ortaköy-moskee, het fort Rumeli en de lichten van de Bosporusbrug. TÜRSAB-vergunning (A-17672), 4,9★ op Google. Geen vooruitbetaling — u betaalt aan boord, met gratis annulering tot 2 uur voor vertrek.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Verkopen jullie een "VIP-pakket"? Wat is het verschil met Standaard?', a: 'We verkopen geen apart VIP-pakket — er is één menu, dat iedereen op dezelfde premium standaard krijgt geserveerd. Wat wij "VIP-ervaring" noemen is uw avond persoonlijk maken: een privétafel bij het podium (+€{p.romantic}/tafel), attente tafelbediening en optionele drankextra\'s. De cruise duurt 3 uur, €{p.dinnerStd}/persoon.' },
       { q: 'Is €{p.dinnerStd} echt 40% korting?', a: 'Ja — onze adviesprijs is €{p.dinnerStdOriginal}/persoon. €{p.dinnerStd} is het tarief bij directe boeking, zonder tussenpersooncommissies. U betaalt aan boord en er is geen vooruitbetaling.' },
-      { q: 'Wat staat er op het menu?', a: '10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies) en griesmeelhalva als dessert, met onbeperkt frisdrank. Het programma van acht acts is inbegrepen: Oba Dombra, de ceremonie van de derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale.' },
+      { q: 'Wat staat er op het menu?', a: '10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies) en speciaal griesmeeldessert als dessert, met onbeperkt frisdrank. Het programma van acht acts is inbegrepen: Oba Dombra, de ceremonie van de derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale.' },
       { q: 'Is alcohol inbegrepen?', a: 'Nee — alcohol is een aparte optie: 2 glazen wijn, bier, rakı, wodka, whisky, gin en meer voor +€{p.alcohol2}/persoon. Frisdrank is onbeperkt en gratis inbegrepen. Premium geïmporteerde dranken worden aan boord apart afgerekend.' },
       { q: 'Hoe verzeker ik me van een tafel bij het podium?', a: 'Selecteer bij het boeken simpelweg de optie "privétafel bij het podium" (+€{p.romantic}/tafel) — de tafel wordt op uw naam gereserveerd. De beste plekken gaan naar vroege boekingen, dus voeg het bij voorkeur vóór uw cruisedag toe.' },
       { q: 'Wat voor schip is het?', a: 'De AMOR — een modern passagiersschip van 42 meter met 3 dekken en een capaciteit van 400 gasten, verwarmd in de winter en geklimatiseerd in de zomer. Vertrek vanaf de pier van Kabataş: inschepen 20:00, vertrek 21:00, terugkomst 00:00. Route: Dolmabahçe, Ortaköy, fort Rumeli, Beylerbeyi en de lichten van de Bosporusbrug.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**De privé Bosporuscruise** betekent dat de hele boot van u is — geen andere gasten, geen gedeelde tafels, geen gemeenschappelijke dansvloer. Perfect voor familiebijeenkomsten, bedrijfsdiners, verjaardagsfeesten, vrijgezellenfeesten of bruiloftsrecepties. De boot, de bemanning, het menu, het entertainment en het programma passen zich aan uw groep aan.',
       '**Onze privé Bosporusverhuur** ondersteunt groepen **van 25 tot 80 gasten**. Kleinere groepen kunnen nog steeds de privé-ervaring vragen — wij bieden een minimumprijs die de exploitatiekosten van de boot dekt. Grotere groepen (bruiloftsgrootte) krijgen maatwerkprijzen en omvatten meestal speciale decoratie, live band, taartservice en verlengde duur (4-5 uur in plaats van de 3 standaard).',
-      'Of u nu een bedrijfsevenement voor klanten organiseert, een verjaardagsfeest van 50 jaar of een bruiloftsreceptie onder de meest iconische bruggen van Istanbul, dit is **de privécruise vertrouwd door evenementenorganisatoren van Istanbul**. Beoordeling 4,8★, gelicentieerd door TÜRSAB, volledig Engels sprekende bemanning en totale flexibiliteit — route, menu, muziek, programma.'
+      'Of u nu een bedrijfsevenement voor klanten organiseert, een verjaardagsfeest van 50 jaar of een bruiloftsreceptie onder de meest iconische bruggen van Istanbul, dit is **de privécruise vertrouwd door evenementenorganisatoren van Istanbul**. Beoordeling 4,9★, gelicentieerd door TÜRSAB, volledig Engels sprekende bemanning en totale flexibiliteit — route, menu, muziek, programma.'
     ],
     highlights: [
       { title: 'De hele boot, alleen voor u', desc: 'Geen andere gasten. Uw groep heeft elk dek, elke tafel. Stel uw eigen muziek, kledingvoorschrift, programma in. Privacy is belangrijk — wij respecteren het.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**De Bosporuscruise voor koppels** is de favoriete avond in Istanbul. Niet elk koppel viert een verjaardag — soms bent u gewoon in de meest romantische stad ter wereld en wilt u een prachtige avond samen. Deze cruise biedt: privétafel voor twee, traag Turks meergangendiner, live viool en akoestische muziek tijdens het diner en de verlichte Bosporusbrug die langzaam passeert.',
       'De sfeer is **warm, maar niet overdreven romantisch** — geen verplichte huwelijksaanzoek-muziek, geen gênant gecoördineerd applaus voor "de pasgetrouwden". Eet, drink, praat, bekijk de lichten van Istanbul. Als u de romantische tafelopstelling wilt toevoegen (kaarsen, rozen, +€{p.romantic}), uitstekend — anders is alleen het diner zelf al speciaal.',
-      'Of u nu 3 dagen in Istanbul bent met uw partner, een bescheiden evenement viert of een verkennende reis plant voor een toekomstig huwelijksaanzoek — **de Bosporuscruise voor koppels** biedt u 3 uur avond samen in een van de meest gefotografeerde steden ter wereld. 4,8★, betaling aan boord, gratis annulering.'
+      'Of u nu 3 dagen in Istanbul bent met uw partner, een bescheiden evenement viert of een verkennende reis plant voor een toekomstig huwelijksaanzoek — **de Bosporuscruise voor koppels** biedt u 3 uur avond samen in een van de meest gefotografeerde steden ter wereld. 4,9★, betaling aan boord, gratis annulering.'
     ],
     highlights: [
       { title: 'Privétafel voor twee', desc: 'Privétafel voor 2 personen, niet gedeeld. Prioriteit aan raamtafels voor koppels. Foto\'s van zonsondergang en nachtelijke Bosporus net aan uw raam.' },
-      { title: 'Traag meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies of vegetarisch), griesmeelhalva als dessert. Langzaam geserveerd over 3 uur — u heeft geen haast.' },
+      { title: 'Traag meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies of vegetarisch), speciaal griesmeeldessert als dessert. Langzaam geserveerd over 3 uur — u heeft geen haast.' },
       { title: 'Live viool en zachte muziek', desc: 'Live viool en akoestische Turkse muziek tijdens het diner creëren een intieme sfeer, geschikt voor gesprek. Dan komt de dj voor koppels die willen dansen.' },
       { title: 'Supplementen voor speciale avonden', desc: 'Romantische tafelopstelling (kaarsen, rozen): +€{p.romantic}. 2 glazen alcohol (wijn, bier, rakı, wodka, whisky, gin en meer): +€{p.alcohol2}/persoon. Hoteltransfer (heen en terug): +€{p.transfer}/persoon. Kies wat bij uw avond past.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       'De ervaring van **de Bosporus zonsondergangcruise** in Istanbul draait om één ding: de overgang. Onze cruise schept in bij de aanlegplaats Kabataş vanaf 20:00 — en in de lange avonden van mei tot en met augustus ontvouwt het gulden uur zich terwijl u zich op het dek installeert. De zon gaat onder boven de minaretten van de Europese kust precies rond het vertrek van 21:00, dus u bekijkt het vanaf het water: het Dolmabahçe-paleis badend in goud, de Ortaköy-moskee als silhouet tegen de gloeiende hemel.',
       '**Onze Bosporuscruise van zonsondergang tot nacht** omvat een volledig Turks diner — 10 variëteiten mezze, warme voorgerecht, keuze uit hoofdgerecht, dessert — geserveerd terwijl de stad haar lichten aansteekt. Tegen de tijd dat het dessert arriveert, vaart u onder de verlichte Bosporusbrug met 30 miljoen lichten gereflecteerd in het donkere water. De verandering van schemering naar volle nacht, allemaal binnen één cruise van 3 uur, is precies waar het om gaat.',
-      'Of u nu fotograaf bent op jacht naar het laatste licht, een koppel dat "die Istanbul-herinneringsfoto" zoekt, of een eerste bezoeker die de klassieke avond op het water wil — dit is **de Bosporus zonsondergang dinercruise** die de inwoners van Istanbul aanbevelen aan bezoekers. Vanaf €{p.dinnerStd}/persoon, beoordeling 4,8★, gelicentieerd door TÜRSAB, betaling aan boord — geen vooruitbetaling.'
+      'Of u nu fotograaf bent op jacht naar het laatste licht, een koppel dat "die Istanbul-herinneringsfoto" zoekt, of een eerste bezoeker die de klassieke avond op het water wil — dit is **de Bosporus zonsondergang dinercruise** die de inwoners van Istanbul aanbevelen aan bezoekers. Vanaf €{p.dinnerStd}/persoon, beoordeling 4,9★, gelicentieerd door TÜRSAB, betaling aan boord — geen vooruitbetaling.'
     ],
     highlights: [
       { title: 'Zomerse zonsondergangen precies bij vertrek', desc: 'Van mei tot augustus gaat de zon in Istanbul onder tussen ongeveer 20:15 en 20:45 — inschepen om 20:00 geeft u het gulden uur op het dek, en het vertrek om 21:00 brengt u op het water voor de zonsondergang zelf. Camera klaar — dit is de foto.' },
       { title: 'Van blauw uur naar volle nacht', desc: 'Niet alleen de zonsondergang — de cruise vaart door de schemering de volledig verlichte Bosporus in. Gulden licht, blauw uur, dan 30 miljoen bruglichten op donker water: drie lichtfasen in één avond.' },
-      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch), griesmeelhalva, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
+      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch), speciaal griesmeeldessert, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporusbrug — alles schittert', desc: 'De route passeert het Dolmabahçe-paleis, de Ortaköy-moskee, de Bosporusbrug, Rumeli Hisarı en het Beylerbeyi-paleis terwijl hun lichten aangaan. Elke bezienswaardigheid in haar beste licht.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**De Bosporus nachttour** is de meest aanbevolen avondactiviteit in Istanbul. Hier is waarom: na het donker transformeert de Bosporus. De Bosporusbrug wisselt tussen blauw, paars en goud. Het Dolmabahçe-paleis straalt warm geel. De Ortaköy-moskee reflecteert perfect in het zwarte water. Elke bezienswaardigheid van Istanbul bereikt zijn dramatische hoogtepunt \'s nachts.',
       '**Onze Bosporus nachttour met diner** verpakt de volledige iconische avond: 3 uur op het water (21:00-00:00), Turks meergangendiner, een live folkloreprogramma van acht acts (Oba Dombra, sema, Anatolische en Azerbeidzjaanse volksdansen, oriëntaalse dans, Kaukasische messendans), live muziek en een saxofoon-en-dj-set die het dek tot het einde van de nacht levendig houdt. Elke gast krijgt hetzelfde programma — geen "basis"-optie die de beste delen overslaat.',
-      'Of het uw eerste bezoek aan Istanbul is en u zoekt "het enige dat u \'s nachts moet doen", of u bent hier eerder geweest en wilt de meest fotogenieke 3 uur van de stad, dit is **de Bosporus nachttour** beoordeeld met 4,8★ door meer dan 11.317 reizigers. Gelicentieerd door TÜRSAB, betaling aan boord, geen vooruitbetaling.'
+      'Of het uw eerste bezoek aan Istanbul is en u zoekt "het enige dat u \'s nachts moet doen", of u bent hier eerder geweest en wilt de meest fotogenieke 3 uur van de stad, dit is **de Bosporus nachttour** beoordeeld met 4,9★ door meer dan 11.317 reizigers. Gelicentieerd door TÜRSAB, betaling aan boord, geen vooruitbetaling.'
     ],
     highlights: [
       { title: 'De verlichte Bosporus op dramatische piek', desc: 'De Bosporusbrug verandert van kleur (blauw, paars, goud), paleizen stralen geel, de Ortaköy-moskee reflecteert in het donkere water. 21:00-00:00 maximale verlichting voor alle bezienswaardigheden van Istanbul.' },
       { title: 'Traditionele Turkse show aan boord', desc: 'Acht acts: Oba Dombra, sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, oriëntaalse dans, Anatolische potpourri en de Georgisch-Kaukasische messendans, dan live saxofoon en dj-set. 40 minuten show, dan gaat de muziek + diner door.' },
-      { title: 'Volledig meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht (börek), hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch — uw keuze), dessert (griesmeelhalva), onbeperkt frisdrank. Halal-gecertificeerd.' },
+      { title: 'Volledig meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht (börek), hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch — uw keuze), dessert (speciaal griesmeeldessert), onbeperkt frisdrank. Halal-gecertificeerd.' },
       { title: 'Volledige Bosporusroute', desc: 'Kabataş → Dolmabahçe → Çırağan-paleis → Ortaköy-moskee → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-brug → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Maagdentoren → Kabataş.' }
     ],
     faq: [
@@ -335,20 +335,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Dinercruise in Istanbul vanaf €{p.dinnerStd} — Bosporus Nachttour',
-      description: 'Dinercruise van 3 uur in Istanbul op de Bosporus. Turks meergangenmenu, live folklore, verlichte bruggen. Gratis annulering, betaling aan boord. 11.317 beoordelingen.'
+      description: 'Dinercruise van 3 uur in Istanbul op de Bosporus. Turks meergangenmenu, live folklore, verlichte bruggen. Gratis annulering, betaling aan boord. 11.317+ gasten.'
     },
     hero: {
       h1: 'Dinercruise in Istanbul',
       subtitle: 'De beste dinercruise in Istanbul — 3 uur op de Bosporus, Turks meergangendiner, live entertainment en de nachtuitzichten van de meest iconische bezienswaardigheden van de stad.',
-      badge: '4,8★ · 11.317 beoordelingen · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ gasten · TÜRSAB A-17672'
     },
     intro: [
       'Op zoek naar een **dinercruise in Istanbul**? U heeft gevonden wat de meeste reizigers aanbevelen. Onze 3-urige avond op de Bosporus combineert een volledig Turks meergangendiner, live volksdansen en de meest fotogenieke uitzichten van de stad — allemaal vanaf een comfortabele boot die om 21:00 vertrekt vanaf de aanlegplaats Kabataş.',
       'De ervaring van de **dinercruise in Istanbul**: stap in om 20:00, ga zitten, bekijk het Dolmabahçe-paleis terwijl wij vertrekken, het diner begint wanneer wij de Ortaköy-moskee naderen, de show begint (sema, volksdansen, oriëntaalse), en tegen het dessert bent u onder de verlichte Bosporusbrug. Tegen middernacht keert u terug naar Kabataş met een iconische collage van foto\'s en een volle maag.',
-      '€{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). Betaling aan boord — geen vooruitbetaling, geen risico. Gelicentieerd door TÜRSAB A-17672, beoordeeld met 4,8★ door meer dan 11.317 reizigers.'
+      '€{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). Betaling aan boord — geen vooruitbetaling, geen risico. Gelicentieerd door TÜRSAB A-17672, beoordeeld met 4,9★ door meer dan 11.317 reizigers.'
     ],
     highlights: [
-      { title: 'Volledig Turks meergangendiner', desc: '10 variëteiten mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kipspies/runderspies/vegetarisch), griesmeelhalva. Halal-gecertificeerd. Onbeperkt frisdrank inbegrepen.' },
+      { title: 'Volledig Turks meergangendiner', desc: '10 variëteiten mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kipspies/runderspies/vegetarisch), speciaal griesmeeldessert. Halal-gecertificeerd. Onbeperkt frisdrank inbegrepen.' },
       { title: 'Live Turkse volksdans-show', desc: 'Acht acts: Oba Dombra, sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, oriëntaalse dans, Anatolische potpourri, Georgisch-Kaukasische messendans, dan live saxofoon en dj. 40 minuten show, doorlopende achtergrondmuziek.' },
       { title: 'Volledige nachtroute op de Bosporus', desc: 'Tour van 3 uur: Dolmabahçe, Çırağan, Ortaköy-moskee, Bosporusbrug, Bebek, Rumeli Hisarı, FSM-brug, Beylerbeyi, Üsküdar, Maagdentoren. Beide kusten, Europees en Aziatisch.' },
       { title: 'Vanaf €{p.dinnerStd} — betaling aan boord', desc: 'Dinercruise: €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal}). Geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Boek de Dinercruise · Betaling aan Boord',
-      secondary: '4,8★ · TÜRSAB-gelicentieerd · Gratis annulering 2 uur voor',
+      secondary: '4,9★ · TÜRSAB-gelicentieerd · Gratis annulering 2 uur voor',
       tertiary: 'Beschikbaarheid Vanavond'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Istanbul Nachttour vanaf €{p.dinnerStd} — Bosporus Dinercruise + Show',
-      description: 'Cruise van 3 uur op de Bosporus met diner en live show. Vertrek 21:00 vanaf Kabataş. Gratis annulering, betaling aan boord. 11.317 beoordelingen. Hoteltransfer optioneel.'
+      description: 'Cruise van 3 uur op de Bosporus met diner en live show. Vertrek 21:00 vanaf Kabataş. Gratis annulering, betaling aan boord. 11.317+ gasten. Hoteltransfer optioneel.'
     },
     hero: {
       h1: 'Tour door Istanbul \'s Nachts',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       'Een **tour door Istanbul \'s nachts** moet drie dingen doen: u de iconische bezienswaardigheden van de stad tonen, u goed voeden en u vermaken. Onze Bosporus dinercruise doet alle drie in één avond van 3 uur — en daarom beveelt de meeste Istanbul-gidsen het aan als de #1 nachttour-ervaring.',
       'De route van de **tour door Istanbul \'s nachts** bestrijkt de beste verlichte bezienswaardigheden: Dolmabahçe-paleis, Ortaköy-moskee, Bosporusbrug (verandert van kleur), wijk Bebek, Rumeli Hisarı, FSM-brug, Beylerbeyi-paleis, Aziatische kust Üsküdar en Maagdentoren in de verte. De meeste stadstours tonen ze u vanuit de bus — wij tonen ze u vanaf het water, waar ze het meest dramatisch zijn.',
-      'Het diner is inbegrepen (Turks meergangenmenu), live Turkse volksdans-show, sema, oriëntaalse dans en dj-set. Als u 2-3 dagen in Istanbul bent, is dit de enige avond die de sterkste vuist geeft. 4,8★ van meer dan 11.317 reizigers, betaling aan boord, geen vooruitbetaling.'
+      'Het diner is inbegrepen (Turks meergangenmenu), live Turkse volksdans-show, sema, oriëntaalse dans en dj-set. Als u 2-3 dagen in Istanbul bent, is dit de enige avond die de sterkste vuist geeft. 4,9★ van meer dan 11.317 reizigers, betaling aan boord, geen vooruitbetaling.'
     ],
     highlights: [
       { title: 'Alle iconische nachtuitzichten van Istanbul', desc: 'Dolmabahçe-paleis, Ortaköy-moskee, verlichte Bosporusbrug, Rumeli Hisarı, FSM-brug, Beylerbeyi-paleis, Maagdentoren. Elke belangrijke bezienswaardigheid op piek nachtverlichting.' },
@@ -411,17 +411,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Boottour Istanbul vanaf €{p.dinnerStd} — Bosporus + Diner + Show',
-      description: 'Boottour van 3 uur: Bosporuscruise, volledig Turks diner, live folklore, verlichte nachtlandschappen. Gratis annulering, betaling aan boord. 11.317 beoordelingen.'
+      description: 'Boottour van 3 uur: Bosporuscruise, volledig Turks diner, live folklore, verlichte nachtlandschappen. Gratis annulering, betaling aan boord. 11.317+ gasten.'
     },
     hero: {
       h1: 'Boottour in Istanbul',
       subtitle: 'De meest geboekte boottour in Istanbul door reizigers — Bosporuscruise met Turks eten, live entertainment en de iconische uitzichten van de stad vanaf het water.',
-      badge: '4,8★ · TÜRSAB A-17672 · Betaling aan Boord'
+      badge: '4,9★ · TÜRSAB A-17672 · Betaling aan Boord'
     },
     intro: [
       'Wanneer u zoekt naar "boottour in Istanbul", zoekt u het enige dat de stad definieert vanaf het water: de Bosporus. Onze 3-urige Bosporus boottour brengt u langs elke belangrijke bezienswaardigheid van Istanbul — Dolmabahçe-paleis, Ortaköy-moskee, Bosporusbrug, Rumeli Hisarı, Beylerbeyi-paleis en Maagdentoren — met volledig Turks diner en live entertainment.',
       'In tegenstelling tot de vele toeristische veerboten van 1 uur die minder van de Bosporus bestrijken en het diner en entertainment overslaan, is **onze boottour in Istanbul** een complete avondervaring: inschepen om 20:00 bij de aanlegplaats Kabataş, tour tot middernacht, 10 mezze, hoofdgerecht, dessert, sema, volksdansen, oriëntaalse dans en dj. U krijgt ook de avondavontuur als onderdeel van de tour.',
-      'Of u nu een avond of een hele week in Istanbul heeft, deze **boottour in Istanbul** doet het werk. 4,8★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB (A-17672), halal-gecertificeerd menu en betaling aan boord — geen financiële verplichting totdat u tevreden bent met de ervaring.'
+      'Of u nu een avond of een hele week in Istanbul heeft, deze **boottour in Istanbul** doet het werk. 4,9★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB (A-17672), halal-gecertificeerd menu en betaling aan boord — geen financiële verplichting totdat u tevreden bent met de ervaring.'
     ],
     highlights: [
       { title: 'Alle belangrijke Bosporus-bezienswaardigheden', desc: 'Dolmabahçe, Çırağan, Ortaköy-moskee, Bosporusbrug, Bebek, Rumeli Hisarı, FSM-brug, Beylerbeyi-paleis, Üsküdar, Maagdentoren. Beide kusten, Europees en Aziatisch, in één tour.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       'Een **Bosporustrip** kan een toeristische veerboot van 1 uur betekenen of een volledige avond van tour met diner — wij doen de tweede en de meeste reizigers vinden het de ervaring van betere waarde. 3 uur, €{p.dinnerStd}/persoon, diner en entertainment inbegrepen. U passeert niet alleen langs bezienswaardigheden — u eet, kijkt de show en geniet van de avond.',
       'De route van **onze Bosporustrip** bestrijkt alles wat het bekijken waard is: Dolmabahçe-paleis (19e-eeuwse residentie van de Ottomaanse sultan), Ortaköy-moskee (een van de meest gefotografeerde moskeeën van Istanbul), Bosporusbrug (verandert \'s nachts van kleur), Rumeli Hisarı (gebouwd door Fatih Sultan Mehmet in 1452), Beylerbeyi-paleis (Aziatische kust) en Maagdentoren op een klein eiland. Alles uitgelegd door Engels sprekende bemanning.',
-      'Of u 24 uur of een week in Istanbul bent, dit is de **Bosporustrip** die u het meest geeft in één avond. Beoordeling 4,8★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB A-17672, halal-vriendelijk menu, betaling aan boord — geen risico van vooruitbetaling.'
+      'Of u 24 uur of een week in Istanbul bent, dit is de **Bosporustrip** die u het meest geeft in één avond. Beoordeling 4,9★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB A-17672, halal-vriendelijk menu, betaling aan boord — geen risico van vooruitbetaling.'
     ],
     highlights: [
       { title: 'De volledige Bosporus in één klap', desc: 'Europese kust (Dolmabahçe, Ortaköy, Rumeli Hisarı), Aziatische kust (Beylerbeyi, Üsküdar), beide Bosporusbruggen, Maagdentoren. Elke belangrijke bezienswaardigheid zichtbaar in 3 uur.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Op zoek naar **Bosporuscruise tickets**? Koop rechtstreeks. Ons ticket is €{p.dinnerStd}/persoon — 40% korting op de normale prijs (€{p.dinnerStdOriginal}). Derde-partij-boekingssites voegen meestal 20-40% commissie toe. Door rechtstreeks te reserveren bespaart u — en betaalt u toch aan boord.',
       'Ons **Bosporuscruise tickets**-proces: vul het formulier op deze pagina in in minder dan 1 minuut (datum, aantal gasten, contact), wij bevestigen direct via WhatsApp / Telegram, u verschijnt om 20:00 bij de aanlegplaats Kabataş, betaalt aan boord, geniet van de dinercruise van 3 uur. Geen fysiek ticket om af te drukken, geen voucher om per e-mail te ontvangen — de bevestiging is uw ticket.',
-      'Of u nu de dinercruise voor vanavond reserveert of voor een specifieke datum volgende week, **directe Bosporuscruise tickets** zijn de snelste manier. Beoordeling 4,8★, gelicentieerd door TÜRSAB (A-17672), halal-gecertificeerd menu en ondersteunt hoteltransfer- en alcoholsupplementen.'
+      'Of u nu de dinercruise voor vanavond reserveert of voor een specifieke datum volgende week, **directe Bosporuscruise tickets** zijn de snelste manier. Beoordeling 4,9★, gelicentieerd door TÜRSAB (A-17672), halal-gecertificeerd menu en ondersteunt hoteltransfer- en alcoholsupplementen.'
     ],
     highlights: [
       { title: 'Directe reservering — geen tussenpersoon-kosten', desc: '€{p.dinnerStd}/persoon — één transparante prijs. Derde-partij-sites rekenen €30-80+ voor dezelfde tour. Bespaar door rechtstreeks bij ons te reserveren. Geen verborgen kosten, geen commissietoeslag.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosporus Last Minute vanaf €{p.dinnerStd} — Boek Vandaag, Betaal aan Boord',
-      description: 'Bosporuscruise-reservering op dezelfde dag. WhatsApp-bevestiging in minuten. Vertrek 21:00 vanaf Kabataş. Gratis annulering, betaling aan boord. 11.317 beoordelingen.'
+      description: 'Bosporuscruise-reservering op dezelfde dag. WhatsApp-bevestiging in minuten. Vertrek 21:00 vanaf Kabataş. Gratis annulering, betaling aan boord. 11.317+ gasten.'
     },
     hero: {
       h1: 'Bosporuscruise op het Laatste Moment',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Toerisme op de Bosporus** vanaf het water verslaat elke bustour. De Bosporus is de meest historische waterweg van de stad — Ottomaanse sultans, Byzantijnse keizers, Griekse handelaren en Russische oorlogsschepen zijn hier allemaal voorbijgegaan. Vandaag passeert onze tour van 3 uur, met commentaar van de Engels sprekende bemanning, langs elke belangrijke bezienswaardigheid van Istanbul die de skyline definieert.',
       'De route van **onze toeristische tour op de Bosporus** (avondvertrek, 21:00-00:00):\n\n1. **Dolmabahçe-paleis** — 19e-eeuwse Ottomaanse residentie, \'s nachts verlicht\n2. **Çırağan-paleis** — nu luxehotel, koninklijke geschiedenis\n3. **Ortaköy-moskee** — een van de meest gefotografeerde moskeeën van Istanbul, op het water\n4. **Bosporusbrug** — wisselt \'s nachts tussen blauw, paars, goud\n5. **Bebek** — elegante wijk aan de Europese kust\n6. **Rumeli Hisarı** — gebouwd door Fatih Sultan Mehmet in 1452 vóór de verovering van Constantinopel\n7. **Fatih Sultan Mehmet-brug** — tweede Bosporusbrug, dramatische boog\n8. **Beylerbeyi-paleis** — Aziatische kust, Ottomaanse zomerresidentie\n9. **Üsküdar** — Aziatische kust van Istanbul, traditionele wijk\n10. **Maagdentoren** — toren op klein eiland, een van de meest romantische symbolen van Istanbul',
-      'Het diner en entertainment zijn inbegrepen — niet apart — dus **toerisme op de Bosporus** transformeert in een complete avond. Turks meergangendiner, live volksdans-show, sema, oriëntaalse dans, dj. Beoordeling 4,8★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB A-17672.'
+      'Het diner en entertainment zijn inbegrepen — niet apart — dus **toerisme op de Bosporus** transformeert in een complete avond. Turks meergangendiner, live volksdans-show, sema, oriëntaalse dans, dj. Beoordeling 4,9★ van meer dan 11.317 reizigers, gelicentieerd door TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ belangrijke bezienswaardigheden van Istanbul', desc: 'Dolmabahçe-paleis, Çırağan-paleis, Ortaköy-moskee, Bosporusbrug, Rumeli Hisarı, FSM-brug, Beylerbeyi-paleis, Üsküdar, Maagdentoren. Elke essentiële bezienswaardigheid van Istanbul in één tour.' },

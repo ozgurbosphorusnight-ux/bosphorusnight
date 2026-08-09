@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Lasten hinnat',
           paragraphs: [
-            'Lapset 0–3 vuotta (mukaan lukien): Ilmainen. Lapset 4–8 vuotta (mukaan lukien): 50 % alennus. Lapset 9 vuotta ja vanhemmat: täysi hinta.',
-            'Huomio: 3-vuotias on ilmainen, 4-vuotias maksaa puolihinnan. 8-vuotias on vielä puolihinnalla, 9-vuotias maksaa täyden hinnan.',
+            'Lapset 0–3 vuotta (mukaan lukien): Ilmainen. Lapset 4–9 vuotta (mukaan lukien): €5 alennus. Lapset 9 vuotta ja vanhemmat: täysi hinta.',
+            'Huomio: 3-vuotias on ilmainen, 4-vuotias saa €5 alennuksen. 9-vuotias saa vielä €5 alennuksen, 10-vuotias maksaa täyden hinnan.',
           ],
         },
         {
           h2: 'Mitä menussa on lapsille?',
           paragraphs: [
-            'Illallismenu sisältää vaihtoehtoja kuten kana- ja naudanlihavartaat joista useimmat lapset pitävät. Meze-valikoima on monipuolinen vihanneksilla ja dipillä. Mannasuurimohalva jälkiruoaksi sisältyy kaikille.',
+            'Illallismenu sisältää vaihtoehtoja kuten kana- ja naudanlihavartaat joista useimmat lapset pitävät. Meze-valikoima on monipuolinen vihanneksilla ja dipillä. Erityinen mannasuurimojälkiruoka jälkiruoaksi sisältyy kaikille.',
             'Tarvitseeko lapsesi erityisruokavaliota? Kysy meiltä etukäteen WhatsAppissa — teemme parhaamme auttaaksemme.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. Lapset ovat tervetulleita',
           paragraphs: [
-            'Lapset 0–3 v.: ilmainen. 4–8 v.: 50 % alennus. 9+: täysi hinta.',
+            'Lapset 0–3 v.: ilmainen. 4–9 v.: €5 alennus. 9+: täysi hinta.',
           ],
         },
         {

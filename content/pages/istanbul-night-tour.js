@@ -37,7 +37,7 @@ module.exports = {
 
     'The **Istanbul night tour** route covers the best landmarks lit up: Dolmabahçe Palace, Ortaköy Mosque, Bosphorus Bridge (shifts colors), Bebek neighborhood, Rumeli Fortress, FSM Bridge, Beylerbeyi Palace, Üsküdar\'s Asian shore, and Maiden\'s Tower in the distance. Most city tours show you these from a bus — we show you from the water, where they\'re most dramatic.',
 
-    'Dinner included (multi-course Turkish menu), live Turkish folklore show, whirling dervish, belly dance, and a DJ set. If you\'re in Istanbul for 2-3 days, this is the single evening that delivers the biggest punch. 4.8★ from 11,317+ travelers, pay-on-boat, no prepayment.'
+    'Dinner included (multi-course Turkish menu), live Turkish folklore show, whirling dervish, belly dance, and a DJ set. If you\'re in Istanbul for 2-3 days, this is the single evening that delivers the biggest punch. 4.9★ from 11,317+ travelers, pay-on-boat, no prepayment.'
   ],
 
   highlights: [

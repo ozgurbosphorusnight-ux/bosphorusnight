@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **private Bosphorus cruise charter** supports groups from **25 to 80 guests**. Smaller groups can still request a private experience — we\'ll quote a minimum fee that covers the boat\'s operating cost. Larger groups (wedding-size) get bespoke pricing and often include custom decoration, live band, cake service, and extended duration (4-5 hours vs standard 3).',
 
-    'Whether you\'re organizing a corporate event for clients, a 50th birthday party, or a wedding reception under Istanbul\'s most iconic bridges, this is **the private cruise Istanbul event planners trust**. 4.8★ rating, TÜRSAB-licensed, full English-speaking crew, and flexible on everything — route, menu, music, timing.'
+    'Whether you\'re organizing a corporate event for clients, a 50th birthday party, or a wedding reception under Istanbul\'s most iconic bridges, this is **the private cruise Istanbul event planners trust**. 4.9★ rating, TÜRSAB-licensed, full English-speaking crew, and flexible on everything — route, menu, music, timing.'
   ],
 
   highlights: [

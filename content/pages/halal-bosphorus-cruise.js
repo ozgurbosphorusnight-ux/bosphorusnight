@@ -38,7 +38,7 @@ module.exports = {
 
     'Alcohol is an **optional add-on** — it\'s never pushed on guests, and seating naturally separates those who prefer a dry table. A modest 2-glass alcohol package (+€{p.alcohol2}/person) is there for guests who want it, but the included unlimited soft drinks (water, cola, fruit juice) are enough for most Muslim families. Our crew is trained to respect your preferences without making assumptions.',
 
-    'The **Bosphorus cruise halal-friendly** experience matters for travelers from Saudi Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan, and Morocco who want Istanbul\'s most iconic evening without compromise. TÜRSAB-licensed, 4.8★ rating, and pay-on-boat — you commit to nothing until you\'re satisfied the experience meets your standards.'
+    'The **Bosphorus cruise halal-friendly** experience matters for travelers from Saudi Arabia, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan, and Morocco who want Istanbul\'s most iconic evening without compromise. TÜRSAB-licensed, 4.9★ rating, and pay-on-boat — you commit to nothing until you\'re satisfied the experience meets your standards.'
   ],
 
   highlights: [
@@ -87,7 +87,7 @@ module.exports = {
     },
     {
       q: 'Does the Bosphorus cruise halal apply to hotel transfer too?',
-      a: 'The hotel transfer is just a car ride — no food or drink involved, so no halal concern. Our drivers are professional, respectful, and punctual. Transfer areas cover Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli, and 9 other central zones where Muslim travelers typically stay.'
+      a: 'The hotel transfer is just a car ride — no food or drink involved, so no halal concern. Our drivers are professional, respectful, and punctual. Transfer areas cover Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli, and 8 other central zones where Muslim travelers typically stay.'
     },
     {
       q: 'What\'s the best halal cruise in Istanbul?',

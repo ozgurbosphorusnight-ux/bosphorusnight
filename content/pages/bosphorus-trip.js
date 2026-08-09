@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Bosphorus Trip from €{p.dinnerStd} — Istanbul Dinner Cruise + Show',
-    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night. 21:00 from Kabataş. Pay on boat. 11,317 reviews.'
+    description: '3-hour Bosphorus trip: Turkish dinner, live folklore, illuminated night. 21:00 from Kabataş. Pay on boat. 11,317+ guests.'
   },
 
   hero: {
@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **Bosphorus trip** route covers everything worth seeing: Dolmabahçe Palace (Ottoman Sultan\'s 19th-century residence), Ortaköy Mosque (one of Istanbul\'s most photographed), Bosphorus Bridge (shifts colors at night), Rumeli Fortress (built by Fatih Sultan Mehmet in 1452), Beylerbeyi Palace (Asian side), and Maiden\'s Tower on a small island. All explained by the English-speaking crew.',
 
-    'Whether you\'re in Istanbul for 24 hours or a week, this is the **Bosphorus trip** that gives you the most in one evening. 4.8★ rated by 11,317+ travelers, TÜRSAB A-17672 licensed, halal-friendly menu, pay-on-boat — no prepayment risk.'
+    'Whether you\'re in Istanbul for 24 hours or a week, this is the **Bosphorus trip** that gives you the most in one evening. 4.9★ rated by 11,317+ travelers, TÜRSAB A-17672 licensed, halal-friendly menu, pay-on-boat — no prepayment risk.'
   ],
 
   highlights: [

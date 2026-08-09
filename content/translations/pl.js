@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Rejs z Kolacją po Bosforze w Stambule',
       subtitle: 'Trzy godziny rozrywki na żywo, bogata turecka uczta i najbardziej widowiskowe nocne widoki Bosforu.',
-      badge: '4,8★ · 11 317 opinii'
+      badge: '4,9★ · 11 317+ gości'
     },
     intro: [
-      '**Rejs z kolacją po Bosforze** to najbardziej kultowe wieczorne doświadczenie w Stambule. Nasz rejs rozpoczyna się o 20:00 przy przystani Kabataş — płynąc pod podświetlonymi mostami Bosforu i Fatih Sultan Mehmet, serwujemy bogatą kuchnię turecką, pokazy tańca ludowego, taniec brzucha i set DJ-a, który trzyma pokład w ruchu aż do 23:00.',
-      'W przeciwieństwie do zwykłych łodzi turystycznych tłoczących się po Bosforze, nasz **rejs z kolacją po Bosforze** posiada licencję TÜRSAB (A-17672) i został oceniony na 4,8★ przez ponad 11 317 podróżnych. Utrzymujemy kameralne grupy i ciepłą obsługę — a ponieważ płacą Państwo na pokładzie, rezerwacja z wyprzedzeniem nie wiąże się z żadnym ryzykiem.',
+      '**Rejs z kolacją po Bosforze** to najbardziej kultowe wieczorne doświadczenie w Stambule. Nasz rejs rozpoczyna się o 20:00 przy przystani Kabataş — płynąc pod podświetlonymi mostami Bosforu i Fatih Sultan Mehmet, serwujemy bogatą kuchnię turecką, pokazy tańca ludowego, taniec brzucha i set DJ-a, który trzyma pokład w ruchu aż do 23:45.',
+      'W przeciwieństwie do zwykłych łodzi turystycznych tłoczących się po Bosforze, nasz **rejs z kolacją po Bosforze** posiada licencję TÜRSAB (A-17672) i został oceniony na 4,9★ przez ponad 11 317 podróżnych. Utrzymujemy kameralne grupy i ciepłą obsługę — a ponieważ płacą Państwo na pokładzie, rezerwacja z wyprzedzeniem nie wiąże się z żadnym ryzykiem.',
       'Czy świętują Państwo rocznicę, szukają premium stambulskiego wieczoru dla rodziny, czy pragną najbardziej fotogenicznego przejścia z zachodu słońca w noc — to jest rejs z kolacją, który mieszkańcy Stambułu polecają w pierwszej kolejności.'
     ],
     highlights: [
-      { title: 'Bogata turecka uczta', desc: '10 rodzajów mezze, ciepła przystawka (börek), danie główne do wyboru (łosoś / labraks / szaszłyk z kurczaka / szaszłyk wołowy / wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe.' },
+      { title: 'Bogata turecka uczta', desc: '10 rodzajów mezze, ciepła przystawka (börek), danie główne do wyboru (łosoś / labraks / szaszłyk z kurczaka / szaszłyk wołowy / wegetariańskie), specjalny deser z kaszy manny, nieograniczone napoje bezalkoholowe.' },
       { title: 'Tańce ludowe, taniec brzucha i DJ na żywo', desc: 'Osiem numerów: Oba Dombra, pokaz sema Mewlana, Sarı Gelin, popurri azerbejdżańskie, klasyczny taniec brzucha, popurri anatolijskie i gruzińsko-kaukaski taniec z nożami — następnie saksofon na żywo i set DJ-a przez cały rejs.' },
       { title: 'Pełna nocna trasa po Bosforze', desc: 'Kabataş → Dolmabahçe → Pałac Çırağan → Meczet Ortaköy → Bebek → Rumeli Hisarı → Most FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Od €{p.dinnerStd}/osobę — płatność na pokładzie', desc: 'Rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**Rejs po Bosforze z dziećmi** to najbardziej przyjazna rodzinom wieczorna opcja w Stambule. Każdej nocy witamy dziesiątki rodzin — każdy szczegół zaprojektowaliśmy z myślą o komforcie dzieci: zadaszone miejsca siedzące, aby najmłodsi byli w cieple, dostępne menu przyjazne dzieciom (proste grillowane kurczaki, makaron, nieograniczone napoje bezalkoholowe) oraz wczesne wejście na pokład, aby uniknąć późnych wieczornych marudzeń.',
       'W przeciwieństwie do łodzi wyłącznie dla dorosłych, nasz **rejs z kolacją po Bosforze dla rodzin** pozostaje ciepły i inkluzywny. **Dzieci 0-3 lata bezpłatnie** (transfer wliczony), 4-9 lat **€5 zniżki**, od 10 lat cena pełna — żadnych ukrytych opłat. Tańce ludowe, taniec brzucha i pokaz sema to delikatna rodzinna rozrywka, a nie klub nocny.',
-      'Niezależnie od tego, czy przyjeżdżają Państwo do Stambułu na długi weekend z maluchem, czy przywożą nastolatki na ich pierwszą podróż po Europie — to jest rejs, który polecają stambulskie rodziny. Bezpieczny, z certyfikatem halal, z licencją TÜRSAB i oceną 4,8★ od ponad 11 317 podróżnych.'
+      'Niezależnie od tego, czy przyjeżdżają Państwo do Stambułu na długi weekend z maluchem, czy przywożą nastolatki na ich pierwszą podróż po Europie — to jest rejs, który polecają stambulskie rodziny. Bezpieczny, z certyfikatem halal, z licencją TÜRSAB i oceną 4,9★ od ponad 11 317 podróżnych.'
     ],
     highlights: [
       { title: 'Dzieci 0-3 lata całkowicie bezpłatnie', desc: 'Bez opłat za niemowlęta i maluchy. 4-9 lat €5 ceny dorosłego. Od 10 lat pełny gość. Przejrzyście, bez niespodzianek.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**Romantyczny rejs po Bosforze** to najbardziej kultowy wieczór dla par w Stambule. Gdy słońce zachodzi nad Pałacem Dolmabahçe, a Most Bosforski rozbłyska kolorami, Państwo i partner dzielą bogatą turecką ucztę przy prywatnym stole — ze świecami, świeżymi kwiatami i skrzypcami na żywo niosącymi się po pokładzie.',
       'Nasza aranżacja stolika romantycznego (+€{p.romantic}/stół) zamienia każde miejsce w wyjątkową chwilę: czerwone róże, migoczące świece, odręcznie napisany bilecik powitalny. Dodaj pakiet 2 kieliszków na wino pod gwiazdami (+€{p.alcohol2}/osobę) lub pozostań przy dołączonych napojach bezalkoholowych. Tak czy inaczej, załoga dyskretnie zajmie się resztą.',
-      'Niezależnie od tego, czy świętują Państwo rocznicę, planują niespodziankę dla partnera, czy po prostu chcą niezapomniany wieczór w najbardziej romantycznym mieście Europy — to jest rejs, który pary w Stambule wybierają w pierwszej kolejności. Ocena 4,8★, licencja TÜRSAB i — co najważniejsze — płatność na pokładzie, więc zobowiązują się Państwo wyłącznie do samego wieczoru.'
+      'Niezależnie od tego, czy świętują Państwo rocznicę, planują niespodziankę dla partnera, czy po prostu chcą niezapomniany wieczór w najbardziej romantycznym mieście Europy — to jest rejs, który pary w Stambule wybierają w pierwszej kolejności. Ocena 4,9★, licencja TÜRSAB i — co najważniejsze — płatność na pokładzie, więc zobowiązują się Państwo wyłącznie do samego wieczoru.'
     ],
     highlights: [
       { title: 'Stół romantyczny przy świecach', desc: 'Dodaj aranżację stolika romantycznego za +€{p.romantic}/stół: świeże czerwone róże, migoczące świece, płatki róż na obrusie i odręcznie napisana kartka. Zdjęcia wliczone.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**Halal rejs po Bosforze** to najbardziej szanowany rejs z kolacją w Stambule dla muzułmańskich podróżnych. Każde mięso serwowane na naszej łodzi — łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy — posiada **certyfikat halal** od zatwierdzonych dostawców. Serwujemy to samo menu każdemu gościowi; nie ma oddzielnej "sekcji halal", ponieważ cała łódź jest halal domyślnie.',
       'Alkohol jest **dodatkiem opcjonalnym** — nigdy nie jest narzucany gościom, a układ miejsc naturalnie oddziela stoły preferujące bezalkoholową atmosferę. Dla gości, którzy chcą pakietu alkoholowego 2 kieliszków (+€{p.alcohol2}/osobę), jest on dostępny, ale wliczone nieograniczone napoje bezalkoholowe (woda, cola, sok) wystarczą większości muzułmańskich rodzin. Nasza załoga jest przeszkolona w zachowywaniu szacunku bez przyjmowania założeń o Państwa preferencjach.',
-      '**Halal-przyjazny rejs po Bosforze** ma znaczenie dla podróżnych z Arabii Saudyjskiej, ZEA, Kuwejtu, Kataru, Iranu, Malezji, Indonezji, Pakistanu i Maroka, którzy chcą najbardziej kultowego wieczoru w Stambule bez kompromisów. Licencja TÜRSAB, 4,8★ i płatność na pokładzie — nie zobowiązują się Państwo do niczego, dopóki nie upewnią się, że doświadczenie spełnia Państwa standardy.'
+      '**Halal-przyjazny rejs po Bosforze** ma znaczenie dla podróżnych z Arabii Saudyjskiej, ZEA, Kuwejtu, Kataru, Iranu, Malezji, Indonezji, Pakistanu i Maroka, którzy chcą najbardziej kultowego wieczoru w Stambule bez kompromisów. Licencja TÜRSAB, 4,9★ i płatność na pokładzie — nie zobowiązują się Państwo do niczego, dopóki nie upewnią się, że doświadczenie spełnia Państwa standardy.'
     ],
     highlights: [
       { title: 'Menu z certyfikatem 100% halal', desc: 'Całe mięso (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy) posiada certyfikat halal od zatwierdzonych dostawców. Kuchnia przestrzega zasad przygotowania halal. Bez produktów wieprzowych i dodatków niehalal. Opcje wegetariańskie zawsze dostępne.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Czy ten rejs jest odpowiedni dla muzułmańskich rodzin z dziećmi?', a: 'Tak — to jeden z najbardziej szanowanych dla rodzin rejsów w Stambule. Rozrywka jest skromna (tańce ludowe, sema, muzyka turecka), dzieci poniżej 3 lat bezpłatnie, 4-9 lat €5 zniżki. Bez klubowej atmosfery. Rodziny z regionu Zatoki, Indonezji, Malezji, Pakistanu i Maroka regularnie rezerwują ten rejs.' },
       { q: 'Czy mogę modlić się na pokładzie?', a: 'Na łodzi nie ma dedykowanego pomieszczenia modlitewnego, ale zalecamy modlitwę przed wejściem na pokład o 20:00 (Maghrib zwykle mieści się w tym oknie). Na przystani Kabataş dostępne są udogodnienia modlitewne. Jeśli muszą Państwo modlić się podczas rejsu 21:00-00:00 (Isza), proszę porozmawiać z załogą — możemy zorganizować cichy kąt na pokładzie.' },
       { q: 'Jakie są ceny dla muzułmańskiej rodziny 4-osobowej (2 dorosłych, 2 dzieci)?', a: 'Rejs z kolacją: 2 × €{p.dinnerStd} + 2 × €19.30 (4-9 lat €5 zniżki) = €87.20. Jeśli dzieci poniżej 3 lat są bezpłatne: 2 × €{p.dinnerStd} = €48.60. Dodaj €5 transfer hotelowy na dorosłego. Suma: €48.60–€92.90 dla rodziny 4-osobowej, bez przedpłaty, płatność na pokładzie.' },
-      { q: 'Czy transfer hotelowy jest również halal?', a: 'Transfer hotelowy to tylko przejazd samochodem — nie dotyczy jedzenia ani napojów, więc kwestia halal nie ma zastosowania. Nasi kierowcy są profesjonalni, szanujący i punktualni. Strefy transferu obejmują Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli i 9 innych centralnych dzielnic, gdzie muzułmańscy podróżni zazwyczaj się zatrzymują.' }
+      { q: 'Czy transfer hotelowy jest również halal?', a: 'Transfer hotelowy to tylko przejazd samochodem — nie dotyczy jedzenia ani napojów, więc kwestia halal nie ma zastosowania. Nasi kierowcy są profesjonalni, szanujący i punktualni. Strefy transferu obejmują Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli i 8 innych centralnych dzielnic, gdzie muzułmańscy podróżni zazwyczaj się zatrzymują.' }
     ],
     cta: {
       primary: 'Zarezerwuj Halal Rejs · Płatność na Pokładzie',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABATU · Jedno menu, standard premium · Płatność na pokładzie'
     },
     intro: [
-      'Wiele statków na Bosforze dzieli gości na "Standard" i "VIP". My nie. Na pokładzie **AMOR** jest jedno menu kolacyjne, przygotowywane z taką samą starannością dla wszystkich: 10 rodzajów tureckich meze, ciepła przystawka, danie główne do wyboru (łosoś, labraks, szaszłyk z kurczaka lub szaszłyk wołowy), chałwa z semoliny i napoje bezalkoholowe bez ograniczeń. Cały ośmioczęściowy program rozrywkowy również jest wliczony — Oba Dombra, ceremonia wirujących derwiszy, anatolijskie i azerbejdżańskie tańce ludowe, taniec brzucha, kaukaski taniec z nożami, muzyka na żywo i finał z saksofonem i DJ-em — wszystko w cenie €{p.dinnerStd}/osobę.',
+      'Wiele statków na Bosforze dzieli gości na "Standard" i "VIP". My nie. Na pokładzie **AMOR** jest jedno menu kolacyjne, przygotowywane z taką samą starannością dla wszystkich: 10 rodzajów tureckich meze, ciepła przystawka, danie główne do wyboru (łosoś, labraks, szaszłyk z kurczaka lub szaszłyk wołowy), specjalny deser z kaszy manny z semoliny i napoje bezalkoholowe bez ograniczeń. Cały ośmioczęściowy program rozrywkowy również jest wliczony — Oba Dombra, ceremonia wirujących derwiszy, anatolijskie i azerbejdżańskie tańce ludowe, taniec brzucha, kaukaski taniec z nożami, muzyka na żywo i finał z saksofonem i DJ-em — wszystko w cenie €{p.dinnerStd}/osobę.',
       'Poczucie VIP zaczyna się przy Twoim stoliku. Jeśli chcesz być najbliżej sceny i widoków, dodaj **prywatny stolik przy scenie** (+€{p.romantic}/stolik), a miejsce zostanie zarezerwowane z wyprzedzeniem — najlepszy kąt na derwiszy, tańce ludowe i rozświetlony Bosfor. Ulubiony wybór par, uroczystości i miłośników fotografii.',
       'AMOR to nowoczesny statek: 42 metry, 3 pokłady, do 400 gości, ogrzewany zimą i klimatyzowany latem. Trzygodzinna trasa startuje z Kabataş (wejście na pokład od 20:00, wypłynięcie 21:00, powrót 00:00) i prowadzi obok Dolmabahçe, meczetu Ortaköy, twierdzy Rumeli oraz świateł mostu na Bosforze. Licencja TÜRSAB (A-17672), 4,9★ w Google. Bez przedpłaty — płacisz na pokładzie, a bezpłatna anulacja obowiązuje do 2 godzin przed wypłynięciem.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Czy sprzedajecie "pakiet VIP"? Czym różni się od Standardu?', a: 'Nie sprzedajemy osobnego pakietu VIP — jest jedno menu, podawane wszystkim w tym samym standardzie premium. To, co nazywamy "doświadczeniem VIP", to dopasowanie wieczoru do Ciebie: prywatny stolik przy scenie (+€{p.romantic}/stolik), uważna obsługa przy stoliku i opcjonalne dodatki do picia. Rejs trwa 3 godziny, €{p.dinnerStd}/osobę.' },
       { q: 'Czy €{p.dinnerStd} to naprawdę 40% rabatu?', a: 'Tak — nasza cena katalogowa to €{p.dinnerStdOriginal}/osobę. €{p.dinnerStd} to stawka rezerwacji bezpośredniej, bez prowizji pośredników. Płacisz na pokładzie, nie ma żadnej przedpłaty.' },
-      { q: 'Co jest w menu?', a: '10 rodzajów tureckich meze, ciepła przystawka, danie główne do wyboru (łosoś, labraks, szaszłyk z kurczaka lub szaszłyk wołowy) i chałwa z semoliny na deser, a do tego napoje bezalkoholowe bez ograniczeń. Ośmioczęściowy program rozrywkowy jest wliczony: Oba Dombra, ceremonia derwiszy, anatolijskie i azerbejdżańskie tańce ludowe, taniec brzucha, kaukaski taniec z nożami, muzyka na żywo i finał z saksofonem i DJ-em.' },
+      { q: 'Co jest w menu?', a: '10 rodzajów tureckich meze, ciepła przystawka, danie główne do wyboru (łosoś, labraks, szaszłyk z kurczaka lub szaszłyk wołowy) i specjalny deser z kaszy manny z semoliny na deser, a do tego napoje bezalkoholowe bez ograniczeń. Ośmioczęściowy program rozrywkowy jest wliczony: Oba Dombra, ceremonia derwiszy, anatolijskie i azerbejdżańskie tańce ludowe, taniec brzucha, kaukaski taniec z nożami, muzyka na żywo i finał z saksofonem i DJ-em.' },
       { q: 'Czy alkohol jest wliczony?', a: 'Nie — alkohol to osobny dodatek: 2 kieliszki do wyboru — wino, piwo, rakı, wódka, whisky, gin i więcej — za +€{p.alcohol2}/osobę. Napoje bezalkoholowe są wliczone bez ograniczeń i bezpłatnie. Premium alkohole importowane rozliczane są osobno na pokładzie.' },
       { q: 'Jak zagwarantować sobie stolik przy scenie?', a: 'Wystarczy przy rezerwacji wybrać dodatek "prywatny stolik przy scenie" (+€{p.romantic}/stolik) — stolik zostanie zarezerwowany na Twoje nazwisko. Najlepsze miejsca zajmują rezerwacje z wyprzedzeniem, dlatego warto dodać go przed dniem rejsu.' },
       { q: 'Jaki to statek?', a: 'AMOR — nowoczesny statek pasażerski o długości 42 metrów, 3 pokłady, pojemność 400 gości, ogrzewany zimą i klimatyzowany latem. Wypłynięcie z nabrzeża Kabataş: wejście na pokład 20:00, wypłynięcie 21:00, powrót 00:00. Trasa: Dolmabahçe, Ortaköy, twierdza Rumeli, Beylerbeyi i światła mostu na Bosforze.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**Prywatny rejs po Bosforze** oznacza, że cała łódź jest Państwa — żadnych innych gości, żadnych współdzielonych stołów, żadnych współdzielonych parkietów tanecznych. Idealny na spotkania rodzinne, kolacje firmowe, przyjęcia urodzinowe, wieczory kawalerskie/panieńskie lub przyjęcia weselne. Łódź, załoga, menu, rozrywka i harmonogram dostosowują się do Państwa grupy.',
       'Nasz **wynajem prywatnego rejsu po Bosforze** obsługuje grupy od **25 do 80 gości**. Mniejsze grupy mogą nadal poprosić o doświadczenie prywatne — wyceniamy je z opłatą minimalną, która pokrywa koszty operacyjne łodzi. Większe grupy (rozmiar weselny) otrzymują wycenę niestandardową i zwykle obejmują dekoracje specjalne, zespół na żywo, serwis tortu i wydłużony czas (4-5 godzin zamiast standardowych 3).',
-      'Niezależnie od tego, czy organizują Państwo wydarzenie firmowe dla klientów, 50. przyjęcie urodzinowe, czy przyjęcie weselne pod najbardziej kultowymi mostami Stambułu, to jest **prywatny rejs**, któremu ufają stambulscy planiści wydarzeń. Ocena 4,8★, licencja TÜRSAB, w pełni anglojęzyczna załoga i elastyczność we wszystkim — trasa, menu, muzyka, harmonogram.'
+      'Niezależnie od tego, czy organizują Państwo wydarzenie firmowe dla klientów, 50. przyjęcie urodzinowe, czy przyjęcie weselne pod najbardziej kultowymi mostami Stambułu, to jest **prywatny rejs**, któremu ufają stambulscy planiści wydarzeń. Ocena 4,9★, licencja TÜRSAB, w pełni anglojęzyczna załoga i elastyczność we wszystkim — trasa, menu, muzyka, harmonogram.'
     ],
     highlights: [
       { title: 'Cała łódź, tylko dla Państwa', desc: 'Żadnych innych gości. Państwa grupa ma każdy pokład, każdy stół. Wybierają Państwo swoją muzykę, swój dress code, swój program. Prywatność ma znaczenie — szanujemy to.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**Rejs po Bosforze dla par** to ulubiony wieczór randkowy w Stambule. Nie każda para świętuje rocznicę — czasami po prostu są Państwo w najbardziej romantycznym mieście świata i chcą wspaniałego wieczoru razem. Ten rejs to zapewnia: prywatny stół dla dwojga, powolna bogata turecka kolacja, skrzypce na żywo i muzyka akustyczna podczas jedzenia oraz podświetlony Most Bosforski przepływający powoli nad głowami.',
       'Atmosfera jest **ciepła, ale nie przesadnie romantyczna** — żadnej przymusowej muzyki zaręczynowej, żadnych skoordynowanych oklasków "nowożeńcy". Jecie, pijecie, rozmawiacie, oglądacie światła Stambułu. Jeśli chcą Państwo dodać aranżację stolika romantycznego (świece, róże, +€{p.romantic}), wspaniale — jeśli nie, sama kolacja już jest wyjątkowa.',
-      'Niezależnie od tego, czy są Państwo w Stambule na 3 dni z partnerem, świętują skromny kamień milowy, czy planują przyszłą wyprawę zaręczynową — **rejs po Bosforze dla par** daje 3-godzinny wieczór bycia razem w jednym z najczęściej fotografowanych miast świata. 4,8★, płatność na pokładzie, bezpłatna anulacja.'
+      'Niezależnie od tego, czy są Państwo w Stambule na 3 dni z partnerem, świętują skromny kamień milowy, czy planują przyszłą wyprawę zaręczynową — **rejs po Bosforze dla par** daje 3-godzinny wieczór bycia razem w jednym z najczęściej fotografowanych miast świata. 4,9★, płatność na pokładzie, bezpłatna anulacja.'
     ],
     highlights: [
       { title: 'Prywatny stół dla dwojga', desc: 'Dedykowany stolik 2-osobowy, nie współdzielony. Pary mają priorytet na miejsca przy oknie. Zdjęcia zachodu słońca i nocnego Bosforu tuż za oknem.' },
-      { title: 'Powolna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy lub wegetariańskie), ciasto deserowe z lodami. Serwowane powoli przez 3 godziny — nie są Państwo pospieszani.' },
+      { title: 'Powolna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy lub wegetariańskie), specjalny deser z kaszy manny. Serwowane powoli przez 3 godziny — nie są Państwo pospieszani.' },
       { title: 'Skrzypce na żywo i delikatna muzyka', desc: 'Podczas kolacji skrzypce na żywo i akustyczna muzyka turecka tworzą kameralną atmosferę sprzyjającą rozmowie. Później pojawia się DJ dla par, które chcą tańczyć.' },
       { title: 'Dodatki na wyjątkowy wieczór', desc: 'Aranżacja stolika romantycznego (świece, róże): +€{p.romantic}. Pakiet 2 kieliszków alkoholu (wino, piwo, rakı, wódka, whisky, gin i więcej): +€{p.alcohol2}/osobę. Transfer hotelowy (tam i z powrotem): +€{p.transfer}/osobę. Wybierają Państwo, co pasuje do wieczoru.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       '**Rejs o zachodzie słońca po Bosforze** w Stambule to przede wszystkim jedno: moment przejścia. Wejście na pokład przy przystani Kabataş rozpoczyna się o 20:00 — a w długie wieczory od maja do sierpnia złota godzina rozgrywa się, gdy Państwo rozgaszczają się na pokładzie. Słońce zachodzi za minaretami europejskiej strony mniej więcej w porze wypłynięcia o 21:00, więc oglądają je Państwo z wody: Pałac Dolmabahçe skąpany w złocie, Meczet Ortaköy w sylwecie na tle rozżarzonego nieba.',
       'Nasz **rejs po Bosforze od zachodu słońca do nocy** obejmuje pełną turecką kolację — 10 rodzajów mezze, ciepła przystawka, danie główne do wyboru, deser — serwowaną, gdy miasto zapala swoje światła. Zanim pojawi się deser, płyną Państwo pod podświetlonym Mostem Bosforskim, a 30 milionów świateł odbija się w ciemnej wodzie. Przejście od zmierzchu do pełnej nocy, wszystko w jednym 3-godzinnym rejsie — na tym polega cała magia.',
-      'Niezależnie od tego, czy są Państwo fotografem goniącym za ostatnim światłem, parą szukającą "tego stambulskiego zdjęcia na pamiątkę", czy pierwszym razem w Stambule i chcą klasycznego wieczoru na wodzie — to jest **rejs o zachodzie słońca z kolacją po Bosforze**, który miejscowi polecają odwiedzającym. Od €{p.dinnerStd}/osobę, ocena 4,8★, licencja TÜRSAB, płatność na pokładzie — bez przedpłaty.'
+      'Niezależnie od tego, czy są Państwo fotografem goniącym za ostatnim światłem, parą szukającą "tego stambulskiego zdjęcia na pamiątkę", czy pierwszym razem w Stambule i chcą klasycznego wieczoru na wodzie — to jest **rejs o zachodzie słońca z kolacją po Bosforze**, który miejscowi polecają odwiedzającym. Od €{p.dinnerStd}/osobę, ocena 4,9★, licencja TÜRSAB, płatność na pokładzie — bez przedpłaty.'
     ],
     highlights: [
       { title: 'Letnie zachody słońca dokładnie przy wypłynięciu', desc: 'Od maja do sierpnia słońce w Stambule zachodzi mniej więcej między 20:15–20:45 — wejście na pokład o 20:00 daje Państwu złotą godzinę na pokładzie, a wypłynięcie o 21:00 stawia Państwa na wodzie dokładnie w porze samego zachodu. Aparat w pogotowiu — to jest to ujęcie.' },
       { title: 'Niebieska godzina przechodząca w pełną noc', desc: 'Nie tylko zachód słońca — rejs płynie przez zmierzch aż do w pełni podświetlonego Bosforu. Złote światło, niebieska godzina, a potem 30 milionów świateł mostu na ciemnej wodzie: trzy fazy światła w jeden wieczór.' },
-      { title: 'Pełna kolacja podczas rejsu', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy, wegetariańskie), ciasto deserowe z lodami, nieograniczone napoje bezalkoholowe — serwowane, gdy zapalają się światła miasta.' },
+      { title: 'Pełna kolacja podczas rejsu', desc: '10 rodzajów tureckich mezze, ciepła przystawka, danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy, wegetariańskie), specjalny deser z kaszy manny, nieograniczone napoje bezalkoholowe — serwowane, gdy zapalają się światła miasta.' },
       { title: 'Dolmabahçe, Ortaköy, Most Bosforski — wszystko świeci', desc: 'Trasa przechodzi obok Pałacu Dolmabahçe, Meczetu Ortaköy, Mostu Bosforskiego, Rumeli Hisarı i Pałacu Beylerbeyi w chwili, gdy zapalają się ich światła. Każdy punkt orientacyjny w swoim najlepszym świetle.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**Nocny rejs po Bosforze** to najbardziej polecana wieczorna aktywność w Stambule. Powód jest taki: po zmroku Bosfor się przemienia. Most Bosforski cyklicznie przechodzi między błękitem, fioletem i złotem. Pałac Dolmabahçe świeci ciepłym żółtym światłem. Meczet Ortaköy idealnie odbija się w czarnej wodzie. Każdy stambulski punkt orientacyjny osiąga szczyt dramatyzmu nocą.',
       'Nasz **nocny rejs po Bosforze z kolacją** pakuje cały kultowy wieczór: 3 godziny na wodzie (21:00-00:00), bogata turecka uczta, ośmioczęściowy program folklorystyczny na żywo (Oba Dombra, sema, anatolijskie i azerbejdżańskie tańce ludowe, taniec brzucha, kaukaski taniec z nożami), muzyka na żywo i set saksofonu i DJ-a, który utrzymuje pokład w ruchu do końca nocy. Każdy gość otrzymuje ten sam program — żadnej "podstawowej" opcji, która pomija najlepsze części.',
-      'Niezależnie od tego, czy to Państwa pierwsza podróż do Stambułu i szukają "tej jedynej rzeczy do zrobienia nocą", czy byli tu wcześniej i chcą najbardziej fotogenicznych 3 godzin w mieście — to jest **nocny rejs po Bosforze** oceniony na 4,8★ przez ponad 11 317 podróżnych. Licencja TÜRSAB, płatność na pokładzie, bez przedpłaty.'
+      'Niezależnie od tego, czy to Państwa pierwsza podróż do Stambułu i szukają "tej jedynej rzeczy do zrobienia nocą", czy byli tu wcześniej i chcą najbardziej fotogenicznych 3 godzin w mieście — to jest **nocny rejs po Bosforze** oceniony na 4,9★ przez ponad 11 317 podróżnych. Licencja TÜRSAB, płatność na pokładzie, bez przedpłaty.'
     ],
     highlights: [
       { title: 'Podświetlony Bosfor w szczycie dramatyzmu', desc: 'Most Bosforski zmienia kolory (niebieski, fioletowy, złoty), pałace świecą żółto, Meczet Ortaköy odbija się w czarnej wodzie. 21:00-00:00 to szczytowe oświetlenie dla wszystkich stambulskich punktów orientacyjnych.' },
       { title: 'Tradycyjny turecki pokaz na pokładzie', desc: 'Osiem numerów: Oba Dombra, pokaz sema, Sarı Gelin, popurri azerbejdżańskie, taniec brzucha, popurri anatolijskie i gruzińsko-kaukaski taniec z nożami, potem saksofon na żywo i set DJ-a. 40 minut występu, potem muzyka + kolacja kontynuują.' },
-      { title: 'Pełna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka (börek), danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy, wegetariańskie — Państwa wybór), deser (ciasto z lodami), nieograniczone napoje bezalkoholowe. Certyfikat halal.' },
+      { title: 'Pełna bogata kolacja', desc: '10 rodzajów tureckich mezze, ciepła przystawka (börek), danie główne (łosoś, labraks, szaszłyk z kurczaka, szaszłyk wołowy, wegetariańskie — Państwa wybór), deser (specjalny deser z kaszy manny), nieograniczone napoje bezalkoholowe. Certyfikat halal.' },
       { title: 'Pełna trasa Bosforu', desc: 'Kabataş → Dolmabahçe → Pałac Çırağan → Meczet Ortaköy → Bebek → Rumeli Hisarı → Most Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Wieża Panny → Kabataş.' }
     ],
     faq: [
@@ -340,15 +340,15 @@ module.exports = {
     hero: {
       h1: 'Rejs z Kolacją w Stambule',
       subtitle: 'Najlepszy rejs z kolacją w Stambule — 3 godziny na Bosforze, bogata turecka uczta, rozrywka na żywo i nocne widoki najbardziej kultowych zabytków miasta.',
-      badge: '4,8★ · 11 317 opinii · TÜRSAB A-17672'
+      badge: '4,9★ · 11 317+ gości · TÜRSAB A-17672'
     },
     intro: [
       'Szukają Państwo **rejsu z kolacją w Stambule**? Znaleźli Państwo to, co większość podróżnych poleca. Nasz 3-godzinny wieczór na Bosforze łączy pełną bogatą turecką kolację, tańce ludowe na żywo i najbardziej fotogeniczne widoki miasta — wszystko z komfortowej łodzi wypływającej o 21:00 z przystani Kabataş.',
       'Doświadczenie **rejsu z kolacją w Stambule**: wejście na pokład o 20:00, rozgoszczenie się, obserwacja przepłynięcia obok Pałacu Dolmabahçe przy wypływaniu, zaczyna się kolacja podczas zbliżania do Meczetu Ortaköy, zaczyna się pokaz (sema, tańce ludowe, taniec brzucha), do momentu deseru płyną Państwo pod podświetlonym Mostem Bosforskim. Wracają do Kabataş do północy z ikonicznym kolażem zdjęć i pełnym brzuchem.',
-      '€{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}) za rejs z kolacją. Płatność na pokładzie — bez przedpłaty, bez ryzyka. Licencja TÜRSAB A-17672, oceniony na 4,8★ przez ponad 11 317 podróżnych.'
+      '€{p.dinnerStd}/osobę (dawniej €{p.dinnerStdOriginal}) za rejs z kolacją. Płatność na pokładzie — bez przedpłaty, bez ryzyka. Licencja TÜRSAB A-17672, oceniony na 4,9★ przez ponad 11 317 podróżnych.'
     ],
     highlights: [
-      { title: 'Pełna bogata turecka kolacja', desc: '10 rodzajów mezze, ciepła przystawka, danie główne (łosoś/labraks/szaszłyk z kurczaka/szaszłyk wołowy/wegetariańskie), ciasto z lodami. Certyfikat halal. Nieograniczone napoje bezalkoholowe wliczone.' },
+      { title: 'Pełna bogata turecka kolacja', desc: '10 rodzajów mezze, ciepła przystawka, danie główne (łosoś/labraks/szaszłyk z kurczaka/szaszłyk wołowy/wegetariańskie), specjalny deser z kaszy manny. Certyfikat halal. Nieograniczone napoje bezalkoholowe wliczone.' },
       { title: 'Pokaz tureckich tańców ludowych na żywo', desc: 'Osiem numerów: Oba Dombra, pokaz sema, Sarı Gelin, popurri azerbejdżańskie, taniec brzucha, popurri anatolijskie, gruzińsko-kaukaski taniec z nożami, potem saksofon na żywo i DJ. 40 minut występu, muzyka ambient kontynuuje.' },
       { title: 'Pełna nocna trasa po Bosforze', desc: '3-godzinny rejs: Dolmabahçe, Çırağan, Meczet Ortaköy, Most Bosforski, Bebek, Rumeli Hisarı, Most FSM, Beylerbeyi, Üsküdar, Wieża Panny. Zarówno strona europejska jak i azjatycka.' },
       { title: 'Od €{p.dinnerStd} — płatność na pokładzie', desc: 'Rejs z kolacją €{p.dinnerStd} (dawniej €{p.dinnerStdOriginal}). Bez przedpłaty. Bezpłatna anulacja do 2 godzin przed odpłynięciem.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Zarezerwuj Rejs z Kolacją · Płatność na Pokładzie',
-      secondary: '4,8★ · Licencja TÜRSAB · Bezpłatna anulacja do 2 godzin',
+      secondary: '4,9★ · Licencja TÜRSAB · Bezpłatna anulacja do 2 godzin',
       tertiary: 'Dostępność na Dziś'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Tour Nocny Stambuł od €{p.dinnerStd} — Rejs z Kolacją Bosfor + Pokaz',
-      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317 opinii.'
+      description: 'Rejs 3 godziny po Bosforze z kolacją i pokazem na żywo. Wypłynięcie 21:00 z Kabataş. Bezpłatne anulowanie, płatność na pokładzie. 11 317+ gości.'
     },
     hero: {
       h1: 'Nocna Wycieczka po Stambule',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       '**Nocna wycieczka po Stambule** powinna zrobić trzy rzeczy: pokazać kultowe widoki miasta, dobrze nakarmić i zapewnić rozrywkę. Nasz rejs z kolacją po Bosforze robi wszystkie trzy w jednym 3-godzinnym wieczorze — i to właśnie dlatego większość przewodników po Stambule poleca to jako #1 doświadczenie nocnej wycieczki.',
       'Trasa **nocnej wycieczki po Stambule** obejmuje najlepsze podświetlone zabytki: Pałac Dolmabahçe, Meczet Ortaköy, Most Bosforski (zmienia kolor), dzielnica Bebek, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, azjatyckie wybrzeże Üsküdar i odległa Wieża Panny. Większość wycieczek miejskich pokazuje je z autobusu — my pokazujemy z wody, tam gdzie są najbardziej dramatyczne.',
-      'Kolacja wliczona (bogate menu tureckie), pokaz tureckich tańców ludowych na żywo, sema, taniec brzucha i set DJ-a. Jeśli są Państwo w Stambule 2-3 dni, to jeden wieczór o największej sile uderzenia. 4,8★ od ponad 11 317 podróżnych, płatność na pokładzie, bez przedpłaty.'
+      'Kolacja wliczona (bogate menu tureckie), pokaz tureckich tańców ludowych na żywo, sema, taniec brzucha i set DJ-a. Jeśli są Państwo w Stambule 2-3 dni, to jeden wieczór o największej sile uderzenia. 4,9★ od ponad 11 317 podróżnych, płatność na pokładzie, bez przedpłaty.'
     ],
     highlights: [
       { title: 'Wszystkie kultowe nocne widoki Stambułu', desc: 'Pałac Dolmabahçe, Meczet Ortaköy, podświetlony Most Bosforski, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, Wieża Panny. Każdy wielki zabytek w szczytowym nocnym oświetleniu.' },
@@ -416,12 +416,12 @@ module.exports = {
     hero: {
       h1: 'Wycieczka Łodzią po Stambule',
       subtitle: 'Najczęściej rezerwowana wycieczka łodzią po Stambule przez podróżnych — rejs po Bosforze z turecką kolacją, rozrywką na żywo i kultowymi widokami miasta z wody.',
-      badge: '4,8★ · TÜRSAB A-17672 · Płatność na Pokładzie'
+      badge: '4,9★ · TÜRSAB A-17672 · Płatność na Pokładzie'
     },
     intro: [
       'Gdy wyszukują Państwo "wycieczki łodzią po Stambule", szukają jednej rzeczy, która definiuje miasto z wody: Bosforu. Nasza 3-godzinna wycieczka łodzią po Bosforze zabiera Państwa obok każdego wielkiego stambulskiego zabytku — Pałac Dolmabahçe, Meczet Ortaköy, Most Bosforski, Rumeli Hisarı, Pałac Beylerbeyi i Wieża Panny — z pełną turecką kolacją i rozrywką na żywo.',
       'W przeciwieństwie do wielu 1-godzinnych promów widokowych, które obejmują mniej Bosforu i pomijają kolację i rozrywkę, nasza **wycieczka łodzią po Stambule** to pełne wieczorne doświadczenie: wejście na pokład o 20:00 przy przystani Kabataş, rejs do północy, 10 mezze, danie główne, deser, sema, tańce ludowe, taniec brzucha i DJ. Otrzymują Państwo wycieczkę ORAZ wieczór w mieście w jednym.',
-      'Czy mają Państwo jedną noc w Stambule, czy cały tydzień, ta **wycieczka łodzią po Stambule** wykonuje zadanie. 4,8★ od ponad 11 317 podróżnych, licencja TÜRSAB (A-17672), menu z certyfikatem halal i płatność na pokładzie — bez zobowiązań finansowych, dopóki nie będą Państwo zadowoleni z doświadczenia.'
+      'Czy mają Państwo jedną noc w Stambule, czy cały tydzień, ta **wycieczka łodzią po Stambule** wykonuje zadanie. 4,9★ od ponad 11 317 podróżnych, licencja TÜRSAB (A-17672), menu z certyfikatem halal i płatność na pokładzie — bez zobowiązań finansowych, dopóki nie będą Państwo zadowoleni z doświadczenia.'
     ],
     highlights: [
       { title: 'Wszystkie wielkie zabytki Bosforu', desc: 'Dolmabahçe, Çırağan, Meczet Ortaköy, Most Bosforski, Bebek, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, Üsküdar, Wieża Panny. Zarówno wybrzeże europejskie jak i azjatyckie w jednym rejsie.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       '**Wycieczka po Bosforze** może oznaczać 1-godzinny prom widokowy lub pełen wieczór z kolacją — robimy to drugie, a większość podróżnych uznaje to za lepszą wartość. 3 godziny, €{p.dinnerStd}/osobę, kolacja i rozrywka wliczone. Nie tylko przepływają Państwo obok zabytków — jedzą, oglądają pokaz i cieszą się wieczorem.',
       'Trasa naszej **wycieczki po Bosforze** obejmuje wszystko, co warto zobaczyć: Pałac Dolmabahçe (19-wieczna rezydencja sułtana osmańskiego), Meczet Ortaköy (jeden z najczęściej fotografowanych meczetów Stambułu), Most Bosforski (zmienia kolor w nocy), Rumeli Hisarı (zbudowany w 1452 przez Mehmeta Zdobywcę), Pałac Beylerbeyi (strona azjatycka) i Wieża Panny na małej wyspie. Wszystko wyjaśnione przez anglojęzyczną załogę.',
-      'Czy mają Państwo 24 godziny w Stambule, czy tydzień, to jest **wycieczka po Bosforze**, która daje najwięcej w jeden wieczór. Ocena 4,8★ od ponad 11 317 podróżnych, licencja TÜRSAB A-17672, menu przyjazne halal, płatność na pokładzie — bez ryzyka przedpłaty.'
+      'Czy mają Państwo 24 godziny w Stambule, czy tydzień, to jest **wycieczka po Bosforze**, która daje najwięcej w jeden wieczór. Ocena 4,9★ od ponad 11 317 podróżnych, licencja TÜRSAB A-17672, menu przyjazne halal, płatność na pokładzie — bez ryzyka przedpłaty.'
     ],
     highlights: [
       { title: 'Pełen Bosfor w jednym rejsie', desc: 'Wybrzeże europejskie (Dolmabahçe, Ortaköy, Rumeli Hisarı), wybrzeże azjatyckie (Beylerbeyi, Üsküdar), oba mosty bosforskie, Wieża Panny. Każdy wielki zabytek widoczny w 3 godziny.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Szukają Państwo **biletów na rejs po Bosforze**? Proszę kupić bezpośrednio. Nasz bilet to €{p.dinnerStd}/osobę — 40% zniżki od ceny regularnej (€{p.dinnerStdOriginal}). Strony rezerwacyjne osób trzecich zazwyczaj dodają 20-40% prowizji. Rezerwując bezpośrednio, oszczędzają Państwo — a nadal mogą płacić na pokładzie.',
       'Nasz proces **biletów na rejs po Bosforze**: wypełnić kreatora na tej stronie w mniej niż 1 minutę (data, liczba gości, pakiet, kontakt), potwierdzamy natychmiast przez WhatsApp / Telegram, zjawiają się Państwo o 20:00 przy przystani Kabataş, płacą na pokładzie, cieszą 3-godzinnym rejsem z kolacją. Bez fizycznego biletu do wydrukowania, bez kuponu do emaila — nasze potwierdzenie to Państwa bilet.',
-      'Niezależnie od tego, czy rezerwują Państwo rejs z kolacją na dziś wieczór czy zaklepują konkretną datę na przyszły tydzień, **bilety na rejs po Bosforze bezpośrednio** to najszybsza droga. Ocena 4,8★, licencja TÜRSAB (A-17672), menu z certyfikatem halal i obsługa dodatków transferu hotelowego i alkoholowych.'
+      'Niezależnie od tego, czy rezerwują Państwo rejs z kolacją na dziś wieczór czy zaklepują konkretną datę na przyszły tydzień, **bilety na rejs po Bosforze bezpośrednio** to najszybsza droga. Ocena 4,9★, licencja TÜRSAB (A-17672), menu z certyfikatem halal i obsługa dodatków transferu hotelowego i alkoholowych.'
     ],
     highlights: [
       { title: 'Rezerwacja bezpośrednia — bez opłat pośrednika', desc: '€{p.dinnerStd}/osobę, jedna przejrzysta cena. Strony osób trzecich pobierają €30-80+ za tę samą wycieczkę. Rezerwując bezpośrednio u nas, oszczędzają Państwo. Bez ukrytych opłat, bez narzutu prowizji.' },
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Zwiedzanie Bosforu** z wody pokonuje każdą wycieczkę autobusową. Bosfor to najbardziej historyczna droga wodna miasta — sułtani osmańscy, cesarze bizantyjscy, kupcy greccy i rosyjskie okręty wojenne — wszyscy tędy przepłynęli. Dziś nasz 3-godzinny rejs, z komentarzem naszej anglojęzycznej załogi, przepływa obok każdego wielkiego stambulskiego zabytku, który definiuje panoramę.',
       'Trasa naszej **wycieczki zwiedzającej po Bosforze** (wieczorne wypłynięcie, 21:00-00:00):\n\n1. **Pałac Dolmabahçe** — 19-wieczna rezydencja osmańska, podświetlona nocą\n2. **Pałac Çırağan** — obecnie luksusowy hotel, historia królewska\n3. **Meczet Ortaköy** — jeden z najczęściej fotografowanych meczetów Stambułu, na wodzie\n4. **Most Bosforski** — cyklicznie między błękitem, fioletem, złotem w nocy\n5. **Bebek** — elegancka dzielnica europejska\n6. **Rumeli Hisarı** — zbudowany w 1452 przez Mehmeta Zdobywcę przed podbojem Konstantynopola\n7. **Most Fatih Sultan Mehmet** — drugi most bosforski, dramatyczne łuki\n8. **Pałac Beylerbeyi** — strona azjatycka, letnia rezydencja osmańska\n9. **Üsküdar** — azjatycka strona Stambułu, tradycyjna dzielnica\n10. **Wieża Panny** — wieża na małej wyspie, jeden z najromantyczniejszych symboli Stambułu',
-      'Kolacja i rozrywka wliczone — nie oddzielne — więc **zwiedzanie Bosforu** zamienia się w pełen wieczór. Bogata turecka kolacja, pokaz tańców ludowych na żywo, sema, taniec brzucha, DJ. Ocena 4,8★ od ponad 11 317 podróżnych, licencja TÜRSAB A-17672.'
+      'Kolacja i rozrywka wliczone — nie oddzielne — więc **zwiedzanie Bosforu** zamienia się w pełen wieczór. Bogata turecka kolacja, pokaz tańców ludowych na żywo, sema, taniec brzucha, DJ. Ocena 4,9★ od ponad 11 317 podróżnych, licencja TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ wielkich stambulskich zabytków', desc: 'Pałac Dolmabahçe, Pałac Çırağan, Meczet Ortaköy, Most Bosforski, Rumeli Hisarı, Most FSM, Pałac Beylerbeyi, Üsküdar, Wieża Panny. Każdy niezbędny stambulski zabytek w jednym rejsie.' },

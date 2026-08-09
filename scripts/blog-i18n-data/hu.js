@@ -145,14 +145,14 @@ module.exports = {
         {
           h2: 'Árak gyerekeknek',
           paragraphs: [
-            '0–3 éves gyerekek (bezárólag): ingyenes. 4–8 éves gyerekek (bezárólag): 50% kedvezmény. 9 éves és idősebb gyerekek: teljes ár.',
+            '0–3 éves gyerekek (bezárólag): ingyenes. 4–9 éves gyerekek (bezárólag): 50% kedvezmény. 9 éves és idősebb gyerekek: teljes ár.',
             'Megjegyzés: a 3 éves még ingyenes, a 4 éves már féláron utazik. A 8 éves még féláron van, a 9 éves már teljes árat fizet.',
           ],
         },
         {
           h2: 'Mi van a gyerekek menüjén?',
           paragraphs: [
-            'A vacsora menüben szerepel olyan opció, mint a csirkenyárs és a marhanyárs, amit a legtöbb gyerek szeret. A meze választék változatos, sok zöldséggel és mártogatóssal. A búzadara-halva desszert mindenkinek jár.',
+            'A vacsora menüben szerepel olyan opció, mint a csirkenyárs és a marhanyárs, amit a legtöbb gyerek szeret. A meze választék változatos, sok zöldséggel és mártogatóssal. A különleges búzadara-desszert desszert mindenkinek jár.',
             'Speciális étrendet igényel a gyereked? Kérdezz előre WhatsAppon — mindent megteszünk, hogy segítsünk.',
           ],
         },
@@ -242,7 +242,7 @@ module.exports = {
         {
           h2: '6. A gyerekeket szeretettel várjuk',
           paragraphs: [
-            '0–3 éves: ingyenes. 4–8 éves: 50% kedvezmény. 9+: teljes ár.',
+            '0–3 éves: ingyenes. 4–9 éves: 50% kedvezmény. 9+: teljes ár.',
           ],
         },
         {

@@ -11,7 +11,7 @@ module.exports = {
     },
     intro: [
       'Lähde 21:00 Kabataşin laiturista kolmen tunnin illallisristeilylle Bosporinsalmella. Laiva kulkee Dolmabahçen, Ortaköyn ja Beylerbeyin ohi – upeat valaisut joka puolella.',
-      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meriahven, kanavarras tai naudanlihavarras) sekä mannasuurimohalvaa. Juomat sisältyvät hintaan – alkoholiton.',
+      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meriahven, kanavarras tai naudanlihavarras) sekä erityinen mannasuurimojälkiruokaa. Juomat sisältyvät hintaan – alkoholiton.',
       'Illallisenaikana ohjelmassa on mevlana-esitys, kansantanssit, oryantaali sekä elävää musiikkia ja DJ. Maksa vasta laivalla – ei ennakkomaksua.'
     ],
     highlights: [
@@ -46,7 +46,7 @@ module.exports = {
       badge: '0–3-vuotiaat ilmaiseksi mukaan'
     },
     intro: [
-      'Bosporinsalmen illallisristely sopii koko perheelle. Pienimmät (0–3 v.) pääsevät mukaan ilmaiseksi, ja 4–9-vuotiaat saavat puolet hinnasta alennusta.',
+      'Bosporinsalmen illallisristely sopii koko perheelle. Pienimmät (0–3 v.) pääsevät mukaan ilmaiseksi, ja 4–9-vuotiaat saavat €5 alennusta.',
       'Laivalla on tilaa liikkua, avoin kansi raitista ilmaa varten sekä monipuolinen ruoka, josta löytyy jotakin kaikille. Esitysohjelma on värikästä ja viihdyttävää myös lapsille.',
       'Lähtö 21:00 Kabataşista. Maksa vasta laivalla – varaa paikat etukäteen ilman ennakkomaksua.'
     ],
@@ -58,7 +58,7 @@ module.exports = {
       { icon: '🛡️', text: 'Turvallinen laiva – ammattimiehistö, pelastusliivit saatavilla' }
     ],
     faq: [
-      { q: 'Minkä ikäiset pääsevät ilmaiseksi?', a: '0–3-vuotiaat (ikä mukaan lukien) pääsevät ilmaiseksi. 4-vuotias maksaa jo puolihinnan.' },
+      { q: 'Minkä ikäiset pääsevät ilmaiseksi?', a: '0–3-vuotiaat (ikä mukaan lukien) pääsevät ilmaiseksi. 4-vuotias saa €5 alennuksen.' },
       { q: 'Onko laivalla lastenruokaa?', a: 'Illalliseen kuuluu useita vaihtoehtoja, myös lapsille sopivaa ruokaa kuten naudanlihavarrasta ja kanaa.' },
       { q: 'Onko laivalla lastenistuimia?', a: 'Suosittelemme ottamaan oman istuimen mukaan, sillä istuimia ei ole saatavilla laivalla.' },
       { q: 'Voiko lastenvaunu ottaa mukaan?', a: 'Laivalla on tilaa, mutta suosittelemme jättämään lastenvaunu maihin. Kannettava tai taittuva vaihtoehto on kätevin.' },
@@ -154,7 +154,7 @@ module.exports = {
       badge: '40% ALENNUS · Yksi menu, premium-taso · Maksu laivalla'
     },
     intro: [
-      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras), mannasuurimohalva ja rajattomasti virvoitusjuomia. Koko kahdeksan numeron ohjelma sisältyy myös hintaan — Oba Dombra, pyörivien dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali — kaikki hintaan €{p.dinnerStd}/henkilö.',
+      'Monet Bosporin laivat jakavat vieraansa "perus"- ja "VIP"-luokkiin. Me emme. **AMORin** kyydissä on yksi illallismenu, valmistettuna samalla huolella kaikille: 10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras), erityinen mannasuurimojälkiruoka ja rajattomasti virvoitusjuomia. Koko kahdeksan numeron ohjelma sisältyy myös hintaan — Oba Dombra, pyörivien dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali — kaikki hintaan €{p.dinnerStd}/henkilö.',
       'VIP-tunnelma alkaa pöydästäsi. Jos haluat istua mahdollisimman lähellä lavaa ja maisemia, lisää **yksityinen pöytä lavan lähellä** (+€{p.romantic}/pöytä), niin paikkasi varataan etukäteen — paras kulma dervisseihin, kansantansseihin ja valaistuun Bosporiin. Parien, juhlien ja valokuvaajien suosikkivalinta.',
       'AMOR on moderni alus: 42 metriä, 3 kantta, jopa 400 vierasta, talvella lämmitetty ja kesällä ilmastoitu. Kolmen tunnin reitti lähtee Kabataşista (nousu alkaen 20:00, lähtö 21:00, paluu 00:00) ohittaen Dolmabahçen, Ortaköyn moskeijan, Rumelin linnoituksen ja Bosporin sillan valot. TÜRSAB-lisenssi (A-17672), 4,9★ Googlessa. Ei ennakkomaksua — maksat laivalla, ja peruutus on ilmainen 2 tuntia ennen lähtöä asti.'
     ],
@@ -167,7 +167,7 @@ module.exports = {
     faq: [
       { q: 'Myyttekö "VIP-pakettia"? Mikä ero on perusvaihtoehtoon?', a: 'Emme myy erillistä VIP-pakettia — meillä on yksi menu, joka tarjoillaan kaikille samalla premium-tasolla. Se, mitä kutsumme "VIP-kokemukseksi", on illan räätälöiminen sinulle: yksityinen pöytä lavan lähellä (+€{p.romantic}/pöytä), huomaavainen pöytäpalvelu ja valinnaiset juomalisät. Risteily kestää 3 tuntia, €{p.dinnerStd}/henkilö.' },
       { q: 'Onko €{p.dinnerStd} todella 40% alennus?', a: 'Kyllä — listahintamme on €{p.dinnerStdOriginal}/henkilö. €{p.dinnerStd} on suoravarauksen hinta ilman välikäsien komissioita. Maksat laivalla, eikä ennakkomaksua peritä.' },
-      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras) ja mannasuurimohalva jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Kahdeksan numeron ohjelma sisältyy: Oba Dombra, dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali.' },
+      { q: 'Mitä menuun kuuluu?', a: '10 lajia turkkilaisia mezejä, lämmin alkuruoka, pääruoka valintasi mukaan (lohi, meriahven, kanavarras tai naudanlihavarras) ja erityinen mannasuurimojälkiruoka jälkiruoaksi, sekä rajattomasti virvoitusjuomia. Kahdeksan numeron ohjelma sisältyy: Oba Dombra, dervissien seremonia, anatolialaiset ja azerbaidžanilaiset kansantanssit, vatsatanssi, kaukasialainen veitsitanssi, elävää musiikkia ja saksofoni-DJ-finaali.' },
       { q: 'Sisältyykö alkoholi hintaan?', a: 'Ei — alkoholi on erillinen lisä: 2 lasia valittavana viini, olut, rakı, vodka, viski, gin ja muuta hintaan +€{p.alcohol2}/henkilö. Virvoitusjuomat sisältyvät rajattomasti ja maksutta. Premium-tuontijuomat laskutetaan erikseen laivalla.' },
       { q: 'Miten varmistan pöydän lavan läheltä?', a: 'Valitse varauksen yhteydessä lisä "yksityinen pöytä lavan lähellä" (+€{p.romantic}/pöytä) — pöytä varataan nimellesi. Parhaat paikat menevät ennakkovarauksille, joten kannattaa lisätä se ennen risteilypäivää.' },
       { q: 'Millainen alus on kyseessä?', a: 'AMOR — moderni matkustaja-alus, 42 metriä pitkä, 3 kantta ja 400 vieraan kapasiteetti, talvella lämmitetty ja kesällä ilmastoitu. Lähtö Kabataşin laiturista: nousu 20:00, lähtö 21:00, paluu 00:00. Reitti: Dolmabahçe, Ortaköy, Rumelin linnoitus, Beylerbeyi ja Bosporin sillan valot.' }
@@ -264,18 +264,18 @@ module.exports = {
     intro: [
       'Istanbulin **auringonlaskuristeily Bosporinsalmella** on ennen kaikkea kokemus siirtymästä. Laivaannousu alkaa Kabataşin laiturista 20:00 – ja toukokuusta elokuuhun kestävinä pitkinä iltoina kultainen hetki avautuu, kun asetut paikallesi kannella. Aurinko laskee Euroopan puolen minareettien taakse juuri 21:00 lähdön aikoihin, joten näet sen vesiltä: Dolmabahçen palatsi kullan hehkussa, Ortaköyn moskeija siluettina loistavaa taivasta vasten.',
       'Meidän **auringonlaskusta yöhön jatkuva Bosporinsalmen risteilymme** sisältää täyden turkkilaisen illallisen – 10 erilaista mezeä, lämmin alkuruoka, valittava pääruoka ja jälkiruoka – joka tarjoillaan, kun kaupunki sytyttää valonsa. Jälkiruoan saapuessa purjehdit jo valaistun Bosporinsalmen sillan alta, ja 30 miljoonaa valoa heijastuu tummasta vedestä. Muutos hämärästä täyteen yöhön yhden kolmen tunnin risteilyn aikana on koko kokemuksen ydin.',
-      'Olitpa valokuvaaja viimeisen valon perässä, pariskunta etsimässä sitä ainoaa Istanbul-muistokuvaa tai ensikertalainen, joka haluaa klassisen illan vesillä – tämä on se **Bosporinsalmen auringonlasku-illallisristeily**, jota paikalliset suosittelevat vierailijoille. Hinnat alkaen €{p.dinnerStd}/hlö, 4.8★ arvosana, TÜRSAB-lisensoitu, maksu laivalla – ei ennakkomaksua.'
+      'Olitpa valokuvaaja viimeisen valon perässä, pariskunta etsimässä sitä ainoaa Istanbul-muistokuvaa tai ensikertalainen, joka haluaa klassisen illan vesillä – tämä on se **Bosporinsalmen auringonlasku-illallisristeily**, jota paikalliset suosittelevat vierailijoille. Hinnat alkaen €{p.dinnerStd}/hlö, 4.9★ arvosana, TÜRSAB-lisensoitu, maksu laivalla – ei ennakkomaksua.'
     ],
     highlights: [
       { title: 'Kesän auringonlaskut juuri lähdön aikaan', desc: 'Toukokuusta elokuuhun aurinko laskee Istanbulissa noin 20:15–20:45 – laivaannousu 20:00 tarjoaa kultaisen hetken kannella, ja 21:00 lähtö vie sinut vesille juuri auringonlaskun ajaksi. Pidä kamera valmiina – tämä on se kuva.' },
       { title: 'Sinisestä hetkestä täyteen yöhön', desc: 'Ei pelkkä auringonlasku – risteily jatkuu iltahämärän läpi täysin valaistulle Bosporinsalmelle. Kultainen valo, sininen hetki ja lopuksi 30 miljoonaa sillan valoa tummalla vedellä: kolme valon vaihetta yhden illan aikana.' },
-      { title: 'Täysi illallinen risteilyn aikana', desc: '10 erilaista turkkilaista mezeä, lämmin alkuruoka, pääruoka (lohi, meriahven, kanavarras, naudanlihavarras tai kasvisvaihtoehto), mannasuurimohalva ja rajattomasti virvoitusjuomia – tarjoillaan kaupungin valojen syttyessä.' },
+      { title: 'Täysi illallinen risteilyn aikana', desc: '10 erilaista turkkilaista mezeä, lämmin alkuruoka, pääruoka (lohi, meriahven, kanavarras, naudanlihavarras tai kasvisvaihtoehto), erityinen mannasuurimojälkiruoka ja rajattomasti virvoitusjuomia – tarjoillaan kaupungin valojen syttyessä.' },
       { title: 'Dolmabahçe, Ortaköy ja Bosporinsalmen silta – kaikki valaistuina', desc: 'Reitti kulkee Dolmabahçen palatsin, Ortaköyn moskeijan, Bosporinsalmen sillan, Rumelinlinnan ja Beylerbeyin palatsin ohi juuri, kun niiden valot syttyvät. Jokainen maamerkki parhaassa valossaan.' }
     ],
     faq: [
       { q: 'Mihin aikaan Bosporinsalmen auringonlaskuristeily lähtee?', a: 'Laivaannousu alkaa 20:00 Kabataşin laiturissa, laiva lähtee 21:00 ja palaa noin 00:00. Kesällä (touko–elokuussa) aurinko laskee noin 20:15–20:45 – kultainen hetki koetaan laivaannousun aikana ja itse auringonlasku juuri lähdön aikoihin, vesiltä katsottuna.' },
       { q: 'Onko auringonlaskuristeily sama kuin illallisristeily?', a: 'Kyllä – kyseessä on yksi ja sama risteily. Päivittäin on yksi lähtö 21:00, ja mukana ovat täysi illallinen ja elävät esitykset laivalla. Kesän pitkinä iltoina se toimii samalla auringonlaskuristeilynä: nouset laivaan kultaisen hetken aikana ja purjehdit sinisen hetken läpi valaistuun yöhön. Talvella sama risteily on puhdas yövalokokemus.' },
-      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-9 v puoleen hintaan.' },
+      { q: 'Mitä Bosporinsalmen auringonlaskuristeily maksaa?', a: 'Risteily alkaen €{p.dinnerStd}/hlö (3 tuntia, täysi illallinen ja elävä ohjelma). Maksu laivalla – ei ennakkomaksua. Lapset 0-3 v ilmaiseksi, 4-9 v €5 alennuksella.' },
       { q: 'Mikä on paras vuodenaika Bosporinsalmen auringonlaskuristeilylle?', a: 'Toukokuusta elokuuhun. Istanbulin myöhäiset auringonlaskut (20:15–20:45) osuvat yksiin 21:00 lähdön kanssa, joten koet kultaisen hetken, auringonlaskun ja valaistut sillat samana iltana. Syksyllä ja talvella aurinko laskee aiemmin, ja sama risteily muuttuu täydeksi yövalokokemukseksi – yhtä valokuvaukselliseksi, mutta eri tunnelmalla.' },
       { q: 'Mitä auringonlaskuristeilylle kannattaa ottaa mukaan?', a: 'Älypuhelin tai kamera – kultainen hetki ja valaistut sillat suorastaan kutsuvat kuvaamaan. Kevyt takki: tuuli voimistuu kannella auringonlaskun jälkeen. Siisti rento pukeutuminen riittää – kyseessä on illallinen, mutta tiukkaa pukukoodia ei ole.' },
       { q: 'Näenkö valaistut sillat yöllä tällä risteilyllä?', a: 'Kyllä – se on illan toinen puolisko. Risteily kestää 21:00–00:00, joten auringonlaskun ja sinisen hetken jälkeen purjehdit täysin valaistun Bosporinsalmen sillan alta, valaistujen palatsien ja Neitsyttornin ohi, ja palaat Kabataşiin noin 00:00.' },

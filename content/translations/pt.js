@@ -17,15 +17,15 @@ module.exports = {
     hero: {
       h1: 'Cruzeiro com Jantar no Bósforo em Istambul',
       subtitle: 'Três horas de entretenimento ao vivo, um generoso jantar turco de vários pratos e as mais impressionantes vistas noturnas do Bósforo.',
-      badge: '4,8★ · 11.317 avaliações'
+      badge: '4,9★ · 11.317+ hóspedes'
     },
     intro: [
-      '**O cruzeiro com jantar no Bósforo** é a experiência noturna mais icónica de Istambul. O nosso passeio parte às 20:00 do cais de Kabataş e navega sob as pontes iluminadas do Bósforo e Fatih Sultan Mehmet, oferecendo-lhe um jantar turco de vários pratos, danças folclóricas ao vivo, dança oriental e um set de DJ que anima o convés até às 23:00.',
-      'Ao contrário dos barcos turísticos comuns que enchem a paisagem noturna de Istambul, **o nosso cruzeiro com jantar no Bósforo** é licenciado pela TÜRSAB (A-17672) e avaliado com 4,8★ por mais de 11.317 viajantes. Mantemos os grupos pequenos e o serviço caloroso — e, como o pagamento é feito a bordo, não há nenhum risco em reservar com antecedência.',
+      '**O cruzeiro com jantar no Bósforo** é a experiência noturna mais icónica de Istambul. O nosso passeio parte às 20:00 do cais de Kabataş e navega sob as pontes iluminadas do Bósforo e Fatih Sultan Mehmet, oferecendo-lhe um jantar turco de vários pratos, danças folclóricas ao vivo, dança oriental e um set de DJ que anima o convés até às 23:45.',
+      'Ao contrário dos barcos turísticos comuns que enchem a paisagem noturna de Istambul, **o nosso cruzeiro com jantar no Bósforo** é licenciado pela TÜRSAB (A-17672) e avaliado com 4,9★ por mais de 11.317 viajantes. Mantemos os grupos pequenos e o serviço caloroso — e, como o pagamento é feito a bordo, não há nenhum risco em reservar com antecedência.',
       'Quer esteja a celebrar um aniversário, à procura de uma noite premium em Istambul para a sua família, ou queira a transição pôr-do-sol-noite mais fotogénica da cidade — este é o cruzeiro com jantar recomendado em primeiro lugar pelos habitantes de Istambul.'
     ],
     highlights: [
-      { title: 'Jantar turco de vários pratos', desc: '10 variedades de mezze frios, entrada quente (börek), prato principal à escolha (salmão / robalo / frango em espetada / espetada de vaca / vegetariano), halva de sêmola de sobremesa, refrigerantes ilimitados.' },
+      { title: 'Jantar turco de vários pratos', desc: '10 variedades de mezze frios, entrada quente (börek), prato principal à escolha (salmão / robalo / frango em espetada / espetada de vaca / vegetariano), doce especial de sêmola de sobremesa, refrigerantes ilimitados.' },
       { title: 'Danças folclóricas ao vivo, dança oriental e DJ', desc: 'Oito números: Oba Dombra, espetáculo Mevlana sema, Sarı Gelin, potpourri azerbaijano, dança oriental clássica, potpourri anatólio e a dança das facas georgiana e caucasiana — depois saxofone ao vivo e um set de DJ durante todo o cruzeiro.' },
       { title: 'Rota noturna completa do Bósforo', desc: 'Kabataş → Dolmabahçe → Palácio Çırağan → Mesquita de Ortaköy → Bebek → Rumeli Hisarı → Ponte FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Desde €{p.dinnerStd}/pessoa — pagamento a bordo', desc: 'Cruzeiro com jantar €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' }
@@ -48,7 +48,7 @@ module.exports = {
   'bosphorus-with-kids': {
     meta: {
       title: 'Bósforo com Crianças — Cruzeiro Familiar desde €{p.dinnerStd}/adulto',
-      description: 'Cruzeiro com jantar no Bósforo amigo da família. Crianças 0-3 grátis, 4-9 meio preço. Salão interior seguro, menu infantil.'
+      description: 'Cruzeiro com jantar no Bósforo amigo da família. Crianças 0-3 grátis, 4-9 €5 de desconto. Salão interior seguro, menu infantil.'
     },
     hero: {
       h1: 'Cruzeiro no Bósforo com Crianças',
@@ -58,7 +58,7 @@ module.exports = {
     intro: [
       '**O cruzeiro no Bósforo com crianças** é a opção noturna mais familiar de Istambul. Recebemos dezenas de famílias todas as noites — concebemos cada detalhe para que os mais pequenos se sintam confortáveis: zona interior coberta para se manterem aquecidos, um menu acessível para crianças (frango simples grelhado, massa, refrigerantes ilimitados) e embarque cedo para evitar birras de hora tardia.',
       'Ao contrário dos barcos só para adultos, **o nosso cruzeiro com jantar no Bósforo para famílias** mantém-se caloroso e inclusivo. **Crianças 0-3 anos são grátis** (transfer incluído), 4-9 anos beneficiam de **€5 de desconto**, 10+ anos pagam preço inteiro — sem custos escondidos. As danças folclóricas ao vivo, a dança oriental e o espetáculo sema são entretenimento delicado para a família, não um clube noturno.',
-      'Quer venha a Istambul para um fim-de-semana prolongado com o seu bebé, ou traga os adolescentes na sua primeira viagem europeia — este é o passeio recomendado pelas famílias de Istambul. Seguro, certificado halal, licenciado pela TÜRSAB e avaliado com 4,8★ por mais de 11.317 viajantes.'
+      'Quer venha a Istambul para um fim-de-semana prolongado com o seu bebé, ou traga os adolescentes na sua primeira viagem europeia — este é o passeio recomendado pelas famílias de Istambul. Seguro, certificado halal, licenciado pela TÜRSAB e avaliado com 4,9★ por mais de 11.317 viajantes.'
     ],
     highlights: [
       { title: '0-3 anos completamente grátis', desc: 'Sem taxas para bebés e crianças pequenas. 4-9 anos pagam €5 do preço de adulto. A partir dos 9 anos, hóspede com preço inteiro. Transparente, sem surpresas.' },
@@ -94,7 +94,7 @@ module.exports = {
     intro: [
       '**O cruzeiro romântico no Bósforo** é a noite mais icónica para casais em Istambul. Enquanto o sol se põe sobre o Palácio de Dolmabahçe e a Ponte do Bósforo se acende em cores, você e o seu parceiro partilham um jantar turco de vários pratos numa mesa privada — com velas, flores frescas e violino ao vivo a flutuar pelo convés.',
       'O nosso arranjo de mesa romântica (+€{p.romantic}/mesa) transforma qualquer lugar num momento especial: rosas vermelhas, velas brilhantes, um bilhete de boas-vindas escrito à mão. Adicione o pacote de 2 copos de álcool para vinho sob as estrelas (+€{p.alcohol2}/pessoa) ou mantenha-o simples com os refrigerantes incluídos. Qualquer que seja a escolha, a tripulação trata discretamente do resto.',
-      'Quer esteja a celebrar um aniversário, a planear uma surpresa para o seu parceiro ou simplesmente queira uma noite inesquecível na cidade mais romântica da Europa — este é o passeio preferido pelos casais em Istambul. Avaliação 4,8★, licenciado pela TÜRSAB e — o mais importante — pagamento a bordo, por isso só promete a noite em si.'
+      'Quer esteja a celebrar um aniversário, a planear uma surpresa para o seu parceiro ou simplesmente queira uma noite inesquecível na cidade mais romântica da Europa — este é o passeio preferido pelos casais em Istambul. Avaliação 4,9★, licenciado pela TÜRSAB e — o mais importante — pagamento a bordo, por isso só promete a noite em si.'
     ],
     highlights: [
       { title: 'Mesa romântica à luz das velas', desc: 'Adicione o arranjo de mesa romântica com +€{p.romantic}/mesa: rosas vermelhas frescas, velas brilhantes, pétalas de rosa na toalha de mesa e cartão escrito à mão. Fotografias incluídas.' },
@@ -130,7 +130,7 @@ module.exports = {
     intro: [
       '**O cruzeiro halal no Bósforo** é o cruzeiro com jantar mais respeitoso de Istambul para viajantes muçulmanos. Cada carne servida no nosso barco — salmão, robalo, frango em espetada, espetada de vaca — é **certificada halal** de fornecedores aprovados. Servimos o mesmo menu a cada hóspede; sem "secção halal" separada, porque todo o barco é halal por defeito.',
       'O álcool é **um suplemento opcional** — nunca imposto aos hóspedes, e a disposição das mesas separa naturalmente os hóspedes que preferem uma refeição sem álcool. Para os hóspedes que querem o pacote de álcool de 2 copos (+€{p.alcohol2}/pessoa), está lá, mas os refrigerantes ilimitados incluídos (água, cola, sumo) são suficientes para a maioria das famílias muçulmanas. A nossa tripulação é treinada para respeitar as suas preferências sem suposições.',
-      '**O cruzeiro amigo halal no Bósforo** importa para viajantes da Arábia Saudita, EAU, Kuwait, Qatar, Irão, Malásia, Indonésia, Paquistão e Marrocos que querem a noite mais icónica de Istambul sem compromissos. Licenciado pela TÜRSAB, 4,8★ e pagamento a bordo — não prometa nada até ter a certeza de que a experiência cumpre os seus padrões.'
+      '**O cruzeiro amigo halal no Bósforo** importa para viajantes da Arábia Saudita, EAU, Kuwait, Qatar, Irão, Malásia, Indonésia, Paquistão e Marrocos que querem a noite mais icónica de Istambul sem compromissos. Licenciado pela TÜRSAB, 4,9★ e pagamento a bordo — não prometa nada até ter a certeza de que a experiência cumpre os seus padrões.'
     ],
     highlights: [
       { title: 'Menu 100% certificado halal', desc: 'Toda a carne (salmão, robalo, frango em espetada, espetada de vaca) é certificada halal de fornecedores aprovados. A cozinha segue a preparação halal. Sem produtos de porco ou aditivos não-halal. Opções vegetarianas estão sempre disponíveis.' },
@@ -144,7 +144,7 @@ module.exports = {
       { q: 'Este cruzeiro é adequado para famílias muçulmanas com crianças?', a: 'Sim — é um dos cruzeiros mais respeitados para famílias em Istambul. O entretenimento é modesto (danças folclóricas, sema, música turca), crianças menores de 3 anos são grátis, 4-9 anos beneficiam de €5 de desconto. Sem atmosfera de clube noturno. Famílias do Golfo, Indonésia, Malásia, Paquistão e Marrocos reservam regularmente este cruzeiro.' },
       { q: 'Posso rezar a bordo?', a: 'Não há uma sala de oração dedicada a bordo, mas recomendamos rezar antes do embarque das 20:00 (a oração maghrib coincide frequentemente com este intervalo). O cais de Kabataş tem instalações de oração. Se precisar de rezar durante a navegação 21:00-00:00 (isha), fale com a tripulação — podemos arranjar um canto tranquilo no convés.' },
       { q: 'Quais são os preços para uma família muçulmana de 4 pessoas (2 adultos, 2 crianças)?', a: 'Cruzeiro com jantar: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 de desconto 4-9 anos) = €87.20. Se as crianças tiverem menos de 3 anos, grátis: 2 × €{p.dinnerStd} = €48.60. Adicione €{p.transfer} de transfer do hotel por adulto. Total: €48.60–€92.90 para a família de 4, sem pagamento antecipado, pagamento a bordo.' },
-      { q: 'O transfer do hotel também é halal?', a: 'O transfer do hotel é apenas uma viagem de carro — sem comida ou bebida envolvidas, por isso não há preocupação halal. Os nossos motoristas são profissionais, respeitosos e pontuais. As zonas de transfer cobrem Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e outros 9 bairros centrais onde os viajantes muçulmanos costumam ficar hospedados.' }
+      { q: 'O transfer do hotel também é halal?', a: 'O transfer do hotel é apenas uma viagem de carro — sem comida ou bebida envolvidas, por isso não há preocupação halal. Os nossos motoristas são profissionais, respeitosos e pontuais. As zonas de transfer cobrem Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli e outros 8 bairros centrais onde os viajantes muçulmanos costumam ficar hospedados.' }
     ],
     cta: {
       primary: 'Reserve o Cruzeiro Halal · Pagamento a Bordo',
@@ -164,7 +164,7 @@ module.exports = {
       badge: '40% DE DESCONTO · Um menu, padrão premium · Pagamento a bordo'
     },
     intro: [
-      'Muitos barcos do Bósforo dividem os hóspedes em "Standard" e "VIP". Nós não. A bordo do **AMOR** há um único menu de jantar, preparado com o mesmo cuidado para todos: 10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca), halva de sêmola e refrigerantes ilimitados. Todo o programa de espetáculos em oito números também está incluído — Oba Dombra, cerimónia dos dervixes rodopiantes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ — tudo no preço de €{p.dinnerStd}/pessoa.',
+      'Muitos barcos do Bósforo dividem os hóspedes em "Standard" e "VIP". Nós não. A bordo do **AMOR** há um único menu de jantar, preparado com o mesmo cuidado para todos: 10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca), doce especial de sêmola e refrigerantes ilimitados. Todo o programa de espetáculos em oito números também está incluído — Oba Dombra, cerimónia dos dervixes rodopiantes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ — tudo no preço de €{p.dinnerStd}/pessoa.',
       'A sensação VIP começa na sua mesa. Se quiser ficar o mais perto possível do palco e das vistas, acrescente a **mesa privativa junto ao palco** (+€{p.romantic}/mesa) e o seu lugar fica reservado com antecedência — o melhor ângulo para os dervixes, as danças folclóricas e o Bósforo iluminado. A escolha preferida de casais, celebrações e amantes da fotografia.',
       'O AMOR é um barco moderno de 42 metros, 3 conveses e capacidade até 400 hóspedes, com aquecimento no inverno e ar condicionado no verão. A rota de 3 horas parte de Kabataş (embarque a partir das 20:00, partida 21:00, regresso 00:00) e passa por Dolmabahçe, pela mesquita de Ortaköy, pela fortaleza de Rumeli e pelas luzes da ponte do Bósforo. Licença TÜRSAB (A-17672), 4,9★ no Google. Sem pagamento antecipado: paga a bordo, com cancelamento grátis até 2 horas antes da partida.'
     ],
@@ -177,7 +177,7 @@ module.exports = {
     faq: [
       { q: 'Vendem um "pacote VIP"? Qual é a diferença para o Standard?', a: 'Não vendemos um pacote VIP separado: há um único menu, servido a todos com o mesmo padrão premium. O que chamamos de "experiência VIP" é personalizar a sua noite: mesa privativa junto ao palco (+€{p.romantic}/mesa), serviço de mesa atencioso e bebidas adicionais opcionais. O cruzeiro dura 3 horas, €{p.dinnerStd}/pessoa.' },
       { q: '€{p.dinnerStd} é mesmo 40% de desconto?', a: 'Sim — o nosso preço de tabela é €{p.dinnerStdOriginal}/pessoa. €{p.dinnerStd} é a tarifa de reserva direta, sem comissões de intermediários. Paga a bordo e não há qualquer pagamento antecipado.' },
-      { q: 'O que inclui o menu?', a: '10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca) e halva de sêmola de sobremesa, com refrigerantes ilimitados. O programa em oito números está incluído: Oba Dombra, cerimónia dos dervixes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ.' },
+      { q: 'O que inclui o menu?', a: '10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca) e doce especial de sêmola de sobremesa, com refrigerantes ilimitados. O programa em oito números está incluído: Oba Dombra, cerimónia dos dervixes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ.' },
       { q: 'O álcool está incluído?', a: 'Não — o álcool é um extra separado: 2 copos de vinho, cerveja, rakı, vodka, whisky, gin e mais local por +€{p.alcohol2}/pessoa. Os refrigerantes estão incluídos de forma ilimitada e gratuita. As bebidas premium importadas são cobradas à parte a bordo.' },
       { q: 'Como garanto uma mesa junto ao palco?', a: 'Basta selecionar o extra "mesa privativa junto ao palco" (+€{p.romantic}/mesa) ao reservar — a mesa fica reservada em seu nome. As melhores posições esgotam com reservas antecipadas, por isso recomendamos acrescentá-la antes do dia do cruzeiro.' },
       { q: 'Que tipo de barco é?', a: 'O AMOR — um navio de passageiros moderno de 42 metros, 3 conveses e capacidade para 400 hóspedes, com aquecimento no inverno e ar condicionado no verão. Partida do cais de Kabataş: embarque 20:00, partida 21:00, regresso 00:00. Rota: Dolmabahçe, Ortaköy, fortaleza de Rumeli, Beylerbeyi e as luzes da ponte do Bósforo.' }
@@ -202,7 +202,7 @@ module.exports = {
     intro: [
       '**O cruzeiro privado no Bósforo** significa que o barco inteiro é seu — sem outros hóspedes, sem mesas partilhadas, sem pista de dança comum. Perfeito para reuniões familiares, jantares corporativos, festas de aniversário, despedidas de solteira ou receções de casamento. O barco, a tripulação, o menu, o entretenimento e o programa adaptam-se ao seu grupo.',
       '**O nosso aluguer privado no Bósforo** suporta grupos **de 25 a 80 convidados**. Grupos mais pequenos ainda podem solicitar a experiência privada — oferecemos um preço mínimo que cobre o custo de operação do barco. Grupos maiores (tamanho de casamento) recebem preços personalizados e geralmente incluem decoração especial, banda ao vivo, serviço de bolo e duração estendida (4-5 horas em vez das 3 standard).',
-      'Quer esteja a organizar um evento corporativo para clientes, uma festa de 50 anos ou uma receção de casamento sob as pontes mais icónicas de Istambul, este é **o cruzeiro privado de confiança dos organizadores de eventos de Istambul**. Avaliação 4,8★, licenciado pela TÜRSAB, tripulação totalmente falante de inglês e flexibilidade total — rota, menu, música, programa.'
+      'Quer esteja a organizar um evento corporativo para clientes, uma festa de 50 anos ou uma receção de casamento sob as pontes mais icónicas de Istambul, este é **o cruzeiro privado de confiança dos organizadores de eventos de Istambul**. Avaliação 4,9★, licenciado pela TÜRSAB, tripulação totalmente falante de inglês e flexibilidade total — rota, menu, música, programa.'
     ],
     highlights: [
       { title: 'O barco inteiro, só para si', desc: 'Sem outros hóspedes. O seu grupo controla cada convés, cada mesa. Defina a sua própria música, código de vestuário, programa. A privacidade importa — respeitamo-la.' },
@@ -238,11 +238,11 @@ module.exports = {
     intro: [
       '**O cruzeiro no Bósforo para casais** é a noite preferida em Istambul. Nem todos os casais celebram um aniversário — às vezes estão apenas na cidade mais romântica do mundo e querem uma noite maravilhosa juntos. Este cruzeiro oferece: mesa privada para dois, jantar turco lento de vários pratos, violino ao vivo e música acústica durante o jantar e a Ponte do Bósforo iluminada a passar devagar.',
       'A atmosfera é **calorosa, mas não excessivamente romântica** — sem música obrigatória de pedido de casamento, sem aplausos coordenados embaraçosos para "os recém-casados". Comam, bebam, conversem, vejam as luzes de Istambul. Se quer adicionar o arranjo de mesa romântica (velas, rosas, +€{p.romantic}), excelente — caso contrário, apenas o jantar em si já é especial.',
-      'Quer esteja em Istambul 3 dias com o seu parceiro, celebrando um evento modesto ou a planear uma viagem exploratória para um futuro pedido de casamento — **o cruzeiro no Bósforo para casais** oferece-lhe 3 horas de noite juntos numa das cidades mais fotografadas do mundo. 4,8★, pagamento a bordo, cancelamento gratuito.'
+      'Quer esteja em Istambul 3 dias com o seu parceiro, celebrando um evento modesto ou a planear uma viagem exploratória para um futuro pedido de casamento — **o cruzeiro no Bósforo para casais** oferece-lhe 3 horas de noite juntos numa das cidades mais fotografadas do mundo. 4,9★, pagamento a bordo, cancelamento gratuito.'
     ],
     highlights: [
       { title: 'Mesa privada para dois', desc: 'Mesa privada para 2 pessoas, não partilhada. Prioridade nas mesas à janela para casais. Fotografias do pôr-do-sol e do Bósforo noturno mesmo à sua janela.' },
-      { title: 'Jantar lento de vários pratos', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, robalo, frango em espetada, espetada de vaca ou vegetariano), halva de sêmola de sobremesa. Servido lentamente ao longo de 3 horas — não tem pressa.' },
+      { title: 'Jantar lento de vários pratos', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, robalo, frango em espetada, espetada de vaca ou vegetariano), doce especial de sêmola de sobremesa. Servido lentamente ao longo de 3 horas — não tem pressa.' },
       { title: 'Violino ao vivo e música suave', desc: 'O violino ao vivo e a música turca acústica durante o jantar criam uma atmosfera íntima, adequada para conversa. Depois entra o DJ para os casais que querem dançar.' },
       { title: 'Suplementos para noites especiais', desc: 'Arranjo de mesa romântica (velas, rosas): +€{p.romantic}. 2 copos de álcool (vinho, cerveja, rakı, vodka, whisky, gin e mais): +€{p.alcohol2}/pessoa. Transfer do hotel (ida e volta): +€{p.transfer}/pessoa. Escolha o que combina com a sua noite.' }
     ],
@@ -274,18 +274,18 @@ module.exports = {
     intro: [
       'A experiência do **cruzeiro ao pôr-do-sol no Bósforo** em Istambul resume-se a uma coisa: a transição. O nosso cruzeiro embarca no cais de Kabataş a partir das 20:00 — e nas longas noites de maio a agosto, a hora dourada desenrola-se enquanto se instala no convés. O sol põe-se sobre os minaretes da costa europeia mesmo por volta da partida das 21:00, por isso assiste a tudo a partir da água: o Palácio de Dolmabahçe banhado a ouro, a Mesquita de Ortaköy em silhueta contra o céu incandescente.',
       'O nosso **cruzeiro do pôr-do-sol à noite no Bósforo** inclui um jantar turco completo — 10 variedades de mezze, entrada quente, prato principal à escolha, sobremesa — servido enquanto a cidade acende as suas luzes. Quando chega a sobremesa, está a navegar sob a Ponte do Bósforo iluminada, com 30 milhões de luzes refletidas na água escura. A passagem do crepúsculo à noite plena, tudo dentro de um único cruzeiro de 3 horas, é o que faz esta experiência.',
-      'Quer seja fotógrafo a perseguir a última luz, um casal à procura d\'"a fotografia-memória de Istambul", ou um visitante de primeira vez que quer a clássica noite sobre a água — este é **o cruzeiro com jantar ao pôr-do-sol no Bósforo** que os habitantes de Istambul recomendam aos visitantes. Desde €{p.dinnerStd}/pessoa, avaliação 4,8★, licenciado pela TÜRSAB, pagamento a bordo — sem pagamento antecipado.'
+      'Quer seja fotógrafo a perseguir a última luz, um casal à procura d\'"a fotografia-memória de Istambul", ou um visitante de primeira vez que quer a clássica noite sobre a água — este é **o cruzeiro com jantar ao pôr-do-sol no Bósforo** que os habitantes de Istambul recomendam aos visitantes. Desde €{p.dinnerStd}/pessoa, avaliação 4,9★, licenciado pela TÜRSAB, pagamento a bordo — sem pagamento antecipado.'
     ],
     highlights: [
       { title: 'Pores-do-sol de verão mesmo à partida', desc: 'De maio a agosto, o sol põe-se em Istambul aproximadamente entre as 20:15–20:45 — o embarque às 20:00 dá-lhe a hora dourada no convés, e a partida das 21:00 coloca-o na água para o próprio pôr-do-sol. Câmara preparada — esta é a fotografia.' },
       { title: 'Da hora azul à noite plena', desc: 'Não é só o pôr-do-sol — o cruzeiro navega pelo crepúsculo até ao Bósforo totalmente iluminado. Luz dourada, hora azul e depois 30 milhões de luzes das pontes na água escura: três fases de luz numa só noite.' },
-      { title: 'Jantar completo durante o cruzeiro', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, dourada, frango em espetada, espetada de vaca, vegetariano), halva de sêmola, refrigerantes ilimitados — servidos enquanto as luzes da cidade se acendem.' },
+      { title: 'Jantar completo durante o cruzeiro', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, dourada, frango em espetada, espetada de vaca, vegetariano), doce especial de sêmola, refrigerantes ilimitados — servidos enquanto as luzes da cidade se acendem.' },
       { title: 'Dolmabahçe, Ortaköy, Ponte do Bósforo — tudo a brilhar', desc: 'A rota passa pelo Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo, Rumeli Hisarı e Palácio de Beylerbeyi no momento em que as suas luzes se acendem. Cada marco na sua melhor luz.' }
     ],
     faq: [
       { q: 'A que horas parte o cruzeiro ao pôr-do-sol no Bósforo?', a: 'O embarque começa às 20:00 no cais de Kabataş, o barco parte às 21:00 e regressa por volta das 00:00. No verão (maio–agosto), o sol põe-se aproximadamente entre as 20:15–20:45 — a hora dourada acontece enquanto embarca, e o próprio pôr-do-sol mesmo por volta da partida, visto a partir da água.' },
       { q: 'O cruzeiro ao pôr-do-sol no Bósforo é o mesmo que o cruzeiro com jantar?', a: 'Sim — é um único cruzeiro. Há uma única partida diária às 21:00, com jantar completo e shows ao vivo a bordo. Nas longas noites de verão funciona também como cruzeiro ao pôr-do-sol: embarca durante a hora dourada e navega pela hora azul até à noite iluminada. No inverno, o mesmo cruzeiro é uma experiência puramente de luzes noturnas.' },
-      { q: 'Qual é o preço do cruzeiro ao pôr-do-sol no Bósforo?', a: 'Desde €{p.dinnerStd}/pessoa no cruzeiro (3 horas, jantar completo, entretenimento ao vivo). Pagamento a bordo — sem pagamento antecipado. Crianças 0-3 anos grátis, 4-9 anos a meio preço.' },
+      { q: 'Qual é o preço do cruzeiro ao pôr-do-sol no Bósforo?', a: 'Desde €{p.dinnerStd}/pessoa no cruzeiro (3 horas, jantar completo, entretenimento ao vivo). Pagamento a bordo — sem pagamento antecipado. Crianças 0-3 anos grátis, 4-9 anos com €5 de desconto.' },
       { q: 'Qual é a melhor época do ano para um cruzeiro ao pôr-do-sol no Bósforo?', a: 'De maio a agosto. Os pores-do-sol tardios de Istambul (20:15–20:45) coincidem com a partida das 21:00, por isso tem a hora dourada, o pôr-do-sol e as pontes iluminadas numa só noite. No outono e no inverno o sol põe-se mais cedo e o mesmo cruzeiro torna-se uma experiência completa de luzes noturnas — igualmente fotogénica, com um ambiente diferente.' },
       { q: 'O que devo levar para um cruzeiro ao pôr-do-sol?', a: 'Um smartphone ou câmara — a hora dourada e as pontes iluminadas pedem-no. Um casaco leve: a brisa aumenta no convés depois do pôr-do-sol. Traje smart-casual — vai jantar, mas não há código de vestuário rigoroso.' },
       { q: 'Vejo as pontes iluminadas à noite neste cruzeiro?', a: 'Sim — essa é a segunda metade da noite. O cruzeiro decorre das 21:00–00:00, por isso, depois do pôr-do-sol e da hora azul, navega sob a Ponte do Bósforo totalmente iluminada, passa pelos palácios acesos e pela Torre da Donzela, e regressa a Kabataş por volta das 00:00.' },
@@ -312,17 +312,17 @@ module.exports = {
     intro: [
       '**O passeio noturno no Bósforo** é a atividade noturna mais recomendada em Istambul. Eis porquê: depois do anoitecer, o Bósforo transforma-se. A Ponte do Bósforo alterna entre azul, violeta e dourado. O Palácio de Dolmabahçe brilha amarelo-quente. A Mesquita de Ortaköy reflete-se perfeitamente na água preta. Cada marco de Istambul atinge o seu pico dramático à noite.',
       '**O nosso passeio noturno no Bósforo com jantar** empacota a noite icónica completa: 3 horas na água (21:00-00:00), jantar turco de vários pratos, um programa folclórico ao vivo de oito números (Oba Dombra, sema, danças folclóricas da Anatólia e do Azerbaijão, dança oriental, dança das facas caucasiana), música ao vivo e set de saxofone e DJ que anima o convés até ao fim da noite. Cada hóspede recebe o mesmo programa — sem opção "básica" que salta as melhores partes.',
-      'Quer seja a sua primeira visita a Istambul e procura "a única coisa a fazer à noite", quer já tenha estado aqui antes e queira as 3 horas mais fotogénicas da cidade, este é **o passeio noturno no Bósforo** avaliado com 4,8★ por mais de 11.317 viajantes. Licenciado pela TÜRSAB, pagamento a bordo, sem pagamento antecipado.'
+      'Quer seja a sua primeira visita a Istambul e procura "a única coisa a fazer à noite", quer já tenha estado aqui antes e queira as 3 horas mais fotogénicas da cidade, este é **o passeio noturno no Bósforo** avaliado com 4,9★ por mais de 11.317 viajantes. Licenciado pela TÜRSAB, pagamento a bordo, sem pagamento antecipado.'
     ],
     highlights: [
       { title: 'O Bósforo iluminado no pico de dramatismo', desc: 'A Ponte do Bósforo muda de cor (azul, violeta, dourado), os palácios brilham amarelos, a Mesquita de Ortaköy reflete-se na água escura. 21:00-00:00 iluminação máxima para todos os marcos de Istambul.' },
       { title: 'Show turco tradicional a bordo', desc: 'Oito números: Oba Dombra, espetáculo sema, Sarı Gelin, potpourri azerbaijano, dança oriental, potpourri anatólio e a dança das facas georgiana e caucasiana, depois saxofone ao vivo e set de DJ. 40 minutos de espetáculo, depois a música + o jantar continuam.' },
-      { title: 'Jantar completo de vários pratos', desc: '10 variedades de mezze turcos, entrada quente (börek), prato principal (salmão, robalo, frango em espetada, espetada de vaca, vegetariano — a sua escolha), sobremesa (halva de sêmola), refrigerantes ilimitados. Certificado halal.' },
+      { title: 'Jantar completo de vários pratos', desc: '10 variedades de mezze turcos, entrada quente (börek), prato principal (salmão, robalo, frango em espetada, espetada de vaca, vegetariano — a sua escolha), sobremesa (doce especial de sêmola), refrigerantes ilimitados. Certificado halal.' },
       { title: 'Rota completa do Bósforo', desc: 'Kabataş → Dolmabahçe → Palácio Çırağan → Mesquita de Ortaköy → Bebek → Rumeli Hisarı → Ponte Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Torre da Donzela → Kabataş.' }
     ],
     faq: [
       { q: 'Quando é o passeio noturno no Bósforo?', a: 'Embarque a partir das 20:00 no cais de Kabataş. O barco parte às 21:00, regressa por volta das 00:00. Recomendamos chegar 20 minutos mais cedo para se instalar e escolher o lugar.' },
-      { q: 'Quanto custa o passeio noturno no Bósforo?', a: 'Passeio noturno (3 horas, jantar, show): €{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). 0-3 anos grátis, 4-9 anos a meio preço. Pagamento a bordo.' },
+      { q: 'Quanto custa o passeio noturno no Bósforo?', a: 'Passeio noturno (3 horas, jantar, show): €{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). 0-3 anos grátis, 4-9 anos com €5 de desconto. Pagamento a bordo.' },
       { q: 'Qual é a diferença entre o passeio noturno no Bósforo e o cruzeiro com jantar?', a: 'A mesma coisa, palavra-chave diferente. "Passeio noturno no Bósforo" é como muitos viajantes procuram; "cruzeiro com jantar" é o termo da indústria. Mesmo barco, mesmo programa de 3 horas, mesmo menu, mesmo show. Escolha o termo de pesquisa preferido — a experiência é a mesma.' },
       { q: 'Passeio noturno no Bósforo ou cruzeiro ao pôr-do-sol — qual vale mais?', a: 'Passeio noturno = Istambul iluminada, dramatismo máximo de luz, programa completo de entretenimento, as fotografias mais icónicas das pontes iluminadas. E é um único cruzeiro: no verão (maio-agosto), o embarque a partir das 20:00 apanha a hora dourada e o sol põe-se mesmo por volta da partida às 21:00 — a mesma noite cobre o pôr-do-sol e a noite. Não precisa de escolher nem de reservar duas vezes.' },
       { q: 'Posso fazer o passeio noturno no Bósforo no meu primeiro dia em Istambul?', a: 'Sim — recomendamos. Muitos viajantes reservam o passeio noturno para a sua primeira noite porque oferece uma orientação completa: todos os marcos principais a partir da água, com boa comida e entretenimento. Mais fácil do que lutar com o jet lag a tentar fazer turismo a pé no Dia 1. Transfer do hotel disponível dos bairros centrais.' },
@@ -338,20 +338,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Cruzeiro com Jantar em Istambul desde €{p.dinnerStd} — Passeio Noturno no Bósforo',
-      description: 'Cruzeiro com jantar de 3 horas em Istambul no Bósforo. Menu turco de vários pratos, folclore ao vivo, pontes iluminadas. Cancelamento gratuito, pagamento a bordo. 11.317 avaliações.'
+      description: 'Cruzeiro com jantar de 3 horas em Istambul no Bósforo. Menu turco de vários pratos, folclore ao vivo, pontes iluminadas. Cancelamento gratuito, pagamento a bordo. 11.317+ hóspedes.'
     },
     hero: {
       h1: 'Cruzeiro com Jantar em Istambul',
       subtitle: 'O melhor cruzeiro com jantar em Istambul — 3 horas no Bósforo, jantar turco de vários pratos, entretenimento ao vivo e as vistas noturnas dos marcos mais icónicos da cidade.',
-      badge: '4,8★ · 11.317 avaliações · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ hóspedes · TÜRSAB A-17672'
     },
     intro: [
       'À procura de um **cruzeiro com jantar em Istambul**? Encontrou o que a maioria dos viajantes recomenda. A nossa noite de 3 horas no Bósforo combina um jantar turco completo de vários pratos, danças folclóricas ao vivo e as vistas mais fotogénicas da cidade — tudo a partir de um barco confortável que parte às 21:00 do cais de Kabataş.',
       'A experiência do **cruzeiro com jantar em Istambul**: embarca às 20:00, senta-se, vê o Palácio de Dolmabahçe enquanto partimos, o jantar começa quando nos aproximamos da Mesquita de Ortaköy, o show começa (sema, danças folclóricas, oriental), e quando chega a sobremesa está sob a Ponte do Bósforo iluminada. À meia-noite regressa a Kabataş com uma colagem icónica de fotografias e o estômago cheio.',
-      '€{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). Pagamento a bordo — sem pagamento antecipado, sem risco. Licenciado pela TÜRSAB A-17672, avaliado com 4,8★ por mais de 11.317 viajantes.'
+      '€{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). Pagamento a bordo — sem pagamento antecipado, sem risco. Licenciado pela TÜRSAB A-17672, avaliado com 4,9★ por mais de 11.317 viajantes.'
     ],
     highlights: [
-      { title: 'Jantar turco completo de vários pratos', desc: '10 variedades de mezze, entrada quente, prato principal (salmão/robalo/frango em espetada/espetada de vaca/vegetariano), halva de sêmola. Certificado halal. Refrigerantes ilimitados incluídos.' },
+      { title: 'Jantar turco completo de vários pratos', desc: '10 variedades de mezze, entrada quente, prato principal (salmão/robalo/frango em espetada/espetada de vaca/vegetariano), doce especial de sêmola. Certificado halal. Refrigerantes ilimitados incluídos.' },
       { title: 'Show de danças folclóricas turcas ao vivo', desc: 'Oito números: Oba Dombra, espetáculo sema, Sarı Gelin, potpourri azerbaijano, dança oriental, potpourri anatólio, dança das facas georgiana e caucasiana, depois saxofone ao vivo e DJ. 40 minutos de espetáculo, música de fundo contínua.' },
       { title: 'Rota noturna completa no Bósforo', desc: 'Passeio de 3 horas: Dolmabahçe, Çırağan, Mesquita de Ortaköy, Ponte do Bósforo, Bebek, Rumeli Hisarı, Ponte FSM, Beylerbeyi, Üsküdar, Torre da Donzela. Ambas as costas, europeia e asiática.' },
       { title: 'Desde €{p.dinnerStd} — pagamento a bordo', desc: 'Cruzeiro com jantar: €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' }
@@ -370,7 +370,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Reserve o Cruzeiro com Jantar · Pagamento a Bordo',
-      secondary: '4,8★ · Licenciado pela TÜRSAB · Cancelamento gratuito 2 horas antes',
+      secondary: '4,9★ · Licenciado pela TÜRSAB · Cancelamento gratuito 2 horas antes',
       tertiary: 'Disponibilidade Esta Noite'
     }
   },
@@ -378,7 +378,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Passeio Noturno em Istambul desde €{p.dinnerStd} — Cruzeiro com Jantar no Bósforo + Show',
-      description: 'Cruzeiro de 3 horas no Bósforo com jantar e show ao vivo. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317 avaliações. Transfer do hotel opcional.'
+      description: 'Cruzeiro de 3 horas no Bósforo com jantar e show ao vivo. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317+ hóspedes. Transfer do hotel opcional.'
     },
     hero: {
       h1: 'Passeio em Istambul à Noite',
@@ -388,7 +388,7 @@ module.exports = {
     intro: [
       'Um **passeio em Istambul à noite** tem de fazer três coisas: mostrar-lhe os marcos icónicos da cidade, alimentá-lo bem e entretê-lo. O nosso cruzeiro com jantar no Bósforo faz as três numa só noite de 3 horas — e é por isso que a maioria dos guias de Istambul o recomenda como a experiência #1 de passeio noturno.',
       'A rota do **passeio em Istambul à noite** cobre os melhores marcos iluminados: Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo (muda de cor), bairro de Bebek, Rumeli Hisarı, Ponte FSM, Palácio de Beylerbeyi, costa asiática de Üsküdar e Torre da Donzela ao longe. A maioria dos passeios pela cidade mostram-lhe estes a partir do autocarro — nós mostramo-los a partir da água, de onde são mais dramáticos.',
-      'O jantar está incluído (menu turco de vários pratos), show de danças folclóricas turcas ao vivo, sema, dança oriental e set de DJ. Se está em Istambul 2-3 dias, esta é a única noite que dá o impacto mais forte. 4,8★ de mais de 11.317 viajantes, pagamento a bordo, sem pagamento antecipado.'
+      'O jantar está incluído (menu turco de vários pratos), show de danças folclóricas turcas ao vivo, sema, dança oriental e set de DJ. Se está em Istambul 2-3 dias, esta é a única noite que dá o impacto mais forte. 4,9★ de mais de 11.317 viajantes, pagamento a bordo, sem pagamento antecipado.'
     ],
     highlights: [
       { title: 'Todas as vistas noturnas icónicas de Istambul', desc: 'Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo iluminada, Rumeli Hisarı, Ponte FSM, Palácio de Beylerbeyi, Torre da Donzela. Cada marco principal na iluminação noturna de pico.' },
@@ -414,17 +414,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Passeio de Barco em Istambul desde €{p.dinnerStd} — Bósforo + Jantar + Show',
-      description: 'Passeio de barco de 3 horas: cruzeiro no Bósforo, jantar turco completo, folclore ao vivo, paisagens noturnas iluminadas. Cancelamento gratuito, pagamento a bordo. 11.317 avaliações.'
+      description: 'Passeio de barco de 3 horas: cruzeiro no Bósforo, jantar turco completo, folclore ao vivo, paisagens noturnas iluminadas. Cancelamento gratuito, pagamento a bordo. 11.317+ hóspedes.'
     },
     hero: {
       h1: 'Passeio de Barco em Istambul',
       subtitle: 'O passeio de barco mais reservado em Istambul pelos viajantes — cruzeiro no Bósforo com comida turca, entretenimento ao vivo e as vistas icónicas da cidade a partir da água.',
-      badge: '4,8★ · TÜRSAB A-17672 · Pagamento a Bordo'
+      badge: '4,9★ · TÜRSAB A-17672 · Pagamento a Bordo'
     },
     intro: [
       'Quando procura "passeio de barco em Istambul", procura a única coisa que define a cidade a partir da água: o Bósforo. O nosso passeio de barco no Bósforo de 3 horas leva-o por cada marco principal de Istambul — Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo, Rumeli Hisarı, Palácio de Beylerbeyi e Torre da Donzela — com jantar turco completo e entretenimento ao vivo.',
       'Ao contrário dos muitos ferries turísticos de 1 hora que cobrem menos do Bósforo e saltam o jantar e o entretenimento, **o nosso passeio de barco em Istambul** é uma experiência noturna completa: embarque às 20:00 no cais de Kabataş, passeio até à meia-noite, 10 mezze, prato principal, sobremesa, sema, danças folclóricas, dança oriental e DJ. Recebe também a saída noturna como parte do passeio.',
-      'Quer tenha uma noite ou uma semana inteira em Istambul, este **passeio de barco em Istambul** faz o trabalho. 4,8★ de mais de 11.317 viajantes, licenciado pela TÜRSAB (A-17672), menu certificado halal e pagamento a bordo — sem compromisso financeiro até estar satisfeito com a experiência.'
+      'Quer tenha uma noite ou uma semana inteira em Istambul, este **passeio de barco em Istambul** faz o trabalho. 4,9★ de mais de 11.317 viajantes, licenciado pela TÜRSAB (A-17672), menu certificado halal e pagamento a bordo — sem compromisso financeiro até estar satisfeito com a experiência.'
     ],
     highlights: [
       { title: 'Todos os marcos principais do Bósforo', desc: 'Dolmabahçe, Çırağan, Mesquita de Ortaköy, Ponte do Bósforo, Bebek, Rumeli Hisarı, Ponte FSM, Palácio de Beylerbeyi, Üsküdar, Torre da Donzela. Ambas as costas, europeia e asiática, num único passeio.' },
@@ -435,7 +435,7 @@ module.exports = {
     faq: [
       { q: 'Qual é o melhor passeio de barco em Istambul?', a: 'O cruzeiro com jantar no Bósforo está consistentemente classificado em #1. Cobre todos os marcos principais, inclui o jantar e o entretenimento e funciona à noite quando os marcos estão iluminados. Outras opções (ferries hop-on, barcos turísticos matinais) cobrem rotas mais curtas, saltam o jantar e não incluem entretenimento. Para uma noite em Istambul, este é o passeio de barco mais completo.' },
       { q: 'Quanto dura o passeio de barco em Istambul?', a: '3 horas. Embarque a partir das 20:00 no cais de Kabataş, partida às 21:00, regresso ~00:00. Cobre o Bósforo completo de Dolmabahçe a Rumeli Hisarı e de volta. Tempo suficiente para jantar completo + show sem cansaço.' },
-      { q: 'Quanto custa o passeio de barco em Istambul?', a: 'O nosso passeio de barco com jantar: €{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). 0-3 anos grátis, 4-9 anos a meio preço. Pagamento a bordo. O álcool e o transfer do hotel são suplementos opcionais.' },
+      { q: 'Quanto custa o passeio de barco em Istambul?', a: 'O nosso passeio de barco com jantar: €{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). 0-3 anos grátis, 4-9 anos com €5 de desconto. Pagamento a bordo. O álcool e o transfer do hotel são suplementos opcionais.' },
       { q: 'De onde partem os passeios de barco em Istambul?', a: 'O nosso barco parte do cais de Kabataş, costa europeia central de Istambul, perto do Palácio de Dolmabahçe. Acessível pelo elétrico T1 (estação Kabataş), táxi 15 min de Taksim ou a pé 20 min de Taksim. Transfer do hotel disponível dos bairros centrais com +€{p.transfer}/pessoa.' },
       { q: 'Este passeio de barco é adequado para famílias com crianças?', a: 'Sim — muito amigo da família. Crianças 0-3 anos grátis, 4-9 anos €5 de desconto. Zona interior coberta, menu infantil a pedido e entretenimento (sema, danças folclóricas) cativante para crianças. Muitas famílias de todo o mundo reservam este passeio.' },
       { q: 'Tenho de levar alguma coisa para o passeio de barco?', a: 'Passaporte ou cartão de identidade (para registo no barco), casaco leve (o convés pode estar fresco), calçado confortável se planeia dançar. Smartphone para fotografias. Dinheiro ou cartão para pagamento a bordo (ambos aceites). Tudo o resto — comida, bebida, entretenimento — está a bordo.' }
@@ -450,7 +450,7 @@ module.exports = {
   'bosphorus-trip': {
     meta: {
       title: 'Excursão no Bósforo desde €{p.dinnerStd} — Cruzeiro com Jantar em Istambul + Show',
-      description: 'Excursão de 3 horas no Bósforo: jantar turco, folclore ao vivo, paisagens noturnas iluminadas. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317 avaliações.'
+      description: 'Excursão de 3 horas no Bósforo: jantar turco, folclore ao vivo, paisagens noturnas iluminadas. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317+ hóspedes.'
     },
     hero: {
       h1: 'Excursão no Bósforo',
@@ -460,13 +460,13 @@ module.exports = {
     intro: [
       'Uma **excursão no Bósforo** pode significar um ferry turístico de 1 hora ou uma noite completa de passeio com jantar — nós fazemos a segunda e a maioria dos viajantes considera-a a experiência de melhor valor. 3 horas, €{p.dinnerStd}/pessoa, jantar e entretenimento incluídos. Não passa apenas pelos marcos — come, vê o show e desfruta da noite.',
       'A rota da **nossa excursão no Bósforo** cobre tudo o que vale a pena ver: Palácio de Dolmabahçe (residência do sultão otomano do século XIX), Mesquita de Ortaköy (uma das mesquitas mais fotografadas de Istambul), Ponte do Bósforo (muda de cor à noite), Rumeli Hisarı (construído por Fatih Sultan Mehmet em 1452), Palácio de Beylerbeyi (costa asiática) e Torre da Donzela numa pequena ilha. Tudo explicado pela tripulação falante de inglês.',
-      'Quer esteja em Istambul 24 horas ou uma semana, esta é a **excursão no Bósforo** que lhe dá mais numa única noite. Avaliação 4,8★ de mais de 11.317 viajantes, licenciado pela TÜRSAB A-17672, menu amigo halal, pagamento a bordo — sem risco de pagamento antecipado.'
+      'Quer esteja em Istambul 24 horas ou uma semana, esta é a **excursão no Bósforo** que lhe dá mais numa única noite. Avaliação 4,9★ de mais de 11.317 viajantes, licenciado pela TÜRSAB A-17672, menu amigo halal, pagamento a bordo — sem risco de pagamento antecipado.'
     ],
     highlights: [
       { title: 'O Bósforo completo num único golpe', desc: 'Costa europeia (Dolmabahçe, Ortaköy, Rumeli Hisarı), costa asiática (Beylerbeyi, Üsküdar), ambas as pontes do Bósforo, Torre da Donzela. Cada marco principal visível em 3 horas.' },
       { title: 'Jantar + entretenimento incluídos', desc: 'Não apenas ferry turístico — jantar turco completo com mezze, prato principal, sobremesa. Show de danças folclóricas ao vivo, sema, oriental, DJ. Valor de entretenimento para além da paisagem.' },
       { title: 'Noite = a melhor iluminação', desc: 'As excursões diurnas no Bósforo mostram-lhe os marcos em luz plana. As excursões noturnas captam tudo iluminado: palácios brilhantes, pontes coloridas, mesquitas refletidas na água escura. Fotografias melhores, mais dramáticas.' },
-      { title: 'Desde €{p.dinnerStd} — pagamento a bordo', desc: 'Não é necessário pagamento antecipado. Pagamento a bordo (dinheiro ou cartão). Cancelamento gratuito até 2 horas antes da partida. 0-3 anos grátis, 4-9 anos a meio preço. Preços transparentes.' }
+      { title: 'Desde €{p.dinnerStd} — pagamento a bordo', desc: 'Não é necessário pagamento antecipado. Pagamento a bordo (dinheiro ou cartão). Cancelamento gratuito até 2 horas antes da partida. 0-3 anos grátis, 4-9 anos com €5 de desconto. Preços transparentes.' }
     ],
     faq: [
       { q: 'Quais são as melhores excursões no Bósforo em Istambul?', a: 'O passeio com jantar noturno está consistentemente nos primeiros lugares. As opções diurnas (ferries em loop de 1 hora, barcos turísticos de 2 horas) mostram menos e não incluem jantar. Pelo valor, é difícil bater um passeio de 3 horas com jantar, show e ponto de encontro central. O custo do nosso passeio €{p.dinnerStd} elimina a necessidade de uma noite separada com jantar + entretenimento.' },
@@ -496,7 +496,7 @@ module.exports = {
     intro: [
       'À procura de **bilhetes para o cruzeiro no Bósforo**? Compre diretamente. O nosso bilhete é €{p.dinnerStd}/pessoa — 40% de desconto sobre o preço normal (€{p.dinnerStdOriginal}). Os sites de reservas de terceiros adicionam geralmente 20-40% de comissão. Reservando diretamente, poupa — e ainda paga a bordo.',
       'O nosso processo de **bilhetes para o cruzeiro no Bósforo**: preencha o formulário nesta página em menos de 1 minuto (data, número de hóspedes, contacto), confirmamos instantaneamente via WhatsApp / Telegram, aparece no cais de Kabataş às 20:00, paga a bordo, desfruta do cruzeiro com jantar de 3 horas. Sem bilhete físico para imprimir, sem cupão para receber por e-mail — a confirmação é o seu bilhete.',
-      'Quer reserve o cruzeiro com jantar para esta noite ou reserve para uma data específica na próxima semana, **os bilhetes diretos para o cruzeiro no Bósforo** são a forma mais rápida. Avaliação 4,8★, licenciado pela TÜRSAB (A-17672), menu certificado halal e suporta suplementos de transfer do hotel e álcool.'
+      'Quer reserve o cruzeiro com jantar para esta noite ou reserve para uma data específica na próxima semana, **os bilhetes diretos para o cruzeiro no Bósforo** são a forma mais rápida. Avaliação 4,9★, licenciado pela TÜRSAB (A-17672), menu certificado halal e suporta suplementos de transfer do hotel e álcool.'
     ],
     highlights: [
       { title: 'Reserva direta — sem taxas de intermediário', desc: '€{p.dinnerStd}/pessoa — um único preço transparente. Os sites de terceiros cobram €30-80+ pelo mesmo passeio. Poupe reservando diretamente connosco. Sem taxas escondidas, sem acréscimo de comissão.' },
@@ -522,7 +522,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bósforo Last Minute desde €{p.dinnerStd} — Reserve Hoje, Pague a Bordo',
-      description: 'Reserva de cruzeiro no Bósforo no próprio dia. Confirmação WhatsApp em minutos. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317 avaliações.'
+      description: 'Reserva de cruzeiro no Bósforo no próprio dia. Confirmação WhatsApp em minutos. Partida 21:00 de Kabataş. Cancelamento gratuito, pagamento a bordo. 11.317+ hóspedes.'
     },
     hero: {
       h1: 'Cruzeiro no Bósforo no Último Momento',
@@ -558,7 +558,7 @@ module.exports = {
   'istanbul-cruise-price': {
     meta: {
       title: 'Preço Cruzeiro Istambul desde €{p.dinnerStd} — Tarifas Transparentes',
-      description: 'Preços do cruzeiro no Bósforo em Istambul: €{p.dinnerStd}/pessoa. Crianças 0-3 grátis, 4-9 meio preço. Suplementos transparentes.'
+      description: 'Preços do cruzeiro no Bósforo em Istambul: €{p.dinnerStd}/pessoa. Crianças 0-3 grátis, 4-9 €5 de desconto. Suplementos transparentes.'
     },
     hero: {
       h1: 'Preço Cruzeiro Istambul',
@@ -573,11 +573,11 @@ module.exports = {
     highlights: [
       { title: 'Cruzeiro com jantar: €{p.dinnerStd} (antes €{p.dinnerStdOriginal})', desc: '40% de desconto sobre o preço normal. Passeio de 3 horas, jantar turco completo, show ao vivo, refrigerantes ilimitados. Um único preço transparente — cobre tudo o que precisa para uma bela noite.' },
       { title: 'Tudo incluído no preço', desc: 'Passeio de 3 horas, 10 mezze, entrada quente, prato principal, sobremesa, refrigerantes ilimitados, show ao vivo e todos os impostos. Sem taxas escondidas nem surpresas a bordo.' },
-      { title: 'Preço para crianças: 0-3 grátis, 4-9 a meio preço', desc: '0-3 completamente grátis (sem taxas). 4-9 com €5 de desconto do preço de adulto. 10+ preço inteiro de adulto. Transparente, sem truques de preços familiares. O transfer também é grátis para 0-3.' },
+      { title: 'Preço para crianças: 0-3 grátis, 4-9 com €5 de desconto', desc: '0-3 completamente grátis (sem taxas). 4-9 com €5 de desconto do preço de adulto. 10+ preço inteiro de adulto. Transparente, sem truques de preços familiares. O transfer também é grátis para 0-3.' },
       { title: 'Suplementos — apenas quando os quer', desc: 'Álcool (2 copos): +€{p.alcohol2}/pessoa. Transfer: €{p.transfer}/pessoa. Mesa romântica: €{p.romantic}/mesa. Tudo opcional, não empacotado. Escolha apenas o que precisa.' }
     ],
     faq: [
-      { q: 'Quanto custa um passeio em Istambul?', a: 'Cruzeiro com jantar: €{p.dinnerStd}/pessoa (normal €{p.dinnerStdOriginal}, 40% de desconto). 0-3 anos grátis, 4-9 anos a meio preço. Pagamento a bordo — sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' },
+      { q: 'Quanto custa um passeio em Istambul?', a: 'Cruzeiro com jantar: €{p.dinnerStd}/pessoa (normal €{p.dinnerStdOriginal}, 40% de desconto). 0-3 anos grátis, 4-9 anos com €5 de desconto. Pagamento a bordo — sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' },
       { q: 'Existem taxas escondidas no preço do passeio em Istambul?', a: 'Não. O preço inclui: passeio de 3 horas, jantar completo (mezze, entrada, prato principal, sobremesa), refrigerantes ilimitados, show ao vivo, taxas. Os suplementos opcionais (álcool, transfer, mesa romântica) são separados e com preço transparente — paga apenas pelo que adiciona. Sem "taxa de serviço", "taxa portuária", suplemento surpresa.' },
       { q: 'Porque é que o preço do passeio em Istambul é 40% de desconto — é um truque?', a: 'Sem truque. O preço normal €{p.dinnerStdOriginal} é o que os sites de reservas de terceiros (Viator, GetYourGuide, Klook) cobram — com as suas comissões. Reserve diretamente e obtenha €{p.dinnerStd}. Esta é a diferença de 40%. Sem truques de preço limitado ou dinâmico.' },
       { q: 'Como se compara o preço do passeio em Istambul com outras opções?', a: 'Ferries em loop: €5-10, 1 hora, sem jantar, sem entretenimento, apenas turismo. Passeios económicos com jantar: €20-30, cheios, comida média, show curto. O nosso cruzeiro (€{p.dinnerStd}): 3 horas, jantar completo, show completo, mesa privada, licenciado pela TÜRSAB. Iates resort: €100-150+, excessivo para viajantes solo/casais.' },
@@ -604,7 +604,7 @@ module.exports = {
     intro: [
       '**O turismo no Bósforo** a partir da água supera qualquer passeio de autocarro. O Bósforo é a via navegável mais histórica da cidade — sultões otomanos, imperadores bizantinos, comerciantes gregos e navios de guerra russos passaram todos por aqui. Hoje o nosso passeio de 3 horas, com comentários da tripulação falante de inglês, passa por cada marco principal de Istambul que define o horizonte.',
       'A rota do **nosso passeio turístico no Bósforo** (partida noturna, 21:00-00:00):\n\n1. **Palácio de Dolmabahçe** — residência otomana do século XIX, iluminada à noite\n2. **Palácio Çırağan** — agora hotel de luxo, história real\n3. **Mesquita de Ortaköy** — uma das mesquitas mais fotografadas de Istambul, sobre a água\n4. **Ponte do Bósforo** — alterna à noite entre azul, violeta, dourado\n5. **Bebek** — bairro elegante da costa europeia\n6. **Rumeli Hisarı** — construído por Fatih Sultan Mehmet em 1452 antes da conquista de Constantinopla\n7. **Ponte Fatih Sultan Mehmet** — segunda ponte do Bósforo, arco dramático\n8. **Palácio de Beylerbeyi** — costa asiática, residência de verão otomana\n9. **Üsküdar** — costa asiática de Istambul, bairro tradicional\n10. **Torre da Donzela** — torre na pequena ilha, um dos símbolos mais românticos de Istambul',
-      'O jantar e o entretenimento estão incluídos — não separadamente — por isso **o turismo no Bósforo** transforma-se numa noite completa. Jantar turco de vários pratos, show de danças folclóricas ao vivo, sema, dança oriental, DJ. Avaliação 4,8★ de mais de 11.317 viajantes, licenciado pela TÜRSAB A-17672.'
+      'O jantar e o entretenimento estão incluídos — não separadamente — por isso **o turismo no Bósforo** transforma-se numa noite completa. Jantar turco de vários pratos, show de danças folclóricas ao vivo, sema, dança oriental, DJ. Avaliação 4,9★ de mais de 11.317 viajantes, licenciado pela TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ marcos principais de Istambul', desc: 'Palácio de Dolmabahçe, Palácio Çırağan, Mesquita de Ortaköy, Ponte do Bósforo, Rumeli Hisarı, Ponte FSM, Palácio de Beylerbeyi, Üsküdar, Torre da Donzela. Cada marco essencial de Istambul num único passeio.' },

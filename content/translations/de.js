@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Bosporus-Dinner-Cruise in Istanbul',
       subtitle: 'Drei Stunden Live-Unterhaltung, ein mehrgängiges türkisches Festmahl und die gefeiertsten Nachtansichten des Bosporus.',
-      badge: '4,8★ · 11.317 Bewertungen'
+      badge: '4,9★ · 11.317+ Gäste'
     },
     intro: [
-      'Die **Bosporus-Schifffahrt mit Dinner** ist Istanbuls ikonischstes Abenderlebnis. Das Einsteigen beginnt um 20:00 Uhr am Kabataş-Pier; um 21:00 Uhr legt unser Schiff ab und gleitet unter den beleuchteten Bögen der Bosporus- und Fatih-Sultan-Mehmet-Brücken hindurch, während Sie ein mehrgängiges türkisches Festmahl, Live-Folklore-Aufführungen, orientalischen Tanz und ein DJ-Set genießen, das das Deck bis 23:00 Uhr zum Leben erweckt.',
-      'Im Gegensatz zu den vielen generischen Tourbooten, die die Istanbuler Nachtkulisse bevölkern, ist unsere **Bosporus-Schifffahrt mit Dinner** TÜRSAB-lizenziert (A-17672) und wurde von mehr als 11.317 Reisenden mit 4,8★ bewertet. Wir halten die Gruppe klein, den Service herzlich — und da Sie an Bord zahlen, gehen Sie mit einer Vorabbuchung kein Risiko ein.',
+      'Die **Bosporus-Schifffahrt mit Dinner** ist Istanbuls ikonischstes Abenderlebnis. Das Einsteigen beginnt um 20:00 Uhr am Kabataş-Pier; um 21:00 Uhr legt unser Schiff ab und gleitet unter den beleuchteten Bögen der Bosporus- und Fatih-Sultan-Mehmet-Brücken hindurch, während Sie ein mehrgängiges türkisches Festmahl, Live-Folklore-Aufführungen, orientalischen Tanz und ein DJ-Set genießen, das das Deck bis 23:45 Uhr zum Leben erweckt.',
+      'Im Gegensatz zu den vielen generischen Tourbooten, die die Istanbuler Nachtkulisse bevölkern, ist unsere **Bosporus-Schifffahrt mit Dinner** TÜRSAB-lizenziert (A-17672) und wurde von mehr als 11.317 Reisenden mit 4,9★ bewertet. Wir halten die Gruppe klein, den Service herzlich — und da Sie an Bord zahlen, gehen Sie mit einer Vorabbuchung kein Risiko ein.',
       'Ob Sie einen Jahrestag feiern, einen Premium-Abend in Istanbul mit Ihrer Familie suchen oder einfach den fotogensten Übergang von Sonnenuntergang zu Nacht der Stadt erleben möchten — dies ist die Dinner-Cruise, die Einheimische in Istanbul zuerst empfehlen.'
     ],
     highlights: [
-      { title: 'Mehrgängiges türkisches Festmahl', desc: '10 Mezze-Sorten, warme Vorspeise (Börek), Hauptgang nach Wahl (Lachs / Wolfsbarsch / Hähnchenspieß / Rindspieß / vegetarisch), Grießhalva, unbegrenzte alkoholfreie Getränke.' },
+      { title: 'Mehrgängiges türkisches Festmahl', desc: '10 Mezze-Sorten, warme Vorspeise (Börek), Hauptgang nach Wahl (Lachs / Wolfsbarsch / Hähnchenspieß / Rindspieß / vegetarisch), spezielles Grießdessert, unbegrenzte alkoholfreie Getränke.' },
       { title: 'Live-Folklore, orientalischer Tanz & DJ', desc: 'Acht Darbietungen: Oba Dombra, Mevlana-Sema, Sarı Gelin, aserbaidschanisches Potpourri, klassischer Bauchtanz, anatolisches Potpourri und der georgisch-kaukasische Messertanz — danach Live-Saxofon und ein DJ-Set während der restlichen Fahrt.' },
       { title: 'Komplette Bosporus-Nachtroute', desc: 'Kabataş → Dolmabahçe → Çırağan-Palast → Ortaköy-Moschee → Bebek → Rumeli Hisarı → FSM-Brücke → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Ab €{p.dinnerStd}/Person — Zahlung an Bord', desc: 'Dinner-Cruise €{p.dinnerStd} (vorher €{p.dinnerStdOriginal}). Keine Vorauszahlung. Kostenlose Stornierung bis 2 Stunden vor Abfahrt.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       'Die **Bosporus-Tour mit Kindern** ist Istanbuls familienfreundlichste Abendoption. Wir empfangen jeden Abend Dutzende Familien — jedes Detail ist darauf ausgerichtet, Kindern den Aufenthalt angenehm zu gestalten: geschützte Innenplätze, damit die Kleinen warm bleiben, ein zugängliches kinderfreundliches Menü (einfach gegrilltes Hähnchen, Nudeln, unbegrenzte alkoholfreie Getränke) und frühes Einsteigen, um Überreizung zu vermeiden.',
       'Im Gegensatz zu reinen Erwachsenen-Partybooten bleibt unsere **Bosporus-Dinner-Cruise für Familien** herzlich und einladend. **Kinder 0–3 Jahre sind gratis** (inklusive Transfer), 4–9 Jahre erhalten **€5 Ermäßigung**, ab 10 Jahren voller Preis — keine versteckten Gebühren. Die Live-Folklore, der orientalische Tanz und die Sema-Vorführung sind sanfte Familienunterhaltung, kein Nachtclub.',
-      'Ob Sie für ein langes Wochenende mit Ihrem Kleinkind nach Istanbul kommen oder Ihre Teenager auf ihre erste Europareise mitnehmen — dies ist die Tour, die Istanbuler Familien empfehlen. Sicher, halal-zertifiziert, TÜRSAB-lizenziert und 4,8★ von über 11.317 Reisenden.'
+      'Ob Sie für ein langes Wochenende mit Ihrem Kleinkind nach Istanbul kommen oder Ihre Teenager auf ihre erste Europareise mitnehmen — dies ist die Tour, die Istanbuler Familien empfehlen. Sicher, halal-zertifiziert, TÜRSAB-lizenziert und 4,9★ von über 11.317 Reisenden.'
     ],
     highlights: [
       { title: '0–3 Jahre komplett gratis', desc: 'Keine Gebühr für Babys und Kleinkinder. 4–9 Jahre zahlen €5 des Erwachsenenpreises. Ab 10 Jahren voller Gast. Transparent, keine Überraschungen.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       'Die **romantische Bosporus-Cruise** ist Istanbuls ikonischster Abend für Paare. Während die Sonne über dem Dolmabahçe-Palast untergeht und die Bosporus-Brücke in ihren Farben erstrahlt, teilen Sie und Ihr Partner ein mehrgängiges türkisches Festmahl an einem privaten Tisch — mit Kerzen, frischen Blumen und einer Live-Violine, die über das Deck schwebt.',
       'Unser romantisches Tischarrangement (+€{p.romantic}/Tisch) verwandelt jeden Ort in einen besonderen Moment: rote Rosen, flackernde Kerzen, eine handgeschriebene Willkommenskarte. Fügen Sie das 2-Gläser-Alkoholpaket (+€{p.alcohol2}/Person) für Wein unter den Sternen hinzu oder bleiben Sie bei den inklusiven alkoholfreien Getränken. In beiden Fällen kümmert sich die Crew diskret um den Rest.',
-      'Ob Sie einen Jahrestag feiern, Ihrem Partner eine Überraschung bereiten oder einfach eine unvergessliche Nacht in Europas romantischster Stadt erleben möchten — dies ist die Tour, die Paare in Istanbul zuerst wählen. 4,8★ Bewertung, TÜRSAB-lizenziert und — am wichtigsten — Zahlung an Bord, sodass Sie sich nur auf den Abend selbst festlegen.'
+      'Ob Sie einen Jahrestag feiern, Ihrem Partner eine Überraschung bereiten oder einfach eine unvergessliche Nacht in Europas romantischster Stadt erleben möchten — dies ist die Tour, die Paare in Istanbul zuerst wählen. 4,9★ Bewertung, TÜRSAB-lizenziert und — am wichtigsten — Zahlung an Bord, sodass Sie sich nur auf den Abend selbst festlegen.'
     ],
     highlights: [
       { title: 'Romantischer Tisch bei Kerzenschein', desc: 'Fügen Sie das romantische Tischarrangement für +€{p.romantic}/Tisch hinzu: frische rote Rosen, flackernde Kerzen, Rosenblätter auf der Tischdecke und eine handgeschriebene Karte. Fotos inklusive.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       'Die **Halal Bosporus-Cruise** ist Istanbuls respektvollste Dinner-Cruise für muslimische Reisende. Jedes Fleisch, das auf unserem Schiff serviert wird — Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß — ist **halal-zertifiziert** von zugelassenen Lieferanten. Wir servieren allen Gästen dasselbe Menü; es gibt keinen separaten „Halal-Bereich“, da das gesamte Schiff standardmäßig halal ist.',
       'Alkohol ist ein **optionales Extra** — wird Gästen nie aufgedrängt, und die Sitzordnung trennt natürlich diejenigen, die einen alkoholfreien Tisch bevorzugen. Für Gäste, die das 2-Gläser-Alkoholpaket (+€{p.alcohol2}/Person) wünschen, ist es vorhanden, aber die inklusiven unbegrenzten alkoholfreien Getränke (Wasser, Cola, Säfte) reichen den meisten muslimischen Familien aus. Unser Personal ist geschult, respektvoll zu sein, ohne Annahmen über Ihre Vorlieben zu treffen.',
-      'Die **halalfreundliche Bosporus-Cruise** ist wichtig für Reisende aus Saudi-Arabien, VAE, Kuwait, Katar, Iran, Malaysia, Indonesien, Pakistan und Marokko, die Istanbuls ikonischsten Abend ohne Kompromisse erleben möchten. TÜRSAB-lizenziert, 4,8★ und Zahlung an Bord — Sie legen sich zu nichts fest, bis Sie sicher sind, dass das Erlebnis Ihren Standards entspricht.'
+      'Die **halalfreundliche Bosporus-Cruise** ist wichtig für Reisende aus Saudi-Arabien, VAE, Kuwait, Katar, Iran, Malaysia, Indonesien, Pakistan und Marokko, die Istanbuls ikonischsten Abend ohne Kompromisse erleben möchten. TÜRSAB-lizenziert, 4,9★ und Zahlung an Bord — Sie legen sich zu nichts fest, bis Sie sicher sind, dass das Erlebnis Ihren Standards entspricht.'
     ],
     highlights: [
       { title: '100 % halal-zertifiziertes Menü', desc: 'Alles Fleisch (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß) ist halal-zertifiziert von zugelassenen Lieferanten. Die Küche folgt der Halal-Zubereitung. Keine Schweinefleischprodukte oder nicht-halal Zusätze. Vegetarische Optionen immer verfügbar.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Ist diese Tour für muslimische Familien mit Kindern geeignet?', a: 'Ja — es ist eine der familienfreundlichsten Touren Istanbuls. Die Unterhaltung ist bescheiden (Volkstänze, Sema, türkische Musik), Kinder unter 3 Jahren sind gratis, 4–9 Jahre erhalten €5 Ermäßigung. Keine Nachtclub-Atmosphäre. Familien aus der Golfregion, Indonesien, Malaysia, Pakistan und Marokko buchen diese Tour regelmäßig.' },
       { q: 'Kann ich an Bord beten?', a: 'Es gibt keinen speziellen Gebetsraum an Bord, aber wir empfehlen, vor dem Einsteigen um 20:00 Uhr zu beten (das Maghrib-Gebet fällt oft in dieses Fenster). Am Kabataş-Pier gibt es Gebetsmöglichkeiten. Wenn Sie während der Fahrt von 21:00 bis 00:00 Uhr beten müssen (Isha), sprechen Sie mit der Crew — wir können eine ruhige Ecke auf dem Deck einrichten.' },
       { q: 'Wie hoch sind die Preise für eine muslimische Familie mit 4 Personen (2 Erwachsene, 2 Kinder)?', a: 'Dinner-Cruise: 2 × €{p.dinnerStd} + 2 × €19.30 (4–9 Jahre €5 Rabatt) = €87.20. Wenn die Kinder unter 3 Jahre alt sind, gratis: 2 × €{p.dinnerStd} = €48.60. Fügen Sie €5 Hoteltransfer pro Erwachsenem hinzu. Gesamt: €48.60–€92.90 für eine 4-köpfige Familie, keine Vorauszahlung, Zahlung an Bord.' },
-      { q: 'Ist der Hoteltransfer auch halal?', a: 'Der Hoteltransfer ist nur eine Autofahrt — es geht nicht um Essen oder Getränke, also gibt es keine Halal-Bedenken. Unsere Fahrer sind professionell, respektvoll und pünktlich. Die Transferbereiche umfassen Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli und 9 weitere zentrale Gebiete, in denen muslimische Reisende typischerweise unterkommen.' }
+      { q: 'Ist der Hoteltransfer auch halal?', a: 'Der Hoteltransfer ist nur eine Autofahrt — es geht nicht um Essen oder Getränke, also gibt es keine Halal-Bedenken. Unsere Fahrer sind professionell, respektvoll und pünktlich. Die Transferbereiche umfassen Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli und 8 weitere zentrale Gebiete, in denen muslimische Reisende typischerweise unterkommen.' }
     ],
     cta: {
       primary: 'Halal-Tour buchen · Zahlung an Bord',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABATT · Ein Menü, Premium-Standard · Zahlung an Bord'
     },
     intro: [
-      'Viele Bosporus-Boote teilen ihre Gäste in "Standard" und "VIP". Wir nicht. An Bord der **AMOR** gibt es ein Dinner-Menü, für alle mit der gleichen Sorgfalt zubereitet: 10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß), Grießhalva und unbegrenzt alkoholfreie Getränke. Das komplette achtteilige Unterhaltungsprogramm ist inklusive — Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale — alles im Preis von €{p.dinnerStd}/Person.',
+      'Viele Bosporus-Boote teilen ihre Gäste in "Standard" und "VIP". Wir nicht. An Bord der **AMOR** gibt es ein Dinner-Menü, für alle mit der gleichen Sorgfalt zubereitet: 10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß), spezielles Grießdessert und unbegrenzt alkoholfreie Getränke. Das komplette achtteilige Unterhaltungsprogramm ist inklusive — Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale — alles im Preis von €{p.dinnerStd}/Person.',
       'Das VIP-Gefühl beginnt an Ihrem Tisch. Wenn Sie der Bühne und der Aussicht am nächsten sitzen möchten, buchen Sie den **privaten Tisch nahe der Bühne** (+€{p.romantic}/Tisch) — Ihr Platz wird im Voraus reserviert, mit dem besten Blick auf die Derwisch-Zeremonie, die Volkstänze und den beleuchteten Bosporus. Der Favorit von Paaren, Feiernden und Fotografen.',
       'Die AMOR ist ein modernes Schiff: 42 Meter, 3 Decks, bis zu 400 Gäste, im Winter beheizt, im Sommer klimatisiert. Die 3-stündige Route startet in Kabataş (Einlass ab 20:00, Abfahrt 21:00, Rückkehr 00:00) vorbei an Dolmabahçe, der Ortaköy-Moschee, der Festung Rumeli und den Lichtern der Bosporus-Brücke. TÜRSAB-lizenziert (A-17672), 4,9★ auf Google. Keine Vorauszahlung — Sie zahlen an Bord, kostenlose Stornierung bis 2 Stunden vor Abfahrt.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Verkaufen Sie ein "VIP-Paket"? Was ist der Unterschied zu Standard?', a: 'Wir verkaufen kein separates VIP-Paket — es gibt ein Menü, das allen im gleichen Premium-Standard serviert wird. Was wir "VIP-Erlebnis" nennen, ist die Personalisierung Ihres Abends: privater Tisch nahe der Bühne (+€{p.romantic}/Tisch), aufmerksamer Tischservice und optionale Getränke-Extras. Die Tour dauert 3 Stunden, €{p.dinnerStd}/Person.' },
       { q: 'Sind €{p.dinnerStd} wirklich 40% Rabatt?', a: 'Ja — unser Listenpreis liegt bei €{p.dinnerStdOriginal}/Person. €{p.dinnerStd} ist der Direktbuchungspreis ohne Vermittlerprovisionen. Sie zahlen an Bord, es gibt keine Vorauszahlung.' },
-      { q: 'Was steht auf dem Menü?', a: '10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß) und Grießhalva als Dessert, dazu unbegrenzt alkoholfreie Getränke. Das achtteilige Unterhaltungsprogramm ist inklusive: Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale.' },
+      { q: 'Was steht auf dem Menü?', a: '10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß) und spezielles Grießdessert als Dessert, dazu unbegrenzt alkoholfreie Getränke. Das achtteilige Unterhaltungsprogramm ist inklusive: Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale.' },
       { q: 'Ist Alkohol inbegriffen?', a: 'Nein — Alkohol ist ein separates Extra: 2 Gläser aus der Bar — Wein, Bier, Rakı, Wodka, Whisky, Gin und mehr und mehr für +€{p.alcohol2}/Person. Alkoholfreie Getränke sind unbegrenzt und kostenlos inklusive. Premium-Importspirituosen werden an Bord separat abgerechnet.' },
       { q: 'Wie sichere ich mir einen Tisch nahe der Bühne?', a: 'Wählen Sie bei der Buchung einfach das Extra "privater Tisch nahe der Bühne" (+€{p.romantic}/Tisch) — der Tisch wird auf Ihren Namen reserviert. Die besten Plätze sind durch Vorausbuchungen schnell vergeben, buchen Sie also vor Ihrem Tourtag.' },
       { q: 'Was für ein Schiff ist es?', a: 'Die AMOR — ein modernes Passagierschiff mit 42 Metern Länge, 3 Decks und Platz für 400 Gäste, im Winter beheizt und im Sommer klimatisiert. Abfahrt am Kabataş-Pier: Einlass 20:00, Abfahrt 21:00, Rückkehr 00:00. Route: Dolmabahçe, Ortaköy, Festung Rumeli, Beylerbeyi und die Lichter der Bosporus-Brücke.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       'Eine **private Bosporus-Cruise** bedeutet, dass das gesamte Schiff Ihnen gehört — keine anderen Gäste, keine geteilten Tische, keine geteilte Tanzfläche. Perfekt für Familientreffen, Firmenessen, Geburtstagsfeiern, Junggesellenabschiede oder Hochzeitsempfänge. Das Schiff, die Crew, das Menü, die Unterhaltung und der Zeitplan passen sich Ihrer Gruppe an.',
       'Unsere **private Bosporus-Cruise-Charter** unterstützt Gruppen von **25 bis 80 Gästen**. Kleinere Gruppen können immer noch das private Erlebnis anfordern — wir bieten eine Mindestgebühr an, die die Betriebskosten des Schiffs deckt. Größere Gruppen (Hochzeitsgröße) erhalten individuelle Preisgestaltung und beinhalten oft benutzerdefinierte Dekoration, Live-Band, Kuchenservice und verlängerte Dauer (4–5 statt der standardmäßigen 3 Stunden).',
-      'Ob Sie eine Firmenveranstaltung für Kunden, eine Geburtstagsparty zum 50. oder einen Hochzeitsempfang unter Istanbuls ikonischsten Brücken planen, dies ist die **private Tour, der Istanbuler Eventplaner vertrauen**. 4,8★ Bewertung, TÜRSAB-lizenziert, komplett englischsprachige Crew und flexibel in allem — Route, Menü, Musik, Zeitplan.'
+      'Ob Sie eine Firmenveranstaltung für Kunden, eine Geburtstagsparty zum 50. oder einen Hochzeitsempfang unter Istanbuls ikonischsten Brücken planen, dies ist die **private Tour, der Istanbuler Eventplaner vertrauen**. 4,9★ Bewertung, TÜRSAB-lizenziert, komplett englischsprachige Crew und flexibel in allem — Route, Menü, Musik, Zeitplan.'
     ],
     highlights: [
       { title: 'Das gesamte Schiff, nur für Sie', desc: 'Keine anderen Gäste. Ihre Gruppe hat jedes Deck, jeden Tisch. Legen Sie Ihre eigene Musik, Ihren Dresscode, Ihr Programm fest. Privatsphäre ist wichtig — wir respektieren das.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       'Eine **Bosporus-Tour für Paare** ist Istanbuls beliebteste Date Night. Nicht jedes Paar feiert einen Jahrestag — manchmal sind Sie in der romantischsten Stadt der Welt und möchten einen tollen Abend zusammen. Diese Tour bietet: einen privaten Tisch für zwei, ein langsames mehrgängiges türkisches Dinner, Live-Violine und akustische Musik während des Essens und die langsam vorbeiziehende beleuchtete Bosporus-Brücke.',
       'Die Atmosphäre ist **herzlich, aber nicht übertrieben romantisch** — keine aufgezwungene Antragsmusik, kein peinliches koordiniertes Klatschen für „Neuvermählte“. Sie essen, trinken, unterhalten sich, beobachten Istanbuls Lichter. Wenn Sie ein romantisches Tischarrangement hinzufügen möchten (Kerzen, Rosen, +€{p.romantic}), großartig — wenn nicht, ist nur das Dinner bereits etwas Besonderes.',
-      'Ob Sie drei Tage mit Ihrem Partner in Istanbul sind, einen kleinen Meilenstein feiern oder eine zukünftige Antragsreise planen — die **Bosporus-Tour für Paare** gibt Ihnen einen 3-stündigen Abend zu zweit in einer der meistfotografierten Städte der Welt. 4,8★, Zahlung an Bord, kostenlose Stornierung.'
+      'Ob Sie drei Tage mit Ihrem Partner in Istanbul sind, einen kleinen Meilenstein feiern oder eine zukünftige Antragsreise planen — die **Bosporus-Tour für Paare** gibt Ihnen einen 3-stündigen Abend zu zweit in einer der meistfotografierten Städte der Welt. 4,9★, Zahlung an Bord, kostenlose Stornierung.'
     ],
     highlights: [
       { title: 'Privater Tisch für zwei', desc: 'Reservierter 2-Personen-Tisch, nicht geteilt. Paare haben Vorrang bei Fenstertischen. Sonnenuntergangs- und Nacht-Bosporus-Fotos direkt vor Ihrem Fenster.' },
-      { title: 'Entspanntes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß oder vegetarisch), Grießhalva. Langsam serviert über 3 Stunden — Sie werden nicht gehetzt.' },
+      { title: 'Entspanntes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß oder vegetarisch), spezielles Grießdessert. Langsam serviert über 3 Stunden — Sie werden nicht gehetzt.' },
       { title: 'Live-Violine und sanfte Musik', desc: 'Live-Violine und akustische türkische Musik während des Dinners schaffen eine intime Atmosphäre, geeignet für Gespräche. Später übernimmt der DJ für Paare, die tanzen möchten.' },
       { title: 'Extras für besondere Abende', desc: 'Romantisches Tischarrangement (Kerzen, Rosen): +€{p.romantic}. 2-Gläser-Alkoholpaket (Wein, Raki): +€{p.alcohol2}/Person. Hoteltransfer (hin und zurück): +€{p.transfer}/Person. Wählen Sie, was zu Ihrem Abend passt.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       'Bei der **Bosporus-Sonnenuntergangscruise** in Istanbul geht es um eines: den Übergang. Das Einsteigen am Kabataş-Pier beginnt um 20:00 — und an den langen Abenden von Mai bis August entfaltet sich die goldene Stunde, während Sie es sich an Deck bequem machen. Die Sonne geht genau um die 21:00-Abfahrt hinter den Minaretten der europäischen Seite unter, und Sie erleben sie vom Wasser aus: der Dolmabahçe-Palast in Gold getaucht, die Ortaköy-Moschee als Silhouette vor einem glühenden Himmel.',
       'Unsere **Sonnenuntergangs-Cruise auf dem Bosporus** beinhaltet ein komplettes türkisches Dinner — 10 Mezze-Sorten, warme Vorspeise, Hauptgang nach Wahl, Dessert — serviert, während die Stadt ihre Lichter einschaltet. Wenn das Dessert kommt, fahren Sie unter der beleuchteten Bosporus-Brücke hindurch, 30 Millionen Lichter spiegeln sich auf dunklem Wasser. Der Wandel von der Dämmerung zur vollen Nacht, alles in einer 3-stündigen Tour — genau darum geht es.',
-      'Ob Sie als Fotograf dem letzten Licht nachjagen, als Paar das „Istanbul-Erinnerungsfoto“ suchen oder als Erstbesucher den klassischen Abend auf dem Wasser erleben möchten — dies ist die **Bosporus-Sonnenuntergangs-Dinner-Cruise**, die Einheimische Besuchern empfehlen. Ab €{p.dinnerStd}/Person, 4,8★ Bewertung, TÜRSAB-lizenziert, Zahlung an Bord — keine Vorauszahlung.'
+      'Ob Sie als Fotograf dem letzten Licht nachjagen, als Paar das „Istanbul-Erinnerungsfoto“ suchen oder als Erstbesucher den klassischen Abend auf dem Wasser erleben möchten — dies ist die **Bosporus-Sonnenuntergangs-Dinner-Cruise**, die Einheimische Besuchern empfehlen. Ab €{p.dinnerStd}/Person, 4,9★ Bewertung, TÜRSAB-lizenziert, Zahlung an Bord — keine Vorauszahlung.'
     ],
     highlights: [
       { title: 'Sommer-Sonnenuntergänge genau zur Abfahrt', desc: 'Von Mai bis August geht die Sonne in Istanbul etwa zwischen 20:15 und 20:45 unter — beim Einsteigen um 20:00 erleben Sie die goldene Stunde an Deck, und die Abfahrt um 21:00 bringt Sie zum Sonnenuntergang selbst aufs Wasser. Kamera bereit — das ist der Shot.' },
       { title: 'Blaue Stunde bis in die volle Nacht', desc: 'Nicht nur Sonnenuntergang — die Tour fährt durch die Dämmerung hinein in den voll beleuchteten Bosporus. Goldenes Licht, blaue Stunde, dann 30 Millionen Brückenlichter auf dunklem Wasser: drei Lichtphasen an einem Abend.' },
-      { title: 'Komplettes Dinner während der Tour', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß, vegetarisch), Grießhalva, unbegrenzte alkoholfreie Getränke — serviert, während die Stadtlichter angehen.' },
+      { title: 'Komplettes Dinner während der Tour', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß, vegetarisch), spezielles Grießdessert, unbegrenzte alkoholfreie Getränke — serviert, während die Stadtlichter angehen.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporus-Brücke — alle leuchten', desc: 'Die Route führt am Dolmabahçe-Palast, der Ortaköy-Moschee, der Bosporus-Brücke, Rumeli Hisarı und dem Beylerbeyi-Palast vorbei, während ihre Lichter angehen. Jedes Wahrzeichen im besten Licht.' }
     ],
     faq: [
@@ -309,7 +309,7 @@ module.exports = {
     intro: [
       'Die **Bosporus-Nachttour** ist die meistempfohlene Abendaktivität in Istanbul. Der Grund: Nach Einbruch der Dunkelheit verwandelt sich der Bosporus. Die Bosporus-Brücke wechselt zwischen Blau, Violett und Gold. Der Dolmabahçe-Palast leuchtet warm gelb. Die Ortaköy-Moschee spiegelt sich perfekt auf schwarzem Wasser. Jedes Istanbuler Wahrzeichen erreicht seinen dramatischen Höhepunkt in der Nacht.',
       'Unsere **Bosporus-Nachttour mit Dinner** packt den kompletten ikonischen Abend: 3 Stunden auf dem Wasser (21:00–00:00), ein mehrgängiges türkisches Festmahl, ein achtteiliges Live-Folkloreprogramm (Oba Dombra, Sema, anatolische und aserbaidschanische Volkstänze, orientalischer Tanz, kaukasischer Messertanz), Livemusik und ein Saxofon-und-DJ-Set, das das Deck bis zum Ende des Abends lebendig hält. Jeder Gast erhält das gleiche Programm — keine „Basic“-Option, die die besten Teile auslässt.',
-      'Ob es Ihr erster Istanbul-Besuch ist und Sie nach „der einen Sache, die man abends machen muss“ suchen, oder ob Sie schon einmal hier waren und die fotogensten 3 Stunden der Stadt möchten, dies ist die **Bosporus-Nachttour**, bewertet mit 4,8★ von über 11.317 Reisenden. TÜRSAB-lizenziert, Zahlung an Bord, keine Vorauszahlung.'
+      'Ob es Ihr erster Istanbul-Besuch ist und Sie nach „der einen Sache, die man abends machen muss“ suchen, oder ob Sie schon einmal hier waren und die fotogensten 3 Stunden der Stadt möchten, dies ist die **Bosporus-Nachttour**, bewertet mit 4,9★ von über 11.317 Reisenden. TÜRSAB-lizenziert, Zahlung an Bord, keine Vorauszahlung.'
     ],
     highlights: [
       { title: 'Bosporus auf dem Höhepunkt dramatisch beleuchtet', desc: 'Die Bosporus-Brücke wechselt die Farben (blau, violett, gold), Paläste leuchten gelb, die Ortaköy-Moschee spiegelt sich auf schwarzem Wasser. 21:00–00:00 ist die Spitzenbeleuchtungszeit für alle Istanbuler Wahrzeichen.' },
@@ -340,15 +340,15 @@ module.exports = {
     hero: {
       h1: 'Dinner-Cruise Istanbul',
       subtitle: 'Die beste Dinner-Cruise in Istanbul — 3 Stunden auf dem Bosporus, mehrgängiges türkisches Festmahl, Live-Unterhaltung und nächtliche Ausblicke auf die ikonischsten Wahrzeichen der Stadt.',
-      badge: '4,8★ · 11.317 Bewertungen · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ Gäste · TÜRSAB A-17672'
     },
     intro: [
       'Suchen Sie eine **Dinner-Cruise in Istanbul**? Sie haben gefunden, was die meisten Reisenden empfehlen. Unser 3-stündiger Abend auf dem Bosporus vereint ein komplettes mehrgängiges türkisches Essen, Live-Folklore und die fotogensten Ausblicke der Stadt — alles von einem entspannten Schiff, das um 21:00 Uhr vom Kabataş-Pier ablegt.',
       'Das **Dinner-Cruise Istanbul**-Erlebnis: Einsteigen um 20:00, einrichten, beobachten, wie Sie am Dolmabahçe-Palast vorbeifahren, Dinner beginnt bei der Annäherung an die Ortaköy-Moschee, Show startet (Sema, Volkstänze, orientalisch), beim Dessert sind Sie unter der beleuchteten Bosporus-Brücke. Kehren Sie um Mitternacht mit einer ikonischen Foto-Collage und einem vollen Magen nach Kabataş zurück.',
-      '€{p.dinnerStd}/Person für die Dinner-Cruise (vorher €{p.dinnerStdOriginal}). Zahlung an Bord — keine Vorauszahlung, kein Risiko. TÜRSAB A-17672 lizenziert, 4,8★ von über 11.317 Reisenden.'
+      '€{p.dinnerStd}/Person für die Dinner-Cruise (vorher €{p.dinnerStdOriginal}). Zahlung an Bord — keine Vorauszahlung, kein Risiko. TÜRSAB A-17672 lizenziert, 4,9★ von über 11.317 Reisenden.'
     ],
     highlights: [
-      { title: 'Komplettes mehrgängiges türkisches Dinner', desc: '10 Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchenspieß/Rindspieß/vegetarisch), Grießhalva. Halal-zertifiziert. Unbegrenzte alkoholfreie Getränke inklusive.' },
+      { title: 'Komplettes mehrgängiges türkisches Dinner', desc: '10 Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchenspieß/Rindspieß/vegetarisch), spezielles Grießdessert. Halal-zertifiziert. Unbegrenzte alkoholfreie Getränke inklusive.' },
       { title: 'Live-türkische Folkloreshow', desc: 'Acht Darbietungen: Oba Dombra, Sema-Vorführung, Sarı Gelin, aserbaidschanisches Potpourri, orientalischer Tanz, anatolisches Potpourri, georgisch-kaukasischer Messertanz, dann Live-Saxofon und DJ. 40 Minuten Aufführung, Hintergrundmusik geht weiter.' },
       { title: 'Komplette Bosporus-Nachtroute', desc: '3-stündige Tour: Dolmabahçe, Çırağan, Ortaköy-Moschee, Bosporus-Brücke, Bebek, Rumeli Hisarı, FSM-Brücke, Beylerbeyi, Üsküdar, Mädchenturm. Sowohl europäische als auch asiatische Seite.' },
       { title: 'Ab €{p.dinnerStd} — Zahlung an Bord', desc: 'Dinner-Cruise €{p.dinnerStd} (vorher €{p.dinnerStdOriginal}). Keine Vorauszahlung. Kostenlose Stornierung bis 2 Stunden vor Abfahrt.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Dinner-Cruise buchen · Zahlung an Bord',
-      secondary: '4,8★ · TÜRSAB-lizenziert · Kostenlose Stornierung bis 2 Stunden vorher',
+      secondary: '4,9★ · TÜRSAB-lizenziert · Kostenlose Stornierung bis 2 Stunden vorher',
       tertiary: 'Verfügbarkeit heute Abend'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Istanbul Nachttour ab €{p.dinnerStd} — Bosporus Dinner-Kreuzfahrt + Show',
-      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: '3-stündige Bosporus-Kreuzfahrt mit Dinner und Live-Show. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317+ Gäste.'
     },
     hero: {
       h1: 'Istanbul-Nachttour',
@@ -385,7 +385,7 @@ module.exports = {
     intro: [
       'Eine **Istanbul-Nachttour** sollte drei Dinge leisten: Ihnen die ikonischen Ausblicke der Stadt zeigen, Sie gut verköstigen und Sie unterhalten. Unsere Bosporus-Dinner-Cruise macht alle drei an einem einzigen 3-stündigen Abend — und deshalb empfehlen die meisten Istanbul-Reiseführer sie als die Nr. 1 Nachttour-Erfahrung.',
       'Die Route der **Istanbul-Nachttour** deckt die beste beleuchtete Sehenswürdigkeiten ab: Dolmabahçe-Palast, Ortaköy-Moschee, Bosporus-Brücke (wechselt Farben), Bebek-Viertel, Rumeli Hisarı, FSM-Brücke, Beylerbeyi-Palast, das asiatische Ufer von Üsküdar und der Mädchenturm in der Ferne. Die meisten Stadtführungen zeigen Ihnen diese vom Bus — wir zeigen sie vom Wasser, von wo sie am dramatischsten sind.',
-      'Dinner inklusive (mehrgängiges türkisches Menü), eine Live-türkische Folkloreshow, Sema, orientalischer Tanz und DJ-Set. Wenn Sie 2–3 Tage in Istanbul sind, ist dies der eine Abend, der am meisten bietet. 4,8★ von über 11.317 Reisenden, Zahlung an Bord, keine Vorauszahlung.'
+      'Dinner inklusive (mehrgängiges türkisches Menü), eine Live-türkische Folkloreshow, Sema, orientalischer Tanz und DJ-Set. Wenn Sie 2–3 Tage in Istanbul sind, ist dies der eine Abend, der am meisten bietet. 4,9★ von über 11.317 Reisenden, Zahlung an Bord, keine Vorauszahlung.'
     ],
     highlights: [
       { title: 'Alle ikonischen Istanbuler Nachtansichten', desc: 'Dolmabahçe-Palast, Ortaköy-Moschee, beleuchtete Bosporus-Brücke, Rumeli Hisarı, FSM-Brücke, Beylerbeyi-Palast, Mädchenturm. Jedes Hauptwahrzeichen in Spitzennachtbeleuchtung.' },
@@ -416,12 +416,12 @@ module.exports = {
     hero: {
       h1: 'Istanbul-Bootstour',
       subtitle: 'Die meistgebuchte Istanbul-Bootstour — eine Bosporus-Cruise mit türkischem Dinner, Live-Unterhaltung und ikonischen Ansichten der Stadt vom Wasser aus.',
-      badge: '4,8★ · TÜRSAB A-17672 · Zahlung an Bord'
+      badge: '4,9★ · TÜRSAB A-17672 · Zahlung an Bord'
     },
     intro: [
       'Wenn Sie nach einer „Istanbul-Bootstour“ suchen, suchen Sie nach der einen Sache, die die Stadt vom Wasser aus definiert: dem Bosporus. Unsere 3-stündige Bosporus-Bootstour führt Sie an jedem Istanbuler Hauptwahrzeichen vorbei — Dolmabahçe-Palast, Ortaköy-Moschee, Bosporus-Brücke, Rumeli Hisarı, Beylerbeyi-Palast und Mädchenturm — mit einem kompletten türkischen Dinner und Live-Unterhaltung.',
       'Im Gegensatz zu vielen 1-stündigen Sightseeing-Fähren, die weniger vom Bosporus abdecken und Dinner und Unterhaltung weglassen, ist unsere **Istanbul-Bootstour** das komplette Abenderlebnis: Einsteigen am Kabataş-Pier um 20:00, Tour bis Mitternacht, 10 Mezze, Hauptgang, Dessert, Sema, Volkstänze, orientalischer Tanz und DJ. Sie bekommen die Tour UND den Abend.',
-      'Ob Sie eine Nacht in Istanbul haben oder eine ganze Woche, diese **Istanbul-Bootstour** macht die Arbeit. 4,8★ von über 11.317 Reisenden, TÜRSAB-lizenziert (A-17672), halal-zertifiziertes Menü und Zahlung an Bord — keine finanzielle Verpflichtung, bis Sie mit dem Erlebnis zufrieden sind.'
+      'Ob Sie eine Nacht in Istanbul haben oder eine ganze Woche, diese **Istanbul-Bootstour** macht die Arbeit. 4,9★ von über 11.317 Reisenden, TÜRSAB-lizenziert (A-17672), halal-zertifiziertes Menü und Zahlung an Bord — keine finanzielle Verpflichtung, bis Sie mit dem Erlebnis zufrieden sind.'
     ],
     highlights: [
       { title: 'Alle Haupt-Bosporus-Wahrzeichen', desc: 'Dolmabahçe, Çırağan, Ortaköy-Moschee, Bosporus-Brücke, Bebek, Rumeli Hisarı, FSM-Brücke, Beylerbeyi-Palast, Üsküdar, Mädchenturm. Sowohl europäische als auch asiatische Ufer in einer Tour.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       'Ein **Bosporus-Ausflug** kann eine 1-stündige Sightseeing-Fähre oder eine komplette Dinner-Abendtour bedeuten — wir machen Letzteres, und die meisten Reisenden finden es das bessere Erlebnis. 3 Stunden, €{p.dinnerStd}/Person, Dinner und Unterhaltung inklusive. Sie fahren nicht nur an Wahrzeichen vorbei — Sie essen, sehen eine Show und genießen den Abend.',
       'Die Route unseres **Bosporus-Ausflugs** deckt alles Sehenswerte ab: Dolmabahçe-Palast (die Residenz des osmanischen Sultans aus dem 19. Jahrhundert), Ortaköy-Moschee (eine der meistfotografierten Moscheen Istanbuls), Bosporus-Brücke (wechselt nachts Farben), Rumeli Hisarı (1452 von Sultan Mehmet dem Eroberer erbaut), Beylerbeyi-Palast (asiatische Seite) und der Mädchenturm auf einer kleinen Insel. Alles wird von der englischsprachigen Crew erklärt.',
-      'Ob Sie 24 Stunden oder eine Woche in Istanbul sind, dies ist der **Bosporus-Ausflug**, der Ihnen das meiste an einem Abend gibt. 4,8★ von über 11.317 Reisenden, TÜRSAB A-17672 lizenziert, halalfreundliches Menü, Zahlung an Bord — kein Risiko einer Vorauszahlung.'
+      'Ob Sie 24 Stunden oder eine Woche in Istanbul sind, dies ist der **Bosporus-Ausflug**, der Ihnen das meiste an einem Abend gibt. 4,9★ von über 11.317 Reisenden, TÜRSAB A-17672 lizenziert, halalfreundliches Menü, Zahlung an Bord — kein Risiko einer Vorauszahlung.'
     ],
     highlights: [
       { title: 'Kompletter Bosporus auf einmal', desc: 'Europäisches Ufer (Dolmabahçe, Ortaköy, Rumeli Hisarı), asiatisches Ufer (Beylerbeyi, Üsküdar), beide Bosporus-Brücken, Mädchenturm. Jedes Hauptwahrzeichen in 3 Stunden sichtbar.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Suchen Sie **Bosporus-Cruise-Tickets**? Kaufen Sie direkt. Unser Ticket kostet €{p.dinnerStd}/Person — 40 % Rabatt auf den regulären Preis (€{p.dinnerStdOriginal}). Drittanbieter-Buchungsseiten schlagen oft 20–40 % Provision auf. Direktbuchung spart Ihnen Geld — und Sie können weiterhin an Bord bezahlen.',
       'Unser **Bosporus-Cruise-Ticket**-Prozess: Füllen Sie den Assistenten auf dieser Seite in weniger als einer Minute aus (Datum, Gästezahl, Paket, Kontakt), wir bestätigen sofort per WhatsApp / Telegram, Sie erscheinen um 20:00 am Kabataş-Pier, Sie zahlen an Bord, Sie genießen die 3-stündige Dinner-Cruise. Keine physischen Tickets zum Ausdrucken, kein E-Mail-Gutschein — unsere Bestätigung ist Ihr Ticket.',
-      'Ob Sie die heutige Dinner-Cruise buchen oder ein bestimmtes Datum nächste Woche reservieren, **Bosporus-Cruise-Tickets direkt** ist der schnellste Weg. 4,8★ Bewertung, TÜRSAB-lizenziert (A-17672), halal-zertifiziertes Menü und unterstützt Hoteltransfer- und Alkoholextras.'
+      'Ob Sie die heutige Dinner-Cruise buchen oder ein bestimmtes Datum nächste Woche reservieren, **Bosporus-Cruise-Tickets direkt** ist der schnellste Weg. 4,9★ Bewertung, TÜRSAB-lizenziert (A-17672), halal-zertifiziertes Menü und unterstützt Hoteltransfer- und Alkoholextras.'
     ],
     highlights: [
       { title: 'Direktbuchung — keine Vermittlergebühren', desc: '€{p.dinnerStd}/Person, ein transparenter Preis. Drittanbieter verlangen €30–80+ für dieselbe Tour. Sie sparen durch direkte Buchung bei uns. Keine versteckten Gebühren, keine Provisionsaufschläge.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Last-Minute Bosporus ab €{p.dinnerStd} — Heute buchen, an Bord zahlen',
-      description: 'Same-Day Bosporus-Kreuzfahrt-Buchung. WhatsApp-Bestätigung in Minuten. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317 Bewertungen.'
+      description: 'Same-Day Bosporus-Kreuzfahrt-Buchung. WhatsApp-Bestätigung in Minuten. Abfahrt 21:00 ab Kabataş. Kostenlose Stornierung, Zahlung an Bord. 11.317+ Gäste.'
     },
     hero: {
       h1: 'Last-Minute Bosporus-Cruise',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Bosporus-Sightseeing** vom Wasser schlägt jede Bustour. Der Bosporus ist die historischste Wasserstraße der Stadt — osmanische Sultane, byzantinische Kaiser, griechische Händler und russische Kriegsschiffe sind alle hindurchgefahren. Heute führt Sie unsere 3-stündige Tour mit englischsprachigen Crew-Kommentaren an jedem Istanbuler Hauptwahrzeichen vorbei, das die Skyline definiert.',
       'Unsere **Bosporus-Sightseeing-Tour**-Route (Abendabfahrt, 21:00–00:00):\n\n1. **Dolmabahçe-Palast** — osmanische Residenz aus dem 19. Jahrhundert, nachts beleuchtet\n2. **Çırağan-Palast** — jetzt Luxushotel, königliche Geschichte\n3. **Ortaköy-Moschee** — eine der meistfotografierten Moscheen Istanbuls, am Wasser\n4. **Bosporus-Brücke** — wechselt nachts zwischen Blau, Violett, Gold\n5. **Bebek** — schickes Viertel auf der europäischen Seite\n6. **Rumeli Hisarı** — 1452 von Sultan Mehmet dem Eroberer vor der Eroberung Konstantinopels erbaut\n7. **Fatih-Sultan-Mehmet-Brücke** — zweite Bosporus-Brücke, dramatischer Bogen\n8. **Beylerbeyi-Palast** — asiatische Seite, osmanische Sommerresidenz\n9. **Üsküdar** — asiatische Seite Istanbuls, traditionelles Viertel\n10. **Mädchenturm** — kleiner Inselturm, eines der romantischsten Symbole Istanbuls',
-      'Dinner und Unterhaltung sind inklusive — nicht separat — sodass **Bosporus-Sightseeing** zu einem kompletten Abend wird. Mehrgängiges türkisches Dinner, Live-Folkloreshow, Sema, orientalischer Tanz, DJ. 4,8★ Bewertung von über 11.317 Reisenden, TÜRSAB A-17672 lizenziert.'
+      'Dinner und Unterhaltung sind inklusive — nicht separat — sodass **Bosporus-Sightseeing** zu einem kompletten Abend wird. Mehrgängiges türkisches Dinner, Live-Folkloreshow, Sema, orientalischer Tanz, DJ. 4,9★ Bewertung von über 11.317 Reisenden, TÜRSAB A-17672 lizenziert.'
     ],
     highlights: [
       { title: '10+ Haupt-Istanbuler Wahrzeichen', desc: 'Dolmabahçe-Palast, Çırağan-Palast, Ortaköy-Moschee, Bosporus-Brücke, Rumeli Hisarı, FSM-Brücke, Beylerbeyi-Palast, Üsküdar, Mädchenturm. Jedes wesentliche Istanbuler Wahrzeichen in einer einzigen Tour.' },

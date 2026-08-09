@@ -37,7 +37,7 @@ module.exports = {
 
     'Our **Bosphorus night tour with dinner** packages the full iconic evening: 3 hours on the water (21:00-00:00), a multi-course Turkish feast, an eight-act live folklore programme (Oba Dombra, whirling dervish, Anatolian and Azerbaijani suites, belly dance, the Caucasian knife dance), live music, and a saxophone-and-DJ set that keeps the deck alive until the end. Every guest gets the same itinerary — there\'s no "basic" option that skips the best parts.',
 
-    'Whether it\'s your first Istanbul trip and you\'re looking for "the one thing you must do at night", or you\'ve been here before and want the most photogenic 3 hours in the city, this is the **Bosphorus night tour** with 4.8★ from 11,317+ travelers. TÜRSAB-licensed, pay-on-boat, no prepayment.'
+    'Whether it\'s your first Istanbul trip and you\'re looking for "the one thing you must do at night", or you\'ve been here before and want the most photogenic 3 hours in the city, this is the **Bosphorus night tour** with 4.9★ from 11,317+ travelers. TÜRSAB-licensed, pay-on-boat, no prepayment.'
   ],
 
   highlights: [
@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full multi-course dinner',
-      desc: '10 varieties of Turkish meze, hot appetizer (börek), main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian — your choice), dessert (semolina halva), unlimited soft drinks. Halal-certified.'
+      desc: '10 varieties of Turkish meze, hot appetizer (börek), main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian — your choice), dessert (special semolina dessert), unlimited soft drinks. Halal-certified.'
     },
     {
       icon: 'route',

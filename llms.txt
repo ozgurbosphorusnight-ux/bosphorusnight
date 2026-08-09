@@ -1,7 +1,7 @@
 # Bosphorus Night
 
 > Licensed Istanbul Bosphorus dinner cruise operator since 2014.
-> TÜRSAB License: A-17672. Google rating: {{GRATING}}★ ({{GREVIEW_COUNT}} public Google reviews). Internal satisfaction: 4.8★ across 11,317 guests since 2014.
+> TÜRSAB License: A-17672. Google rating: {{GRATING}}★. Internal satisfaction: 4.8★ across 11,317+ guests since 2014.
 > Last verified: 2026-07-02.
 
 ## About
@@ -26,7 +26,7 @@ the website wizard, in 32 languages.
 
 ### All-In Dinner Cruise — €24.30/person
 - Duration: 3 hours (boarding 20:00, departure 21:00, return 23:45-00:00)
-- 10 cold mezes, hot starter (börek), main course served with seasonal salad and garnish (choice of salmon, sea bass, chicken skewer, or beef skewer), semolina halva for dessert
+- 10 cold mezes, hot starter (börek), main course served with seasonal salad and garnish (choice of salmon, sea bass, chicken skewer, or beef skewer), special semolina dessert
 - Unlimited soft drinks
 - Live music, DJ, and an 8-act folklore show — Mevlana whirling dervish, Anatolian, Azerbaijani and Caucasian dances, belly dance (full programme below)
 - What "All-In" covers: dinner, the full live show and unlimited soft drinks. Alcohol and hotel transfer are optional paid add-ons (see below).
@@ -301,8 +301,8 @@ last-minute bookings (same-day until 21:00).
 
 - Licensed by TÜRSAB (Association of Turkish Travel Agencies): A-17672
 - Operating under Turkish tourism regulations
-- 4.8★ average rating across 11,317 customer reviews (internal CRM, 2014–present)
-- {{GRATING}}★ average across {{GREVIEW_COUNT}} public Google reviews (Google Business Profile, opened 2026-04-29)
+- 4.8★ average internal satisfaction across 11,317+ guests (internal CRM, 2014–present)
+- {{GRATING}}★ average rating on Google (Google Business Profile, opened 2026-04-29)
 - Wikidata entity: Q139595356
 - robots.txt allows all AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.)
 

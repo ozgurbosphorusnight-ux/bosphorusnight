@@ -14,15 +14,15 @@ module.exports = {
     hero: {
       h1: 'Middagskryssning på Bosporen i Istanbul',
       subtitle: 'Tre timmar live underhållning, en generös turkisk flerrättersmiddag och de mest imponerande nattvyerna över Bosporen.',
-      badge: '4,8★ · 11.317 recensioner'
+      badge: '4,9★ · 11.317+ gäster'
     },
     intro: [
-      '**Middagskryssningen på Bosporen** är Istanbuls mest ikoniska kvällsupplevelse. Ombordstigningen börjar 20:00 vid Kabataş-bryggan; 21:00 avgår vår båt och seglar under de upplysta broarna Bosporen och Fatih Sultan Mehmet, och bjuder dig på en turkisk flerrättersmiddag, livefolkdans, orientalisk dans och ett DJ-set som håller däcket levande fram till 23:00.',
-      'Till skillnad från de vanliga turistbåtarna som fyller Istanbuls nattlandskap är **vår middagskryssning på Bosporen** licensierad av TÜRSAB (A-17672) och betygsatt 4,8★ av över 11.317 resenärer. Vi håller grupperna små och servicen varm — och eftersom du betalar ombord finns ingen risk att boka i förväg.',
+      '**Middagskryssningen på Bosporen** är Istanbuls mest ikoniska kvällsupplevelse. Ombordstigningen börjar 20:00 vid Kabataş-bryggan; 21:00 avgår vår båt och seglar under de upplysta broarna Bosporen och Fatih Sultan Mehmet, och bjuder dig på en turkisk flerrättersmiddag, livefolkdans, orientalisk dans och ett DJ-set som håller däcket levande fram till 23:45.',
+      'Till skillnad från de vanliga turistbåtarna som fyller Istanbuls nattlandskap är **vår middagskryssning på Bosporen** licensierad av TÜRSAB (A-17672) och betygsatt 4,9★ av över 11.317 resenärer. Vi håller grupperna små och servicen varm — och eftersom du betalar ombord finns ingen risk att boka i förväg.',
       'Oavsett om du firar en födelsedag, söker en premiumkväll i Istanbul för din familj eller vill ha stadens mest fotogeniska övergång från solnedgång till natt — detta är middagskryssningen som främst rekommenderas av Istanbuls invånare.'
     ],
     highlights: [
-      { title: 'Turkisk flerrättersmiddag', desc: '10 varianter kalla mezzer, varm förrätt (börek), val av huvudrätt (lax / havsabborre / kyckling / köttbullar / vegetariskt), mannagrynshalva som dessert, obegränsade läsk.' },
+      { title: 'Turkisk flerrättersmiddag', desc: '10 varianter kalla mezzer, varm förrätt (börek), val av huvudrätt (lax / havsabborre / kyckling / oxspett / vegetariskt), speciell mannagrynsdessert som dessert, obegränsade läsk.' },
       { title: 'Livefolkdans, orientalisk dans och DJ', desc: 'Åtta nummer: Oba Dombra, Mevlana sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, klassisk orientalisk dans, anatoliskt potpurri och den georgisk-kaukasiska knivdansen — sedan live saxofon och ett DJ-set under hela kryssningen.' },
       { title: 'Komplett nattrutt på Bosporen', desc: 'Kabataş → Dolmabahçe → Çırağan-palatset → Ortaköy-moskén → Bebek → Rumeli Hisarı → FSM-bron → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Från €{p.dinnerStd}/person — betalning ombord', desc: 'Middagskryssning €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal}). Ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' }
@@ -55,7 +55,7 @@ module.exports = {
     intro: [
       '**Bosporenkryssningen med barn** är det mest familjevänliga kvällsalternativet i Istanbul. Vi tar emot dussintals familjer varje kväll — vi har designat varje detalj så att de minsta känner sig bekväma: täckt inomhusområde för att hålla värmen, en lättillgänglig barnmeny (enkel grillad kyckling, pasta, obegränsade läsk) och tidig ombordstigning för att undvika utbrott sent på kvällen.',
       'Till skillnad från båtar enbart för vuxna förblir **vår middagskryssning på Bosporen för familjer** varm och inkluderande. **Barn 0-3 år är gratis** (transfer ingår), 4-9 år får **€5 rabatt**, 10+ år betalar fullt pris — inga dolda kostnader. Livefolkdansen, orientalisk dans och sema-föreställningen är delikat familjeunderhållning, ingen nattklubb.',
-      'Oavsett om du kommer till Istanbul för en förlängd helg med ditt småbarn eller tar med tonåringar på deras första europeiska resa — detta är turen som rekommenderas av familjer i Istanbul. Säker, halal-certifierad, licensierad av TÜRSAB och betygsatt 4,8★ av över 11.317 resenärer.'
+      'Oavsett om du kommer till Istanbul för en förlängd helg med ditt småbarn eller tar med tonåringar på deras första europeiska resa — detta är turen som rekommenderas av familjer i Istanbul. Säker, halal-certifierad, licensierad av TÜRSAB och betygsatt 4,9★ av över 11.317 resenärer.'
     ],
     highlights: [
       { title: '0-3 år helt gratis', desc: 'Inga avgifter för bebisar och småbarn. 4-9 år betalar €5 av vuxenpriset. Från 10 år gäst med fullt pris. Transparent, inga överraskningar.' },
@@ -91,7 +91,7 @@ module.exports = {
     intro: [
       '**Den romantiska Bosporenkryssningen** är den mest ikoniska kvällen för par i Istanbul. Medan solen går ner över Dolmabahçe-palatset och Bosporenbron tänds i färger delar du och din partner en turkisk flerrättersmiddag vid ett privat bord — med ljus, färska blommor och liveviolin som svävar över däcket.',
       'Vår romantiska borduppställning (+€{p.romantic}/bord) förvandlar varje plats till ett speciellt ögonblick: röda rosor, glödande ljus, en handskriven välkomstlapp. Lägg till 2-glas alkoholpaketet för vin under stjärnorna (+€{p.alcohol2}/person) eller håll det enkelt med de inkluderade läsken. Oavsett val tar besättningen diskret hand om resten.',
-      'Oavsett om du firar en bröllopsdag, planerar en överraskning till din partner eller bara vill ha en oförglömlig kväll i Europas mest romantiska stad — detta är turen som föredras av par i Istanbul. Betyg 4,8★, licensierad av TÜRSAB och — viktigast — betalning ombord, så du lovar bara själva kvällen.'
+      'Oavsett om du firar en bröllopsdag, planerar en överraskning till din partner eller bara vill ha en oförglömlig kväll i Europas mest romantiska stad — detta är turen som föredras av par i Istanbul. Betyg 4,9★, licensierad av TÜRSAB och — viktigast — betalning ombord, så du lovar bara själva kvällen.'
     ],
     highlights: [
       { title: 'Romantiskt bord vid levande ljus', desc: 'Lägg till den romantiska borduppställningen med +€{p.romantic}/bord: färska röda rosor, glödande ljus, rosenblad på duken och handskrivet kort. Foton inkluderade.' },
@@ -127,7 +127,7 @@ module.exports = {
     intro: [
       '**Halal Bosporenkryssningen** är den mest respektfulla middagskryssningen i Istanbul för muslimska resenärer. Allt kött som serveras på vår båt — lax, havsabborre, kycklingspett, oxspett — är **halal-certifierat** från godkända leverantörer. Vi serverar samma meny till varje gäst; ingen separat "halal-sektion", eftersom hela båten är halal som standard.',
       'Alkohol är **ett valfritt tillägg** — aldrig påtvingat gäster, och bordsuppställningen separerar naturligt gäster som föredrar en alkoholfri måltid. För gäster som vill ha 2-glas alkoholpaketet (+€{p.alcohol2}/person) finns det där, men de inkluderade obegränsade läsken (vatten, cola, juice) räcker för de flesta muslimska familjer. Vår besättning är utbildad att respektera dina preferenser utan antaganden.',
-      '**Den halal-vänliga Bosporenkryssningen** är viktig för resenärer från Saudiarabien, FAE, Kuwait, Qatar, Iran, Malaysia, Indonesien, Pakistan och Marocko som vill ha Istanbuls mest ikoniska kväll utan kompromisser. Licensierad av TÜRSAB, 4,8★ och betalning ombord — lova inget förrän du är säker på att upplevelsen uppfyller dina standarder.'
+      '**Den halal-vänliga Bosporenkryssningen** är viktig för resenärer från Saudiarabien, FAE, Kuwait, Qatar, Iran, Malaysia, Indonesien, Pakistan och Marocko som vill ha Istanbuls mest ikoniska kväll utan kompromisser. Licensierad av TÜRSAB, 4,9★ och betalning ombord — lova inget förrän du är säker på att upplevelsen uppfyller dina standarder.'
     ],
     highlights: [
       { title: '100% halal-certifierad meny', desc: 'Allt kött (lax, havsabborre, kycklingspett, oxspett) är halal-certifierat från godkända leverantörer. Köket följer halal-beredning. Inga fläskprodukter eller icke-halal-tillsatser. Vegetariska alternativ är alltid tillgängliga.' },
@@ -141,7 +141,7 @@ module.exports = {
       { q: 'Är denna kryssning lämplig för muslimska familjer med barn?', a: 'Ja — det är en av de mest respekterade kryssningarna för familjer i Istanbul. Underhållningen är blygsam (folkdanser, sema, turkisk musik), barn under 3 år är gratis, 4-9 år får €5 rabatt. Ingen nattklubbsatmosfär. Familjer från Gulfen, Indonesien, Malaysia, Pakistan och Marocko bokar regelbundet denna kryssning.' },
       { q: 'Kan jag be ombord?', a: 'Det finns inget dedikerat bönerum ombord, men vi rekommenderar att be före ombordstigning 20:00 (maghrib-bönen sammanfaller ofta med detta tidsintervall). Kabataş-bryggan har bönefaciliteter. Om du behöver be under seglingen 21:00-00:00 (isha), prata med besättningen — vi kan arrangera ett tyst hörn på däcket.' },
       { q: 'Vad är priserna för en muslimsk familj på 4 personer (2 vuxna, 2 barn)?', a: 'Middagskryssning: 2 × €{p.dinnerStd} + 2 × €19.30 (€5 rabatt 4-9 år) = €87.20. Om barnen är under 3 år, gratis: 2 × €{p.dinnerStd} = €48.60. Lägg till €{p.transfer} hotelltransfer per vuxen. Totalt: €48.60–€92.90 för familjen på 4, ingen förskottsbetalning, betalning ombord.' },
-      { q: 'Är hotelltransfern också halal?', a: 'Hotelltransfern är bara en bilfärd — ingen mat eller dryck inblandad, så ingen halal-oro. Våra chaufförer är professionella, respektfulla och punktliga. Transferzonerna täcker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli och 9 andra centrala stadsdelar där muslimska resenärer vanligtvis bor.' }
+      { q: 'Är hotelltransfern också halal?', a: 'Hotelltransfern är bara en bilfärd — ingen mat eller dryck inblandad, så ingen halal-oro. Våra chaufförer är professionella, respektfulla och punktliga. Transferzonerna täcker Sultanahmet, Taksim, Beşiktaş, Laleli, Fatih, Şişli och 8 andra centrala stadsdelar där muslimska resenärer vanligtvis bor.' }
     ],
     cta: {
       primary: 'Boka Halal Kryssningen · Betalning Ombord',
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABATT · En meny, premiumstandard · Betala ombord'
     },
     intro: [
-      'Många båtar på Bosporen delar in sina gäster i "Standard" och "VIP". Det gör inte vi. Ombord på **AMOR** finns en enda middagsmeny, tillagad med samma omsorg för alla: 10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kycklingspett eller oxspett), mannagrynshalva och obegränsat med läsk. Hela underhållningsprogrammet på åtta nummer ingår också — Oba Dombra, de virvlande dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final — allt inom priset på €{p.dinnerStd}/person.',
+      'Många båtar på Bosporen delar in sina gäster i "Standard" och "VIP". Det gör inte vi. Ombord på **AMOR** finns en enda middagsmeny, tillagad med samma omsorg för alla: 10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kycklingspett eller oxspett), speciell mannagrynsdessert och obegränsat med läsk. Hela underhållningsprogrammet på åtta nummer ingår också — Oba Dombra, de virvlande dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final — allt inom priset på €{p.dinnerStd}/person.',
       'VIP-känslan börjar vid ditt bord. Vill du sitta så nära scenen och utsikten som möjligt lägger du till **privat bord nära scenen** (+€{p.romantic}/bord), så reserveras platsen i förväg — bästa vinkeln mot dervischerna, folkdanserna och det upplysta Bosporen. Det populäraste valet bland par, firanden och fotointresserade.',
       'AMOR är ett modernt fartyg: 42 meter, 3 däck, upp till 400 gäster, uppvärmt på vintern och luftkonditionerat på sommaren. Den tre timmar långa rutten avgår från Kabataş (ombordstigning från 20:00, avgång 21:00, åter 00:00) förbi Dolmabahçe, Ortaköymoskén, Rumelifästningen och Bosporenbrons ljus. TÜRSAB-licens (A-17672), 4,9★ på Google. Ingen förskottsbetalning — du betalar ombord, med fri avbokning fram till 2 timmar före avgång.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Säljer ni ett "VIP-paket"? Vad skiljer det från Standard?', a: 'Vi säljer inget separat VIP-paket — det finns en meny som serveras alla med samma premiumstandard. Det vi kallar "VIP-upplevelse" är att göra kvällen till din: privat bord nära scenen (+€{p.romantic}/bord), uppmärksam bordsservering och valfria dryckestillägg. Kryssningen är 3 timmar, €{p.dinnerStd}/person.' },
       { q: 'Är €{p.dinnerStd} verkligen 40% rabatt?', a: 'Ja — vårt ordinarie pris är €{p.dinnerStdOriginal}/person. €{p.dinnerStd} är priset vid direktbokning, utan mellanhänders provisioner. Du betalar ombord och ingen förskottsbetalning krävs.' },
-      { q: 'Vad ingår i menyn?', a: '10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kycklingspett eller oxspett) och mannagrynshalva till dessert, med obegränsat med läsk. Programmet på åtta nummer ingår: Oba Dombra, dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final.' },
+      { q: 'Vad ingår i menyn?', a: '10 sorters turkiska meze, en varm förrätt, huvudrätt efter eget val (lax, havsabborre, kycklingspett eller oxspett) och speciell mannagrynsdessert till dessert, med obegränsat med läsk. Programmet på åtta nummer ingår: Oba Dombra, dervischernas ceremoni, anatoliska och azerbajdzjanska folkdanser, magdans, kaukasisk knivdans, livemusik och en saxofon-och-DJ-final.' },
       { q: 'Ingår alkohol?', a: 'Nej — alkohol är ett separat tillägg: 2 glas vin, öl, rakı, vodka, whisky, gin och mer för +€{p.alcohol2}/person. Läsk ingår obegränsat och kostnadsfritt. Importerad premiumsprit debiteras separat ombord.' },
       { q: 'Hur garanterar jag ett bord nära scenen?', a: 'Välj bara tillägget "privat bord nära scenen" (+€{p.romantic}/bord) vid bokningen — bordet reserveras i ditt namn. De bästa platserna går åt via förhandsbokningar, så lägg gärna till det före kryssningsdagen.' },
       { q: 'Vad är det för fartyg?', a: 'AMOR — ett modernt passagerarfartyg på 42 meter med 3 däck och plats för 400 gäster, uppvärmt på vintern och luftkonditionerat på sommaren. Avgång från Kabataş kaj: ombordstigning 20:00, avgång 21:00, åter 00:00. Rutt: Dolmabahçe, Ortaköy, Rumelifästningen, Beylerbeyi och Bosporenbrons ljus.' }
@@ -199,7 +199,7 @@ module.exports = {
     intro: [
       '**Den privata Bosporenkryssningen** betyder att hela båten är din — inga andra gäster, inga delade bord, inget gemensamt dansgolv. Perfekt för familjeträffar, företagsmiddagar, födelsedagsfester, möhippor eller bröllopsmottagningar. Båten, besättningen, menyn, underhållningen och programmet anpassar sig till din grupp.',
       '**Vår privata Bosporenuthyrning** stödjer grupper **från 25 till 80 gäster**. Mindre grupper kan fortfarande begära den privata upplevelsen — vi erbjuder ett minimumpris som täcker båtens driftskostnader. Större grupper (bröllopsstorlek) får anpassade priser och inkluderar vanligtvis speciell dekoration, liveband, tårtservering och förlängd varaktighet (4-5 timmar istället för de 3 standard).',
-      'Oavsett om du organiserar ett företagsevenemang för kunder, en 50-årsfest eller en bröllopsmottagning under Istanbuls mest ikoniska broar, är detta **den privata kryssningen som evenemangsarrangörer i Istanbul litar på**. Betyg 4,8★, licensierad av TÜRSAB, helt engelsktalande besättning och total flexibilitet — rutt, meny, musik, program.'
+      'Oavsett om du organiserar ett företagsevenemang för kunder, en 50-årsfest eller en bröllopsmottagning under Istanbuls mest ikoniska broar, är detta **den privata kryssningen som evenemangsarrangörer i Istanbul litar på**. Betyg 4,9★, licensierad av TÜRSAB, helt engelsktalande besättning och total flexibilitet — rutt, meny, musik, program.'
     ],
     highlights: [
       { title: 'Hela båten, bara för dig', desc: 'Inga andra gäster. Din grupp äger varje däck, varje bord. Ställ in din egen musik, klädkod, program. Integritet är viktigt — vi respekterar det.' },
@@ -235,11 +235,11 @@ module.exports = {
     intro: [
       '**Bosporenkryssningen för par** är den favoritkvällen i Istanbul. Inte varje par firar en bröllopsdag — ibland är du bara i världens mest romantiska stad och vill ha en underbar kväll tillsammans. Denna kryssning erbjuder: privat bord för två, långsam turkisk flerrättersmiddag, liveviolin och akustisk musik under middagen och den upplysta Bosporenbron som passerar långsamt.',
       'Atmosfären är **varm, men inte överdrivet romantisk** — ingen obligatorisk frieri-musik, inga pinsamt koordinerade applåder för "de nygifta". Ät, drick, prata, se Istanbuls ljus. Om du vill lägga till den romantiska borduppställningen (ljus, rosor, +€{p.romantic}), utmärkt — annars är själva middagen redan speciell.',
-      'Oavsett om du är i Istanbul i 3 dagar med din partner, firar en blygsam händelse eller planerar en utforskande resa för ett framtida frieri — **Bosporenkryssningen för par** ger dig 3 timmars kväll tillsammans i en av världens mest fotograferade städer. 4,8★, betalning ombord, gratis avbokning.'
+      'Oavsett om du är i Istanbul i 3 dagar med din partner, firar en blygsam händelse eller planerar en utforskande resa för ett framtida frieri — **Bosporenkryssningen för par** ger dig 3 timmars kväll tillsammans i en av världens mest fotograferade städer. 4,9★, betalning ombord, gratis avbokning.'
     ],
     highlights: [
       { title: 'Privat bord för två', desc: 'Privat bord för 2 personer, inte delat. Prioritet till fönsterborden för par. Foton av solnedgång och nattlig Bosporen precis vid ditt fönster.' },
-      { title: 'Långsam flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett eller vegetariskt), mannagrynshalva som dessert. Serveras långsamt över 3 timmar — du har ingen brådska.' },
+      { title: 'Långsam flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett eller vegetariskt), speciell mannagrynsdessert som dessert. Serveras långsamt över 3 timmar — du har ingen brådska.' },
       { title: 'Liveviolin och mjuk musik', desc: 'Liveviolin och akustisk turkisk musik under middagen skapar en intim atmosfär lämpad för samtal. Sedan kommer DJ:n för par som vill dansa.' },
       { title: 'Tillägg för speciella kvällar', desc: 'Romantisk borduppställning (ljus, rosor): +€{p.romantic}. 2 glas alkohol (vin, öl, rakı, vodka, whisky, gin och mer): +€{p.alcohol2}/person. Hotelltransfer (tur och retur): +€{p.transfer}/person. Välj vad som passar din kväll.' }
     ],
@@ -271,12 +271,12 @@ module.exports = {
     intro: [
       'Upplevelsen av en **solnedgångskryssning på Bosporen** i Istanbul handlar om en enda sak: övergången. Vår kryssning tar ombord gäster vid Kabataş-bryggan från 20:00 — och under de långa kvällarna från maj till augusti utspelar sig den gyllene timmen medan du installerar dig på däck. Solen går ner över den europeiska sidans minareter precis runt avgången 21:00, så du ser den från vattnet: Dolmabahçe-palatset badat i guld, Ortaköy-moskén i siluett mot den glödande himlen.',
       'Vår **kryssning från solnedgång till natt på Bosporen** inkluderar en full turkisk middag — 10 varianter mezzer, varm förrätt, valfri huvudrätt, dessert — serverad medan staden tänder sina ljus. När desserten kommer seglar du under den upplysta Bosporenbron med 30 miljoner ljus reflekterade i det mörka vattnet. Övergången från skymning till full natt, allt inom en och samma 3-timmarskryssning, är hela poängen.',
-      'Oavsett om du är fotograf som jagar det sista ljuset, ett par som vill ha det där "Istanbul-minnesfotot" eller förstagångsbesökare som söker den klassiska kvällen på vattnet — detta är **solnedgångsmiddagskryssningen på Bosporen** som lokalborna rekommenderar till besökare. Från €{p.dinnerStd}/person, betyg 4,8★, licensierad av TÜRSAB, betalning ombord — ingen förskottsbetalning.'
+      'Oavsett om du är fotograf som jagar det sista ljuset, ett par som vill ha det där "Istanbul-minnesfotot" eller förstagångsbesökare som söker den klassiska kvällen på vattnet — detta är **solnedgångsmiddagskryssningen på Bosporen** som lokalborna rekommenderar till besökare. Från €{p.dinnerStd}/person, betyg 4,9★, licensierad av TÜRSAB, betalning ombord — ingen förskottsbetalning.'
     ],
     highlights: [
       { title: 'Sommarsolnedgångar precis vid avgången', desc: 'Från maj till augusti går solen ner i Istanbul mellan ungefär 20:15 och 20:45 — ombordstigning 20:00 ger dig den gyllene timmen på däck, och avgången 21:00 placerar dig på vattnet för själva solnedgången. Kamera redo — detta är fotot.' },
       { title: 'Blå timme som övergår i full natt', desc: 'Inte bara solnedgång — kryssningen seglar genom skymningen in i den helt upplysta Bosporen. Gyllene ljus, blå timme, sedan 30 miljoner broljus på mörkt vatten: tre ljusfaser på en enda kväll.' },
-      { title: 'Full middag under kryssningen', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt), mannagrynshalva, obegränsade läsk — serveras medan stadens ljus tänds.' },
+      { title: 'Full middag under kryssningen', desc: '10 varianter turkiska mezzer, varm förrätt, huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt), speciell mannagrynsdessert, obegränsade läsk — serveras medan stadens ljus tänds.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporenbron — allt lyser', desc: 'Rutten passerar Dolmabahçe-palatset, Ortaköy-moskén, Bosporenbron, Rumeli Hisarı och Beylerbeyi-palatset medan deras ljus tänds. Varje landmärke i sitt bästa ljus.' }
     ],
     faq: [
@@ -309,12 +309,12 @@ module.exports = {
     intro: [
       '**Bosporen natturen** är den mest rekommenderade kvällsaktiviteten i Istanbul. Här är varför: efter mörkrets inbrott förvandlas Bosporen. Bosporenbron växlar mellan blå, lila och guld. Dolmabahçe-palatset lyser varmt gult. Ortaköy-moskén reflekteras perfekt i det svarta vattnet. Varje landmärke i Istanbul når sin dramatiska topp på natten.',
       '**Vår Bosporen nattur med middag** paketerar den kompletta ikoniska kvällen: 3 timmar på vattnet (21:00-00:00), turkisk flerrättersmiddag, ett livefolkloreprogram på åtta nummer (Oba Dombra, sema, anatoliska och azerbajdzjanska folkdanser, orientalisk dans, kaukasisk knivdans), livemusik och ett saxofon-och-DJ-set som håller däcket levande till slutet av natten. Varje gäst får samma program — inget "bas"-alternativ som hoppar över de bästa delarna.',
-      'Oavsett om det är ditt första besök i Istanbul och du letar efter "den enda saken du måste göra på natten", eller om du har varit här tidigare och vill ha stadens mest fotogeniska 3 timmar, är detta **Bosporen natturen** betygsatt 4,8★ av över 11.317 resenärer. Licensierad av TÜRSAB, betalning ombord, ingen förskottsbetalning.'
+      'Oavsett om det är ditt första besök i Istanbul och du letar efter "den enda saken du måste göra på natten", eller om du har varit här tidigare och vill ha stadens mest fotogeniska 3 timmar, är detta **Bosporen natturen** betygsatt 4,9★ av över 11.317 resenärer. Licensierad av TÜRSAB, betalning ombord, ingen förskottsbetalning.'
     ],
     highlights: [
       { title: 'Den upplysta Bosporen på dramatisk topp', desc: 'Bosporenbron ändrar färg (blå, lila, guld), palatsen lyser gula, Ortaköy-moskén reflekteras i det mörka vattnet. 21:00-00:00 maximal belysning för alla Istanbuls landmärken.' },
       { title: 'Traditionell turkisk show ombord', desc: 'Åtta nummer: Oba Dombra, sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri och den georgisk-kaukasiska knivdansen, sedan live saxofon och DJ-set. 40 minuter show, sedan fortsätter musiken + middagen.' },
-      { title: 'Full flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt (börek), huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt — ditt val), dessert (mannagrynshalva), obegränsade läsk. Halal-certifierad.' },
+      { title: 'Full flerrättersmiddag', desc: '10 varianter turkiska mezzer, varm förrätt (börek), huvudrätt (lax, havsabborre, kycklingspett, oxspett, vegetariskt — ditt val), dessert (speciell mannagrynsdessert), obegränsade läsk. Halal-certifierad.' },
       { title: 'Komplett Bosporenrutt', desc: 'Kabataş → Dolmabahçe → Çırağan-palatset → Ortaköy-moskén → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-bron → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jungfrutornet → Kabataş.' }
     ],
     faq: [
@@ -335,20 +335,20 @@ module.exports = {
   'dinner-cruise-istanbul': {
     meta: {
       title: 'Middagskryssning i Istanbul från €{p.dinnerStd} — Bosporen Nattur',
-      description: 'Middagskryssning 3 timmar i Istanbul på Bosporen. Turkisk flerrättersmeny, live folklore, upplysta broar. Gratis avbokning, betalning ombord. 11.317 recensioner.'
+      description: 'Middagskryssning 3 timmar i Istanbul på Bosporen. Turkisk flerrättersmeny, live folklore, upplysta broar. Gratis avbokning, betalning ombord. 11.317+ gäster.'
     },
     hero: {
       h1: 'Middagskryssning i Istanbul',
       subtitle: 'Den bästa middagskryssningen i Istanbul — 3 timmar på Bosporen, turkisk flerrättersmiddag, live underhållning och nattvyer av stadens mest ikoniska landmärken.',
-      badge: '4,8★ · 11.317 recensioner · TÜRSAB A-17672'
+      badge: '4,9★ · 11.317+ gäster · TÜRSAB A-17672'
     },
     intro: [
       'Söker du en **middagskryssning i Istanbul**? Du har hittat det som de flesta resenärer rekommenderar. Vår 3-timmars kväll på Bosporen kombinerar en full turkisk flerrättersmiddag, livefolkdans och stadens mest fotogeniska utsikter — allt från en bekväm båt som avgår 21:00 från Kabataş-bryggan.',
       'Upplevelsen av **middagskryssningen i Istanbul**: gå ombord 20:00, sätt dig, se Dolmabahçe-palatset medan vi avgår, middagen börjar när vi närmar oss Ortaköy-moskén, showen börjar (sema, folkdanser, orientalisk), och vid desserten är du under den upplysta Bosporenbron. Vid midnatt återvänder du till Kabataş med ett ikoniskt fotokollage och en full mage.',
-      '€{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). Betalning ombord — ingen förskottsbetalning, ingen risk. Licensierad av TÜRSAB A-17672, betygsatt 4,8★ av över 11.317 resenärer.'
+      '€{p.dinnerStd}/person (tidigare €{p.dinnerStdOriginal}). Betalning ombord — ingen förskottsbetalning, ingen risk. Licensierad av TÜRSAB A-17672, betygsatt 4,9★ av över 11.317 resenärer.'
     ],
     highlights: [
-      { title: 'Full turkisk flerrättersmiddag', desc: '10 varianter mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/köttbullar/vegetariskt), mannagrynshalva. Halal-certifierad. Obegränsade läsk inkluderade.' },
+      { title: 'Full turkisk flerrättersmiddag', desc: '10 varianter mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/oxspett/vegetariskt), speciell mannagrynsdessert. Halal-certifierad. Obegränsade läsk inkluderade.' },
       { title: 'Live turkisk folkdans-show', desc: 'Åtta nummer: Oba Dombra, sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri, georgisk-kaukasisk knivdans, sedan live saxofon och DJ. 40 minuter show, kontinuerlig bakgrundsmusik.' },
       { title: 'Komplett nattrutt på Bosporen', desc: '3-timmars tur: Dolmabahçe, Çırağan, Ortaköy-moskén, Bosporenbron, Bebek, Rumeli Hisarı, FSM-bron, Beylerbeyi, Üsküdar, Jungfrutornet. Båda kusterna, europeisk och asiatisk.' },
       { title: 'Från €{p.dinnerStd} — betalning ombord', desc: 'Middagskryssning: €{p.dinnerStd} (tidigare €{p.dinnerStdOriginal}). Ingen förskottsbetalning. Gratis avbokning fram till 2 timmar före avgång.' }
@@ -367,7 +367,7 @@ module.exports = {
     ],
     cta: {
       primary: 'Boka Middagskryssningen · Betalning Ombord',
-      secondary: '4,8★ · TÜRSAB-licensierad · Gratis avbokning 2 timmar före',
+      secondary: '4,9★ · TÜRSAB-licensierad · Gratis avbokning 2 timmar före',
       tertiary: 'Tillgänglighet Ikväll'
     }
   },
@@ -375,7 +375,7 @@ module.exports = {
   'istanbul-night-tour': {
     meta: {
       title: 'Istanbul Nattur från €{p.dinnerStd} — Bosporen Middagskryssning + Show',
-      description: 'Kryssning 3 timmar på Bosporen med middag och live show. Avgång 21:00 från Kabataş. Gratis avbokning, betalning ombord. 11.317 recensioner. Hotelltransfer valfri.'
+      description: 'Kryssning 3 timmar på Bosporen med middag och live show. Avgång 21:00 från Kabataş. Gratis avbokning, betalning ombord. 11.317+ gäster. Hotelltransfer valfri.'
     },
     hero: {
       h1: 'Tur genom Istanbul på Natten',
@@ -385,11 +385,11 @@ module.exports = {
     intro: [
       'En **tur genom Istanbul på natten** måste göra tre saker: visa dig stadens ikoniska landmärken, ge dig bra mat och underhålla dig. Vår Bosporen middagskryssning gör alla tre på en 3-timmars kväll — och det är därför de flesta Istanbul-guiderna rekommenderar den som #1 nattur-upplevelse.',
       'Rutten av **turen genom Istanbul på natten** täcker de bästa upplysta landmärkena: Dolmabahçe-palatset, Ortaköy-moskén, Bosporenbron (ändrar färg), Bebek-stadsdelen, Rumeli Hisarı, FSM-bron, Beylerbeyi-palatset, asiatisk kust Üsküdar och Jungfrutornet i fjärran. De flesta stadsturerna visar dig dem från bussen — vi visar dem från vattnet, där de är mest dramatiska.',
-      'Middagen är inkluderad (turkisk flerrättersmeny), live turkisk folkdans-show, sema, orientalisk dans och DJ-set. Om du är i Istanbul i 2-3 dagar är detta den enda kvällen som ger den starkaste smällen. 4,8★ av över 11.317 resenärer, betalning ombord, ingen förskottsbetalning.'
+      'Middagen är inkluderad (turkisk flerrättersmeny), live turkisk folkdans-show, sema, orientalisk dans och DJ-set. Om du är i Istanbul i 2-3 dagar är detta den enda kvällen som ger den starkaste smällen. 4,9★ av över 11.317 resenärer, betalning ombord, ingen förskottsbetalning.'
     ],
     highlights: [
       { title: 'Alla Istanbuls ikoniska nattvyer', desc: 'Dolmabahçe-palatset, Ortaköy-moskén, upplyst Bosporenbron, Rumeli Hisarı, FSM-bron, Beylerbeyi-palatset, Jungfrutornet. Varje huvudlandmärke vid toppnattbelysning.' },
-      { title: 'Full turkisk middag inkluderad', desc: '10 mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/köttbullar/vegetariskt), dessert, obegränsade läsk. Halal-certifierad. Prissatt till €{p.dinnerStd}/person — allt inkluderat.' },
+      { title: 'Full turkisk middag inkluderad', desc: '10 mezzer, varm förrätt, huvudrätt (lax/havsabborre/kyckling/oxspett/vegetariskt), dessert, obegränsade läsk. Halal-certifierad. Prissatt till €{p.dinnerStd}/person — allt inkluderat.' },
       { title: 'Livefolkdanser + sema + orientalisk', desc: 'Liveprogram på åtta nummer: Oba Dombra, Mevlana sema-föreställning, Sarı Gelin, azerbajdzjanskt potpurri, orientalisk dans, anatoliskt potpurri, georgisk-kaukasisk knivdans, sedan live saxofon och DJ. 40 minuter show, bakgrundsmusik hela kvällen.' },
       { title: 'Lätt för första gången i Istanbul', desc: 'Central mötesplats (Kabataş-bryggan), hotelltransfer (+€{p.transfer}/person), engelsktalande besättning, betalning ombord. Noll logistisk stress. Kom, njut, gå.' }
     ],
@@ -411,17 +411,17 @@ module.exports = {
   'istanbul-boat-tour': {
     meta: {
       title: 'Båttur Istanbul från €{p.dinnerStd} — Bosporen + Middag + Show',
-      description: 'Båttur 3 timmar: Bosporenkryssning, full turkisk middag, live folklore, upplysta nattlandskap. Gratis avbokning, betalning ombord. 11.317 recensioner.'
+      description: 'Båttur 3 timmar: Bosporenkryssning, full turkisk middag, live folklore, upplysta nattlandskap. Gratis avbokning, betalning ombord. 11.317+ gäster.'
     },
     hero: {
       h1: 'Båttur i Istanbul',
       subtitle: 'Den mest bokade båtturen i Istanbul av resenärer — Bosporenkryssning med turkisk mat, live underhållning och stadens ikoniska utsikter från vattnet.',
-      badge: '4,8★ · TÜRSAB A-17672 · Betalning Ombord'
+      badge: '4,9★ · TÜRSAB A-17672 · Betalning Ombord'
     },
     intro: [
       'När du söker "båttur i Istanbul" söker du den enda saken som definierar staden från vattnet: Bosporen. Vår 3-timmars Bosporen båttur tar dig förbi varje huvudlandmärke i Istanbul — Dolmabahçe-palatset, Ortaköy-moskén, Bosporenbron, Rumeli Hisarı, Beylerbeyi-palatset och Jungfrutornet — med full turkisk middag och live underhållning.',
       'Till skillnad från de många 1-timmars turistfärjor som täcker mindre av Bosporen och hoppar över middagen och underhållningen, är **vår båttur i Istanbul** en komplett kvällsupplevelse: ombordstigning 20:00 vid Kabataş-bryggan, tur till midnatt, 10 mezzer, huvudrätt, dessert, sema, folkdanser, orientalisk dans och DJ. Du får också kvällsutflykten som en del av turen.',
-      'Oavsett om du har en kväll eller en hel vecka i Istanbul, gör denna **båttur i Istanbul** jobbet. 4,8★ av över 11.317 resenärer, licensierad av TÜRSAB (A-17672), halal-certifierad meny och betalning ombord — ingen ekonomisk förpliktelse förrän du är nöjd med upplevelsen.'
+      'Oavsett om du har en kväll eller en hel vecka i Istanbul, gör denna **båttur i Istanbul** jobbet. 4,9★ av över 11.317 resenärer, licensierad av TÜRSAB (A-17672), halal-certifierad meny och betalning ombord — ingen ekonomisk förpliktelse förrän du är nöjd med upplevelsen.'
     ],
     highlights: [
       { title: 'Alla huvudlandmärken på Bosporen', desc: 'Dolmabahçe, Çırağan, Ortaköy-moskén, Bosporenbron, Bebek, Rumeli Hisarı, FSM-bron, Beylerbeyi-palatset, Üsküdar, Jungfrutornet. Båda kusterna, europeisk och asiatisk, i en tur.' },
@@ -457,7 +457,7 @@ module.exports = {
     intro: [
       'En **Bosporenresa** kan betyda en 1-timmars turistfärja eller en komplett kväll med tur med middag — vi gör det andra och de flesta resenärer tycker det är upplevelsen av bättre värde. 3 timmar, €{p.dinnerStd}/person, middag och underhållning inkluderade. Du passerar inte bara förbi landmärken — du äter, ser showen och njuter av kvällen.',
       'Rutten av **vår Bosporenresa** täcker allt värt att se: Dolmabahçe-palatset (1800-tals osmansk sultans residens), Ortaköy-moskén (en av de mest fotograferade moskéerna i Istanbul), Bosporenbron (ändrar färg på natten), Rumeli Hisarı (byggd av Fatih Sultan Mehmet 1452), Beylerbeyi-palatset (asiatisk kust) och Jungfrutornet på en liten ö. Allt förklarat av engelsktalande besättning.',
-      'Oavsett om du är i Istanbul 24 timmar eller en vecka, är detta **Bosporenresan** som ger dig mest på en kväll. Betyg 4,8★ av över 11.317 resenärer, licensierad av TÜRSAB A-17672, halal-vänlig meny, betalning ombord — ingen risk för förskottsbetalning.'
+      'Oavsett om du är i Istanbul 24 timmar eller en vecka, är detta **Bosporenresan** som ger dig mest på en kväll. Betyg 4,9★ av över 11.317 resenärer, licensierad av TÜRSAB A-17672, halal-vänlig meny, betalning ombord — ingen risk för förskottsbetalning.'
     ],
     highlights: [
       { title: 'Hela Bosporen i ett enda svep', desc: 'Europeisk kust (Dolmabahçe, Ortaköy, Rumeli Hisarı), asiatisk kust (Beylerbeyi, Üsküdar), båda Bosporenbroar, Jungfrutornet. Varje huvudlandmärke synligt på 3 timmar.' },
@@ -493,7 +493,7 @@ module.exports = {
     intro: [
       'Söker du **Bosporenkryssning biljetter**? Köp direkt. Vår biljett är €{p.dinnerStd}/person — 40% rabatt på normalt pris (€{p.dinnerStdOriginal}). Tredjepartsbokningssajter lägger vanligtvis till 20-40% kommission. Genom att boka direkt sparar du — och betalar ändå ombord.',
       'Vår **Bosporenkryssning biljetter**-process: fyll i formuläret på denna sida på mindre än 1 minut (datum, antal gäster, kontakt), vi bekräftar direkt via WhatsApp / Telegram, du dyker upp vid Kabataş-bryggan 20:00, betalar ombord, njuter av 3-timmars middagskryssningen. Ingen fysisk biljett att skriva ut, ingen kupong att ta emot via e-post — bekräftelsen är din biljett.',
-      'Oavsett om du bokar middagskryssningen för ikväll eller bokar för ett specifikt datum nästa vecka, är **direkta Bosporenkryssning biljetter** det snabbaste sättet. Betyg 4,8★, licensierad av TÜRSAB (A-17672), halal-certifierad meny och stödjer hotelltransfer- och alkoholtillägg.'
+      'Oavsett om du bokar middagskryssningen för ikväll eller bokar för ett specifikt datum nästa vecka, är **direkta Bosporenkryssning biljetter** det snabbaste sättet. Betyg 4,9★, licensierad av TÜRSAB (A-17672), halal-certifierad meny och stödjer hotelltransfer- och alkoholtillägg.'
     ],
     highlights: [
       { title: 'Direkt bokning — inga mellanhandskostnader', desc: '€{p.dinnerStd}/person — ett transparent pris. Tredjepartssajter tar ut €30-80+ för samma tur. Spara genom att boka direkt från oss. Inga dolda avgifter, inget kommissionstillägg.' },
@@ -519,7 +519,7 @@ module.exports = {
   'last-minute-bosphorus': {
     meta: {
       title: 'Bosporen Last Minute från €{p.dinnerStd} — Boka Idag, Betala Ombord',
-      description: 'Bosporenkryssning bokning samma dag. WhatsApp bekräftelse på minuter. Avgång 21:00 från Kabataş. Gratis avbokning, betalning ombord. 11.317 recensioner.'
+      description: 'Bosporenkryssning bokning samma dag. WhatsApp bekräftelse på minuter. Avgång 21:00 från Kabataş. Gratis avbokning, betalning ombord. 11.317+ gäster.'
     },
     hero: {
       h1: 'Bosporenkryssning i Sista Minuten',
@@ -601,7 +601,7 @@ module.exports = {
     intro: [
       '**Turism på Bosporen** från vattnet slår vilken bussturer som helst. Bosporen är stadens mest historiska vattenväg — osmanska sultaner, bysantinska kejsare, grekiska handelsmän och ryska krigsfartyg har alla passerat här. Idag passerar vår 3-timmars tur, med kommentarer från den engelsktalande besättningen, varje huvudlandmärke i Istanbul som definierar skylinen.',
       'Rutten för **vår turisttur på Bosporen** (kvällsavgång, 21:00-00:00):\n\n1. **Dolmabahçe-palatset** — 1800-tals osmansk residens, upplyst på natten\n2. **Çırağan-palatset** — nu lyxhotell, kunglig historia\n3. **Ortaköy-moskén** — en av Istanbuls mest fotograferade moskéer, över vattnet\n4. **Bosporenbron** — växlar på natten mellan blå, lila, guld\n5. **Bebek** — elegant stadsdel på den europeiska kusten\n6. **Rumeli Hisarı** — byggd av Fatih Sultan Mehmet 1452 före erövringen av Konstantinopel\n7. **Fatih Sultan Mehmet-bron** — andra Bosporenbron, dramatisk båge\n8. **Beylerbeyi-palatset** — asiatisk kust, osmansk sommarresidens\n9. **Üsküdar** — Istanbuls asiatiska kust, traditionell stadsdel\n10. **Jungfrutornet** — torn på liten ö, en av Istanbuls mest romantiska symboler',
-      'Middagen och underhållningen är inkluderade — inte separat — så **turism på Bosporen** förvandlas till en komplett kväll. Turkisk flerrättersmiddag, livefolkdansshow, sema, orientalisk dans, DJ. Betyg 4,8★ av över 11.317 resenärer, licensierad av TÜRSAB A-17672.'
+      'Middagen och underhållningen är inkluderade — inte separat — så **turism på Bosporen** förvandlas till en komplett kväll. Turkisk flerrättersmiddag, livefolkdansshow, sema, orientalisk dans, DJ. Betyg 4,9★ av över 11.317 resenärer, licensierad av TÜRSAB A-17672.'
     ],
     highlights: [
       { title: '10+ huvudlandmärken i Istanbul', desc: 'Dolmabahçe-palatset, Çırağan-palatset, Ortaköy-moskén, Bosporenbron, Rumeli Hisarı, FSM-bron, Beylerbeyi-palatset, Üsküdar, Jungfrutornet. Varje väsentligt landmärke i Istanbul i en tur.' },

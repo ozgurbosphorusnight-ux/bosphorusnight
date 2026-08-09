@@ -23,7 +23,7 @@ module.exports = {
 
   meta: {
     title: 'Last-Minute Bosphorus Cruise from €{p.dinnerStd} — Book Tonight, Pay Aboard',
-    description: 'Same-day Bosphorus cruise booking. WhatsApp confirmation in minutes. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317 traveler reviews.'
+    description: 'Same-day Bosphorus cruise booking. WhatsApp confirmation in minutes. Departs 21:00 from Kabataş. Free cancellation, pay on boat. 11,317+ guests.'
   },
 
   hero: {
@@ -94,7 +94,7 @@ module.exports = {
     },
     {
       q: 'Is last-minute Bosphorus booking reliable?',
-      a: 'With Bosphorus Night, yes — TÜRSAB-licensed (A-17672), 4.8★ from 11,317 reviews. Last-minute bookings depend on seat availability; weekends and summer peak may sell out by afternoon. WhatsApp confirmation within minutes — pay on boat, no prepayment risk.'
+      a: 'With Bosphorus Night, yes — TÜRSAB-licensed (A-17672), 4.9★ from 11,317+ guests. Last-minute bookings depend on seat availability; weekends and summer peak may sell out by afternoon. WhatsApp confirmation within minutes — pay on boat, no prepayment risk.'
     }
   ],
 
