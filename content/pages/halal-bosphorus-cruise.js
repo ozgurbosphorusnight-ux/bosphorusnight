@@ -67,7 +67,7 @@ module.exports = {
   faq: [
     {
       q: 'Is the Bosphorus cruise 100% halal?',
-      a: 'Yes — every meat item on the menu (fish, chicken, köfte, beef tenderloin, rib-eye, lamb) is halal-certified from approved suppliers. The kitchen follows halal preparation standards. No pork is served anywhere on the boat. This is not a "halal option" — the entire menu is halal.'
+      a: 'Yes — every meat item on the menu (fish, chicken skewer, dana şiş, lamb) is halal-certified from approved suppliers. The kitchen follows halal preparation standards. No pork is served anywhere on the boat. This is not a "halal option" — the entire menu is halal.'
     },
     {
       q: 'Do other guests drink alcohol on this cruise?',
