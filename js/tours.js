@@ -189,7 +189,10 @@ const TOURS = {
         '/assets/tours/dinner/cocktails.jpg'
       ],
       side: [
-        '/assets/tours/dinner/boat-night-bridge.jpg',
+        // 9 Ağu 2026 — Özgür: yandan çekim yerine ÖNDEN görünüm. Eski kare
+        // boat-night-bridge.jpg iskeleye tam yan yatmış AMOR'du; bu kare pruvadan,
+        // tekne adı ("AMOR") okunuyor ve üç güverte birden görünüyor.
+        '/assets/images/amor/amor-bosphorus-dinner-cruise-boat-night-istanbul.jpg',
         '/assets/tours/dinner/dining-romantic.jpg',
         '/assets/tours/dinner/belly-dance.jpg'
       ]
