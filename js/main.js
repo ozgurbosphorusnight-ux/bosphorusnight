@@ -3952,7 +3952,7 @@ const TRANSFER_ALLOWED = [
   'Beşiktaş', 'Sütlüce', 'Sirkeci', 'Topkapı', 'Taksim',
   'Eminönü', 'Kağıthane', 'Fatih', 'Laleli', 'Sultanahmet',
   'Sultan Ahmet', // varyant yazım
-  'Ortaköy', 'Beyoğlu', 'Şişli',
+  'Ortaköy', 'Beyoğlu', 'Şişli', 'Yenikapı',
   // Özel oteller (semtleri listede olmasa da alınıyor)
   'Hilton Istanbul Bosphorus'
 ];
