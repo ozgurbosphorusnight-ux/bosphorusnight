@@ -11,7 +11,7 @@ module.exports = {
     },
     intro: [
       'Lähde 21:00 Kabataşin laiturista kolmen tunnin illallisristeilylle Bosporinsalmella. Laiva kulkee Dolmabahçen, Ortaköyn ja Beylerbeyin ohi – upeat valaisut joka puolella.',
-      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meribassi, kana tai lihapullat) sekä jäätelöä ja kakkua. Juomat sisältyvät hintaan – alkoholiton.',
+      'Hinnassa on täysi illallinen: 10 kylmää meze-alkupalaa, lämmin alkupala, pääruoka (lohi, meribassi, kanavarras tai naudanlihavarras) sekä mannasuurimohalvaa. Juomat sisältyvät hintaan – alkoholiton.',
       'Illallisenaikana ohjelmassa on mevlana-esitys, kansantanssit, oryantaali sekä elävää musiikkia ja DJ. Maksa vasta laivalla – ei ennakkomaksua.'
     ],
     highlights: [
@@ -22,7 +22,7 @@ module.exports = {
       { icon: '🚢', text: 'Lähtö 21:00 Kabataşista – paluu 00:00' }
     ],
     faq: [
-      { q: 'Mitä illalliseen kuuluu?', a: '10 kylmää mezea, lämmin alkupala, pääruoka (lohi, meribassi, kana tai lihapullat), jälkiruoka sekä alkoholittomat juomat. Alkoholi saatavilla lisähintaan.' },
+      { q: 'Mitä illalliseen kuuluu?', a: '10 kylmää mezea, lämmin alkupala, pääruoka (lohi, meribassi, kanavarras tai naudanlihavarras), jälkiruoka sekä alkoholittomat juomat. Alkoholi saatavilla lisähintaan.' },
       { q: 'Mistä laiva lähtee?', a: 'Kabataşin laiturista, Istanbulissa. Portti avautuu 20:00, lähtö 21:00.' },
       { q: 'Kuinka kauan ristely kestää?', a: '3 tuntia – lähtö 21:00, paluu 00:00.' },
       { q: 'Voiko peruuttaa?', a: 'Kyllä, 2 tuntia ennen ristelya ilmaiseksi. Koska maksat laivalla, palautus ei koske.' },
@@ -59,7 +59,7 @@ module.exports = {
     ],
     faq: [
       { q: 'Minkä ikäiset pääsevät ilmaiseksi?', a: '0–3-vuotiaat (ikä mukaan lukien) pääsevät ilmaiseksi. 4-vuotias maksaa jo puolihinnan.' },
-      { q: 'Onko laivalla lastenruokaa?', a: 'Illalliseen kuuluu useita vaihtoehtoja, myös lapsille sopivaa ruokaa kuten lihapullia ja kanaa.' },
+      { q: 'Onko laivalla lastenruokaa?', a: 'Illalliseen kuuluu useita vaihtoehtoja, myös lapsille sopivaa ruokaa kuten naudanlihavarrasta ja kanaa.' },
       { q: 'Onko laivalla lastenistuimia?', a: 'Suosittelemme ottamaan oman istuimen mukaan, sillä istuimia ei ole saatavilla laivalla.' },
       { q: 'Voiko lastenvaunu ottaa mukaan?', a: 'Laivalla on tilaa, mutta suosittelemme jättämään lastenvaunu maihin. Kannettava tai taittuva vaihtoehto on kätevin.' },
       { q: 'Kuinka myöhään ristely kestää?', a: 'Paluu on 00:00. Pienet lapset saattavat nukahtaa matkalla – se on täysin normaalia!' }
@@ -119,7 +119,7 @@ module.exports = {
     },
     intro: [
       'Bosporinsalmen illallisristely sopii erinomaisesti muslimimatkustajille. Perusilallinen on alkoholiton – alkoholia ei tarvitse tilata lainkaan.',
-      'Ruoka sisältää useita mezoja, pääruoan (lohi, meribassi, kana tai lihapullat) ja jälkiruoan. Erityisruokavalioista, kuten halal-lihatoiveista, voi kysyä etukäteen WhatsAppilla.',
+      'Ruoka sisältää useita mezoja, pääruoan (lohi, meribassi, kanavarras tai naudanlihavarras) ja jälkiruoan. Erityisruokavalioista, kuten halal-lihatoiveista, voi kysyä etukäteen WhatsAppilla.',
       'Istanbul on muslimimatkailijan unelmakaupunki, ja Bosporinsalmen ristely on sen hienoimmista elämyksistä. Lähtö 21:00 Kabataşista.'
     ],
     highlights: [

@@ -22,7 +22,7 @@ module.exports = {
       "Che stia celebrando un anniversario, cercando una serata premium a Istanbul per la Sua famiglia, o desideri semplicemente il passaggio tramonto-notte più fotogenico della città — questa è la crociera con cena che gli abitanti di Istanbul raccomandano per primi."
     ],
     highlights: [
-      { title: "Banchetto turco a più portate", desc: "10 varietà di meze, antipasto caldo (börek), secondo a scelta (salmone / branzino / pollo allo spiedo / spiedino di manzo / vegetariano), dolce con bomba gelato, bevande analcoliche illimitate." },
+      { title: "Banchetto turco a più portate", desc: "10 varietà di meze, antipasto caldo (börek), secondo a scelta (salmone / branzino / pollo allo spiedo / spiedino di manzo / vegetariano), halva di semolino, bevande analcoliche illimitate." },
       { title: "Folklore dal vivo, danza orientale e DJ", desc: "Otto numeri: Oba Dombra, cerimonia Sema dei Mevlana, Sarı Gelin, potpourri azero, danza orientale classica, potpourri anatolico e la danza dei coltelli georgiana e caucasica — poi sassofono dal vivo e un set DJ per tutta la crociera." },
       { title: "Itinerario notturno completo del Bosforo", desc: "Kabataş → Dolmabahçe → Palazzo di Çırağan → Moschea di Ortaköy → Bebek → Rumeli Hisarı → Ponte FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş." },
       { title: "Da €{p.dinnerStd}/persona — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: "Tavolo privato per due", desc: "Tavolo dedicato da 2 posti, non condiviso. Priorità ai posti vicino alla finestra per le coppie. Foto al tramonto e notturne del Bosforo appena fuori dal Vostro vetro." },
-      { title: "Cena lenta a più portate", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo o vegetariano), dolce con bomba gelato. Servito lentamente nell'arco di 3 ore — non Vi vengono messi fretta." },
+      { title: "Cena lenta a più portate", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo o vegetariano), halva di semolino. Servito lentamente nell'arco di 3 ore — non Vi vengono messi fretta." },
       { title: "Violino dal vivo e musica leggera", desc: "Violino dal vivo e musica turca acustica durante la cena creano un'atmosfera intima adatta alla conversazione. Poi, il DJ prende il sopravvento per le coppie che vogliono ballare." },
       { title: "Extra per serate speciali", desc: "Allestimento romantico (candele, rose): +€{p.romantic}. Pacchetto alcolico da 2 bicchieri (vino, birra, rakı, vodka, whisky, gin e altro): +€{p.alcohol2}/persona. Transfer hotel (andata-ritorno): +€{p.transfer}/persona. Scelga ciò che si addice alla Vostra serata." }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: "Tramonti estivi proprio alla partenza", desc: "Da maggio ad agosto, il sole a Istanbul tramonta all'incirca tra le 20:15 e le 20:45 — l'imbarco alle 20:00 Le regala l'ora dorata sul ponte, e la partenza delle 21:00 La porta in acqua proprio per il tramonto. Fotocamera pronta — questo è lo scatto." },
       { title: "Dall'ora blu alla notte piena", desc: "Non solo il tramonto — la crociera naviga attraverso il crepuscolo fino al Bosforo pienamente illuminato. Luce dorata, ora blu, poi 30 milioni di luci dei ponti sull'acqua scura: tre fasi di luce in una sola serata." },
-      { title: "Cena completa durante la crociera", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano), dolce con bomba gelato, bevande analcoliche illimitate — il tutto servito mentre le luci della città si accendono." },
+      { title: "Cena completa durante la crociera", desc: "10 varietà di meze turchi, antipasto caldo, secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano), halva di semolino, bevande analcoliche illimitate — il tutto servito mentre le luci della città si accendono." },
       { title: "Dolmabahçe, Ortaköy, Ponte del Bosforo — tutto brilla", desc: "L'itinerario passa per il Palazzo Dolmabahçe, la Moschea di Ortaköy, il Ponte del Bosforo, Rumeli Hisarı e il Palazzo Beylerbeyi mentre le loro luci si accendono. Ogni monumento nella sua luce migliore." }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: "Bosforo illuminato al massimo della spettacolarità", desc: "Il Ponte del Bosforo cambia colore (blu, viola, oro), i palazzi brillano di giallo, la Moschea di Ortaköy si riflette nell'acqua nera. 21:00-00:00 è l'illuminazione di picco per tutti i monumenti di Istanbul." },
       { title: "Spettacolo turco tradizionale a bordo", desc: "Otto numeri: Oba Dombra, cerimonia Sema, Sarı Gelin, potpourri azero, danza orientale, potpourri anatolico e la danza dei coltelli georgiana e caucasica, poi sassofono dal vivo e set DJ. 40 minuti di esibizioni, poi musica + cena proseguono." },
-      { title: "Cena completa a più portate", desc: "10 varietà di meze turchi, antipasto caldo (börek), secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano — a scelta), dolce (bomba gelato), bevande analcoliche illimitate. Certificato halal." },
+      { title: "Cena completa a più portate", desc: "10 varietà di meze turchi, antipasto caldo (börek), secondo (salmone, branzino, pollo allo spiedo, spiedino di manzo, vegetariano — a scelta), dolce (halva di semolino), bevande analcoliche illimitate. Certificato halal." },
       { title: "Itinerario completo del Bosforo", desc: "Kabataş → Dolmabahçe → Palazzo di Çırağan → Moschea di Ortaköy → Bebek → Rumeli Hisarı → Ponte Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Torre della Fanciulla → Kabataş." }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       "€{p.dinnerStd}/persona per la crociera con cena (prima €{p.dinnerStdOriginal}). Pagamento a bordo — nessun anticipo, nessun rischio. Autorizzato TÜRSAB A-17672, valutato 4,8★ da oltre 11.317 viaggiatori."
     ],
     highlights: [
-      { title: "Cena turca completa a più portate", desc: "10 varietà di meze, antipasto caldo, secondo (salmone/branzino/pollo allo spiedo/spiedino di manzo/vegetariano), dolce con bomba gelato. Certificato halal. Bevande analcoliche illimitate incluse." },
+      { title: "Cena turca completa a più portate", desc: "10 varietà di meze, antipasto caldo, secondo (salmone/branzino/pollo allo spiedo/spiedino di manzo/vegetariano), halva di semolino. Certificato halal. Bevande analcoliche illimitate incluse." },
       { title: "Spettacolo di folklore turco dal vivo", desc: "Otto numeri: Oba Dombra, cerimonia Sema, Sarı Gelin, potpourri azero, danza orientale, potpourri anatolico, danza dei coltelli georgiana e caucasica, poi sassofono dal vivo e DJ. 40 minuti di esibizioni, la musica d'atmosfera prosegue." },
       { title: "Itinerario notturno completo del Bosforo", desc: "Tour di 3 ore: Dolmabahçe, Çırağan, Moschea di Ortaköy, Ponte del Bosforo, Bebek, Rumeli Hisarı, Ponte FSM, Beylerbeyi, Üsküdar, Torre della Fanciulla. Sia sponda europea che asiatica." },
       { title: "Da €{p.dinnerStd} — pagamento a bordo", desc: "Crociera con cena €{p.dinnerStd} (prima €{p.dinnerStdOriginal}). Nessun anticipo. Cancellazione gratuita fino a 2 ore prima della partenza." }

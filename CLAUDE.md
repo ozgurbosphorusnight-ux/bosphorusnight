@@ -98,8 +98,12 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 
 **PROPOSAL_PACKAGE kaldırıldı** — artık standart paket olarak satılmıyor. Müşteri "evlilik teklifi" talep ederse eskalasyona gider (§ 8).
 
-### Standart Dinner Menüsü
-10 çeşit meze, sıcak başlangıç, ana yemek (salmon/levrek/tavuk/köfte), dondurmalı pasta, sınırsız meşrubat, Mevlana + 5 halk oyunu + oryantal + canlı müzik + DJ.
+### Standart Dinner Menüsü (2026-08-09 güncellendi)
+10 çeşit meze, sıcak başlangıç **börek** (paçanga kalktı), mevsim salatası + garnitür ile ana yemek (**somon / levrek / tavuk şiş / dana şiş**), tatlı **irmik helvası**, sınırsız meşrubat, 8 maddelik şov programı (bkz. aşağı).
+Vejetaryen: falafel + patates tavası + bulgur pilavı + sebze haşlama + soğan halkası (tek tabak).
+
+> ⚠️ **Menü değişirse 4 yer:** ① DB `packages.inclusions.food` (kanonik) ② AI `system-prompt.js` + `prompts/intents/price.md` + `prompts/red-lines.md` (çocuk yemeği satırı dahil) ③ Site `js/translations.js` (**32 dil** — `dinner.std.item3/item4`, `incl.dinner.detail`, `faq.a1`, `faq.a12`, **`webchat.ans.menu`**) + `index.html` EN default + `llms.txt` ④ `content/translations/*.js` + `content/pages/*.js` + `content/ui-translations/*.json` (özellikle çok dilli `_hardcoded-all.json`).
+> 🔴 9 Ağu dersi: ilk geçiş ana yemeği düzeltti ama **tatlıyı hiçbir dilde değiştirmedi**; ayrıca ko/ur/el/fi'de köfte kaldı. Terimin **her dildeki yazım varyantını** ara (ice cream cake / pastel con helado / bomba gelato / jäätelökakku / τούρτα παγωτό / 冰淇淋蛋糕 / 아이스크림 케이크).
 
 ### Şov Programı — 8 madde (7 Ağu 2026'da yüzeylere işlendi)
 
