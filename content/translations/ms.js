@@ -23,7 +23,7 @@ module.exports = {
       'Sama ada anda menyambut ulang tahun, mencari petang Istanbul premium untuk keluarga, atau menginginkan peralihan matahari terbenam ke malam yang paling fotogenik di bandar ini — inilah pelayaran makan malam yang pertama disyorkan oleh penduduk Istanbul.'
     ],
     highlights: [
-      { title: 'Jamuan Turki berbilang hidangan', desc: '10 jenis meze, pembuka selera panas (paçanga böreği), pilihan hidangan utama (salmon / sea bass / ayam / köfte / vegetarian), kek aiskrim sebagai pencuci mulut, minuman ringan tanpa had.' },
+      { title: 'Jamuan Turki berbilang hidangan', desc: '10 jenis meze, pembuka selera panas (börek), pilihan hidangan utama (salmon / sea bass / sate ayam / sate daging / vegetarian), kek aiskrim sebagai pencuci mulut, minuman ringan tanpa had.' },
       { title: 'Tarian rakyat langsung, oryantal dan DJ', desc: 'Lapan persembahan: Oba Dombra, persembahan sema Mevlana, Sarı Gelin, medli Azerbaijan, tarian oryantal klasik, medli Anatolia, dan tarian pisau Georgia-Kaukasus — diikuti saksofon langsung dan set DJ sepanjang pelayaran.' },
       { title: 'Laluan malam penuh Bosphorus', desc: 'Kabataş → Dolmabahçe → Istana Çırağan → Masjid Ortaköy → Bebek → Rumeli Hisarı → Jambatan FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Dari €{p.dinnerStd}/orang — bayar di atas bot', desc: 'Pelayaran makan malam €{p.dinnerStd} (asalnya €{p.dinnerStdOriginal}). Tiada bayaran pendahuluan. Pembatalan percuma sehingga 2 jam sebelum bertolak.' }
@@ -126,12 +126,12 @@ module.exports = {
       badge: '100% Halal · Mesra Keluarga · Milik Muslim'
     },
     intro: [
-      '**Pelayaran halal Bosphorus** ialah pelayaran makan malam paling dihormati di Istanbul untuk pengembara Muslim. Setiap daging yang dihidangkan di atas bot kami — salmon, sea bass, ayam, köfte daging kambing, fillet daging lembu, ribeye — adalah **diperakui halal** daripada pembekal yang diluluskan. Kami menghidangkan menu yang sama kepada setiap tetamu; tiada "seksyen halal" berasingan kerana seluruh bot adalah halal secara lalai.',
+      '**Pelayaran halal Bosphorus** ialah pelayaran makan malam paling dihormati di Istanbul untuk pengembara Muslim. Setiap daging yang dihidangkan di atas bot kami — salmon, sea bass, sate ayam, sate daging daging kambing, fillet daging lembu, ribeye — adalah **diperakui halal** daripada pembekal yang diluluskan. Kami menghidangkan menu yang sama kepada setiap tetamu; tiada "seksyen halal" berasingan kerana seluruh bot adalah halal secara lalai.',
       'Alkohol adalah **tambahan pilihan** — tidak pernah dipaksa kepada tetamu, dan susunan tempat duduk secara semula jadi mengasingkan mereka yang memilih meja tanpa alkohol. Untuk tetamu yang inginkan pakej alkohol 2 gelas (+€{p.alcohol2}/orang), ia tersedia, tetapi minuman ringan tanpa had yang disertakan (air, kola, jus) adalah mencukupi untuk kebanyakan keluarga Muslim. Kakitangan kami dilatih untuk menghormati pilihan anda tanpa andaian.',
       '**Pelayaran Bosphorus mesra halal** adalah penting untuk pengembara dari Arab Saudi, UAE, Kuwait, Qatar, Iran, Malaysia, Indonesia, Pakistan dan Maghribi yang inginkan petang paling ikonik di Istanbul tanpa kompromi. Berlesen TÜRSAB, 4.8★ dan bayar di atas bot — anda tidak berkomitmen kepada apa-apa sehingga anda pasti pengalaman memenuhi piawaian anda.'
     ],
     highlights: [
-      { title: 'Menu 100% diperakui halal', desc: 'Semua daging (salmon, sea bass, ayam, köfte, daging lembu, ribeye) diperakui halal daripada pembekal yang diluluskan. Dapur mengikut penyediaan halal. Tiada produk babi atau bahan tambahan tidak halal. Pilihan vegetarian sentiasa tersedia.' },
+      { title: 'Menu 100% diperakui halal', desc: 'Semua daging (salmon, sea bass, sate ayam, sate daging) diperakui halal daripada pembekal yang diluluskan. Dapur mengikut penyediaan halal. Tiada produk babi atau bahan tambahan tidak halal. Pilihan vegetarian sentiasa tersedia.' },
       { title: 'Alkohol pilihan, tidak pernah dipaksa', desc: 'Pakej alkohol adalah tambahan — tidak termasuk secara lalai. Minuman ringan (air, kola, jus) tanpa had dan percuma. Meja anda kekal tanpa alkohol melainkan anda meminta secara jelas. Kakitangan menghormati pilihan anda secara diam-diam.' },
       { title: 'Hiburan mesra keluarga', desc: 'Persembahan sema, tarian rakyat Turki tradisional, muzik Turki langsung. Tiada persembahan gaya kelab malam, tiada kandungan tidak sesuai. Selamat untuk kanak-kanak, dihormati untuk keluarga. Tarian oryantal adalah bentuk seni tradisional, dipersembahkan dengan sopan.' },
       { title: 'Hormat waktu solat', desc: 'Jika waktu Maghrib atau Isyak bertembung dengan masa pendaftaran masuk (20:00-21:00), kakitangan kami boleh menunjukkan kawasan solat yang senyap di Jeti Kabataş sebelum bertolak. Beritahu semasa tempahan sahaja.' }
@@ -162,7 +162,7 @@ module.exports = {
       badge: 'DISKAUN 40% · Satu Menu, Piawaian Premium · Bayar di Atas Bot'
     },
     intro: [
-      'Banyak bot di Bosphorus membahagikan tetamu kepada "Standard" dan "VIP". Kami tidak. Di atas **AMOR** hanya ada satu menu makan malam, disediakan dengan penjagaan yang sama untuk semua: 10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan anda (salmon, siakap, ayam atau köfte), kek ais krim, dan minuman ringan tanpa had. Program persembahan lapan bahagian turut disertakan — Oba Dombra, upacara darwis berpusing, tarian rakyat Anatolia dan Azerbaijan, tarian perut, tarian pisau Kaukasus, muzik secara langsung dan penutup dengan saksofon dan DJ — semuanya dalam harga €{p.dinnerStd}/orang.',
+      'Banyak bot di Bosphorus membahagikan tetamu kepada "Standard" dan "VIP". Kami tidak. Di atas **AMOR** hanya ada satu menu makan malam, disediakan dengan penjagaan yang sama untuk semua: 10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan anda (salmon, siakap, sate ayam atau sate daging), kek ais krim, dan minuman ringan tanpa had. Program persembahan lapan bahagian turut disertakan — Oba Dombra, upacara darwis berpusing, tarian rakyat Anatolia dan Azerbaijan, tarian perut, tarian pisau Kaukasus, muzik secara langsung dan penutup dengan saksofon dan DJ — semuanya dalam harga €{p.dinnerStd}/orang.',
       'Rasa VIP bermula di meja anda. Jika anda mahu sedekat mungkin dengan pentas dan pemandangan, tambah **meja peribadi dekat pentas** (+€{p.romantic}/meja) dan tempat anda ditempah lebih awal — sudut terbaik untuk menyaksikan darwis, tarian rakyat dan Bosphorus yang bercahaya. Pilihan kegemaran pasangan, sambutan istimewa dan peminat fotografi.',
       'AMOR ialah bot moden sepanjang 42 meter, 3 dek, memuatkan sehingga 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Laluan 3 jam bertolak dari Kabataş (menaiki bot dari 20:00, bertolak 21:00, pulang 00:00) melalui Dolmabahçe, Masjid Ortaköy, Kubu Rumeli dan lampu Jambatan Bosphorus. Berlesen TÜRSAB (A-17672), 4.9★ di Google. Tiada bayaran pendahuluan — anda membayar di atas bot, dengan pembatalan percuma sehingga 2 jam sebelum bertolak.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Adakah anda menjual "pakej VIP"? Apa bezanya dengan Standard?', a: 'Kami tidak menjual pakej VIP berasingan — ada satu menu yang dihidangkan kepada semua dengan piawaian premium yang sama. Apa yang kami panggil "pengalaman VIP" ialah menyesuaikan malam anda: meja peribadi dekat pentas (+€{p.romantic}/meja), layanan meja yang teliti dan tambahan minuman pilihan. Pelayaran mengambil masa 3 jam, €{p.dinnerStd}/orang.' },
       { q: 'Adakah €{p.dinnerStd} benar-benar diskaun 40%?', a: 'Ya — harga senarai kami €{p.dinnerStdOriginal}/orang. €{p.dinnerStd} ialah kadar tempahan terus tanpa komisen orang tengah. Anda membayar di atas bot dan tiada bayaran pendahuluan.' },
-      { q: 'Apa yang ada dalam menu?', a: '10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan (salmon, siakap, ayam atau köfte) dan kek ais krim sebagai pencuci mulut, dengan minuman ringan tanpa had. Program persembahan lapan bahagian disertakan: Oba Dombra, upacara darwis, tarian rakyat Anatolia dan Azerbaijan, tarian perut, tarian pisau Kaukasus, muzik secara langsung dan penutup dengan saksofon dan DJ.' },
+      { q: 'Apa yang ada dalam menu?', a: '10 jenis meze Turki, pembuka selera panas, hidangan utama pilihan (salmon, siakap, sate ayam atau sate daging) dan kek ais krim sebagai pencuci mulut, dengan minuman ringan tanpa had. Program persembahan lapan bahagian disertakan: Oba Dombra, upacara darwis, tarian rakyat Anatolia dan Azerbaijan, tarian perut, tarian pisau Kaukasus, muzik secara langsung dan penutup dengan saksofon dan DJ.' },
       { q: 'Adakah alkohol termasuk?', a: 'Tidak — alkohol ialah tambahan berasingan: 2 gelas wain, bir, rakı, vodka, wiski, gin dan lain-lain tempatan pada +€{p.alcohol2}/orang. Minuman ringan tanpa had disertakan percuma. Minuman import premium dikira berasingan di atas bot.' },
       { q: 'Bagaimana memastikan meja dekat pentas?', a: 'Cukup pilih tambahan "meja peribadi dekat pentas" (+€{p.romantic}/meja) semasa menempah — meja akan ditempah atas nama anda. Kedudukan terbaik cepat penuh dengan tempahan awal, jadi sebaiknya ditambah sebelum hari pelayaran.' },
       { q: 'Bot jenis apakah ini?', a: 'AMOR — bot penumpang moden sepanjang 42 meter, 3 dek, berkapasiti 400 tetamu, berpemanas pada musim sejuk dan berhawa dingin pada musim panas. Bertolak dari Jeti Kabataş: menaiki bot 20:00, bertolak 21:00, pulang 00:00. Laluan: Dolmabahçe, Ortaköy, Kubu Rumeli, Beylerbeyi dan lampu Jambatan Bosphorus.' }
@@ -240,7 +240,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Meja peribadi untuk dua orang', desc: 'Meja 2-orang khusus, tidak dikongsi. Keutamaan tempat duduk tepi tingkap untuk pasangan. Foto matahari terbenam dan malam Bosphorus tepat di luar tingkap anda.' },
-      { title: 'Hidangan berbilang hidangan yang perlahan', desc: '10 jenis meze Turki, pembuka selera panas, hidangan utama (salmon, sea bass, ayam, köfte atau vegetarian), kek aiskrim sebagai pencuci mulut. Dihidangkan perlahan selama 3 jam — anda tidak tergesa-gesa.' },
+      { title: 'Hidangan berbilang hidangan yang perlahan', desc: '10 jenis meze Turki, pembuka selera panas, hidangan utama (salmon, sea bass, sate ayam, sate daging atau vegetarian), kek aiskrim sebagai pencuci mulut. Dihidangkan perlahan selama 3 jam — anda tidak tergesa-gesa.' },
       { title: 'Biola langsung dan muzik lembut', desc: 'Biola langsung dan muzik Turki akustik semasa makan malam mencipta suasana intim sesuai untuk perbualan. Kemudian, DJ mengambil alih untuk pasangan yang mahu menari.' },
       { title: 'Tambahan untuk malam istimewa', desc: 'Susunan meja romantik (lilin, mawar): +€{p.romantic}. Pakej alkohol 2 gelas (wain, bir, rakı, vodka, wiski, gin dan lain-lain): +€{p.alcohol2}/orang. Pemindahan hotel (pergi balik): +€{p.transfer}/orang. Pilih yang sesuai untuk petang anda.' }
     ],
@@ -277,7 +277,7 @@ module.exports = {
     highlights: [
       { title: 'Matahari terbenam musim panas tepat waktu bertolak', desc: 'Dari Mei hingga Ogos, matahari Istanbul terbenam antara kira-kira 20:15 dan 20:45 — naik pada 20:00 memberi anda waktu keemasan di dek, dan waktu bertolak 21:00 meletakkan anda di atas air tepat untuk matahari terbenam itu sendiri. Kamera sedia — inilah gambarnya.' },
       { title: 'Waktu biru hingga malam sepenuhnya', desc: 'Bukan sekadar matahari terbenam — pelayaran belayar melalui waktu senja hingga ke Bosphorus yang diterangi sepenuhnya. Cahaya keemasan, waktu biru, kemudian 30 juta lampu jambatan di atas air gelap: tiga fasa cahaya dalam satu petang.' },
-      { title: 'Makan malam lengkap semasa pelayaran', desc: '10 jenis meze Turki, pembuka selera panas, hidangan utama (salmon, ikan siakap, ayam, köfte, vegetarian), kek aiskrim, minuman ringan tanpa had — dihidangkan ketika lampu bandar mula menyala.' },
+      { title: 'Makan malam lengkap semasa pelayaran', desc: '10 jenis meze Turki, pembuka selera panas, hidangan utama (salmon, ikan siakap, sate ayam, sate daging, vegetarian), kek aiskrim, minuman ringan tanpa had — dihidangkan ketika lampu bandar mula menyala.' },
       { title: 'Dolmabahçe, Ortaköy, Jambatan Bosphorus — semua bercahaya', desc: 'Laluan melalui Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus, Rumeli Hisarı dan Istana Beylerbeyi ketika lampu mereka mula menyala. Setiap mercu tanda dalam cahaya terbaiknya.' }
     ],
     faq: [
@@ -315,7 +315,7 @@ module.exports = {
     highlights: [
       { title: 'Bosphorus diterangi pada drama puncak', desc: 'Jambatan Bosphorus bertukar warna (biru, ungu, emas), istana bercahaya kuning, Masjid Ortaköy dipantulkan ke dalam air hitam. 21:00-00:00 pencahayaan puncak untuk semua mercu tanda Istanbul.' },
       { title: 'Persembahan Turki tradisional di atas bot', desc: 'Lapan persembahan: Oba Dombra, persembahan sema, Sarı Gelin, medli Azerbaijan, tarian oryantal, medli Anatolia, dan tarian pisau Georgia-Kaukasus, kemudian saksofon langsung dan set DJ. Persembahan 40 minit, kemudian muzik + makan malam berterusan.' },
-      { title: 'Hidangan lengkap berbilang hidangan', desc: '10 jenis meze Turki, pembuka selera panas (paçanga böreği), hidangan utama (salmon, sea bass, ayam, köfte, vegetarian — pilihan anda), pencuci mulut (kek aiskrim), minuman ringan tanpa had. Diperakui halal.' },
+      { title: 'Hidangan lengkap berbilang hidangan', desc: '10 jenis meze Turki, pembuka selera panas (börek), hidangan utama (salmon, sea bass, sate ayam, sate daging, vegetarian — pilihan anda), pencuci mulut (kek aiskrim), minuman ringan tanpa had. Diperakui halal.' },
       { title: 'Laluan Bosphorus penuh', desc: 'Kabataş → Dolmabahçe → Istana Çırağan → Masjid Ortaköy → Bebek → Rumeli Hisarı → Jambatan Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Menara Maiden → Kabataş.' }
     ],
     faq: [
@@ -349,7 +349,7 @@ module.exports = {
       'Dari €{p.dinnerStd}/orang (asalnya €{p.dinnerStdOriginal}) untuk pelayaran makan malam. Bayar di atas bot — tiada bayaran pendahuluan, tiada risiko. Berlesen TÜRSAB A-17672, dinilai 4.8★ oleh 11,317+ pengembara.'
     ],
     highlights: [
-      { title: 'Makan malam Turki berbilang hidangan lengkap', desc: '10 jenis meze, pembuka selera panas, hidangan utama (salmon/sea bass/ayam/köfte/vegetarian), kek aiskrim. Diperakui halal. Minuman ringan tanpa had termasuk.' },
+      { title: 'Makan malam Turki berbilang hidangan lengkap', desc: '10 jenis meze, pembuka selera panas, hidangan utama (salmon/sea bass/sate ayam/sate daging/vegetarian), kek aiskrim. Diperakui halal. Minuman ringan tanpa had termasuk.' },
       { title: 'Persembahan tarian rakyat Turki langsung', desc: 'Lapan persembahan: Oba Dombra, persembahan sema, Sarı Gelin, medli Azerbaijan, tarian oryantal, medli Anatolia, tarian pisau Georgia-Kaukasus, kemudian saksofon langsung dan DJ. Persembahan 40 minit, muzik suasana berterusan.' },
       { title: 'Laluan malam Bosphorus penuh', desc: 'Pelayaran 3 jam: Dolmabahçe, Çırağan, Masjid Ortaköy, Jambatan Bosphorus, Bebek, Rumeli Hisarı, Jambatan FSM, Beylerbeyi, Üsküdar, Menara Maiden. Kedua-dua tepi Eropah dan Asia.' },
       { title: 'Dari €{p.dinnerStd} — bayar di atas bot', desc: 'Pelayaran makan malam €{p.dinnerStd} (asalnya €{p.dinnerStdOriginal}). Tiada bayaran pendahuluan. Pembatalan percuma sehingga 2 jam sebelum bertolak.' }
@@ -390,7 +390,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Semua pemandangan malam Istanbul ikonik', desc: 'Istana Dolmabahçe, Masjid Ortaköy, Jambatan Bosphorus diterangi, Rumeli Hisarı, Jambatan FSM, Istana Beylerbeyi, Menara Maiden. Setiap mercu tanda utama dalam pencahayaan malam puncak.' },
-      { title: 'Hidangan Turki lengkap termasuk', desc: '10 meze, pembuka selera panas, hidangan utama (salmon/sea bass/ayam/köfte/vegetarian), pencuci mulut, minuman ringan tanpa had. Diperakui halal. Berharga €{p.dinnerStd}/orang — semua termasuk.' },
+      { title: 'Hidangan Turki lengkap termasuk', desc: '10 meze, pembuka selera panas, hidangan utama (salmon/sea bass/sate ayam/sate daging/vegetarian), pencuci mulut, minuman ringan tanpa had. Diperakui halal. Berharga €{p.dinnerStd}/orang — semua termasuk.' },
       { title: 'Tarian rakyat langsung + sema + oryantal', desc: 'Program langsung lapan bahagian: Oba Dombra, persembahan sema Mevlana, Sarı Gelin, medli Azerbaijan, tarian oryantal, medli Anatolia, tarian pisau Georgia-Kaukasus, kemudian saksofon langsung dan DJ. Persembahan 40 minit, muzik suasana sepanjang petang.' },
       { title: 'Mudah untuk pengunjung kali pertama ke Istanbul', desc: 'Titik pertemuan pusat (Jeti Kabataş), pemindahan hotel (+€{p.transfer}/orang), kakitangan berbahasa Inggeris, bayar di atas bot. Sifar tekanan logistik. Datang, nikmati, pulang.' }
     ],

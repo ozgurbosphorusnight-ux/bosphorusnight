@@ -23,7 +23,7 @@ module.exports = {
       'Fie că sărbătoriți o aniversare, căutați o seară premium în Istanbul pentru familia dumneavoastră, fie că doriți cea mai fotogenică tranziție apus-noapte a orașului — aceasta este croaziera cu cină recomandată în primul rând de localnicii din Istanbul.'
     ],
     highlights: [
-      { title: 'Cină turcească cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald (paçanga böreği), alegere de fel principal (somon / biban de mare / pui / chiftele / vegetarian), tort cu înghețată la desert, băuturi răcoritoare nelimitate.' },
+      { title: 'Cină turcească cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald (börek), alegere de fel principal (somon / biban de mare / pui la frigărui / frigărui de vită / vegetarian), halva de gris la desert, băuturi răcoritoare nelimitate.' },
       { title: 'Dansuri populare live, dans oriental și DJ', desc: 'Opt numere: Oba Dombra, spectacol Mevlana sema, Sarı Gelin, potpuriu azer, dans oriental clasic, potpuriu anatolian și dansul cu cuțite georgiano-caucazian — apoi saxofon live și un set DJ pe durata întregii croaziere.' },
       { title: 'Traseul complet nocturn al Bosforului', desc: 'Kabataș → Dolmabahçe → Palatul Çırağan → Moscheea Ortaköy → Bebek → Rumeli Hisarı → Podul FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataș.' },
       { title: 'De la €{p.dinnerStd}/persoană — plata pe vapor', desc: 'Croazieră cu cină €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
@@ -126,12 +126,12 @@ module.exports = {
       badge: '100% Halal · Prietenos cu Familia · Proprietate Musulmană'
     },
     intro: [
-      '**Croaziera halal pe Bosfor** este cea mai respectuoasă croazieră cu cină din Istanbul pentru călătorii musulmani. Fiecare carne servită pe vaporul nostru — somon, biban de mare, pui, chiftele de miel, mușchi de vită, antricot — este **certificată halal** de la furnizori aprobați. Servim același meniu fiecărui oaspete; fără „secțiune halal" separată, pentru că întregul vapor este halal în mod implicit.',
+      '**Croaziera halal pe Bosfor** este cea mai respectuoasă croazieră cu cină din Istanbul pentru călătorii musulmani. Fiecare carne servită pe vaporul nostru — somon, biban de mare, pui la frigărui, frigărui de vită — este **certificată halal** de la furnizori aprobați. Servim același meniu fiecărui oaspete; fără „secțiune halal" separată, pentru că întregul vapor este halal în mod implicit.',
       'Alcoolul este **un supliment opțional** — niciodată impus oaspeților, iar aranjamentul meselor separă în mod natural oaspeții care preferă o masă fără alcool. Pentru oaspeții care doresc pachetul de alcool de 2 pahare (+€{p.alcohol2}/persoană), este acolo, dar băuturile răcoritoare nelimitate incluse (apă, cola, suc) sunt suficiente pentru majoritatea familiilor musulmane. Echipajul nostru este instruit să respecte preferințele dumneavoastră fără presupuneri.',
       '**Croaziera prietenoasă halal pe Bosfor** contează pentru călătorii din Arabia Saudită, EAU, Kuweit, Qatar, Iran, Malaezia, Indonezia, Pakistan și Maroc care doresc cea mai iconică seară din Istanbul fără compromisuri. Licențiat TÜRSAB, 4,8★ și plata pe vapor — nu promiteți nimic până nu sunteți sigur că experiența vă îndeplinește standardele.'
     ],
     highlights: [
-      { title: 'Meniu 100% certificat halal', desc: 'Toată carnea (somon, biban de mare, pui, chiftele, vită, antricot) este certificată halal de la furnizori aprobați. Bucătăria urmează pregătirea halal. Fără produse din porc sau aditivi non-halal. Opțiunile vegetariene sunt întotdeauna disponibile.' },
+      { title: 'Meniu 100% certificat halal', desc: 'Toată carnea (somon, biban de mare, pui la frigărui, frigărui de vită, vită, antricot) este certificată halal de la furnizori aprobați. Bucătăria urmează pregătirea halal. Fără produse din porc sau aditivi non-halal. Opțiunile vegetariene sunt întotdeauna disponibile.' },
       { title: 'Alcoolul opțional, niciodată impus', desc: 'Pachetele de alcool sunt supliment — nu sunt incluse în mod implicit. Băuturile răcoritoare (apă, cola, suc) sunt nelimitate și gratuite. Masa dumneavoastră rămâne fără alcool dacă nu cereți în mod explicit. Echipajul respectă în tăcere alegerea dumneavoastră.' },
       { title: 'Divertisment prietenos cu familia', desc: 'Spectacol sema, dansuri populare turcești tradiționale, muzică turcească live. Fără spectacole în stil de club de noapte, fără conținut nepotrivit. Sigur pentru copii, respectuos pentru familii. Dansul oriental este o formă de artă tradițională, prezentată cu modestie.' },
       { title: 'Respect pentru orele de rugăciune', desc: 'Dacă îmbarcarea coincide cu maghrib sau ișa (20:00-21:00), personalul nostru vă poate îndruma către zona liniștită de rugăciune de la debarcaderul Kabataș înainte de plecare. Doar anunțați-ne la rezervare.' }
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% REDUCERE · Un meniu, standard premium · Plata pe vas'
     },
     intro: [
-      'Multe vase de pe Bosfor își împart oaspeții în „Standard“ și „VIP“. Noi nu. La bordul navei **AMOR** există un singur meniu de cină, pregătit cu aceeași grijă pentru toți: 10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui sau köfte), tort de înghețată și băuturi răcoritoare nelimitate. Întregul program de spectacole în opt numere este de asemenea inclus — Oba Dombra, ceremonia dervișilor rotitori, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ — totul în prețul de €{p.dinnerStd}/persoană.',
+      'Multe vase de pe Bosfor își împart oaspeții în „Standard“ și „VIP“. Noi nu. La bordul navei **AMOR** există un singur meniu de cină, pregătit cu aceeași grijă pentru toți: 10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită), halva de gris și băuturi răcoritoare nelimitate. Întregul program de spectacole în opt numere este de asemenea inclus — Oba Dombra, ceremonia dervișilor rotitori, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ — totul în prețul de €{p.dinnerStd}/persoană.',
       'Senzația VIP începe de la masa ta. Dacă vrei să fii cât mai aproape de scenă și de priveliști, adaugă **masa privată lângă scenă** (+€{p.romantic}/masă), iar locul îți este rezervat din timp — cel mai bun unghi pentru derviși, dansurile populare și Bosforul luminat. Alegerea preferată a cuplurilor, a aniversărilor și a pasionaților de fotografie.',
       'AMOR este o navă modernă: 42 de metri, 3 punți, până la 400 de oaspeți, încălzită iarna și climatizată vara. Traseul de 3 ore pleacă din Kabataş (îmbarcare de la 20:00, plecare 21:00, întoarcere 00:00) și trece pe lângă Dolmabahçe, moscheea Ortaköy, fortăreața Rumeli și luminile podului peste Bosfor. Licență TÜRSAB (A-17672), 4,9★ pe Google. Fără plată în avans — plătești pe vas, cu anulare gratuită până cu 2 ore înainte de plecare.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Vindeți un „pachet VIP“? Care e diferența față de Standard?', a: 'Nu vindem un pachet VIP separat — există un singur meniu, servit tuturor la același standard premium. Ceea ce numim „experiență VIP“ înseamnă personalizarea serii tale: masă privată lângă scenă (+€{p.romantic}/masă), servire atentă la masă și băuturi opționale. Croaziera durează 3 ore, €{p.dinnerStd}/persoană.' },
       { q: '€{p.dinnerStd} este într-adevăr o reducere de 40%?', a: 'Da — prețul nostru de listă este €{p.dinnerStdOriginal}/persoană. €{p.dinnerStd} este tariful pentru rezervare directă, fără comisioane de intermediari. Plătești pe vas și nu există nicio plată în avans.' },
-      { q: 'Ce conține meniul?', a: '10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui sau köfte) și tort de înghețată la desert, cu băuturi răcoritoare nelimitate. Programul în opt numere este inclus: Oba Dombra, ceremonia dervișilor, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ.' },
+      { q: 'Ce conține meniul?', a: '10 sortimente de meze turcești, un aperitiv cald, fel principal la alegere (somon, biban de mare, pui la frigărui sau frigărui de vită) și halva de gris la desert, cu băuturi răcoritoare nelimitate. Programul în opt numere este inclus: Oba Dombra, ceremonia dervișilor, dansuri populare anatoliene și azere, dans din buric, dans cu cuțite caucazian, muzică live și un final cu saxofon și DJ.' },
       { q: 'Alcoolul este inclus?', a: 'Nu — alcoolul este un supliment separat: 2 pahare de vin, bere, rachiu, vodcă, whisky, gin și altele locală la +€{p.alcohol2}/persoană. Băuturile răcoritoare sunt incluse nelimitat și gratuit. Băuturile premium din import se facturează separat pe vas.' },
       { q: 'Cum îmi garantez o masă lângă scenă?', a: 'Este suficient să selectezi suplimentul „masă privată lângă scenă“ (+€{p.romantic}/masă) la rezervare — masa este rezervată pe numele tău. Cele mai bune poziții se ocupă prin rezervări din timp, așa că îți recomandăm să o adaugi înainte de ziua croazierei.' },
       { q: 'Ce fel de vas este?', a: 'AMOR — o navă de pasageri modernă de 42 de metri, cu 3 punți și o capacitate de 400 de oaspeți, încălzită iarna și climatizată vara. Plecare din portul Kabataş: îmbarcare 20:00, plecare 21:00, întoarcere 00:00. Traseu: Dolmabahçe, Ortaköy, fortăreața Rumeli, Beylerbeyi și luminile podului peste Bosfor.' }
@@ -240,7 +240,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Masă privată pentru doi', desc: 'Masă privată pentru 2 persoane, nu partajată. Prioritate la mesele de la fereastră pentru cupluri. Fotografii la apus și pe Bosforul nocturn chiar în afara ferestrei dumneavoastră.' },
-      { title: 'Cină lentă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, biban de mare, pui, chiftele sau vegetarian), tort cu înghețată la desert. Servit lent pe parcursul a 3 ore — nu sunteți grăbiți.' },
+      { title: 'Cină lentă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, biban de mare, pui la frigărui, frigărui de vită sau vegetarian), halva de gris la desert. Servit lent pe parcursul a 3 ore — nu sunteți grăbiți.' },
       { title: 'Vioară live și muzică ușoară', desc: 'Vioara live și muzica turcească acustică în timpul cinei creează o atmosferă intimă, potrivită conversației. Apoi intervine DJ-ul pentru cuplurile care vor să danseze.' },
       { title: 'Suplimente pentru seri speciale', desc: 'Aranjament pentru masă romantică (lumânări, trandafiri): +€{p.romantic}. 2 pahare de alcool (vin, bere, rachiu, vodcă, whisky, gin și altele): +€{p.alcohol2}/persoană. Transfer de la hotel (dus-întors): +€{p.transfer}/persoană. Alegeți ce se potrivește serii dumneavoastră.' }
     ],
@@ -277,7 +277,7 @@ module.exports = {
     highlights: [
       { title: 'Apusuri de vară chiar la plecare', desc: 'Din mai până în august, soarele apune la Istanbul între aproximativ 20:15 și 20:45 — îmbarcarea la 20:00 vă oferă ora de aur pe punte, iar plecarea de la 21:00 vă prinde pe apă chiar în momentul apusului. Camera pregătită — aceasta este fotografia.' },
       { title: 'Ora albastră până în noapte deplină', desc: 'Nu doar apus — croaziera navighează prin amurg până în Bosforul complet iluminat. Lumină aurie, ora albastră, apoi 30 de milioane de lumini ale podurilor pe apa întunecată: trei faze de lumină într-o singură seară.' },
-      { title: 'Cină completă în timpul croazierei', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, doradă, pui, chiftele, vegetarian), tort cu înghețată, băuturi răcoritoare nelimitate — servite în timp ce se aprind luminile orașului.' },
+      { title: 'Cină completă în timpul croazierei', desc: '10 sortimente de mezeluri turcești, aperitiv cald, fel principal (somon, doradă, pui la frigărui, frigărui de vită, vegetarian), halva de gris, băuturi răcoritoare nelimitate — servite în timp ce se aprind luminile orașului.' },
       { title: 'Dolmabahçe, Ortaköy, Podul Bosfor — toate strălucesc', desc: 'Traseul trece pe lângă Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor, Rumeli Hisarı și Palatul Beylerbeyi exact când li se aprind luminile. Fiecare reper în cea mai bună lumină.' }
     ],
     faq: [
@@ -315,7 +315,7 @@ module.exports = {
     highlights: [
       { title: 'Bosforul iluminat la punctul culminant de dramatism', desc: 'Podul Bosfor își schimbă culoarea (albastru, violet, auriu), palatele strălucesc galben, Moscheea Ortaköy se reflectă în apa neagră. 21:00-00:00 iluminare maximă pentru toate reperele Istanbulului.' },
       { title: 'Spectacol turcesc tradițional pe vapor', desc: 'Opt numere: Oba Dombra, spectacol sema, Sarı Gelin, potpuriu azer, dans oriental, potpuriu anatolian și dansul cu cuțite georgiano-caucazian, apoi saxofon live și set DJ. 40 de minute de spectacol, apoi muzica + cina continuă.' },
-      { title: 'Cină completă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald (paçanga böreği), fel principal (somon, biban de mare, pui, chiftele, vegetarian — alegerea dumneavoastră), desert (tort cu înghețată), băuturi răcoritoare nelimitate. Certificat halal.' },
+      { title: 'Cină completă cu multiple feluri', desc: '10 sortimente de mezeluri turcești, aperitiv cald (börek), fel principal (somon, biban de mare, pui la frigărui, frigărui de vită, vegetarian — alegerea dumneavoastră), desert (halva de gris), băuturi răcoritoare nelimitate. Certificat halal.' },
       { title: 'Traseu complet pe Bosfor', desc: 'Kabataș → Dolmabahçe → Palatul Çırağan → Moscheea Ortaköy → Bebek → Rumeli Hisarı → Podul Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Turnul Fecioarei → Kabataș.' }
     ],
     faq: [
@@ -349,7 +349,7 @@ module.exports = {
       '€{p.dinnerStd}/persoană (fost €{p.dinnerStdOriginal}). Plata pe vapor — fără plată în avans, fără risc. Licențiat TÜRSAB A-17672, evaluat cu 4,8★ de peste 11.317 călători.'
     ],
     highlights: [
-      { title: 'Cină turcească completă cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui/chiftele/vegetarian), tort cu înghețată. Certificat halal. Băuturi răcoritoare nelimitate incluse.' },
+      { title: 'Cină turcească completă cu multiple feluri', desc: '10 sortimente de mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui la frigărui/frigărui de vită/vegetarian), halva de gris. Certificat halal. Băuturi răcoritoare nelimitate incluse.' },
       { title: 'Spectacol de dansuri populare turcești live', desc: 'Opt numere: Oba Dombra, spectacol sema, Sarı Gelin, potpuriu azer, dans oriental, potpuriu anatolian, dans cu cuțite georgiano-caucazian, apoi saxofon live și DJ. 40 de minute de spectacol, muzica de fundal continuă.' },
       { title: 'Traseul complet nocturn pe Bosfor', desc: 'Tur de 3 ore: Dolmabahçe, Çırağan, Moscheea Ortaköy, Podul Bosfor, Bebek, Rumeli Hisarı, Podul FSM, Beylerbeyi, Üsküdar, Turnul Fecioarei. Ambele maluri, european și asiatic.' },
       { title: 'De la €{p.dinnerStd} — plata pe vapor', desc: 'Croaziera cu cină: €{p.dinnerStd} (fost €{p.dinnerStdOriginal}). Fără plată în avans. Anulare gratuită cu până la 2 ore înainte de plecare.' }
@@ -390,7 +390,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Toate priveliștile nocturne iconice din Istanbul', desc: 'Palatul Dolmabahçe, Moscheea Ortaköy, Podul Bosfor iluminat, Rumeli Hisarı, Podul FSM, Palatul Beylerbeyi, Turnul Fecioarei. Fiecare reper major la iluminarea nocturnă de vârf.' },
-      { title: 'Cină turcească completă inclusă', desc: '10 mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui/chiftele/vegetarian), desert, băuturi răcoritoare nelimitate. Certificat halal. Prețat la €{p.dinnerStd}/persoană — totul inclus.' },
+      { title: 'Cină turcească completă inclusă', desc: '10 mezeluri, aperitiv cald, fel principal (somon/biban de mare/pui la frigărui/frigărui de vită/vegetarian), desert, băuturi răcoritoare nelimitate. Certificat halal. Prețat la €{p.dinnerStd}/persoană — totul inclus.' },
       { title: 'Dansuri populare live + sema + oriental', desc: 'Program live în opt numere: Oba Dombra, spectacol Mevlana sema, Sarı Gelin, potpuriu azer, dans oriental, potpuriu anatolian, dans cu cuțite georgiano-caucazian, apoi saxofon live și DJ. 40 de minute de spectacol, muzică de fundal toată seara.' },
       { title: 'Ușor pentru prima dată în Istanbul', desc: 'Punct central de întâlnire (debarcaderul Kabataș), transfer de la hotel (+€{p.transfer}/persoană), echipaj vorbitor de engleză, plata pe vapor. Zero stres logistic. Veniți, bucurați-vă, plecați.' }
     ],

@@ -45,7 +45,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Multi-course Turkish feast',
-      desc: '10 mezze selections, hot starter (paçanga böreği), your choice of salmon / sea bass / chicken / köfte / vegetarian plate, dessert with ice-cream cake, and unlimited soft drinks.'
+      desc: '10 mezze selections, hot starter (börek), your choice of salmon / sea bass / chicken skewer / beef skewer / vegetarian plate, dessert with semolina halva, and unlimited soft drinks.'
     },
     {
       icon: 'show',

@@ -54,7 +54,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full multi-course dinner',
-      desc: '10 varieties of Turkish meze, hot appetizer (paçanga böreği), main course (salmon, sea bass, chicken, köfte, vegetarian — your choice), dessert (ice-cream cake), unlimited soft drinks. Halal-certified.'
+      desc: '10 varieties of Turkish meze, hot appetizer (börek), main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian — your choice), dessert (semolina halva), unlimited soft drinks. Halal-certified.'
     },
     {
       icon: 'route',

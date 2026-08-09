@@ -49,7 +49,7 @@ module.exports = {
     {
       icon: 'food',
       title: 'Slow-paced multi-course dinner',
-      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken, köfte, or vegetarian), ice-cream cake dessert. Served in slow succession over 3 hours — you\'re not rushed.'
+      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, or vegetarian), semolina halva dessert. Served in slow succession over 3 hours — you\'re not rushed.'
     },
     {
       icon: 'music',

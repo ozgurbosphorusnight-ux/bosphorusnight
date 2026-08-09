@@ -22,7 +22,7 @@ module.exports = {
       'Uanset om du fejrer en fødselsdag, søger en premium aften i Istanbul for din familie eller ønsker byens mest fotogeniske solnedgang-til-nat overgang — dette er middagskrydstogtet, som først anbefales af de lokale i Istanbul.'
     ],
     highlights: [
-      { title: 'Tyrkisk flerretters middag', desc: '10 varianter af koldt mezze, varm forret (paçanga böreği), valg af hovedret (laks / havbars / kylling / kødboller / vegetarisk), iskage til dessert, ubegrænsede sodavand.' },
+      { title: 'Tyrkisk flerretters middag', desc: '10 varianter af koldt mezze, varm forret (börek), valg af hovedret (laks / havbars / kylling / kødboller / vegetarisk), semulje-halva til dessert, ubegrænsede sodavand.' },
       { title: 'Live folkedans, orientalsk dans og DJ', desc: 'Otte numre: Oba Dombra, Mevlana sema-forestilling, Sarı Gelin, aserbajdsjansk potpourri, klassisk orientalsk dans, anatolsk potpourri og den georgisk-kaukasiske knivdans — derefter live saxofon og et DJ-sæt under hele krydstogtet.' },
       { title: 'Komplet natrute på Bosporus', desc: 'Kabataş → Dolmabahçe → Çırağan-paladset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → FSM-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Fra €{p.dinnerStd}/person — betaling om bord', desc: 'Middagskrydstogt €{p.dinnerStd} (tidligere €{p.dinnerStdOriginal}). Ingen forudbetaling. Gratis afbestilling indtil 2 timer før afgang.' }
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABAT · Én menu, premium standard · Betaling om bord'
     },
     intro: [
-      'Mange både på Bosporus deler deres gæster op i "Standard" og "VIP". Det gør vi ikke. Om bord på **AMOR** er der én middagsmenu, tilberedt med samme omhu til alle: 10 slags tyrkiske meze, en varm forret, hovedret efter eget valg (laks, havbars, kylling eller köfte), islagkage og ubegrænsede sodavand. Hele underholdningsprogrammet på otte numre er også inkluderet — Oba Dombra, de hvirvlende dervishers ceremoni, anatolske og aserbajdsjanske folkedanse, mavedans, kaukasisk knivdans, livemusik og en saxofon-og-DJ-finale — alt sammen inden for prisen på €{p.dinnerStd}/person.',
+      'Mange både på Bosporus deler deres gæster op i "Standard" og "VIP". Det gør vi ikke. Om bord på **AMOR** er der én middagsmenu, tilberedt med samme omhu til alle: 10 slags tyrkiske meze, en varm forret, hovedret efter eget valg (laks, havbars, kyllingespyd eller oksespyd), islagkage og ubegrænsede sodavand. Hele underholdningsprogrammet på otte numre er også inkluderet — Oba Dombra, de hvirvlende dervishers ceremoni, anatolske og aserbajdsjanske folkedanse, mavedans, kaukasisk knivdans, livemusik og en saxofon-og-DJ-finale — alt sammen inden for prisen på €{p.dinnerStd}/person.',
       'VIP-fornemmelsen begynder ved dit bord. Vil du sidde tættest muligt på scenen og udsigten, så tilføj **privat bord tæt på scenen** (+€{p.romantic}/bord), og din plads reserveres på forhånd — den bedste vinkel til dervisherne, folkedansene og det oplyste Bosporus. Det foretrukne valg for par, fejringer og fotoglade gæster.',
       'AMOR er et moderne skib: 42 meter, 3 dæk, op til 400 gæster, opvarmet om vinteren og klimaanlæg om sommeren. Den 3 timer lange rute afgår fra Kabataş (ombordstigning fra 20:00, afgang 21:00, retur 00:00) forbi Dolmabahçe, Ortaköy-moskeen, Rumeli-fæstningen og lysene på Bosporus-broen. TÜRSAB-licens (A-17672), 4,9★ på Google. Ingen forudbetaling — du betaler om bord, med gratis afbestilling indtil 2 timer før afgang.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Sælger I en "VIP-pakke"? Hvad er forskellen fra Standard?', a: 'Vi sælger ikke en separat VIP-pakke — der er én menu, som serveres til alle i samme premium standard. Det, vi kalder "VIP-oplevelsen", er at gøre aftenen til din: privat bord tæt på scenen (+€{p.romantic}/bord), opmærksom bordbetjening og valgfrie drikkevaretilvalg. Krydstogtet varer 3 timer, €{p.dinnerStd}/person.' },
       { q: 'Er €{p.dinnerStd} virkelig 40% rabat?', a: 'Ja — vores vejledende pris er €{p.dinnerStdOriginal}/person. €{p.dinnerStd} er prisen ved direkte booking uden mellemmænds provision. Du betaler om bord, og der er ingen forudbetaling.' },
-      { q: 'Hvad er der på menuen?', a: '10 slags tyrkiske meze, en varm forret, hovedret efter eget valg (laks, havbars, kylling eller köfte) og islagkage til dessert, med ubegrænsede sodavand. Programmet på otte numre er inkluderet: Oba Dombra, dervishernes ceremoni, anatolske og aserbajdsjanske folkedanse, mavedans, kaukasisk knivdans, livemusik og en saxofon-og-DJ-finale.' },
+      { q: 'Hvad er der på menuen?', a: '10 slags tyrkiske meze, en varm forret, hovedret efter eget valg (laks, havbars, kyllingespyd eller oksespyd) og islagkage til dessert, med ubegrænsede sodavand. Programmet på otte numre er inkluderet: Oba Dombra, dervishernes ceremoni, anatolske og aserbajdsjanske folkedanse, mavedans, kaukasisk knivdans, livemusik og en saxofon-og-DJ-finale.' },
       { q: 'Er alkohol inkluderet?', a: 'Nej — alkohol er et separat tilvalg: 2 glas vin, øl, rakı, vodka, whisky, gin og mere for +€{p.alcohol2}/person. Sodavand er inkluderet ubegrænset og gratis. Importerede premium-spiritusser afregnes separat om bord.' },
       { q: 'Hvordan sikrer jeg mig et bord tæt på scenen?', a: 'Vælg blot tilvalget "privat bord tæt på scenen" (+€{p.romantic}/bord), når du booker — bordet reserveres i dit navn. De bedste pladser går til forhåndsbookinger, så tilføj det gerne inden selve dagen.' },
       { q: 'Hvilken slags skib er det?', a: 'AMOR — et moderne passagerskib på 42 meter med 3 dæk og plads til 400 gæster, opvarmet om vinteren og med klimaanlæg om sommeren. Afgang fra Kabataş-molen: ombordstigning 20:00, afgang 21:00, retur 00:00. Rute: Dolmabahçe, Ortaköy, Rumeli-fæstningen, Beylerbeyi og lysene på Bosporus-broen.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privat bord til to', desc: 'Privat bord til 2 personer, ikke delt. Prioritet til vinduebordene for par. Fotos af solnedgang og natlig Bosporus lige uden for dit vindue.' },
-      { title: 'Langsom flerretters middag', desc: '10 varianter af tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller eller vegetarisk), iskage til dessert. Serveret langsomt over 3 timer — du har ikke travlt.' },
+      { title: 'Langsom flerretters middag', desc: '10 varianter af tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller eller vegetarisk), semulje-halva til dessert. Serveret langsomt over 3 timer — du har ikke travlt.' },
       { title: 'Live violin og blød musik', desc: 'Live violin og akustisk tyrkisk musik under middagen skaber en intim atmosfære, passende til samtale. Derefter kommer DJ\'en for par, der vil danse.' },
       { title: 'Tillæg til specielle aftener', desc: 'Romantisk bordopsætning (stearinlys, roser): +€{p.romantic}. 2 glas alkohol (vin, øl, rakı, vodka, whisky, gin og mere): +€{p.alcohol2}/person. Hoteltransfer (tur-retur): +€{p.transfer}/person. Vælg, hvad der passer til din aften.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Sommersolnedgange lige ved afgang', desc: 'Fra maj til august går solen i Istanbul ned mellem cirka 20:15–20:45 — ombordstigning kl. 20:00 giver dig den gyldne time på dækket, og afgangen kl. 21:00 sætter dig på vandet til selve solnedgangen. Kamera klar — dette er fotoet.' },
       { title: 'Blå time og videre ind i natten', desc: 'Ikke kun solnedgang — krydstogtet sejler gennem tusmørket og ind i den fuldt oplyste Bosporus. Gyldent lys, blå time og derefter 30 millioner brolys på mørkt vand: tre lysfaser på én aften.' },
-      { title: 'Fuld middag under krydstogtet', desc: '10 varianter tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller, vegetarisk), iskage, ubegrænsede sodavand — serveret, mens byens lys tændes.' },
+      { title: 'Fuld middag under krydstogtet', desc: '10 varianter tyrkiske mezze, varm forret, hovedret (laks, havbars, kylling, kødboller, vegetarisk), semulje-halva, ubegrænsede sodavand — serveret, mens byens lys tændes.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporus-broen — alt skinner', desc: 'Ruten passerer Dolmabahçe-paladset, Ortaköy-moskeen, Bosporus-broen, Rumeli Hisarı og Beylerbeyi-paladset, netop som deres lys tændes. Hvert vartegn i sit bedste lys.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Den oplyste Bosporus på dramatisk top', desc: 'Bosporus-broen skifter farve (blå, lilla, gylden), paladserne stråler gule, Ortaköy-moskeen reflekteres i det mørke vand. 21:00-00:00 maksimal belysning for alle Istanbuls vartegn.' },
       { title: 'Traditionelt tyrkisk show om bord', desc: 'Otte numre: Oba Dombra, sema-forestilling, Sarı Gelin, aserbajdsjansk potpourri, orientalsk dans, anatolsk potpourri og den georgisk-kaukasiske knivdans, derefter live saxofon og DJ-sæt. 40 minutter show, derefter fortsætter musikken + middagen.' },
-      { title: 'Fuld flerretters middag', desc: '10 varianter tyrkiske mezze, varm forret (paçanga böreği), hovedret (laks, havbars, kylling, kødboller, vegetarisk — dit valg), dessert (iskage), ubegrænsede sodavand. Halal-certificeret.' },
+      { title: 'Fuld flerretters middag', desc: '10 varianter tyrkiske mezze, varm forret (börek), hovedret (laks, havbars, kylling, kødboller, vegetarisk — dit valg), dessert (semulje-halva), ubegrænsede sodavand. Halal-certificeret.' },
       { title: 'Komplet Bosporus-rute', desc: 'Kabataş → Dolmabahçe → Çırağan-paladset → Ortaköy-moskeen → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-broen → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jomfrutårnet → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/person (tidligere €{p.dinnerStdOriginal}). Betaling om bord — ingen forudbetaling, ingen risiko. Licenseret af TÜRSAB A-17672, bedømt med 4,8★ af mere end 11.317 rejsende.'
     ],
     highlights: [
-      { title: 'Fuld tyrkisk flerretters middag', desc: '10 varianter mezze, varm forret, hovedret (laks/havbars/kylling/kødboller/vegetarisk), iskage. Halal-certificeret. Ubegrænsede sodavand inkluderet.' },
+      { title: 'Fuld tyrkisk flerretters middag', desc: '10 varianter mezze, varm forret, hovedret (laks/havbars/kylling/kødboller/vegetarisk), semulje-halva. Halal-certificeret. Ubegrænsede sodavand inkluderet.' },
       { title: 'Live tyrkisk folkedans-show', desc: 'Otte numre: Oba Dombra, sema-forestilling, Sarı Gelin, aserbajdsjansk potpourri, orientalsk dans, anatolsk potpourri, georgisk-kaukasisk knivdans, derefter live saxofon og DJ. 40 minutter show, kontinuerlig baggrundsmusik.' },
       { title: 'Komplet natrute på Bosporus', desc: 'Tur på 3 timer: Dolmabahçe, Çırağan, Ortaköy-moskeen, Bosporus-broen, Bebek, Rumeli Hisarı, FSM-broen, Beylerbeyi, Üsküdar, Jomfrutårnet. Begge kyster, europæisk og asiatisk.' },
       { title: 'Fra €{p.dinnerStd} — betaling om bord', desc: 'Middagskrydstogt: €{p.dinnerStd} (tidligere €{p.dinnerStdOriginal}). Ingen forudbetaling. Gratis afbestilling indtil 2 timer før afgang.' }

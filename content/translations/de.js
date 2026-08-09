@@ -22,7 +22,7 @@ module.exports = {
       'Ob Sie einen Jahrestag feiern, einen Premium-Abend in Istanbul mit Ihrer Familie suchen oder einfach den fotogensten Übergang von Sonnenuntergang zu Nacht der Stadt erleben möchten — dies ist die Dinner-Cruise, die Einheimische in Istanbul zuerst empfehlen.'
     ],
     highlights: [
-      { title: 'Mehrgängiges türkisches Festmahl', desc: '10 Mezze-Sorten, warme Vorspeise (Paçanga Böreği), Hauptgang nach Wahl (Lachs / Wolfsbarsch / Hähnchen / Köfte / vegetarisch), Eisbomben-Dessert, unbegrenzte alkoholfreie Getränke.' },
+      { title: 'Mehrgängiges türkisches Festmahl', desc: '10 Mezze-Sorten, warme Vorspeise (Börek), Hauptgang nach Wahl (Lachs / Wolfsbarsch / Hähnchenspieß / Rindspieß / vegetarisch), Grießhalva, unbegrenzte alkoholfreie Getränke.' },
       { title: 'Live-Folklore, orientalischer Tanz & DJ', desc: 'Acht Darbietungen: Oba Dombra, Mevlana-Sema, Sarı Gelin, aserbaidschanisches Potpourri, klassischer Bauchtanz, anatolisches Potpourri und der georgisch-kaukasische Messertanz — danach Live-Saxofon und ein DJ-Set während der restlichen Fahrt.' },
       { title: 'Komplette Bosporus-Nachtroute', desc: 'Kabataş → Dolmabahçe → Çırağan-Palast → Ortaköy-Moschee → Bebek → Rumeli Hisarı → FSM-Brücke → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Ab €{p.dinnerStd}/Person — Zahlung an Bord', desc: 'Dinner-Cruise €{p.dinnerStd} (vorher €{p.dinnerStdOriginal}). Keine Vorauszahlung. Kostenlose Stornierung bis 2 Stunden vor Abfahrt.' }
@@ -125,12 +125,12 @@ module.exports = {
       badge: '100 % Halal · Familienfreundlich · In muslimischem Besitz'
     },
     intro: [
-      'Die **Halal Bosporus-Cruise** ist Istanbuls respektvollste Dinner-Cruise für muslimische Reisende. Jedes Fleisch, das auf unserem Schiff serviert wird — Lachs, Wolfsbarsch, Hähnchen, Lamm-Köfte, Rinderfilet, Rib-Eye — ist **halal-zertifiziert** von zugelassenen Lieferanten. Wir servieren allen Gästen dasselbe Menü; es gibt keinen separaten „Halal-Bereich“, da das gesamte Schiff standardmäßig halal ist.',
+      'Die **Halal Bosporus-Cruise** ist Istanbuls respektvollste Dinner-Cruise für muslimische Reisende. Jedes Fleisch, das auf unserem Schiff serviert wird — Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß — ist **halal-zertifiziert** von zugelassenen Lieferanten. Wir servieren allen Gästen dasselbe Menü; es gibt keinen separaten „Halal-Bereich“, da das gesamte Schiff standardmäßig halal ist.',
       'Alkohol ist ein **optionales Extra** — wird Gästen nie aufgedrängt, und die Sitzordnung trennt natürlich diejenigen, die einen alkoholfreien Tisch bevorzugen. Für Gäste, die das 2-Gläser-Alkoholpaket (+€{p.alcohol2}/Person) wünschen, ist es vorhanden, aber die inklusiven unbegrenzten alkoholfreien Getränke (Wasser, Cola, Säfte) reichen den meisten muslimischen Familien aus. Unser Personal ist geschult, respektvoll zu sein, ohne Annahmen über Ihre Vorlieben zu treffen.',
       'Die **halalfreundliche Bosporus-Cruise** ist wichtig für Reisende aus Saudi-Arabien, VAE, Kuwait, Katar, Iran, Malaysia, Indonesien, Pakistan und Marokko, die Istanbuls ikonischsten Abend ohne Kompromisse erleben möchten. TÜRSAB-lizenziert, 4,8★ und Zahlung an Bord — Sie legen sich zu nichts fest, bis Sie sicher sind, dass das Erlebnis Ihren Standards entspricht.'
     ],
     highlights: [
-      { title: '100 % halal-zertifiziertes Menü', desc: 'Alles Fleisch (Lachs, Wolfsbarsch, Hähnchen, Köfte, Rind, Rib-Eye) ist halal-zertifiziert von zugelassenen Lieferanten. Die Küche folgt der Halal-Zubereitung. Keine Schweinefleischprodukte oder nicht-halal Zusätze. Vegetarische Optionen immer verfügbar.' },
+      { title: '100 % halal-zertifiziertes Menü', desc: 'Alles Fleisch (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß) ist halal-zertifiziert von zugelassenen Lieferanten. Die Küche folgt der Halal-Zubereitung. Keine Schweinefleischprodukte oder nicht-halal Zusätze. Vegetarische Optionen immer verfügbar.' },
       { title: 'Alkohol optional, nie aufgedrängt', desc: 'Alkoholpakete sind ein Extra — standardmäßig nicht enthalten. Alkoholfreie Getränke (Wasser, Cola, Säfte) sind unbegrenzt und kostenlos. Solange Sie nicht ausdrücklich darum bitten, bleibt Ihr Tisch alkoholfrei. Die Crew respektiert Ihre Wahl diskret.' },
       { title: 'Familienfreundliche Unterhaltung', desc: 'Sema-Vorführung, traditionelle türkische Volkstänze, türkische Livemusik. Keine Nachtclub-Vorführungen, keine unangemessenen Inhalte. Sicher für Kinder, respektvoll für Familien. Orientalischer Tanz ist eine traditionelle Kunstform, bescheiden präsentiert.' },
       { title: 'Respekt vor Gebetszeiten', desc: 'Wenn die Maghrib- oder Isha-Zeit mit dem Einsteigen (20:00–21:00) zusammenfällt, kann unser Personal Sie vor der Abfahrt zum ruhigen Gebetsbereich am Kabataş-Pier weisen. Teilen Sie es einfach bei der Buchung mit.' }
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% RABATT · Ein Menü, Premium-Standard · Zahlung an Bord'
     },
     intro: [
-      'Viele Bosporus-Boote teilen ihre Gäste in "Standard" und "VIP". Wir nicht. An Bord der **AMOR** gibt es ein Dinner-Menü, für alle mit der gleichen Sorgfalt zubereitet: 10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchen oder Köfte), Eistorte und unbegrenzt alkoholfreie Getränke. Das komplette achtteilige Unterhaltungsprogramm ist inklusive — Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale — alles im Preis von €{p.dinnerStd}/Person.',
+      'Viele Bosporus-Boote teilen ihre Gäste in "Standard" und "VIP". Wir nicht. An Bord der **AMOR** gibt es ein Dinner-Menü, für alle mit der gleichen Sorgfalt zubereitet: 10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß), Grießhalva und unbegrenzt alkoholfreie Getränke. Das komplette achtteilige Unterhaltungsprogramm ist inklusive — Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale — alles im Preis von €{p.dinnerStd}/Person.',
       'Das VIP-Gefühl beginnt an Ihrem Tisch. Wenn Sie der Bühne und der Aussicht am nächsten sitzen möchten, buchen Sie den **privaten Tisch nahe der Bühne** (+€{p.romantic}/Tisch) — Ihr Platz wird im Voraus reserviert, mit dem besten Blick auf die Derwisch-Zeremonie, die Volkstänze und den beleuchteten Bosporus. Der Favorit von Paaren, Feiernden und Fotografen.',
       'Die AMOR ist ein modernes Schiff: 42 Meter, 3 Decks, bis zu 400 Gäste, im Winter beheizt, im Sommer klimatisiert. Die 3-stündige Route startet in Kabataş (Einlass ab 20:00, Abfahrt 21:00, Rückkehr 00:00) vorbei an Dolmabahçe, der Ortaköy-Moschee, der Festung Rumeli und den Lichtern der Bosporus-Brücke. TÜRSAB-lizenziert (A-17672), 4,9★ auf Google. Keine Vorauszahlung — Sie zahlen an Bord, kostenlose Stornierung bis 2 Stunden vor Abfahrt.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Verkaufen Sie ein "VIP-Paket"? Was ist der Unterschied zu Standard?', a: 'Wir verkaufen kein separates VIP-Paket — es gibt ein Menü, das allen im gleichen Premium-Standard serviert wird. Was wir "VIP-Erlebnis" nennen, ist die Personalisierung Ihres Abends: privater Tisch nahe der Bühne (+€{p.romantic}/Tisch), aufmerksamer Tischservice und optionale Getränke-Extras. Die Tour dauert 3 Stunden, €{p.dinnerStd}/Person.' },
       { q: 'Sind €{p.dinnerStd} wirklich 40% Rabatt?', a: 'Ja — unser Listenpreis liegt bei €{p.dinnerStdOriginal}/Person. €{p.dinnerStd} ist der Direktbuchungspreis ohne Vermittlerprovisionen. Sie zahlen an Bord, es gibt keine Vorauszahlung.' },
-      { q: 'Was steht auf dem Menü?', a: '10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchen oder Köfte) und Eistorte als Dessert, dazu unbegrenzt alkoholfreie Getränke. Das achtteilige Unterhaltungsprogramm ist inklusive: Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale.' },
+      { q: 'Was steht auf dem Menü?', a: '10 Sorten türkische Meze, eine warme Vorspeise, Hauptgang nach Wahl (Lachs, Wolfsbarsch, Hähnchenspieß oder Rindspieß) und Grießhalva als Dessert, dazu unbegrenzt alkoholfreie Getränke. Das achtteilige Unterhaltungsprogramm ist inklusive: Oba Dombra, Derwisch-Zeremonie, anatolische und aserbaidschanische Volkstänze, Bauchtanz, kaukasischer Messertanz, Live-Musik und ein Saxofon-und-DJ-Finale.' },
       { q: 'Ist Alkohol inbegriffen?', a: 'Nein — Alkohol ist ein separates Extra: 2 Gläser aus der Bar — Wein, Bier, Rakı, Wodka, Whisky, Gin und mehr und mehr für +€{p.alcohol2}/Person. Alkoholfreie Getränke sind unbegrenzt und kostenlos inklusive. Premium-Importspirituosen werden an Bord separat abgerechnet.' },
       { q: 'Wie sichere ich mir einen Tisch nahe der Bühne?', a: 'Wählen Sie bei der Buchung einfach das Extra "privater Tisch nahe der Bühne" (+€{p.romantic}/Tisch) — der Tisch wird auf Ihren Namen reserviert. Die besten Plätze sind durch Vorausbuchungen schnell vergeben, buchen Sie also vor Ihrem Tourtag.' },
       { q: 'Was für ein Schiff ist es?', a: 'Die AMOR — ein modernes Passagierschiff mit 42 Metern Länge, 3 Decks und Platz für 400 Gäste, im Winter beheizt und im Sommer klimatisiert. Abfahrt am Kabataş-Pier: Einlass 20:00, Abfahrt 21:00, Rückkehr 00:00. Route: Dolmabahçe, Ortaköy, Festung Rumeli, Beylerbeyi und die Lichter der Bosporus-Brücke.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privater Tisch für zwei', desc: 'Reservierter 2-Personen-Tisch, nicht geteilt. Paare haben Vorrang bei Fenstertischen. Sonnenuntergangs- und Nacht-Bosporus-Fotos direkt vor Ihrem Fenster.' },
-      { title: 'Entspanntes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchen, Köfte oder vegetarisch), Eisbomben-Dessert. Langsam serviert über 3 Stunden — Sie werden nicht gehetzt.' },
+      { title: 'Entspanntes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß oder vegetarisch), Grießhalva. Langsam serviert über 3 Stunden — Sie werden nicht gehetzt.' },
       { title: 'Live-Violine und sanfte Musik', desc: 'Live-Violine und akustische türkische Musik während des Dinners schaffen eine intime Atmosphäre, geeignet für Gespräche. Später übernimmt der DJ für Paare, die tanzen möchten.' },
       { title: 'Extras für besondere Abende', desc: 'Romantisches Tischarrangement (Kerzen, Rosen): +€{p.romantic}. 2-Gläser-Alkoholpaket (Wein, Raki): +€{p.alcohol2}/Person. Hoteltransfer (hin und zurück): +€{p.transfer}/Person. Wählen Sie, was zu Ihrem Abend passt.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Sommer-Sonnenuntergänge genau zur Abfahrt', desc: 'Von Mai bis August geht die Sonne in Istanbul etwa zwischen 20:15 und 20:45 unter — beim Einsteigen um 20:00 erleben Sie die goldene Stunde an Deck, und die Abfahrt um 21:00 bringt Sie zum Sonnenuntergang selbst aufs Wasser. Kamera bereit — das ist der Shot.' },
       { title: 'Blaue Stunde bis in die volle Nacht', desc: 'Nicht nur Sonnenuntergang — die Tour fährt durch die Dämmerung hinein in den voll beleuchteten Bosporus. Goldenes Licht, blaue Stunde, dann 30 Millionen Brückenlichter auf dunklem Wasser: drei Lichtphasen an einem Abend.' },
-      { title: 'Komplettes Dinner während der Tour', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchen, Köfte, vegetarisch), Eisbomben-Dessert, unbegrenzte alkoholfreie Getränke — serviert, während die Stadtlichter angehen.' },
+      { title: 'Komplettes Dinner während der Tour', desc: '10 türkische Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß, vegetarisch), Grießhalva, unbegrenzte alkoholfreie Getränke — serviert, während die Stadtlichter angehen.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporus-Brücke — alle leuchten', desc: 'Die Route führt am Dolmabahçe-Palast, der Ortaköy-Moschee, der Bosporus-Brücke, Rumeli Hisarı und dem Beylerbeyi-Palast vorbei, während ihre Lichter angehen. Jedes Wahrzeichen im besten Licht.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Bosporus auf dem Höhepunkt dramatisch beleuchtet', desc: 'Die Bosporus-Brücke wechselt die Farben (blau, violett, gold), Paläste leuchten gelb, die Ortaköy-Moschee spiegelt sich auf schwarzem Wasser. 21:00–00:00 ist die Spitzenbeleuchtungszeit für alle Istanbuler Wahrzeichen.' },
       { title: 'Traditionelle türkische Show an Bord', desc: 'Acht Darbietungen: Oba Dombra, Sema-Vorführung, Sarı Gelin, aserbaidschanisches Potpourri, orientalischer Tanz, anatolisches Potpourri und der georgisch-kaukasische Messertanz, gefolgt von Live-Saxofon und einem DJ-Set. 40 Minuten Aufführung, dann geht die Musik + Dinner weiter.' },
-      { title: 'Komplettes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise (Paçanga Böreği), Hauptgang (Lachs, Wolfsbarsch, Hähnchen, Köfte, vegetarisch — Ihre Wahl), Dessert (Eisbombe), unbegrenzte alkoholfreie Getränke. Halal-zertifiziert.' },
+      { title: 'Komplettes mehrgängiges Dinner', desc: '10 türkische Mezze-Sorten, warme Vorspeise (Börek), Hauptgang (Lachs, Wolfsbarsch, Hähnchenspieß, Rindspieß, vegetarisch — Ihre Wahl), Dessert (Eisbombe), unbegrenzte alkoholfreie Getränke. Halal-zertifiziert.' },
       { title: 'Komplette Bosporus-Route', desc: 'Kabataş → Dolmabahçe → Çırağan-Palast → Ortaköy-Moschee → Bebek → Rumeli Hisarı → Fatih-Sultan-Mehmet-Brücke → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Mädchenturm → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/Person für die Dinner-Cruise (vorher €{p.dinnerStdOriginal}). Zahlung an Bord — keine Vorauszahlung, kein Risiko. TÜRSAB A-17672 lizenziert, 4,8★ von über 11.317 Reisenden.'
     ],
     highlights: [
-      { title: 'Komplettes mehrgängiges türkisches Dinner', desc: '10 Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchen/Köfte/vegetarisch), Eisbomben-Dessert. Halal-zertifiziert. Unbegrenzte alkoholfreie Getränke inklusive.' },
+      { title: 'Komplettes mehrgängiges türkisches Dinner', desc: '10 Mezze-Sorten, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchenspieß/Rindspieß/vegetarisch), Grießhalva. Halal-zertifiziert. Unbegrenzte alkoholfreie Getränke inklusive.' },
       { title: 'Live-türkische Folkloreshow', desc: 'Acht Darbietungen: Oba Dombra, Sema-Vorführung, Sarı Gelin, aserbaidschanisches Potpourri, orientalischer Tanz, anatolisches Potpourri, georgisch-kaukasischer Messertanz, dann Live-Saxofon und DJ. 40 Minuten Aufführung, Hintergrundmusik geht weiter.' },
       { title: 'Komplette Bosporus-Nachtroute', desc: '3-stündige Tour: Dolmabahçe, Çırağan, Ortaköy-Moschee, Bosporus-Brücke, Bebek, Rumeli Hisarı, FSM-Brücke, Beylerbeyi, Üsküdar, Mädchenturm. Sowohl europäische als auch asiatische Seite.' },
       { title: 'Ab €{p.dinnerStd} — Zahlung an Bord', desc: 'Dinner-Cruise €{p.dinnerStd} (vorher €{p.dinnerStdOriginal}). Keine Vorauszahlung. Kostenlose Stornierung bis 2 Stunden vor Abfahrt.' }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Alle ikonischen Istanbuler Nachtansichten', desc: 'Dolmabahçe-Palast, Ortaköy-Moschee, beleuchtete Bosporus-Brücke, Rumeli Hisarı, FSM-Brücke, Beylerbeyi-Palast, Mädchenturm. Jedes Hauptwahrzeichen in Spitzennachtbeleuchtung.' },
-      { title: 'Komplettes türkisches Dinner inklusive', desc: '10 Mezze, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchen/Köfte/vegetarisch), Dessert, unbegrenzte alkoholfreie Getränke. Halal-zertifiziert. Preis von €{p.dinnerStd}/Person — alles inklusive.' },
+      { title: 'Komplettes türkisches Dinner inklusive', desc: '10 Mezze, warme Vorspeise, Hauptgang (Lachs/Wolfsbarsch/Hähnchenspieß/Rindspieß/vegetarisch), Dessert, unbegrenzte alkoholfreie Getränke. Halal-zertifiziert. Preis von €{p.dinnerStd}/Person — alles inklusive.' },
       { title: 'Live-Folklore + Sema + orientalisch', desc: 'Achtteiliges Live-Programm: Oba Dombra, Mevlana-Sema-Vorführung, Sarı Gelin, aserbaidschanisches Potpourri, orientalischer Tanz, anatolisches Potpourri, georgisch-kaukasischer Messertanz, dann Live-Saxofon und DJ. 40 Minuten Aufführung, den ganzen Abend Hintergrundmusik.' },
       { title: 'Einfach für Istanbul-Erstbesucher', desc: 'Zentraler Treffpunkt (Kabataş-Pier), Hoteltransfer (+€{p.transfer}/Person), englischsprachige Crew, Zahlung an Bord. Null Logistikstress. Kommen, genießen, gehen.' }
     ],

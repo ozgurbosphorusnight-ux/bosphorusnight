@@ -22,7 +22,7 @@ module.exports = {
       'Yıldönümü mü kutluyorsunuz, aileniz için premium bir İstanbul akşamı mı arıyorsunuz, yoksa şehrin en fotojenik gün batımı-gece geçişini mi istiyorsunuz — İstanbul sakinlerinin ilk önerdiği yemekli tur bu.'
     ],
     highlights: [
-      { title: 'Çok çeşitli Türk ziyafeti', desc: '10 çeşit meze, sıcak başlangıç (paçanga böreği), ana yemek seçimi (somon / levrek / tavuk / köfte / vejetaryen), dondurmalı pasta tatlı, sınırsız meşrubat.' },
+      { title: 'Çok çeşitli Türk ziyafeti', desc: '10 çeşit meze, sıcak başlangıç (börek), ana yemek seçimi (somon / levrek / tavuk şiş / dana şiş / vejetaryen), irmik helvası tatlı, sınırsız meşrubat.' },
       { title: 'Canlı halk oyunları, oryantal dans ve DJ', desc: 'Sekiz gösteri: Oba Dombra, Mevlana sema, Sarı Gelin, Azerbaycan potpurisi, klasik oryantal dans, Anadolu potpurisi ve Gürcü-Kafkas bıçak dansı — ardından canlı saksafon ve tur boyunca DJ seti.' },
       { title: 'Tam Boğaz gece rotası', desc: 'Kabataş → Dolmabahçe → Çırağan Sarayı → Ortaköy Camii → Bebek → Rumeli Hisarı → FSM Köprüsü → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: '€{p.dinnerStd}/kişi\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
@@ -125,12 +125,12 @@ module.exports = {
       badge: '%100 Helal · Aile Dostu · Müslüman Sahibi'
     },
     intro: [
-      '**Helal Boğaz turu**, İstanbul\'un Müslüman gezginler için en saygın yemekli turudur. Teknemizde servis edilen her et — somon, levrek, tavuk, kuzu köfte, dana bonfile, antrikot — onaylı tedarikçilerden **helal sertifikalıdır**. Aynı menüyü her misafire servis ediyoruz; ayrı "helal bölümü" yok çünkü tüm tekne varsayılan olarak helal.',
+      '**Helal Boğaz turu**, İstanbul\'un Müslüman gezginler için en saygın yemekli turudur. Teknemizde servis edilen her et — somon, levrek, tavuk şiş, dana şiş, dana bonfile, antrikot — onaylı tedarikçilerden **helal sertifikalıdır**. Aynı menüyü her misafire servis ediyoruz; ayrı "helal bölümü" yok çünkü tüm tekne varsayılan olarak helal.',
       'Alkol **opsiyonel bir eklentidir** — misafirlere asla dayatılmaz ve oturma düzeni alkolsüz masa tercih edenleri doğal olarak ayırır. 2 bardaklık alkol paketi (+€{p.alcohol2}/kişi) isteyen misafirler için orada, ama dahil olan sınırsız meşrubatlar (su, kola, meyve suyu) çoğu Müslüman aile için yeterli. Ekibimiz tercihlerinizi varsayım yapmadan saygılı olacak şekilde eğitilmiştir.',
       'İstanbul\'un en ikonik akşamını ödün vermeden isteyen Suudi Arabistan, BAE, Kuveyt, Katar, İran, Malezya, Endonezya, Pakistan ve Fas\'tan gelen gezginler için **helal dostu Boğaz turu** önemlidir. TÜRSAB lisanslı, 4.8★ ve teknede ödeme — deneyimin standartlarınızı karşıladığından emin olana kadar hiçbir şeye söz vermezsiniz.'
     ],
     highlights: [
-      { title: '%100 helal sertifikalı menü', desc: 'Tüm et (somon, levrek, tavuk, köfte, dana, antrikot) onaylı tedarikçilerden helal sertifikalıdır. Mutfak helal hazırlığı takip eder. Domuz ürünü veya helal olmayan katkı yok. Vejetaryen seçenekleri her zaman mevcut.' },
+      { title: '%100 helal sertifikalı menü', desc: 'Tüm et (somon, levrek, tavuk şiş, dana şiş, dana, antrikot) onaylı tedarikçilerden helal sertifikalıdır. Mutfak helal hazırlığı takip eder. Domuz ürünü veya helal olmayan katkı yok. Vejetaryen seçenekleri her zaman mevcut.' },
       { title: 'Alkol opsiyonel, asla dayatılmaz', desc: 'Alkol paketleri eklentidir — varsayılan olarak dahil değildir. Meşrubatlar (su, kola, meyve suyu) sınırsız ve ücretsiz. Açıkça talep etmedikçe masanız alkolsüz kalır. Ekip seçiminize sessizce saygı gösterir.' },
       { title: 'Aile dostu eğlence', desc: 'Sema gösterisi, geleneksel Türk halk oyunları, canlı Türk müziği. Gece kulübü tarzı performans yok, uygunsuz içerik yok. Çocuklar için güvenli, aileler için saygılı. Oryantal dans geleneksel bir sanat formu, mütevazı sunulur.' },
       { title: 'Namaz vaktine saygı', desc: 'Akşam veya yatsı biniş zamanına denk gelirse (20:00-21:00), personelimiz kalkıştan önce Kabataş İskelesi\'ndeki sessiz namaz alanına yönlendirebilir. Rezervasyonda bildirmeniz yeterli.' }
@@ -161,7 +161,7 @@ module.exports = {
       badge: '%40 İNDİRİM · Tek Menü, Premium Standart · Teknede Ödeme'
     },
     intro: [
-      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk veya köfte), dondurmalı pasta ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
+      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), irmik helvası ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
       'VIP hissi masanızla başlar. Sahneye ve manzaraya en yakın masalardan birini isterseniz **sahne yakını özel masa** eklentisiyle (+€{p.romantic}/masa) yeriniz önceden ayrılır — semazeni, halk oyunlarını ve aydınlatılmış Boğaz\'ı en iyi açıdan izlersiniz. Çiftlerin, kutlamaların ve fotoğraf sevenlerin favorisi.',
       'AMOR 42 metrelik, 3 katlı, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir tekne. 3 saatlik rota Kabataş\'tan başlar (giriş 20:00\'den itibaren, kalkış 21:00, dönüş 00:00): Dolmabahçe, Ortaköy Camii, Rumeli Hisarı ve Boğaz Köprüsü ışıkları. TÜRSAB lisanslı (A-17672), Google\'da 4.9★. Ön ödeme yok — teknede ödersiniz, kalkışa 2 saat kalaya kadar ücretsiz iptal.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: '"VIP paketi" mi satıyorsunuz? Standart ile farkı ne?', a: 'Ayrı bir VIP paketi satmıyoruz — tek menümüz var ve herkese aynı premium standartta servis ediliyor. "VIP deneyim" dediğimiz şey akşamınızı kişiselleştirmek: sahne yakını özel masa eklentisi (+€{p.romantic}/masa), özenli masa servisi ve isteğe bağlı içecek eklentileri. Tur 3 saat, fiyat €{p.dinnerStd}/kişi.' },
       { q: '€{p.dinnerStd} gerçekten %40 indirim mi?', a: 'Evet — liste fiyatımız €{p.dinnerStdOriginal}/kişi. €{p.dinnerStd}, aracı komisyonlarını devre dışı bırakan doğrudan rezervasyon fiyatıdır. Ödemeyi teknede yaparsınız, ön ödeme yoktur.' },
-      { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk veya köfte), dondurmalı pasta ve sınırsız meşrubat. Sekiz bölümlük eğlence programı dahil: Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali.' },
+      { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), irmik helvası ve sınırsız meşrubat. Sekiz bölümlük eğlence programı dahil: Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali.' },
       { q: 'Alkol dahil mi?', a: 'Hayır — alkol ayrı eklentidir: kişi başı 2 kadeh şarap, bira, rakı, votka, viski, cin ve daha fazlası +€{p.alcohol2}. Sınırsız meşrubat ücretsiz dahildir. Premium ithal içkiler teknede ayrıca fiyatlandırılır.' },
       { q: 'Sahne yakını masayı nasıl garantilerim?', a: 'Rezervasyon sırasında "sahne yakını özel masa" eklentisini (+€{p.romantic}/masa) seçmeniz yeterli — masanız isminize ayrılır. En iyi konumlar ön rezervasyonlarla dolduğu için tur gününden önce eklemenizi öneririz.' },
       { q: 'Tekne nasıl bir tekne?', a: 'AMOR — 42 metre, 3 kat, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir yolcu teknesi. Kalkış Kabataş İskelesi\'nden: giriş 20:00, kalkış 21:00, dönüş 00:00. Rota: Dolmabahçe, Ortaköy, Rumeli Hisarı, Beylerbeyi ve Boğaz Köprüsü ışıkları.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'İki kişilik özel masa', desc: 'Özel 2 kişilik masa, paylaşılmıyor. Çiftlere pencere kenarı oturma önceliği. Pencerenizin hemen dışında gün batımı ve gece Boğaz fotoğrafları.' },
-      { title: 'Yavaş tempolu çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk, köfte veya vejetaryen), dondurmalı pasta tatlı. 3 saat boyunca yavaşça servis edilir — acele ettirilmiyorsunuz.' },
+      { title: 'Yavaş tempolu çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş veya vejetaryen), irmik helvası tatlı. 3 saat boyunca yavaşça servis edilir — acele ettirilmiyorsunuz.' },
       { title: 'Canlı keman ve hafif müzik', desc: 'Yemek sırasında canlı keman ve akustik Türk müziği sohbete uygun samimi bir atmosfer yaratır. Sonra, dans etmek isteyen çiftler için DJ devreye girer.' },
       { title: 'Özel geceler için eklentiler', desc: 'Romantik masa düzeni (mumlar, güller): +€{p.romantic}. 2 kadehlik alkol paketi (şarap, bira, rakı, votka, viski, cin ve daha fazlası): +€{p.alcohol2}/kişi. Otel transferi (gidiş-dönüş): +€{p.transfer}/kişi. Akşamınıza uyanı seçin.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Yaz gün batımları tam kalkış saatinde', desc: 'Mayıs\'tan Ağustos\'a İstanbul\'da güneş yaklaşık 20:15–20:45 arasında batar — 20:00 biniş size güvertede altın saati verir, 21:00 kalkış ise sizi gün batımının tam ortasında suya çıkarır. Kamera hazır olsun — o kare bu.' },
       { title: 'Mavi saatten tam geceye', desc: 'Sadece gün batımı değil — tur alacakaranlıktan geçip tamamen aydınlatılmış Boğaz\'a açılır. Altın ışık, mavi saat, sonra karanlık suda 30 milyon köprü ışığı: tek akşamda üç ışık evresi.' },
-      { title: 'Tur boyunca tam akşam yemeği', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk, köfte, vejetaryen), dondurmalı pasta, sınırsız meşrubat — şehir ışıkları yanarken servis edilir.' },
+      { title: 'Tur boyunca tam akşam yemeği', desc: '10 çeşit Türk mezesi, sıcak başlangıç, ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen), irmik helvası, sınırsız meşrubat — şehir ışıkları yanarken servis edilir.' },
       { title: 'Dolmabahçe, Ortaköy, Boğaz Köprüsü — hepsi parlıyor', desc: 'Rota, ışıkları yanarken Dolmabahçe Sarayı, Ortaköy Camii, Boğaz Köprüsü, Rumeli Hisarı ve Beylerbeyi Sarayı\'nın önünden geçer. Her simge yapı en iyi ışığında.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'Tepe dramada aydınlatılmış Boğaz', desc: 'Boğaz Köprüsü renk değiştirir (mavi, mor, altın), saraylar sarı parlar, Ortaköy Camii siyah suya yansır. 21:00-00:00 tüm İstanbul dönüm noktaları için tepe aydınlatma.' },
       { title: 'Teknede geleneksel Türk şov', desc: 'Sekiz gösteri: Oba Dombra, sema gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal dans, Anadolu potpurisi ve Gürcü-Kafkas bıçak dansı, sonra canlı saksafon ve DJ seti. 40 dakika performans, sonra müzik + yemek devam eder.' },
-      { title: 'Tam çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç (paçanga böreği), ana yemek (somon, levrek, tavuk, köfte, vejetaryen — seçiminiz), tatlı (dondurmalı pasta), sınırsız meşrubat. Helal sertifikalı.' },
+      { title: 'Tam çok çeşitli yemek', desc: '10 çeşit Türk mezesi, sıcak başlangıç (börek), ana yemek (somon, levrek, tavuk şiş, dana şiş, vejetaryen — seçiminiz), tatlı (irmik helvası), sınırsız meşrubat. Helal sertifikalı.' },
       { title: 'Tam Boğaz rotası', desc: 'Kabataş → Dolmabahçe → Çırağan Sarayı → Ortaköy Camii → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet Köprüsü → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kız Kulesi → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       'Yemekli tur €{p.dinnerStd}/kişi (eski €{p.dinnerStdOriginal}). Teknede ödeme — ön ödeme yok, risk yok. TÜRSAB A-17672 lisanslı, 11.317+ gezgin tarafından 4.8★ puanlı.'
     ],
     highlights: [
-      { title: 'Tam çok çeşitli Türk yemeği', desc: '10 çeşit meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk/köfte/vejetaryen), dondurmalı pasta. Helal sertifikalı. Sınırsız meşrubat dahil.' },
+      { title: 'Tam çok çeşitli Türk yemeği', desc: '10 çeşit meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk şiş/dana şiş/vejetaryen), irmik helvası. Helal sertifikalı. Sınırsız meşrubat dahil.' },
       { title: 'Canlı Türk halk oyunları şovu', desc: 'Sekiz gösteri: Oba Dombra, sema gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal dans, Anadolu potpurisi, Gürcü-Kafkas bıçak dansı, sonra canlı saksafon ve DJ. 40 dakika performans, ortam müziği devam eder.' },
       { title: 'Tam Boğaz gece rotası', desc: '3 saatlik tur: Dolmabahçe, Çırağan, Ortaköy Camii, Boğaz Köprüsü, Bebek, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi, Üsküdar, Kız Kulesi. Hem Avrupa hem Asya yakası.' },
       { title: '€{p.dinnerStd}\'den — teknede ödeme', desc: 'Yemekli tur €{p.dinnerStd} (eski €{p.dinnerStdOriginal}). Ön ödeme yok. Kalkıştan 2 saat öncesine kadar ücretsiz iptal.' }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Tüm ikonik İstanbul gece manzaraları', desc: 'Dolmabahçe Sarayı, Ortaköy Camii, aydınlatılmış Boğaz Köprüsü, Rumeli Hisarı, FSM Köprüsü, Beylerbeyi Sarayı, Kız Kulesi. Her büyük dönüm noktası tepe gece aydınlatmasında.' },
-      { title: 'Tam Türk yemeği dahil', desc: '10 meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk/köfte/vejetaryen), tatlı, sınırsız meşrubat. Helal sertifikalı. €{p.dinnerStd}/kişi\'de fiyatlandırılmış — her şey dahil.' },
+      { title: 'Tam Türk yemeği dahil', desc: '10 meze, sıcak başlangıç, ana yemek (somon/levrek/tavuk şiş/dana şiş/vejetaryen), tatlı, sınırsız meşrubat. Helal sertifikalı. €{p.dinnerStd}/kişi\'de fiyatlandırılmış — her şey dahil.' },
       { title: 'Canlı halk oyunları + sema + oryantal', desc: 'Sekiz bölümlük canlı program: Oba Dombra, Mevlana sema gösterisi, Sarı Gelin, Azerbaycan potpurisi, oryantal dans, Anadolu potpurisi, Gürcü-Kafkas bıçak dansı, sonra canlı saksafon ve DJ. 40 dakika performans, tüm akşam ortam müziği.' },
       { title: 'İlk kez İstanbul\'a gelenler için kolay', desc: 'Merkezi buluşma noktası (Kabataş İskelesi), otel transferi (+€{p.transfer}/kişi), İngilizce konuşan ekip, teknede ödeme. Sıfır lojistik stresi. Gelin, keyfini çıkarın, gidin.' }
     ],

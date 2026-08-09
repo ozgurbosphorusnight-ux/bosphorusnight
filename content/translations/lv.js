@@ -23,7 +23,7 @@ module.exports = {
       'Vienalga, vai svini jubileju, meklē premium vakaru Stambulā ar ģimeni vai vēlies pilsētas fotogēnāko saulrieta-uz-nakti pāreju — šis ir vakariņu kruīzs, ko Stambulas vietējie iesaka pirmajā vietā.'
     ],
     highlights: [
-      { title: 'Turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda (paçanga böreği), galvenā ēdiena izvēle (lasis / jūras asaris / vista / frikadeles / veģetārais), saldējuma kūka desertā, neierobežoti bezalkoholiskie dzērieni.' },
+      { title: 'Turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda (börek), galvenā ēdiena izvēle (lasis / jūras asaris / vistas šašliks / liellopu šašliks / veģetārais), mannas halva desertā, neierobežoti bezalkoholiskie dzērieni.' },
       { title: 'Dzīvas tautas dejas, austrumu deja un DJ', desc: 'Astoņi priekšnesumi: Oba Dombra, Mevlana sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem — kam seko dzīvs saksofons un DJ programma visa kruīza laikā.' },
       { title: 'Pilns nakts maršruts pa Bosforu', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → FSM tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'No €{p.dinnerStd}/personai — maksā uz kuģa', desc: 'Vakariņu kruīzs €{p.dinnerStd} (sākotnēji €{p.dinnerStdOriginal}). Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
@@ -126,12 +126,12 @@ module.exports = {
       badge: '100% Halal · Ģimenei draudzīgs · Musulmaņu īpašums'
     },
     intro: [
-      '**Halal Bosfora kruīzs** ir Stambulas cieņpilnākais vakariņu kruīzs musulmaņu ceļotājiem. Katrs gaļas gabals, kas tiek pasniegts uz kuģa — lasis, jūras asaris, vista, jēra frikadeles, liellopa fileja, ribu steiks — ir **halal sertificēts** no apstiprinātiem piegādātājiem. Mēs pasniedzam vienu un to pašu ēdienkarti visiem viesiem; nav atsevišķas "halal sekcijas", jo viss kuģis ir halal pēc noklusējuma.',
+      '**Halal Bosfora kruīzs** ir Stambulas cieņpilnākais vakariņu kruīzs musulmaņu ceļotājiem. Katrs gaļas gabals, kas tiek pasniegts uz kuģa — lasis, jūras asaris, vistas šašliks, liellopu šašliks, liellopa fileja, ribu steiks — ir **halal sertificēts** no apstiprinātiem piegādātājiem. Mēs pasniedzam vienu un to pašu ēdienkarti visiem viesiem; nav atsevišķas "halal sekcijas", jo viss kuģis ir halal pēc noklusējuma.',
       'Alkohols ir **brīvprātīgs papildinājums** — nekad netiek uzspiests viesiem, un galdu izkārtojums dabiski nodala viesus, kas dod priekšroku bezalkohola galdam. Viesiem, kas vēlas 2 glāžu alkohola paketi (+€{p.alcohol2}/personai), tā ir pieejama, bet iekļautie neierobežotie bezalkoholiskie dzērieni (ūdens, kola, sula) ir pietiekami lielākajai daļai musulmaņu ģimeņu. Komanda ir apmācīta cienīt tavas preferences bez pieņēmumiem.',
       '**Halal-draudzīgais Bosfora kruīzs** ir nozīmīgs ceļotājiem no Saūda Arābijas, AAE, Kuveitas, Kataras, Irānas, Malaizijas, Indonēzijas, Pakistānas un Marokas, kas vēlas Stambulas ikoniskāko vakaru bez kompromisiem. TÜRSAB licencēts, 4,8★ un maksā uz kuģa — tu neapsoli neko, pirms neesi pārliecināts, ka pieredze atbilst taviem standartiem.'
     ],
     highlights: [
-      { title: '100% halal sertificēta ēdienkarte', desc: 'Visa gaļa (lasis, jūras asaris, vista, frikadeles, liellopa, ribu steiks) ir halal sertificēta no apstiprinātiem piegādātājiem. Virtuve ievēro halal sagatavošanu. Bez cūkgaļas vai ne-halal piedevām. Veģetārās iespējas vienmēr pieejamas.' },
+      { title: '100% halal sertificēta ēdienkarte', desc: 'Visa gaļa (lasis, jūras asaris, vistas šašliks, liellopu šašliks, liellopa, ribu steiks) ir halal sertificēta no apstiprinātiem piegādātājiem. Virtuve ievēro halal sagatavošanu. Bez cūkgaļas vai ne-halal piedevām. Veģetārās iespējas vienmēr pieejamas.' },
       { title: 'Alkohols brīvprātīgs, nekad neuzspiests', desc: 'Alkohola paketes ir papildinājumi — nav iekļauti pēc noklusējuma. Bezalkoholiskie dzērieni (ūdens, kola, sula) ir neierobežoti un bez maksas. Tavs galds paliek bez alkohola, ja tu to skaidri nelūdz. Komanda klusi ciena tavu izvēli.' },
       { title: 'Ģimenei draudzīga izklaide', desc: 'Sema priekšnesums, tradicionālās turku tautas dejas, dzīva turku mūzika. Nav naktsklubu stila šovu, nav nepiemērota satura. Droši bērniem, cieņpilni ģimenēm. Austrumu deja ir tradicionālā mākslas forma, pasniegta ar cieņu.' },
       { title: 'Cieņa pret lūgšanu laikiem', desc: 'Ja iekāpšana sakrīt ar maghrib vai isha (20:00–21:00), personāls var pavadīt tevi uz kluso lūgšanu telpu pie Kabataş piestātnes pirms atiešanas. Vienkārši paziņo mums rezervējot.' }
@@ -162,7 +162,7 @@ module.exports = {
       badge: '40% ATLAIDE · Viena ēdienkarte, premium standarts · Maksā uz kuģa'
     },
     intro: [
-      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vista vai köfte), saldējuma torte un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa astoņu priekšnesumu izklaides programma — Oba Dombra, virpuļojošo dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ — viss par €{p.dinnerStd}/personai.',
+      'Daudzi kuģi Bosforā sadala viesus „standarta“ un „VIP“ grupās. Mēs to nedarām. Uz kuģa **AMOR** ir viena vakariņu ēdienkarte, gatavota ar vienādu rūpību visiem: 10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc tavas izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks), mannas halva un neierobežoti bezalkoholiskie dzērieni. Iekļauta arī visa astoņu priekšnesumu izklaides programma — Oba Dombra, virpuļojošo dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ — viss par €{p.dinnerStd}/personai.',
       'VIP sajūta sākas pie tava galda. Ja vēlies būt pēc iespējas tuvāk skatuvei un skatiem, pievieno **privāto galdu pie skatuves** (+€{p.romantic}/galdam), un vieta tiek rezervēta iepriekš — labākais rakurss uz dervišiem, tautas dejām un izgaismoto Bosforu. Iemīļotākā izvēle pāriem, svinībām un fotografēšanas cienītājiem.',
       'AMOR ir moderns kuģis: 42 metri, 3 klāji, līdz 400 viesiem, ziemā apsildāms un vasarā ar gaisa kondicionieri. Trīs stundu maršruts sākas Kabatašā (iekāpšana no 20:00, izbraukšana 21:00, atgriešanās 00:00) garām Dolmabahčei, Ortakojas mošejai, Rumeli cietoksnim un Bosfora tilta gaismām. TÜRSAB licence (A-17672), 4,9★ Google. Bez priekšapmaksas — maksā uz kuģa, un atcelšana ir bez maksas līdz 2 stundām pirms izbraukšanas.'
     ],
@@ -175,7 +175,7 @@ module.exports = {
     faq: [
       { q: 'Vai jūs pārdodat „VIP paketi“? Ar ko tā atšķiras no standarta?', a: 'Mēs nepārdodam atsevišķu VIP paketi — ir viena ēdienkarte, ko visiem pasniedz vienā un tajā pašā premium standartā. Tas, ko saucam par „VIP pieredzi“, ir tava vakara pielāgošana: privāts galds pie skatuves (+€{p.romantic}/galdam), uzmanīga apkalpošana pie galda un neobligāti dzērienu papildinājumi. Kruīzs ilgst 3 stundas, €{p.dinnerStd}/personai.' },
       { q: 'Vai €{p.dinnerStd} tiešām ir 40% atlaide?', a: 'Jā — mūsu cenrāža cena ir €{p.dinnerStdOriginal}/personai. €{p.dinnerStd} ir tiešās rezervācijas cena bez starpnieku komisijām. Tu maksā uz kuģa, un priekšapmaksas nav.' },
-      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vista vai köfte) un saldējuma torte desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Astoņu priekšnesumu programma ir iekļauta: Oba Dombra, dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ.' },
+      { q: 'Kas ir ēdienkartē?', a: '10 veidu turku meze, silta uzkoda, galvenais ēdiens pēc izvēles (lasis, jūrasasaris, vistas šašliks vai liellopu šašliks) un mannas halva desertā, kā arī neierobežoti bezalkoholiskie dzērieni. Astoņu priekšnesumu programma ir iekļauta: Oba Dombra, dervišu ceremonija, Anatolijas un Azerbaidžānas tautas dejas, austrumu deja, kaukāziešu deja ar nažiem, dzīvā mūzika un fināls ar saksofonu un DJ.' },
       { q: 'Vai alkohols ir iekļauts?', a: 'Nē — alkohols ir atsevišķs papildinājums: 2 glāzes — vīns, alus, rakı, degvīns, viskijs, džins un citi — par +€{p.alcohol2}/personai. Bezalkoholiskie dzērieni ir iekļauti neierobežoti un bez maksas. Premium importētie dzērieni tiek rēķināti atsevišķi uz kuģa.' },
       { q: 'Kā nodrošināt galdu pie skatuves?', a: 'Rezervējot vienkārši izvēlies papildinājumu „privāts galds pie skatuves“ (+€{p.romantic}/galdam) — galds tiks rezervēts uz tavu vārdu. Labākās vietas aizņem iepriekšējas rezervācijas, tāpēc iesakām pievienot to pirms kruīza dienas.' },
       { q: 'Kāds ir kuģis?', a: 'AMOR — moderns pasažieru kuģis 42 metru garumā ar 3 klājiem un 400 viesu ietilpību, ziemā apsildāms un vasarā ar gaisa kondicionieri. Izbraukšana no Kabatašas piestātnes: iekāpšana 20:00, izbraukšana 21:00, atgriešanās 00:00. Maršruts: Dolmabahče, Ortakoja, Rumeli cietoksnis, Beilerbeji un Bosfora tilta gaismas.' }
@@ -240,7 +240,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privāts galds diviem', desc: 'Privāts galds 2 personām, nav koplietojams. Prioritāte galdam pie loga pāriem. Saulrieta un Bosfora nakts fotografēšana tieši aiz tava loga.' },
-      { title: 'Lēnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vista, frikadeles vai veģetārais), saldējuma kūka desertā. Pasniegti lēni 3 stundu laikā — tev nav steigas.' },
+      { title: 'Lēnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks vai veģetārais), mannas halva desertā. Pasniegti lēni 3 stundu laikā — tev nav steigas.' },
       { title: 'Dzīvā vijole un viegla mūzika', desc: 'Dzīvā vijole un akustiska turku mūzika vakariņu laikā rada intīmu atmosfēru, kas piemērota sarunai. Pēc tam parādās DJ pāriem, kas vēlas dejot.' },
       { title: 'Papildinājumi īpašiem vakariem', desc: 'Romantiskais galda klājums (sveces, rozes): +€{p.romantic}. 2 glāzes alkohola (vīns, alus, rakı, degvīns, viskijs, džins un citi): +€{p.alcohol2}/personai. Viesnīcas transfērs (turp un atpakaļ): +€{p.transfer}/personai. Izvēlies to, kas der tavam vakaram.' }
     ],
@@ -277,7 +277,7 @@ module.exports = {
     highlights: [
       { title: 'Vasaras saulrieti tieši pie atiešanas', desc: 'No maija līdz augustam saule Stambulā riet aptuveni starp 20:15 un 20:45 — iekāpšana plkst. 20:00 dāvā zelta stundu uz klāja, un atiešana plkst. 21:00 nozīmē, ka pašu saulrietu redzi jau no ūdens. Kamera gatava — šī ir bilde.' },
       { title: 'No zilās stundas līdz pilnai naktij', desc: 'Ne tikai saulriets — kruīzs iet cauri krēslai līdz pilnībā izgaismotajam Bosforam. Zelta gaisma, zilā stunda, tad 30 miljoni tilta gaismu tumšajā ūdenī: trīs gaismas fāzes vienā vakarā.' },
-      { title: 'Pilnas vakariņas kruīza laikā', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vista, frikadeles, veģetārais), saldējuma kūka, neierobežoti bezalkoholiskie dzērieni — pasniegts, kamēr iedegas pilsētas gaismas.' },
+      { title: 'Pilnas vakariņas kruīza laikā', desc: '10 turku meze veidi, silta uzkoda, galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais), mannas halva, neierobežoti bezalkoholiskie dzērieni — pasniegts, kamēr iedegas pilsētas gaismas.' },
       { title: 'Dolmabahçe, Ortaköy, Bosfora tilts — visi mirdz', desc: 'Maršruts iet garām Dolmabahçe pilij, Ortaköy mošejai, Bosfora tiltam, Rumeli Hisarı un Beylerbeyi pilij tieši tad, kad iedegas to gaismas. Katrs orientieris savā labākajā gaismā.' }
     ],
     faq: [
@@ -315,7 +315,7 @@ module.exports = {
     highlights: [
       { title: 'Bosfors izgaismots savā dramatiskajā virsotnē', desc: 'Bosfora tilts maina krāsas (zila, violeta, zelts), pilis mirdz dzelteni, Ortaköy mošeja atspoguļojas melnajā ūdenī. 21:00–00:00 maksimālais izgaismojums visiem Stambulas orientieriem.' },
       { title: 'Tradicionāls turku šovs uz kuģa', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs un gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ programma. 40 minūšu šovs, pēc tam mūzika + vakariņas turpinās.' },
-      { title: 'Pilnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda (paçanga böreği), galvenais ēdiens (lasis, jūras asaris, vista, frikadeles, veģetārais — tava izvēle), deserts (saldējuma kūka), neierobežoti bezalkoholiskie dzērieni. Halal sertificēts.' },
+      { title: 'Pilnas vairāku ēdienu vakariņas', desc: '10 turku meze veidi, silta uzkoda (börek), galvenais ēdiens (lasis, jūras asaris, vistas šašliks, liellopu šašliks, veģetārais — tava izvēle), deserts (mannas halva), neierobežoti bezalkoholiskie dzērieni. Halal sertificēts.' },
       { title: 'Pilns Bosfora maršruts', desc: 'Kabataş → Dolmabahçe → Çırağan pils → Ortaköy mošeja → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet tilts → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Jaunavas tornis → Kabataş.' }
     ],
     faq: [
@@ -349,7 +349,7 @@ module.exports = {
       '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Maksā uz kuģa — bez priekšapmaksas, bez riska. TÜRSAB licencēts A-17672, novērtēts ar 4,8★ no vairāk nekā 11 317 ceļotājiem.'
     ],
     highlights: [
-      { title: 'Pilnas turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vista/frikadeles/veģetārais), saldējuma kūka. Halal sertificēts. Neierobežoti bezalkoholiskie dzērieni iekļauti.' },
+      { title: 'Pilnas turku vairāku ēdienu vakariņas', desc: '10 meze veidi, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vistas šašliks/liellopu šašliks/veģetārais), mannas halva. Halal sertificēts. Neierobežoti bezalkoholiskie dzērieni iekļauti.' },
       { title: 'Dzīvs turku tautas deju šovs', desc: 'Astoņi priekšnesumi: Oba Dombra, sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs, gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ. 40 minūšu šovs, fona mūzika turpinās.' },
       { title: 'Pilns Bosfora nakts maršruts', desc: '3 stundu tūre: Dolmabahçe, Çırağan, Ortaköy mošeja, Bosfora tilts, Bebek, Rumeli Hisarı, FSM tilts, Beylerbeyi, Üsküdar, Jaunavas tornis. Abi krasti, eiropas un āzijas.' },
       { title: 'No €{p.dinnerStd} — maksā uz kuģa', desc: '€{p.dinnerStd}/personai (no €{p.dinnerStdOriginal}) — viena ēdienkarte visiem viesiem. Bez priekšapmaksas. Bezmaksas atcelšana līdz 2 stundām pirms atiešanas.' }
@@ -390,7 +390,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Visi Stambulas ikoniskie nakts skati', desc: 'Dolmabahçe pils, Ortaköy mošeja, izgaismotais Bosfora tilts, Rumeli Hisarı, FSM tilts, Beylerbeyi pils, Jaunavas tornis. Katrs svarīgais orientieris savā maksimālajā nakts izgaismojumā.' },
-      { title: 'Pilnas turku vakariņas iekļautas', desc: '10 meze, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vista/frikadeles/veģetārais), deserts, neierobežoti bezalkoholiskie dzērieni. Halal sertificēts. Cena €{p.dinnerStd}/personai — viss iekļauts.' },
+      { title: 'Pilnas turku vakariņas iekļautas', desc: '10 meze, silta uzkoda, galvenais ēdiens (lasis/jūras asaris/vistas šašliks/liellopu šašliks/veģetārais), deserts, neierobežoti bezalkoholiskie dzērieni. Halal sertificēts. Cena €{p.dinnerStd}/personai — viss iekļauts.' },
       { title: 'Dzīvas tautas dejas + sema + austrumu', desc: 'Astoņu priekšnesumu dzīvā programma: Oba Dombra, Mevlana sema priekšnesums, Sarı Gelin, azerbaidžāņu popūrijs, austrumu deja, Anatolijas popūrijs, gruzīnu-kaukāziešu deja ar nažiem, pēc tam dzīvs saksofons un DJ. 40 minūšu šovs, fona mūzika visu vakaru.' },
       { title: 'Viegli pirmajiem apmeklētājiem Stambulā', desc: 'Centrāls tikšanās punkts (Kabataş piestātne), viesnīcas transfērs (+€{p.transfer}/personai), angliski runājoša komanda, maksā uz kuģa. Nulle loģistikas stresa. Atnāc, izbaudi, dodies.' }
     ],

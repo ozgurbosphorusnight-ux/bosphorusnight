@@ -22,7 +22,7 @@ module.exports = {
       'Of u nu een verjaardag viert, een premium avond in Istanbul zoekt voor uw familie, of de meest fotogenieke zonsondergang-naar-nacht-overgang van de stad wilt — dit is de dinercruise die in de eerste plaats wordt aanbevolen door de inwoners van Istanbul.'
     ],
     highlights: [
-      { title: 'Turks meergangendiner', desc: '10 koude mezzevarianten, warme voorgerecht (paçanga böreği), keuze uit hoofdgerecht (zalm / zeebaars / kip / gehaktballen / vegetarisch), ijstaart als dessert, onbeperkt frisdrank.' },
+      { title: 'Turks meergangendiner', desc: '10 koude mezzevarianten, warme voorgerecht (börek), keuze uit hoofdgerecht (zalm / zeebaars / kipspies / runderspies / vegetarisch), griesmeelhalva als dessert, onbeperkt frisdrank.' },
       { title: 'Live volksdans, oriëntaalse dans en dj', desc: 'Acht acts: Oba Dombra, Mevlana sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, klassieke oriëntaalse dans, Anatolische potpourri en de Georgisch-Kaukasische messendans — daarna live saxofoon en een dj-set gedurende de hele cruise.' },
       { title: 'Volledige nachtroute over de Bosporus', desc: 'Kabataş → Dolmabahçe → Çırağan-paleis → Ortaköy-moskee → Bebek → Rumeli Hisarı → FSM-brug → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Vanaf €{p.dinnerStd}/persoon — betaling aan boord', desc: 'Dinercruise €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal}). Geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' }
@@ -125,12 +125,12 @@ module.exports = {
       badge: '100% Halal · Gezinsvriendelijk · Moslimeigenaar'
     },
     intro: [
-      '**De halal Bosporuscruise** is de meest respectvolle dinercruise in Istanbul voor moslimreizigers. Elk vlees dat op onze boot wordt geserveerd — zalm, zeebaars, kip, lamsgehaktballen, ossenhaas, entrecote — is **halal-gecertificeerd** van goedgekeurde leveranciers. Wij serveren elke gast hetzelfde menu; geen aparte "halal-sectie", omdat de hele boot standaard halal is.',
+      '**De halal Bosporuscruise** is de meest respectvolle dinercruise in Istanbul voor moslimreizigers. Elk vlees dat op onze boot wordt geserveerd — zalm, zeebaars, kipspies, runderspies — is **halal-gecertificeerd** van goedgekeurde leveranciers. Wij serveren elke gast hetzelfde menu; geen aparte "halal-sectie", omdat de hele boot standaard halal is.',
       'Alcohol is **een optioneel supplement** — nooit opgelegd aan gasten, en de tafelopstelling scheidt natuurlijk gasten die de voorkeur geven aan een alcoholvrije maaltijd. Voor gasten die het 2-glazen alcoholpakket willen (+€{p.alcohol2}/persoon), is het er, maar de inbegrepen onbeperkte frisdrank (water, cola, sap) is voldoende voor de meeste moslimgezinnen. Onze bemanning is getraind om uw voorkeuren te respecteren zonder veronderstellingen.',
       '**De halalvriendelijke Bosporuscruise** is belangrijk voor reizigers uit Saoedi-Arabië, VAE, Koeweit, Qatar, Iran, Maleisië, Indonesië, Pakistan en Marokko die de meest iconische avond van Istanbul willen zonder compromissen. Gelicentieerd door TÜRSAB, 4,8★ en betaling aan boord — beloof niets totdat u zeker weet dat de ervaring aan uw normen voldoet.'
     ],
     highlights: [
-      { title: '100% halal-gecertificeerd menu', desc: 'Al het vlees (zalm, zeebaars, kip, gehaktballen, rundvlees, entrecote) is halal-gecertificeerd van goedgekeurde leveranciers. De keuken volgt halal-bereiding. Geen varkensvleesproducten of niet-halal additieven. Vegetarische opties zijn altijd beschikbaar.' },
+      { title: '100% halal-gecertificeerd menu', desc: 'Al het vlees (zalm, zeebaars, kipspies, runderspies, rundvlees, entrecote) is halal-gecertificeerd van goedgekeurde leveranciers. De keuken volgt halal-bereiding. Geen varkensvleesproducten of niet-halal additieven. Vegetarische opties zijn altijd beschikbaar.' },
       { title: 'Alcohol optioneel, nooit opgelegd', desc: 'Alcoholpakketten zijn supplement — niet standaard inbegrepen. Frisdrank (water, cola, sap) is onbeperkt en gratis. Uw tafel blijft alcoholvrij tenzij u expliciet vraagt. De bemanning respecteert stilzwijgend uw keuze.' },
       { title: 'Gezinsvriendelijk entertainment', desc: 'Sema-voorstelling, traditionele Turkse volksdansen, live Turkse muziek. Geen nachtclubachtige shows, geen ongepaste inhoud. Veilig voor kinderen, respectvol voor gezinnen. Oriëntaalse dans is een traditionele kunstvorm, gepresenteerd met bescheidenheid.' },
       { title: 'Respect voor gebedstijden', desc: 'Als het inschepen samenvalt met maghrib of isha (20:00-21:00), kan onze staf u naar de stille gebedszone bij de aanlegplaats Kabataş leiden vóór vertrek. Laat het ons gewoon weten bij de reservering.' }
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% KORTING · Één menu, premium standaard · Betalen aan boord'
     },
     intro: [
-      'Veel boten op de Bosporus verdelen hun gasten in "Standaard" en "VIP". Wij niet. Aan boord van de **AMOR** is er één dinermenu, met dezelfde zorg bereid voor iedereen: 10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kip of köfte), ijstaart en onbeperkt frisdrank. Het volledige entertainmentprogramma van acht acts is ook inbegrepen — Oba Dombra, de ceremonie van de draaiende derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale — allemaal binnen de prijs van €{p.dinnerStd}/persoon.',
+      'Veel boten op de Bosporus verdelen hun gasten in "Standaard" en "VIP". Wij niet. Aan boord van de **AMOR** is er één dinermenu, met dezelfde zorg bereid voor iedereen: 10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies), griesmeelhalva en onbeperkt frisdrank. Het volledige entertainmentprogramma van acht acts is ook inbegrepen — Oba Dombra, de ceremonie van de draaiende derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale — allemaal binnen de prijs van €{p.dinnerStd}/persoon.',
       'Het VIP-gevoel begint bij uw tafel. Wilt u zo dicht mogelijk bij het podium en het uitzicht zitten, voeg dan de **privétafel bij het podium** toe (+€{p.romantic}/tafel): uw plek wordt vooraf gereserveerd, met de beste hoek op de derwisjen, de volksdansen en de verlichte Bosporus. De favoriete keuze van stellen, vieringen en fotografieliefhebbers.',
       'De AMOR is een modern schip: 42 meter, 3 dekken, tot 400 gasten, verwarmd in de winter en geklimatiseerd in de zomer. De route van 3 uur vertrekt vanaf Kabataş (inschepen vanaf 20:00, vertrek 21:00, terugkomst 00:00) langs Dolmabahçe, de Ortaköy-moskee, het fort Rumeli en de lichten van de Bosporusbrug. TÜRSAB-vergunning (A-17672), 4,9★ op Google. Geen vooruitbetaling — u betaalt aan boord, met gratis annulering tot 2 uur voor vertrek.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Verkopen jullie een "VIP-pakket"? Wat is het verschil met Standaard?', a: 'We verkopen geen apart VIP-pakket — er is één menu, dat iedereen op dezelfde premium standaard krijgt geserveerd. Wat wij "VIP-ervaring" noemen is uw avond persoonlijk maken: een privétafel bij het podium (+€{p.romantic}/tafel), attente tafelbediening en optionele drankextra\'s. De cruise duurt 3 uur, €{p.dinnerStd}/persoon.' },
       { q: 'Is €{p.dinnerStd} echt 40% korting?', a: 'Ja — onze adviesprijs is €{p.dinnerStdOriginal}/persoon. €{p.dinnerStd} is het tarief bij directe boeking, zonder tussenpersooncommissies. U betaalt aan boord en er is geen vooruitbetaling.' },
-      { q: 'Wat staat er op het menu?', a: '10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kip of köfte) en ijstaart als dessert, met onbeperkt frisdrank. Het programma van acht acts is inbegrepen: Oba Dombra, de ceremonie van de derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale.' },
+      { q: 'Wat staat er op het menu?', a: '10 soorten Turkse meze, een warm voorgerecht, hoofdgerecht naar keuze (zalm, zeebaars, kipspies of runderspies) en griesmeelhalva als dessert, met onbeperkt frisdrank. Het programma van acht acts is inbegrepen: Oba Dombra, de ceremonie van de derwisjen, Anatolische en Azerbeidzjaanse volksdansen, buikdans, Kaukasische messendans, livemuziek en een saxofoon-en-dj-finale.' },
       { q: 'Is alcohol inbegrepen?', a: 'Nee — alcohol is een aparte optie: 2 glazen wijn, bier, rakı, wodka, whisky, gin en meer voor +€{p.alcohol2}/persoon. Frisdrank is onbeperkt en gratis inbegrepen. Premium geïmporteerde dranken worden aan boord apart afgerekend.' },
       { q: 'Hoe verzeker ik me van een tafel bij het podium?', a: 'Selecteer bij het boeken simpelweg de optie "privétafel bij het podium" (+€{p.romantic}/tafel) — de tafel wordt op uw naam gereserveerd. De beste plekken gaan naar vroege boekingen, dus voeg het bij voorkeur vóór uw cruisedag toe.' },
       { q: 'Wat voor schip is het?', a: 'De AMOR — een modern passagiersschip van 42 meter met 3 dekken en een capaciteit van 400 gasten, verwarmd in de winter en geklimatiseerd in de zomer. Vertrek vanaf de pier van Kabataş: inschepen 20:00, vertrek 21:00, terugkomst 00:00. Route: Dolmabahçe, Ortaköy, fort Rumeli, Beylerbeyi en de lichten van de Bosporusbrug.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privétafel voor twee', desc: 'Privétafel voor 2 personen, niet gedeeld. Prioriteit aan raamtafels voor koppels. Foto\'s van zonsondergang en nachtelijke Bosporus net aan uw raam.' },
-      { title: 'Traag meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kip, gehaktballen of vegetarisch), ijstaart als dessert. Langzaam geserveerd over 3 uur — u heeft geen haast.' },
+      { title: 'Traag meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies of vegetarisch), griesmeelhalva als dessert. Langzaam geserveerd over 3 uur — u heeft geen haast.' },
       { title: 'Live viool en zachte muziek', desc: 'Live viool en akoestische Turkse muziek tijdens het diner creëren een intieme sfeer, geschikt voor gesprek. Dan komt de dj voor koppels die willen dansen.' },
       { title: 'Supplementen voor speciale avonden', desc: 'Romantische tafelopstelling (kaarsen, rozen): +€{p.romantic}. 2 glazen alcohol (wijn, bier, rakı, wodka, whisky, gin en meer): +€{p.alcohol2}/persoon. Hoteltransfer (heen en terug): +€{p.transfer}/persoon. Kies wat bij uw avond past.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Zomerse zonsondergangen precies bij vertrek', desc: 'Van mei tot augustus gaat de zon in Istanbul onder tussen ongeveer 20:15 en 20:45 — inschepen om 20:00 geeft u het gulden uur op het dek, en het vertrek om 21:00 brengt u op het water voor de zonsondergang zelf. Camera klaar — dit is de foto.' },
       { title: 'Van blauw uur naar volle nacht', desc: 'Niet alleen de zonsondergang — de cruise vaart door de schemering de volledig verlichte Bosporus in. Gulden licht, blauw uur, dan 30 miljoen bruglichten op donker water: drie lichtfasen in één avond.' },
-      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kip, köfte, vegetarisch), ijstaart, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
+      { title: 'Volledig diner tijdens de cruise', desc: '10 variëteiten Turkse mezze, warme voorgerecht, hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch), griesmeelhalva, onbeperkt frisdrank — geserveerd terwijl de stadslichten aangaan.' },
       { title: 'Dolmabahçe, Ortaköy, Bosporusbrug — alles schittert', desc: 'De route passeert het Dolmabahçe-paleis, de Ortaköy-moskee, de Bosporusbrug, Rumeli Hisarı en het Beylerbeyi-paleis terwijl hun lichten aangaan. Elke bezienswaardigheid in haar beste licht.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'De verlichte Bosporus op dramatische piek', desc: 'De Bosporusbrug verandert van kleur (blauw, paars, goud), paleizen stralen geel, de Ortaköy-moskee reflecteert in het donkere water. 21:00-00:00 maximale verlichting voor alle bezienswaardigheden van Istanbul.' },
       { title: 'Traditionele Turkse show aan boord', desc: 'Acht acts: Oba Dombra, sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, oriëntaalse dans, Anatolische potpourri en de Georgisch-Kaukasische messendans, dan live saxofoon en dj-set. 40 minuten show, dan gaat de muziek + diner door.' },
-      { title: 'Volledig meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht (paçanga böreği), hoofdgerecht (zalm, zeebaars, kip, gehaktballen, vegetarisch — uw keuze), dessert (ijstaart), onbeperkt frisdrank. Halal-gecertificeerd.' },
+      { title: 'Volledig meergangendiner', desc: '10 variëteiten Turkse mezze, warme voorgerecht (börek), hoofdgerecht (zalm, zeebaars, kipspies, runderspies, vegetarisch — uw keuze), dessert (griesmeelhalva), onbeperkt frisdrank. Halal-gecertificeerd.' },
       { title: 'Volledige Bosporusroute', desc: 'Kabataş → Dolmabahçe → Çırağan-paleis → Ortaköy-moskee → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-brug → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Maagdentoren → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/persoon (voorheen €{p.dinnerStdOriginal}). Betaling aan boord — geen vooruitbetaling, geen risico. Gelicentieerd door TÜRSAB A-17672, beoordeeld met 4,8★ door meer dan 11.317 reizigers.'
     ],
     highlights: [
-      { title: 'Volledig Turks meergangendiner', desc: '10 variëteiten mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kip/gehaktballen/vegetarisch), ijstaart. Halal-gecertificeerd. Onbeperkt frisdrank inbegrepen.' },
+      { title: 'Volledig Turks meergangendiner', desc: '10 variëteiten mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kipspies/runderspies/vegetarisch), griesmeelhalva. Halal-gecertificeerd. Onbeperkt frisdrank inbegrepen.' },
       { title: 'Live Turkse volksdans-show', desc: 'Acht acts: Oba Dombra, sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, oriëntaalse dans, Anatolische potpourri, Georgisch-Kaukasische messendans, dan live saxofoon en dj. 40 minuten show, doorlopende achtergrondmuziek.' },
       { title: 'Volledige nachtroute op de Bosporus', desc: 'Tour van 3 uur: Dolmabahçe, Çırağan, Ortaköy-moskee, Bosporusbrug, Bebek, Rumeli Hisarı, FSM-brug, Beylerbeyi, Üsküdar, Maagdentoren. Beide kusten, Europees en Aziatisch.' },
       { title: 'Vanaf €{p.dinnerStd} — betaling aan boord', desc: 'Dinercruise: €{p.dinnerStd} (voorheen €{p.dinnerStdOriginal}). Geen vooruitbetaling. Gratis annulering tot 2 uur voor vertrek.' }
@@ -389,7 +389,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Alle iconische nachtuitzichten van Istanbul', desc: 'Dolmabahçe-paleis, Ortaköy-moskee, verlichte Bosporusbrug, Rumeli Hisarı, FSM-brug, Beylerbeyi-paleis, Maagdentoren. Elke belangrijke bezienswaardigheid op piek nachtverlichting.' },
-      { title: 'Volledig Turks diner inbegrepen', desc: '10 mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kip/gehaktballen/vegetarisch), dessert, onbeperkt frisdrank. Halal-gecertificeerd. Geprijsd op €{p.dinnerStd}/persoon — alles inbegrepen.' },
+      { title: 'Volledig Turks diner inbegrepen', desc: '10 mezze, warme voorgerecht, hoofdgerecht (zalm/zeebaars/kipspies/runderspies/vegetarisch), dessert, onbeperkt frisdrank. Halal-gecertificeerd. Geprijsd op €{p.dinnerStd}/persoon — alles inbegrepen.' },
       { title: 'Live volksdansen + sema + oriëntaalse', desc: 'Live programma van acht acts: Oba Dombra, Mevlana sema-voorstelling, Sarı Gelin, Azerbeidzjaanse potpourri, oriëntaalse dans, Anatolische potpourri, Georgisch-Kaukasische messendans, dan live saxofoon en dj. 40 minuten show, achtergrondmuziek de hele avond.' },
       { title: 'Gemakkelijk voor eerste keer in Istanbul', desc: 'Centraal ontmoetingspunt (aanlegplaats Kabataş), hoteltransfer (+€{p.transfer}/persoon), Engels sprekende bemanning, betaling aan boord. Nul logistieke stress. Kom, geniet, ga.' }
     ],

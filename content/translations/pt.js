@@ -25,7 +25,7 @@ module.exports = {
       'Quer esteja a celebrar um aniversário, à procura de uma noite premium em Istambul para a sua família, ou queira a transição pôr-do-sol-noite mais fotogénica da cidade — este é o cruzeiro com jantar recomendado em primeiro lugar pelos habitantes de Istambul.'
     ],
     highlights: [
-      { title: 'Jantar turco de vários pratos', desc: '10 variedades de mezze frios, entrada quente (paçanga böreği), prato principal à escolha (salmão / robalo / frango / almôndegas / vegetariano), bolo gelado de sobremesa, refrigerantes ilimitados.' },
+      { title: 'Jantar turco de vários pratos', desc: '10 variedades de mezze frios, entrada quente (börek), prato principal à escolha (salmão / robalo / frango em espetada / espetada de vaca / vegetariano), halva de sêmola de sobremesa, refrigerantes ilimitados.' },
       { title: 'Danças folclóricas ao vivo, dança oriental e DJ', desc: 'Oito números: Oba Dombra, espetáculo Mevlana sema, Sarı Gelin, potpourri azerbaijano, dança oriental clássica, potpourri anatólio e a dança das facas georgiana e caucasiana — depois saxofone ao vivo e um set de DJ durante todo o cruzeiro.' },
       { title: 'Rota noturna completa do Bósforo', desc: 'Kabataş → Dolmabahçe → Palácio Çırağan → Mesquita de Ortaköy → Bebek → Rumeli Hisarı → Ponte FSM → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: 'Desde €{p.dinnerStd}/pessoa — pagamento a bordo', desc: 'Cruzeiro com jantar €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' }
@@ -128,12 +128,12 @@ module.exports = {
       badge: '100% Halal · Amigo da Família · Propriedade Muçulmana'
     },
     intro: [
-      '**O cruzeiro halal no Bósforo** é o cruzeiro com jantar mais respeitoso de Istambul para viajantes muçulmanos. Cada carne servida no nosso barco — salmão, robalo, frango, almôndegas de borrego, lombo de vaca, entrecosto — é **certificada halal** de fornecedores aprovados. Servimos o mesmo menu a cada hóspede; sem "secção halal" separada, porque todo o barco é halal por defeito.',
+      '**O cruzeiro halal no Bósforo** é o cruzeiro com jantar mais respeitoso de Istambul para viajantes muçulmanos. Cada carne servida no nosso barco — salmão, robalo, frango em espetada, espetada de vaca — é **certificada halal** de fornecedores aprovados. Servimos o mesmo menu a cada hóspede; sem "secção halal" separada, porque todo o barco é halal por defeito.',
       'O álcool é **um suplemento opcional** — nunca imposto aos hóspedes, e a disposição das mesas separa naturalmente os hóspedes que preferem uma refeição sem álcool. Para os hóspedes que querem o pacote de álcool de 2 copos (+€{p.alcohol2}/pessoa), está lá, mas os refrigerantes ilimitados incluídos (água, cola, sumo) são suficientes para a maioria das famílias muçulmanas. A nossa tripulação é treinada para respeitar as suas preferências sem suposições.',
       '**O cruzeiro amigo halal no Bósforo** importa para viajantes da Arábia Saudita, EAU, Kuwait, Qatar, Irão, Malásia, Indonésia, Paquistão e Marrocos que querem a noite mais icónica de Istambul sem compromissos. Licenciado pela TÜRSAB, 4,8★ e pagamento a bordo — não prometa nada até ter a certeza de que a experiência cumpre os seus padrões.'
     ],
     highlights: [
-      { title: 'Menu 100% certificado halal', desc: 'Toda a carne (salmão, robalo, frango, almôndegas, vaca, entrecosto) é certificada halal de fornecedores aprovados. A cozinha segue a preparação halal. Sem produtos de porco ou aditivos não-halal. Opções vegetarianas estão sempre disponíveis.' },
+      { title: 'Menu 100% certificado halal', desc: 'Toda a carne (salmão, robalo, frango em espetada, espetada de vaca, vaca, entrecosto) é certificada halal de fornecedores aprovados. A cozinha segue a preparação halal. Sem produtos de porco ou aditivos não-halal. Opções vegetarianas estão sempre disponíveis.' },
       { title: 'Álcool opcional, nunca imposto', desc: 'Os pacotes de álcool são suplemento — não estão incluídos por defeito. Os refrigerantes (água, cola, sumo) são ilimitados e gratuitos. A sua mesa permanece sem álcool a menos que peça explicitamente. A tripulação respeita silenciosamente a sua escolha.' },
       { title: 'Entretenimento amigo da família', desc: 'Espetáculo sema, danças folclóricas turcas tradicionais, música turca ao vivo. Sem espetáculos estilo clube noturno, sem conteúdo inapropriado. Seguro para crianças, respeitoso para famílias. A dança oriental é uma forma de arte tradicional, apresentada com modéstia.' },
       { title: 'Respeito pelas horas de oração', desc: 'Se o embarque coincide com maghrib ou isha (20:00-21:00), a nossa equipa pode encaminhá-lo para a zona de oração tranquila no cais de Kabataş antes da partida. Apenas avise-nos na reserva.' }
@@ -164,7 +164,7 @@ module.exports = {
       badge: '40% DE DESCONTO · Um menu, padrão premium · Pagamento a bordo'
     },
     intro: [
-      'Muitos barcos do Bósforo dividem os hóspedes em "Standard" e "VIP". Nós não. A bordo do **AMOR** há um único menu de jantar, preparado com o mesmo cuidado para todos: 10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango ou köfte), bolo gelado e refrigerantes ilimitados. Todo o programa de espetáculos em oito números também está incluído — Oba Dombra, cerimónia dos dervixes rodopiantes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ — tudo no preço de €{p.dinnerStd}/pessoa.',
+      'Muitos barcos do Bósforo dividem os hóspedes em "Standard" e "VIP". Nós não. A bordo do **AMOR** há um único menu de jantar, preparado com o mesmo cuidado para todos: 10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca), halva de sêmola e refrigerantes ilimitados. Todo o programa de espetáculos em oito números também está incluído — Oba Dombra, cerimónia dos dervixes rodopiantes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ — tudo no preço de €{p.dinnerStd}/pessoa.',
       'A sensação VIP começa na sua mesa. Se quiser ficar o mais perto possível do palco e das vistas, acrescente a **mesa privativa junto ao palco** (+€{p.romantic}/mesa) e o seu lugar fica reservado com antecedência — o melhor ângulo para os dervixes, as danças folclóricas e o Bósforo iluminado. A escolha preferida de casais, celebrações e amantes da fotografia.',
       'O AMOR é um barco moderno de 42 metros, 3 conveses e capacidade até 400 hóspedes, com aquecimento no inverno e ar condicionado no verão. A rota de 3 horas parte de Kabataş (embarque a partir das 20:00, partida 21:00, regresso 00:00) e passa por Dolmabahçe, pela mesquita de Ortaköy, pela fortaleza de Rumeli e pelas luzes da ponte do Bósforo. Licença TÜRSAB (A-17672), 4,9★ no Google. Sem pagamento antecipado: paga a bordo, com cancelamento grátis até 2 horas antes da partida.'
     ],
@@ -177,7 +177,7 @@ module.exports = {
     faq: [
       { q: 'Vendem um "pacote VIP"? Qual é a diferença para o Standard?', a: 'Não vendemos um pacote VIP separado: há um único menu, servido a todos com o mesmo padrão premium. O que chamamos de "experiência VIP" é personalizar a sua noite: mesa privativa junto ao palco (+€{p.romantic}/mesa), serviço de mesa atencioso e bebidas adicionais opcionais. O cruzeiro dura 3 horas, €{p.dinnerStd}/pessoa.' },
       { q: '€{p.dinnerStd} é mesmo 40% de desconto?', a: 'Sim — o nosso preço de tabela é €{p.dinnerStdOriginal}/pessoa. €{p.dinnerStd} é a tarifa de reserva direta, sem comissões de intermediários. Paga a bordo e não há qualquer pagamento antecipado.' },
-      { q: 'O que inclui o menu?', a: '10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango ou köfte) e bolo gelado de sobremesa, com refrigerantes ilimitados. O programa em oito números está incluído: Oba Dombra, cerimónia dos dervixes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ.' },
+      { q: 'O que inclui o menu?', a: '10 variedades de meze turcos, uma entrada quente, prato principal à escolha (salmão, robalo, frango em espetada ou espetada de vaca) e halva de sêmola de sobremesa, com refrigerantes ilimitados. O programa em oito números está incluído: Oba Dombra, cerimónia dos dervixes, danças folclóricas da Anatólia e do Azerbaijão, dança do ventre, dança das facas caucasiana, música ao vivo e um final com saxofone e DJ.' },
       { q: 'O álcool está incluído?', a: 'Não — o álcool é um extra separado: 2 copos de vinho, cerveja, rakı, vodka, whisky, gin e mais local por +€{p.alcohol2}/pessoa. Os refrigerantes estão incluídos de forma ilimitada e gratuita. As bebidas premium importadas são cobradas à parte a bordo.' },
       { q: 'Como garanto uma mesa junto ao palco?', a: 'Basta selecionar o extra "mesa privativa junto ao palco" (+€{p.romantic}/mesa) ao reservar — a mesa fica reservada em seu nome. As melhores posições esgotam com reservas antecipadas, por isso recomendamos acrescentá-la antes do dia do cruzeiro.' },
       { q: 'Que tipo de barco é?', a: 'O AMOR — um navio de passageiros moderno de 42 metros, 3 conveses e capacidade para 400 hóspedes, com aquecimento no inverno e ar condicionado no verão. Partida do cais de Kabataş: embarque 20:00, partida 21:00, regresso 00:00. Rota: Dolmabahçe, Ortaköy, fortaleza de Rumeli, Beylerbeyi e as luzes da ponte do Bósforo.' }
@@ -242,7 +242,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Mesa privada para dois', desc: 'Mesa privada para 2 pessoas, não partilhada. Prioridade nas mesas à janela para casais. Fotografias do pôr-do-sol e do Bósforo noturno mesmo à sua janela.' },
-      { title: 'Jantar lento de vários pratos', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, robalo, frango, almôndegas ou vegetariano), bolo gelado de sobremesa. Servido lentamente ao longo de 3 horas — não tem pressa.' },
+      { title: 'Jantar lento de vários pratos', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, robalo, frango em espetada, espetada de vaca ou vegetariano), halva de sêmola de sobremesa. Servido lentamente ao longo de 3 horas — não tem pressa.' },
       { title: 'Violino ao vivo e música suave', desc: 'O violino ao vivo e a música turca acústica durante o jantar criam uma atmosfera íntima, adequada para conversa. Depois entra o DJ para os casais que querem dançar.' },
       { title: 'Suplementos para noites especiais', desc: 'Arranjo de mesa romântica (velas, rosas): +€{p.romantic}. 2 copos de álcool (vinho, cerveja, rakı, vodka, whisky, gin e mais): +€{p.alcohol2}/pessoa. Transfer do hotel (ida e volta): +€{p.transfer}/pessoa. Escolha o que combina com a sua noite.' }
     ],
@@ -279,7 +279,7 @@ module.exports = {
     highlights: [
       { title: 'Pores-do-sol de verão mesmo à partida', desc: 'De maio a agosto, o sol põe-se em Istambul aproximadamente entre as 20:15–20:45 — o embarque às 20:00 dá-lhe a hora dourada no convés, e a partida das 21:00 coloca-o na água para o próprio pôr-do-sol. Câmara preparada — esta é a fotografia.' },
       { title: 'Da hora azul à noite plena', desc: 'Não é só o pôr-do-sol — o cruzeiro navega pelo crepúsculo até ao Bósforo totalmente iluminado. Luz dourada, hora azul e depois 30 milhões de luzes das pontes na água escura: três fases de luz numa só noite.' },
-      { title: 'Jantar completo durante o cruzeiro', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, dourada, frango, köfte, vegetariano), bolo gelado, refrigerantes ilimitados — servidos enquanto as luzes da cidade se acendem.' },
+      { title: 'Jantar completo durante o cruzeiro', desc: '10 variedades de mezze turcos, entrada quente, prato principal (salmão, dourada, frango em espetada, espetada de vaca, vegetariano), halva de sêmola, refrigerantes ilimitados — servidos enquanto as luzes da cidade se acendem.' },
       { title: 'Dolmabahçe, Ortaköy, Ponte do Bósforo — tudo a brilhar', desc: 'A rota passa pelo Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo, Rumeli Hisarı e Palácio de Beylerbeyi no momento em que as suas luzes se acendem. Cada marco na sua melhor luz.' }
     ],
     faq: [
@@ -317,7 +317,7 @@ module.exports = {
     highlights: [
       { title: 'O Bósforo iluminado no pico de dramatismo', desc: 'A Ponte do Bósforo muda de cor (azul, violeta, dourado), os palácios brilham amarelos, a Mesquita de Ortaköy reflete-se na água escura. 21:00-00:00 iluminação máxima para todos os marcos de Istambul.' },
       { title: 'Show turco tradicional a bordo', desc: 'Oito números: Oba Dombra, espetáculo sema, Sarı Gelin, potpourri azerbaijano, dança oriental, potpourri anatólio e a dança das facas georgiana e caucasiana, depois saxofone ao vivo e set de DJ. 40 minutos de espetáculo, depois a música + o jantar continuam.' },
-      { title: 'Jantar completo de vários pratos', desc: '10 variedades de mezze turcos, entrada quente (paçanga böreği), prato principal (salmão, robalo, frango, almôndegas, vegetariano — a sua escolha), sobremesa (bolo gelado), refrigerantes ilimitados. Certificado halal.' },
+      { title: 'Jantar completo de vários pratos', desc: '10 variedades de mezze turcos, entrada quente (börek), prato principal (salmão, robalo, frango em espetada, espetada de vaca, vegetariano — a sua escolha), sobremesa (halva de sêmola), refrigerantes ilimitados. Certificado halal.' },
       { title: 'Rota completa do Bósforo', desc: 'Kabataş → Dolmabahçe → Palácio Çırağan → Mesquita de Ortaköy → Bebek → Rumeli Hisarı → Ponte Fatih Sultan Mehmet → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Torre da Donzela → Kabataş.' }
     ],
     faq: [
@@ -351,7 +351,7 @@ module.exports = {
       '€{p.dinnerStd}/pessoa (antes €{p.dinnerStdOriginal}). Pagamento a bordo — sem pagamento antecipado, sem risco. Licenciado pela TÜRSAB A-17672, avaliado com 4,8★ por mais de 11.317 viajantes.'
     ],
     highlights: [
-      { title: 'Jantar turco completo de vários pratos', desc: '10 variedades de mezze, entrada quente, prato principal (salmão/robalo/frango/almôndegas/vegetariano), bolo gelado. Certificado halal. Refrigerantes ilimitados incluídos.' },
+      { title: 'Jantar turco completo de vários pratos', desc: '10 variedades de mezze, entrada quente, prato principal (salmão/robalo/frango em espetada/espetada de vaca/vegetariano), halva de sêmola. Certificado halal. Refrigerantes ilimitados incluídos.' },
       { title: 'Show de danças folclóricas turcas ao vivo', desc: 'Oito números: Oba Dombra, espetáculo sema, Sarı Gelin, potpourri azerbaijano, dança oriental, potpourri anatólio, dança das facas georgiana e caucasiana, depois saxofone ao vivo e DJ. 40 minutos de espetáculo, música de fundo contínua.' },
       { title: 'Rota noturna completa no Bósforo', desc: 'Passeio de 3 horas: Dolmabahçe, Çırağan, Mesquita de Ortaköy, Ponte do Bósforo, Bebek, Rumeli Hisarı, Ponte FSM, Beylerbeyi, Üsküdar, Torre da Donzela. Ambas as costas, europeia e asiática.' },
       { title: 'Desde €{p.dinnerStd} — pagamento a bordo', desc: 'Cruzeiro com jantar: €{p.dinnerStd} (antes €{p.dinnerStdOriginal}). Sem pagamento antecipado. Cancelamento gratuito até 2 horas antes da partida.' }
@@ -392,7 +392,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Todas as vistas noturnas icónicas de Istambul', desc: 'Palácio de Dolmabahçe, Mesquita de Ortaköy, Ponte do Bósforo iluminada, Rumeli Hisarı, Ponte FSM, Palácio de Beylerbeyi, Torre da Donzela. Cada marco principal na iluminação noturna de pico.' },
-      { title: 'Jantar turco completo incluído', desc: '10 mezze, entrada quente, prato principal (salmão/robalo/frango/almôndegas/vegetariano), sobremesa, refrigerantes ilimitados. Certificado halal. Avaliado a €{p.dinnerStd}/pessoa — tudo incluído.' },
+      { title: 'Jantar turco completo incluído', desc: '10 mezze, entrada quente, prato principal (salmão/robalo/frango em espetada/espetada de vaca/vegetariano), sobremesa, refrigerantes ilimitados. Certificado halal. Avaliado a €{p.dinnerStd}/pessoa — tudo incluído.' },
       { title: 'Danças folclóricas ao vivo + sema + oriental', desc: 'Programa ao vivo de oito números: Oba Dombra, espetáculo Mevlana sema, Sarı Gelin, potpourri azerbaijano, dança oriental, potpourri anatólio, dança das facas georgiana e caucasiana, depois saxofone ao vivo e DJ. 40 minutos de espetáculo, música de fundo toda a noite.' },
       { title: 'Fácil para a primeira vez em Istambul', desc: 'Ponto de encontro central (cais de Kabataş), transfer do hotel (+€{p.transfer}/pessoa), tripulação falante de inglês, pagamento a bordo. Zero stress logístico. Venha, divirta-se, vá.' }
     ],

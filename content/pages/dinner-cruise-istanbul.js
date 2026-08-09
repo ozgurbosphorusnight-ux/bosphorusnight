@@ -44,7 +44,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full multi-course Turkish dinner',
-      desc: '10 varieties of mezes, warm appetizer, main course (salmon/sea bass/chicken/köfte/vegetarian), ice-cream cake. Halal-certified. Unlimited soft drinks included.'
+      desc: '10 varieties of mezes, warm appetizer, main course (salmon/sea bass/chicken skewer/beef skewer/vegetarian), semolina halva. Halal-certified. Unlimited soft drinks included.'
     },
     {
       icon: 'show',

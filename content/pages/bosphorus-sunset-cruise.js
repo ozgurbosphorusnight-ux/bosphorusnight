@@ -60,7 +60,7 @@ module.exports = {
     {
       icon: 'dinner',
       title: 'Full dinner during the cruise',
-      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken, köfte, vegetarian), ice-cream cake, unlimited soft drinks — served as the city lights come on.'
+      desc: '10 varieties of Turkish meze, warm appetizer, main course (salmon, sea bass, chicken skewer, beef skewer, vegetarian), semolina halva, unlimited soft drinks — served as the city lights come on.'
     },
     {
       icon: 'landmarks',

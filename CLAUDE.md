@@ -170,12 +170,18 @@ hem maliyet €0 — wizard `wizCalcPrice()` bebekleri transfer sayımından ç�
 ### İptal
 2 saat öncesine kadar ücretsiz iptal, pay on boat olduğu için para iadesi konu değil.
 
-### Transfer Kuralı (2026-08-08 güncellendi — 18:30-19:00 GRİ PENCERE eklendi, Özgür)
+### Transfer Kuralı (2026-08-09 güncellendi — 18:30 sonrası SESSİZ kural, Özgür)
 Aynı gün (tur tarihi = bugün) için saat dilimleri:
 - **00:00-18:30** → normal, AI kendisi alır
-- **18:30-19:00** → **ÖZGÜR'E SORULUR (gri pencere).** AI transferi VAAT ETMEZ; tool `transfer_needs_owner_approval` döner, Özgür'e Telegram bildirimi gider (müşteri, telefon, tarih, kişi, adres). AI müşteriye sadece "aracın müsaitliğini kontrol ediyorum, birkaç dakika içinde dönüyorum" der ve bekler. **Rezervasyonu Özgür panelden manuel kurar** — panel akışı `skip_time_guard: true` ile bu engeli aşar.
-- **19:00-21:00** → **transfer KAPALI** (kesin engel, gri bölge yok). Müşteri Kabataş'a kendi gelirse 21:00'a kadar tura yetişir. AI'a `transfer_time_blocked` döner, otomatik "transfersiz fiyatla devam edelim mi?" teklifi.
-- **21:00+** → bugünün turu kalktı
+- **18:30-21:00** → **TRANSFER KAPALI ama AI KONUYU AÇMAZ.** Özgür'ün cümlesi: *"18:30'dan sonra transfer kapalı ama özellikle söylemesin. Müşteri sorarsa bana Telegram'dan yazsın, gerekirse transferden bilgi alıp manuel oluştururum."*
+  - Müşteri transferden bahsetmediyse AI hiç değinmez (önden "transfer veremeyiz" duyurusu YOK).
+  - Müşteri isterse: AI **söz vermez**, tool `transfer_needs_owner_approval` döner → Özgür'e Telegram bildirimi (müşteri, telefon, tarih, kişi, adres). Müşteriye tek cümle: *"aracın müsaitliğini kontrol ediyorum, birkaç dakika içinde dönüyorum"*.
+  - **Rezervasyonu/güncellemeyi Özgür panelden manuel yapar** — panel akışı `skip_time_guard: true` ile engeli aşar (create + update).
+  - Özgür 10 dk cevap vermezse `scheduled/transfer-approval-followup.js` müşteriye 32 dilde transfersiz seçeneği önerir + Özgür'e "cevapsız kaldı" bildirimi gider.
+- **21:00+** → bugünün turu kalktı (aynı gün rezervasyon da kapanır)
+
+> ⚠️ Kural **güncellemede de** geçerli: mevcut rezervasyona 18:30 sonrası transfer eklemek de aynı onay akışına düşer (9 Ağu'da bulunan açık kapı — `update_reservation`'da hiç saat kontrolü yoktu). Mevcut transferin **adres düzeltmesi ve iptali** her saatte serbesttir.
+> ⚠️ `lookup_hotel_address` de 18:30 sonrası cevabına `transfer_time_note` ekler — otel bölge içinde olsa bile AI transfer teklif etmez.
 
 Yarın veya sonraki tarih için transfer her zaman mümkün (saat sınırı yok).
 

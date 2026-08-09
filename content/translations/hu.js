@@ -22,7 +22,7 @@ module.exports = {
       'Akár születésnapot ünnepel, prémium isztambuli estét keres a családjának, vagy a város legfotogénebb naplemente-éjszaka átmenetét szeretné — ez az a vacsorás hajóút, amelyet Isztambul lakói elsősorban ajánlanak.'
     ],
     highlights: [
-      { title: 'Török többfogásos vacsora', desc: '10 fajta hideg mezze, meleg előétel (paçanga böreği), főétel választás (lazac / tengeri sügér / csirke / húsgombóc / vegetáriánus), fagylalttorta desszertként, korlátlan üdítők.' },
+      { title: 'Török többfogásos vacsora', desc: '10 fajta hideg mezze, meleg előétel (börek), főétel választás (lazac / tengeri sügér / csirke / húsgombóc / vegetáriánus), búzadara-halva desszertként, korlátlan üdítők.' },
       { title: 'Élő népi táncok, keleti tánc és DJ', desc: 'Nyolc produkció: Oba Dombra, Mevlana sema előadás, Sarı Gelin, azeri egyveleg, klasszikus keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc — ezt követi élő szaxofon és egy DJ szett az egész hajóút alatt.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → FSM-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Kabataş.' },
       { title: '€{p.dinnerStd}-tól/fő — fizetés a fedélzeten', desc: 'Vacsorás hajóút €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
@@ -161,7 +161,7 @@ module.exports = {
       badge: '40% KEDVEZMÉNY · Egy menü, prémium színvonal · Fizetés a hajón'
     },
     intro: [
-      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte), fagylalttorta és korlátlan üdítő. A teljes, nyolc produkcióból álló műsor is benne van — Oba Dombra, kerengő dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé — mindez a €{p.dinnerStd}/fő árban.',
+      'A Boszporuszon sok hajó „standard“ és „VIP“ kategóriára osztja a vendégeit. Mi nem. Az **AMOR** fedélzetén egyetlen vacsoramenü van, amelyet mindenkinek ugyanolyan gondossággal készítünk el: 10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs), búzadara-halva és korlátlan üdítő. A teljes, nyolc produkcióból álló műsor is benne van — Oba Dombra, kerengő dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé — mindez a €{p.dinnerStd}/fő árban.',
       'A VIP érzés az asztalnál kezdődik. Ha a színpadhoz és a látványhoz szeretne a legközelebb ülni, kérje a **privát asztalt a színpad mellett** (+€{p.romantic}/asztal), és a helyét előre lefoglaljuk — a legjobb szög a dervisekhez, a néptáncokhoz és a kivilágított Boszporuszhoz. Párok, ünneplések és fotózni szeretők kedvence.',
       'Az AMOR modern hajó: 42 méter hosszú, 3 fedélzetes, akár 400 vendéget fogad, télen fűtött, nyáron légkondicionált. A háromórás útvonal Kabataşból indul (beszállás 20:00-tól, indulás 21:00, visszaérkezés 00:00), elhalad a Dolmabahçe, az Ortaköy mecset, a Rumeli erőd és a Boszporusz híd fényei mellett. TÜRSAB engedéllyel (A-17672), 4,9★ a Google-on. Nincs előre fizetés — a hajón fizet, és az indulás előtt 2 órával még ingyenesen lemondhat.'
     ],
@@ -174,7 +174,7 @@ module.exports = {
     faq: [
       { q: 'Árulnak „VIP csomagot“? Miben más, mint a standard?', a: 'Nem árulunk külön VIP csomagot — egyetlen menü van, amelyet mindenki ugyanazon a prémium színvonalon kap. Amit „VIP élménynek“ nevezünk, az az este személyre szabása: privát asztal a színpad mellett (+€{p.romantic}/asztal), figyelmes asztali kiszolgálás és választható italkiegészítők. A hajóút 3 órás, €{p.dinnerStd}/fő.' },
       { q: 'Tényleg 40% kedvezmény a €{p.dinnerStd}?', a: 'Igen — a listaárunk €{p.dinnerStdOriginal}/fő. A €{p.dinnerStd} a közvetlen foglalási ár, közvetítői jutalék nélkül. A hajón fizet, előleget nem kérünk.' },
-      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirke vagy köfte) és fagylalttorta desszertnek, korlátlan üdítővel. A nyolc produkcióból álló műsor benne van: Oba Dombra, dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé.' },
+      { q: 'Mi van a menüben?', a: '10 fajta török meze, meleg előétel, választható főétel (lazac, tengeri sügér, csirkenyárs vagy marhanyárs) és búzadara-halva desszertnek, korlátlan üdítővel. A nyolc produkcióból álló műsor benne van: Oba Dombra, dervisek szertartása, anatóliai és azeri néptáncok, hastánc, kaukázusi késtánc, élő zene és szaxofonos DJ-finálé.' },
       { q: 'Az alkohol benne van az árban?', a: 'Nem — az alkohol külön kiegészítő: 2 pohár bor, sör, rakı, vodka, whisky, gin és más +€{p.alcohol2}/fő áron. Az üdítők korlátlanul és ingyenesen benne vannak. A prémium importitalokat a hajón külön számoljuk el.' },
       { q: 'Hogyan biztosíthatok színpad melletti asztalt?', a: 'Elég a foglaláskor kiválasztani a „privát asztal a színpad mellett“ kiegészítőt (+€{p.romantic}/asztal) — az asztalt az Ön nevére foglaljuk. A legjobb helyek az előfoglalásokkal telnek be, ezért érdemes a hajóút napja előtt hozzáadni.' },
       { q: 'Milyen hajó ez?', a: 'AMOR — modern személyszállító hajó, 42 méter hosszú, 3 fedélzetes, 400 fő befogadóképességgel, télen fűtött, nyáron légkondicionált. Indulás a kabataşi kikötőből: beszállás 20:00, indulás 21:00, visszaérkezés 00:00. Útvonal: Dolmabahçe, Ortaköy, Rumeli erőd, Beylerbeyi és a Boszporusz híd fényei.' }
@@ -239,7 +239,7 @@ module.exports = {
     ],
     highlights: [
       { title: 'Privát asztal kettőnek', desc: 'Privát asztal 2 főre, nem megosztva. Prioritás az ablak melletti asztaloknak pároknak. Naplemente és éjszakai Boszporusz fotók közvetlenül az ablaknál.' },
-      { title: 'Lassú többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc vagy vegetáriánus), fagylalttorta desszertként. 3 órán keresztül lassan szolgálják fel — nincs siet.' },
+      { title: 'Lassú többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc vagy vegetáriánus), búzadara-halva desszertként. 3 órán keresztül lassan szolgálják fel — nincs siet.' },
       { title: 'Élő hegedű és lágy zene', desc: 'Az élő hegedű és az akusztikus török zene a vacsora alatt intim légkört teremt, alkalmas a beszélgetéshez. Aztán jön a DJ a pároknak, akik táncolni szeretnének.' },
       { title: 'Kiegészítők különleges estékhez', desc: 'Romantikus asztali elrendezés (gyertyák, rózsák): +€{p.romantic}. 2 pohár alkohol (bor, sör, rakı, vodka, whisky, gin és más): +€{p.alcohol2}/fő. Szállodai transzfer (oda-vissza): +€{p.transfer}/fő. Válassza, ami illik az estéjéhez.' }
     ],
@@ -276,7 +276,7 @@ module.exports = {
     highlights: [
       { title: 'Nyári naplementék pont az induláskor', desc: 'Májustól augusztusig a nap Isztambulban nagyjából 20:15–20:45 között nyugszik le — a 20:00-as beszállás aranyórát ad a fedélzeten, a 21:00-as indulással pedig magát a naplementét a vízről nézi végig. Kamera készenlétben — ez az a fotó.' },
       { title: 'Kék órától a teljes éjszakáig', desc: 'Nem csak naplemente — a hajóút az alkonyaton át a teljesen kivilágított Boszporuszig hajózik. Arany fény, kék óra, majd 30 millió hídfény a sötét vízen: három fényfázis egyetlen estén.' },
-      { title: 'Teljes vacsora a hajóút alatt', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus), fagylalttorta, korlátlan üdítők — akkor szolgálják fel, amikor a városi fények kigyúlnak.' },
+      { title: 'Teljes vacsora a hajóút alatt', desc: '10 fajta török mezze, meleg előétel, főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus), búzadara-halva, korlátlan üdítők — akkor szolgálják fel, amikor a városi fények kigyúlnak.' },
       { title: 'Dolmabahçe, Ortaköy, Boszporusz-híd — minden ragyog', desc: 'Az útvonal elhalad a Dolmabahçe-palota, az Ortaköy-mecset, a Boszporusz-híd, a Rumeli Hisarı és a Beylerbeyi-palota mellett, épp amikor fényeik kigyúlnak. Minden nevezetesség a legjobb fényben.' }
     ],
     faq: [
@@ -314,7 +314,7 @@ module.exports = {
     highlights: [
       { title: 'A kivilágított Boszporusz drámai csúcson', desc: 'A Boszporusz-híd színt változtat (kék, lila, arany), a paloták sárgán ragyognak, az Ortaköy-mecset tükröződik a sötét vízben. 21:00-00:00 maximális megvilágítás az összes isztambuli nevezetességhez.' },
       { title: 'Hagyományos török show a fedélzeten', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg és a grúz-kaukázusi késtánc, majd élő szaxofon és DJ szett. 40 perc show, majd folytatódik a zene + vacsora.' },
-      { title: 'Teljes többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel (paçanga böreği), főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus — az Ön választása), desszert (fagylalttorta), korlátlan üdítők. Halal tanúsítvánnyal.' },
+      { title: 'Teljes többfogásos vacsora', desc: '10 fajta török mezze, meleg előétel (börek), főétel (lazac, tengeri sügér, csirke, húsgombóc, vegetáriánus — az Ön választása), desszert (búzadara-halva), korlátlan üdítők. Halal tanúsítvánnyal.' },
       { title: 'Teljes Boszporusz útvonal', desc: 'Kabataş → Dolmabahçe → Çırağan-palota → Ortaköy-mecset → Bebek → Rumeli Hisarı → Fatih Sultan Mehmet-híd → Anadolu Hisarı → Beylerbeyi → Kuzguncuk → Üsküdar → Leánytorony → Kabataş.' }
     ],
     faq: [
@@ -348,7 +348,7 @@ module.exports = {
       '€{p.dinnerStd}/fő (korábban €{p.dinnerStdOriginal}). Fizetés a fedélzeten — nincs előzetes fizetés, nincs kockázat. TÜRSAB A-17672 engedéllyel, 4,8★ értékeléssel több mint 11.317 utazótól.'
     ],
     highlights: [
-      { title: 'Teljes török többfogásos vacsora', desc: '10 fajta mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), fagylalttorta. Halal tanúsítvánnyal. Korlátlan üdítők beleértve.' },
+      { title: 'Teljes török többfogásos vacsora', desc: '10 fajta mezze, meleg előétel, főétel (lazac/tengeri sügér/csirke/húsgombóc/vegetáriánus), búzadara-halva. Halal tanúsítvánnyal. Korlátlan üdítők beleértve.' },
       { title: 'Élő török népi tánc show', desc: 'Nyolc produkció: Oba Dombra, sema előadás, Sarı Gelin, azeri egyveleg, keleti tánc, anatóliai egyveleg, grúz-kaukázusi késtánc, majd élő szaxofon és DJ. 40 perc show, folyamatos háttérzene.' },
       { title: 'Teljes éjszakai útvonal a Boszporuszon', desc: '3 órás túra: Dolmabahçe, Çırağan, Ortaköy-mecset, Boszporusz-híd, Bebek, Rumeli Hisarı, FSM-híd, Beylerbeyi, Üsküdar, Leánytorony. Mindkét part, európai és ázsiai.' },
       { title: '€{p.dinnerStd}-tól — fizetés a fedélzeten', desc: 'Vacsorás hajóút: €{p.dinnerStd} (korábban €{p.dinnerStdOriginal}). Nincs előzetes fizetés. Ingyenes lemondás indulás előtt 2 óráig.' }
