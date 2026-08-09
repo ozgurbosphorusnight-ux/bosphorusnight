@@ -94,7 +94,7 @@ Eklentiler dinner paketlerine **ek delta fiyat** olarak uygulanır — toplam pa
 
 **Örnek:** DINNER_STD (€24.30) + ALCOHOL_2GLASS (€10) + transfer (€5) = **€39.30/kişi** satış.
 
-> 💵 **Maliyetler USD anlaşmasıdır** (tekne hakedişi): menü 17 USD, alkollü menü 27 USD (= menü + 10 USD alkol), transfer 3 USD (çocuk 4-8 yarım = 1.5 USD), romantik masa 0. Yukarıdaki € karşılıkları **1 USD = €0.8655** (5 Ağu 2026, ECB) kuruyla sabitlendi. Kur ciddi oynarsa cost_eur değerleri tazelenmeli — kanonik USD değerleri `packages.cost_usd` + `addons.cost_usd` kolonlarında. Bkz. § Mutabakat USD Sistemi.
+> 💵 **Maliyetler USD anlaşmasıdır** (tekne hakedişi): menü 17 USD, alkollü menü 27 USD (= menü + 10 USD alkol), transfer 3 USD (**çocukta indirim yok, tam 3 USD** — 7 Ağu 2026 düzeltmesi; eski "4-8 yarım = 1.5 USD" kuralı geçersiz), romantik masa 0. Yukarıdaki € karşılıkları **1 USD = €0.8655** (5 Ağu 2026, ECB) kuruyla sabitlendi. Kur ciddi oynarsa cost_eur değerleri tazelenmeli — kanonik USD değerleri `packages.cost_usd` + `addons.cost_usd` kolonlarında. Bkz. § Mutabakat USD Sistemi.
 
 **PROPOSAL_PACKAGE kaldırıldı** — artık standart paket olarak satılmıyor. Müşteri "evlilik teklifi" talep ederse eskalasyona gider (§ 8).
 
