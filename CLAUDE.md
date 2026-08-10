@@ -1183,8 +1183,17 @@ Bir aşamadan diğerine geçerken bu dosyanın § 4 bölümündeki "Aşama X —
 ## 19. 🎁 LocalTurkiye SESLİ REHBER HEDİYESİ (2026-07-24 — kurulu, UYKUDA)
 
 LocalTurkiye (Özgür'ün pazaryeri projesi) Boğaz sesli rehberini BN müşterilerine
-rezervasyon hediyesi olarak verecek. **Altyapı iki tarafta da bitti, ama KAPALI —
-Özgür kuralı: içerik (sesler/mekânlar/fotoğraflar) hazır olmadan müşteriye link GİTMEZ.**
+rezervasyon hediyesi olarak veriyor.
+
+> 🔄 **10 Ağu 2026 GÜNCEL DURUM:** Otomatik gönderim hâlâ KAPALI (`LT_GIFT_LIVE=false`),
+> ama **manuel hediye AKTİF**: Özgür panelden "Hediye Rehberi" düğmesiyle kişiye özel link
+> üretip gönderiyor (LocalTurkiye API köprüsü, HMAC imzalı; süre 24/48/72 sa, standart 48).
+> **Karar: HER rezervasyona verilecek (manuel), soran da alır.** AI bilgilendirildi
+> (system-prompt § HEDİYE SESLİ REHBER + webchat): 32 dil, 90 durak, navigasyonlu
+> (yürüyüş/araç/toplu taşıma), link TUR GÜNÜ gönderilir, 48 saat aktif, rez başına tek link.
+> AI link üretemez; "linkim gelmedi"/uzatma → trigger_escalation (low) → Özgür TG.
+> Proaktif duyuru henüz YOK (sonra açılacak). llms.txt'e "Complimentary Audio Guide" bölümü
+> eklendi. Site paket kartları/schema'ya ekleme TAM AÇILIŞTA (otomatik gönderim) yapılacak.
 
 - Detay + açma talimatı: **AI repo** `C:\Projects\bosphorus-night-ai\CLAUDE.md` sonundaki
   "LocalTurkiye sesli rehber hediye linki" bölümü (util: `src/utils/gift-link.js`).
