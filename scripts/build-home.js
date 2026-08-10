@@ -164,8 +164,8 @@ function buildSchemaLd(lang) {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 41.035114,
-      longitude: 28.9948784
+      latitude: 41.0350839,
+      longitude: 28.9938353
     },
     identifier: {
       '@type': 'PropertyValue',
@@ -274,8 +274,8 @@ function buildSchemaLd(lang) {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 41.035114,
-      longitude: 28.9948784
+      latitude: 41.0350839,
+      longitude: 28.9938353
     },
     identifier: {
       '@type': 'PropertyValue',
@@ -397,7 +397,7 @@ function buildSchemaLd(lang) {
         postalCode: '34437',
         addressCountry: 'TR'
       },
-      geo: { '@type': 'GeoCoordinates', latitude: 41.035114, longitude: 28.993851 }
+      geo: { '@type': 'GeoCoordinates', latitude: 41.0350839, longitude: 28.9938353 }
     },
     organizer: {
       '@type': 'TravelAgency',

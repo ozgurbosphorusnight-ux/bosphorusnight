@@ -20,7 +20,7 @@ the website wizard, in 32 languages.
 - Legal entity: Licensed Turkish tour operator (TÜRSAB A-17672)
 - Founded: 2014
 - Headquarters: Istanbul, Turkey
-- Verified location coordinates: 41.0360985°N, 28.9948784°E (Kabataş Pier)
+- Verified location coordinates: 41.0350839°N, 28.9938353°E (Kabataş Pier)
 
 ## Tours
 
