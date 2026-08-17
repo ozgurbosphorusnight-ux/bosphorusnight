@@ -1,12 +1,20 @@
 {
   "_comment": "Google Business Profile yorumlarının snapshot'ı. Build script bunu OKUR (API çağrısı yok → Vercel'de çalışır). Hetzner cron'u (fetch-google-reviews) periyodik tazeler → git push → Vercel redeploy. Elle düzenleme: sadece küratörlü ek yorum eklerken.",
-  "fetchedAt": "2026-08-13",
+  "fetchedAt": "2026-08-17",
   "placeId": "ChIJx9cs1p63yhQRwd88xfTziFc",
-  "rating": "4.9",
-  "reviewCount": 86,
+  "rating": "4.8",
+  "reviewCount": 89,
   "googleUrl": "https://www.google.com/maps?cid=6307559510739050433",
   "writeReviewUrl": "https://g.page/r/CcHfPMX084hXEBM/review",
   "reviews": [
+    {
+      "name": "HasO _CR7",
+      "photo": "https://lh3.googleusercontent.com/a-/ALV-UjXxFRrHEfy-mHlbhb4BfHr6oZIdxFCHjr_ARyIprIV7XyCzbGD9=s128-c0x00000000-cc-rp-mo",
+      "rating": 5,
+      "text": "I love itttt. everything was nice and perfect and they are so respectful",
+      "lang": "en",
+      "date": "2026-08-04"
+    },
     {
       "name": "hassnain maqsood",
       "photo": "https://lh3.googleusercontent.com/a-/ALV-UjVzyfpBLSS8gSTUInylqz4kEuSqzEdVpLxvpk3xuKCOSkP7TWdl=s128-c0x00000000-cc-rp-mo",
