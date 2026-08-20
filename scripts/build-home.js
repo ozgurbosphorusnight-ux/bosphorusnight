@@ -174,6 +174,11 @@ function buildSchemaLd(lang) {
       value: 'A-17672'
     },
     priceRange: `€${PRICES.dinnerStd}`,
+    amenityFeature: {
+      '@type': 'LocationFeatureSpecification',
+      name: 'Free Wi-Fi',
+      value: true
+    },
     image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
     aggregateRating: {
       '@type': 'AggregateRating',

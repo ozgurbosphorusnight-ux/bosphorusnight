@@ -279,6 +279,11 @@ function buildSchemaLd(page, lang, slug) {
       url: SITE_URL,
       telephone: '+90 532 244 29 22',
       priceRange: `€${PRICES.dinnerStd}`,
+      amenityFeature: {
+        '@type': 'LocationFeatureSpecification',
+        name: 'Free Wi-Fi',
+        value: true
+      },
       image: 'https://www.bosphorusnight.com/assets/data/og-image.jpg',
       address: {
         '@type': 'PostalAddress',
