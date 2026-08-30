@@ -157,13 +157,13 @@ module.exports = {
     },
     hero: {
       h1: 'Boğaz\'da VIP Deneyim — Akşam Yemekli Tur',
-      subtitle: 'Tek menü, tek standart: herkese premium. AMOR teknesinde 3 saatlik Boğaz akşamı — zengin Türk menüsü, canlı sahne gösterileri ve isteyene sahne yakını özel masa. Ayrı bir "VIP sınıfı" satmıyoruz; en iyi halini her misafire sunuyoruz.',
+      subtitle: 'Tek menü, tek standart: herkese premium. Bosphorus Night teknesinde 3 saatlik Boğaz akşamı — zengin Türk menüsü, canlı sahne gösterileri ve isteyene sahne yakını özel masa. Ayrı bir "VIP sınıfı" satmıyoruz; en iyi halini her misafire sunuyoruz.',
       badge: '%40 İNDİRİM · Tek Menü, Premium Standart · Teknede Ödeme'
     },
     intro: [
-      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **AMOR**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), özel irmik tatlısı ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
+      'Birçok Boğaz teknesi misafirlerini "Standart" ve "VIP" diye ikiye ayırır. Biz ayırmıyoruz. **Bosphorus Night**\'da tek bir akşam yemeği menüsü var ve herkes için aynı özenle hazırlanıyor: 10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), özel irmik tatlısı ve sınırsız meşrubat. Sekiz bölümlük eğlence programı da dahil — Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali — hepsi €{p.dinnerStd}/kişi fiyatın içinde.',
       'VIP hissi masanızla başlar. Sahneye ve manzaraya en yakın masalardan birini isterseniz **sahne yakını özel masa** eklentisiyle (+€{p.romantic}/masa) yeriniz önceden ayrılır — semazeni, halk oyunlarını ve aydınlatılmış Boğaz\'ı en iyi açıdan izlersiniz. Çiftlerin, kutlamaların ve fotoğraf sevenlerin favorisi.',
-      'AMOR 42 metrelik, 3 katlı, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir tekne. 3 saatlik rota Kabataş\'tan başlar (giriş 20:00\'den itibaren, kalkış 21:00, dönüş 00:00): Dolmabahçe, Ortaköy Camii, Rumeli Hisarı ve Boğaz Köprüsü ışıkları. TÜRSAB lisanslı (A-17672), Google\'da 4.9★. Ön ödeme yok — teknede ödersiniz, kalkışa 2 saat kalaya kadar ücretsiz iptal.'
+      'Bosphorus Night 42 metrelik, 3 katlı, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir tekne. 3 saatlik rota Kabataş\'tan başlar (giriş 20:00\'den itibaren, kalkış 21:00, dönüş 00:00): Dolmabahçe, Ortaköy Camii, Rumeli Hisarı ve Boğaz Köprüsü ışıkları. TÜRSAB lisanslı (A-17672), Google\'da 4.9★. Ön ödeme yok — teknede ödersiniz, kalkışa 2 saat kalaya kadar ücretsiz iptal.'
     ],
     highlights: [
       { title: 'Tek menü, premium standart', desc: 'Ayrı bir "VIP menü" yok — çünkü tek menümüz zaten o seviyede. 10 çeşit meze, sıcak başlangıç, 4 seçenekli ana yemek, tatlı ve sınırsız meşrubat her masaya aynı özenle servis edilir.' },
@@ -177,7 +177,7 @@ module.exports = {
       { q: 'Menüde ne var?', a: '10 çeşit meze, sıcak başlangıç, seçmeli ana yemek (somon, levrek, tavuk şiş veya dana şiş), özel irmik tatlısı ve sınırsız meşrubat. Sekiz bölümlük eğlence programı dahil: Oba Dombra, sema gösterisi, Anadolu ve Azerbaycan halk oyunları, oryantal, Kafkas bıçak dansı, canlı müzik ve saksafonlu DJ finali.' },
       { q: 'Alkol dahil mi?', a: 'Hayır — alkol ayrı eklentidir: kişi başı 2 kadeh şarap, bira, rakı, votka, viski, cin ve daha fazlası +€{p.alcohol2}. Sınırsız meşrubat ücretsiz dahildir. Premium ithal içkiler teknede ayrıca fiyatlandırılır.' },
       { q: 'Sahne yakını masayı nasıl garantilerim?', a: 'Rezervasyon sırasında "sahne yakını özel masa" eklentisini (+€{p.romantic}/masa) seçmeniz yeterli — masanız isminize ayrılır. En iyi konumlar ön rezervasyonlarla dolduğu için tur gününden önce eklemenizi öneririz.' },
-      { q: 'Tekne nasıl bir tekne?', a: 'AMOR — 42 metre, 3 kat, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir yolcu teknesi. Kalkış Kabataş İskelesi\'nden: giriş 20:00, kalkış 21:00, dönüş 00:00. Rota: Dolmabahçe, Ortaköy, Rumeli Hisarı, Beylerbeyi ve Boğaz Köprüsü ışıkları.' }
+      { q: 'Tekne nasıl bir tekne?', a: 'Bosphorus Night — 42 metre, 3 kat, 400 misafir kapasiteli, kışın ısıtmalı yazın klimalı modern bir yolcu teknesi. Kalkış Kabataş İskelesi\'nden: giriş 20:00, kalkış 21:00, dönüş 00:00. Rota: Dolmabahçe, Ortaköy, Rumeli Hisarı, Beylerbeyi ve Boğaz Köprüsü ışıkları.' }
     ],
     cta: {
       primary: 'Yerinizi Ayırtın · Teknede Ödeme',

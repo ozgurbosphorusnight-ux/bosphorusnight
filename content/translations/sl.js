@@ -158,13 +158,13 @@ module.exports = {
     },
     hero: {
       h1: 'VIP doživetje na Bosporju — plovba z večerjo',
-      subtitle: 'En meni, en standard: vrhunsko za vse. Trije večerni uri na Bosporju na krovu ladje AMOR — bogata turška večerja, žive predstave na odru in, če želite, zasebna miza ob odru. Ne prodajamo ločenega „VIP razreda“ — najboljše postrežemo vsakemu gostu.',
+      subtitle: 'En meni, en standard: vrhunsko za vse. Trije večerni uri na Bosporju na krovu ladje Bosphorus Night — bogata turška večerja, žive predstave na odru in, če želite, zasebna miza ob odru. Ne prodajamo ločenega „VIP razreda“ — najboljše postrežemo vsakemu gostu.',
       badge: '40% POPUST · En meni, vrhunski standard · Plačilo na ladji'
     },
     intro: [
-      'Marsikatera ladja na Bosporju goste deli na „standardne“ in „VIP“. Mi ne. Na krovu ladje **AMOR** je en sam meni za večerjo, pripravljen z enako skrbjo za vse: 10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščančji ražnjič ali goveji ražnjič), poseben zdrobov desert in neomejene brezalkoholne pijače. Vključen je tudi celoten osemdelni program — Oba Dombra, obred vrtečih se dervišev, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži, živa glasba in finale s saksofonom in DJ — vse v ceni €{p.dinnerStd}/osebo.',
+      'Marsikatera ladja na Bosporju goste deli na „standardne“ in „VIP“. Mi ne. Na krovu ladje **Bosphorus Night** je en sam meni za večerjo, pripravljen z enako skrbjo za vse: 10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščančji ražnjič ali goveji ražnjič), poseben zdrobov desert in neomejene brezalkoholne pijače. Vključen je tudi celoten osemdelni program — Oba Dombra, obred vrtečih se dervišev, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži, živa glasba in finale s saksofonom in DJ — vse v ceni €{p.dinnerStd}/osebo.',
       'Občutek VIP se začne pri vaši mizi. Če želite biti čim bližje odru in razgledom, dodajte **zasebno mizo ob odru** (+€{p.romantic}/miza) in mesto vam rezerviramo vnaprej — najboljši kot na derviše, ljudske plese in osvetljeni Bospor. Priljubljena izbira parov, praznovanj in ljubiteljev fotografije.',
-      'AMOR je sodobna ladja: 42 metrov, 3 krovi, do 400 gostov, pozimi ogrevana in poleti klimatizirana. Trije uri dolga pot se začne v Kabatașu (vkrcanje od 20:00, odhod 21:00, vrnitev 00:00) mimo Dolmabahçeja, mošeje Ortaköy, trdnjave Rumeli in luči mostu čez Bospor. Licenca TÜRSAB (A-17672), 4,9★ na Googlu. Brez predplačila — plačate na ladji, odpoved pa je brezplačna do 2 uri pred odhodom.'
+      'Bosphorus Night je sodobna ladja: 42 metrov, 3 krovi, do 400 gostov, pozimi ogrevana in poleti klimatizirana. Trije uri dolga pot se začne v Kabatașu (vkrcanje od 20:00, odhod 21:00, vrnitev 00:00) mimo Dolmabahçeja, mošeje Ortaköy, trdnjave Rumeli in luči mostu čez Bospor. Licenca TÜRSAB (A-17672), 4,9★ na Googlu. Brez predplačila — plačate na ladji, odpoved pa je brezplačna do 2 uri pred odhodom.'
     ],
     highlights: [
       { title: 'En meni, vrhunski standard', desc: 'Ločenega „VIP menija“ ni — ker je naš edini meni že na tej ravni. 10 vrst meze, topel predjed, 4 glavne jedi po izbiri, sladica in neomejene brezalkoholne pijače, postrežene z enako skrbjo pri vsaki mizi.' },
@@ -178,7 +178,7 @@ module.exports = {
       { q: 'Kaj je na meniju?', a: '10 vrst turških meze, topel predjed, glavna jed po izbiri (losos, brancin, piščančji ražnjič ali goveji ražnjič) in poseben zdrobov desert za sladico, z neomejenimi brezalkoholnimi pijačami. Osemdelni program je vključen: Oba Dombra, obred dervišev, anatolski in azerbajdžanski ljudski plesi, trebušni ples, kavkaški ples z noži, živa glasba in finale s saksofonom in DJ.' },
       { q: 'Ali je alkohol vključen?', a: 'Ne — alkohol je ločen dodatek: 2 kozarca po izbiri — vino, pivo, rakija, vodka, viski, gin in več — za +€{p.alcohol2}/osebo. Brezalkoholne pijače so vključene neomejeno in brezplačno. Vrhunske uvožene pijače se obračunajo posebej na ladji.' },
       { q: 'Kako si zagotovim mizo ob odru?', a: 'Ob rezervaciji preprosto izberite dodatek „zasebna miza ob odru“ (+€{p.romantic}/miza) — miza bo rezervirana na vaše ime. Najboljša mesta zasedejo zgodnje rezervacije, zato priporočamo, da dodatek izberete pred dnevom plovbe.' },
-      { q: 'Kakšna ladja je to?', a: 'AMOR — sodobna potniška ladja, dolga 42 metrov, s 3 krovi in zmogljivostjo 400 gostov, pozimi ogrevana in poleti klimatizirana. Odhod s pomola Kabataş: vkrcanje 20:00, odhod 21:00, vrnitev 00:00. Pot: Dolmabahçe, Ortaköy, trdnjava Rumeli, Beylerbeyi in luči mostu čez Bospor.' }
+      { q: 'Kakšna ladja je to?', a: 'Bosphorus Night — sodobna potniška ladja, dolga 42 metrov, s 3 krovi in zmogljivostjo 400 gostov, pozimi ogrevana in poleti klimatizirana. Odhod s pomola Kabataş: vkrcanje 20:00, odhod 21:00, vrnitev 00:00. Pot: Dolmabahçe, Ortaköy, trdnjava Rumeli, Beylerbeyi in luči mostu čez Bospor.' }
     ],
     cta: {
       primary: 'Rezervirajte svojo mizo · Plačilo na ladji',

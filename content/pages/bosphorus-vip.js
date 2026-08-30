@@ -33,16 +33,16 @@ module.exports = {
 
   hero: {
     h1: 'Bosphorus VIP Cruise Experience',
-    subtitle: 'One menu, one standard: premium for everyone. A 3-hour Bosphorus evening aboard AMOR — rich Turkish dinner, live stage shows, and an optional stage-front private table. We don\'t sell a separate "VIP class"; we serve our best to every guest.',
+    subtitle: 'One menu, one standard: premium for everyone. A 3-hour Bosphorus evening aboard Bosphorus Night — rich Turkish dinner, live stage shows, and an optional stage-front private table. We don\'t sell a separate "VIP class"; we serve our best to every guest.',
     badge: '40% OFF · One Menu, Premium Standard · Pay on Boat'
   },
 
   intro: [
-    'Many Bosphorus boats split their guests into "Standard" and "VIP". We don\'t. Aboard **AMOR** there is one dinner menu, prepared with the same care for everyone: 10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), special semolina dessert, and unlimited soft drinks. The full eight-act entertainment program is included too — Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale — all within the €{p.dinnerStd}/person price.',
+    'Many Bosphorus boats split their guests into "Standard" and "VIP". We don\'t. Aboard **Bosphorus Night** there is one dinner menu, prepared with the same care for everyone: 10 varieties of Turkish mezes, a hot starter, your choice of main course (salmon, sea bass, chicken skewer or beef skewer), special semolina dessert, and unlimited soft drinks. The full eight-act entertainment program is included too — Oba Dombra, whirling dervish ceremony, Anatolian and Azerbaijani folk suites, belly dance, the Caucasian knife dance, live music and a saxophone-and-DJ finale — all within the €{p.dinnerStd}/person price.',
 
     'The VIP feeling starts with your table. If you want to be closest to the stage and the views, add a **stage-front private table** (+€{p.romantic}/table) and your spot is reserved in advance — the best angle for the whirling dervish, the folk dances, and the illuminated Bosphorus. It\'s the favorite choice of couples, celebrations, and photographers.',
 
-    'AMOR is a 42-meter, 3-deck, climate-controlled boat hosting up to 400 guests. The 3-hour route runs from Kabataş (boarding from 20:00, departure 21:00, return 00:00) past Dolmabahçe, Ortaköy Mosque, Rumeli Fortress and the Bosphorus Bridge lights. TÜRSAB-licensed (A-17672), rated 4.9★ on Google, 11,317+ guests hosted since 2014. No prepayment — pay on the boat, with free cancellation up to 2 hours before departure.'
+    'Bosphorus Night is a 42-meter, 3-deck, climate-controlled boat hosting up to 400 guests. The 3-hour route runs from Kabataş (boarding from 20:00, departure 21:00, return 00:00) past Dolmabahçe, Ortaköy Mosque, Rumeli Fortress and the Bosphorus Bridge lights. TÜRSAB-licensed (A-17672), rated 4.9★ on Google, 11,317+ guests hosted since 2014. No prepayment — pay on the boat, with free cancellation up to 2 hours before departure.'
   ],
 
   highlights: [
@@ -95,7 +95,7 @@ module.exports = {
     },
     {
       q: 'What kind of boat is it?',
-      a: 'AMOR — a modern 42-meter, 3-deck passenger boat with a 400-guest capacity, heated in winter and air-conditioned in summer. Departure from Kabataş Pier: boarding from 20:00, departure 21:00, return 00:00. The route covers Dolmabahçe, Ortaköy, Rumeli Fortress, Beylerbeyi and the Bosphorus Bridge lights.'
+      a: 'Bosphorus Night — a modern 42-meter, 3-deck passenger boat with a 400-guest capacity, heated in winter and air-conditioned in summer. Departure from Kabataş Pier: boarding from 20:00, departure 21:00, return 00:00. The route covers Dolmabahçe, Ortaköy, Rumeli Fortress, Beylerbeyi and the Bosphorus Bridge lights.'
     },
     {
       q: 'How do I book the Bosphorus VIP cruise experience?',

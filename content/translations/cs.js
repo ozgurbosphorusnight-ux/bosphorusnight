@@ -157,13 +157,13 @@ module.exports = {
     },
     hero: {
       h1: 'VIP zážitek na Bosporu — plavba s večeří',
-      subtitle: 'Jedno menu, jeden standard: prémiové pro všechny. Tříhodinový večer na Bosporu na palubě lodi AMOR — bohatá turecká večeře, živá show na pódiu a na přání soukromý stůl u pódia. Neprodáváme oddělenou „VIP třídu“ — to nejlepší servírujeme každému hostu.',
+      subtitle: 'Jedno menu, jeden standard: prémiové pro všechny. Tříhodinový večer na Bosporu na palubě lodi Bosphorus Night — bohatá turecká večeře, živá show na pódiu a na přání soukromý stůl u pódia. Neprodáváme oddělenou „VIP třídu“ — to nejlepší servírujeme každému hostu.',
       badge: 'SLEVA 40% · Jedno menu, prémiový standard · Platba na lodi'
     },
     intro: [
-      'Mnoho lodí na Bosporu dělí hosty na „standardní“ a „VIP“. My ne. Na palubě lodi **AMOR** je jediné večeřové menu, připravené se stejnou péčí pro všechny: 10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz), speciální krupicový dezert a neomezené nealkoholické nápoje. Celý osmidílný zábavní program je rovněž v ceně — Oba Dombra, obřad vířících dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ — vše v ceně €{p.dinnerStd}/osobu.',
+      'Mnoho lodí na Bosporu dělí hosty na „standardní“ a „VIP“. My ne. Na palubě lodi **Bosphorus Night** je jediné večeřové menu, připravené se stejnou péčí pro všechny: 10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz), speciální krupicový dezert a neomezené nealkoholické nápoje. Celý osmidílný zábavní program je rovněž v ceně — Oba Dombra, obřad vířících dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ — vše v ceně €{p.dinnerStd}/osobu.',
       'Pocit VIP začíná u vašeho stolu. Chcete-li být co nejblíže pódiu a výhledům, přidejte si **soukromý stůl u pódia** (+€{p.romantic}/stůl) a místo vám rezervujeme předem — nejlepší úhel na derviše, lidové tance i osvětlený Bospor. Oblíbená volba párů, oslav a milovníků fotografie.',
-      'AMOR je moderní loď: 42 metrů, 3 paluby, až 400 hostů, v zimě vytápěná a v létě klimatizovaná. Tříhodinová trasa vyplouvá z Kabataşe (nástup od 20:00, odjezd 21:00, návrat 00:00) kolem Dolmabahçe, mešity Ortaköy, pevnosti Rumeli a světel mostu přes Bospor. Licence TÜRSAB (A-17672), 4,9★ na Google. Bez platby předem — platíte na lodi a storno je zdarma až do 2 hodin před odplutím.'
+      'Bosphorus Night je moderní loď: 42 metrů, 3 paluby, až 400 hostů, v zimě vytápěná a v létě klimatizovaná. Tříhodinová trasa vyplouvá z Kabataşe (nástup od 20:00, odjezd 21:00, návrat 00:00) kolem Dolmabahçe, mešity Ortaköy, pevnosti Rumeli a světel mostu přes Bospor. Licence TÜRSAB (A-17672), 4,9★ na Google. Bez platby předem — platíte na lodi a storno je zdarma až do 2 hodin před odplutím.'
     ],
     highlights: [
       { title: 'Jedno menu, prémiový standard', desc: 'Žádné oddělené „VIP menu“ neexistuje — protože naše jediné menu už na této úrovni je. 10 druhů meze, teplý předkrm, 4 hlavní chody na výběr, dezert a neomezené nealkoholické nápoje, servírované se stejnou péčí u každého stolu.' },
@@ -177,7 +177,7 @@ module.exports = {
       { q: 'Co je v menu?', a: '10 druhů tureckých meze, teplý předkrm, hlavní chod dle výběru (losos, mořský vlk, kuřecí špíz nebo hovězí špíz) a speciální krupicový dezert jako dezert, k tomu neomezené nealkoholické nápoje. Osmidílný program je v ceně: Oba Dombra, obřad dervišů, anatolské a ázerbájdžánské lidové tance, břišní tanec, kavkazský tanec s noži, živá hudba a finále se saxofonem a DJ.' },
       { q: 'Je alkohol v ceně?', a: 'Ne — alkohol je samostatný doplněk: 2 sklenice místního vína nebo piva za +€{p.alcohol2}/osobu. Nealkoholické nápoje jsou neomezeně a zdarma v ceně. Prémiové dovážené destiláty se účtují zvlášť na lodi.' },
       { q: 'Jak si zajistím stůl u pódia?', a: 'Stačí při rezervaci zvolit doplněk „soukromý stůl u pódia“ (+€{p.romantic}/stůl) — stůl bude rezervován na vaše jméno. Nejlepší místa se obsazují předem, proto doporučujeme přidat jej ještě před dnem plavby.' },
-      { q: 'Jaká je to loď?', a: 'AMOR — moderní osobní loď dlouhá 42 metrů se 3 palubami a kapacitou 400 hostů, v zimě vytápěná a v létě klimatizovaná. Odplutí z mola Kabataş: nástup 20:00, odplutí 21:00, návrat 00:00. Trasa: Dolmabahçe, Ortaköy, pevnost Rumeli, Beylerbeyi a světla mostu přes Bospor.' }
+      { q: 'Jaká je to loď?', a: 'Bosphorus Night — moderní osobní loď dlouhá 42 metrů se 3 palubami a kapacitou 400 hostů, v zimě vytápěná a v létě klimatizovaná. Odplutí z mola Kabataş: nástup 20:00, odplutí 21:00, návrat 00:00. Trasa: Dolmabahçe, Ortaköy, pevnost Rumeli, Beylerbeyi a světla mostu přes Bospor.' }
     ],
     cta: {
       primary: 'Rezervujte si stůl · Platba na lodi',
