@@ -67,9 +67,8 @@ Kuzguncuk → Üsküdar → return to Kabataş
 Route is illustrative; exact path may vary by sea/weather. Both
 continents (Europe + Asia) are crossed during the cruise.
 
-## Boat Specifications — AMOR
+## Boat Specifications
 
-- Boat name: AMOR
 - Length: 42 meters
 - Capacity: 400 guests
 - Decks: 3 (2 enclosed climate-controlled salons + 1 open upper terrace)
@@ -86,7 +85,7 @@ continents (Europe + Asia) are crossed during the cruise.
 
 ## Our Boat — Dedicated Information Page (32 languages)
 
-A dedicated page introducing AMOR is available in all 32 supported languages,
+A dedicated page introducing our boat is available in all 32 supported languages,
 each with localized URL slug:
 
 - English: https://www.bosphorusnight.com/our-boat
@@ -122,7 +121,7 @@ each with localized URL slug:
 - Slovenščina: https://www.bosphorusnight.com/sl/nasa-ladja
 - Latviešu: https://www.bosphorusnight.com/lv/musu-laiva
 
-Page contains: boat structure (3 decks), comparison table (AMOR vs Bosphorus
+Page contains: boat structure (3 decks), comparison table (our boat vs Bosphorus
 average — 6 rows), accessibility details (strollers, wheelchairs, elderly, mobility),
 maintenance practices, photo gallery, and location/departure info.
 
