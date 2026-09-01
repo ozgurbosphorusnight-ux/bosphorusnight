@@ -738,9 +738,9 @@
         // Rezervasyon hatırlatması — konum isteyen "kendim gelirim" moduna kayabilir (20 Tem)
         botSayHtml(fill(tx('ans.meetingReserve')));
       } else if (key === 'video') {
-        // 30 Ağu 2026 (Özgür): iki yeni video — şov derlemesi + açıklamalı gece tanıtımı
+        // 1 Eyl 2026 (Özgür): önce genel tanıtım (tekne+sofra+şov+misafir), sonra şov derlemesi
+        renderVideoCard('835rVqS3eqI', tx('btn.showVideo'));
         renderVideoCard('R-pURhSArYw', tx('btn.showVideo'));
-        renderVideoCard('PP81V98bCys', tx('btn.showVideo'));
         renderChannelRow();
       } else {
         var acts = actionsFor(key);
