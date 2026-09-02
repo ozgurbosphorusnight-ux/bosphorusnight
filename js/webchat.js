@@ -690,6 +690,22 @@
     scrollDown();
   }
 
+  // Instagram kartı — foto galerisi (3 Eyl 2026, Özgür kararı; yalnız marka adları → 32 dil çeviri gerekmez)
+  var IG_SVG = '<svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2a3.8 3.8 0 0 1-.9 1.4c-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 4.8a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4zm5.2-3a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg>';
+
+  function renderInstagramRow() {
+    var a = document.createElement('a');
+    a.className = 'bnwc-chan';
+    a.href = 'https://www.instagram.com/bosphorusnighttour';
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.innerHTML =
+      '<span class="bnwc-chico">' + IG_SVG + '</span>' +
+      '<span class="bnwc-cht"><b>@bosphorusnighttour</b>Instagram</span>';
+    els.msgs.appendChild(a);
+    scrollDown();
+  }
+
   function renderLocationCard() {
     var a = document.createElement('a');
     a.className = 'bnwc-loccard';
@@ -742,6 +758,7 @@
         renderVideoCard('835rVqS3eqI', tx('btn.showVideo'));
         renderVideoCard('R-pURhSArYw', tx('btn.showVideo'));
         renderChannelRow();
+        renderInstagramRow(); // foto galerisi (3 Eyl 2026)
       } else {
         var acts = actionsFor(key);
         if (acts) renderActions(acts);
